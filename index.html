@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>¿Qué juego suena? · Adivinador musical gamer</title>
+  <meta name="description" content="Adivina el videojuego escuchando su soundtrack oficial: Halo, Gears of War, Hollow Knight, Mario, Kirby, Zelda y más.">
+  <meta name="theme-color" content="#0b0a18">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="bg-glow"></div>
+    <div class="bg-sun"></div>
+    <div class="bg-grid"></div>
+  </div>
+
+  <header class="topbar">
+    <button class="brand" id="brand" type="button" title="Volver al inicio">
+      <span class="brand-icon" aria-hidden="true">🎮</span>
+      <span class="brand-text">¿Qué juego suena?</span>
+    </button>
+    <div class="topbar-actions">
+      <label class="volume" title="Volumen de la música">
+        <span aria-hidden="true">🔊</span>
+        <input id="volume" type="range" min="0" max="100" value="80" aria-label="Volumen de la música">
+      </label>
+      <button class="icon-btn" id="btn-sfx" type="button" aria-pressed="true" title="Efectos de sonido">🔔</button>
+      <button class="icon-btn" id="btn-help" type="button" title="Cómo jugar">?</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="banner" id="file-warning" hidden>
+      <strong>Ojo:</strong> abriste el juego como archivo local. Las pistas que vienen de YouTube
+      (casi todo Nintendo) solo funcionan desde un servidor. Mira el <em>README</em>: basta con
+      <code>python3 -m http.server</code> o publicarlo en GitHub Pages.
+    </div>
+
+    <!-- ═════════ INICIO ═════════ -->
+    <section class="screen is-active" id="screen-home" aria-labelledby="home-title">
+      <div class="hero">
+        <p class="kicker">Adivinador musical para gamers</p>
+        <h1 class="logo" id="home-title"><span>¿Qué juego</span><span>suena?</span></h1>
+        <p class="hero-sub">Escucha el soundtrack oficial y adivina de qué videojuego es.</p>
+        <div class="eq" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+      </div>
+
+      <h2 class="section-title"><span class="step">1</span> Elige un modo</h2>
+      <div class="modes" id="modes" role="radiogroup" aria-label="Modo de juego"></div>
+
+      <h2 class="section-title"><span class="step">2</span> ¿Qué quieres escuchar? <small id="pool-count"></small></h2>
+      <div class="chips" id="chips" aria-label="Categorías"></div>
+
+      <div class="start-row">
+        <button class="btn btn-primary btn-xl" id="btn-start" type="button">▶ Jugar</button>
+        <p class="start-hint" id="start-hint" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- ═════════ PARTIDA ═════════ -->
+    <section class="screen" id="screen-game" aria-label="Partida">
+      <div class="hud">
+        <div class="hud-item">
+          <span class="hud-label" id="hud-mode">Clásico</span>
+          <span class="hud-value" id="hud-round">1/10</span>
+        </div>
+        <div class="hud-item hud-center">
+          <span class="hud-label">Puntos</span>
+          <span class="hud-value hud-score" id="hud-score">0</span>
+        </div>
+        <div class="hud-item hud-right">
+          <span class="hud-label" id="hud-extra-label">Racha</span>
+          <span class="hud-value" id="hud-extra">0</span>
+        </div>
+      </div>
+
+      <div class="stage" id="stage">
+        <canvas id="viz" aria-hidden="true"></canvas>
+        <div class="disc" id="disc">
+          <div class="disc-label" id="disc-label"></div>
+        </div>
+        <div class="disc-q" id="disc-q" aria-hidden="true">?</div>
+        <div class="mult" id="mult" hidden></div>
+      </div>
+
+      <div class="timer" id="timer"><div class="timer-fill" id="timer-fill"></div><span class="timer-text" id="timer-text"></span></div>
+      <div class="clip-bar" id="clip-bar" hidden>
+        <div class="clip-unlocked" id="clip-unlocked"></div>
+        <div class="clip-progress" id="clip-progress"></div>
+      </div>
+
+      <p class="status" id="status" aria-live="polite">Cargando pista…</p>
+
+      <div class="controls">
+        <button class="btn btn-ghost" id="btn-replay" type="button">↺ Repetir</button>
+        <button class="btn btn-tap" id="btn-tap" type="button" hidden>▶ Toca para escuchar</button>
+      </div>
+
+      <div class="options" id="options"></div>
+
+      <div class="expert" id="expert" hidden>
+        <ol class="attempts" id="attempts" aria-label="Intentos"></ol>
+        <div class="guess">
+          <div class="combo">
+            <input id="guess-input" type="text" autocomplete="off" spellcheck="false"
+                   placeholder="Escribe el nombre del juego…" role="combobox"
+                   aria-expanded="false" aria-controls="guess-list" aria-autocomplete="list">
+            <ul class="combo-list" id="guess-list" role="listbox" hidden></ul>
+          </div>
+          <div class="guess-actions">
+            <button class="btn btn-ghost" id="btn-skip" type="button">Saltar (+1 s)</button>
+            <button class="btn btn-primary" id="btn-guess" type="button">Adivinar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal" id="reveal" hidden>
+        <div class="reveal-head" id="reveal-head"></div>
+        <div class="reveal-body">
+          <img class="reveal-art" id="reveal-art" alt="" referrerpolicy="no-referrer">
+          <div class="reveal-info">
+            <p class="reveal-game" id="reveal-game"></p>
+            <p class="reveal-track" id="reveal-track"></p>
+            <p class="reveal-meta" id="reveal-meta"></p>
+            <a class="reveal-link" id="reveal-link" target="_blank" rel="noopener"></a>
+          </div>
+        </div>
+        <button class="btn btn-primary" id="btn-next" type="button">Siguiente ▶</button>
+      </div>
+
+      <button class="btn-link quit" id="btn-quit" type="button">✕ Abandonar partida</button>
+    </section>
+
+    <!-- ═════════ RESULTADOS ═════════ -->
+    <section class="screen" id="screen-results" aria-label="Resultados">
+      <div id="results-root"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      Audio oficial vía <strong>Apple Music</strong> (previews de 30 s) y <strong>YouTube</strong>.
+      La música pertenece a sus compositores y editoras; este es un proyecto de fans sin fines comerciales.
+    </p>
+    <button class="btn-link" id="btn-diag" type="button">🛠 Verificar catálogo</button>
+  </footer>
+
+  <!-- ═════════ CÓMO JUGAR ═════════ -->
+  <dialog class="dialog" id="dlg-help" aria-labelledby="help-title">
+    <form method="dialog" class="dialog-close"><button aria-label="Cerrar">✕</button></form>
+    <h2 id="help-title">Cómo jugar</h2>
+    <p>Suena un fragmento del soundtrack <strong>oficial</strong> de un videojuego. Tu misión: reconocer de qué juego es.</p>
+    <ul class="help-modes">
+      <li><strong>🎯 Clásico:</strong> 10 rondas con 4 opciones de saga (Halo, Kirby, Zelda…). Tienes 20 s; mientras más rápido aciertes, más puntos. Encadenar aciertos multiplica: x1.5 con racha de 3 y x2 con racha de 5.</li>
+      <li><strong>🎧 Experto:</strong> estilo Heardle. Empiezas con solo 1 segundo de audio. Cada fallo o salto desbloquea más (1 → 2 → 4 → 7 → 11 → 16 s). Escribe el <em>juego exacto</em>; si atinas a la saga pero no al juego, te avisamos con 🟨.</li>
+      <li><strong>❤️ Supervivencia:</strong> opciones con el juego exacto (¿Halo 2 o Halo 3?), 3 vidas y el reloj se acorta cada 3 aciertos. ¿Hasta dónde llegas?</li>
+    </ul>
+    <h3>Atajos de teclado</h3>
+    <ul class="help-keys">
+      <li><kbd>1</kbd>–<kbd>4</kbd> elegir opción</li>
+      <li><kbd>Espacio</kbd> repetir / escuchar</li>
+      <li><kbd>Enter</kbd> siguiente ronda</li>
+    </ul>
+    <h3>¿De dónde sale la música?</h3>
+    <p class="muted">Los previews oficiales de Apple Music (álbumes de soundtrack publicados por las editoras) y, cuando un soundtrack no está ahí (como casi todo Nintendo), de YouTube. Si alguna pista ya no está disponible, el juego la cambia sola por otra.</p>
+  </dialog>
+
+  <!-- ═════════ DIAGNÓSTICO ═════════ -->
+  <dialog class="dialog dialog-wide" id="dlg-diag" aria-labelledby="diag-title">
+    <form method="dialog" class="dialog-close"><button aria-label="Cerrar">✕</button></form>
+    <h2 id="diag-title">Verificar catálogo</h2>
+    <p class="muted">Prueba (en silencio) cada pista del catálogo en tu navegador y te dice cuáles suenan y desde qué fuente. Útil si una pista dejó de existir en YouTube o Apple Music. Tarda un par de minutos.</p>
+    <div class="diag-actions">
+      <button class="btn btn-primary" id="btn-diag-run" type="button">Iniciar verificación</button>
+      <button class="btn btn-ghost" id="btn-diag-copy" type="button" disabled>Copiar reporte</button>
+      <span class="diag-summary" id="diag-summary"></span>
+    </div>
+    <ol class="diag-list" id="diag-list"></ol>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Reproductor de YouTube oculto (solo audio para el juego) -->
+  <div id="yt-host" aria-hidden="true"><div id="yt-player"></div></div>
+
+  <script src="js/catalog.js" defer></script>
+  <script src="js/sources.js" defer></script>
+  <script src="js/engine.js" defer></script>
+  <script src="js/sfx.js" defer></script>
+  <script src="js/game.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
