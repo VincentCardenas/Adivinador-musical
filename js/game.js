@@ -40,20 +40,46 @@
 
   function unique(list) { return Array.from(new Set(list)); }
 
-  function pool(cats) {
+  /** Pistas de las categorías elegidas, sin las que el jugador ocultó al reportarlas. */
+  function pool(cats, hidden) {
     const set = new Set(cats);
-    return AM.CATALOG.filter((t) => set.has(t.cat));
+    const skip = new Set(hidden || []);
+    return AM.CATALOG.filter((t) => set.has(t.cat) && !skip.has(t.id));
   }
 
-  /** Mezcla las pistas evitando, si se puede, dos seguidas del mismo juego. */
-  function buildQueue(tracks) {
-    const a = shuffle(tracks);
-    for (let i = 1; i < a.length; i++) {
-      if (a[i].game !== a[i - 1].game) continue;
-      const j = a.findIndex((t, k) => k > i && t.game !== a[i - 1].game);
-      if (j > 0) { const t = a[i]; a[i] = a[j]; a[j] = t; }
+  /**
+   * Arma la cola de pistas de una partida:
+   *  1. primero las que el jugador nunca ha escuchado (en orden aleatorio);
+   *  2. después las ya escuchadas, de la más antigua a la más reciente;
+   *  3. sin la misma saga dos veces seguidas y con máximo `maxPerFranchise`
+   *     pistas de una misma saga por cada bloque de 10 rondas.
+   * `seen` es un mapa { idDePista: marcaDeTiempoDeLaÚltimaVez }.
+   */
+  function buildQueue(tracks, seen, maxPerFranchise) {
+    seen = seen || {};
+    const fresh = shuffle(tracks.filter((t) => !seen[t.id]));
+    const old = tracks.filter((t) => seen[t.id]).sort((a, b) => seen[a.id] - seen[b.id]);
+    // Entre las ya escuchadas, mezclamos por tandas para que no salgan siempre en el mismo orden.
+    const oldMixed = [];
+    for (let i = 0; i < old.length; i += 12) oldMixed.push.apply(oldMixed, shuffle(old.slice(i, i + 12)));
+    return diversify(fresh.concat(oldMixed), maxPerFranchise || 2);
+  }
+
+  function diversify(list, maxPer) {
+    const out = [];
+    const pending = list.slice();
+    while (pending.length) {
+      const blockStart = out.length - (out.length % 10);
+      const counts = {};
+      for (let i = blockStart; i < out.length; i++) counts[out[i].franchise] = (counts[out[i].franchise] || 0) + 1;
+      const prev = out[out.length - 1];
+      const notPrev = (t) => !prev || t.franchise !== prev.franchise;
+      let idx = pending.findIndex((t) => notPrev(t) && (counts[t.franchise] || 0) < maxPer);
+      if (idx < 0) idx = pending.findIndex(notPrev);
+      if (idx < 0) idx = 0;
+      out.push(pending.splice(idx, 1)[0]);
     }
-    return a;
+    return out;
   }
 
   let gamesCache = null;

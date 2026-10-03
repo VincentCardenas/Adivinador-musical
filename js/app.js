@@ -37,6 +37,23 @@
 
   let game = null;
   let timerRaf = 0;
+  let reportCtx = null; // pista que se está por reportar: { track, meta }
+
+  /* ── historial de pistas escuchadas y pistas ocultas por reportes ── */
+  const savedSeen = Store.get('seen', {});
+  const savedHidden = Store.get('hidden', []);
+  const History = {
+    seen: savedSeen && typeof savedSeen === 'object' && !Array.isArray(savedSeen) ? savedSeen : {},
+    hidden: Array.isArray(savedHidden) ? savedHidden : [],
+    mark(id) { this.seen[id] = Date.now(); Store.set('seen', this.seen); },
+    reset() { this.seen = {}; Store.set('seen', {}); },
+    hide(id) {
+      if (this.hidden.indexOf(id) < 0) { this.hidden.push(id); Store.set('hidden', this.hidden); }
+    },
+    unhideAll() { this.hidden = []; Store.set('hidden', []); },
+  };
+
+  function currentPool() { return AM.Logic.pool(settings.cats, History.hidden); }
 
   /* ═════════ utilidades de interfaz ═════════ */
 
@@ -178,7 +195,7 @@
   }
 
   function updatePoolInfo() {
-    const pool = AM.Logic.pool(settings.cats);
+    const pool = currentPool();
     const ok = pool.length >= AM.MIN_POOL;
     $('#pool-count').textContent = `${pool.length} pistas`;
     $('#btn-start').disabled = !ok;
@@ -188,7 +205,21 @@
       const names = AM.Logic.sample(Array.from(new Set(pool.map((t) => t.franchise))), 4);
       $('#start-hint').textContent = `Incluye ${names.join(', ')} y más.`;
     }
+    const heard = pool.filter((t) => History.seen[t.id]).length;
+    const hidden = History.hidden.length;
+    let info = heard
+      ? `Has escuchado ${heard} de ${pool.length} pistas de estas categorías; primero suenan las que te faltan.`
+      : 'Todas estas pistas son nuevas para ti.';
+    if (hidden) info += ` ${hidden} oculta${hidden === 1 ? '' : 's'} por tus reportes.`;
+    $('#seen-info').innerHTML = esc(info) + (heard ? ' <button type="button" class="btn-link" id="btn-reset-seen">Reiniciar historial</button>' : '');
   }
+
+  $('#seen-info').addEventListener('click', (e) => {
+    if (!e.target.closest('#btn-reset-seen')) return;
+    History.reset();
+    updatePoolInfo();
+    toast('Historial reiniciado: todas las pistas vuelven a contar como nuevas.');
+  });
 
   function renderHome() {
     renderModes();
@@ -222,7 +253,7 @@
 
   function startGame() {
     const mode = AM.MODES[settings.mode];
-    const pool = AM.Logic.pool(settings.cats);
+    const pool = currentPool();
     if (pool.length < AM.MIN_POOL) return;
 
     AM.Engine.unlock();
@@ -231,7 +262,7 @@
 
     game = {
       mode: mode,
-      queue: AM.Logic.buildQueue(pool),
+      queue: AM.Logic.buildQueue(pool, History.seen),
       total: isFinite(mode.rounds) ? Math.min(mode.rounds, pool.length) : Infinity,
       round: 0,
       score: 0,
@@ -354,6 +385,7 @@
   function beginRound(track, cand, rest) {
     const g = game;
     g.round++;
+    History.mark(track.id);
     g.cur = {
       track: track,
       cand: cand,
@@ -722,6 +754,7 @@
     $('#reveal-game').textContent = t.game;
     $('#reveal-track').textContent = '♪ ' + (m.trackName || t.title);
     $('#reveal-meta').textContent = [t.composer, t.year, t.platform].filter(Boolean).join(' · ');
+    reportCtx = { track: t, meta: m };
     const link = $('#reveal-link');
     link.hidden = !m.link;
     if (m.link) { link.href = m.link; link.textContent = (m.linkLabel || 'Escuchar') + ' ↗'; }
@@ -749,6 +782,8 @@
     sfx('click');
     nextRound();
   });
+
+  $('#btn-report').addEventListener('click', () => { if (reportCtx) openReport(reportCtx); });
 
   $('#btn-replay').addEventListener('click', () => playClip());
   $('#btn-tap').addEventListener('click', () => playClip());
@@ -813,6 +848,7 @@
             <div class="r-track">♪ ${esc(m.trackName || h.track.title)}${link}</div>
           </div>
           <div class="r-res">${AM.Logic.emojiFor(g.mode, h)}<b>${h.points ? '+' + fmt(h.points) : '0'}</b></div>
+          <button type="button" class="row-report" data-report="${i}" title="Reportar esta canción" aria-label="Reportar ${esc(h.track.game)}">🚩</button>
         </li>`;
     }).join('');
 
@@ -839,6 +875,7 @@
         <ol class="rounds">${rows}</ol>
       </div>`;
     $('#results-root').dataset.share = share;
+    resultsHistory = g.history;
 
     showScreen('results');
     sfx(isRecord ? 'record' : 'end');
@@ -873,7 +910,14 @@
     }
   }
 
+  let resultsHistory = [];
   $('#results-root').addEventListener('click', (e) => {
+    const rep = e.target.closest('[data-report]');
+    if (rep) {
+      const h = resultsHistory[Number(rep.dataset.report)];
+      if (h) openReport({ track: h.track, meta: h.meta || {} });
+      return;
+    }
     const btn = e.target.closest('[data-act]');
     if (!btn) return;
     const act = btn.dataset.act;
@@ -1009,7 +1053,7 @@
     AM.Engine.unlock();
     AM.Engine.setMuted(true);
 
-    const tracks = AM.CATALOG;
+    const tracks = AM.Logic.pool(settings.cats);
     const list = $('#diag-list');
     list.innerHTML = tracks.map((t, i) =>
       `<li id="diag-${i}"><span class="d-name">${esc(t.game)} — ${esc(t.title)}</span><span class="d-status">en espera</span></li>`
@@ -1047,7 +1091,13 @@
     if (!diag.abort) $('#diag-summary').textContent = `Listo: ${okCount} de ${tracks.length} pistas suenan`;
   }
 
-  $('#btn-diag').addEventListener('click', () => openDialog($('#dlg-diag')));
+  $('#btn-diag').addEventListener('click', () => {
+    if (!diag.running) {
+      const n = AM.Logic.pool(settings.cats).length;
+      $('#diag-scope').textContent = `Se verificarán las ${n} pistas de las categorías que tienes elegidas en el inicio (elige "Todo" para revisar el catálogo completo).`;
+    }
+    openDialog($('#dlg-diag'));
+  });
   $('#btn-diag-run').addEventListener('click', runDiagnostics);
   $('#btn-diag-copy').addEventListener('click', () => {
     const text = ['Reporte del catálogo — ' + new Date().toLocaleString('es')].concat(diag.report).join('\n');
@@ -1062,7 +1112,197 @@
     AM.Engine.setMuted(false);
   });
 
+  /* ═════════ reportes de canciones ═════════ */
+
+  const REASONS = {
+    'otro-juego': 'Es de otro juego',
+    'otra-cancion': 'Es otra canción del mismo juego',
+    'cover': 'Es un cover, remix o versión no oficial',
+    'no-suena': 'No sonó, se cortó o era un anuncio',
+    'otro': 'Otro problema',
+  };
+
+  const savedReports = Store.get('reports', []);
+  const Reports = {
+    list: Array.isArray(savedReports) ? savedReports : [],
+    save() {
+      Store.set('reports', this.list);
+      renderReportsButton();
+    },
+  };
+
+  function renderReportsButton() {
+    const n = Reports.list.length;
+    $('#btn-my-reports').textContent = n ? `🚩 Mis reportes (${n})` : '🚩 Mis reportes';
+  }
+
+  let gamesListFilled = false;
+  function fillGamesDatalist() {
+    if (gamesListFilled) return;
+    gamesListFilled = true;
+    $('#report-games').innerHTML = AM.Logic.allGames().map((g) => `<option value="${esc(g.game)}"></option>`).join('');
+  }
+
+  function selectedReason() {
+    const el = $('#report-form').querySelector('input[name="reason"]:checked');
+    return el ? el.value : 'otro';
+  }
+
+  function updateReportFields() {
+    const reason = selectedReason();
+    $('#field-real-game').hidden = !(reason === 'otro-juego' || reason === 'otro');
+    $('#field-real-song').hidden = reason === 'no-suena';
+  }
+
+  function openReport(ctx) {
+    reportCtx = ctx;
+    const t = ctx.track;
+    const m = ctx.meta || {};
+    $('#report-form').reset();
+    fillGamesDatalist();
+    $('#report-game-shown').textContent = t.game;
+    $('#report-song-shown').textContent = '♪ ' + (m.trackName || t.title);
+    $('#report-src').textContent = m.source ? `Sonó desde ${m.source}` : '';
+    const art = $('#report-art');
+    if (m.artwork) { art.src = m.artwork; art.hidden = false; } else { art.removeAttribute('src'); art.hidden = true; }
+    updateReportFields();
+    openDialog($('#dlg-report'));
+  }
+
+  function reportUrl(r) {
+    const params = new URLSearchParams({
+      template: AM.CONFIG.reportTemplate,
+      title: `[Reporte] ${r.game} — ${r.title}`,
+      pista: r.trackId,
+      mostrado: `${r.game} — ${r.title}`,
+      problema: REASONS[r.reason] || r.reason,
+      juego_real: r.realGame || '',
+      cancion_real: r.realSong || '',
+      fuente: [r.source, r.link].filter(Boolean).join(' · '),
+      comentario: r.comment || '',
+    });
+    return `https://github.com/${AM.CONFIG.repo}/issues/new?${params.toString()}`;
+  }
+
+  function reportText(r) {
+    const lines = [
+      `• ${r.game} — ${r.title} [${r.trackId}]`,
+      `  Problema: ${REASONS[r.reason] || r.reason}`,
+    ];
+    if (r.realGame) lines.push(`  Juego real: ${r.realGame}`);
+    if (r.realSong) lines.push(`  Canción real: ${r.realSong}`);
+    if (r.comment) lines.push(`  Comentario: ${r.comment}`);
+    if (r.link) lines.push(`  Fuente: ${r.source} ${r.link}`);
+    return lines.join('\n');
+  }
+
+  function submitReport(send) {
+    if (!reportCtx) return;
+    const t = reportCtx.track;
+    const m = reportCtx.meta || {};
+    const r = {
+      id: 'r' + Date.now().toString(36),
+      date: new Date().toISOString(),
+      trackId: t.id,
+      game: t.game,
+      title: m.trackName || t.title,
+      source: m.source || '',
+      link: m.link || '',
+      reason: selectedReason(),
+      realGame: $('#report-real-game').value.trim(),
+      realSong: $('#report-real-song').value.trim(),
+      comment: $('#report-comment').value.trim(),
+      hidden: $('#report-hide').checked,
+      sent: !!send,
+    };
+    // window.open dentro del clic: así el navegador no lo bloquea como ventana emergente.
+    if (send) window.open(reportUrl(r), '_blank', 'noopener');
+    Reports.list.unshift(r);
+    Reports.save();
+    if (r.hidden) {
+      History.hide(r.trackId);
+      if (game && game.queue) game.queue = game.queue.filter((x) => x.id !== r.trackId);
+    }
+    $('#dlg-report').close();
+    toast(send
+      ? '¡Gracias! Termina de enviarlo en la pestaña de GitHub que se abrió.'
+      : 'Reporte guardado. Puedes enviarlo después desde "Mis reportes".', 4500);
+    if ($('#screen-home').classList.contains('is-active')) updatePoolInfo();
+  }
+
+  $('#report-form').addEventListener('change', updateReportFields);
+  $('#report-form').addEventListener('submit', (e) => { e.preventDefault(); submitReport(true); });
+  $('#report-form').addEventListener('keydown', (e) => {
+    // Enter en un campo de texto no debe enviar el reporte por accidente.
+    if (e.key === 'Enter' && e.target.tagName === 'INPUT') e.preventDefault();
+  });
+  $('#btn-report-save').addEventListener('click', () => submitReport(false));
+
+  /* Mis reportes */
+
+  function renderReports() {
+    const list = $('#reports-list');
+    if (!Reports.list.length) {
+      list.innerHTML = '<li class="empty">Todavía no has reportado ninguna canción.</li>';
+    } else {
+      list.innerHTML = Reports.list.map((r, i) => {
+        const extra = [
+          REASONS[r.reason] || r.reason,
+          r.realGame ? `era de: ${esc(r.realGame)}` : '',
+          r.realSong ? `canción: «${esc(r.realSong)}»` : '',
+        ].filter(Boolean).join(' · ');
+        return `
+          <li>
+            <div class="r-main"><strong>${esc(r.game)}</strong> — ${esc(r.title)}<br><span class="muted">${extra}</span></div>
+            <div class="r-side">
+              ${r.sent ? '<span class="tag-ok">Enviado</span>' : ''}
+              <button type="button" class="btn-link" data-send="${i}">${r.sent ? 'Reenviar' : 'Enviar ↗'}</button>
+            </div>
+          </li>`;
+      }).join('');
+    }
+    const hidden = History.hidden.length;
+    $('#btn-reports-unhide').textContent = `👁 Volver a mostrar pistas ocultas (${hidden})`;
+    $('#btn-reports-unhide').disabled = !hidden;
+    $('#btn-reports-copy').disabled = !Reports.list.length;
+    $('#btn-reports-clear').hidden = !Reports.list.length;
+  }
+
+  $('#btn-my-reports').addEventListener('click', () => { renderReports(); openDialog($('#dlg-reports')); });
+  $('#reports-list').addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-send]');
+    if (!btn) return;
+    const r = Reports.list[Number(btn.dataset.send)];
+    if (!r) return;
+    window.open(reportUrl(r), '_blank', 'noopener');
+    r.sent = true;
+    Reports.save();
+    renderReports();
+  });
+  $('#btn-reports-copy').addEventListener('click', () => {
+    const text = ['Reportes de ¿Qué juego suena?'].concat(Reports.list.map(reportText)).join('\n');
+    navigator.clipboard.writeText(text).then(
+      () => toast('Reportes copiados.'),
+      () => window.prompt('Copia tus reportes:', text)
+    );
+  });
+  $('#btn-reports-unhide').addEventListener('click', () => {
+    History.unhideAll();
+    renderReports();
+    updatePoolInfo();
+    toast('Las pistas ocultas vuelven a estar en juego.');
+  });
+  $('#btn-reports-clear').addEventListener('click', () => {
+    if (!window.confirm('¿Borrar la lista de reportes? (Las pistas ocultas siguen ocultas.)')) return;
+    Reports.list = [];
+    Reports.save();
+    renderReports();
+  });
+
   /* ═════════ arranque ═════════ */
+
+  renderReportsButton();
+  if (AM.CONFIG && AM.CONFIG.version) $('#app-version').textContent = 'v' + AM.CONFIG.version;
 
   if (location.protocol === 'file:') $('#file-warning').hidden = false;
   renderHome();

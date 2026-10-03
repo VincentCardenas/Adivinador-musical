@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=1.1">
 </head>
 <body>
   <div class="bg" aria-hidden="true">
@@ -61,6 +61,7 @@
       <div class="start-row">
         <button class="btn btn-primary btn-xl" id="btn-start" type="button">▶ Jugar</button>
         <p class="start-hint" id="start-hint" aria-live="polite"></p>
+        <p class="seen-info" id="seen-info"></p>
       </div>
     </section>
 
@@ -129,7 +130,10 @@
             <p class="reveal-game" id="reveal-game"></p>
             <p class="reveal-track" id="reveal-track"></p>
             <p class="reveal-meta" id="reveal-meta"></p>
-            <a class="reveal-link" id="reveal-link" target="_blank" rel="noopener"></a>
+            <div class="reveal-links">
+              <a class="reveal-link" id="reveal-link" target="_blank" rel="noopener"></a>
+              <button class="btn-report" id="btn-report" type="button" title="¿Esta canción está mal? Repórtala">🚩 Reportar canción</button>
+            </div>
           </div>
         </div>
         <button class="btn btn-primary" id="btn-next" type="button">Siguiente ▶</button>
@@ -149,7 +153,10 @@
       Audio oficial vía <strong>Apple Music</strong> (previews de 30 s) y <strong>YouTube</strong>.
       La música pertenece a sus compositores y editoras; este es un proyecto de fans sin fines comerciales.
     </p>
-    <button class="btn-link" id="btn-diag" type="button">🛠 Verificar catálogo</button>
+    <div class="footer-links">
+      <button class="btn-link" id="btn-my-reports" type="button">🚩 Mis reportes</button>
+      <button class="btn-link" id="btn-diag" type="button">🛠 Verificar catálogo</button>
+    </div>
   </footer>
 
   <!-- ═════════ CÓMO JUGAR ═════════ -->
@@ -170,13 +177,18 @@
     </ul>
     <h3>¿De dónde sale la música?</h3>
     <p class="muted">Los previews oficiales de Apple Music (álbumes de soundtrack publicados por las editoras) y, cuando un soundtrack no está ahí (como casi todo Nintendo), de YouTube. Si alguna pista ya no está disponible, el juego la cambia sola por otra.</p>
+    <h3>¿Una canción está mal?</h3>
+    <p class="muted">Al revelar cada ronda (y en la lista de resultados) está el botón <strong>🚩 Reportar canción</strong>: cuéntanos si era de otro juego, otra canción, un cover o si no sonó, y cuál era en realidad. El juego dejará de ponértela y el reporte nos llega para corregirla.</p>
+    <h3>¿Se repiten las canciones?</h3>
+    <p class="muted">El juego recuerda lo que ya escuchaste en este navegador y siempre te pone primero las pistas nuevas. Cuando las hayas escuchado todas, vuelve a empezar por las más antiguas.</p>
   </dialog>
 
   <!-- ═════════ DIAGNÓSTICO ═════════ -->
   <dialog class="dialog dialog-wide" id="dlg-diag" aria-labelledby="diag-title">
     <form method="dialog" class="dialog-close"><button aria-label="Cerrar">✕</button></form>
     <h2 id="diag-title">Verificar catálogo</h2>
-    <p class="muted">Prueba (en silencio) cada pista del catálogo en tu navegador y te dice cuáles suenan y desde qué fuente. Útil si una pista dejó de existir en YouTube o Apple Music. Tarda un par de minutos.</p>
+    <p class="muted">Prueba (en silencio) cada pista del catálogo en tu navegador y te dice cuáles suenan y desde qué fuente. Útil si una pista dejó de existir en YouTube o Apple Music. Tarda unos segundos por pista.</p>
+    <p class="diag-scope" id="diag-scope"></p>
     <div class="diag-actions">
       <button class="btn btn-primary" id="btn-diag-run" type="button">Iniciar verificación</button>
       <button class="btn btn-ghost" id="btn-diag-copy" type="button" disabled>Copiar reporte</button>
@@ -185,16 +197,74 @@
     <ol class="diag-list" id="diag-list"></ol>
   </dialog>
 
+  <!-- ═════════ REPORTAR CANCIÓN ═════════ -->
+  <dialog class="dialog" id="dlg-report" aria-labelledby="report-title">
+    <form method="dialog" class="dialog-close"><button aria-label="Cerrar">✕</button></form>
+    <h2 id="report-title">Reportar canción</h2>
+    <div class="report-track">
+      <img id="report-art" alt="" referrerpolicy="no-referrer">
+      <div>
+        <p class="report-game" id="report-game-shown"></p>
+        <p class="report-song" id="report-song-shown"></p>
+        <p class="report-src" id="report-src"></p>
+      </div>
+    </div>
+    <form id="report-form" class="report-form">
+      <fieldset class="report-reasons">
+        <legend>¿Qué pasó?</legend>
+        <label><input type="radio" name="reason" value="otro-juego" checked><span>Es de <strong>otro juego</strong></span></label>
+        <label><input type="radio" name="reason" value="otra-cancion"><span>Es <strong>otra canción</strong> de este mismo juego</span></label>
+        <label><input type="radio" name="reason" value="cover"><span>Es un <strong>cover, remix</strong> o versión no oficial</span></label>
+        <label><input type="radio" name="reason" value="no-suena"><span><strong>No sonó</strong>, se cortó o era un anuncio</span></label>
+        <label><input type="radio" name="reason" value="otro"><span><strong>Otro</strong> problema</span></label>
+      </fieldset>
+      <div class="field" id="field-real-game">
+        <label for="report-real-game">¿De qué juego era en realidad?</label>
+        <input id="report-real-game" type="text" list="report-games" autocomplete="off" placeholder="Escribe el juego (si lo sabes)">
+        <datalist id="report-games"></datalist>
+      </div>
+      <div class="field" id="field-real-song">
+        <label for="report-real-song">¿Qué canción era? <span class="muted">(si la sabes)</span></label>
+        <input id="report-real-song" type="text" autocomplete="off" placeholder="Ej.: Dire, Dire Docks">
+      </div>
+      <div class="field">
+        <label for="report-comment">Comentario <span class="muted">(opcional)</span></label>
+        <textarea id="report-comment" rows="2" placeholder="Cualquier detalle que ayude"></textarea>
+      </div>
+      <label class="check"><input type="checkbox" id="report-hide" checked><span>No volver a ponerme esta pista</span></label>
+      <div class="report-actions">
+        <button type="submit" class="btn btn-primary" id="btn-report-send">Enviar reporte ↗</button>
+        <button type="button" class="btn btn-ghost" id="btn-report-save">Solo guardar aquí</button>
+      </div>
+      <p class="muted small">"Enviar" abre el reporte ya rellenado en GitHub (necesitas una cuenta gratis). Si no tienes, guárdalo aquí y luego cópialo desde <em>Mis reportes</em>.</p>
+    </form>
+  </dialog>
+
+  <!-- ═════════ MIS REPORTES ═════════ -->
+  <dialog class="dialog dialog-wide" id="dlg-reports" aria-labelledby="reports-title">
+    <form method="dialog" class="dialog-close"><button aria-label="Cerrar">✕</button></form>
+    <h2 id="reports-title">Mis reportes</h2>
+    <p class="muted">Canciones que reportaste desde este navegador. Puedes enviarlas a GitHub o copiarlas para mandarlas por otro lado.</p>
+    <div class="diag-actions">
+      <button class="btn btn-ghost" id="btn-reports-copy" type="button">📋 Copiar todos</button>
+      <button class="btn btn-ghost" id="btn-reports-unhide" type="button">👁 Volver a mostrar pistas ocultas</button>
+      <button class="btn-link" id="btn-reports-clear" type="button">Borrar lista</button>
+    </div>
+    <ol class="reports-list" id="reports-list"></ol>
+  </dialog>
+
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="version" id="app-version" aria-label="Versión de la app">v1.1</div>
 
   <!-- Reproductor de YouTube oculto (solo audio para el juego) -->
   <div id="yt-host" aria-hidden="true"><div id="yt-player"></div></div>
 
-  <script src="js/catalog.js" defer></script>
-  <script src="js/sources.js" defer></script>
-  <script src="js/engine.js" defer></script>
-  <script src="js/sfx.js" defer></script>
-  <script src="js/game.js" defer></script>
-  <script src="js/app.js" defer></script>
+  <script src="js/config.js?v=1.1" defer></script>
+  <script src="js/catalog.js?v=1.1" defer></script>
+  <script src="js/sources.js?v=1.1" defer></script>
+  <script src="js/engine.js?v=1.1" defer></script>
+  <script src="js/sfx.js?v=1.1" defer></script>
+  <script src="js/game.js?v=1.1" defer></script>
+  <script src="js/app.js?v=1.1" defer></script>
 </body>
 </html>

@@ -1,0 +1,45 @@
+name: 🚩 Reportar una canción
+description: Avisa si una pista del juego está mal (es de otro juego, es otra canción, es un cover, no suena…).
+title: "[Reporte] "
+labels: ["reporte-cancion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Gracias por ayudar a mejorar **¿Qué juego suena?**! Si abriste esto desde el juego, los datos de la pista ya vienen rellenados.
+  - type: input
+    id: pista
+    attributes:
+      label: ID de la pista
+      description: Identificador interno de la pista (lo rellena el juego).
+    validations:
+      required: true
+  - type: input
+    id: mostrado
+    attributes:
+      label: Lo que el juego dijo que era
+      description: Juego y canción que mostró la revelación.
+  - type: input
+    id: problema
+    attributes:
+      label: ¿Qué pasó?
+      description: Es de otro juego, es otra canción del mismo juego, es un cover/remix, no sonó…
+    validations:
+      required: true
+  - type: input
+    id: juego_real
+    attributes:
+      label: ¿De qué juego era en realidad?
+  - type: input
+    id: cancion_real
+    attributes:
+      label: ¿Qué canción era en realidad?
+  - type: input
+    id: fuente
+    attributes:
+      label: Fuente que sonó
+      description: Enlace de Apple Music o YouTube de lo que se reprodujo.
+  - type: textarea
+    id: comentario
+    attributes:
+      label: Comentarios
