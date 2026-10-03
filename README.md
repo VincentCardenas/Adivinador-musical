@@ -2,7 +2,9 @@
 
 Adivinador musical para gamers: suena un fragmento del **soundtrack oficial** de un videojuego y
 tienes que reconocer de cuál es. Halo, Gears of War, Hollow Knight, Mario, Kirby, Zelda, Pokémon,
-Final Fantasy, Elden Ring, Undertale, DOOM y más: **54 pistas de 42 sagas**.
+Final Fantasy, Elden Ring, Undertale, DOOM, League of Legends, Baldur's Gate 3 y más: **281 pistas de
+127 sagas y 215 juegos**, elegidos a partir de Metacritic, OpenCritic, SteamCharts y listas de los mejores
+soundtracks.
 
 Hecho con HTML, CSS y JavaScript puro (sin frameworks ni compilación).
 
@@ -135,8 +137,8 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
-- **1.1**: repertorio ampliado con juegos de Metacritic, OpenCritic y SteamCharts; categoría Online y
-  multijugador; el juego recuerda lo que ya escuchaste para no repetir; botón para reportar canciones;
+- **1.1**: repertorio ampliado de 54 a 281 pistas con juegos de Metacritic, OpenCritic y SteamCharts;
+  búsqueda estricta en Apple Music (descarta covers y remixes); categoría Online y multijugador; el juego recuerda lo que ya escuchaste para no repetir; botón para reportar canciones;
   versión visible en pantalla.
 - **1.0**: primera versión: 54 pistas, modos Clásico, Experto y Supervivencia, y verificación del catálogo.
 
