@@ -15,12 +15,12 @@
   'use strict';
 
   AM.CONFIG = {
-    version: '1.5',
+    version: '1.6',
     repo: 'VincentCardenas/Adivinador-musical',
     reportTemplate: 'reporte-cancion.yml',
     scoreboard: {
-      url: '',
-      key: '',
+      url: 'https://jzhadveclfjnyajrabec.supabase.co',
+      key: 'sb_publishable_wOOMswZtbNDhADtc03Od6Q_BxdECt8S',
       table: 'scores',
     },
   };

@@ -57,9 +57,8 @@ Luego abre <http://localhost:8000>.
 ## Ranking global
 
 El ranking guarda los puntajes en [Supabase](https://supabase.com) (una base de datos con plan gratis).
-Mientras no lo conectes, el juego funciona igual y el ranking dice "todavía no está activado".
-
-**Para activarlo (unos 5 minutos):**
+**Ya está activado**: [`js/config.js`](js/config.js) apunta al proyecto de Supabase del juego. Si algún día
+usas otro proyecto (o haces tu propia copia del juego), así se conecta:
 
 1. Crea una cuenta gratis en <https://supabase.com> y un proyecto nuevo (cualquier nombre y región; guarda
    la contraseña de la base de datos en un lugar seguro, el juego no la necesita).
@@ -80,8 +79,8 @@ puntajes en menos de 20 s). Si alguien pone un nickname feo, bórralo desde **Ta
 
 Dos detalles del plan gratis de Supabase:
 
-- Si el proyecto pasa **una semana sin uso**, Supabase lo pausa. Se reactiva desde su panel con un clic
-  (los datos no se pierden).
+- Si el proyecto pasa **una semana sin uso**, Supabase lo pausa y el ranking deja de cargar. Se reactiva
+  desde su panel con un clic (los datos no se pierden).
 - Como el juego no tiene servidor propio, alguien con conocimientos podría mandar un puntaje inventado
   (dentro de los límites de cada modo). Para un juego entre amigos es suficiente; si pasa, borra la fila.
 
@@ -210,6 +209,7 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **1.6**: el **ranking global** queda activado (Supabase).
 - **1.5**: el anime pasa a ser su **propio tema**, por época; **volumen parejo** entre pistas (se mide cada
   fuente y se bajan las que suenan más fuerte); se quitan 42 videos de YouTube que ya no existen (4 pistas de
   Nintendo que se habían quedado sin audio tienen videos nuevos).
