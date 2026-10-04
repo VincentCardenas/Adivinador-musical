@@ -208,21 +208,25 @@
   }
 
   /**
-   * Devuelve los candidatos reproducibles de una pista: primero el preview de Apple
-   * (si alguna fuente de Apple responde) y después los videos de YouTube.
+   * Devuelve los candidatos reproducibles de una pista, en el orden en que están sus fuentes:
+   * el primer preview de Apple que responda y los videos de YouTube.
+   * (Así una caricatura puede poner primero su entrada en español latino de YouTube
+   * y dejar el preview de Apple en inglés como respaldo.)
    */
   function resolve(track) {
     if (resolved.has(track.id)) return resolved.get(track.id);
     const promise = (async () => {
       const out = [];
-      for (const src of track.sources.filter((s) => s.type === 'itunes')) {
-        try {
-          const hit = await resolveItunes(src, track);
-          if (hit) { out.push(fromItunes(hit)); break; }
-        } catch (e) { /* probamos la siguiente fuente */ }
-      }
+      let appleFound = false;
       for (const src of track.sources) {
-        if (src.type === 'youtube') out.push(fromYoutube(src));
+        if (src.type === 'youtube') {
+          out.push(fromYoutube(src));
+        } else if (src.type === 'itunes' && !appleFound) {
+          try {
+            const hit = await resolveItunes(src, track);
+            if (hit) { out.push(fromItunes(hit)); appleFound = true; }
+          } catch (e) { /* probamos la siguiente fuente */ }
+        }
       }
       return out;
     })();

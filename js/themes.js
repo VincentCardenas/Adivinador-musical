@@ -1,0 +1,204 @@
+/*
+ * Temas del juego: videojuegos, series, caricaturas, Disney y canciones.
+ *
+ * Cada tema tiene sus propias categorías (épocas, plataformas…) y define cómo se llaman
+ * las dos respuestas de cada pista:
+ *   - `franchise` → respuesta "amplia" del modo Clásico (saga, artista, serie…)
+ *   - `game`      → respuesta exacta de Experto y Supervivencia (juego, canción, película…)
+ * Este archivo se carga después de todos los catálogos y marca cada pista con su tema.
+ */
+(function (AM) {
+  'use strict';
+
+  AM.THEMES = [
+    {
+      id: 'juegos', label: 'Videojuegos', icon: '🎮',
+      title: ['¿Qué juego', 'suena?'],
+      kicker: 'Adivinador musical para gamers',
+      sub: 'Escucha el soundtrack oficial y adivina de qué videojuego es.',
+      broad: 'saga', broadArt: 'la saga', broadPl: 'sagas',
+      exact: 'juego', exactArt: 'el juego', exactPl: 'juegos',
+      expertGoal: 'el juego exacto', survivalGoal: 'juego exacto',
+      question: '¿De qué juego es?',
+      placeholder: 'Escribe el nombre del juego…',
+      partial: 'saga correcta, otro juego',
+      clasicoExample: 'Halo, Kirby, Zelda…', survivalExample: '¿Halo 2 o Halo 3?',
+      otherReason: 'Es de otro juego', sameReason: 'Es otra canción de este mismo juego',
+      realLabel: '¿De qué juego era en realidad?', realPlaceholder: 'Escribe el juego (si lo sabes)',
+      songExample: 'Dire, Dire Docks',
+      ranks: {
+        survival: [
+          [25, 'Leyenda del soundtrack', 'Tus oídos tienen el 100% de logros.'],
+          [15, 'Jefe final', 'Pocos llegan tan lejos. ¡Impresionante!'],
+          [8, 'Veterano gamer', 'Tienes buen oído. ¿Otra partida?'],
+          [3, 'Aventurero', 'Vas por buen camino.'],
+          [0, 'Novato', 'Todos empezamos en el nivel 1-1.'],
+        ],
+        ratio: [
+          [0.9, 'Leyenda del soundtrack', 'Reconoces los juegos con los ojos cerrados.'],
+          [0.7, 'Gran oído gamer', '¡Casi perfecto!'],
+          [0.4, 'Nada mal, jugador', 'Sigue practicando y subirás de nivel.'],
+          [0, 'A seguir practicando', 'Hay mucho soundtrack por descubrir.'],
+        ],
+      },
+    },
+    {
+      id: 'series', label: 'Series', icon: '📺',
+      title: ['¿Qué serie', 'suena?'],
+      kicker: 'Adivinador musical de series de TV',
+      sub: 'Escucha la entrada o el tema principal y adivina de qué serie es.',
+      broad: 'serie', broadArt: 'la serie', broadPl: 'series',
+      exact: 'serie', exactArt: 'la serie', exactPl: 'series',
+      expertGoal: 'el nombre de la serie', survivalGoal: 'adivina la serie',
+      question: '¿De qué serie es?',
+      placeholder: 'Escribe el nombre de la serie…',
+      partial: 'misma franquicia, otra serie',
+      clasicoExample: 'Friends, Lost, Stranger Things…', survivalExample: 'sin pistas fáciles',
+      otherReason: 'Es de otra serie', sameReason: 'Es otra canción de esta misma serie',
+      realLabel: '¿De qué serie era en realidad?', realPlaceholder: 'Escribe la serie (si la sabes)',
+      songExample: "I'll Be There for You",
+      ranks: {
+        survival: [
+          [25, 'Maratonista legendario', 'Te sabes todas las entradas de memoria.'],
+          [15, 'Crítico de TV', 'Pocos llegan tan lejos. ¡Impresionante!'],
+          [8, 'Fan de las series', 'Tienes buen oído. ¿Otra partida?'],
+          [3, 'Espectador', 'Vas por buen camino.'],
+          [0, 'Recién suscrito', 'Todos empezamos por el primer capítulo.'],
+        ],
+        ratio: [
+          [0.9, 'Maratonista legendario', 'Reconoces cualquier serie con solo oír la entrada.'],
+          [0.7, 'Experto en series', '¡Casi perfecto!'],
+          [0.4, 'Buen espectador', 'Unos capítulos más y lo dominas.'],
+          [0, 'A seguir viendo', 'Hay muchas series por descubrir.'],
+        ],
+      },
+    },
+    {
+      id: 'caricaturas', label: 'Caricaturas', icon: '🧸',
+      title: ['¿Qué caricatura', 'suena?'],
+      kicker: 'Adivinador musical de caricaturas y anime',
+      sub: 'Escucha la entrada y adivina de qué caricatura es.',
+      broad: 'caricatura', broadArt: 'la caricatura', broadPl: 'caricaturas',
+      exact: 'caricatura', exactArt: 'la caricatura', exactPl: 'caricaturas',
+      expertGoal: 'el nombre de la caricatura', survivalGoal: 'adivina la caricatura',
+      question: '¿De qué caricatura es?',
+      placeholder: 'Escribe el nombre de la caricatura…',
+      partial: 'misma saga, otra caricatura',
+      clasicoExample: 'Los Picapiedra, Pokémon, Bob Esponja…', survivalExample: '¿Dragon Ball o Dragon Ball Z?',
+      otherReason: 'Es de otra caricatura', sameReason: 'Es otra canción de esta misma caricatura',
+      realLabel: '¿De qué caricatura era en realidad?', realPlaceholder: 'Escribe la caricatura (si la sabes)',
+      songExample: 'Cha-La Head-Cha-La',
+      ranks: {
+        survival: [
+          [25, 'Leyenda de las caricaturas', 'Tu infancia (y la de todos) vive en tu memoria.'],
+          [15, 'Héroe del sábado en la mañana', 'Pocos llegan tan lejos. ¡Impresionante!'],
+          [8, 'Fan de las caricaturas', 'Tienes buen oído. ¿Otra partida?'],
+          [3, 'Aprendiz', 'Vas por buen camino.'],
+          [0, 'Novato', 'Todos empezamos en el primer episodio.'],
+        ],
+        ratio: [
+          [0.9, 'Leyenda de las caricaturas', 'Reconoces cualquier entrada a la primera.'],
+          [0.7, 'Fan de las caricaturas', '¡Casi perfecto!'],
+          [0.4, 'Nada mal', 'Unas cuantas tardes de caricaturas más y lo dominas.'],
+          [0, 'A seguir viendo', 'Hay muchas caricaturas por descubrir.'],
+        ],
+      },
+    },
+    {
+      id: 'disney', label: 'Disney', icon: '🏰',
+      title: ['¿Qué película', 'suena?'],
+      kicker: 'Adivinador musical de películas de Disney',
+      sub: 'Escucha la canción (en español latino) y adivina de qué película de Disney es.',
+      broad: 'película', broadArt: 'la película', broadPl: 'películas',
+      exact: 'película', exactArt: 'la película', exactPl: 'películas',
+      expertGoal: 'la película exacta', survivalGoal: 'película exacta',
+      question: '¿De qué película es?',
+      placeholder: 'Escribe el nombre de la película…',
+      partial: 'saga correcta, otra película',
+      clasicoExample: 'El rey león, Frozen, Coco…', survivalExample: '¿Toy Story o Toy Story 2?',
+      otherReason: 'Es de otra película', sameReason: 'Es otra canción de esta misma película',
+      realLabel: '¿De qué película era en realidad?', realPlaceholder: 'Escribe la película (si la sabes)',
+      songExample: 'Hakuna Matata',
+      filters: [
+        {
+          id: 'pixar', type: 'toggle', default: true,
+          label: 'Incluir películas de Pixar', icon: '💡',
+          keep: (t, on) => on || !t.pixar,
+        },
+      ],
+      ranks: {
+        survival: [
+          [25, 'Leyenda de Disney', 'Hakuna matata: ninguna canción se te escapa.'],
+          [15, 'Protagonista', 'Pocos llegan tan lejos. ¡Impresionante!'],
+          [8, 'Fan de Disney', 'Tienes buen oído. ¿Otra partida?'],
+          [3, 'Aprendiz de magia', 'Vas por buen camino.'],
+          [0, 'Novato', 'Había una vez… tu primera partida.'],
+        ],
+        ratio: [
+          [0.9, 'Leyenda de Disney', 'Te sabes todas las canciones de memoria.'],
+          [0.7, 'Gran fan de Disney', '¡Casi perfecto!'],
+          [0.4, 'Nada mal', 'Un maratón de películas y lo dominas.'],
+          [0, 'A seguir viendo', 'Hay mucha magia por descubrir.'],
+        ],
+      },
+    },
+    {
+      id: 'canciones', label: 'Canciones', icon: '🎤',
+      title: ['¿Qué canción', 'suena?'],
+      kicker: 'Adivinador musical de canciones famosas',
+      sub: 'Escucha el fragmento y adivina qué canción es (y quién la canta).',
+      broad: 'artista', broadArt: 'el artista', broadPl: 'artistas',
+      exact: 'canción', exactArt: 'la canción', exactPl: 'canciones',
+      expertGoal: 'la canción exacta', survivalGoal: 'canción exacta',
+      question: '¿Quién la canta?', questionExact: '¿Qué canción es?',
+      placeholder: 'Escribe el nombre de la canción…',
+      partial: 'artista correcto, otra canción',
+      clasicoExample: 'Queen, Shakira, Luis Miguel…', survivalExample: 'adivina la canción exacta',
+      otherReason: 'Es otra canción', sameReason: 'Es otra versión (en vivo, remix…) de esta canción',
+      realLabel: '¿Qué canción era en realidad?', realPlaceholder: 'Escribe la canción (si la sabes)',
+      realSongLabel: '¿Quién la canta?', songExample: 'Queen',
+      showArtist: true,
+      filters: [
+        {
+          id: 'lang', type: 'choice', default: 'ambos', label: 'Idioma',
+          options: [
+            { value: 'ambos', label: '🌎 Ambos' },
+            { value: 'es', label: 'Español' },
+            { value: 'en', label: 'Inglés' },
+          ],
+          keep: (t, v) => v === 'ambos' || !t.lang || t.lang === v,
+        },
+      ],
+      ranks: {
+        survival: [
+          [25, 'Leyenda musical', 'Reconoces cualquier canción a la primera.'],
+          [15, 'Alma de la fiesta', 'Pocos llegan tan lejos. ¡Impresionante!'],
+          [8, 'Melómano', 'Tienes buen oído. ¿Otra partida?'],
+          [3, 'Buen oído', 'Vas por buen camino.'],
+          [0, 'Principiante', 'Todos empezamos con la primera canción.'],
+        ],
+        ratio: [
+          [0.9, 'Leyenda musical', 'Reconoces cualquier canción a la primera.'],
+          [0.7, 'Gran oído musical', '¡Casi perfecto!'],
+          [0.4, 'Nada mal', 'Sigue escuchando y subirás de nivel.'],
+          [0, 'A seguir escuchando', 'Hay mucha música por descubrir.'],
+        ],
+      },
+    },
+  ];
+
+  const byId = {};
+  AM.THEMES.forEach((t) => { byId[t.id] = t; t.filters = t.filters || []; });
+  AM.theme = (id) => byId[id] || AM.THEMES[0];
+
+  // Las categorías originales (videojuegos) no traen tema: se les asigna aquí.
+  const catTheme = {};
+  AM.CATEGORIES.forEach((c) => {
+    if (!c.theme) c.theme = 'juegos';
+    catTheme[c.id] = c.theme;
+  });
+  AM.CATALOG.forEach((t) => { t.theme = catTheme[t.cat] || 'juegos'; });
+  AM.EXTRA_GAMES.forEach((g) => { if (!g.theme) g.theme = g.cat ? (catTheme[g.cat] || 'juegos') : 'juegos'; });
+
+  AM.themeCategories = (id) => AM.CATEGORIES.filter((c) => c.theme === id);
+})(window.AM = window.AM || {});

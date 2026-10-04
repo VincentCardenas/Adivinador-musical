@@ -23,17 +23,52 @@
     },
   };
 
-  const ALL_CATS = AM.CATEGORIES.map((c) => c.id);
+  const savedTheme = Store.get('theme', 'juegos');
   const savedMode = Store.get('mode', 'clasico');
-  const savedCats = Store.get('cats', ALL_CATS);
   const savedVolume = Number(Store.get('volume', 0.8));
+  const savedFilters = Store.get('filters', {});
   const settings = {
+    theme: AM.THEMES.some((t) => t.id === savedTheme) ? savedTheme : 'juegos',
     mode: AM.MODES[savedMode] ? savedMode : 'clasico',
-    cats: Array.isArray(savedCats) ? savedCats.filter((c) => ALL_CATS.indexOf(c) >= 0) : ALL_CATS.slice(),
+    cats: {},     // categorías elegidas, por tema
+    filters: savedFilters && typeof savedFilters === 'object' ? savedFilters : {}, // { disney: { pixar }, canciones: { lang } }
     volume: isFinite(savedVolume) ? Math.max(0, Math.min(1, savedVolume)) : 0.8,
     sfx: Store.get('sfx', true) !== false,
   };
-  if (!settings.cats.length) settings.cats = ALL_CATS.slice();
+
+  // Categorías por tema. Las versiones anteriores guardaban solo las de videojuegos en "cats".
+  (function loadCats() {
+    const saved = Store.get('catsByTheme', null) || {};
+    const legacy = Store.get('cats', null);
+    AM.THEMES.forEach((T) => {
+      const all = AM.themeCategories(T.id).map((c) => c.id);
+      let list = saved[T.id];
+      if (!list && T.id === 'juegos' && Array.isArray(legacy)) list = legacy;
+      list = Array.isArray(list) ? list.filter((c) => all.indexOf(c) >= 0) : all.slice();
+      settings.cats[T.id] = list.length ? list : all.slice();
+    });
+  })();
+
+  /* ── récords por tema y modo (antes eran solo por modo: pasan a Videojuegos) ── */
+  const Records = {
+    all: (function () {
+      let r = Store.get('records2', null);
+      if (!r || typeof r !== 'object') {
+        r = {};
+        const old = Store.get('records', {}) || {};
+        Object.keys(old).forEach((m) => { r['juegos:' + m] = old[m]; });
+        Store.set('records2', r);
+      }
+      return r;
+    })(),
+    get(theme, mode) { return this.all[theme + ':' + mode] || 0; },
+    set(theme, mode, value) { this.all[theme + ':' + mode] = value; Store.set('records2', this.all); },
+  };
+
+  function theme() { return AM.theme(settings.theme); }
+  function themeCats() { return settings.cats[settings.theme]; }
+  function allCats() { return AM.themeCategories(settings.theme).map((c) => c.id); }
+  function scope() { return AM.Logic.scope(settings.theme, settings.filters[settings.theme]); }
 
   let game = null;
   let timerRaf = 0;
@@ -53,7 +88,19 @@
     unhideAll() { this.hidden = []; Store.set('hidden', []); },
   };
 
-  function currentPool() { return AM.Logic.pool(settings.cats, History.hidden); }
+  function currentPool() { return AM.Logic.pool(themeCats(), History.hidden, scope().keep); }
+
+  /** Pregunta que se muestra mientras suena la pista. */
+  function question(g) {
+    const T = g.theme;
+    return g.mode.answer === 'game' ? (T.questionExact || T.question) : T.question;
+  }
+
+  /** Línea secundaria de una pista: la canción (♪) o, en Canciones, quién la canta (🎤). */
+  function trackLine(T, t, m) {
+    if (T.showArtist) return '🎤 ' + t.franchise;
+    return '♪ ' + ((m && m.trackName) || t.title);
+  }
 
   /* ═════════ utilidades de interfaz ═════════ */
 
@@ -166,29 +213,78 @@
 
   /* ═════════ pantalla de inicio ═════════ */
 
-  function renderModes() {
-    const records = Store.get('records', {}) || {};
-    $('#modes').innerHTML = Object.keys(AM.MODES).map((id) => {
-      const m = AM.MODES[id];
-      const sel = id === settings.mode;
+  function renderThemes() {
+    $('#themes').innerHTML = AM.THEMES.map((T) => {
+      const sel = T.id === settings.theme;
+      const n = AM.Logic.scope(T.id, settings.filters[T.id]).tracks.length;
       return `
-        <button type="button" class="mode-card${sel ? ' is-selected' : ''}" role="radio" aria-checked="${sel}" data-mode="${id}">
-          <span class="mode-icon" aria-hidden="true">${m.icon}</span>
-          <span class="mode-name">${esc(m.name)}</span>
-          <span class="mode-desc">${esc(m.desc)}</span>
-          <span class="mode-record">🏆 Récord: <strong>${records[id] ? fmt(records[id]) : '—'}</strong></span>
+        <button type="button" class="theme-card${sel ? ' is-selected' : ''}" role="radio" aria-checked="${sel}" data-theme="${T.id}">
+          <span class="theme-icon" aria-hidden="true">${T.icon}</span>
+          <span class="theme-name">${esc(T.label)}</span>
+          <span class="theme-count">${n} pistas</span>
         </button>`;
     }).join('');
   }
 
+  function renderHero() {
+    const T = theme();
+    $('#home-kicker').textContent = T.kicker;
+    $('#home-title').innerHTML = `<span>${esc(T.title[0])}</span><span>${esc(T.title[1])}</span>`;
+    $('#home-title').classList.toggle('is-long', T.title[0].length > 11);
+    $('#home-sub').textContent = T.sub;
+    $('#brand-text').textContent = T.title.join(' ');
+    $('#brand-icon').textContent = T.icon;
+    document.title = `${T.title.join(' ')} · Adivinador musical`;
+  }
+
+  function renderModes() {
+    const T = theme();
+    $('#modes').innerHTML = Object.keys(AM.MODES).map((id) => {
+      const m = AM.MODES[id];
+      const sel = id === settings.mode;
+      const rec = Records.get(T.id, id);
+      return `
+        <button type="button" class="mode-card${sel ? ' is-selected' : ''}" role="radio" aria-checked="${sel}" data-mode="${id}">
+          <span class="mode-icon" aria-hidden="true">${m.icon}</span>
+          <span class="mode-name">${esc(m.name)}</span>
+          <span class="mode-desc">${esc(m.describe(T))}</span>
+          <span class="mode-record">🏆 Récord: <strong>${rec ? fmt(rec) : '—'}</strong></span>
+        </button>`;
+    }).join('');
+  }
+
+  function renderFilters() {
+    const T = theme();
+    const vals = scope().values;
+    $('#filters').hidden = !T.filters.length;
+    $('#filters').innerHTML = T.filters.map((f) => {
+      if (f.type === 'toggle') {
+        const on = !!vals[f.id];
+        return `<button type="button" class="switch${on ? ' is-on' : ''}" data-filter="${f.id}" role="switch" aria-checked="${on}">
+            <span class="switch-track" aria-hidden="true"><span class="switch-dot"></span></span>
+            <span>${f.icon ? f.icon + ' ' : ''}${esc(f.label)}</span>
+          </button>`;
+      }
+      return `<div class="segmented" role="radiogroup" aria-label="${esc(f.label)}">
+          <span class="segmented-label">${esc(f.label)}:</span>
+          ${f.options.map((o) => {
+            const on = vals[f.id] === o.value;
+            return `<button type="button" role="radio" aria-checked="${on}" class="${on ? 'is-on' : ''}" data-filter="${f.id}" data-value="${esc(o.value)}">${esc(o.label)}</button>`;
+          }).join('')}
+        </div>`;
+    }).join('');
+  }
+
   function renderChips() {
+    const sc = scope();
+    const cats = themeCats();
     const counts = {};
-    AM.CATALOG.forEach((t) => { counts[t.cat] = (counts[t.cat] || 0) + 1; });
-    const all = settings.cats.length === ALL_CATS.length;
+    sc.tracks.forEach((t) => { counts[t.cat] = (counts[t.cat] || 0) + 1; });
+    const all = cats.length === allCats().length;
     $('#chips').innerHTML =
-      `<button type="button" class="chip${all ? ' is-on' : ''}" data-cat="__all" aria-pressed="${all}">✨ Todo <span>${AM.CATALOG.length}</span></button>` +
-      AM.CATEGORIES.map((c) => {
-        const on = settings.cats.indexOf(c.id) >= 0;
+      `<button type="button" class="chip${all ? ' is-on' : ''}" data-cat="__all" aria-pressed="${all}">✨ Todo <span>${sc.tracks.length}</span></button>` +
+      AM.themeCategories(settings.theme).map((c) => {
+        const on = cats.indexOf(c.id) >= 0;
         return `<button type="button" class="chip${on ? ' is-on' : ''}" data-cat="${c.id}" aria-pressed="${on}">${c.icon} ${esc(c.label)} <span>${counts[c.id] || 0}</span></button>`;
       }).join('');
     updatePoolInfo();
@@ -222,9 +318,37 @@
   });
 
   function renderHome() {
+    renderHero();
+    renderThemes();
     renderModes();
+    renderFilters();
     renderChips();
   }
+
+  $('#themes').addEventListener('click', (e) => {
+    const card = e.target.closest('[data-theme]');
+    if (!card || card.dataset.theme === settings.theme) return;
+    settings.theme = card.dataset.theme;
+    Store.set('theme', settings.theme);
+    sfx('click');
+    renderHome();
+  });
+
+  $('#filters').addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-filter]');
+    if (!btn) return;
+    const T = theme();
+    const f = T.filters.find((x) => x.id === btn.dataset.filter);
+    if (!f) return;
+    const vals = Object.assign({}, scope().values);
+    vals[f.id] = f.type === 'toggle' ? !vals[f.id] : btn.dataset.value;
+    settings.filters[T.id] = vals;
+    Store.set('filters', settings.filters);
+    sfx('click');
+    renderThemes();
+    renderFilters();
+    renderChips();
+  });
 
   $('#modes').addEventListener('click', (e) => {
     const card = e.target.closest('[data-mode]');
@@ -239,10 +363,13 @@
     const chip = e.target.closest('[data-cat]');
     if (!chip) return;
     const id = chip.dataset.cat;
-    if (id === '__all') settings.cats = ALL_CATS.slice();
-    else if (settings.cats.indexOf(id) >= 0) settings.cats = settings.cats.filter((c) => c !== id);
-    else settings.cats = settings.cats.concat([id]);
-    Store.set('cats', settings.cats);
+    const cats = themeCats();
+    let next;
+    if (id === '__all') next = allCats();
+    else if (cats.indexOf(id) >= 0) next = cats.filter((c) => c !== id);
+    else next = cats.concat([id]);
+    settings.cats[settings.theme] = next;
+    Store.set('catsByTheme', settings.cats);
     sfx('click');
     renderChips();
   });
@@ -262,6 +389,8 @@
 
     game = {
       mode: mode,
+      theme: theme(),
+      scope: scope(),
       queue: AM.Logic.buildQueue(pool, History.seen),
       total: isFinite(mode.rounds) ? Math.min(mode.rounds, pool.length) : Infinity,
       round: 0,
@@ -291,6 +420,7 @@
     $('#expert').hidden = !expert;
     $('#options').hidden = expert;
     $('#btn-replay').textContent = '↺ Repetir';
+    $('#guess-input').placeholder = game.theme.placeholder;
     if (expert) {
       const steps = m.steps;
       const max = steps[steps.length - 1];
@@ -421,7 +551,7 @@
         cur.started = true;
         if (!expert) { enableOptions(); startTimer(); }
       }
-      if (!cur.answered) setStatus(expert ? `Escuchando ${limit} s…` : '¿De qué juego es?');
+      if (!cur.answered) setStatus(expert ? `Escuchando ${limit} s…` : question(g));
     }).catch((e) => {
       if (game !== g || g.cur !== cur || !e || e.code === 'cancelled') return;
       if (e.code === 'blocked') {
@@ -492,7 +622,7 @@
 
   function renderOptions() {
     const cur = game.cur;
-    cur.choices = AM.Logic.makeChoices(cur.track, game.mode);
+    cur.choices = AM.Logic.makeChoices(cur.track, game.mode, game.scope);
     const box = $('#options');
     box.classList.add('is-waiting');
     box.innerHTML = cur.choices.map((c, i) =>
@@ -566,7 +696,7 @@
         return `<li>${now ? '▸ ' : ''}Intento ${i + 1}<span class="tag">${s} s</span></li>`;
       }
       if (a.type === 'skip') return '<li class="is-skip">⏭ Saltado</li>';
-      if (a.type === 'partial') return `<li class="is-partial">🟨 ${esc(a.text)}<span class="tag">saga correcta, otro juego</span></li>`;
+      if (a.type === 'partial') return `<li class="is-partial">🟨 ${esc(a.text)}<span class="tag">${esc(g.theme.partial)}</span></li>`;
       if (a.type === 'ok') return `<li class="is-ok">✅ ${esc(a.text)}</li>`;
       return `<li class="is-wrong">❌ ${esc(a.text)}</li>`;
     }).join('');
@@ -585,8 +715,11 @@
 
   function findGame(text) {
     const n = AM.Sources.norm(text);
-    if (!n) return null;
-    return AM.Logic.allGames().find((g) => AM.Sources.norm(g.game) === n) || null;
+    if (!n || !game) return null;
+    const games = AM.Logic.allGames(game.scope);
+    return games.find((g) => AM.Sources.norm(g.game) === n)
+      || games.find((g) => g.aka.some((a) => AM.Sources.norm(a) === n))
+      || null;
   }
 
   function expertGuess() {
@@ -596,7 +729,7 @@
     const input = $('#guess-input');
     const hit = findGame(input.value);
     if (!hit) {
-      toast('Elige un juego de la lista (escribe y selecciona una sugerencia).');
+      toast('Elige una opción de la lista (escribe y selecciona una sugerencia).');
       input.focus();
       return;
     }
@@ -679,12 +812,21 @@
     const list = $('#guess-list');
     if (!nq) { closeCombo(); return; }
     const words = nq.split(' ');
-    combo.items = AM.Logic.allGames()
-      .filter((g) => { const n = AM.Sources.norm(g.game + ' ' + g.franchise); return words.every((w) => n.indexOf(w) >= 0); })
+    if (!game) { closeCombo(); return; }
+    const showArtist = game.theme.showArtist;
+    combo.items = AM.Logic.allGames(game.scope)
+      .filter((g) => {
+        const n = AM.Sources.norm([g.game, g.franchise].concat(g.aka).join(' '));
+        return words.every((w) => n.indexOf(w) >= 0);
+      })
       .slice(0, 8);
     if (combo.active >= combo.items.length) combo.active = combo.items.length - 1;
     list.innerHTML = combo.items.length
-      ? combo.items.map((g, i) => `<li id="opt-${i}" role="option" data-i="${i}" aria-selected="${i === combo.active}">${highlight(g.game, q)}</li>`).join('')
+      ? combo.items.map((g, i) => {
+        // En Canciones se muestra el artista; en los demás, el nombre alterno con el que coincidió.
+        const sub = showArtist ? g.franchise : (g.aka.find((a) => AM.Sources.norm(a).indexOf(nq) >= 0) || '');
+        return `<li id="opt-${i}" role="option" data-i="${i}" aria-selected="${i === combo.active}">${highlight(g.game, q)}${sub ? `<small>${esc(sub)}</small>` : ''}</li>`;
+      }).join('')
       : '<li class="empty">Sin coincidencias</li>';
     list.hidden = false;
     input.setAttribute('aria-expanded', 'true');
@@ -752,7 +894,7 @@
     }
 
     $('#reveal-game').textContent = t.game;
-    $('#reveal-track').textContent = '♪ ' + (m.trackName || t.title);
+    $('#reveal-track').textContent = trackLine(g.theme, t, m);
     $('#reveal-meta').textContent = [t.composer, t.year, t.platform].filter(Boolean).join(' · ');
     reportCtx = { track: t, meta: m };
     const link = $('#reveal-link');
@@ -824,14 +966,14 @@
     }
     if (exhausted && g.mode.lives && g.lives > 0) toast('¡Escuchaste todas las pistas disponibles!', 4000);
 
+    const T = g.theme;
     const stats = { score: g.score, correct: g.correct, total: g.history.length, bestStreak: g.bestStreak };
-    const records = Store.get('records', {}) || {};
-    const prev = records[g.mode.id] || 0;
+    const prev = Records.get(T.id, g.mode.id);
     const isRecord = g.score > prev && g.score > 0;
-    if (isRecord) { records[g.mode.id] = g.score; Store.set('records', records); }
+    if (isRecord) Records.set(T.id, g.mode.id, g.score);
 
-    const r = AM.Logic.rank(g.mode, stats);
-    const share = AM.Logic.shareText(g.mode, stats, g.history);
+    const r = AM.Logic.rank(g.mode, stats, T);
+    const share = AM.Logic.shareText(g.mode, stats, g.history, T);
     const pct = stats.total ? Math.round((stats.correct / stats.total) * 100) : 0;
     const grid = g.history.map((h) => AM.Logic.emojiFor(g.mode, h)).join('');
 
@@ -845,7 +987,7 @@
           ${art}
           <div>
             <div class="r-game">${esc(h.track.game)}</div>
-            <div class="r-track">♪ ${esc(m.trackName || h.track.title)}${link}</div>
+            <div class="r-track">${esc(trackLine(T, h.track, m))}${link}</div>
           </div>
           <div class="r-res">${AM.Logic.emojiFor(g.mode, h)}<b>${h.points ? '+' + fmt(h.points) : '0'}</b></div>
           <button type="button" class="row-report" data-report="${i}" title="Reportar esta canción" aria-label="Reportar ${esc(h.track.game)}">🚩</button>
@@ -854,7 +996,7 @@
 
     $('#results-root').innerHTML = `
       <div class="results">
-        <p class="kicker">${g.mode.icon} ${esc(g.mode.name)} · fin de la partida</p>
+        <p class="kicker">${T.icon} ${esc(T.label)} · ${g.mode.icon} ${esc(g.mode.name)} · fin de la partida</p>
         <h2 class="results-title">${esc(r[0])}</h2>
         <p class="results-sub">${esc(r[1])}</p>
         ${isRecord ? '<div class="record-badge">★ ¡Nuevo récord! ★</div>' : ''}
@@ -871,11 +1013,16 @@
           <button type="button" class="btn btn-ghost" data-act="share">📋 Compartir</button>
           <button type="button" class="btn btn-ghost" data-act="home">⌂ Menú</button>
         </div>
+        <section class="board" aria-labelledby="board-title">
+          <h3 class="rounds-title" id="board-title">🏆 Ranking global · ${esc(T.label)} · ${esc(g.mode.name)}</h3>
+          <div id="board-root"></div>
+        </section>
         <h3 class="rounds-title">🎵 Lo que sonó (para tu playlist)</h3>
         <ol class="rounds">${rows}</ol>
       </div>`;
     $('#results-root').dataset.share = share;
     resultsHistory = g.history;
+    renderResultBoard(g, stats);
 
     showScreen('results');
     sfx(isRecord ? 'record' : 'end');
@@ -924,6 +1071,146 @@
     if (act === 'again') startGame();
     else if (act === 'home') { game = null; renderHome(); showScreen('home'); }
     else if (act === 'share') shareResult($('#results-root').dataset.share || '');
+  });
+
+  /* ═════════ ranking global ═════════ */
+
+  let boardCtx = null; // { entry, savedId, saving } de la partida que acaba de terminar
+  const MEDALS = ['🥇', '🥈', '🥉'];
+
+  function boardRow(r, i, mine, modeId) {
+    const pos = i < 3 ? MEDALS[i] : String(i + 1);
+    const detail = modeId === 'supervivencia'
+      ? `${r.aciertos} aciertos`
+      : `${r.aciertos}/${r.rondas}`;
+    return `<li class="${mine ? 'is-me' : ''}">
+        <span class="b-pos">${pos}</span>
+        <span class="b-nick">${esc(r.nick)}${mine ? ' <em>(tú)</em>' : ''}</span>
+        <span class="b-detail">${esc(detail)}</span>
+        <b class="b-score">${fmt(r.puntos)}</b>
+      </li>`;
+  }
+
+  /** Carga y dibuja una tabla del ranking. Devuelve las filas (o null si falló). */
+  async function loadBoard(listEl, tema, modo, opts) {
+    opts = opts || {};
+    listEl.innerHTML = '<li class="empty">Cargando ranking…</li>';
+    try {
+      const rows = (await AM.Scores.top(tema, modo, { since: opts.since, limit: 50 })) || [];
+      if (!listEl.isConnected) return rows;
+      listEl.innerHTML = rows.length
+        ? rows.map((r, i) => boardRow(r, i, opts.highlight != null && r.id === opts.highlight, modo)).join('')
+        : '<li class="empty">Todavía nadie ha guardado un puntaje aquí. ¡Estrena el ranking!</li>';
+      return rows;
+    } catch (e) {
+      console.warn('[Adivinador] Ranking no disponible:', e);
+      if (listEl.isConnected) listEl.innerHTML = '<li class="empty">No se pudo cargar el ranking. Revisa tu conexión e inténtalo más tarde.</li>';
+      return null;
+    }
+  }
+
+  function renderResultBoard(g, stats) {
+    const root = $('#board-root');
+    boardCtx = {
+      entry: { tema: g.theme.id, modo: g.mode.id, puntos: g.score, aciertos: stats.correct, rondas: stats.total, racha: stats.bestStreak },
+      savedId: null,
+      saving: false,
+    };
+    if (!AM.Scores.enabled()) {
+      root.innerHTML = '<p class="board-msg">El ranking global todavía no está activado en este sitio.</p>';
+      return;
+    }
+    const canSave = g.score > 0;
+    root.innerHTML = `
+      ${canSave ? `<form class="board-form" id="board-form" autocomplete="off" novalidate>
+        <label class="sr-only" for="board-nick">Tu nickname</label>
+        <input id="board-nick" type="text" maxlength="16" placeholder="Tu nickname" value="${esc(Store.get('nick', ''))}" spellcheck="false" autocapitalize="off">
+        <button type="submit" class="btn btn-primary" id="board-save">Guardar en el ranking</button>
+      </form>` : ''}
+      <p class="board-msg" id="board-msg">${canSave
+        ? 'Escribe tu nickname (de 2 a 16 letras o números) y guarda tu puntaje.'
+        : 'Haz al menos un punto para entrar al ranking.'}</p>
+      <ol class="board-list" id="board-list"></ol>`;
+    loadBoard($('#board-list'), boardCtx.entry.tema, boardCtx.entry.modo);
+  }
+
+  $('#results-root').addEventListener('submit', async (e) => {
+    if (e.target.id !== 'board-form') return;
+    e.preventDefault();
+    const ctx = boardCtx;
+    if (!ctx || ctx.saving || ctx.savedId) return;
+    const input = $('#board-nick');
+    const msg = $('#board-msg');
+    const nick = AM.Scores.cleanNick(input.value);
+    if (!nick) {
+      msg.textContent = 'Ese nickname no sirve: usa de 2 a 16 letras o números (también se valen espacios, puntos y guiones).';
+      input.focus();
+      return;
+    }
+    ctx.saving = true;
+    input.disabled = true;
+    $('#board-save').disabled = true;
+    msg.textContent = 'Guardando…';
+    try {
+      const id = await AM.Scores.submit(Object.assign({ nick: nick }, ctx.entry));
+      ctx.savedId = id || true;
+      Store.set('nick', nick);
+      sfx('correct');
+      const form = $('#board-form');
+      if (form) form.hidden = true;
+      const rows = await loadBoard($('#board-list'), ctx.entry.tema, ctx.entry.modo, { highlight: id });
+      const pos = rows ? rows.findIndex((r) => r.id === id) : -1;
+      msg.textContent = pos >= 0
+        ? `¡Listo, ${nick}! Quedaste en el lugar #${pos + 1}.`
+        : `¡Listo, ${nick}! Tu puntaje quedó guardado (por ahora, fuera del top 50).`;
+    } catch (err) {
+      ctx.saving = false;
+      input.disabled = false;
+      $('#board-save').disabled = false;
+      msg.textContent = 'No se pudo guardar: ' + (err && err.message ? err.message : 'error desconocido') + '. Inténtalo de nuevo.';
+    }
+  });
+
+  /* Diálogo "Ranking" desde el inicio */
+  const boardView = { theme: null, mode: null, period: 'siempre' };
+
+  function renderBoardDialog() {
+    $('#board-themes').innerHTML = AM.THEMES.map((T) =>
+      `<button type="button" role="tab" aria-selected="${T.id === boardView.theme}" class="${T.id === boardView.theme ? 'is-on' : ''}" data-board-theme="${T.id}">${T.icon} ${esc(T.label)}</button>`
+    ).join('');
+    $('#board-modes').innerHTML = Object.keys(AM.MODES).map((id) => {
+      const m = AM.MODES[id];
+      return `<button type="button" role="tab" aria-selected="${id === boardView.mode}" class="${id === boardView.mode ? 'is-on' : ''}" data-board-mode="${id}">${m.icon} ${esc(m.name)}</button>`;
+    }).join('');
+    $$('#board-period [data-period]').forEach((b) => {
+      const on = b.dataset.period === boardView.period;
+      b.classList.toggle('is-on', on);
+      b.setAttribute('aria-checked', String(on));
+    });
+    const list = $('#board-dlg-list');
+    if (!AM.Scores.enabled()) {
+      list.innerHTML = '<li class="empty">El ranking global todavía no está activado en este sitio.</li>';
+      return;
+    }
+    const since = boardView.period === 'semana' ? new Date(Date.now() - 7 * 24 * 3600 * 1000) : null;
+    loadBoard(list, boardView.theme, boardView.mode, { since: since });
+  }
+
+  $('#btn-board').addEventListener('click', () => {
+    boardView.theme = settings.theme;
+    boardView.mode = settings.mode;
+    renderBoardDialog();
+    openDialog($('#dlg-board'));
+  });
+  $('#dlg-board').addEventListener('click', (e) => {
+    const t = e.target.closest('[data-board-theme]');
+    const m = e.target.closest('[data-board-mode]');
+    const p = e.target.closest('[data-period]');
+    if (t) boardView.theme = t.dataset.boardTheme;
+    else if (m) boardView.mode = m.dataset.boardMode;
+    else if (p) boardView.period = p.dataset.period;
+    else return;
+    renderBoardDialog();
   });
 
   /* ── abandonar ── */
@@ -1053,7 +1340,7 @@
     AM.Engine.unlock();
     AM.Engine.setMuted(true);
 
-    const tracks = AM.Logic.pool(settings.cats);
+    const tracks = AM.Logic.pool(themeCats(), [], scope().keep);
     const list = $('#diag-list');
     list.innerHTML = tracks.map((t, i) =>
       `<li id="diag-${i}"><span class="d-name">${esc(t.game)} — ${esc(t.title)}</span><span class="d-status">en espera</span></li>`
@@ -1093,8 +1380,8 @@
 
   $('#btn-diag').addEventListener('click', () => {
     if (!diag.running) {
-      const n = AM.Logic.pool(settings.cats).length;
-      $('#diag-scope').textContent = `Se verificarán las ${n} pistas de las categorías que tienes elegidas en el inicio (elige "Todo" para revisar el catálogo completo).`;
+      const n = AM.Logic.pool(themeCats(), [], scope().keep).length;
+      $('#diag-scope').textContent = `Se verificarán las ${n} pistas de ${theme().label} en las categorías que tienes elegidas en el inicio (elige "Todo" para revisar el tema completo).`;
     }
     openDialog($('#dlg-diag'));
   });
@@ -1122,6 +1409,14 @@
     'otro': 'Otro problema',
   };
 
+  /** Texto del motivo según el tema de la pista ("Es de otra serie", "Es otra canción"…). */
+  function reasonText(r) {
+    const T = AM.theme(r.theme || 'juegos');
+    if (r.reason === 'otro-juego') return T.otherReason;
+    if (r.reason === 'otra-cancion') return T.sameReason;
+    return REASONS[r.reason] || r.reason;
+  }
+
   const savedReports = Store.get('reports', []);
   const Reports = {
     list: Array.isArray(savedReports) ? savedReports : [],
@@ -1136,11 +1431,11 @@
     $('#btn-my-reports').textContent = n ? `🚩 Mis reportes (${n})` : '🚩 Mis reportes';
   }
 
-  let gamesListFilled = false;
-  function fillGamesDatalist() {
-    if (gamesListFilled) return;
-    gamesListFilled = true;
-    $('#report-games').innerHTML = AM.Logic.allGames().map((g) => `<option value="${esc(g.game)}"></option>`).join('');
+  let gamesListTheme = null;
+  function fillGamesDatalist(themeId) {
+    if (gamesListTheme === themeId) return;
+    gamesListTheme = themeId;
+    $('#report-games').innerHTML = AM.Logic.allGames(AM.Logic.scope(themeId)).map((g) => `<option value="${esc(g.game)}"></option>`).join('');
   }
 
   function selectedReason() {
@@ -1158,10 +1453,17 @@
     reportCtx = ctx;
     const t = ctx.track;
     const m = ctx.meta || {};
+    const T = AM.theme(t.theme);
     $('#report-form').reset();
-    fillGamesDatalist();
+    fillGamesDatalist(T.id);
+    $('#reason-other').textContent = T.otherReason;
+    $('#reason-same').textContent = T.sameReason;
+    $('#report-real-game-label').textContent = T.realLabel;
+    $('#report-real-game').placeholder = T.realPlaceholder;
+    $('#report-real-song-label').innerHTML = esc(T.realSongLabel || '¿Qué canción era?') + ' <span class="muted">(si la sabes)</span>';
+    $('#report-real-song').placeholder = T.songExample ? 'Ej.: ' + T.songExample : '';
     $('#report-game-shown').textContent = t.game;
-    $('#report-song-shown').textContent = '♪ ' + (m.trackName || t.title);
+    $('#report-song-shown').textContent = trackLine(T, t, m);
     $('#report-src').textContent = m.source ? `Sonó desde ${m.source}` : '';
     const art = $('#report-art');
     if (m.artwork) { art.src = m.artwork; art.hidden = false; } else { art.removeAttribute('src'); art.hidden = true; }
@@ -1173,9 +1475,10 @@
     const params = new URLSearchParams({
       template: AM.CONFIG.reportTemplate,
       title: `[Reporte] ${r.game} — ${r.title}`,
+      tema: AM.theme(r.theme || 'juegos').label,
       pista: r.trackId,
       mostrado: `${r.game} — ${r.title}`,
-      problema: REASONS[r.reason] || r.reason,
+      problema: reasonText(r),
       juego_real: r.realGame || '',
       cancion_real: r.realSong || '',
       fuente: [r.source, r.link].filter(Boolean).join(' · '),
@@ -1187,7 +1490,7 @@
   function reportText(r) {
     const lines = [
       `• ${r.game} — ${r.title} [${r.trackId}]`,
-      `  Problema: ${REASONS[r.reason] || r.reason}`,
+      `  Problema: ${reasonText(r)}`,
     ];
     if (r.realGame) lines.push(`  Juego real: ${r.realGame}`);
     if (r.realSong) lines.push(`  Canción real: ${r.realSong}`);
@@ -1204,6 +1507,7 @@
       id: 'r' + Date.now().toString(36),
       date: new Date().toISOString(),
       trackId: t.id,
+      theme: t.theme || 'juegos',
       game: t.game,
       title: m.trackName || t.title,
       source: m.source || '',
@@ -1247,7 +1551,7 @@
     } else {
       list.innerHTML = Reports.list.map((r, i) => {
         const extra = [
-          REASONS[r.reason] || r.reason,
+          esc(reasonText(r)),
           r.realGame ? `era de: ${esc(r.realGame)}` : '',
           r.realSong ? `canción: «${esc(r.realSong)}»` : '',
         ].filter(Boolean).join(' · ');
@@ -1280,7 +1584,7 @@
     renderReports();
   });
   $('#btn-reports-copy').addEventListener('click', () => {
-    const text = ['Reportes de ¿Qué juego suena?'].concat(Reports.list.map(reportText)).join('\n');
+    const text = ['Reportes del Adivinador musical'].concat(Reports.list.map(reportText)).join('\n');
     navigator.clipboard.writeText(text).then(
       () => toast('Reportes copiados.'),
       () => window.prompt('Copia tus reportes:', text)

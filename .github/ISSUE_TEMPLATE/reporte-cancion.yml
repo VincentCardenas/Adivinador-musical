@@ -1,12 +1,17 @@
 name: 🚩 Reportar una canción
-description: Avisa si una pista del juego está mal (es de otro juego, es otra canción, es un cover, no suena…).
+description: Avisa si una pista del juego está mal (es de otro juego, serie o película, es otra canción, es un cover, no suena…).
 title: "[Reporte] "
 labels: ["reporte-cancion"]
 body:
   - type: markdown
     attributes:
       value: |
-        ¡Gracias por ayudar a mejorar **¿Qué juego suena?**! Si abriste esto desde el juego, los datos de la pista ya vienen rellenados.
+        ¡Gracias por ayudar a mejorar el **Adivinador musical**! Si abriste esto desde el juego, los datos de la pista ya vienen rellenados.
+  - type: input
+    id: tema
+    attributes:
+      label: Tema
+      description: Videojuegos, Series, Caricaturas, Disney o Canciones (lo rellena el juego).
   - type: input
     id: pista
     attributes:
@@ -18,22 +23,23 @@ body:
     id: mostrado
     attributes:
       label: Lo que el juego dijo que era
-      description: Juego y canción que mostró la revelación.
+      description: Respuesta y canción que mostró la revelación.
   - type: input
     id: problema
     attributes:
       label: ¿Qué pasó?
-      description: Es de otro juego, es otra canción del mismo juego, es un cover/remix, no sonó…
+      description: Es de otro juego/serie/película, es otra canción, es un cover/remix, no sonó…
     validations:
       required: true
   - type: input
     id: juego_real
     attributes:
-      label: ¿De qué juego era en realidad?
+      label: ¿De dónde era en realidad?
+      description: El juego, la serie, la caricatura, la película o la canción correcta.
   - type: input
     id: cancion_real
     attributes:
-      label: ¿Qué canción era en realidad?
+      label: ¿Qué canción (o artista) era en realidad?
   - type: input
     id: fuente
     attributes:

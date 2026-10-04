@@ -311,8 +311,8 @@
 
     if (cand.kind === 'audio') {
       seekPending = false;
-      audio.volume = volume;
-      audio.muted = muted;
+      audio.muted = false;
+      audio.volume = muted ? 0 : volume;
       try { audio.currentTime = cand.start || 0; } catch (e) { /* nada */ }
       const p = audio.play();
       if (p && p.catch) {
@@ -349,20 +349,22 @@
   }
 
   /*
-   * En YouTube "silenciar" = volumen 0 (no mute()): Chrome pausa los videos
-   * silenciados que reproducen sin interacción, y eso arruinaría la verificación.
+   * "Silenciar" = volumen 0 (no mute()), tanto en YouTube como en <audio>: Chrome pausa
+   * los medios silenciados que reproducen sin interacción o en segundo plano, y eso
+   * arruinaría la verificación del catálogo.
    */
   function ytVolume() { return muted ? 0 : Math.round(volume * 100); }
 
   function setVolume(v) {
     volume = Math.max(0, Math.min(1, v));
-    audio.volume = volume;
+    audio.volume = muted ? 0 : volume;
     if (ytPlayer && ytPlayer.setVolume) { try { ytPlayer.setVolume(ytVolume()); } catch (e) { /* nada */ } }
   }
 
   function setMuted(m) {
     muted = !!m;
-    audio.muted = muted;
+    audio.muted = false;
+    audio.volume = muted ? 0 : volume;
     if (ytPlayer && ytPlayer.setVolume) { try { ytPlayer.setVolume(ytVolume()); } catch (e) { /* nada */ } }
   }
 

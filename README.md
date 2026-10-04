@@ -1,10 +1,16 @@
-# 🎮 ¿Qué juego suena?
+# 🎵 ¿Qué suena? · Adivinador musical
 
-Adivinador musical para gamers: suena un fragmento del **soundtrack oficial** de un videojuego y
-tienes que reconocer de cuál es. Halo, Gears of War, Hollow Knight, Mario, Kirby, Zelda, Pokémon,
-Final Fantasy, Elden Ring, Undertale, DOOM, League of Legends, Baldur's Gate 3 y más: **281 pistas de
-127 sagas y 215 juegos**, elegidos a partir de Metacritic, OpenCritic, SteamCharts y listas de los mejores
-soundtracks.
+Adivinador musical: suena un fragmento de música **oficial** y tienes que reconocer de dónde es. Hay cinco temas:
+
+| Tema | ¿Qué adivinas? | Categorías |
+| --- | --- | --- |
+| 🎮 **Videojuegos** | La saga y el juego (Halo, Zelda, Pokémon, Elden Ring…): 281 pistas de 127 sagas y 215 juegos | Nintendo, Xbox, PlayStation, Indie, Retro, RPG, Acción, Online |
+| 📺 **Series** | La serie por su entrada o tema principal (Friends, Lost, Stranger Things, El Chavo…) | Por época: clásicas, 90s, 2000s, 2010s y 2020 en adelante |
+| 🧸 **Caricaturas** | La caricatura o el anime por su entrada, en español latino cuando la hubo | Por época: clásicas, 80s, 90s, 2000s y 2010 en adelante |
+| 🏰 **Disney** | La película por sus canciones **en español latino** (El rey león, Frozen, Coco…) | Por época: clásicos, renacimiento, 2000s, 2010s y 2020 en adelante. Interruptor para incluir o quitar **Pixar** |
+| 🎤 **Canciones** | Quién la canta (Clásico) o qué canción es (Experto y Supervivencia) | Por época: antes de 1980, 80s, 90s, 2000s, 2010s y 2020 en adelante. Selector de idioma: **español, inglés o ambos** |
+
+Al terminar una partida puedes guardar tu puntaje con un **nickname** en el **ranking global** (uno por tema y modo).
 
 Hecho con HTML, CSS y JavaScript puro (sin frameworks ni compilación).
 
@@ -12,13 +18,12 @@ Hecho con HTML, CSS y JavaScript puro (sin frameworks ni compilación).
 
 | Modo | Cómo funciona |
 | --- | --- |
-| 🎯 **Clásico** | 10 rondas, 4 opciones de saga y 20 s por ronda. Responder rápido da más puntos y las rachas multiplican (x1.5 con 3 aciertos seguidos, x2 con 5). |
-| 🎧 **Experto** | Estilo Heardle. Empiezas con **1 segundo** de audio; cada fallo o salto desbloquea más (1 → 2 → 4 → 7 → 11 → 16 s). Hay que escribir el **juego exacto**; si aciertas la saga pero no el juego, te avisa con 🟨. |
-| ❤️ **Supervivencia** | Opciones con el juego exacto (¿Halo 2 o Halo 3?), 3 vidas y el reloj se acorta cada 3 aciertos. |
+| 🎯 **Clásico** | 10 rondas, 4 opciones y 20 s por ronda. Adivinas la respuesta "amplia": la saga del videojuego, la serie, la caricatura, la película o el artista que canta. Responder rápido da más puntos y las rachas multiplican (x1.5 con 3 aciertos seguidos, x2 con 5). |
+| 🎧 **Experto** | Estilo Heardle. Empiezas con **1 segundo** de audio; cada fallo o salto desbloquea más (1 → 2 → 4 → 7 → 11 → 16 s). Hay que escribir la respuesta **exacta** (el juego, la película, la canción…); si aciertas la saga o el artista pero no la respuesta, te avisa con 🟨. |
+| ❤️ **Supervivencia** | Opciones con la respuesta exacta (¿Halo 2 o Halo 3? ¿Toy Story o Toy Story 2?), 3 vidas y el reloj se acorta cada 3 aciertos. |
 
-Además puedes filtrar por categorías (Nintendo, Xbox, PlayStation, Indie, Retro, RPG, Acción, Online),
-guardar récords por modo, compartir tu resultado con emojis y, al final, ver la lista de lo que sonó con
-enlaces para escucharlo completo.
+Además puedes filtrar por categorías, guardar récords por tema y modo, compartir tu resultado con emojis
+y, al final, ver la lista de lo que sonó con enlaces para escucharlo completo.
 
 **Sin repeticiones:** el juego recuerda (en tu navegador) qué pistas ya escuchaste y siempre pone primero
 las que te faltan, sin repetir la misma saga dos rondas seguidas ni más de 2 veces por partida. En el
@@ -48,15 +53,48 @@ Luego abre <http://localhost:8000>.
 2. En *Source* elige **Deploy from a branch**, la rama que quieras publicar y la carpeta `/ (root)`.
 3. En un minuto queda en `https://<tu-usuario>.github.io/Adivinador-musical/`.
 
+## Ranking global
+
+El ranking guarda los puntajes en [Supabase](https://supabase.com) (una base de datos con plan gratis).
+Mientras no lo conectes, el juego funciona igual y el ranking dice "todavía no está activado".
+
+**Para activarlo (unos 5 minutos):**
+
+1. Crea una cuenta gratis en <https://supabase.com> y un proyecto nuevo (cualquier nombre y región; guarda
+   la contraseña de la base de datos en un lugar seguro, el juego no la necesita).
+2. En el proyecto abre **SQL Editor → New query**, pega todo el contenido de
+   [`supabase/schema.sql`](supabase/schema.sql) y dale **Run**. Eso crea la tabla `scores` con sus reglas.
+3. Ve a **Project Settings → API Keys** (o al botón **Connect**) y copia:
+   - la **Project URL** (algo como `https://abcdxyz.supabase.co`);
+   - la llave **publishable** (empieza con `sb_publishable_…`; en proyectos viejos se llama `anon`).
+4. Pégalas en [`js/config.js`](js/config.js), en `scoreboard.url` y `scoreboard.key`, y sube el cambio.
+
+> **Importante:** esa llave es pública a propósito (la ve cualquiera que abra el juego); lo que protege la
+> tabla son las reglas de `schema.sql`. **Nunca** pongas en el juego la llave `secret` ni la `service_role`.
+
+Qué permiten las reglas: cualquiera puede **ver** el ranking y **agregar** su puntaje, pero nadie puede
+editar ni borrar desde el juego. La base rechaza nicknames raros (de 2 a 16 letras, números, espacios,
+`.`, `_` o `-`), puntajes imposibles para cada modo y el spam (un mismo nickname no puede guardar dos
+puntajes en menos de 20 s). Si alguien pone un nickname feo, bórralo desde **Table Editor → scores**.
+
+Dos detalles del plan gratis de Supabase:
+
+- Si el proyecto pasa **una semana sin uso**, Supabase lo pausa. Se reactiva desde su panel con un clic
+  (los datos no se pierden).
+- Como el juego no tiene servidor propio, alguien con conocimientos podría mandar un puntaje inventado
+  (dentro de los límites de cada modo). Para un juego entre amigos es suficiente; si pasa, borra la fila.
+
 ## ¿De dónde sale la música?
 
 El juego **no incluye archivos de audio**: los reproduce desde fuentes oficiales al momento.
 
-1. **Apple Music**: los previews oficiales de 30 s de los álbumes de soundtrack publicados por las
-   editoras (Microsoft, Sony, Square Enix, etc.), obtenidos con la
-   [iTunes Search API](https://performance-partners.apple.com/search-api).
-2. **YouTube**: para los soundtracks que no están en Apple Music (como casi todo Nintendo), se usa un
-   reproductor de YouTube oculto con la [IFrame API](https://developers.google.com/youtube/iframe_api_reference).
+1. **Apple Music**: los previews oficiales de 30 s de los álbumes y soundtracks publicados por las
+   disqueras y editoras (Microsoft, Sony, Walt Disney Records, etc.), obtenidos con la
+   [iTunes Search API](https://performance-partners.apple.com/search-api). Las pistas nuevas usan la
+   tienda de México (`country: 'mx'`), donde están los doblajes latinos de Disney.
+2. **YouTube**: para lo que no está en Apple Music (como casi todo Nintendo o muchas entradas de
+   caricaturas en español latino), se usa un reproductor de YouTube oculto con la
+   [IFrame API](https://developers.google.com/youtube/iframe_api_reference).
 
 Cada pista tiene varias fuentes de respaldo. Si una deja de existir (por ejemplo, un video que borran),
 el juego prueba la siguiente y, si ninguna sirve, cambia de pista sola sin que cuente la ronda.
@@ -86,7 +124,17 @@ El repositorio que recibe los reportes se configura en [`js/config.js`](js/confi
 
 ## Agregar o cambiar pistas
 
-Todo el catálogo está en [`js/catalog.js`](js/catalog.js). Cada pista se ve así:
+Cada tema tiene su archivo de catálogo:
+
+| Tema | Archivo | `franchise` (Clásico) | `game` (Experto/Supervivencia) |
+| --- | --- | --- | --- |
+| Videojuegos | [`js/catalog.js`](js/catalog.js) | saga | juego |
+| Series | [`js/catalog-series.js`](js/catalog-series.js) | serie | serie |
+| Caricaturas | [`js/catalog-caricaturas.js`](js/catalog-caricaturas.js) | saga (Dragon Ball) | caricatura (Dragon Ball Z) |
+| Disney | [`js/catalog-disney.js`](js/catalog-disney.js) | saga (Toy Story) | película (Toy Story 2) |
+| Canciones | [`js/catalog-canciones.js`](js/catalog-canciones.js) | artista | canción |
+
+Los temas (nombres, textos, filtros y rangos) están en [`js/themes.js`](js/themes.js). Cada pista se ve así:
 
 ```js
 {
@@ -103,7 +151,12 @@ Todo el catálogo está en [`js/catalog.js`](js/catalog.js). Cada pista se ve as
 },
 ```
 
-Tipos de fuente (se prueban en orden):
+Campos opcionales: `aka` (otros nombres que acepta el buscador de Experto, por ejemplo
+`aka: ['Knight Rider']` en *El auto fantástico*), `lang: 'es' | 'en'` en Canciones (para el filtro de idioma)
+y `pixar: true` en Disney (para el interruptor de Pixar). En los catálogos nuevos cada categoría lleva
+`theme` para saber a qué tema pertenece.
+
+Tipos de fuente (se prueban **en el orden en que aparecen**):
 
 - `apple({ song: ID })`: una canción de Apple Music por su ID (el número después de `?i=` o al final de
   `music.apple.com/.../song/...`).
@@ -113,21 +166,28 @@ Tipos de fuente (se prueban en orden):
 - `apple({ ..., country: 'jp' })`: para álbumes que solo están en la tienda de otro país.
 - `yt('ID_DEL_VIDEO', segundoDeInicio)`: el ID es lo que va después de `watch?v=`.
 
-Para que un juego aparezca como opción incorrecta o en el buscador de Experto sin tener pista,
-agrégalo a `AM.EXTRA_GAMES` al final del mismo archivo.
+Para que una respuesta aparezca como opción incorrecta o en el buscador de Experto sin tener pista,
+agrégala a `AM.EXTRA_GAMES` al final del mismo archivo (en los catálogos nuevos, con su `theme`).
 
 ## Estructura
 
 ```
-index.html        Pantallas: inicio, partida, resultados y diálogos
-css/styles.css    Estilos (estética arcade/synthwave, responsive)
-js/config.js      Repositorio de GitHub que recibe los reportes
-js/catalog.js     Pistas, categorías y juegos "señuelo"
-js/sources.js     Resuelve cada pista a un preview de Apple o un video de YouTube
-js/engine.js      Reproductor unificado (<audio> + YouTube oculto), cortes de clip y fallos
-js/sfx.js         Efectos de sonido de la interfaz, sintetizados con Web Audio
-js/game.js        Reglas: modos, opciones, puntaje y textos de resultado
-js/app.js         Interfaz y flujo de la partida, historial, reportes, visualizador y verificación
+index.html                Pantallas: inicio, partida, resultados y diálogos
+css/styles.css            Estilos (estética arcade/synthwave, responsive)
+js/config.js              Versión, repositorio de reportes y conexión del ranking (Supabase)
+js/catalog.js             Videojuegos: pistas, categorías y juegos "señuelo"
+js/catalog-series.js      Series de TV por época
+js/catalog-caricaturas.js Caricaturas y anime por época
+js/catalog-disney.js      Disney y Pixar (español latino) por época
+js/catalog-canciones.js   Canciones famosas por época e idioma
+js/themes.js              Los 5 temas: textos, filtros (Pixar, idioma) y rangos
+js/sources.js             Resuelve cada pista a un preview de Apple o un video de YouTube
+js/engine.js              Reproductor unificado (<audio> + YouTube oculto), cortes de clip y fallos
+js/sfx.js                 Efectos de sonido de la interfaz, sintetizados con Web Audio
+js/game.js                Reglas: modos, opciones, puntaje y textos de resultado
+js/scores.js              Ranking global (API REST de Supabase)
+js/app.js                 Interfaz y flujo de la partida, historial, reportes, ranking y verificación
+supabase/schema.sql       Tabla y reglas del ranking global
 .github/ISSUE_TEMPLATE/reporte-cancion.yml   Formulario de GitHub para los reportes
 ```
 
@@ -137,6 +197,9 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **1.2**: nuevos temas: series, caricaturas, películas de Disney (en español latino, con interruptor
+  de Pixar) y canciones famosas (con selector de idioma), todos por época; ranking global con nickname
+  (Supabase); récords por tema y modo.
 - **1.1**: repertorio ampliado de 54 a 281 pistas con juegos de Metacritic, OpenCritic y SteamCharts;
   búsqueda estricta en Apple Music (descarta covers y remixes); categoría Online y multijugador; el juego recuerda lo que ya escuchaste para no repetir; botón para reportar canciones;
   versión visible en pantalla.
@@ -144,6 +207,6 @@ archivos nuevos en vez de usar los guardados en caché).
 
 ## Aviso
 
-Proyecto de fans sin fines comerciales. La música y los nombres de los juegos pertenecen a sus
-compositores, editoras y estudios. El juego no aloja ni descarga audio: solo reproduce los previews
+Proyecto de fans sin fines comerciales. La música y los nombres de los juegos, series, caricaturas,
+películas y canciones pertenecen a sus artistas, compositores, editoras y estudios. El juego no aloja ni descarga audio: solo reproduce los previews
 públicos de Apple Music y videos de YouTube, con enlaces a la fuente original.
