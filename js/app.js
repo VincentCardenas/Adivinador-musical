@@ -736,7 +736,9 @@
     closeCombo();
     input.value = '';
     if (hit.game === cur.track.game) { finishExpert(true); return; }
-    const partial = hit.franchise === cur.track.franchise;
+    const partial = g.theme.showArtist
+      ? AM.Logic.sameArtist(hit.franchise, cur.track.franchise)
+      : hit.franchise === cur.track.franchise;
     cur.attempts.push({ type: partial ? 'partial' : 'wrong', text: hit.game });
     sfx('wrong');
     advanceExpert();

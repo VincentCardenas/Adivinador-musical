@@ -417,7 +417,6 @@
     { theme: 'disney', franchise: 'Toy Story', game: 'Lightyear', pixar: true },
     { theme: 'disney', franchise: 'Raya y el último dragón', game: 'Raya y el último dragón' },
     { theme: 'disney', franchise: 'Atlantis: El imperio perdido', game: 'Atlantis: El imperio perdido' },
-    { theme: 'disney', franchise: 'Chicken Little', game: 'Chicken Little' },
     { theme: 'disney', franchise: 'Bolt', game: 'Bolt' },
     { theme: 'disney', franchise: 'Ralph', game: 'Ralph rompe Internet' },
     { theme: 'disney', franchise: 'El rey león', game: 'Mufasa: El rey león' },

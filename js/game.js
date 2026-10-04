@@ -123,6 +123,18 @@
     return sc.games;
   }
 
+  /** Artistas de un crédito ("Shakira y Maluma" → ["shakira", "maluma"]). */
+  function artistsOf(credit) {
+    return String(credit || '').split(/\s*(?:,|&|\by\b|\bfeat\.?|\bft\.?)\s*/i)
+      .map((a) => AM.Sources.norm(a)).filter(Boolean);
+  }
+
+  /** ¿Comparten al menos un artista? (para que "Shakira" no salga como opción falsa de "Shakira y Maluma"). */
+  function sameArtist(a, b) {
+    const list = artistsOf(a);
+    return artistsOf(b).some((x) => list.indexOf(x) >= 0);
+  }
+
   function franchiseOf(gameName, sc) {
     const hit = allGames(sc).find((g) => g.game === gameName);
     return hit ? hit.franchise : null;
@@ -135,10 +147,14 @@
   function makeChoices(track, mode, sc, n) {
     n = n || 4;
     const picked = [];
+    // En Canciones la respuesta amplia es el artista: las opciones falsas no pueden compartir
+    // artista con la correcta ni entre ellas (si no, "Shakira" sería "incorrecto" en un dueto suyo).
+    const byArtist = mode.answer === 'franchise' && sc.theme.showArtist;
+    const clash = (v) => byArtist && [track.franchise].concat(picked).some((p) => sameArtist(p, v));
     const add = (list, max) => {
       for (const v of shuffle(list)) {
         if (picked.length >= n - 1 || max <= 0) break;
-        if (v !== track[mode.answer] && picked.indexOf(v) < 0) { picked.push(v); max--; }
+        if (v !== track[mode.answer] && picked.indexOf(v) < 0 && !clash(v)) { picked.push(v); max--; }
       }
     };
 
@@ -213,7 +229,7 @@
   }
 
   AM.Logic = {
-    shuffle: shuffle, sample: sample, scope: scope, pool: pool, buildQueue: buildQueue, allGames: allGames,
+    shuffle: shuffle, sample: sample, scope: scope, pool: pool, buildQueue: buildQueue, allGames: allGames, sameArtist: sameArtist,
     franchiseOf: franchiseOf, makeChoices: makeChoices, multiplier: multiplier,
     timedPoints: timedPoints, timeLimit: timeLimit, rank: rank, emojiFor: emojiFor, shareText: shareText,
   };

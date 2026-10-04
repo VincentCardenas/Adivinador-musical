@@ -780,7 +780,7 @@
       sources: [apple({ song: 1055384375, country: 'mx' })],
     },
     {
-      id: 'song-china', cat: 'song-10s', franchise: 'Anuel AA y Karol G', game: 'China',
+      id: 'song-china', cat: 'song-10s', franchise: 'Anuel AA, Daddy Yankee y Karol G', game: 'China',
       title: 'China', year: 2019, lang: 'es',
       sources: [apple({ song: 1473307010, country: 'mx' })],
     },
@@ -1014,7 +1014,7 @@
     { theme: 'canciones', franchise: 'Bad Bunny', game: 'Ojitos lindos', lang: 'es' },
     { theme: 'canciones', franchise: 'Bad Bunny', game: 'Callaíta', lang: 'es' },
     { theme: 'canciones', franchise: 'Karol G', game: 'Bichota', lang: 'es' },
-    { theme: 'canciones', franchise: 'Karol G', game: 'Si antes te hubiera conocido', lang: 'es' },
+    { theme: 'canciones', franchise: 'Karol G', game: 'Mañana será bonito', lang: 'es' },
     { theme: 'canciones', franchise: 'Daddy Yankee', game: 'Dura', lang: 'es' },
     { theme: 'canciones', franchise: 'Daddy Yankee', game: 'Lo que pasó, pasó', lang: 'es' },
     { theme: 'canciones', franchise: 'Juanes', game: 'A Dios le pido', lang: 'es' },
