@@ -23,6 +23,18 @@
       describe: (T) => `3 vidas · ${T.survivalGoal} · el reloj se acorta mientras más aciertas.`,
       rounds: Infinity, answer: 'game', lives: 3, timeLimit: 15, minTime: 7,
     },
+    // Solo en Videojuegos: eliges una saga (o un juego de ella) y adivinas qué canción es.
+    sagas: {
+      id: 'sagas', name: 'Sagas', icon: '🗂️',
+      describe: () => '10 rondas · 4 opciones · elige una saga (o uno de sus juegos) y adivina qué canción es.',
+      rounds: 10, answer: 'label', timeLimit: 20, themes: ['juegos'], ranked: false,
+    },
+  };
+
+  /** ¿El modo existe en este tema? (Sagas solo en Videojuegos). */
+  AM.modeAvailable = (modeId, themeId) => {
+    const m = AM.MODES[modeId];
+    return !!m && (!m.themes || m.themes.indexOf(themeId) >= 0);
   };
 
   AM.MIN_POOL = 5;
@@ -83,26 +95,27 @@
    *     pistas de una misma saga por cada bloque de 10 rondas.
    * `seen` es un mapa { idDePista: marcaDeTiempoDeLaÚltimaVez }.
    */
-  function buildQueue(tracks, seen, maxPerFranchise) {
+  function buildQueue(tracks, seen, maxPerFranchise, groupKey) {
     seen = seen || {};
     const fresh = shuffle(tracks.filter((t) => !seen[t.id]));
     const old = tracks.filter((t) => seen[t.id]).sort((a, b) => seen[a.id] - seen[b.id]);
     // Entre las ya escuchadas, mezclamos por tandas para que no salgan siempre en el mismo orden.
     const oldMixed = [];
     for (let i = 0; i < old.length; i += 12) oldMixed.push.apply(oldMixed, shuffle(old.slice(i, i + 12)));
-    return diversify(fresh.concat(oldMixed), maxPerFranchise || 2);
+    return diversify(fresh.concat(oldMixed), maxPerFranchise || 2, groupKey || 'franchise');
   }
 
-  function diversify(list, maxPer) {
+  /** `key`: campo por el que se reparten las pistas (la saga; en el modo Sagas, el juego). */
+  function diversify(list, maxPer, key) {
     const out = [];
     const pending = list.slice();
     while (pending.length) {
       const blockStart = out.length - (out.length % 10);
       const counts = {};
-      for (let i = blockStart; i < out.length; i++) counts[out[i].franchise] = (counts[out[i].franchise] || 0) + 1;
+      for (let i = blockStart; i < out.length; i++) counts[out[i][key]] = (counts[out[i][key]] || 0) + 1;
       const prev = out[out.length - 1];
-      const notPrev = (t) => !prev || t.franchise !== prev.franchise;
-      let idx = pending.findIndex((t) => notPrev(t) && (counts[t.franchise] || 0) < maxPer);
+      const notPrev = (t) => !prev || t[key] !== prev[key];
+      let idx = pending.findIndex((t) => notPrev(t) && (counts[t[key]] || 0) < maxPer);
       if (idx < 0) idx = pending.findIndex(notPrev);
       if (idx < 0) idx = 0;
       out.push(pending.splice(idx, 1)[0]);
@@ -171,6 +184,7 @@
 
   function makeChoices(track, mode, sc, n) {
     n = n || 4;
+    if (mode.answer === 'label') return songChoices(track, sc, n);
     const group = groupOf(track);
     const inGroup = (t) => groupOf(t) === group;
     // En Canciones, las opciones falsas van en el idioma de la que suena (inglés con inglés).
@@ -205,6 +219,84 @@
     add(same.map((g) => g.game), n);
     add(games.map((g) => g.game), n); // por si el idioma dejó muy pocas
     return shuffle(picked.concat([answer]));
+  }
+
+  /* ═════════ modo Sagas ═════════ */
+
+  const sagaCache = new Map();
+
+  /** Todas las pistas de una saga: las del catálogo normal de sus sagas + las exclusivas del modo (AM.SAGA_TRACKS). */
+  function sagaTracks(sagaId) {
+    if (sagaCache.has(sagaId)) return sagaCache.get(sagaId);
+    const saga = (AM.SAGAS || []).find((s) => s.id === sagaId);
+    if (!saga) return [];
+    const seen = new Set();
+    const skip = saga.excludeGames || [];
+    const list = AM.CATALOG.filter((t) => t.theme === 'juegos' && saga.franchises.indexOf(t.franchise) >= 0 && skip.indexOf(t.game) < 0)
+      .concat((AM.SAGA_TRACKS || []).filter((t) => t.saga === sagaId))
+      .filter((t) => {
+        const k = t.game + '|' + AM.Sources.norm(t.title);
+        if (seen.has(k)) return false;
+        seen.add(k);
+        return true;
+      });
+    sagaCache.set(sagaId, list);
+    return list;
+  }
+
+  /** Juegos de una saga en orden de salida, con cuántas canciones distintas tiene cada uno. */
+  function sagaGames(sagaId) {
+    const map = new Map();
+    sagaTracks(sagaId).forEach((t) => {
+      const g = map.get(t.game) || { game: t.game, year: t.year || 9999, titles: new Set() };
+      g.year = Math.min(g.year, t.year || 9999);
+      g.titles.add(AM.Sources.norm(t.title));
+      map.set(t.game, g);
+    });
+    return Array.from(map.values())
+      .map((g) => ({ game: g.game, year: g.year, songs: g.titles.size }))
+      .sort((a, b) => a.year - b.year || a.game.localeCompare(b.game));
+  }
+
+  /**
+   * Alcance de una partida de Sagas: toda la saga o un solo juego. Las pistas son copias con `label`
+   * (la respuesta): el título, o "título (juego)" si dos juegos del alcance tienen una canción con el
+   * mismo nombre (como "Overworld Theme" en Super Mario Bros. y en Super Mario World).
+   */
+  function sagaScope(sagaId, gameName) {
+    const key = 'saga|' + sagaId + '|' + (gameName || '');
+    if (scopes.has(key)) return scopes.get(key);
+    const base = sagaTracks(sagaId).filter((t) => !gameName || t.game === gameName);
+    const gamesByTitle = {};
+    base.forEach((t) => {
+      const n = AM.Sources.norm(t.title);
+      (gamesByTitle[n] = gamesByTitle[n] || new Set()).add(t.game);
+    });
+    const tracks = base.map((t) => Object.assign({}, t, {
+      theme: 'juegos',
+      label: gamesByTitle[AM.Sources.norm(t.title)].size > 1 ? `${t.title} (${t.game})` : t.title,
+    }));
+    const s = {
+      key: key, theme: AM.theme('juegos'), values: {}, keep: () => true,
+      tracks: tracks, extras: [], games: null,
+      saga: (AM.SAGAS || []).find((x) => x.id === sagaId), game: gameName || '',
+    };
+    scopes.set(key, s);
+    return s;
+  }
+
+  /** Opciones del modo Sagas: otras canciones del alcance (una del mismo juego, si hay). */
+  function songChoices(track, sc, n) {
+    const picked = [];
+    const add = (list, max) => {
+      for (const v of shuffle(list)) {
+        if (picked.length >= n - 1 || max <= 0) break;
+        if (v !== track.label && picked.indexOf(v) < 0) { picked.push(v); max--; }
+      }
+    };
+    add(unique(sc.tracks.filter((t) => t.game === track.game).map((t) => t.label)), 1);
+    add(unique(sc.tracks.map((t) => t.label)), n);
+    return shuffle(picked.concat([track.label]));
   }
 
   function multiplier(streak) {
@@ -263,6 +355,7 @@
   AM.Logic = {
     shuffle: shuffle, sample: sample, scope: scope, pool: pool, buildQueue: buildQueue, allGames: allGames,
     sameArtist: sameArtist, sameVersion: sameVersion,
+    sagaTracks: sagaTracks, sagaGames: sagaGames, sagaScope: sagaScope,
     franchiseOf: franchiseOf, makeChoices: makeChoices, multiplier: multiplier,
     timedPoints: timedPoints, timeLimit: timeLimit, rank: rank, emojiFor: emojiFor, shareText: shareText,
   };

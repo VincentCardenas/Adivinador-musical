@@ -22,6 +22,7 @@ Hecho con HTML, CSS y JavaScript puro (sin frameworks ni compilación).
 | 🎯 **Clásico** | 10 rondas, 4 opciones y 20 s por ronda. Adivinas la respuesta "amplia": la saga del videojuego, la serie, la caricatura, la película o el artista que canta. Responder rápido da más puntos y las rachas multiplican (x1.5 con 3 aciertos seguidos, x2 con 5). |
 | 🎧 **Experto** | Estilo Heardle. Empiezas con **1 segundo** de audio; cada fallo o salto desbloquea más (1 → 2 → 4 → 7 → 11 → 16 s). Hay que escribir la respuesta **exacta** (el juego, la película, la canción…); si aciertas la saga o el artista pero no la respuesta, te avisa con 🟨. |
 | ❤️ **Supervivencia** | Opciones con la respuesta exacta (¿Halo 2 o Halo 3? ¿Toy Story o Toy Story 2?), 3 vidas y el reloj se acorta cada 3 aciertos. |
+| 🗂️ **Sagas** | Solo en Videojuegos. Eliges una saga (Super Mario, Zelda, Pokémon, Kirby, Donkey Kong, Sonic, Final Fantasy, Halo, Mega Man o Street Fighter) y adivinas **qué canción es** entre 4 títulos: de **toda la saga** o de **un solo juego** (los que tienen al menos 5 canciones). 10 rondas y 20 s por ronda. Solo música original: nada de remakes ni remasters (Halo va de Combat Evolved a Reach). Tiene récord por saga, pero no entra al ranking global. |
 
 Además puedes filtrar por categorías, guardar récords por tema y modo, compartir tu resultado con emojis
 y, al final, ver la lista de lo que sonó con enlaces para escucharlo completo.
@@ -191,6 +192,7 @@ js/catalog-caricaturas.js Caricaturas por época
 js/catalog-anime.js       Openings de anime por época
 js/catalog-disney.js      Disney y Pixar (español latino) por época
 js/catalog-canciones.js   Canciones famosas por época e idioma
+js/catalog-sagas.js       Modo Sagas: las 10 sagas y sus canciones extra (generado)
 js/themes.js              Los 6 temas: textos, filtros (Pixar, idioma) y rangos
 js/sources.js             Resuelve cada pista a un preview de Apple o un video de YouTube
 js/loudness.js            Volumen medido de cada fuente (generado) para que todo suene parejo
@@ -209,6 +211,11 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **1.7**: modo **Sagas** (solo Videojuegos): eliges una de 10 sagas y adivinas qué canción es, de toda la
+  saga o de un solo juego. 184 canciones nuevas solo para este modo, todas de los soundtracks originales
+  (nada de remakes ni remasters; Halo va de *Combat Evolved* a *Reach*). Además, varias pistas que buscaban
+  su audio en Apple por nombre y a veces caían en covers (arpa, *Distant Worlds*, *The Greatest Bits*…)
+  ahora apuntan directo al soundtrack oficial, y *Answers* (FF XIV) vuelve a sonar.
 - **1.6**: el **ranking global** queda activado (Supabase).
 - **1.5**: el anime pasa a ser su **propio tema**, por época; **volumen parejo** entre pistas (se mide cada
   fuente y se bajan las que suenan más fuerte); se quitan 42 videos de YouTube que ya no existen (4 pistas de

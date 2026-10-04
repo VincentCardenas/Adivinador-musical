@@ -27,9 +27,12 @@
   const savedMode = Store.get('mode', 'clasico');
   const savedVolume = Number(Store.get('volume', 0.8));
   const savedFilters = Store.get('filters', {});
+  const savedSaga = Store.get('saga', null) || {};
   const settings = {
     theme: AM.THEMES.some((t) => t.id === savedTheme) ? savedTheme : 'juegos',
     mode: AM.MODES[savedMode] ? savedMode : 'clasico',
+    // Modo Sagas: qué saga y, si se eligió, qué juego ('' = toda la saga).
+    saga: { id: savedSaga.id, game: typeof savedSaga.game === 'string' ? savedSaga.game : '' },
     cats: {},     // categorías elegidas, por tema
     filters: savedFilters && typeof savedFilters === 'object' ? savedFilters : {}, // { disney: { pixar }, canciones: { lang } }
     volume: isFinite(savedVolume) ? Math.max(0, Math.min(1, savedVolume)) : 0.8,
@@ -48,6 +51,9 @@
       settings.cats[T.id] = list.length ? list : all.slice();
     });
   })();
+  if (!AM.modeAvailable(settings.mode, settings.theme)) settings.mode = 'clasico';
+  if (!AM.SAGAS.some((x) => x.id === settings.saga.id)) settings.saga = { id: AM.SAGAS[0].id, game: '' };
+  if (settings.saga.game && !sagaPlayableGames().some((g) => g.game === settings.saga.game)) settings.saga.game = '';
 
   /* ── récords por tema y modo (antes eran solo por modo: pasan a Videojuegos) ── */
   const Records = {
@@ -68,7 +74,15 @@
   function theme() { return AM.theme(settings.theme); }
   function themeCats() { return settings.cats[settings.theme]; }
   function allCats() { return AM.themeCategories(settings.theme).map((c) => c.id); }
-  function scope() { return AM.Logic.scope(settings.theme, settings.filters[settings.theme]); }
+  function sagaMode() { return settings.mode === 'sagas' && AM.modeAvailable('sagas', settings.theme); }
+  function sagaInfo() { return AM.SAGAS.find((x) => x.id === settings.saga.id) || AM.SAGAS[0]; }
+  /** Juegos de la saga elegida que tienen suficientes canciones para jugarlos solos. */
+  function sagaPlayableGames() { return AM.Logic.sagaGames(settings.saga.id).filter((g) => g.songs >= AM.MIN_POOL); }
+  function sagaRecordKey() { return settings.saga.id + ':' + (settings.saga.game || 'all'); }
+  function scope() {
+    if (sagaMode()) return AM.Logic.sagaScope(settings.saga.id, settings.saga.game);
+    return AM.Logic.scope(settings.theme, settings.filters[settings.theme]);
+  }
 
   let game = null;
   let timerRaf = 0;
@@ -88,10 +102,17 @@
     unhideAll() { this.hidden = []; Store.set('hidden', []); },
   };
 
-  function currentPool() { return AM.Logic.pool(themeCats(), History.hidden, scope().keep); }
+  function currentPool() {
+    if (sagaMode()) {
+      const skip = new Set(History.hidden);
+      return scope().tracks.filter((t) => !skip.has(t.id));
+    }
+    return AM.Logic.pool(themeCats(), History.hidden, scope().keep);
+  }
 
   /** Pregunta que se muestra mientras suena la pista (una categoría puede tener la suya: "¿De qué anime es?"). */
   function question(g) {
+    if (g.mode.id === 'sagas') return '¿Qué canción es?';
     const T = g.theme;
     const cat = g.cur && AM.CATEGORIES.find((c) => c.id === g.cur.track.cat);
     if (cat && cat.question) return cat.question;
@@ -243,10 +264,10 @@
 
   function renderModes() {
     const T = theme();
-    $('#modes').innerHTML = Object.keys(AM.MODES).map((id) => {
+    $('#modes').innerHTML = Object.keys(AM.MODES).filter((id) => AM.modeAvailable(id, T.id)).map((id) => {
       const m = AM.MODES[id];
       const sel = id === settings.mode;
-      const rec = Records.get(T.id, id);
+      const rec = id === 'sagas' ? Records.get('sagas', sagaRecordKey()) : Records.get(T.id, id);
       return `
         <button type="button" class="mode-card${sel ? ' is-selected' : ''}" role="radio" aria-checked="${sel}" data-mode="${id}">
           <span class="mode-icon" aria-hidden="true">${m.icon}</span>
@@ -280,6 +301,8 @@
   }
 
   function renderChips() {
+    $('#step3-title').textContent = sagaMode() ? 'Elige una saga' : '¿Qué quieres escuchar?';
+    if (sagaMode()) { renderSagaPicker(); return; }
     const sc = scope();
     const cats = themeCats();
     const counts = {};
@@ -294,21 +317,62 @@
     updatePoolInfo();
   }
 
+  /*
+   * Paso 3 del modo Sagas: la saga, "toda la saga / un juego" y, si es un juego, cuál.
+   * Solo se puede elegir un juego que tenga al menos AM.MIN_POOL canciones distintas.
+   */
+  function renderSagaPicker() {
+    const sel = sagaInfo();
+    const games = sagaPlayableGames();
+    const all = !settings.saga.game;
+    const sagas = AM.SAGAS.map((x) => {
+      const on = x.id === sel.id;
+      return `<button type="button" class="chip${on ? ' is-on' : ''}" role="radio" aria-checked="${on}" data-saga="${x.id}">${x.icon} ${esc(x.label)} <span>${AM.Logic.sagaTracks(x.id).length}</span></button>`;
+    }).join('');
+    const scopeSel = `
+      <div class="segmented" role="radiogroup" aria-label="Qué canciones">
+        <span class="segmented-label">Canciones de:</span>
+        <button type="button" role="radio" aria-checked="${all}" class="${all ? 'is-on' : ''}" data-saga-scope="all">Toda la saga</button>
+        <button type="button" role="radio" aria-checked="${!all}" class="${all ? '' : 'is-on'}" data-saga-scope="game"${games.length ? '' : ' disabled'}>Un juego</button>
+      </div>`;
+    // "The Legend of Zelda: Ocarina of Time" → "Ocarina of Time" (la saga ya está elegida arriba)
+    const prefix = sel.label + ': ';
+    const short = (game) => (game.indexOf(prefix) === 0 ? game.slice(prefix.length) : game);
+    const gameChips = all ? '' : games.map((g) => {
+      const on = g.game === settings.saga.game;
+      return `<button type="button" class="chip${on ? ' is-on' : ''}" role="radio" aria-checked="${on}" data-saga-game="${esc(g.game)}" title="${esc(g.game)}">${esc(short(g.game))} <span>${g.songs}</span></button>`;
+    }).join('');
+    $('#chips').innerHTML = `
+      <div class="saga-row" role="radiogroup" aria-label="Saga">${sagas}</div>
+      <div class="saga-row">${scopeSel}</div>
+      ${gameChips ? `<div class="saga-row" role="radiogroup" aria-label="Juego">${gameChips}</div>` : ''}`;
+    updatePoolInfo();
+  }
+
   function updatePoolInfo() {
     const pool = currentPool();
+    const saga = sagaMode();
     const ok = pool.length >= AM.MIN_POOL;
-    $('#pool-count').textContent = `${pool.length} pistas`;
+    $('#pool-count').textContent = `${pool.length} ${saga ? 'canciones' : 'pistas'}`;
     $('#btn-start').disabled = !ok;
     if (!ok) {
-      $('#start-hint').textContent = `Elige más categorías: se necesitan al menos ${AM.MIN_POOL} pistas.`;
+      $('#start-hint').textContent = saga
+        ? `Faltan canciones: se necesitan al menos ${AM.MIN_POOL}.`
+        : `Elige más categorías: se necesitan al menos ${AM.MIN_POOL} pistas.`;
+    } else if (saga) {
+      const names = settings.saga.game
+        ? AM.Logic.sample(Array.from(new Set(pool.map((t) => t.title))), 3)
+        : AM.Logic.sample(Array.from(new Set(pool.map((t) => t.game))), 3);
+      $('#start-hint').textContent = `${settings.saga.game ? 'Canciones como' : 'Incluye'} ${names.join(', ')} y más.`;
     } else {
       const names = AM.Logic.sample(Array.from(new Set(pool.map((t) => t.franchise))), 4);
       $('#start-hint').textContent = `Incluye ${names.join(', ')} y más.`;
     }
     const heard = pool.filter((t) => History.seen[t.id]).length;
     const hidden = History.hidden.length;
+    const where = saga ? (settings.saga.game ? 'de este juego' : 'de esta saga') : 'de estas categorías';
     let info = heard
-      ? `Has escuchado ${heard} de ${pool.length} pistas de estas categorías; primero suenan las que te faltan.`
+      ? `Has escuchado ${heard} de ${pool.length} pistas ${where}; primero suenan las que te faltan.`
       : 'Todas estas pistas son nuevas para ti.';
     if (hidden) info += ` ${hidden} oculta${hidden === 1 ? '' : 's'} por tus reportes.`;
     $('#seen-info').innerHTML = esc(info) + (heard ? ' <button type="button" class="btn-link" id="btn-reset-seen">Reiniciar historial</button>' : '');
@@ -334,6 +398,10 @@
     if (!card || card.dataset.theme === settings.theme) return;
     settings.theme = card.dataset.theme;
     Store.set('theme', settings.theme);
+    if (!AM.modeAvailable(settings.mode, settings.theme)) {
+      settings.mode = 'clasico';
+      Store.set('mode', settings.mode);
+    }
     sfx('click');
     renderHome();
   });
@@ -361,9 +429,26 @@
     Store.set('mode', settings.mode);
     sfx('click');
     renderModes();
+    renderFilters();
+    renderChips(); // el paso 3 cambia en el modo Sagas
   });
 
   $('#chips').addEventListener('click', (e) => {
+    const sagaBtn = e.target.closest('[data-saga], [data-saga-scope], [data-saga-game]');
+    if (sagaBtn) {
+      if (sagaBtn.disabled) return;
+      if (sagaBtn.dataset.saga) settings.saga = { id: sagaBtn.dataset.saga, game: '' };
+      else if (sagaBtn.dataset.sagaScope === 'all') settings.saga.game = '';
+      else if (sagaBtn.dataset.sagaScope === 'game') {
+        const games = sagaPlayableGames();
+        if (!settings.saga.game && games.length) settings.saga.game = games[0].game;
+      } else settings.saga.game = sagaBtn.dataset.sagaGame;
+      Store.set('saga', settings.saga);
+      sfx('click');
+      renderModes(); // el récord del modo Sagas es por saga
+      renderChips();
+      return;
+    }
     const chip = e.target.closest('[data-cat]');
     if (!chip) return;
     const id = chip.dataset.cat;
@@ -383,7 +468,10 @@
   /* ═════════ partida ═════════ */
 
   function startGame() {
-    const mode = AM.MODES[settings.mode];
+    const saga = sagaMode() ? sagaInfo() : null;
+    const base = AM.MODES[AM.modeAvailable(settings.mode, settings.theme) ? settings.mode : 'clasico'];
+    // En Sagas, el nombre del modo lleva la saga o el juego (se ve en el marcador, resultados y al compartir).
+    const mode = saga ? Object.assign({}, base, { name: 'Sagas · ' + (settings.saga.game || saga.label) }) : base;
     const pool = currentPool();
     if (pool.length < AM.MIN_POOL) return;
 
@@ -395,7 +483,11 @@
       mode: mode,
       theme: theme(),
       scope: scope(),
-      queue: AM.Logic.buildQueue(pool, History.seen),
+      // En Sagas se reparten por juego (todas son de la misma saga); con un solo juego, sin restricción.
+      queue: saga
+        ? AM.Logic.buildQueue(pool, History.seen, 2, settings.saga.game ? 'id' : 'game')
+        : AM.Logic.buildQueue(pool, History.seen),
+      record: saga ? ['sagas', sagaRecordKey()] : [settings.theme, mode.id],
       total: isFinite(mode.rounds) ? Math.min(mode.rounds, pool.length) : Infinity,
       round: 0,
       score: 0,
@@ -933,8 +1025,10 @@
       head.innerHTML = 'Incorrecto' + (opts.guess ? `<small>Elegiste: ${esc(opts.guess)}</small>` : '');
     }
 
-    $('#reveal-game').textContent = t.game;
-    $('#reveal-track').textContent = trackLine(g.theme, t, m);
+    // En Sagas la respuesta es la canción: va grande, y el juego abajo.
+    const songMode = g.mode.id === 'sagas';
+    $('#reveal-game').textContent = songMode ? t.title : t.game;
+    $('#reveal-track').textContent = songMode ? '🎮 ' + t.game : trackLine(g.theme, t, m);
     $('#reveal-meta').textContent = [t.composer, t.year, t.platform].filter(Boolean).join(' · ');
     reportCtx = { track: t, meta: m };
     const link = $('#reveal-link');
@@ -1018,9 +1112,10 @@
 
     const T = g.theme;
     const stats = { score: g.score, correct: g.correct, total: g.history.length, bestStreak: g.bestStreak };
-    const prev = Records.get(T.id, g.mode.id);
+    const prev = Records.get(g.record[0], g.record[1]);
     const isRecord = g.score > prev && g.score > 0;
-    if (isRecord) Records.set(T.id, g.mode.id, g.score);
+    if (isRecord) Records.set(g.record[0], g.record[1], g.score);
+    const songMode = g.mode.id === 'sagas';
 
     const r = AM.Logic.rank(g.mode, stats, T);
     const share = AM.Logic.shareText(g.mode, stats, g.history, T);
@@ -1036,8 +1131,8 @@
           <span class="r-num">${i + 1}</span>
           ${art}
           <div>
-            <div class="r-game">${esc(h.track.game)}</div>
-            <div class="r-track">${esc(trackLine(T, h.track, m))}${link}</div>
+            <div class="r-game">${esc(songMode ? h.track.title : h.track.game)}</div>
+            <div class="r-track">${esc(songMode ? '🎮 ' + h.track.game : trackLine(T, h.track, m))}${link}</div>
           </div>
           <div class="r-res">${AM.Logic.emojiFor(g.mode, h)}<b>${h.points ? '+' + fmt(h.points) : '0'}</b></div>
           <button type="button" class="row-report" data-report="${i}" title="Reportar esta canción" aria-label="Reportar ${esc(h.track.game)}">🚩</button>
@@ -1063,16 +1158,16 @@
           <button type="button" class="btn btn-ghost" data-act="share">📋 Compartir</button>
           <button type="button" class="btn btn-ghost" data-act="home">⌂ Menú</button>
         </div>
-        <section class="board" aria-labelledby="board-title">
+        ${g.mode.ranked === false ? '' : `<section class="board" aria-labelledby="board-title">
           <h3 class="rounds-title" id="board-title">🏆 Ranking global · ${esc(T.label)} · ${esc(g.mode.name)}</h3>
           <div id="board-root"></div>
-        </section>
+        </section>`}
         <h3 class="rounds-title">🎵 Lo que sonó (para tu playlist)</h3>
         <ol class="rounds">${rows}</ol>
       </div>`;
     $('#results-root').dataset.share = share;
     resultsHistory = g.history;
-    renderResultBoard(g, stats);
+    if (g.mode.ranked !== false) renderResultBoard(g, stats);
 
     showScreen('results');
     sfx(isRecord ? 'record' : 'end');
@@ -1228,7 +1323,7 @@
     $('#board-themes').innerHTML = AM.THEMES.map((T) =>
       `<button type="button" role="tab" aria-selected="${T.id === boardView.theme}" class="${T.id === boardView.theme ? 'is-on' : ''}" data-board-theme="${T.id}">${T.icon} ${esc(T.label)}</button>`
     ).join('');
-    $('#board-modes').innerHTML = Object.keys(AM.MODES).map((id) => {
+    $('#board-modes').innerHTML = Object.keys(AM.MODES).filter((id) => AM.MODES[id].ranked !== false).map((id) => {
       const m = AM.MODES[id];
       return `<button type="button" role="tab" aria-selected="${id === boardView.mode}" class="${id === boardView.mode ? 'is-on' : ''}" data-board-mode="${id}">${m.icon} ${esc(m.name)}</button>`;
     }).join('');
@@ -1248,7 +1343,7 @@
 
   $('#btn-board').addEventListener('click', () => {
     boardView.theme = settings.theme;
-    boardView.mode = settings.mode;
+    boardView.mode = AM.MODES[settings.mode].ranked === false ? 'clasico' : settings.mode;
     renderBoardDialog();
     openDialog($('#dlg-board'));
   });
@@ -1390,7 +1485,7 @@
     AM.Engine.unlock();
     AM.Engine.setMuted(true);
 
-    const tracks = AM.Logic.pool(themeCats(), [], scope().keep);
+    const tracks = verifyPool();
     const list = $('#diag-list');
     list.innerHTML = tracks.map((t, i) =>
       `<li id="diag-${i}"><span class="d-name">${esc(t.game)} — ${esc(t.title)}</span><span class="d-status">en espera</span></li>`
@@ -1428,10 +1523,17 @@
     if (!diag.abort) $('#diag-summary').textContent = `Listo: ${okCount} de ${tracks.length} pistas suenan`;
   }
 
+  /** Pistas que revisa el verificador: las del modo Sagas (saga o juego elegido) o las categorías elegidas. */
+  function verifyPool() {
+    return sagaMode() ? scope().tracks : AM.Logic.pool(themeCats(), [], scope().keep);
+  }
+
   $('#btn-diag').addEventListener('click', () => {
     if (!diag.running) {
-      const n = AM.Logic.pool(themeCats(), [], scope().keep).length;
-      $('#diag-scope').textContent = `Se verificarán las ${n} pistas de ${theme().label} en las categorías que tienes elegidas en el inicio (elige "Todo" para revisar el tema completo).`;
+      const n = verifyPool().length;
+      $('#diag-scope').textContent = sagaMode()
+        ? `Se verificarán las ${n} pistas de ${settings.saga.game || 'la saga ' + sagaInfo().label} (modo Sagas).`
+        : `Se verificarán las ${n} pistas de ${theme().label} en las categorías que tienes elegidas en el inicio (elige "Todo" para revisar el tema completo).`;
     }
     openDialog($('#dlg-diag'));
   });

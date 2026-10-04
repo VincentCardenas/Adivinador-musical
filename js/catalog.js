@@ -161,12 +161,12 @@
     {
       id: 'pokemon-red-blue-lavender-town', cat: 'nintendo', franchise: 'Pokémon', game: 'Pokémon Red & Blue',
       title: 'Lavender Town Theme', composer: 'Junichi Masuda', year: 1996, platform: 'Game Boy',
-      sources: [apple({ term: 'Lavender Town Theme Pokémon Red & Blue', match: 'Lavender Town Theme' }), yt('eh626LdOXrY'), yt('pJB1nJWUk38')],
+      sources: [yt('eh626LdOXrY'), yt('pJB1nJWUk38')],
     },
     {
       id: 'pokemon-gold-silver-new-bark-town', cat: 'nintendo', franchise: 'Pokémon', game: 'Pokémon Gold & Silver',
       title: 'New Bark Town', composer: 'Junichi Masuda y Go Ichinose', year: 1999, platform: 'Game Boy Color',
-      sources: [apple({ term: 'New Bark Town Pokémon Gold & Silver', match: 'New Bark Town' }), yt('D0j9AOEhzO8')],
+      sources: [yt('D0j9AOEhzO8')],
     },
     {
       id: 'pokemon-ruby-sapphire-littleroot-town', cat: 'nintendo', franchise: 'Pokémon', game: 'Pokémon Ruby & Sapphire',
@@ -181,12 +181,12 @@
     {
       id: 'pokemon-diamond-pearl-battle-champion', cat: 'nintendo', franchise: 'Pokémon', game: 'Pokémon Diamond & Pearl',
       title: 'Battle! (Champion)', composer: 'Go Ichinose, Junichi Masuda y Hitomi Sato', year: 2006, platform: 'Nintendo DS',
-      sources: [apple({ term: 'Battle! (Champion) Pokémon Diamond & Pearl', match: 'Battle! (Champion)' }), yt('rXefFHRgyE0'), yt('z1M5GiHP8VY')],
+      sources: [apple({ song: 840170674, country: 'us' }), yt('rXefFHRgyE0'), yt('z1M5GiHP8VY')],
     },
     {
       id: 'pokemon-black-white-battle-n', cat: 'nintendo', franchise: 'Pokémon', game: 'Pokémon Black & White',
       title: 'Battle! (N)', composer: 'Shota Kageyama, Junichi Masuda, Go Ichinose y Hitomi Sato', year: 2010, platform: 'Nintendo DS',
-      sources: [apple({ term: 'Battle! (N) Pokémon Black & White', match: 'Battle! (N)' }), yt('Gr-qOoB_XKY')],
+      sources: [apple({ song: 839755387, country: 'us' }), yt('Gr-qOoB_XKY')],
     },
     {
       id: 'pokemon-sword-shield-battle-champion-leon', cat: 'nintendo', franchise: 'Pokémon', game: 'Pokémon Sword & Shield',
@@ -387,8 +387,7 @@
       id: 'halo-reach-overture', cat: 'xbox', franchise: 'Halo', game: 'Halo: Reach',
       title: 'Overture', composer: "Martin O'Donnell y Michael Salvatori", year: 2010, platform: 'Xbox 360',
       sources: [
-        apple({ song: 1448517552 }),
-        apple({ term: 'Overture Halo  Reach', match: 'Overture' }),
+        apple({ song: 1682514361 }),
         yt('yMfO9ZJVst4'),
         yt('DRMLL6SSNsI'),
         yt('JhnuAlQPX_U'),
@@ -1016,17 +1015,17 @@
     {
       id: 'mm2-wily', cat: 'retro', franchise: 'Mega Man', game: 'Mega Man 2',
       title: 'Dr. Wily Stage 1', composer: 'Takashi Tateishi', year: 1988, platform: 'NES',
-      sources: [yt('aTbfpkByIM8'), yt('eELMoAwkqd0'), yt('Mo6if_sRTcU')],
+      sources: [apple({ song: 1086913496, country: 'jp' }), yt('aTbfpkByIM8'), yt('eELMoAwkqd0'), yt('Mo6if_sRTcU')],
     },
     {
       id: 'mega-man-2-air-man-stage', cat: 'retro', franchise: 'Mega Man', game: 'Mega Man 2',
       title: 'Air Man Stage', composer: 'Takashi Tateishi', year: 1988, platform: 'NES',
-      sources: [apple({ term: 'Air Man Stage Mega Man 2', match: 'Air Man Stage' }), yt('IhK4D3ytYMc'), yt('WahcvcX0ywA')],
+      sources: [apple({ song: 1086913483, country: 'jp' }), yt('IhK4D3ytYMc'), yt('WahcvcX0ywA')],
     },
     {
       id: 'mega-man-x-opening-stage', cat: 'retro', franchise: 'Mega Man', game: 'Mega Man X',
       title: 'Opening Stage', composer: 'Setsuo Yamamoto, Makoto Tomozawa, Yuki Iwai, Yuko Takehara, Toshihiko Horiyama', year: 1993, platform: 'SNES',
-      sources: [apple({ term: 'Opening Stage Mega Man X', match: 'Opening Stage' }), yt('8F2jf0NRl2Y'), yt('MkhIGJsYb4I')],
+      sources: [apple({ song: 1406684721 }), yt('8F2jf0NRl2Y'), yt('MkhIGJsYb4I')],
     },
     {
       id: 'metal-slug-assault-theme', cat: 'retro', franchise: 'Metal Slug', game: 'Metal Slug',
@@ -1071,7 +1070,7 @@
     {
       id: 'sonic-the-hedgehog-3-icecap-zone-act-1', cat: 'retro', franchise: 'Sonic the Hedgehog', game: 'Sonic the Hedgehog 3',
       title: 'IceCap Zone Act 1', composer: 'Brad Buxer', year: 1994, platform: 'Sega Genesis',
-      sources: [apple({ term: 'IceCap Zone Act 1 Sonic the Hedgehog 3', match: 'IceCap Zone Act 1' }), yt('mKL0BtScEd8'), yt('hYxlqTpZ-24')],
+      sources: [yt('mKL0BtScEd8'), yt('hYxlqTpZ-24')],
     },
     {
       id: 'sf2-guile', cat: 'retro', franchise: 'Street Fighter', game: 'Street Fighter II',
@@ -1081,12 +1080,12 @@
     {
       id: 'street-fighter-ii-ken-s-theme', cat: 'retro', franchise: 'Street Fighter', game: 'Street Fighter II',
       title: "Ken's Theme", composer: 'Yoko Shimomura', year: 1991, platform: 'Arcade',
-      sources: [apple({ term: "Ken's Theme Street Fighter II", match: "Ken's Theme" }), yt('qHeY9O7FAIQ'), yt('Hm0ncSVPp8Y')],
+      sources: [apple({ song: 1085989771, country: 'jp' }), yt('qHeY9O7FAIQ'), yt('Hm0ncSVPp8Y')],
     },
     {
       id: 'street-fighter-ii-ryu-s-theme', cat: 'retro', franchise: 'Street Fighter', game: 'Street Fighter II',
       title: "Ryu's Theme", composer: 'Yoko Shimomura', year: 1991, platform: 'Arcade',
-      sources: [apple({ term: "Ryu's Theme Street Fighter II", match: "Ryu's Theme" }), yt('wkdz9hl-cVQ')],
+      sources: [apple({ song: 1085989770, country: 'jp' }), yt('wkdz9hl-cVQ')],
     },
     {
       id: 'streets-of-rage-2-go-straight', cat: 'retro', franchise: 'Streets of Rage', game: 'Streets of Rage 2',
@@ -1208,7 +1207,7 @@
     {
       id: 'ff7-owa', cat: 'rpg', franchise: 'Final Fantasy', game: 'Final Fantasy VII',
       title: 'One-Winged Angel', composer: 'Nobuo Uematsu', year: 1997, platform: 'PlayStation',
-      sources: [apple({ album: 61018952, match: 'One-Winged Angel' }), apple({ song: 1669116129 })],
+      sources: [apple({ album: 61018952, match: 'One-Winged Angel' }), yt('IYMTzLxGv3M'), yt('mYdf0yqK_Fc')],
     },
     {
       id: 'final-fantasy-viii-liberi-fatali', cat: 'rpg', franchise: 'Final Fantasy', game: 'Final Fantasy VIII',
@@ -1225,7 +1224,7 @@
       id: 'final-fantasy-ix-melodies-of-life', cat: 'rpg', franchise: 'Final Fantasy', game: 'Final Fantasy IX',
       title: 'Melodies Of Life', composer: 'Nobuo Uematsu (vocals Emiko Shiratori)', year: 2000, platform: 'PlayStation',
       sources: [
-        apple({ term: 'Melodies Of Life Final Fantasy IX', match: 'Melodies Of Life' }),
+        apple({ song: 62444507, country: 'mx' }),
         yt('6qbYS7hXB8U'),
         yt('u4bqksY_6JM'),
         yt('hnqBFhEraQU'),
@@ -1234,18 +1233,18 @@
     {
       id: 'final-fantasy-x-to-zanarkand', cat: 'rpg', franchise: 'Final Fantasy', game: 'Final Fantasy X',
       title: 'To Zanarkand', composer: 'Nobuo Uematsu', year: 2001, platform: 'PlayStation 2',
-      sources: [apple({ term: 'To Zanarkand Final Fantasy X', match: 'To Zanarkand' }), yt('6fp81GzKarQ'), yt('CCPtGpqvKt4'), yt('ewvyrFnOstQ')],
+      sources: [apple({ song: 62444655, country: 'mx' }), yt('6fp81GzKarQ'), yt('CCPtGpqvKt4'), yt('ewvyrFnOstQ')],
     },
     {
       id: 'final-fantasy-xv-somnus', cat: 'rpg', franchise: 'Final Fantasy', game: 'Final Fantasy XV',
       title: 'Somnus', composer: 'Yoko Shimomura', year: 2016, platform: 'PlayStation 4 / Xbox One',
-      sources: [apple({ term: 'Somnus Final Fantasy XV', match: 'Somnus' }), yt('juVZ0TN_2EA'), yt('SAMJBAJlQSc'), yt('4vGxgMnzNwM')],
+      sources: [apple({ song: 1184244887 }), yt('juVZ0TN_2EA'), yt('SAMJBAJlQSc'), yt('4vGxgMnzNwM')],
     },
     {
       id: 'final-fantasy-xvi-find-the-flame', cat: 'rpg', franchise: 'Final Fantasy', game: 'Final Fantasy XVI',
       title: 'Find the Flame', composer: 'Masayoshi Soken', year: 2023, platform: 'PlayStation 5',
       sources: [
-        apple({ term: 'Find the Flame Final Fantasy XVI', match: 'Find the Flame' }),
+        apple({ song: 1696572901 }),
         yt('CeqyEzK87z4'),
         yt('itCm4SRFbQA'),
       ],
@@ -1521,17 +1520,17 @@
     {
       id: 'sonic-adventure-open-your-heart', cat: 'accion', franchise: 'Sonic the Hedgehog', game: 'Sonic Adventure',
       title: 'Open Your Heart', composer: 'Jun Senoue (Crush 40)', year: 1998, platform: 'Dreamcast',
-      sources: [apple({ term: 'Open Your Heart Sonic Adventure', match: 'Open Your Heart' })],
+      sources: [apple({ song: 915246923 })],
     },
     {
       id: 'sa2-livelearn', cat: 'accion', franchise: 'Sonic the Hedgehog', game: 'Sonic Adventure 2',
       title: 'Live & Learn', composer: 'Crush 40', year: 2001, platform: 'Dreamcast',
-      sources: [apple({ term: 'Live and Learn Crush 40', artist: 'Crush 40', match: 'Live & Learn' })],
+      sources: [apple({ song: 929931538 })],
     },
     {
       id: 'sonic-frontiers-i-m-here', cat: 'accion', franchise: 'Sonic the Hedgehog', game: 'Sonic Frontiers',
       title: "I'm Here", composer: 'Tomoya Ohtani', year: 2022, platform: 'PS5 / Xbox Series / Switch / PC',
-      sources: [apple({ term: "I'm Here Sonic Frontiers", match: "I'm Here" })],
+      sources: [apple({ song: 1652669176 })],
     },
     {
       id: 'tomb-raider-2013-tomb-raider-main-theme', cat: 'accion', franchise: 'Tomb Raider', game: 'Tomb Raider (2013)',
@@ -1583,7 +1582,7 @@
     {
       id: 'final-fantasy-xiv-answers', cat: 'online', franchise: 'Final Fantasy', game: 'Final Fantasy XIV: A Realm Reborn',
       title: 'Answers', composer: 'Nobuo Uematsu', year: 2013, platform: 'PC / PS3 / PS4',
-      sources: [apple({ term: 'Answers Final Fantasy XIV  A Realm Reborn', match: 'Answers' })],
+      sources: [yt('bWdeMqELN-U'), yt('98XSpU9fhkE')],
     },
     {
       id: 'genshin-impact-dream-aria', cat: 'online', franchise: 'Genshin Impact', game: 'Genshin Impact',

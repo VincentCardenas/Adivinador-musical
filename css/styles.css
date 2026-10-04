@@ -439,6 +439,9 @@ a { color: var(--cyan); }
   border-color: var(--pink);
 }
 .chip.is-on span { background: var(--pink); color: #fff; }
+/* Modo Sagas: filas del paso 3 (sagas, "toda la saga / un juego" y juegos) */
+.saga-row { display: flex; flex-wrap: wrap; gap: 10px; width: 100%; }
+.saga-row + .saga-row { margin-top: 4px; }
 
 /* Filtros del tema (Pixar, idioma) */
 .filters { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin: 0 0 14px; }
