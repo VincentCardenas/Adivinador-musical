@@ -5,7 +5,8 @@
  *   load(candidato)  → prepara la fuente (rechaza si no existe / no se puede incrustar)
  *   play(limite)     → resuelve cuando el audio REALMENTE empieza a sonar;
  *                      rechaza con code 'blocked' (el navegador pide un toque) o 'error'
- *   eventos          → 'start', 'progress' {t, limit}, 'stop' {reason}, 'error'
+ *   eventos          → 'start', 'progress' {t, limit}, 'stop' {reason}, 'error',
+ *                      'stall' / 'resume' (el audio se quedó cargando a medio clip y luego siguió)
  */
 (function (AM) {
   'use strict';
@@ -26,6 +27,11 @@
   let startAt = 0;
   let seekPending = false;
   let unlocked = false;
+  // Detección de "se quedó cargando": el tiempo del medio no avanza aunque debería estar sonando.
+  const STALL_MS = 700;
+  let lastT = 0;
+  let lastMove = 0;
+  let stalled = false;
 
   let ytPlayer = null;
   let ytPromise = null;
@@ -275,6 +281,9 @@
       }
       if (t > 0.05 && t < limit && mediaPlaying()) {
         playState = 'playing';
+        lastT = t;
+        lastMove = performance.now();
+        stalled = false;
         if (pending) { const p = pending; pending = null; p.resolve(); }
         emit('start', { t: t });
       } else if (performance.now() - startAt > startTimeout()) {
@@ -288,11 +297,20 @@
         pauseMedia();
         stopPolling();
         playState = 'idle';
+        stalled = false;
         emit('stop', { reason: 'limit', t: t });
       } else if (mediaEnded()) {
         stopPolling();
         playState = 'idle';
+        stalled = false;
         emit('stop', { reason: 'end', t: t });
+      } else if (t > lastT + 0.02) {
+        lastT = t;
+        lastMove = performance.now();
+        if (stalled) { stalled = false; emit('resume', { t: t }); }
+      } else if (!stalled && performance.now() - lastMove > STALL_MS) {
+        stalled = true;
+        emit('stall', { t: t, since: lastMove }); // `since`: desde cuándo dejó de avanzar (performance.now)
       }
     }
   }
@@ -343,6 +361,7 @@
     stopPolling();
     const wasActive = playState !== 'idle';
     playState = 'idle';
+    stalled = false;
     pauseMedia();
     if (pending) { const p = pending; pending = null; p.reject(err('cancelled')); }
     if (wasActive) emit('stop', { reason: 'manual', t: time() });

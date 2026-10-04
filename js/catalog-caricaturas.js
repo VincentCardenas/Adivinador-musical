@@ -795,4 +795,9 @@
     { theme: 'caricaturas', franchise: 'Dr. Slump', game: 'Dr. Slump', cat: 'toon-anime' },
     { theme: 'caricaturas', franchise: 'Kaiju No. 8', game: 'Kaiju No. 8', cat: 'toon-anime' },
   );
+
+  // Versiones de lo mismo: nunca salen juntas como opciones.
+  AM.VERSIONS.push(
+    ['Dragon Ball Z', 'Dragon Ball Kai'],
+  );
 })(window.AM = window.AM || {});

@@ -152,8 +152,10 @@ Los temas (nombres, textos, filtros y rangos) están en [`js/themes.js`](js/them
 ```
 
 Campos opcionales: `aka` (otros nombres que acepta el buscador de Experto, por ejemplo
-`aka: ['Knight Rider']` en *El auto fantástico*), `lang: 'es' | 'en'` en Canciones (para el filtro de idioma)
-y `pixar: true` en Disney (para el interruptor de Pixar). En los catálogos nuevos cada categoría lleva
+`aka: ['Knight Rider']` en *El auto fantástico*), `lang: 'es' | 'en'` en Canciones (para el filtro de idioma
+y para que las opciones vayan en el mismo idioma que la canción) y `pixar: true` en Disney (para el
+interruptor de Pixar). Las pistas de un DLC o expansión van con el nombre del juego base y el del DLC en
+`aka` (como *Wrath of the Lich King* en *World of Warcraft*). En los catálogos nuevos cada categoría lleva
 `theme` para saber a qué tema pertenece.
 
 Tipos de fuente (se prueban **en el orden en que aparecen**):
@@ -168,6 +170,8 @@ Tipos de fuente (se prueban **en el orden en que aparecen**):
 
 Para que una respuesta aparezca como opción incorrecta o en el buscador de Experto sin tener pista,
 agrégala a `AM.EXTRA_GAMES` al final del mismo archivo (en los catálogos nuevos, con su `theme`).
+Los remakes y ediciones que se venden aparte (*Persona 3* y *Persona 3 Reload*) van en `AM.VERSIONS`,
+al final de [`js/catalog.js`](js/catalog.js): siguen siendo respuestas distintas, pero nunca salen juntas como opciones.
 
 ## Estructura
 
@@ -197,6 +201,10 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **1.4**: correcciones de los reportes: si el audio se queda cargando a media ronda, el reloj se pausa
+  (y si sigue trabado, se prueba otra fuente); las opciones de Canciones van en el idioma de la canción que
+  suena; los DLC cuentan como su juego (*Wrath of the Lich King* → *World of Warcraft*) y ya no salen
+  juntas dos versiones del mismo juego (*Persona 4* / *Persona 4 Golden*, *Halo 3* / *ODST*…).
 - **1.3**: categoría **Openings de anime** (56 openings famosos, con audio oficial); el título del juego pasa a ser **¿Qué suena?**; correcciones de los reportes: Destiny suena *The Traveler* en vez de la canción de los créditos, Breaking Bad usa su entrada real, *La chica de ayer* en versión de estudio y *Labios rotos* en su época correcta (2011).
 - **1.2**: nuevos temas: series, caricaturas, películas de Disney (en español latino, con interruptor
   de Pixar) y canciones famosas (con selector de idioma), todos por época; ranking global con nickname

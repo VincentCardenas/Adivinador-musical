@@ -554,6 +554,8 @@
       if (!cur.started) {
         cur.started = true;
         if (!expert) { enableOptions(); startTimer(); }
+      } else {
+        unfreezeTimer(cur); // volvió a sonar (otra fuente o "Escuchar otra vez") después de trabarse
       }
       if (!cur.answered) setStatus(expert ? `Escuchando ${limit} s…` : question(g));
     }).catch((e) => {
@@ -601,15 +603,47 @@
     $('#timer-text').textContent = remain == null ? '' : Math.ceil(remain) + 's';
   }
 
+  /** Segundos de la ronda que ya corrieron (sin contar lo que el audio estuvo trabado). */
+  function elapsed(cur) {
+    return ((cur.stallAt || performance.now()) - cur.startTime) / 1000;
+  }
+
+  /*
+   * Si el audio se queda cargando a media ronda (YouTube lento, red mala), el reloj se pausa:
+   * no es justo que se acabe el tiempo sin haber escuchado nada. Si sigue trabado después de
+   * STALL_GIVE_UP_MS, se prueba la siguiente fuente (y si no hay, la ronda no cuenta).
+   */
+  const STALL_GIVE_UP_MS = 8000;
+
+  function freezeTimer(cur, since) {
+    if (cur.stallAt) return;
+    // Desde que el audio dejó de avanzar, no desde que nos dimos cuenta.
+    cur.stallAt = Math.max(cur.startTime, Math.min(since || Infinity, performance.now()));
+    setStatus('El audio se está cargando… el tiempo está en pausa', true);
+    clearTimeout(cur.stallTimer);
+    cur.stallTimer = setTimeout(() => {
+      if (!game || game.cur !== cur || cur.answered || !cur.stallAt) return;
+      switchCandidate();
+    }, STALL_GIVE_UP_MS);
+  }
+
+  function unfreezeTimer(cur) {
+    clearTimeout(cur.stallTimer);
+    if (!cur.stallAt) return;
+    cur.startTime += performance.now() - cur.stallAt;
+    cur.stallAt = 0;
+  }
+
   function startTimer() {
     const g = game;
     const cur = g.cur;
     cur.startTime = performance.now();
+    cur.stallAt = 0;
     let lastSec = null;
     cancelAnimationFrame(timerRaf);
     const loop = () => {
       if (game !== g || g.cur !== cur || cur.answered) return;
-      const remain = Math.max(0, cur.timeLimit - (performance.now() - cur.startTime) / 1000);
+      const remain = Math.max(0, cur.timeLimit - elapsed(cur));
       renderTimer(remain / cur.timeLimit, remain);
       const sec = Math.ceil(remain);
       if (sec !== lastSec) {
@@ -652,6 +686,7 @@
     if (!cur || cur.answered) return;
     cur.answered = true;
     cancelAnimationFrame(timerRaf);
+    unfreezeTimer(cur);
 
     const correctValue = cur.track[g.mode.answer];
     const ok = choice === correctValue;
@@ -662,8 +697,7 @@
       g.streak++;
       g.correct++;
       g.bestStreak = Math.max(g.bestStreak, g.streak);
-      const elapsed = (performance.now() - cur.startTime) / 1000;
-      points = AM.Logic.timedPoints(1 - elapsed / cur.timeLimit, g.streak);
+      points = AM.Logic.timedPoints(1 - elapsed(cur) / cur.timeLimit, g.streak);
       g.score += points;
       sfx('correct');
     } else {
@@ -951,6 +985,16 @@
     if (inGame() && game.mode.id === 'experto') updateClipBar(e.t);
   });
   AM.Engine.on('error', () => { if (inGame()) switchCandidate(); });
+  AM.Engine.on('stall', (e) => {
+    const cur = inGame() && game.cur;
+    if (cur && cur.started && !cur.answered && game.mode.timeLimit) freezeTimer(cur, e.since);
+  });
+  AM.Engine.on('resume', () => {
+    const cur = inGame() && game.cur;
+    if (!cur || !cur.stallAt || cur.answered) return;
+    unfreezeTimer(cur);
+    setStatus(question(game));
+  });
 
   /* ── fin de partida ── */
 

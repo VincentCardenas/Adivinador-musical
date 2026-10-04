@@ -1331,6 +1331,7 @@
     {
       id: 'persona-4-reach-out-to-the-truth', cat: 'rpg', franchise: 'Persona', game: 'Persona 4',
       title: 'Reach Out To The Truth', composer: 'Shoji Meguro', year: 2008, platform: 'PlayStation 2',
+      aka: ['Persona 4 Golden'],
       sources: [apple({ term: 'Reach Out To The Truth Persona 4', match: 'Reach Out To The Truth' })],
     },
     {
@@ -1668,8 +1669,9 @@
       sources: [apple({ term: 'Stormwind World of Warcraft', match: 'Stormwind' })],
     },
     {
-      id: 'world-of-warcraft-invincible', cat: 'online', franchise: 'Warcraft', game: 'World of Warcraft: Wrath of the Lich King',
+      id: 'world-of-warcraft-invincible', cat: 'online', franchise: 'Warcraft', game: 'World of Warcraft',
       title: 'Invincible', composer: 'Russell Brower', year: 2008, platform: 'PC',
+      aka: ['World of Warcraft: Wrath of the Lich King', 'Wrath of the Lich King'],
       sources: [apple({ term: 'Invincible World of Warcraft  Wrath of the Lich King', match: 'Invincible' })],
     },
     {
@@ -1695,7 +1697,7 @@
     ['The Legend of Zelda', 'The Legend of Zelda: Tears of the Kingdom'],
     ['Pokémon', 'Pokémon Gold & Silver'], ['Pokémon', 'Pokémon Ruby & Sapphire'], ['Pokémon', 'Pokémon Diamond & Pearl'],
     ['Pokémon', 'Pokémon Scarlet & Violet'],
-    ['Donkey Kong', 'Donkey Kong Country 2'], ['Donkey Kong', 'Donkey Kong Bananza'],
+    ['Donkey Kong', 'Donkey Kong Bananza'],
     ['Super Smash Bros.', 'Super Smash Bros. Melee'], ['Super Smash Bros.', 'Super Smash Bros. Ultimate'],
     ['Animal Crossing', 'Animal Crossing: New Leaf'], ['Animal Crossing', 'Animal Crossing: Wild World'],
     ['Splatoon', 'Splatoon 2'], ['Splatoon', 'Splatoon 3'],
@@ -1714,7 +1716,7 @@
     ['Tetris', 'Tetris 99'], ['Tetris', 'Tetris Effect'],
     ['Final Fantasy', 'Final Fantasy VI'], ['Final Fantasy', 'Final Fantasy X'], ['Final Fantasy', 'Final Fantasy VII Remake'],
     ['Kingdom Hearts', 'Kingdom Hearts II'], ['Kingdom Hearts', 'Kingdom Hearts III'],
-    ['Persona', 'Persona 4 Golden'], ['Persona', 'Persona 3 Reload'],
+    ['Persona', 'Persona 3 Reload'],
     ['Chrono Trigger', 'Chrono Cross'],
     ['The Elder Scrolls', 'The Elder Scrolls IV: Oblivion'], ['The Witcher', 'The Witcher 2'],
     ['Dark Souls', 'Dark Souls III'], ['Bloodborne', 'Bloodborne'], ['Sekiro', 'Sekiro: Shadows Die Twice'],
@@ -1730,4 +1732,16 @@
     ['Castlevania', 'Castlevania: Symphony of the Night'], ['Resident Evil', 'Resident Evil 4'],
     ['Fortnite', 'Fortnite'], ['Overwatch', 'Overwatch'], ['Destiny', 'Destiny'], ['Cyberpunk 2077', 'Cyberpunk 2077'],
   ].map(([franchise, game]) => ({ franchise: franchise, game: game }));
+
+  /*
+   * Versiones del mismo juego (remakes, ediciones y expansiones que se venden aparte).
+   * Siguen siendo respuestas distintas, pero nunca salen juntas como opciones:
+   * si suena Persona 3, "Persona 3 Reload" al lado sería una trampa.
+   * (Los DLC no van aquí: cuentan como el juego base, con su nombre en `aka`.)
+   */
+  AM.VERSIONS = [
+    ['Persona 3', 'Persona 3 Reload'],
+    ['Final Fantasy VII', 'Final Fantasy VII Remake', 'Final Fantasy VII Rebirth'],
+    ['Halo 3', 'Halo 3: ODST'],
+  ];
 })(window.AM = window.AM || {});

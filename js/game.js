@@ -116,7 +116,7 @@
     const map = new Map();
     sc.tracks.concat(sc.extras).forEach((g) => {
       const hit = map.get(g.game);
-      if (!hit) map.set(g.game, { game: g.game, franchise: g.franchise, cat: g.cat || null, aka: (g.aka || []).slice() });
+      if (!hit) map.set(g.game, { game: g.game, franchise: g.franchise, cat: g.cat || null, lang: g.lang || '', aka: (g.aka || []).slice() });
       else (g.aka || []).forEach((a) => { if (hit.aka.indexOf(a) < 0) hit.aka.push(a); });
     });
     sc.games = Array.from(map.values()).sort((a, b) => a.game.localeCompare(b.game, 'es'));
@@ -159,37 +159,52 @@
     return groups[cat];
   }
 
+  /** ¿Son versiones del mismo juego (`AM.VERSIONS`: remake, edición, expansión aparte)? */
+  let versionFamily = null;
+  function sameVersion(a, b) {
+    if (!versionFamily) {
+      versionFamily = new Map();
+      (AM.VERSIONS || []).forEach((list, i) => list.forEach((name) => versionFamily.set(name, i)));
+    }
+    return versionFamily.has(a) && versionFamily.get(a) === versionFamily.get(b);
+  }
+
   function makeChoices(track, mode, sc, n) {
     n = n || 4;
     const group = groupOf(track);
     const inGroup = (t) => groupOf(t) === group;
+    // En Canciones, las opciones falsas van en el idioma de la que suena (inglés con inglés).
+    const lang = track.lang || '';
+    const fits = (t) => inGroup(t) && (!lang || t.lang === lang);
+    const answer = track[mode.answer];
     const picked = [];
     // En Canciones la respuesta amplia es el artista: las opciones falsas no pueden compartir
     // artista con la correcta ni entre ellas (si no, "Shakira" sería "incorrecto" en un dueto suyo).
+    // Tampoco salen juntas dos versiones del mismo juego (Persona 3 y Persona 3 Reload).
     const byArtist = mode.answer === 'franchise' && sc.theme.showArtist;
-    const clash = (v) => byArtist && [track.franchise].concat(picked).some((p) => sameArtist(p, v));
+    const clash = (v) => [answer].concat(picked).some((p) => sameVersion(p, v) || (byArtist && sameArtist(p, v)));
     const add = (list, max) => {
       for (const v of shuffle(list)) {
         if (picked.length >= n - 1 || max <= 0) break;
-        if (v !== track[mode.answer] && picked.indexOf(v) < 0 && !clash(v)) { picked.push(v); max--; }
+        if (v !== answer && picked.indexOf(v) < 0 && !clash(v)) { picked.push(v); max--; }
       }
     };
 
     if (mode.answer === 'franchise') {
-      const sameCat = unique(sc.tracks.filter((t) => t.cat === track.cat).map((t) => t.franchise));
-      const all = unique(sc.tracks.concat(sc.extras).filter(inGroup).map((t) => t.franchise));
-      add(sameCat, 2);
-      add(all, n);
-      return shuffle(picked.concat([track.franchise]));
+      const all = sc.tracks.concat(sc.extras);
+      add(unique(sc.tracks.filter((t) => t.cat === track.cat && fits(t)).map((t) => t.franchise)), 2);
+      add(unique(all.filter(fits).map((t) => t.franchise)), n);
+      add(unique(all.filter(inGroup).map((t) => t.franchise)), n); // por si el idioma dejó muy pocas
+      return shuffle(picked.concat([answer]));
     }
 
     const games = allGames(sc).filter(inGroup);
-    const sameFranchise = games.filter((g) => g.franchise === track.franchise).map((g) => g.game);
-    const sameCat = sc.tracks.filter((t) => t.cat === track.cat).map((t) => t.game);
-    add(sameFranchise, 1);
-    add(unique(sameCat), 1);
-    add(games.map((g) => g.game), n);
-    return shuffle(picked.concat([track.game]));
+    const same = games.filter(fits);
+    add(same.filter((g) => g.franchise === track.franchise).map((g) => g.game), 1);
+    add(unique(sc.tracks.filter((t) => t.cat === track.cat && fits(t)).map((t) => t.game)), 1);
+    add(same.map((g) => g.game), n);
+    add(games.map((g) => g.game), n); // por si el idioma dejó muy pocas
+    return shuffle(picked.concat([answer]));
   }
 
   function multiplier(streak) {
@@ -246,7 +261,8 @@
   }
 
   AM.Logic = {
-    shuffle: shuffle, sample: sample, scope: scope, pool: pool, buildQueue: buildQueue, allGames: allGames, sameArtist: sameArtist,
+    shuffle: shuffle, sample: sample, scope: scope, pool: pool, buildQueue: buildQueue, allGames: allGames,
+    sameArtist: sameArtist, sameVersion: sameVersion,
     franchiseOf: franchiseOf, makeChoices: makeChoices, multiplier: multiplier,
     timedPoints: timedPoints, timeLimit: timeLimit, rank: rank, emojiFor: emojiFor, shareText: shareText,
   };
