@@ -180,6 +180,7 @@
     return {
       kind: 'audio',
       url: r.previewUrl,
+      appleId: r.trackId, // para buscar su volumen en AM.LOUDNESS
       start: 0,
       meta: {
         trackName: r.trackName,

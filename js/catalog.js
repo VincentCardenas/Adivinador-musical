@@ -36,22 +36,22 @@
     {
       id: 'banjo-kazooie-spiral-mountain', cat: 'nintendo', franchise: 'Banjo-Kazooie', game: 'Banjo-Kazooie',
       title: 'Spiral Mountain', composer: 'Grant Kirkhope', year: 1998, platform: 'Nintendo 64',
-      sources: [yt('_EZa2-RIUQc'), yt('-_Q6yI7bBWk'), yt('b1cRQRdg62E')],
+      sources: [yt('-_Q6yI7bBWk'), yt('b1cRQRdg62E')],
     },
     {
       id: 'banjo-kazooie-treasure-trove-cove', cat: 'nintendo', franchise: 'Banjo-Kazooie', game: 'Banjo-Kazooie',
       title: 'Treasure Trove Cove', composer: 'Grant Kirkhope', year: 1998, platform: 'Nintendo 64',
-      sources: [yt('5DQfnj33-QU'), yt('QT6BneKMWrU')],
+      sources: [yt('5DQfnj33-QU')],
     },
     {
       id: 'bayonetta-2-tomorrow-is-mine', cat: 'nintendo', franchise: 'Bayonetta', game: 'Bayonetta 2',
       title: 'Tomorrow Is Mine', composer: 'Hiroshi Yamaguchi', year: 2014, platform: 'Wii U',
-      sources: [yt('TMerSyvVarc'), yt('q_hCSCgX8A8'), yt('ll3Ee1y8TnM')],
+      sources: [yt('TMerSyvVarc'), yt('q_hCSCgX8A8')],
     },
     {
       id: 'dkc-aquatic', cat: 'nintendo', franchise: 'Donkey Kong', game: 'Donkey Kong Country',
       title: 'Aquatic Ambience', composer: 'David Wise', year: 1994, platform: 'SNES',
-      sources: [yt('1XM8ReW9NvA'), yt('FgTOGMqpcUk'), yt('gkCcvoJ09gU')],
+      sources: [yt('1XM8ReW9NvA'), yt('gkCcvoJ09gU')],
     },
     {
       id: 'donkey-kong-country-dk-island-swing', cat: 'nintendo', franchise: 'Donkey Kong', game: 'Donkey Kong Country',
@@ -61,7 +61,7 @@
     {
       id: 'donkey-kong-country-2-stickerbush-symphony', cat: 'nintendo', franchise: 'Donkey Kong', game: "Donkey Kong Country 2: Diddy's Kong Quest",
       title: 'Stickerbush Symphony', composer: 'David Wise', year: 1995, platform: 'SNES',
-      sources: [yt('C1H49_sCTVU'), yt('Oy5mdV79dww'), yt('QSEi_QmxEso')],
+      sources: [yt('Oy5mdV79dww'), yt('QSEi_QmxEso')],
     },
     {
       id: 'donkey-kong-country-grassland-groove', cat: 'nintendo', franchise: 'Donkey Kong', game: 'Donkey Kong Country: Tropical Freeze',
@@ -71,17 +71,17 @@
     {
       id: 'earthbound-onett', cat: 'nintendo', franchise: 'EarthBound', game: 'EarthBound',
       title: 'Onett', composer: 'Keiichi Suzuki y Hirokazu Tanaka', year: 1994, platform: 'SNES',
-      sources: [yt('MSRcvlNAv5Y'), yt('vKs7FvCfZfs')],
+      sources: [yt('XKfXsTkA71I'), yt('4IKdJ8rAs_E')],
     },
     {
       id: 'f-zero-mute-city', cat: 'nintendo', franchise: 'F-Zero', game: 'F-Zero',
       title: 'Mute City', composer: 'Yumiko Kanki y Naoto Ishida', year: 1990, platform: 'SNES',
-      sources: [yt('vXTc308Z1tQ'), yt('La_Kb8U6OXA')],
+      sources: [yt('La_Kb8U6OXA')],
     },
     {
       id: 'fire-emblem-id-purpose', cat: 'nintendo', franchise: 'Fire Emblem', game: 'Fire Emblem: Awakening',
       title: 'Id (Purpose)', composer: 'Hiroki Morishita', year: 2012, platform: 'Nintendo 3DS',
-      sources: [yt('8XY5WxernwY'), yt('nScwfj5Qcqs')],
+      sources: [yt('8XY5WxernwY')],
     },
     {
       id: 'fire-emblem-fates-lost-in-thoughts-all-a', cat: 'nintendo', franchise: 'Fire Emblem', game: 'Fire Emblem Fates',
@@ -91,7 +91,7 @@
     {
       id: 'fire-emblem-edge-of-dawn-seasons-o', cat: 'nintendo', franchise: 'Fire Emblem', game: 'Fire Emblem: Three Houses',
       title: 'The Edge of Dawn (Seasons of Warfare)', composer: 'Takeru Kanazaki, Hiroki Morishita y Rei Kondoh', year: 2019, platform: 'Nintendo Switch',
-      sources: [yt('ozRoSNoiewc'), yt('G9yTsx04q-M'), yt('ixFJ0XLPUrg')],
+      sources: [yt('ozRoSNoiewc'), yt('G9yTsx04q-M')],
     },
     {
       id: 'goldeneye-007-facility', cat: 'nintendo', franchise: 'GoldenEye 007', game: 'GoldenEye 007',
@@ -101,7 +101,7 @@
     {
       id: 'kid-icarus-main-theme', cat: 'nintendo', franchise: 'Kid Icarus', game: 'Kid Icarus: Uprising',
       title: 'Main Theme', composer: 'Motoi Sakuraba', year: 2012, platform: 'Nintendo 3DS',
-      sources: [yt('yPm-_3ueOz4'), yt('k6nOPEMaWAw')],
+      sources: [yt('J72zAmL2Xv0')],
     },
     {
       id: 'kdl-greengreens', cat: 'nintendo', franchise: 'Kirby', game: "Kirby's Dream Land",
@@ -141,7 +141,7 @@
     {
       id: 'mario-kart-8-deluxe-mario-kart-stadium', cat: 'nintendo', franchise: 'Mario Kart', game: 'Mario Kart 8 Deluxe',
       title: 'Mario Kart Stadium', composer: 'Shiho Fujii, Atsuko Asahi y Ryo Nagamatsu', year: 2017, platform: 'Nintendo Switch',
-      sources: [yt('LMuFA_XBtWk')],
+      sources: [yt('PxHL7VKoh_4'), yt('CfzySA67b8I')],
     },
     {
       id: 'metroid-brinstar', cat: 'nintendo', franchise: 'Metroid', game: 'Metroid',
@@ -151,7 +151,7 @@
     {
       id: 'metroid-prime-phendrana-drifts', cat: 'nintendo', franchise: 'Metroid', game: 'Metroid Prime',
       title: 'Phendrana Drifts', composer: 'Kenji Yamamoto', year: 2002, platform: 'GameCube',
-      sources: [yt('ZxrOr7tGCcw'), yt('_-wmjWYBjQQ'), yt('ZbbUv1hz6mE')],
+      sources: [yt('_-wmjWYBjQQ'), yt('ZbbUv1hz6mE')],
     },
     {
       id: 'pkmn-wild', cat: 'nintendo', franchise: 'Pokémon', game: 'Pokémon Red & Blue',
@@ -176,7 +176,6 @@
         apple({ term: 'Littleroot Town Pokémon Ruby & Sapphire', match: 'Littleroot Town' }),
         yt('V1X3sjfIZD4'),
         yt('zGGR7d1lTd8'),
-        yt('vPRS8RiWhi8'),
       ],
     },
     {
@@ -197,12 +196,12 @@
     {
       id: 'splatoon-splattack', cat: 'nintendo', franchise: 'Splatoon', game: 'Splatoon',
       title: 'Splattack!', composer: 'Toru Minegishi, Shiho Fujii y Ryo Nagamatsu', year: 2015, platform: 'Wii U',
-      sources: [yt('nU8vbkWptc4'), yt('4URkpbX3x7Q')],
+      sources: [yt('LBQmvJyIKTg'), yt('64sJanf_crs')],
     },
     {
       id: 'splatoon-calamari-inkantation', cat: 'nintendo', franchise: 'Splatoon', game: 'Splatoon',
       title: 'Calamari Inkantation', composer: 'Toru Minegishi, Shiho Fujii y Ryo Nagamatsu (performed by the Squid Sisters)', year: 2015, platform: 'Wii U',
-      sources: [yt('UC7wfAKDizU'), yt('esFocnEgRZw')],
+      sources: [yt('UC7wfAKDizU')],
     },
     {
       id: 'splatoon-2-ink-me-up', cat: 'nintendo', franchise: 'Splatoon', game: 'Splatoon 2',
@@ -227,22 +226,22 @@
     {
       id: 'sm64-bobomb', cat: 'nintendo', franchise: 'Super Mario', game: 'Super Mario 64',
       title: 'Bob-omb Battlefield', composer: 'Koji Kondo', year: 1996, platform: 'Nintendo 64',
-      sources: [yt('BCD3PKRyspE'), yt('2TcTc4YmS9c'), yt('bmP3UHXYi28')],
+      sources: [yt('2TcTc4YmS9c'), yt('bmP3UHXYi28')],
     },
     {
       id: 'super-mario-64-dire-dire-docks', cat: 'nintendo', franchise: 'Super Mario', game: 'Super Mario 64',
       title: 'Dire, Dire Docks', composer: 'Koji Kondo', year: 1996, platform: 'Nintendo 64',
-      sources: [yt('Zqa2mgjbOIM'), yt('CH97oY2pZpg'), yt('fjW8WM5dBDk')],
+      sources: [yt('Zqa2mgjbOIM'), yt('CH97oY2pZpg')],
     },
     {
       id: 'super-mario-sunshine-delfino-plaza', cat: 'nintendo', franchise: 'Super Mario', game: 'Super Mario Sunshine',
       title: 'Delfino Plaza', composer: 'Koji Kondo y Shinobu Tanaka', year: 2002, platform: 'GameCube',
-      sources: [yt('s4hphQfWqAc'), yt('KYdRWC6MCgM'), yt('mKl-jqYxZBg')],
+      sources: [yt('s4hphQfWqAc'), yt('mKl-jqYxZBg')],
     },
     {
       id: 'smg-gusty', cat: 'nintendo', franchise: 'Super Mario', game: 'Super Mario Galaxy',
       title: 'Gusty Garden Galaxy', composer: 'Mahito Yokota y Koji Kondo', year: 2007, platform: 'Wii',
-      sources: [yt('ezJPx7v7ALk'), yt('1bvDHAUv2ak')],
+      sources: [yt('1bvDHAUv2ak')],
     },
     {
       id: 'super-mario-odyssey-jump-up-super-star', cat: 'nintendo', franchise: 'Super Mario', game: 'Super Mario Odyssey',
@@ -282,12 +281,12 @@
     {
       id: 'legend-of-zelda-clock-town-first-day', cat: 'nintendo', franchise: 'The Legend of Zelda', game: "The Legend of Zelda: Majora's Mask",
       title: 'Clock Town, First Day', composer: 'Koji Kondo', year: 2000, platform: 'Nintendo 64',
-      sources: [yt('bjBvktEJ3fY'), yt('kBhteB4ETc4'), yt('vlq4CiKbh2A')],
+      sources: [yt('bjBvktEJ3fY'), yt('vlq4CiKbh2A')],
     },
     {
       id: 'legend-of-zelda-dragon-roost-island', cat: 'nintendo', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: The Wind Waker',
       title: 'Dragon Roost Island', composer: 'Kenta Nagata, Hajime Wakai, Toru Minegishi y Koji Kondo', year: 2002, platform: 'GameCube',
-      sources: [yt('QtcgZGp3FGs'), yt('SfaNKs2KZ1o'), yt('P_2qlwnWR9E')],
+      sources: [yt('SfaNKs2KZ1o'), yt('P_2qlwnWR9E')],
     },
     {
       id: 'legend-of-zelda-hyrule-field', cat: 'nintendo', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Twilight Princess',
@@ -297,7 +296,7 @@
     {
       id: 'botw-main', cat: 'nintendo', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Breath of the Wild',
       title: 'Main Theme', composer: 'Manaka Kataoka, Yasuaki Iwata y Hajime Wakai', year: 2017, platform: 'Switch / Wii U',
-      sources: [yt('woKE52m86sg'), yt('U_Mm4Tia9zI')],
+      sources: [yt('U_Mm4Tia9zI')],
     },
     {
       id: 'wii-sports-title-theme', cat: 'nintendo', franchise: 'Wii Sports', game: 'Wii Sports',
@@ -307,17 +306,17 @@
     {
       id: 'xenoblade-chronicles-you-will-know-our-name', cat: 'nintendo', franchise: 'Xenoblade', game: 'Xenoblade Chronicles',
       title: 'You Will Know Our Names', composer: 'ACE+', year: 2010, platform: 'Wii',
-      sources: [yt('g7yNyhLOIa4'), yt('RZ3ZC8eHpv8')],
+      sources: [yt('g7yNyhLOIa4')],
     },
     {
       id: 'xenoblade-chronicles-gaur-plain', cat: 'nintendo', franchise: 'Xenoblade', game: 'Xenoblade Chronicles',
       title: 'Gaur Plain', composer: 'ACE+', year: 2010, platform: 'Wii',
-      sources: [yt('UDJtsfR51To'), yt('N-uw4z7x8vY')],
+      sources: [yt('UDJtsfR51To')],
     },
     {
       id: 'xenoblade-chronicles-2-battle', cat: 'nintendo', franchise: 'Xenoblade', game: 'Xenoblade Chronicles 2',
       title: 'Battle!!', composer: 'Yasunori Mitsuda, ACE, Kenji Hiramatsu y Manami Kiyota', year: 2017, platform: 'Nintendo Switch',
-      sources: [yt('sMOcg5pzbhE'), yt('pxhIj0tSLmc')],
+      sources: [yt('sMOcg5pzbhE')],
     },
 
     /* ───────────── Xbox (22) ───────────── */
@@ -507,7 +506,6 @@
         apple({ term: 'God of War Ragnarök God of War Ragnarök', match: 'God of War Ragnarök' }),
         yt('V5Ar0dKnl6Y'),
         yt('eMcY8-A5wtg'),
-        yt('AUOy6tkrvJY'),
       ],
     },
     {
@@ -551,7 +549,6 @@
       sources: [
         apple({ song: 1435822267 }),
         apple({ term: "Spider-Man Marvel's Spider-Man", match: 'Spider-Man' }),
-        yt('O8oMXPOeeUM'),
         yt('YynWr_T8D3o'),
         yt('B_jPNlVeZNQ'),
       ],
@@ -571,7 +568,6 @@
       title: 'Old Snake', composer: 'Harry Gregson-Williams', year: 2008, platform: 'PS3',
       sources: [
         apple({ term: 'Old Snake Metal Gear Solid 4  Guns of the Patriots', match: 'Old Snake' }),
-        yt('Qr89FOtdQJM'),
         yt('dPPcnYa8WaE'),
         yt('ashwD_M2UMo'),
       ],
@@ -787,7 +783,6 @@
         apple({ term: 'Rude Buster Deltarune', match: 'Rude Buster' }),
         yt('uY8hz6USA6E'),
         yt('GPL5Hkl11IQ'),
-        yt('h_1kfPWBYN4'),
       ],
     },
     {
@@ -825,7 +820,7 @@
     {
       id: 'hades-in-the-blood', cat: 'indie', franchise: 'Hades', game: 'Hades',
       title: 'In the Blood', composer: 'Darren Korb', year: 2020, platform: 'PC / Switch',
-      sources: [apple({ term: 'In the Blood Hades', match: 'In the Blood' }), yt('akG1Y2Lkx9s'), yt('9QtokupweyQ')],
+      sources: [apple({ term: 'In the Blood Hades', match: 'In the Blood' })],
     },
     {
       id: 'hades-good-riddance', cat: 'indie', franchise: 'Hades', game: 'Hades',
@@ -924,7 +919,6 @@
       sources: [
         apple({ term: "Spring (It's A Big World Outside) Stardew Valley", match: "Spring (It's A Big World Outside)" }),
         yt('bnWiJEAHZLk'),
-        yt('fSTX3_JKP2M'),
       ],
     },
     {
@@ -960,7 +954,7 @@
     {
       id: 'undertale-hopes-and-dreams', cat: 'indie', franchise: 'Undertale', game: 'Undertale',
       title: 'Hopes and Dreams', composer: 'Toby Fox', year: 2015, platform: 'PC',
-      sources: [apple({ term: 'Hopes and Dreams Undertale', match: 'Hopes and Dreams' }), yt('o-oiB1irhB8'), yt('kX6LHY_fddw'), yt('Bzgvx00LTYg')],
+      sources: [apple({ term: 'Hopes and Dreams Undertale', match: 'Hopes and Dreams' }), yt('kX6LHY_fddw'), yt('Bzgvx00LTYg')],
     },
     {
       id: 'undertale-spear-of-justice', cat: 'indie', franchise: 'Undertale', game: 'Undertale',
@@ -996,7 +990,6 @@
         apple({ song: 1459346130 }),
         apple({ term: "Dracula's Castle Castlevania  Symphony of the Night", match: "Dracula's Castle" }),
         yt('X7faGl3O6Oc'),
-        yt('XnuqGIKXPyc'),
         yt('ASE2Yqtefbo'),
       ],
     },
@@ -1013,7 +1006,7 @@
     {
       id: 'ducktales-moon', cat: 'retro', franchise: 'DuckTales', game: 'DuckTales',
       title: 'The Moon', composer: 'Hiroshige Tonomura', year: 1989, platform: 'NES',
-      sources: [apple({ term: 'The Moon DuckTales', match: 'The Moon' }), yt('3aXCr5-GN1I'), yt('V_56DvyFwtc')],
+      sources: [apple({ term: 'The Moon DuckTales', match: 'The Moon' }), yt('3aXCr5-GN1I')],
     },
     {
       id: 'golden-axe-wilderness', cat: 'retro', franchise: 'Golden Axe', game: 'Golden Axe',
@@ -1033,7 +1026,7 @@
     {
       id: 'mega-man-x-opening-stage', cat: 'retro', franchise: 'Mega Man', game: 'Mega Man X',
       title: 'Opening Stage', composer: 'Setsuo Yamamoto, Makoto Tomozawa, Yuki Iwai, Yuko Takehara, Toshihiko Horiyama', year: 1993, platform: 'SNES',
-      sources: [apple({ term: 'Opening Stage Mega Man X', match: 'Opening Stage' }), yt('8F2jf0NRl2Y'), yt('MkhIGJsYb4I'), yt('Dzp4W_oe0M0')],
+      sources: [apple({ term: 'Opening Stage Mega Man X', match: 'Opening Stage' }), yt('8F2jf0NRl2Y'), yt('MkhIGJsYb4I')],
     },
     {
       id: 'metal-slug-assault-theme', cat: 'retro', franchise: 'Metal Slug', game: 'Metal Slug',
@@ -1083,7 +1076,7 @@
     {
       id: 'sf2-guile', cat: 'retro', franchise: 'Street Fighter', game: 'Street Fighter II',
       title: "Guile's Theme", composer: 'Yoko Shimomura', year: 1991, platform: 'Arcade',
-      sources: [apple({ album: 1085989596, country: 'jp', match: 'Guile' }), yt('xOinHbF8l8Y'), yt('FEdbR0jnfvQ'), yt('5RxPUIoERwY')],
+      sources: [apple({ album: 1085989596, country: 'jp', match: 'Guile' }), yt('xOinHbF8l8Y'), yt('FEdbR0jnfvQ')],
     },
     {
       id: 'street-fighter-ii-ken-s-theme', cat: 'retro', franchise: 'Street Fighter', game: 'Street Fighter II',
@@ -1118,7 +1111,7 @@
     {
       id: 'tetris-a', cat: 'retro', franchise: 'Tetris', game: 'Tetris (Game Boy)',
       title: 'Type A (Korobeiniki)', composer: 'Tradicional, arr. Hirokazu Tanaka', year: 1989, platform: 'Game Boy',
-      sources: [yt('S098e4mSLDY'), yt('-41jPSBWKNE')],
+      sources: [yt('-41jPSBWKNE')],
     },
     {
       id: 'king-of-fighters-98-esaka-forever', cat: 'retro', franchise: 'The King of Fighters', game: "The King of Fighters '98",
@@ -1255,7 +1248,6 @@
         apple({ term: 'Find the Flame Final Fantasy XVI', match: 'Find the Flame' }),
         yt('CeqyEzK87z4'),
         yt('itCm4SRFbQA'),
-        yt('EPogrxtjzBs'),
       ],
     },
     {

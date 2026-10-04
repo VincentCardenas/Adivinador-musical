@@ -17,6 +17,7 @@
 
   let volume = 0.8;
   let muted = false;
+  let gain = 1; // ajuste de la fuente actual para que todas suenen parejo (ver gainFor)
   let current = null;
   let loadToken = 0;
   let playToken = 0;
@@ -204,11 +205,32 @@
     }
   });
 
+  /*
+   * Volumen parejo: AM.LOUDNESS trae el volumen medido de cada fuente (LUFS) y aquí se baja
+   * lo necesario para que todas queden cerca del mismo nivel. Solo se baja, nunca se sube:
+   * subir requeriría pasar el audio por Web Audio, y si el navegador suspende ese contexto
+   * el clip sonaría mudo aunque el juego crea que está sonando.
+   */
+  const MAX_CUT_DB = 12;
+  function gainFor(cand) {
+    const L = AM.LOUDNESS;
+    if (!L || !cand) return 1;
+    const apple = cand.kind === 'audio';
+    const lufs = apple ? L.apple[cand.appleId] : L.youtube[cand.id];
+    const db = lufs == null
+      ? (apple ? L.fallback.apple : L.fallback.youtube)
+      : Math.max(-MAX_CUT_DB, Math.min(0, L.target - lufs));
+    return Math.pow(10, db / 20);
+  }
+
+  function audioVolume() { return muted ? 0 : volume * gain; }
+
   /* ── API pública ── */
   async function load(cand) {
     stop();
     const token = ++loadToken;
     current = cand;
+    gain = gainFor(cand);
     if (cand.kind === 'audio') {
       if (ytPlayer && ytPlayer.stopVideo) { try { ytPlayer.stopVideo(); } catch (e) { /* nada */ } }
       await loadAudio(cand.url);
@@ -330,7 +352,7 @@
     if (cand.kind === 'audio') {
       seekPending = false;
       audio.muted = false;
-      audio.volume = muted ? 0 : volume;
+      audio.volume = audioVolume();
       try { audio.currentTime = cand.start || 0; } catch (e) { /* nada */ }
       const p = audio.play();
       if (p && p.catch) {
@@ -372,18 +394,18 @@
    * los medios silenciados que reproducen sin interacción o en segundo plano, y eso
    * arruinaría la verificación del catálogo.
    */
-  function ytVolume() { return muted ? 0 : Math.round(volume * 100); }
+  function ytVolume() { return Math.round(audioVolume() * 100); }
 
   function setVolume(v) {
     volume = Math.max(0, Math.min(1, v));
-    audio.volume = muted ? 0 : volume;
+    audio.volume = audioVolume();
     if (ytPlayer && ytPlayer.setVolume) { try { ytPlayer.setVolume(ytVolume()); } catch (e) { /* nada */ } }
   }
 
   function setMuted(m) {
     muted = !!m;
     audio.muted = false;
-    audio.volume = muted ? 0 : volume;
+    audio.volume = audioVolume();
     if (ytPlayer && ytPlayer.setVolume) { try { ytPlayer.setVolume(ytVolume()); } catch (e) { /* nada */ } }
   }
 
@@ -392,6 +414,7 @@
     setLimit: setLimit, setVolume: setVolume, setMuted: setMuted, time: time,
     isPlaying: () => playState === 'playing',
     getVolume: () => volume,
+    gainFor: gainFor,
     ytAvailable: ytAvailable,
   };
 })(window.AM = window.AM || {});

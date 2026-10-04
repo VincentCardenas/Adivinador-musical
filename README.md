@@ -1,12 +1,13 @@
 # 🎵 ¿Qué suena? · Adivinador musical
 
-Adivinador musical: suena un fragmento de música **oficial** y tienes que reconocer de dónde es. Hay cinco temas:
+Adivinador musical: suena un fragmento de música **oficial** y tienes que reconocer de dónde es. Hay seis temas:
 
 | Tema | ¿Qué adivinas? | Categorías |
 | --- | --- | --- |
 | 🎮 **Videojuegos** | La saga y el juego (Halo, Zelda, Pokémon, Elden Ring…): 281 pistas de 127 sagas y 215 juegos | Nintendo, Xbox, PlayStation, Indie, Retro, RPG, Acción, Online |
 | 📺 **Series** | La serie por su entrada o tema principal (Friends, Lost, Stranger Things, El Chavo…) | Por época: clásicas, 90s, 2000s, 2010s y 2020 en adelante |
-| 🧸 **Caricaturas** | La caricatura o el anime por su entrada, en español latino cuando la hubo | Por época (clásicas, 80s, 90s, 2000s y 2010 en adelante) y **🎌 Openings de anime**: 56 openings famosos, de Caballeros del Zodiaco y Dragon Ball a Evangelion, Death Note, Chainsaw Man o Frieren |
+| 🧸 **Caricaturas** | La caricatura por su entrada, en español latino cuando la hubo (Los Picapiedra, Bob Esponja, Hora de aventura…) | Por época: clásicas, 80s, 90s, 2000s y 2010 en adelante |
+| 🎌 **Anime** | El anime por su opening: 56 openings famosos, de Caballeros del Zodiaco y Dragon Ball (en latino) a Evangelion, Death Note, Chainsaw Man o Frieren | Por época: clásicos, 90s, 2000s, 2010s y 2020 en adelante |
 | 🏰 **Disney** | La película por sus canciones **en español latino** (El rey león, Frozen, Coco…) | Por época: clásicos, renacimiento, 2000s, 2010s y 2020 en adelante. Interruptor para incluir o quitar **Pixar** |
 | 🎤 **Canciones** | Quién la canta (Clásico) o qué canción es (Experto y Supervivencia) | Por época: antes de 1980, 80s, 90s, 2000s, 2010s y 2020 en adelante. Selector de idioma: **español, inglés o ambos** |
 
@@ -99,6 +100,11 @@ El juego **no incluye archivos de audio**: los reproduce desde fuentes oficiales
 Cada pista tiene varias fuentes de respaldo. Si una deja de existir (por ejemplo, un video que borran),
 el juego prueba la siguiente y, si ninguna sirve, cambia de pista sola sin que cuente la ronda.
 
+**Volumen parejo:** [`js/loudness.js`](js/loudness.js) guarda el volumen medido de cada fuente (en LUFS:
+los previews de Apple medidos con ffmpeg y los videos con el dato que publica YouTube) y el reproductor
+baja las que suenan más fuerte para que todas queden a un nivel parecido. Solo baja, nunca sube: un video
+muy bajito se sigue oyendo bajito. Una pista nueva sin medir usa un ajuste promedio.
+
 ### Verificar el catálogo
 
 Abajo de la página está **🛠 Verificar catálogo**: prueba en silencio todas las pistas en tu navegador y
@@ -130,7 +136,8 @@ Cada tema tiene su archivo de catálogo:
 | --- | --- | --- | --- |
 | Videojuegos | [`js/catalog.js`](js/catalog.js) | saga | juego |
 | Series | [`js/catalog-series.js`](js/catalog-series.js) | serie | serie |
-| Caricaturas | [`js/catalog-caricaturas.js`](js/catalog-caricaturas.js) | saga (Dragon Ball) | caricatura (Dragon Ball Z) |
+| Caricaturas | [`js/catalog-caricaturas.js`](js/catalog-caricaturas.js) | caricatura | caricatura |
+| Anime | [`js/catalog-anime.js`](js/catalog-anime.js) | saga (Dragon Ball) | anime (Dragon Ball Z) |
 | Disney | [`js/catalog-disney.js`](js/catalog-disney.js) | saga (Toy Story) | película (Toy Story 2) |
 | Canciones | [`js/catalog-canciones.js`](js/catalog-canciones.js) | artista | canción |
 
@@ -181,12 +188,14 @@ css/styles.css            Estilos (estética arcade/synthwave, responsive)
 js/config.js              Versión, repositorio de reportes y conexión del ranking (Supabase)
 js/catalog.js             Videojuegos: pistas, categorías y juegos "señuelo"
 js/catalog-series.js      Series de TV por época
-js/catalog-caricaturas.js Caricaturas por época y openings de anime
+js/catalog-caricaturas.js Caricaturas por época
+js/catalog-anime.js       Openings de anime por época
 js/catalog-disney.js      Disney y Pixar (español latino) por época
 js/catalog-canciones.js   Canciones famosas por época e idioma
-js/themes.js              Los 5 temas: textos, filtros (Pixar, idioma) y rangos
+js/themes.js              Los 6 temas: textos, filtros (Pixar, idioma) y rangos
 js/sources.js             Resuelve cada pista a un preview de Apple o un video de YouTube
-js/engine.js              Reproductor unificado (<audio> + YouTube oculto), cortes de clip y fallos
+js/loudness.js            Volumen medido de cada fuente (generado) para que todo suene parejo
+js/engine.js              Reproductor unificado (<audio> + YouTube oculto), volumen parejo, cortes de clip y fallos
 js/sfx.js                 Efectos de sonido de la interfaz, sintetizados con Web Audio
 js/game.js                Reglas: modos, opciones, puntaje y textos de resultado
 js/scores.js              Ranking global (API REST de Supabase)
@@ -201,6 +210,9 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **1.5**: el anime pasa a ser su **propio tema**, por época; **volumen parejo** entre pistas (se mide cada
+  fuente y se bajan las que suenan más fuerte); se quitan 42 videos de YouTube que ya no existen (4 pistas de
+  Nintendo que se habían quedado sin audio tienen videos nuevos).
 - **1.4**: correcciones de los reportes: si el audio se queda cargando a media ronda, el reloj se pausa
   (y si sigue trabado, se prueba otra fuente); las opciones de Canciones van en el idioma de la canción que
   suena; los DLC cuentan como su juego (*Wrath of the Lich King* → *World of Warcraft*) y ya no salen

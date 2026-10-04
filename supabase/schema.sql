@@ -32,7 +32,7 @@ create table if not exists public.scores (
     and nick ~ '^[A-Za-z0-9ÁÉÍÓÚÜÑáéíóúüñ _.-]+$'
     and nick ~ '[A-Za-z0-9ÁÉÍÓÚÜÑáéíóúüñ]'
   ),
-  constraint tema_valido check (tema in ('juegos', 'series', 'caricaturas', 'disney', 'canciones')),
+  constraint tema_valido check (tema in ('juegos', 'series', 'caricaturas', 'anime', 'disney', 'canciones')),
   constraint modo_valido check (modo in ('clasico', 'experto', 'supervivencia')),
   constraint numeros_validos check (
     puntos >= 0 and aciertos >= 0 and rondas >= 1 and racha >= 0

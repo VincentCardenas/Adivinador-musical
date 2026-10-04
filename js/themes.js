@@ -1,5 +1,5 @@
 /*
- * Temas del juego: videojuegos, series, caricaturas, Disney y canciones.
+ * Temas del juego: videojuegos, series, caricaturas, anime, Disney y canciones.
  *
  * Cada tema tiene sus propias categorías (épocas, plataformas…) y define cómo se llaman
  * las dos respuestas de cada pista:
@@ -73,7 +73,7 @@
     },
     {
       id: 'caricaturas', label: 'Caricaturas', icon: '🧸',
-      kicker: 'Adivinador musical de caricaturas y anime',
+      kicker: 'Adivinador musical de caricaturas',
       sub: 'Escucha la entrada y adivina de qué caricatura es.',
       broad: 'caricatura', broadArt: 'la caricatura', broadPl: 'caricaturas',
       exact: 'caricatura', exactArt: 'la caricatura', exactPl: 'caricaturas',
@@ -81,10 +81,10 @@
       question: '¿De qué caricatura es?',
       placeholder: 'Escribe el nombre de la caricatura…',
       partial: 'misma saga, otra caricatura',
-      clasicoExample: 'Los Picapiedra, Pokémon, Bob Esponja…', survivalExample: '¿Dragon Ball o Dragon Ball Z?',
+      clasicoExample: 'Los Picapiedra, Bob Esponja, Hora de aventura…', survivalExample: '¿Los Simpson o Los Simpson: la película?',
       otherReason: 'Es de otra caricatura', sameReason: 'Es otra canción de esta misma caricatura',
       realLabel: '¿De qué caricatura era en realidad?', realPlaceholder: 'Escribe la caricatura (si la sabes)',
-      songExample: 'Cha-La Head-Cha-La',
+      songExample: 'Tema de Los Picapiedra',
       ranks: {
         survival: [
           [25, 'Leyenda de las caricaturas', 'Tu infancia (y la de todos) vive en tu memoria.'],
@@ -98,6 +98,36 @@
           [0.7, 'Fan de las caricaturas', '¡Casi perfecto!'],
           [0.4, 'Nada mal', 'Unas cuantas tardes de caricaturas más y lo dominas.'],
           [0, 'A seguir viendo', 'Hay muchas caricaturas por descubrir.'],
+        ],
+      },
+    },
+    {
+      id: 'anime', label: 'Anime', icon: '🎌',
+      kicker: 'Adivinador musical de anime',
+      sub: 'Escucha el opening y adivina de qué anime es.',
+      broad: 'anime', broadArt: 'el anime', broadPl: 'animes',
+      exact: 'anime', exactArt: 'el anime', exactPl: 'animes',
+      expertGoal: 'el nombre del anime', survivalGoal: 'adivina el anime',
+      question: '¿De qué anime es?',
+      placeholder: 'Escribe el nombre del anime…',
+      partial: 'misma saga, otro anime',
+      clasicoExample: 'Dragon Ball, Naruto, Demon Slayer…', survivalExample: '¿Dragon Ball Z o Dragon Ball GT?',
+      otherReason: 'Es de otro anime', sameReason: 'Es otro opening de este mismo anime',
+      realLabel: '¿De qué anime era en realidad?', realPlaceholder: 'Escribe el anime (si lo sabes)',
+      songExample: 'Gurenge',
+      ranks: {
+        survival: [
+          [25, 'Leyenda del anime', 'Te sabes los openings mejor que los créditos.'],
+          [15, 'Otaku de corazón', 'Pocos llegan tan lejos. ¡Impresionante!'],
+          [8, 'Fan del anime', 'Tienes buen oído. ¿Otra partida?'],
+          [3, 'Aprendiz', 'Vas por buen camino.'],
+          [0, 'Novato', 'Todos empezamos en el primer capítulo.'],
+        ],
+        ratio: [
+          [0.9, 'Leyenda del anime', 'Reconoces cualquier opening a la primera.'],
+          [0.7, 'Otaku de corazón', '¡Casi perfecto!'],
+          [0.4, 'Nada mal', 'Unos cuantos maratones más y lo dominas.'],
+          [0, 'A seguir viendo', 'Hay mucho anime por descubrir.'],
         ],
       },
     },

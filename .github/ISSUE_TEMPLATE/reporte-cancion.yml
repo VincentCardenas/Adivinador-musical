@@ -11,7 +11,7 @@ body:
     id: tema
     attributes:
       label: Tema
-      description: Videojuegos, Series, Caricaturas, Disney o Canciones (lo rellena el juego).
+      description: Videojuegos, Series, Caricaturas, Anime, Disney o Canciones (lo rellena el juego).
   - type: input
     id: pista
     attributes:
