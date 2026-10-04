@@ -3,13 +3,16 @@
  *
  *   AM.SAGAS        → cada saga junta las pistas del catálogo de sus `franchises` (catalog.js)
  *                     más las de AM.SAGA_TRACKS con su mismo `saga`. `excludeGames` deja fuera
- *                     juegos del catálogo: en este modo no va música de remakes, y Halo va
- *                     solo de Combat Evolved a Reach.
+ *                     juegos del catálogo: en este modo no va música de remakes, Halo va
+ *                     solo de Combat Evolved a Reach y Kirby deja fuera Triple Deluxe (su
+ *                     Masked Dedede's Theme usa la melodía de King Dedede's Theme).
  *   AM.SAGA_TRACKS  → canciones que solo suenan en el modo Sagas (no cambian los otros modos).
  *                     Mismo formato que catalog.js; en este modo la respuesta es `title`.
  *                     Solo música original: nada de remakes, remasters ni arreglos.
- *                     Las de Apple salen de los soundtracks originales; las de YouTube se eligen
- *                     prefiriendo los canales oficiales de YouTube Music ("- Topic").
+ *                     Las de Apple salen de los soundtracks originales; las de YouTube son
+ *                     subidas del soundtrack original revisadas a mano (se prefieren los canales
+ *                     "- Topic" de YouTube Music cuando existen) y va primero la que suena más
+ *                     fuerte, porque el juego solo puede bajar el volumen, no subirlo.
  *
  * Un juego aparece en "Un juego" solo si tiene al menos 5 canciones con nombres distintos.
  * Archivo generado (184 canciones).
@@ -24,7 +27,7 @@
     { id: 'mario', label: 'Super Mario', icon: '🍄', franchises: ['Super Mario', 'Mario Kart'] },
     { id: 'zelda', label: 'The Legend of Zelda', icon: '🗡️', franchises: ['The Legend of Zelda'] },
     { id: 'pokemon', label: 'Pokémon', icon: '⚡', franchises: ['Pokémon'] },
-    { id: 'kirby', label: 'Kirby', icon: '⭐', franchises: ['Kirby'] },
+    { id: 'kirby', label: 'Kirby', icon: '⭐', franchises: ['Kirby'], excludeGames: ['Kirby: Triple Deluxe'] },
     { id: 'donkey-kong', label: 'Donkey Kong', icon: '🍌', franchises: ['Donkey Kong'] },
     { id: 'sonic', label: 'Sonic', icon: '💨', franchises: ['Sonic the Hedgehog'] },
     { id: 'final-fantasy', label: 'Final Fantasy', icon: '💎', franchises: ['Final Fantasy'], excludeGames: ['Final Fantasy VII Rebirth', 'Final Fantasy VII Remake'] },
@@ -43,7 +46,7 @@
     {
       id: 'saga-super-mario-bros-underwater-theme', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario Bros.',
       title: 'Underwater Theme', composer: 'Koji Kondo', year: 1985, platform: 'NES',
-      sources: [yt('zc28zcBIX7U'), yt('nKx0Liso6aQ')],
+      sources: [yt('nKx0Liso6aQ'), yt('zc28zcBIX7U')],
     },
     {
       id: 'saga-super-mario-bros-castle-theme', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario Bros.',
@@ -58,27 +61,27 @@
     {
       id: 'saga-super-mario-world-athletic-theme', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario World',
       title: 'Athletic Theme', composer: 'Koji Kondo', year: 1990, platform: 'SNES',
-      sources: [yt('XF2fA1epvLE'), yt('46yfRJy9N7c')],
+      sources: [yt('46yfRJy9N7c'), yt('XF2fA1epvLE')],
     },
     {
       id: 'saga-super-mario-world-ghost-house', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario World',
       title: 'Ghost House', composer: 'Koji Kondo', year: 1990, platform: 'SNES',
-      sources: [yt('d6fLaUgLHTY'), yt('QlOkOnFDBHs')],
+      sources: [yt('QlOkOnFDBHs'), yt('d6fLaUgLHTY')],
     },
     {
       id: 'saga-super-mario-world-title-theme', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario World',
       title: 'Title Theme', composer: 'Koji Kondo', year: 1990, platform: 'SNES',
-      sources: [yt('PXYIReEQ24g'), yt('kghAq1Qvafg')],
+      sources: [yt('kghAq1Qvafg'), yt('PXYIReEQ24g')],
     },
     {
       id: 'saga-super-mario-world-star-road', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario World',
       title: 'Star Road', composer: 'Koji Kondo', year: 1990, platform: 'SNES',
-      sources: [yt('oRM6SGqvIHg'), yt('V0yJAqFMS3o')],
+      sources: [yt('V0yJAqFMS3o'), yt('oRM6SGqvIHg')],
     },
     {
       id: 'saga-super-mario-64-inside-the-castle-walls', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario 64',
       title: 'Inside the Castle Walls', composer: 'Koji Kondo', year: 1996, platform: 'Nintendo 64',
-      sources: [yt('HIA-F4FVTt4'), yt('-pdLR-nsvlY')],
+      sources: [yt('-pdLR-nsvlY'), yt('HIA-F4FVTt4')],
     },
     {
       id: 'saga-super-mario-64-slider', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario 64',
@@ -98,7 +101,7 @@
     {
       id: 'saga-super-mario-64-lethal-lava-land', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario 64',
       title: 'Lethal Lava Land', composer: 'Koji Kondo', year: 1996, platform: 'Nintendo 64',
-      sources: [yt('vthq62tj5XI'), yt('emeB83Q6P1I')],
+      sources: [yt('emeB83Q6P1I'), yt('vthq62tj5XI')],
     },
     {
       id: 'saga-super-mario-sunshine-ricco-harbor', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario Sunshine',
@@ -118,7 +121,7 @@
     {
       id: 'saga-super-mario-sunshine-bianco-hills', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario Sunshine',
       title: 'Bianco Hills', composer: 'Koji Kondo y Shinobu Tanaka', year: 2002, platform: 'GameCube',
-      sources: [yt('nx1A1xStMRs'), yt('AEY8tfNtu7U')],
+      sources: [yt('AEY8tfNtu7U'), yt('nx1A1xStMRs')],
     },
     {
       id: 'saga-super-mario-galaxy-good-egg-galaxy', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario Galaxy',
@@ -128,12 +131,12 @@
     {
       id: 'saga-super-mario-galaxy-battlerock-galaxy', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario Galaxy',
       title: 'Battlerock Galaxy', composer: 'Mahito Yokota y Koji Kondo', year: 2007, platform: 'Wii',
-      sources: [yt('K9Vgc8ojqQA'), yt('AhueZ4d-vKk')],
+      sources: [yt('AhueZ4d-vKk'), yt('K9Vgc8ojqQA')],
     },
     {
       id: 'saga-super-mario-galaxy-buoy-base-galaxy', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario Galaxy',
       title: 'Buoy Base Galaxy', composer: 'Mahito Yokota y Koji Kondo', year: 2007, platform: 'Wii',
-      sources: [yt('Y9a1cyZbKj4'), yt('SmUn_YgOBAw')],
+      sources: [yt('SmUn_YgOBAw'), yt('Y9a1cyZbKj4')],
     },
     {
       id: 'saga-super-mario-galaxy-space-junk-galaxy', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario Galaxy',
@@ -143,7 +146,7 @@
     {
       id: 'saga-super-mario-galaxy-rosalina-in-the-observatory', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario Galaxy',
       title: 'Rosalina in the Observatory', composer: 'Mahito Yokota y Koji Kondo', year: 2007, platform: 'Wii',
-      sources: [yt('OlzA4gV1-vU'), yt('S-bdAQDnE6I')],
+      sources: [yt('S-bdAQDnE6I'), yt('OlzA4gV1-vU')],
     },
     {
       id: 'saga-super-mario-odyssey-fossil-falls', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario Odyssey',
@@ -158,12 +161,12 @@
     {
       id: 'saga-super-mario-odyssey-new-donk-city', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario Odyssey',
       title: 'New Donk City', composer: 'Naoto Kubo, Shiho Fujii y Koji Kondo', year: 2017, platform: 'Nintendo Switch',
-      sources: [yt('ChTz6T-UGyw'), yt('6JF89RKOT8Q')],
+      sources: [yt('6JF89RKOT8Q'), yt('ChTz6T-UGyw')],
     },
     {
       id: 'saga-super-mario-odyssey-tostarena-town', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario Odyssey',
       title: 'Tostarena Town', composer: 'Naoto Kubo, Shiho Fujii y Koji Kondo', year: 2017, platform: 'Nintendo Switch',
-      sources: [yt('AAsZEpfWnz4'), yt('4aMsKZ53Lt8')],
+      sources: [yt('4aMsKZ53Lt8'), yt('AAsZEpfWnz4')],
     },
     {
       id: 'saga-super-mario-odyssey-break-free-lead-the-way', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario Odyssey',
@@ -189,7 +192,7 @@
     {
       id: 'saga-the-legend-of-zelda-a-link-to-the-past-lost-woods', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: A Link to the Past',
       title: 'Lost Woods', composer: 'Koji Kondo', year: 1991, platform: 'SNES',
-      sources: [yt('XbtyTKfuvQ4'), yt('i6fjPbPeGHk')],
+      sources: [yt('i6fjPbPeGHk'), yt('XbtyTKfuvQ4')],
     },
     {
       id: 'saga-the-legend-of-zelda-ocarina-of-time-hyrule-field', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Ocarina of Time',
@@ -209,7 +212,7 @@
     {
       id: 'saga-the-legend-of-zelda-ocarina-of-time-song-of-storms', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Ocarina of Time',
       title: 'Song of Storms', composer: 'Koji Kondo', year: 1998, platform: 'Nintendo 64',
-      sources: [yt('XTDSJCYWuQA'), yt('UtgHZaq0EGs')],
+      sources: [yt('UtgHZaq0EGs'), yt('XTDSJCYWuQA')],
     },
     {
       id: 'saga-the-legend-of-zelda-ocarina-of-time-lon-lon-ranch', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Ocarina of Time',
@@ -219,7 +222,7 @@
     {
       id: 'saga-the-legend-of-zelda-ocarina-of-time-temple-of-time', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Ocarina of Time',
       title: 'Temple of Time', composer: 'Koji Kondo', year: 1998, platform: 'Nintendo 64',
-      sources: [yt('n66LMxSH3ZM'), yt('cvtLLaK2Fy8')],
+      sources: [yt('cvtLLaK2Fy8'), yt('n66LMxSH3ZM')],
     },
     {
       id: 'saga-the-legend-of-zelda-majoras-mask-song-of-healing', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Majora\'s Mask',
@@ -229,12 +232,12 @@
     {
       id: 'saga-the-legend-of-zelda-majoras-mask-termina-field', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Majora\'s Mask',
       title: 'Termina Field', composer: 'Koji Kondo y Toru Minegishi', year: 2000, platform: 'Nintendo 64',
-      sources: [yt('tR5fMdUF9qU'), yt('EPXwDQumJc4')],
+      sources: [yt('EPXwDQumJc4'), yt('tR5fMdUF9qU')],
     },
     {
       id: 'saga-the-legend-of-zelda-majoras-mask-stone-tower-temple', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Majora\'s Mask',
       title: 'Stone Tower Temple', composer: 'Koji Kondo y Toru Minegishi', year: 2000, platform: 'Nintendo 64',
-      sources: [yt('fNDLoncWz30'), yt('-x6Y7Rsmc4c')],
+      sources: [yt('-x6Y7Rsmc4c'), yt('fNDLoncWz30')],
     },
     {
       id: 'saga-the-legend-of-zelda-majoras-mask-final-hours', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Majora\'s Mask',
@@ -254,7 +257,7 @@
     {
       id: 'saga-the-legend-of-zelda-the-wind-waker-windfall-island', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: The Wind Waker',
       title: 'Windfall Island', composer: 'Kenta Nagata, Hajime Wakai, Toru Minegishi y Koji Kondo', year: 2002, platform: 'GameCube',
-      sources: [yt('TAUDsoy8OM0'), yt('QemTZn8YfJ0')],
+      sources: [yt('QemTZn8YfJ0'), yt('TAUDsoy8OM0')],
     },
     {
       id: 'saga-the-legend-of-zelda-the-wind-waker-arylls-theme', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: The Wind Waker',
@@ -264,7 +267,7 @@
     {
       id: 'saga-the-legend-of-zelda-breath-of-the-wild-hateno-village', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Breath of the Wild',
       title: 'Hateno Village', composer: 'Manaka Kataoka, Yasuaki Iwata y Hajime Wakai', year: 2017, platform: 'Nintendo Switch / Wii U',
-      sources: [yt('Uj07-YU5cTk'), yt('RUwhVBYfoQE')],
+      sources: [yt('RUwhVBYfoQE'), yt('Uj07-YU5cTk')],
     },
     {
       id: 'saga-the-legend-of-zelda-breath-of-the-wild-kass-theme', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Breath of the Wild',
@@ -285,7 +288,7 @@
     {
       id: 'saga-pokemon-red-and-blue-pallet-town', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Red & Blue',
       title: 'Pallet Town', composer: 'Junichi Masuda', year: 1996, platform: 'Game Boy',
-      sources: [yt('cOWRNLaCMJg'), yt('kO09V19wwlE')],
+      sources: [yt('kO09V19wwlE'), yt('cOWRNLaCMJg')],
     },
     {
       id: 'saga-pokemon-red-and-blue-pokemon-center', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Red & Blue',
@@ -295,7 +298,7 @@
     {
       id: 'saga-pokemon-red-and-blue-battle-trainer', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Red & Blue',
       title: 'Battle! (Trainer)', composer: 'Junichi Masuda', year: 1996, platform: 'Game Boy',
-      sources: [yt('UH7YJGheDUU'), yt('yEKd5ebxg9M')],
+      sources: [yt('yEKd5ebxg9M'), yt('UH7YJGheDUU')],
     },
     {
       id: 'saga-pokemon-red-and-blue-battle-gym-leader', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Red & Blue',
@@ -315,12 +318,12 @@
     {
       id: 'saga-pokemon-gold-and-silver-ecruteak-city', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Gold & Silver',
       title: 'Ecruteak City', composer: 'Junichi Masuda y Go Ichinose', year: 1999, platform: 'Game Boy Color',
-      sources: [yt('4MNAktk9ei8'), yt('GhJhR96tJwk')],
+      sources: [yt('GhJhR96tJwk'), yt('4MNAktk9ei8')],
     },
     {
       id: 'saga-pokemon-gold-and-silver-route-29', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Gold & Silver',
       title: 'Route 29', composer: 'Junichi Masuda y Go Ichinose', year: 1999, platform: 'Game Boy Color',
-      sources: [yt('rxqHQ9nOZcc'), yt('lP1vP21-Kp0')],
+      sources: [yt('lP1vP21-Kp0'), yt('rxqHQ9nOZcc')],
     },
     {
       id: 'saga-pokemon-gold-and-silver-battle-johto-trainer', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Gold & Silver',
@@ -335,12 +338,12 @@
     {
       id: 'saga-pokemon-ruby-and-sapphire-petalburg-city', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Ruby & Sapphire',
       title: 'Petalburg City', composer: 'Go Ichinose, Junichi Masuda y Morikazu Aoki', year: 2002, platform: 'Game Boy Advance',
-      sources: [apple({ song: 820996285, country: 'us' }), yt('L3fiaPBDfv8'), yt('sj3lYNPm1xU')],
+      sources: [apple({ song: 820996285, country: 'us' }), yt('sj3lYNPm1xU'), yt('L3fiaPBDfv8')],
     },
     {
       id: 'saga-pokemon-ruby-and-sapphire-slateport-city', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Ruby & Sapphire',
       title: 'Slateport City', composer: 'Go Ichinose, Junichi Masuda y Morikazu Aoki', year: 2002, platform: 'Game Boy Advance',
-      sources: [apple({ song: 820996375, country: 'us' }), yt('l0yo32iVGA0'), yt('3sX3CjliJtE')],
+      sources: [apple({ song: 820996375, country: 'us' }), yt('3sX3CjliJtE'), yt('l0yo32iVGA0')],
     },
     {
       id: 'saga-pokemon-ruby-and-sapphire-battle-team-aqua-magma', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Ruby & Sapphire',
@@ -350,7 +353,7 @@
     {
       id: 'saga-pokemon-diamond-and-pearl-jubilife-city', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Diamond & Pearl',
       title: 'Jubilife City', composer: 'Hitomi Sato, Go Ichinose y Junichi Masuda', year: 2006, platform: 'Nintendo DS',
-      sources: [apple({ song: 840159590, country: 'us' }), yt('loMhf2J6UsA'), yt('s3dLJDcLcow')],
+      sources: [apple({ song: 840159590, country: 'us' }), yt('s3dLJDcLcow'), yt('loMhf2J6UsA')],
     },
     {
       id: 'saga-pokemon-diamond-and-pearl-twinleaf-town', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Diamond & Pearl',
@@ -365,18 +368,18 @@
     {
       id: 'saga-pokemon-diamond-and-pearl-eterna-forest', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Diamond & Pearl',
       title: 'Eterna Forest', composer: 'Hitomi Sato, Go Ichinose y Junichi Masuda', year: 2006, platform: 'Nintendo DS',
-      sources: [apple({ song: 840162936, country: 'us' }), yt('S8-FXBuVXAs'), yt('KqkMem4XeJQ')],
+      sources: [apple({ song: 840162936, country: 'us' }), yt('KqkMem4XeJQ'), yt('S8-FXBuVXAs')],
     },
     /* ───────────── kirby ───────────── */
     {
       id: 'saga-kirbys-dream-land-float-islands', saga: 'kirby', franchise: 'Kirby', game: 'Kirby\'s Dream Land',
       title: 'Float Islands', composer: 'Jun Ishikawa', year: 1992, platform: 'Game Boy',
-      sources: [yt('P1YBW-rj_jk'), yt('AmL_nb6g_ME')],
+      sources: [yt('AmL_nb6g_ME'), yt('P1YBW-rj_jk')],
     },
     {
       id: 'saga-kirbys-dream-land-bubbly-clouds', saga: 'kirby', franchise: 'Kirby', game: 'Kirby\'s Dream Land',
       title: 'Bubbly Clouds', composer: 'Jun Ishikawa', year: 1992, platform: 'Game Boy',
-      sources: [yt('Em1Ux35lxLc'), yt('85w5rfY6gaA')],
+      sources: [yt('85w5rfY6gaA'), yt('Em1Ux35lxLc')],
     },
     {
       id: 'saga-kirbys-dream-land-castle-lololo', saga: 'kirby', franchise: 'Kirby', game: 'Kirby\'s Dream Land',
@@ -432,12 +435,12 @@
     {
       id: 'saga-donkey-kong-country-gang-plank-galleon', saga: 'donkey-kong', franchise: 'Donkey Kong', game: 'Donkey Kong Country',
       title: 'Gang-Plank Galleon', composer: 'David Wise, Eveline Fischer y Robin Beanland', year: 1994, platform: 'SNES',
-      sources: [yt('T0H_gtLBeFo'), yt('Hnu4S76N3lw')],
+      sources: [yt('Hnu4S76N3lw'), yt('T0H_gtLBeFo')],
     },
     {
       id: 'saga-donkey-kong-country-fear-factory', saga: 'donkey-kong', franchise: 'Donkey Kong', game: 'Donkey Kong Country',
       title: 'Fear Factory', composer: 'David Wise, Eveline Fischer y Robin Beanland', year: 1994, platform: 'SNES',
-      sources: [yt('krnF4BeIPUU'), yt('a6skzlUQBbQ')],
+      sources: [yt('a6skzlUQBbQ'), yt('krnF4BeIPUU')],
     },
     {
       id: 'saga-donkey-kong-country-ice-cave-chant', saga: 'donkey-kong', franchise: 'Donkey Kong', game: 'Donkey Kong Country',
@@ -447,12 +450,12 @@
     {
       id: 'saga-donkey-kong-country-life-in-the-mines', saga: 'donkey-kong', franchise: 'Donkey Kong', game: 'Donkey Kong Country',
       title: 'Life in the Mines', composer: 'David Wise, Eveline Fischer y Robin Beanland', year: 1994, platform: 'SNES',
-      sources: [yt('Ior-jYblXU0'), yt('erGZDJertpU')],
+      sources: [yt('erGZDJertpU'), yt('Ior-jYblXU0')],
     },
     {
       id: 'saga-donkey-kong-country-forest-frenzy', saga: 'donkey-kong', franchise: 'Donkey Kong', game: 'Donkey Kong Country',
       title: 'Forest Frenzy', composer: 'David Wise, Eveline Fischer y Robin Beanland', year: 1994, platform: 'SNES',
-      sources: [yt('54owKVhMvHM'), yt('bQA9_KkT9R4')],
+      sources: [yt('bQA9_KkT9R4'), yt('54owKVhMvHM')],
     },
     {
       id: 'saga-donkey-kong-country-2-diddys-kong-quest-lockjaws-saga', saga: 'donkey-kong', franchise: 'Donkey Kong', game: 'Donkey Kong Country 2: Diddy\'s Kong Quest',
@@ -467,17 +470,17 @@
     {
       id: 'saga-donkey-kong-country-2-diddys-kong-quest-flight-of-the-zinge', saga: 'donkey-kong', franchise: 'Donkey Kong', game: 'Donkey Kong Country 2: Diddy\'s Kong Quest',
       title: 'Flight of the Zinger', composer: 'David Wise', year: 1995, platform: 'SNES',
-      sources: [yt('EmSA9AY49rU'), yt('B8sKwkBxPM0')],
+      sources: [yt('B8sKwkBxPM0'), yt('EmSA9AY49rU')],
     },
     {
       id: 'saga-donkey-kong-country-2-diddys-kong-quest-hot-head-bop', saga: 'donkey-kong', franchise: 'Donkey Kong', game: 'Donkey Kong Country 2: Diddy\'s Kong Quest',
       title: 'Hot-Head Bop', composer: 'David Wise', year: 1995, platform: 'SNES',
-      sources: [yt('flAFuldeRV8'), yt('h_WEMytLlnw')],
+      sources: [yt('h_WEMytLlnw'), yt('flAFuldeRV8')],
     },
     {
       id: 'saga-donkey-kong-country-2-diddys-kong-quest-forest-interlude', saga: 'donkey-kong', franchise: 'Donkey Kong', game: 'Donkey Kong Country 2: Diddy\'s Kong Quest',
       title: 'Forest Interlude', composer: 'David Wise', year: 1995, platform: 'SNES',
-      sources: [yt('x5EgRk0mQM8'), yt('AnEfB1F9BaY')],
+      sources: [yt('AnEfB1F9BaY'), yt('x5EgRk0mQM8')],
     },
     {
       id: 'saga-donkey-kong-64-dk-rap', saga: 'donkey-kong', franchise: 'Donkey Kong', game: 'Donkey Kong 64',
@@ -492,7 +495,7 @@
     {
       id: 'saga-donkey-kong-64-angry-aztec', saga: 'donkey-kong', franchise: 'Donkey Kong', game: 'Donkey Kong 64',
       title: 'Angry Aztec', composer: 'Grant Kirkhope', year: 1999, platform: 'Nintendo 64',
-      sources: [yt('gyp-AELnlzU'), yt('awwa_EnHVfo')],
+      sources: [yt('awwa_EnHVfo'), yt('gyp-AELnlzU')],
     },
     {
       id: 'saga-donkey-kong-64-fungi-forest', saga: 'donkey-kong', franchise: 'Donkey Kong', game: 'Donkey Kong 64',
@@ -502,13 +505,13 @@
     {
       id: 'saga-donkey-kong-64-creepy-castle', saga: 'donkey-kong', franchise: 'Donkey Kong', game: 'Donkey Kong 64',
       title: 'Creepy Castle', composer: 'Grant Kirkhope', year: 1999, platform: 'Nintendo 64',
-      sources: [yt('BH7QwvrGAhQ'), yt('ftiqcfh15Cc')],
+      sources: [yt('ftiqcfh15Cc'), yt('BH7QwvrGAhQ')],
     },
     /* ───────────── sonic ───────────── */
     {
       id: 'saga-sonic-the-hedgehog-marble-zone', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic the Hedgehog',
       title: 'Marble Zone', composer: 'Masato Nakamura', year: 1991, platform: 'Mega Drive',
-      sources: [apple({ song: 1571062717, country: 'us' }), yt('z1aXXX_oqP8'), yt('nyW6SHySAHM')],
+      sources: [apple({ song: 1571062717, country: 'us' }), yt('nyW6SHySAHM'), yt('z1aXXX_oqP8')],
     },
     {
       id: 'saga-sonic-the-hedgehog-spring-yard-zone', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic the Hedgehog',
@@ -518,7 +521,7 @@
     {
       id: 'saga-sonic-the-hedgehog-labyrinth-zone', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic the Hedgehog',
       title: 'Labyrinth Zone', composer: 'Masato Nakamura', year: 1991, platform: 'Mega Drive',
-      sources: [apple({ song: 1571062722, country: 'us' }), yt('JlY8Di_Pb4U'), yt('8CErBJJX00M')],
+      sources: [apple({ song: 1571062722, country: 'us' }), yt('8CErBJJX00M'), yt('JlY8Di_Pb4U')],
     },
     {
       id: 'saga-sonic-the-hedgehog-star-light-zone', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic the Hedgehog',
@@ -528,7 +531,7 @@
     {
       id: 'saga-sonic-the-hedgehog-scrap-brain-zone', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic the Hedgehog',
       title: 'Scrap Brain Zone', composer: 'Masato Nakamura', year: 1991, platform: 'Mega Drive',
-      sources: [apple({ song: 1571062728, country: 'us' }), yt('ONQKGcuHsg0'), yt('5VaRpZETtUQ')],
+      sources: [apple({ song: 1571062728, country: 'us' }), yt('5VaRpZETtUQ'), yt('ONQKGcuHsg0')],
     },
     {
       id: 'saga-sonic-the-hedgehog-2-emerald-hill-zone', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic the Hedgehog 2',
@@ -573,22 +576,22 @@
     {
       id: 'saga-sonic-adventure-it-doesnt-matter', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic Adventure',
       title: 'It Doesn\'t Matter', composer: 'Jun Senoue', year: 1998, platform: 'Dreamcast',
-      sources: [yt('pJs1iJOXFN8'), yt('NDpZ9Qg761I')],
+      sources: [yt('NDpZ9Qg761I'), yt('pJs1iJOXFN8')],
     },
     {
       id: 'saga-sonic-adventure-azure-blue-world', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic Adventure',
       title: 'Azure Blue World', composer: 'Jun Senoue', year: 1998, platform: 'Dreamcast',
-      sources: [apple({ song: 915243460, country: 'us' }), yt('98z669imLpE'), yt('lJMc40mXhto')],
+      sources: [apple({ song: 915243460, country: 'us' }), yt('lJMc40mXhto'), yt('98z669imLpE')],
     },
     {
       id: 'saga-sonic-adventure-run-through-the-speed-highway', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic Adventure',
       title: 'Run Through the Speed Highway', composer: 'Jun Senoue', year: 1998, platform: 'Dreamcast',
-      sources: [apple({ song: 915243492, country: 'us' }), yt('EDE5Us3KEqo'), yt('xgcyH9I1NBE')],
+      sources: [apple({ song: 915243492, country: 'us' }), yt('xgcyH9I1NBE'), yt('EDE5Us3KEqo')],
     },
     {
       id: 'saga-sonic-adventure-windy-hill', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic Adventure',
       title: 'Windy Hill', composer: 'Jun Senoue', year: 1998, platform: 'Dreamcast',
-      sources: [apple({ song: 915243539, country: 'us' }), yt('FvKQLPHWuwU'), yt('2ElK26-lwVs')],
+      sources: [apple({ song: 915243539, country: 'us' }), yt('2ElK26-lwVs'), yt('FvKQLPHWuwU')],
     },
     {
       id: 'saga-sonic-adventure-2-escape-from-the-city', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic Adventure 2',
@@ -613,7 +616,7 @@
     {
       id: 'saga-sonic-frontiers-undefeatable', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic Frontiers',
       title: 'Undefeatable', composer: 'Tomoya Ohtani', year: 2022, platform: 'PS5 / Xbox / Switch / PC',
-      sources: [apple({ song: 1652677664, country: 'us' }), yt('3NoKAOTE_ZI'), yt('IWmapG_rAQ8')],
+      sources: [apple({ song: 1652677664, country: 'us' }), yt('IWmapG_rAQ8'), yt('3NoKAOTE_ZI')],
     },
     {
       id: 'saga-sonic-frontiers-break-through-it-all', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic Frontiers',
@@ -659,12 +662,12 @@
     {
       id: 'saga-final-fantasy-vii-prelude', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy VII',
       title: 'Prelude', composer: 'Nobuo Uematsu', year: 1997, platform: 'PlayStation',
-      sources: [apple({ song: 61016708, country: 'us' }), yt('zRZOVNJXkGI'), yt('FabUYfFBs3s')],
+      sources: [apple({ song: 61016708, country: 'us' }), yt('FabUYfFBs3s'), yt('zRZOVNJXkGI')],
     },
     {
       id: 'saga-final-fantasy-vii-main-theme-of-final-fantasy-vii', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy VII',
       title: 'Main Theme of Final Fantasy VII', composer: 'Nobuo Uematsu', year: 1997, platform: 'PlayStation',
-      sources: [apple({ song: 61016881, country: 'us' }), yt('ORpKwkq5z-4'), yt('nnzpEPI_JMc')],
+      sources: [apple({ song: 61016881, country: 'us' }), yt('nnzpEPI_JMc'), yt('ORpKwkq5z-4')],
     },
     {
       id: 'saga-final-fantasy-vii-let-the-battles-begin', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy VII',
@@ -674,7 +677,7 @@
     {
       id: 'saga-final-fantasy-vii-tifas-theme', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy VII',
       title: 'Tifa\'s Theme', composer: 'Nobuo Uematsu', year: 1997, platform: 'PlayStation',
-      sources: [apple({ song: 61016765, country: 'us' }), yt('W_UWkWlvbFw'), yt('cO_ftxA28Y8')],
+      sources: [apple({ song: 61016765, country: 'us' }), yt('cO_ftxA28Y8'), yt('W_UWkWlvbFw')],
     },
     {
       id: 'saga-final-fantasy-vii-j-e-n-o-v-a', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy VII',
@@ -709,17 +712,17 @@
     {
       id: 'saga-final-fantasy-ix-youre-not-alone', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy IX',
       title: 'You\'re Not Alone!', composer: 'Nobuo Uematsu', year: 2000, platform: 'PlayStation',
-      sources: [apple({ song: 62444329, country: 'mx' }), yt('Ha6iWPqrJeE'), yt('yUrC5R30Ofk')],
+      sources: [apple({ song: 62444329, country: 'mx' }), yt('yUrC5R30Ofk'), yt('Ha6iWPqrJeE')],
     },
     {
       id: 'saga-final-fantasy-ix-vamo-alla-flamenco', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy IX',
       title: 'Vamo\' alla Flamenco', composer: 'Nobuo Uematsu', year: 2000, platform: 'PlayStation',
-      sources: [apple({ song: 62443404, country: 'mx' }), yt('zCT1n22YOgI'), yt('kHGu_rVZcAo')],
+      sources: [apple({ song: 62443404, country: 'mx' }), yt('kHGu_rVZcAo'), yt('zCT1n22YOgI')],
     },
     {
       id: 'saga-final-fantasy-ix-roses-of-may', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy IX',
       title: 'Roses of May', composer: 'Nobuo Uematsu', year: 2000, platform: 'PlayStation',
-      sources: [apple({ song: 62443978, country: 'mx' }), yt('QOJUxX6tvjw'), yt('PSLe02hu7d8')],
+      sources: [apple({ song: 62443978, country: 'mx' }), yt('PSLe02hu7d8'), yt('QOJUxX6tvjw')],
     },
     {
       id: 'saga-final-fantasy-ix-a-place-to-call-home', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy IX',
@@ -739,7 +742,7 @@
     {
       id: 'saga-final-fantasy-x-besaid-island', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy X',
       title: 'Besaid Island', composer: 'Nobuo Uematsu, Masashi Hamauzu y Junya Nakano', year: 2001, platform: 'PlayStation 2',
-      sources: [apple({ song: 62444834, country: 'mx' }), yt('RC1VmGXiEFw'), yt('BRfAbssvy1c')],
+      sources: [apple({ song: 62444834, country: 'mx' }), yt('BRfAbssvy1c'), yt('RC1VmGXiEFw')],
     },
     {
       id: 'saga-final-fantasy-x-challenge', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy X',
@@ -760,12 +763,12 @@
     {
       id: 'saga-halo-combat-evolved-rock-anthem-for-saving-the-world', saga: 'halo', franchise: 'Halo', game: 'Halo: Combat Evolved',
       title: 'Rock Anthem for Saving the World', composer: 'Martin O\'Donnell y Michael Salvatori', year: 2001, platform: 'Xbox',
-      sources: [apple({ song: 1682521062, country: 'us' }), yt('6Wcqnofddtc'), yt('aEbxfy2Tv6I')],
+      sources: [apple({ song: 1682521062, country: 'us' }), yt('aEbxfy2Tv6I'), yt('6Wcqnofddtc')],
     },
     {
       id: 'saga-halo-combat-evolved-perilous-journey', saga: 'halo', franchise: 'Halo', game: 'Halo: Combat Evolved',
       title: 'Perilous Journey', composer: 'Martin O\'Donnell y Michael Salvatori', year: 2001, platform: 'Xbox',
-      sources: [apple({ song: 1682519893, country: 'us' }), yt('0obow-wqPb0'), yt('TGz-AfDaDAM')],
+      sources: [apple({ song: 1682519893, country: 'us' }), yt('TGz-AfDaDAM'), yt('0obow-wqPb0')],
     },
     {
       id: 'saga-halo-2-blow-me-away', saga: 'halo', franchise: 'Halo', game: 'Halo 2',
@@ -790,12 +793,12 @@
     {
       id: 'saga-halo-3-finish-the-fight', saga: 'halo', franchise: 'Halo', game: 'Halo 3',
       title: 'Finish the Fight', composer: 'Martin O\'Donnell y Michael Salvatori', year: 2007, platform: 'Xbox 360',
-      sources: [apple({ song: 1682511364, country: 'us' }), yt('JFOJ13sw8o4'), yt('DNWaJU8nNno')],
+      sources: [apple({ song: 1682511364, country: 'us' }), yt('DNWaJU8nNno'), yt('JFOJ13sw8o4')],
     },
     {
       id: 'saga-halo-3-never-forget', saga: 'halo', franchise: 'Halo', game: 'Halo 3',
       title: 'Never Forget', composer: 'Martin O\'Donnell y Michael Salvatori', year: 2007, platform: 'Xbox 360',
-      sources: [apple({ song: 1682510979, country: 'us' }), yt('JX5O3n9K_d0'), yt('OOHXjgEY_RQ')],
+      sources: [apple({ song: 1682510979, country: 'us' }), yt('OOHXjgEY_RQ'), yt('JX5O3n9K_d0')],
     },
     {
       id: 'saga-halo-3-released', saga: 'halo', franchise: 'Halo', game: 'Halo 3',
@@ -810,12 +813,12 @@
     {
       id: 'saga-halo-reach-ashes', saga: 'halo', franchise: 'Halo', game: 'Halo: Reach',
       title: 'Ashes', composer: 'Martin O\'Donnell y Michael Salvatori', year: 2010, platform: 'Xbox 360',
-      sources: [apple({ song: 1682515986, country: 'us' }), yt('C6eMBvMuZ6A'), yt('qNSUhJoMIEE')],
+      sources: [apple({ song: 1682515986, country: 'us' }), yt('qNSUhJoMIEE'), yt('C6eMBvMuZ6A')],
     },
     {
       id: 'saga-halo-reach-ghosts-and-glass', saga: 'halo', franchise: 'Halo', game: 'Halo: Reach',
       title: 'Ghosts and Glass', composer: 'Martin O\'Donnell y Michael Salvatori', year: 2010, platform: 'Xbox 360',
-      sources: [apple({ song: 1682516926, country: 'us' }), yt('isaOrKNHw7g'), yt('pfobM_oV9MI')],
+      sources: [apple({ song: 1682516926, country: 'us' }), yt('pfobM_oV9MI'), yt('isaOrKNHw7g')],
     },
     {
       id: 'saga-halo-reach-winter-contingency', saga: 'halo', franchise: 'Halo', game: 'Halo: Reach',
@@ -825,12 +828,12 @@
     {
       id: 'saga-halo-reach-the-package', saga: 'halo', franchise: 'Halo', game: 'Halo: Reach',
       title: 'The Package', composer: 'Martin O\'Donnell y Michael Salvatori', year: 2010, platform: 'Xbox 360',
-      sources: [apple({ song: 1682515549, country: 'us' }), yt('BGDnjVkk74o'), yt('E_hHvJ8NzXY')],
+      sources: [apple({ song: 1682515549, country: 'us' }), yt('E_hHvJ8NzXY'), yt('BGDnjVkk74o')],
     },
     {
       id: 'saga-halo-3-odst-the-rookie', saga: 'halo', franchise: 'Halo', game: 'Halo 3: ODST',
       title: 'The Rookie', composer: 'Martin O\'Donnell y Michael Salvatori', year: 2009, platform: 'Xbox 360',
-      sources: [apple({ song: 1682503055, country: 'us' }), yt('lwnwNws4b5Y'), yt('0YwVVB00ftA')],
+      sources: [apple({ song: 1682503055, country: 'us' }), yt('0YwVVB00ftA'), yt('lwnwNws4b5Y')],
     },
     {
       id: 'saga-halo-3-odst-neon-night', saga: 'halo', franchise: 'Halo', game: 'Halo 3: ODST',
@@ -845,7 +848,7 @@
     {
       id: 'saga-halo-3-odst-skyline', saga: 'halo', franchise: 'Halo', game: 'Halo 3: ODST',
       title: 'Skyline', composer: 'Martin O\'Donnell y Michael Salvatori', year: 2009, platform: 'Xbox 360',
-      sources: [apple({ song: 1682504154, country: 'us' }), yt('P7k7I7f0hrc'), yt('ka2yMEZ1kfI')],
+      sources: [apple({ song: 1682504154, country: 'us' }), yt('ka2yMEZ1kfI'), yt('P7k7I7f0hrc')],
     },
     /* ───────────── mega-man ───────────── */
     {
@@ -856,12 +859,12 @@
     {
       id: 'saga-mega-man-2-quick-man-stage', saga: 'mega-man', franchise: 'Mega Man', game: 'Mega Man 2',
       title: 'Quick Man Stage', composer: 'Takashi Tateishi', year: 1988, platform: 'NES',
-      sources: [apple({ song: 1086913485, country: 'jp' }), yt('FRa4LHSJf_M'), yt('L5g93Z2nFYU')],
+      sources: [apple({ song: 1086913485, country: 'jp' }), yt('L5g93Z2nFYU'), yt('FRa4LHSJf_M')],
     },
     {
       id: 'saga-mega-man-2-bubble-man-stage', saga: 'mega-man', franchise: 'Mega Man', game: 'Mega Man 2',
       title: 'Bubble Man Stage', composer: 'Takashi Tateishi', year: 1988, platform: 'NES',
-      sources: [apple({ song: 1086913484, country: 'jp' }), yt('FEULEvmq7yE'), yt('e3bDQ_fabW0')],
+      sources: [apple({ song: 1086913484, country: 'jp' }), yt('e3bDQ_fabW0'), yt('FEULEvmq7yE')],
     },
     {
       id: 'saga-mega-man-2-crash-man-stage', saga: 'mega-man', franchise: 'Mega Man', game: 'Mega Man 2',
@@ -871,32 +874,32 @@
     {
       id: 'saga-mega-man-2-flash-man-stage', saga: 'mega-man', franchise: 'Mega Man', game: 'Mega Man 2',
       title: 'Flash Man Stage', composer: 'Takashi Tateishi', year: 1988, platform: 'NES',
-      sources: [apple({ song: 1086913487, country: 'jp' }), yt('26MopY4DTZU'), yt('irFVOnCKjnI')],
+      sources: [apple({ song: 1086913487, country: 'jp' }), yt('irFVOnCKjnI'), yt('26MopY4DTZU')],
     },
     {
       id: 'saga-mega-man-3-snake-man-stage', saga: 'mega-man', franchise: 'Mega Man', game: 'Mega Man 3',
       title: 'Snake Man Stage', composer: 'Yasuaki Fujita', year: 1990, platform: 'NES',
-      sources: [apple({ song: 1086916653, country: 'jp' }), yt('ZqGLXispP08'), yt('JhBReeSrh0U')],
+      sources: [apple({ song: 1086916653, country: 'jp' }), yt('JhBReeSrh0U'), yt('ZqGLXispP08')],
     },
     {
       id: 'saga-mega-man-3-shadow-man-stage', saga: 'mega-man', franchise: 'Mega Man', game: 'Mega Man 3',
       title: 'Shadow Man Stage', composer: 'Yasuaki Fujita', year: 1990, platform: 'NES',
-      sources: [apple({ song: 1086916655, country: 'jp' }), yt('Usl7cw6VnLU'), yt('Tl9vnKYVlz4')],
+      sources: [apple({ song: 1086916655, country: 'jp' }), yt('Tl9vnKYVlz4'), yt('Usl7cw6VnLU')],
     },
     {
       id: 'saga-mega-man-3-spark-man-stage', saga: 'mega-man', franchise: 'Mega Man', game: 'Mega Man 3',
       title: 'Spark Man Stage', composer: 'Yasuaki Fujita', year: 1990, platform: 'NES',
-      sources: [apple({ song: 1086916654, country: 'jp' }), yt('6J5cN87c2yM'), yt('HkhI6kjXW48')],
+      sources: [apple({ song: 1086916654, country: 'jp' }), yt('HkhI6kjXW48'), yt('6J5cN87c2yM')],
     },
     {
       id: 'saga-mega-man-3-needle-man-stage', saga: 'mega-man', franchise: 'Mega Man', game: 'Mega Man 3',
       title: 'Needle Man Stage', composer: 'Yasuaki Fujita', year: 1990, platform: 'NES',
-      sources: [apple({ song: 1086916648, country: 'jp' }), yt('wDJbOB1h2EU'), yt('iF9hBPcxuDI')],
+      sources: [apple({ song: 1086916648, country: 'jp' }), yt('iF9hBPcxuDI'), yt('wDJbOB1h2EU')],
     },
     {
       id: 'saga-mega-man-3-gemini-man-stage', saga: 'mega-man', franchise: 'Mega Man', game: 'Mega Man 3',
       title: 'Gemini Man Stage', composer: 'Yasuaki Fujita', year: 1990, platform: 'NES',
-      sources: [apple({ song: 1086916650, country: 'jp' }), yt('J2LF3YR2dNM'), yt('3pVlf9tuUo0')],
+      sources: [apple({ song: 1086916650, country: 'jp' }), yt('3pVlf9tuUo0'), yt('J2LF3YR2dNM')],
     },
     {
       id: 'saga-mega-man-x-storm-eagle-stage', saga: 'mega-man', franchise: 'Mega Man', game: 'Mega Man X',
@@ -906,12 +909,12 @@
     {
       id: 'saga-mega-man-x-spark-mandrill-stage', saga: 'mega-man', franchise: 'Mega Man', game: 'Mega Man X',
       title: 'Spark Mandrill Stage', composer: 'Setsuo Yamamoto, Makoto Tomozawa y otros', year: 1993, platform: 'SNES',
-      sources: [apple({ song: 1406684866, country: 'us' }), yt('qpRQtn8JQvI'), yt('wdvJtSroRSw')],
+      sources: [apple({ song: 1406684866, country: 'us' }), yt('wdvJtSroRSw'), yt('qpRQtn8JQvI')],
     },
     {
       id: 'saga-mega-man-x-chill-penguin-stage', saga: 'mega-man', franchise: 'Mega Man', game: 'Mega Man X',
       title: 'Chill Penguin Stage', composer: 'Setsuo Yamamoto, Makoto Tomozawa y otros', year: 1993, platform: 'SNES',
-      sources: [apple({ song: 1406684736, country: 'us' }), yt('fcOjHuAD6SI'), yt('DIMmdlvJSSk')],
+      sources: [apple({ song: 1406684736, country: 'us' }), yt('DIMmdlvJSSk'), yt('fcOjHuAD6SI')],
     },
     {
       id: 'saga-mega-man-x-armored-armadillo-stage', saga: 'mega-man', franchise: 'Mega Man', game: 'Mega Man X',
@@ -932,7 +935,7 @@
     {
       id: 'saga-street-fighter-ii-zangiefs-theme', saga: 'street-fighter', franchise: 'Street Fighter', game: 'Street Fighter II',
       title: 'Zangief\'s Theme', composer: 'Yoko Shimomura e Isao Abe', year: 1991, platform: 'Arcade / SNES',
-      sources: [apple({ song: 1085989774, country: 'jp' }), yt('fFVOf9CrElY'), yt('LOtqHVjhKrE')],
+      sources: [apple({ song: 1085989774, country: 'jp' }), yt('LOtqHVjhKrE'), yt('fFVOf9CrElY')],
     },
     {
       id: 'saga-street-fighter-ii-dhalsims-theme', saga: 'street-fighter', franchise: 'Street Fighter', game: 'Street Fighter II',
@@ -942,7 +945,7 @@
     {
       id: 'saga-street-fighter-ii-e-hondas-theme', saga: 'street-fighter', franchise: 'Street Fighter', game: 'Street Fighter II',
       title: 'E. Honda\'s Theme', composer: 'Yoko Shimomura e Isao Abe', year: 1991, platform: 'Arcade / SNES',
-      sources: [apple({ song: 1085989777, country: 'jp' }), yt('hirmbIKd2gk'), yt('hmn465eOqog')],
+      sources: [apple({ song: 1085989777, country: 'jp' }), yt('hmn465eOqog'), yt('hirmbIKd2gk')],
     },
     {
       id: 'saga-street-fighter-ii-m-bisons-theme', saga: 'street-fighter', franchise: 'Street Fighter', game: 'Street Fighter II',
@@ -952,7 +955,7 @@
     {
       id: 'saga-street-fighter-ii-sagats-theme', saga: 'street-fighter', franchise: 'Street Fighter', game: 'Street Fighter II',
       title: 'Sagat\'s Theme', composer: 'Yoko Shimomura e Isao Abe', year: 1991, platform: 'Arcade / SNES',
-      sources: [apple({ song: 1085989784, country: 'jp' }), yt('WUSVAVyx420'), yt('76LfDeMWT6k')],
+      sources: [apple({ song: 1085989784, country: 'jp' }), yt('76LfDeMWT6k'), yt('WUSVAVyx420')],
     },
     {
       id: 'saga-street-fighter-ii-vegas-theme', saga: 'street-fighter', franchise: 'Street Fighter', game: 'Street Fighter II',
@@ -962,7 +965,7 @@
     {
       id: 'saga-street-fighter-ii-player-select', saga: 'street-fighter', franchise: 'Street Fighter', game: 'Street Fighter II',
       title: 'Player Select', composer: 'Yoko Shimomura e Isao Abe', year: 1991, platform: 'Arcade / SNES',
-      sources: [apple({ song: 1085989767, country: 'jp' }), yt('41SjKq4096g'), yt('lXiFJaqCYHQ')],
+      sources: [apple({ song: 1085989767, country: 'jp' }), yt('lXiFJaqCYHQ'), yt('41SjKq4096g')],
     },
   ];
 })(window.AM = window.AM || {});

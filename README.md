@@ -211,6 +211,9 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **1.7.1**: en Sagas, de los videos de cada canción suena primero el más fuerte (los muy bajitos no se
+  pueden subir), y Kirby deja fuera *Triple Deluxe*: su *Masked Dedede's Theme* usa la melodía de
+  *King Dedede's Theme* y confundía como opción.
 - **1.7**: modo **Sagas** (solo Videojuegos): eliges una de 10 sagas y adivinas qué canción es, de toda la
   saga o de un solo juego. 184 canciones nuevas solo para este modo, todas de los soundtracks originales
   (nada de remakes ni remasters; Halo va de *Combat Evolved* a *Reach*). Además, varias pistas que buscaban
