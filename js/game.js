@@ -144,8 +144,25 @@
    * Genera 4 opciones. En Clásico son sagas; en Supervivencia, juegos exactos
    * (con un "primo" de la misma saga para que sea más difícil).
    */
+  /*
+   * Grupo de opciones falsas de una categoría (`decoyGroup`): los openings de anime solo
+   * compiten contra anime, y las caricaturas contra caricaturas (si no, se descartan solas).
+   */
+  const groups = {};
+  function groupOf(item) {
+    const cat = item && item.cat;
+    if (!cat) return '';
+    if (!(cat in groups)) {
+      const c = AM.CATEGORIES.find((x) => x.id === cat);
+      groups[cat] = (c && c.decoyGroup) || '';
+    }
+    return groups[cat];
+  }
+
   function makeChoices(track, mode, sc, n) {
     n = n || 4;
+    const group = groupOf(track);
+    const inGroup = (t) => groupOf(t) === group;
     const picked = [];
     // En Canciones la respuesta amplia es el artista: las opciones falsas no pueden compartir
     // artista con la correcta ni entre ellas (si no, "Shakira" sería "incorrecto" en un dueto suyo).
@@ -160,13 +177,13 @@
 
     if (mode.answer === 'franchise') {
       const sameCat = unique(sc.tracks.filter((t) => t.cat === track.cat).map((t) => t.franchise));
-      const all = unique(sc.tracks.concat(sc.extras).map((t) => t.franchise));
+      const all = unique(sc.tracks.concat(sc.extras).filter(inGroup).map((t) => t.franchise));
       add(sameCat, 2);
       add(all, n);
       return shuffle(picked.concat([track.franchise]));
     }
 
-    const games = allGames(sc);
+    const games = allGames(sc).filter(inGroup);
     const sameFranchise = games.filter((g) => g.franchise === track.franchise).map((g) => g.game);
     const sameCat = sc.tracks.filter((t) => t.cat === track.cat).map((t) => t.game);
     add(sameFranchise, 1);
@@ -219,7 +236,7 @@
   function shareText(mode, stats, history, T) {
     T = T || AM.THEMES[0];
     const grid = history.map((h) => emojiFor(mode, h)).join('');
-    const lines = [`${T.icon} ${T.title.join(' ')} — ${mode.name}`, grid];
+    const lines = [`${T.icon} ¿Qué suena? · ${T.label} — ${mode.name}`, grid];
     if (mode.id === 'supervivencia') {
       lines.push(`Aciertos: ${stats.correct} · ${stats.score} pts · racha máx. ${stats.bestStreak}`);
     } else {

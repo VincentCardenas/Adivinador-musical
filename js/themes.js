@@ -13,7 +13,6 @@
   AM.THEMES = [
     {
       id: 'juegos', label: 'Videojuegos', icon: '🎮',
-      title: ['¿Qué juego', 'suena?'],
       kicker: 'Adivinador musical para gamers',
       sub: 'Escucha el soundtrack oficial y adivina de qué videojuego es.',
       broad: 'saga', broadArt: 'la saga', broadPl: 'sagas',
@@ -44,7 +43,6 @@
     },
     {
       id: 'series', label: 'Series', icon: '📺',
-      title: ['¿Qué serie', 'suena?'],
       kicker: 'Adivinador musical de series de TV',
       sub: 'Escucha la entrada o el tema principal y adivina de qué serie es.',
       broad: 'serie', broadArt: 'la serie', broadPl: 'series',
@@ -75,7 +73,6 @@
     },
     {
       id: 'caricaturas', label: 'Caricaturas', icon: '🧸',
-      title: ['¿Qué caricatura', 'suena?'],
       kicker: 'Adivinador musical de caricaturas y anime',
       sub: 'Escucha la entrada y adivina de qué caricatura es.',
       broad: 'caricatura', broadArt: 'la caricatura', broadPl: 'caricaturas',
@@ -106,7 +103,6 @@
     },
     {
       id: 'disney', label: 'Disney', icon: '🏰',
-      title: ['¿Qué película', 'suena?'],
       kicker: 'Adivinador musical de películas de Disney',
       sub: 'Escucha la canción (en español latino) y adivina de qué película de Disney es.',
       broad: 'película', broadArt: 'la película', broadPl: 'películas',
@@ -144,7 +140,6 @@
     },
     {
       id: 'canciones', label: 'Canciones', icon: '🎤',
-      title: ['¿Qué canción', 'suena?'],
       kicker: 'Adivinador musical de canciones famosas',
       sub: 'Escucha el fragmento y adivina qué canción es (y quién la canta).',
       broad: 'artista', broadArt: 'el artista', broadPl: 'artistas',

@@ -90,16 +90,24 @@
 
   function currentPool() { return AM.Logic.pool(themeCats(), History.hidden, scope().keep); }
 
-  /** Pregunta que se muestra mientras suena la pista. */
+  /** Pregunta que se muestra mientras suena la pista (una categoría puede tener la suya: "¿De qué anime es?"). */
   function question(g) {
     const T = g.theme;
+    const cat = g.cur && AM.CATEGORIES.find((c) => c.id === g.cur.track.cat);
+    if (cat && cat.question) return cat.question;
     return g.mode.answer === 'game' ? (T.questionExact || T.question) : T.question;
   }
 
-  /** Línea secundaria de una pista: la canción (♪) o, en Canciones, quién la canta (🎤). */
+  const CJK = /[\u3040-\u30ff\u3400-\u9fff]/;
+
+  /**
+   * Línea secundaria de una pista: la canción (♪) o, en Canciones, quién la canta (🎤).
+   * Si Apple da el nombre en japonés (シルエット), se muestra el del catálogo (Silhouette).
+   */
   function trackLine(T, t, m) {
     if (T.showArtist) return '🎤 ' + t.franchise;
-    return '♪ ' + ((m && m.trackName) || t.title);
+    const name = m && m.trackName;
+    return '♪ ' + (name && !CJK.test(name) ? name : t.title);
   }
 
   /* ═════════ utilidades de interfaz ═════════ */
@@ -229,12 +237,8 @@
   function renderHero() {
     const T = theme();
     $('#home-kicker').textContent = T.kicker;
-    $('#home-title').innerHTML = `<span>${esc(T.title[0])}</span><span>${esc(T.title[1])}</span>`;
-    $('#home-title').classList.toggle('is-long', T.title[0].length > 11);
     $('#home-sub').textContent = T.sub;
-    $('#brand-text').textContent = T.title.join(' ');
     $('#brand-icon').textContent = T.icon;
-    document.title = `${T.title.join(' ')} · Adivinador musical`;
   }
 
   function renderModes() {

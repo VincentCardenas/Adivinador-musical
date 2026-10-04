@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════
-   ¿Qué juego suena? — estilos
+   ¿Qué suena? — estilos
    Estética: arcade / synthwave, oscura y con neón.
    ═══════════════════════════════════════════════ */
 
@@ -279,7 +279,6 @@ a { color: var(--cyan); }
   background-clip: text;
   filter: drop-shadow(0 0 12px rgba(255, 60, 172, 0.5)) drop-shadow(3px 3px 0 rgba(139, 92, 246, 0.7));
 }
-.logo.is-long { font-size: clamp(19px, 5.4vw, 50px); }
 .hero-sub { margin: 16px auto 0; color: var(--muted); max-width: 520px; font-size: 17px; }
 
 .eq {

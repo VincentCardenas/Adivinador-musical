@@ -1573,9 +1573,9 @@
       sources: [apple({ term: '115 Call of Duty  Black Ops', match: '115' })],
     },
     {
-      id: 'destiny-hope-for-the-future', cat: 'online', franchise: 'Destiny', game: 'Destiny',
-      title: 'Hope for the Future', composer: 'Paul McCartney', year: 2014, platform: 'PS4 / Xbox One / PS3 / Xbox 360',
-      sources: [apple({ term: 'Hope for the Future Destiny', match: 'Hope for the Future' })],
+      id: 'destiny-the-traveler', cat: 'online', franchise: 'Destiny', game: 'Destiny',
+      title: 'The Traveler', composer: "Martin O'Donnell y Michael Salvatori", year: 2014, platform: 'PS4 / Xbox One / PS3 / Xbox 360',
+      sources: [apple({ song: 1791144349, country: 'mx' }), apple({ album: 1791143740, match: 'The Traveler', country: 'mx' })],
     },
     {
       id: 'dota-2-dota-2-main-theme', cat: 'online', franchise: 'Dota 2', game: 'Dota 2',
@@ -1707,7 +1707,7 @@
     ['Ghost of Tsushima', 'Ghost of Yōtei'],
     ['Metal Gear', 'Metal Gear Solid'], ['Metal Gear', 'Metal Gear Solid V: The Phantom Pain'],
     ['Silent Hill', 'Silent Hill'], ['Silent Hill', 'Silent Hill f'],
-    ['Undertale', 'Deltarune'], ['Hades', 'Hades II'], ['Ori', 'Ori and the Will of the Wisps'],
+    ['Hades', 'Hades II'], ['Ori', 'Ori and the Will of the Wisps'],
     ['Sonic the Hedgehog', 'Sonic the Hedgehog 2'], ['Sonic the Hedgehog', 'Sonic Mania'], ['Sonic the Hedgehog', 'Sonic Generations'],
     ['Street Fighter', 'Street Fighter III: 3rd Strike'], ['Street Fighter', 'Street Fighter 6'],
     ['Mega Man', 'Mega Man 3'], ['Mega Man', 'Mega Man X'],

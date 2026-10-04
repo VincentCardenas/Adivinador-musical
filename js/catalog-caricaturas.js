@@ -1,5 +1,5 @@
 /*
- * Catálogo: Caricaturas y anime (96 pistas).
+ * Catálogo: Caricaturas y anime (132 pistas).
  * Entradas de caricaturas y anime por época. Cuando existe, suena primero la entrada en español latino (YouTube) y el preview oficial de Apple queda de respaldo.
  * Mismo formato que catalog.js; las fuentes se prueban en el orden en que aparecen.
  */
@@ -15,10 +15,11 @@
     { id: 'toon-90s', theme: 'caricaturas', label: 'Años 90', icon: '📼' },
     { id: 'toon-00s', theme: 'caricaturas', label: '2000s', icon: '💿' },
     { id: 'toon-10s', theme: 'caricaturas', label: '2010 en adelante', icon: '📱' },
+    { id: 'toon-anime', theme: 'caricaturas', label: 'Openings de anime', icon: '🎌', decoyGroup: 'anime', question: '¿De qué anime es?' },
   );
 
   AM.CATALOG.push(
-    /* ───────────── Clásicas (antes de 1980) (16) ───────────── */
+    /* ───────────── Clásicas (antes de 1980) (12) ───────────── */
     {
       id: 'toon-los-picapiedra-los-picapiedra-tema', cat: 'toon-clasicas', franchise: 'Los Picapiedra', game: 'Los Picapiedra',
       title: 'Los Picapiedra (tema)', composer: 'Hoyt Curtin', year: 1960, platform: 'Hanna-Barbera',
@@ -67,27 +68,6 @@
       sources: [yt('YgbUEnNf7y8'), yt('gMavhe_T99M')],
     },
     {
-      id: 'toon-meteoro-meteoro-tema', cat: 'toon-clasicas', franchise: 'Meteoro', game: 'Meteoro',
-      title: 'Meteoro (tema)', composer: 'Nobuyoshi Koshibe', year: 1967, platform: 'Tatsunoko',
-      aka: ['Speed Racer'],
-      sources: [yt('_lser7H47Rs'), yt('Zrl9zvgDGa8')],
-    },
-    {
-      id: 'toon-heidi-abuelito-dime-tu', cat: 'toon-clasicas', franchise: 'Heidi', game: 'Heidi',
-      title: 'Abuelito, dime tú', composer: 'Takeo Watanabe', year: 1974, platform: 'Zuiyo Eizo',
-      sources: [yt('GHUx-vKr7Xc'), yt('l77rAJPtNKI')],
-    },
-    {
-      id: 'toon-candy-candy', cat: 'toon-clasicas', franchise: 'Candy Candy', game: 'Candy Candy',
-      title: 'Candy Candy', composer: 'Takeo Watanabe', year: 1976, platform: 'Toei Animation',
-      sources: [yt('39mbBe7Nv7I'), yt('5J8vNIh6Puc')],
-    },
-    {
-      id: 'toon-mazinger-z', cat: 'toon-clasicas', franchise: 'Mazinger Z', game: 'Mazinger Z',
-      title: 'Mazinger Z', composer: 'Michiaki Watanabe', year: 1972, platform: 'Toei Animation',
-      sources: [yt('J9n4-4AEu3U'), yt('NCYznN1dhzA'), apple({ song: 458237797, country: 'mx' })],
-    },
-    {
       id: 'toon-el-hombre-arana-1967-spider-man-theme', cat: 'toon-clasicas', franchise: 'El Hombre Araña (1967)', game: 'El Hombre Araña (1967)',
       title: 'Spider-Man Theme', composer: 'Bob Harris y Paul Francis Webster', year: 1967, platform: 'Grantray-Lawrence',
       aka: ['Spider-Man'],
@@ -111,7 +91,7 @@
       aka: ['Tom and Jerry'],
       sources: [yt('zeAlFwuP7Vw'), yt('td0S8povRY0')],
     },
-    /* ───────────── Años 80 (15) ───────────── */
+    /* ───────────── Años 80 (11) ───────────── */
     {
       id: 'toon-los-pitufos-los-pitufos-tema', cat: 'toon-80s', franchise: 'Los Pitufos', game: 'Los Pitufos',
       title: 'Los Pitufos (tema)', composer: 'Hoyt Curtin', year: 1981, platform: 'Hanna-Barbera',
@@ -164,32 +144,10 @@
       sources: [yt('rBkzTGmmtT4'), yt('JtPAkpCSexE'), apple({ song: 1603339355, country: 'mx' })],
     },
     {
-      id: 'toon-los-caballeros-del-zodiaco-pegasus-fantasy', cat: 'toon-80s', franchise: 'Los Caballeros del Zodiaco', game: 'Los Caballeros del Zodiaco',
-      title: 'Pegasus Fantasy', composer: 'Make-Up (versión latina)', year: 1986, platform: 'Toei Animation',
-      aka: ['Saint Seiya'],
-      sources: [yt('JU90SmiYeuw'), yt('BLXHuZ-1C_4')],
-    },
-    {
-      id: 'toon-dragon-ball-la-fantastica-aventura-makafushigi-adventur', cat: 'toon-80s', franchise: 'Dragon Ball', game: 'Dragon Ball',
-      title: 'La fantástica aventura (Makafushigi Adventure!)', composer: 'Hiroki Takahashi (versión latina)', year: 1986, platform: 'Toei Animation',
-      sources: [yt('9Hbd1QeI1Og'), yt('H10GLcS5FH0')],
-    },
-    {
-      id: 'toon-dragon-ball-z-cha-la-head-cha-la', cat: 'toon-80s', franchise: 'Dragon Ball', game: 'Dragon Ball Z',
-      title: 'Cha-La Head-Cha-La', composer: 'Ricardo Silva', year: 1989, platform: 'Toei Animation',
-      sources: [apple({ song: 718918336, country: 'mx' }), yt('cie7scVUdQE')],
-    },
-    {
       id: 'toon-los-simpson-the-simpsons-main-title-theme', cat: 'toon-80s', franchise: 'Los Simpson', game: 'Los Simpson',
       title: 'The Simpsons Main Title Theme', composer: 'Danny Elfman', year: 1989, platform: 'Fox',
       aka: ['The Simpsons', 'Los Simpsons'],
       sources: [apple({ song: 1598035609, country: 'mx' }), yt('aDcFhYtiIEM')],
-    },
-    {
-      id: 'toon-super-campeones', cat: 'toon-80s', franchise: 'Super Campeones', game: 'Super Campeones',
-      title: 'Super Campeones', composer: 'Versión latina', year: 1983, platform: 'Tsuchida Production',
-      aka: ['Captain Tsubasa', 'Supercampeones'],
-      sources: [yt('RlQKghs-W4s'), yt('rJzNgkjQY78')],
     },
     {
       id: 'toon-garfield-y-sus-amigos-amigo-es', cat: 'toon-80s', franchise: 'Garfield y sus amigos', game: 'Garfield y sus amigos',
@@ -197,7 +155,7 @@
       aka: ['Garfield and Friends', 'Garfield'],
       sources: [yt('MJmSmjBN-nU'), yt('sQKsXHzXJ4w')],
     },
-    /* ───────────── Años 90 (24) ───────────── */
+    /* ───────────── Años 90 (20) ───────────── */
     {
       id: 'toon-animaniacs-animaniacs-main-title-theme', cat: 'toon-90s', franchise: 'Animaniacs', game: 'Animaniacs',
       title: 'Animaniacs Main Title Theme', composer: 'Richard Stone', year: 1993, platform: 'Warner Bros.',
@@ -240,22 +198,6 @@
       sources: [yt('xwH6kyKFSQY'), yt('OzM8BkVHp6s'), yt('Z2EotmVUdDE')],
     },
     {
-      id: 'toon-pokemon-atrapalos-ya', cat: 'toon-90s', franchise: 'Pokémon', game: 'Pokémon',
-      title: '¡Atrápalos ya!', composer: 'Versión latina', year: 1997, platform: 'OLM',
-      sources: [yt('ZYMkmW0TTSg'), yt('vvnorKroNMs')],
-    },
-    {
-      id: 'toon-digimon-si-tu-lo-deseas-puedes-volar', cat: 'toon-90s', franchise: 'Digimon', game: 'Digimon',
-      title: 'Si tú lo deseas puedes volar', composer: 'Ricardo Silva', year: 1999, platform: 'Toei Animation',
-      aka: ['Digimon Adventure'],
-      sources: [yt('WmGy9CAap0w'), yt('7HVv9_Q3HfI')],
-    },
-    {
-      id: 'toon-sailor-moon-moonlight-densetsu', cat: 'toon-90s', franchise: 'Sailor Moon', game: 'Sailor Moon',
-      title: 'Moonlight Densetsu', composer: 'Versión latina', year: 1992, platform: 'Toei Animation',
-      sources: [yt('9NanowbK60Y'), yt('8MD9HYC2d_I')],
-    },
-    {
       id: 'toon-x-men-la-serie-animada-x-men-theme', cat: 'toon-90s', franchise: 'X-Men: La serie animada', game: 'X-Men: La serie animada',
       title: 'X-Men Theme', composer: 'Ron Wasserman', year: 1992, platform: 'Fox Kids',
       aka: ['X-Men: The Animated Series', 'X-Men'],
@@ -296,11 +238,6 @@
       sources: [yt('wAG75hzJGpQ'), yt('LH_oOWfCX5w')],
     },
     {
-      id: 'toon-dragon-ball-gt-mi-corazon-encantado', cat: 'toon-90s', franchise: 'Dragon Ball', game: 'Dragon Ball GT',
-      title: 'Mi corazón encantado', composer: 'Aaron Montalvo', year: 1996, platform: 'Toei Animation',
-      sources: [apple({ song: 1403477085, country: 'mx' }), yt('wgZ-ATUGXDw')],
-    },
-    {
       id: 'toon-johnny-bravo-johnny-bravo-entrada', cat: 'toon-90s', franchise: 'Johnny Bravo', game: 'Johnny Bravo',
       title: 'Johnny Bravo (entrada)', year: 1997, platform: 'Cartoon Network',
       sources: [yt('0xsdgf5SGZI'), yt('P05ECHpbfq0')],
@@ -335,7 +272,7 @@
       aka: ['The Wild Thornberrys'],
       sources: [yt('X3rL0P7JUqU'), yt('Rtw98M5A7t8')],
     },
-    /* ───────────── 2000s (21) ───────────── */
+    /* ───────────── 2000s (17) ───────────── */
     {
       id: 'toon-los-padrinos-magicos-los-padrinos-magicos-tema', cat: 'toon-00s', franchise: 'Los Padrinos Mágicos', game: 'Los Padrinos Mágicos',
       title: 'Los Padrinos Mágicos (tema)', composer: 'Ron Jones', year: 2001, platform: 'Nickelodeon',
@@ -376,11 +313,6 @@
       sources: [yt('gm25Chqo7-o'), yt('oZZC9xUM3dI'), apple({ song: 1536227100, country: 'mx' })],
     },
     {
-      id: 'toon-naruto-shippuden-blue-bird', cat: 'toon-00s', franchise: 'Naruto', game: 'Naruto Shippuden',
-      title: 'Blue Bird', composer: 'Ikimonogakari', year: 2007, platform: 'Pierrot',
-      sources: [apple({ song: 1089186523, country: 'mx' })],
-    },
-    {
       id: 'toon-dora-la-exploradora-dora-the-explorer-theme', cat: 'toon-00s', franchise: 'Dora la exploradora', game: 'Dora la exploradora',
       title: 'Dora the Explorer Theme', composer: 'Dora the Explorer', year: 2000, platform: 'Nickelodeon',
       aka: ['Dora the Explorer'],
@@ -416,11 +348,6 @@
       sources: [yt('gjS5SNWCK9A'), yt('4ATiZIl5_9M')],
     },
     {
-      id: 'toon-naruto-rocks', cat: 'toon-00s', franchise: 'Naruto', game: 'Naruto',
-      title: 'Rocks', composer: 'Hound Dog (versión latina)', year: 2002, platform: 'Pierrot',
-      sources: [yt('PWO4hc-L_i4'), yt('PzbYmqLed1Q')],
-    },
-    {
       id: 'toon-jimmy-neutron-jimmy-neutron-entrada', cat: 'toon-00s', franchise: 'Jimmy Neutrón', game: 'Jimmy Neutrón',
       title: 'Jimmy Neutrón (entrada)', year: 2002, platform: 'Nickelodeon',
       aka: ['Las aventuras de Jimmy Neutrón', 'Jimmy Neutron'],
@@ -443,17 +370,7 @@
       title: 'Samurai Jack (entrada)', year: 2001, platform: 'Cartoon Network',
       sources: [yt('-NztPS4dflw'), yt('3MrIPQEF8Dc')],
     },
-    {
-      id: 'toon-yu-gi-oh-yu-gi-oh-opening', cat: 'toon-00s', franchise: 'Yu-Gi-Oh!', game: 'Yu-Gi-Oh!',
-      title: 'Yu-Gi-Oh! (opening)', year: 2000, platform: 'Studio Gallop',
-      sources: [yt('timXx6CBjoA'), yt('IJh5yp8yfx0')],
-    },
-    {
-      id: 'toon-hamtaro-hamtaro-opening', cat: 'toon-00s', franchise: 'Hamtaro', game: 'Hamtaro',
-      title: 'Hamtaro (opening)', year: 2000, platform: 'TMS Entertainment',
-      sources: [yt('qz9RTb9w3mk'), yt('QrAmgCo_kps')],
-    },
-    /* ───────────── 2010 en adelante (20) ───────────── */
+    /* ───────────── 2010 en adelante (16) ───────────── */
     {
       id: 'toon-hora-de-aventura-hora-de-aventura-tema', cat: 'toon-10s', franchise: 'Hora de aventura', game: 'Hora de aventura',
       title: 'Hora de aventura (tema)', composer: 'Pendleton Ward', year: 2010, platform: 'Cartoon Network',
@@ -502,13 +419,7 @@
     {
       id: 'toon-arcane-enemy', cat: 'toon-10s', franchise: 'Arcane', game: 'Arcane',
       title: 'Enemy', composer: 'Imagine Dragons y Arcane', year: 2021, platform: 'Netflix',
-      sources: [apple({ song: 1593813937, country: 'mx' })],
-    },
-    {
-      id: 'toon-ataque-a-los-titanes-guren-no-yumiya', cat: 'toon-10s', franchise: 'Ataque a los titanes', game: 'Ataque a los titanes',
-      title: 'Guren no Yumiya', composer: 'Linked Horizon', year: 2013, platform: 'Wit Studio',
-      aka: ['Attack on Titan', 'Shingeki no Kyojin'],
-      sources: [yt('8OkpRK2_gVs'), yt('StLX4kITjWU')],
+      sources: [apple({ song: 1593813937, country: 'mx' }), yt('UqcE-IIevf0')],
     },
     {
       id: 'toon-bojack-horseman-bojack-horseman-theme', cat: 'toon-10s', franchise: 'BoJack Horseman', game: 'BoJack Horseman',
@@ -520,23 +431,6 @@
       title: 'My Little Pony Theme Song', composer: 'Daniel Ingram', year: 2010, platform: 'Hasbro',
       aka: ['My Little Pony: Friendship Is Magic'],
       sources: [yt('L4FLMPE_svQ'), yt('kBx8cGyyQik'), apple({ song: 1882319366, country: 'mx' })],
-    },
-    {
-      id: 'toon-demon-slayer-gurenge', cat: 'toon-10s', franchise: 'Demon Slayer', game: 'Demon Slayer',
-      title: 'Gurenge', composer: 'LiSA', year: 2019, platform: 'Ufotable',
-      aka: ['Kimetsu no Yaiba', 'Guardianes de la noche'],
-      sources: [apple({ song: 1529543135, country: 'mx' })],
-    },
-    {
-      id: 'toon-jujutsu-kaisen-kaikai-kitan', cat: 'toon-10s', franchise: 'Jujutsu Kaisen', game: 'Jujutsu Kaisen',
-      title: 'Kaikai Kitan', composer: 'Eve', year: 2020, platform: 'MAPPA',
-      sources: [apple({ song: 1543126646, country: 'mx' })],
-    },
-    {
-      id: 'toon-my-hero-academia-the-day', cat: 'toon-10s', franchise: 'My Hero Academia', game: 'My Hero Academia',
-      title: 'The Day', composer: 'Porno Graffitti', year: 2016, platform: 'Bones',
-      aka: ['Boku no Hero Academia'],
-      sources: [apple({ song: 1119496702, country: 'mx' })],
     },
     {
       id: 'toon-escandalosos-escandalosos-entrada', cat: 'toon-10s', franchise: 'Escandalosos', game: 'Escandalosos',
@@ -567,13 +461,312 @@
       aka: ['The Owl House'],
       sources: [yt('iAM2bjs1WUM'), yt('9eoDJufrO3k')],
     },
+    /* ───────────── Openings de anime (56) ───────────── */
+    {
+      id: 'toon-meteoro-meteoro-tema', cat: 'toon-anime', franchise: 'Meteoro', game: 'Meteoro',
+      title: 'Meteoro (tema)', composer: 'Nobuyoshi Koshibe', year: 1967, platform: 'Tatsunoko',
+      aka: ['Speed Racer'],
+      sources: [yt('_lser7H47Rs'), yt('Zrl9zvgDGa8')],
+    },
+    {
+      id: 'toon-heidi-abuelito-dime-tu', cat: 'toon-anime', franchise: 'Heidi', game: 'Heidi',
+      title: 'Abuelito, dime tú', composer: 'Takeo Watanabe', year: 1974, platform: 'Zuiyo Eizo',
+      sources: [yt('GHUx-vKr7Xc'), yt('l77rAJPtNKI')],
+    },
+    {
+      id: 'toon-candy-candy', cat: 'toon-anime', franchise: 'Candy Candy', game: 'Candy Candy',
+      title: 'Candy Candy', composer: 'Takeo Watanabe', year: 1976, platform: 'Toei Animation',
+      sources: [yt('39mbBe7Nv7I'), yt('5J8vNIh6Puc')],
+    },
+    {
+      id: 'toon-mazinger-z', cat: 'toon-anime', franchise: 'Mazinger Z', game: 'Mazinger Z',
+      title: 'Mazinger Z', composer: 'Michiaki Watanabe', year: 1972, platform: 'Toei Animation',
+      sources: [yt('J9n4-4AEu3U'), yt('NCYznN1dhzA'), apple({ song: 458237797, country: 'mx' })],
+    },
+    {
+      id: 'toon-los-caballeros-del-zodiaco-pegasus-fantasy', cat: 'toon-anime', franchise: 'Los Caballeros del Zodiaco', game: 'Los Caballeros del Zodiaco',
+      title: 'Pegasus Fantasy', composer: 'Make-Up (versión latina)', year: 1986, platform: 'Toei Animation',
+      aka: ['Saint Seiya'],
+      sources: [yt('JU90SmiYeuw'), yt('BLXHuZ-1C_4')],
+    },
+    {
+      id: 'toon-dragon-ball-la-fantastica-aventura-makafushigi-adventur', cat: 'toon-anime', franchise: 'Dragon Ball', game: 'Dragon Ball',
+      title: 'La fantástica aventura (Makafushigi Adventure!)', composer: 'Hiroki Takahashi (versión latina)', year: 1986, platform: 'Toei Animation',
+      sources: [yt('9Hbd1QeI1Og'), yt('H10GLcS5FH0')],
+    },
+    {
+      id: 'toon-dragon-ball-z-cha-la-head-cha-la', cat: 'toon-anime', franchise: 'Dragon Ball', game: 'Dragon Ball Z',
+      title: 'Cha-La Head-Cha-La', composer: 'Ricardo Silva', year: 1989, platform: 'Toei Animation',
+      sources: [apple({ song: 718918336, country: 'mx' }), yt('cie7scVUdQE')],
+    },
+    {
+      id: 'toon-super-campeones', cat: 'toon-anime', franchise: 'Super Campeones', game: 'Super Campeones',
+      title: 'Super Campeones', composer: 'Versión latina', year: 1983, platform: 'Tsuchida Production',
+      aka: ['Captain Tsubasa', 'Supercampeones'],
+      sources: [yt('RlQKghs-W4s'), yt('rJzNgkjQY78')],
+    },
+    {
+      id: 'toon-pokemon-atrapalos-ya', cat: 'toon-anime', franchise: 'Pokémon', game: 'Pokémon',
+      title: '¡Atrápalos ya!', composer: 'Versión latina', year: 1997, platform: 'OLM',
+      sources: [yt('ZYMkmW0TTSg'), yt('vvnorKroNMs')],
+    },
+    {
+      id: 'toon-digimon-si-tu-lo-deseas-puedes-volar', cat: 'toon-anime', franchise: 'Digimon', game: 'Digimon',
+      title: 'Si tú lo deseas puedes volar', composer: 'Ricardo Silva', year: 1999, platform: 'Toei Animation',
+      aka: ['Digimon Adventure'],
+      sources: [yt('WmGy9CAap0w'), yt('7HVv9_Q3HfI')],
+    },
+    {
+      id: 'toon-sailor-moon-moonlight-densetsu', cat: 'toon-anime', franchise: 'Sailor Moon', game: 'Sailor Moon',
+      title: 'Moonlight Densetsu', composer: 'Versión latina', year: 1992, platform: 'Toei Animation',
+      sources: [yt('9NanowbK60Y'), yt('8MD9HYC2d_I')],
+    },
+    {
+      id: 'toon-dragon-ball-gt-mi-corazon-encantado', cat: 'toon-anime', franchise: 'Dragon Ball', game: 'Dragon Ball GT',
+      title: 'Mi corazón encantado', composer: 'Aaron Montalvo', year: 1996, platform: 'Toei Animation',
+      sources: [apple({ song: 1403477085, country: 'mx' }), yt('wgZ-ATUGXDw')],
+    },
+    {
+      id: 'toon-naruto-shippuden-blue-bird', cat: 'toon-anime', franchise: 'Naruto', game: 'Naruto Shippuden',
+      title: 'Blue Bird', composer: 'Ikimonogakari', year: 2007, platform: 'Pierrot',
+      sources: [apple({ song: 1089186523, country: 'mx' }), yt('2upuBiEiXDk')],
+    },
+    {
+      id: 'toon-ataque-a-los-titanes-guren-no-yumiya', cat: 'toon-anime', franchise: 'Ataque a los titanes', game: 'Ataque a los titanes',
+      title: 'Guren no Yumiya', composer: 'Linked Horizon', year: 2013, platform: 'Wit Studio',
+      aka: ['Attack on Titan', 'Shingeki no Kyojin'],
+      sources: [yt('8OkpRK2_gVs'), yt('StLX4kITjWU')],
+    },
+    {
+      id: 'toon-demon-slayer-gurenge', cat: 'toon-anime', franchise: 'Demon Slayer', game: 'Demon Slayer',
+      title: 'Gurenge', composer: 'LiSA', year: 2019, platform: 'Ufotable',
+      aka: ['Kimetsu no Yaiba', 'Guardianes de la noche'],
+      sources: [apple({ song: 1529543135, country: 'mx' }), yt('JHw8gwQXpWI')],
+    },
+    {
+      id: 'toon-jujutsu-kaisen-kaikai-kitan', cat: 'toon-anime', franchise: 'Jujutsu Kaisen', game: 'Jujutsu Kaisen',
+      title: 'Kaikai Kitan', composer: 'Eve', year: 2020, platform: 'MAPPA',
+      sources: [apple({ song: 1543126646, country: 'mx' }), yt('GwaRztMaoY0')],
+    },
+    {
+      id: 'toon-my-hero-academia-the-day', cat: 'toon-anime', franchise: 'My Hero Academia', game: 'My Hero Academia',
+      title: 'The Day', composer: 'Porno Graffitti', year: 2016, platform: 'Bones',
+      aka: ['Boku no Hero Academia'],
+      sources: [apple({ song: 1119496702, country: 'mx' }), yt('yu0HjPzFYnY')],
+    },
+    {
+      id: 'toon-neon-genesis-evangelion-a-cruel-angel-s-thesis', cat: 'toon-anime', franchise: 'Neon Genesis Evangelion', game: 'Neon Genesis Evangelion',
+      title: 'A Cruel Angel\'s Thesis', composer: 'Yoko Takahashi', year: 1995, platform: 'Gainax',
+      aka: ['Evangelion'],
+      sources: [apple({ song: 1656737698, country: 'mx' })],
+    },
+    {
+      id: 'toon-cowboy-bebop-tank', cat: 'toon-anime', franchise: 'Cowboy Bebop', game: 'Cowboy Bebop',
+      title: 'Tank!', composer: 'Yoko Kanno y The Seatbelts', year: 1998, platform: 'Sunrise',
+      sources: [yt('EL-D9LrFJd4'), yt('UFFa0QoHWvE')],
+    },
+    {
+      id: 'toon-one-piece-we-are', cat: 'toon-anime', franchise: 'One Piece', game: 'One Piece',
+      title: 'We Are!', composer: 'Kitadani Hiroshi', year: 1999, platform: 'Toei Animation',
+      sources: [apple({ song: 1770907052, country: 'mx' })],
+    },
+    {
+      id: 'toon-death-note-the-world', cat: 'toon-anime', franchise: 'Death Note', game: 'Death Note',
+      title: 'the WORLD', composer: 'NIGHTMARE', year: 2006, platform: 'Madhouse',
+      sources: [apple({ song: 385239211, country: 'mx' })],
+    },
+    {
+      id: 'toon-fullmetal-alchemist-brotherhood-again', cat: 'toon-anime', franchise: 'Fullmetal Alchemist', game: 'Fullmetal Alchemist: Brotherhood',
+      title: 'Again', composer: 'YUI', year: 2009, platform: 'Bones',
+      aka: ['Fullmetal Alchemist', 'FMA'],
+      sources: [apple({ song: 1537418083, country: 'mx' })],
+    },
+    {
+      id: 'toon-tokyo-ghoul-unravel', cat: 'toon-anime', franchise: 'Tokyo Ghoul', game: 'Tokyo Ghoul',
+      title: 'unravel', composer: 'TK from Ling tosite sigure', year: 2014, platform: 'Pierrot',
+      sources: [apple({ song: 1588285604, country: 'mx' })],
+    },
+    {
+      id: 'toon-naruto-shippuden-silhouette', cat: 'toon-anime', franchise: 'Naruto', game: 'Naruto Shippuden',
+      title: 'Silhouette', composer: 'KANA-BOON', year: 2014, platform: 'Pierrot',
+      sources: [apple({ song: 1536490000, country: 'mx' })],
+    },
+    {
+      id: 'toon-naruto-go', cat: 'toon-anime', franchise: 'Naruto', game: 'Naruto',
+      title: 'GO!!!', composer: 'FLOW', year: 2004, platform: 'Pierrot',
+      sources: [apple({ song: 1536366366, country: 'mx' })],
+    },
+    {
+      id: 'toon-jojo-s-bizarre-adventure-bloody-stream', cat: 'toon-anime', franchise: 'JoJo\'s Bizarre Adventure', game: 'JoJo\'s Bizarre Adventure',
+      title: 'Bloody Stream', composer: 'Coda', year: 2012, platform: 'David Production',
+      aka: ['JoJo', 'JoJo no Kimyou na Bouken'],
+      sources: [apple({ song: 595259109, country: 'jp' })],
+    },
+    {
+      id: 'toon-hunter-x-hunter-departure', cat: 'toon-anime', franchise: 'Hunter x Hunter', game: 'Hunter x Hunter',
+      title: 'departure!', composer: 'Masatoshi Ono', year: 2011, platform: 'Madhouse',
+      sources: [apple({ song: 551273032, country: 'mx' })],
+    },
+    {
+      id: 'toon-one-punch-man-the-hero', cat: 'toon-anime', franchise: 'One Punch Man', game: 'One Punch Man',
+      title: 'THE HERO!!', composer: 'JAM Project', year: 2015, platform: 'Madhouse',
+      sources: [apple({ song: 1815780792, country: 'mx' })],
+    },
+    {
+      id: 'toon-chainsaw-man-kick-back', cat: 'toon-anime', franchise: 'Chainsaw Man', game: 'Chainsaw Man',
+      title: 'KICK BACK', composer: 'Kenshi Yonezu', year: 2022, platform: 'MAPPA',
+      sources: [apple({ song: 1653922188, country: 'mx' })],
+    },
+    {
+      id: 'toon-oshi-no-ko-idol', cat: 'toon-anime', franchise: 'Oshi no Ko', game: 'Oshi no Ko',
+      title: 'Idol', composer: 'YOASOBI', year: 2023, platform: 'Doga Kobo',
+      aka: ['【推しの子】'],
+      sources: [apple({ song: 1688334537, country: 'mx' })],
+    },
+    {
+      id: 'toon-spy-x-family-mixed-nuts', cat: 'toon-anime', franchise: 'Spy x Family', game: 'Spy x Family',
+      title: 'Mixed Nuts', composer: 'Official HIGE DANDism', year: 2022, platform: 'Wit Studio / CloverWorks',
+      sources: [apple({ song: 1616586639, country: 'mx' })],
+    },
+    {
+      id: 'toon-mashle-bling-bang-bang-born', cat: 'toon-anime', franchise: 'Mashle', game: 'Mashle',
+      title: 'Bling-Bang-Bang-Born', composer: 'Creepy Nuts', year: 2024, platform: 'A-1 Pictures',
+      aka: ['Mashle: Magic and Muscles'],
+      sources: [apple({ song: 1720332181, country: 'mx' })],
+    },
+    {
+      id: 'toon-dandadan-otonoke', cat: 'toon-anime', franchise: 'Dandadan', game: 'Dandadan',
+      title: 'Otonoke', composer: 'Creepy Nuts', year: 2024, platform: 'Science SARU',
+      sources: [apple({ song: 1771603031, country: 'mx' })],
+    },
+    {
+      id: 'toon-frieren-yuusha', cat: 'toon-anime', franchise: 'Frieren', game: 'Frieren',
+      title: 'Yuusha', composer: 'YOASOBI', year: 2023, platform: 'Madhouse',
+      aka: ['Sousou no Frieren', 'Frieren: Más allá del final del viaje'],
+      sources: [apple({ song: 1707001466, country: 'mx' })],
+    },
+    {
+      id: 'toon-solo-leveling-level', cat: 'toon-anime', franchise: 'Solo Leveling', game: 'Solo Leveling',
+      title: 'LEveL', composer: 'SawanoHiroyuki[nZk]', year: 2024, platform: 'A-1 Pictures',
+      sources: [apple({ song: 1718526128, country: 'mx' })],
+    },
+    {
+      id: 'toon-shigatsu-wa-kimi-no-uso-hikaru-nara', cat: 'toon-anime', franchise: 'Shigatsu wa Kimi no Uso', game: 'Shigatsu wa Kimi no Uso',
+      title: 'Hikaru Nara', composer: 'Goose house', year: 2014, platform: 'A-1 Pictures',
+      aka: ['Your Lie in April', 'Tu mentira en abril'],
+      sources: [apple({ song: 1537529533, country: 'mx' })],
+    },
+    {
+      id: 'toon-sword-art-online-crossing-field', cat: 'toon-anime', franchise: 'Sword Art Online', game: 'Sword Art Online',
+      title: 'crossing field', composer: 'LiSA', year: 2012, platform: 'A-1 Pictures',
+      aka: ['SAO'],
+      sources: [apple({ song: 1537785962, country: 'mx' })],
+    },
+    {
+      id: 'toon-bleach-asterisk', cat: 'toon-anime', franchise: 'Bleach', game: 'Bleach',
+      title: 'Asterisk', composer: 'ORANGE RANGE', year: 2004, platform: 'Pierrot',
+      sources: [apple({ song: 1537381402, country: 'mx' })],
+    },
+    {
+      id: 'toon-inuyasha-change-the-world', cat: 'toon-anime', franchise: 'Inuyasha', game: 'Inuyasha',
+      title: 'Change the World', composer: 'V6', year: 2000, platform: 'Sunrise',
+      sources: [apple({ song: 1848248144, country: 'mx' })],
+    },
+    {
+      id: 'toon-sakura-card-captor-catch-you-catch-me', cat: 'toon-anime', franchise: 'Sakura Card Captor', game: 'Sakura Card Captor',
+      title: 'Catch You Catch Me', composer: 'GUMI', year: 1998, platform: 'Madhouse',
+      aka: ['Sakura Cazadora de Cartas', 'Cardcaptor Sakura'],
+      sources: [apple({ song: 1318186200, country: 'mx' })],
+    },
+    {
+      id: 'toon-slam-dunk-kimi-ga-suki-da-to-sakebitai', cat: 'toon-anime', franchise: 'Slam Dunk', game: 'Slam Dunk',
+      title: 'Kimi ga Suki da to Sakebitai', composer: 'BAAD', year: 1993, platform: 'Toei Animation',
+      sources: [apple({ song: 1693743422, country: 'jp' })],
+    },
+    {
+      id: 'toon-haikyuu-imagination', cat: 'toon-anime', franchise: 'Haikyuu!!', game: 'Haikyuu!!',
+      title: 'Imagination', composer: 'SPYAIR', year: 2014, platform: 'Production I.G',
+      aka: ['Haikyu!!'],
+      sources: [apple({ song: 859822147, country: 'mx' })],
+    },
+    {
+      id: 'toon-black-clover-black-rover', cat: 'toon-anime', franchise: 'Black Clover', game: 'Black Clover',
+      title: 'Black Rover', composer: 'Vickeblanka', year: 2017, platform: 'Pierrot',
+      sources: [apple({ song: 1439297637, country: 'mx' })],
+    },
+    {
+      id: 'toon-code-geass-colors', cat: 'toon-anime', franchise: 'Code Geass', game: 'Code Geass',
+      title: 'COLORS', composer: 'FLOW', year: 2006, platform: 'Sunrise',
+      sources: [apple({ song: 1536482652, country: 'mx' })],
+    },
+    {
+      id: 'toon-fairy-tail-snow-fairy', cat: 'toon-anime', franchise: 'Fairy Tail', game: 'Fairy Tail',
+      title: 'Snow fairy', composer: 'FUNKIST', year: 2009, platform: 'A-1 Pictures',
+      sources: [apple({ song: 997647863, country: 'mx' })],
+    },
+    {
+      id: 'toon-tokyo-revengers-cry-baby', cat: 'toon-anime', franchise: 'Tokyo Revengers', game: 'Tokyo Revengers',
+      title: 'Cry Baby', composer: 'OFFICIAL HIGE DANDISM', year: 2021, platform: 'LIDENFILMS',
+      sources: [apple({ song: 1563683060, country: 'mx' })],
+    },
+    {
+      id: 'toon-blue-lock-chaos-ga-kiwamaru', cat: 'toon-anime', franchise: 'Blue Lock', game: 'Blue Lock',
+      title: 'Chaos ga Kiwamaru', composer: 'UNISON SQUARE GARDEN', year: 2022, platform: '8bit',
+      sources: [apple({ song: 1648654054, country: 'mx' })],
+    },
+    {
+      id: 'toon-mob-psycho-100-99', cat: 'toon-anime', franchise: 'Mob Psycho 100', game: 'Mob Psycho 100',
+      title: '99', composer: 'MOB CHOIR', year: 2016, platform: 'Bones',
+      sources: [apple({ song: 1144397128, country: 'jp' })],
+    },
+    {
+      id: 'toon-ataque-a-los-titanes-the-rumbling', cat: 'toon-anime', franchise: 'Ataque a los titanes', game: 'Ataque a los titanes',
+      title: 'The Rumbling', composer: 'SiM', year: 2022, platform: 'MAPPA',
+      aka: ['Attack on Titan', 'Shingeki no Kyojin'],
+      sources: [apple({ song: 1606345338, country: 'mx' })],
+    },
+    {
+      id: 'toon-jujutsu-kaisen-specialz', cat: 'toon-anime', franchise: 'Jujutsu Kaisen', game: 'Jujutsu Kaisen',
+      title: 'SPECIALZ', composer: 'King Gnu', year: 2023, platform: 'MAPPA',
+      sources: [apple({ song: 1702823583, country: 'mx' })],
+    },
+    {
+      id: 'toon-demon-slayer-zankyou-sanka', cat: 'toon-anime', franchise: 'Demon Slayer', game: 'Demon Slayer',
+      title: 'Zankyou Sanka', composer: 'Aimer', year: 2022, platform: 'Ufotable',
+      aka: ['Kimetsu no Yaiba', 'Guardianes de la noche'],
+      sources: [apple({ song: 1594814735, country: 'jp' })],
+    },
+    {
+      id: 'toon-yu-yu-hakusho-sonrisa-explosiva', cat: 'toon-anime', franchise: 'Yu Yu Hakusho', game: 'Yu Yu Hakusho',
+      title: 'Sonrisa explosiva', composer: 'Versión latina (original: Matsuko Mawatari)', year: 1992, platform: 'Pierrot',
+      sources: [yt('RncCJNOZLb0'), apple({ song: 433591403, country: 'mx' })],
+    },
+    {
+      id: 'toon-dragon-ball-super-vuela-pega-y-esquiva', cat: 'toon-anime', franchise: 'Dragon Ball', game: 'Dragon Ball Super',
+      title: 'Vuela, pega y esquiva', composer: 'Adrián Barba', year: 2015, platform: 'Toei Animation',
+      sources: [yt('_37jJAl1c0g'), yt('xeRZEWA_-nQ')],
+    },
+    {
+      id: 'toon-naruto-rocks', cat: 'toon-anime', franchise: 'Naruto', game: 'Naruto',
+      title: 'Rocks', composer: 'Hound Dog (versión latina)', year: 2002, platform: 'Pierrot',
+      sources: [yt('PWO4hc-L_i4'), yt('PzbYmqLed1Q')],
+    },
+    {
+      id: 'toon-yu-gi-oh-yu-gi-oh-opening', cat: 'toon-anime', franchise: 'Yu-Gi-Oh!', game: 'Yu-Gi-Oh!',
+      title: 'Yu-Gi-Oh! (opening)', year: 2000, platform: 'Studio Gallop',
+      sources: [yt('timXx6CBjoA'), yt('IJh5yp8yfx0')],
+    },
+    {
+      id: 'toon-hamtaro-hamtaro-opening', cat: 'toon-anime', franchise: 'Hamtaro', game: 'Hamtaro',
+      title: 'Hamtaro (opening)', year: 2000, platform: 'TMS Entertainment',
+      sources: [yt('qz9RTb9w3mk'), yt('QrAmgCo_kps')],
+    },
   );
 
   // Señuelos: aparecen como opciones incorrectas y en el buscador de Experto.
   AM.EXTRA_GAMES.push(
-    { theme: 'caricaturas', franchise: 'Dragon Ball', game: 'Dragon Ball Super' },
-    { theme: 'caricaturas', franchise: 'Dragon Ball', game: 'Dragon Ball Kai' },
-    { theme: 'caricaturas', franchise: 'Naruto', game: 'Boruto' },
+    { theme: 'caricaturas', franchise: 'Dragon Ball', game: 'Dragon Ball Kai', cat: 'toon-anime' },
+    { theme: 'caricaturas', franchise: 'Naruto', game: 'Boruto', cat: 'toon-anime' },
     { theme: 'caricaturas', franchise: 'El show de la Pantera Rosa', game: 'El show de la Pantera Rosa' },
     { theme: 'caricaturas', franchise: 'Los Jetsons: la película', game: 'Los Jetsons: la película' },
     { theme: 'caricaturas', franchise: 'Doug', game: 'Doug' },
@@ -587,12 +780,19 @@
     { theme: 'caricaturas', franchise: 'Un show más', game: 'Un show más' },
     { theme: 'caricaturas', franchise: 'Phineas y Ferb: la película', game: 'Phineas y Ferb: la película' },
     { theme: 'caricaturas', franchise: 'Los Simpson: la película', game: 'Los Simpson: la película' },
-    { theme: 'caricaturas', franchise: 'One Piece', game: 'One Piece' },
-    { theme: 'caricaturas', franchise: 'Sakura Card Captor', game: 'Sakura Card Captor' },
-    { theme: 'caricaturas', franchise: 'Inuyasha', game: 'Inuyasha' },
-    { theme: 'caricaturas', franchise: 'Shin-chan', game: 'Shin-chan' },
-    { theme: 'caricaturas', franchise: 'Doraemon', game: 'Doraemon' },
+    { theme: 'caricaturas', franchise: 'Shin-chan', game: 'Shin-chan', cat: 'toon-anime' },
+    { theme: 'caricaturas', franchise: 'Doraemon', game: 'Doraemon', cat: 'toon-anime' },
     { theme: 'caricaturas', franchise: 'Las aventuras de Tintín', game: 'Las aventuras de Tintín' },
     { theme: 'caricaturas', franchise: 'Aventuras en pañales', game: 'Los Rugrats crecidos' },
+    { theme: 'caricaturas', franchise: 'Kimi ni Todoke', game: 'Kimi ni Todoke', cat: 'toon-anime' },
+    { theme: 'caricaturas', franchise: 'Dr. Stone', game: 'Dr. Stone', cat: 'toon-anime' },
+    { theme: 'caricaturas', franchise: 'Vinland Saga', game: 'Vinland Saga', cat: 'toon-anime' },
+    { theme: 'caricaturas', franchise: 'Fire Force', game: 'Fire Force', cat: 'toon-anime' },
+    { theme: 'caricaturas', franchise: 'Steins;Gate', game: 'Steins;Gate', cat: 'toon-anime' },
+    { theme: 'caricaturas', franchise: 'Kaguya-sama: Love Is War', game: 'Kaguya-sama: Love Is War', cat: 'toon-anime' },
+    { theme: 'caricaturas', franchise: 'Ranma ½', game: 'Ranma ½', cat: 'toon-anime' },
+    { theme: 'caricaturas', franchise: 'Rurouni Kenshin', game: 'Rurouni Kenshin', cat: 'toon-anime' },
+    { theme: 'caricaturas', franchise: 'Dr. Slump', game: 'Dr. Slump', cat: 'toon-anime' },
+    { theme: 'caricaturas', franchise: 'Kaiju No. 8', game: 'Kaiju No. 8', cat: 'toon-anime' },
   );
 })(window.AM = window.AM || {});

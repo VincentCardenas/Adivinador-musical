@@ -6,7 +6,7 @@ Adivinador musical: suena un fragmento de música **oficial** y tienes que recon
 | --- | --- | --- |
 | 🎮 **Videojuegos** | La saga y el juego (Halo, Zelda, Pokémon, Elden Ring…): 281 pistas de 127 sagas y 215 juegos | Nintendo, Xbox, PlayStation, Indie, Retro, RPG, Acción, Online |
 | 📺 **Series** | La serie por su entrada o tema principal (Friends, Lost, Stranger Things, El Chavo…) | Por época: clásicas, 90s, 2000s, 2010s y 2020 en adelante |
-| 🧸 **Caricaturas** | La caricatura o el anime por su entrada, en español latino cuando la hubo | Por época: clásicas, 80s, 90s, 2000s y 2010 en adelante |
+| 🧸 **Caricaturas** | La caricatura o el anime por su entrada, en español latino cuando la hubo | Por época (clásicas, 80s, 90s, 2000s y 2010 en adelante) y **🎌 Openings de anime**: 56 openings famosos, de Caballeros del Zodiaco y Dragon Ball a Evangelion, Death Note, Chainsaw Man o Frieren |
 | 🏰 **Disney** | La película por sus canciones **en español latino** (El rey león, Frozen, Coco…) | Por época: clásicos, renacimiento, 2000s, 2010s y 2020 en adelante. Interruptor para incluir o quitar **Pixar** |
 | 🎤 **Canciones** | Quién la canta (Clásico) o qué canción es (Experto y Supervivencia) | Por época: antes de 1980, 80s, 90s, 2000s, 2010s y 2020 en adelante. Selector de idioma: **español, inglés o ambos** |
 
@@ -177,7 +177,7 @@ css/styles.css            Estilos (estética arcade/synthwave, responsive)
 js/config.js              Versión, repositorio de reportes y conexión del ranking (Supabase)
 js/catalog.js             Videojuegos: pistas, categorías y juegos "señuelo"
 js/catalog-series.js      Series de TV por época
-js/catalog-caricaturas.js Caricaturas y anime por época
+js/catalog-caricaturas.js Caricaturas por época y openings de anime
 js/catalog-disney.js      Disney y Pixar (español latino) por época
 js/catalog-canciones.js   Canciones famosas por época e idioma
 js/themes.js              Los 5 temas: textos, filtros (Pixar, idioma) y rangos
@@ -197,6 +197,7 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **1.3**: categoría **Openings de anime** (56 openings famosos, con audio oficial); el título del juego pasa a ser **¿Qué suena?**; correcciones de los reportes: Destiny suena *The Traveler* en vez de la canción de los créditos, Breaking Bad usa su entrada real, *La chica de ayer* en versión de estudio y *Labios rotos* en su época correcta (2011).
 - **1.2**: nuevos temas: series, caricaturas, películas de Disney (en español latino, con interruptor
   de Pixar) y canciones famosas (con selector de idioma), todos por época; ranking global con nickname
   (Supabase); récords por tema y modo.

@@ -279,9 +279,9 @@
       sources: [yt('LVFk2u6b5ZY'), yt('xNmIqwlZE5o')],
     },
     {
-      id: 'tv-breaking-bad-breaking-bad-main-title-theme', cat: 'tv-00s', franchise: 'Breaking Bad', game: 'Breaking Bad',
-      title: 'Breaking Bad Main Title Theme', composer: 'Dave Porter', year: 2008, platform: 'AMC',
-      sources: [apple({ song: 370928560, country: 'mx' })],
+      id: 'tv-breaking-bad-breaking-bad-entrada', cat: 'tv-00s', franchise: 'Breaking Bad', game: 'Breaking Bad',
+      title: 'Breaking Bad (entrada)', composer: 'Dave Porter', year: 2008, platform: 'AMC',
+      sources: [yt('F1HNuAE9WdU'), yt('A35gds8NBws')],
     },
     {
       id: 'tv-malcolm-el-de-en-medio-boss-of-me', cat: 'tv-00s', franchise: 'Malcolm el de en medio', game: 'Malcolm el de en medio',

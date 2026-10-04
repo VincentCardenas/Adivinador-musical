@@ -269,7 +269,7 @@
     {
       id: 'song-la-chica-de-ayer', cat: 'song-80s', franchise: 'Nacha Pop', game: 'La chica de ayer',
       title: 'La chica de ayer', year: 1980, lang: 'es',
-      sources: [apple({ song: 1443179510, country: 'mx' })],
+      sources: [apple({ song: 693253157, country: 'mx' })],
     },
     {
       id: 'song-devuelveme-a-mi-chica', cat: 'song-80s', franchise: 'Hombres G', game: 'Devuélveme a mi chica',
@@ -477,7 +477,7 @@
       title: 'Hacer el amor con otro', year: 1991, lang: 'es',
       sources: [apple({ song: 1443611526, country: 'mx' })],
     },
-    /* ───────────── 2000s (31) ───────────── */
+    /* ───────────── 2000s (30) ───────────── */
     {
       id: 'song-crazy-in-love', cat: 'song-00s', franchise: 'Beyoncé', game: 'Crazy in Love',
       title: 'Crazy in Love', year: 2003, lang: 'en',
@@ -604,11 +604,6 @@
       sources: [apple({ song: 280862234, country: 'mx' })],
     },
     {
-      id: 'song-labios-rotos', cat: 'song-00s', franchise: 'Zoé', game: 'Labios rotos',
-      title: 'Labios rotos', year: 2006, lang: 'es',
-      sources: [apple({ song: 713647605, country: 'mx' })],
-    },
-    {
       id: 'song-amor-del-bueno', cat: 'song-00s', franchise: 'Reyli Barba', game: 'Amor del bueno',
       title: 'Amor del bueno', year: 2004, lang: 'es',
       sources: [apple({ song: 1637480172, country: 'mx' })],
@@ -633,7 +628,12 @@
       title: 'Sin miedo a nada', year: 2001, lang: 'es',
       sources: [apple({ song: 36223322, country: 'mx' })],
     },
-    /* ───────────── 2010s (32) ───────────── */
+    /* ───────────── 2010s (33) ───────────── */
+    {
+      id: 'song-labios-rotos', cat: 'song-10s', franchise: 'Zoé', game: 'Labios rotos',
+      title: 'Labios rotos', year: 2011, lang: 'es',
+      sources: [apple({ song: 713647605, country: 'mx' })],
+    },
     {
       id: 'song-rolling-in-the-deep', cat: 'song-10s', franchise: 'Adele', game: 'Rolling in the Deep',
       title: 'Rolling in the Deep', year: 2010, lang: 'en',
