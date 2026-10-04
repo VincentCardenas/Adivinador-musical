@@ -1,6 +1,6 @@
 # 🎵 ¿Qué suena? · Adivinador musical
 
-Adivinador musical: suena un fragmento de música **oficial** y tienes que reconocer de dónde es. Hay seis temas:
+Adivinador musical: suena un fragmento de música **oficial** y tienes que reconocer de dónde es. Hay siete temas:
 
 | Tema | ¿Qué adivinas? | Categorías |
 | --- | --- | --- |
@@ -9,6 +9,7 @@ Adivinador musical: suena un fragmento de música **oficial** y tienes que recon
 | 🧸 **Caricaturas** | La caricatura por su entrada, en español latino cuando la hubo (Los Picapiedra, Bob Esponja, Hora de aventura…) | Por época: clásicas, 80s, 90s, 2000s y 2010 en adelante |
 | 🎌 **Anime** | El anime por su opening: 56 openings famosos, de Caballeros del Zodiaco y Dragon Ball (en latino) a Evangelion, Death Note, Chainsaw Man o Frieren | Por época: clásicos, 90s, 2000s, 2010s y 2020 en adelante |
 | 🏰 **Disney** | La película por sus canciones **en español latino** (El rey león, Frozen, Coco…) | Por época: clásicos, renacimiento, 2000s, 2010s y 2020 en adelante. Interruptor para incluir o quitar **Pixar** |
+| 🎭 **Musicales** | De qué musical es (Clásico) o qué canción es (Experto y Supervivencia): 85 canciones de 37 musicales de teatro y cine (Vaselina, El fantasma de la ópera, Wicked, Hamilton, El gran showman…), en su grabación original o en versiones en español famosas (Timbiriche, Camilo Sesto, el elenco de México…) | Por época: clásicos, 70s y 80s, 90s y 2000s y 2010 en adelante. Selector de idioma: **español, inglés o ambos** |
 | 🎤 **Canciones** | Quién la canta (Clásico) o qué canción es (Experto y Supervivencia) | Por época: antes de 1980, 80s, 90s, 2000s, 2010s y 2020 en adelante. Selector de idioma: **español, inglés o ambos** |
 
 Al terminar una partida puedes guardar tu puntaje con un **nickname** en el **ranking global** (uno por tema y modo).
@@ -19,8 +20,8 @@ Hecho con HTML, CSS y JavaScript puro (sin frameworks ni compilación).
 
 | Modo | Cómo funciona |
 | --- | --- |
-| 🎯 **Clásico** | 10 rondas, 4 opciones y 20 s por ronda. Adivinas la respuesta "amplia": la saga del videojuego, la serie, la caricatura, la película o el artista que canta. Responder rápido da más puntos y las rachas multiplican (x1.5 con 3 aciertos seguidos, x2 con 5). |
-| 🎧 **Experto** | Estilo Heardle. Empiezas con **1 segundo** de audio; cada fallo o salto desbloquea más (1 → 2 → 4 → 7 → 11 → 16 s). Hay que escribir la respuesta **exacta** (el juego, la película, la canción…); si aciertas la saga o el artista pero no la respuesta, te avisa con 🟨. |
+| 🎯 **Clásico** | 10 rondas, 4 opciones y 20 s por ronda. Adivinas la respuesta "amplia": la saga del videojuego, la serie, la caricatura, la película, el musical o el artista que canta. Responder rápido da más puntos y las rachas multiplican (x1.5 con 3 aciertos seguidos, x2 con 5). |
+| 🎧 **Experto** | Estilo Heardle. Empiezas con **1 segundo** de audio; cada fallo o salto desbloquea más (1 → 2 → 4 → 7 → 11 → 16 s). Hay que escribir la respuesta **exacta** (el juego, la película, la canción…); si aciertas la saga, el musical o el artista pero no la respuesta, te avisa con 🟨. En Musicales vale el título original o el de la versión en español (*Gethsemane* o *Getsemaní*). |
 | ❤️ **Supervivencia** | Opciones con la respuesta exacta (¿Halo 2 o Halo 3? ¿Toy Story o Toy Story 2?), 3 vidas y el reloj se acorta cada 3 aciertos. |
 | 🗂️ **Sagas** | Solo en Videojuegos. Eliges una saga (Super Mario, Zelda, Pokémon, Kirby, Donkey Kong, Sonic, Final Fantasy, Halo, Mega Man o Street Fighter) y adivinas **qué canción es** entre 4 opciones: de **toda la saga** (cada opción dice juego y canción, como *Halo 3 - One Final Effort* u *Ocarina of Time - Zelda's Lullaby*) o de **un solo juego** (solo el nombre de la canción; se puede elegir si el juego tiene al menos 5). 10 rondas (o una por canción si el juego tiene menos) y 20 s por ronda. Solo música original: nada de remakes ni remasters (Halo va de Combat Evolved a Reach). Tiene récord por saga, pero no entra al ranking global. |
 
@@ -69,6 +70,11 @@ usas otro proyecto (o haces tu propia copia del juego), así se conecta:
    - la **Project URL** (algo como `https://abcdxyz.supabase.co`);
    - la llave **publishable** (empieza con `sb_publishable_…`; en proyectos viejos se llama `anon`).
 4. Pégalas en [`js/config.js`](js/config.js), en `scoreboard.url` y `scoreboard.key`, y sube el cambio.
+
+**Cuando el juego estrena un tema** (como Musicales en la v1.8), la base tiene que aceptar su nombre: vuelve a
+correr [`supabase/schema.sql`](supabase/schema.sql) completo en el **SQL Editor** (se puede correr las veces que
+quieras; no borra puntajes). Mientras no lo hagas, ese tema se juega normal pero su ranking avisa que todavía no
+está activado.
 
 > **Importante:** esa llave es pública a propósito (la ve cualquiera que abra el juego); lo que protege la
 > tabla son las reglas de `schema.sql`. **Nunca** pongas en el juego la llave `secret` ni la `service_role`.
@@ -139,6 +145,7 @@ Cada tema tiene su archivo de catálogo:
 | Caricaturas | [`js/catalog-caricaturas.js`](js/catalog-caricaturas.js) | caricatura | caricatura |
 | Anime | [`js/catalog-anime.js`](js/catalog-anime.js) | saga (Dragon Ball) | anime (Dragon Ball Z) |
 | Disney | [`js/catalog-disney.js`](js/catalog-disney.js) | saga (Toy Story) | película (Toy Story 2) |
+| Musicales | [`js/catalog-musicales.js`](js/catalog-musicales.js) | musical (Wicked) | canción (Defying Gravity) |
 | Canciones | [`js/catalog-canciones.js`](js/catalog-canciones.js) | artista | canción |
 
 Los temas (nombres, textos, filtros y rangos) están en [`js/themes.js`](js/themes.js). Cada pista se ve así:
@@ -159,9 +166,11 @@ Los temas (nombres, textos, filtros y rangos) están en [`js/themes.js`](js/them
 ```
 
 Campos opcionales: `aka` (otros nombres que acepta el buscador de Experto, por ejemplo
-`aka: ['Knight Rider']` en *El auto fantástico*), `lang: 'es' | 'en'` en Canciones (para el filtro de idioma
+`aka: ['Knight Rider']` en *El auto fantástico*; en Musicales, el título de la otra versión de la canción, y así
+el buscador acepta cualquiera de los dos), `lang: 'es' | 'en'` en Canciones y Musicales (para el filtro de idioma
 y para que las opciones vayan en el mismo idioma que la canción) y `pixar: true` en Disney (para el
-interruptor de Pixar). Las pistas de un DLC o expansión van con el nombre del juego base y el del DLC en
+interruptor de Pixar). Los otros nombres de un musical (*Grease* para *Vaselina*) van en `AM.FRANCHISE_AKA`, al
+principio de [`js/catalog-musicales.js`](js/catalog-musicales.js): con ellos el buscador de Experto lista sus canciones. Las pistas de un DLC o expansión van con el nombre del juego base y el del DLC en
 `aka` (como *Wrath of the Lich King* en *World of Warcraft*). En los catálogos nuevos cada categoría lleva
 `theme` para saber a qué tema pertenece.
 
@@ -191,9 +200,10 @@ js/catalog-series.js      Series de TV por época
 js/catalog-caricaturas.js Caricaturas por época
 js/catalog-anime.js       Openings de anime por época
 js/catalog-disney.js      Disney y Pixar (español latino) por época
+js/catalog-musicales.js   Musicales de teatro y cine (originales y en español) por época
 js/catalog-canciones.js   Canciones famosas por época e idioma
 js/catalog-sagas.js       Modo Sagas: las 10 sagas y sus canciones extra (generado)
-js/themes.js              Los 6 temas: textos, filtros (Pixar, idioma) y rangos
+js/themes.js              Los 7 temas: textos, filtros (Pixar, idioma) y rangos
 js/sources.js             Resuelve cada pista a un preview de Apple o un video de YouTube
 js/loudness.js            Volumen medido de cada fuente (generado) para que todo suene parejo
 js/engine.js              Reproductor unificado (<audio> + YouTube oculto), volumen parejo, cortes de clip y fallos
@@ -211,6 +221,14 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **1.8**: tema nuevo **🎭 Musicales**: 85 canciones de 37 musicales de teatro y cine (nada de Disney, que tiene
+  su propio tema), por época y con selector de idioma. 70 suenan en su grabación original (Broadway, Londres o la
+  película) y 15 en versiones en español: *Vaselina* de Timbiriche, *Jesucristo Superstar* de Camilo Sesto,
+  *Evita* con Paloma San Basilio, *El fantasma de la ópera* con el elenco de México, *Mentiras*, *Mamma Mia!* de
+  Madrid y el doblaje de *Las guerreras K-pop*. En Clásico adivinas el musical; en Experto y Supervivencia, la
+  canción (el buscador acepta el título original o el de la versión en español, y también el otro nombre del
+  musical: *grease* lista las de *Vaselina*). Las pistas nuevas usan el volumen promedio hasta que se midan. Para
+  su ranking hay que volver a correr `supabase/schema.sql`.
 - **1.7.2**: en Sagas con toda la saga, las opciones dicen el juego y la canción (*Halo 3 - One Final
   Effort*); los nombres muy largos se acortan (*Ocarina of Time - …* en vez de *The Legend of Zelda:
   Ocarina of Time - …*).

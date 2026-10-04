@@ -122,11 +122,13 @@
   const CJK = /[\u3040-\u30ff\u3400-\u9fff]/;
 
   /**
-   * Línea secundaria de una pista: la canción (♪) o, en Canciones, quién la canta (🎤).
+   * Línea secundaria de una pista: la canción (♪), en Canciones quién la canta (🎤) y en los temas
+   * con `lineIcon` (Musicales) de dónde es la canción (🎭 Wicked).
    * Si Apple da el nombre en japonés (シルエット), se muestra el del catálogo (Silhouette).
    */
   function trackLine(T, t, m) {
     if (T.showArtist) return '🎤 ' + t.franchise;
+    if (T.lineIcon) return T.lineIcon + ' ' + t.franchise;
     const name = m && m.trackName;
     return '♪ ' + (name && !CJK.test(name) ? name : t.title);
   }
@@ -864,7 +866,8 @@
     }
     closeCombo();
     input.value = '';
-    if (hit.game === cur.track.game) { finishExpert(true); return; }
+    // También vale el otro título de la misma canción ("Gethsemane" cuando suena "Getsemaní").
+    if (hit.game === cur.track.game || AM.Logic.sameAnswer(g.scope, hit.game, cur.track.game)) { finishExpert(true); return; }
     const partial = g.theme.showArtist
       ? AM.Logic.sameArtist(hit.franchise, cur.track.franchise)
       : hit.franchise === cur.track.franchise;
@@ -945,17 +948,24 @@
     const words = nq.split(' ');
     if (!game) { closeCombo(); return; }
     const showArtist = game.theme.showArtist;
+    const showFranchise = !!game.theme.lineIcon;
+    const franchiseAka = AM.FRANCHISE_AKA || {};
     combo.items = AM.Logic.allGames(game.scope)
       .filter((g) => {
-        const n = AM.Sources.norm([g.game, g.franchise].concat(g.aka).join(' '));
+        const n = AM.Sources.norm([g.game, g.franchise].concat(g.aka, franchiseAka[g.franchise] || []).join(' '));
         return words.every((w) => n.indexOf(w) >= 0);
       })
       .slice(0, 8);
     if (combo.active >= combo.items.length) combo.active = combo.items.length - 1;
     list.innerHTML = combo.items.length
       ? combo.items.map((g, i) => {
-        // En Canciones se muestra el artista; en los demás, el nombre alterno con el que coincidió.
-        const sub = showArtist ? g.franchise : (g.aka.find((a) => AM.Sources.norm(a).indexOf(nq) >= 0) || '');
+        // En Canciones se muestra el artista y en Musicales el musical (más el título con el que
+        // coincidió, si fue por el otro nombre de la canción); en los demás, el nombre alterno.
+        const alias = g.aka.find((a) => AM.Sources.norm(a).indexOf(nq) >= 0) || '';
+        const viaAlias = alias && AM.Sources.norm(g.game).indexOf(nq) < 0;
+        const sub = showArtist ? g.franchise
+          : showFranchise ? g.franchise + (viaAlias ? ' · ' + alias : '')
+            : alias;
         return `<li id="opt-${i}" role="option" data-i="${i}" aria-selected="${i === combo.active}">${highlight(g.game, q)}${sub ? `<small>${esc(sub)}</small>` : ''}</li>`;
       }).join('')
       : '<li class="empty">Sin coincidencias</li>';
@@ -1311,7 +1321,11 @@
       ctx.saving = false;
       input.disabled = false;
       $('#board-save').disabled = false;
-      msg.textContent = 'No se pudo guardar: ' + (err && err.message ? err.message : 'error desconocido') + '. Inténtalo de nuevo.';
+      const why = err && err.message ? err.message : 'error desconocido';
+      // Un tema nuevo necesita que la base acepte su nombre (supabase/schema.sql → tema_valido).
+      msg.textContent = /tema_valido/.test(why)
+        ? `El ranking global de ${AM.theme(ctx.entry.tema).label} todavía no está activado, así que tu puntaje no se pudo subir.`
+        : 'No se pudo guardar: ' + why + '. Inténtalo de nuevo.';
     }
   });
 

@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>¿Qué suena? · Adivinador musical</title>
-  <meta name="description" content="Adivinador musical: reconoce videojuegos, series, caricaturas, películas de Disney y canciones famosas por su música. Con ranking global.">
+  <meta name="description" content="Adivinador musical: reconoce videojuegos, series, caricaturas, anime, películas de Disney, musicales y canciones famosas por su música. Con ranking global.">
   <meta name="theme-color" content="#0b0a18">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%B5%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=1.7.2">
+  <link rel="stylesheet" href="css/styles.css?v=1.8">
 </head>
 <body>
   <div class="bg" aria-hidden="true">
@@ -168,14 +168,14 @@
   <dialog class="dialog" id="dlg-help" aria-labelledby="help-title">
     <form method="dialog" class="dialog-close"><button aria-label="Cerrar">✕</button></form>
     <h2 id="help-title">Cómo jugar</h2>
-    <p>Elige un <strong>tema</strong> (videojuegos, series, caricaturas, Disney o canciones famosas), escucha un fragmento de la música <strong>oficial</strong> y adivina de dónde es.</p>
+    <p>Elige un <strong>tema</strong> (videojuegos, series, caricaturas, anime, Disney, musicales o canciones famosas), escucha un fragmento de la música <strong>oficial</strong> y adivina de dónde es.</p>
     <ul class="help-modes">
-      <li><strong>🎯 Clásico:</strong> 10 rondas con 4 opciones: la saga del videojuego, la serie, la caricatura, la película o el artista que canta. Tienes 20 s; mientras más rápido aciertes, más puntos. Encadenar aciertos multiplica: x1.5 con racha de 3 y x2 con racha de 5.</li>
-      <li><strong>🎧 Experto:</strong> estilo Heardle. Empiezas con solo 1 segundo de audio. Cada fallo o salto desbloquea más (1 → 2 → 4 → 7 → 11 → 16 s). Escribe la respuesta <em>exacta</em> (el juego, la película, la canción…); si atinas a la saga o al artista pero no a la respuesta, te avisamos con 🟨.</li>
+      <li><strong>🎯 Clásico:</strong> 10 rondas con 4 opciones: la saga del videojuego, la serie, la caricatura, la película, el musical o el artista que canta. Tienes 20 s; mientras más rápido aciertes, más puntos. Encadenar aciertos multiplica: x1.5 con racha de 3 y x2 con racha de 5.</li>
+      <li><strong>🎧 Experto:</strong> estilo Heardle. Empiezas con solo 1 segundo de audio. Cada fallo o salto desbloquea más (1 → 2 → 4 → 7 → 11 → 16 s). Escribe la respuesta <em>exacta</em> (el juego, la película, la canción…); si atinas a la saga, al musical o al artista pero no a la respuesta, te avisamos con 🟨.</li>
       <li><strong>❤️ Supervivencia:</strong> opciones con la respuesta exacta (¿Halo 2 o Halo 3? ¿Toy Story o Toy Story 2?), 3 vidas y el reloj se acorta cada 3 aciertos. ¿Hasta dónde llegas?</li>
     </ul>
     <h3>Épocas y filtros</h3>
-    <p class="muted">Series, caricaturas, Disney y canciones se separan por época: elige solo las que quieras. En Disney puedes incluir o quitar las películas de Pixar, y en Canciones elegir si quieres canciones en español, en inglés o de ambas.</p>
+    <p class="muted">Series, caricaturas, anime, Disney, musicales y canciones se separan por época: elige solo las que quieras. En Disney puedes incluir o quitar las películas de Pixar, y en Canciones y Musicales elegir si quieres canciones en español, en inglés o de ambas.</p>
     <h3>🏆 Ranking global</h3>
     <p class="muted">Al terminar una partida puedes guardar tu puntaje con un nickname. Hay un ranking por cada tema y modo; míralo con el botón 🏆 de arriba.</p>
     <h3>Atajos de teclado</h3>
@@ -185,7 +185,7 @@
       <li><kbd>Enter</kbd> siguiente ronda</li>
     </ul>
     <h3>¿De dónde sale la música?</h3>
-    <p class="muted">Los previews oficiales de Apple Music (álbumes y soundtracks publicados por las disqueras y editoras) y, cuando algo no está ahí (como casi todo Nintendo), de YouTube. Disney suena con su doblaje en español latino. Si alguna pista ya no está disponible, el juego la cambia sola por otra.</p>
+    <p class="muted">Los previews oficiales de Apple Music (álbumes y soundtracks publicados por las disqueras y editoras) y, cuando algo no está ahí (como casi todo Nintendo), de YouTube. Disney suena con su doblaje en español latino, y los musicales con su grabación original o sus versiones en español. Si alguna pista ya no está disponible, el juego la cambia sola por otra.</p>
     <h3>¿Una canción está mal?</h3>
     <p class="muted">Al revelar cada ronda (y en la lista de resultados) está el botón <strong>🚩 Reportar canción</strong>: cuéntanos si era de otro lado, otra canción, un cover o si no sonó, y cuál era en realidad. El juego dejará de ponértela y el reporte nos llega para corregirla.</p>
     <h3>¿Se repiten las canciones?</h3>
@@ -277,26 +277,27 @@
   </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <div class="version" id="app-version" aria-label="Versión de la app">v1.7.2</div>
+  <div class="version" id="app-version" aria-label="Versión de la app">v1.8</div>
 
   <!-- Reproductor de YouTube oculto (solo audio para el juego) -->
   <div id="yt-host" aria-hidden="true"><div id="yt-player"></div></div>
 
-  <script src="js/config.js?v=1.7.2" defer></script>
-  <script src="js/catalog.js?v=1.7.2" defer></script>
-  <script src="js/catalog-series.js?v=1.7.2" defer></script>
-  <script src="js/catalog-caricaturas.js?v=1.7.2" defer></script>
-  <script src="js/catalog-anime.js?v=1.7.2" defer></script>
-  <script src="js/catalog-disney.js?v=1.7.2" defer></script>
-  <script src="js/catalog-canciones.js?v=1.7.2" defer></script>
-  <script src="js/catalog-sagas.js?v=1.7.2" defer></script>
-  <script src="js/themes.js?v=1.7.2" defer></script>
-  <script src="js/sources.js?v=1.7.2" defer></script>
-  <script src="js/loudness.js?v=1.7.2" defer></script>
-  <script src="js/engine.js?v=1.7.2" defer></script>
-  <script src="js/sfx.js?v=1.7.2" defer></script>
-  <script src="js/game.js?v=1.7.2" defer></script>
-  <script src="js/scores.js?v=1.7.2" defer></script>
-  <script src="js/app.js?v=1.7.2" defer></script>
+  <script src="js/config.js?v=1.8" defer></script>
+  <script src="js/catalog.js?v=1.8" defer></script>
+  <script src="js/catalog-series.js?v=1.8" defer></script>
+  <script src="js/catalog-caricaturas.js?v=1.8" defer></script>
+  <script src="js/catalog-anime.js?v=1.8" defer></script>
+  <script src="js/catalog-disney.js?v=1.8" defer></script>
+  <script src="js/catalog-musicales.js?v=1.8" defer></script>
+  <script src="js/catalog-canciones.js?v=1.8" defer></script>
+  <script src="js/catalog-sagas.js?v=1.8" defer></script>
+  <script src="js/themes.js?v=1.8" defer></script>
+  <script src="js/sources.js?v=1.8" defer></script>
+  <script src="js/loudness.js?v=1.8" defer></script>
+  <script src="js/engine.js?v=1.8" defer></script>
+  <script src="js/sfx.js?v=1.8" defer></script>
+  <script src="js/game.js?v=1.8" defer></script>
+  <script src="js/scores.js?v=1.8" defer></script>
+  <script src="js/app.js?v=1.8" defer></script>
 </body>
 </html>

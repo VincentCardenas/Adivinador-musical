@@ -148,6 +148,22 @@
     return artistsOf(b).some((x) => list.indexOf(x) >= 0);
   }
 
+  /**
+   * ¿Son la misma respuesta con otro nombre? Pasa con las versiones en español de una canción:
+   * "Getsemaní" lleva "Gethsemane" en `aka` (y al revés), así que en Experto vale cualquiera de los dos
+   * y en Supervivencia nunca salen juntas como opciones.
+   */
+  function sameAnswer(sc, a, b) {
+    if (a === b) return true;
+    if (!sc.aliases) {
+      sc.aliases = new Map();
+      allGames(sc).forEach((g) => { if (g.aka.length) sc.aliases.set(g.game, new Set(g.aka.map(AM.Sources.norm))); });
+    }
+    const ha = sc.aliases.get(a);
+    const hb = sc.aliases.get(b);
+    return !!((ha && ha.has(AM.Sources.norm(b))) || (hb && hb.has(AM.Sources.norm(a))));
+  }
+
   function franchiseOf(gameName, sc) {
     const hit = allGames(sc).find((g) => g.game === gameName);
     return hit ? hit.franchise : null;
@@ -194,9 +210,11 @@
     const picked = [];
     // En Canciones la respuesta amplia es el artista: las opciones falsas no pueden compartir
     // artista con la correcta ni entre ellas (si no, "Shakira" sería "incorrecto" en un dueto suyo).
-    // Tampoco salen juntas dos versiones del mismo juego (Persona 3 y Persona 3 Reload).
+    // Tampoco salen juntas dos versiones del mismo juego (Persona 3 y Persona 3 Reload) ni los dos
+    // títulos de una misma canción (Gethsemane y Getsemaní).
     const byArtist = mode.answer === 'franchise' && sc.theme.showArtist;
-    const clash = (v) => [answer].concat(picked).some((p) => sameVersion(p, v) || (byArtist && sameArtist(p, v)));
+    const byAlias = mode.answer === 'game';
+    const clash = (v) => [answer].concat(picked).some((p) => sameVersion(p, v) || (byAlias && sameAnswer(sc, p, v)) || (byArtist && sameArtist(p, v)));
     const add = (list, max) => {
       for (const v of shuffle(list)) {
         if (picked.length >= n - 1 || max <= 0) break;
@@ -358,7 +376,7 @@
 
   AM.Logic = {
     shuffle: shuffle, sample: sample, scope: scope, pool: pool, buildQueue: buildQueue, allGames: allGames,
-    sameArtist: sameArtist, sameVersion: sameVersion,
+    sameArtist: sameArtist, sameVersion: sameVersion, sameAnswer: sameAnswer,
     sagaTracks: sagaTracks, sagaGames: sagaGames, sagaScope: sagaScope, sagaGameName: sagaGameName,
     franchiseOf: franchiseOf, makeChoices: makeChoices, multiplier: multiplier,
     timedPoints: timedPoints, timeLimit: timeLimit, rank: rank, emojiFor: emojiFor, shareText: shareText,

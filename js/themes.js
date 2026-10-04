@@ -1,14 +1,27 @@
 /*
- * Temas del juego: videojuegos, series, caricaturas, anime, Disney y canciones.
+ * Temas del juego: videojuegos, series, caricaturas, anime, Disney, musicales y canciones.
  *
  * Cada tema tiene sus propias categorías (épocas, plataformas…) y define cómo se llaman
  * las dos respuestas de cada pista:
- *   - `franchise` → respuesta "amplia" del modo Clásico (saga, artista, serie…)
+ *   - `franchise` → respuesta "amplia" del modo Clásico (saga, artista, serie, musical…)
  *   - `game`      → respuesta exacta de Experto y Supervivencia (juego, canción, película…)
+ * `lineIcon`: si el tema lo trae, debajo de cada canción se muestra su `franchise` con ese ícono
+ * (🎭 Wicked) en vez del nombre de la canción, que ya es la respuesta.
  * Este archivo se carga después de todos los catálogos y marca cada pista con su tema.
  */
 (function (AM) {
   'use strict';
+
+  // Selector de idioma (Canciones y Musicales): las pistas sin `lang` entran con cualquier opción.
+  const langFilter = () => ({
+    id: 'lang', type: 'choice', default: 'ambos', label: 'Idioma',
+    options: [
+      { value: 'ambos', label: '🌎 Ambos' },
+      { value: 'es', label: 'Español' },
+      { value: 'en', label: 'Inglés' },
+    ],
+    keep: (t, v) => v === 'ambos' || !t.lang || t.lang === v,
+  });
 
   AM.THEMES = [
     {
@@ -169,6 +182,38 @@
       },
     },
     {
+      id: 'musicales', label: 'Musicales', icon: '🎭',
+      kicker: 'Adivinador musical de teatro y cine',
+      sub: 'Escucha la canción y adivina de qué musical es: Broadway, Londres y películas, en su versión original o en español.',
+      broad: 'musical', broadArt: 'el musical', broadPl: 'musicales',
+      exact: 'canción', exactArt: 'la canción', exactPl: 'canciones',
+      expertGoal: 'la canción exacta', survivalGoal: 'canción exacta',
+      question: '¿De qué musical es?', questionExact: '¿Qué canción es?',
+      placeholder: 'Escribe la canción o el musical…',
+      partial: 'musical correcto, otra canción',
+      clasicoExample: 'Wicked, Vaselina, El fantasma de la ópera…', survivalExample: '¿Defying Gravity o Popular?',
+      otherReason: 'Es de otro musical', sameReason: 'Es otra canción de este mismo musical',
+      realLabel: '¿Qué canción era en realidad?', realPlaceholder: 'Escribe la canción (si la sabes)',
+      realSongLabel: '¿De qué musical era?', songExample: 'Wicked',
+      lineIcon: '🎭',
+      filters: [langFilter()],
+      ranks: {
+        survival: [
+          [25, 'Leyenda de Broadway', 'Te sabes cada canción, del primer acto al último.'],
+          [15, 'Estrella del elenco', 'Pocos llegan tan lejos. ¡Impresionante!'],
+          [8, 'Fan de los musicales', 'Tienes buen oído. ¿Otra función?'],
+          [3, 'Corista', 'Vas por buen camino.'],
+          [0, 'Debutante', 'Todos empezamos en la audición.'],
+        ],
+        ratio: [
+          [0.9, 'Leyenda de Broadway', 'Reconoces cualquier musical desde la obertura.'],
+          [0.7, 'Estrella del elenco', '¡Casi perfecto!'],
+          [0.4, 'Nada mal', 'Unos cuantos ensayos más y lo dominas.'],
+          [0, 'A seguir ensayando', 'Hay muchos musicales por descubrir.'],
+        ],
+      },
+    },
+    {
       id: 'canciones', label: 'Canciones', icon: '🎤',
       kicker: 'Adivinador musical de canciones famosas',
       sub: 'Escucha el fragmento y adivina qué canción es (y quién la canta).',
@@ -183,17 +228,7 @@
       realLabel: '¿Qué canción era en realidad?', realPlaceholder: 'Escribe la canción (si la sabes)',
       realSongLabel: '¿Quién la canta?', songExample: 'Queen',
       showArtist: true,
-      filters: [
-        {
-          id: 'lang', type: 'choice', default: 'ambos', label: 'Idioma',
-          options: [
-            { value: 'ambos', label: '🌎 Ambos' },
-            { value: 'es', label: 'Español' },
-            { value: 'en', label: 'Inglés' },
-          ],
-          keep: (t, v) => v === 'ambos' || !t.lang || t.lang === v,
-        },
-      ],
+      filters: [langFilter()],
       ranks: {
         survival: [
           [25, 'Leyenda musical', 'Reconoces cualquier canción a la primera.'],
