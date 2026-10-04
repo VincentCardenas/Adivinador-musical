@@ -6,8 +6,10 @@
  *                     juegos del catálogo: en este modo no va música de remakes, Halo va
  *                     solo de Combat Evolved a Reach y Kirby deja fuera Triple Deluxe (su
  *                     Masked Dedede's Theme usa la melodía de King Dedede's Theme).
+ *                     En las opciones va "juego - canción"; `prefix` (se quita del inicio) y
+ *                     `short` (nombre completo → corto) acortan los nombres de juego muy largos.
  *   AM.SAGA_TRACKS  → canciones que solo suenan en el modo Sagas (no cambian los otros modos).
- *                     Mismo formato que catalog.js; en este modo la respuesta es `title`.
+ *                     Mismo formato que catalog.js; en este modo la respuesta es el título.
  *                     Solo música original: nada de remakes, remasters ni arreglos.
  *                     Las de Apple salen de los soundtracks originales; las de YouTube son
  *                     subidas del soundtrack original revisadas a mano (se prefieren los canales
@@ -25,12 +27,12 @@
 
   AM.SAGAS = [
     { id: 'mario', label: 'Super Mario', icon: '🍄', franchises: ['Super Mario', 'Mario Kart'] },
-    { id: 'zelda', label: 'The Legend of Zelda', icon: '🗡️', franchises: ['The Legend of Zelda'] },
+    { id: 'zelda', label: 'The Legend of Zelda', icon: '🗡️', franchises: ['The Legend of Zelda'], prefix: 'The Legend of Zelda: ' },
     { id: 'pokemon', label: 'Pokémon', icon: '⚡', franchises: ['Pokémon'] },
     { id: 'kirby', label: 'Kirby', icon: '⭐', franchises: ['Kirby'], excludeGames: ['Kirby: Triple Deluxe'] },
-    { id: 'donkey-kong', label: 'Donkey Kong', icon: '🍌', franchises: ['Donkey Kong'] },
+    { id: 'donkey-kong', label: 'Donkey Kong', icon: '🍌', franchises: ['Donkey Kong'], short: { "Donkey Kong Country 2: Diddy's Kong Quest": 'Donkey Kong Country 2' } },
     { id: 'sonic', label: 'Sonic', icon: '💨', franchises: ['Sonic the Hedgehog'] },
-    { id: 'final-fantasy', label: 'Final Fantasy', icon: '💎', franchises: ['Final Fantasy'], excludeGames: ['Final Fantasy VII Rebirth', 'Final Fantasy VII Remake'] },
+    { id: 'final-fantasy', label: 'Final Fantasy', icon: '💎', franchises: ['Final Fantasy'], excludeGames: ['Final Fantasy VII Rebirth', 'Final Fantasy VII Remake'], short: { 'Final Fantasy XIV: A Realm Reborn': 'Final Fantasy XIV' } },
     { id: 'halo', label: 'Halo', icon: '🪖', franchises: ['Halo'], excludeGames: ['Halo 4', 'Halo 5: Guardians', 'Halo Infinite'] },
     { id: 'mega-man', label: 'Mega Man', icon: '🤖', franchises: ['Mega Man'] },
     { id: 'street-fighter', label: 'Street Fighter', icon: '🥊', franchises: ['Street Fighter'] },

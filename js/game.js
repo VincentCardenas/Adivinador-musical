@@ -259,27 +259,31 @@
   }
 
   /**
+   * Nombre corto de un juego dentro de su saga, para las opciones y los botones de juego:
+   * `short` lo da tal cual y `prefix` se quita ("The Legend of Zelda: Ocarina of Time" → "Ocarina of Time").
+   */
+  function sagaGameName(saga, game) {
+    if (saga && saga.short && saga.short[game]) return saga.short[game];
+    return saga && saga.prefix && game.indexOf(saga.prefix) === 0 ? game.slice(saga.prefix.length) : game;
+  }
+
+  /**
    * Alcance de una partida de Sagas: toda la saga o un solo juego. Las pistas son copias con `label`
-   * (la respuesta): el título, o "título (juego)" si dos juegos del alcance tienen una canción con el
-   * mismo nombre (como "Overworld Theme" en Super Mario Bros. y en Super Mario World).
+   * (la respuesta): "juego - título" con toda la saga ("Halo 3 - One Final Effort") y solo el título
+   * con un juego, porque ahí todas las opciones son del mismo.
    */
   function sagaScope(sagaId, gameName) {
     const key = 'saga|' + sagaId + '|' + (gameName || '');
     if (scopes.has(key)) return scopes.get(key);
-    const base = sagaTracks(sagaId).filter((t) => !gameName || t.game === gameName);
-    const gamesByTitle = {};
-    base.forEach((t) => {
-      const n = AM.Sources.norm(t.title);
-      (gamesByTitle[n] = gamesByTitle[n] || new Set()).add(t.game);
-    });
-    const tracks = base.map((t) => Object.assign({}, t, {
+    const saga = (AM.SAGAS || []).find((x) => x.id === sagaId);
+    const tracks = sagaTracks(sagaId).filter((t) => !gameName || t.game === gameName).map((t) => Object.assign({}, t, {
       theme: 'juegos',
-      label: gamesByTitle[AM.Sources.norm(t.title)].size > 1 ? `${t.title} (${t.game})` : t.title,
+      label: gameName ? t.title : `${sagaGameName(saga, t.game)} - ${t.title}`,
     }));
     const s = {
       key: key, theme: AM.theme('juegos'), values: {}, keep: () => true,
       tracks: tracks, extras: [], games: null,
-      saga: (AM.SAGAS || []).find((x) => x.id === sagaId), game: gameName || '',
+      saga: saga, game: gameName || '',
     };
     scopes.set(key, s);
     return s;
@@ -355,7 +359,7 @@
   AM.Logic = {
     shuffle: shuffle, sample: sample, scope: scope, pool: pool, buildQueue: buildQueue, allGames: allGames,
     sameArtist: sameArtist, sameVersion: sameVersion,
-    sagaTracks: sagaTracks, sagaGames: sagaGames, sagaScope: sagaScope,
+    sagaTracks: sagaTracks, sagaGames: sagaGames, sagaScope: sagaScope, sagaGameName: sagaGameName,
     franchiseOf: franchiseOf, makeChoices: makeChoices, multiplier: multiplier,
     timedPoints: timedPoints, timeLimit: timeLimit, rank: rank, emojiFor: emojiFor, shareText: shareText,
   };

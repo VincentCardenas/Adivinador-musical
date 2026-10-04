@@ -336,8 +336,7 @@
         <button type="button" role="radio" aria-checked="${!all}" class="${all ? '' : 'is-on'}" data-saga-scope="game"${games.length ? '' : ' disabled'}>Un juego</button>
       </div>`;
     // "The Legend of Zelda: Ocarina of Time" → "Ocarina of Time" (la saga ya está elegida arriba)
-    const prefix = sel.label + ': ';
-    const short = (game) => (game.indexOf(prefix) === 0 ? game.slice(prefix.length) : game);
+    const short = (game) => AM.Logic.sagaGameName(sel, game);
     const gameChips = all ? '' : games.map((g) => {
       const on = g.game === settings.saga.game;
       return `<button type="button" class="chip${on ? ' is-on' : ''}" role="radio" aria-checked="${on}" data-saga-game="${esc(g.game)}" title="${esc(g.game)}">${esc(short(g.game))} <span>${g.songs}</span></button>`;

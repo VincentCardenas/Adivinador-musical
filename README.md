@@ -22,7 +22,7 @@ Hecho con HTML, CSS y JavaScript puro (sin frameworks ni compilación).
 | 🎯 **Clásico** | 10 rondas, 4 opciones y 20 s por ronda. Adivinas la respuesta "amplia": la saga del videojuego, la serie, la caricatura, la película o el artista que canta. Responder rápido da más puntos y las rachas multiplican (x1.5 con 3 aciertos seguidos, x2 con 5). |
 | 🎧 **Experto** | Estilo Heardle. Empiezas con **1 segundo** de audio; cada fallo o salto desbloquea más (1 → 2 → 4 → 7 → 11 → 16 s). Hay que escribir la respuesta **exacta** (el juego, la película, la canción…); si aciertas la saga o el artista pero no la respuesta, te avisa con 🟨. |
 | ❤️ **Supervivencia** | Opciones con la respuesta exacta (¿Halo 2 o Halo 3? ¿Toy Story o Toy Story 2?), 3 vidas y el reloj se acorta cada 3 aciertos. |
-| 🗂️ **Sagas** | Solo en Videojuegos. Eliges una saga (Super Mario, Zelda, Pokémon, Kirby, Donkey Kong, Sonic, Final Fantasy, Halo, Mega Man o Street Fighter) y adivinas **qué canción es** entre 4 títulos: de **toda la saga** o de **un solo juego** (los que tienen al menos 5 canciones). 10 rondas (o una por canción si el juego tiene menos) y 20 s por ronda. Solo música original: nada de remakes ni remasters (Halo va de Combat Evolved a Reach). Tiene récord por saga, pero no entra al ranking global. |
+| 🗂️ **Sagas** | Solo en Videojuegos. Eliges una saga (Super Mario, Zelda, Pokémon, Kirby, Donkey Kong, Sonic, Final Fantasy, Halo, Mega Man o Street Fighter) y adivinas **qué canción es** entre 4 opciones: de **toda la saga** (cada opción dice juego y canción, como *Halo 3 - One Final Effort* u *Ocarina of Time - Zelda's Lullaby*) o de **un solo juego** (solo el nombre de la canción; se puede elegir si el juego tiene al menos 5). 10 rondas (o una por canción si el juego tiene menos) y 20 s por ronda. Solo música original: nada de remakes ni remasters (Halo va de Combat Evolved a Reach). Tiene récord por saga, pero no entra al ranking global. |
 
 Además puedes filtrar por categorías, guardar récords por tema y modo, compartir tu resultado con emojis
 y, al final, ver la lista de lo que sonó con enlaces para escucharlo completo.
@@ -211,6 +211,9 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **1.7.2**: en Sagas con toda la saga, las opciones dicen el juego y la canción (*Halo 3 - One Final
+  Effort*); los nombres muy largos se acortan (*Ocarina of Time - …* en vez de *The Legend of Zelda:
+  Ocarina of Time - …*).
 - **1.7.1**: en Sagas, de los videos de cada canción suena primero el más fuerte (los muy bajitos no se
   pueden subir), y Kirby deja fuera *Triple Deluxe*: su *Masked Dedede's Theme* usa la melodía de
   *King Dedede's Theme* y confundía como opción.
