@@ -237,6 +237,18 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **1.9.2**: **30 caricaturas nuevas** de Nickelodeon y Cartoon Network, 15 y 15 (de 76 a **106**). *Doug*, *CatDog*,
+  *La vida moderna de Rocko*, *Chowder*, *Invasor Zim* y *Un show más* dejan de ser solo señuelo y ya tienen pista. De Nick
+  llegan también *¡Aaahh!!! Monstruos*, *Rocket Power*, *Ginger*, *Zona Tiza*, *La robot adolescente*, *El Tigre*, *Los
+  pingüinos de Madagascar*, *Fanboy y Chum Chum*, *Kung Fu Panda: La leyenda de Po*, *Sanjay y Craig* y *Bunsen es una
+  bestia*; de Cartoon Network, *La vaca y el pollito*, *Soy la Comadreja*, *Mike, Lu y Og*, *Mansión Foster*, *Hi Hi Puffy
+  AmiYumi*, *Megas XLR*, *El campamento de Lazlo*, *Mi compañero de clase es un mono*, *Flapjack*, *Generador Rex*, *Los
+  Jóvenes Titanes en acción*, *Tío Grandpa* y *Clarence*. Cada una suena primero con su entrada en español latino de
+  YouTube, con otro video de respaldo y, cuando existe, el preview oficial de Apple Music al final (Rocko, ¡Aaahh!!!
+  Monstruos, CatDog, Rocket Power y Hi Hi Puffy AmiYumi); *Doug* y *¡Aaahh!!! Monstruos* usan su entrada original porque
+  no se encontró la latina en YouTube (la de Doug es puro scat, sin letra). Van con el nombre con que se conocieron en Latinoamérica (*Zona Tiza*, *La robot adolescente*, *Generador
+  Rex*…) y el original en `aka`, así que el buscador de Experto acepta los dos. *Los Jóvenes Titanes en acción* va en la
+  misma saga que *Los Jóvenes Titanes*: en Clásico cuenta como esa, y en Experto y Supervivencia hay que atinarle a cuál es.
 - **1.9.1**: **reportes rediseñados**. Reportar una canción ahora es en dos pasos: tarjetas para elegir qué está mal
   (como las de los modos de juego) con solo las preguntas que tocan a ese motivo, y luego "Reporte guardado" con dos
   formas de mandarlo: por GitHub o compartiéndolo (WhatsApp, etc.; en compu se copia el texto). El botón de guardar

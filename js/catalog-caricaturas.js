@@ -1,5 +1,5 @@
 /*
- * Catálogo: Caricaturas (76 pistas).
+ * Catálogo: Caricaturas (106 pistas).
  * Entradas de caricaturas por época. Cuando existe, suena primero la entrada en español latino (YouTube) y el preview oficial de Apple queda de respaldo.
  * Mismo formato que catalog.js; las fuentes se prueban en el orden en que aparecen.
  */
@@ -154,7 +154,7 @@
       aka: ['Garfield and Friends', 'Garfield'],
       sources: [yt('MJmSmjBN-nU'), yt('sQKsXHzXJ4w')],
     },
-    /* ───────────── Años 90 (20) ───────────── */
+    /* ───────────── Años 90 (28) ───────────── */
     {
       id: 'toon-animaniacs-animaniacs-main-title-theme', cat: 'toon-90s', franchise: 'Animaniacs', game: 'Animaniacs',
       title: 'Animaniacs Main Title Theme', composer: 'Richard Stone', year: 1993, platform: 'Warner Bros.',
@@ -271,7 +271,53 @@
       aka: ['The Wild Thornberrys'],
       sources: [yt('X3rL0P7JUqU'), yt('Rtw98M5A7t8')],
     },
-    /* ───────────── 2000s (17) ───────────── */
+    {
+      id: 'toon-doug-doug-entrada', cat: 'toon-90s', franchise: 'Doug', game: 'Doug',
+      title: 'Doug (entrada)', composer: 'Fred Newman', year: 1991, platform: 'Nickelodeon',
+      aka: ['Doug Narinas'],
+      sources: [yt('d3o_WBboezw'), yt('Hygi3PlZI0Y')],
+    },
+    {
+      id: 'toon-la-vida-moderna-de-rocko-la-vida-moderna-de-rocko-tema', cat: 'toon-90s', franchise: 'La vida moderna de Rocko', game: 'La vida moderna de Rocko',
+      title: 'La vida moderna de Rocko (tema)', composer: 'Pat Irwin', year: 1993, platform: 'Nickelodeon',
+      aka: ['Rocko\'s Modern Life'],
+      sources: [yt('85OhD6aFpHM'), yt('OFxJDFodce4'), apple({ song: 1679869238, country: 'mx' })],
+    },
+    {
+      id: 'toon-aaahh-monstruos-aaahh-monstruos-entrada', cat: 'toon-90s', franchise: '¡Aaahh!!! Monstruos', game: '¡Aaahh!!! Monstruos',
+      title: '¡Aaahh!!! Monstruos (entrada)', composer: 'Drew Neumann', year: 1994, platform: 'Nickelodeon',
+      aka: ['Aaahh!!! Monstruos de verdad', 'Aaahh!!! Real Monsters'],
+      sources: [yt('8VfPz-2V8PU'), yt('uP07louhhBY'), apple({ song: 1776213776, country: 'mx' })],
+    },
+    {
+      id: 'toon-la-vaca-y-el-pollito-la-vaca-y-el-pollito-tema', cat: 'toon-90s', franchise: 'La vaca y el pollito', game: 'La vaca y el pollito',
+      title: 'La vaca y el pollito (tema)', year: 1997, platform: 'Cartoon Network',
+      aka: ['Vaca y Pollito', 'Cow and Chicken'],
+      sources: [yt('Pl9x2DqBRdU'), yt('fppyVGXG3qc')],
+    },
+    {
+      id: 'toon-soy-la-comadreja-soy-la-comadreja-tema', cat: 'toon-90s', franchise: 'Soy la Comadreja', game: 'Soy la Comadreja',
+      title: 'Soy la Comadreja (tema)', year: 1997, platform: 'Cartoon Network',
+      aka: ['I Am Weasel'],
+      sources: [yt('YQiOcmI8Qbc'), yt('jztYrBzKxvk')],
+    },
+    {
+      id: 'toon-catdog-catdog-tema', cat: 'toon-90s', franchise: 'CatDog', game: 'CatDog',
+      title: 'CatDog (tema)', year: 1998, platform: 'Nickelodeon',
+      sources: [yt('nektVw5ZTn4'), yt('qfUa1UQijbE'), apple({ song: 1888272558, country: 'mx' })],
+    },
+    {
+      id: 'toon-rocket-power-rocket-power-tema', cat: 'toon-90s', franchise: 'Rocket Power', game: 'Rocket Power',
+      title: 'Rocket Power (tema)', composer: 'The Wipeouters', year: 1999, platform: 'Nickelodeon',
+      sources: [yt('kdHlQVnVhxE'), yt('630H8BgxqZw'), apple({ song: 54668945, country: 'mx' })],
+    },
+    {
+      id: 'toon-mike-lu-y-og-mike-lu-y-og-tema', cat: 'toon-90s', franchise: 'Mike, Lu y Og', game: 'Mike, Lu y Og',
+      title: 'Mike, Lu y Og (tema)', year: 1999, platform: 'Cartoon Network',
+      aka: ['Mike, Lu & Og'],
+      sources: [yt('d0AXN5XWKZ8'), yt('Te4muLL59lE')],
+    },
+    /* ───────────── 2000s (31) ───────────── */
     {
       id: 'toon-los-padrinos-magicos-los-padrinos-magicos-tema', cat: 'toon-00s', franchise: 'Los Padrinos Mágicos', game: 'Los Padrinos Mágicos',
       title: 'Los Padrinos Mágicos (tema)', composer: 'Ron Jones', year: 2001, platform: 'Nickelodeon',
@@ -369,7 +415,89 @@
       title: 'Samurai Jack (entrada)', year: 2001, platform: 'Cartoon Network',
       sources: [yt('-NztPS4dflw'), yt('3MrIPQEF8Dc')],
     },
-    /* ───────────── 2010 en adelante (16) ───────────── */
+    {
+      id: 'toon-ginger-ginger-tema', cat: 'toon-00s', franchise: 'Ginger', game: 'Ginger',
+      title: 'Ginger (tema)', year: 2000, platform: 'Nickelodeon',
+      aka: ['As Told by Ginger'],
+      sources: [yt('jqKXeNclSCc'), yt('QGlF39Cgc4U')],
+    },
+    {
+      id: 'toon-invasor-zim-invasor-zim-entrada', cat: 'toon-00s', franchise: 'Invasor Zim', game: 'Invasor Zim',
+      title: 'Invasor Zim (entrada)', composer: 'Kevin Manthei y Mark Tortorici', year: 2001, platform: 'Nickelodeon',
+      aka: ['Invader Zim'],
+      sources: [yt('T3iNfS4o5u8'), yt('WgX2cu9N6_8')],
+    },
+    {
+      id: 'toon-zona-tiza-zona-tiza-tema', cat: 'toon-00s', franchise: 'Zona Tiza', game: 'Zona Tiza',
+      title: 'Zona Tiza (tema)', year: 2002, platform: 'Nickelodeon',
+      aka: ['ChalkZone'],
+      sources: [yt('pBEvTJS5MAI'), yt('hJs4e2lbMmA')],
+    },
+    {
+      id: 'toon-la-robot-adolescente-la-robot-adolescente-tema', cat: 'toon-00s', franchise: 'La robot adolescente', game: 'La robot adolescente',
+      title: 'La robot adolescente (tema)', year: 2003, platform: 'Nickelodeon',
+      aka: ['Mi vida de robot adolescente', 'My Life as a Teenage Robot'],
+      sources: [yt('mxEKVCiXoFs'), yt('DoUEZI9cZY8')],
+    },
+    {
+      id: 'toon-megas-xlr-megas-xlr-tema', cat: 'toon-00s', franchise: 'Megas XLR', game: 'Megas XLR',
+      title: 'Megas XLR (tema)', year: 2004, platform: 'Cartoon Network',
+      sources: [yt('n2T8EmufVCU'), yt('y_3Y9KNHP-U')],
+    },
+    {
+      id: 'toon-hi-hi-puffy-amiyumi-hi-hi-puffy-amiyumi-tema', cat: 'toon-00s', franchise: 'Hi Hi Puffy AmiYumi', game: 'Hi Hi Puffy AmiYumi',
+      title: 'Hi Hi Puffy AmiYumi (tema)', composer: 'Puffy AmiYumi', year: 2004, platform: 'Cartoon Network',
+      aka: ['Hi Hi Puffy Ami Yumi'],
+      sources: [yt('ko1QRa9GCRY'), yt('pNGz_6a3uy4'), apple({ song: 193614028, country: 'mx' })],
+    },
+    {
+      id: 'toon-mansion-foster-para-amigos-imaginarios-mansion-foster-e', cat: 'toon-00s', franchise: 'Mansión Foster para amigos imaginarios', game: 'Mansión Foster para amigos imaginarios',
+      title: 'Mansión Foster (entrada)', composer: 'James L. Venable', year: 2004, platform: 'Cartoon Network',
+      aka: ['Mansión Foster', 'Foster\'s Home for Imaginary Friends'],
+      sources: [yt('xaN71DeT87c'), yt('8pq0z9pj6l0')],
+    },
+    {
+      id: 'toon-el-campamento-de-lazlo-el-campamento-de-lazlo-tema', cat: 'toon-00s', franchise: 'El campamento de Lazlo', game: 'El campamento de Lazlo',
+      title: 'El campamento de Lazlo (tema)', year: 2005, platform: 'Cartoon Network',
+      aka: ['Campamento Lazlo', 'Camp Lazlo'],
+      sources: [yt('UjixodxQX_U'), yt('va-i4lrvzBE')],
+    },
+    {
+      id: 'toon-mi-companero-de-clase-es-un-mono-mi-companero-de-clase', cat: 'toon-00s', franchise: 'Mi compañero de clase es un mono', game: 'Mi compañero de clase es un mono',
+      title: 'Mi compañero de clase es un mono (tema)', year: 2005, platform: 'Cartoon Network',
+      aka: ['My Gym Partner\'s a Monkey'],
+      sources: [yt('om8YKNdyxsA'), yt('hucc1oawjVQ')],
+    },
+    {
+      id: 'toon-el-tigre-las-aventuras-de-manny-rivera-el-tigre-tema', cat: 'toon-00s', franchise: 'El Tigre: Las aventuras de Manny Rivera', game: 'El Tigre: Las aventuras de Manny Rivera',
+      title: 'El Tigre (tema)', year: 2007, platform: 'Nickelodeon',
+      aka: ['El Tigre', 'El Tigre: The Adventures of Manny Rivera'],
+      sources: [yt('y-1lqNFokRQ'), yt('QEyR6Lo7En4')],
+    },
+    {
+      id: 'toon-chowder-chowder-tema', cat: 'toon-00s', franchise: 'Chowder', game: 'Chowder',
+      title: 'Chowder (tema)', year: 2007, platform: 'Cartoon Network',
+      sources: [yt('OzzAe_hqsFQ'), yt('PjD7X0hcPJo')],
+    },
+    {
+      id: 'toon-los-pinguinos-de-madagascar-los-pinguinos-de-madagascar', cat: 'toon-00s', franchise: 'Los pingüinos de Madagascar', game: 'Los pingüinos de Madagascar',
+      title: 'Los pingüinos de Madagascar (entrada)', year: 2008, platform: 'Nickelodeon',
+      aka: ['The Penguins of Madagascar'],
+      sources: [yt('DtVSYNhU7Do'), yt('Xi-jVGjZuGQ')],
+    },
+    {
+      id: 'toon-las-maravillosas-desventuras-de-flapjack-flapjack-tema', cat: 'toon-00s', franchise: 'Las maravillosas desventuras de Flapjack', game: 'Las maravillosas desventuras de Flapjack',
+      title: 'Flapjack (tema)', year: 2008, platform: 'Cartoon Network',
+      aka: ['Flapjack', 'The Marvelous Misadventures of Flapjack'],
+      sources: [yt('O7cfEQX_NSQ'), yt('HnCcV7iY1tg')],
+    },
+    {
+      id: 'toon-fanboy-y-chum-chum-fanboy-y-chum-chum-tema', cat: 'toon-00s', franchise: 'Fanboy y Chum Chum', game: 'Fanboy y Chum Chum',
+      title: 'Fanboy y Chum Chum (tema)', year: 2009, platform: 'Nickelodeon',
+      aka: ['Fanboy & Chum Chum'],
+      sources: [yt('cb91WDjEt9Q'), yt('1q9j7vzv5Bg')],
+    },
+    /* ───────────── 2010 en adelante (24) ───────────── */
     {
       id: 'toon-hora-de-aventura-hora-de-aventura-tema', cat: 'toon-10s', franchise: 'Hora de aventura', game: 'Hora de aventura',
       title: 'Hora de aventura (tema)', composer: 'Pendleton Ward', year: 2010, platform: 'Cartoon Network',
@@ -460,21 +588,62 @@
       aka: ['The Owl House'],
       sources: [yt('iAM2bjs1WUM'), yt('9eoDJufrO3k')],
     },
+    {
+      id: 'toon-generador-rex-generador-rex-entrada', cat: 'toon-10s', franchise: 'Generador Rex', game: 'Generador Rex',
+      title: 'Generador Rex (entrada)', year: 2010, platform: 'Cartoon Network',
+      aka: ['Generator Rex'],
+      sources: [yt('PhRQow6KSo8'), yt('hNH2TuvYlkg')],
+    },
+    {
+      id: 'toon-un-show-mas-un-show-mas-entrada', cat: 'toon-10s', franchise: 'Un show más', game: 'Un show más',
+      title: 'Un show más (entrada)', year: 2010, platform: 'Cartoon Network',
+      aka: ['Regular Show'],
+      sources: [yt('J7z20AVaYto'), yt('mDLqrtIV0UI')],
+    },
+    {
+      id: 'toon-kung-fu-panda-la-leyenda-de-po-kung-fu-panda-entrada', cat: 'toon-10s', franchise: 'Kung Fu Panda: La leyenda de Po', game: 'Kung Fu Panda: La leyenda de Po',
+      title: 'Kung Fu Panda (entrada)', year: 2011, platform: 'Nickelodeon',
+      aka: ['Kung Fu Panda: Legends of Awesomeness'],
+      sources: [yt('dno6GVrsAJg'), yt('_5DAX3ycdjE')],
+    },
+    {
+      id: 'toon-los-jovenes-titanes-en-accion-jovenes-titanes-en-accion', cat: 'toon-10s', franchise: 'Los Jóvenes Titanes', game: 'Los Jóvenes Titanes en acción',
+      title: 'Jóvenes Titanes en acción (tema)', year: 2013, platform: 'Cartoon Network',
+      aka: ['Teen Titans Go!'],
+      sources: [yt('Zjy9EH_uJU8'), yt('uu3MRSzOSWM')],
+    },
+    {
+      id: 'toon-tio-grandpa-tio-grandpa-tema', cat: 'toon-10s', franchise: 'Tío Grandpa', game: 'Tío Grandpa',
+      title: 'Tío Grandpa (tema)', year: 2013, platform: 'Cartoon Network',
+      aka: ['Uncle Grandpa'],
+      sources: [yt('WgW9ZdmCotI'), yt('K2WZAY33It4')],
+    },
+    {
+      id: 'toon-sanjay-y-craig-sanjay-y-craig-tema', cat: 'toon-10s', franchise: 'Sanjay y Craig', game: 'Sanjay y Craig',
+      title: 'Sanjay y Craig (tema)', year: 2013, platform: 'Nickelodeon',
+      aka: ['Sanjay and Craig'],
+      sources: [yt('ZOYh61xUAqo'), yt('iIUcLQ7OrXo')],
+    },
+    {
+      id: 'toon-clarence-clarence-entrada', cat: 'toon-10s', franchise: 'Clarence', game: 'Clarence',
+      title: 'Clarence (entrada)', year: 2014, platform: 'Cartoon Network',
+      sources: [yt('hcFe0An5jxQ'), yt('C6QJJ1nIJqM')],
+    },
+    {
+      id: 'toon-bunsen-es-una-bestia-bunsen-es-una-bestia-tema', cat: 'toon-10s', franchise: 'Bunsen es una bestia', game: 'Bunsen es una bestia',
+      title: 'Bunsen es una bestia (tema)', year: 2017, platform: 'Nickelodeon',
+      aka: ['Bunsen Is a Beast'],
+      sources: [yt('tVCAbWuF7Rk'), yt('Yccs2D7WvkA')],
+    },
   );
 
   // Señuelos: aparecen como opciones incorrectas y en el buscador de Experto.
   AM.EXTRA_GAMES.push(
     { theme: 'caricaturas', franchise: 'El show de la Pantera Rosa', game: 'El show de la Pantera Rosa' },
     { theme: 'caricaturas', franchise: 'Los Jetsons: la película', game: 'Los Jetsons: la película' },
-    { theme: 'caricaturas', franchise: 'Doug', game: 'Doug' },
-    { theme: 'caricaturas', franchise: 'CatDog', game: 'CatDog' },
-    { theme: 'caricaturas', franchise: 'La vida moderna de Rocko', game: 'La vida moderna de Rocko' },
     { theme: 'caricaturas', franchise: 'Recreo', game: 'Recreo' },
     { theme: 'caricaturas', franchise: 'Hey Arnold!: la película', game: 'Hey Arnold!: la película' },
     { theme: 'caricaturas', franchise: 'Pucca', game: 'Pucca' },
-    { theme: 'caricaturas', franchise: 'Chowder', game: 'Chowder' },
-    { theme: 'caricaturas', franchise: 'Invasor Zim', game: 'Invasor Zim' },
-    { theme: 'caricaturas', franchise: 'Un show más', game: 'Un show más' },
     { theme: 'caricaturas', franchise: 'Phineas y Ferb: la película', game: 'Phineas y Ferb: la película' },
     { theme: 'caricaturas', franchise: 'Los Simpson: la película', game: 'Los Simpson: la película' },
     { theme: 'caricaturas', franchise: 'Las aventuras de Tintín', game: 'Las aventuras de Tintín' },
