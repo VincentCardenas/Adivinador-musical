@@ -359,7 +359,7 @@
     if (!ok) {
       $('#start-hint').textContent = saga
         ? `Faltan canciones: se necesitan al menos ${AM.MIN_POOL}.`
-        : `Elige más categorías: se necesitan al menos ${AM.MIN_POOL} pistas.`;
+        : `Elige más categorías${theme().filters.length ? ' o cambia los filtros' : ''}: se necesitan al menos ${AM.MIN_POOL} pistas.`;
     } else if (saga) {
       const names = settings.saga.game
         ? AM.Logic.sample(Array.from(new Set(pool.map((t) => t.title))), 3)
@@ -845,12 +845,17 @@
   }
 
   function findGame(text) {
-    const n = AM.Sources.norm(text);
+    const raw = String(text || '').trim();
+    const n = AM.Sources.norm(raw);
     if (!n || !game) return null;
     const games = AM.Logic.allGames(game.scope);
-    return games.find((g) => AM.Sources.norm(g.game) === n)
-      || games.find((g) => g.aka.some((a) => AM.Sources.norm(a) === n))
-      || null;
+    const exact = games.find((g) => g.game === raw);
+    if (exact) return exact;
+    // Dos respuestas que solo cambian en signos ("What Is Love" de Haddaway y "What is Love?" de TWICE):
+    // si no se eligió de la lista, no se adivina cuál era.
+    const same = games.filter((g) => AM.Sources.norm(g.game) === n);
+    if (same.length) return same.length === 1 ? same[0] : null;
+    return games.find((g) => g.aka.some((a) => AM.Sources.norm(a) === n)) || null;
   }
 
   function expertGuess() {

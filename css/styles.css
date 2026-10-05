@@ -483,7 +483,7 @@ a { color: var(--cyan); }
   align-items: center;
   gap: 4px;
   padding: 4px;
-  border-radius: 999px;
+  border-radius: 20px; /* píldora en una línea; si las opciones bajan de renglón (Época en celular), rectángulo redondeado */
   border: 1px solid var(--border);
   background: var(--panel);
 }

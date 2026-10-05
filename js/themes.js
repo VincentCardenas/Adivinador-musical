@@ -1,7 +1,7 @@
 /*
  * Temas del juego: videojuegos, series, caricaturas, anime, Disney, musicales y canciones.
  *
- * Cada tema tiene sus propias categorías (épocas, plataformas…) y define cómo se llaman
+ * Cada tema tiene sus propias categorías (épocas, plataformas, géneros…) y define cómo se llaman
  * las dos respuestas de cada pista:
  *   - `franchise` → respuesta "amplia" del modo Clásico (saga, artista, serie, musical…)
  *   - `game`      → respuesta exacta de Experto y Supervivencia (juego, canción, película…)
@@ -12,15 +12,42 @@
 (function (AM) {
   'use strict';
 
-  // Selector de idioma (Canciones y Musicales): las pistas sin `lang` entran con cualquier opción.
-  const langFilter = () => ({
+  /*
+   * Selector de idioma (Canciones y Musicales): las pistas sin `lang` (instrumentales) entran con
+   * cualquier opción, y las de otros idiomas (K-pop en coreano, Rammstein) solo con la primera.
+   * `allLabel`: "Ambos" en Musicales; "Todos" en Canciones, que también tiene coreano y alemán.
+   */
+  const langFilter = (allLabel) => ({
     id: 'lang', type: 'choice', default: 'ambos', label: 'Idioma',
     options: [
-      { value: 'ambos', label: '🌎 Ambos' },
+      { value: 'ambos', label: '🌎 ' + (allLabel || 'Ambos') },
       { value: 'es', label: 'Español' },
       { value: 'en', label: 'Inglés' },
     ],
     keep: (t, v) => v === 'ambos' || !t.lang || t.lang === v,
+  });
+
+  /*
+   * Selector de época (Canciones, que se separa por género): según el `year` de cada pista.
+   * Los señuelos no traen año y entran con cualquier época.
+   */
+  const ERAS = [
+    { value: 'todas', label: '🕰️ Todas' },
+    { value: 'antes', label: 'Antes de 1980', to: 1979 },
+    { value: '80s', label: 'Años 80', from: 1980, to: 1989 },
+    { value: '90s', label: 'Años 90', from: 1990, to: 1999 },
+    { value: '00s', label: '2000s', from: 2000, to: 2009 },
+    { value: '10s', label: '2010s', from: 2010, to: 2019 },
+    { value: '20s', label: '2020s', from: 2020 },
+  ];
+  const eraFilter = () => ({
+    id: 'era', type: 'choice', default: 'todas', label: 'Época',
+    options: ERAS.map((e) => ({ value: e.value, label: e.label })),
+    keep: (t, v) => {
+      const era = ERAS.find((e) => e.value === v);
+      if (!era || !t.year) return true;
+      return (!era.from || t.year >= era.from) && (!era.to || t.year <= era.to);
+    },
   });
 
   AM.THEMES = [
@@ -216,7 +243,7 @@
     {
       id: 'canciones', label: 'Canciones', icon: '🎤',
       kicker: 'Adivinador musical de canciones famosas',
-      sub: 'Escucha el fragmento y adivina qué canción es (y quién la canta).',
+      sub: 'Escucha el fragmento y adivina qué canción es (y quién la canta). Elige los géneros, la época y el idioma.',
       broad: 'artista', broadArt: 'el artista', broadPl: 'artistas',
       exact: 'canción', exactArt: 'la canción', exactPl: 'canciones',
       expertGoal: 'la canción exacta', survivalGoal: 'canción exacta',
@@ -228,7 +255,8 @@
       realLabel: '¿Qué canción era en realidad?', realPlaceholder: 'Escribe la canción (si la sabes)',
       realSongLabel: '¿Quién la canta?', songExample: 'Queen',
       showArtist: true,
-      filters: [langFilter()],
+      optionsByCat: true, // las opciones falsas, del mismo género que la que suena
+      filters: [langFilter('Todos'), eraFilter()],
       ranks: {
         survival: [
           [25, 'Leyenda musical', 'Reconoces cualquier canción a la primera.'],

@@ -98,6 +98,46 @@
   const COVER_RE = /\b(cover|covers|piano|remix|remixed|lofi|lo fi|orchestral|orchestra|tribute|8 bit|8bit|chiptune|music box|acoustic|karaoke|lullaby|rendition|medley|arrangement|arranged|symphonic|reimagined|nightcore|slowed|sped up|epic version|metal version|guitar version|instrumental version|bossa|jazz version|synthwave)\b/;
   const GENERIC_TITLE_RE = /^(main theme|theme|title theme|title|title screen|opening|opening theme|overture|prologue|intro|introduction|menu|main menu|ending|ending theme|credits|staff roll)$/;
 
+  /*
+   * Canciones: Apple suele agregarle cosas al nombre que no cambian la grabación
+   * ("Taki Taki (feat. Selena Gomez…)", "Imagine - Remastered 2010", "Levels - Radio Edit").
+   * Para comparar se quitan solo esos agregados: cualquier otro ("(En Vivo)", "(Remix)", "(Versión Banda)")
+   * se queda en el nombre, así que ya no es la misma canción.
+   */
+  const EXTRA_RE = /\b(feat|ft|featuring|with|remaster|remastered|remasterizado|remasterizada|album version|single version|single mix|radio edit|radio version|radio mix|original version|version original|original mix|mono|stereo|explicit|clean)\b/;
+  const OTHER_VERSION_RE = /\b(live|en vivo|en directo|en concierto|unplugged|remix|remezcla|acoustic|acustico|acustica|demo|instrumental|karaoke|sped|slowed|extended)\b/;
+  // Discos que son otra versión de todo: en vivo, acústicos, de remixes, karaoke, tributos…
+  const OTHER_ALBUM_RE = /\b(live|en vivo|en directo|en concierto|in concert|unplugged|acoustic|acustico|remixes|karaoke|tribute|instrumentals?)\b/;
+  function isExtra(segment) {
+    const n = norm(segment);
+    return EXTRA_RE.test(n) && !OTHER_VERSION_RE.test(n);
+  }
+  function baseTitle(name) {
+    return norm(String(name || '')
+      .replace(/\s*[([][^()[\]]*[)\]]/g, (seg) => (isExtra(seg) ? '' : seg))
+      .replace(/\s+-\s+[^-]+$/, (seg) => (isExtra(seg) ? '' : seg)));
+  }
+
+  /*
+   * Puntaje de un resultado para Canciones (`busca()`), más estricto que el de los soundtracks:
+   * tiene que ser del artista y llamarse igual que la pista (sin contar los agregados de arriba),
+   * y nunca de un disco en vivo, acústico, de remixes, karaoke o tributo. Entre las que pasan,
+   * gana la del artista exacto y la del disco o sencillo que lleva el nombre de la canción.
+   */
+  function scoreSong(r, opts) {
+    const an = norm(r.artistName);
+    const cn = norm(r.collectionName);
+    if (!opts.artists.some((a) => an.indexOf(a) >= 0)) return -1;
+    const full = norm(r.trackName);
+    const base = baseTitle(r.trackName);
+    if (!opts.names.some((n) => n && (full === n || base === n))) return -1;
+    if (OTHER_ALBUM_RE.test(cn) || COVER_RE.test(an + ' ' + cn)) return -1;
+    let score = 9;
+    if (opts.artists.some((a) => an === a)) score += 1;
+    if (opts.albums.some((a) => cn.indexOf(a) >= 0)) score += 1;
+    return score;
+  }
+
   function hintList(value) {
     return (Array.isArray(value) ? value : value ? [value] : []).map(norm).filter((x) => x.length >= 3);
   }
@@ -165,10 +205,11 @@
         artists: hintList(src.artist).concat(track ? composerHints(track.composer) : []),
         generic: names.every((n) => GENERIC_TITLE_RE.test(n)),
       };
+      const score = track && track.theme === 'canciones' ? scoreSong : scoreHit;
       let best = null;
-      let bestScore = 7; // mínimo: título + (álbum del juego o compositor)
+      let bestScore = 7; // mínimo: título + (álbum del juego o compositor); en Canciones, título + artista
       songs.forEach((r) => {
-        const sc = scoreHit(r, opts);
+        const sc = score(r, opts);
         if (sc > bestScore) { best = r; bestScore = sc; }
       });
       return best;
@@ -245,5 +286,5 @@
     });
   }
 
-  AM.Sources = { resolve: resolve, prefetch: prefetch, norm: norm };
+  AM.Sources = { resolve: resolve, prefetch: prefetch, norm: norm, baseTitle: baseTitle };
 })(window.AM = window.AM || {});

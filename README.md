@@ -10,7 +10,7 @@ Adivinador musical: suena un fragmento de música **oficial** y tienes que recon
 | 🎌 **Anime** | El anime por su opening: 56 openings famosos, de Caballeros del Zodiaco y Dragon Ball (en latino) a Evangelion, Death Note, Chainsaw Man o Frieren | Por época: clásicos, 90s, 2000s, 2010s y 2020 en adelante |
 | 🏰 **Disney** | La película por sus canciones **en español latino** (El rey león, Frozen, Coco…) | Por época: clásicos, renacimiento, 2000s, 2010s y 2020 en adelante. Interruptor para incluir o quitar **Pixar** |
 | 🎭 **Musicales** | De qué musical es (Clásico) o qué canción es (Experto y Supervivencia): 122 canciones de 58 musicales de teatro y cine, siempre con su nombre original (Grease, The Phantom of the Opera, Wicked, Hamilton, Six…), en su grabación original o en versiones en español famosas (Timbiriche, Camilo Sesto, el elenco de México, Mamma Mia! de Madrid…) | Por época: clásicos, 70s y 80s, 90s y 2000s y 2010 en adelante. Selector de idioma: **español, inglés o ambos** |
-| 🎤 **Canciones** | Quién la canta (Clásico) o qué canción es (Experto y Supervivencia) | Por época: antes de 1980, 80s, 90s, 2000s, 2010s y 2020 en adelante. Selector de idioma: **español, inglés o ambos** |
+| 🎤 **Canciones** | Quién la canta (Clásico) o qué canción es (Experto y Supervivencia): 570 canciones famosas, de Pedro Infante y Queen a Bad Bunny, Peso Pluma y BLACKPINK | Por género: rock, pop, rap y hip-hop, reggaetón, regional mexicano, baladas, electrónica, cumbia, salsa, metal y **K-pop** (50 de cada uno; pop, 70; nada de bachata). Selector de época (antes de 1980, 80s, 90s, 2000s, 2010s y 2020s) y de idioma: **español, inglés o todos** (el K-pop en coreano y Rammstein solo suenan con *Todos*) |
 
 Al terminar una partida puedes guardar tu puntaje con un **nickname** en el **ranking global** (uno por tema y modo).
 
@@ -168,13 +168,14 @@ Los temas (nombres, textos, filtros y rangos) están en [`js/themes.js`](js/them
 Campos opcionales: `aka` (otros nombres que acepta el buscador de Experto, por ejemplo
 `aka: ['Knight Rider']` en *El auto fantástico*; en Musicales, el título de la otra versión de la canción, y así
 el buscador acepta cualquiera de los dos), `lang: 'es' | 'en'` en Canciones y Musicales (para el filtro de idioma
-y para que las opciones vayan en el mismo idioma que la canción) y `pixar: true` en Disney (para el
+y para que las opciones vayan en el mismo idioma que la canción; en Canciones también `'ko'` y `'de'`, que solo suenan con *Todos*, y las instrumentales van sin `lang`) y `pixar: true` en Disney (para el
 interruptor de Pixar). En Musicales, el musical va **siempre con su nombre original** (*The Phantom of the Opera*, nunca *El fantasma
 de la ópera*), aunque la pista sea de una versión en español; los nombres con que se conoce en español (*Vaselina*
 para *Grease*) van en `AM.FRANCHISE_AKA`, al principio de [`js/catalog-musicales.js`](js/catalog-musicales.js):
 con ellos el buscador de Experto lista sus canciones, pero nunca se muestran como respuesta. Las pistas de un DLC o expansión van con el nombre del juego base y el del DLC en
 `aka` (como *Wrath of the Lich King* en *World of Warcraft*). En los catálogos nuevos cada categoría lleva
-`theme` para saber a qué tema pertenece.
+`theme` para saber a qué tema pertenece. En Canciones, `cat` es el género (`song-rock`, `song-pop`, `song-rap`, `song-reggaeton`,
+`song-regional`, `song-baladas`, `song-electronica`, `song-cumbia`, `song-salsa`, `song-metal` o `song-kpop`) y `year` decide en qué época sale.
 
 Tipos de fuente (se prueban **en el orden en que aparecen**):
 
@@ -185,6 +186,11 @@ Tipos de fuente (se prueban **en el orden en que aparecen**):
 - `apple({ term: 'texto', artist: 'Compositor', match: 'Nombre' })`: búsqueda libre filtrada por artista.
 - `apple({ ..., country: 'jp' })`: para álbumes que solo están en la tienda de otro país.
 - `yt('ID_DEL_VIDEO', segundoDeInicio)`: el ID es lo que va después de `watch?v=`.
+
+En [`js/catalog-canciones.js`](js/catalog-canciones.js) hay atajos: `am(ID, ID2…)` (cada ID en la tienda de México
+y luego en la de Estados Unidos), `disco(álbum, 'Nombre')` y `busca('Artista', 'Canción')`, la búsqueda libre. En Canciones,
+esa búsqueda acepta el nombre con agregados que no cambian la grabación (*(feat. …)*, *- Remastered 2011*, *- Radio Edit*),
+pero nunca versiones en vivo, remixes ni covers.
 
 Para que una respuesta aparezca como opción incorrecta o en el buscador de Experto sin tener pista,
 agrégala a `AM.EXTRA_GAMES` al final del mismo archivo (en los catálogos nuevos, con su `theme`).
@@ -203,9 +209,9 @@ js/catalog-caricaturas.js Caricaturas por época
 js/catalog-anime.js       Openings de anime por época
 js/catalog-disney.js      Disney y Pixar (español latino) por época
 js/catalog-musicales.js   Musicales de teatro y cine (originales y en español) por época
-js/catalog-canciones.js   Canciones famosas por época e idioma
+js/catalog-canciones.js   Canciones famosas por género (con año e idioma)
 js/catalog-sagas.js       Modo Sagas: las 10 sagas y sus canciones extra (generado)
-js/themes.js              Los 7 temas: textos, filtros (Pixar, idioma) y rangos
+js/themes.js              Los 7 temas: textos, filtros (Pixar, idioma, época) y rangos
 js/sources.js             Resuelve cada pista a un preview de Apple o un video de YouTube
 js/loudness.js            Volumen medido de cada fuente (generado) para que todo suene parejo
 js/engine.js              Reproductor unificado (<audio> + YouTube oculto), volumen parejo, cortes de clip y fallos
@@ -223,6 +229,15 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **1.9**: **Canciones por género**: rock, pop, rap y hip-hop, reggaetón, regional mexicano, baladas, electrónica, cumbia,
+  salsa, metal y **K-pop**, con 50 canciones cada uno (pop, 70): de 184 a **570 canciones**. La época pasa a un selector
+  aparte (*Todas*, antes de 1980, 80s, 90s, 2000s, 2010s y 2020s), junto al de idioma, que ahora dice *Todos* porque
+  también hay K-pop en coreano y Rammstein en alemán (esas suenan solo con *Todos*). En Clásico y Supervivencia, las
+  opciones falsas son del mismo género que la que suena. Fuera la bachata y las tropicales que no caben en ningún género.
+  Las nuevas de K-pop y rap, casi todas las de cumbia y la mayoría de las de salsa usan IDs fijos de Apple Music; las
+  demás, la búsqueda por artista, que en Canciones es más estricta: tiene que ser del artista y llamarse igual (acepta *(feat. …)*,
+  *- Remastered* o *- Radio Edit*), nunca en vivo, acústica, remix ni tributo. En Experto, si dos canciones se llaman
+  casi igual (*What Is Love* de Haddaway y *What is Love?* de TWICE), cuenta la que eliges de la lista.
 - **1.8.1**: en Musicales, cada musical vuelve a su **nombre original** (*The Phantom of the Opera*, *Grease*,
   *West Side Story*, *The Sound of Music*, *Les Misérables*, *KPop Demon Hunters*…); el nombre en español solo sirve
   para buscarlo en Experto (*vaselina* lista las de *Grease*). Repertorio ampliado de 85 a **122 canciones** y de 37 a

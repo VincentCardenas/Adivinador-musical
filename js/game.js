@@ -62,7 +62,10 @@
     const T = AM.theme(themeId);
     const vals = {};
     T.filters.forEach((f) => {
-      vals[f.id] = filterValues && f.id in filterValues ? filterValues[f.id] : f.default;
+      let v = filterValues && f.id in filterValues ? filterValues[f.id] : f.default;
+      // Un valor guardado que ya no existe (opción renombrada o quitada) vuelve al de siempre.
+      if (f.type === 'choice' && !f.options.some((o) => o.value === v)) v = f.default;
+      vals[f.id] = v;
     });
     const key = T.id + '|' + JSON.stringify(vals);
     if (scopes.has(key)) return scopes.get(key);
@@ -222,9 +225,16 @@
       }
     };
 
+    // Canciones (`optionsByCat`): las opciones falsas son del mismo género que la que suena (una cumbia
+    // contra cumbias, metal contra metal) y, si no alcanzan, de otros géneros. Los demás temas solo
+    // toman una o dos de la misma categoría.
+    const byCat = !!sc.theme.optionsByCat;
+    const sameCat = sc.tracks.filter((t) => t.cat === track.cat);
+
     if (mode.answer === 'franchise') {
       const all = sc.tracks.concat(sc.extras);
-      add(unique(sc.tracks.filter((t) => t.cat === track.cat && fits(t)).map((t) => t.franchise)), 2);
+      add(unique(sameCat.filter(fits).map((t) => t.franchise)), byCat ? n : 2);
+      if (byCat) add(unique(sameCat.map((t) => t.franchise)), n);
       add(unique(all.filter(fits).map((t) => t.franchise)), n);
       add(unique(all.filter(inGroup).map((t) => t.franchise)), n); // por si el idioma dejó muy pocas
       return shuffle(picked.concat([answer]));
@@ -233,7 +243,8 @@
     const games = allGames(sc).filter(inGroup);
     const same = games.filter(fits);
     add(same.filter((g) => g.franchise === track.franchise).map((g) => g.game), 1);
-    add(unique(sc.tracks.filter((t) => t.cat === track.cat && fits(t)).map((t) => t.game)), 1);
+    add(unique(sameCat.filter(fits).map((t) => t.game)), byCat ? n : 1);
+    if (byCat) add(unique(sameCat.map((t) => t.game)), n);
     add(same.map((g) => g.game), n);
     add(games.map((g) => g.game), n); // por si el idioma dejó muy pocas
     return shuffle(picked.concat([answer]));
