@@ -9,7 +9,7 @@ Adivinador musical: suena un fragmento de música **oficial** y tienes que recon
 | 🧸 **Caricaturas** | La caricatura por su entrada, en español latino cuando la hubo (Los Picapiedra, Bob Esponja, Hora de aventura…) | Por época: clásicas, 80s, 90s, 2000s y 2010 en adelante |
 | 🎌 **Anime** | El anime por su opening: 56 openings famosos, de Caballeros del Zodiaco y Dragon Ball (en latino) a Evangelion, Death Note, Chainsaw Man o Frieren | Por época: clásicos, 90s, 2000s, 2010s y 2020 en adelante |
 | 🏰 **Disney** | La película por sus canciones **en español latino** (El rey león, Frozen, Coco…) | Por época: clásicos, renacimiento, 2000s, 2010s y 2020 en adelante. Interruptor para incluir o quitar **Pixar** |
-| 🎭 **Musicales** | De qué musical es (Clásico) o qué canción es (Experto y Supervivencia): 85 canciones de 37 musicales de teatro y cine (Vaselina, El fantasma de la ópera, Wicked, Hamilton, El gran showman…), en su grabación original o en versiones en español famosas (Timbiriche, Camilo Sesto, el elenco de México…) | Por época: clásicos, 70s y 80s, 90s y 2000s y 2010 en adelante. Selector de idioma: **español, inglés o ambos** |
+| 🎭 **Musicales** | De qué musical es (Clásico) o qué canción es (Experto y Supervivencia): 122 canciones de 58 musicales de teatro y cine, siempre con su nombre original (Grease, The Phantom of the Opera, Wicked, Hamilton, Six…), en su grabación original o en versiones en español famosas (Timbiriche, Camilo Sesto, el elenco de México, Mamma Mia! de Madrid…) | Por época: clásicos, 70s y 80s, 90s y 2000s y 2010 en adelante. Selector de idioma: **español, inglés o ambos** |
 | 🎤 **Canciones** | Quién la canta (Clásico) o qué canción es (Experto y Supervivencia) | Por época: antes de 1980, 80s, 90s, 2000s, 2010s y 2020 en adelante. Selector de idioma: **español, inglés o ambos** |
 
 Al terminar una partida puedes guardar tu puntaje con un **nickname** en el **ranking global** (uno por tema y modo).
@@ -169,8 +169,10 @@ Campos opcionales: `aka` (otros nombres que acepta el buscador de Experto, por e
 `aka: ['Knight Rider']` en *El auto fantástico*; en Musicales, el título de la otra versión de la canción, y así
 el buscador acepta cualquiera de los dos), `lang: 'es' | 'en'` en Canciones y Musicales (para el filtro de idioma
 y para que las opciones vayan en el mismo idioma que la canción) y `pixar: true` en Disney (para el
-interruptor de Pixar). Los otros nombres de un musical (*Grease* para *Vaselina*) van en `AM.FRANCHISE_AKA`, al
-principio de [`js/catalog-musicales.js`](js/catalog-musicales.js): con ellos el buscador de Experto lista sus canciones. Las pistas de un DLC o expansión van con el nombre del juego base y el del DLC en
+interruptor de Pixar). En Musicales, el musical va **siempre con su nombre original** (*The Phantom of the Opera*, nunca *El fantasma
+de la ópera*), aunque la pista sea de una versión en español; los nombres con que se conoce en español (*Vaselina*
+para *Grease*) van en `AM.FRANCHISE_AKA`, al principio de [`js/catalog-musicales.js`](js/catalog-musicales.js):
+con ellos el buscador de Experto lista sus canciones, pero nunca se muestran como respuesta. Las pistas de un DLC o expansión van con el nombre del juego base y el del DLC en
 `aka` (como *Wrath of the Lich King* en *World of Warcraft*). En los catálogos nuevos cada categoría lleva
 `theme` para saber a qué tema pertenece.
 
@@ -221,6 +223,15 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **1.8.1**: en Musicales, cada musical vuelve a su **nombre original** (*The Phantom of the Opera*, *Grease*,
+  *West Side Story*, *The Sound of Music*, *Les Misérables*, *KPop Demon Hunters*…); el nombre en español solo sirve
+  para buscarlo en Experto (*vaselina* lista las de *Grease*). Repertorio ampliado de 85 a **122 canciones** y de 37 a
+  **58 musicales**: *Oklahoma!*, *The King and I*, *Joseph*, *The Wiz*, *Godspell*, *A Chorus Line*, *Sweeney Todd*,
+  *Into the Woods*, *Miss Saigon*, *Legally Blonde*, *tick, tick... BOOM!*, *The Book of Mormon*, *Six*, *Hadestown*,
+  *Beetlejuice*, *Matilda the Musical*, *Kinky Boots*, *Waitress*, *Mean Girls*, *Heathers* y *Wonka*, más canciones
+  de los que ya estaban y 5 versiones en español nuevas (*Sonrisas y lágrimas* y *Mamma Mia!* de Madrid, *Mentiras* y
+  *Hoy no me puedo levantar*). Cada pista suena solo en la grabación que dice su ficha (se quitaron respaldos de otras
+  versiones).
 - **1.8**: tema nuevo **🎭 Musicales**: 85 canciones de 37 musicales de teatro y cine (nada de Disney, que tiene
   su propio tema), por época y con selector de idioma. 70 suenan en su grabación original (Broadway, Londres o la
   película) y 15 en versiones en español: *Vaselina* de Timbiriche, *Jesucristo Superstar* de Camilo Sesto,

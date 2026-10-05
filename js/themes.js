@@ -191,7 +191,7 @@
       question: '¿De qué musical es?', questionExact: '¿Qué canción es?',
       placeholder: 'Escribe la canción o el musical…',
       partial: 'musical correcto, otra canción',
-      clasicoExample: 'Wicked, Vaselina, El fantasma de la ópera…', survivalExample: '¿Defying Gravity o Popular?',
+      clasicoExample: 'Wicked, Grease, The Phantom of the Opera…', survivalExample: '¿Defying Gravity o Popular?',
       otherReason: 'Es de otro musical', sameReason: 'Es otra canción de este mismo musical',
       realLabel: '¿Qué canción era en realidad?', realPlaceholder: 'Escribe la canción (si la sabes)',
       realSongLabel: '¿De qué musical era?', songExample: 'Wicked',
