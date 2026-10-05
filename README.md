@@ -229,7 +229,7 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
-- **1.9**: **Canciones por género**: rock, pop, rap y hip-hop, reggaetón, regional mexicano, baladas, electrónica, cumbia,
+- **1.9.1**: **Canciones por género**: rock, pop, rap y hip-hop, reggaetón, regional mexicano, baladas, electrónica, cumbia,
   salsa, metal y **K-pop**, con 50 canciones cada uno (pop, 70): de 184 a **570 canciones**. La época pasa a un selector
   aparte (*Todas*, antes de 1980, 80s, 90s, 2000s, 2010s y 2020s), junto al de idioma, que ahora dice *Todos* porque
   también hay K-pop en coreano y Rammstein en alemán (esas suenan solo con *Todos*). En Clásico y Supervivencia, las
