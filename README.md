@@ -119,18 +119,26 @@ arreglar o reemplazar las que fallen.
 
 ## Reportar una canción
 
-Si una pista está mal (es de otro juego, es otra canción, es un cover o no suena), en la revelación de la
-ronda y en la lista de resultados está el botón **🚩 Reportar canción**. Ahí se elige qué pasó y, si lo
-sabes, de qué juego o qué canción era en realidad.
+Si una pista está mal, en la revelación de la ronda y en la lista de resultados está el botón
+**🚩 Reportar canción**. Reportar es en dos pasos:
 
-- **Enviar reporte** abre un *issue* de GitHub ya rellenado con la plantilla
-  [`.github/ISSUE_TEMPLATE/reporte-cancion.yml`](.github/ISSUE_TEMPLATE/reporte-cancion.yml)
-  (quien reporta necesita una cuenta de GitHub gratis). Todos los reportes quedan en la pestaña
-  **Issues** del repositorio con el título `[Reporte] …`, listos para corregir el catálogo. Si creas la
-  etiqueta `reporte-cancion` (Issues → Labels → New label), GitHub se la pone sola a cada reporte.
-- **Solo guardar aquí** lo deja en el navegador; desde **🚩 Mis reportes** (abajo de la página) se pueden
-  enviar después o copiar todos para mandarlos por otro lado.
-- Por defecto, la pista reportada se oculta para ese jugador. Desde *Mis reportes* se pueden volver a mostrar.
+1. **¿Qué está mal?** Se elige una tarjeta: es de otro juego (o serie, película, musical…), es otra canción
+   del mismo juego, es otra versión (cover, remix, en vivo), no sonó bien u otra cosa. En Canciones no hay
+   "otra canción del mismo…", porque ahí la respuesta ya es la canción. Según la tarjeta aparecen solo las
+   preguntas que tocan (por ejemplo, "¿Qué canción era?" y "¿Quién la canta?"), todas opcionales. El
+   interruptor **No volver a ponérmela** (prendido de inicio) oculta esa pista para ese jugador.
+2. **Reporte guardado.** Queda en el navegador y se puede mandar de dos formas:
+   - **Enviar por GitHub** abre un *issue* ya rellenado con la plantilla
+     [`.github/ISSUE_TEMPLATE/reporte-cancion.yml`](.github/ISSUE_TEMPLATE/reporte-cancion.yml) (quien reporta
+     necesita una cuenta de GitHub gratis y confirmarlo allá). Todos quedan en la pestaña **Issues** del
+     repositorio con el título `[Reporte] …`. Si creas la etiqueta `reporte-cancion` (Issues → Labels → New
+     label), GitHub se la pone sola a cada reporte.
+   - **Compartir** abre el menú de compartir del celular (WhatsApp, mensajes, correo…) con el reporte en texto;
+     en una compu sin ese menú, el botón dice **Copiar texto** y lo copia para pegarlo donde sea.
+
+En **🚩 Mis reportes** (abajo de la página) está cada reporte con su estado (*Sin enviar*, *Enviado por
+GitHub*, *Compartido* o *Copiado*): se puede mandar de nuevo, borrar, volver a poner en juego la pista oculta
+o copiar todos de una vez.
 
 El repositorio que recibe los reportes se configura en [`js/config.js`](js/config.js).
 
@@ -229,7 +237,14 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
-- **1.9.1**: **Canciones por género**: rock, pop, rap y hip-hop, reggaetón, regional mexicano, baladas, electrónica, cumbia,
+- **1.9.1**: **reportes rediseñados**. Reportar una canción ahora es en dos pasos: tarjetas para elegir qué está mal
+  (como las de los modos de juego) con solo las preguntas que tocan a ese motivo, y luego "Reporte guardado" con dos
+  formas de mandarlo: por GitHub o compartiéndolo (WhatsApp, etc.; en compu se copia el texto). El botón de guardar
+  queda siempre a la vista en el celular. En Musicales, "otra canción de este musical" ya pregunta la canción (antes
+  preguntaba el musical). *Mis reportes* muestra cada reporte con su portada, artista o musical, fecha y estado, y
+  deja mandarlo, borrarlo o volver a poner en juego solo esa pista. El comentario ya no sale con letra de máquina de
+  escribir.
+- **1.9**: **Canciones por género**: rock, pop, rap y hip-hop, reggaetón, regional mexicano, baladas, electrónica, cumbia,
   salsa, metal y **K-pop**, con 50 canciones cada uno (pop, 70): de 184 a **570 canciones**. La época pasa a un selector
   aparte (*Todas*, antes de 1980, 80s, 90s, 2000s, 2010s y 2020s), junto al de idioma, que ahora dice *Todos* porque
   también hay K-pop en coreano y Rammstein en alemán (esas suenan solo con *Todos*). En Clásico y Supervivencia, las

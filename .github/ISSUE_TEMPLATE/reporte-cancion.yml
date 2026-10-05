@@ -1,5 +1,5 @@
 name: 🚩 Reportar una canción
-description: Avisa si una pista del juego está mal (es de otro juego, serie, película o musical, es otra canción, es un cover, no suena…).
+description: Avisa si una pista del juego está mal (es de otro juego, serie, película o musical, es otra canción u otra versión, no suena…).
 title: "[Reporte] "
 labels: ["reporte-cancion"]
 body:
@@ -23,12 +23,12 @@ body:
     id: mostrado
     attributes:
       label: Lo que el juego dijo que era
-      description: Respuesta y canción que mostró la revelación.
+      description: Lo que mostró la revelación (respuesta y canción, artista o musical).
   - type: input
     id: problema
     attributes:
       label: ¿Qué pasó?
-      description: Es de otro juego/serie/película/musical, es otra canción, es un cover/remix, no sonó…
+      description: Es de otro juego/serie/película/musical, es otra canción, es otra versión (cover, remix, en vivo), no sonó…
     validations:
       required: true
   - type: input
@@ -39,7 +39,7 @@ body:
   - type: input
     id: cancion_real
     attributes:
-      label: ¿Qué canción (o artista) era en realidad?
+      label: ¿Qué canción, artista o musical era en realidad?
   - type: input
     id: fuente
     attributes:

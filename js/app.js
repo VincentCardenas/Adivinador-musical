@@ -99,6 +99,7 @@
     hide(id) {
       if (this.hidden.indexOf(id) < 0) { this.hidden.push(id); Store.set('hidden', this.hidden); }
     },
+    unhide(id) { this.hidden = this.hidden.filter((x) => x !== id); Store.set('hidden', this.hidden); },
     unhideAll() { this.hidden = []; Store.set('hidden', []); },
   };
 
@@ -1571,13 +1572,21 @@
 
   /* ═════════ reportes de canciones ═════════ */
 
+  /*
+   * Reportar es en dos pasos: primero qué está mal (tarjetas, como los modos de juego) y solo las
+   * preguntas de ese motivo; luego "Reporte guardado" con las dos formas de mandarlo: GitHub (el
+   * formulario de issues ya rellenado) o compartirlo (WhatsApp, etc.; en compu se copia el texto).
+   */
+
+  // Texto de cada motivo en el reporte que llega (GitHub, texto copiado o compartido).
   const REASONS = {
     'otro-juego': 'Es de otro juego',
     'otra-cancion': 'Es otra canción del mismo juego',
-    'cover': 'Es un cover, remix o versión no oficial',
-    'no-suena': 'No sonó, se cortó o era un anuncio',
+    'cover': 'Es otra versión (cover, remix, en vivo…)',
+    'no-suena': 'No sonó, se cortó o salió un anuncio',
     'otro': 'Otro problema',
   };
+  const REASON_ICONS = { 'otro-juego': '🔀', 'otra-cancion': '🎶', 'cover': '🎙️', 'no-suena': '🔇', 'otro': '💬' };
 
   /** Texto del motivo según el tema de la pista ("Es de otra serie", "Es otra canción"…). */
   function reasonText(r) {
@@ -1586,6 +1595,53 @@
     if (r.reason === 'otra-cancion') return T.sameReason;
     return REASONS[r.reason] || r.reason;
   }
+
+  const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+  const del = (art) => art.replace(/^el /, 'del ').replace(/^la /, 'de la '); // "el juego" → "del juego"
+
+  /**
+   * Motivos que se ofrecen en un tema, con su nombre corto y cuándo elegirlo. En Canciones no hay
+   * "otra canción del mismo…" (la respuesta ya es la canción); "otra versión" cubre en vivo y covers.
+   */
+  function reasonOptions(T) {
+    const songs = T.id === 'canciones';
+    const what = T.exact === 'canción' ? T.broadArt : T.exactArt; // "el juego", "la serie", "el musical"…
+    const opts = [{
+      id: 'otro-juego', label: T.otherReason,
+      hint: songs ? 'No es la que dice la respuesta' : `No es ${del(what)} que dice la respuesta`,
+    }];
+    if (!songs) {
+      opts.push({
+        id: 'otra-cancion',
+        label: cap(T.sameReason.replace(/^Es /, '').replace(/ (este|esta) mism[oa] /, ' $1 ')), // "Otra canción de este juego"
+        hint: `${cap(what)} sí es, la canción no`,
+      });
+    }
+    opts.push(
+      { id: 'cover', label: 'Es otra versión', hint: songs ? 'En vivo, cover, remix o karaoke' : 'Cover, remix, en vivo o no oficial' },
+      { id: 'no-suena', label: 'No sonó bien', hint: 'Silencio, se cortó o salió un anuncio' },
+      { id: 'otro', label: 'Otra cosa', hint: 'Cuéntanos qué pasó' },
+    );
+    return opts;
+  }
+
+  /*
+   * Qué se pregunta según el motivo. Un reporte guarda dos datos, `realGame` y `realSong`, y su pregunta
+   * cambia con el tema: en Videojuegos son el juego y la canción; en Canciones, la canción y quién la
+   * canta; en Musicales, la canción y el musical (ahí la respuesta exacta ya es la canción).
+   */
+  function reasonFields(T, reason) {
+    if (reason === 'otro-juego') return ['game', 'song'];
+    if (reason === 'otra-cancion') return [T.exact === 'canción' ? 'game' : 'song'];
+    return [];
+  }
+  const COMMENT_FIELD = {
+    'otro-juego': ['Comentario', 'opcional', 'Algo más que ayude a encontrarla'],
+    'otra-cancion': ['Comentario', 'opcional', 'Algo más que ayude a encontrarla'],
+    'cover': ['¿Qué versión era?', 'opcional', 'Ej.: en vivo, un cover de otro grupo, un remix…'],
+    'no-suena': ['¿Qué pasó?', 'opcional', 'Ej.: no se oyó nada, se cortó, salió un anuncio…'],
+    'otro': ['¿Qué pasó?', '', 'Cuéntanos qué tiene la canción'],
+  };
 
   const savedReports = Store.get('reports', []);
   const Reports = {
@@ -1608,29 +1664,72 @@
     $('#report-games').innerHTML = AM.Logic.allGames(AM.Logic.scope(themeId)).map((g) => `<option value="${esc(g.game)}"></option>`).join('');
   }
 
+  /** Artista (Canciones) o musical (Musicales) de lo reportado; los reportes viejos no lo guardaban. */
+  function reportFranchise(r) {
+    if (r.franchise) return r.franchise;
+    const t = AM.CATALOG.find((x) => x.id === r.trackId);
+    return t ? t.franchise : '';
+  }
+
+  /** Lo que sonó, en una línea: "Next Level — aespa", "Defying Gravity — Wicked", "Halo 3 — One Final Effort". */
+  function reportName(r) {
+    const T = AM.theme(r.theme || 'juegos');
+    const second = T.showArtist || T.lineIcon ? reportFranchise(r) : r.title;
+    return second && second !== r.game ? `${r.game} — ${second}` : r.game;
+  }
+
+  /** La segunda línea de la tarjeta, igual que en la revelación: 🎤 artista, 🎭 musical o ♪ canción. */
+  function reportLine(r) {
+    const T = AM.theme(r.theme || 'juegos');
+    if (T.showArtist) return '🎤 ' + reportFranchise(r);
+    if (T.lineIcon) return T.lineIcon + ' ' + reportFranchise(r);
+    return r.title ? '♪ ' + r.title : '';
+  }
+
   function selectedReason() {
     const el = $('#report-form').querySelector('input[name="reason"]:checked');
-    return el ? el.value : 'otro';
+    return el ? el.value : '';
   }
 
   function updateReportFields() {
     const reason = selectedReason();
-    $('#field-real-game').hidden = !(reason === 'otro-juego' || reason === 'otro');
-    $('#field-real-song').hidden = reason === 'no-suena';
+    $$('.reason', $('#report-reasons')).forEach((l) => l.classList.toggle('is-on', l.querySelector('input').checked));
+    $('#btn-report-save').disabled = !reason;
+    $('#report-details').hidden = !reason;
+    if (!reason || !reportCtx) return;
+    const fields = reasonFields(AM.theme(reportCtx.track.theme), reason);
+    $('#field-real-game').hidden = fields.indexOf('game') < 0;
+    $('#field-real-song').hidden = fields.indexOf('song') < 0;
+    const c = COMMENT_FIELD[reason];
+    $('#report-comment-label').innerHTML = esc(c[0]) + (c[1] ? ` <span class="muted">(${c[1]})</span>` : '');
+    $('#report-comment').placeholder = c[2];
+  }
+
+  function showReportStep(step) {
+    $('#report-step-form').hidden = step !== 'form';
+    $('#report-step-done').hidden = step !== 'done';
+    $('#dlg-report').setAttribute('aria-labelledby', step === 'done' ? 'report-done-title' : 'report-title');
+    $('#dlg-report').scrollTop = 0;
   }
 
   function openReport(ctx) {
     reportCtx = ctx;
+    lastReport = null;
     const t = ctx.track;
     const m = ctx.meta || {};
     const T = AM.theme(t.theme);
     $('#report-form').reset();
+    showReportStep('form');
     fillGamesDatalist(T.id);
-    $('#reason-other').textContent = T.otherReason;
-    $('#reason-same').textContent = T.sameReason;
-    $('#report-real-game-label').textContent = T.realLabel;
-    $('#report-real-game').placeholder = T.realPlaceholder;
-    $('#report-real-song-label').innerHTML = esc(T.realSongLabel || '¿Qué canción era?') + ' <span class="muted">(si la sabes)</span>';
+    $('#report-reasons').innerHTML = reasonOptions(T).map((o) => `
+      <label class="reason">
+        <input type="radio" name="reason" value="${o.id}">
+        <span class="reason-icon" aria-hidden="true">${REASON_ICONS[o.id]}</span>
+        <span class="reason-text"><b>${esc(o.label)}</b><small>${esc(o.hint)}</small></span>
+      </label>`).join('');
+    $('#report-real-game-label').innerHTML = esc(T.realLabel) + ' <span class="muted">(si sabes)</span>';
+    $('#report-real-game').placeholder = 'Escribe y elige de la lista';
+    $('#report-real-song-label').innerHTML = esc(T.realSongLabel || '¿Qué canción era?') + ' <span class="muted">(si sabes)</span>';
     $('#report-real-song').placeholder = T.songExample ? 'Ej.: ' + T.songExample : '';
     $('#report-game-shown').textContent = t.game;
     $('#report-song-shown').textContent = trackLine(T, t, m);
@@ -1644,10 +1743,10 @@
   function reportUrl(r) {
     const params = new URLSearchParams({
       template: AM.CONFIG.reportTemplate,
-      title: `[Reporte] ${r.game} — ${r.title}`,
+      title: `[Reporte] ${reportName(r)}`,
       tema: AM.theme(r.theme || 'juegos').label,
       pista: r.trackId,
-      mostrado: `${r.game} — ${r.title}`,
+      mostrado: reportName(r),
       problema: reasonText(r),
       juego_real: r.realGame || '',
       cancion_real: r.realSong || '',
@@ -1657,108 +1756,233 @@
     return `https://github.com/${AM.CONFIG.repo}/issues/new?${params.toString()}`;
   }
 
+  /** El reporte en texto, para pegarlo en un mensaje (y para "Copiar todos"). */
   function reportText(r) {
     const lines = [
-      `• ${r.game} — ${r.title} [${r.trackId}]`,
-      `  Problema: ${reasonText(r)}`,
+      `🚩 ${reportName(r)} (${AM.theme(r.theme || 'juegos').label})`,
+      `Problema: ${reasonText(r)}`,
     ];
-    if (r.realGame) lines.push(`  Juego real: ${r.realGame}`);
-    if (r.realSong) lines.push(`  Canción real: ${r.realSong}`);
-    if (r.comment) lines.push(`  Comentario: ${r.comment}`);
-    if (r.link) lines.push(`  Fuente: ${r.source} ${r.link}`);
+    const real = [r.realGame, r.realSong].filter(Boolean).join(' — ');
+    if (real) lines.push(`Era: ${real}`);
+    if (r.comment) lines.push(`Comentario: ${r.comment}`);
+    lines.push(`Pista: ${r.trackId}${r.link ? ' ' + r.link : ''}`);
     return lines.join('\n');
   }
 
-  function submitReport(send) {
+  // En el celular (y en compus que lo permiten) se comparte con el menú del sistema; si no, se copia.
+  const canShare = typeof navigator.share === 'function';
+  const SHARE = canShare
+    ? { icon: '💬', label: 'Compartir', hint: 'Por WhatsApp, mensaje o correo' }
+    : { icon: '📋', label: 'Copiar texto', hint: 'Para pegarlo en un mensaje' };
+  const SENT_VIA = { github: 'Enviado por GitHub', share: 'Compartido', copy: 'Copiado' };
+
+  // Si se mandó de varias formas, el estado dice la más completa (GitHub > compartido > copiado).
+  const VIA_RANK = { copy: 1, share: 2, github: 3 };
+  function markSent(r, via) {
+    r.sent = true;
+    if (!r.via || VIA_RANK[via] >= (VIA_RANK[r.via] || 0)) r.via = via;
+    Reports.save();
+    if ($('#dlg-reports').open) renderReports();
+  }
+
+  function sendGithub(r) {
+    // window.open dentro del clic: así el navegador no lo bloquea como ventana emergente.
+    window.open(reportUrl(r), '_blank', 'noopener');
+    markSent(r, 'github');
+  }
+
+  /** Copia el texto; resuelve con true si se copió (si el navegador no deja, lo muestra para copiarlo a mano). */
+  function copyReport(text, r) {
+    const done = () => {
+      if (r) markSent(r, 'copy');
+      toast(r ? 'Reporte copiado: pégalo en un mensaje.' : 'Reportes copiados: pégalos en un mensaje.');
+      return true;
+    };
+    const ask = () => { window.prompt('Copia el texto:', text); return false; };
+    if (navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(text).then(done, ask);
+    return Promise.resolve(ask());
+  }
+
+  /** Comparte un reporte; resuelve con cómo se mandó ('share' o 'copy') o null si no se mandó. */
+  function shareReport(r) {
+    const text = reportText(r);
+    const copy = () => copyReport(text, r).then((ok) => (ok ? 'copy' : null));
+    if (!canShare) return copy();
+    return navigator.share({ title: 'Reporte de ¿Qué suena?', text: text }).then(
+      () => { markSent(r, 'share'); return 'share'; },
+      (e) => (e && e.name === 'AbortError' ? null : copy())
+    );
+  }
+
+  let lastReport = null; // el que se acaba de guardar (paso 2)
+
+  function saveReport() {
     if (!reportCtx) return;
+    const reason = selectedReason();
+    if (!reason) return;
     const t = reportCtx.track;
     const m = reportCtx.meta || {};
+    const value = (field, input) => ($(field).hidden ? '' : $(input).value.trim()); // solo lo que se preguntó
     const r = {
       id: 'r' + Date.now().toString(36),
       date: new Date().toISOString(),
       trackId: t.id,
       theme: t.theme || 'juegos',
       game: t.game,
+      franchise: t.franchise,
       title: m.trackName || t.title,
+      artwork: m.artwork || '',
       source: m.source || '',
       link: m.link || '',
-      reason: selectedReason(),
-      realGame: $('#report-real-game').value.trim(),
-      realSong: $('#report-real-song').value.trim(),
+      reason: reason,
+      realGame: value('#field-real-game', '#report-real-game'),
+      realSong: value('#field-real-song', '#report-real-song'),
       comment: $('#report-comment').value.trim(),
       hidden: $('#report-hide').checked,
-      sent: !!send,
+      sent: false,
     };
-    // window.open dentro del clic: así el navegador no lo bloquea como ventana emergente.
-    if (send) window.open(reportUrl(r), '_blank', 'noopener');
     Reports.list.unshift(r);
     Reports.save();
     if (r.hidden) {
       History.hide(r.trackId);
       if (game && game.queue) game.queue = game.queue.filter((x) => x.id !== r.trackId);
     }
-    $('#dlg-report').close();
-    toast(send
-      ? '¡Gracias! Termina de enviarlo en la pestaña de GitHub que se abrió.'
-      : 'Reporte guardado. Puedes enviarlo después desde "Mis reportes".', 4500);
+    lastReport = r;
+    $('#report-done-text').textContent = r.hidden
+      ? 'Ya no te va a salir esta canción. Para que se corrija, mándalo:'
+      : 'Para que se corrija, mándalo:';
+    $('#report-github-hint').textContent = 'Se abre ya escrito; necesitas cuenta';
+    $('#report-share-icon').textContent = SHARE.icon;
+    $('#report-share-label').textContent = SHARE.label;
+    $('#report-share-hint').textContent = SHARE.hint;
+    $$('.send-option', $('#report-step-done')).forEach((b) => b.classList.remove('is-done'));
+    showReportStep('done');
+    $('#report-done-title').focus();
+    sfx('click');
     if ($('#screen-home').classList.contains('is-active')) updatePoolInfo();
   }
 
   $('#report-form').addEventListener('change', updateReportFields);
-  $('#report-form').addEventListener('submit', (e) => { e.preventDefault(); submitReport(true); });
+  $('#report-form').addEventListener('submit', (e) => { e.preventDefault(); saveReport(); });
   $('#report-form').addEventListener('keydown', (e) => {
-    // Enter en un campo de texto no debe enviar el reporte por accidente.
-    if (e.key === 'Enter' && e.target.tagName === 'INPUT') e.preventDefault();
+    // Enter en un campo de texto no guarda el reporte por accidente.
+    if (e.key === 'Enter' && e.target.tagName === 'INPUT' && e.target.type === 'text') e.preventDefault();
   });
-  $('#btn-report-save').addEventListener('click', () => submitReport(false));
+  $('#btn-report-github').addEventListener('click', (e) => {
+    if (!lastReport) return;
+    sendGithub(lastReport);
+    e.currentTarget.classList.add('is-done');
+    $('#report-github-hint').textContent = 'Se abrió en otra pestaña para que lo confirmes';
+  });
+  $('#btn-report-share').addEventListener('click', (e) => {
+    if (!lastReport) return;
+    const btn = e.currentTarget;
+    shareReport(lastReport).then((via) => {
+      if (!via) return;
+      btn.classList.add('is-done');
+      $('#report-share-hint').textContent = via === 'share' ? '¡Listo, compartido!' : 'Copiado: pégalo en un mensaje';
+    });
+  });
+  $('#btn-report-close').addEventListener('click', () => $('#dlg-report').close());
 
   /* Mis reportes */
 
+  function fmtDate(iso) {
+    const d = new Date(iso);
+    return isNaN(d) ? '' : d.toLocaleString('es-MX', { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' });
+  }
+
   function renderReports() {
     const list = $('#reports-list');
+    const hiddenSet = new Set(History.hidden);
     if (!Reports.list.length) {
-      list.innerHTML = '<li class="empty">Todavía no has reportado ninguna canción.</li>';
+      list.innerHTML = `
+        <li class="rep-empty">
+          <span class="rep-empty-icon" aria-hidden="true">🎧</span>
+          <p><b>Todavía no reportas ninguna canción.</b><br>
+          Si una suena mal, toca <b>🚩 Reportar canción</b> cuando se revele la respuesta.</p>
+        </li>`;
     } else {
       list.innerHTML = Reports.list.map((r, i) => {
-        const extra = [
-          esc(reasonText(r)),
-          r.realGame ? `era de: ${esc(r.realGame)}` : '',
-          r.realSong ? `canción: «${esc(r.realSong)}»` : '',
-        ].filter(Boolean).join(' · ');
+        const T = AM.theme(r.theme || 'juegos');
+        const real = [r.realGame, r.realSong].filter(Boolean).join(' — ');
+        const status = r.sent
+          ? `<span class="chip-status is-sent">${SENT_VIA[r.via] || 'Enviado'}</span>`
+          : '<span class="chip-status is-pending">Sin enviar</span>';
+        const art = r.artwork
+          ? `<img class="rep-art" src="${esc(r.artwork)}" alt="" referrerpolicy="no-referrer">`
+          : `<span class="rep-art rep-art-icon" aria-hidden="true">${T.icon}</span>`;
         return `
-          <li>
-            <div class="r-main"><strong>${esc(r.game)}</strong> — ${esc(r.title)}<br><span class="muted">${extra}</span></div>
-            <div class="r-side">
-              ${r.sent ? '<span class="tag-ok">Enviado</span>' : ''}
-              <button type="button" class="btn-link" data-send="${i}">${r.sent ? 'Reenviar' : 'Enviar ↗'}</button>
+          <li class="rep">
+            <div class="rep-top">
+              ${art}
+              <div class="rep-title">
+                <p class="rep-name">${esc(r.game)}</p>
+                <p class="rep-line">${esc(reportLine(r))}</p>
+              </div>
+              ${status}
+            </div>
+            <div class="rep-info">
+              <p class="rep-reason"><span aria-hidden="true">${REASON_ICONS[r.reason] || '🚩'}</span> ${esc(reasonText(r))}</p>
+              ${real ? `<p class="rep-real">Era: <b>${esc(real)}</b></p>` : ''}
+              ${r.comment ? `<p class="rep-comment">“${esc(r.comment)}”</p>` : ''}
+              <p class="rep-meta">
+                <span>${esc(T.label)}, ${fmtDate(r.date)}</span>
+                ${hiddenSet.has(r.trackId) ? `<span class="rep-hidden">Ya no te sale <button type="button" class="btn-link" data-act="unhide" data-i="${i}">Volver a ponerla</button></span>` : ''}
+              </p>
+            </div>
+            <div class="rep-actions">
+              <button type="button" class="rep-btn" data-act="github" data-i="${i}">📮 ${r.via === 'github' ? 'Enviar otra vez' : 'Enviar por GitHub'}</button>
+              <button type="button" class="rep-btn" data-act="share" data-i="${i}">${SHARE.icon} ${SHARE.label}</button>
+              <button type="button" class="rep-btn rep-del" data-act="delete" data-i="${i}">Borrar</button>
             </div>
           </li>`;
       }).join('');
     }
     const hidden = History.hidden.length;
-    $('#btn-reports-unhide').textContent = `👁 Volver a mostrar pistas ocultas (${hidden})`;
-    $('#btn-reports-unhide').disabled = !hidden;
-    $('#btn-reports-copy').disabled = !Reports.list.length;
+    const unhide = $('#btn-reports-unhide');
+    unhide.hidden = !hidden;
+    unhide.textContent = hidden === 1 ? '👁 Volver a poner la pista oculta' : `👁 Volver a poner las ${hidden} pistas ocultas`;
+    $('#btn-reports-copy').hidden = !Reports.list.length;
     $('#btn-reports-clear').hidden = !Reports.list.length;
+    $('#reports-foot').hidden = !Reports.list.length && !hidden;
   }
 
   $('#btn-my-reports').addEventListener('click', () => { renderReports(); openDialog($('#dlg-reports')); });
   $('#reports-list').addEventListener('click', (e) => {
-    const btn = e.target.closest('[data-send]');
+    const btn = e.target.closest('[data-act]');
     if (!btn) return;
-    const r = Reports.list[Number(btn.dataset.send)];
+    const i = Number(btn.dataset.i);
+    const r = Reports.list[i];
     if (!r) return;
-    window.open(reportUrl(r), '_blank', 'noopener');
-    r.sent = true;
-    Reports.save();
-    renderReports();
+    const act = btn.dataset.act;
+    if (act === 'github') {
+      sendGithub(r);
+      renderReports();
+    } else if (act === 'share') {
+      shareReport(r).then((via) => { if (via) renderReports(); });
+    } else if (act === 'unhide') {
+      History.unhide(r.trackId);
+      renderReports();
+      updatePoolInfo();
+      toast(`«${r.game}» vuelve a estar en juego.`);
+    } else if (act === 'delete') {
+      // Primero pide confirmar en el mismo botón; el segundo toque lo borra.
+      if (!btn.classList.contains('is-confirm')) {
+        btn.classList.add('is-confirm');
+        btn.textContent = '¿Borrar?';
+        setTimeout(() => { if (btn.isConnected) { btn.classList.remove('is-confirm'); btn.textContent = 'Borrar'; } }, 3000);
+        return;
+      }
+      Reports.list.splice(i, 1);
+      Reports.save();
+      renderReports();
+      toast('Reporte borrado.');
+    }
   });
   $('#btn-reports-copy').addEventListener('click', () => {
-    const text = ['Reportes del Adivinador musical'].concat(Reports.list.map(reportText)).join('\n');
-    navigator.clipboard.writeText(text).then(
-      () => toast('Reportes copiados.'),
-      () => window.prompt('Copia tus reportes:', text)
-    );
+    const text = ['Reportes de ¿Qué suena? (Adivinador musical)'].concat(Reports.list.map(reportText)).join('\n\n');
+    copyReport(text, null);
   });
   $('#btn-reports-unhide').addEventListener('click', () => {
     History.unhideAll();
@@ -1767,7 +1991,7 @@
     toast('Las pistas ocultas vuelven a estar en juego.');
   });
   $('#btn-reports-clear').addEventListener('click', () => {
-    if (!window.confirm('¿Borrar la lista de reportes? (Las pistas ocultas siguen ocultas.)')) return;
+    if (!window.confirm('¿Borrar todos tus reportes? (Las pistas ocultas siguen ocultas.)')) return;
     Reports.list = [];
     Reports.save();
     renderReports();
