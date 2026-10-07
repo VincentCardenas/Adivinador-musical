@@ -1,0 +1,11 @@
+const r = require('./audit-sources-report.json');
+const det = r.anime.detalle;
+const originales = Object.entries(det).filter(([id]) => !id.startsWith('ani-'));
+const nuevas = Object.entries(det).filter(([id]) => id.startsWith('ani-'));
+const cuenta = (arr) => arr.reduce((a, [, v]) => { a[v.estado] = (a[v.estado] || 0) + 1; return a; }, {});
+console.log('Originales:', originales.length, cuenta(originales));
+console.log('Nuevas    :', nuevas.length, cuenta(nuevas));
+console.log('\nOriginales NO ok:');
+originales.filter(([, v]) => v.estado !== 'ok').forEach(([id, v]) => console.log(' -', id, v.estado, JSON.stringify(v.fuentes.filter((f) => f.ok).map((f) => (f.titulo || '') + ' / ' + (f.artista || '')))));
+console.log('\nMuestra de nuevas sospechosas:');
+nuevas.filter(([, v]) => v.estado === 'sospechosa').slice(0, 6).forEach(([id, v]) => console.log(' -', id, JSON.stringify(v.fuentes.filter((f) => f.ok).map((f) => (f.titulo || '') + ' / ' + (f.artista || '')))));

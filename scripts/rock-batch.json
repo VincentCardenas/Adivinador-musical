@@ -1,0 +1,502 @@
+[
+  {
+    "id": "song-johnny-b-goode",
+    "cat": "song-rock",
+    "franchise": "Chuck Berry",
+    "game": "Johnny B. Goode",
+    "title": "Johnny B. Goode",
+    "year": 1958,
+    "lang": "en",
+    "sources": "busca('Chuck Berry', 'Johnny B. Goode')"
+  },
+  {
+    "id": "song-come-together",
+    "cat": "song-rock",
+    "franchise": "The Beatles",
+    "game": "Come Together",
+    "title": "Come Together",
+    "year": 1969,
+    "lang": "en",
+    "sources": "busca('The Beatles', 'Come Together')"
+  },
+  {
+    "id": "song-have-you-ever-seen-the-rain",
+    "cat": "song-rock",
+    "franchise": "Creedence Clearwater Revival",
+    "game": "Have You Ever Seen the Rain?",
+    "title": "Have You Ever Seen the Rain?",
+    "year": 1970,
+    "lang": "en",
+    "sources": "busca('Creedence Clearwater Revival', 'Have You Ever Seen the Rain?')"
+  },
+  {
+    "id": "song-smoke-on-the-water",
+    "cat": "song-rock",
+    "franchise": "Deep Purple",
+    "game": "Smoke on the Water",
+    "title": "Smoke on the Water",
+    "year": 1972,
+    "lang": "en",
+    "sources": "busca('Deep Purple', 'Smoke on the Water')"
+  },
+  {
+    "id": "song-dream-on",
+    "cat": "song-rock",
+    "franchise": "Aerosmith",
+    "game": "Dream On",
+    "title": "Dream On",
+    "year": 1973,
+    "lang": "en",
+    "sources": "busca('Aerosmith', 'Dream On')"
+  },
+  {
+    "id": "song-we-will-rock-you",
+    "cat": "song-rock",
+    "franchise": "Queen",
+    "game": "We Will Rock You",
+    "title": "We Will Rock You",
+    "year": 1977,
+    "lang": "en",
+    "sources": "busca('Queen', 'We Will Rock You')"
+  },
+  {
+    "id": "song-we-are-the-champions",
+    "cat": "song-rock",
+    "franchise": "Queen",
+    "game": "We Are the Champions",
+    "title": "We Are the Champions",
+    "year": 1977,
+    "lang": "en",
+    "sources": "busca('Queen', 'We Are the Champions')"
+  },
+  {
+    "id": "song-another-brick-in-the-wall-pt-2",
+    "cat": "song-rock",
+    "franchise": "Pink Floyd",
+    "game": "Another Brick in the Wall, Pt. 2",
+    "title": "Another Brick in the Wall, Pt. 2",
+    "year": 1979,
+    "lang": "en",
+    "sources": "busca('Pink Floyd', 'Another Brick in the Wall, Pt. 2')"
+  },
+  {
+    "id": "song-i-love-rock-n-roll",
+    "cat": "song-rock",
+    "franchise": "Joan Jett & the Blackhearts",
+    "game": "I Love Rock 'n Roll",
+    "title": "I Love Rock 'n Roll",
+    "year": 1981,
+    "lang": "en",
+    "sources": "busca('Joan Jett & the Blackhearts', 'I Love Rock \\'n Roll')"
+  },
+  {
+    "id": "song-should-i-stay-or-should-i-go",
+    "cat": "song-rock",
+    "franchise": "The Clash",
+    "game": "Should I Stay or Should I Go",
+    "title": "Should I Stay or Should I Go",
+    "year": 1982,
+    "lang": "en",
+    "sources": "busca('The Clash', 'Should I Stay or Should I Go')"
+  },
+  {
+    "id": "song-jump-van-halen",
+    "cat": "song-rock",
+    "franchise": "Van Halen",
+    "game": "Jump",
+    "title": "Jump",
+    "year": 1984,
+    "lang": "en",
+    "sources": "busca('Van Halen', 'Jump')"
+  },
+  {
+    "id": "song-demoliendo-hoteles",
+    "cat": "song-rock",
+    "franchise": "Charly García",
+    "game": "Demoliendo hoteles",
+    "title": "Demoliendo hoteles",
+    "year": 1984,
+    "lang": "es",
+    "sources": "busca('Charly García', 'Demoliendo hoteles')"
+  },
+  {
+    "id": "song-tratame-suavemente",
+    "cat": "song-rock",
+    "franchise": "Soda Stereo",
+    "game": "Trátame suavemente",
+    "title": "Trátame suavemente",
+    "year": 1984,
+    "lang": "es",
+    "sources": "busca('Soda Stereo', 'Trátame suavemente')"
+  },
+  {
+    "id": "song-triste-cancion",
+    "cat": "song-rock",
+    "franchise": "El Tri",
+    "game": "Triste canción",
+    "title": "Triste canción",
+    "year": 1984,
+    "lang": "es",
+    "sources": "busca('El Tri', 'Triste canción')"
+  },
+  {
+    "id": "song-cuando-pase-el-temblor",
+    "cat": "song-rock",
+    "franchise": "Soda Stereo",
+    "game": "Cuando pase el temblor",
+    "title": "Cuando pase el temblor",
+    "year": 1985,
+    "lang": "es",
+    "sources": "busca('Soda Stereo', 'Cuando pase el temblor')"
+  },
+  {
+    "id": "song-you-give-love-a-bad-name",
+    "cat": "song-rock",
+    "franchise": "Bon Jovi",
+    "game": "You Give Love a Bad Name",
+    "title": "You Give Love a Bad Name",
+    "year": 1986,
+    "lang": "en",
+    "sources": "busca('Bon Jovi', 'You Give Love a Bad Name')"
+  },
+  {
+    "id": "song-welcome-to-the-jungle",
+    "cat": "song-rock",
+    "franchise": "Guns N' Roses",
+    "game": "Welcome to the Jungle",
+    "title": "Welcome to the Jungle",
+    "year": 1987,
+    "lang": "en",
+    "sources": "busca('Guns N\\' Roses', 'Welcome to the Jungle')"
+  },
+  {
+    "id": "song-paradise-city",
+    "cat": "song-rock",
+    "franchise": "Guns N' Roses",
+    "game": "Paradise City",
+    "title": "Paradise City",
+    "year": 1987,
+    "lang": "en",
+    "sources": "busca('Guns N\\' Roses', 'Paradise City')"
+  },
+  {
+    "id": "song-guitarras-blancas",
+    "cat": "song-rock",
+    "franchise": "Los Enanitos Verdes",
+    "game": "Guitarras blancas",
+    "title": "Guitarras blancas",
+    "year": 1988,
+    "lang": "es",
+    "sources": "busca('Los Enanitos Verdes', 'Guitarras blancas')"
+  },
+  {
+    "id": "song-maldito-duende",
+    "cat": "song-rock",
+    "franchise": "Héroes del Silencio",
+    "game": "Maldito duende",
+    "title": "Maldito duende",
+    "year": 1990,
+    "lang": "es",
+    "sources": "busca('Héroes del Silencio', 'Maldito duende')"
+  },
+  {
+    "id": "song-tren-al-sur",
+    "cat": "song-rock",
+    "franchise": "Los Prisioneros",
+    "game": "Tren al sur",
+    "title": "Tren al sur",
+    "year": 1990,
+    "lang": "es",
+    "sources": "busca('Los Prisioneros', 'Tren al sur')"
+  },
+  {
+    "id": "song-under-the-bridge",
+    "cat": "song-rock",
+    "franchise": "Red Hot Chili Peppers",
+    "game": "Under the Bridge",
+    "title": "Under the Bridge",
+    "year": 1991,
+    "lang": "en",
+    "sources": "busca('Red Hot Chili Peppers', 'Under the Bridge')"
+  },
+  {
+    "id": "song-alive-pearl-jam",
+    "cat": "song-rock",
+    "franchise": "Pearl Jam",
+    "game": "Alive",
+    "title": "Alive",
+    "year": 1991,
+    "lang": "en",
+    "sources": "busca('Pearl Jam', 'Alive')"
+  },
+  {
+    "id": "song-come-as-you-are",
+    "cat": "song-rock",
+    "franchise": "Nirvana",
+    "game": "Come as You Are",
+    "title": "Come as You Are",
+    "year": 1991,
+    "lang": "en",
+    "sources": "busca('Nirvana', 'Come as You Are')"
+  },
+  {
+    "id": "song-no-dejes-que",
+    "cat": "song-rock",
+    "franchise": "Caifanes",
+    "game": "No dejes que...",
+    "title": "No dejes que...",
+    "year": 1992,
+    "lang": "es",
+    "sources": "busca('Caifanes', 'No dejes que...')"
+  },
+  {
+    "id": "song-el-amor-despues-del-amor",
+    "cat": "song-rock",
+    "franchise": "Fito Páez",
+    "game": "El amor después del amor",
+    "title": "El amor después del amor",
+    "year": 1992,
+    "lang": "es",
+    "sources": "busca('Fito Páez', 'El amor después del amor')"
+  },
+  {
+    "id": "song-linger",
+    "cat": "song-rock",
+    "franchise": "The Cranberries",
+    "game": "Linger",
+    "title": "Linger",
+    "year": 1993,
+    "lang": "en",
+    "sources": "busca('The Cranberries', 'Linger')"
+  },
+  {
+    "id": "song-afuera",
+    "cat": "song-rock",
+    "franchise": "Caifanes",
+    "game": "Afuera",
+    "title": "Afuera",
+    "year": 1994,
+    "lang": "es",
+    "sources": "busca('Caifanes', 'Afuera')"
+  },
+  {
+    "id": "song-la-ingrata",
+    "cat": "song-rock",
+    "franchise": "Café Tacvba",
+    "game": "La ingrata",
+    "title": "La ingrata",
+    "year": 1994,
+    "lang": "es",
+    "sources": "busca('Café Tacvba', 'La ingrata')"
+  },
+  {
+    "id": "song-el-baile-y-el-salon",
+    "cat": "song-rock",
+    "franchise": "Café Tacvba",
+    "game": "El baile y el salón",
+    "title": "El baile y el salón",
+    "year": 1994,
+    "lang": "es",
+    "sources": "busca('Café Tacvba', 'El baile y el salón')"
+  },
+  {
+    "id": "song-las-piedras-rodantes",
+    "cat": "song-rock",
+    "franchise": "El Tri",
+    "game": "Las piedras rodantes",
+    "title": "Las piedras rodantes",
+    "year": 1994,
+    "lang": "es",
+    "sources": "busca('El Tri', 'Las piedras rodantes')"
+  },
+  {
+    "id": "song-basket-case",
+    "cat": "song-rock",
+    "franchise": "Green Day",
+    "game": "Basket Case",
+    "title": "Basket Case",
+    "year": 1994,
+    "lang": "en",
+    "sources": "busca('Green Day', 'Basket Case')"
+  },
+  {
+    "id": "song-la-chispa-adecuada",
+    "cat": "song-rock",
+    "franchise": "Héroes del Silencio",
+    "game": "La chispa adecuada",
+    "title": "La chispa adecuada",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('Héroes del Silencio', 'La chispa adecuada')"
+  },
+  {
+    "id": "song-don-t-look-back-in-anger",
+    "cat": "song-rock",
+    "franchise": "Oasis",
+    "game": "Don't Look Back in Anger",
+    "title": "Don't Look Back in Anger",
+    "year": 1995,
+    "lang": "en",
+    "sources": "busca('Oasis', 'Don\\'t Look Back in Anger')"
+  },
+  {
+    "id": "song-song-2",
+    "cat": "song-rock",
+    "franchise": "Blur",
+    "game": "Song 2",
+    "title": "Song 2",
+    "year": 1997,
+    "lang": "en",
+    "sources": "busca('Blur', 'Song 2')"
+  },
+  {
+    "id": "song-gimme-the-power",
+    "cat": "song-rock",
+    "franchise": "Molotov",
+    "game": "Gimme the Power",
+    "title": "Gimme the Power",
+    "year": 1997,
+    "lang": "es",
+    "sources": "busca('Molotov', 'Gimme the Power')"
+  },
+  {
+    "id": "song-californication",
+    "cat": "song-rock",
+    "franchise": "Red Hot Chili Peppers",
+    "game": "Californication",
+    "title": "Californication",
+    "year": 1999,
+    "lang": "en",
+    "sources": "busca('Red Hot Chili Peppers', 'Californication')"
+  },
+  {
+    "id": "song-luz-de-dia",
+    "cat": "song-rock",
+    "franchise": "Los Enanitos Verdes",
+    "game": "Luz de día",
+    "title": "Luz de día",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Los Enanitos Verdes', 'Luz de día')"
+  },
+  {
+    "id": "song-it-s-my-life-bon-jovi",
+    "cat": "song-rock",
+    "franchise": "Bon Jovi",
+    "game": "It's My Life",
+    "title": "It's My Life",
+    "year": 2000,
+    "lang": "en",
+    "sources": "busca('Bon Jovi', 'It\\'s My Life')"
+  },
+  {
+    "id": "song-clocks-coldplay",
+    "cat": "song-rock",
+    "franchise": "Coldplay",
+    "game": "Clocks",
+    "title": "Clocks",
+    "year": 2002,
+    "lang": "en",
+    "sources": "busca('Coldplay', 'Clocks')"
+  },
+  {
+    "id": "song-american-idiot",
+    "cat": "song-rock",
+    "franchise": "Green Day",
+    "game": "American Idiot",
+    "title": "American Idiot",
+    "year": 2004,
+    "lang": "en",
+    "sources": "busca('Green Day', 'American Idiot')"
+  },
+  {
+    "id": "song-somebody-told-me",
+    "cat": "song-rock",
+    "franchise": "The Killers",
+    "game": "Somebody Told Me",
+    "title": "Somebody Told Me",
+    "year": 2004,
+    "lang": "en",
+    "sources": "busca('The Killers', 'Somebody Told Me')"
+  },
+  {
+    "id": "song-the-pretender",
+    "cat": "song-rock",
+    "franchise": "Foo Fighters",
+    "game": "The Pretender",
+    "title": "The Pretender",
+    "year": 2007,
+    "lang": "en",
+    "sources": "busca('Foo Fighters', 'The Pretender')"
+  },
+  {
+    "id": "song-uprising-muse",
+    "cat": "song-rock",
+    "franchise": "Muse",
+    "game": "Uprising",
+    "title": "Uprising",
+    "year": 2009,
+    "lang": "en",
+    "sources": "busca('Muse', 'Uprising')"
+  },
+  {
+    "id": "song-beggin-maneskin",
+    "cat": "song-rock",
+    "franchise": "Måneskin",
+    "game": "Beggin'",
+    "title": "Beggin'",
+    "year": 2017,
+    "lang": "en",
+    "sources": "busca('Måneskin', 'Beggin\\'')"
+  },
+  {
+    "id": "song-black-hole-sun",
+    "cat": "song-rock",
+    "franchise": "Soundgarden",
+    "game": "Black Hole Sun",
+    "title": "Black Hole Sun",
+    "year": 1994,
+    "lang": "en",
+    "sources": "busca('Soundgarden', 'Black Hole Sun')"
+  },
+  {
+    "id": "song-learn-to-fly",
+    "cat": "song-rock",
+    "franchise": "Foo Fighters",
+    "game": "Learn to Fly",
+    "title": "Learn to Fly",
+    "year": 1999,
+    "lang": "en",
+    "sources": "busca('Foo Fighters', 'Learn to Fly')"
+  },
+  {
+    "id": "song-sex-on-fire",
+    "cat": "song-rock",
+    "franchise": "Kings of Leon",
+    "game": "Sex on Fire",
+    "title": "Sex on Fire",
+    "year": 2008,
+    "lang": "en",
+    "sources": "busca('Kings of Leon', 'Sex on Fire')"
+  },
+  {
+    "id": "song-do-i-wanna-know",
+    "cat": "song-rock",
+    "franchise": "Arctic Monkeys",
+    "game": "Do I Wanna Know?",
+    "title": "Do I Wanna Know?",
+    "year": 2013,
+    "lang": "en",
+    "sources": "busca('Arctic Monkeys', 'Do I Wanna Know?')"
+  },
+  {
+    "id": "song-believer-imagine-dragons",
+    "cat": "song-rock",
+    "franchise": "Imagine Dragons",
+    "game": "Believer",
+    "title": "Believer",
+    "year": 2017,
+    "lang": "en",
+    "sources": "busca('Imagine Dragons', 'Believer')"
+  }
+]

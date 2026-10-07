@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "song-nada-personal",
+    "cat": "song-rock",
+    "franchise": "Soda Stereo",
+    "game": "Nada personal",
+    "title": "Nada personal",
+    "year": 1985,
+    "lang": "es",
+    "sources": "busca('Soda Stereo', 'Nada personal')"
+  },
+  {
+    "id": "song-profugos",
+    "cat": "song-rock",
+    "franchise": "Soda Stereo",
+    "game": "Prófugos",
+    "title": "Prófugos",
+    "year": 1986,
+    "lang": "es",
+    "sources": "busca('Soda Stereo', 'Prófugos')"
+  },
+  {
+    "id": "song-signos",
+    "cat": "song-rock",
+    "franchise": "Soda Stereo",
+    "game": "Signos",
+    "title": "Signos",
+    "year": 1986,
+    "lang": "es",
+    "sources": "busca('Soda Stereo', 'Signos')"
+  },
+  {
+    "id": "song-en-remolinos",
+    "cat": "song-rock",
+    "franchise": "Soda Stereo",
+    "game": "En remolinos",
+    "title": "En remolinos",
+    "year": 1992,
+    "lang": "es",
+    "sources": "busca('Soda Stereo', 'En remolinos')"
+  },
+  {
+    "id": "song-juegos-de-seduccion",
+    "cat": "song-rock",
+    "franchise": "Soda Stereo",
+    "game": "Juegos de seducción",
+    "title": "Juegos de seducción",
+    "year": 1985,
+    "lang": "es",
+    "sources": "busca('Soda Stereo', 'Juegos de seducción')"
+  },
+  {
+    "id": "song-zoom-soda",
+    "cat": "song-rock",
+    "franchise": "Soda Stereo",
+    "game": "Zoom",
+    "title": "Zoom",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('Soda Stereo', 'Zoom')"
+  },
+  {
+    "id": "song-primavera-0",
+    "cat": "song-rock",
+    "franchise": "Soda Stereo",
+    "game": "Primavera 0",
+    "title": "Primavera 0",
+    "year": 1992,
+    "lang": "es",
+    "sources": "busca('Soda Stereo', 'Primavera 0')"
+  },
+  {
+    "id": "song-ella-uso-mi-cabeza",
+    "cat": "song-rock",
+    "franchise": "Soda Stereo",
+    "game": "Ella usó mi cabeza como un revólver",
+    "title": "Ella usó mi cabeza como un revólver",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('Soda Stereo', 'Ella usó mi cabeza como un revólver')"
+  },
+  {
+    "id": "song-crimen-cerati",
+    "cat": "song-rock",
+    "franchise": "Gustavo Cerati",
+    "game": "Crimen",
+    "title": "Crimen",
+    "year": 2006,
+    "lang": "es",
+    "sources": "busca('Gustavo Cerati', 'Crimen')"
+  },
+  {
+    "id": "song-puente-cerati",
+    "cat": "song-rock",
+    "franchise": "Gustavo Cerati",
+    "game": "Puente",
+    "title": "Puente",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Gustavo Cerati', 'Puente')"
+  },
+  {
+    "id": "song-adios-cerati",
+    "cat": "song-rock",
+    "franchise": "Gustavo Cerati",
+    "game": "Adiós",
+    "title": "Adiós",
+    "year": 2006,
+    "lang": "es",
+    "sources": "busca('Gustavo Cerati', 'Adiós')"
+  },
+  {
+    "id": "song-deja-vu-cerati",
+    "cat": "song-rock",
+    "franchise": "Gustavo Cerati",
+    "game": "Déjà vu",
+    "title": "Déjà vu",
+    "year": 2009,
+    "lang": "es",
+    "sources": "busca('Gustavo Cerati', 'Déjà vu')"
+  },
+  {
+    "id": "song-la-celula-que-explota",
+    "cat": "song-rock",
+    "franchise": "Caifanes",
+    "game": "La célula que explota",
+    "title": "La célula que explota",
+    "year": 1990,
+    "lang": "es",
+    "sources": "busca('Caifanes', 'La célula que explota')"
+  },
+  {
+    "id": "song-viento-caifanes",
+    "cat": "song-rock",
+    "franchise": "Caifanes",
+    "game": "Viento",
+    "title": "Viento",
+    "year": 1988,
+    "lang": "es",
+    "sources": "busca('Caifanes', 'Viento')"
+  },
+  {
+    "id": "song-matenme-porque-me-muero",
+    "cat": "song-rock",
+    "franchise": "Caifanes",
+    "game": "Mátenme porque me muero",
+    "title": "Mátenme porque me muero",
+    "year": 1988,
+    "lang": "es",
+    "sources": "busca('Caifanes', 'Mátenme porque me muero')"
+  },
+  {
+    "id": "song-los-dioses-ocultos",
+    "cat": "song-rock",
+    "franchise": "Caifanes",
+    "game": "Los dioses ocultos",
+    "title": "Los dioses ocultos",
+    "year": 1990,
+    "lang": "es",
+    "sources": "busca('Caifanes', 'Los dioses ocultos')"
+  },
+  {
+    "id": "song-nubes-caifanes",
+    "cat": "song-rock",
+    "franchise": "Caifanes",
+    "game": "Nubes",
+    "title": "Nubes",
+    "year": 1992,
+    "lang": "es",
+    "sources": "busca('Caifanes', 'Nubes')"
+  },
+  {
+    "id": "song-te-lo-pido-por-favor-jaguares",
+    "cat": "song-rock",
+    "franchise": "Jaguares",
+    "game": "Te lo pido por favor",
+    "title": "Te lo pido por favor",
+    "year": 2002,
+    "lang": "es",
+    "sources": "busca('Jaguares', 'Te lo pido por favor')"
+  },
+  {
+    "id": "song-sirena-varada",
+    "cat": "song-rock",
+    "franchise": "Héroes del Silencio",
+    "game": "Sirena varada",
+    "title": "Sirena varada",
+    "year": 1993,
+    "lang": "es",
+    "sources": "busca('Héroes del Silencio', 'Sirena varada')"
+  },
+  {
+    "id": "song-heroe-de-leyenda",
+    "cat": "song-rock",
+    "franchise": "Héroes del Silencio",
+    "game": "Héroe de leyenda",
+    "title": "Héroe de leyenda",
+    "year": 1987,
+    "lang": "es",
+    "sources": "busca('Héroes del Silencio', 'Héroe de leyenda')"
+  },
+  {
+    "id": "song-mar-adentro-heroes",
+    "cat": "song-rock",
+    "franchise": "Héroes del Silencio",
+    "game": "Mar adentro",
+    "title": "Mar adentro",
+    "year": 1988,
+    "lang": "es",
+    "sources": "busca('Héroes del Silencio', 'Mar adentro')"
+  },
+  {
+    "id": "song-flor-de-loto-heroes",
+    "cat": "song-rock",
+    "franchise": "Héroes del Silencio",
+    "game": "Flor de loto",
+    "title": "Flor de loto",
+    "year": 1993,
+    "lang": "es",
+    "sources": "busca('Héroes del Silencio', 'Flor de loto')"
+  },
+  {
+    "id": "song-avalancha-heroes",
+    "cat": "song-rock",
+    "franchise": "Héroes del Silencio",
+    "game": "Avalancha",
+    "title": "Avalancha",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('Héroes del Silencio', 'Avalancha')"
+  },
+  {
+    "id": "song-lady-blue-bunbury",
+    "cat": "song-rock",
+    "franchise": "Bunbury",
+    "game": "Lady Blue",
+    "title": "Lady Blue",
+    "year": 2002,
+    "lang": "es",
+    "sources": "busca('Bunbury', 'Lady Blue')"
+  },
+  {
+    "id": "song-infinito-bunbury",
+    "cat": "song-rock",
+    "franchise": "Bunbury",
+    "game": "Infinito",
+    "title": "Infinito",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Bunbury', 'Infinito')"
+  },
+  {
+    "id": "song-frente-a-frente-bunbury",
+    "cat": "song-rock",
+    "franchise": "Bunbury",
+    "game": "Frente a frente",
+    "title": "Frente a frente",
+    "year": 2010,
+    "lang": "es",
+    "sources": "busca('Bunbury', 'Frente a frente')"
+  },
+  {
+    "id": "song-la-muralla-verde",
+    "cat": "song-rock",
+    "franchise": "Los Enanitos Verdes",
+    "game": "La muralla verde",
+    "title": "La muralla verde",
+    "year": 1986,
+    "lang": "es",
+    "sources": "busca('Los Enanitos Verdes', 'La muralla verde')"
+  },
+  {
+    "id": "song-por-el-resto",
+    "cat": "song-rock",
+    "franchise": "Los Enanitos Verdes",
+    "game": "Por el resto",
+    "title": "Por el resto",
+    "year": 1987,
+    "lang": "es",
+    "sources": "busca('Los Enanitos Verdes', 'Por el resto')"
+  },
+  {
+    "id": "song-te-vi-en-un-tren",
+    "cat": "song-rock",
+    "franchise": "Los Enanitos Verdes",
+    "game": "Te vi en un tren",
+    "title": "Te vi en un tren",
+    "year": 1987,
+    "lang": "es",
+    "sources": "busca('Los Enanitos Verdes', 'Te vi en un tren')"
+  },
+  {
+    "id": "song-cada-vez-que-te-digo-adios",
+    "cat": "song-rock",
+    "franchise": "Los Enanitos Verdes",
+    "game": "Cada vez que te digo adiós",
+    "title": "Cada vez que te digo adiós",
+    "year": 1986,
+    "lang": "es",
+    "sources": "busca('Los Enanitos Verdes', 'Cada vez que te digo adiós')"
+  },
+  {
+    "id": "song-vasos-vacios",
+    "cat": "song-rock",
+    "franchise": "Los Fabulosos Cadillacs",
+    "game": "Vasos vacíos",
+    "title": "Vasos vacíos",
+    "year": 1988,
+    "lang": "es",
+    "sources": "busca('Los Fabulosos Cadillacs', 'Vasos vacíos')"
+  },
+  {
+    "id": "song-siguiendo-la-luna",
+    "cat": "song-rock",
+    "franchise": "Los Fabulosos Cadillacs",
+    "game": "Siguiendo la luna",
+    "title": "Siguiendo la luna",
+    "year": 1992,
+    "lang": "es",
+    "sources": "busca('Los Fabulosos Cadillacs', 'Siguiendo la luna')"
+  },
+  {
+    "id": "song-mal-bicho",
+    "cat": "song-rock",
+    "franchise": "Los Fabulosos Cadillacs",
+    "game": "Mal bicho",
+    "title": "Mal bicho",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('Los Fabulosos Cadillacs', 'Mal bicho')"
+  },
+  {
+    "id": "song-calaveras-y-diablitos",
+    "cat": "song-rock",
+    "franchise": "Los Fabulosos Cadillacs",
+    "game": "Calaveras y diablitos",
+    "title": "Calaveras y diablitos",
+    "year": 1997,
+    "lang": "es",
+    "sources": "busca('Los Fabulosos Cadillacs', 'Calaveras y diablitos')"
+  },
+  {
+    "id": "song-manuel-santillan",
+    "cat": "song-rock",
+    "franchise": "Los Fabulosos Cadillacs",
+    "game": "Manuel Santillán, El León",
+    "title": "Manuel Santillán, El León",
+    "year": 1992,
+    "lang": "es",
+    "sources": "busca('Los Fabulosos Cadillacs', 'Manuel Santillán, El León')"
+  },
+  {
+    "id": "song-la-guitarra-decadentes",
+    "cat": "song-rock",
+    "franchise": "Los Auténticos Decadentes",
+    "game": "La guitarra",
+    "title": "La guitarra",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('Los Auténticos Decadentes', 'La guitarra')"
+  },
+  {
+    "id": "song-loco-tu-forma-de-ser",
+    "cat": "song-rock",
+    "franchise": "Los Auténticos Decadentes",
+    "game": "Loco (tu forma de ser)",
+    "title": "Loco (tu forma de ser)",
+    "year": 1989,
+    "lang": "es",
+    "sources": "busca('Los Auténticos Decadentes', 'Loco (tu forma de ser)')"
+  },
+  {
+    "id": "song-un-osito-de-peluche",
+    "cat": "song-rock",
+    "franchise": "Los Auténticos Decadentes",
+    "game": "Un osito de peluche de Taiwán",
+    "title": "Un osito de peluche de Taiwán",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('Los Auténticos Decadentes', 'Un osito de peluche de Taiwán')"
+  },
+  {
+    "id": "song-no-me-importa-el-dinero",
+    "cat": "song-rock",
+    "franchise": "Los Auténticos Decadentes",
+    "game": "No me importa el dinero",
+    "title": "No me importa el dinero",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('Los Auténticos Decadentes', 'No me importa el dinero')"
+  },
+  {
+    "id": "song-irresponsables-babasonicos",
+    "cat": "song-rock",
+    "franchise": "Babasónicos",
+    "game": "Irresponsables",
+    "title": "Irresponsables",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('Babasónicos', 'Irresponsables')"
+  },
+  {
+    "id": "song-putita-babasonicos",
+    "cat": "song-rock",
+    "franchise": "Babasónicos",
+    "game": "Putita",
+    "title": "Putita",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('Babasónicos', 'Putita')"
+  },
+  {
+    "id": "song-el-colmo-babasonicos",
+    "cat": "song-rock",
+    "franchise": "Babasónicos",
+    "game": "El colmo",
+    "title": "El colmo",
+    "year": 2005,
+    "lang": "es",
+    "sources": "busca('Babasónicos', 'El colmo')"
+  },
+  {
+    "id": "song-mariposa-tecknicolor",
+    "cat": "song-rock",
+    "franchise": "Fito Páez",
+    "game": "Mariposa tecknicolor",
+    "title": "Mariposa tecknicolor",
+    "year": 1994,
+    "lang": "es",
+    "sources": "busca('Fito Páez', 'Mariposa tecknicolor')"
+  },
+  {
+    "id": "song-circo-beat",
+    "cat": "song-rock",
+    "franchise": "Fito Páez",
+    "game": "Circo Beat",
+    "title": "Circo Beat",
+    "year": 1994,
+    "lang": "es",
+    "sources": "busca('Fito Páez', 'Circo Beat')"
+  },
+  {
+    "id": "song-al-lado-del-camino",
+    "cat": "song-rock",
+    "franchise": "Fito Páez",
+    "game": "Al lado del camino",
+    "title": "Al lado del camino",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Fito Páez', 'Al lado del camino')"
+  },
+  {
+    "id": "song-hablando-a-tu-corazon",
+    "cat": "song-rock",
+    "franchise": "Charly García",
+    "game": "Hablando a tu corazón",
+    "title": "Hablando a tu corazón",
+    "year": 1986,
+    "lang": "es",
+    "sources": "busca('Charly García', 'Hablando a tu corazón')"
+  },
+  {
+    "id": "song-no-voy-en-tren",
+    "cat": "song-rock",
+    "franchise": "Charly García",
+    "game": "No voy en tren",
+    "title": "No voy en tren",
+    "year": 1987,
+    "lang": "es",
+    "sources": "busca('Charly García', 'No voy en tren')"
+  },
+  {
+    "id": "song-cerca-de-la-revolucion",
+    "cat": "song-rock",
+    "franchise": "Charly García",
+    "game": "Cerca de la revolución",
+    "title": "Cerca de la revolución",
+    "year": 1984,
+    "lang": "es",
+    "sources": "busca('Charly García', 'Cerca de la revolución')"
+  },
+  {
+    "id": "song-flaca-calamaro",
+    "cat": "song-rock",
+    "franchise": "Andrés Calamaro",
+    "game": "Flaca",
+    "title": "Flaca",
+    "year": 1997,
+    "lang": "es",
+    "sources": "busca('Andrés Calamaro', 'Flaca')"
+  },
+  {
+    "id": "song-mil-horas-abuelos",
+    "cat": "song-rock",
+    "franchise": "Los Abuelos de la Nada",
+    "game": "Mil horas",
+    "title": "Mil horas",
+    "year": 1983,
+    "lang": "es",
+    "sources": "busca('Los Abuelos de la Nada', 'Mil horas')"
+  },
+  {
+    "id": "song-te-quiero-igual-calamaro",
+    "cat": "song-rock",
+    "franchise": "Andrés Calamaro",
+    "game": "Te quiero igual",
+    "title": "Te quiero igual",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Andrés Calamaro', 'Te quiero igual')"
+  },
+  {
+    "id": "song-loco-calamaro",
+    "cat": "song-rock",
+    "franchise": "Andrés Calamaro",
+    "game": "Loco",
+    "title": "Loco",
+    "year": 1997,
+    "lang": "es",
+    "sources": "busca('Andrés Calamaro', 'Loco')"
+  },
+  {
+    "id": "song-sin-documentos",
+    "cat": "song-rock",
+    "franchise": "Los Rodríguez",
+    "game": "Sin documentos",
+    "title": "Sin documentos",
+    "year": 1993,
+    "lang": "es",
+    "sources": "busca('Los Rodríguez', 'Sin documentos')"
+  },
+  {
+    "id": "song-para-no-olvidar",
+    "cat": "song-rock",
+    "franchise": "Los Rodríguez",
+    "game": "Para no olvidar",
+    "title": "Para no olvidar",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('Los Rodríguez', 'Para no olvidar')"
+  },
+  {
+    "id": "song-mucho-mejor-rodriguez",
+    "cat": "song-rock",
+    "franchise": "Los Rodríguez",
+    "game": "Mucho mejor",
+    "title": "Mucho mejor",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('Los Rodríguez', 'Mucho mejor')"
+  },
+  {
+    "id": "song-estrechez-de-corazon",
+    "cat": "song-rock",
+    "franchise": "Los Prisioneros",
+    "game": "Estrechez de corazón",
+    "title": "Estrechez de corazón",
+    "year": 1990,
+    "lang": "es",
+    "sources": "busca('Los Prisioneros', 'Estrechez de corazón')"
+  },
+  {
+    "id": "song-la-voz-de-los-80",
+    "cat": "song-rock",
+    "franchise": "Los Prisioneros",
+    "game": "La voz de los '80",
+    "title": "La voz de los '80",
+    "year": 1984,
+    "lang": "es",
+    "sources": "busca('Los Prisioneros', 'La voz de los \\'80')"
+  },
+  {
+    "id": "song-sexo-prisioneros",
+    "cat": "song-rock",
+    "franchise": "Los Prisioneros",
+    "game": "Sexo",
+    "title": "Sexo",
+    "year": 1986,
+    "lang": "es",
+    "sources": "busca('Los Prisioneros', 'Sexo')"
+  },
+  {
+    "id": "song-un-amor-violento",
+    "cat": "song-rock",
+    "franchise": "Los Tres",
+    "game": "Un amor violento",
+    "title": "Un amor violento",
+    "year": 1991,
+    "lang": "es",
+    "sources": "busca('Los Tres', 'Un amor violento')"
+  },
+  {
+    "id": "song-dejate-caer",
+    "cat": "song-rock",
+    "franchise": "Los Tres",
+    "game": "Déjate caer",
+    "title": "Déjate caer",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('Los Tres', 'Déjate caer')"
+  },
+  {
+    "id": "song-llueve-sobre-la-ciudad",
+    "cat": "song-rock",
+    "franchise": "Los Bunkers",
+    "game": "Llueve sobre la ciudad",
+    "title": "Llueve sobre la ciudad",
+    "year": 2005,
+    "lang": "es",
+    "sources": "busca('Los Bunkers', 'Llueve sobre la ciudad')"
+  },
+  {
+    "id": "song-twist-and-shout",
+    "cat": "song-rock",
+    "franchise": "The Beatles",
+    "game": "Twist and Shout",
+    "title": "Twist and Shout",
+    "year": 1963,
+    "lang": "en",
+    "sources": "busca('The Beatles', 'Twist and Shout')"
+  },
+  {
+    "id": "song-a-hard-days-night",
+    "cat": "song-rock",
+    "franchise": "The Beatles",
+    "game": "A Hard Day's Night",
+    "title": "A Hard Day's Night",
+    "year": 1964,
+    "lang": "en",
+    "sources": "busca('The Beatles', 'A Hard Day\\'s Night')"
+  },
+  {
+    "id": "song-help-beatles",
+    "cat": "song-rock",
+    "franchise": "The Beatles",
+    "game": "Help!",
+    "title": "Help!",
+    "year": 1965,
+    "lang": "en",
+    "sources": "busca('The Beatles', 'Help!')"
+  },
+  {
+    "id": "song-yesterday-beatles",
+    "cat": "song-rock",
+    "franchise": "The Beatles",
+    "game": "Yesterday",
+    "title": "Yesterday",
+    "year": 1965,
+    "lang": "en",
+    "sources": "busca('The Beatles', 'Yesterday')"
+  },
+  {
+    "id": "song-paint-it-black",
+    "cat": "song-rock",
+    "franchise": "The Rolling Stones",
+    "game": "Paint It, Black",
+    "title": "Paint It, Black",
+    "year": 1966,
+    "lang": "en",
+    "sources": "busca('The Rolling Stones', 'Paint It, Black')"
+  },
+  {
+    "id": "song-sympathy-for-the-devil",
+    "cat": "song-rock",
+    "franchise": "The Rolling Stones",
+    "game": "Sympathy for the Devil",
+    "title": "Sympathy for the Devil",
+    "year": 1968,
+    "lang": "en",
+    "sources": "busca('The Rolling Stones', 'Sympathy for the Devil')"
+  },
+  {
+    "id": "song-start-me-up",
+    "cat": "song-rock",
+    "franchise": "The Rolling Stones",
+    "game": "Start Me Up",
+    "title": "Start Me Up",
+    "year": 1981,
+    "lang": "en",
+    "sources": "busca('The Rolling Stones', 'Start Me Up')"
+  },
+  {
+    "id": "song-light-my-fire",
+    "cat": "song-rock",
+    "franchise": "The Doors",
+    "game": "Light My Fire",
+    "title": "Light My Fire",
+    "year": 1967,
+    "lang": "en",
+    "sources": "busca('The Doors', 'Light My Fire')"
+  },
+  {
+    "id": "song-break-on-through",
+    "cat": "song-rock",
+    "franchise": "The Doors",
+    "game": "Break On Through (To the Other Side)",
+    "title": "Break On Through (To the Other Side)",
+    "year": 1967,
+    "lang": "en",
+    "sources": "busca('The Doors', 'Break On Through (To the Other Side)')"
+  },
+  {
+    "id": "song-purple-haze",
+    "cat": "song-rock",
+    "franchise": "Jimi Hendrix",
+    "game": "Purple Haze",
+    "title": "Purple Haze",
+    "year": 1967,
+    "lang": "en",
+    "sources": "busca('Jimi Hendrix', 'Purple Haze')"
+  },
+  {
+    "id": "song-baba-oriley",
+    "cat": "song-rock",
+    "franchise": "The Who",
+    "game": "Baba O'Riley",
+    "title": "Baba O'Riley",
+    "year": 1971,
+    "lang": "en",
+    "sources": "busca('The Who', 'Baba O\\'Riley')"
+  },
+  {
+    "id": "song-whole-lotta-love",
+    "cat": "song-rock",
+    "franchise": "Led Zeppelin",
+    "game": "Whole Lotta Love",
+    "title": "Whole Lotta Love",
+    "year": 1969,
+    "lang": "en",
+    "sources": "busca('Led Zeppelin', 'Whole Lotta Love')"
+  },
+  {
+    "id": "song-immigrant-song",
+    "cat": "song-rock",
+    "franchise": "Led Zeppelin",
+    "game": "Immigrant Song",
+    "title": "Immigrant Song",
+    "year": 1970,
+    "lang": "en",
+    "sources": "busca('Led Zeppelin', 'Immigrant Song')"
+  },
+  {
+    "id": "song-black-dog",
+    "cat": "song-rock",
+    "franchise": "Led Zeppelin",
+    "game": "Black Dog",
+    "title": "Black Dog",
+    "year": 1971,
+    "lang": "en",
+    "sources": "busca('Led Zeppelin', 'Black Dog')"
+  },
+  {
+    "id": "song-wish-you-were-here",
+    "cat": "song-rock",
+    "franchise": "Pink Floyd",
+    "game": "Wish You Were Here",
+    "title": "Wish You Were Here",
+    "year": 1975,
+    "lang": "en",
+    "sources": "busca('Pink Floyd', 'Wish You Were Here')"
+  },
+  {
+    "id": "song-money-pink-floyd",
+    "cat": "song-rock",
+    "franchise": "Pink Floyd",
+    "game": "Money",
+    "title": "Money",
+    "year": 1973,
+    "lang": "en",
+    "sources": "busca('Pink Floyd', 'Money')"
+  },
+  {
+    "id": "song-comfortably-numb",
+    "cat": "song-rock",
+    "franchise": "Pink Floyd",
+    "game": "Comfortably Numb",
+    "title": "Comfortably Numb",
+    "year": 1979,
+    "lang": "en",
+    "sources": "busca('Pink Floyd', 'Comfortably Numb')"
+  },
+  {
+    "id": "song-under-pressure",
+    "cat": "song-rock",
+    "franchise": "Queen y David Bowie",
+    "game": "Under Pressure",
+    "title": "Under Pressure",
+    "year": 1981,
+    "lang": "en",
+    "sources": "busca('Queen y David Bowie', 'Under Pressure')"
+  },
+  {
+    "id": "song-radio-ga-ga",
+    "cat": "song-rock",
+    "franchise": "Queen",
+    "game": "Radio Ga Ga",
+    "title": "Radio Ga Ga",
+    "year": 1984,
+    "lang": "en",
+    "sources": "busca('Queen', 'Radio Ga Ga')"
+  },
+  {
+    "id": "song-somebody-to-love-queen",
+    "cat": "song-rock",
+    "franchise": "Queen",
+    "game": "Somebody to Love",
+    "title": "Somebody to Love",
+    "year": 1976,
+    "lang": "en",
+    "sources": "busca('Queen', 'Somebody to Love')"
+  },
+  {
+    "id": "song-highway-to-hell",
+    "cat": "song-rock",
+    "franchise": "AC/DC",
+    "game": "Highway to Hell",
+    "title": "Highway to Hell",
+    "year": 1979,
+    "lang": "en",
+    "sources": "busca('AC/DC', 'Highway to Hell')"
+  },
+  {
+    "id": "song-thunderstruck",
+    "cat": "song-rock",
+    "franchise": "AC/DC",
+    "game": "Thunderstruck",
+    "title": "Thunderstruck",
+    "year": 1990,
+    "lang": "en",
+    "sources": "busca('AC/DC', 'Thunderstruck')"
+  },
+  {
+    "id": "song-you-shook-me-all-night-long",
+    "cat": "song-rock",
+    "franchise": "AC/DC",
+    "game": "You Shook Me All Night Long",
+    "title": "You Shook Me All Night Long",
+    "year": 1980,
+    "lang": "en",
+    "sources": "busca('AC/DC', 'You Shook Me All Night Long')"
+  },
+  {
+    "id": "song-roxanne",
+    "cat": "song-rock",
+    "franchise": "The Police",
+    "game": "Roxanne",
+    "title": "Roxanne",
+    "year": 1978,
+    "lang": "en",
+    "sources": "busca('The Police', 'Roxanne')"
+  },
+  {
+    "id": "song-message-in-a-bottle",
+    "cat": "song-rock",
+    "franchise": "The Police",
+    "game": "Message in a Bottle",
+    "title": "Message in a Bottle",
+    "year": 1979,
+    "lang": "en",
+    "sources": "busca('The Police', 'Message in a Bottle')"
+  },
+  {
+    "id": "song-sultans-of-swing",
+    "cat": "song-rock",
+    "franchise": "Dire Straits",
+    "game": "Sultans of Swing",
+    "title": "Sultans of Swing",
+    "year": 1978,
+    "lang": "en",
+    "sources": "busca('Dire Straits', 'Sultans of Swing')"
+  },
+  {
+    "id": "song-money-for-nothing",
+    "cat": "song-rock",
+    "franchise": "Dire Straits",
+    "game": "Money for Nothing",
+    "title": "Money for Nothing",
+    "year": 1985,
+    "lang": "en",
+    "sources": "busca('Dire Straits', 'Money for Nothing')"
+  },
+  {
+    "id": "song-with-or-without-you",
+    "cat": "song-rock",
+    "franchise": "U2",
+    "game": "With or Without You",
+    "title": "With or Without You",
+    "year": 1987,
+    "lang": "en",
+    "sources": "busca('U2', 'With or Without You')"
+  },
+  {
+    "id": "song-sunday-bloody-sunday",
+    "cat": "song-rock",
+    "franchise": "U2",
+    "game": "Sunday Bloody Sunday",
+    "title": "Sunday Bloody Sunday",
+    "year": 1983,
+    "lang": "en",
+    "sources": "busca('U2', 'Sunday Bloody Sunday')"
+  },
+  {
+    "id": "song-beautiful-day-u2",
+    "cat": "song-rock",
+    "franchise": "U2",
+    "game": "Beautiful Day",
+    "title": "Beautiful Day",
+    "year": 2000,
+    "lang": "en",
+    "sources": "busca('U2', 'Beautiful Day')"
+  },
+  {
+    "id": "song-shiny-happy-people",
+    "cat": "song-rock",
+    "franchise": "R.E.M.",
+    "game": "Shiny Happy People",
+    "title": "Shiny Happy People",
+    "year": 1991,
+    "lang": "en",
+    "sources": "busca('R.E.M.', 'Shiny Happy People')"
+  },
+  {
+    "id": "song-patience-gnr",
+    "cat": "song-rock",
+    "franchise": "Guns N' Roses",
+    "game": "Patience",
+    "title": "Patience",
+    "year": 1988,
+    "lang": "en",
+    "sources": "busca('Guns N\\' Roses', 'Patience')"
+  },
+  {
+    "id": "song-knockin-on-heavens-door",
+    "cat": "song-rock",
+    "franchise": "Guns N' Roses",
+    "game": "Knockin' on Heaven's Door",
+    "title": "Knockin' on Heaven's Door",
+    "year": 1991,
+    "lang": "en",
+    "sources": "busca('Guns N\\' Roses', 'Knockin\\' on Heaven\\'s Door')"
+  },
+  {
+    "id": "song-everlong",
+    "cat": "song-rock",
+    "franchise": "Foo Fighters",
+    "game": "Everlong",
+    "title": "Everlong",
+    "year": 1997,
+    "lang": "en",
+    "sources": "busca('Foo Fighters', 'Everlong')"
+  },
+  {
+    "id": "song-best-of-you",
+    "cat": "song-rock",
+    "franchise": "Foo Fighters",
+    "game": "Best of You",
+    "title": "Best of You",
+    "year": 2005,
+    "lang": "en",
+    "sources": "busca('Foo Fighters', 'Best of You')"
+  },
+  {
+    "id": "song-supermassive-black-hole",
+    "cat": "song-rock",
+    "franchise": "Muse",
+    "game": "Supermassive Black Hole",
+    "title": "Supermassive Black Hole",
+    "year": 2006,
+    "lang": "en",
+    "sources": "busca('Muse', 'Supermassive Black Hole')"
+  },
+  {
+    "id": "song-knights-of-cydonia",
+    "cat": "song-rock",
+    "franchise": "Muse",
+    "game": "Knights of Cydonia",
+    "title": "Knights of Cydonia",
+    "year": 2006,
+    "lang": "en",
+    "sources": "busca('Muse', 'Knights of Cydonia')"
+  },
+  {
+    "id": "song-i-bet-you-look-good",
+    "cat": "song-rock",
+    "franchise": "Arctic Monkeys",
+    "game": "I Bet You Look Good on the Dancefloor",
+    "title": "I Bet You Look Good on the Dancefloor",
+    "year": 2005,
+    "lang": "en",
+    "sources": "busca('Arctic Monkeys', 'I Bet You Look Good on the Dancefloor')"
+  },
+  {
+    "id": "song-505-arctic-monkeys",
+    "cat": "song-rock",
+    "franchise": "Arctic Monkeys",
+    "game": "505",
+    "title": "505",
+    "year": 2007,
+    "lang": "en",
+    "sources": "busca('Arctic Monkeys', '505')"
+  }
+]

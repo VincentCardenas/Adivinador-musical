@@ -1,0 +1,2615 @@
+{
+  "generado": "2026-10-07T23:16:00.207Z",
+  "catalogo": "caricaturas",
+  "aceptadas": [
+    {
+      "id": "toon-el-fantasma-del-espacio-tema",
+      "franchise": "El Fantasma del Espacio",
+      "title": "El Fantasma del Espacio (tema latino)",
+      "elegido": {
+        "id": "xMtO8Bm4EUY",
+        "title": "El Fantasma Del Espacio Intro Latino",
+        "seconds": 59,
+        "channel": "Héctor Ortigosa",
+        "score": 11,
+        "consulta": "El Fantasma del Espacio intro español latino"
+      }
+    },
+    {
+      "id": "toon-jonny-quest-tema",
+      "franchise": "Jonny Quest",
+      "title": "Jonny Quest (tema latino)",
+      "elegido": {
+        "id": "LfbEmbmiREc",
+        "title": "Jonny Quest Intro Latino",
+        "seconds": 91,
+        "channel": "Héctor Ortigosa",
+        "score": 11,
+        "consulta": "Jonny Quest intro español latino"
+      }
+    },
+    {
+      "id": "toon-tiro-loco-mcgraw-tema",
+      "franchise": "Tiro Loco McGraw",
+      "title": "Tiro Loco McGraw (tema latino)",
+      "elegido": {
+        "id": "bvzLVXag5F8",
+        "title": "Promo comercial HD Latino 2001-2005 \"Tiro Loco McGraw\" Boomerang La",
+        "seconds": 57,
+        "channel": "SU",
+        "score": 8.95,
+        "consulta": "Tiro Loco McGraw intro español latino"
+      }
+    },
+    {
+      "id": "toon-huckleberry-hound-tema",
+      "franchise": "Huckleberry Hound",
+      "title": "Huckleberry Hound (tema latino)",
+      "elegido": {
+        "id": "l_mEAwykysk",
+        "title": "El bueno, los malos y Huckleberry Hound Opening latino HD",
+        "seconds": 110,
+        "channel": "GRISNERI MARIANA MATUS CERDA",
+        "score": 10.4,
+        "consulta": "Huckleberry Hound intro español latino"
+      }
+    },
+    {
+      "id": "toon-maguila-gorila-tema",
+      "franchise": "Maguila Gorila",
+      "title": "Maguila Gorila (tema latino)",
+      "elegido": {
+        "id": "cVSDRhr6e8U",
+        "title": "Homero sueña que es Maguila Gorila - Latino",
+        "seconds": 20,
+        "channel": "El Cumpa",
+        "score": 9.25,
+        "consulta": "Maguila Gorila intro español latino"
+      }
+    },
+    {
+      "id": "toon-pepe-potamo-tema",
+      "franchise": "Pepe Pótamo",
+      "title": "Pepe Pótamo (tema latino)",
+      "elegido": {
+        "id": "bvg9a4sVReI",
+        "title": "Pepe Pótamo y So So - Trite Flite REMASTERIZADO (latino)",
+        "seconds": 390,
+        "channel": "SUPER TELESERIES DE AYER Y HOY",
+        "score": 9.1,
+        "consulta": "Pepe Pótamo intro español latino"
+      }
+    },
+    {
+      "id": "toon-leon-melquiades-tema",
+      "franchise": "El León Melquíades",
+      "title": "El León Melquíades (tema latino)",
+      "elegido": {
+        "id": "9SENmqPZZE0",
+        "title": "El León Melquiades (Español Latino)",
+        "seconds": 121,
+        "channel": "Generación Retro",
+        "score": 9.85,
+        "consulta": "El León Melquíades intro español latino"
+      }
+    },
+    {
+      "id": "toon-pulpo-manotas-tema",
+      "franchise": "Pulpo Manotas",
+      "title": "Pulpo Manotas (tema latino)",
+      "elegido": {
+        "id": "Q73kxn_Ngno",
+        "title": "El Pulpo Manotas (Español Latino)",
+        "seconds": 121,
+        "channel": "Generación Retro",
+        "score": 10,
+        "consulta": "Pulpo Manotas intro español latino"
+      }
+    },
+    {
+      "id": "toon-canuto-y-canito-tema",
+      "franchise": "Canuto y Canito",
+      "title": "Canuto y Canito (tema latino)",
+      "elegido": {
+        "id": "YWHvV9qKXbg",
+        "title": "Canuto y Canito - FoxHound Hounded Fox - Español Latino",
+        "seconds": 15,
+        "channel": "Teilz",
+        "score": 9.4,
+        "consulta": "Canuto y Canito intro español latino"
+      }
+    },
+    {
+      "id": "toon-shazzan-tema",
+      "franchise": "Shazzan",
+      "title": "Shazzan (tema latino)",
+      "elegido": {
+        "id": "GsN1ys8vIpA",
+        "title": "Shazzan   Intro Opening Español latino",
+        "seconds": 48,
+        "channel": "Camba.Retro",
+        "score": 10.85,
+        "consulta": "Shazzan intro español latino"
+      }
+    },
+    {
+      "id": "toon-birdman-y-el-trio-galaxia-tema",
+      "franchise": "Birdman y el Trío Galaxia",
+      "title": "Birdman y el Trío Galaxia (tema latino)",
+      "elegido": {
+        "id": "-CygNo80BBY",
+        "title": "EL TRIO GALAXIA  Intro Español Latino",
+        "seconds": 34,
+        "channel": "J.L MEGA-RETRO",
+        "score": 8.55,
+        "consulta": "Birdman y el Trío Galaxia intro español latino"
+      }
+    },
+    {
+      "id": "toon-los-herculoides-tema",
+      "franchise": "Los Herculoides",
+      "title": "Los Herculoides (tema latino)",
+      "elegido": {
+        "id": "JBCag74sg_c",
+        "title": "LOS HERCULOIDES - INTRO LATINO ( LOS DEFENSORES INTERPLANETARIOS )",
+        "seconds": 55,
+        "channel": "DIGITALIKA",
+        "score": 11,
+        "consulta": "Los Herculoides intro español latino"
+      }
+    },
+    {
+      "id": "toon-cuatro-fantasticos-1967-tema",
+      "franchise": "Los Cuatro Fantásticos",
+      "title": "Los Cuatro Fantásticos (tema latino)",
+      "elegido": {
+        "id": "eLZyt2eKFO4",
+        "title": "Los Cuatro Fantasticos (1967) (Intro Español latino)",
+        "seconds": 66,
+        "channel": "Los Ochentosos de Ponce",
+        "score": 11,
+        "consulta": "Los Cuatro Fantásticos intro español latino"
+      }
+    },
+    {
+      "id": "toon-aquaman-1967-tema",
+      "franchise": "Aquaman",
+      "title": "Aquaman (tema latino)",
+      "elegido": {
+        "id": "jpuu7aGy_cM",
+        "title": "Intro Aquaman (Aquaman 1967 - 1970)Español Latino.",
+        "seconds": 31,
+        "channel": "RetroSound TV",
+        "score": 11,
+        "consulta": "Aquaman intro español latino"
+      }
+    },
+    {
+      "id": "toon-superman-filmation-1966-tema",
+      "franchise": "Superman",
+      "title": "Superman (tema latino)",
+      "elegido": {
+        "id": "WAQW_u9eiuU",
+        "title": "Superman (1978) Intro/Títulos Iniciales (Español Latino)",
+        "seconds": 307,
+        "channel": "d2m_d3m Archive",
+        "score": 11,
+        "consulta": "Superman intro español latino"
+      }
+    },
+    {
+      "id": "toon-batman-filmation-1968-tema",
+      "franchise": "Batman",
+      "title": "Batman y Robin (tema latino)",
+      "elegido": {
+        "id": "Fgz9cJScRik",
+        "title": "Batman Beyond Opening Español Latino (1080p HD)",
+        "seconds": 55,
+        "channel": "Demis Facundo Hereñú",
+        "score": 10.4,
+        "consulta": "Batman intro español latino"
+      }
+    },
+    {
+      "id": "toon-peligros-de-penelope-glamour-tema",
+      "franchise": "Los peligros de Penélope Glamour",
+      "title": "Penélope Glamour (tema latino)",
+      "elegido": {
+        "id": "VHwu18gAn7g",
+        "title": "Los Peligros De Penelope Glamour   The Perils Of Penelope (intro en español latino)",
+        "seconds": 63,
+        "channel": "Retro'X Tv",
+        "score": 11,
+        "consulta": "Los peligros de Penélope Glamour intro español latino"
+      }
+    },
+    {
+      "id": "toon-escuadron-diabolico-patan-tema",
+      "franchise": "El escuadrón diabólico",
+      "title": "El escuadrón diabólico (tema latino)",
+      "elegido": {
+        "id": "F_zEN4VFZ3I",
+        "title": "El Escuadron Diabolico (intro latina)",
+        "seconds": 70,
+        "channel": "teleretrotv tv",
+        "score": 11,
+        "consulta": "El escuadrón diabólico intro español latino"
+      }
+    },
+    {
+      "id": "toon-archie-show-sugar-sugar",
+      "franchise": "Archie",
+      "title": "Sugar, Sugar (tema latino)",
+      "elegido": {
+        "id": "hfuU-xOj8lA",
+        "title": "los misterios de archie intro Español Latino",
+        "seconds": 62,
+        "channel": "sonic 5D 2 y sonic 5D Reacciona",
+        "score": 11,
+        "consulta": "Archie intro español latino"
+      }
+    },
+    {
+      "id": "toon-josie-y-las-gatimelodicas-tema",
+      "franchise": "Josie y las Gatimelódicas",
+      "title": "Josie y las Gatimelódicas (tema latino)",
+      "elegido": {
+        "id": "emIXIJ1KTfU",
+        "title": "JOSIE Y SUS GATIMELODICAS Intro Español Latino",
+        "seconds": 69,
+        "channel": "J.L MEGA-RETRO",
+        "score": 10.85,
+        "consulta": "Josie y las Gatimelódicas intro español latino"
+      }
+    },
+    {
+      "id": "toon-mandibulin-tema",
+      "franchise": "Mandibulín",
+      "title": "Mandibulín (tema latino)",
+      "elegido": {
+        "id": "6gmMBLNeEAU",
+        "title": "Mandibulín - Intro_( español )",
+        "seconds": 55,
+        "channel": "Patricia González Martínez",
+        "score": 11,
+        "consulta": "Mandibulín intro español latino"
+      }
+    },
+    {
+      "id": "toon-capitan-cavernicola-tema",
+      "franchise": "Capitán Cavernícola",
+      "title": "Capitán Cavernícola (tema latino)",
+      "elegido": {
+        "id": "GnWyha7v17w",
+        "title": "Intro de el Capitan Cavernicola e Hijo, Español/Castellano",
+        "seconds": 75,
+        "channel": "Juego de Tronados",
+        "score": 11,
+        "consulta": "Capitán Cavernícola intro español latino"
+      }
+    },
+    {
+      "id": "toon-godzilla-hanna-barbera-tema",
+      "franchise": "Godzilla",
+      "title": "Godzilla y Godzooky (tema latino)",
+      "elegido": {
+        "id": "rirhQSAPDV8",
+        "title": "godzilla intro latino",
+        "seconds": 71,
+        "channel": "Armando Esteban Tovar Diaz",
+        "score": 11,
+        "consulta": "Godzilla intro español latino"
+      }
+    },
+    {
+      "id": "toon-nuevas-peliculas-scooby-doo-tema",
+      "franchise": "Scooby-Doo",
+      "title": "Scooby-Doo (tema latino)",
+      "elegido": {
+        "id": "6Jj8sIcCsuU",
+        "title": "Scooby Doo, donde estas ! (Intro latino)",
+        "seconds": 59,
+        "channel": "Sedna TV",
+        "score": 11,
+        "consulta": "Scooby-Doo intro español latino"
+      }
+    },
+    {
+      "id": "toon-hong-kong-phooey-tema",
+      "franchise": "Hong Kong Phooey",
+      "title": "Hong Kong Phooey (tema latino)",
+      "elegido": {
+        "id": "3YtUA96uUI0",
+        "title": "Hong Kong Phooey - Opening Español",
+        "seconds": 61,
+        "channel": "Onekb ́s Pictures",
+        "score": 10.7,
+        "consulta": "Hong Kong Phooey intro español latino"
+      }
+    },
+    {
+      "id": "toon-aventuras-de-gulliver-tema",
+      "franchise": "Las aventuras de Gulliver",
+      "title": "Gulliver (tema latino)",
+      "elegido": {
+        "id": "yGXRPu-dlRE",
+        "title": "Las Aventuras de Gulliver (Hanna Barbera, 1968) Doblaje Latino - Avance",
+        "seconds": 34,
+        "channel": "Coleccionables de Siempre: Clásicos de Oro",
+        "score": 9.1,
+        "consulta": "Las aventuras de Gulliver intro español latino"
+      }
+    },
+    {
+      "id": "toon-campeones-del-espacio-tema",
+      "franchise": "Los Campeones del Espacio",
+      "title": "Los Campeones del Espacio (tema latino)",
+      "elegido": {
+        "id": "VAzwNgoDiP4",
+        "title": "Fuerza G - Guardianes del Espacio (G Force - Guardians of Space) - Opening - Español Latino",
+        "seconds": 60,
+        "channel": "Chica Regia",
+        "score": 8,
+        "consulta": "Los Campeones del Espacio intro español latino"
+      }
+    },
+    {
+      "id": "toon-hormiga-atomica-tema",
+      "franchise": "La hormiga atómica",
+      "title": "La hormiga atómica (tema latino)",
+      "elegido": {
+        "id": "yOQFOfIqRho",
+        "title": "La Hormiga Atómica - Intro (Latino)",
+        "seconds": 46,
+        "channel": "Sebastian Farias",
+        "score": 11,
+        "consulta": "La hormiga atómica intro español latino"
+      }
+    },
+    {
+      "id": "toon-lindo-pulgoso-tema",
+      "franchise": "Lindo Pulgoso",
+      "title": "Lindo Pulgoso (tema latino)",
+      "elegido": {
+        "id": "C2K63bTdhXA",
+        "title": "LINDO PULGOSO  Intro Español Latino",
+        "seconds": 57,
+        "channel": "J.L MEGA-RETRO",
+        "score": 11,
+        "consulta": "Lindo Pulgoso intro español latino"
+      }
+    },
+    {
+      "id": "toon-tortuga-dartagnan-tema",
+      "franchise": "La tortuga D'Artagnan",
+      "title": "D'Artagnan (tema latino)",
+      "elegido": {
+        "id": "_YgmXnCZ6Dw",
+        "title": "La Tortuga Dartagnan Intro Latino",
+        "seconds": 26,
+        "channel": "Héctor Ortigosa",
+        "score": 10.7,
+        "consulta": "La tortuga D'Artagnan intro español latino"
+      }
+    },
+    {
+      "id": "toon-lagarto-juancho-tema",
+      "franchise": "El lagarto Juancho",
+      "title": "El lagarto Juancho (tema latino)",
+      "elegido": {
+        "id": "-s5KvR6hjxM",
+        "title": "El lagarto Juancho - intro latino",
+        "seconds": 25,
+        "channel": "Recuerdos Animados",
+        "score": 11,
+        "consulta": "El lagarto Juancho intro español latino"
+      }
+    },
+    {
+      "id": "toon-leoncio-y-triston-tema",
+      "franchise": "Leoncio el león y Tristón",
+      "title": "Leoncio y Tristón (tema latino)",
+      "elegido": {
+        "id": "KHA6gEsQin4",
+        "title": "Leoncio el león y Tristón - Intro_(en español)",
+        "seconds": 24,
+        "channel": "Patricia González Martínez",
+        "score": 11,
+        "consulta": "Leoncio el león y Tristón intro español latino"
+      }
+    },
+    {
+      "id": "toon-gasparin-fantasma-amigable-tema",
+      "franchise": "Gasparín el fantasma amigable",
+      "title": "Gasparín (tema latino)",
+      "elegido": {
+        "id": "pBajKYdx9lw",
+        "title": "Gasparin Y Sus Amigos [Casper and Friends 1990] - Opening y Ending español latino (Latinoamerica90s)",
+        "seconds": 101,
+        "channel": "D¡scoveryK!ds LosInicios",
+        "score": 10.4,
+        "consulta": "Gasparín el fantasma amigable intro español latino"
+      }
+    },
+    {
+      "id": "toon-daniel-el-travieso-70s-tema",
+      "franchise": "Daniel el Travieso",
+      "title": "Daniel el Travieso (tema latino)",
+      "elegido": {
+        "id": "0mxI4nDiIIc",
+        "title": "Daniel El Travieso - Intro latino",
+        "seconds": 71,
+        "channel": "T. C. Intros Latinos",
+        "score": 11,
+        "consulta": "Daniel el Travieso intro español latino"
+      }
+    },
+    {
+      "id": "toon-felix-el-gato-tema",
+      "franchise": "Félix el gato",
+      "title": "Félix el gato (tema latino)",
+      "elegido": {
+        "id": "Uvy8kiyAqRY",
+        "title": "El Gato Félix Opening Español Latino",
+        "seconds": 62,
+        "channel": "leocorp1",
+        "score": 10.85,
+        "consulta": "Félix el gato intro español latino"
+      }
+    },
+    {
+      "id": "toon-pequena-lulu-tema",
+      "franchise": "La pequeña Lulú",
+      "title": "La pequeña Lulú (tema latino)",
+      "elegido": {
+        "id": "rcQmZKvLaPo",
+        "title": "intro de la pequeña lulu(audio latino)",
+        "seconds": 63,
+        "channel": "XxSAnDrisxX",
+        "score": 11,
+        "consulta": "La pequeña Lulú intro español latino"
+      }
+    },
+    {
+      "id": "toon-super-raton-mighty-mouse-tema",
+      "franchise": "Super Ratón",
+      "title": "Super Ratón (tema latino)",
+      "elegido": {
+        "id": "XarX1PjKpoQ",
+        "title": "Super Ratón intro latino",
+        "seconds": 56,
+        "channel": "Alejandro Espinoza",
+        "score": 11,
+        "consulta": "Super Ratón intro español latino"
+      }
+    },
+    {
+      "id": "toon-halcones-galacticos-tema",
+      "franchise": "Halcones Galácticos",
+      "title": "Halcones Galácticos (tema latino)",
+      "elegido": {
+        "id": "_tkKCw07gjY",
+        "title": "Halcones Galácticos - INTRO LATINO",
+        "seconds": 79,
+        "channel": "Enrique Pineda",
+        "score": 11,
+        "consulta": "Halcones Galácticos intro español latino"
+      }
+    },
+    {
+      "id": "toon-she-ra-princesa-del-poder-tema",
+      "franchise": "She-Ra",
+      "title": "She-Ra (tema latino)",
+      "elegido": {
+        "id": "WoWry_2AbWI",
+        "title": "She-Ra Opening Latino 4k 60fps Remasterizado",
+        "seconds": 76,
+        "channel": "Retromagico",
+        "score": 11,
+        "consulta": "She-Ra intro español latino"
+      }
+    },
+    {
+      "id": "toon-los-cazafantasmas-real-ghostbusters-tema",
+      "franchise": "Los Verdaderos Cazafantasmas",
+      "title": "Los Cazafantasmas (tema latino)",
+      "elegido": {
+        "id": "VRsckD6lE6U",
+        "title": "Los Verdaderos Cazafantasmas Opening Español",
+        "seconds": 61,
+        "channel": "charizardlatino",
+        "score": 11,
+        "consulta": "Los Verdaderos Cazafantasmas intro español latino"
+      }
+    },
+    {
+      "id": "toon-defensores-de-la-tierra-tema",
+      "franchise": "Defensores de la Tierra",
+      "title": "Defensores de la Tierra (tema latino)",
+      "elegido": {
+        "id": "D1z34h2a30M",
+        "title": "Defensores de la Tierra intro latino",
+        "seconds": 62,
+        "channel": "Sergio Soto",
+        "score": 11,
+        "consulta": "Defensores de la Tierra intro español latino"
+      }
+    },
+    {
+      "id": "toon-gi-joe-tema",
+      "franchise": "G.I. Joe",
+      "title": "G.I. Joe (tema latino)",
+      "elegido": {
+        "id": "vtCZonu8G7o",
+        "title": "G.I.JOE (1985) - INTRO LATINO - SERIE ONLINE",
+        "seconds": 62,
+        "channel": "RETRO MANIA",
+        "score": 11,
+        "consulta": "G.I. Joe intro español latino"
+      }
+    },
+    {
+      "id": "toon-cazafantasmas-filmation-tema",
+      "franchise": "Los Cazafantasmas de Filmation",
+      "title": "Cazafantasmas (tema latino)",
+      "elegido": {
+        "id": "e_iwgjIUV3c",
+        "title": "Los Cazafantasmas - Ghostbusters - Filmation - Opening - Latino",
+        "seconds": 72,
+        "channel": "Chica Regia",
+        "score": 11,
+        "consulta": "Los Cazafantasmas de Filmation intro español latino"
+      }
+    },
+    {
+      "id": "toon-jem-and-the-holograms-tema",
+      "franchise": "Jem",
+      "title": "Jem (tema latino)",
+      "elegido": {
+        "id": "4jl08m9Kmfw",
+        "title": "Jem - Opening - Español Latino",
+        "seconds": 43,
+        "channel": "Chica Regia",
+        "score": 11,
+        "consulta": "Jem intro español latino"
+      }
+    },
+    {
+      "id": "toon-rainbow-brite-tema",
+      "franchise": "Rainbow Brite",
+      "title": "Rainbow Brite (tema latino)",
+      "elegido": {
+        "id": "qSrIhCMHPyc",
+        "title": "Rainbow Brite - intro latino",
+        "seconds": 51,
+        "channel": "Recuerdos Animados",
+        "score": 11,
+        "consulta": "Rainbow Brite intro español latino"
+      }
+    },
+    {
+      "id": "toon-rosita-fresita-tema",
+      "franchise": "Rosita Fresita",
+      "title": "Rosita Fresita (tema latino)",
+      "elegido": {
+        "id": "kQWwrrcfQOs",
+        "title": "Strawberry Shortcake - Opening Latino",
+        "seconds": 61,
+        "channel": "USTalent",
+        "score": 10.85,
+        "consulta": "Rosita Fresita intro español latino"
+      }
+    },
+    {
+      "id": "toon-mi-pequeno-pony-1986-tema",
+      "franchise": "Mi Pequeño Pony",
+      "title": "Mi Pequeño Pony (tema latino)",
+      "elegido": {
+        "id": "MivLZwijwSw",
+        "title": "Intro Pequeño Pony (My Little Pony 1986 - 1987)Español Latino.",
+        "seconds": 96,
+        "channel": "RetroSound TV",
+        "score": 10.85,
+        "consulta": "Mi Pequeño Pony intro español latino"
+      }
+    },
+    {
+      "id": "toon-ositos-carinositos-tema",
+      "franchise": "Los Ositos Cariñositos",
+      "title": "Los Ositos Cariñositos (tema latino)",
+      "elegido": {
+        "id": "MrIGo9Fxl1U",
+        "title": "Los Cariñositos - Intro Latino HQ",
+        "seconds": 68,
+        "channel": "SoyVoy",
+        "score": 11,
+        "consulta": "Los Ositos Cariñositos intro español latino"
+      }
+    },
+    {
+      "id": "toon-conde-patula-tema",
+      "franchise": "El Conde Pátula",
+      "title": "El Conde Pátula (tema latino)",
+      "elegido": {
+        "id": "wWHf2GylPww",
+        "title": "El Conde Pátula - Opening Latino",
+        "seconds": 82,
+        "channel": "Soy Retro",
+        "score": 11,
+        "consulta": "El Conde Pátula intro español latino"
+      }
+    },
+    {
+      "id": "toon-danger-mouse-tema",
+      "franchise": "Danger Mouse",
+      "title": "Danger Mouse (tema latino)",
+      "elegido": {
+        "id": "b6Q3eMzWn_4",
+        "title": "Danger Mouse (2015) (Intro) (Español Latino)",
+        "seconds": 34,
+        "channel": "The Fernando Dalmatian 206",
+        "score": 10.85,
+        "consulta": "Danger Mouse intro español latino"
+      }
+    },
+    {
+      "id": "toon-los-snorkels-tema",
+      "franchise": "Los Snorkels",
+      "title": "Los Snorkels (tema latino)",
+      "elegido": {
+        "id": "xU2dRn14-Co",
+        "title": "Los Snorkels - Opening Español Latino",
+        "seconds": 63,
+        "channel": "Soy Retro",
+        "score": 11,
+        "consulta": "Los Snorkels intro español latino"
+      }
+    },
+    {
+      "id": "toon-nuevas-aventuras-winnie-pooh-tema",
+      "franchise": "Winnie Pooh",
+      "title": "Winnie Pooh (tema latino)",
+      "elegido": {
+        "id": "FeJizsYcd_s",
+        "title": "Las Nuevas Aventuras de Winnie Pooh - Intro - Disney 90's - Español Latino",
+        "seconds": 62,
+        "channel": "Claudio Figueroa",
+        "score": 10.85,
+        "consulta": "Winnie Pooh intro español latino"
+      }
+    },
+    {
+      "id": "toon-pequenos-picapiedra-tema",
+      "franchise": "Los Picapiedra",
+      "title": "Los Pequeños Picapiedra (tema latino)",
+      "elegido": {
+        "id": "DJAp5DrYX_s",
+        "title": "Los Picapiedra | Intro en español | HBO Max",
+        "seconds": 39,
+        "channel": "HBO Max Latinoamérica",
+        "score": 11,
+        "consulta": "Los Picapiedra intro español latino"
+      }
+    },
+    {
+      "id": "toon-cachorro-scooby-doo-tema",
+      "franchise": "Scooby-Doo",
+      "title": "Un cachorro llamado Scooby-Doo (tema latino)",
+      "elegido": {
+        "id": "6Jj8sIcCsuU",
+        "title": "Scooby Doo, donde estas ! (Intro latino)",
+        "seconds": 59,
+        "channel": "Sedna TV",
+        "score": 11,
+        "consulta": "Scooby-Doo intro español latino"
+      }
+    },
+    {
+      "id": "toon-alvin-y-las-ardillas-80s-tema",
+      "franchise": "Alvin y las ardillas",
+      "title": "Alvin y las ardillas (tema latino)",
+      "elegido": {
+        "id": "PasLj_bpPNM",
+        "title": "Alvinnn!!! And The Chipmunks Y Las Ardillas intro Theme Song Tema Latin Spanish / Español Latino",
+        "seconds": 39,
+        "channel": "DubsMarlonTV",
+        "score": 10.55,
+        "consulta": "Alvin y las ardillas intro español latino"
+      }
+    },
+    {
+      "id": "toon-muppet-babies-80s-tema",
+      "franchise": "Muppet Babies",
+      "title": "Muppet Babies (tema latino)",
+      "elegido": {
+        "id": "GJvcHymNNug",
+        "title": "muppets babies intro completo español latino",
+        "seconds": 60,
+        "channel": "RAYAMASTER",
+        "score": 11,
+        "consulta": "Muppet Babies intro español latino"
+      }
+    },
+    {
+      "id": "toon-daniel-el-travieso-dic-tema",
+      "franchise": "Daniel el Travieso",
+      "title": "Daniel el Travieso (tema latino)",
+      "elegido": {
+        "id": "0mxI4nDiIIc",
+        "title": "Daniel El Travieso - Intro latino",
+        "seconds": 71,
+        "channel": "T. C. Intros Latinos",
+        "score": 11,
+        "consulta": "Daniel el Travieso intro español latino"
+      }
+    },
+    {
+      "id": "toon-heathcliff-el-gato-tema",
+      "franchise": "Heathcliff",
+      "title": "Heathcliff (tema latino)",
+      "elegido": {
+        "id": "ufDOOxEhyTc",
+        "title": "HEATHCLIFF INTRO ESPAÑOL LATINO (GATOS Y COMPAÑIA)",
+        "seconds": 70,
+        "channel": "Ashley “Pokerface” Alexandra",
+        "score": 11,
+        "consulta": "Heathcliff intro español latino"
+      }
+    },
+    {
+      "id": "toon-teddy-ruxpin-tema",
+      "franchise": "Teddy Ruxpin",
+      "title": "Teddy Ruxpin (tema latino)",
+      "elegido": {
+        "id": "ZlcKGeupeg8",
+        "title": "Las Aventuras De Teddy Ruxpin - Intro (Latino) HD",
+        "seconds": 59,
+        "channel": "CaricaturasDeAyer",
+        "score": 11,
+        "consulta": "Teddy Ruxpin intro español latino"
+      }
+    },
+    {
+      "id": "toon-bravestarr-tema",
+      "franchise": "Bravestarr",
+      "title": "Bravestarr (tema latino)",
+      "elegido": {
+        "id": "AArGvVxnV3I",
+        "title": "Bravestarr Opening Latino 4K 60fps Remasterizado",
+        "seconds": 72,
+        "channel": "Retromagico",
+        "score": 10.85,
+        "consulta": "Bravestarr intro español latino"
+      }
+    },
+    {
+      "id": "toon-calabozos-y-dragones-tema",
+      "franchise": "Calabozos y Dragones",
+      "title": "Calabozos y Dragones (tema latino)",
+      "elegido": {
+        "id": "yiKAHXLYcCg",
+        "title": "Calabozos y Dragones intro español latino",
+        "seconds": 58,
+        "channel": "GeneracionRetro",
+        "score": 11,
+        "consulta": "Calabozos y Dragones intro español latino"
+      }
+    },
+    {
+      "id": "toon-los-centuriones-tema",
+      "franchise": "Los Centuriones",
+      "title": "Centuriones (tema latino)",
+      "elegido": {
+        "id": "UBztgWbOv0w",
+        "title": "Los Centuriones Intro latino (1985-1987)",
+        "seconds": 58,
+        "channel": "mauro bogey",
+        "score": 11,
+        "consulta": "Los Centuriones intro español latino"
+      }
+    },
+    {
+      "id": "toon-mask-serie-animada-tema",
+      "franchise": "M.A.S.K.",
+      "title": "M.A.S.K. (tema latino)",
+      "elegido": {
+        "id": "9PtAftwZExA",
+        "title": "MASK | intro Opening latino |",
+        "seconds": 60,
+        "channel": "Cristian G. TV Oficial",
+        "score": 11,
+        "consulta": "M.A.S.K. intro español latino"
+      }
+    },
+    {
+      "id": "toon-cops-serie-animada-tema",
+      "franchise": "COPS",
+      "title": "COPS (tema latino)",
+      "elegido": {
+        "id": "nIy1kcr0qzU",
+        "title": "Intro de C.O.P.S en Español y HD",
+        "seconds": 76,
+        "channel": "Oscar Garcia",
+        "score": 11,
+        "consulta": "COPS intro español latino"
+      }
+    },
+    {
+      "id": "toon-los-popples-tema",
+      "franchise": "Los Popples",
+      "title": "Los Popples (tema latino)",
+      "elegido": {
+        "id": "HAb9p9B9QuI",
+        "title": "Popples (Intro) (Español Latino)",
+        "seconds": 30,
+        "channel": "The Fernando Dalmatian 206",
+        "score": 10.55,
+        "consulta": "Los Popples intro español latino"
+      }
+    },
+    {
+      "id": "toon-babar-el-elefante-tema",
+      "franchise": "Babar",
+      "title": "Babar (tema latino)",
+      "elegido": {
+        "id": "mP8RUKgGJfM",
+        "title": "Las Aventuras Badou Y Babar - Intro - Español Latino",
+        "seconds": 46,
+        "channel": "Claudio Figueroa",
+        "score": 10.7,
+        "consulta": "Babar intro español latino"
+      }
+    },
+    {
+      "id": "toon-voltron-defensor-del-universo-tema",
+      "franchise": "Voltron",
+      "title": "Voltron (tema latino)",
+      "elegido": {
+        "id": "dK20XJkZsQY",
+        "title": "Voltron Audio Latino Capitulo 1 Parte 3 de 3",
+        "seconds": 223,
+        "channel": "Lalo Onganiza",
+        "score": 9.1,
+        "consulta": "Voltron intro español latino"
+      }
+    },
+    {
+      "id": "toon-robotech-intro-latina-tema",
+      "franchise": "Robotech",
+      "title": "Robotech (tema latino)",
+      "elegido": {
+        "id": "B2k8EtGl82Y",
+        "title": "Robotech - Opening Latino Original (Remasterizado)",
+        "seconds": 92,
+        "channel": "Bellower666",
+        "score": 11,
+        "consulta": "Robotech intro español latino"
+      }
+    },
+    {
+      "id": "toon-tropa-goofy-tema",
+      "franchise": "La Tropa Goofy",
+      "title": "La Tropa Goofy (tema latino)",
+      "elegido": {
+        "id": "kAafT8zsr1Y",
+        "title": "La tropa Goofy | Intro (Tema de entrada) | Español Latinoamericano",
+        "seconds": 61,
+        "channel": "Tano Upload Canciones",
+        "score": 11,
+        "consulta": "La Tropa Goofy intro español latino"
+      }
+    },
+    {
+      "id": "toon-super-mario-bros-super-show-tema",
+      "franchise": "Super Mario Bros.",
+      "title": "Mario Bros. Rap (tema latino)",
+      "elegido": {
+        "id": "q-8ECLP9ryU",
+        "title": "El Súper Programa de Super Mario Bros. Intro \"The Mario Rap\" (Latino) con el doblaje de SMBPlomería",
+        "seconds": 37,
+        "channel": "31 Horas México",
+        "score": 10.85,
+        "consulta": "Super Mario Bros. intro español latino"
+      }
+    },
+    {
+      "id": "toon-leyenda-de-zelda-serie-tema",
+      "franchise": "La leyenda de Zelda",
+      "title": "Zelda (tema latino)",
+      "elegido": {
+        "id": "F_7xsJ05Ugc",
+        "title": "LA LEYENDA DE ZELDA RAP,¡EN ESPAÑOL!",
+        "seconds": 214,
+        "channel": "Smosh En Español",
+        "score": 9.1,
+        "consulta": "La leyenda de Zelda intro español latino"
+      }
+    },
+    {
+      "id": "toon-beetlejuice-serie-animada-tema",
+      "franchise": "Beetlejuice",
+      "title": "Beetlejuice (tema latino)",
+      "elegido": {
+        "id": "w3iXVUo_VeY",
+        "title": "Beetlejuice - Intro 1 (Audio Latino)",
+        "seconds": 62,
+        "channel": "Kojiro_S",
+        "score": 11,
+        "consulta": "Beetlejuice intro español latino"
+      }
+    },
+    {
+      "id": "toon-denver-el-ultimo-dinosaurio-tema",
+      "franchise": "Denver, el último dinosaurio",
+      "title": "Denver (tema latino)",
+      "elegido": {
+        "id": "-sRB9fCmLoM",
+        "title": "Denver, el último dinosaurio - Intro (Latino)",
+        "seconds": 82,
+        "channel": "Sebastian Farias",
+        "score": 10.85,
+        "consulta": "Denver, el último dinosaurio intro español latino"
+      }
+    },
+    {
+      "id": "toon-saber-rider-jinetes-del-espacio-tema",
+      "franchise": "Saber Rider",
+      "title": "Saber Rider (tema latino)",
+      "elegido": {
+        "id": "3u1MOg3vdZU",
+        "title": "Tema del Jinete Sable 1987 (Saber Rider Theme) Completo subtitulado en español",
+        "seconds": 148,
+        "channel": "Eduardo Jerez",
+        "score": 10.85,
+        "consulta": "Saber Rider intro español latino"
+      }
+    },
+    {
+      "id": "toon-dinoplativolos-tema",
+      "franchise": "Dinoplativolos",
+      "title": "Dinoplativolos (tema latino)",
+      "elegido": {
+        "id": "he2g_5FI6p0",
+        "title": "Dinoplatívolos (Dinosaucers) - Intro 1987 - Opening Español Latino",
+        "seconds": 50,
+        "channel": "Chica Regia",
+        "score": 10.7,
+        "consulta": "Dinoplativolos intro español latino"
+      }
+    },
+    {
+      "id": "toon-jayce-guerreros-rodantes-tema",
+      "franchise": "Jayce y los guerreros rodantes",
+      "title": "Jayce (tema latino)",
+      "elegido": {
+        "id": "Pj1-df1zJOQ",
+        "title": "Jayce y los guerreros rodantes Intro Latino HD",
+        "seconds": 82,
+        "channel": "toible13",
+        "score": 11,
+        "consulta": "Jayce y los guerreros rodantes intro español latino"
+      }
+    },
+    {
+      "id": "toon-fenomenoide-tema",
+      "franchise": "Fenomenoide",
+      "title": "Fenomenoide (tema latino)",
+      "elegido": {
+        "id": "I_k0jR5nUeI",
+        "title": "Fenomenoide | Intro en español | HBO Max",
+        "seconds": 67,
+        "channel": "HBO Max Latinoamérica",
+        "score": 11,
+        "consulta": "Fenomenoide intro español latino"
+      }
+    },
+    {
+      "id": "toon-la-mascara-serie-animada-tema",
+      "franchise": "La Máscara",
+      "title": "La Máscara (tema latino)",
+      "elegido": {
+        "id": "FunBLat8jkE",
+        "title": "La Mascara Animada / Intro / Latino",
+        "seconds": 58,
+        "channel": "Ni tan Antiguo",
+        "score": 11,
+        "consulta": "La Máscara intro español latino"
+      }
+    },
+    {
+      "id": "toon-ace-ventura-serie-animada-tema",
+      "franchise": "Ace Ventura",
+      "title": "Ace Ventura (tema latino)",
+      "elegido": {
+        "id": "vS8FAa_qKuA",
+        "title": "“ACE VENTURA” caricatura Intro latino.",
+        "seconds": 60,
+        "channel": "TVDIBUJOSTV",
+        "score": 10.85,
+        "consulta": "Ace Ventura intro español latino"
+      }
+    },
+    {
+      "id": "toon-dos-perros-tontos-tema",
+      "franchise": "Dos perros tontos",
+      "title": "Dos perros tontos (tema latino)",
+      "elegido": {
+        "id": "cgrAg9fq-zY",
+        "title": "Dos perros tontos - intro Latino",
+        "seconds": 31,
+        "channel": "Recuerdos Animados",
+        "score": 11,
+        "consulta": "Dos perros tontos intro español latino"
+      }
+    },
+    {
+      "id": "toon-hombres-de-negro-serie-animada-tema",
+      "franchise": "Hombres de Negro",
+      "title": "Hombres de Negro (tema latino)",
+      "elegido": {
+        "id": "_mRu8xtVgJE",
+        "title": "Hombres de Negro - La Serie | Intro Audio Latino",
+        "seconds": 75,
+        "channel": "¡El Zorrito Nawe! - Videos 🦊",
+        "score": 11,
+        "consulta": "Hombres de Negro intro español latino"
+      }
+    },
+    {
+      "id": "toon-godzilla-serie-animada-90s-tema",
+      "franchise": "Godzilla",
+      "title": "Godzilla (tema latino)",
+      "elegido": {
+        "id": "rirhQSAPDV8",
+        "title": "godzilla intro latino",
+        "seconds": 71,
+        "channel": "Armando Esteban Tovar Diaz",
+        "score": 11,
+        "consulta": "Godzilla intro español latino"
+      }
+    },
+    {
+      "id": "toon-spider-man-1994-serie-tema",
+      "franchise": "El Hombre Araña (1994)",
+      "title": "Spider-Man (tema latino)",
+      "elegido": {
+        "id": "BuTPd-HGais",
+        "title": "Spider-Man (serie de televisión de 1994) Opening  - Latino",
+        "seconds": 59,
+        "channel": "De Todo Un Poquito",
+        "score": 9,
+        "consulta": "El Hombre Araña (1994) intro español latino"
+      }
+    },
+    {
+      "id": "toon-increible-hulk-1996-tema",
+      "franchise": "El increíble Hulk",
+      "title": "El increíble Hulk (tema latino)",
+      "elegido": {
+        "id": "5mVAAFFt3Qo",
+        "title": "Intro   El Increible Hulk   Latino",
+        "seconds": 77,
+        "channel": "Yo si soy de los ochenta",
+        "score": 10.55,
+        "consulta": "El increíble Hulk intro español latino"
+      }
+    },
+    {
+      "id": "toon-iron-man-1994-serie-tema",
+      "franchise": "Iron Man",
+      "title": "Iron Man (tema latino)",
+      "elegido": {
+        "id": "ot8nAmk54KQ",
+        "title": "Iron Man Armored Adventures intro // sub español",
+        "seconds": 136,
+        "channel": "𝐌𝐫. 𝐅𝐨𝐳𝐳𝐲",
+        "score": 10.4,
+        "consulta": "Iron Man intro español latino"
+      }
+    },
+    {
+      "id": "toon-cuatro-fantasticos-1994-tema",
+      "franchise": "Los Cuatro Fantásticos",
+      "title": "Los 4 Fantásticos (tema latino)",
+      "elegido": {
+        "id": "eLZyt2eKFO4",
+        "title": "Los Cuatro Fantasticos (1967) (Intro Español latino)",
+        "seconds": 66,
+        "channel": "Los Ochentosos de Ponce",
+        "score": 11,
+        "consulta": "Los Cuatro Fantásticos intro español latino"
+      }
+    },
+    {
+      "id": "toon-batman-del-futuro-tema",
+      "franchise": "Batman",
+      "title": "Batman del futuro (tema latino)",
+      "elegido": {
+        "id": "Fgz9cJScRik",
+        "title": "Batman Beyond Opening Español Latino (1080p HD)",
+        "seconds": 55,
+        "channel": "Demis Facundo Hereñú",
+        "score": 10.4,
+        "consulta": "Batman intro español latino"
+      }
+    },
+    {
+      "id": "toon-superman-serie-animada-tema",
+      "franchise": "Superman",
+      "title": "Superman (tema latino)",
+      "elegido": {
+        "id": "WAQW_u9eiuU",
+        "title": "Superman (1978) Intro/Títulos Iniciales (Español Latino)",
+        "seconds": 307,
+        "channel": "d2m_d3m Archive",
+        "score": 11,
+        "consulta": "Superman intro español latino"
+      }
+    },
+    {
+      "id": "toon-taz-mania-tema",
+      "franchise": "Taz-Mania",
+      "title": "Taz-Mania (tema latino)",
+      "elegido": {
+        "id": "y4Nnr2Q1NtM",
+        "title": "Tazmania intro en español latino",
+        "seconds": 76,
+        "channel": "Retro Aventuras",
+        "score": 11,
+        "consulta": "Taz-Mania intro español latino"
+      }
+    },
+    {
+      "id": "toon-silvestre-y-piolin-misterios-tema",
+      "franchise": "Silvestre y Piolín",
+      "title": "Silvestre y Piolín (tema latino)",
+      "elegido": {
+        "id": "E8qMavqh0iU",
+        "title": "Los misterios de Silvestre y Piolín | Intro en español | HBO Max",
+        "seconds": 62,
+        "channel": "HBO Max Latinoamérica",
+        "score": 11,
+        "consulta": "Silvestre y Piolín intro español latino"
+      }
+    },
+    {
+      "id": "toon-histeria-warner-tema",
+      "franchise": "Histeria!",
+      "title": "Histeria! (tema latino)",
+      "elegido": {
+        "id": "92WOo4AKGHI",
+        "title": "Histeria - intro latino",
+        "seconds": 77,
+        "channel": "Recuerdos Animados",
+        "score": 11,
+        "consulta": "Histeria! intro español latino"
+      }
+    },
+    {
+      "id": "toon-recreo-serie-disney-tema",
+      "franchise": "Recreo",
+      "title": "Recreo (tema latino)",
+      "elegido": {
+        "id": "M8-fedLWZf4",
+        "title": "Recreo - Opening latino",
+        "seconds": 61,
+        "channel": "G0ose90",
+        "score": 10.7,
+        "consulta": "Recreo intro español latino"
+      }
+    },
+    {
+      "id": "toon-pepper-ann-tema",
+      "franchise": "Pepper Ann",
+      "title": "Pepper Ann (tema latino)",
+      "elegido": {
+        "id": "SMvwDxIqWd4",
+        "title": "Pepper Ann - Intro (español latinoamericano)",
+        "seconds": 61,
+        "channel": "GalaxyUnicorn",
+        "score": 11,
+        "consulta": "Pepper Ann intro español latino"
+      }
+    },
+    {
+      "id": "toon-timon-y-pumba-serie-tema",
+      "franchise": "Timón y Pumba",
+      "title": "Hakuna Matata (tema latino)",
+      "elegido": {
+        "id": "8xpJkVh-tN0",
+        "title": "Las aventuras de Timón y Pumba | Opening (Resubido) | Español Latino | Disney XD LA",
+        "seconds": 85,
+        "channel": "ZebasXD2",
+        "score": 10.85,
+        "consulta": "Timón y Pumba intro español latino"
+      }
+    },
+    {
+      "id": "toon-aladdin-serie-animada-tema",
+      "franchise": "Aladdín",
+      "title": "Noches de Arabia (tema latino)",
+      "elegido": {
+        "id": "GjEhh8iazjM",
+        "title": "Aladdin - Intro Latino",
+        "seconds": 60,
+        "channel": "G0ose90",
+        "score": 11,
+        "consulta": "Aladdín intro español latino"
+      }
+    },
+    {
+      "id": "toon-la-sirenita-serie-animada-tema",
+      "franchise": "La Sirenita",
+      "title": "La Sirenita (tema latino)",
+      "elegido": {
+        "id": "H3pQJyr75jM",
+        "title": "opening Aventura Pequeña Sirenita saban español Latino",
+        "seconds": 60,
+        "channel": "ALFANT33",
+        "score": 10.55,
+        "consulta": "La Sirenita intro español latino"
+      }
+    },
+    {
+      "id": "toon-hercules-serie-animada-tema",
+      "franchise": "Hércules",
+      "title": "Hércules (tema latino)",
+      "elegido": {
+        "id": "dFjJDKYWEPM",
+        "title": "Hercules - INTRO Poderoso Hercules Español Latino - Spanish Mighty Hercules",
+        "seconds": 62,
+        "channel": "Neeeeewton",
+        "score": 11,
+        "consulta": "Hércules intro español latino"
+      }
+    },
+    {
+      "id": "toon-tarzan-la-leyenda-tema",
+      "franchise": "Tarzán",
+      "title": "Tarzán (tema latino)",
+      "elegido": {
+        "id": "qGTtIwpG6jQ",
+        "title": "Intro De La Leyenda De Tarzán [Español Latino]",
+        "seconds": 61,
+        "channel": "PLANETA TOONS ",
+        "score": 10.7,
+        "consulta": "Tarzán intro español latino"
+      }
+    },
+    {
+      "id": "toon-buzz-lightyear-comando-estelar-tema",
+      "franchise": "Buzz Lightyear",
+      "title": "Buzz Lightyear (tema latino)",
+      "elegido": {
+        "id": "VydVrA82Vs4",
+        "title": "Toy Story 2 - ¡Buzz Lightyear vs Zurg! / Escena Inicial (Español Latino)",
+        "seconds": 258,
+        "channel": "Disney¡Fan!",
+        "score": 9.7,
+        "consulta": "Buzz Lightyear intro español latino"
+      }
+    },
+    {
+      "id": "toon-daria-serie-mtv-tema",
+      "franchise": "Daria",
+      "title": "You're Standing on My Neck (tema latino)",
+      "elegido": {
+        "id": "HHb-gHzigcg",
+        "title": "Splendora - You're Standing On My Neck (sub español) (intro de Daria) @sebgnzf",
+        "seconds": 57,
+        "channel": "Meny Texto",
+        "score": 10.4,
+        "consulta": "Daria intro español latino"
+      }
+    },
+    {
+      "id": "toon-beavis-y-butt-head-tema",
+      "franchise": "Beavis y Butt-Head",
+      "title": "Beavis y Butt-Head (tema)",
+      "elegido": {
+        "id": "tIDDZfRfN34",
+        "title": "Beavis and Butt Head (Español Latino)",
+        "seconds": 17,
+        "channel": "Generación Retro",
+        "score": 10,
+        "consulta": "Beavis y Butt-Head intro español latino"
+      }
+    },
+    {
+      "id": "toon-motorratones-de-marte-tema",
+      "franchise": "Motorratones de Marte",
+      "title": "Motorratones de Marte (tema latino)",
+      "elegido": {
+        "id": "tHaqb1iZf_M",
+        "title": "Motoratones de Marte - Opening Latino",
+        "seconds": 59,
+        "channel": "Jonny Pizarro",
+        "score": 8,
+        "consulta": "Motorratones de Marte intro español latino"
+      }
+    },
+    {
+      "id": "toon-tiburones-del-asfalto-tema",
+      "franchise": "Tiburones del asfalto",
+      "title": "Tiburones del asfalto (tema latino)",
+      "elegido": {
+        "id": "qVDJ1ashu_w",
+        "title": "Street Sharks opening Latino",
+        "seconds": 61,
+        "channel": "Charly Ace Rg",
+        "score": 11,
+        "consulta": "Tiburones del asfalto intro español latino"
+      }
+    },
+    {
+      "id": "toon-piratas-de-las-aguas-negras-tema",
+      "franchise": "Los piratas de las aguas negras",
+      "title": "Los piratas de las aguas negras (tema latino)",
+      "elegido": {
+        "id": "0QE8PRRooo0",
+        "title": "Los Piratas de las Aguas Negras  (Español Latino)",
+        "seconds": 121,
+        "channel": "Generación Retro",
+        "score": 9.85,
+        "consulta": "Los piratas de las aguas negras intro español latino"
+      }
+    },
+    {
+      "id": "toon-gi-joe-extreme-tema",
+      "franchise": "G.I. Joe Extreme",
+      "title": "G.I. Joe Extreme (tema latino)",
+      "elegido": {
+        "id": "Awq6jgAti2E",
+        "title": "G.I. Joe Extreme 1995 serie - latino",
+        "seconds": 84,
+        "channel": "Las Peliculas & Las Series Retro",
+        "score": 9.7,
+        "consulta": "G.I. Joe Extreme intro español latino"
+      }
+    },
+    {
+      "id": "toon-capitan-simio-y-los-monos-galacticos-tema",
+      "franchise": "Capitán Simio",
+      "title": "Capitán Simio (tema latino)",
+      "elegido": {
+        "id": "VHpWYLdbvtk",
+        "title": "Capitán Simio y los monos del espacio (Español latino)",
+        "seconds": 72,
+        "channel": "Generación Retro",
+        "score": 9.85,
+        "consulta": "Capitán Simio intro español latino"
+      }
+    },
+    {
+      "id": "toon-kablam-nickelodeon-tema",
+      "franchise": "KaBlam!",
+      "title": "KaBlam! (tema latino)",
+      "elegido": {
+        "id": "FnM35qlPpWE",
+        "title": "Kablam! - Intro (Espanol Latino)",
+        "seconds": 88,
+        "channel": "kablamfan11",
+        "score": 11,
+        "consulta": "KaBlam! intro español latino"
+      }
+    },
+    {
+      "id": "toon-cuentos-de-la-cripta-animada-tema",
+      "franchise": "Cuentos de la cripta",
+      "title": "Cuentos de la cripta (tema latino)",
+      "elegido": {
+        "id": "ymCEeA3sBmU",
+        "title": "Cuentos de la Cripta - Intro Latino",
+        "seconds": 113,
+        "channel": "T. C. Intros Latinos",
+        "score": 11,
+        "consulta": "Cuentos de la cripta intro español latino"
+      }
+    },
+    {
+      "id": "toon-swat-kats-escuadron-radical-tema",
+      "franchise": "Swat Kats",
+      "title": "Swat Kats (tema latino)",
+      "elegido": {
+        "id": "VVnmaMnMs3Y",
+        "title": "Swat Kats - Opening 1 Español Latino (Alta Calidad)",
+        "seconds": 66,
+        "channel": "skorpionrazor",
+        "score": 11,
+        "consulta": "Swat Kats intro español latino"
+      }
+    },
+    {
+      "id": "toon-arthur-serie-animada-tema",
+      "franchise": "Arthur",
+      "title": "Arthur (tema latino)",
+      "elegido": {
+        "id": "cLBExjo3buk",
+        "title": "Arthur (Intro) (Español Latino)",
+        "seconds": 68,
+        "channel": "The Fernando Dalmatian 206",
+        "score": 11,
+        "consulta": "Arthur intro español latino"
+      }
+    },
+    {
+      "id": "toon-los-reyes-de-la-colina-tema",
+      "franchise": "Los reyes de la colina",
+      "title": "Los reyes de la colina (tema)",
+      "elegido": {
+        "id": "A__5icrqWnw",
+        "title": "Los Reyes de la Colina | Opening (Latino)",
+        "seconds": 31,
+        "channel": "Tako",
+        "score": 11,
+        "consulta": "Los reyes de la colina intro español latino"
+      }
+    },
+    {
+      "id": "toon-mucha-lucha-tema",
+      "franchise": "Mucha Lucha",
+      "title": "Mucha Lucha (tema latino)",
+      "elegido": {
+        "id": "7Z2kbnSWRMI",
+        "title": "Mucha Lucha - Intro HD Latino: (2002)",
+        "seconds": 73,
+        "channel": "Intro TV",
+        "score": 10.25,
+        "consulta": "Mucha Lucha intro español latino"
+      }
+    },
+    {
+      "id": "toon-dave-el-barbaro-tema",
+      "franchise": "Dave, el bárbaro",
+      "title": "Dave, el bárbaro (tema latino)",
+      "elegido": {
+        "id": "3163VHcSBnY",
+        "title": "Dave el Bárbaro - Intro Español Latino (HD 16:9)",
+        "seconds": 75,
+        "channel": "kasparkane",
+        "score": 11,
+        "consulta": "Dave, el bárbaro intro español latino"
+      }
+    },
+    {
+      "id": "toon-brandy-y-el-sr-bigotes-tema",
+      "franchise": "Brandy y el Sr. Bigotes",
+      "title": "Brandy y el Sr. Bigotes (tema latino)",
+      "elegido": {
+        "id": "1ordmjDJUq8",
+        "title": "intro - las aventuras de brandy y el sr bigotes (español latino)",
+        "seconds": 61,
+        "channel": "DISNEYCHANNELLFANS",
+        "score": 11,
+        "consulta": "Brandy y el Sr. Bigotes intro español latino"
+      }
+    },
+    {
+      "id": "toon-las-locuras-del-emperador-serie-tema",
+      "franchise": "Las locuras del emperador",
+      "title": "Kuzco (tema latino)",
+      "elegido": {
+        "id": "8dGw2BcvB-8",
+        "title": "Las Nuevas Locuras del Emperador | Opening Español Latino | Emitido en Disney XD Latinoamérica",
+        "seconds": 81,
+        "channel": "ZebasXD2",
+        "score": 10.85,
+        "consulta": "Las locuras del emperador intro español latino"
+      }
+    },
+    {
+      "id": "toon-lilo-y-stitch-serie-tema",
+      "franchise": "Lilo y Stitch",
+      "title": "Aloha, E Komo Mai (tema latino)",
+      "elegido": {
+        "id": "zGXOYHs-g9E",
+        "title": "Intro De Lilo Y Stitch La Serie [Español Latino]",
+        "seconds": 62,
+        "channel": "PLANETA TOONS ",
+        "score": 11,
+        "consulta": "Lilo y Stitch intro español latino"
+      }
+    },
+    {
+      "id": "toon-los-sustitutos-disney-tema",
+      "franchise": "Los sustitutos",
+      "title": "Los sustitutos (tema latino)",
+      "elegido": {
+        "id": "_1ahIVWtcTI",
+        "title": "LOS SUSTITUTOS - ESPAÑOL LATINO (INTRO latino)",
+        "seconds": 62,
+        "channel": "UN CLICK",
+        "score": 11,
+        "consulta": "Los sustitutos intro español latino"
+      }
+    },
+    {
+      "id": "toon-jake-long-dragon-occidental-tema",
+      "franchise": "Jake Long",
+      "title": "El dragón occidental (tema latino)",
+      "elegido": {
+        "id": "zIgU9Q3xvQs",
+        "title": "Jake Long: El dragón occidental - Opening Latino HD",
+        "seconds": 59,
+        "channel": "TheFackiuu2",
+        "score": 11,
+        "consulta": "Jake Long intro español latino"
+      }
+    },
+    {
+      "id": "toon-yin-yang-yo-tema",
+      "franchise": "Yin Yang Yo!",
+      "title": "Yin Yang Yo! (tema latino)",
+      "elegido": {
+        "id": "KOC7DEO8w7c",
+        "title": "Intro - Yin Yang Yo! (Español Latino, HD 16:9)",
+        "seconds": 55,
+        "channel": "kanekaspar",
+        "score": 11,
+        "consulta": "Yin Yang Yo! intro español latino"
+      }
+    },
+    {
+      "id": "toon-pucca-serie-animada-tema",
+      "franchise": "Pucca",
+      "title": "Pucca (tema latino)",
+      "elegido": {
+        "id": "SdiX84Pz1hQ",
+        "title": "Pucca intro en espanol",
+        "seconds": 38,
+        "channel": "Garu Ng",
+        "score": 11,
+        "consulta": "Pucca intro español latino"
+      }
+    },
+    {
+      "id": "toon-shuriken-school-tema",
+      "franchise": "Shuriken School",
+      "title": "Shuriken School (tema latino)",
+      "elegido": {
+        "id": "WTQ_bj6T14g",
+        "title": "Shuriken School Y El Mago Serie Animada Intro Español Latino Crossover ",
+        "seconds": 139,
+        "channel": "José Lau sanchez",
+        "score": 10.85,
+        "consulta": "Shuriken School intro español latino"
+      }
+    },
+    {
+      "id": "toon-martin-mystery-tema",
+      "franchise": "Martin Mystery",
+      "title": "Martin Mystery (tema latino)",
+      "elegido": {
+        "id": "ZNz9Ueg2FHs",
+        "title": "Martin Mystery Comercial Nickelodeon 2004 - Latino",
+        "seconds": 53,
+        "channel": "Dark2015",
+        "score": 9.1,
+        "consulta": "Martin Mystery tema de entrada latino"
+      }
+    },
+    {
+      "id": "toon-tres-espias-sin-limite-tema",
+      "franchise": "Tres espías sin límite",
+      "title": "Tres espías sin límite (tema latino)",
+      "elegido": {
+        "id": "T8GFc15NVDg",
+        "title": "Tres Espias Sin Limite - Intro Latino",
+        "seconds": 30,
+        "channel": "WITCHMiLo",
+        "score": 11,
+        "consulta": "Tres espías sin límite intro español latino"
+      }
+    },
+    {
+      "id": "toon-codigo-lyoko-tema",
+      "franchise": "Código Lyoko",
+      "title": "Un mundo sin peligro (tema latino)",
+      "elegido": {
+        "id": "0tpv-sqn3fk",
+        "title": "Código Lyoko - Opening 1 Español Latino HD",
+        "seconds": 62,
+        "channel": "CodigoLyokoLA",
+        "score": 11,
+        "consulta": "Código Lyoko intro español latino"
+      }
+    },
+    {
+      "id": "toon-witch-serie-animada-tema",
+      "franchise": "W.I.T.C.H.",
+      "title": "W.I.T.C.H. (tema latino)",
+      "elegido": {
+        "id": "t7l-ba4VxOg",
+        "title": "W.I.T.C.H. Temporada 1° opening 1 latino",
+        "seconds": 58,
+        "channel": "Merlia",
+        "score": 11,
+        "consulta": "W.I.T.C.H. intro español latino"
+      }
+    },
+    {
+      "id": "toon-winx-club-serie-tema",
+      "franchise": "El club Winx",
+      "title": "Bajo el signo de Winx (tema latino)",
+      "elegido": {
+        "id": "NnXYLSGyjpY",
+        "title": "Winx Club Canción de Inicio de la 1º temporada en Español Latino",
+        "seconds": 86,
+        "channel": "Renafanwinx",
+        "score": 11,
+        "consulta": "El club Winx intro español latino"
+      }
+    },
+    {
+      "id": "toon-liga-de-la-justicia-tema",
+      "franchise": "Liga de la Justicia",
+      "title": "Liga de la Justicia (tema)",
+      "elegido": {
+        "id": "Q51kns5haj4",
+        "title": "Opening de la Liga de la Justicia en Español Latino",
+        "seconds": 62,
+        "channel": "Enter Series",
+        "score": 11,
+        "consulta": "Liga de la Justicia intro español latino"
+      }
+    },
+    {
+      "id": "toon-liga-de-la-justicia-ilimitada-tema",
+      "franchise": "Liga de la Justicia",
+      "title": "Liga de la Justicia Ilimitada (tema)",
+      "elegido": {
+        "id": "Q51kns5haj4",
+        "title": "Opening de la Liga de la Justicia en Español Latino",
+        "seconds": 62,
+        "channel": "Enter Series",
+        "score": 11,
+        "consulta": "Liga de la Justicia intro español latino"
+      }
+    },
+    {
+      "id": "toon-the-batman-2004-tema",
+      "franchise": "Batman",
+      "title": "The Batman (tema)",
+      "elegido": {
+        "id": "Fgz9cJScRik",
+        "title": "Batman Beyond Opening Español Latino (1080p HD)",
+        "seconds": 55,
+        "channel": "Demis Facundo Hereñú",
+        "score": 10.4,
+        "consulta": "Batman intro español latino"
+      }
+    },
+    {
+      "id": "toon-batman-el-valiente-tema",
+      "franchise": "Batman",
+      "title": "Batman: El valiente (tema latino)",
+      "elegido": {
+        "id": "Fgz9cJScRik",
+        "title": "Batman Beyond Opening Español Latino (1080p HD)",
+        "seconds": 55,
+        "channel": "Demis Facundo Hereñú",
+        "score": 10.4,
+        "consulta": "Batman intro español latino"
+      }
+    },
+    {
+      "id": "toon-x-men-evolution-tema",
+      "franchise": "X-Men",
+      "title": "X-Men: Evolución (tema)",
+      "elegido": {
+        "id": "YypzWfwOC3A",
+        "title": "X-MEN Opening Intro audio latino",
+        "seconds": 61,
+        "channel": "animekaimen",
+        "score": 11,
+        "consulta": "X-Men intro español latino"
+      }
+    },
+    {
+      "id": "toon-wolverine-y-los-x-men-tema",
+      "franchise": "X-Men",
+      "title": "Wolverine y los X-Men (tema)",
+      "elegido": {
+        "id": "YypzWfwOC3A",
+        "title": "X-MEN Opening Intro audio latino",
+        "seconds": 61,
+        "channel": "animekaimen",
+        "score": 11,
+        "consulta": "X-Men intro español latino"
+      }
+    },
+    {
+      "id": "toon-espectacular-hombre-arana-tema",
+      "franchise": "El Hombre Araña",
+      "title": "El espectacular Hombre Araña (tema latino)",
+      "elegido": {
+        "id": "2887MsT5Axw",
+        "title": "Spiderman / Hombre Araña - Opening Latino (remasterizado)",
+        "seconds": 62,
+        "channel": "Bellower666",
+        "score": 11,
+        "consulta": "El Hombre Araña intro español latino"
+      }
+    },
+    {
+      "id": "toon-spider-man-mtv-2003-tema",
+      "franchise": "El Hombre Araña",
+      "title": "Spider-Man MTV (tema)",
+      "elegido": {
+        "id": "2887MsT5Axw",
+        "title": "Spiderman / Hombre Araña - Opening Latino (remasterizado)",
+        "seconds": 62,
+        "channel": "Bellower666",
+        "score": 11,
+        "consulta": "El Hombre Araña intro español latino"
+      }
+    },
+    {
+      "id": "toon-static-shock-choque-estatico-tema",
+      "franchise": "Static Shock",
+      "title": "Choque estático (tema latino)",
+      "elegido": {
+        "id": "EeaGn0ON968",
+        "title": "Static Shock Especial Liga de la Justicia [Fragmento Latino]",
+        "seconds": 104,
+        "channel": "alceweb",
+        "score": 9.25,
+        "consulta": "Static Shock intro español latino"
+      }
+    },
+    {
+      "id": "toon-escuadron-de-superheroes-tema",
+      "franchise": "El escuadrón de superhéroes",
+      "title": "Super Hero Squad (tema latino)",
+      "elegido": {
+        "id": "vJaO7qtSO-w",
+        "title": "El Escuadrón de Superhéroes (Intro en español latino)",
+        "seconds": 136,
+        "channel": "Spideyfans1308",
+        "score": 10.55,
+        "consulta": "El escuadrón de superhéroes intro español latino"
+      }
+    },
+    {
+      "id": "toon-george-de-la-selva-animada-tema",
+      "franchise": "George de la selva",
+      "title": "George de la selva (tema latino)",
+      "elegido": {
+        "id": "3CeEVEAlIsg",
+        "title": "Intro De George De La Selva [Español Latino]",
+        "seconds": 31,
+        "channel": "PLANETA TOONS ",
+        "score": 11,
+        "consulta": "George de la selva intro español latino"
+      }
+    },
+    {
+      "id": "toon-jaco-dos-dos-tema",
+      "franchise": "Jaco dos dos",
+      "title": "Jaco dos dos (tema latino)",
+      "elegido": {
+        "id": "J3NpefI18es",
+        "title": "JACOBO DOS - DOS INTRO ESPAÑOL LATINO 1080PHD - A.L CHANNEL OFFICIAL :D",
+        "seconds": 61,
+        "channel": "Angel Lugo Channel Official",
+        "score": 11,
+        "consulta": "Jaco dos dos intro español latino"
+      }
+    },
+    {
+      "id": "toon-kenny-el-tiburon-tema",
+      "franchise": "Kenny el tiburón",
+      "title": "Kenny el tiburón (tema latino)",
+      "elegido": {
+        "id": "VncaxOmNsiU",
+        "title": "Kenny el Tiburón (Intro) (Español Latino)",
+        "seconds": 36,
+        "channel": "The Fernando Dalmatian 206",
+        "score": 11,
+        "consulta": "Kenny el tiburón intro español latino"
+      }
+    },
+    {
+      "id": "toon-tutenstein-discovery-kids-tema",
+      "franchise": "Tutenstein",
+      "title": "Tutenstein (tema latino)",
+      "elegido": {
+        "id": "l8NX7FyrNfE",
+        "title": "Tutenstein Adulto ESPAÑOL ESPAÑA ",
+        "seconds": 18,
+        "channel": "luis adellan - Escenas y Parodias",
+        "score": 9.85,
+        "consulta": "Tutenstein intro español latino"
+      }
+    },
+    {
+      "id": "toon-creepie-discovery-kids-tema",
+      "franchise": "Creepie",
+      "title": "Creepie (tema latino)",
+      "elegido": {
+        "id": "qR3J_KFeTig",
+        "title": "Creepie Opening Latino",
+        "seconds": 60,
+        "channel": "viantaar",
+        "score": 11,
+        "consulta": "Creepie intro español latino"
+      }
+    },
+    {
+      "id": "toon-juniper-lee-vida-y-obra-tema",
+      "franchise": "Juniper Lee",
+      "title": "Juniper Lee (tema latino)",
+      "elegido": {
+        "id": "mn6uYhoFVFA",
+        "title": "Vida y Obra de Juniper Lee   intro español latino",
+        "seconds": 46,
+        "channel": "Cartoon Classic",
+        "score": 11,
+        "consulta": "Juniper Lee intro español latino"
+      }
+    },
+    {
+      "id": "toon-mi-padre-el-rockero-tema",
+      "franchise": "Mi padre el rockero",
+      "title": "Mi padre el rockero (tema latino)",
+      "elegido": {
+        "id": "HDuarB9PFfk",
+        "title": "Mi padre el rockero intro (Español latino)",
+        "seconds": 60,
+        "channel": "🐰Barry y Bam 2024🦇",
+        "score": 10.85,
+        "consulta": "Mi padre el rockero intro español latino"
+      }
+    },
+    {
+      "id": "toon-carl-al-cuadrado-tema",
+      "franchise": "Carl al cuadrado",
+      "title": "Carl al cuadrado (tema latino)",
+      "elegido": {
+        "id": "BsiHMMbouBc",
+        "title": "Carl al Cuadrado intro Latino",
+        "seconds": 62,
+        "channel": "JuanBlaiddyd",
+        "score": 11,
+        "consulta": "Carl al cuadrado intro español latino"
+      }
+    },
+    {
+      "id": "toon-isla-de-mutantes-tema",
+      "franchise": "Isla de mutantes",
+      "title": "Isla de mutantes (tema latino)",
+      "elegido": {
+        "id": "5E-9s6pY2B8",
+        "title": "Tema de entrada (opening) de Isla de Mutantes (Spliced) español latino",
+        "seconds": 59,
+        "channel": "LaloGarx",
+        "score": 11,
+        "consulta": "Isla de mutantes intro español latino"
+      }
+    },
+    {
+      "id": "toon-sabados-secretos-tema",
+      "franchise": "Los sábados secretos",
+      "title": "Los sábados secretos (tema latino)",
+      "elegido": {
+        "id": "z4zsDkYRM8s",
+        "title": "Intro De Los Sábados Secretos [Español Latino]",
+        "seconds": 30,
+        "channel": "PLANETA TOONS ",
+        "score": 11,
+        "consulta": "Los sábados secretos intro español latino"
+      }
+    },
+    {
+      "id": "toon-star-wars-clone-wars-2008-tema",
+      "franchise": "Star Wars",
+      "title": "La guerra de los clones (tema)",
+      "elegido": {
+        "id": "SU4WjBo1O84",
+        "title": "Intro Star Wars (1977) en Español ||Recostrucción 4k77 ||Enlace en la descripción",
+        "seconds": 140,
+        "channel": "Elias “EliasMalvado” López Sánchez",
+        "score": 10.4,
+        "consulta": "Star Wars intro español latino"
+      }
+    },
+    {
+      "id": "toon-pocoyo-serie-tema",
+      "franchise": "Pocoyó",
+      "title": "Pocoyó (tema)",
+      "elegido": {
+        "id": "8LZVVSmYzQs",
+        "title": "Pocoyo Intro Espanol Latino",
+        "seconds": 41,
+        "channel": "Fernando11101",
+        "score": 11,
+        "consulta": "Pocoyó intro español latino"
+      }
+    },
+    {
+      "id": "toon-martha-habla-tema",
+      "franchise": "Martha habla",
+      "title": "Martha habla (tema latino)",
+      "elegido": {
+        "id": "p3-UghfUfzM",
+        "title": "MARTHA HABLA.- INTRO EN INGLES Y LATINO.mp4",
+        "seconds": 127,
+        "channel": "thechildorgan",
+        "score": 10.1,
+        "consulta": "Martha habla intro español latino"
+      }
+    },
+    {
+      "id": "toon-justicia-joven-tema",
+      "franchise": "Justicia Joven",
+      "title": "Justicia Joven (tema latino)",
+      "elegido": {
+        "id": "BVM7aJRcDhQ",
+        "title": "Justicia joven Intro latino",
+        "seconds": 21,
+        "channel": "camiloretamoza",
+        "score": 11,
+        "consulta": "Justicia Joven intro español latino"
+      }
+    },
+    {
+      "id": "toon-vengadores-heroes-mas-poderosos-tema",
+      "franchise": "Los Vengadores",
+      "title": "Fight as One (tema latino)",
+      "elegido": {
+        "id": "yYAK1xW4l1Y",
+        "title": "Los Vengadores los Héroes Más Poderosos del Planeta: Opening Español Latino",
+        "seconds": 63,
+        "channel": "JonathanMassey",
+        "score": 11,
+        "consulta": "Los Vengadores intro español latino"
+      }
+    },
+    {
+      "id": "toon-ultimate-spider-man-tema",
+      "franchise": "El Hombre Araña",
+      "title": "Ultimate Spider-Man (tema)",
+      "elegido": {
+        "id": "2887MsT5Axw",
+        "title": "Spiderman / Hombre Araña - Opening Latino (remasterizado)",
+        "seconds": 62,
+        "channel": "Bellower666",
+        "score": 11,
+        "consulta": "El Hombre Araña intro español latino"
+      }
+    },
+    {
+      "id": "toon-hulk-agentes-de-smash-tema",
+      "franchise": "Hulk",
+      "title": "Agentes de S.M.A.S.H. (tema)",
+      "elegido": {
+        "id": "TDniH6eZtdc",
+        "title": "♫ Hulk ♫ (tema principal en español) - Superbanda",
+        "seconds": 58,
+        "channel": "cancionestv",
+        "score": 10.7,
+        "consulta": "Hulk intro español latino"
+      }
+    },
+    {
+      "id": "toon-vengadores-unidos-tema",
+      "franchise": "Los Vengadores",
+      "title": "Vengadores Unidos (tema)",
+      "elegido": {
+        "id": "yYAK1xW4l1Y",
+        "title": "Los Vengadores los Héroes Más Poderosos del Planeta: Opening Español Latino",
+        "seconds": 63,
+        "channel": "JonathanMassey",
+        "score": 11,
+        "consulta": "Los Vengadores intro español latino"
+      }
+    },
+    {
+      "id": "toon-star-wars-rebels-tema",
+      "franchise": "Star Wars",
+      "title": "Star Wars Rebels (tema)",
+      "elegido": {
+        "id": "SU4WjBo1O84",
+        "title": "Intro Star Wars (1977) en Español ||Recostrucción 4k77 ||Enlace en la descripción",
+        "seconds": 140,
+        "channel": "Elias “EliasMalvado” López Sánchez",
+        "score": 10.4,
+        "consulta": "Star Wars intro español latino"
+      }
+    },
+    {
+      "id": "toon-tron-la-resistencia-tema",
+      "franchise": "Tron",
+      "title": "Tron: La resistencia (tema)",
+      "elegido": {
+        "id": "GTk4UtQ0iYo",
+        "title": "TRON LEGACY INTRO LATINO HD",
+        "seconds": 135,
+        "channel": "MrSextoHokage",
+        "score": 10.85,
+        "consulta": "Tron intro español latino"
+      }
+    },
+    {
+      "id": "toon-thundercats-2011-tema",
+      "franchise": "Thundercats",
+      "title": "Thundercats (tema 2011)",
+      "elegido": {
+        "id": "fQKEQz4as8U",
+        "title": "Thundercats Intro Latino",
+        "seconds": 77,
+        "channel": "GMJCZP",
+        "score": 11,
+        "consulta": "Thundercats intro español latino"
+      }
+    },
+    {
+      "id": "toon-linterna-verde-serie-animada-tema",
+      "franchise": "Linterna Verde",
+      "title": "Linterna Verde (tema)",
+      "elegido": {
+        "id": "_MfSBvh0Cdo",
+        "title": "Linterna Verde Intro Español Castellano",
+        "seconds": 17,
+        "channel": "Derek Falabella Santana",
+        "score": 10.7,
+        "consulta": "Linterna Verde intro español latino"
+      }
+    },
+    {
+      "id": "toon-cuidado-con-batman-tema",
+      "franchise": "Batman",
+      "title": "Beware the Batman (tema)",
+      "elegido": {
+        "id": "Fgz9cJScRik",
+        "title": "Batman Beyond Opening Español Latino (1080p HD)",
+        "seconds": 55,
+        "channel": "Demis Facundo Hereñú",
+        "score": 10.4,
+        "consulta": "Batman intro español latino"
+      }
+    },
+    {
+      "id": "toon-mad-cartoon-network-tema",
+      "franchise": "Mad",
+      "title": "Mad (tema latino)",
+      "elegido": {
+        "id": "36dJrraDv5Y",
+        "title": "MAD intro latino",
+        "seconds": 23,
+        "channel": "SubeGame",
+        "score": 11,
+        "consulta": "Mad intro español latino"
+      }
+    },
+    {
+      "id": "toon-dan-vs-serie-animada-tema",
+      "franchise": "Dan Vs.",
+      "title": "Dan Vs. (tema latino)",
+      "elegido": {
+        "id": "TdCvW8836Uw",
+        "title": "Dan vs - Capitulo 1 Temporada 1 - Español Latino",
+        "seconds": 56,
+        "channel": "CGD Estudio",
+        "score": 10,
+        "consulta": "Dan Vs. intro español latino"
+      }
+    },
+    {
+      "id": "toon-randy-cunningham-ninja-total-tema",
+      "franchise": "Randy Cunningham",
+      "title": "Ninja total (tema latino)",
+      "elegido": {
+        "id": "EC6droqMZc0",
+        "title": "Intro De Randy Cunningham Ninja Total [Español Latino]",
+        "seconds": 55,
+        "channel": "PLANETA TOONS ",
+        "score": 11,
+        "consulta": "Randy Cunningham intro español latino"
+      }
+    },
+    {
+      "id": "toon-galaxia-wander-tema",
+      "franchise": "Galaxia Wander",
+      "title": "Galaxia Wander (tema latino)",
+      "elegido": {
+        "id": "9IwHXgYvmDk",
+        "title": "Galaxia Wander - Intro [Esp. Latino]",
+        "seconds": 46,
+        "channel": "hadamsj",
+        "score": 11,
+        "consulta": "Galaxia Wander intro español latino"
+      }
+    },
+    {
+      "id": "toon-penn-zero-casi-heroe-tema",
+      "franchise": "Penn Zero",
+      "title": "Penn Zero (tema latino)",
+      "elegido": {
+        "id": "y47WBHgfH1c",
+        "title": "Penn Zero Casi Heroe - Intro Español Latino",
+        "seconds": 42,
+        "channel": "PZ MultiCaps ",
+        "score": 11,
+        "consulta": "Penn Zero intro español latino"
+      }
+    },
+    {
+      "id": "toon-pickle-y-mani-tema",
+      "franchise": "Pickle y Maní",
+      "title": "Pickle y Maní (tema latino)",
+      "elegido": {
+        "id": "kqe---USaAA",
+        "title": "Pickle y Maní | Intro (Tema de entrada) | Español Latinoamericano",
+        "seconds": 36,
+        "channel": "Tano Upload Canciones",
+        "score": 11,
+        "consulta": "Pickle y Maní intro español latino"
+      }
+    },
+    {
+      "id": "toon-star-wars-resistencia-tema",
+      "franchise": "Star Wars",
+      "title": "Star Wars Resistance (tema)",
+      "elegido": {
+        "id": "SU4WjBo1O84",
+        "title": "Intro Star Wars (1977) en Español ||Recostrucción 4k77 ||Enlace en la descripción",
+        "seconds": 140,
+        "channel": "Elias “EliasMalvado” López Sánchez",
+        "score": 10.4,
+        "consulta": "Star Wars intro español latino"
+      }
+    },
+    {
+      "id": "toon-patoaventuras-2017-tema",
+      "franchise": "Patoaventuras",
+      "title": "Patoaventuras (tema latino 2017)",
+      "elegido": {
+        "id": "Xzg2U6Sw79s",
+        "title": "PatoAventuras Intro Español Latino",
+        "seconds": 57,
+        "channel": "JonathanMassey",
+        "score": 11,
+        "consulta": "Patoaventuras intro español latino"
+      }
+    },
+    {
+      "id": "toon-big-hero-6-serie-tema",
+      "franchise": "Grandes héroes",
+      "title": "Grandes héroes (tema latino)",
+      "elegido": {
+        "id": "URGL_6rRLTA",
+        "title": "Intro De Grandes Héroes La Serie Temporada 1 [Español Latino]",
+        "seconds": 31,
+        "channel": "PLANETA TOONS ",
+        "score": 11,
+        "consulta": "Grandes héroes intro español latino"
+      }
+    },
+    {
+      "id": "toon-enredados-otra-vez-serie-tema",
+      "franchise": "Enredados",
+      "title": "Viento en mi cabello (tema latino)",
+      "elegido": {
+        "id": "EfPiCwDGCPg",
+        "title": "Enredados otra vez: La serie | Lo voy a lograr (Intro - Tema de entrada) | Español Latinoaméricano",
+        "seconds": 40,
+        "channel": "Tano Upload Canciones",
+        "score": 11,
+        "consulta": "Enredados intro español latino"
+      }
+    },
+    {
+      "id": "toon-elena-de-avalor-tema",
+      "franchise": "Elena de Avalor",
+      "title": "Elena de Avalor (tema latino)",
+      "elegido": {
+        "id": "jvkcisndi_k",
+        "title": "|Intro| OPENING 2 LATINO - Elena de Avalor[720p]",
+        "seconds": 61,
+        "channel": "Dragón Z",
+        "score": 10.85,
+        "consulta": "Elena de Avalor intro español latino"
+      }
+    },
+    {
+      "id": "toon-la-guardia-del-leon-tema",
+      "franchise": "La guardia del león",
+      "title": "La guardia del león (tema latino)",
+      "elegido": {
+        "id": "-r9F9fIta70",
+        "title": "La guardia del león intro español latino",
+        "seconds": 59,
+        "channel": "Johan Kion Gil",
+        "score": 11,
+        "consulta": "La guardia del león intro español latino"
+      }
+    },
+    {
+      "id": "toon-vampirina-disney-tema",
+      "franchise": "Vampirina",
+      "title": "Vampirina (tema latino)",
+      "elegido": {
+        "id": "JRfYUIlAEGY",
+        "title": "Vampirina - Intro (Español Latino) (PAL)",
+        "seconds": 52,
+        "channel": "00zipp²",
+        "score": 10.85,
+        "consulta": "Vampirina intro español latino"
+      }
+    },
+    {
+      "id": "toon-muppet-babies-2018-tema",
+      "franchise": "Muppet Babies",
+      "title": "Muppet Babies (tema latino 2018)",
+      "elegido": {
+        "id": "GJvcHymNNug",
+        "title": "muppets babies intro completo español latino",
+        "seconds": 60,
+        "channel": "RAYAMASTER",
+        "score": 11,
+        "consulta": "Muppet Babies intro español latino"
+      }
+    },
+    {
+      "id": "toon-manzana-y-cebollin-tema",
+      "franchise": "Manzana y Cebollín",
+      "title": "Manzana y Cebollín (tema latino)",
+      "elegido": {
+        "id": "J6BSPdP1xqs",
+        "title": "Manzana y Cebollín   Intro Español Latino",
+        "seconds": 21,
+        "channel": "Doble D27",
+        "score": 11,
+        "consulta": "Manzana y Cebollín intro español latino"
+      }
+    },
+    {
+      "id": "toon-el-mundo-de-craig-tema",
+      "franchise": "El mundo de Craig",
+      "title": "El mundo de Craig (tema latino)",
+      "elegido": {
+        "id": "JwRe5XG4CZo",
+        "title": "El Mundo De Craig   Intro Español Latino",
+        "seconds": 21,
+        "channel": "El Mundo De Craig",
+        "score": 11,
+        "consulta": "El mundo de Craig intro español latino"
+      }
+    },
+    {
+      "id": "toon-campamento-de-verano-cn-tema",
+      "franchise": "Campamento de verano",
+      "title": "Campamento de verano (tema latino)",
+      "elegido": {
+        "id": "IoNAdsni9yQ",
+        "title": "Campamento De Verano Intro Espanol Latino",
+        "seconds": 24,
+        "channel": "Fernando11101",
+        "score": 11,
+        "consulta": "Campamento de verano intro español latino"
+      }
+    },
+    {
+      "id": "toon-victor-y-valentino-tema",
+      "franchise": "Víctor y Valentino",
+      "title": "Víctor y Valentino (tema latino)",
+      "elegido": {
+        "id": "1y6U4Ft_Pj0",
+        "title": "Víctor & Valentino - Intro [Latino HD]",
+        "seconds": 23,
+        "channel": "Animac-ES",
+        "score": 11,
+        "consulta": "Víctor y Valentino intro español latino"
+      }
+    },
+    {
+      "id": "toon-mao-mao-heroes-de-puro-corazon-tema",
+      "franchise": "Mao Mao",
+      "title": "Mao Mao (tema latino)",
+      "elegido": {
+        "id": "LOTOqN__T6Y",
+        "title": "Mao Mao Heroes de puro corazón Opening latino",
+        "seconds": 21,
+        "channel": "Spike Sparkle  🇩🇴",
+        "score": 11,
+        "consulta": "Mao Mao intro español latino"
+      }
+    },
+    {
+      "id": "toon-tren-infinito-infinity-train-tema",
+      "franchise": "El tren infinito",
+      "title": "El tren infinito (tema latino)",
+      "elegido": {
+        "id": "h6xPBRQTA80",
+        "title": "intro del tren infinito demon slayer español latino",
+        "seconds": 90,
+        "channel": "Demon slayer",
+        "score": 10.4,
+        "consulta": "El tren infinito intro español latino"
+      }
+    },
+    {
+      "id": "toon-mas-alla-del-jardin-tema",
+      "franchise": "Más allá del jardín",
+      "title": "Hacia el bosque (tema latino)",
+      "elegido": {
+        "id": "gw4yn2MxBas",
+        "title": "Mas alla del Jardin(Opening-Ending)(Latino)",
+        "seconds": 188,
+        "channel": "Juan M.",
+        "score": 10.85,
+        "consulta": "Más allá del jardín intro español latino"
+      }
+    },
+    {
+      "id": "toon-ok-ko-seamos-heroes-tema",
+      "franchise": "OK K.O.!",
+      "title": "Seamos héroes (tema latino)",
+      "elegido": {
+        "id": "9rWkP6cDP9A",
+        "title": "¡OK K.O.! Seamos Héroes-Intro Español Latino",
+        "seconds": 24,
+        "channel": "K.O. Network",
+        "score": 11,
+        "consulta": "OK K.O.! intro español latino"
+      }
+    },
+    {
+      "id": "toon-villanos-cartoon-network-tema",
+      "franchise": "Villanos",
+      "title": "Villanos (tema latino)",
+      "elegido": {
+        "id": "Q52_R7ono2w",
+        "title": "Descedientes: Mundo de Villanos (intro) (Español Latino)",
+        "seconds": 19,
+        "channel": "Peachy’s ",
+        "score": 10.85,
+        "consulta": "Villanos intro español latino"
+      }
+    },
+    {
+      "id": "toon-kid-cosmic-netflix-tema",
+      "franchise": "Kid Cosmic",
+      "title": "Kid Cosmic (tema latino)",
+      "elegido": {
+        "id": "VDBYRZT3kr4",
+        "title": "The Kid (Kid Cosmic Theme) Dr. Fang and The Gang Subtitulado En Inglés y Español",
+        "seconds": 117,
+        "channel": "Gabomo",
+        "score": 10.7,
+        "consulta": "Kid Cosmic intro español latino"
+      }
+    },
+    {
+      "id": "toon-carmen-sandiego-netflix-tema",
+      "franchise": "Carmen Sandiego",
+      "title": "Carmen Sandiego (tema latino)",
+      "elegido": {
+        "id": "finhfEx5358",
+        "title": "¿Dónde en el mundo está Carmen Sandiego? intro en español latino",
+        "seconds": 66,
+        "channel": "BombCrag",
+        "score": 11,
+        "consulta": "Carmen Sandiego intro español latino"
+      }
+    },
+    {
+      "id": "toon-hilda-netflix-tema",
+      "franchise": "Hilda",
+      "title": "Hilda (tema latino)",
+      "elegido": {
+        "id": "dDteTvrkfQw",
+        "title": "Hilda - La Vida De Hilda (Español Latino)",
+        "seconds": 165,
+        "channel": "Doblaje y Canciones",
+        "score": 10,
+        "consulta": "Hilda intro español latino"
+      }
+    },
+    {
+      "id": "toon-trollhunters-guillermo-del-toro-tema",
+      "franchise": "Trollhunters",
+      "title": "Trollhunters (tema latino)",
+      "elegido": {
+        "id": "FZknyLxT57I",
+        "title": "Trollhunters - Kanjigar : Un cazatrollers nunca se rinde (Español Latino)",
+        "seconds": 30,
+        "channel": "SuarezChoy FreddyArmando",
+        "score": 8.95,
+        "consulta": "Trollhunters intro español latino"
+      }
+    },
+    {
+      "id": "toon-kipo-bestias-magicas-tema",
+      "franchise": "Kipo y la era de los magnimales",
+      "title": "Kipo (tema latino)",
+      "elegido": {
+        "id": "HBQ6sy5kzi4",
+        "title": "Kipo y La Era delos Magnimales: La Honestidad es Importante | La Sexualidad de Benson (Latino) ",
+        "seconds": 21,
+        "channel": "Sr. J. Delfino “Fino” N@choz “Nikki” el Erriugazi ",
+        "score": 9.85,
+        "consulta": "Kipo y la era de los magnimales intro español latino"
+      }
+    },
+    {
+      "id": "toon-los-casagrande-nickelodeon-tema",
+      "franchise": "Los Casagrande",
+      "title": "Los Casagrande (tema latino)",
+      "elegido": {
+        "id": "8NcIX_LaNcY",
+        "title": "Casagrande intro en español latino 🇲🇽",
+        "seconds": 30,
+        "channel": "kchorro123m ",
+        "score": 11,
+        "consulta": "Los Casagrande intro español latino"
+      }
+    },
+    {
+      "id": "toon-cuphead-el-show-de-cuphead-tema",
+      "franchise": "El show de Cuphead!",
+      "title": "El show de Cuphead (tema latino)",
+      "elegido": {
+        "id": "yUJfH0gZk1c",
+        "title": "¡El show de Cuphead! | Intro en español latino",
+        "seconds": 63,
+        "channel": "Eliasxd1235",
+        "score": 11,
+        "consulta": "El show de Cuphead! intro español latino"
+      }
+    }
+  ],
+  "dudosas": [
+    {
+      "id": "toon-dinamita-perro-maravilla-tema",
+      "franchise": "Dinamita, el perro maravilla",
+      "title": "Dinamita (tema latino)",
+      "elegido": {
+        "id": "ozbYqnEPRzc",
+        "title": "Dinamita, El Perro Dinamita Audio Latino LEER DESCRIPCION",
+        "seconds": 176,
+        "channel": "Bar de Series Nostalgicas (Series Retro)",
+        "score": 7.1,
+        "consulta": "Dinamita, el perro maravilla intro español latino"
+      }
+    },
+    {
+      "id": "toon-frankenstein-jr-los-imposibles-tema",
+      "franchise": "Frankenstein Jr. y Los Imposibles",
+      "title": "Frankenstein Jr. (tema latino)",
+      "elegido": {
+        "id": "XrkRs8s7pY0",
+        "title": "Los imposibles intro español latino",
+        "seconds": 46,
+        "channel": "Retro'X Tv",
+        "score": 7.85,
+        "consulta": "Frankenstein Jr. y Los Imposibles intro español latino"
+      }
+    },
+    {
+      "id": "toon-simiolon-y-la-pandilla-tema",
+      "franchise": "Simiolón y la pandilla",
+      "title": "Simiolón (tema latino)",
+      "elegido": {
+        "id": "NEw2GD707mE",
+        "title": "Grand Prix  - opening latino (remasterizado)",
+        "seconds": 71,
+        "channel": "Bellower666",
+        "score": 7.85,
+        "consulta": "El gran Simiolón tema de entrada latino"
+      }
+    },
+    {
+      "id": "toon-dinosaurios-extremos-tema",
+      "franchise": "Dinosaurios extremos",
+      "title": "Dinosaurios extremos (tema latino)",
+      "elegido": {
+        "id": "XdAab0rypcE",
+        "title": "Cadillacs Y dinosaurios (Intro Latino)",
+        "seconds": 61,
+        "channel": "5T4L1",
+        "score": 7.25,
+        "consulta": "Dinosaurios extremos tema de entrada latino"
+      }
+    },
+    {
+      "id": "toon-mighty-max-serie-tema",
+      "franchise": "Mighty Max",
+      "title": "Mighty Max (tema latino)",
+      "elegido": {
+        "id": "lrCWp_lH1xk",
+        "title": "The Maxx - Español latino",
+        "seconds": 24,
+        "channel": "Audios Latinos Retro",
+        "score": 6.85,
+        "consulta": "Mighty Max intro español latino"
+      }
+    },
+    {
+      "id": "toon-dibo-el-dragon-de-los-deseos-tema",
+      "franchise": "Dibo el dragón de los deseos",
+      "title": "Dibo (tema latino)",
+      "elegido": {
+        "id": "eeHyvpvEi2s",
+        "title": "Dragon Tales - Intro Latino",
+        "seconds": 70,
+        "channel": "T. C. Intros Latinos",
+        "score": 6.85,
+        "consulta": "Dibo el dragón de los deseos intro español latino"
+      }
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "toon-capitan-n-el-amo-del-juego-tema",
+      "franchise": "Capitán N",
+      "title": "Capitán N (tema latino)",
+      "motivo": "el mejor candidato no es incrustable",
+      "candidato": {
+        "id": "6qzNcWHgKtc",
+        "title": "Capitan N El Amo Del Juego Opening (Español Latino)",
+        "seconds": 62,
+        "channel": "osidevideos",
+        "score": 11,
+        "consulta": "Capitán N intro español latino"
+      }
+    },
+    {
+      "id": "toon-el-zorro-1997-serie-tema",
+      "franchise": "El Zorro",
+      "title": "El Zorro (tema latino)",
+      "motivo": "el mejor candidato no es incrustable",
+      "candidato": {
+        "id": "LY4rASclHns",
+        "title": "El Zorro Opening Español Latino",
+        "seconds": 46,
+        "channel": "Fantasma Lite",
+        "score": 11,
+        "consulta": "El Zorro intro español latino"
+      }
+    },
+    {
+      "id": "toon-fantasma-2040-tema",
+      "franchise": "Fantasma 2040",
+      "title": "Fantasma 2040 (tema latino)",
+      "motivo": "sin candidato confiable",
+      "candidato": {
+        "id": "3dpE5EUBAGE",
+        "title": "Phantom 2040 Intro 2 [Remastered]",
+        "seconds": 62,
+        "channel": "Darkulime Dark",
+        "score": 3.7,
+        "consulta": "Fantasma 2040 intro español latino"
+      }
+    },
+    {
+      "id": "toon-oggy-y-las-cucarachas-tema",
+      "franchise": "Oggy y las cucarachas",
+      "title": "Oggy (tema latino)",
+      "motivo": "sin candidato confiable",
+      "candidato": {
+        "id": "qogzy3YWxbU",
+        "title": "Oggy Y Las Cucarachas Intro",
+        "seconds": 40,
+        "channel": "Shadow0098",
+        "score": 4,
+        "consulta": "Oggy y las cucarachas intro español latino"
+      }
+    },
+    {
+      "id": "toon-el-chavo-animado-tema",
+      "franchise": "El Chavo animado",
+      "title": "Que bonita vecindad (tema latino)",
+      "motivo": "sin candidato confiable",
+      "candidato": {
+        "id": "6uNC5bkeVKs",
+        "title": "el chavo animado intro temporada 1 media films",
+        "seconds": 70,
+        "channel": "Luna Gallegos",
+        "score": 3.85,
+        "consulta": "El Chavo animado intro español latino"
+      }
+    }
+  ]
+}

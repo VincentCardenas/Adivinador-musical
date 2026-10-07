@@ -1,0 +1,1112 @@
+[
+  {
+    "id": "song-manto-estelar-moenia",
+    "cat": "song-electronica",
+    "franchise": "Moenia",
+    "game": "Manto estelar",
+    "title": "Manto estelar",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Moenia', 'Manto estelar')"
+  },
+  {
+    "id": "song-no-dices-mas-moenia",
+    "cat": "song-electronica",
+    "franchise": "Moenia",
+    "game": "No dices más",
+    "title": "No dices más",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Moenia', 'No dices más')"
+  },
+  {
+    "id": "song-ni-tu-ni-nadie-moenia",
+    "cat": "song-electronica",
+    "franchise": "Moenia",
+    "game": "Ni tú ni nadie",
+    "title": "Ni tú ni nadie",
+    "year": 2004,
+    "lang": "es",
+    "sources": "busca('Moenia', 'Ni tú ni nadie')"
+  },
+  {
+    "id": "song-morir-tres-veces",
+    "cat": "song-electronica",
+    "franchise": "Moenia",
+    "game": "Morir tres veces",
+    "title": "Morir tres veces",
+    "year": 2006,
+    "lang": "es",
+    "sources": "busca('Moenia', 'Morir tres veces')"
+  },
+  {
+    "id": "song-en-que-momento",
+    "cat": "song-electronica",
+    "franchise": "Moenia",
+    "game": "¿En qué momento?",
+    "title": "¿En qué momento?",
+    "year": 2001,
+    "lang": "es",
+    "sources": "busca('Moenia', '¿En qué momento?')"
+  },
+  {
+    "id": "song-dejame-entrar-moenia",
+    "cat": "song-electronica",
+    "franchise": "Moenia",
+    "game": "Déjame entrar",
+    "title": "Déjame entrar",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Moenia', 'Déjame entrar')"
+  },
+  {
+    "id": "song-estabas-ahi-moenia",
+    "cat": "song-electronica",
+    "franchise": "Moenia",
+    "game": "Estabas ahí",
+    "title": "Estabas ahí",
+    "year": 1997,
+    "lang": "es",
+    "sources": "busca('Moenia', 'Estabas ahí')"
+  },
+  {
+    "id": "song-no-puedo-estar-sin-ti",
+    "cat": "song-electronica",
+    "franchise": "Moenia",
+    "game": "No puedo estar sin ti",
+    "title": "No puedo estar sin ti",
+    "year": 1997,
+    "lang": "es",
+    "sources": "busca('Moenia', 'No puedo estar sin ti')"
+  },
+  {
+    "id": "song-llegaste-a-mi-moenia",
+    "cat": "song-electronica",
+    "franchise": "Moenia",
+    "game": "Llegaste a mí",
+    "title": "Llegaste a mí",
+    "year": 2001,
+    "lang": "es",
+    "sources": "busca('Moenia', 'Llegaste a mí')"
+  },
+  {
+    "id": "song-prohibido-besar-moenia",
+    "cat": "song-electronica",
+    "franchise": "Moenia",
+    "game": "Prohibido besar",
+    "title": "Prohibido besar",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('Moenia', 'Prohibido besar')"
+  },
+  {
+    "id": "song-cada-que-belanova",
+    "cat": "song-electronica",
+    "franchise": "Belanova",
+    "game": "Cada que...",
+    "title": "Cada que...",
+    "year": 2007,
+    "lang": "es",
+    "sources": "busca('Belanova', 'Cada que...')"
+  },
+  {
+    "id": "song-paso-el-tiempo-belanova",
+    "cat": "song-electronica",
+    "franchise": "Belanova",
+    "game": "Paso el tiempo",
+    "title": "Paso el tiempo",
+    "year": 2007,
+    "lang": "es",
+    "sources": "busca('Belanova', 'Paso el tiempo')"
+  },
+  {
+    "id": "song-me-pregunto-belanova",
+    "cat": "song-electronica",
+    "franchise": "Belanova",
+    "game": "Me pregunto",
+    "title": "Me pregunto",
+    "year": 2005,
+    "lang": "es",
+    "sources": "busca('Belanova', 'Me pregunto')"
+  },
+  {
+    "id": "song-tus-ojos-belanova",
+    "cat": "song-electronica",
+    "franchise": "Belanova",
+    "game": "Tus ojos",
+    "title": "Tus ojos",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('Belanova', 'Tus ojos')"
+  },
+  {
+    "id": "song-one-two-three-go",
+    "cat": "song-electronica",
+    "franchise": "Belanova",
+    "game": "1, 2, 3, Go!",
+    "title": "1, 2, 3, Go!",
+    "year": 2007,
+    "lang": "es",
+    "sources": "busca('Belanova', '1, 2, 3, Go!')"
+  },
+  {
+    "id": "song-mariposas-belanova",
+    "cat": "song-electronica",
+    "franchise": "Belanova",
+    "game": "Mariposas",
+    "title": "Mariposas",
+    "year": 2011,
+    "lang": "es",
+    "sources": "busca('Belanova', 'Mariposas')"
+  },
+  {
+    "id": "song-nada-es-igual-belanova",
+    "cat": "song-electronica",
+    "franchise": "Belanova",
+    "game": "Nada de más",
+    "title": "Nada de más",
+    "year": 2010,
+    "lang": "es",
+    "sources": "busca('Belanova', 'Nada de más')"
+  },
+  {
+    "id": "song-no-se-que-me-das",
+    "cat": "song-electronica",
+    "franchise": "Fangoria",
+    "game": "No sé qué me das",
+    "title": "No sé qué me das",
+    "year": 2001,
+    "lang": "es",
+    "sources": "busca('Fangoria', 'No sé qué me das')"
+  },
+  {
+    "id": "song-retorciendo-palabras",
+    "cat": "song-electronica",
+    "franchise": "Fangoria",
+    "game": "Retorciendo palabras",
+    "title": "Retorciendo palabras",
+    "year": 2004,
+    "lang": "es",
+    "sources": "busca('Fangoria', 'Retorciendo palabras')"
+  },
+  {
+    "id": "song-miro-la-vida-pasar",
+    "cat": "song-electronica",
+    "franchise": "Fangoria",
+    "game": "Miro la vida pasar",
+    "title": "Miro la vida pasar",
+    "year": 2004,
+    "lang": "es",
+    "sources": "busca('Fangoria', 'Miro la vida pasar')"
+  },
+  {
+    "id": "song-criticar-por-criticar",
+    "cat": "song-electronica",
+    "franchise": "Fangoria",
+    "game": "Criticar por criticar",
+    "title": "Criticar por criticar",
+    "year": 2006,
+    "lang": "es",
+    "sources": "busca('Fangoria', 'Criticar por criticar')"
+  },
+  {
+    "id": "song-dramas-y-comedias",
+    "cat": "song-electronica",
+    "franchise": "Fangoria",
+    "game": "Dramas y comedias",
+    "title": "Dramas y comedias",
+    "year": 2013,
+    "lang": "es",
+    "sources": "busca('Fangoria', 'Dramas y comedias')"
+  },
+  {
+    "id": "song-geometria-polifacetica",
+    "cat": "song-electronica",
+    "franchise": "Fangoria",
+    "game": "Geometría polifacética",
+    "title": "Geometría polifacética",
+    "year": 2016,
+    "lang": "es",
+    "sources": "busca('Fangoria', 'Geometría polifacética')"
+  },
+  {
+    "id": "song-fiesta-en-el-infierno",
+    "cat": "song-electronica",
+    "franchise": "Fangoria",
+    "game": "Fiesta en el infierno",
+    "title": "Fiesta en el infierno",
+    "year": 2016,
+    "lang": "es",
+    "sources": "busca('Fangoria', 'Fiesta en el infierno')"
+  },
+  {
+    "id": "song-espectacular-fangoria",
+    "cat": "song-electronica",
+    "franchise": "Fangoria",
+    "game": "Espectacular",
+    "title": "Espectacular",
+    "year": 2017,
+    "lang": "es",
+    "sources": "busca('Fangoria', 'Espectacular')"
+  },
+  {
+    "id": "song-eternamente-inocente",
+    "cat": "song-electronica",
+    "franchise": "Fangoria",
+    "game": "Eternamente inocente",
+    "title": "Eternamente inocente",
+    "year": 2001,
+    "lang": "es",
+    "sources": "busca('Fangoria', 'Eternamente inocente')"
+  },
+  {
+    "id": "song-historias-de-amor-obk",
+    "cat": "song-electronica",
+    "franchise": "OBK",
+    "game": "Historias de amor",
+    "title": "Historias de amor",
+    "year": 1991,
+    "lang": "es",
+    "sources": "busca('OBK', 'Historias de amor')"
+  },
+  {
+    "id": "song-de-que-me-sirve-llorar",
+    "cat": "song-electronica",
+    "franchise": "OBK",
+    "game": "De qué me sirve llorar",
+    "title": "De qué me sirve llorar",
+    "year": 1991,
+    "lang": "es",
+    "sources": "busca('OBK', 'De qué me sirve llorar')"
+  },
+  {
+    "id": "song-el-cielo-no-entiende",
+    "cat": "song-electronica",
+    "franchise": "OBK",
+    "game": "El cielo no entiende",
+    "title": "El cielo no entiende",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('OBK', 'El cielo no entiende')"
+  },
+  {
+    "id": "song-tu-sigue-asi-obk",
+    "cat": "song-electronica",
+    "franchise": "OBK",
+    "game": "Tú sigue así",
+    "title": "Tú sigue así",
+    "year": 2001,
+    "lang": "es",
+    "sources": "busca('OBK', 'Tú sigue así')"
+  },
+  {
+    "id": "song-falsa-moral-obk",
+    "cat": "song-electronica",
+    "franchise": "OBK",
+    "game": "Falsa moral",
+    "title": "Falsa moral",
+    "year": 2001,
+    "lang": "es",
+    "sources": "busca('OBK', 'Falsa moral')"
+  },
+  {
+    "id": "song-la-princesa-de-mis-suenos",
+    "cat": "song-electronica",
+    "franchise": "OBK",
+    "game": "La princesa de mis sueños",
+    "title": "La princesa de mis sueños",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('OBK', 'La princesa de mis sueños')"
+  },
+  {
+    "id": "song-quiereme-otra-vez",
+    "cat": "song-electronica",
+    "franchise": "OBK",
+    "game": "Quiéreme otra vez",
+    "title": "Quiéreme otra vez",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('OBK', 'Quiéreme otra vez')"
+  },
+  {
+    "id": "song-loco-mia-tema",
+    "cat": "song-electronica",
+    "franchise": "Loco Mía",
+    "game": "Loco Mía",
+    "title": "Loco Mía",
+    "year": 1989,
+    "lang": "es",
+    "sources": "busca('Loco Mía', 'Loco Mía')"
+  },
+  {
+    "id": "song-rumba-samba-mambo",
+    "cat": "song-electronica",
+    "franchise": "Loco Mía",
+    "game": "Rumba, samba, mambo",
+    "title": "Rumba, samba, mambo",
+    "year": 1990,
+    "lang": "es",
+    "sources": "busca('Loco Mía', 'Rumba, samba, mambo')"
+  },
+  {
+    "id": "song-gorbachov-locomia",
+    "cat": "song-electronica",
+    "franchise": "Loco Mía",
+    "game": "Gorbachov",
+    "title": "Gorbachov",
+    "year": 1991,
+    "lang": "es",
+    "sources": "busca('Loco Mía', 'Gorbachov')"
+  },
+  {
+    "id": "song-asi-me-gusta-a-mi",
+    "cat": "song-electronica",
+    "franchise": "Chimo Bayo",
+    "game": "Así me gusta a mí",
+    "title": "Así me gusta a mí",
+    "year": 1991,
+    "lang": "es",
+    "sources": "busca('Chimo Bayo', 'Así me gusta a mí')"
+  },
+  {
+    "id": "song-quimica-chimo-bayo",
+    "cat": "song-electronica",
+    "franchise": "Chimo Bayo",
+    "game": "Química",
+    "title": "Química",
+    "year": 1992,
+    "lang": "es",
+    "sources": "busca('Chimo Bayo', 'Química')"
+  },
+  {
+    "id": "song-bombas-chimo-bayo",
+    "cat": "song-electronica",
+    "franchise": "Chimo Bayo",
+    "game": "Bombas",
+    "title": "Bombas",
+    "year": 1992,
+    "lang": "es",
+    "sources": "busca('Chimo Bayo', 'Bombas')"
+  },
+  {
+    "id": "song-dónde-estan-sentidos",
+    "cat": "song-electronica",
+    "franchise": "Sentidos Opuestos",
+    "game": "¿Dónde están?",
+    "title": "¿Dónde están?",
+    "year": 1996,
+    "lang": "es",
+    "sources": "busca('Sentidos Opuestos', '¿Dónde están?')"
+  },
+  {
+    "id": "song-amor-de-papel",
+    "cat": "song-electronica",
+    "franchise": "Sentidos Opuestos",
+    "game": "Amor de papel",
+    "title": "Amor de papel",
+    "year": 1998,
+    "lang": "es",
+    "sources": "busca('Sentidos Opuestos', 'Amor de papel')"
+  },
+  {
+    "id": "song-fiesta-sentidos",
+    "cat": "song-electronica",
+    "franchise": "Sentidos Opuestos",
+    "game": "Fiesta",
+    "title": "Fiesta",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Sentidos Opuestos', 'Fiesta')"
+  },
+  {
+    "id": "song-ardiente-tentacion",
+    "cat": "song-electronica",
+    "franchise": "Sentidos Opuestos",
+    "game": "Ardiente tentación",
+    "title": "Ardiente tentación",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Sentidos Opuestos', 'Ardiente tentación')"
+  },
+  {
+    "id": "song-mirame-sentidos",
+    "cat": "song-electronica",
+    "franchise": "Sentidos Opuestos",
+    "game": "Mírame",
+    "title": "Mírame",
+    "year": 1996,
+    "lang": "es",
+    "sources": "busca('Sentidos Opuestos', 'Mírame')"
+  },
+  {
+    "id": "song-mai-mai-kabah",
+    "cat": "song-electronica",
+    "franchise": "Kabah",
+    "game": "Mai Mai",
+    "title": "Mai Mai",
+    "year": 1998,
+    "lang": "es",
+    "sources": "busca('Kabah', 'Mai Mai')"
+  },
+  {
+    "id": "song-antro-kabah",
+    "cat": "song-electronica",
+    "franchise": "Kabah",
+    "game": "Antro",
+    "title": "Antro",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('Kabah', 'Antro')"
+  },
+  {
+    "id": "song-espada-javiera-mena",
+    "cat": "song-electronica",
+    "franchise": "Javiera Mena",
+    "game": "Espada",
+    "title": "Espada",
+    "year": 2013,
+    "lang": "es",
+    "sources": "busca('Javiera Mena', 'Espada')"
+  },
+  {
+    "id": "song-otra-era-javiera",
+    "cat": "song-electronica",
+    "franchise": "Javiera Mena",
+    "game": "Otra era",
+    "title": "Otra era",
+    "year": 2014,
+    "lang": "es",
+    "sources": "busca('Javiera Mena', 'Otra era')"
+  },
+  {
+    "id": "song-luz-de-piedra-de-luna",
+    "cat": "song-electronica",
+    "franchise": "Javiera Mena",
+    "game": "Luz de piedra de luna",
+    "title": "Luz de piedra de luna",
+    "year": 2010,
+    "lang": "es",
+    "sources": "busca('Javiera Mena', 'Luz de piedra de luna')"
+  },
+  {
+    "id": "song-xt4s1s-danna",
+    "cat": "song-electronica",
+    "franchise": "Danna Paola",
+    "game": "XT4S1S",
+    "title": "XT4S1S",
+    "year": 2022,
+    "lang": "es",
+    "sources": "busca('Danna Paola', 'XT4S1S')"
+  },
+  {
+    "id": "song-1trago-danna",
+    "cat": "song-electronica",
+    "franchise": "Danna Paola",
+    "game": "1Trago",
+    "title": "1Trago",
+    "year": 2023,
+    "lang": "es",
+    "sources": "busca('Danna Paola', '1Trago')"
+  },
+  {
+    "id": "song-prisionero-miranda",
+    "cat": "song-electronica",
+    "franchise": "Miranda!",
+    "game": "Prisionero",
+    "title": "Prisionero",
+    "year": 2007,
+    "lang": "es",
+    "sources": "busca('Miranda!', 'Prisionero')"
+  },
+  {
+    "id": "song-yo-te-dire-miranda",
+    "cat": "song-electronica",
+    "franchise": "Miranda!",
+    "game": "Yo te diré",
+    "title": "Yo te diré",
+    "year": 2004,
+    "lang": "es",
+    "sources": "busca('Miranda!', 'Yo te diré')"
+  },
+  {
+    "id": "song-traicion-miranda",
+    "cat": "song-electronica",
+    "franchise": "Miranda!",
+    "game": "Traición",
+    "title": "Traición",
+    "year": 2004,
+    "lang": "es",
+    "sources": "busca('Miranda!', 'Traición')"
+  },
+  {
+    "id": "song-hola-miranda",
+    "cat": "song-electronica",
+    "franchise": "Miranda!",
+    "game": "Hola",
+    "title": "Hola",
+    "year": 2007,
+    "lang": "es",
+    "sources": "busca('Miranda!', 'Hola')"
+  },
+  {
+    "id": "song-enamorada-miranda",
+    "cat": "song-electronica",
+    "franchise": "Miranda!",
+    "game": "Enamorada",
+    "title": "Enamorada",
+    "year": 2007,
+    "lang": "es",
+    "sources": "busca('Miranda!', 'Enamorada')"
+  },
+  {
+    "id": "song-mentia-miranda",
+    "cat": "song-electronica",
+    "franchise": "Miranda!",
+    "game": "Mentía",
+    "title": "Mentía",
+    "year": 2009,
+    "lang": "es",
+    "sources": "busca('Miranda!', 'Mentía')"
+  },
+  {
+    "id": "song-nalguita-plastilina",
+    "cat": "song-electronica",
+    "franchise": "Plastilina Mosh",
+    "game": "Nalguita",
+    "title": "Nalguita",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('Plastilina Mosh', 'Nalguita')"
+  },
+  {
+    "id": "song-peligroso-pop",
+    "cat": "song-electronica",
+    "franchise": "Plastilina Mosh",
+    "game": "Peligroso pop",
+    "title": "Peligroso pop",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('Plastilina Mosh', 'Peligroso pop')"
+  },
+  {
+    "id": "song-soun-tha-mi-primer-amor",
+    "cat": "song-electronica",
+    "franchise": "Kinky",
+    "game": "Soun Tha Mi Primer Amor",
+    "title": "Soun Tha Mi Primer Amor",
+    "year": 2002,
+    "lang": "es",
+    "sources": "busca('Kinky', 'Soun Tha Mi Primer Amor')"
+  },
+  {
+    "id": "song-a-donde-van-los-muertos",
+    "cat": "song-electronica",
+    "franchise": "Kinky",
+    "game": "¿A dónde van los muertos?",
+    "title": "¿A dónde van los muertos?",
+    "year": 2006,
+    "lang": "es",
+    "sources": "busca('Kinky', '¿A dónde van los muertos?')"
+  },
+  {
+    "id": "song-coqueta-kinky",
+    "cat": "song-electronica",
+    "franchise": "Kinky",
+    "game": "Coqueta",
+    "title": "Coqueta",
+    "year": 2006,
+    "lang": "es",
+    "sources": "busca('Kinky', 'Coqueta')"
+  },
+  {
+    "id": "song-hasta-quemarnos",
+    "cat": "song-electronica",
+    "franchise": "Kinky",
+    "game": "Hasta quemarnos",
+    "title": "Hasta quemarnos",
+    "year": 2008,
+    "lang": "es",
+    "sources": "busca('Kinky', 'Hasta quemarnos')"
+  },
+  {
+    "id": "song-tijuana-sound-machine",
+    "cat": "song-electronica",
+    "franchise": "Nortec Collective",
+    "game": "Tijuana Sound Machine",
+    "title": "Tijuana Sound Machine",
+    "year": 2008,
+    "lang": "es",
+    "sources": "busca('Nortec Collective', 'Tijuana Sound Machine')"
+  },
+  {
+    "id": "song-polaris-nortec",
+    "cat": "song-electronica",
+    "franchise": "Nortec Collective",
+    "game": "Polaris",
+    "title": "Polaris",
+    "year": 2005,
+    "lang": "es",
+    "sources": "busca('Nortec Collective', 'Polaris')"
+  },
+  {
+    "id": "song-tengo-la-voz",
+    "cat": "song-electronica",
+    "franchise": "Nortec Collective",
+    "game": "Tengo la voz",
+    "title": "Tengo la voz",
+    "year": 2008,
+    "lang": "es",
+    "sources": "busca('Nortec Collective', 'Tengo la voz')"
+  },
+  {
+    "id": "song-sesion-villano-bizarrap",
+    "cat": "song-electronica",
+    "franchise": "Bizarrap y Villano Antillano",
+    "game": "Villano Antillano: Bzrp Music Sessions, Vol. 51",
+    "title": "Villano Antillano: Bzrp Music Sessions, Vol. 51",
+    "year": 2022,
+    "lang": "es",
+    "sources": "busca('Bizarrap y Villano Antillano', 'Villano Antillano: Bzrp Music Sessions, Vol. 51')"
+  },
+  {
+    "id": "song-sesion-tiago-bizarrap",
+    "cat": "song-electronica",
+    "franchise": "Bizarrap y Tiago PZK",
+    "game": "Tiago PZK: Bzrp Music Sessions, Vol. 48",
+    "title": "Tiago PZK: Bzrp Music Sessions, Vol. 48",
+    "year": 2021,
+    "lang": "es",
+    "sources": "busca('Bizarrap y Tiago PZK', 'Tiago PZK: Bzrp Music Sessions, Vol. 48')"
+  },
+  {
+    "id": "song-sesion-snow-bizarrap",
+    "cat": "song-electronica",
+    "franchise": "Bizarrap y Snow Tha Product",
+    "game": "Snow Tha Product: Bzrp Music Sessions, Vol. 39",
+    "title": "Snow Tha Product: Bzrp Music Sessions, Vol. 39",
+    "year": 2021,
+    "lang": "es",
+    "sources": "busca('Bizarrap y Snow Tha Product', 'Snow Tha Product: Bzrp Music Sessions, Vol. 39')"
+  },
+  {
+    "id": "song-sesion-anuel-bizarrap",
+    "cat": "song-electronica",
+    "franchise": "Bizarrap y Anuel AA",
+    "game": "Anuel AA: Bzrp Music Sessions, Vol. 46",
+    "title": "Anuel AA: Bzrp Music Sessions, Vol. 46",
+    "year": 2021,
+    "lang": "es",
+    "sources": "busca('Bizarrap y Anuel AA', 'Anuel AA: Bzrp Music Sessions, Vol. 46')"
+  },
+  {
+    "id": "song-sesion-eladio-bizarrap",
+    "cat": "song-electronica",
+    "franchise": "Bizarrap y Eladio Carrión",
+    "game": "Eladio Carrión: Bzrp Music Sessions, Vol. 40",
+    "title": "Eladio Carrión: Bzrp Music Sessions, Vol. 40",
+    "year": 2021,
+    "lang": "es",
+    "sources": "busca('Bizarrap y Eladio Carrión', 'Eladio Carrión: Bzrp Music Sessions, Vol. 40')"
+  },
+  {
+    "id": "song-sesion-nicky-jam-bizarrap",
+    "cat": "song-electronica",
+    "franchise": "Bizarrap y Nicky Jam",
+    "game": "Nicky Jam: Bzrp Music Sessions, Vol. 41",
+    "title": "Nicky Jam: Bzrp Music Sessions, Vol. 41",
+    "year": 2021,
+    "lang": "es",
+    "sources": "busca('Bizarrap y Nicky Jam', 'Nicky Jam: Bzrp Music Sessions, Vol. 41')"
+  },
+  {
+    "id": "song-sesion-morfy-bizarrap",
+    "cat": "song-electronica",
+    "franchise": "Bizarrap y Morad",
+    "game": "Morad: Bzrp Music Sessions, Vol. 47",
+    "title": "Morad: Bzrp Music Sessions, Vol. 47",
+    "year": 2021,
+    "lang": "es",
+    "sources": "busca('Bizarrap y Morad', 'Morad: Bzrp Music Sessions, Vol. 47')"
+  },
+  {
+    "id": "song-dispara-nicki-nicole",
+    "cat": "song-electronica",
+    "franchise": "Nicki Nicole y Milo J",
+    "game": "DISPARA ***",
+    "title": "DISPARA ***",
+    "year": 2023,
+    "lang": "es",
+    "sources": "busca('Nicki Nicole y Milo J', 'DISPARA ***')"
+  },
+  {
+    "id": "song-ojo-blindado-sumo",
+    "cat": "song-electronica",
+    "franchise": "Sumo",
+    "game": "El ojo blindado",
+    "title": "El ojo blindado",
+    "year": 1987,
+    "lang": "es",
+    "sources": "busca('Sumo', 'El ojo blindado')"
+  },
+  {
+    "id": "song-el-tiempo-es-dinero",
+    "cat": "song-electronica",
+    "franchise": "Soda Stereo",
+    "game": "El tiempo es dinero",
+    "title": "El tiempo es dinero",
+    "year": 1984,
+    "lang": "es",
+    "sources": "busca('Soda Stereo', 'El tiempo es dinero')"
+  },
+  {
+    "id": "song-claroscuro-la-ley",
+    "cat": "song-electronica",
+    "franchise": "La Ley",
+    "game": "El duelo",
+    "title": "El duelo",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('La Ley', 'El duelo')"
+  },
+  {
+    "id": "song-dia-cero-la-ley",
+    "cat": "song-electronica",
+    "franchise": "La Ley",
+    "game": "Día cero",
+    "title": "Día cero",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('La Ley', 'Día cero')"
+  },
+  {
+    "id": "song-aqui-la-ley",
+    "cat": "song-electronica",
+    "franchise": "La Ley",
+    "game": "Aquí",
+    "title": "Aquí",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('La Ley', 'Aquí')"
+  },
+  {
+    "id": "song-mentira-la-ley",
+    "cat": "song-electronica",
+    "franchise": "La Ley",
+    "game": "Mentira",
+    "title": "Mentira",
+    "year": 2001,
+    "lang": "es",
+    "sources": "busca('La Ley', 'Mentira')"
+  },
+  {
+    "id": "song-fuera-de-mi-la-ley",
+    "cat": "song-electronica",
+    "franchise": "La Ley",
+    "game": "Fuera de mí",
+    "title": "Fuera de mí",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('La Ley', 'Fuera de mí')"
+  },
+  {
+    "id": "song-sensacion-del-bloque",
+    "cat": "song-electronica",
+    "franchise": "De La Ghetto y Randy",
+    "game": "Sensación del bloque",
+    "title": "Sensación del bloque",
+    "year": 2006,
+    "lang": "es",
+    "sources": "busca('De La Ghetto y Randy', 'Sensación del bloque')"
+  },
+  {
+    "id": "song-los-aparatos-el-alfa",
+    "cat": "song-electronica",
+    "franchise": "El Alfa",
+    "game": "Los aparatos",
+    "title": "Los aparatos",
+    "year": 2022,
+    "lang": "es",
+    "sources": "busca('El Alfa', 'Los aparatos')"
+  },
+  {
+    "id": "song-curazao-el-alfa",
+    "cat": "song-electronica",
+    "franchise": "El Alfa",
+    "game": "Curazao",
+    "title": "Curazao",
+    "year": 2021,
+    "lang": "es",
+    "sources": "busca('El Alfa', 'Curazao')"
+  },
+  {
+    "id": "song-singapur-el-alfa",
+    "cat": "song-electronica",
+    "franchise": "El Alfa",
+    "game": "Singapur",
+    "title": "Singapur",
+    "year": 2020,
+    "lang": "es",
+    "sources": "busca('El Alfa', 'Singapur')"
+  },
+  {
+    "id": "song-este-ritmo-se-baila-asi",
+    "cat": "song-electronica",
+    "franchise": "Chayanne",
+    "game": "Este ritmo se baila así",
+    "title": "Este ritmo se baila así",
+    "year": 1988,
+    "lang": "es",
+    "sources": "busca('Chayanne', 'Este ritmo se baila así')"
+  },
+  {
+    "id": "song-provocame-chayanne",
+    "cat": "song-electronica",
+    "franchise": "Chayanne",
+    "game": "Provócame",
+    "title": "Provócame",
+    "year": 1992,
+    "lang": "es",
+    "sources": "busca('Chayanne', 'Provócame')"
+  },
+  {
+    "id": "song-boom-boom-chayanne",
+    "cat": "song-electronica",
+    "franchise": "Chayanne",
+    "game": "Boom boom",
+    "title": "Boom boom",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('Chayanne', 'Boom boom')"
+  },
+  {
+    "id": "song-fiesta-en-america",
+    "cat": "song-electronica",
+    "franchise": "Chayanne",
+    "game": "Fiesta en América",
+    "title": "Fiesta en América",
+    "year": 1987,
+    "lang": "es",
+    "sources": "busca('Chayanne', 'Fiesta en América')"
+  },
+  {
+    "id": "song-lo-dejaria-todo-dance",
+    "cat": "song-electronica",
+    "franchise": "Chayanne",
+    "game": "Caprichosa",
+    "title": "Caprichosa",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('Chayanne', 'Caprichosa')"
+  },
+  {
+    "id": "song-suavemente-elvis-crespo",
+    "cat": "song-electronica",
+    "franchise": "Elvis Crespo",
+    "game": "Suavemente",
+    "title": "Suavemente",
+    "year": 1998,
+    "lang": "es",
+    "sources": "busca('Elvis Crespo', 'Suavemente')"
+  },
+  {
+    "id": "song-pintame-elvis-crespo",
+    "cat": "song-electronica",
+    "franchise": "Elvis Crespo",
+    "game": "Píntame",
+    "title": "Píntame",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Elvis Crespo', 'Píntame')"
+  },
+  {
+    "id": "song-tu-sonrisa-elvis",
+    "cat": "song-electronica",
+    "franchise": "Elvis Crespo",
+    "game": "Tu sonrisa",
+    "title": "Tu sonrisa",
+    "year": 1998,
+    "lang": "es",
+    "sources": "busca('Elvis Crespo', 'Tu sonrisa')"
+  },
+  {
+    "id": "song-la-vida-es-un-carnaval-dance",
+    "cat": "song-electronica",
+    "franchise": "Celia Cruz",
+    "game": "Yo viviré (I Will Survive)",
+    "title": "Yo viviré (I Will Survive)",
+    "year": 1998,
+    "lang": "es",
+    "sources": "busca('Celia Cruz', 'Yo viviré (I Will Survive)')"
+  },
+  {
+    "id": "song-que-le-den-candela",
+    "cat": "song-electronica",
+    "franchise": "Celia Cruz",
+    "game": "Que le den candela",
+    "title": "Que le den candela",
+    "year": 1998,
+    "lang": "es",
+    "sources": "busca('Celia Cruz', 'Que le den candela')"
+  },
+  {
+    "id": "song-carnaval-maluma",
+    "cat": "song-electronica",
+    "franchise": "Maluma",
+    "game": "Carnaval",
+    "title": "Carnaval",
+    "year": 2014,
+    "lang": "es",
+    "sources": "busca('Maluma', 'Carnaval')"
+  },
+  {
+    "id": "song-technologic-daft",
+    "cat": "song-electronica",
+    "franchise": "Daft Punk",
+    "game": "Technologic",
+    "title": "Technologic",
+    "year": 2005,
+    "lang": "en",
+    "sources": "busca('Daft Punk', 'Technologic')"
+  },
+  {
+    "id": "song-digital-love-daft",
+    "cat": "song-electronica",
+    "franchise": "Daft Punk",
+    "game": "Digital Love",
+    "title": "Digital Love",
+    "year": 2001,
+    "lang": "en",
+    "sources": "busca('Daft Punk', 'Digital Love')"
+  },
+  {
+    "id": "song-da-funk-daft",
+    "cat": "song-electronica",
+    "franchise": "Daft Punk",
+    "game": "Da Funk",
+    "title": "Da Funk",
+    "year": 1995,
+    "lang": "en",
+    "sources": "busca('Daft Punk', 'Da Funk')"
+  },
+  {
+    "id": "song-sweet-nothing-calvin",
+    "cat": "song-electronica",
+    "franchise": "Calvin Harris y Florence Welch",
+    "game": "Sweet Nothing",
+    "title": "Sweet Nothing",
+    "year": 2012,
+    "lang": "en",
+    "sources": "busca('Calvin Harris y Florence Welch', 'Sweet Nothing')"
+  },
+  {
+    "id": "song-i-need-your-love-calvin",
+    "cat": "song-electronica",
+    "franchise": "Calvin Harris y Ellie Goulding",
+    "game": "I Need Your Love",
+    "title": "I Need Your Love",
+    "year": 2012,
+    "lang": "en",
+    "sources": "busca('Calvin Harris y Ellie Goulding', 'I Need Your Love')"
+  },
+  {
+    "id": "song-blame-calvin-harris",
+    "cat": "song-electronica",
+    "franchise": "Calvin Harris y John Newman",
+    "game": "Blame",
+    "title": "Blame",
+    "year": 2014,
+    "lang": "en",
+    "sources": "busca('Calvin Harris y John Newman', 'Blame')"
+  },
+  {
+    "id": "song-without-you-avicii",
+    "cat": "song-electronica",
+    "franchise": "Avicii y Sandro Cavazza",
+    "game": "Without You",
+    "title": "Without You",
+    "year": 2017,
+    "lang": "en",
+    "sources": "busca('Avicii y Sandro Cavazza', 'Without You')"
+  },
+  {
+    "id": "song-sos-avicii",
+    "cat": "song-electronica",
+    "franchise": "Avicii y Aloe Blacc",
+    "game": "SOS",
+    "title": "SOS",
+    "year": 2019,
+    "lang": "en",
+    "sources": "busca('Avicii y Aloe Blacc', 'SOS')"
+  },
+  {
+    "id": "song-waiting-for-love-avicii",
+    "cat": "song-electronica",
+    "franchise": "Avicii",
+    "game": "Waiting for Love",
+    "title": "Waiting for Love",
+    "year": 2015,
+    "lang": "en",
+    "sources": "busca('Avicii', 'Waiting for Love')"
+  },
+  {
+    "id": "song-play-hard-guetta",
+    "cat": "song-electronica",
+    "franchise": "David Guetta, Ne-Yo y Akon",
+    "game": "Play Hard",
+    "title": "Play Hard",
+    "year": 2012,
+    "lang": "en",
+    "sources": "busca('David Guetta, Ne-Yo y Akon', 'Play Hard')"
+  },
+  {
+    "id": "song-without-you-guetta",
+    "cat": "song-electronica",
+    "franchise": "David Guetta y Usher",
+    "game": "Without You",
+    "title": "Without You",
+    "year": 2011,
+    "lang": "en",
+    "sources": "busca('David Guetta y Usher', 'Without You')"
+  },
+  {
+    "id": "song-when-love-takes-over",
+    "cat": "song-electronica",
+    "franchise": "David Guetta y Kelly Rowland",
+    "game": "When Love Takes Over",
+    "title": "When Love Takes Over",
+    "year": 2009,
+    "lang": "en",
+    "sources": "busca('David Guetta y Kelly Rowland', 'When Love Takes Over')"
+  },
+  {
+    "id": "song-galvanize-chemical",
+    "cat": "song-electronica",
+    "franchise": "The Chemical Brothers",
+    "game": "Galvanize",
+    "title": "Galvanize",
+    "year": 2005,
+    "lang": "en",
+    "sources": "busca('The Chemical Brothers', 'Galvanize')"
+  },
+  {
+    "id": "song-block-rockin-beats",
+    "cat": "song-electronica",
+    "franchise": "The Chemical Brothers",
+    "game": "Block Rockin' Beats",
+    "title": "Block Rockin' Beats",
+    "year": 1997,
+    "lang": "en",
+    "sources": "busca('The Chemical Brothers', 'Block Rockin\\' Beats')"
+  },
+  {
+    "id": "song-praise-you-fatboy",
+    "cat": "song-electronica",
+    "franchise": "Fatboy Slim",
+    "game": "Praise You",
+    "title": "Praise You",
+    "year": 1998,
+    "lang": "en",
+    "sources": "busca('Fatboy Slim', 'Praise You')"
+  }
+]

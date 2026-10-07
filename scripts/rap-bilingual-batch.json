@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "song-si-senor-control-machete",
+    "cat": "song-rap",
+    "franchise": "Control Machete",
+    "game": "Sí, señor",
+    "title": "Sí, señor",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Control Machete', 'Sí, señor')"
+  },
+  {
+    "id": "song-asi-son-mis-dias",
+    "cat": "song-rap",
+    "franchise": "Control Machete",
+    "game": "Así son mis días",
+    "title": "Así son mis días",
+    "year": 1997,
+    "lang": "es",
+    "sources": "busca('Control Machete', 'Así son mis días')"
+  },
+  {
+    "id": "song-cumbia-poder",
+    "cat": "song-rap",
+    "franchise": "Control Machete",
+    "game": "Cumbia poder",
+    "title": "Cumbia poder",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Control Machete', 'Cumbia poder')"
+  },
+  {
+    "id": "song-el-arte-del-engano",
+    "cat": "song-rap",
+    "franchise": "Cartel de Santa",
+    "game": "El arte del engaño",
+    "title": "El arte del engaño",
+    "year": 2008,
+    "lang": "es",
+    "sources": "busca('Cartel de Santa', 'El arte del engaño')"
+  },
+  {
+    "id": "song-la-pelotona",
+    "cat": "song-rap",
+    "franchise": "Cartel de Santa",
+    "game": "La pelotona",
+    "title": "La pelotona",
+    "year": 2002,
+    "lang": "es",
+    "sources": "busca('Cartel de Santa', 'La pelotona')"
+  },
+  {
+    "id": "song-asereje-hiphop-cartel",
+    "cat": "song-rap",
+    "franchise": "Cartel de Santa",
+    "game": "Si te vienen a contar",
+    "title": "Si te vienen a contar",
+    "year": 2014,
+    "lang": "es",
+    "sources": "busca('Cartel de Santa', 'Si te vienen a contar')"
+  },
+  {
+    "id": "song-suena-mamalona",
+    "cat": "song-rap",
+    "franchise": "Cartel de Santa",
+    "game": "Suena mamalona",
+    "title": "Suena mamalona",
+    "year": 2014,
+    "lang": "es",
+    "sources": "busca('Cartel de Santa', 'Suena mamalona')"
+  },
+  {
+    "id": "song-policeman-cartel",
+    "cat": "song-rap",
+    "franchise": "Cartel de Santa",
+    "game": "Los mensajes del WhatsApp",
+    "title": "Los mensajes del WhatsApp",
+    "year": 2014,
+    "lang": "es",
+    "sources": "busca('Cartel de Santa', 'Los mensajes del WhatsApp')"
+  },
+  {
+    "id": "song-somos-callejeros",
+    "cat": "song-rap",
+    "franchise": "C-Kan",
+    "game": "Somos callejeros",
+    "title": "Somos callejeros",
+    "year": 2012,
+    "lang": "es",
+    "sources": "busca('C-Kan', 'Somos callejeros')"
+  },
+  {
+    "id": "song-vuelve-c-kan",
+    "cat": "song-rap",
+    "franchise": "C-Kan",
+    "game": "Vuelve",
+    "title": "Vuelve",
+    "year": 2012,
+    "lang": "es",
+    "sources": "busca('C-Kan', 'Vuelve')"
+  },
+  {
+    "id": "song-esta-vida-me-encanta",
+    "cat": "song-rap",
+    "franchise": "C-Kan",
+    "game": "Esta vida me encanta",
+    "title": "Esta vida me encanta",
+    "year": 2013,
+    "lang": "es",
+    "sources": "busca('C-Kan', 'Esta vida me encanta')"
+  },
+  {
+    "id": "song-un-par-de-balas",
+    "cat": "song-rap",
+    "franchise": "C-Kan",
+    "game": "Un par de balas",
+    "title": "Un par de balas",
+    "year": 2014,
+    "lang": "es",
+    "sources": "busca('C-Kan', 'Un par de balas')"
+  },
+  {
+    "id": "song-rueda-aleman",
+    "cat": "song-rap",
+    "franchise": "Alemán",
+    "game": "Rucón",
+    "title": "Rucón",
+    "year": 2018,
+    "lang": "es",
+    "sources": "busca('Alemán', 'Rucón')"
+  },
+  {
+    "id": "song-rolemos-otro",
+    "cat": "song-rap",
+    "franchise": "Alemán",
+    "game": "Rolemos otro",
+    "title": "Rolemos otro",
+    "year": 2016,
+    "lang": "es",
+    "sources": "busca('Alemán', 'Rolemos otro')"
+  },
+  {
+    "id": "song-pues-que-pues",
+    "cat": "song-rap",
+    "franchise": "Alemán",
+    "game": "Pues que pues",
+    "title": "Pues que pues",
+    "year": 2016,
+    "lang": "es",
+    "sources": "busca('Alemán', 'Pues que pues')"
+  },
+  {
+    "id": "song-gran-vida-aleman",
+    "cat": "song-rap",
+    "franchise": "Alemán",
+    "game": "Gran vida",
+    "title": "Gran vida",
+    "year": 2019,
+    "lang": "es",
+    "sources": "busca('Alemán', 'Gran vida')"
+  },
+  {
+    "id": "song-peligroso-gera-mx",
+    "cat": "song-rap",
+    "franchise": "Gera MX",
+    "game": "Peligroso",
+    "title": "Peligroso",
+    "year": 2019,
+    "lang": "es",
+    "sources": "busca('Gera MX', 'Peligroso')"
+  },
+  {
+    "id": "song-los-no-pertenecen",
+    "cat": "song-rap",
+    "franchise": "Gera MX",
+    "game": "Los no pertenecen",
+    "title": "Los no pertenecen",
+    "year": 2017,
+    "lang": "es",
+    "sources": "busca('Gera MX', 'Los no pertenecen')"
+  },
+  {
+    "id": "song-no-veo-nada-gera",
+    "cat": "song-rap",
+    "franchise": "Gera MX",
+    "game": "No veo nada",
+    "title": "No veo nada",
+    "year": 2017,
+    "lang": "es",
+    "sources": "busca('Gera MX', 'No veo nada')"
+  },
+  {
+    "id": "song-se-me-olvida-gera",
+    "cat": "song-rap",
+    "franchise": "Gera MX",
+    "game": "Se me olvida",
+    "title": "Se me olvida",
+    "year": 2021,
+    "lang": "es",
+    "sources": "busca('Gera MX', 'Se me olvida')"
+  },
+  {
+    "id": "song-soledad-santa-fe",
+    "cat": "song-rap",
+    "franchise": "Santa Fe Klan",
+    "game": "Soledad",
+    "title": "Soledad",
+    "year": 2021,
+    "lang": "es",
+    "sources": "busca('Santa Fe Klan', 'Soledad')"
+  },
+  {
+    "id": "song-mar-y-tierra",
+    "cat": "song-rap",
+    "franchise": "Santa Fe Klan",
+    "game": "Mar y tierra",
+    "title": "Mar y tierra",
+    "year": 2022,
+    "lang": "es",
+    "sources": "busca('Santa Fe Klan', 'Mar y tierra')"
+  },
+  {
+    "id": "song-te-ire-a-buscar",
+    "cat": "song-rap",
+    "franchise": "Santa Fe Klan",
+    "game": "Te iré a buscar",
+    "title": "Te iré a buscar",
+    "year": 2021,
+    "lang": "es",
+    "sources": "busca('Santa Fe Klan', 'Te iré a buscar')"
+  },
+  {
+    "id": "song-cuidando-el-territorio",
+    "cat": "song-rap",
+    "franchise": "Santa Fe Klan y Calibre 50",
+    "game": "Cuidando el territorio",
+    "title": "Cuidando el territorio",
+    "year": 2021,
+    "lang": "es",
+    "sources": "busca('Santa Fe Klan y Calibre 50', 'Cuidando el territorio')"
+  },
+  {
+    "id": "song-efectos-vocales-nach",
+    "cat": "song-rap",
+    "franchise": "Nach",
+    "game": "Efectos vocales",
+    "title": "Efectos vocales",
+    "year": 2008,
+    "lang": "es",
+    "sources": "busca('Nach', 'Efectos vocales')"
+  },
+  {
+    "id": "song-manifiesto-nach",
+    "cat": "song-rap",
+    "franchise": "Nach",
+    "game": "Manifiesto",
+    "title": "Manifiesto",
+    "year": 2008,
+    "lang": "es",
+    "sources": "busca('Nach', 'Manifiesto')"
+  },
+  {
+    "id": "song-el-idioma-de-los-dioses",
+    "cat": "song-rap",
+    "franchise": "Nach",
+    "game": "El idioma de los dioses",
+    "title": "El idioma de los dioses",
+    "year": 2011,
+    "lang": "es",
+    "sources": "busca('Nach', 'El idioma de los dioses')"
+  },
+  {
+    "id": "song-chico-problematico-nach",
+    "cat": "song-rap",
+    "franchise": "Nach",
+    "game": "Chico problemático",
+    "title": "Chico problemático",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('Nach', 'Chico problemático')"
+  },
+  {
+    "id": "song-amor-libre-nach",
+    "cat": "song-rap",
+    "franchise": "Nach",
+    "game": "Amor libre",
+    "title": "Amor libre",
+    "year": 2008,
+    "lang": "es",
+    "sources": "busca('Nach', 'Amor libre')"
+  },
+  {
+    "id": "song-cantando-violadores",
+    "cat": "song-rap",
+    "franchise": "Violadores del Verso",
+    "game": "Cantando",
+    "title": "Cantando",
+    "year": 2006,
+    "lang": "es",
+    "sources": "busca('Violadores del Verso', 'Cantando')"
+  },
+  {
+    "id": "song-vivir-para-contarlo",
+    "cat": "song-rap",
+    "franchise": "Violadores del Verso",
+    "game": "Vivir para contarlo",
+    "title": "Vivir para contarlo",
+    "year": 2006,
+    "lang": "es",
+    "sources": "busca('Violadores del Verso', 'Vivir para contarlo')"
+  },
+  {
+    "id": "song-ballantines-violadores",
+    "cat": "song-rap",
+    "franchise": "Violadores del Verso",
+    "game": "Ballantines",
+    "title": "Ballantines",
+    "year": 2001,
+    "lang": "es",
+    "sources": "busca('Violadores del Verso', 'Ballantines')"
+  },
+  {
+    "id": "song-maximo-exponente",
+    "cat": "song-rap",
+    "franchise": "Violadores del Verso",
+    "game": "Máximo exponente",
+    "title": "Máximo exponente",
+    "year": 2001,
+    "lang": "es",
+    "sources": "busca('Violadores del Verso', 'Máximo exponente')"
+  },
+  {
+    "id": "song-javier-ibarra-kaseo",
+    "cat": "song-rap",
+    "franchise": "Kase.O",
+    "game": "Yemen",
+    "title": "Yemen",
+    "year": 2016,
+    "lang": "es",
+    "sources": "busca('Kase.O', 'Yemen')"
+  },
+  {
+    "id": "song-mitad-y-mitad-kaseo",
+    "cat": "song-rap",
+    "franchise": "Kase.O",
+    "game": "Mitad y mitad",
+    "title": "Mitad y mitad",
+    "year": 2016,
+    "lang": "es",
+    "sources": "busca('Kase.O', 'Mitad y mitad')"
+  },
+  {
+    "id": "song-mazas-y-catapultas",
+    "cat": "song-rap",
+    "franchise": "Kase.O",
+    "game": "Mazas y catapultas",
+    "title": "Mazas y catapultas",
+    "year": 2016,
+    "lang": "es",
+    "sources": "busca('Kase.O', 'Mazas y catapultas')"
+  },
+  {
+    "id": "song-el-circulo-kaseo",
+    "cat": "song-rap",
+    "franchise": "Kase.O",
+    "game": "Esto no para",
+    "title": "Esto no para",
+    "year": 2015,
+    "lang": "es",
+    "sources": "busca('Kase.O', 'Esto no para')"
+  },
+  {
+    "id": "song-ringui-dingui-sfdk",
+    "cat": "song-rap",
+    "franchise": "SFDK",
+    "game": "Ringui Dingui",
+    "title": "Ringui Dingui",
+    "year": 2021,
+    "lang": "es",
+    "sources": "busca('SFDK', 'Ringui Dingui')"
+  },
+  {
+    "id": "song-el-liricista-en-el-tejado",
+    "cat": "song-rap",
+    "franchise": "SFDK",
+    "game": "El liricista en el tejado",
+    "title": "El liricista en el tejado",
+    "year": 2005,
+    "lang": "es",
+    "sources": "busca('SFDK', 'El liricista en el tejado')"
+  },
+  {
+    "id": "song-donde-esta-wally-sfdk",
+    "cat": "song-rap",
+    "franchise": "SFDK",
+    "game": "¿Dónde está Wifly?",
+    "title": "¿Dónde está Wifly?",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('SFDK', '¿Dónde está Wifly?')"
+  },
+  {
+    "id": "song-agua-pasada-sfdk",
+    "cat": "song-rap",
+    "franchise": "SFDK",
+    "game": "Agua pasada",
+    "title": "Agua pasada",
+    "year": 2014,
+    "lang": "es",
+    "sources": "busca('SFDK', 'Agua pasada')"
+  },
+  {
+    "id": "song-jeremias-17-5",
+    "cat": "song-rap",
+    "franchise": "Canserbero",
+    "game": "Jeremías 17-5",
+    "title": "Jeremías 17-5",
+    "year": 2012,
+    "lang": "es",
+    "sources": "busca('Canserbero', 'Jeremías 17-5')"
+  },
+  {
+    "id": "song-pensando-en-ti-canserbero",
+    "cat": "song-rap",
+    "franchise": "Canserbero",
+    "game": "Pensando en ti",
+    "title": "Pensando en ti",
+    "year": 2010,
+    "lang": "es",
+    "sources": "busca('Canserbero', 'Pensando en ti')"
+  },
+  {
+    "id": "song-mundo-de-piedra",
+    "cat": "song-rap",
+    "franchise": "Canserbero",
+    "game": "Mundo de piedra",
+    "title": "Mundo de piedra",
+    "year": 2012,
+    "lang": "es",
+    "sources": "busca('Canserbero', 'Mundo de piedra')"
+  },
+  {
+    "id": "song-stupid-love-story",
+    "cat": "song-rap",
+    "franchise": "Canserbero",
+    "game": "Stupid Love Story",
+    "title": "Stupid Love Story",
+    "year": 2011,
+    "lang": "es",
+    "sources": "busca('Canserbero', 'Stupid Love Story')"
+  },
+  {
+    "id": "song-guia-para-la-accion",
+    "cat": "song-rap",
+    "franchise": "Canserbero",
+    "game": "Guía para la acción",
+    "title": "Guía para la acción",
+    "year": 2010,
+    "lang": "es",
+    "sources": "busca('Canserbero', 'Guía para la acción')"
+  },
+  {
+    "id": "song-la-muerte-residente",
+    "cat": "song-rap",
+    "franchise": "Residente",
+    "game": "La cátedra",
+    "title": "La cátedra",
+    "year": 2017,
+    "lang": "es",
+    "sources": "busca('Residente', 'La cátedra')"
+  },
+  {
+    "id": "song-bellacoso-residente",
+    "cat": "song-rap",
+    "franchise": "Residente y Bad Bunny",
+    "game": "Bellacoso",
+    "title": "Bellacoso",
+    "year": 2019,
+    "lang": "es",
+    "sources": "busca('Residente y Bad Bunny', 'Bellacoso')"
+  },
+  {
+    "id": "song-hijos-del-canaveral",
+    "cat": "song-rap",
+    "franchise": "Residente",
+    "game": "Hijos del cañaveral",
+    "title": "Hijos del cañaveral",
+    "year": 2017,
+    "lang": "es",
+    "sources": "busca('Residente', 'Hijos del cañaveral')"
+  },
+  {
+    "id": "song-flow-hp-residente",
+    "cat": "song-rap",
+    "franchise": "Residente",
+    "game": "Flow HP",
+    "title": "Flow HP",
+    "year": 2021,
+    "lang": "es",
+    "sources": "busca('Residente', 'Flow HP')"
+  },
+  {
+    "id": "song-bizarrap-residente-sesion",
+    "cat": "song-rap",
+    "franchise": "Bizarrap y Residente",
+    "game": "Residente: Bzrp Music Sessions, Vol. 49",
+    "title": "Residente: Bzrp Music Sessions, Vol. 49",
+    "year": 2022,
+    "lang": "es",
+    "sources": "busca('Bizarrap y Residente', 'Residente: Bzrp Music Sessions, Vol. 49')"
+  },
+  {
+    "id": "song-arrancarmelo-wos",
+    "cat": "song-rap",
+    "franchise": "Wos",
+    "game": "Arrancármelo",
+    "title": "Arrancármelo",
+    "year": 2022,
+    "lang": "es",
+    "sources": "busca('Wos', 'Arrancármelo')"
+  },
+  {
+    "id": "song-melocoton-wos",
+    "cat": "song-rap",
+    "franchise": "Wos",
+    "game": "Melón vino",
+    "title": "Melón vino",
+    "year": 2019,
+    "lang": "es",
+    "sources": "busca('Wos', 'Melón vino')"
+  },
+  {
+    "id": "song-terraza-wos",
+    "cat": "song-rap",
+    "franchise": "Wos",
+    "game": "Terraza",
+    "title": "Terraza",
+    "year": 2019,
+    "lang": "es",
+    "sources": "busca('Wos', 'Terraza')"
+  },
+  {
+    "id": "song-purpura-wos",
+    "cat": "song-rap",
+    "franchise": "Wos",
+    "game": "Púrpura",
+    "title": "Púrpura",
+    "year": 2018,
+    "lang": "es",
+    "sources": "busca('Wos', 'Púrpura')"
+  },
+  {
+    "id": "song-mami-chula-trueno",
+    "cat": "song-rap",
+    "franchise": "Trueno y Nicki Nicole",
+    "game": "Mamichula",
+    "title": "Mamichula",
+    "year": 2020,
+    "lang": "es",
+    "sources": "busca('Trueno y Nicki Nicole', 'Mamichula')"
+  },
+  {
+    "id": "song-atrevido-trueno",
+    "cat": "song-rap",
+    "franchise": "Trueno",
+    "game": "Atrevido",
+    "title": "Atrevido",
+    "year": 2020,
+    "lang": "es",
+    "sources": "busca('Trueno', 'Atrevido')"
+  },
+  {
+    "id": "song-tranky-funky-trueno",
+    "cat": "song-rap",
+    "franchise": "Trueno",
+    "game": "Tranky Funky",
+    "title": "Tranky Funky",
+    "year": 2023,
+    "lang": "es",
+    "sources": "busca('Trueno', 'Tranky Funky')"
+  },
+  {
+    "id": "song-mal-beco-duki",
+    "cat": "song-rap",
+    "franchise": "Duki",
+    "game": "Malbec",
+    "title": "Malbec",
+    "year": 2021,
+    "lang": "es",
+    "sources": "busca('Duki', 'Malbec')"
+  },
+  {
+    "id": "song-si-te-sentis-sola",
+    "cat": "song-rap",
+    "franchise": "Duki",
+    "game": "Si te sentís sola",
+    "title": "Si te sentís sola",
+    "year": 2018,
+    "lang": "es",
+    "sources": "busca('Duki', 'Si te sentís sola')"
+  },
+  {
+    "id": "song-hijo-de-la-noche",
+    "cat": "song-rap",
+    "franchise": "Duki, Ysy A y Neo Pistea",
+    "game": "Hijo de la noche",
+    "title": "Hijo de la noche",
+    "year": 2018,
+    "lang": "es",
+    "sources": "busca('Duki, Ysy A y Neo Pistea', 'Hijo de la noche')"
+  },
+  {
+    "id": "song-tumbando-el-club",
+    "cat": "song-rap",
+    "franchise": "Neo Pistea",
+    "game": "Tumbando el club (Remix)",
+    "title": "Tumbando el club (Remix)",
+    "year": 2019,
+    "lang": "es",
+    "sources": "busca('Neo Pistea', 'Tumbando el club (Remix)')"
+  },
+  {
+    "id": "song-nena-maldicion-paulo",
+    "cat": "song-rap",
+    "franchise": "Paulo Londra",
+    "game": "Nena maldición",
+    "title": "Nena maldición",
+    "year": 2018,
+    "lang": "es",
+    "sources": "busca('Paulo Londra', 'Nena maldición')"
+  },
+  {
+    "id": "song-adan-y-eva-paulo",
+    "cat": "song-rap",
+    "franchise": "Paulo Londra",
+    "game": "Adán y Eva",
+    "title": "Adán y Eva",
+    "year": 2018,
+    "lang": "es",
+    "sources": "busca('Paulo Londra', 'Adán y Eva')"
+  },
+  {
+    "id": "song-tal-vez-paulo",
+    "cat": "song-rap",
+    "franchise": "Paulo Londra",
+    "game": "Tal vez",
+    "title": "Tal vez",
+    "year": 2019,
+    "lang": "es",
+    "sources": "busca('Paulo Londra', 'Tal vez')"
+  },
+  {
+    "id": "song-chica-paranormal",
+    "cat": "song-rap",
+    "franchise": "Paulo Londra",
+    "game": "Chica paranormal",
+    "title": "Chica paranormal",
+    "year": 2018,
+    "lang": "es",
+    "sources": "busca('Paulo Londra', 'Chica paranormal')"
+  },
+  {
+    "id": "song-quien-manda-aqui-mala",
+    "cat": "song-rap",
+    "franchise": "Mala Rodríguez",
+    "game": "¿Quién manda aquí?",
+    "title": "¿Quién manda aquí?",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('Mala Rodríguez', '¿Quién manda aquí?')"
+  },
+  {
+    "id": "song-tengo-un-trato-mala",
+    "cat": "song-rap",
+    "franchise": "Mala Rodríguez",
+    "game": "Tengo un trato",
+    "title": "Tengo un trato",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('Mala Rodríguez', 'Tengo un trato')"
+  },
+  {
+    "id": "song-por-la-noche-mala",
+    "cat": "song-rap",
+    "franchise": "Mala Rodríguez",
+    "game": "Por la noche",
+    "title": "Por la noche",
+    "year": 2006,
+    "lang": "es",
+    "sources": "busca('Mala Rodríguez', 'Por la noche')"
+  },
+  {
+    "id": "song-1977-ana-tijoux",
+    "cat": "song-rap",
+    "franchise": "Ana Tijoux",
+    "game": "1977",
+    "title": "1977",
+    "year": 2009,
+    "lang": "es",
+    "sources": "busca('Ana Tijoux', '1977')"
+  },
+  {
+    "id": "song-shock-ana-tijoux",
+    "cat": "song-rap",
+    "franchise": "Ana Tijoux",
+    "game": "Shock",
+    "title": "Shock",
+    "year": 2011,
+    "lang": "es",
+    "sources": "busca('Ana Tijoux', 'Shock')"
+  },
+  {
+    "id": "song-antipatriarca-ana-tijoux",
+    "cat": "song-rap",
+    "franchise": "Ana Tijoux",
+    "game": "Antipatriarca",
+    "title": "Antipatriarca",
+    "year": 2014,
+    "lang": "es",
+    "sources": "busca('Ana Tijoux', 'Antipatriarca')"
+  },
+  {
+    "id": "song-el-solitario-portavoz",
+    "cat": "song-rap",
+    "franchise": "Portavoz",
+    "game": "El otro Chile",
+    "title": "El otro Chile",
+    "year": 2012,
+    "lang": "es",
+    "sources": "busca('Portavoz', 'El otro Chile')"
+  },
+  {
+    "id": "song-donde-empieza-rels-b",
+    "cat": "song-rap",
+    "franchise": "Rels B",
+    "game": "A mí",
+    "title": "A mí",
+    "year": 2019,
+    "lang": "es",
+    "sources": "busca('Rels B', 'A mí')"
+  },
+  {
+    "id": "song-como-dormiste-rels-b",
+    "cat": "song-rap",
+    "franchise": "Rels B",
+    "game": "cómo dormiste?",
+    "title": "cómo dormiste?",
+    "year": 2022,
+    "lang": "es",
+    "sources": "busca('Rels B', 'cómo dormiste?')"
+  },
+  {
+    "id": "song-buenos-genes-rels-b",
+    "cat": "song-rap",
+    "franchise": "Rels B",
+    "game": "Buenos genes",
+    "title": "Buenos genes",
+    "year": 2018,
+    "lang": "es",
+    "sources": "busca('Rels B', 'Buenos genes')"
+  },
+  {
+    "id": "song-rincon-flakko-milo-j",
+    "cat": "song-rap",
+    "franchise": "Milo J",
+    "game": "Rara vez",
+    "title": "Rara vez",
+    "year": 2023,
+    "lang": "es",
+    "sources": "busca('Milo J', 'Rara vez')"
+  },
+  {
+    "id": "song-milagrosa-milo-j",
+    "cat": "song-rap",
+    "franchise": "Milo J",
+    "game": "Milagrosa",
+    "title": "Milagrosa",
+    "year": 2022,
+    "lang": "es",
+    "sources": "busca('Milo J', 'Milagrosa')"
+  },
+  {
+    "id": "song-sesion-milo-j-bizarrap",
+    "cat": "song-rap",
+    "franchise": "Bizarrap y Milo J",
+    "game": "Milo J: Bzrp Music Sessions, Vol. 57",
+    "title": "Milo J: Bzrp Music Sessions, Vol. 57",
+    "year": 2023,
+    "lang": "es",
+    "sources": "busca('Bizarrap y Milo J', 'Milo J: Bzrp Music Sessions, Vol. 57')"
+  },
+  {
+    "id": "song-wapo-traketero-nicki",
+    "cat": "song-rap",
+    "franchise": "Nicki Nicole",
+    "game": "Wapo traketero",
+    "title": "Wapo traketero",
+    "year": 2019,
+    "lang": "es",
+    "sources": "busca('Nicki Nicole', 'Wapo traketero')"
+  },
+  {
+    "id": "song-ny-state-of-mind",
+    "cat": "song-rap",
+    "franchise": "Nas",
+    "game": "N.Y. State of Mind",
+    "title": "N.Y. State of Mind",
+    "year": 1994,
+    "lang": "en",
+    "sources": "busca('Nas', 'N.Y. State of Mind')"
+  },
+  {
+    "id": "song-if-i-ruled-the-world",
+    "cat": "song-rap",
+    "franchise": "Nas y Lauryn Hill",
+    "game": "If I Ruled the World (Imagine That)",
+    "title": "If I Ruled the World (Imagine That)",
+    "year": 1996,
+    "lang": "en",
+    "sources": "busca('Nas y Lauryn Hill', 'If I Ruled the World (Imagine That)')"
+  },
+  {
+    "id": "song-shimmy-shimmy-ya",
+    "cat": "song-rap",
+    "franchise": "Ol' Dirty Bastard",
+    "game": "Shimmy Shimmy Ya",
+    "title": "Shimmy Shimmy Ya",
+    "year": 1995,
+    "lang": "en",
+    "sources": "busca('Ol\\' Dirty Bastard', 'Shimmy Shimmy Ya')"
+  },
+  {
+    "id": "song-reppin-time",
+    "cat": "song-rap",
+    "franchise": "Jim Jones",
+    "game": "We Fly High",
+    "title": "We Fly High",
+    "year": 2006,
+    "lang": "en",
+    "sources": "busca('Jim Jones', 'We Fly High')"
+  },
+  {
+    "id": "song-in-paris-jayz-kanye",
+    "cat": "song-rap",
+    "franchise": "JAY-Z y Kanye West",
+    "game": "Ni**as in Paris",
+    "title": "Ni**as in Paris",
+    "year": 2011,
+    "lang": "en",
+    "sources": "busca('JAY-Z y Kanye West', 'Ni**as in Paris')"
+  },
+  {
+    "id": "song-no-church-in-the-wild",
+    "cat": "song-rap",
+    "franchise": "JAY-Z y Kanye West",
+    "game": "No Church in the Wild",
+    "title": "No Church in the Wild",
+    "year": 2011,
+    "lang": "en",
+    "sources": "busca('JAY-Z y Kanye West', 'No Church in the Wild')"
+  },
+  {
+    "id": "song-hard-knock-life",
+    "cat": "song-rap",
+    "franchise": "JAY-Z",
+    "game": "Hard Knock Life (Ghetto Anthem)",
+    "title": "Hard Knock Life (Ghetto Anthem)",
+    "year": 1998,
+    "lang": "en",
+    "sources": "busca('JAY-Z', 'Hard Knock Life (Ghetto Anthem)')"
+  },
+  {
+    "id": "song-p-i-m-p-50-cent",
+    "cat": "song-rap",
+    "franchise": "50 Cent",
+    "game": "P.I.M.P.",
+    "title": "P.I.M.P.",
+    "year": 2003,
+    "lang": "en",
+    "sources": "busca('50 Cent', 'P.I.M.P.')"
+  },
+  {
+    "id": "song-many-men-50-cent",
+    "cat": "song-rap",
+    "franchise": "50 Cent",
+    "game": "Many Men (Wish Death)",
+    "title": "Many Men (Wish Death)",
+    "year": 2003,
+    "lang": "en",
+    "sources": "busca('50 Cent', 'Many Men (Wish Death)')"
+  },
+  {
+    "id": "song-my-name-is-eminem",
+    "cat": "song-rap",
+    "franchise": "Eminem",
+    "game": "My Name Is",
+    "title": "My Name Is",
+    "year": 1999,
+    "lang": "en",
+    "sources": "busca('Eminem', 'My Name Is')"
+  },
+  {
+    "id": "song-cleanin-out-my-closet",
+    "cat": "song-rap",
+    "franchise": "Eminem",
+    "game": "Cleanin' Out My Closet",
+    "title": "Cleanin' Out My Closet",
+    "year": 2002,
+    "lang": "en",
+    "sources": "busca('Eminem', 'Cleanin\\' Out My Closet')"
+  },
+  {
+    "id": "song-sing-for-the-moment",
+    "cat": "song-rap",
+    "franchise": "Eminem",
+    "game": "Sing for the Moment",
+    "title": "Sing for the Moment",
+    "year": 2002,
+    "lang": "en",
+    "sources": "busca('Eminem', 'Sing for the Moment')"
+  },
+  {
+    "id": "song-money-trees-kendrick",
+    "cat": "song-rap",
+    "franchise": "Kendrick Lamar",
+    "game": "Money Trees",
+    "title": "Money Trees",
+    "year": 2012,
+    "lang": "en",
+    "sources": "busca('Kendrick Lamar', 'Money Trees')"
+  },
+  {
+    "id": "song-bitch-dont-kill-my-vibe",
+    "cat": "song-rap",
+    "franchise": "Kendrick Lamar",
+    "game": "Bitch, Don't Kill My Vibe",
+    "title": "Bitch, Don't Kill My Vibe",
+    "year": 2012,
+    "lang": "en",
+    "sources": "busca('Kendrick Lamar', 'Bitch, Don\\'t Kill My Vibe')"
+  },
+  {
+    "id": "song-no-role-modelz-j-cole",
+    "cat": "song-rap",
+    "franchise": "J. Cole",
+    "game": "No Role Modelz",
+    "title": "No Role Modelz",
+    "year": 2014,
+    "lang": "en",
+    "sources": "busca('J. Cole', 'No Role Modelz')"
+  },
+  {
+    "id": "song-middle-child-j-cole",
+    "cat": "song-rap",
+    "franchise": "J. Cole",
+    "game": "MIDDLE CHILD",
+    "title": "MIDDLE CHILD",
+    "year": 2019,
+    "lang": "en",
+    "sources": "busca('J. Cole', 'MIDDLE CHILD')"
+  },
+  {
+    "id": "song-goya-travis-scott",
+    "cat": "song-rap",
+    "franchise": "Travis Scott",
+    "game": "Antidote",
+    "title": "Antidote",
+    "year": 2015,
+    "lang": "en",
+    "sources": "busca('Travis Scott', 'Antidote')"
+  },
+  {
+    "id": "song-highest-in-the-room",
+    "cat": "song-rap",
+    "franchise": "Travis Scott",
+    "game": "HIGHEST IN THE ROOM",
+    "title": "HIGHEST IN THE ROOM",
+    "year": 2019,
+    "lang": "en",
+    "sources": "busca('Travis Scott', 'HIGHEST IN THE ROOM')"
+  },
+  {
+    "id": "song-congratulations-post",
+    "cat": "song-rap",
+    "franchise": "Post Malone",
+    "game": "Congratulations",
+    "title": "Congratulations",
+    "year": 2016,
+    "lang": "en",
+    "sources": "busca('Post Malone', 'Congratulations')"
+  },
+  {
+    "id": "song-white-iverson",
+    "cat": "song-rap",
+    "franchise": "Post Malone",
+    "game": "White Iverson",
+    "title": "White Iverson",
+    "year": 2015,
+    "lang": "en",
+    "sources": "busca('Post Malone', 'White Iverson')"
+  }
+]

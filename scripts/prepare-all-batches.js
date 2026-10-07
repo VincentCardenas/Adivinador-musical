@@ -1,0 +1,2504 @@
+const fs = require('fs');
+
+const existingIds = new Set(JSON.parse(fs.readFileSync('scripts/existing-ids.json', 'utf8')));
+const currentDump = JSON.parse(fs.readFileSync('scripts/current-catalog-dump.json', 'utf8'));
+
+// Mapa de canciones existentes para evitar duplicados
+const existingSongsByCat = {};
+for (const [cat, list] of Object.entries(currentDump)) {
+  existingSongsByCat[cat] = new Set(list.map(x => (x.artist + ' - ' + x.title).toLowerCase()));
+}
+
+// 1. ROCK (50 canciones)
+const rock = JSON.parse(fs.readFileSync('scripts/rock-batch.json', 'utf8'));
+
+// 2. POP (30 canciones para completar 100)
+const pop = [
+  {
+    id: 'song-thriller', cat: 'song-pop', franchise: 'Michael Jackson', game: 'Thriller',
+    title: 'Thriller', year: 1982, lang: 'en',
+    sources: "busca('Michael Jackson', 'Thriller')"
+  },
+  {
+    id: 'song-material-girl', cat: 'song-pop', franchise: 'Madonna', game: 'Material Girl',
+    title: 'Material Girl', year: 1984, lang: 'en',
+    sources: "busca('Madonna', 'Material Girl')"
+  },
+  {
+    id: 'song-vogue', cat: 'song-pop', franchise: 'Madonna', game: 'Vogue',
+    title: 'Vogue', year: 1990, lang: 'en',
+    sources: "busca('Madonna', 'Vogue')"
+  },
+  {
+    id: 'song-mamma-mia', cat: 'song-pop', franchise: 'ABBA', game: 'Mamma Mia',
+    title: 'Mamma Mia', year: 1975, lang: 'en',
+    sources: "busca('ABBA', 'Mamma Mia')"
+  },
+  {
+    id: 'song-salome', cat: 'song-pop', franchise: 'Chayanne', game: 'Salomé',
+    title: 'Salomé', year: 1998, lang: 'es',
+    sources: "busca('Chayanne', 'Salomé')"
+  },
+  {
+    id: 'song-torero', cat: 'song-pop', franchise: 'Chayanne', game: 'Torero',
+    title: 'Torero', year: 2002, lang: 'es',
+    sources: "busca('Chayanne', 'Torero')"
+  },
+  {
+    id: 'song-y-yo-sigo-aqui', cat: 'song-pop', franchise: 'Paulina Rubio', game: 'Y yo sigo aquí',
+    title: 'Y yo sigo aquí', year: 2000, lang: 'es',
+    sources: "busca('Paulina Rubio', 'Y yo sigo aquí')"
+  },
+  {
+    id: 'song-ni-una-sola-palabra', cat: 'song-pop', franchise: 'Paulina Rubio', game: 'Ni una sola palabra',
+    title: 'Ni una sola palabra', year: 2006, lang: 'es',
+    sources: "busca('Paulina Rubio', 'Ni una sola palabra')"
+  },
+  {
+    id: 'song-limon-y-sal', cat: 'song-pop', franchise: 'Julieta Venegas', game: 'Limón y sal',
+    title: 'Limón y sal', year: 2006, lang: 'es',
+    sources: "busca('Julieta Venegas', 'Limón y sal')"
+  },
+  {
+    id: 'song-me-voy', cat: 'song-pop', franchise: 'Julieta Venegas', game: 'Me voy',
+    title: 'Me voy', year: 2006, lang: 'es',
+    sources: "busca('Julieta Venegas', 'Me voy')"
+  },
+  {
+    id: 'song-rosa-pastel-belanova', cat: 'song-pop', franchise: 'Belanova', game: 'Rosa pastel',
+    title: 'Rosa pastel', year: 2005, lang: 'es',
+    sources: "busca('Belanova', 'Rosa pastel')"
+  },
+  {
+    id: 'song-por-ti-belanova', cat: 'song-pop', franchise: 'Belanova', game: 'Por ti',
+    title: 'Por ti', year: 2005, lang: 'es',
+    sources: "busca('Belanova', 'Por ti')"
+  },
+  {
+    id: 'song-don-miranda', cat: 'song-pop', franchise: 'Miranda!', game: 'Don',
+    title: 'Don', year: 2004, lang: 'es',
+    sources: "busca('Miranda!', 'Don')"
+  },
+  {
+    id: 'song-perfecta-miranda', cat: 'song-pop', franchise: 'Miranda!', game: 'Perfecta',
+    title: 'Perfecta', year: 2007, lang: 'es',
+    sources: "busca('Miranda!', 'Perfecta')"
+  },
+  {
+    id: 'song-perdon-perdon', cat: 'song-pop', franchise: 'Ha*Ash', game: 'Perdón, perdón',
+    title: 'Perdón, perdón', year: 2014, lang: 'es',
+    sources: "busca('Ha*Ash', 'Perdón, perdón')"
+  },
+  {
+    id: 'song-lo-aprendi-de-ti', cat: 'song-pop', franchise: 'Ha*Ash', game: 'Lo aprendí de ti',
+    title: 'Lo aprendí de ti', year: 2014, lang: 'es',
+    sources: "busca('Ha*Ash', 'Lo aprendí de ti')"
+  },
+  {
+    id: 'song-corre-jesse-joy', cat: 'song-pop', franchise: 'Jesse & Joy', game: '¡Corre!',
+    title: '¡Corre!', year: 2011, lang: 'es',
+    sources: "busca('Jesse & Joy', '¡Corre!')"
+  },
+  {
+    id: 'song-bad-romance', cat: 'song-pop', franchise: 'Lady Gaga', game: 'Bad Romance',
+    title: 'Bad Romance', year: 2009, lang: 'en',
+    sources: "busca('Lady Gaga', 'Bad Romance')"
+  },
+  {
+    id: 'song-firework', cat: 'song-pop', franchise: 'Katy Perry', game: 'Firework',
+    title: 'Firework', year: 2010, lang: 'en',
+    sources: "busca('Katy Perry', 'Firework')"
+  },
+  {
+    id: 'song-roar', cat: 'song-pop', franchise: 'Katy Perry', game: 'Roar',
+    title: 'Roar', year: 2013, lang: 'en',
+    sources: "busca('Katy Perry', 'Roar')"
+  },
+  {
+    id: 'song-just-the-way-you-are', cat: 'song-pop', franchise: 'Bruno Mars', game: 'Just the Way You Are',
+    title: 'Just the Way You Are', year: 2010, lang: 'en',
+    sources: "busca('Bruno Mars', 'Just the Way You Are')"
+  },
+  {
+    id: 'song-24k-magic', cat: 'song-pop', franchise: 'Bruno Mars', game: '24K Magic',
+    title: '24K Magic', year: 2016, lang: 'en',
+    sources: "busca('Bruno Mars', '24K Magic')"
+  },
+  {
+    id: 'song-blank-space', cat: 'song-pop', franchise: 'Taylor Swift', game: 'Blank Space',
+    title: 'Blank Space', year: 2014, lang: 'en',
+    sources: "busca('Taylor Swift', 'Blank Space')"
+  },
+  {
+    id: 'song-cruel-summer', cat: 'song-pop', franchise: 'Taylor Swift', game: 'Cruel Summer',
+    title: 'Cruel Summer', year: 2019, lang: 'en',
+    sources: "busca('Taylor Swift', 'Cruel Summer')"
+  },
+  {
+    id: 'song-dont-start-now', cat: 'song-pop', franchise: 'Dua Lipa', game: 'Don\'t Start Now',
+    title: 'Don\'t Start Now', year: 2019, lang: 'en',
+    sources: "busca('Dua Lipa', 'Don\\'t Start Now')"
+  },
+  {
+    id: 'song-7-rings', cat: 'song-pop', franchise: 'Ariana Grande', game: '7 rings',
+    title: '7 rings', year: 2019, lang: 'en',
+    sources: "busca('Ariana Grande', '7 rings')"
+  },
+  {
+    id: 'song-baby-justin-bieber', cat: 'song-pop', franchise: 'Justin Bieber', game: 'Baby',
+    title: 'Baby', year: 2010, lang: 'en',
+    sources: "busca('Justin Bieber', 'Baby')"
+  },
+  {
+    id: 'song-sugar-maroon-5', cat: 'song-pop', franchise: 'Maroon 5', game: 'Sugar',
+    title: 'Sugar', year: 2014, lang: 'en',
+    sources: "busca('Maroon 5', 'Sugar')"
+  },
+  {
+    id: 'song-chandelier', cat: 'song-pop', franchise: 'Sia', game: 'Chandelier',
+    title: 'Chandelier', year: 2014, lang: 'en',
+    sources: "busca('Sia', 'Chandelier')"
+  },
+  {
+    id: 'song-please-please-please', cat: 'song-pop', franchise: 'Sabrina Carpenter', game: 'Please Please Please',
+    title: 'Please Please Please', year: 2024, lang: 'en',
+    sources: "busca('Sabrina Carpenter', 'Please Please Please')"
+  }
+];
+
+// 3. RAP Y HIP-HOP (50 canciones)
+const rap = [
+  {
+    id: 'song-the-message', cat: 'song-rap', franchise: 'Grandmaster Flash and The Furious Five', game: 'The Message',
+    title: 'The Message', year: 1982, lang: 'en',
+    sources: "busca('Grandmaster Flash', 'The Message')"
+  },
+  {
+    id: 'song-rappers-delight', cat: 'song-rap', franchise: 'The Sugarhill Gang', game: 'Rapper\'s Delight',
+    title: 'Rapper\'s Delight', year: 1979, lang: 'en',
+    sources: "busca('The Sugarhill Gang', 'Rapper\\'s Delight')"
+  },
+  {
+    id: 'song-the-next-episode', cat: 'song-rap', franchise: 'Dr. Dre', game: 'The Next Episode',
+    title: 'The Next Episode', year: 1999, lang: 'en',
+    sources: "busca('Dr. Dre', 'The Next Episode')"
+  },
+  {
+    id: 'song-gin-and-juice', cat: 'song-rap', franchise: 'Snoop Dogg', game: 'Gin and Juice',
+    title: 'Gin and Juice', year: 1993, lang: 'en',
+    sources: "busca('Snoop Dogg', 'Gin and Juice')"
+  },
+  {
+    id: 'song-hypnotize', cat: 'song-rap', franchise: 'The Notorious B.I.G.', game: 'Hypnotize',
+    title: 'Hypnotize', year: 1997, lang: 'en',
+    sources: "busca('The Notorious B.I.G.', 'Hypnotize')"
+  },
+  {
+    id: 'song-big-poppa', cat: 'song-rap', franchise: 'The Notorious B.I.G.', game: 'Big Poppa',
+    title: 'Big Poppa', year: 1994, lang: 'en',
+    sources: "busca('The Notorious B.I.G.', 'Big Poppa')"
+  },
+  {
+    id: 'song-dear-mama', cat: 'song-rap', franchise: '2Pac', game: 'Dear Mama',
+    title: 'Dear Mama', year: 1995, lang: 'en',
+    sources: "busca('2Pac', 'Dear Mama')"
+  },
+  {
+    id: 'song-hit-em-up', cat: 'song-rap', franchise: '2Pac', game: 'Hit \'Em Up',
+    title: 'Hit \'Em Up', year: 1996, lang: 'en',
+    sources: "busca('2Pac', 'Hit \\'Em Up')"
+  },
+  {
+    id: 'song-x-gon-give-it-to-ya', cat: 'song-rap', franchise: 'DMX', game: 'X Gon\' Give It to Ya',
+    title: 'X Gon\' Give It to Ya', year: 2003, lang: 'en',
+    sources: "busca('DMX', 'X Gon\\' Give It to Ya')"
+  },
+  {
+    id: 'song-ruff-ryders-anthem', cat: 'song-rap', franchise: 'DMX', game: 'Ruff Ryders\' Anthem',
+    title: 'Ruff Ryders\' Anthem', year: 1998, lang: 'en',
+    sources: "busca('DMX', 'Ruff Ryders\\' Anthem')"
+  },
+  {
+    id: 'song-candy-shop', cat: 'song-rap', franchise: '50 Cent', game: 'Candy Shop',
+    title: 'Candy Shop', year: 2005, lang: 'en',
+    sources: "busca('50 Cent', 'Candy Shop')"
+  },
+  {
+    id: 'song-21-questions', cat: 'song-rap', franchise: '50 Cent', game: '21 Questions',
+    title: '21 Questions', year: 2003, lang: 'en',
+    sources: "busca('50 Cent', '21 Questions')"
+  },
+  {
+    id: 'song-stan', cat: 'song-rap', franchise: 'Eminem', game: 'Stan',
+    title: 'Stan', year: 2000, lang: 'en',
+    sources: "busca('Eminem', 'Stan')"
+  },
+  {
+    id: 'song-mockingbird', cat: 'song-rap', franchise: 'Eminem', game: 'Mockingbird',
+    title: 'Mockingbird', year: 2004, lang: 'en',
+    sources: "busca('Eminem', 'Mockingbird')"
+  },
+  {
+    id: 'song-99-problems', cat: 'song-rap', franchise: 'JAY-Z', game: '99 Problems',
+    title: '99 Problems', year: 2003, lang: 'en',
+    sources: "busca('JAY-Z', '99 Problems')"
+  },
+  {
+    id: 'song-heartless', cat: 'song-rap', franchise: 'Kanye West', game: 'Heartless',
+    title: 'Heartless', year: 2008, lang: 'en',
+    sources: "busca('Kanye West', 'Heartless')"
+  },
+  {
+    id: 'song-power-kanye', cat: 'song-rap', franchise: 'Kanye West', game: 'POWER',
+    title: 'POWER', year: 2010, lang: 'en',
+    sources: "busca('Kanye West', 'POWER')"
+  },
+  {
+    id: 'song-break-ya-neck', cat: 'song-rap', franchise: 'Busta Rhymes', game: 'Break Ya Neck',
+    title: 'Break Ya Neck', year: 2001, lang: 'en',
+    sources: "busca('Busta Rhymes', 'Break Ya Neck')"
+  },
+  {
+    id: 'song-dilemma', cat: 'song-rap', franchise: 'Nelly', game: 'Dilemma',
+    title: 'Dilemma', year: 2002, lang: 'en',
+    sources: "busca('Nelly', 'Dilemma')"
+  },
+  {
+    id: 'song-lean-back', cat: 'song-rap', franchise: 'Terror Squad', game: 'Lean Back',
+    title: 'Lean Back', year: 2004, lang: 'en',
+    sources: "busca('Terror Squad', 'Lean Back')"
+  },
+  {
+    id: 'song-low-flo-rida', cat: 'song-rap', franchise: 'Flo Rida', game: 'Low',
+    title: 'Low', year: 2007, lang: 'en',
+    sources: "busca('Flo Rida', 'Low')"
+  },
+  {
+    id: 'song-live-your-life', cat: 'song-rap', franchise: 'T.I.', game: 'Live Your Life',
+    title: 'Live Your Life', year: 2008, lang: 'en',
+    sources: "busca('T.I.', 'Live Your Life')"
+  },
+  {
+    id: 'song-a-milli', cat: 'song-rap', franchise: 'Lil Wayne', game: 'A Milli',
+    title: 'A Milli', year: 2008, lang: 'en',
+    sources: "busca('Lil Wayne', 'A Milli')"
+  },
+  {
+    id: 'song-lollipop', cat: 'song-rap', franchise: 'Lil Wayne', game: 'Lollipop',
+    title: 'Lollipop', year: 2008, lang: 'en',
+    sources: "busca('Lil Wayne', 'Lollipop')"
+  },
+  {
+    id: 'song-one-dance', cat: 'song-rap', franchise: 'Drake', game: 'One Dance',
+    title: 'One Dance', year: 2016, lang: 'en',
+    sources: "busca('Drake', 'One Dance')"
+  },
+  {
+    id: 'song-alright-kendrick', cat: 'song-rap', franchise: 'Kendrick Lamar', game: 'Alright',
+    title: 'Alright', year: 2015, lang: 'en',
+    sources: "busca('Kendrick Lamar', 'Alright')"
+  },
+  {
+    id: 'song-swimming-pools', cat: 'song-rap', franchise: 'Kendrick Lamar', game: 'Swimming Pools (Drank)',
+    title: 'Swimming Pools (Drank)', year: 2012, lang: 'en',
+    sources: "busca('Kendrick Lamar', 'Swimming Pools')"
+  },
+  {
+    id: 'song-dna-kendrick', cat: 'song-rap', franchise: 'Kendrick Lamar', game: 'DNA.',
+    title: 'DNA.', year: 2017, lang: 'en',
+    sources: "busca('Kendrick Lamar', 'DNA.')"
+  },
+  {
+    id: 'song-circles-post-malone', cat: 'song-rap', franchise: 'Post Malone', game: 'Circles',
+    title: 'Circles', year: 2019, lang: 'en',
+    sources: "busca('Post Malone', 'Circles')"
+  },
+  {
+    id: 'song-sunflower', cat: 'song-rap', franchise: 'Post Malone y Swae Lee', game: 'Sunflower',
+    title: 'Sunflower', year: 2018, lang: 'en',
+    sources: "busca('Post Malone', 'Sunflower')"
+  },
+  {
+    id: 'song-goosebumps-travis', cat: 'song-rap', franchise: 'Travis Scott', game: 'Goosebumps',
+    title: 'Goosebumps', year: 2016, lang: 'en',
+    sources: "busca('Travis Scott', 'Goosebumps')"
+  },
+  {
+    id: 'song-mask-off', cat: 'song-rap', franchise: 'Future', game: 'Mask Off',
+    title: 'Mask Off', year: 2017, lang: 'en',
+    sources: "busca('Future', 'Mask Off')"
+  },
+  {
+    id: 'song-bad-and-boujee', cat: 'song-rap', franchise: 'Migos', game: 'Bad and Boujee',
+    title: 'Bad and Boujee', year: 2016, lang: 'en',
+    sources: "busca('Migos', 'Bad and Boujee')"
+  },
+  {
+    id: 'song-i-like-it-cardi-b', cat: 'song-rap', franchise: 'Cardi B', game: 'I Like It',
+    title: 'I Like It', year: 2018, lang: 'en',
+    sources: "busca('Cardi B', 'I Like It')"
+  },
+  {
+    id: 'song-savage-megan', cat: 'song-rap', franchise: 'Megan Thee Stallion', game: 'Savage',
+    title: 'Savage', year: 2020, lang: 'en',
+    sources: "busca('Megan Thee Stallion', 'Savage')"
+  },
+  {
+    id: 'song-say-so', cat: 'song-rap', franchise: 'Doja Cat', game: 'Say So',
+    title: 'Say So', year: 2019, lang: 'en',
+    sources: "busca('Doja Cat', 'Say So')"
+  },
+  {
+    id: 'song-first-class', cat: 'song-rap', franchise: 'Jack Harlow', game: 'First Class',
+    title: 'First Class', year: 2022, lang: 'en',
+    sources: "busca('Jack Harlow', 'First Class')"
+  },
+  {
+    id: 'song-todas-mueren-por-mi', cat: 'song-rap', franchise: 'Cartel de Santa', game: 'Todas mueren por mí',
+    title: 'Todas mueren por mí', year: 2002, lang: 'es',
+    sources: "busca('Cartel de Santa', 'Todas mueren por mí')"
+  },
+  {
+    id: 'song-extasis-cartel', cat: 'song-rap', franchise: 'Cartel de Santa', game: 'Éxtasis',
+    title: 'Éxtasis', year: 2012, lang: 'es',
+    sources: "busca('Cartel de Santa', 'Éxtasis')"
+  },
+  {
+    id: 'song-leve-cartel', cat: 'song-rap', franchise: 'Cartel de Santa', game: 'Leve',
+    title: 'Leve', year: 2016, lang: 'es',
+    sources: "busca('Cartel de Santa', 'Leve')"
+  },
+  {
+    id: 'song-bombos-y-tarolas', cat: 'song-rap', franchise: 'Cartel de Santa', game: 'Bombos y tarolas',
+    title: 'Bombos y tarolas', year: 2010, lang: 'es',
+    sources: "busca('Cartel de Santa', 'Bombos y tarolas')"
+  },
+  {
+    id: 'song-maquiavelico', cat: 'song-rap', franchise: 'Canserbero', game: 'Maquiavélico',
+    title: 'Maquiavélico', year: 2012, lang: 'es',
+    sources: "busca('Canserbero', 'Maquiavélico')"
+  },
+  {
+    id: 'song-querer-querernos', cat: 'song-rap', franchise: 'Canserbero', game: 'Querer querernos',
+    title: 'Querer querernos', year: 2012, lang: 'es',
+    sources: "busca('Canserbero', 'Querer querernos')"
+  },
+  {
+    id: 'song-asi-soy-santa-fe', cat: 'song-rap', franchise: 'Santa Fe Klan', game: 'Así soy',
+    title: 'Así soy', year: 2020, lang: 'es',
+    sources: "busca('Santa Fe Klan', 'Así soy')"
+  },
+  {
+    id: 'song-debo-entender', cat: 'song-rap', franchise: 'Santa Fe Klan', game: 'Debo entender',
+    title: 'Debo entender', year: 2020, lang: 'es',
+    sources: "busca('Santa Fe Klan', 'Debo entender')"
+  },
+  {
+    id: 'song-dance-crip', cat: 'song-rap', franchise: 'Trueno', game: 'Dance Crip',
+    title: 'Dance Crip', year: 2021, lang: 'es',
+    sources: "busca('Trueno', 'Dance Crip')"
+  },
+  {
+    id: 'song-canguro-wos', cat: 'song-rap', franchise: 'Wos', game: 'Canguro',
+    title: 'Canguro', year: 2019, lang: 'es',
+    sources: "busca('Wos', 'Canguro')"
+  },
+  {
+    id: 'song-goteo-duki', cat: 'song-rap', franchise: 'Duki', game: 'Goteo',
+    title: 'Goteo', year: 2019, lang: 'es',
+    sources: "busca('Duki', 'Goteo')"
+  },
+  {
+    id: 'song-she-dont-give-a-fo', cat: 'song-rap', franchise: 'Duki', game: 'She Don\'t Give a FO',
+    title: 'She Don\'t Give a FO', year: 2017, lang: 'es',
+    sources: "busca('Duki', 'She Don\\'t Give a FO')"
+  },
+  {
+    id: 'song-loca-khea', cat: 'song-rap', franchise: 'Khea, Duki y Cazzu', game: 'Loca',
+    title: 'Loca', year: 2017, lang: 'es',
+    sources: "busca('Khea', 'Loca')"
+  }
+];
+
+// 4. REGGAETÓN (50 canciones)
+const reggaeton = [
+  {
+    id: 'song-dale-don-dale', cat: 'song-reggaeton', franchise: 'Don Omar', game: 'Dale Don Dale',
+    title: 'Dale Don Dale', year: 2003, lang: 'es',
+    sources: "busca('Don Omar', 'Dale Don Dale')"
+  },
+  {
+    id: 'song-baila-morena', cat: 'song-reggaeton', franchise: 'Héctor & Tito', game: 'Baila morena',
+    title: 'Baila morena', year: 2004, lang: 'es',
+    sources: "busca('Héctor & Tito', 'Baila morena')"
+  },
+  {
+    id: 'song-rompe', cat: 'song-reggaeton', franchise: 'Daddy Yankee', game: 'Rompe',
+    title: 'Rompe', year: 2005, lang: 'es',
+    sources: "busca('Daddy Yankee', 'Rompe')"
+  },
+  {
+    id: 'song-ella-me-levanto', cat: 'song-reggaeton', franchise: 'Daddy Yankee', game: 'Ella me levantó',
+    title: 'Ella me levantó', year: 2007, lang: 'es',
+    sources: "busca('Daddy Yankee', 'Ella me levantó')"
+  },
+  {
+    id: 'song-llamado-de-emergencia', cat: 'song-reggaeton', franchise: 'Daddy Yankee', game: 'Llamado de emergencia',
+    title: 'Llamado de emergencia', year: 2008, lang: 'es',
+    sources: "busca('Daddy Yankee', 'Llamado de emergencia')"
+  },
+  {
+    id: 'song-mayor-que-yo', cat: 'song-reggaeton', franchise: 'Luny Tunes', game: 'Mayor que yo',
+    title: 'Mayor que yo', year: 2005, lang: 'es',
+    sources: "busca('Luny Tunes', 'Mayor que yo')"
+  },
+  {
+    id: 'song-noche-de-sexo', cat: 'song-reggaeton', franchise: 'Wisin & Yandel', game: 'Noche de sexo',
+    title: 'Noche de sexo', year: 2005, lang: 'es',
+    sources: "busca('Wisin & Yandel', 'Noche de sexo')"
+  },
+  {
+    id: 'song-pam-pam', cat: 'song-reggaeton', franchise: 'Wisin & Yandel', game: 'Pam Pam',
+    title: 'Pam Pam', year: 2006, lang: 'es',
+    sources: "busca('Wisin & Yandel', 'Pam Pam')"
+  },
+  {
+    id: 'song-sexy-movimiento', cat: 'song-reggaeton', franchise: 'Wisin & Yandel', game: 'Sexy movimiento',
+    title: 'Sexy movimiento', year: 2007, lang: 'es',
+    sources: "busca('Wisin & Yandel', 'Sexy movimiento')"
+  },
+  {
+    id: 'song-abusadora', cat: 'song-reggaeton', franchise: 'Wisin & Yandel', game: 'Abusadora',
+    title: 'Abusadora', year: 2009, lang: 'es',
+    sources: "busca('Wisin & Yandel', 'Abusadora')"
+  },
+  {
+    id: 'song-5-letras', cat: 'song-reggaeton', franchise: 'Alexis & Fido', game: '5 letras',
+    title: '5 letras', year: 2007, lang: 'es',
+    sources: "busca('Alexis & Fido', '5 letras')"
+  },
+  {
+    id: 'song-una-en-un-millon', cat: 'song-reggaeton', franchise: 'Alexis & Fido', game: 'Una en un millón',
+    title: 'Una en un millón', year: 2016, lang: 'es',
+    sources: "busca('Alexis & Fido', 'Una en un millón')"
+  },
+  {
+    id: 'song-fanatica-sensual', cat: 'song-reggaeton', franchise: 'Plan B', game: 'Fanática sensual',
+    title: 'Fanática sensual', year: 2014, lang: 'es',
+    sources: "busca('Plan B', 'Fanática sensual')"
+  },
+  {
+    id: 'song-candy-plan-b', cat: 'song-reggaeton', franchise: 'Plan B', game: 'Candy',
+    title: 'Candy', year: 2013, lang: 'es',
+    sources: "busca('Plan B', 'Candy')"
+  },
+  {
+    id: 'song-si-no-le-contesto', cat: 'song-reggaeton', franchise: 'Plan B', game: 'Si no le contesto',
+    title: 'Si no le contesto', year: 2010, lang: 'es',
+    sources: "busca('Plan B', 'Si no le contesto')"
+  },
+  {
+    id: 'song-yo-voy', cat: 'song-reggaeton', franchise: 'Zion & Lennox', game: 'Yo voy',
+    title: 'Yo voy', year: 2004, lang: 'es',
+    sources: "busca('Zion & Lennox', 'Yo voy')"
+  },
+  {
+    id: 'song-ven-bailalo', cat: 'song-reggaeton', franchise: 'Ángel & Khriz', game: 'Ven báilalo',
+    title: 'Ven báilalo', year: 2004, lang: 'es',
+    sources: "busca('Ángel & Khriz', 'Ven báilalo')"
+  },
+  {
+    id: 'song-el-amor-tito', cat: 'song-reggaeton', franchise: 'Tito El Bambino', game: 'El amor',
+    title: 'El amor', year: 2009, lang: 'es',
+    sources: "busca('Tito El Bambino', 'El amor')"
+  },
+  {
+    id: 'song-siente-el-boom', cat: 'song-reggaeton', franchise: 'Tito El Bambino', game: 'Siente el boom',
+    title: 'Siente el boom', year: 2006, lang: 'es',
+    sources: "busca('Tito El Bambino', 'Siente el boom')"
+  },
+  {
+    id: 'song-el-doctorado', cat: 'song-reggaeton', franchise: 'Tony Dize', game: 'El doctorado',
+    title: 'El doctorado', year: 2009, lang: 'es',
+    sources: "busca('Tony Dize', 'El doctorado')"
+  },
+  {
+    id: 'song-down-rkm-ken-y', cat: 'song-reggaeton', franchise: 'R.K.M & Ken-Y', game: 'Down',
+    title: 'Down', year: 2006, lang: 'es',
+    sources: "busca('R.K.M & Ken-Y', 'Down')"
+  },
+  {
+    id: 'song-me-matas-rkm', cat: 'song-reggaeton', franchise: 'R.K.M & Ken-Y', game: 'Me matas',
+    title: 'Me matas', year: 2006, lang: 'es',
+    sources: "busca('R.K.M & Ken-Y', 'Me matas')"
+  },
+  {
+    id: 'song-la-pregunta', cat: 'song-reggaeton', franchise: 'J Álvarez', game: 'La pregunta',
+    title: 'La pregunta', year: 2011, lang: 'es',
+    sources: "busca('J Álvarez', 'La pregunta')"
+  },
+  {
+    id: 'song-passion-whine', cat: 'song-reggaeton', franchise: 'Farruko', game: 'Passion Whine',
+    title: 'Passion Whine', year: 2014, lang: 'es',
+    sources: "busca('Farruko', 'Passion Whine')"
+  },
+  {
+    id: 'song-chillax', cat: 'song-reggaeton', franchise: 'Farruko', game: 'Chillax',
+    title: 'Chillax', year: 2016, lang: 'es',
+    sources: "busca('Farruko', 'Chillax')"
+  },
+  {
+    id: 'song-travesuras-nicky', cat: 'song-reggaeton', franchise: 'Nicky Jam', game: 'Travesuras',
+    title: 'Travesuras', year: 2014, lang: 'es',
+    sources: "busca('Nicky Jam', 'Travesuras')"
+  },
+  {
+    id: 'song-x-nicky-jam', cat: 'song-reggaeton', franchise: 'Nicky Jam y J Balvin', game: 'X',
+    title: 'X', year: 2018, lang: 'es',
+    sources: "busca('Nicky Jam', 'X')"
+  },
+  {
+    id: 'song-6-am', cat: 'song-reggaeton', franchise: 'J Balvin', game: '6 AM',
+    title: '6 AM', year: 2014, lang: 'es',
+    sources: "busca('J Balvin', '6 AM')"
+  },
+  {
+    id: 'song-bobo-j-balvin', cat: 'song-reggaeton', franchise: 'J Balvin', game: 'Bobo',
+    title: 'Bobo', year: 2016, lang: 'es',
+    sources: "busca('J Balvin', 'Bobo')"
+  },
+  {
+    id: 'song-rojo-j-balvin', cat: 'song-reggaeton', franchise: 'J Balvin', game: 'Rojo',
+    title: 'Rojo', year: 2020, lang: 'es',
+    sources: "busca('J Balvin', 'Rojo')"
+  },
+  {
+    id: 'song-borro-cassette', cat: 'song-reggaeton', franchise: 'Maluma', game: 'Borró cassette',
+    title: 'Borró cassette', year: 2015, lang: 'es',
+    sources: "busca('Maluma', 'Borró cassette')"
+  },
+  {
+    id: 'song-sobrio-maluma', cat: 'song-reggaeton', franchise: 'Maluma', game: 'Sobrio',
+    title: 'Sobrio', year: 2021, lang: 'es',
+    sources: "busca('Maluma', 'Sobrio')"
+  },
+  {
+    id: 'song-dile-que-tu-me-quieres', cat: 'song-reggaeton', franchise: 'Ozuna', game: 'Dile que tú me quieres',
+    title: 'Dile que tú me quieres', year: 2016, lang: 'es',
+    sources: "busca('Ozuna', 'Dile que tú me quieres')"
+  },
+  {
+    id: 'song-tu-foto-ozuna', cat: 'song-reggaeton', franchise: 'Ozuna', game: 'Tu foto',
+    title: 'Tu foto', year: 2017, lang: 'es',
+    sources: "busca('Ozuna', 'Tu foto')"
+  },
+  {
+    id: 'song-caramelo-ozuna', cat: 'song-reggaeton', franchise: 'Ozuna', game: 'Caramelo',
+    title: 'Caramelo', year: 2020, lang: 'es',
+    sources: "busca('Ozuna', 'Caramelo')"
+  },
+  {
+    id: 'song-chambea', cat: 'song-reggaeton', franchise: 'Bad Bunny', game: 'Chambea',
+    title: 'Chambea', year: 2017, lang: 'es',
+    sources: "busca('Bad Bunny', 'Chambea')"
+  },
+  {
+    id: 'song-amorfoda', cat: 'song-reggaeton', franchise: 'Bad Bunny', game: 'Amorfoda',
+    title: 'Amorfoda', year: 2018, lang: 'es',
+    sources: "busca('Bad Bunny', 'Amorfoda')"
+  },
+  {
+    id: 'song-moscu-mule', cat: 'song-reggaeton', franchise: 'Bad Bunny', game: 'Moscú Mule',
+    title: 'Moscú Mule', year: 2022, lang: 'es',
+    sources: "busca('Bad Bunny', 'Moscú Mule')"
+  },
+  {
+    id: 'song-monaco-bad-bunny', cat: 'song-reggaeton', franchise: 'Bad Bunny', game: 'Monaco',
+    title: 'Monaco', year: 2023, lang: 'es',
+    sources: "busca('Bad Bunny', 'Monaco')"
+  },
+  {
+    id: 'song-mi-cama', cat: 'song-reggaeton', franchise: 'Karol G', game: 'Mi cama',
+    title: 'Mi cama', year: 2018, lang: 'es',
+    sources: "busca('Karol G', 'Mi cama')"
+  },
+  {
+    id: 'song-cairo-karol-g', cat: 'song-reggaeton', franchise: 'Karol G', game: 'Cairo',
+    title: 'Cairo', year: 2022, lang: 'es',
+    sources: "busca('Karol G', 'Cairo')"
+  },
+  {
+    id: 'song-amargura', cat: 'song-reggaeton', franchise: 'Karol G', game: 'Amargura',
+    title: 'Amargura', year: 2023, lang: 'es',
+    sources: "busca('Karol G', 'Amargura')"
+  },
+  {
+    id: 'song-desesperados', cat: 'song-reggaeton', franchise: 'Rauw Alejandro y Chencho Corleone', game: 'Desesperados',
+    title: 'Desesperados', year: 2021, lang: 'es',
+    sources: "busca('Rauw Alejandro', 'Desesperados')"
+  },
+  {
+    id: 'song-punto-40', cat: 'song-reggaeton', franchise: 'Rauw Alejandro', game: 'Punto 40',
+    title: 'Punto 40', year: 2022, lang: 'es',
+    sources: "busca('Rauw Alejandro', 'Punto 40')"
+  },
+  {
+    id: 'song-normal-feid', cat: 'song-reggaeton', franchise: 'Feid', game: 'Normal',
+    title: 'Normal', year: 2022, lang: 'es',
+    sources: "busca('Feid', 'Normal')"
+  },
+  {
+    id: 'song-yandel-150', cat: 'song-reggaeton', franchise: 'Yandel y Feid', game: 'Yandel 150',
+    title: 'Yandel 150', year: 2022, lang: 'es',
+    sources: "busca('Yandel', 'Yandel 150')"
+  },
+  {
+    id: 'song-luna-feid', cat: 'song-reggaeton', franchise: 'Feid', game: 'Luna',
+    title: 'Luna', year: 2023, lang: 'es',
+    sources: "busca('Feid', 'Luna')"
+  },
+  {
+    id: 'song-lala-myke-towers', cat: 'song-reggaeton', franchise: 'Myke Towers', game: 'LALA',
+    title: 'LALA', year: 2023, lang: 'es',
+    sources: "busca('Myke Towers', 'LALA')"
+  },
+  {
+    id: 'song-una-lady-como-tu', cat: 'song-reggaeton', franchise: 'Manuel Turizo', game: 'Una Lady Como Tú',
+    title: 'Una Lady Como Tú', year: 2016, lang: 'es',
+    sources: "busca('Manuel Turizo', 'Una Lady Como Tú')"
+  },
+  {
+    id: 'song-hola-perdida', cat: 'song-reggaeton', franchise: 'Luck Ra', game: 'Hola perdida',
+    title: 'Hola perdida', year: 2024, lang: 'es',
+    sources: "busca('Luck Ra', 'Hola perdida')"
+  }
+];
+
+// 5. REGIONAL MEXICANO (50 canciones)
+const regional = [
+  {
+    id: 'song-si-nos-dejan', cat: 'song-regional', franchise: 'José Alfredo Jiménez', game: 'Si nos dejan',
+    title: 'Si nos dejan', year: 1966, lang: 'es',
+    sources: "busca('José Alfredo Jiménez', 'Si nos dejan')"
+  },
+  {
+    id: 'song-ella-jose-alfredo', cat: 'song-regional', franchise: 'José Alfredo Jiménez', game: 'Ella',
+    title: 'Ella', year: 1950, lang: 'es',
+    sources: "busca('José Alfredo Jiménez', 'Ella')"
+  },
+  {
+    id: 'song-fallaste-corazon', cat: 'song-regional', franchise: 'Pedro Infante', game: 'Fallaste corazón',
+    title: 'Fallaste corazón', year: 1954, lang: 'es',
+    sources: "busca('Pedro Infante', 'Fallaste corazón')"
+  },
+  {
+    id: 'song-esclavo-y-amo', cat: 'song-regional', franchise: 'Javier Solís', game: 'Esclavo y amo',
+    title: 'Esclavo y amo', year: 1962, lang: 'es',
+    sources: "busca('Javier Solís', 'Esclavo y amo')"
+  },
+  {
+    id: 'song-albur-de-amor', cat: 'song-regional', franchise: 'Antonio Aguilar', game: 'Albur de amor',
+    title: 'Albur de amor', year: 1980, lang: 'es',
+    sources: "busca('Antonio Aguilar', 'Albur de amor')"
+  },
+  {
+    id: 'song-tristes-recuerdos', cat: 'song-regional', franchise: 'Antonio Aguilar', game: 'Tristes recuerdos',
+    title: 'Tristes recuerdos', year: 1991, lang: 'es',
+    sources: "busca('Antonio Aguilar', 'Tristes recuerdos')"
+  },
+  {
+    id: 'song-a-mi-manera-chente', cat: 'song-regional', franchise: 'Vicente Fernández', game: 'A mi manera',
+    title: 'A mi manera', year: 1983, lang: 'es',
+    sources: "busca('Vicente Fernández', 'A mi manera')"
+  },
+  {
+    id: 'song-aca-entre-nos', cat: 'song-regional', franchise: 'Vicente Fernández', game: 'Acá entre nos',
+    title: 'Acá entre nos', year: 1992, lang: 'es',
+    sources: "busca('Vicente Fernández', 'Acá entre nos')"
+  },
+  {
+    id: 'song-estos-celos', cat: 'song-regional', franchise: 'Vicente Fernández', game: 'Estos celos',
+    title: 'Estos celos', year: 2007, lang: 'es',
+    sources: "busca('Vicente Fernández', 'Estos celos')"
+  },
+  {
+    id: 'song-se-me-olvido-otra-vez', cat: 'song-regional', franchise: 'Juan Gabriel', game: 'Se me olvidó otra vez',
+    title: 'Se me olvidó otra vez', year: 1974, lang: 'es',
+    sources: "busca('Juan Gabriel', 'Se me olvidó otra vez')"
+  },
+  {
+    id: 'song-golpes-en-el-corazon', cat: 'song-regional', franchise: 'Los Tigres del Norte', game: 'Golpes en el corazón',
+    title: 'Golpes en el corazón', year: 1995, lang: 'es',
+    sources: "busca('Los Tigres del Norte', 'Golpes en el corazón')"
+  },
+  {
+    id: 'song-la-mesa-del-rincon', cat: 'song-regional', franchise: 'Los Tigres del Norte', game: 'La mesa del rincón',
+    title: 'La mesa del rincón', year: 1997, lang: 'es',
+    sources: "busca('Los Tigres del Norte', 'La mesa del rincón')"
+  },
+  {
+    id: 'song-el-tucanazo', cat: 'song-regional', franchise: 'Los Tucanes de Tijuana', game: 'El tucanazo',
+    title: 'El tucanazo', year: 1995, lang: 'es',
+    sources: "busca('Los Tucanes de Tijuana', 'El tucanazo')"
+  },
+  {
+    id: 'song-con-zapatos-de-tacon', cat: 'song-regional', franchise: 'Bronco', game: 'Con zapatos de tacón',
+    title: 'Con zapatos de tacón', year: 1989, lang: 'es',
+    sources: "busca('Bronco', 'Con zapatos de tacón')"
+  },
+  {
+    id: 'song-eres-un-sueno-temerarios', cat: 'song-regional', franchise: 'Los Temerarios', game: 'Eres un sueño',
+    title: 'Eres un sueño', year: 1996, lang: 'es',
+    sources: "busca('Los Temerarios', 'Eres un sueño')"
+  },
+  {
+    id: 'song-ven-porque-te-necesito', cat: 'song-regional', franchise: 'Los Temerarios', game: 'Ven porque te necesito',
+    title: 'Ven porque te necesito', year: 1990, lang: 'es',
+    sources: "busca('Los Temerarios', 'Ven porque te necesito')"
+  },
+  {
+    id: 'song-quiereme-bukis', cat: 'song-regional', franchise: 'Los Bukis', game: 'Quiéreme',
+    title: 'Quiéreme', year: 1992, lang: 'es',
+    sources: "busca('Los Bukis', 'Quiéreme')"
+  },
+  {
+    id: 'song-y-todo-para-que', cat: 'song-regional', franchise: 'Intocable', game: '¿Y todo para qué?',
+    title: '¿Y todo para qué?', year: 1997, lang: 'es',
+    sources: "busca('Intocable', '¿Y todo para qué?')"
+  },
+  {
+    id: 'song-fuerte-no-soy', cat: 'song-regional', franchise: 'Intocable', game: 'Fuerte no soy',
+    title: 'Fuerte no soy', year: 2001, lang: 'es',
+    sources: "busca('Intocable', 'Fuerte no soy')"
+  },
+  {
+    id: 'song-ensename-a-olvidarte', cat: 'song-regional', franchise: 'Intocable', game: 'Enséñame a olvidarte',
+    title: 'Enséñame a olvidarte', year: 2000, lang: 'es',
+    sources: "busca('Intocable', 'Enséñame a olvidarte')"
+  },
+  {
+    id: 'song-sentimientos-de-carton', cat: 'song-regional', franchise: 'Grupo Duelo', game: 'Sentimientos de cartón',
+    title: 'Sentimientos de cartón', year: 2010, lang: 'es',
+    sources: "busca('Grupo Duelo', 'Sentimientos de cartón')"
+  },
+  {
+    id: 'song-a-chillar-a-otra-parte', cat: 'song-regional', franchise: 'Pesado', game: 'A chillar a otra parte',
+    title: 'A chillar a otra parte', year: 2004, lang: 'es',
+    sources: "busca('Pesado', 'A chillar a otra parte')"
+  },
+  {
+    id: 'song-ojala-que-te-mueras', cat: 'song-regional', franchise: 'Pesado', game: 'Ojalá que te mueras',
+    title: 'Ojalá que te mueras', year: 2007, lang: 'es',
+    sources: "busca('Pesado', 'Ojalá que te mueras')"
+  },
+  {
+    id: 'song-te-presumo', cat: 'song-regional', franchise: 'Banda El Recodo', game: 'Te presumo',
+    title: 'Te presumo', year: 2008, lang: 'es',
+    sources: "busca('Banda El Recodo', 'Te presumo')"
+  },
+  {
+    id: 'song-pena-tras-pena', cat: 'song-regional', franchise: 'Banda El Recodo', game: 'Pena tras pena',
+    title: 'Pena tras pena', year: 1999, lang: 'es',
+    sources: "busca('Banda El Recodo', 'Pena tras pena')"
+  },
+  {
+    id: 'song-el-ruido-de-tus-zapatos', cat: 'song-regional', franchise: 'La Arrolladora Banda El Limón', game: 'El ruido de tus zapatos',
+    title: 'El ruido de tus zapatos', year: 2013, lang: 'es',
+    sources: "busca('La Arrolladora Banda El Limón', 'El ruido de tus zapatos')"
+  },
+  {
+    id: 'song-sobre-mis-pies', cat: 'song-regional', franchise: 'La Arrolladora Banda El Limón', game: 'Sobre mis pies',
+    title: 'Sobre mis pies', year: 2007, lang: 'es',
+    sources: "busca('La Arrolladora Banda El Limón', 'Sobre mis pies')"
+  },
+  {
+    id: 'song-belleza-de-cantina', cat: 'song-regional', franchise: 'Los Cardenales de Nuevo León', game: 'Belleza de cantina',
+    title: 'Belleza de cantina', year: 2000, lang: 'es',
+    sources: "busca('Los Cardenales de Nuevo León', 'Belleza de cantina')"
+  },
+  {
+    id: 'song-aguanta-corazon', cat: 'song-regional', franchise: 'Los Invasores de Nuevo León', game: 'Aguanta corazón',
+    title: 'Aguanta corazón', year: 1987, lang: 'es',
+    sources: "busca('Los Invasores de Nuevo León', 'Aguanta corazón')"
+  },
+  {
+    id: 'song-tragos-amargos', cat: 'song-regional', franchise: 'Ramón Ayala', game: 'Tragos amargos',
+    title: 'Tragos amargos', year: 1980, lang: 'es',
+    sources: "busca('Ramón Ayala', 'Tragos amargos')"
+  },
+  {
+    id: 'song-casas-de-madera', cat: 'song-regional', franchise: 'Ramón Ayala', game: 'Casas de madera',
+    title: 'Casas de madera', year: 1998, lang: 'es',
+    sources: "busca('Ramón Ayala', 'Casas de madera')"
+  },
+  {
+    id: 'song-alma-enamorada', cat: 'song-regional', franchise: 'Chalino Sánchez', game: 'Alma enamorada',
+    title: 'Alma enamorada', year: 1992, lang: 'es',
+    sources: "busca('Chalino Sánchez', 'Alma enamorada')"
+  },
+  {
+    id: 'song-vete-ya', cat: 'song-regional', franchise: 'Valentín Elizalde', game: 'Vete ya',
+    title: 'Vete ya', year: 2003, lang: 'es',
+    sources: "busca('Valentín Elizalde', 'Vete ya')"
+  },
+  {
+    id: 'song-como-me-duele', cat: 'song-regional', franchise: 'Valentín Elizalde', game: 'Como me duele',
+    title: 'Como me duele', year: 2005, lang: 'es',
+    sources: "busca('Valentín Elizalde', 'Como me duele')"
+  },
+  {
+    id: 'song-soy-asi-valentin', cat: 'song-regional', franchise: 'Valentín Elizalde', game: 'Soy así',
+    title: 'Soy así', year: 2005, lang: 'es',
+    sources: "busca('Valentín Elizalde', 'Soy así')"
+  },
+  {
+    id: 'song-inolvidable-jenni', cat: 'song-regional', franchise: 'Jenni Rivera', game: 'Inolvidable',
+    title: 'Inolvidable', year: 2007, lang: 'es',
+    sources: "busca('Jenni Rivera', 'Inolvidable')"
+  },
+  {
+    id: 'song-no-llega-el-olvido', cat: 'song-regional', franchise: 'Jenni Rivera', game: 'No llega el olvido',
+    title: 'No llega el olvido', year: 2009, lang: 'es',
+    sources: "busca('Jenni Rivera', 'No llega el olvido')"
+  },
+  {
+    id: 'song-terrenal-julion', cat: 'song-regional', franchise: 'Julión Álvarez', game: 'Terrenal',
+    title: 'Terrenal', year: 2010, lang: 'es',
+    sources: "busca('Julión Álvarez', 'Terrenal')"
+  },
+  {
+    id: 'song-el-amor-de-su-vida', cat: 'song-regional', franchise: 'Julión Álvarez', game: 'El amor de su vida',
+    title: 'El amor de su vida', year: 2015, lang: 'es',
+    sources: "busca('Julión Álvarez', 'El amor de su vida')"
+  },
+  {
+    id: 'song-si-te-pudiera-mentir', cat: 'song-regional', franchise: 'Calibre 50', game: 'Si te pudiera mentir',
+    title: 'Si te pudiera mentir', year: 2018, lang: 'es',
+    sources: "busca('Calibre 50', 'Si te pudiera mentir')"
+  },
+  {
+    id: 'song-no-te-contaron-mal', cat: 'song-regional', franchise: 'Christian Nodal', game: 'No te contaron mal',
+    title: 'No te contaron mal', year: 2018, lang: 'es',
+    sources: "busca('Christian Nodal', 'No te contaron mal')"
+  },
+  {
+    id: 'song-segun-quien', cat: 'song-regional', franchise: 'Carin León y Maluma', game: 'Según quién',
+    title: 'Según quién', year: 2023, lang: 'es',
+    sources: "busca('Carin León', 'Según quién')"
+  },
+  {
+    id: 'song-la-boda-del-huitlacoche', cat: 'song-regional', franchise: 'Carin León', game: 'La boda del Huitlacoche',
+    title: 'La boda del Huitlacoche', year: 2022, lang: 'es',
+    sources: "busca('Carin León', 'La boda del Huitlacoche')"
+  },
+  {
+    id: 'song-lady-gaga-peso-pluma', cat: 'song-regional', franchise: 'Peso Pluma, Gabito Ballesteros y Junior H', game: 'LADY GAGA',
+    title: 'LADY GAGA', year: 2023, lang: 'es',
+    sources: "busca('Peso Pluma', 'LADY GAGA')"
+  },
+  {
+    id: 'song-mi-bello-angel', cat: 'song-regional', franchise: 'Natanael Cano', game: 'Mi bello ángel',
+    title: 'Mi bello ángel', year: 2023, lang: 'es',
+    sources: "busca('Natanael Cano', 'Mi bello ángel')"
+  },
+  {
+    id: 'song-fin-de-semana-junior-h', cat: 'song-regional', franchise: 'Junior H y Oscar Maydon', game: 'Fin de semana',
+    title: 'Fin de semana', year: 2023, lang: 'es',
+    sources: "busca('Junior H', 'Fin de semana')"
+  },
+  {
+    id: 'song-el-gordo-trae-el-mando', cat: 'song-regional', franchise: 'Chino Pacas', game: 'El Gordo Trae El Mando',
+    title: 'El Gordo Trae El Mando', year: 2023, lang: 'es',
+    sources: "busca('Chino Pacas', 'El Gordo Trae El Mando')"
+  },
+  {
+    id: 'song-que-vuelvas', cat: 'song-regional', franchise: 'Carin León y Grupo Frontera', game: 'Que vuelvas',
+    title: 'Que vuelvas', year: 2022, lang: 'es',
+    sources: "busca('Carin León', 'Que vuelvas')"
+  },
+  {
+    id: 'song-harley-quinn', cat: 'song-regional', franchise: 'Fuerza Regida y Marshmello', game: 'HARLEY QUINN',
+    title: 'HARLEY QUINN', year: 2023, lang: 'es',
+    sources: "busca('Fuerza Regida', 'HARLEY QUINN')"
+  },
+  {
+    id: 'song-corazon-de-oro', cat: 'song-regional', franchise: 'Los Tigres del Norte', game: 'Corazón de oro',
+    title: 'Corazón de oro', year: 1988, lang: 'es',
+    sources: "busca('Los Tigres del Norte', 'Corazón de oro')"
+  }
+];
+
+// 6. BALADAS (50 canciones)
+const baladas = [
+  {
+    id: 'song-un-beso-y-una-flor', cat: 'song-baladas', franchise: 'Nino Bravo', game: 'Un beso y una flor',
+    title: 'Un beso y una flor', year: 1972, lang: 'es',
+    sources: "busca('Nino Bravo', 'Un beso y una flor')"
+  },
+  {
+    id: 'song-el-gato-que-esta-triste-y-azul', cat: 'song-baladas', franchise: 'Roberto Carlos', game: 'El gato que está triste y azul',
+    title: 'El gato que está triste y azul', year: 1972, lang: 'es',
+    sources: "busca('Roberto Carlos', 'El gato que está triste y azul')"
+  },
+  {
+    id: 'song-amigo-roberto-carlos', cat: 'song-baladas', franchise: 'Roberto Carlos', game: 'Amigo',
+    title: 'Amigo', year: 1977, lang: 'es',
+    sources: "busca('Roberto Carlos', 'Amigo')"
+  },
+  {
+    id: 'song-algo-de-mi', cat: 'song-baladas', franchise: 'Camilo Sesto', game: 'Algo de mí',
+    title: 'Algo de mí', year: 1971, lang: 'es',
+    sources: "busca('Camilo Sesto', 'Algo de mí')"
+  },
+  {
+    id: 'song-jamas-camilo-sesto', cat: 'song-baladas', franchise: 'Camilo Sesto', game: 'Jamás',
+    title: 'Jamás', year: 1975, lang: 'es',
+    sources: "busca('Camilo Sesto', 'Jamás')"
+  },
+  {
+    id: 'song-40-y-20', cat: 'song-baladas', franchise: 'José José', game: '40 y 20',
+    title: '40 y 20', year: 1992, lang: 'es',
+    sources: "busca('José José', '40 y 20')"
+  },
+  {
+    id: 'song-desesperado-jose-jose', cat: 'song-baladas', franchise: 'José José', game: 'Desesperado',
+    title: 'Desesperado', year: 1982, lang: 'es',
+    sources: "busca('José José', 'Desesperado')"
+  },
+  {
+    id: 'song-vamos-a-darnos-tiempo', cat: 'song-baladas', franchise: 'José José', game: 'Vamos a darnos tiempo',
+    title: 'Vamos a darnos tiempo', year: 1981, lang: 'es',
+    sources: "busca('José José', 'Vamos a darnos tiempo')"
+  },
+  {
+    id: 'song-abrazame-muy-fuerte', cat: 'song-baladas', franchise: 'Juan Gabriel', game: 'Abrázame muy fuerte',
+    title: 'Abrázame muy fuerte', year: 2000, lang: 'es',
+    sources: "busca('Juan Gabriel', 'Abrázame muy fuerte')"
+  },
+  {
+    id: 'song-yo-no-naci-para-amar', cat: 'song-baladas', franchise: 'Juan Gabriel', game: 'Yo no nací para amar',
+    title: 'Yo no nací para amar', year: 1980, lang: 'es',
+    sources: "busca('Juan Gabriel', 'Yo no nací para amar')"
+  },
+  {
+    id: 'song-costumbres-rocio-durcal', cat: 'song-baladas', franchise: 'Rocío Dúrcal', game: 'Costumbres',
+    title: 'Costumbres', year: 1985, lang: 'es',
+    sources: "busca('Rocío Dúrcal', 'Costumbres')"
+  },
+  {
+    id: 'song-como-yo-te-amo', cat: 'song-baladas', franchise: 'Raphael', game: 'Como yo te amo',
+    title: 'Como yo te amo', year: 1980, lang: 'es',
+    sources: "busca('Raphael', 'Como yo te amo')"
+  },
+  {
+    id: 'song-todo-se-derrumbo-dentro-de-mi', cat: 'song-baladas', franchise: 'Emmanuel', game: 'Todo se derrumbó dentro de mí',
+    title: 'Todo se derrumbó dentro de mí', year: 1980, lang: 'es',
+    sources: "busca('Emmanuel', 'Todo se derrumbó dentro de mí')"
+  },
+  {
+    id: 'song-para-amarnos-mas', cat: 'song-baladas', franchise: 'Manuel Mijares', game: 'Para amarnos más',
+    title: 'Para amarnos más', year: 1989, lang: 'es',
+    sources: "busca('Manuel Mijares', 'Para amarnos más')"
+  },
+  {
+    id: 'song-el-privilegio-de-amar', cat: 'song-baladas', franchise: 'Manuel Mijares y Lucero', game: 'El privilegio de amar',
+    title: 'El privilegio de amar', year: 1998, lang: 'es',
+    sources: "busca('Manuel Mijares', 'El privilegio de amar')"
+  },
+  {
+    id: 'song-tengo-todo-excepto-a-ti', cat: 'song-baladas', franchise: 'Luis Miguel', game: 'Tengo todo excepto a ti',
+    title: 'Tengo todo excepto a ti', year: 1990, lang: 'es',
+    sources: "busca('Luis Miguel', 'Tengo todo excepto a ti')"
+  },
+  {
+    id: 'song-culpable-o-no', cat: 'song-baladas', franchise: 'Luis Miguel', game: 'Culpable o no',
+    title: 'Culpable o no', year: 1988, lang: 'es',
+    sources: "busca('Luis Miguel', 'Culpable o no')"
+  },
+  {
+    id: 'song-entregate-luis-miguel', cat: 'song-baladas', franchise: 'Luis Miguel', game: 'Entrégate',
+    title: 'Entrégate', year: 1990, lang: 'es',
+    sources: "busca('Luis Miguel', 'Entrégate')"
+  },
+  {
+    id: 'song-hasta-que-me-olvides', cat: 'song-baladas', franchise: 'Luis Miguel', game: 'Hasta que me olvides',
+    title: 'Hasta que me olvides', year: 1993, lang: 'es',
+    sources: "busca('Luis Miguel', 'Hasta que me olvides')"
+  },
+  {
+    id: 'song-nunca-voy-a-olvidarte', cat: 'song-baladas', franchise: 'Cristian Castro', game: 'Nunca voy a olvidarte',
+    title: 'Nunca voy a olvidarte', year: 1993, lang: 'es',
+    sources: "busca('Cristian Castro', 'Nunca voy a olvidarte')"
+  },
+  {
+    id: 'song-por-amarte-asi', cat: 'song-baladas', franchise: 'Cristian Castro', game: 'Por amarte así',
+    title: 'Por amarte así', year: 1999, lang: 'es',
+    sources: "busca('Cristian Castro', 'Por amarte así')"
+  },
+  {
+    id: 'song-tan-enamorados', cat: 'song-baladas', franchise: 'Ricardo Montaner', game: 'Tan enamorados',
+    title: 'Tan enamorados', year: 1988, lang: 'es',
+    sources: "busca('Ricardo Montaner', 'Tan enamorados')"
+  },
+  {
+    id: 'song-me-va-a-extranar', cat: 'song-baladas', franchise: 'Ricardo Montaner', game: 'Me va a extrañar',
+    title: 'Me va a extrañar', year: 1989, lang: 'es',
+    sources: "busca('Ricardo Montaner', 'Me va a extrañar')"
+  },
+  {
+    id: 'song-besame-montaner', cat: 'song-baladas', franchise: 'Ricardo Montaner', game: 'Bésame',
+    title: 'Bésame', year: 2001, lang: 'es',
+    sources: "busca('Ricardo Montaner', 'Bésame')"
+  },
+  {
+    id: 'song-te-amo-franco-de-vita', cat: 'song-baladas', franchise: 'Franco De Vita', game: 'Te amo',
+    title: 'Te amo', year: 1988, lang: 'es',
+    sources: "busca('Franco De Vita', 'Te amo')"
+  },
+  {
+    id: 'song-un-buen-perdedor', cat: 'song-baladas', franchise: 'Franco De Vita', game: 'Un buen perdedor',
+    title: 'Un buen perdedor', year: 1984, lang: 'es',
+    sources: "busca('Franco De Vita', 'Un buen perdedor')"
+  },
+  {
+    id: 'song-tu-de-que-vas', cat: 'song-baladas', franchise: 'Franco De Vita', game: 'Tú de qué vas',
+    title: 'Tú de qué vas', year: 2004, lang: 'es',
+    sources: "busca('Franco De Vita', 'Tú de qué vas')"
+  },
+  {
+    id: 'song-dejaria-todo', cat: 'song-baladas', franchise: 'Chayanne', game: 'Dejaría todo',
+    title: 'Dejaría todo', year: 1998, lang: 'es',
+    sources: "busca('Chayanne', 'Dejaría todo')"
+  },
+  {
+    id: 'song-un-siglo-sin-ti', cat: 'song-baladas', franchise: 'Chayanne', game: 'Un siglo sin ti',
+    title: 'Un siglo sin ti', year: 2003, lang: 'es',
+    sources: "busca('Chayanne', 'Un siglo sin ti')"
+  },
+  {
+    id: 'song-si-tu-supieras', cat: 'song-baladas', franchise: 'Alejandro Fernández', game: 'Si tú supieras',
+    title: 'Si tú supieras', year: 1997, lang: 'es',
+    sources: "busca('Alejandro Fernández', 'Si tú supieras')"
+  },
+  {
+    id: 'song-me-dedique-a-perderte', cat: 'song-baladas', franchise: 'Alejandro Fernández', game: 'Me dediqué a perderte',
+    title: 'Me dediqué a perderte', year: 2004, lang: 'es',
+    sources: "busca('Alejandro Fernández', 'Me dediqué a perderte')"
+  },
+  {
+    id: 'song-kilometros-sin-bandera', cat: 'song-baladas', franchise: 'Sin Bandera', game: 'Kilómetros',
+    title: 'Kilómetros', year: 2002, lang: 'es',
+    sources: "busca('Sin Bandera', 'Kilómetros')"
+  },
+  {
+    id: 'song-que-lloro', cat: 'song-baladas', franchise: 'Sin Bandera', game: 'Que lloro',
+    title: 'Que lloro', year: 2003, lang: 'es',
+    sources: "busca('Sin Bandera', 'Que lloro')"
+  },
+  {
+    id: 'song-noviembre-sin-ti', cat: 'song-baladas', franchise: 'Reik', game: 'Noviembre sin ti',
+    title: 'Noviembre sin ti', year: 2005, lang: 'es',
+    sources: "busca('Reik', 'Noviembre sin ti')"
+  },
+  {
+    id: 'song-sabes-reik', cat: 'song-baladas', franchise: 'Reik', game: 'Sabes',
+    title: 'Sabes', year: 2006, lang: 'es',
+    sources: "busca('Reik', 'Sabes')"
+  },
+  {
+    id: 'song-creo-en-ti', cat: 'song-baladas', franchise: 'Reik', game: 'Creo en ti',
+    title: 'Creo en ti', year: 2011, lang: 'es',
+    sources: "busca('Reik', 'Creo en ti')"
+  },
+  {
+    id: 'song-besame-camila', cat: 'song-baladas', franchise: 'Camila', game: 'Bésame',
+    title: 'Bésame', year: 2010, lang: 'es',
+    sources: "busca('Camila', 'Bésame')"
+  },
+  {
+    id: 'song-te-dejo-en-libertad', cat: 'song-baladas', franchise: 'Ha*Ash', game: 'Te dejo en libertad',
+    title: 'Te dejo en libertad', year: 2011, lang: 'es',
+    sources: "busca('Ha*Ash', 'Te dejo en libertad')"
+  },
+  {
+    id: 'song-ecos-de-amor', cat: 'song-baladas', franchise: 'Jesse & Joy', game: 'Ecos de amor',
+    title: 'Ecos de amor', year: 2015, lang: 'es',
+    sources: "busca('Jesse & Joy', 'Ecos de amor')"
+  },
+  {
+    id: 'song-en-cambio-no', cat: 'song-baladas', franchise: 'Laura Pausini', game: 'En cambio no',
+    title: 'En cambio no', year: 2008, lang: 'es',
+    sources: "busca('Laura Pausini', 'En cambio no')"
+  },
+  {
+    id: 'song-se-fue-laura-pausini', cat: 'song-baladas', franchise: 'Laura Pausini', game: 'Se fue',
+    title: 'Se fue', year: 1994, lang: 'es',
+    sources: "busca('Laura Pausini', 'Se fue')"
+  },
+  {
+    id: 'song-because-you-loved-me', cat: 'song-baladas', franchise: 'Celine Dion', game: 'Because You Loved Me',
+    title: 'Because You Loved Me', year: 1996, lang: 'en',
+    sources: "busca('Celine Dion', 'Because You Loved Me')"
+  },
+  {
+    id: 'song-your-song', cat: 'song-baladas', franchise: 'Elton John', game: 'Your Song',
+    title: 'Your Song', year: 1970, lang: 'en',
+    sources: "busca('Elton John', 'Your Song')"
+  },
+  {
+    id: 'song-careless-whisper', cat: 'song-baladas', franchise: 'George Michael', game: 'Careless Whisper',
+    title: 'Careless Whisper', year: 1984, lang: 'en',
+    sources: "busca('George Michael', 'Careless Whisper')"
+  },
+  {
+    id: 'song-against-all-odds', cat: 'song-baladas', franchise: 'Phil Collins', game: 'Against All Odds (Take a Look at Me Now)',
+    title: 'Against All Odds (Take a Look at Me Now)', year: 1984, lang: 'en',
+    sources: "busca('Phil Collins', 'Against All Odds')"
+  },
+  {
+    id: 'song-tears-in-heaven', cat: 'song-baladas', franchise: 'Eric Clapton', game: 'Tears in Heaven',
+    title: 'Tears in Heaven', year: 1992, lang: 'en',
+    sources: "busca('Eric Clapton', 'Tears in Heaven')"
+  },
+  {
+    id: 'song-a-thousand-years', cat: 'song-baladas', franchise: 'Christina Perri', game: 'A Thousand Years',
+    title: 'A Thousand Years', year: 2011, lang: 'en',
+    sources: "busca('Christina Perri', 'A Thousand Years')"
+  },
+  {
+    id: 'song-stay-with-me', cat: 'song-baladas', franchise: 'Sam Smith', game: 'Stay With Me',
+    title: 'Stay With Me', year: 2014, lang: 'en',
+    sources: "busca('Sam Smith', 'Stay With Me')"
+  },
+  {
+    id: 'song-someone-you-loved', cat: 'song-baladas', franchise: 'Lewis Capaldi', game: 'Someone You Loved',
+    title: 'Someone You Loved', year: 2018, lang: 'en',
+    sources: "busca('Lewis Capaldi', 'Someone You Loved')"
+  },
+  {
+    id: 'song-traitor', cat: 'song-baladas', franchise: 'Olivia Rodrigo', game: 'traitor',
+    title: 'traitor', year: 2021, lang: 'en',
+    sources: "busca('Olivia Rodrigo', 'traitor')"
+  }
+];
+
+// 7. ELECTRÓNICA (50 canciones)
+const electronica = [
+  {
+    id: 'song-the-model', cat: 'song-electronica', franchise: 'Kraftwerk', game: 'The Model',
+    title: 'The Model', year: 1978, lang: 'en',
+    sources: "busca('Kraftwerk', 'The Model')"
+  },
+  {
+    id: 'song-blue-monday', cat: 'song-electronica', franchise: 'New Order', game: 'Blue Monday',
+    title: 'Blue Monday', year: 1983, lang: 'en',
+    sources: "busca('New Order', 'Blue Monday')"
+  },
+  {
+    id: 'song-enjoy-the-silence', cat: 'song-electronica', franchise: 'Depeche Mode', game: 'Enjoy the Silence',
+    title: 'Enjoy the Silence', year: 1990, lang: 'en',
+    sources: "busca('Depeche Mode', 'Enjoy the Silence')"
+  },
+  {
+    id: 'song-rhythm-is-a-dancer', cat: 'song-electronica', franchise: 'Snap!', game: 'Rhythm Is a Dancer',
+    title: 'Rhythm Is a Dancer', year: 1992, lang: 'en',
+    sources: "busca('Snap!', 'Rhythm Is a Dancer')"
+  },
+  {
+    id: 'song-the-rhythm-of-the-night', cat: 'song-electronica', franchise: 'Corona', game: 'The Rhythm of the Night',
+    title: 'The Rhythm of the Night', year: 1993, lang: 'en',
+    sources: "busca('Corona', 'The Rhythm of the Night')"
+  },
+  {
+    id: 'song-scatman', cat: 'song-electronica', franchise: 'Scatman John', game: 'Scatman (Ski-Ba-Bop-Ba-Dop-Bop)',
+    title: 'Scatman (Ski-Ba-Bop-Ba-Dop-Bop)', year: 1994, lang: 'en',
+    sources: "busca('Scatman John', 'Scatman')"
+  },
+  {
+    id: 'song-children', cat: 'song-electronica', franchise: 'Robert Miles', game: 'Children',
+    title: 'Children', year: 1995,
+    sources: "busca('Robert Miles', 'Children')"
+  },
+  {
+    id: 'song-insomnia', cat: 'song-electronica', franchise: 'Faithless', game: 'Insomnia',
+    title: 'Insomnia', year: 1995, lang: 'en',
+    sources: "busca('Faithless', 'Insomnia')"
+  },
+  {
+    id: 'song-breathe-prodigy', cat: 'song-electronica', franchise: 'The Prodigy', game: 'Breathe',
+    title: 'Breathe', year: 1996, lang: 'en',
+    sources: "busca('The Prodigy', 'Breathe')"
+  },
+  {
+    id: 'song-9-pm-till-i-come', cat: 'song-electronica', franchise: 'ATB', game: '9 PM (Till I Come)',
+    title: '9 PM (Till I Come)', year: 1998, lang: 'en',
+    sources: "busca('ATB', '9 PM (Till I Come)')"
+  },
+  {
+    id: 'song-boom-boom-boom-boom', cat: 'song-electronica', franchise: 'Vengaboys', game: 'Boom, Boom, Boom, Boom!!',
+    title: 'Boom, Boom, Boom, Boom!!', year: 1998, lang: 'en',
+    sources: "busca('Vengaboys', 'Boom, Boom, Boom, Boom!!')"
+  },
+  {
+    id: 'song-we-like-to-party', cat: 'song-electronica', franchise: 'Vengaboys', game: 'We Like to Party!',
+    title: 'We Like to Party!', year: 1998, lang: 'en',
+    sources: "busca('Vengaboys', 'We Like to Party!')"
+  },
+  {
+    id: 'song-for-an-angel', cat: 'song-electronica', franchise: 'Paul van Dyk', game: 'For an Angel',
+    title: 'For an Angel', year: 1998,
+    sources: "busca('Paul van Dyk', 'For an Angel')"
+  },
+  {
+    id: 'song-lady-hear-me-tonight', cat: 'song-electronica', franchise: 'Modjo', game: 'Lady (Hear Me Tonight)',
+    title: 'Lady (Hear Me Tonight)', year: 2000, lang: 'en',
+    sources: "busca('Modjo', 'Lady (Hear Me Tonight)')"
+  },
+  {
+    id: 'song-played-a-live', cat: 'song-electronica', franchise: 'Safri Duo', game: 'Played-A-Live (The Bongo Song)',
+    title: 'Played-A-Live (The Bongo Song)', year: 2000,
+    sources: "busca('Safri Duo', 'Played-A-Live')"
+  },
+  {
+    id: 'song-lamour-toujours', cat: 'song-electronica', franchise: 'Gigi D\'Agostino', game: 'L\'Amour Toujours',
+    title: 'L\'Amour Toujours', year: 1999, lang: 'en',
+    sources: "busca('Gigi D\\'Agostino', 'L\\'Amour Toujours')"
+  },
+  {
+    id: 'song-adagio-for-strings', cat: 'song-electronica', franchise: 'Tiësto', game: 'Adagio for Strings',
+    title: 'Adagio for Strings', year: 2004,
+    sources: "busca('Tiësto', 'Adagio for Strings')"
+  },
+  {
+    id: 'song-world-hold-on', cat: 'song-electronica', franchise: 'Bob Sinclar', game: 'World, Hold On',
+    title: 'World, Hold On', year: 2006, lang: 'en',
+    sources: "busca('Bob Sinclar', 'World, Hold On')"
+  },
+  {
+    id: 'song-love-generation', cat: 'song-electronica', franchise: 'Bob Sinclar', game: 'Love Generation',
+    title: 'Love Generation', year: 2005, lang: 'en',
+    sources: "busca('Bob Sinclar', 'Love Generation')"
+  },
+  {
+    id: 'song-put-your-hands-up-for-detroit', cat: 'song-electronica', franchise: 'Fedde Le Grand', game: 'Put Your Hands Up for Detroit',
+    title: 'Put Your Hands Up for Detroit', year: 2006, lang: 'en',
+    sources: "busca('Fedde Le Grand', 'Put Your Hands Up for Detroit')"
+  },
+  {
+    id: 'song-infinity-2008', cat: 'song-electronica', franchise: 'Guru Josh Project', game: 'Infinity 2008',
+    title: 'Infinity 2008', year: 2008, lang: 'en',
+    sources: "busca('Guru Josh Project', 'Infinity 2008')"
+  },
+  {
+    id: 'song-day-n-nite-crookers', cat: 'song-electronica', franchise: 'Kid Cudi', game: 'Day \'n\' Nite (Crookers Remix)',
+    title: 'Day \'n\' Nite (Crookers Remix)', year: 2008, lang: 'en',
+    sources: "busca('Kid Cudi', 'Day \\'n\\' Nite')"
+  },
+  {
+    id: 'song-stereo-love', cat: 'song-electronica', franchise: 'Edward Maya y Vika Jigulina', game: 'Stereo Love',
+    title: 'Stereo Love', year: 2009, lang: 'en',
+    sources: "busca('Edward Maya', 'Stereo Love')"
+  },
+  {
+    id: 'song-hot-inna', cat: 'song-electronica', franchise: 'Inna', game: 'Hot',
+    title: 'Hot', year: 2008, lang: 'en',
+    sources: "busca('Inna', 'Hot')"
+  },
+  {
+    id: 'song-we-no-speak-americano', cat: 'song-electronica', franchise: 'Yolanda Be Cool y DCUP', game: 'We No Speak Americano',
+    title: 'We No Speak Americano', year: 2010, lang: 'it',
+    sources: "busca('Yolanda Be Cool', 'We No Speak Americano')"
+  },
+  {
+    id: 'song-one-your-name', cat: 'song-electronica', franchise: 'Swedish House Mafia', game: 'One (Your Name)',
+    title: 'One (Your Name)', year: 2010, lang: 'en',
+    sources: "busca('Swedish House Mafia', 'One')"
+  },
+  {
+    id: 'song-take-over-control', cat: 'song-electronica', franchise: 'Afrojack', game: 'Take Over Control',
+    title: 'Take Over Control', year: 2010, lang: 'en',
+    sources: "busca('Afrojack', 'Take Over Control')"
+  },
+  {
+    id: 'song-barbra-streisand', cat: 'song-electronica', franchise: 'Duck Sauce', game: 'Barbra Streisand',
+    title: 'Barbra Streisand', year: 2010, lang: 'en',
+    sources: "busca('Duck Sauce', 'Barbra Streisand')"
+  },
+  {
+    id: 'song-loca-people', cat: 'song-electronica', franchise: 'Sak Noel', game: 'Loca People',
+    title: 'Loca People', year: 2011, lang: 'en',
+    sources: "busca('Sak Noel', 'Loca People')"
+  },
+  {
+    id: 'song-calling-lose-my-mind', cat: 'song-electronica', franchise: 'Alesso y Sebastian Ingrosso', game: 'Calling (Lose My Mind)',
+    title: 'Calling (Lose My Mind)', year: 2012, lang: 'en',
+    sources: "busca('Alesso', 'Calling')"
+  },
+  {
+    id: 'song-million-voices', cat: 'song-electronica', franchise: 'Otto Knows', game: 'Million Voices',
+    title: 'Million Voices', year: 2012, lang: 'en',
+    sources: "busca('Otto Knows', 'Million Voices')"
+  },
+  {
+    id: 'song-pursuit-of-happiness-remix', cat: 'song-electronica', franchise: 'Steve Aoki', game: 'Pursuit of Happiness (Remix)',
+    title: 'Pursuit of Happiness (Remix)', year: 2012, lang: 'en',
+    sources: "busca('Steve Aoki', 'Pursuit of Happiness')"
+  },
+  {
+    id: 'song-spaceman-hardwell', cat: 'song-electronica', franchise: 'Hardwell', game: 'Spaceman',
+    title: 'Spaceman', year: 2012, lang: 'en',
+    sources: "busca('Hardwell', 'Spaceman')"
+  },
+  {
+    id: 'song-tremor', cat: 'song-electronica', franchise: 'Dimitri Vegas & Like Mike y Martin Garrix', game: 'Tremor',
+    title: 'Tremor', year: 2014,
+    sources: "busca('Dimitri Vegas & Like Mike', 'Tremor')"
+  },
+  {
+    id: 'song-tsunami-dvbbs', cat: 'song-electronica', franchise: 'DVBBS y Borgeous', game: 'Tsunami',
+    title: 'Tsunami', year: 2013,
+    sources: "busca('DVBBS', 'Tsunami')"
+  },
+  {
+    id: 'song-gecko-overdrive', cat: 'song-electronica', franchise: 'Oliver Heldens y Becky Hill', game: 'Gecko (Overdrive)',
+    title: 'Gecko (Overdrive)', year: 2014, lang: 'en',
+    sources: "busca('Oliver Heldens', 'Gecko')"
+  },
+  {
+    id: 'song-runaway-u-and-i', cat: 'song-electronica', franchise: 'Galantis', game: 'Runaway (U & I)',
+    title: 'Runaway (U & I)', year: 2014, lang: 'en',
+    sources: "busca('Galantis', 'Runaway')"
+  },
+  {
+    id: 'song-where-are-u-now', cat: 'song-electronica', franchise: 'Jack Ü y Justin Bieber', game: 'Where Are Ü Now',
+    title: 'Where Are Ü Now', year: 2015, lang: 'en',
+    sources: "busca('Jack Ü', 'Where Are Ü Now')"
+  },
+  {
+    id: 'song-ocean-drive', cat: 'song-electronica', franchise: 'Duke Dumont', game: 'Ocean Drive',
+    title: 'Ocean Drive', year: 2015, lang: 'en',
+    sources: "busca('Duke Dumont', 'Ocean Drive')"
+  },
+  {
+    id: 'song-more-than-you-know', cat: 'song-electronica', franchise: 'Axwell /\\ Ingrosso', game: 'More Than You Know',
+    title: 'More Than You Know', year: 2017, lang: 'en',
+    sources: "busca('Axwell /\\ Ingrosso', 'More Than You Know')"
+  },
+  {
+    id: 'song-losing-it-fisher', cat: 'song-electronica', franchise: 'Fisher', game: 'Losing It',
+    title: 'Losing It', year: 2018,
+    sources: "busca('Fisher', 'Losing It')"
+  },
+  {
+    id: 'song-piece-of-your-heart', cat: 'song-electronica', franchise: 'Meduza', game: 'Piece of Your Heart',
+    title: 'Piece of Your Heart', year: 2019, lang: 'en',
+    sources: "busca('Meduza', 'Piece of Your Heart')"
+  },
+  {
+    id: 'song-ride-it-regard', cat: 'song-electronica', franchise: 'Regard', game: 'Ride It',
+    title: 'Ride It', year: 2019, lang: 'en',
+    sources: "busca('Regard', 'Ride It')"
+  },
+  {
+    id: 'song-roses-imanbek', cat: 'song-electronica', franchise: 'SAINt JHN', game: 'Roses (Imanbek Remix)',
+    title: 'Roses (Imanbek Remix)', year: 2019, lang: 'en',
+    sources: "busca('SAINt JHN', 'Roses')"
+  },
+  {
+    id: 'song-the-business', cat: 'song-electronica', franchise: 'Tiësto', game: 'The Business',
+    title: 'The Business', year: 2020, lang: 'en',
+    sources: "busca('Tiësto', 'The Business')"
+  },
+  {
+    id: 'song-do-it-to-it', cat: 'song-electronica', franchise: 'ACRAZE', game: 'Do It To It',
+    title: 'Do It To It', year: 2021, lang: 'en',
+    sources: "busca('ACRAZE', 'Do It To It')"
+  },
+  {
+    id: 'song-delilah-fred-again', cat: 'song-electronica', franchise: 'Fred again..', game: 'Delilah (pull me out of this)',
+    title: 'Delilah (pull me out of this)', year: 2022, lang: 'en',
+    sources: "busca('Fred again..', 'Delilah')"
+  },
+  {
+    id: 'song-nanana-peggy-gou', cat: 'song-electronica', franchise: 'Peggy Gou', game: '(It Goes Like) Nanana',
+    title: '(It Goes Like) Nanana', year: 2023, lang: 'en',
+    sources: "busca('Peggy Gou', 'Nanana')"
+  },
+  {
+    id: 'song-im-good-blue', cat: 'song-electronica', franchise: 'David Guetta y Bebe Rexha', game: 'I\'m Good (Blue)',
+    title: 'I\'m Good (Blue)', year: 2022, lang: 'en',
+    sources: "busca('David Guetta', 'I\\'m Good (Blue)')"
+  },
+  {
+    id: 'song-where-you-are-john-summit', cat: 'song-electronica', franchise: 'John Summit y Hayla', game: 'Where You Are',
+    title: 'Where You Are', year: 2023, lang: 'en',
+    sources: "busca('John Summit', 'Where You Are')"
+  }
+];
+
+// 8. CUMBIA (50 canciones)
+const cumbia = [
+  {
+    id: 'song-la-pava-congona', cat: 'song-cumbia', franchise: 'Andrés Landero', game: 'La pava congona',
+    title: 'La pava congona', year: 1970, lang: 'es',
+    sources: "busca('Andrés Landero', 'La pava congona')"
+  },
+  {
+    id: 'song-el-ausente-pastor', cat: 'song-cumbia', franchise: 'Pastor López', game: 'El ausente',
+    title: 'El ausente', year: 1980, lang: 'es',
+    sources: "busca('Pastor López', 'El ausente')"
+  },
+  {
+    id: 'song-golpe-con-golpe', cat: 'song-cumbia', franchise: 'Pastor López', game: 'Golpe con golpe',
+    title: 'Golpe con golpe', year: 1979, lang: 'es',
+    sources: "busca('Pastor López', 'Golpe con golpe')"
+  },
+  {
+    id: 'song-traicionera-pastor', cat: 'song-cumbia', franchise: 'Pastor López', game: 'Traicionera',
+    title: 'Traicionera', year: 1978, lang: 'es',
+    sources: "busca('Pastor López', 'Traicionera')"
+  },
+  {
+    id: 'song-la-colegiala', cat: 'song-cumbia', franchise: 'Rodolfo Aicardi', game: 'La colegiala',
+    title: 'La colegiala', year: 1980, lang: 'es',
+    sources: "busca('Rodolfo Aicardi', 'La colegiala')"
+  },
+  {
+    id: 'song-carinito-aicardi', cat: 'song-cumbia', franchise: 'Rodolfo Aicardi', game: 'Cariñito',
+    title: 'Cariñito', year: 1979, lang: 'es',
+    sources: "busca('Rodolfo Aicardi', 'Cariñito')"
+  },
+  {
+    id: 'song-elsa-los-destellos', cat: 'song-cumbia', franchise: 'Los Destellos', game: 'Elsa',
+    title: 'Elsa', year: 1970, lang: 'es',
+    sources: "busca('Los Destellos', 'Elsa')"
+  },
+  {
+    id: 'song-cumbia-de-los-pajaritos', cat: 'song-cumbia', franchise: 'Cuarteto Continental', game: 'Cumbia de los pajaritos',
+    title: 'Cumbia de los pajaritos', year: 1980, lang: 'es',
+    sources: "busca('Cuarteto Continental', 'Cumbia de los pajaritos')"
+  },
+  {
+    id: 'song-capullo-y-sorullo', cat: 'song-cumbia', franchise: 'La Sonora Dinamita', game: 'Capullo y sorullo',
+    title: 'Capullo y sorullo', year: 1986, lang: 'es',
+    sources: "busca('La Sonora Dinamita', 'Capullo y sorullo')"
+  },
+  {
+    id: 'song-escandalo-dinamita', cat: 'song-cumbia', franchise: 'La Sonora Dinamita', game: 'Escándalo',
+    title: 'Escándalo', year: 1989, lang: 'es',
+    sources: "busca('La Sonora Dinamita', 'Escándalo')"
+  },
+  {
+    id: 'song-mil-horas-dinamita', cat: 'song-cumbia', franchise: 'La Sonora Dinamita', game: 'Mil horas',
+    title: 'Mil horas', year: 1990, lang: 'es',
+    sources: "busca('La Sonora Dinamita', 'Mil horas')"
+  },
+  {
+    id: 'song-oye-dinamita', cat: 'song-cumbia', franchise: 'La Sonora Dinamita', game: 'Oye',
+    title: 'Oye', year: 1990, lang: 'es',
+    sources: "busca('La Sonora Dinamita', 'Oye')"
+  },
+  {
+    id: 'song-maruja-dinamita', cat: 'song-cumbia', franchise: 'La Sonora Dinamita', game: 'Maruja',
+    title: 'Maruja', year: 1985, lang: 'es',
+    sources: "busca('La Sonora Dinamita', 'Maruja')"
+  },
+  {
+    id: 'song-de-quen-chon', cat: 'song-cumbia', franchise: 'Chico Che y La Crisis', game: 'De quén chón',
+    title: 'De quén chón', year: 1988, lang: 'es',
+    sources: "busca('Chico Che y La Crisis', 'De quén chón')"
+  },
+  {
+    id: 'song-el-colesterol', cat: 'song-cumbia', franchise: 'Fito Olivares', game: 'El colesterol',
+    title: 'El colesterol', year: 1994, lang: 'es',
+    sources: "busca('Fito Olivares', 'El colesterol')"
+  },
+  {
+    id: 'song-la-guera-salome', cat: 'song-cumbia', franchise: 'Fito Olivares', game: 'La güera Salomé',
+    title: 'La güera Salomé', year: 1991, lang: 'es',
+    sources: "busca('Fito Olivares', 'La güera Salomé')"
+  },
+  {
+    id: 'song-buscandola-los-bybys', cat: 'song-cumbia', franchise: 'Los Bybys', game: 'Buscándola',
+    title: 'Buscándola', year: 1991, lang: 'es',
+    sources: "busca('Los Bybys', 'Buscándola')"
+  },
+  {
+    id: 'song-un-sueno-angeles-de-charly', cat: 'song-cumbia', franchise: 'Los Ángeles de Charly', game: 'Un sueño',
+    title: 'Un sueño', year: 2000, lang: 'es',
+    sources: "busca('Los Ángeles de Charly', 'Un sueño')"
+  },
+  {
+    id: 'song-amor-secreto-angeles', cat: 'song-cumbia', franchise: 'Los Ángeles de Charly', game: 'Amor secreto',
+    title: 'Amor secreto', year: 2000, lang: 'es',
+    sources: "busca('Los Ángeles de Charly', 'Amor secreto')"
+  },
+  {
+    id: 'song-me-volvi-a-acordar-de-ti', cat: 'song-cumbia', franchise: 'Los Ángeles de Charly', game: 'Me volví a acordar de ti',
+    title: 'Me volví a acordar de ti', year: 1999, lang: 'es',
+    sources: "busca('Los Ángeles de Charly', 'Me volví a acordar de ti')"
+  },
+  {
+    id: 'song-tiene-espinas-el-rosal', cat: 'song-cumbia', franchise: 'Grupo Cañaveral', game: 'Tiene espinas el rosal',
+    title: 'Tiene espinas el rosal', year: 1996, lang: 'es',
+    sources: "busca('Grupo Cañaveral', 'Tiene espinas el rosal')"
+  },
+  {
+    id: 'song-no-te-voy-a-perdonar', cat: 'song-cumbia', franchise: 'Grupo Cañaveral', game: 'No te voy a perdonar',
+    title: 'No te voy a perdonar', year: 1997, lang: 'es',
+    sources: "busca('Grupo Cañaveral', 'No te voy a perdonar')"
+  },
+  {
+    id: 'song-hasta-el-cielo-lloro', cat: 'song-cumbia', franchise: 'Grupo Cañaveral', game: 'Hasta el cielo lloro',
+    title: 'Hasta el cielo lloro', year: 1998, lang: 'es',
+    sources: "busca('Grupo Cañaveral', 'Hasta el cielo lloro')"
+  },
+  {
+    id: 'song-todo-me-gusta-de-ti', cat: 'song-cumbia', franchise: 'Aarón y su Grupo Ilusión', game: 'Todo me gusta de ti',
+    title: 'Todo me gusta de ti', year: 2001, lang: 'es',
+    sources: "busca('Aarón y su Grupo Ilusión', 'Todo me gusta de ti')"
+  },
+  {
+    id: 'song-el-baile-de-la-ranita', cat: 'song-cumbia', franchise: 'Rayito Colombiano', game: 'El baile de la ranita',
+    title: 'El baile de la ranita', year: 1998, lang: 'es',
+    sources: "busca('Rayito Colombiano', 'El baile de la ranita')"
+  },
+  {
+    id: 'song-muchachita-consentida', cat: 'song-cumbia', franchise: 'Rayito Colombiano', game: 'Muchachita consentida',
+    title: 'Muchachita consentida', year: 2001, lang: 'es',
+    sources: "busca('Rayito Colombiano', 'Muchachita consentida')"
+  },
+  {
+    id: 'song-ay-el-amor-askis', cat: 'song-cumbia', franchise: 'Los Askis', game: '¡Ay! El amor',
+    title: '¡Ay! El amor', year: 1999, lang: 'es',
+    sources: "busca('Los Askis', '¡Ay! El amor')"
+  },
+  {
+    id: 'song-amor-regresa-askis', cat: 'song-cumbia', franchise: 'Los Askis', game: 'Amor regresa',
+    title: 'Amor regresa', year: 1999, lang: 'es',
+    sources: "busca('Los Askis', 'Amor regresa')"
+  },
+  {
+    id: 'song-vienes-y-te-vas', cat: 'song-cumbia', franchise: 'Los Askis', game: 'Vienes y te vas',
+    title: 'Vienes y te vas', year: 2001, lang: 'es',
+    sources: "busca('Los Askis', 'Vienes y te vas')"
+  },
+  {
+    id: 'song-llorar-socios-del-ritmo', cat: 'song-cumbia', franchise: 'Los Socios del Ritmo', game: 'Llorar',
+    title: 'Llorar', year: 1999, lang: 'es',
+    sources: "busca('Los Socios del Ritmo', 'Llorar')"
+  },
+  {
+    id: 'song-amor-de-mis-amores', cat: 'song-cumbia', franchise: 'Margarita la Diosa de la Cumbia', game: 'Amor de mis amores',
+    title: 'Amor de mis amores', year: 1997, lang: 'es',
+    sources: "busca('Margarita la Diosa de la Cumbia', 'Amor de mis amores')"
+  },
+  {
+    id: 'song-mi-bombon-margarita', cat: 'song-cumbia', franchise: 'Margarita la Diosa de la Cumbia', game: 'Mi bombón',
+    title: 'Mi bombón', year: 2004, lang: 'es',
+    sources: "busca('Margarita la Diosa de la Cumbia', 'Mi bombón')"
+  },
+  {
+    id: 'song-una-rafaga-de-amor', cat: 'song-cumbia', franchise: 'Ráfaga', game: 'Una ráfaga de amor',
+    title: 'Una ráfaga de amor', year: 1999, lang: 'es',
+    sources: "busca('Ráfaga', 'Una ráfaga de amor')"
+  },
+  {
+    id: 'song-luna-rafaga', cat: 'song-cumbia', franchise: 'Ráfaga', game: 'Luna',
+    title: 'Luna', year: 1998, lang: 'es',
+    sources: "busca('Ráfaga', 'Luna')"
+  },
+  {
+    id: 'song-no-me-arrepiento-de-este-amor', cat: 'song-cumbia', franchise: 'Gilda', game: 'No me arrepiento de este amor',
+    title: 'No me arrepiento de este amor', year: 1996, lang: 'es',
+    sources: "busca('Gilda', 'No me arrepiento de este amor')"
+  },
+  {
+    id: 'song-fuiste-gilda', cat: 'song-cumbia', franchise: 'Gilda', game: 'Fuiste',
+    title: 'Fuiste', year: 1995, lang: 'es',
+    sources: "busca('Gilda', 'Fuiste')"
+  },
+  {
+    id: 'song-se-me-ha-perdido-un-corazon', cat: 'song-cumbia', franchise: 'Gilda', game: 'Se me ha perdido un corazón',
+    title: 'Se me ha perdido un corazón', year: 1997, lang: 'es',
+    sources: "busca('Gilda', 'Se me ha perdido un corazón')"
+  },
+  {
+    id: 'song-se-te-ve-la-tanga', cat: 'song-cumbia', franchise: 'Damas Gratis', game: 'Se te ve la tanga',
+    title: 'Se te ve la tanga', year: 2000, lang: 'es',
+    sources: "busca('Damas Gratis', 'Se te ve la tanga')"
+  },
+  {
+    id: 'song-me-vas-a-extranar-damas', cat: 'song-cumbia', franchise: 'Damas Gratis', game: 'Me vas a extrañar',
+    title: 'Me vas a extrañar', year: 2018, lang: 'es',
+    sources: "busca('Damas Gratis', 'Me vas a extrañar')"
+  },
+  {
+    id: 'song-los-duenos-del-pabellon', cat: 'song-cumbia', franchise: 'Damas Gratis', game: 'Los dueños del pabellón',
+    title: 'Los dueños del pabellón', year: 2001, lang: 'es',
+    sources: "busca('Damas Gratis', 'Los dueños del pabellón')"
+  },
+  {
+    id: 'song-yo-tomo-licor', cat: 'song-cumbia', franchise: 'Amar Azul', game: 'Yo tomo licor',
+    title: 'Yo tomo licor', year: 1997, lang: 'es',
+    sources: "busca('Amar Azul', 'Yo tomo licor')"
+  },
+  {
+    id: 'song-el-polvito-del-amor', cat: 'song-cumbia', franchise: 'Amar Azul', game: 'El polvito del amor',
+    title: 'El polvito del amor', year: 1998, lang: 'es',
+    sources: "busca('Amar Azul', 'El polvito del amor')"
+  },
+  {
+    id: 'song-porque-te-amo-la-cumbia', cat: 'song-cumbia', franchise: 'La Cumbia', game: 'Porque te amo',
+    title: 'Porque te amo', year: 1997, lang: 'es',
+    sources: "busca('La Cumbia', 'Porque te amo')"
+  },
+  {
+    id: 'song-una-calle-me-separa', cat: 'song-cumbia', franchise: 'Néstor en Bloque', game: 'Una calle me separa',
+    title: 'Una calle me separa', year: 2006, lang: 'es',
+    sources: "busca('Néstor en Bloque', 'Una calle me separa')"
+  },
+  {
+    id: 'song-deja-de-llorar-polaco', cat: 'song-cumbia', franchise: 'El Polaco', game: 'Deja de llorar',
+    title: 'Deja de llorar', year: 2007, lang: 'es',
+    sources: "busca('El Polaco', 'Deja de llorar')"
+  },
+  {
+    id: 'song-la-cumbia-de-los-trapos', cat: 'song-cumbia', franchise: 'Yerba Brava', game: 'La cumbia de los trapos',
+    title: 'La cumbia de los trapos', year: 2001, lang: 'es',
+    sources: "busca('Yerba Brava', 'La cumbia de los trapos')"
+  },
+  {
+    id: 'song-el-bombon-palmeras', cat: 'song-cumbia', franchise: 'Los Palmeras', game: 'El bombón',
+    title: 'El bombón', year: 2006, lang: 'es',
+    sources: "busca('Los Palmeras', 'El bombón')"
+  },
+  {
+    id: 'song-olvidala-palmeras', cat: 'song-cumbia', franchise: 'Los Palmeras', game: 'Olvídala',
+    title: 'Olvídala', year: 2007, lang: 'es',
+    sources: "busca('Los Palmeras', 'Olvídala')"
+  },
+  {
+    id: 'song-un-finde-ke-personajes', cat: 'song-cumbia', franchise: 'Ke Personajes, Big One y FMK', game: 'Un finde',
+    title: 'Un finde', year: 2023, lang: 'es',
+    sources: "busca('Ke Personajes', 'Un finde')"
+  },
+  {
+    id: 'song-pobre-corazon-ke-personajes', cat: 'song-cumbia', franchise: 'Ke Personajes y Onda Sabanera', game: 'Pobre corazón',
+    title: 'Pobre corazón', year: 2023, lang: 'es',
+    sources: "busca('Ke Personajes', 'Pobre corazón')"
+  }
+];
+
+// 9. SALSA (50 canciones)
+const salsa = [
+  {
+    id: 'song-indestructible-barretto', cat: 'song-salsa', franchise: 'Ray Barretto', game: 'Indestructible',
+    title: 'Indestructible', year: 1973, lang: 'es',
+    sources: "busca('Ray Barretto', 'Indestructible')"
+  },
+  {
+    id: 'song-asi-se-compone-un-son', cat: 'song-salsa', franchise: 'Ismael Miranda', game: 'Así se compone un son',
+    title: 'Así se compone un son', year: 1973, lang: 'es',
+    sources: "busca('Ismael Miranda', 'Así se compone un son')"
+  },
+  {
+    id: 'song-ausencia-hector-lavoe', cat: 'song-salsa', franchise: 'Willie Colón y Héctor Lavoe', game: 'Ausencia',
+    title: 'Ausencia', year: 1973, lang: 'es',
+    sources: "busca('Héctor Lavoe', 'Ausencia')"
+  },
+  {
+    id: 'song-triste-y-vacia', cat: 'song-salsa', franchise: 'Héctor Lavoe', game: 'Triste y vacía',
+    title: 'Triste y vacía', year: 1975, lang: 'es',
+    sources: "busca('Héctor Lavoe', 'Triste y vacía')"
+  },
+  {
+    id: 'song-escandalo-hector-lavoe', cat: 'song-salsa', franchise: 'Héctor Lavoe', game: 'Escándalo',
+    title: 'Escándalo', year: 1988, lang: 'es',
+    sources: "busca('Héctor Lavoe', 'Escándalo')"
+  },
+  {
+    id: 'song-anacaona-cheo', cat: 'song-salsa', franchise: 'Cheo Feliciano', game: 'Anacaona',
+    title: 'Anacaona', year: 1971, lang: 'es',
+    sources: "busca('Cheo Feliciano', 'Anacaona')"
+  },
+  {
+    id: 'song-el-raton-cheo', cat: 'song-salsa', franchise: 'Cheo Feliciano', game: 'El ratón',
+    title: 'El ratón', year: 1974, lang: 'es',
+    sources: "busca('Cheo Feliciano', 'El ratón')"
+  },
+  {
+    id: 'song-brujeria-gran-combo', cat: 'song-salsa', franchise: 'El Gran Combo de Puerto Rico', game: 'Brujería',
+    title: 'Brujería', year: 1977, lang: 'es',
+    sources: "busca('El Gran Combo de Puerto Rico', 'Brujería')"
+  },
+  {
+    id: 'song-ojos-chinos', cat: 'song-salsa', franchise: 'El Gran Combo de Puerto Rico', game: 'Ojos chinos',
+    title: 'Ojos chinos', year: 1964, lang: 'es',
+    sources: "busca('El Gran Combo de Puerto Rico', 'Ojos chinos')"
+  },
+  {
+    id: 'song-amame-gran-combo', cat: 'song-salsa', franchise: 'El Gran Combo de Puerto Rico', game: 'Ámame',
+    title: 'Ámame', year: 1989, lang: 'es',
+    sources: "busca('El Gran Combo de Puerto Rico', 'Ámame')"
+  },
+  {
+    id: 'song-trampolin-gran-combo', cat: 'song-salsa', franchise: 'El Gran Combo de Puerto Rico', game: 'Trampolín',
+    title: 'Trampolín', year: 1984, lang: 'es',
+    sources: "busca('El Gran Combo de Puerto Rico', 'Trampolín')"
+  },
+  {
+    id: 'song-no-hay-cama-pa-tanta-gente', cat: 'song-salsa', franchise: 'El Gran Combo de Puerto Rico', game: 'No hay cama pa\' tanta gente',
+    title: 'No hay cama pa\' tanta gente', year: 1988, lang: 'es',
+    sources: "busca('El Gran Combo de Puerto Rico', 'No hay cama pa\\' tanta gente')"
+  },
+  {
+    id: 'song-fuego-en-el-23', cat: 'song-salsa', franchise: 'Sonora Ponceña', game: 'Fuego en el 23',
+    title: 'Fuego en el 23', year: 1969, lang: 'es',
+    sources: "busca('Sonora Ponceña', 'Fuego en el 23')"
+  },
+  {
+    id: 'song-yambeque', cat: 'song-salsa', franchise: 'Sonora Ponceña', game: 'Yambeqúe',
+    title: 'Yambeqúe', year: 1976, lang: 'es',
+    sources: "busca('Sonora Ponceña', 'Yambeqúe')"
+  },
+  {
+    id: 'song-boranda-poncena', cat: 'song-salsa', franchise: 'Sonora Ponceña', game: 'Boranda',
+    title: 'Boranda', year: 1977, lang: 'es',
+    sources: "busca('Sonora Ponceña', 'Boranda')"
+  },
+  {
+    id: 'song-con-los-pobres-estoy', cat: 'song-salsa', franchise: 'Roberto Roena', game: 'Con los pobres estoy',
+    title: 'Con los pobres estoy', year: 1970, lang: 'es',
+    sources: "busca('Roberto Roena', 'Con los pobres estoy')"
+  },
+  {
+    id: 'song-marejada-feliz', cat: 'song-salsa', franchise: 'Roberto Roena', game: 'Marejada feliz',
+    title: 'Marejada feliz', year: 1976, lang: 'es',
+    sources: "busca('Roberto Roena', 'Marejada feliz')"
+  },
+  {
+    id: 'song-como-te-hago-entender', cat: 'song-salsa', franchise: 'Roberto Roena', game: 'Cómo te hago entender',
+    title: 'Cómo te hago entender', year: 1982, lang: 'es',
+    sources: "busca('Roberto Roena', 'Cómo te hago entender')"
+  },
+  {
+    id: 'song-el-muneco-de-la-ciudad', cat: 'song-salsa', franchise: 'Bobby Valentín', game: 'El muñeco de la ciudad',
+    title: 'El muñeco de la ciudad', year: 1975, lang: 'es',
+    sources: "busca('Bobby Valentín', 'El muñeco de la ciudad')"
+  },
+  {
+    id: 'song-la-boda-de-ella', cat: 'song-salsa', franchise: 'Bobby Valentín', game: 'La boda de ella',
+    title: 'La boda de ella', year: 1978, lang: 'es',
+    sources: "busca('Bobby Valentín', 'La boda de ella')"
+  },
+  {
+    id: 'song-detalles-oscar-dleon', cat: 'song-salsa', franchise: 'Oscar D\'León', game: 'Detalles',
+    title: 'Detalles', year: 1979, lang: 'es',
+    sources: "busca('Oscar D\\'León', 'Detalles')"
+  },
+  {
+    id: 'song-ven-morena-oscar', cat: 'song-salsa', franchise: 'Oscar D\'León', game: 'Ven morena',
+    title: 'Ven morena', year: 1980, lang: 'es',
+    sources: "busca('Oscar D\\'León', 'Ven morena')"
+  },
+  {
+    id: 'song-melao-de-cana', cat: 'song-salsa', franchise: 'Oscar D\'León', game: 'Melao de caña',
+    title: 'Melao de caña', year: 1979, lang: 'es',
+    sources: "busca('Oscar D\\'León', 'Melao de caña')"
+  },
+  {
+    id: 'song-tu-con-el', cat: 'song-salsa', franchise: 'Frankie Ruiz', game: 'Tú con él',
+    title: 'Tú con él', year: 1985, lang: 'es',
+    sources: "busca('Frankie Ruiz', 'Tú con él')"
+  },
+  {
+    id: 'song-mi-libertad', cat: 'song-salsa', franchise: 'Frankie Ruiz', game: 'Mi libertad',
+    title: 'Mi libertad', year: 1992, lang: 'es',
+    sources: "busca('Frankie Ruiz', 'Mi libertad')"
+  },
+  {
+    id: 'song-puerto-rico-frankie', cat: 'song-salsa', franchise: 'Frankie Ruiz', game: 'Puerto Rico',
+    title: 'Puerto Rico', year: 1987, lang: 'es',
+    sources: "busca('Frankie Ruiz', 'Puerto Rico')"
+  },
+  {
+    id: 'song-ven-devorame-otra-vez', cat: 'song-salsa', franchise: 'Lalo Rodríguez', game: 'Ven, devórame otra vez',
+    title: 'Ven, devórame otra vez', year: 1988, lang: 'es',
+    sources: "busca('Lalo Rodríguez', 'Ven, devórame otra vez')"
+  },
+  {
+    id: 'song-yo-no-se-manana', cat: 'song-salsa', franchise: 'Luis Enrique', game: 'Yo no sé mañana',
+    title: 'Yo no sé mañana', year: 2009, lang: 'es',
+    sources: "busca('Luis Enrique', 'Yo no sé mañana')"
+  },
+  {
+    id: 'song-date-un-chance', cat: 'song-salsa', franchise: 'Luis Enrique', game: 'Date un chance',
+    title: 'Date un chance', year: 1989, lang: 'es',
+    sources: "busca('Luis Enrique', 'Date un chance')"
+  },
+  {
+    id: 'song-mi-media-mitad', cat: 'song-salsa', franchise: 'Rey Ruiz', game: 'Mi media mitad',
+    title: 'Mi media mitad', year: 1994, lang: 'es',
+    sources: "busca('Rey Ruiz', 'Mi media mitad')"
+  },
+  {
+    id: 'song-no-me-acostumbro', cat: 'song-salsa', franchise: 'Rey Ruiz', game: 'No me acostumbro',
+    title: 'No me acostumbro', year: 1992, lang: 'es',
+    sources: "busca('Rey Ruiz', 'No me acostumbro')"
+  },
+  {
+    id: 'song-conciencia', cat: 'song-salsa', franchise: 'Gilberto Santa Rosa', game: 'Conciencia',
+    title: 'Conciencia', year: 1991, lang: 'es',
+    sources: "busca('Gilberto Santa Rosa', 'Conciencia')"
+  },
+  {
+    id: 'song-vivir-sin-ella', cat: 'song-salsa', franchise: 'Gilberto Santa Rosa', game: 'Vivir sin ella',
+    title: 'Vivir sin ella', year: 1990, lang: 'es',
+    sources: "busca('Gilberto Santa Rosa', 'Vivir sin ella')"
+  },
+  {
+    id: 'song-perdoname-santa-rosa', cat: 'song-salsa', franchise: 'Gilberto Santa Rosa', game: 'Perdóname',
+    title: 'Perdóname', year: 1990, lang: 'es',
+    sources: "busca('Gilberto Santa Rosa', 'Perdóname')"
+  },
+  {
+    id: 'song-la-agarro-bajando', cat: 'song-salsa', franchise: 'Gilberto Santa Rosa', game: 'La agarro bajando',
+    title: 'La agarro bajando', year: 2001, lang: 'es',
+    sources: "busca('Gilberto Santa Rosa', 'La agarro bajando')"
+  },
+  {
+    id: 'song-dile-a-ella', cat: 'song-salsa', franchise: 'Victor Manuelle', game: 'Dile a ella',
+    title: 'Dile a ella', year: 1997, lang: 'es',
+    sources: "busca('Victor Manuelle', 'Dile a ella')"
+  },
+  {
+    id: 'song-he-tratado', cat: 'song-salsa', franchise: 'Victor Manuelle', game: 'He tratado',
+    title: 'He tratado', year: 1997, lang: 'es',
+    sources: "busca('Victor Manuelle', 'He tratado')"
+  },
+  {
+    id: 'song-apiadate-de-mi', cat: 'song-salsa', franchise: 'Victor Manuelle', game: 'Apiádate de mí',
+    title: 'Apiádate de mí', year: 1994, lang: 'es',
+    sources: "busca('Victor Manuelle', 'Apiádate de mí')"
+  },
+  {
+    id: 'song-cara-de-nino', cat: 'song-salsa', franchise: 'Jerry Rivera', game: 'Cara de niño',
+    title: 'Cara de niño', year: 1993, lang: 'es',
+    sources: "busca('Jerry Rivera', 'Cara de niño')"
+  },
+  {
+    id: 'song-que-hay-de-malo', cat: 'song-salsa', franchise: 'Jerry Rivera', game: 'Qué hay de malo',
+    title: 'Qué hay de malo', year: 1993, lang: 'es',
+    sources: "busca('Jerry Rivera', 'Qué hay de malo')"
+  },
+  {
+    id: 'song-sin-sentimiento', cat: 'song-salsa', franchise: 'Grupo Niche', game: 'Sin sentimiento',
+    title: 'Sin sentimiento', year: 1990, lang: 'es',
+    sources: "busca('Grupo Niche', 'Sin sentimiento')"
+  },
+  {
+    id: 'song-busca-por-dentro', cat: 'song-salsa', franchise: 'Grupo Niche', game: 'Busca por dentro',
+    title: 'Busca por dentro', year: 1990, lang: 'es',
+    sources: "busca('Grupo Niche', 'Busca por dentro')"
+  },
+  {
+    id: 'song-nuestro-sueno', cat: 'song-salsa', franchise: 'Grupo Niche', game: 'Nuestro sueño',
+    title: 'Nuestro sueño', year: 1989, lang: 'es',
+    sources: "busca('Grupo Niche', 'Nuestro sueño')"
+  },
+  {
+    id: 'song-oiga-mire-vea', cat: 'song-salsa', franchise: 'Guayacán Orquesta', game: 'Oiga, mire, vea',
+    title: 'Oiga, mire, vea', year: 1991, lang: 'es',
+    sources: "busca('Guayacán Orquesta', 'Oiga, mire, vea')"
+  },
+  {
+    id: 'song-cada-dia-que-pasa', cat: 'song-salsa', franchise: 'Guayacán Orquesta', game: 'Cada día que pasa',
+    title: 'Cada día que pasa', year: 1993, lang: 'es',
+    sources: "busca('Guayacán Orquesta', 'Cada día que pasa')"
+  },
+  {
+    id: 'song-tania-fruko', cat: 'song-salsa', franchise: 'Fruko y sus Tesos', game: 'Tania',
+    title: 'Tania', year: 1974, lang: 'es',
+    sources: "busca('Fruko y sus Tesos', 'Tania')"
+  },
+  {
+    id: 'song-los-charcos', cat: 'song-salsa', franchise: 'Fruko y sus Tesos', game: 'Los charcos',
+    title: 'Los charcos', year: 1975, lang: 'es',
+    sources: "busca('Fruko y sus Tesos', 'Los charcos')"
+  },
+  {
+    id: 'song-senora-de-madrugada', cat: 'song-salsa', franchise: 'Tito Rojas', game: 'Señora de madrugada',
+    title: 'Señora de madrugada', year: 1993, lang: 'es',
+    sources: "busca('Tito Rojas', 'Señora de madrugada')"
+  },
+  {
+    id: 'song-siempre-sere', cat: 'song-salsa', franchise: 'Tito Rojas', game: 'Siempre seré',
+    title: 'Siempre seré', year: 1992, lang: 'es',
+    sources: "busca('Tito Rojas', 'Siempre seré')"
+  },
+  {
+    id: 'song-micaela-sonora-carruseles', cat: 'song-salsa', franchise: 'Sonora Carruseles', game: 'Micaela',
+    title: 'Micaela', year: 1998, lang: 'es',
+    sources: "busca('Sonora Carruseles', 'Micaela')"
+  }
+];
+
+// 10. METAL (50 canciones)
+const metal = [
+  {
+    id: 'song-war-pigs', cat: 'song-metal', franchise: 'Black Sabbath', game: 'War Pigs',
+    title: 'War Pigs', year: 1970, lang: 'en',
+    sources: "busca('Black Sabbath', 'War Pigs')"
+  },
+  {
+    id: 'song-highway-star', cat: 'song-metal', franchise: 'Deep Purple', game: 'Highway Star',
+    title: 'Highway Star', year: 1972, lang: 'en',
+    sources: "busca('Deep Purple', 'Highway Star')"
+  },
+  {
+    id: 'song-painkiller', cat: 'song-metal', franchise: 'Judas Priest', game: 'Painkiller',
+    title: 'Painkiller', year: 1990, lang: 'en',
+    sources: "busca('Judas Priest', 'Painkiller')"
+  },
+  {
+    id: 'song-living-after-midnight', cat: 'song-metal', franchise: 'Judas Priest', game: 'Living After Midnight',
+    title: 'Living After Midnight', year: 1980, lang: 'en',
+    sources: "busca('Judas Priest', 'Living After Midnight')"
+  },
+  {
+    id: 'song-youve-got-another-thing-comin', cat: 'song-metal', franchise: 'Judas Priest', game: 'You\'ve Got Another Thing Comin\'',
+    title: 'You\'ve Got Another Thing Comin\'', year: 1982, lang: 'en',
+    sources: "busca('Judas Priest', 'You\\'ve Got Another Thing Comin\\'')"
+  },
+  {
+    id: 'song-the-number-of-the-beast', cat: 'song-metal', franchise: 'Iron Maiden', game: 'The Number of the Beast',
+    title: 'The Number of the Beast', year: 1982, lang: 'en',
+    sources: "busca('Iron Maiden', 'The Number of the Beast')"
+  },
+  {
+    id: 'song-wasted-years', cat: 'song-metal', franchise: 'Iron Maiden', game: 'Wasted Years',
+    title: 'Wasted Years', year: 1986, lang: 'en',
+    sources: "busca('Iron Maiden', 'Wasted Years')"
+  },
+  {
+    id: 'song-hallowed-be-thy-name', cat: 'song-metal', franchise: 'Iron Maiden', game: 'Hallowed Be Thy Name',
+    title: 'Hallowed Be Thy Name', year: 1982, lang: 'en',
+    sources: "busca('Iron Maiden', 'Hallowed Be Thy Name')"
+  },
+  {
+    id: 'song-bark-at-the-moon', cat: 'song-metal', franchise: 'Ozzy Osbourne', game: 'Bark at the Moon',
+    title: 'Bark at the Moon', year: 1983, lang: 'en',
+    sources: "busca('Ozzy Osbourne', 'Bark at the Moon')"
+  },
+  {
+    id: 'song-mr-crowley', cat: 'song-metal', franchise: 'Ozzy Osbourne', game: 'Mr. Crowley',
+    title: 'Mr. Crowley', year: 1980, lang: 'en',
+    sources: "busca('Ozzy Osbourne', 'Mr. Crowley')"
+  },
+  {
+    id: 'song-rainbow-in-the-dark', cat: 'song-metal', franchise: 'Dio', game: 'Rainbow in the Dark',
+    title: 'Rainbow in the Dark', year: 1983, lang: 'en',
+    sources: "busca('Dio', 'Rainbow in the Dark')"
+  },
+  {
+    id: 'song-cum-on-feel-the-noize', cat: 'song-metal', franchise: 'Quiet Riot', game: 'Cum On Feel the Noize',
+    title: 'Cum On Feel the Noize', year: 1983, lang: 'en',
+    sources: "busca('Quiet Riot', 'Cum On Feel the Noize')"
+  },
+  {
+    id: 'song-wind-of-change', cat: 'song-metal', franchise: 'Scorpions', game: 'Wind of Change',
+    title: 'Wind of Change', year: 1990, lang: 'en',
+    sources: "busca('Scorpions', 'Wind of Change')"
+  },
+  {
+    id: 'song-18-and-life', cat: 'song-metal', franchise: 'Skid Row', game: '18 and Life',
+    title: '18 and Life', year: 1989, lang: 'en',
+    sources: "busca('Skid Row', '18 and Life')"
+  },
+  {
+    id: 'song-youth-gone-wild', cat: 'song-metal', franchise: 'Skid Row', game: 'Youth Gone Wild',
+    title: 'Youth Gone Wild', year: 1989, lang: 'en',
+    sources: "busca('Skid Row', 'Youth Gone Wild')"
+  },
+  {
+    id: 'song-here-i-go-again', cat: 'song-metal', franchise: 'Whitesnake', game: 'Here I Go Again',
+    title: 'Here I Go Again', year: 1987, lang: 'en',
+    sources: "busca('Whitesnake', 'Here I Go Again')"
+  },
+  {
+    id: 'song-seek-and-destroy', cat: 'song-metal', franchise: 'Metallica', game: 'Seek & Destroy',
+    title: 'Seek & Destroy', year: 1983, lang: 'en',
+    sources: "busca('Metallica', 'Seek & Destroy')"
+  },
+  {
+    id: 'song-fade-to-black', cat: 'song-metal', franchise: 'Metallica', game: 'Fade to Black',
+    title: 'Fade to Black', year: 1984, lang: 'en',
+    sources: "busca('Metallica', 'Fade to Black')"
+  },
+  {
+    id: 'song-for-whom-the-bell-tolls', cat: 'song-metal', franchise: 'Metallica', game: 'For Whom the Bell Tolls',
+    title: 'For Whom the Bell Tolls', year: 1984, lang: 'en',
+    sources: "busca('Metallica', 'For Whom the Bell Tolls')"
+  },
+  {
+    id: 'song-sad-but-true', cat: 'song-metal', franchise: 'Metallica', game: 'Sad but True',
+    title: 'Sad but True', year: 1991, lang: 'en',
+    sources: "busca('Metallica', 'Sad but True')"
+  },
+  {
+    id: 'song-peace-sells', cat: 'song-metal', franchise: 'Megadeth', game: 'Peace Sells',
+    title: 'Peace Sells', year: 1986, lang: 'en',
+    sources: "busca('Megadeth', 'Peace Sells')"
+  },
+  {
+    id: 'song-holy-wars', cat: 'song-metal', franchise: 'Megadeth', game: 'Holy Wars... The Punishment Due',
+    title: 'Holy Wars... The Punishment Due', year: 1990, lang: 'en',
+    sources: "busca('Megadeth', 'Holy Wars')"
+  },
+  {
+    id: 'song-a-tout-le-monde', cat: 'song-metal', franchise: 'Megadeth', game: 'A Tout Le Monde',
+    title: 'A Tout Le Monde', year: 1994, lang: 'en',
+    sources: "busca('Megadeth', 'A Tout Le Monde')"
+  },
+  {
+    id: 'song-south-of-heaven', cat: 'song-metal', franchise: 'Slayer', game: 'South of Heaven',
+    title: 'South of Heaven', year: 1988, lang: 'en',
+    sources: "busca('Slayer', 'South of Heaven')"
+  },
+  {
+    id: 'song-madhouse-anthrax', cat: 'song-metal', franchise: 'Anthrax', game: 'Madhouse',
+    title: 'Madhouse', year: 1985, lang: 'en',
+    sources: "busca('Anthrax', 'Madhouse')"
+  },
+  {
+    id: 'song-roots-bloody-roots', cat: 'song-metal', franchise: 'Sepultura', game: 'Roots Bloody Roots',
+    title: 'Roots Bloody Roots', year: 1996, lang: 'en',
+    sources: "busca('Sepultura', 'Roots Bloody Roots')"
+  },
+  {
+    id: 'song-refuse-resist', cat: 'song-metal', franchise: 'Sepultura', game: 'Refuse/Resist',
+    title: 'Refuse/Resist', year: 1993, lang: 'en',
+    sources: "busca('Sepultura', 'Refuse/Resist')"
+  },
+  {
+    id: 'song-cemetery-gates', cat: 'song-metal', franchise: 'Pantera', game: 'Cemetery Gates',
+    title: 'Cemetery Gates', year: 1990, lang: 'en',
+    sources: "busca('Pantera', 'Cemetery Gates')"
+  },
+  {
+    id: 'song-5-minutes-alone', cat: 'song-metal', franchise: 'Pantera', game: '5 Minutes Alone',
+    title: '5 Minutes Alone', year: 1994, lang: 'en',
+    sources: "busca('Pantera', '5 Minutes Alone')"
+  },
+  {
+    id: 'song-deutschland-rammstein', cat: 'song-metal', franchise: 'Rammstein', game: 'Deutschland',
+    title: 'Deutschland', year: 2019, lang: 'de',
+    sources: "busca('Rammstein', 'Deutschland')"
+  },
+  {
+    id: 'song-feuer-frei', cat: 'song-metal', franchise: 'Rammstein', game: 'Feuer frei!',
+    title: 'Feuer frei!', year: 2001, lang: 'de',
+    sources: "busca('Rammstein', 'Feuer frei!')"
+  },
+  {
+    id: 'song-ich-will', cat: 'song-metal', franchise: 'Rammstein', game: 'Ich will',
+    title: 'Ich will', year: 2001, lang: 'de',
+    sources: "busca('Rammstein', 'Ich will')"
+  },
+  {
+    id: 'song-the-beautiful-people', cat: 'song-metal', franchise: 'Marilyn Manson', game: 'The Beautiful People',
+    title: 'The Beautiful People', year: 1996, lang: 'en',
+    sources: "busca('Marilyn Manson', 'The Beautiful People')"
+  },
+  {
+    id: 'song-sweet-dreams-manson', cat: 'song-metal', franchise: 'Marilyn Manson', game: 'Sweet Dreams (Are Made of This)',
+    title: 'Sweet Dreams (Are Made of This)', year: 1995, lang: 'en',
+    sources: "busca('Marilyn Manson', 'Sweet Dreams')"
+  },
+  {
+    id: 'song-blind-korn', cat: 'song-metal', franchise: 'Korn', game: 'Blind',
+    title: 'Blind', year: 1994, lang: 'en',
+    sources: "busca('Korn', 'Blind')"
+  },
+  {
+    id: 'song-falling-away-from-me', cat: 'song-metal', franchise: 'Korn', game: 'Falling Away from Me',
+    title: 'Falling Away from Me', year: 1999, lang: 'en',
+    sources: "busca('Korn', 'Falling Away from Me')"
+  },
+  {
+    id: 'song-change-deftones', cat: 'song-metal', franchise: 'Deftones', game: 'Change (In the House of Flies)',
+    title: 'Change (In the House of Flies)', year: 2000, lang: 'en',
+    sources: "busca('Deftones', 'Change')"
+  },
+  {
+    id: 'song-my-own-summer', cat: 'song-metal', franchise: 'Deftones', game: 'My Own Summer (Shove It)',
+    title: 'My Own Summer (Shove It)', year: 1997, lang: 'en',
+    sources: "busca('Deftones', 'My Own Summer')"
+  },
+  {
+    id: 'song-break-stuff', cat: 'song-metal', franchise: 'Limp Bizkit', game: 'Break Stuff',
+    title: 'Break Stuff', year: 1999, lang: 'en',
+    sources: "busca('Limp Bizkit', 'Break Stuff')"
+  },
+  {
+    id: 'song-my-way-limp-bizkit', cat: 'song-metal', franchise: 'Limp Bizkit', game: 'My Way',
+    title: 'My Way', year: 2001, lang: 'en',
+    sources: "busca('Limp Bizkit', 'My Way')"
+  },
+  {
+    id: 'song-wait-and-bleed', cat: 'song-metal', franchise: 'Slipknot', game: 'Wait and Bleed',
+    title: 'Wait and Bleed', year: 1999, lang: 'en',
+    sources: "busca('Slipknot', 'Wait and Bleed')"
+  },
+  {
+    id: 'song-before-i-forget', cat: 'song-metal', franchise: 'Slipknot', game: 'Before I Forget',
+    title: 'Before I Forget', year: 2004, lang: 'en',
+    sources: "busca('Slipknot', 'Before I Forget')"
+  },
+  {
+    id: 'song-the-sound-of-silence-disturbed', cat: 'song-metal', franchise: 'Disturbed', game: 'The Sound of Silence',
+    title: 'The Sound of Silence', year: 2015, lang: 'en',
+    sources: "busca('Disturbed', 'The Sound of Silence')"
+  },
+  {
+    id: 'song-stricken', cat: 'song-metal', franchise: 'Disturbed', game: 'Stricken',
+    title: 'Stricken', year: 2005, lang: 'en',
+    sources: "busca('Disturbed', 'Stricken')"
+  },
+  {
+    id: 'song-nightmare-avenged', cat: 'song-metal', franchise: 'Avenged Sevenfold', game: 'Nightmare',
+    title: 'Nightmare', year: 2010, lang: 'en',
+    sources: "busca('Avenged Sevenfold', 'Nightmare')"
+  },
+  {
+    id: 'song-afterlife-avenged', cat: 'song-metal', franchise: 'Avenged Sevenfold', game: 'Afterlife',
+    title: 'Afterlife', year: 2007, lang: 'en',
+    sources: "busca('Avenged Sevenfold', 'Afterlife')"
+  },
+  {
+    id: 'song-wish-i-had-an-angel', cat: 'song-metal', franchise: 'Nightwish', game: 'Wish I Had an Angel',
+    title: 'Wish I Had an Angel', year: 2004, lang: 'en',
+    sources: "busca('Nightwish', 'Wish I Had an Angel')"
+  },
+  {
+    id: 'song-nemo-nightwish', cat: 'song-metal', franchise: 'Nightwish', game: 'Nemo',
+    title: 'Nemo', year: 2004, lang: 'en',
+    sources: "busca('Nightwish', 'Nemo')"
+  },
+  {
+    id: 'song-i-want-out', cat: 'song-metal', franchise: 'Helloween', game: 'I Want Out',
+    title: 'I Want Out', year: 1988, lang: 'en',
+    sources: "busca('Helloween', 'I Want Out')"
+  },
+  {
+    id: 'song-maldito-sea-tu-nombre', cat: 'song-metal', franchise: 'Ángeles del Infierno', game: 'Maldito sea tu nombre',
+    title: 'Maldito sea tu nombre', year: 1984, lang: 'es',
+    sources: "busca('Ángeles del Infierno', 'Maldito sea tu nombre')"
+  }
+];
+
+// 11. K-POP (50 canciones)
+const kpop = [
+  {
+    id: 'song-ring-ding-dong', cat: 'song-kpop', franchise: 'SHINee', game: 'Ring Ding Dong',
+    title: 'Ring Ding Dong', year: 2009, lang: 'ko',
+    sources: "busca('SHINee', 'Ring Ding Dong')"
+  },
+  {
+    id: 'song-lucifer-shinee', cat: 'song-kpop', franchise: 'SHINee', game: 'Lucifer',
+    title: 'Lucifer', year: 2010, lang: 'ko',
+    sources: "busca('SHINee', 'Lucifer')"
+  },
+  {
+    id: 'song-i-am-the-best', cat: 'song-kpop', franchise: '2NE1', game: 'I Am the Best',
+    title: 'I Am the Best', year: 2011, lang: 'ko',
+    sources: "busca('2NE1', 'I Am the Best')"
+  },
+  {
+    id: 'song-fire-2ne1', cat: 'song-kpop', franchise: '2NE1', game: 'FIRE',
+    title: 'FIRE', year: 2009, lang: 'ko',
+    sources: "busca('2NE1', 'FIRE')"
+  },
+  {
+    id: 'song-i-got-a-boy', cat: 'song-kpop', franchise: 'Girls\' Generation', game: 'I GOT A BOY',
+    title: 'I GOT A BOY', year: 2013, lang: 'ko',
+    sources: "busca('Girls\\' Generation', 'I GOT A BOY')"
+  },
+  {
+    id: 'song-the-boys-snsd', cat: 'song-kpop', franchise: 'Girls\' Generation', game: 'The Boys',
+    title: 'The Boys', year: 2011, lang: 'ko',
+    sources: "busca('Girls\\' Generation', 'The Boys')"
+  },
+  {
+    id: 'song-4-walls', cat: 'song-kpop', franchise: 'f(x)', game: '4 Walls',
+    title: '4 Walls', year: 2015, lang: 'ko',
+    sources: "busca('f(x)', '4 Walls')"
+  },
+  {
+    id: 'song-electric-shock', cat: 'song-kpop', franchise: 'f(x)', game: 'Electric Shock',
+    title: 'Electric Shock', year: 2012, lang: 'ko',
+    sources: "busca('f(x)', 'Electric Shock')"
+  },
+  {
+    id: 'song-nobody-wonder-girls', cat: 'song-kpop', franchise: 'Wonder Girls', game: 'Nobody',
+    title: 'Nobody', year: 2008, lang: 'ko',
+    sources: "busca('Wonder Girls', 'Nobody')"
+  },
+  {
+    id: 'song-touch-my-body', cat: 'song-kpop', franchise: 'SISTAR', game: 'Touch My Body',
+    title: 'Touch My Body', year: 2014, lang: 'ko',
+    sources: "busca('SISTAR', 'Touch My Body')"
+  },
+  {
+    id: 'song-up-and-down-exid', cat: 'song-kpop', franchise: 'EXID', game: 'Up & Down',
+    title: 'Up & Down', year: 2014, lang: 'ko',
+    sources: "busca('EXID', 'Up & Down')"
+  },
+  {
+    id: 'song-haru-haru', cat: 'song-kpop', franchise: 'BIGBANG', game: 'Haru Haru',
+    title: 'Haru Haru', year: 2008, lang: 'ko',
+    sources: "busca('BIGBANG', 'Haru Haru')"
+  },
+  {
+    id: 'song-loser-bigbang', cat: 'song-kpop', franchise: 'BIGBANG', game: 'LOSER',
+    title: 'LOSER', year: 2015, lang: 'ko',
+    sources: "busca('BIGBANG', 'LOSER')"
+  },
+  {
+    id: 'song-eyes-nose-lips', cat: 'song-kpop', franchise: 'TAEYANG', game: 'Eyes, Nose, Lips',
+    title: 'Eyes, Nose, Lips', year: 2014, lang: 'ko',
+    sources: "busca('TAEYANG', 'Eyes, Nose, Lips')"
+  },
+  {
+    id: 'song-crooked-gdragon', cat: 'song-kpop', franchise: 'G-DRAGON', game: 'Crooked',
+    title: 'Crooked', year: 2013, lang: 'ko',
+    sources: "busca('G-DRAGON', 'Crooked')"
+  },
+  {
+    id: 'song-blood-sweat-and-tears', cat: 'song-kpop', franchise: 'BTS', game: 'Blood Sweat & Tears',
+    title: 'Blood Sweat & Tears', year: 2016, lang: 'ko',
+    sources: "busca('BTS', 'Blood Sweat & Tears')"
+  },
+  {
+    id: 'song-mic-drop', cat: 'song-kpop', franchise: 'BTS', game: 'MIC Drop',
+    title: 'MIC Drop', year: 2017, lang: 'ko',
+    sources: "busca('BTS', 'MIC Drop')"
+  },
+  {
+    id: 'song-fire-bts', cat: 'song-kpop', franchise: 'BTS', game: 'Fire',
+    title: 'Fire', year: 2016, lang: 'ko',
+    sources: "busca('BTS', 'Fire')"
+  },
+  {
+    id: 'song-dope-bts', cat: 'song-kpop', franchise: 'BTS', game: 'DOPE',
+    title: 'DOPE', year: 2015, lang: 'ko',
+    sources: "busca('BTS', 'DOPE')"
+  },
+  {
+    id: 'song-life-goes-on-bts', cat: 'song-kpop', franchise: 'BTS', game: 'Life Goes On',
+    title: 'Life Goes On', year: 2020, lang: 'ko',
+    sources: "busca('BTS', 'Life Goes On')"
+  },
+  {
+    id: 'song-as-if-its-your-last', cat: 'song-kpop', franchise: 'BLACKPINK', game: 'As If It\'s Your Last',
+    title: 'As If It\'s Your Last', year: 2017, lang: 'ko',
+    sources: "busca('BLACKPINK', 'As If It\\'s Your Last')"
+  },
+  {
+    id: 'song-playing-with-fire', cat: 'song-kpop', franchise: 'BLACKPINK', game: 'Playing with Fire',
+    title: 'Playing with Fire', year: 2016, lang: 'ko',
+    sources: "busca('BLACKPINK', 'Playing with Fire')"
+  },
+  {
+    id: 'song-whistle-blackpink', cat: 'song-kpop', franchise: 'BLACKPINK', game: 'Whistle',
+    title: 'Whistle', year: 2016, lang: 'ko',
+    sources: "busca('BLACKPINK', 'Whistle')"
+  },
+  {
+    id: 'song-lovesick-girls', cat: 'song-kpop', franchise: 'BLACKPINK', game: 'Lovesick Girls',
+    title: 'Lovesick Girls', year: 2020, lang: 'ko',
+    sources: "busca('BLACKPINK', 'Lovesick Girls')"
+  },
+  {
+    id: 'song-likey-twice', cat: 'song-kpop', franchise: 'TWICE', game: 'LIKEY',
+    title: 'LIKEY', year: 2017, lang: 'ko',
+    sources: "busca('TWICE', 'LIKEY')"
+  },
+  {
+    id: 'song-feel-special', cat: 'song-kpop', franchise: 'TWICE', game: 'Feel Special',
+    title: 'Feel Special', year: 2019, lang: 'ko',
+    sources: "busca('TWICE', 'Feel Special')"
+  },
+  {
+    id: 'song-i-cant-stop-me', cat: 'song-kpop', franchise: 'TWICE', game: 'I CAN\'T STOP ME',
+    title: 'I CAN\'T STOP ME', year: 2020, lang: 'ko',
+    sources: "busca('TWICE', 'I CAN\\'T STOP ME')"
+  },
+  {
+    id: 'song-the-feels-twice', cat: 'song-kpop', franchise: 'TWICE', game: 'The Feels',
+    title: 'The Feels', year: 2021, lang: 'en',
+    sources: "busca('TWICE', 'The Feels')"
+  },
+  {
+    id: 'song-bad-boy-red-velvet', cat: 'song-kpop', franchise: 'Red Velvet', game: 'Bad Boy',
+    title: 'Bad Boy', year: 2018, lang: 'ko',
+    sources: "busca('Red Velvet', 'Bad Boy')"
+  },
+  {
+    id: 'song-red-flavor', cat: 'song-kpop', franchise: 'Red Velvet', game: 'Red Flavor',
+    title: 'Red Flavor', year: 2017, lang: 'ko',
+    sources: "busca('Red Velvet', 'Red Flavor')"
+  },
+  {
+    id: 'song-hip-mamamoo', cat: 'song-kpop', franchise: 'MAMAMOO', game: 'HIP',
+    title: 'HIP', year: 2019, lang: 'ko',
+    sources: "busca('MAMAMOO', 'HIP')"
+  },
+  {
+    id: 'song-wannabe-itzy', cat: 'song-kpop', franchise: 'ITZY', game: 'WANNABE',
+    title: 'WANNABE', year: 2020, lang: 'ko',
+    sources: "busca('ITZY', 'WANNABE')"
+  },
+  {
+    id: 'song-loco-itzy', cat: 'song-kpop', franchise: 'ITZY', game: 'LOCO',
+    title: 'LOCO', year: 2021, lang: 'ko',
+    sources: "busca('ITZY', 'LOCO')"
+  },
+  {
+    id: 'song-crown-txt', cat: 'song-kpop', franchise: 'TOMORROW X TOGETHER', game: 'CROWN',
+    title: 'CROWN', year: 2019, lang: 'ko',
+    sources: "busca('TOMORROW X TOGETHER', 'CROWN')"
+  },
+  {
+    id: 'song-sugar-rush-ride', cat: 'song-kpop', franchise: 'TOMORROW X TOGETHER', game: 'Sugar Rush Ride',
+    title: 'Sugar Rush Ride', year: 2023, lang: 'ko',
+    sources: "busca('TOMORROW X TOGETHER', 'Sugar Rush Ride')"
+  },
+  {
+    id: 'song-fever-enhypen', cat: 'song-kpop', franchise: 'ENHYPEN', game: 'FEVER',
+    title: 'FEVER', year: 2021, lang: 'ko',
+    sources: "busca('ENHYPEN', 'FEVER')"
+  },
+  {
+    id: 'song-bite-me-enhypen', cat: 'song-kpop', franchise: 'ENHYPEN', game: 'Bite Me',
+    title: 'Bite Me', year: 2023, lang: 'ko',
+    sources: "busca('ENHYPEN', 'Bite Me')"
+  },
+  {
+    id: 'song-hot-seventeen', cat: 'song-kpop', franchise: 'SEVENTEEN', game: 'HOT',
+    title: 'HOT', year: 2022, lang: 'ko',
+    sources: "busca('SEVENTEEN', 'HOT')"
+  },
+  {
+    id: 'song-dont-wanna-cry-seventeen', cat: 'song-kpop', franchise: 'SEVENTEEN', game: 'Don\'t Wanna Cry',
+    title: 'Don\'t Wanna Cry', year: 2017, lang: 'ko',
+    sources: "busca('SEVENTEEN', 'Don\\'t Wanna Cry')"
+  },
+  {
+    id: 'song-thunderous-skz', cat: 'song-kpop', franchise: 'Stray Kids', game: 'Thunderous',
+    title: 'Thunderous', year: 2021, lang: 'ko',
+    sources: "busca('Stray Kids', 'Thunderous')"
+  },
+  {
+    id: 'song-back-door-skz', cat: 'song-kpop', franchise: 'Stray Kids', game: 'Back Door',
+    title: 'Back Door', year: 2020, lang: 'ko',
+    sources: "busca('Stray Kids', 'Back Door')"
+  },
+  {
+    id: 'song-bouncy-ateez', cat: 'song-kpop', franchise: 'ATEEZ', game: 'BOUNCY (K-HOT CHILLI PEPPERS)',
+    title: 'BOUNCY (K-HOT CHILLI PEPPERS)', year: 2023, lang: 'ko',
+    sources: "busca('ATEEZ', 'BOUNCY')"
+  },
+  {
+    id: 'song-kick-it-nct', cat: 'song-kpop', franchise: 'NCT 127', game: 'Kick It',
+    title: 'Kick It', year: 2020, lang: 'ko',
+    sources: "busca('NCT 127', 'Kick It')"
+  },
+  {
+    id: 'song-black-mamba-aespa', cat: 'song-kpop', franchise: 'aespa', game: 'Black Mamba',
+    title: 'Black Mamba', year: 2020, lang: 'ko',
+    sources: "busca('aespa', 'Black Mamba')"
+  },
+  {
+    id: 'song-drama-aespa', cat: 'song-kpop', franchise: 'aespa', game: 'Drama',
+    title: 'Drama', year: 2023, lang: 'ko',
+    sources: "busca('aespa', 'Drama')"
+  },
+  {
+    id: 'song-unforgiven-lesserafim', cat: 'song-kpop', franchise: 'LE SSERAFIM', game: 'UNFORGIVEN',
+    title: 'UNFORGIVEN', year: 2023, lang: 'ko',
+    sources: "busca('LE SSERAFIM', 'UNFORGIVEN')"
+  },
+  {
+    id: 'song-easy-lesserafim', cat: 'song-kpop', franchise: 'LE SSERAFIM', game: 'EASY',
+    title: 'EASY', year: 2024, lang: 'ko',
+    sources: "busca('LE SSERAFIM', 'EASY')"
+  },
+  {
+    id: 'song-omg-newjeans', cat: 'song-kpop', franchise: 'NewJeans', game: 'OMG',
+    title: 'OMG', year: 2023, lang: 'ko',
+    sources: "busca('NewJeans', 'OMG')"
+  },
+  {
+    id: 'song-after-like-ive', cat: 'song-kpop', franchise: 'IVE', game: 'After LIKE',
+    title: 'After LIKE', year: 2022, lang: 'ko',
+    sources: "busca('IVE', 'After LIKE')"
+  },
+  {
+    id: 'song-magnetic-illit', cat: 'song-kpop', franchise: 'ILLIT', game: 'Magnetic',
+    title: 'Magnetic', year: 2024, lang: 'ko',
+    sources: "busca('ILLIT', 'Magnetic')"
+  }
+];
+
+const batches = {
+  'song-rock': rock,
+  'song-pop': pop,
+  'song-rap': rap,
+  'song-reggaeton': reggaeton,
+  'song-regional': regional,
+  'song-baladas': baladas,
+  'song-electronica': electronica,
+  'song-cumbia': cumbia,
+  'song-salsa': salsa,
+  'song-metal': metal,
+  'song-kpop': kpop
+};
+
+let totalNew = 0;
+let errors = 0;
+const allBatchIds = new Set();
+
+for (const [cat, list] of Object.entries(batches)) {
+  console.log(`Auditoría ${cat}: ${list.length} canciones planificadas.`);
+  totalNew += list.length;
+  list.forEach(t => {
+    if (existingIds.has(t.id)) {
+      console.error(`❌ Colisión con ID existente: ${t.id}`);
+      errors++;
+    }
+    if (allBatchIds.has(t.id)) {
+      console.error(`❌ Colisión dentro de los lotes nuevos: ${t.id}`);
+      errors++;
+    }
+    allBatchIds.add(t.id);
+
+    const normSong = (t.franchise + ' - ' + t.game).toLowerCase();
+    if (existingSongsByCat[cat].has(normSong)) {
+      console.error(`❌ Canción duplicada en categoría ${cat}: ${t.franchise} - ${t.game}`);
+      errors++;
+    }
+  });
+}
+
+console.log(`\nTotal canciones nuevas: ${totalNew}`);
+console.log(`Total errores / colisiones: ${errors}`);
+
+if (errors === 0) {
+  fs.writeFileSync('scripts/all-batches.json', JSON.stringify(batches, null, 2));
+  console.log('✅ Lotes validados y exportados a scripts/all-batches.json exitosamente.');
+} else {
+  console.error('❌ Hay errores que deben resolverse antes de continuar.');
+  process.exit(1);
+}

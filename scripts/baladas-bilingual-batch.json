@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "song-amada-amante",
+    "cat": "song-baladas",
+    "franchise": "Roberto Carlos",
+    "game": "Amada amante",
+    "title": "Amada amante",
+    "year": 1971,
+    "lang": "es",
+    "sources": "busca('Roberto Carlos', 'Amada amante')"
+  },
+  {
+    "id": "song-detalles-roberto-carlos",
+    "cat": "song-baladas",
+    "franchise": "Roberto Carlos",
+    "game": "Detalles",
+    "title": "Detalles",
+    "year": 1971,
+    "lang": "es",
+    "sources": "busca('Roberto Carlos', 'Detalles')"
+  },
+  {
+    "id": "song-cama-y-mesa",
+    "cat": "song-baladas",
+    "franchise": "Roberto Carlos",
+    "game": "Cama y mesa",
+    "title": "Cama y mesa",
+    "year": 1981,
+    "lang": "es",
+    "sources": "busca('Roberto Carlos', 'Cama y mesa')"
+  },
+  {
+    "id": "song-melina-camilo-sesto",
+    "cat": "song-baladas",
+    "franchise": "Camilo Sesto",
+    "game": "Melina",
+    "title": "Melina",
+    "year": 1975,
+    "lang": "es",
+    "sources": "busca('Camilo Sesto', 'Melina')"
+  },
+  {
+    "id": "song-quieres-ser-mi-amante",
+    "cat": "song-baladas",
+    "franchise": "Camilo Sesto",
+    "game": "¿Quieres ser mi amante?",
+    "title": "¿Quieres ser mi amante?",
+    "year": 1974,
+    "lang": "es",
+    "sources": "busca('Camilo Sesto', '¿Quieres ser mi amante?')"
+  },
+  {
+    "id": "song-si-me-dejas-ahora",
+    "cat": "song-baladas",
+    "franchise": "José José",
+    "game": "Si me dejas ahora",
+    "title": "Si me dejas ahora",
+    "year": 1979,
+    "lang": "es",
+    "sources": "busca('José José', 'Si me dejas ahora')"
+  },
+  {
+    "id": "song-amar-y-querer",
+    "cat": "song-baladas",
+    "franchise": "José José",
+    "game": "Amar y querer",
+    "title": "Amar y querer",
+    "year": 1977,
+    "lang": "es",
+    "sources": "busca('José José', 'Amar y querer')"
+  },
+  {
+    "id": "song-preso-jose-jose",
+    "cat": "song-baladas",
+    "franchise": "José José",
+    "game": "Preso",
+    "title": "Preso",
+    "year": 1981,
+    "lang": "es",
+    "sources": "busca('José José', 'Preso')"
+  },
+  {
+    "id": "song-payaso-jose-jose",
+    "cat": "song-baladas",
+    "franchise": "José José",
+    "game": "Payaso",
+    "title": "Payaso",
+    "year": 1983,
+    "lang": "es",
+    "sources": "busca('José José', 'Payaso')"
+  },
+  {
+    "id": "song-seria-capaz-jose-jose",
+    "cat": "song-baladas",
+    "franchise": "José José",
+    "game": "¿Y quién puede ser?",
+    "title": "¿Y quién puede ser?",
+    "year": 1986,
+    "lang": "es",
+    "sources": "busca('José José', '¿Y quién puede ser?')"
+  },
+  {
+    "id": "song-no-vale-la-pena",
+    "cat": "song-baladas",
+    "franchise": "Juan Gabriel",
+    "game": "No vale la pena",
+    "title": "No vale la pena",
+    "year": 1983,
+    "lang": "es",
+    "sources": "busca('Juan Gabriel', 'No vale la pena')"
+  },
+  {
+    "id": "song-pero-que-necesidad",
+    "cat": "song-baladas",
+    "franchise": "Juan Gabriel",
+    "game": "Pero qué necesidad",
+    "title": "Pero qué necesidad",
+    "year": 1994,
+    "lang": "es",
+    "sources": "busca('Juan Gabriel', 'Pero qué necesidad')"
+  },
+  {
+    "id": "song-fue-un-placer-conocerte",
+    "cat": "song-baladas",
+    "franchise": "Rocío Dúrcal",
+    "game": "Fue un placer conocerte",
+    "title": "Fue un placer conocerte",
+    "year": 1977,
+    "lang": "es",
+    "sources": "busca('Rocío Dúrcal', 'Fue un placer conocerte')"
+  },
+  {
+    "id": "song-vestida-de-azucar",
+    "cat": "song-baladas",
+    "franchise": "Gloria Trevi",
+    "game": "Vestida de azúcar",
+    "title": "Vestida de azúcar",
+    "year": 2011,
+    "lang": "es",
+    "sources": "busca('Gloria Trevi', 'Vestida de azúcar')"
+  },
+  {
+    "id": "song-no-querias-lastimarme",
+    "cat": "song-baladas",
+    "franchise": "Gloria Trevi",
+    "game": "No querías lastimarme",
+    "title": "No querías lastimarme",
+    "year": 2013,
+    "lang": "es",
+    "sources": "busca('Gloria Trevi', 'No querías lastimarme')"
+  },
+  {
+    "id": "song-bella-manuel-mijares",
+    "cat": "song-baladas",
+    "franchise": "Manuel Mijares",
+    "game": "Bella",
+    "title": "Bella",
+    "year": 1986,
+    "lang": "es",
+    "sources": "busca('Manuel Mijares', 'Bella')"
+  },
+  {
+    "id": "song-soldado-del-amor",
+    "cat": "song-baladas",
+    "franchise": "Manuel Mijares",
+    "game": "Soldado del amor",
+    "title": "Soldado del amor",
+    "year": 1988,
+    "lang": "es",
+    "sources": "busca('Manuel Mijares', 'Soldado del amor')"
+  },
+  {
+    "id": "song-fria-como-el-viento",
+    "cat": "song-baladas",
+    "franchise": "Luis Miguel",
+    "game": "Fría como el viento",
+    "title": "Fría como el viento",
+    "year": 1988,
+    "lang": "es",
+    "sources": "busca('Luis Miguel', 'Fría como el viento')"
+  },
+  {
+    "id": "song-involvidable-luis-miguel",
+    "cat": "song-baladas",
+    "franchise": "Luis Miguel",
+    "game": "Inolvidable",
+    "title": "Inolvidable",
+    "year": 1991,
+    "lang": "es",
+    "sources": "busca('Luis Miguel', 'Inolvidable')"
+  },
+  {
+    "id": "song-no-se-tu-luis-miguel",
+    "cat": "song-baladas",
+    "franchise": "Luis Miguel",
+    "game": "No sé tú",
+    "title": "No sé tú",
+    "year": 1991,
+    "lang": "es",
+    "sources": "busca('Luis Miguel', 'No sé tú')"
+  },
+  {
+    "id": "song-por-debajo-de-la-mesa",
+    "cat": "song-baladas",
+    "franchise": "Luis Miguel",
+    "game": "Por debajo de la mesa",
+    "title": "Por debajo de la mesa",
+    "year": 1997,
+    "lang": "es",
+    "sources": "busca('Luis Miguel', 'Por debajo de la mesa')"
+  },
+  {
+    "id": "song-la-media-vuelta",
+    "cat": "song-baladas",
+    "franchise": "Luis Miguel",
+    "game": "La media vuelta",
+    "title": "La media vuelta",
+    "year": 1994,
+    "lang": "es",
+    "sources": "busca('Luis Miguel', 'La media vuelta')"
+  },
+  {
+    "id": "song-amarte-es-un-placer",
+    "cat": "song-baladas",
+    "franchise": "Luis Miguel",
+    "game": "Amarte es un placer",
+    "title": "Amarte es un placer",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Luis Miguel', 'Amarte es un placer')"
+  },
+  {
+    "id": "song-volver-a-amar-cristian",
+    "cat": "song-baladas",
+    "franchise": "Cristian Castro",
+    "game": "Volver a amar",
+    "title": "Volver a amar",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Cristian Castro', 'Volver a amar')"
+  },
+  {
+    "id": "song-lloran-las-rosas",
+    "cat": "song-baladas",
+    "franchise": "Cristian Castro",
+    "game": "Lloran las rosas",
+    "title": "Lloran las rosas",
+    "year": 1997,
+    "lang": "es",
+    "sources": "busca('Cristian Castro', 'Lloran las rosas')"
+  },
+  {
+    "id": "song-yo-queria-cristian",
+    "cat": "song-baladas",
+    "franchise": "Cristian Castro",
+    "game": "Yo quería",
+    "title": "Yo quería",
+    "year": 2001,
+    "lang": "es",
+    "sources": "busca('Cristian Castro', 'Yo quería')"
+  },
+  {
+    "id": "song-que-me-alcance-la-vida",
+    "cat": "song-baladas",
+    "franchise": "Sin Bandera",
+    "game": "Que me alcance la vida",
+    "title": "Que me alcance la vida",
+    "year": 2006,
+    "lang": "es",
+    "sources": "busca('Sin Bandera', 'Que me alcance la vida')"
+  },
+  {
+    "id": "song-te-vi-venir-sin-bandera",
+    "cat": "song-baladas",
+    "franchise": "Sin Bandera",
+    "game": "Te vi venir",
+    "title": "Te vi venir",
+    "year": 2002,
+    "lang": "es",
+    "sources": "busca('Sin Bandera', 'Te vi venir')"
+  },
+  {
+    "id": "song-something-beatles",
+    "cat": "song-baladas",
+    "franchise": "The Beatles",
+    "game": "Something",
+    "title": "Something",
+    "year": 1969,
+    "lang": "en",
+    "sources": "busca('The Beatles', 'Something')"
+  },
+  {
+    "id": "song-the-long-and-winding-road",
+    "cat": "song-baladas",
+    "franchise": "The Beatles",
+    "game": "The Long and Winding Road",
+    "title": "The Long and Winding Road",
+    "year": 1970,
+    "lang": "en",
+    "sources": "busca('The Beatles', 'The Long and Winding Road')"
+  },
+  {
+    "id": "song-all-you-need-is-love",
+    "cat": "song-baladas",
+    "franchise": "The Beatles",
+    "game": "All You Need Is Love",
+    "title": "All You Need Is Love",
+    "year": 1967,
+    "lang": "en",
+    "sources": "busca('The Beatles', 'All You Need Is Love')"
+  },
+  {
+    "id": "song-piano-man-billy-joel",
+    "cat": "song-baladas",
+    "franchise": "Billy Joel",
+    "game": "Piano Man",
+    "title": "Piano Man",
+    "year": 1973,
+    "lang": "en",
+    "sources": "busca('Billy Joel', 'Piano Man')"
+  },
+  {
+    "id": "song-just-the-way-you-are-joel",
+    "cat": "song-baladas",
+    "franchise": "Billy Joel",
+    "game": "Just the Way You Are",
+    "title": "Just the Way You Are",
+    "year": 1977,
+    "lang": "en",
+    "sources": "busca('Billy Joel', 'Just the Way You Are')"
+  },
+  {
+    "id": "song-honesty-billy-joel",
+    "cat": "song-baladas",
+    "franchise": "Billy Joel",
+    "game": "Honesty",
+    "title": "Honesty",
+    "year": 1978,
+    "lang": "en",
+    "sources": "busca('Billy Joel', 'Honesty')"
+  },
+  {
+    "id": "song-tiny-dancer-elton",
+    "cat": "song-baladas",
+    "franchise": "Elton John",
+    "game": "Tiny Dancer",
+    "title": "Tiny Dancer",
+    "year": 1971,
+    "lang": "en",
+    "sources": "busca('Elton John', 'Tiny Dancer')"
+  },
+  {
+    "id": "song-rocket-man-elton",
+    "cat": "song-baladas",
+    "franchise": "Elton John",
+    "game": "Rocket Man (I Think It's Going to Be a Long, Long Time)",
+    "title": "Rocket Man (I Think It's Going to Be a Long, Long Time)",
+    "year": 1972,
+    "lang": "en",
+    "sources": "busca('Elton John', 'Rocket Man (I Think It\\'s Going to Be a Long, Long Time)')"
+  },
+  {
+    "id": "song-candle-in-the-wind",
+    "cat": "song-baladas",
+    "franchise": "Elton John",
+    "game": "Candle in the Wind",
+    "title": "Candle in the Wind",
+    "year": 1973,
+    "lang": "en",
+    "sources": "busca('Elton John', 'Candle in the Wind')"
+  },
+  {
+    "id": "song-goodbye-yellow-brick-road",
+    "cat": "song-baladas",
+    "franchise": "Elton John",
+    "game": "Goodbye Yellow Brick Road",
+    "title": "Goodbye Yellow Brick Road",
+    "year": 1973,
+    "lang": "en",
+    "sources": "busca('Elton John', 'Goodbye Yellow Brick Road')"
+  },
+  {
+    "id": "song-dont-let-the-sun-go-down",
+    "cat": "song-baladas",
+    "franchise": "Elton John",
+    "game": "Don't Let the Sun Go Down on Me",
+    "title": "Don't Let the Sun Go Down on Me",
+    "year": 1974,
+    "lang": "en",
+    "sources": "busca('Elton John', 'Don\\'t Let the Sun Go Down on Me')"
+  },
+  {
+    "id": "song-sorry-seems-to-be",
+    "cat": "song-baladas",
+    "franchise": "Elton John",
+    "game": "Sorry Seems to Be the Hardest Word",
+    "title": "Sorry Seems to Be the Hardest Word",
+    "year": 1976,
+    "lang": "en",
+    "sources": "busca('Elton John', 'Sorry Seems to Be the Hardest Word')"
+  },
+  {
+    "id": "song-bridge-over-troubled-water",
+    "cat": "song-baladas",
+    "franchise": "Simon & Garfunkel",
+    "game": "Bridge over Troubled Water",
+    "title": "Bridge over Troubled Water",
+    "year": 1970,
+    "lang": "en",
+    "sources": "busca('Simon & Garfunkel', 'Bridge over Troubled Water')"
+  },
+  {
+    "id": "song-the-sound-of-silence-sg",
+    "cat": "song-baladas",
+    "franchise": "Simon & Garfunkel",
+    "game": "The Sound of Silence",
+    "title": "The Sound of Silence",
+    "year": 1965,
+    "lang": "en",
+    "sources": "busca('Simon & Garfunkel', 'The Sound of Silence')"
+  },
+  {
+    "id": "song-make-it-with-you",
+    "cat": "song-baladas",
+    "franchise": "Bread",
+    "game": "Make It with You",
+    "title": "Make It with You",
+    "year": 1970,
+    "lang": "en",
+    "sources": "busca('Bread', 'Make It with You')"
+  },
+  {
+    "id": "song-if-bread",
+    "cat": "song-baladas",
+    "franchise": "Bread",
+    "game": "If",
+    "title": "If",
+    "year": 1971,
+    "lang": "en",
+    "sources": "busca('Bread', 'If')"
+  },
+  {
+    "id": "song-without-you-nilsson",
+    "cat": "song-baladas",
+    "franchise": "Harry Nilsson",
+    "game": "Without You",
+    "title": "Without You",
+    "year": 1971,
+    "lang": "en",
+    "sources": "busca('Harry Nilsson', 'Without You')"
+  },
+  {
+    "id": "song-killing-me-softly",
+    "cat": "song-baladas",
+    "franchise": "Roberta Flack",
+    "game": "Killing Me Softly with His Song",
+    "title": "Killing Me Softly with His Song",
+    "year": 1973,
+    "lang": "en",
+    "sources": "busca('Roberta Flack', 'Killing Me Softly with His Song')"
+  },
+  {
+    "id": "song-the-first-time-ever",
+    "cat": "song-baladas",
+    "franchise": "Roberta Flack",
+    "game": "The First Time Ever I Saw Your Face",
+    "title": "The First Time Ever I Saw Your Face",
+    "year": 1972,
+    "lang": "en",
+    "sources": "busca('Roberta Flack', 'The First Time Ever I Saw Your Face')"
+  },
+  {
+    "id": "song-you-are-so-beautiful",
+    "cat": "song-baladas",
+    "franchise": "Joe Cocker",
+    "game": "You Are So Beautiful",
+    "title": "You Are So Beautiful",
+    "year": 1974,
+    "lang": "en",
+    "sources": "busca('Joe Cocker', 'You Are So Beautiful')"
+  },
+  {
+    "id": "song-three-times-a-lady",
+    "cat": "song-baladas",
+    "franchise": "Commodores",
+    "game": "Three Times a Lady",
+    "title": "Three Times a Lady",
+    "year": 1978,
+    "lang": "en",
+    "sources": "busca('Commodores', 'Three Times a Lady')"
+  },
+  {
+    "id": "song-sail-on-commodores",
+    "cat": "song-baladas",
+    "franchise": "Commodores",
+    "game": "Sail On",
+    "title": "Sail On",
+    "year": 1979,
+    "lang": "en",
+    "sources": "busca('Commodores', 'Sail On')"
+  },
+  {
+    "id": "song-easy-commodores",
+    "cat": "song-baladas",
+    "franchise": "Commodores",
+    "game": "Easy",
+    "title": "Easy",
+    "year": 1977,
+    "lang": "en",
+    "sources": "busca('Commodores', 'Easy')"
+  },
+  {
+    "id": "song-hello-lionel-richie",
+    "cat": "song-baladas",
+    "franchise": "Lionel Richie",
+    "game": "Hello",
+    "title": "Hello",
+    "year": 1983,
+    "lang": "en",
+    "sources": "busca('Lionel Richie', 'Hello')"
+  },
+  {
+    "id": "song-truly-lionel-richie",
+    "cat": "song-baladas",
+    "franchise": "Lionel Richie",
+    "game": "Truly",
+    "title": "Truly",
+    "year": 1982,
+    "lang": "en",
+    "sources": "busca('Lionel Richie', 'Truly')"
+  },
+  {
+    "id": "song-say-you-say-me",
+    "cat": "song-baladas",
+    "franchise": "Lionel Richie",
+    "game": "Say You, Say Me",
+    "title": "Say You, Say Me",
+    "year": 1985,
+    "lang": "en",
+    "sources": "busca('Lionel Richie', 'Say You, Say Me')"
+  },
+  {
+    "id": "song-stuck-on-you-lionel",
+    "cat": "song-baladas",
+    "franchise": "Lionel Richie",
+    "game": "Stuck on You",
+    "title": "Stuck on You",
+    "year": 1984,
+    "lang": "en",
+    "sources": "busca('Lionel Richie', 'Stuck on You')"
+  },
+  {
+    "id": "song-penny-lover-lionel",
+    "cat": "song-baladas",
+    "franchise": "Lionel Richie",
+    "game": "Penny Lover",
+    "title": "Penny Lover",
+    "year": 1983,
+    "lang": "en",
+    "sources": "busca('Lionel Richie', 'Penny Lover')"
+  },
+  {
+    "id": "song-i-just-called-to-say",
+    "cat": "song-baladas",
+    "franchise": "Stevie Wonder",
+    "game": "I Just Called to Say I Love You",
+    "title": "I Just Called to Say I Love You",
+    "year": 1984,
+    "lang": "en",
+    "sources": "busca('Stevie Wonder', 'I Just Called to Say I Love You')"
+  },
+  {
+    "id": "song-lately-stevie-wonder",
+    "cat": "song-baladas",
+    "franchise": "Stevie Wonder",
+    "game": "Lately",
+    "title": "Lately",
+    "year": 1980,
+    "lang": "en",
+    "sources": "busca('Stevie Wonder', 'Lately')"
+  },
+  {
+    "id": "song-overjoyed-stevie",
+    "cat": "song-baladas",
+    "franchise": "Stevie Wonder",
+    "game": "Overjoyed",
+    "title": "Overjoyed",
+    "year": 1985,
+    "lang": "en",
+    "sources": "busca('Stevie Wonder', 'Overjoyed')"
+  },
+  {
+    "id": "song-ribbon-in-the-sky",
+    "cat": "song-baladas",
+    "franchise": "Stevie Wonder",
+    "game": "Ribbon in the Sky",
+    "title": "Ribbon in the Sky",
+    "year": 1982,
+    "lang": "en",
+    "sources": "busca('Stevie Wonder', 'Ribbon in the Sky')"
+  },
+  {
+    "id": "song-open-arms-journey",
+    "cat": "song-baladas",
+    "franchise": "Journey",
+    "game": "Open Arms",
+    "title": "Open Arms",
+    "year": 1981,
+    "lang": "en",
+    "sources": "busca('Journey', 'Open Arms')"
+  },
+  {
+    "id": "song-faithfully-journey",
+    "cat": "song-baladas",
+    "franchise": "Journey",
+    "game": "Faithfully",
+    "title": "Faithfully",
+    "year": 1983,
+    "lang": "en",
+    "sources": "busca('Journey', 'Faithfully')"
+  },
+  {
+    "id": "song-waiting-for-a-girl",
+    "cat": "song-baladas",
+    "franchise": "Foreigner",
+    "game": "Waiting for a Girl Like You",
+    "title": "Waiting for a Girl Like You",
+    "year": 1981,
+    "lang": "en",
+    "sources": "busca('Foreigner', 'Waiting for a Girl Like You')"
+  },
+  {
+    "id": "song-i-want-to-know-what-love-is",
+    "cat": "song-baladas",
+    "franchise": "Foreigner",
+    "game": "I Want to Know What Love Is",
+    "title": "I Want to Know What Love Is",
+    "year": 1984,
+    "lang": "en",
+    "sources": "busca('Foreigner', 'I Want to Know What Love Is')"
+  },
+  {
+    "id": "song-hard-to-say-im-sorry",
+    "cat": "song-baladas",
+    "franchise": "Chicago",
+    "game": "Hard to Say I'm Sorry",
+    "title": "Hard to Say I'm Sorry",
+    "year": 1982,
+    "lang": "en",
+    "sources": "busca('Chicago', 'Hard to Say I\\'m Sorry')"
+  },
+  {
+    "id": "song-youre-the-inspiration",
+    "cat": "song-baladas",
+    "franchise": "Chicago",
+    "game": "You're the Inspiration",
+    "title": "You're the Inspiration",
+    "year": 1984,
+    "lang": "en",
+    "sources": "busca('Chicago', 'You\\'re the Inspiration')"
+  },
+  {
+    "id": "song-if-you-leave-me-now",
+    "cat": "song-baladas",
+    "franchise": "Chicago",
+    "game": "If You Leave Me Now",
+    "title": "If You Leave Me Now",
+    "year": 1976,
+    "lang": "en",
+    "sources": "busca('Chicago', 'If You Leave Me Now')"
+  },
+  {
+    "id": "song-in-the-air-tonight",
+    "cat": "song-baladas",
+    "franchise": "Phil Collins",
+    "game": "In the Air Tonight",
+    "title": "In the Air Tonight",
+    "year": 1981,
+    "lang": "en",
+    "sources": "busca('Phil Collins', 'In the Air Tonight')"
+  },
+  {
+    "id": "song-one-more-night-phil",
+    "cat": "song-baladas",
+    "franchise": "Phil Collins",
+    "game": "One More Night",
+    "title": "One More Night",
+    "year": 1985,
+    "lang": "en",
+    "sources": "busca('Phil Collins', 'One More Night')"
+  },
+  {
+    "id": "song-a-groovy-kind-of-love",
+    "cat": "song-baladas",
+    "franchise": "Phil Collins",
+    "game": "A Groovy Kind of Love",
+    "title": "A Groovy Kind of Love",
+    "year": 1988,
+    "lang": "en",
+    "sources": "busca('Phil Collins', 'A Groovy Kind of Love')"
+  },
+  {
+    "id": "song-do-you-remember-phil",
+    "cat": "song-baladas",
+    "franchise": "Phil Collins",
+    "game": "Do You Remember?",
+    "title": "Do You Remember?",
+    "year": 1989,
+    "lang": "en",
+    "sources": "busca('Phil Collins', 'Do You Remember?')"
+  },
+  {
+    "id": "song-heaven-bryan-adams",
+    "cat": "song-baladas",
+    "franchise": "Bryan Adams",
+    "game": "Heaven",
+    "title": "Heaven",
+    "year": 1984,
+    "lang": "en",
+    "sources": "busca('Bryan Adams', 'Heaven')"
+  },
+  {
+    "id": "song-please-forgive-me",
+    "cat": "song-baladas",
+    "franchise": "Bryan Adams",
+    "game": "Please Forgive Me",
+    "title": "Please Forgive Me",
+    "year": 1993,
+    "lang": "en",
+    "sources": "busca('Bryan Adams', 'Please Forgive Me')"
+  },
+  {
+    "id": "song-straight-from-the-heart",
+    "cat": "song-baladas",
+    "franchise": "Bryan Adams",
+    "game": "Straight from the Heart",
+    "title": "Straight from the Heart",
+    "year": 1983,
+    "lang": "en",
+    "sources": "busca('Bryan Adams', 'Straight from the Heart')"
+  },
+  {
+    "id": "song-have-you-ever-really-loved",
+    "cat": "song-baladas",
+    "franchise": "Bryan Adams",
+    "game": "Have You Ever Really Loved a Woman?",
+    "title": "Have You Ever Really Loved a Woman?",
+    "year": 1995,
+    "lang": "en",
+    "sources": "busca('Bryan Adams', 'Have You Ever Really Loved a Woman?')"
+  },
+  {
+    "id": "song-all-out-of-love",
+    "cat": "song-baladas",
+    "franchise": "Air Supply",
+    "game": "All Out of Love",
+    "title": "All Out of Love",
+    "year": 1980,
+    "lang": "en",
+    "sources": "busca('Air Supply', 'All Out of Love')"
+  },
+  {
+    "id": "song-making-love-out-of-nothing",
+    "cat": "song-baladas",
+    "franchise": "Air Supply",
+    "game": "Making Love Out of Nothing at All",
+    "title": "Making Love Out of Nothing at All",
+    "year": 1983,
+    "lang": "en",
+    "sources": "busca('Air Supply', 'Making Love Out of Nothing at All')"
+  },
+  {
+    "id": "song-lost-in-love-air-supply",
+    "cat": "song-baladas",
+    "franchise": "Air Supply",
+    "game": "Lost in Love",
+    "title": "Lost in Love",
+    "year": 1980,
+    "lang": "en",
+    "sources": "busca('Air Supply', 'Lost in Love')"
+  },
+  {
+    "id": "song-even-the-nights-are-better",
+    "cat": "song-baladas",
+    "franchise": "Air Supply",
+    "game": "Even the Nights Are Better",
+    "title": "Even the Nights Are Better",
+    "year": 1982,
+    "lang": "en",
+    "sources": "busca('Air Supply', 'Even the Nights Are Better')"
+  },
+  {
+    "id": "song-here-i-am-air-supply",
+    "cat": "song-baladas",
+    "franchise": "Air Supply",
+    "game": "Here I Am (Just When I Thought I Was Over You)",
+    "title": "Here I Am (Just When I Thought I Was Over You)",
+    "year": 1981,
+    "lang": "en",
+    "sources": "busca('Air Supply', 'Here I Am (Just When I Thought I Was Over You)')"
+  },
+  {
+    "id": "song-when-a-man-loves-a-woman-bolton",
+    "cat": "song-baladas",
+    "franchise": "Michael Bolton",
+    "game": "When a Man Loves a Woman",
+    "title": "When a Man Loves a Woman",
+    "year": 1991,
+    "lang": "en",
+    "sources": "busca('Michael Bolton', 'When a Man Loves a Woman')"
+  },
+  {
+    "id": "song-how-am-i-supposed-to-live",
+    "cat": "song-baladas",
+    "franchise": "Michael Bolton",
+    "game": "How Am I Supposed to Live Without You",
+    "title": "How Am I Supposed to Live Without You",
+    "year": 1989,
+    "lang": "en",
+    "sources": "busca('Michael Bolton', 'How Am I Supposed to Live Without You')"
+  },
+  {
+    "id": "song-time-love-and-tenderness",
+    "cat": "song-baladas",
+    "franchise": "Michael Bolton",
+    "game": "Time, Love and Tenderness",
+    "title": "Time, Love and Tenderness",
+    "year": 1991,
+    "lang": "en",
+    "sources": "busca('Michael Bolton', 'Time, Love and Tenderness')"
+  },
+  {
+    "id": "song-said-i-loved-you",
+    "cat": "song-baladas",
+    "franchise": "Michael Bolton",
+    "game": "Said I Loved You...But I Lied",
+    "title": "Said I Loved You...But I Lied",
+    "year": 1993,
+    "lang": "en",
+    "sources": "busca('Michael Bolton', 'Said I Loved You...But I Lied')"
+  },
+  {
+    "id": "song-have-i-told-you-lately",
+    "cat": "song-baladas",
+    "franchise": "Rod Stewart",
+    "game": "Have I Told You Lately",
+    "title": "Have I Told You Lately",
+    "year": 1993,
+    "lang": "en",
+    "sources": "busca('Rod Stewart', 'Have I Told You Lately')"
+  },
+  {
+    "id": "song-i-dont-want-to-talk-about-it",
+    "cat": "song-baladas",
+    "franchise": "Rod Stewart",
+    "game": "I Don't Want to Talk About It",
+    "title": "I Don't Want to Talk About It",
+    "year": 1975,
+    "lang": "en",
+    "sources": "busca('Rod Stewart', 'I Don\\'t Want to Talk About It')"
+  },
+  {
+    "id": "song-youre-in-my-heart",
+    "cat": "song-baladas",
+    "franchise": "Rod Stewart",
+    "game": "You're in My Heart (The Final Acclaim)",
+    "title": "You're in My Heart (The Final Acclaim)",
+    "year": 1977,
+    "lang": "en",
+    "sources": "busca('Rod Stewart', 'You\\'re in My Heart (The Final Acclaim)')"
+  },
+  {
+    "id": "song-forever-young-rod",
+    "cat": "song-baladas",
+    "franchise": "Rod Stewart",
+    "game": "Forever Young",
+    "title": "Forever Young",
+    "year": 1988,
+    "lang": "en",
+    "sources": "busca('Rod Stewart', 'Forever Young')"
+  },
+  {
+    "id": "song-always-atlantic-starr",
+    "cat": "song-baladas",
+    "franchise": "Atlantic Starr",
+    "game": "Always",
+    "title": "Always",
+    "year": 1987,
+    "lang": "en",
+    "sources": "busca('Atlantic Starr', 'Always')"
+  },
+  {
+    "id": "song-save-the-best-for-last",
+    "cat": "song-baladas",
+    "franchise": "Vanessa Williams",
+    "game": "Save the Best for Last",
+    "title": "Save the Best for Last",
+    "year": 1991,
+    "lang": "en",
+    "sources": "busca('Vanessa Williams', 'Save the Best for Last')"
+  },
+  {
+    "id": "song-un-break-my-heart",
+    "cat": "song-baladas",
+    "franchise": "Toni Braxton",
+    "game": "Un-Break My Heart",
+    "title": "Un-Break My Heart",
+    "year": 1996,
+    "lang": "en",
+    "sources": "busca('Toni Braxton', 'Un-Break My Heart')"
+  },
+  {
+    "id": "song-breathe-again-toni",
+    "cat": "song-baladas",
+    "franchise": "Toni Braxton",
+    "game": "Breathe Again",
+    "title": "Breathe Again",
+    "year": 1993,
+    "lang": "en",
+    "sources": "busca('Toni Braxton', 'Breathe Again')"
+  },
+  {
+    "id": "song-i-swear-all-4-one",
+    "cat": "song-baladas",
+    "franchise": "All-4-One",
+    "game": "I Swear",
+    "title": "I Swear",
+    "year": 1994,
+    "lang": "en",
+    "sources": "busca('All-4-One', 'I Swear')"
+  },
+  {
+    "id": "song-i-can-love-you-like-that",
+    "cat": "song-baladas",
+    "franchise": "All-4-One",
+    "game": "I Can Love You Like That",
+    "title": "I Can Love You Like That",
+    "year": 1995,
+    "lang": "en",
+    "sources": "busca('All-4-One', 'I Can Love You Like That')"
+  },
+  {
+    "id": "song-end-of-the-road-boyz",
+    "cat": "song-baladas",
+    "franchise": "Boyz II Men",
+    "game": "End of the Road",
+    "title": "End of the Road",
+    "year": 1992,
+    "lang": "en",
+    "sources": "busca('Boyz II Men', 'End of the Road')"
+  },
+  {
+    "id": "song-ill-make-love-to-you",
+    "cat": "song-baladas",
+    "franchise": "Boyz II Men",
+    "game": "I'll Make Love to You",
+    "title": "I'll Make Love to You",
+    "year": 1994,
+    "lang": "en",
+    "sources": "busca('Boyz II Men', 'I\\'ll Make Love to You')"
+  },
+  {
+    "id": "song-on-bended-knee-boyz",
+    "cat": "song-baladas",
+    "franchise": "Boyz II Men",
+    "game": "On Bended Knee",
+    "title": "On Bended Knee",
+    "year": 1994,
+    "lang": "en",
+    "sources": "busca('Boyz II Men', 'On Bended Knee')"
+  },
+  {
+    "id": "song-one-sweet-day",
+    "cat": "song-baladas",
+    "franchise": "Mariah Carey y Boyz II Men",
+    "game": "One Sweet Day",
+    "title": "One Sweet Day",
+    "year": 1995,
+    "lang": "en",
+    "sources": "busca('Mariah Carey y Boyz II Men', 'One Sweet Day')"
+  },
+  {
+    "id": "song-vision-of-love",
+    "cat": "song-baladas",
+    "franchise": "Mariah Carey",
+    "game": "Vision of Love",
+    "title": "Vision of Love",
+    "year": 1990,
+    "lang": "en",
+    "sources": "busca('Mariah Carey', 'Vision of Love')"
+  },
+  {
+    "id": "song-without-you-mariah",
+    "cat": "song-baladas",
+    "franchise": "Mariah Carey",
+    "game": "Without You",
+    "title": "Without You",
+    "year": 1993,
+    "lang": "en",
+    "sources": "busca('Mariah Carey', 'Without You')"
+  }
+]

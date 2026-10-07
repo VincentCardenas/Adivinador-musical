@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "song-hoy-no-me-puedo-levantar",
+    "cat": "song-pop",
+    "franchise": "Mecano",
+    "game": "Hoy no me puedo levantar",
+    "title": "Hoy no me puedo levantar",
+    "year": 1981,
+    "lang": "es",
+    "sources": "busca('Mecano', 'Hoy no me puedo levantar')"
+  },
+  {
+    "id": "song-barco-a-venus",
+    "cat": "song-pop",
+    "franchise": "Mecano",
+    "game": "Barco a Venus",
+    "title": "Barco a Venus",
+    "year": 1983,
+    "lang": "es",
+    "sources": "busca('Mecano', 'Barco a Venus')"
+  },
+  {
+    "id": "song-cruz-de-navajas",
+    "cat": "song-pop",
+    "franchise": "Mecano",
+    "game": "Cruz de navajas",
+    "title": "Cruz de navajas",
+    "year": 1986,
+    "lang": "es",
+    "sources": "busca('Mecano', 'Cruz de navajas')"
+  },
+  {
+    "id": "song-la-fuerza-del-destino",
+    "cat": "song-pop",
+    "franchise": "Mecano",
+    "game": "La fuerza del destino",
+    "title": "La fuerza del destino",
+    "year": 1988,
+    "lang": "es",
+    "sources": "busca('Mecano', 'La fuerza del destino')"
+  },
+  {
+    "id": "song-mujer-contra-mujer",
+    "cat": "song-pop",
+    "franchise": "Mecano",
+    "game": "Mujer contra mujer",
+    "title": "Mujer contra mujer",
+    "year": 1988,
+    "lang": "es",
+    "sources": "busca('Mecano', 'Mujer contra mujer')"
+  },
+  {
+    "id": "song-un-ano-mas",
+    "cat": "song-pop",
+    "franchise": "Mecano",
+    "game": "Un año más",
+    "title": "Un año más",
+    "year": 1988,
+    "lang": "es",
+    "sources": "busca('Mecano', 'Un año más')"
+  },
+  {
+    "id": "song-amante-bandido",
+    "cat": "song-pop",
+    "franchise": "Miguel Bosé",
+    "game": "Amante bandido",
+    "title": "Amante bandido",
+    "year": 1984,
+    "lang": "es",
+    "sources": "busca('Miguel Bosé', 'Amante bandido')"
+  },
+  {
+    "id": "song-morenamia",
+    "cat": "song-pop",
+    "franchise": "Miguel Bosé",
+    "game": "Morenamía",
+    "title": "Morenamía",
+    "year": 2001,
+    "lang": "es",
+    "sources": "busca('Miguel Bosé', 'Morenamía')"
+  },
+  {
+    "id": "song-si-tu-no-vuelves",
+    "cat": "song-pop",
+    "franchise": "Miguel Bosé",
+    "game": "Si tú no vuelves",
+    "title": "Si tú no vuelves",
+    "year": 1993,
+    "lang": "es",
+    "sources": "busca('Miguel Bosé', 'Si tú no vuelves')"
+  },
+  {
+    "id": "song-a-quien-le-importa-alaska",
+    "cat": "song-pop",
+    "franchise": "Alaska y Dinarama",
+    "game": "¿A quién le importa?",
+    "title": "¿A quién le importa?",
+    "year": 1986,
+    "lang": "es",
+    "sources": "busca('Alaska y Dinarama', '¿A quién le importa?')"
+  },
+  {
+    "id": "song-marta-tiene-un-marcapasos",
+    "cat": "song-pop",
+    "franchise": "Hombres G",
+    "game": "Marta tiene un marcapasos",
+    "title": "Marta tiene un marcapasos",
+    "year": 1986,
+    "lang": "es",
+    "sources": "busca('Hombres G', 'Marta tiene un marcapasos')"
+  },
+  {
+    "id": "song-voy-a-pasarmelo-bien",
+    "cat": "song-pop",
+    "franchise": "Hombres G",
+    "game": "Voy a pasármelo bien",
+    "title": "Voy a pasármelo bien",
+    "year": 1989,
+    "lang": "es",
+    "sources": "busca('Hombres G', 'Voy a pasármelo bien')"
+  },
+  {
+    "id": "song-te-quiero-hombres-g",
+    "cat": "song-pop",
+    "franchise": "Hombres G",
+    "game": "Te quiero",
+    "title": "Te quiero",
+    "year": 1986,
+    "lang": "es",
+    "sources": "busca('Hombres G', 'Te quiero')"
+  },
+  {
+    "id": "song-con-todos-menos-conmigo",
+    "cat": "song-pop",
+    "franchise": "Timbiriche",
+    "game": "Con todos menos conmigo",
+    "title": "Con todos menos conmigo",
+    "year": 1987,
+    "lang": "es",
+    "sources": "busca('Timbiriche', 'Con todos menos conmigo')"
+  },
+  {
+    "id": "song-besos-de-ceniza",
+    "cat": "song-pop",
+    "franchise": "Timbiriche",
+    "game": "Besos de ceniza",
+    "title": "Besos de ceniza",
+    "year": 1987,
+    "lang": "es",
+    "sources": "busca('Timbiriche', 'Besos de ceniza')"
+  },
+  {
+    "id": "song-princesa-tibetana",
+    "cat": "song-pop",
+    "franchise": "Timbiriche",
+    "game": "Princesa tibetana",
+    "title": "Princesa tibetana",
+    "year": 1990,
+    "lang": "es",
+    "sources": "busca('Timbiriche', 'Princesa tibetana')"
+  },
+  {
+    "id": "song-bazar-flans",
+    "cat": "song-pop",
+    "franchise": "Flans",
+    "game": "Bazar",
+    "title": "Bazar",
+    "year": 1985,
+    "lang": "es",
+    "sources": "busca('Flans', 'Bazar')"
+  },
+  {
+    "id": "song-no-controles-flans",
+    "cat": "song-pop",
+    "franchise": "Flans",
+    "game": "No controles",
+    "title": "No controles",
+    "year": 1985,
+    "lang": "es",
+    "sources": "busca('Flans', 'No controles')"
+  },
+  {
+    "id": "song-las-mil-y-una-noches",
+    "cat": "song-pop",
+    "franchise": "Flans",
+    "game": "Las mil y una noches",
+    "title": "Las mil y una noches",
+    "year": 1986,
+    "lang": "es",
+    "sources": "busca('Flans', 'Las mil y una noches')"
+  },
+  {
+    "id": "song-como-te-va-mi-amor",
+    "cat": "song-pop",
+    "franchise": "Pandora",
+    "game": "¿Cómo te va mi amor?",
+    "title": "¿Cómo te va mi amor?",
+    "year": 1985,
+    "lang": "es",
+    "sources": "busca('Pandora', '¿Cómo te va mi amor?')"
+  },
+  {
+    "id": "song-reina-de-corazones",
+    "cat": "song-pop",
+    "franchise": "Alejandra Guzmán",
+    "game": "Reina de corazones",
+    "title": "Reina de corazones",
+    "year": 1991,
+    "lang": "es",
+    "sources": "busca('Alejandra Guzmán', 'Reina de corazones')"
+  },
+  {
+    "id": "song-eternamente-bella",
+    "cat": "song-pop",
+    "franchise": "Alejandra Guzmán",
+    "game": "Eternamente bella",
+    "title": "Eternamente bella",
+    "year": 1990,
+    "lang": "es",
+    "sources": "busca('Alejandra Guzmán', 'Eternamente bella')"
+  },
+  {
+    "id": "song-miralo-miralo",
+    "cat": "song-pop",
+    "franchise": "Alejandra Guzmán",
+    "game": "Míralo, míralo",
+    "title": "Míralo, míralo",
+    "year": 1993,
+    "lang": "es",
+    "sources": "busca('Alejandra Guzmán', 'Míralo, míralo')"
+  },
+  {
+    "id": "song-pelo-suelto",
+    "cat": "song-pop",
+    "franchise": "Gloria Trevi",
+    "game": "Pelo suelto",
+    "title": "Pelo suelto",
+    "year": 1991,
+    "lang": "es",
+    "sources": "busca('Gloria Trevi', 'Pelo suelto')"
+  },
+  {
+    "id": "song-dr-psiquiatra",
+    "cat": "song-pop",
+    "franchise": "Gloria Trevi",
+    "game": "Dr. Psiquiatra",
+    "title": "Dr. Psiquiatra",
+    "year": 1989,
+    "lang": "es",
+    "sources": "busca('Gloria Trevi', 'Dr. Psiquiatra')"
+  },
+  {
+    "id": "song-todos-me-miran",
+    "cat": "song-pop",
+    "franchise": "Gloria Trevi",
+    "game": "Todos me miran",
+    "title": "Todos me miran",
+    "year": 2006,
+    "lang": "es",
+    "sources": "busca('Gloria Trevi', 'Todos me miran')"
+  },
+  {
+    "id": "song-con-los-ojos-cerrados",
+    "cat": "song-pop",
+    "franchise": "Gloria Trevi",
+    "game": "Con los ojos cerrados",
+    "title": "Con los ojos cerrados",
+    "year": 1992,
+    "lang": "es",
+    "sources": "busca('Gloria Trevi', 'Con los ojos cerrados')"
+  },
+  {
+    "id": "song-el-ultimo-adios-paulina",
+    "cat": "song-pop",
+    "franchise": "Paulina Rubio",
+    "game": "El último adiós",
+    "title": "El último adiós",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('Paulina Rubio', 'El último adiós')"
+  },
+  {
+    "id": "song-te-quise-tanto-paulina",
+    "cat": "song-pop",
+    "franchise": "Paulina Rubio",
+    "game": "Te quise tanto",
+    "title": "Te quise tanto",
+    "year": 2004,
+    "lang": "es",
+    "sources": "busca('Paulina Rubio', 'Te quise tanto')"
+  },
+  {
+    "id": "song-causa-y-efecto",
+    "cat": "song-pop",
+    "franchise": "Paulina Rubio",
+    "game": "Causa y efecto",
+    "title": "Causa y efecto",
+    "year": 2009,
+    "lang": "es",
+    "sources": "busca('Paulina Rubio', 'Causa y efecto')"
+  },
+  {
+    "id": "song-mio-paulina",
+    "cat": "song-pop",
+    "franchise": "Paulina Rubio",
+    "game": "Mío",
+    "title": "Mío",
+    "year": 1992,
+    "lang": "es",
+    "sources": "busca('Paulina Rubio', 'Mío')"
+  },
+  {
+    "id": "song-amor-a-la-mexicana-thalia",
+    "cat": "song-pop",
+    "franchise": "Thalía",
+    "game": "Amor a la mexicana",
+    "title": "Amor a la mexicana",
+    "year": 1997,
+    "lang": "es",
+    "sources": "busca('Thalía', 'Amor a la mexicana')"
+  },
+  {
+    "id": "song-entre-el-mar-y-una-estrella",
+    "cat": "song-pop",
+    "franchise": "Thalía",
+    "game": "Entre el mar y una estrella",
+    "title": "Entre el mar y una estrella",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('Thalía', 'Entre el mar y una estrella')"
+  },
+  {
+    "id": "song-arrasando-thalia",
+    "cat": "song-pop",
+    "franchise": "Thalía",
+    "game": "Arrasando",
+    "title": "Arrasando",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('Thalía', 'Arrasando')"
+  },
+  {
+    "id": "song-a-quien-le-importa-thalia",
+    "cat": "song-pop",
+    "franchise": "Thalía",
+    "game": "¿A quién le importa?",
+    "title": "¿A quién le importa?",
+    "year": 2002,
+    "lang": "es",
+    "sources": "busca('Thalía', '¿A quién le importa?')"
+  },
+  {
+    "id": "song-azucar-amargo-fey",
+    "cat": "song-pop",
+    "franchise": "Fey",
+    "game": "Azúcar amargo",
+    "title": "Azúcar amargo",
+    "year": 1996,
+    "lang": "es",
+    "sources": "busca('Fey', 'Azúcar amargo')"
+  },
+  {
+    "id": "song-media-naranja-fey",
+    "cat": "song-pop",
+    "franchise": "Fey",
+    "game": "Media naranja",
+    "title": "Media naranja",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('Fey', 'Media naranja')"
+  },
+  {
+    "id": "song-muevelo-fey",
+    "cat": "song-pop",
+    "franchise": "Fey",
+    "game": "Muévelo",
+    "title": "Muévelo",
+    "year": 1996,
+    "lang": "es",
+    "sources": "busca('Fey', 'Muévelo')"
+  },
+  {
+    "id": "song-la-calle-de-las-sirenas",
+    "cat": "song-pop",
+    "franchise": "Kabah",
+    "game": "La calle de las sirenas",
+    "title": "La calle de las sirenas",
+    "year": 1996,
+    "lang": "es",
+    "sources": "busca('Kabah', 'La calle de las sirenas')"
+  },
+  {
+    "id": "song-al-pasar-kabah",
+    "cat": "song-pop",
+    "franchise": "Kabah",
+    "game": "Al pasar",
+    "title": "Al pasar",
+    "year": 1996,
+    "lang": "es",
+    "sources": "busca('Kabah', 'Al pasar')"
+  },
+  {
+    "id": "song-vive-kabah",
+    "cat": "song-pop",
+    "franchise": "Kabah",
+    "game": "Vive",
+    "title": "Vive",
+    "year": 1996,
+    "lang": "es",
+    "sources": "busca('Kabah', 'Vive')"
+  },
+  {
+    "id": "song-enloqueceme-ov7",
+    "cat": "song-pop",
+    "franchise": "OV7",
+    "game": "Enloquéceme",
+    "title": "Enloquéceme",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('OV7', 'Enloquéceme')"
+  },
+  {
+    "id": "song-shabadabada-ov7",
+    "cat": "song-pop",
+    "franchise": "OV7",
+    "game": "Shabadabada",
+    "title": "Shabadabada",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('OV7', 'Shabadabada')"
+  },
+  {
+    "id": "song-mirame-a-los-ojos-ov7",
+    "cat": "song-pop",
+    "franchise": "OV7",
+    "game": "Mírame a los ojos",
+    "title": "Mírame a los ojos",
+    "year": 1997,
+    "lang": "es",
+    "sources": "busca('OV7', 'Mírame a los ojos')"
+  },
+  {
+    "id": "song-la-playa-oreja",
+    "cat": "song-pop",
+    "franchise": "La Oreja de Van Gogh",
+    "game": "La playa",
+    "title": "La playa",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('La Oreja de Van Gogh', 'La playa')"
+  },
+  {
+    "id": "song-cuidate-oreja",
+    "cat": "song-pop",
+    "franchise": "La Oreja de Van Gogh",
+    "game": "Cuídate",
+    "title": "Cuídate",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('La Oreja de Van Gogh', 'Cuídate')"
+  },
+  {
+    "id": "song-puedes-contar-conmigo",
+    "cat": "song-pop",
+    "franchise": "La Oreja de Van Gogh",
+    "game": "Puedes contar conmigo",
+    "title": "Puedes contar conmigo",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('La Oreja de Van Gogh', 'Puedes contar conmigo')"
+  },
+  {
+    "id": "song-20-de-enero",
+    "cat": "song-pop",
+    "franchise": "La Oreja de Van Gogh",
+    "game": "20 de enero",
+    "title": "20 de enero",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('La Oreja de Van Gogh', '20 de enero')"
+  },
+  {
+    "id": "song-jueves-oreja",
+    "cat": "song-pop",
+    "franchise": "La Oreja de Van Gogh",
+    "game": "Jueves",
+    "title": "Jueves",
+    "year": 2008,
+    "lang": "es",
+    "sources": "busca('La Oreja de Van Gogh', 'Jueves')"
+  },
+  {
+    "id": "song-sin-ti-no-soy-nada",
+    "cat": "song-pop",
+    "franchise": "Amaral",
+    "game": "Sin ti no soy nada",
+    "title": "Sin ti no soy nada",
+    "year": 2002,
+    "lang": "es",
+    "sources": "busca('Amaral', 'Sin ti no soy nada')"
+  },
+  {
+    "id": "song-el-universo-sobre-mi",
+    "cat": "song-pop",
+    "franchise": "Amaral",
+    "game": "El universo sobre mí",
+    "title": "El universo sobre mí",
+    "year": 2005,
+    "lang": "es",
+    "sources": "busca('Amaral', 'El universo sobre mí')"
+  },
+  {
+    "id": "song-zapatillas-el-canto",
+    "cat": "song-pop",
+    "franchise": "El Canto del Loco",
+    "game": "Zapatillas",
+    "title": "Zapatillas",
+    "year": 2005,
+    "lang": "es",
+    "sources": "busca('El Canto del Loco', 'Zapatillas')"
+  },
+  {
+    "id": "song-la-madre-de-jose",
+    "cat": "song-pop",
+    "franchise": "El Canto del Loco",
+    "game": "La madre de José",
+    "title": "La madre de José",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('El Canto del Loco', 'La madre de José')"
+  },
+  {
+    "id": "song-tu-calorro-estopa",
+    "cat": "song-pop",
+    "franchise": "Estopa",
+    "game": "Tu calorro",
+    "title": "Tu calorro",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Estopa', 'Tu calorro')"
+  },
+  {
+    "id": "song-por-la-raja-de-tu-falda",
+    "cat": "song-pop",
+    "franchise": "Estopa",
+    "game": "Por la raja de tu falda",
+    "title": "Por la raja de tu falda",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Estopa', 'Por la raja de tu falda')"
+  },
+  {
+    "id": "song-vino-tinto-estopa",
+    "cat": "song-pop",
+    "franchise": "Estopa",
+    "game": "Vino tinto",
+    "title": "Vino tinto",
+    "year": 2001,
+    "lang": "es",
+    "sources": "busca('Estopa', 'Vino tinto')"
+  },
+  {
+    "id": "song-caminando-por-la-vida",
+    "cat": "song-pop",
+    "franchise": "Melendi",
+    "game": "Caminando por la vida",
+    "title": "Caminando por la vida",
+    "year": 2005,
+    "lang": "es",
+    "sources": "busca('Melendi', 'Caminando por la vida')"
+  },
+  {
+    "id": "song-volverte-a-ver-juanes",
+    "cat": "song-pop",
+    "franchise": "Juanes",
+    "game": "Volverte a ver",
+    "title": "Volverte a ver",
+    "year": 2004,
+    "lang": "es",
+    "sources": "busca('Juanes', 'Volverte a ver')"
+  },
+  {
+    "id": "song-es-por-ti-juanes",
+    "cat": "song-pop",
+    "franchise": "Juanes",
+    "game": "Es por ti",
+    "title": "Es por ti",
+    "year": 2002,
+    "lang": "es",
+    "sources": "busca('Juanes', 'Es por ti')"
+  },
+  {
+    "id": "song-me-enamora-juanes",
+    "cat": "song-pop",
+    "franchise": "Juanes",
+    "game": "Me enamora",
+    "title": "Me enamora",
+    "year": 2007,
+    "lang": "es",
+    "sources": "busca('Juanes', 'Me enamora')"
+  },
+  {
+    "id": "song-si-te-vas-shakira",
+    "cat": "song-pop",
+    "franchise": "Shakira",
+    "game": "Si te vas",
+    "title": "Si te vas",
+    "year": 1998,
+    "lang": "es",
+    "sources": "busca('Shakira', 'Si te vas')"
+  },
+  {
+    "id": "song-ojos-asi-shakira",
+    "cat": "song-pop",
+    "franchise": "Shakira",
+    "game": "Ojos así",
+    "title": "Ojos así",
+    "year": 1998,
+    "lang": "es",
+    "sources": "busca('Shakira', 'Ojos así')"
+  },
+  {
+    "id": "song-ciega-sordomuda-shakira",
+    "cat": "song-pop",
+    "franchise": "Shakira",
+    "game": "Ciega, sordomuda",
+    "title": "Ciega, sordomuda",
+    "year": 1998,
+    "lang": "es",
+    "sources": "busca('Shakira', 'Ciega, sordomuda')"
+  },
+  {
+    "id": "song-inevitable-shakira",
+    "cat": "song-pop",
+    "franchise": "Shakira",
+    "game": "Inevitable",
+    "title": "Inevitable",
+    "year": 1998,
+    "lang": "es",
+    "sources": "busca('Shakira', 'Inevitable')"
+  },
+  {
+    "id": "song-suerte-shakira",
+    "cat": "song-pop",
+    "franchise": "Shakira",
+    "game": "Suerte",
+    "title": "Suerte",
+    "year": 2001,
+    "lang": "es",
+    "sources": "busca('Shakira', 'Suerte')"
+  },
+  {
+    "id": "song-andar-conmigo-julieta",
+    "cat": "song-pop",
+    "franchise": "Julieta Venegas",
+    "game": "Andar conmigo",
+    "title": "Andar conmigo",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('Julieta Venegas', 'Andar conmigo')"
+  },
+  {
+    "id": "song-eres-para-mi-julieta",
+    "cat": "song-pop",
+    "franchise": "Julieta Venegas",
+    "game": "Eres para mí",
+    "title": "Eres para mí",
+    "year": 2006,
+    "lang": "es",
+    "sources": "busca('Julieta Venegas', 'Eres para mí')"
+  },
+  {
+    "id": "song-en-el-2000-natalia",
+    "cat": "song-pop",
+    "franchise": "Natalia Lafourcade",
+    "game": "En el 2000",
+    "title": "En el 2000",
+    "year": 2002,
+    "lang": "es",
+    "sources": "busca('Natalia Lafourcade', 'En el 2000')"
+  },
+  {
+    "id": "song-holiday-madonna",
+    "cat": "song-pop",
+    "franchise": "Madonna",
+    "game": "Holiday",
+    "title": "Holiday",
+    "year": 1983,
+    "lang": "en",
+    "sources": "busca('Madonna', 'Holiday')"
+  },
+  {
+    "id": "song-lucky-star-madonna",
+    "cat": "song-pop",
+    "franchise": "Madonna",
+    "game": "Lucky Star",
+    "title": "Lucky Star",
+    "year": 1983,
+    "lang": "en",
+    "sources": "busca('Madonna', 'Lucky Star')"
+  },
+  {
+    "id": "song-papa-dont-preach",
+    "cat": "song-pop",
+    "franchise": "Madonna",
+    "game": "Papa Don't Preach",
+    "title": "Papa Don't Preach",
+    "year": 1986,
+    "lang": "en",
+    "sources": "busca('Madonna', 'Papa Don\\'t Preach')"
+  },
+  {
+    "id": "song-la-isla-bonita",
+    "cat": "song-pop",
+    "franchise": "Madonna",
+    "game": "La Isla Bonita",
+    "title": "La Isla Bonita",
+    "year": 1986,
+    "lang": "en",
+    "sources": "busca('Madonna', 'La Isla Bonita')"
+  },
+  {
+    "id": "song-hung-up-madonna",
+    "cat": "song-pop",
+    "franchise": "Madonna",
+    "game": "Hung Up",
+    "title": "Hung Up",
+    "year": 2005,
+    "lang": "en",
+    "sources": "busca('Madonna', 'Hung Up')"
+  },
+  {
+    "id": "song-bad-michael-jackson",
+    "cat": "song-pop",
+    "franchise": "Michael Jackson",
+    "game": "Bad",
+    "title": "Bad",
+    "year": 1987,
+    "lang": "en",
+    "sources": "busca('Michael Jackson', 'Bad')"
+  },
+  {
+    "id": "song-man-in-the-mirror",
+    "cat": "song-pop",
+    "franchise": "Michael Jackson",
+    "game": "Man in the Mirror",
+    "title": "Man in the Mirror",
+    "year": 1987,
+    "lang": "en",
+    "sources": "busca('Michael Jackson', 'Man in the Mirror')"
+  },
+  {
+    "id": "song-black-or-white",
+    "cat": "song-pop",
+    "franchise": "Michael Jackson",
+    "game": "Black or White",
+    "title": "Black or White",
+    "year": 1991,
+    "lang": "en",
+    "sources": "busca('Michael Jackson', 'Black or White')"
+  },
+  {
+    "id": "song-faith-george-michael",
+    "cat": "song-pop",
+    "franchise": "George Michael",
+    "game": "Faith",
+    "title": "Faith",
+    "year": 1987,
+    "lang": "en",
+    "sources": "busca('George Michael', 'Faith')"
+  },
+  {
+    "id": "song-1999-prince",
+    "cat": "song-pop",
+    "franchise": "Prince",
+    "game": "1999",
+    "title": "1999",
+    "year": 1982,
+    "lang": "en",
+    "sources": "busca('Prince', '1999')"
+  },
+  {
+    "id": "song-kiss-prince",
+    "cat": "song-pop",
+    "franchise": "Prince",
+    "game": "Kiss",
+    "title": "Kiss",
+    "year": 1986,
+    "lang": "en",
+    "sources": "busca('Prince', 'Kiss')"
+  },
+  {
+    "id": "song-how-will-i-know",
+    "cat": "song-pop",
+    "franchise": "Whitney Houston",
+    "game": "How Will I Know",
+    "title": "How Will I Know",
+    "year": 1985,
+    "lang": "en",
+    "sources": "busca('Whitney Houston', 'How Will I Know')"
+  },
+  {
+    "id": "song-i-have-nothing",
+    "cat": "song-pop",
+    "franchise": "Whitney Houston",
+    "game": "I Have Nothing",
+    "title": "I Have Nothing",
+    "year": 1992,
+    "lang": "en",
+    "sources": "busca('Whitney Houston', 'I Have Nothing')"
+  },
+  {
+    "id": "song-oops-i-did-it-again",
+    "cat": "song-pop",
+    "franchise": "Britney Spears",
+    "game": "Oops!... I Did It Again",
+    "title": "Oops!... I Did It Again",
+    "year": 2000,
+    "lang": "en",
+    "sources": "busca('Britney Spears', 'Oops!... I Did It Again')"
+  },
+  {
+    "id": "song-stronger-britney",
+    "cat": "song-pop",
+    "franchise": "Britney Spears",
+    "game": "Stronger",
+    "title": "Stronger",
+    "year": 2000,
+    "lang": "en",
+    "sources": "busca('Britney Spears', 'Stronger')"
+  },
+  {
+    "id": "song-im-a-slave-4-u",
+    "cat": "song-pop",
+    "franchise": "Britney Spears",
+    "game": "I'm a Slave 4 U",
+    "title": "I'm a Slave 4 U",
+    "year": 2001,
+    "lang": "en",
+    "sources": "busca('Britney Spears', 'I\\'m a Slave 4 U')"
+  },
+  {
+    "id": "song-genie-in-a-bottle",
+    "cat": "song-pop",
+    "franchise": "Christina Aguilera",
+    "game": "Genie in a Bottle",
+    "title": "Genie in a Bottle",
+    "year": 1999,
+    "lang": "en",
+    "sources": "busca('Christina Aguilera', 'Genie in a Bottle')"
+  },
+  {
+    "id": "song-fighter-christina",
+    "cat": "song-pop",
+    "franchise": "Christina Aguilera",
+    "game": "Fighter",
+    "title": "Fighter",
+    "year": 2002,
+    "lang": "en",
+    "sources": "busca('Christina Aguilera', 'Fighter')"
+  },
+  {
+    "id": "song-everybody-backstreet",
+    "cat": "song-pop",
+    "franchise": "Backstreet Boys",
+    "game": "Everybody (Backstreet's Back)",
+    "title": "Everybody (Backstreet's Back)",
+    "year": 1997,
+    "lang": "en",
+    "sources": "busca('Backstreet Boys', 'Everybody (Backstreet\\'s Back)')"
+  },
+  {
+    "id": "song-as-long-as-you-love-me",
+    "cat": "song-pop",
+    "franchise": "Backstreet Boys",
+    "game": "As Long as You Love Me",
+    "title": "As Long as You Love Me",
+    "year": 1997,
+    "lang": "en",
+    "sources": "busca('Backstreet Boys', 'As Long as You Love Me')"
+  },
+  {
+    "id": "song-bye-bye-bye",
+    "cat": "song-pop",
+    "franchise": "*NSYNC",
+    "game": "Bye Bye Bye",
+    "title": "Bye Bye Bye",
+    "year": 2000,
+    "lang": "en",
+    "sources": "busca('*NSYNC', 'Bye Bye Bye')"
+  },
+  {
+    "id": "song-its-gonna-be-me",
+    "cat": "song-pop",
+    "franchise": "*NSYNC",
+    "game": "It's Gonna Be Me",
+    "title": "It's Gonna Be Me",
+    "year": 2000,
+    "lang": "en",
+    "sources": "busca('*NSYNC', 'It\\'s Gonna Be Me')"
+  },
+  {
+    "id": "song-say-my-name-destiny",
+    "cat": "song-pop",
+    "franchise": "Destiny's Child",
+    "game": "Say My Name",
+    "title": "Say My Name",
+    "year": 1999,
+    "lang": "en",
+    "sources": "busca('Destiny\\'s Child', 'Say My Name')"
+  },
+  {
+    "id": "song-survivor-destiny",
+    "cat": "song-pop",
+    "franchise": "Destiny's Child",
+    "game": "Survivor",
+    "title": "Survivor",
+    "year": 2001,
+    "lang": "en",
+    "sources": "busca('Destiny\\'s Child', 'Survivor')"
+  },
+  {
+    "id": "song-sexyback-justin",
+    "cat": "song-pop",
+    "franchise": "Justin Timberlake",
+    "game": "SexyBack",
+    "title": "SexyBack",
+    "year": 2006,
+    "lang": "en",
+    "sources": "busca('Justin Timberlake', 'SexyBack')"
+  },
+  {
+    "id": "song-mirrors-justin",
+    "cat": "song-pop",
+    "franchise": "Justin Timberlake",
+    "game": "Mirrors",
+    "title": "Mirrors",
+    "year": 2013,
+    "lang": "en",
+    "sources": "busca('Justin Timberlake', 'Mirrors')"
+  },
+  {
+    "id": "song-teenage-dream-katy",
+    "cat": "song-pop",
+    "franchise": "Katy Perry",
+    "game": "Teenage Dream",
+    "title": "Teenage Dream",
+    "year": 2010,
+    "lang": "en",
+    "sources": "busca('Katy Perry', 'Teenage Dream')"
+  },
+  {
+    "id": "song-dark-horse-katy",
+    "cat": "song-pop",
+    "franchise": "Katy Perry",
+    "game": "Dark Horse",
+    "title": "Dark Horse",
+    "year": 2013,
+    "lang": "en",
+    "sources": "busca('Katy Perry', 'Dark Horse')"
+  },
+  {
+    "id": "song-locked-out-of-heaven",
+    "cat": "song-pop",
+    "franchise": "Bruno Mars",
+    "game": "Locked Out of Heaven",
+    "title": "Locked Out of Heaven",
+    "year": 2012,
+    "lang": "en",
+    "sources": "busca('Bruno Mars', 'Locked Out of Heaven')"
+  },
+  {
+    "id": "song-thats-what-i-like",
+    "cat": "song-pop",
+    "franchise": "Bruno Mars",
+    "game": "That's What I Like",
+    "title": "That's What I Like",
+    "year": 2016,
+    "lang": "en",
+    "sources": "busca('Bruno Mars', 'That\\'s What I Like')"
+  },
+  {
+    "id": "song-set-fire-to-the-rain",
+    "cat": "song-pop",
+    "franchise": "Adele",
+    "game": "Set Fire to the Rain",
+    "title": "Set Fire to the Rain",
+    "year": 2011,
+    "lang": "en",
+    "sources": "busca('Adele', 'Set Fire to the Rain')"
+  },
+  {
+    "id": "song-vampire-olivia",
+    "cat": "song-pop",
+    "franchise": "Olivia Rodrigo",
+    "game": "vampire",
+    "title": "vampire",
+    "year": 2023,
+    "lang": "en",
+    "sources": "busca('Olivia Rodrigo', 'vampire')"
+  }
+]

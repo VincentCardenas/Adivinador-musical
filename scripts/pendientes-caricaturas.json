@@ -1,0 +1,160 @@
+{
+  "generado": "2026-10-07T23:34:51.661Z",
+  "catalogo": "caricaturas",
+  "nota": "Pistas retiradas por no tener una fuente verificada. Cada una conserva su bloque original (con IDs que NO eran reales).",
+  "revision": {
+    "dudosas": [
+      {
+        "id": "toon-dinamita-perro-maravilla-tema",
+        "franchise": "Dinamita, el perro maravilla",
+        "title": "Dinamita (tema latino)",
+        "elegido": {
+          "id": "ozbYqnEPRzc",
+          "title": "Dinamita, El Perro Dinamita Audio Latino LEER DESCRIPCION",
+          "seconds": 176,
+          "channel": "Bar de Series Nostalgicas (Series Retro)",
+          "score": 7.1,
+          "consulta": "Dinamita, el perro maravilla intro español latino"
+        }
+      },
+      {
+        "id": "toon-frankenstein-jr-los-imposibles-tema",
+        "franchise": "Frankenstein Jr. y Los Imposibles",
+        "title": "Frankenstein Jr. (tema latino)",
+        "elegido": {
+          "id": "XrkRs8s7pY0",
+          "title": "Los imposibles intro español latino",
+          "seconds": 46,
+          "channel": "Retro'X Tv",
+          "score": 7.85,
+          "consulta": "Frankenstein Jr. y Los Imposibles intro español latino"
+        }
+      },
+      {
+        "id": "toon-simiolon-y-la-pandilla-tema",
+        "franchise": "Simiolón y la pandilla",
+        "title": "Simiolón (tema latino)",
+        "elegido": {
+          "id": "NEw2GD707mE",
+          "title": "Grand Prix  - opening latino (remasterizado)",
+          "seconds": 71,
+          "channel": "Bellower666",
+          "score": 7.85,
+          "consulta": "El gran Simiolón tema de entrada latino"
+        }
+      },
+      {
+        "id": "toon-dinosaurios-extremos-tema",
+        "franchise": "Dinosaurios extremos",
+        "title": "Dinosaurios extremos (tema latino)",
+        "elegido": {
+          "id": "XdAab0rypcE",
+          "title": "Cadillacs Y dinosaurios (Intro Latino)",
+          "seconds": 61,
+          "channel": "5T4L1",
+          "score": 7.25,
+          "consulta": "Dinosaurios extremos tema de entrada latino"
+        }
+      },
+      {
+        "id": "toon-mighty-max-serie-tema",
+        "franchise": "Mighty Max",
+        "title": "Mighty Max (tema latino)",
+        "elegido": {
+          "id": "lrCWp_lH1xk",
+          "title": "The Maxx - Español latino",
+          "seconds": 24,
+          "channel": "Audios Latinos Retro",
+          "score": 6.85,
+          "consulta": "Mighty Max intro español latino"
+        }
+      },
+      {
+        "id": "toon-dibo-el-dragon-de-los-deseos-tema",
+        "franchise": "Dibo el dragón de los deseos",
+        "title": "Dibo (tema latino)",
+        "elegido": {
+          "id": "eeHyvpvEi2s",
+          "title": "Dragon Tales - Intro Latino",
+          "seconds": 70,
+          "channel": "T. C. Intros Latinos",
+          "score": 6.85,
+          "consulta": "Dibo el dragón de los deseos intro español latino"
+        }
+      }
+    ],
+    "pendientes": [
+      {
+        "id": "toon-capitan-n-el-amo-del-juego-tema",
+        "franchise": "Capitán N",
+        "title": "Capitán N (tema latino)",
+        "motivo": "el mejor candidato no es incrustable",
+        "candidato": {
+          "id": "6qzNcWHgKtc",
+          "title": "Capitan N El Amo Del Juego Opening (Español Latino)",
+          "seconds": 62,
+          "channel": "osidevideos",
+          "score": 11,
+          "consulta": "Capitán N intro español latino"
+        }
+      },
+      {
+        "id": "toon-el-zorro-1997-serie-tema",
+        "franchise": "El Zorro",
+        "title": "El Zorro (tema latino)",
+        "motivo": "el mejor candidato no es incrustable",
+        "candidato": {
+          "id": "LY4rASclHns",
+          "title": "El Zorro Opening Español Latino",
+          "seconds": 46,
+          "channel": "Fantasma Lite",
+          "score": 11,
+          "consulta": "El Zorro intro español latino"
+        }
+      },
+      {
+        "id": "toon-fantasma-2040-tema",
+        "franchise": "Fantasma 2040",
+        "title": "Fantasma 2040 (tema latino)",
+        "motivo": "sin candidato confiable",
+        "candidato": {
+          "id": "3dpE5EUBAGE",
+          "title": "Phantom 2040 Intro 2 [Remastered]",
+          "seconds": 62,
+          "channel": "Darkulime Dark",
+          "score": 3.7,
+          "consulta": "Fantasma 2040 intro español latino"
+        }
+      },
+      {
+        "id": "toon-oggy-y-las-cucarachas-tema",
+        "franchise": "Oggy y las cucarachas",
+        "title": "Oggy (tema latino)",
+        "motivo": "sin candidato confiable",
+        "candidato": {
+          "id": "qogzy3YWxbU",
+          "title": "Oggy Y Las Cucarachas Intro",
+          "seconds": 40,
+          "channel": "Shadow0098",
+          "score": 4,
+          "consulta": "Oggy y las cucarachas intro español latino"
+        }
+      },
+      {
+        "id": "toon-el-chavo-animado-tema",
+        "franchise": "El Chavo animado",
+        "title": "Que bonita vecindad (tema latino)",
+        "motivo": "sin candidato confiable",
+        "candidato": {
+          "id": "6uNC5bkeVKs",
+          "title": "el chavo animado intro temporada 1 media films",
+          "seconds": 70,
+          "channel": "Luna Gallegos",
+          "score": 3.85,
+          "consulta": "El Chavo animado intro español latino"
+        }
+      }
+    ]
+  },
+  "retiradas": []
+}

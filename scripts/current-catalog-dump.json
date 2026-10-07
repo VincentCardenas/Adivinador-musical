@@ -1,0 +1,2874 @@
+{
+  "song-rock": [
+    {
+      "artist": "Ritchie Valens",
+      "title": "La Bamba",
+      "year": 1958
+    },
+    {
+      "artist": "The Rolling Stones",
+      "title": "(I Can't Get No) Satisfaction",
+      "year": 1965
+    },
+    {
+      "artist": "The Beatles",
+      "title": "Hey Jude",
+      "year": 1968
+    },
+    {
+      "artist": "The Beatles",
+      "title": "Let It Be",
+      "year": 1970
+    },
+    {
+      "artist": "Santana",
+      "title": "Oye cómo va",
+      "year": 1970
+    },
+    {
+      "artist": "Led Zeppelin",
+      "title": "Stairway to Heaven",
+      "year": 1971
+    },
+    {
+      "artist": "Queen",
+      "title": "Bohemian Rhapsody",
+      "year": 1975
+    },
+    {
+      "artist": "Eagles",
+      "title": "Hotel California",
+      "year": 1976
+    },
+    {
+      "artist": "Queen",
+      "title": "Don't Stop Me Now",
+      "year": 1978
+    },
+    {
+      "artist": "Queen",
+      "title": "Another One Bites the Dust",
+      "year": 1980
+    },
+    {
+      "artist": "AC/DC",
+      "title": "Back in Black",
+      "year": 1980
+    },
+    {
+      "artist": "Nacha Pop",
+      "title": "La chica de ayer",
+      "year": 1980
+    },
+    {
+      "artist": "Journey",
+      "title": "Don't Stop Believin'",
+      "year": 1981
+    },
+    {
+      "artist": "Toto",
+      "title": "Africa",
+      "year": 1982
+    },
+    {
+      "artist": "Survivor",
+      "title": "Eye of the Tiger",
+      "year": 1982
+    },
+    {
+      "artist": "The Police",
+      "title": "Every Breath You Take",
+      "year": 1983
+    },
+    {
+      "artist": "La Unión",
+      "title": "Lobo-hombre en París",
+      "year": 1984
+    },
+    {
+      "artist": "Hombres G",
+      "title": "Devuélveme a mi chica",
+      "year": 1985
+    },
+    {
+      "artist": "Los Prisioneros",
+      "title": "El baile de los que sobran",
+      "year": 1986
+    },
+    {
+      "artist": "Bon Jovi",
+      "title": "Livin' on a Prayer",
+      "year": 1986
+    },
+    {
+      "artist": "Soda Stereo",
+      "title": "Persiana americana",
+      "year": 1986
+    },
+    {
+      "artist": "Guns N' Roses",
+      "title": "Sweet Child O' Mine",
+      "year": 1987
+    },
+    {
+      "artist": "Soda Stereo",
+      "title": "En la ciudad de la furia",
+      "year": 1988
+    },
+    {
+      "artist": "Caifanes",
+      "title": "La negra Tomasa",
+      "year": 1988
+    },
+    {
+      "artist": "Soda Stereo",
+      "title": "De música ligera",
+      "year": 1990
+    },
+    {
+      "artist": "Héroes del Silencio",
+      "title": "Entre dos tierras",
+      "year": 1990
+    },
+    {
+      "artist": "Maná",
+      "title": "Rayando el sol",
+      "year": 1990
+    },
+    {
+      "artist": "Alejandra Guzmán",
+      "title": "Hacer el amor con otro",
+      "year": 1991
+    },
+    {
+      "artist": "R.E.M.",
+      "title": "Losing My Religion",
+      "year": 1991
+    },
+    {
+      "artist": "Guns N' Roses",
+      "title": "November Rain",
+      "year": 1991
+    },
+    {
+      "artist": "Nirvana",
+      "title": "Smells Like Teen Spirit",
+      "year": 1991
+    },
+    {
+      "artist": "Radiohead",
+      "title": "Creep",
+      "year": 1992
+    },
+    {
+      "artist": "Maná",
+      "title": "Oye mi amor",
+      "year": 1992
+    },
+    {
+      "artist": "Los Fabulosos Cadillacs",
+      "title": "Matador",
+      "year": 1993
+    },
+    {
+      "artist": "Enanitos Verdes",
+      "title": "Lamento boliviano",
+      "year": 1994
+    },
+    {
+      "artist": "The Cranberries",
+      "title": "Zombie",
+      "year": 1994
+    },
+    {
+      "artist": "Oasis",
+      "title": "Wonderwall",
+      "year": 1995
+    },
+    {
+      "artist": "Café Tacvba",
+      "title": "Chilanga banda",
+      "year": 1996
+    },
+    {
+      "artist": "Jarabe de Palo",
+      "title": "La flaca",
+      "year": 1996
+    },
+    {
+      "artist": "Smash Mouth",
+      "title": "All Star",
+      "year": 1999
+    },
+    {
+      "artist": "Santana y Maná",
+      "title": "Corazón espinado",
+      "year": 1999
+    },
+    {
+      "artist": "Maná",
+      "title": "Mariposa traicionera",
+      "year": 2002
+    },
+    {
+      "artist": "Café Tacvba",
+      "title": "Eres",
+      "year": 2003
+    },
+    {
+      "artist": "The White Stripes",
+      "title": "Seven Nation Army",
+      "year": 2003
+    },
+    {
+      "artist": "Green Day",
+      "title": "Boulevard of Broken Dreams",
+      "year": 2004
+    },
+    {
+      "artist": "Juanes",
+      "title": "La camisa negra",
+      "year": 2004
+    },
+    {
+      "artist": "The Killers",
+      "title": "Mr. Brightside",
+      "year": 2004
+    },
+    {
+      "artist": "Coldplay",
+      "title": "Viva la Vida",
+      "year": 2008
+    },
+    {
+      "artist": "Zoé",
+      "title": "Labios rotos",
+      "year": 2011
+    },
+    {
+      "artist": "Imagine Dragons",
+      "title": "Radioactive",
+      "year": 2012
+    }
+  ],
+  "song-pop": [
+    {
+      "artist": "Los Diablos",
+      "title": "Un rayo de sol",
+      "year": 1970
+    },
+    {
+      "artist": "Juan Gabriel",
+      "title": "No tengo dinero",
+      "year": 1971
+    },
+    {
+      "artist": "Stevie Wonder",
+      "title": "Superstition",
+      "year": 1972
+    },
+    {
+      "artist": "Jeanette",
+      "title": "Por qué te vas",
+      "year": 1974
+    },
+    {
+      "artist": "ABBA",
+      "title": "Dancing Queen",
+      "year": 1976
+    },
+    {
+      "artist": "Bee Gees",
+      "title": "Stayin' Alive",
+      "year": 1977
+    },
+    {
+      "artist": "Gloria Gaynor",
+      "title": "I Will Survive",
+      "year": 1978
+    },
+    {
+      "artist": "Earth, Wind & Fire",
+      "title": "September",
+      "year": 1978
+    },
+    {
+      "artist": "Village People",
+      "title": "Y.M.C.A.",
+      "year": 1978
+    },
+    {
+      "artist": "Yuri",
+      "title": "Maldita primavera",
+      "year": 1981
+    },
+    {
+      "artist": "Michael Jackson",
+      "title": "Billie Jean",
+      "year": 1982
+    },
+    {
+      "artist": "Cyndi Lauper",
+      "title": "Girls Just Want to Have Fun",
+      "year": 1983
+    },
+    {
+      "artist": "Eurythmics",
+      "title": "Sweet Dreams (Are Made of This)",
+      "year": 1983
+    },
+    {
+      "artist": "Alaska y Dinarama",
+      "title": "Ni tú ni nadie",
+      "year": 1984
+    },
+    {
+      "artist": "Wham!",
+      "title": "Wake Me Up Before You Go-Go",
+      "year": 1984
+    },
+    {
+      "artist": "a-ha",
+      "title": "Take On Me",
+      "year": 1985
+    },
+    {
+      "artist": "Mecano",
+      "title": "Hijo de la luna",
+      "year": 1986
+    },
+    {
+      "artist": "Whitney Houston",
+      "title": "I Wanna Dance with Somebody",
+      "year": 1987
+    },
+    {
+      "artist": "Rick Astley",
+      "title": "Never Gonna Give You Up",
+      "year": 1987
+    },
+    {
+      "artist": "Timbiriche",
+      "title": "Tú y yo somos uno mismo",
+      "year": 1987
+    },
+    {
+      "artist": "Madonna",
+      "title": "Like a Prayer",
+      "year": 1989
+    },
+    {
+      "artist": "Los del Río",
+      "title": "Macarena",
+      "year": 1993
+    },
+    {
+      "artist": "Shakira",
+      "title": "Estoy aquí",
+      "year": 1995
+    },
+    {
+      "artist": "Ricky Martin",
+      "title": "María",
+      "year": 1995
+    },
+    {
+      "artist": "Thalía",
+      "title": "Piel morena",
+      "year": 1995
+    },
+    {
+      "artist": "Spice Girls",
+      "title": "Wannabe",
+      "year": 1996
+    },
+    {
+      "artist": "Alejandro Sanz",
+      "title": "Corazón partío",
+      "year": 1997
+    },
+    {
+      "artist": "Britney Spears",
+      "title": "...Baby One More Time",
+      "year": 1998
+    },
+    {
+      "artist": "Cher",
+      "title": "Believe",
+      "year": 1998
+    },
+    {
+      "artist": "Backstreet Boys",
+      "title": "I Want It That Way",
+      "year": 1999
+    },
+    {
+      "artist": "Ricky Martin",
+      "title": "Livin' la Vida Loca",
+      "year": 1999
+    },
+    {
+      "artist": "Manu Chao",
+      "title": "Me gustas tú",
+      "year": 2001
+    },
+    {
+      "artist": "Avril Lavigne",
+      "title": "Complicated",
+      "year": 2002
+    },
+    {
+      "artist": "Beyoncé",
+      "title": "Crazy in Love",
+      "year": 2003
+    },
+    {
+      "artist": "La Oreja de Van Gogh",
+      "title": "Rosas",
+      "year": 2003
+    },
+    {
+      "artist": "Britney Spears",
+      "title": "Toxic",
+      "year": 2003
+    },
+    {
+      "artist": "RBD",
+      "title": "Rebelde",
+      "year": 2004
+    },
+    {
+      "artist": "Shakira",
+      "title": "La tortura",
+      "year": 2005
+    },
+    {
+      "artist": "Shakira",
+      "title": "Hips Don't Lie",
+      "year": 2006
+    },
+    {
+      "artist": "Amy Winehouse",
+      "title": "Rehab",
+      "year": 2006
+    },
+    {
+      "artist": "Rihanna",
+      "title": "Umbrella",
+      "year": 2007
+    },
+    {
+      "artist": "Lady Gaga",
+      "title": "Poker Face",
+      "year": 2008
+    },
+    {
+      "artist": "Black Eyed Peas",
+      "title": "I Gotta Feeling",
+      "year": 2009
+    },
+    {
+      "artist": "Adele",
+      "title": "Rolling in the Deep",
+      "year": 2010
+    },
+    {
+      "artist": "Carly Rae Jepsen",
+      "title": "Call Me Maybe",
+      "year": 2011
+    },
+    {
+      "artist": "Gotye",
+      "title": "Somebody That I Used to Know",
+      "year": 2011
+    },
+    {
+      "artist": "Pharrell Williams",
+      "title": "Happy",
+      "year": 2013
+    },
+    {
+      "artist": "Lorde",
+      "title": "Royals",
+      "year": 2013
+    },
+    {
+      "artist": "Enrique Iglesias",
+      "title": "Bailando",
+      "year": 2014
+    },
+    {
+      "artist": "Taylor Swift",
+      "title": "Shake It Off",
+      "year": 2014
+    },
+    {
+      "artist": "Mark Ronson y Bruno Mars",
+      "title": "Uptown Funk",
+      "year": 2014
+    },
+    {
+      "artist": "Natalia Lafourcade",
+      "title": "Hasta la raíz",
+      "year": 2015
+    },
+    {
+      "artist": "Carlos Vives y Shakira",
+      "title": "La bicicleta",
+      "year": 2016
+    },
+    {
+      "artist": "Camila Cabello",
+      "title": "Havana",
+      "year": 2017
+    },
+    {
+      "artist": "Ed Sheeran",
+      "title": "Shape of You",
+      "year": 2017
+    },
+    {
+      "artist": "Billie Eilish",
+      "title": "bad guy",
+      "year": 2019
+    },
+    {
+      "artist": "The Weeknd",
+      "title": "Blinding Lights",
+      "year": 2019
+    },
+    {
+      "artist": "Glass Animals",
+      "title": "Heat Waves",
+      "year": 2020
+    },
+    {
+      "artist": "Dua Lipa",
+      "title": "Levitating",
+      "year": 2020
+    },
+    {
+      "artist": "The Weeknd",
+      "title": "Save Your Tears",
+      "year": 2020
+    },
+    {
+      "artist": "Olivia Rodrigo",
+      "title": "drivers license",
+      "year": 2021
+    },
+    {
+      "artist": "The Kid LAROI y Justin Bieber",
+      "title": "STAY",
+      "year": 2021
+    },
+    {
+      "artist": "Taylor Swift",
+      "title": "Anti-Hero",
+      "year": 2022
+    },
+    {
+      "artist": "Harry Styles",
+      "title": "As It Was",
+      "year": 2022
+    },
+    {
+      "artist": "SZA",
+      "title": "Kill Bill",
+      "year": 2022
+    },
+    {
+      "artist": "Sam Smith y Kim Petras",
+      "title": "Unholy",
+      "year": 2022
+    },
+    {
+      "artist": "Miley Cyrus",
+      "title": "Flowers",
+      "year": 2023
+    },
+    {
+      "artist": "Benson Boone",
+      "title": "Beautiful Things",
+      "year": 2024
+    },
+    {
+      "artist": "Billie Eilish",
+      "title": "BIRDS OF A FEATHER",
+      "year": 2024
+    },
+    {
+      "artist": "Sabrina Carpenter",
+      "title": "Espresso",
+      "year": 2024
+    }
+  ],
+  "song-rap": [
+    {
+      "artist": "Run-DMC",
+      "title": "Walk This Way",
+      "year": 1986
+    },
+    {
+      "artist": "Vanilla Ice",
+      "title": "Ice Ice Baby",
+      "year": 1990
+    },
+    {
+      "artist": "MC Hammer",
+      "title": "U Can't Touch This",
+      "year": 1990
+    },
+    {
+      "artist": "Sir Mix-a-Lot",
+      "title": "Baby Got Back",
+      "year": 1992
+    },
+    {
+      "artist": "Ice Cube",
+      "title": "It Was a Good Day",
+      "year": 1992
+    },
+    {
+      "artist": "House of Pain",
+      "title": "Jump Around",
+      "year": 1992
+    },
+    {
+      "artist": "Wu-Tang Clan",
+      "title": "C.R.E.A.M.",
+      "year": 1993
+    },
+    {
+      "artist": "The Notorious B.I.G.",
+      "title": "Juicy",
+      "year": 1994
+    },
+    {
+      "artist": "Beastie Boys",
+      "title": "Sabotage",
+      "year": 1994
+    },
+    {
+      "artist": "2Pac",
+      "title": "California Love",
+      "year": 1995
+    },
+    {
+      "artist": "Coolio",
+      "title": "Gangsta's Paradise",
+      "year": 1995
+    },
+    {
+      "artist": "Fugees",
+      "title": "Ready or Not",
+      "year": 1996
+    },
+    {
+      "artist": "Control Machete",
+      "title": "¿Comprendes Mendes?",
+      "year": 1996
+    },
+    {
+      "artist": "Will Smith",
+      "title": "Gettin' Jiggy wit It",
+      "year": 1997
+    },
+    {
+      "artist": "2Pac",
+      "title": "Changes",
+      "year": 1998
+    },
+    {
+      "artist": "Dr. Dre",
+      "title": "Still D.R.E.",
+      "year": 1999
+    },
+    {
+      "artist": "Orishas",
+      "title": "537 C.U.B.A.",
+      "year": 2000
+    },
+    {
+      "artist": "OutKast",
+      "title": "Ms. Jackson",
+      "year": 2000
+    },
+    {
+      "artist": "Eminem",
+      "title": "The Real Slim Shady",
+      "year": 2000
+    },
+    {
+      "artist": "Missy Elliott",
+      "title": "Get Ur Freak On",
+      "year": 2001
+    },
+    {
+      "artist": "Nelly",
+      "title": "Hot in Herre",
+      "year": 2002
+    },
+    {
+      "artist": "Eminem",
+      "title": "Lose Yourself",
+      "year": 2002
+    },
+    {
+      "artist": "Eminem",
+      "title": "Till I Collapse",
+      "year": 2002
+    },
+    {
+      "artist": "Eminem",
+      "title": "Without Me",
+      "year": 2002
+    },
+    {
+      "artist": "Molotov",
+      "title": "Frijolero",
+      "year": 2003
+    },
+    {
+      "artist": "OutKast",
+      "title": "Hey Ya!",
+      "year": 2003
+    },
+    {
+      "artist": "50 Cent",
+      "title": "In da Club",
+      "year": 2003
+    },
+    {
+      "artist": "Akwid",
+      "title": "No hay manera",
+      "year": 2003
+    },
+    {
+      "artist": "Black Eyed Peas",
+      "title": "Where Is the Love?",
+      "year": 2003
+    },
+    {
+      "artist": "Snoop Dogg",
+      "title": "Drop It Like It's Hot",
+      "year": 2004
+    },
+    {
+      "artist": "Usher",
+      "title": "Yeah!",
+      "year": 2004
+    },
+    {
+      "artist": "Kanye West",
+      "title": "Gold Digger",
+      "year": 2005
+    },
+    {
+      "artist": "Kanye West",
+      "title": "Stronger",
+      "year": 2007
+    },
+    {
+      "artist": "JAY-Z",
+      "title": "Empire State of Mind",
+      "year": 2009
+    },
+    {
+      "artist": "Macklemore y Ryan Lewis",
+      "title": "Can't Hold Us",
+      "year": 2011
+    },
+    {
+      "artist": "Calle 13",
+      "title": "Latinoamérica",
+      "year": 2011
+    },
+    {
+      "artist": "Nicki Minaj",
+      "title": "Super Bass",
+      "year": 2011
+    },
+    {
+      "artist": "Canserbero",
+      "title": "Es épico",
+      "year": 2012
+    },
+    {
+      "artist": "Eminem",
+      "title": "Rap God",
+      "year": 2013
+    },
+    {
+      "artist": "Drake",
+      "title": "Hotline Bling",
+      "year": 2015
+    },
+    {
+      "artist": "Wiz Khalifa",
+      "title": "See You Again",
+      "year": 2015
+    },
+    {
+      "artist": "Cardi B",
+      "title": "Bodak Yellow",
+      "year": 2017
+    },
+    {
+      "artist": "Kendrick Lamar",
+      "title": "HUMBLE.",
+      "year": 2017
+    },
+    {
+      "artist": "Post Malone",
+      "title": "rockstar",
+      "year": 2017
+    },
+    {
+      "artist": "Drake",
+      "title": "God's Plan",
+      "year": 2018
+    },
+    {
+      "artist": "Juice WRLD",
+      "title": "Lucid Dreams",
+      "year": 2018
+    },
+    {
+      "artist": "Travis Scott",
+      "title": "SICKO MODE",
+      "year": 2018
+    },
+    {
+      "artist": "Lil Nas X",
+      "title": "Old Town Road",
+      "year": 2019
+    },
+    {
+      "artist": "Residente",
+      "title": "René",
+      "year": 2020
+    },
+    {
+      "artist": "Kendrick Lamar",
+      "title": "Not Like Us",
+      "year": 2024
+    }
+  ],
+  "song-reggaeton": [
+    {
+      "artist": "Tego Calderón",
+      "title": "Pa' que retozen",
+      "year": 2002
+    },
+    {
+      "artist": "Don Omar",
+      "title": "Dile",
+      "year": 2003
+    },
+    {
+      "artist": "Don Omar",
+      "title": "Pobre diabla",
+      "year": 2003
+    },
+    {
+      "artist": "Ivy Queen",
+      "title": "Quiero bailar",
+      "year": 2003
+    },
+    {
+      "artist": "Daddy Yankee",
+      "title": "Gasolina",
+      "year": 2004
+    },
+    {
+      "artist": "Daddy Yankee",
+      "title": "Lo que pasó, pasó",
+      "year": 2004
+    },
+    {
+      "artist": "Calle 13",
+      "title": "Atrévete-te-te",
+      "year": 2005
+    },
+    {
+      "artist": "Wisin & Yandel",
+      "title": "Rakata",
+      "year": 2005
+    },
+    {
+      "artist": "Flex",
+      "title": "Te quiero",
+      "year": 2007
+    },
+    {
+      "artist": "Don Omar",
+      "title": "Salió el sol",
+      "year": 2009
+    },
+    {
+      "artist": "Don Omar",
+      "title": "Danza Kuduro",
+      "year": 2010
+    },
+    {
+      "artist": "Daddy Yankee",
+      "title": "Limbo",
+      "year": 2012
+    },
+    {
+      "artist": "J Balvin",
+      "title": "Ay vamos",
+      "year": 2014
+    },
+    {
+      "artist": "Plan B",
+      "title": "Mi vecinita",
+      "year": 2014
+    },
+    {
+      "artist": "Nicky Jam y Enrique Iglesias",
+      "title": "El perdón",
+      "year": 2015
+    },
+    {
+      "artist": "J Balvin",
+      "title": "Ginza",
+      "year": 2015
+    },
+    {
+      "artist": "Shakira y Maluma",
+      "title": "Chantaje",
+      "year": 2016
+    },
+    {
+      "artist": "Nicky Jam",
+      "title": "Hasta el amanecer",
+      "year": 2016
+    },
+    {
+      "artist": "Danny Ocean",
+      "title": "Me rehúso",
+      "year": 2016
+    },
+    {
+      "artist": "Zion & Lennox",
+      "title": "Otra vez",
+      "year": 2016
+    },
+    {
+      "artist": "Maluma",
+      "title": "Corazón",
+      "year": 2017
+    },
+    {
+      "artist": "Natti Natasha y Ozuna",
+      "title": "Criminal",
+      "year": 2017
+    },
+    {
+      "artist": "Luis Fonsi y Daddy Yankee",
+      "title": "Despacito",
+      "year": 2017
+    },
+    {
+      "artist": "Maluma",
+      "title": "Felices los 4",
+      "year": 2017
+    },
+    {
+      "artist": "Becky G y Bad Bunny",
+      "title": "Mayores",
+      "year": 2017
+    },
+    {
+      "artist": "J Balvin",
+      "title": "Mi gente",
+      "year": 2017
+    },
+    {
+      "artist": "Ozuna",
+      "title": "Se preparó",
+      "year": 2017
+    },
+    {
+      "artist": "Daddy Yankee",
+      "title": "Dura",
+      "year": 2018
+    },
+    {
+      "artist": "DJ Snake",
+      "title": "Taki Taki",
+      "year": 2018
+    },
+    {
+      "artist": "Bad Bunny",
+      "title": "Callaíta",
+      "year": 2019
+    },
+    {
+      "artist": "Anuel AA, Daddy Yankee y Karol G",
+      "title": "China",
+      "year": 2019
+    },
+    {
+      "artist": "Daddy Yankee",
+      "title": "Con calma",
+      "year": 2019
+    },
+    {
+      "artist": "Myke Towers",
+      "title": "La playa",
+      "year": 2019
+    },
+    {
+      "artist": "Sech",
+      "title": "Otro trago",
+      "year": 2019
+    },
+    {
+      "artist": "Karol G y Nicki Minaj",
+      "title": "Tusa",
+      "year": 2019
+    },
+    {
+      "artist": "Karol G",
+      "title": "Bichota",
+      "year": 2020
+    },
+    {
+      "artist": "Bad Bunny y Jhay Cortez",
+      "title": "Dákiti",
+      "year": 2020
+    },
+    {
+      "artist": "Maluma",
+      "title": "Hawái",
+      "year": 2020
+    },
+    {
+      "artist": "Bad Bunny y Rosalía",
+      "title": "La noche de anoche",
+      "year": 2020
+    },
+    {
+      "artist": "Bad Bunny",
+      "title": "Safaera",
+      "year": 2020
+    },
+    {
+      "artist": "Bad Bunny",
+      "title": "Yo perreo sola",
+      "year": 2020
+    },
+    {
+      "artist": "Farruko",
+      "title": "Pepas",
+      "year": 2021
+    },
+    {
+      "artist": "Rauw Alejandro",
+      "title": "Todo de ti",
+      "year": 2021
+    },
+    {
+      "artist": "Feid",
+      "title": "Feliz cumpleaños Ferxxo",
+      "year": 2022
+    },
+    {
+      "artist": "Bad Bunny",
+      "title": "Me porto bonito",
+      "year": 2022
+    },
+    {
+      "artist": "Karol G",
+      "title": "Provenza",
+      "year": 2022
+    },
+    {
+      "artist": "Bizarrap y Quevedo",
+      "title": "Quevedo: Bzrp Music Sessions, Vol. 52",
+      "year": 2022
+    },
+    {
+      "artist": "Bad Bunny",
+      "title": "Tití me preguntó",
+      "year": 2022
+    },
+    {
+      "artist": "Karol G y Shakira",
+      "title": "TQG",
+      "year": 2023
+    },
+    {
+      "artist": "Bad Bunny",
+      "title": "DtMF",
+      "year": 2025
+    }
+  ],
+  "song-regional": [
+    {
+      "artist": "Pedro Infante",
+      "title": "Amorcito corazón",
+      "year": 1948
+    },
+    {
+      "artist": "Jorge Negrete",
+      "title": "México lindo y querido",
+      "year": 1950
+    },
+    {
+      "artist": "Pedro Infante",
+      "title": "Cien años",
+      "year": 1953
+    },
+    {
+      "artist": "José Alfredo Jiménez",
+      "title": "Caminos de Guanajuato",
+      "year": 1955
+    },
+    {
+      "artist": "Lola Beltrán",
+      "title": "Cucurrucucú paloma",
+      "year": 1965
+    },
+    {
+      "artist": "Javier Solís",
+      "title": "Sombras",
+      "year": 1965
+    },
+    {
+      "artist": "Los Tigres del Norte",
+      "title": "Contrabando y traición",
+      "year": 1972
+    },
+    {
+      "artist": "Vicente Fernández",
+      "title": "Volver, volver",
+      "year": 1972
+    },
+    {
+      "artist": "Vicente Fernández",
+      "title": "El Rey",
+      "year": 1973
+    },
+    {
+      "artist": "Rocío Dúrcal",
+      "title": "Amor eterno",
+      "year": 1984
+    },
+    {
+      "artist": "Los Tigres del Norte",
+      "title": "La jaula de oro",
+      "year": 1984
+    },
+    {
+      "artist": "Los Tigres del Norte",
+      "title": "La puerta negra",
+      "year": 1985
+    },
+    {
+      "artist": "Vicente Fernández",
+      "title": "Mujeres divinas",
+      "year": 1987
+    },
+    {
+      "artist": "Los Bukis",
+      "title": "Tu cárcel",
+      "year": 1987
+    },
+    {
+      "artist": "Vicente Fernández",
+      "title": "Por tu maldito amor",
+      "year": 1989
+    },
+    {
+      "artist": "Chalino Sánchez",
+      "title": "Nieves de enero",
+      "year": 1990
+    },
+    {
+      "artist": "Banda Machos",
+      "title": "La culebra",
+      "year": 1993
+    },
+    {
+      "artist": "Vicente Fernández",
+      "title": "Lástima que seas ajena",
+      "year": 1993
+    },
+    {
+      "artist": "Los Temerarios",
+      "title": "Mi vida eres tú",
+      "year": 1993
+    },
+    {
+      "artist": "Bronco",
+      "title": "Que no quede huella",
+      "year": 1993
+    },
+    {
+      "artist": "Alejandro Fernández",
+      "title": "Como quien pierde una estrella",
+      "year": 1995
+    },
+    {
+      "artist": "Los Tucanes de Tijuana",
+      "title": "La chona",
+      "year": 1995
+    },
+    {
+      "artist": "Los Tigres del Norte",
+      "title": "Jefe de jefes",
+      "year": 1997
+    },
+    {
+      "artist": "Pepe Aguilar",
+      "title": "Por mujeres como tú",
+      "year": 1998
+    },
+    {
+      "artist": "Joan Sebastian",
+      "title": "Secreto de amor",
+      "year": 2000
+    },
+    {
+      "artist": "Banda El Recodo",
+      "title": "Y llegaste tú",
+      "year": 2006
+    },
+    {
+      "artist": "Jenni Rivera",
+      "title": "La gran señora",
+      "year": 2009
+    },
+    {
+      "artist": "La Arrolladora Banda El Limón",
+      "title": "Llamada de mi ex",
+      "year": 2011
+    },
+    {
+      "artist": "Calibre 50",
+      "title": "Corrido de Juanito",
+      "year": 2014
+    },
+    {
+      "artist": "Banda MS",
+      "title": "El color de tus ojos",
+      "year": 2014
+    },
+    {
+      "artist": "Ariel Camacho y Los Plebes del Rancho",
+      "title": "El karma",
+      "year": 2014
+    },
+    {
+      "artist": "Banda MS",
+      "title": "Mi razón de ser",
+      "year": 2015
+    },
+    {
+      "artist": "Banda MS",
+      "title": "Hermosa experiencia",
+      "year": 2016
+    },
+    {
+      "artist": "Julión Álvarez",
+      "title": "Te hubieras ido antes",
+      "year": 2016
+    },
+    {
+      "artist": "Christian Nodal",
+      "title": "Adiós amor",
+      "year": 2017
+    },
+    {
+      "artist": "Calibre 50",
+      "title": "Siempre te voy a querer",
+      "year": 2017
+    },
+    {
+      "artist": "Christian Nodal",
+      "title": "De los besos que te di",
+      "year": 2018
+    },
+    {
+      "artist": "Natanael Cano",
+      "title": "Amor tumbado",
+      "year": 2019
+    },
+    {
+      "artist": "Grupo Firme y Carin León",
+      "title": "El tóxico",
+      "year": 2020
+    },
+    {
+      "artist": "Grupo Firme",
+      "title": "Ya supérame",
+      "year": 2020
+    },
+    {
+      "artist": "Gera MX y Christian Nodal",
+      "title": "Botella tras botella",
+      "year": 2021
+    },
+    {
+      "artist": "Fuerza Regida y Grupo Frontera",
+      "title": "Bebe dame",
+      "year": 2022
+    },
+    {
+      "artist": "Carin León",
+      "title": "Primera cita",
+      "year": 2022
+    },
+    {
+      "artist": "Junior H y Peso Pluma",
+      "title": "El Azul",
+      "year": 2023
+    },
+    {
+      "artist": "Eslabon Armado y Peso Pluma",
+      "title": "Ella baila sola",
+      "year": 2023
+    },
+    {
+      "artist": "Eslabon Armado y DannyLux",
+      "title": "Jugaste y sufrí",
+      "year": 2023
+    },
+    {
+      "artist": "Peso Pluma y Natanael Cano",
+      "title": "PRC",
+      "year": 2023
+    },
+    {
+      "artist": "Peso Pluma y Jasiel Núñez",
+      "title": "Rosa pastel",
+      "year": 2023
+    },
+    {
+      "artist": "Fuerza Regida",
+      "title": "TQM",
+      "year": 2023
+    },
+    {
+      "artist": "Xavi",
+      "title": "La diabla",
+      "year": 2024
+    }
+  ],
+  "song-baladas": [
+    {
+      "artist": "Elvis Presley",
+      "title": "Can't Help Falling in Love",
+      "year": 1961
+    },
+    {
+      "artist": "The Righteous Brothers",
+      "title": "Unchained Melody",
+      "year": 1965
+    },
+    {
+      "artist": "Raphael",
+      "title": "Yo soy aquel",
+      "year": 1966
+    },
+    {
+      "artist": "Louis Armstrong",
+      "title": "What a Wonderful World",
+      "year": 1967
+    },
+    {
+      "artist": "Frank Sinatra",
+      "title": "My Way",
+      "year": 1969
+    },
+    {
+      "artist": "José José",
+      "title": "El Triste",
+      "year": 1970
+    },
+    {
+      "artist": "Mercedes Sosa",
+      "title": "Gracias a la vida",
+      "year": 1971
+    },
+    {
+      "artist": "John Lennon",
+      "title": "Imagine",
+      "year": 1971
+    },
+    {
+      "artist": "Nino Bravo",
+      "title": "Libre",
+      "year": 1972
+    },
+    {
+      "artist": "Mocedades",
+      "title": "Eres tú",
+      "year": 1973
+    },
+    {
+      "artist": "José José",
+      "title": "Gavilán o paloma",
+      "year": 1977
+    },
+    {
+      "artist": "Bee Gees",
+      "title": "How Deep Is Your Love",
+      "year": 1977
+    },
+    {
+      "artist": "Julio Iglesias",
+      "title": "Me olvidé de vivir",
+      "year": 1978
+    },
+    {
+      "artist": "Camilo Sesto",
+      "title": "Vivir así es morir de amor",
+      "year": 1978
+    },
+    {
+      "artist": "José José",
+      "title": "Almohada",
+      "year": 1980
+    },
+    {
+      "artist": "Julio Iglesias",
+      "title": "Hey",
+      "year": 1980
+    },
+    {
+      "artist": "Camilo Sesto",
+      "title": "Perdóname",
+      "year": 1980
+    },
+    {
+      "artist": "Diana Ross y Lionel Richie",
+      "title": "Endless Love",
+      "year": 1981
+    },
+    {
+      "artist": "Rocío Dúrcal",
+      "title": "La gata bajo la lluvia",
+      "year": 1981
+    },
+    {
+      "artist": "Bonnie Tyler",
+      "title": "Total Eclipse of the Heart",
+      "year": 1983
+    },
+    {
+      "artist": "Juan Gabriel",
+      "title": "Querida",
+      "year": 1984
+    },
+    {
+      "artist": "Whitney Houston",
+      "title": "Greatest Love of All",
+      "year": 1985
+    },
+    {
+      "artist": "Juan Gabriel",
+      "title": "Hasta que te conocí",
+      "year": 1986
+    },
+    {
+      "artist": "Emmanuel",
+      "title": "Toda la vida",
+      "year": 1986
+    },
+    {
+      "artist": "Luis Miguel",
+      "title": "Ahora te puedes marchar",
+      "year": 1987
+    },
+    {
+      "artist": "José José",
+      "title": "Lo que no fue no será",
+      "year": 1987
+    },
+    {
+      "artist": "Luis Miguel",
+      "title": "La incondicional",
+      "year": 1988
+    },
+    {
+      "artist": "Bryan Adams",
+      "title": "(Everything I Do) I Do It for You",
+      "year": 1991
+    },
+    {
+      "artist": "Whitney Houston",
+      "title": "I Will Always Love You",
+      "year": 1992
+    },
+    {
+      "artist": "Mariah Carey",
+      "title": "Hero",
+      "year": 1993
+    },
+    {
+      "artist": "Ricardo Arjona",
+      "title": "Historia de taxi",
+      "year": 1993
+    },
+    {
+      "artist": "Laura Pausini",
+      "title": "La soledad",
+      "year": 1993
+    },
+    {
+      "artist": "Alejandro Sanz",
+      "title": "Amiga mía",
+      "year": 1997
+    },
+    {
+      "artist": "Celine Dion",
+      "title": "My Heart Will Go On",
+      "year": 1997
+    },
+    {
+      "artist": "Aerosmith",
+      "title": "I Don't Want to Miss a Thing",
+      "year": 1998
+    },
+    {
+      "artist": "Marco Antonio Solís",
+      "title": "Si no te hubieras ido",
+      "year": 1999
+    },
+    {
+      "artist": "Cristian Castro",
+      "title": "Azul",
+      "year": 2001
+    },
+    {
+      "artist": "Enrique Iglesias",
+      "title": "Héroe",
+      "year": 2001
+    },
+    {
+      "artist": "Alex Ubago",
+      "title": "Sin miedo a nada",
+      "year": 2001
+    },
+    {
+      "artist": "Sin Bandera",
+      "title": "Entra en mi vida",
+      "year": 2002
+    },
+    {
+      "artist": "Reyli Barba",
+      "title": "Amor del bueno",
+      "year": 2004
+    },
+    {
+      "artist": "Reik",
+      "title": "Yo quisiera",
+      "year": 2005
+    },
+    {
+      "artist": "Camila",
+      "title": "Coleccionista de canciones",
+      "year": 2006
+    },
+    {
+      "artist": "Camila",
+      "title": "Todo cambió",
+      "year": 2006
+    },
+    {
+      "artist": "Camila",
+      "title": "Mientes",
+      "year": 2010
+    },
+    {
+      "artist": "Adele",
+      "title": "Someone Like You",
+      "year": 2011
+    },
+    {
+      "artist": "John Legend",
+      "title": "All of Me",
+      "year": 2013
+    },
+    {
+      "artist": "Ed Sheeran",
+      "title": "Perfect",
+      "year": 2017
+    },
+    {
+      "artist": "Lady Gaga y Bradley Cooper",
+      "title": "Shallow",
+      "year": 2018
+    },
+    {
+      "artist": "Lady Gaga y Bruno Mars",
+      "title": "Die With A Smile",
+      "year": 2024
+    }
+  ],
+  "song-electronica": [
+    {
+      "artist": "Haddaway",
+      "title": "What Is Love",
+      "year": 1993
+    },
+    {
+      "artist": "The Prodigy",
+      "title": "Firestarter",
+      "year": 1996
+    },
+    {
+      "artist": "Daft Punk",
+      "title": "Around the World",
+      "year": 1997
+    },
+    {
+      "artist": "Aqua",
+      "title": "Barbie Girl",
+      "year": 1997
+    },
+    {
+      "artist": "Eiffel 65",
+      "title": "Blue (Da Ba Dee)",
+      "year": 1998
+    },
+    {
+      "artist": "Stardust",
+      "title": "Music Sounds Better with You",
+      "year": 1998
+    },
+    {
+      "artist": "Fatboy Slim",
+      "title": "The Rockafeller Skank",
+      "year": 1998
+    },
+    {
+      "artist": "Alice Deejay",
+      "title": "Better Off Alone",
+      "year": 1999
+    },
+    {
+      "artist": "The Chemical Brothers",
+      "title": "Hey Boy Hey Girl",
+      "year": 1999
+    },
+    {
+      "artist": "Moby",
+      "title": "Porcelain",
+      "year": 1999
+    },
+    {
+      "artist": "Darude",
+      "title": "Sandstorm",
+      "year": 1999
+    },
+    {
+      "artist": "Daft Punk",
+      "title": "One More Time",
+      "year": 2000
+    },
+    {
+      "artist": "Daft Punk",
+      "title": "Harder, Better, Faster, Stronger",
+      "year": 2001
+    },
+    {
+      "artist": "Kinky",
+      "title": "Más",
+      "year": 2002
+    },
+    {
+      "artist": "Benny Benassi",
+      "title": "Satisfaction",
+      "year": 2002
+    },
+    {
+      "artist": "Eric Prydz",
+      "title": "Call on Me",
+      "year": 2004
+    },
+    {
+      "artist": "Belanova",
+      "title": "Baila mi corazón",
+      "year": 2005
+    },
+    {
+      "artist": "Cascada",
+      "title": "Everytime We Touch",
+      "year": 2005
+    },
+    {
+      "artist": "Nortec Collective: Bostich + Fussible",
+      "title": "Tijuana Makes Me Happy",
+      "year": 2005
+    },
+    {
+      "artist": "deadmau5",
+      "title": "Ghosts 'n' Stuff",
+      "year": 2008
+    },
+    {
+      "artist": "David Guetta",
+      "title": "Memories",
+      "year": 2009
+    },
+    {
+      "artist": "Skrillex",
+      "title": "Scary Monsters and Nice Sprites",
+      "year": 2010
+    },
+    {
+      "artist": "Skrillex",
+      "title": "Bangarang",
+      "year": 2011
+    },
+    {
+      "artist": "Calvin Harris",
+      "title": "Feel So Close",
+      "year": 2011
+    },
+    {
+      "artist": "Avicii",
+      "title": "Levels",
+      "year": 2011
+    },
+    {
+      "artist": "David Guetta",
+      "title": "Titanium",
+      "year": 2011
+    },
+    {
+      "artist": "Zedd",
+      "title": "Clarity",
+      "year": 2012
+    },
+    {
+      "artist": "Swedish House Mafia",
+      "title": "Don't You Worry Child",
+      "year": 2012
+    },
+    {
+      "artist": "Martin Garrix",
+      "title": "Animals",
+      "year": 2013
+    },
+    {
+      "artist": "Daft Punk",
+      "title": "Get Lucky",
+      "year": 2013
+    },
+    {
+      "artist": "Avicii",
+      "title": "Hey Brother",
+      "year": 2013
+    },
+    {
+      "artist": "Tiësto",
+      "title": "Red Lights",
+      "year": 2013
+    },
+    {
+      "artist": "Armin van Buuren",
+      "title": "This Is What It Feels Like",
+      "year": 2013
+    },
+    {
+      "artist": "DJ Snake y Lil Jon",
+      "title": "Turn Down for What",
+      "year": 2013
+    },
+    {
+      "artist": "Avicii",
+      "title": "Wake Me Up",
+      "year": 2013
+    },
+    {
+      "artist": "Kygo",
+      "title": "Firestone",
+      "year": 2014
+    },
+    {
+      "artist": "Robin Schulz",
+      "title": "Prayer in C",
+      "year": 2014
+    },
+    {
+      "artist": "Calvin Harris",
+      "title": "Summer",
+      "year": 2014
+    },
+    {
+      "artist": "Avicii",
+      "title": "The Nights",
+      "year": 2014
+    },
+    {
+      "artist": "Alan Walker",
+      "title": "Faded",
+      "year": 2015
+    },
+    {
+      "artist": "Major Lazer",
+      "title": "Lean On",
+      "year": 2015
+    },
+    {
+      "artist": "Marshmello",
+      "title": "Alone",
+      "year": 2016
+    },
+    {
+      "artist": "The Chainsmokers",
+      "title": "Closer",
+      "year": 2016
+    },
+    {
+      "artist": "The Chainsmokers",
+      "title": "Don't Let Me Down",
+      "year": 2016
+    },
+    {
+      "artist": "Calvin Harris",
+      "title": "This Is What You Came For",
+      "year": 2016
+    },
+    {
+      "artist": "Kygo y Selena Gomez",
+      "title": "It Ain't Me",
+      "year": 2017
+    },
+    {
+      "artist": "Marshmello y Bastille",
+      "title": "Happier",
+      "year": 2018
+    },
+    {
+      "artist": "Calvin Harris y Dua Lipa",
+      "title": "One Kiss",
+      "year": 2018
+    },
+    {
+      "artist": "Bizarrap y Nathy Peluso",
+      "title": "Nathy Peluso: Bzrp Music Sessions, Vol. 36",
+      "year": 2020
+    },
+    {
+      "artist": "Bizarrap y Shakira",
+      "title": "Shakira: Bzrp Music Sessions, Vol. 53",
+      "year": 2023
+    }
+  ],
+  "song-cumbia": [
+    {
+      "artist": "Lucho Bermúdez",
+      "title": "Colombia tierra querida",
+      "year": 1954
+    },
+    {
+      "artist": "La Sonora Santanera",
+      "title": "El mudo",
+      "year": 1964
+    },
+    {
+      "artist": "Mike Laure",
+      "title": "Tiburón a la vista",
+      "year": 1964
+    },
+    {
+      "artist": "Mike Laure",
+      "title": "La cosecha de mujeres",
+      "year": 1965
+    },
+    {
+      "artist": "La Sonora Santanera",
+      "title": "La boa",
+      "year": 1966
+    },
+    {
+      "artist": "Los Mirlos",
+      "title": "La danza de los mirlos",
+      "year": 1973
+    },
+    {
+      "artist": "Aniceto Molina",
+      "title": "Cumbia sampuesana",
+      "year": 1975
+    },
+    {
+      "artist": "Rigo Tovar",
+      "title": "Lamento de amor",
+      "year": 1976
+    },
+    {
+      "artist": "Rigo Tovar",
+      "title": "Mi Matamoros querido",
+      "year": 1977
+    },
+    {
+      "artist": "Chico Che y La Crisis",
+      "title": "Quién pompó",
+      "year": 1980
+    },
+    {
+      "artist": "La Sonora Dinamita",
+      "title": "Mi cucu",
+      "year": 1983
+    },
+    {
+      "artist": "La Sonora Dinamita",
+      "title": "Se me perdió la cadenita",
+      "year": 1983
+    },
+    {
+      "artist": "La Sonora Dinamita",
+      "title": "Que nadie sepa mi sufrir",
+      "year": 1984
+    },
+    {
+      "artist": "Selena",
+      "title": "Baila esta cumbia",
+      "year": 1990
+    },
+    {
+      "artist": "Fito Olivares",
+      "title": "Juana la cubana",
+      "year": 1990
+    },
+    {
+      "artist": "Bronco",
+      "title": "Sergio el bailador",
+      "year": 1990
+    },
+    {
+      "artist": "Selena",
+      "title": "Como la flor",
+      "year": 1992
+    },
+    {
+      "artist": "Selena",
+      "title": "La carcacha",
+      "year": 1992
+    },
+    {
+      "artist": "Selena",
+      "title": "No debes jugar",
+      "year": 1993
+    },
+    {
+      "artist": "Selena",
+      "title": "Amor prohibido",
+      "year": 1994
+    },
+    {
+      "artist": "Selena",
+      "title": "Bidi Bidi Bom Bom",
+      "year": 1994
+    },
+    {
+      "artist": "Selena",
+      "title": "El chico del apartamento 512",
+      "year": 1994
+    },
+    {
+      "artist": "Selena",
+      "title": "Fotos y recuerdos",
+      "year": 1994
+    },
+    {
+      "artist": "Selena",
+      "title": "Si una vez",
+      "year": 1994
+    },
+    {
+      "artist": "Selena",
+      "title": "Techno cumbia",
+      "year": 1994
+    },
+    {
+      "artist": "Los Ángeles Azules",
+      "title": "Entrega de amor",
+      "year": 1995
+    },
+    {
+      "artist": "Los Ángeles Azules",
+      "title": "17 años",
+      "year": 1996
+    },
+    {
+      "artist": "Los Ángeles Azules",
+      "title": "Cómo te voy a olvidar",
+      "year": 1996
+    },
+    {
+      "artist": "Los Ángeles Azules",
+      "title": "El listón de tu pelo",
+      "year": 1996
+    },
+    {
+      "artist": "Los Ángeles Azules",
+      "title": "Juventud",
+      "year": 1997
+    },
+    {
+      "artist": "Los Ángeles Azules",
+      "title": "Mi niña mujer",
+      "year": 1997
+    },
+    {
+      "artist": "Antonio Ríos",
+      "title": "Nunca me faltes",
+      "year": 1999
+    },
+    {
+      "artist": "Ráfaga",
+      "title": "Mentirosa",
+      "year": 2000
+    },
+    {
+      "artist": "Celso Piña y Café Tacvba",
+      "title": "Aunque no sea conmigo",
+      "year": 2001
+    },
+    {
+      "artist": "Kumbia Kings",
+      "title": "Azúcar",
+      "year": 2001
+    },
+    {
+      "artist": "Celso Piña",
+      "title": "Cumbia sobre el río",
+      "year": 2001
+    },
+    {
+      "artist": "Kumbia Kings",
+      "title": "Fuiste mala",
+      "year": 2003
+    },
+    {
+      "artist": "Kumbia Kings",
+      "title": "Na na na (Dulce niña)",
+      "year": 2004
+    },
+    {
+      "artist": "A.B. Quintanilla III y los Kumbia All Starz",
+      "title": "Chiquilla",
+      "year": 2006
+    },
+    {
+      "artist": "Bomba Estéreo",
+      "title": "Fuego",
+      "year": 2008
+    },
+    {
+      "artist": "Lila Downs",
+      "title": "La cumbia del mole",
+      "year": 2008
+    },
+    {
+      "artist": "Grupo 5",
+      "title": "Motor y motivo",
+      "year": 2012
+    },
+    {
+      "artist": "Los Ángeles Azules y Carla Morrison",
+      "title": "Las maravillas de la vida",
+      "year": 2018
+    },
+    {
+      "artist": "Los Ángeles Azules y Ximena Sariñana",
+      "title": "Mis sentimientos",
+      "year": 2018
+    },
+    {
+      "artist": "Los Ángeles Azules y Natalia Lafourcade",
+      "title": "Nunca es suficiente",
+      "year": 2018
+    },
+    {
+      "artist": "Los Ángeles Azules, Belinda y Lalo Ebratt",
+      "title": "Amor a primera vista",
+      "year": 2019
+    },
+    {
+      "artist": "Grupo Frontera",
+      "title": "No se va",
+      "year": 2022
+    },
+    {
+      "artist": "Grupo Frontera y Bad Bunny",
+      "title": "Un x100to",
+      "year": 2023
+    },
+    {
+      "artist": "Grupo Cañaveral y Joey Montana",
+      "title": "El cumbión",
+      "year": 2024
+    },
+    {
+      "artist": "Américo y Vicentico",
+      "title": "Te vas",
+      "year": 2024
+    }
+  ],
+  "song-salsa": [
+    {
+      "artist": "Celia Cruz",
+      "title": "Bemba colorá",
+      "year": 1966
+    },
+    {
+      "artist": "Willie Colón y Héctor Lavoe",
+      "title": "Che Che Colé",
+      "year": 1969
+    },
+    {
+      "artist": "Fania All-Stars",
+      "title": "Quítate tú",
+      "year": 1971
+    },
+    {
+      "artist": "Richie Ray y Bobby Cruz",
+      "title": "Sonido bestial",
+      "year": 1971
+    },
+    {
+      "artist": "Willie Colón y Héctor Lavoe",
+      "title": "Aguanile",
+      "year": 1972
+    },
+    {
+      "artist": "Willie Colón y Héctor Lavoe",
+      "title": "Calle Luna, Calle Sol",
+      "year": 1973
+    },
+    {
+      "artist": "Willie Colón y Héctor Lavoe",
+      "title": "Todo tiene su final",
+      "year": 1973
+    },
+    {
+      "artist": "Ismael Rivera",
+      "title": "El Nazareno",
+      "year": 1974
+    },
+    {
+      "artist": "Celia Cruz y Johnny Pacheco",
+      "title": "Quimbara",
+      "year": 1974
+    },
+    {
+      "artist": "Fruko y sus Tesos",
+      "title": "El preso",
+      "year": 1975
+    },
+    {
+      "artist": "Oscar D'León",
+      "title": "Llorarás",
+      "year": 1975
+    },
+    {
+      "artist": "El Gran Combo de Puerto Rico",
+      "title": "Un verano en Nueva York",
+      "year": 1975
+    },
+    {
+      "artist": "Héctor Lavoe",
+      "title": "Periódico de ayer",
+      "year": 1976
+    },
+    {
+      "artist": "Willie Colón y Rubén Blades",
+      "title": "Pablo Pueblo",
+      "year": 1977
+    },
+    {
+      "artist": "Willie Colón y Rubén Blades",
+      "title": "Buscando guayaba",
+      "year": 1978
+    },
+    {
+      "artist": "Héctor Lavoe",
+      "title": "El cantante",
+      "year": 1978
+    },
+    {
+      "artist": "Rubén Blades",
+      "title": "Pedro Navaja",
+      "year": 1978
+    },
+    {
+      "artist": "Willie Colón y Rubén Blades",
+      "title": "Plástico",
+      "year": 1978
+    },
+    {
+      "artist": "Willie Colón",
+      "title": "Idilio",
+      "year": 1983
+    },
+    {
+      "artist": "Héctor Lavoe",
+      "title": "Juanito Alimaña",
+      "year": 1983
+    },
+    {
+      "artist": "El Gran Combo de Puerto Rico",
+      "title": "Me liberé",
+      "year": 1983
+    },
+    {
+      "artist": "Grupo Niche",
+      "title": "Cali pachanguero",
+      "year": 1984
+    },
+    {
+      "artist": "Rubén Blades",
+      "title": "Decisiones",
+      "year": 1984
+    },
+    {
+      "artist": "Frankie Ruiz",
+      "title": "La cura",
+      "year": 1985
+    },
+    {
+      "artist": "Joe Arroyo",
+      "title": "Rebelión",
+      "year": 1986
+    },
+    {
+      "artist": "Eddie Santiago",
+      "title": "Tú me quemas",
+      "year": 1986
+    },
+    {
+      "artist": "Frankie Ruiz",
+      "title": "Desnúdate mujer",
+      "year": 1987
+    },
+    {
+      "artist": "Grupo Niche",
+      "title": "Gotas de lluvia",
+      "year": 1987
+    },
+    {
+      "artist": "Eddie Santiago",
+      "title": "Lluvia",
+      "year": 1987
+    },
+    {
+      "artist": "Joe Arroyo",
+      "title": "En Barranquilla me quedo",
+      "year": 1988
+    },
+    {
+      "artist": "Willie Colón",
+      "title": "El gran varón",
+      "year": 1989
+    },
+    {
+      "artist": "Grupo Niche",
+      "title": "Una aventura",
+      "year": 1989
+    },
+    {
+      "artist": "Joe Arroyo",
+      "title": "La noche",
+      "year": 1990
+    },
+    {
+      "artist": "Jerry Rivera",
+      "title": "Amores como el nuestro",
+      "year": 1992
+    },
+    {
+      "artist": "Jerry Rivera",
+      "title": "Cuenta conmigo",
+      "year": 1992
+    },
+    {
+      "artist": "La India",
+      "title": "Ese hombre",
+      "year": 1994
+    },
+    {
+      "artist": "Marc Anthony",
+      "title": "Te conozco bien",
+      "year": 1995
+    },
+    {
+      "artist": "Marc Anthony",
+      "title": "Contra la corriente",
+      "year": 1997
+    },
+    {
+      "artist": "Tito Nieves",
+      "title": "I Like It Like That",
+      "year": 1997
+    },
+    {
+      "artist": "Celia Cruz",
+      "title": "La vida es un carnaval",
+      "year": 1998
+    },
+    {
+      "artist": "Marc Anthony",
+      "title": "Y hubo alguien",
+      "year": 1999
+    },
+    {
+      "artist": "Celia Cruz",
+      "title": "La negra tiene tumbao",
+      "year": 2001
+    },
+    {
+      "artist": "Gilberto Santa Rosa",
+      "title": "Que alguien me diga",
+      "year": 2001
+    },
+    {
+      "artist": "Victor Manuelle",
+      "title": "Tengo ganas",
+      "year": 2001
+    },
+    {
+      "artist": "Celia Cruz",
+      "title": "Ríe y llora",
+      "year": 2003
+    },
+    {
+      "artist": "Marc Anthony",
+      "title": "Tu amor me hace bien",
+      "year": 2004
+    },
+    {
+      "artist": "Marc Anthony",
+      "title": "Valió la pena",
+      "year": 2004
+    },
+    {
+      "artist": "Marc Anthony",
+      "title": "Ahora quién",
+      "year": 2006
+    },
+    {
+      "artist": "Marc Anthony",
+      "title": "Flor pálida",
+      "year": 2013
+    },
+    {
+      "artist": "Marc Anthony",
+      "title": "Vivir mi vida",
+      "year": 2013
+    }
+  ],
+  "song-metal": [
+    {
+      "artist": "Black Sabbath",
+      "title": "Iron Man",
+      "year": 1970
+    },
+    {
+      "artist": "Black Sabbath",
+      "title": "Paranoid",
+      "year": 1970
+    },
+    {
+      "artist": "Motörhead",
+      "title": "Ace of Spades",
+      "year": 1980
+    },
+    {
+      "artist": "Judas Priest",
+      "title": "Breaking the Law",
+      "year": 1980
+    },
+    {
+      "artist": "Ozzy Osbourne",
+      "title": "Crazy Train",
+      "year": 1980
+    },
+    {
+      "artist": "Barón Rojo",
+      "title": "Los rockeros van al infierno",
+      "year": 1982
+    },
+    {
+      "artist": "Iron Maiden",
+      "title": "Run to the Hills",
+      "year": 1982
+    },
+    {
+      "artist": "Dio",
+      "title": "Holy Diver",
+      "year": 1983
+    },
+    {
+      "artist": "Iron Maiden",
+      "title": "The Trooper",
+      "year": 1983
+    },
+    {
+      "artist": "Scorpions",
+      "title": "Rock You Like a Hurricane",
+      "year": 1984
+    },
+    {
+      "artist": "Twisted Sister",
+      "title": "We're Not Gonna Take It",
+      "year": 1984
+    },
+    {
+      "artist": "Metallica",
+      "title": "Master of Puppets",
+      "year": 1986
+    },
+    {
+      "artist": "Slayer",
+      "title": "Raining Blood",
+      "year": 1986
+    },
+    {
+      "artist": "Europe",
+      "title": "The Final Countdown",
+      "year": 1986
+    },
+    {
+      "artist": "Def Leppard",
+      "title": "Pour Some Sugar on Me",
+      "year": 1987
+    },
+    {
+      "artist": "Metallica",
+      "title": "One",
+      "year": 1988
+    },
+    {
+      "artist": "Mötley Crüe",
+      "title": "Kickstart My Heart",
+      "year": 1989
+    },
+    {
+      "artist": "Pantera",
+      "title": "Cowboys from Hell",
+      "year": 1990
+    },
+    {
+      "artist": "Rata Blanca",
+      "title": "La leyenda del hada y el mago",
+      "year": 1990
+    },
+    {
+      "artist": "Rata Blanca",
+      "title": "Mujer amante",
+      "year": 1990
+    },
+    {
+      "artist": "Metallica",
+      "title": "Enter Sandman",
+      "year": 1991
+    },
+    {
+      "artist": "Metallica",
+      "title": "Nothing Else Matters",
+      "year": 1991
+    },
+    {
+      "artist": "Iron Maiden",
+      "title": "Fear of the Dark",
+      "year": 1992
+    },
+    {
+      "artist": "Rage Against the Machine",
+      "title": "Killing in the Name",
+      "year": 1992
+    },
+    {
+      "artist": "Megadeth",
+      "title": "Symphony of Destruction",
+      "year": 1992
+    },
+    {
+      "artist": "Pantera",
+      "title": "Walk",
+      "year": 1992
+    },
+    {
+      "artist": "Rammstein",
+      "title": "Du hast",
+      "year": 1997
+    },
+    {
+      "artist": "Korn",
+      "title": "Freak on a Leash",
+      "year": 1998
+    },
+    {
+      "artist": "Mägo de Oz",
+      "title": "Molinos de viento",
+      "year": 1998
+    },
+    {
+      "artist": "Disturbed",
+      "title": "Down with the Sickness",
+      "year": 2000
+    },
+    {
+      "artist": "Mägo de Oz",
+      "title": "Fiesta pagana",
+      "year": 2000
+    },
+    {
+      "artist": "Linkin Park",
+      "title": "In the End",
+      "year": 2000
+    },
+    {
+      "artist": "Papa Roach",
+      "title": "Last Resort",
+      "year": 2000
+    },
+    {
+      "artist": "Linkin Park",
+      "title": "One Step Closer",
+      "year": 2000
+    },
+    {
+      "artist": "Limp Bizkit",
+      "title": "Rollin'",
+      "year": 2000
+    },
+    {
+      "artist": "System of a Down",
+      "title": "Aerials",
+      "year": 2001
+    },
+    {
+      "artist": "System of a Down",
+      "title": "Chop Suey!",
+      "year": 2001
+    },
+    {
+      "artist": "Rammstein",
+      "title": "Sonne",
+      "year": 2001
+    },
+    {
+      "artist": "System of a Down",
+      "title": "Toxicity",
+      "year": 2001
+    },
+    {
+      "artist": "Godsmack",
+      "title": "I Stand Alone",
+      "year": 2002
+    },
+    {
+      "artist": "Evanescence",
+      "title": "Bring Me to Life",
+      "year": 2003
+    },
+    {
+      "artist": "Linkin Park",
+      "title": "Faint",
+      "year": 2003
+    },
+    {
+      "artist": "Linkin Park",
+      "title": "Numb",
+      "year": 2003
+    },
+    {
+      "artist": "Slipknot",
+      "title": "Duality",
+      "year": 2004
+    },
+    {
+      "artist": "System of a Down",
+      "title": "B.Y.O.B.",
+      "year": 2005
+    },
+    {
+      "artist": "Avenged Sevenfold",
+      "title": "Bat Country",
+      "year": 2005
+    },
+    {
+      "artist": "Slipknot",
+      "title": "Psychosocial",
+      "year": 2008
+    },
+    {
+      "artist": "Bring Me the Horizon",
+      "title": "Can You Feel My Heart",
+      "year": 2013
+    },
+    {
+      "artist": "Avenged Sevenfold",
+      "title": "Hail to the King",
+      "year": 2013
+    },
+    {
+      "artist": "Ghost",
+      "title": "Mary on a Cross",
+      "year": 2019
+    }
+  ],
+  "song-kpop": [
+    {
+      "artist": "Girls' Generation",
+      "title": "Gee",
+      "year": 2009
+    },
+    {
+      "artist": "SUPER JUNIOR",
+      "title": "Sorry, Sorry",
+      "year": 2009
+    },
+    {
+      "artist": "BIGBANG",
+      "title": "FANTASTIC BABY",
+      "year": 2012
+    },
+    {
+      "artist": "PSY",
+      "title": "Gangnam Style",
+      "year": 2012
+    },
+    {
+      "artist": "PSY",
+      "title": "Gentleman",
+      "year": 2013
+    },
+    {
+      "artist": "EXO",
+      "title": "Growl",
+      "year": 2013
+    },
+    {
+      "artist": "BIGBANG",
+      "title": "BANG BANG BANG",
+      "year": 2015
+    },
+    {
+      "artist": "BLACKPINK",
+      "title": "BOOMBAYAH",
+      "year": 2016
+    },
+    {
+      "artist": "TWICE",
+      "title": "CHEER UP",
+      "year": 2016
+    },
+    {
+      "artist": "TWICE",
+      "title": "TT",
+      "year": 2016
+    },
+    {
+      "artist": "BTS",
+      "title": "DNA",
+      "year": 2017
+    },
+    {
+      "artist": "BTS",
+      "title": "Spring Day",
+      "year": 2017
+    },
+    {
+      "artist": "BLACKPINK",
+      "title": "DDU-DU DDU-DU",
+      "year": 2018
+    },
+    {
+      "artist": "BTS",
+      "title": "FAKE LOVE",
+      "year": 2018
+    },
+    {
+      "artist": "BTS",
+      "title": "IDOL",
+      "year": 2018
+    },
+    {
+      "artist": "SUPER JUNIOR",
+      "title": "Lo Siento",
+      "year": 2018
+    },
+    {
+      "artist": "EXO",
+      "title": "Love Shot",
+      "year": 2018
+    },
+    {
+      "artist": "JENNIE",
+      "title": "SOLO",
+      "year": 2018
+    },
+    {
+      "artist": "TWICE",
+      "title": "What is Love?",
+      "year": 2018
+    },
+    {
+      "artist": "BTS",
+      "title": "Boy With Luv",
+      "year": 2019
+    },
+    {
+      "artist": "ITZY",
+      "title": "DALLA DALLA",
+      "year": 2019
+    },
+    {
+      "artist": "TWICE",
+      "title": "FANCY",
+      "year": 2019
+    },
+    {
+      "artist": "BLACKPINK",
+      "title": "Kill This Love",
+      "year": 2019
+    },
+    {
+      "artist": "Red Velvet",
+      "title": "Psycho",
+      "year": 2019
+    },
+    {
+      "artist": "BTS",
+      "title": "Dynamite",
+      "year": 2020
+    },
+    {
+      "artist": "Stray Kids",
+      "title": "God's Menu",
+      "year": 2020
+    },
+    {
+      "artist": "BLACKPINK",
+      "title": "How You Like That",
+      "year": 2020
+    },
+    {
+      "artist": "BTS",
+      "title": "Butter",
+      "year": 2021
+    },
+    {
+      "artist": "LISA",
+      "title": "LALISA",
+      "year": 2021
+    },
+    {
+      "artist": "LISA",
+      "title": "MONEY",
+      "year": 2021
+    },
+    {
+      "artist": "aespa",
+      "title": "Next Level",
+      "year": 2021
+    },
+    {
+      "artist": "LE SSERAFIM",
+      "title": "ANTIFRAGILE",
+      "year": 2022
+    },
+    {
+      "artist": "NewJeans",
+      "title": "Ditto",
+      "year": 2022
+    },
+    {
+      "artist": "NewJeans",
+      "title": "Hype Boy",
+      "year": 2022
+    },
+    {
+      "artist": "IVE",
+      "title": "LOVE DIVE",
+      "year": 2022
+    },
+    {
+      "artist": "Stray Kids",
+      "title": "MANIAC",
+      "year": 2022
+    },
+    {
+      "artist": "BLACKPINK",
+      "title": "Pink Venom",
+      "year": 2022
+    },
+    {
+      "artist": "BLACKPINK",
+      "title": "Shut Down",
+      "year": 2022
+    },
+    {
+      "artist": "(G)I-DLE",
+      "title": "TOMBOY",
+      "year": 2022
+    },
+    {
+      "artist": "JISOO",
+      "title": "FLOWER",
+      "year": 2023
+    },
+    {
+      "artist": "IVE",
+      "title": "I AM",
+      "year": 2023
+    },
+    {
+      "artist": "Jimin",
+      "title": "Like Crazy",
+      "year": 2023
+    },
+    {
+      "artist": "LE SSERAFIM",
+      "title": "Perfect Night",
+      "year": 2023
+    },
+    {
+      "artist": "(G)I-DLE",
+      "title": "Queencard",
+      "year": 2023
+    },
+    {
+      "artist": "Stray Kids",
+      "title": "S-Class",
+      "year": 2023
+    },
+    {
+      "artist": "Jung Kook",
+      "title": "Seven",
+      "year": 2023
+    },
+    {
+      "artist": "SEVENTEEN",
+      "title": "Super",
+      "year": 2023
+    },
+    {
+      "artist": "NewJeans",
+      "title": "Super Shy",
+      "year": 2023
+    },
+    {
+      "artist": "ROSÉ y Bruno Mars",
+      "title": "APT.",
+      "year": 2024
+    },
+    {
+      "artist": "aespa",
+      "title": "Supernova",
+      "year": 2024
+    }
+  ]
+}

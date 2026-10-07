@@ -1,0 +1,1100 @@
+[
+  {
+    "id": "mus-oz-over-the-rainbow",
+    "cat": "mus-clasicos",
+    "franchise": "The Wizard of Oz",
+    "game": "Over the Rainbow",
+    "year": 1939,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-oz-were-off-to-see-the-wizard",
+    "cat": "mus-clasicos",
+    "franchise": "The Wizard of Oz",
+    "game": "We're Off to See the Wizard",
+    "year": 1939,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-singin-in-the-rain",
+    "cat": "mus-clasicos",
+    "franchise": "Singin' in the Rain",
+    "game": "Singin' in the Rain",
+    "year": 1952,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-wss-america",
+    "cat": "mus-clasicos",
+    "franchise": "West Side Story",
+    "game": "America",
+    "year": 1961,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-wss-maria",
+    "cat": "mus-clasicos",
+    "franchise": "West Side Story",
+    "game": "Maria",
+    "year": 1961,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-sound-of-music-do-re-mi",
+    "cat": "mus-clasicos",
+    "franchise": "The Sound of Music",
+    "game": "Do-Re-Mi",
+    "year": 1965,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-sound-of-music-my-favorite-things",
+    "cat": "mus-clasicos",
+    "franchise": "The Sound of Music",
+    "game": "My Favorite Things",
+    "year": 1965,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-sound-of-music-edelweiss",
+    "cat": "mus-clasicos",
+    "franchise": "The Sound of Music",
+    "game": "Edelweiss",
+    "year": 1965,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-my-fair-lady-i-could-have-danced",
+    "cat": "mus-clasicos",
+    "franchise": "My Fair Lady",
+    "game": "I Could Have Danced All Night",
+    "year": 1964,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-fiddler-if-i-were-a-rich-man",
+    "cat": "mus-clasicos",
+    "franchise": "Fiddler on the Roof",
+    "game": "If I Were a Rich Man",
+    "year": 1971,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-fiddler-tradition",
+    "cat": "mus-clasicos",
+    "franchise": "Fiddler on the Roof",
+    "game": "Tradition",
+    "year": 1971,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-cabaret-cabaret",
+    "cat": "mus-clasicos",
+    "franchise": "Cabaret",
+    "game": "Cabaret",
+    "year": 1972,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-cabaret-money-money",
+    "cat": "mus-clasicos",
+    "franchise": "Cabaret",
+    "game": "Money, Money",
+    "year": 1972,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-hello-dolly",
+    "cat": "mus-clasicos",
+    "franchise": "Hello, Dolly!",
+    "game": "Hello, Dolly!",
+    "year": 1969,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-funny-girl-dont-rain-on-my-parade",
+    "cat": "mus-clasicos",
+    "franchise": "Funny Girl",
+    "game": "Don't Rain on My Parade",
+    "year": 1968,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-hair-aquarius",
+    "cat": "mus-clasicos",
+    "franchise": "Hair",
+    "game": "Aquarius",
+    "year": 1968,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-la-mancha-the-impossible-dream",
+    "cat": "mus-clasicos",
+    "franchise": "Man of La Mancha",
+    "game": "The Impossible Dream",
+    "year": 1965,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-oliver-consider-yourself",
+    "cat": "mus-clasicos",
+    "franchise": "Oliver!",
+    "game": "Consider Yourself",
+    "year": 1963,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-sonrisas-adios-adios",
+    "cat": "mus-clasicos",
+    "franchise": "The Sound of Music",
+    "game": "Adiós, adiós",
+    "year": 1965,
+    "platform": "Versión en español",
+    "lang": "es"
+  },
+  {
+    "id": "mus-singin-good-morning",
+    "cat": "mus-clasicos",
+    "franchise": "Singin' in the Rain",
+    "game": "Good Morning",
+    "year": 1952,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-singin-make-em-laugh",
+    "cat": "mus-clasicos",
+    "franchise": "Singin' in the Rain",
+    "game": "Make 'Em Laugh",
+    "year": 1952,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-wss-tonight",
+    "cat": "mus-clasicos",
+    "franchise": "West Side Story",
+    "game": "Tonight",
+    "year": 1961,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-sound-of-music-the-sound-of-music",
+    "cat": "mus-clasicos",
+    "franchise": "The Sound of Music",
+    "game": "The Sound of Music",
+    "year": 1965,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-oklahoma-beautiful-mornin",
+    "cat": "mus-clasicos",
+    "franchise": "Oklahoma!",
+    "game": "Oh, What a Beautiful Mornin'",
+    "year": 1955,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-king-and-i-shall-we-dance",
+    "cat": "mus-clasicos",
+    "franchise": "The King and I",
+    "game": "Shall We Dance?",
+    "year": 1956,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-joseph-any-dream-will-do",
+    "cat": "mus-clasicos",
+    "franchise": "Joseph and the Amazing Technicolor Dreamcoat",
+    "game": "Any Dream Will Do",
+    "year": 1991,
+    "platform": "Londres",
+    "lang": "en"
+  },
+  {
+    "id": "mus-fiddler-sunrise-sunset",
+    "cat": "mus-clasicos",
+    "franchise": "Fiddler on the Roof",
+    "game": "Sunrise, Sunset",
+    "year": 1971,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-cabaret-maybe-this-time",
+    "cat": "mus-clasicos",
+    "franchise": "Cabaret",
+    "game": "Maybe This Time",
+    "year": 1972,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-hello-dolly-sunday-clothes",
+    "cat": "mus-clasicos",
+    "franchise": "Hello, Dolly!",
+    "game": "Put On Your Sunday Clothes",
+    "year": 1969,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-la-mancha-man-of-la-mancha",
+    "cat": "mus-clasicos",
+    "franchise": "Man of La Mancha",
+    "game": "Man of La Mancha",
+    "year": 1965,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-sonrisas-cosas-que-me-hacen-feliz",
+    "cat": "mus-clasicos",
+    "franchise": "The Sound of Music",
+    "game": "Cosas que me hacen feliz",
+    "year": 2011,
+    "platform": "Madrid",
+    "lang": "es"
+  },
+  {
+    "id": "mus-jcs-superstar",
+    "cat": "mus-7080",
+    "franchise": "Jesus Christ Superstar",
+    "game": "Superstar",
+    "year": 1970,
+    "platform": "Álbum original",
+    "lang": "en"
+  },
+  {
+    "id": "mus-jcs-i-dont-know-how-to-love-him",
+    "cat": "mus-7080",
+    "franchise": "Jesus Christ Superstar",
+    "game": "I Don't Know How to Love Him",
+    "year": 1970,
+    "platform": "Álbum original",
+    "lang": "en"
+  },
+  {
+    "id": "mus-grease-summer-nights",
+    "cat": "mus-7080",
+    "franchise": "Grease",
+    "game": "Summer Nights",
+    "year": 1978,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-grease-youre-the-one-that-i-want",
+    "cat": "mus-7080",
+    "franchise": "Grease",
+    "game": "You're the One That I Want",
+    "year": 1978,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-grease-greased-lightnin",
+    "cat": "mus-7080",
+    "franchise": "Grease",
+    "game": "Greased Lightnin'",
+    "year": 1978,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-grease-hopelessly-devoted",
+    "cat": "mus-7080",
+    "franchise": "Grease",
+    "game": "Hopelessly Devoted to You",
+    "year": 1978,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-rocky-horror-time-warp",
+    "cat": "mus-7080",
+    "franchise": "The Rocky Horror Picture Show",
+    "game": "Time Warp",
+    "year": 1975,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-chicago-all-that-jazz",
+    "cat": "mus-7080",
+    "franchise": "Chicago",
+    "game": "All That Jazz",
+    "year": 2002,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-chicago-cell-block-tango",
+    "cat": "mus-7080",
+    "franchise": "Chicago",
+    "game": "Cell Block Tango",
+    "year": 2002,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-annie-tomorrow",
+    "cat": "mus-7080",
+    "franchise": "Annie",
+    "game": "Tomorrow",
+    "year": 1982,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-annie-hard-knock-life",
+    "cat": "mus-7080",
+    "franchise": "Annie",
+    "game": "It's the Hard-Knock Life",
+    "year": 1982,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-evita-dont-cry-for-me-argentina",
+    "cat": "mus-7080",
+    "franchise": "Evita",
+    "game": "Don't Cry for Me Argentina",
+    "year": 1996,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-cats-memory",
+    "cat": "mus-7080",
+    "franchise": "Cats",
+    "game": "Memory",
+    "year": 1981,
+    "platform": "Londres",
+    "lang": "en"
+  },
+  {
+    "id": "mus-les-mis-i-dreamed-a-dream",
+    "cat": "mus-7080",
+    "franchise": "Les Misérables",
+    "game": "I Dreamed a Dream",
+    "year": 2012,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-les-mis-one-day-more",
+    "cat": "mus-7080",
+    "franchise": "Les Misérables",
+    "game": "One Day More",
+    "year": 2012,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-les-mis-do-you-hear-the-people-sing",
+    "cat": "mus-7080",
+    "franchise": "Les Misérables",
+    "game": "Do You Hear the People Sing?",
+    "year": 2012,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-phantom-the-phantom-of-the-opera",
+    "cat": "mus-7080",
+    "franchise": "The Phantom of the Opera",
+    "game": "The Phantom of the Opera",
+    "year": 1986,
+    "platform": "Londres",
+    "lang": "en"
+  },
+  {
+    "id": "mus-phantom-the-music-of-the-night",
+    "cat": "mus-7080",
+    "franchise": "The Phantom of the Opera",
+    "game": "The Music of the Night",
+    "year": 1986,
+    "platform": "Londres",
+    "lang": "en"
+  },
+  {
+    "id": "mus-phantom-all-i-ask-of-you",
+    "cat": "mus-7080",
+    "franchise": "The Phantom of the Opera",
+    "game": "All I Ask of You",
+    "year": 1986,
+    "platform": "Londres",
+    "lang": "en"
+  },
+  {
+    "id": "mus-little-shop-suddenly-seymour",
+    "cat": "mus-7080",
+    "franchise": "Little Shop of Horrors",
+    "game": "Suddenly Seymour",
+    "year": 1986,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-dreamgirls-and-i-am-telling-you",
+    "cat": "mus-7080",
+    "franchise": "Dreamgirls",
+    "game": "And I Am Telling You I'm Not Going",
+    "year": 2006,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-chess-one-night-in-bangkok",
+    "cat": "mus-7080",
+    "franchise": "Chess",
+    "game": "One Night in Bangkok",
+    "year": 1984,
+    "platform": "Álbum original",
+    "lang": "en"
+  },
+  {
+    "id": "mus-vaselina-rayo-rebelde",
+    "cat": "mus-7080",
+    "franchise": "Grease",
+    "game": "Rayo rebelde",
+    "year": 1984,
+    "platform": "México",
+    "lang": "es"
+  },
+  {
+    "id": "mus-jcs-getsemani",
+    "cat": "mus-7080",
+    "franchise": "Jesus Christ Superstar",
+    "game": "Getsemaní",
+    "year": 1975,
+    "platform": "Madrid",
+    "lang": "es"
+  },
+  {
+    "id": "mus-jcs-hosanna",
+    "cat": "mus-7080",
+    "franchise": "Jesus Christ Superstar",
+    "game": "Hosanna",
+    "year": 1975,
+    "platform": "Madrid",
+    "lang": "es"
+  },
+  {
+    "id": "mus-evita-no-llores-por-mi-argentina",
+    "cat": "mus-7080",
+    "franchise": "Evita",
+    "game": "No llores por mí, Argentina",
+    "year": 1980,
+    "platform": "Madrid",
+    "lang": "es"
+  },
+  {
+    "id": "mus-fantasma-el-fantasma-de-la-opera",
+    "cat": "mus-7080",
+    "franchise": "The Phantom of the Opera",
+    "game": "El fantasma de la ópera",
+    "year": 2000,
+    "platform": "México",
+    "lang": "es"
+  },
+  {
+    "id": "mus-miserables-otro-dia-se-va",
+    "cat": "mus-7080",
+    "franchise": "Les Misérables",
+    "game": "Otro día se va",
+    "year": 2010,
+    "platform": "Madrid",
+    "lang": "es"
+  },
+  {
+    "id": "mus-miserables-amo-del-meson",
+    "cat": "mus-7080",
+    "franchise": "Les Misérables",
+    "game": "Amo del mesón",
+    "year": 2010,
+    "platform": "Madrid",
+    "lang": "es"
+  },
+  {
+    "id": "mus-wiz-ease-on-down-the-road",
+    "cat": "mus-7080",
+    "franchise": "The Wiz",
+    "game": "Ease on Down the Road",
+    "year": 1978,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-godspell-day-by-day",
+    "cat": "mus-7080",
+    "franchise": "Godspell",
+    "game": "Day by Day",
+    "year": 1971,
+    "platform": "Off-Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-chorus-line-one",
+    "cat": "mus-7080",
+    "franchise": "A Chorus Line",
+    "game": "One",
+    "year": 1975,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-sweeney-todd-worst-pies",
+    "cat": "mus-7080",
+    "franchise": "Sweeney Todd",
+    "game": "The Worst Pies in London",
+    "year": 1979,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-into-the-woods-prologue",
+    "cat": "mus-7080",
+    "franchise": "Into the Woods",
+    "game": "Into the Woods",
+    "year": 1987,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-miss-saigon-last-night-of-the-world",
+    "cat": "mus-7080",
+    "franchise": "Miss Saigon",
+    "game": "The Last Night of the World",
+    "year": 1989,
+    "platform": "Londres",
+    "lang": "en"
+  },
+  {
+    "id": "mus-annie-maybe",
+    "cat": "mus-7080",
+    "franchise": "Annie",
+    "game": "Maybe",
+    "year": 1982,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-rent-seasons-of-love",
+    "cat": "mus-9000",
+    "franchise": "Rent",
+    "game": "Seasons of Love",
+    "year": 2005,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-rent-take-me-or-leave-me",
+    "cat": "mus-9000",
+    "franchise": "Rent",
+    "game": "Take Me or Leave Me",
+    "year": 2005,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-mamma-mia-mamma-mia",
+    "cat": "mus-9000",
+    "franchise": "Mamma Mia!",
+    "game": "Mamma Mia",
+    "year": 2008,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-mamma-mia-dancing-queen",
+    "cat": "mus-9000",
+    "franchise": "Mamma Mia!",
+    "game": "Dancing Queen",
+    "year": 2008,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-mamma-mia-lay-all-your-love-on-me",
+    "cat": "mus-9000",
+    "franchise": "Mamma Mia!",
+    "game": "Lay All Your Love on Me",
+    "year": 2008,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-moulin-rouge-come-what-may",
+    "cat": "mus-9000",
+    "franchise": "Moulin Rouge!",
+    "game": "Come What May",
+    "year": 2001,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-moulin-rouge-lady-marmalade",
+    "cat": "mus-9000",
+    "franchise": "Moulin Rouge!",
+    "game": "Lady Marmalade",
+    "year": 2001,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-wicked-defying-gravity",
+    "cat": "mus-9000",
+    "franchise": "Wicked",
+    "game": "Defying Gravity",
+    "year": 2003,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-wicked-popular",
+    "cat": "mus-9000",
+    "franchise": "Wicked",
+    "game": "Popular",
+    "year": 2024,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-wicked-what-is-this-feeling",
+    "cat": "mus-9000",
+    "franchise": "Wicked",
+    "game": "What Is This Feeling?",
+    "year": 2024,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-wicked-for-good",
+    "cat": "mus-9000",
+    "franchise": "Wicked",
+    "game": "For Good",
+    "year": 2003,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-hairspray-good-morning-baltimore",
+    "cat": "mus-9000",
+    "franchise": "Hairspray",
+    "game": "Good Morning Baltimore",
+    "year": 2007,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-hairspray-you-cant-stop-the-beat",
+    "cat": "mus-9000",
+    "franchise": "Hairspray",
+    "game": "You Can't Stop the Beat",
+    "year": 2007,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-in-the-heights-in-the-heights",
+    "cat": "mus-9000",
+    "franchise": "In the Heights",
+    "game": "In the Heights",
+    "year": 2021,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-mamma-mia-va-todo-al-ganador",
+    "cat": "mus-9000",
+    "franchise": "Mamma Mia!",
+    "game": "Va todo al ganador",
+    "year": 2004,
+    "platform": "Madrid",
+    "lang": "es"
+  },
+  {
+    "id": "mus-mamma-mia-chiquitita",
+    "cat": "mus-9000",
+    "franchise": "Mamma Mia!",
+    "game": "Chiquitita",
+    "year": 2004,
+    "platform": "Madrid",
+    "lang": "es"
+  },
+  {
+    "id": "mus-mentiras-castillos",
+    "cat": "mus-9000",
+    "franchise": "Mentiras",
+    "game": "Castillos",
+    "year": 2009,
+    "platform": "México",
+    "lang": "es"
+  },
+  {
+    "id": "mus-mentiras-pobre-secretaria",
+    "cat": "mus-9000",
+    "franchise": "Mentiras",
+    "game": "Pobre secretaria",
+    "year": 2009,
+    "platform": "México",
+    "lang": "es"
+  },
+  {
+    "id": "mus-hnmpl-hawaii-bombay",
+    "cat": "mus-9000",
+    "franchise": "Hoy no me puedo levantar",
+    "game": "Hawaii-Bombay",
+    "year": 2022,
+    "platform": "Santo Domingo",
+    "lang": "es"
+  },
+  {
+    "id": "mus-rent-rent",
+    "cat": "mus-9000",
+    "franchise": "Rent",
+    "game": "Rent",
+    "year": 1996,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-mamma-mia-slipping-through-my-fingers",
+    "cat": "mus-9000",
+    "franchise": "Mamma Mia!",
+    "game": "Slipping Through My Fingers",
+    "year": 2008,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-legally-blonde-omigod-you-guys",
+    "cat": "mus-9000",
+    "franchise": "Legally Blonde",
+    "game": "Omigod You Guys",
+    "year": 2007,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-tick-tick-boom-louder-than-words",
+    "cat": "mus-9000",
+    "franchise": "tick, tick... BOOM!",
+    "game": "Louder Than Words",
+    "year": 2021,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-mamma-mia-fija-tu-amor-en-mi",
+    "cat": "mus-9000",
+    "franchise": "Mamma Mia!",
+    "game": "Fija tu amor en mí",
+    "year": 2004,
+    "platform": "Madrid",
+    "lang": "es"
+  },
+  {
+    "id": "mus-mentiras-me-alimento-de-ti",
+    "cat": "mus-9000",
+    "franchise": "Mentiras",
+    "game": "Me alimento de ti",
+    "year": 2009,
+    "platform": "México",
+    "lang": "es"
+  },
+  {
+    "id": "mus-mentiras-tu-muneca",
+    "cat": "mus-9000",
+    "franchise": "Mentiras",
+    "game": "Tu muñeca",
+    "year": 2009,
+    "platform": "México",
+    "lang": "es"
+  },
+  {
+    "id": "mus-hnmpl-hoy-no-me-puedo-levantar",
+    "cat": "mus-9000",
+    "franchise": "Hoy no me puedo levantar",
+    "game": "Hoy no me puedo levantar",
+    "year": 2022,
+    "platform": "Santo Domingo",
+    "lang": "es"
+  },
+  {
+    "id": "mus-hamilton-alexander-hamilton",
+    "cat": "mus-10s",
+    "franchise": "Hamilton",
+    "game": "Alexander Hamilton",
+    "year": 2015,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-hamilton-my-shot",
+    "cat": "mus-10s",
+    "franchise": "Hamilton",
+    "game": "My Shot",
+    "year": 2015,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-hamilton-youll-be-back",
+    "cat": "mus-10s",
+    "franchise": "Hamilton",
+    "game": "You'll Be Back",
+    "year": 2015,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-hamilton-satisfied",
+    "cat": "mus-10s",
+    "franchise": "Hamilton",
+    "game": "Satisfied",
+    "year": 2015,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-showman-this-is-me",
+    "cat": "mus-10s",
+    "franchise": "The Greatest Showman",
+    "game": "This Is Me",
+    "year": 2017,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-showman-the-greatest-show",
+    "cat": "mus-10s",
+    "franchise": "The Greatest Showman",
+    "game": "The Greatest Show",
+    "year": 2017,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-showman-rewrite-the-stars",
+    "cat": "mus-10s",
+    "franchise": "The Greatest Showman",
+    "game": "Rewrite the Stars",
+    "year": 2017,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-showman-a-million-dreams",
+    "cat": "mus-10s",
+    "franchise": "The Greatest Showman",
+    "game": "A Million Dreams",
+    "year": 2017,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-la-la-land-city-of-stars",
+    "cat": "mus-10s",
+    "franchise": "La La Land",
+    "game": "City of Stars",
+    "year": 2016,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-la-la-land-another-day-of-sun",
+    "cat": "mus-10s",
+    "franchise": "La La Land",
+    "game": "Another Day of Sun",
+    "year": 2016,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-la-la-land-audition",
+    "cat": "mus-10s",
+    "franchise": "La La Land",
+    "game": "Audition (The Fools Who Dream)",
+    "year": 2016,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-deh-waving-through-a-window",
+    "cat": "mus-10s",
+    "franchise": "Dear Evan Hansen",
+    "game": "Waving Through a Window",
+    "year": 2017,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-deh-you-will-be-found",
+    "cat": "mus-10s",
+    "franchise": "Dear Evan Hansen",
+    "game": "You Will Be Found",
+    "year": 2017,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-kpop-golden",
+    "cat": "mus-10s",
+    "franchise": "KPop Demon Hunters",
+    "game": "Golden",
+    "year": 2025,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-kpop-soda-pop",
+    "cat": "mus-10s",
+    "franchise": "KPop Demon Hunters",
+    "game": "Soda Pop",
+    "year": 2025,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-kpop-how-its-done",
+    "cat": "mus-10s",
+    "franchise": "KPop Demon Hunters",
+    "game": "How It's Done",
+    "year": 2025,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-kpop-dorada",
+    "cat": "mus-10s",
+    "franchise": "KPop Demon Hunters",
+    "game": "Dorada",
+    "year": 2025,
+    "platform": "Doblaje en español",
+    "lang": "es"
+  },
+  {
+    "id": "mus-kpop-soda-pop-es",
+    "cat": "mus-10s",
+    "franchise": "KPop Demon Hunters",
+    "game": "Soda Pop",
+    "year": 2025,
+    "platform": "Doblaje en español",
+    "lang": "es"
+  },
+  {
+    "id": "mus-book-of-mormon-hello",
+    "cat": "mus-10s",
+    "franchise": "The Book of Mormon",
+    "game": "Hello!",
+    "year": 2011,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-six-ex-wives",
+    "cat": "mus-10s",
+    "franchise": "Six",
+    "game": "Ex-Wives",
+    "year": 2018,
+    "platform": "Londres",
+    "lang": "en"
+  },
+  {
+    "id": "mus-hadestown-all-ive-ever-known",
+    "cat": "mus-10s",
+    "franchise": "Hadestown",
+    "game": "All I've Ever Known",
+    "year": 2019,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-beetlejuice-say-my-name",
+    "cat": "mus-10s",
+    "franchise": "Beetlejuice",
+    "game": "Say My Name",
+    "year": 2019,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-matilda-revolting-children",
+    "cat": "mus-10s",
+    "franchise": "Matilda the Musical",
+    "game": "Revolting Children",
+    "year": 2022,
+    "platform": "Película",
+    "lang": "en"
+  },
+  {
+    "id": "mus-kinky-boots-sex-is-in-the-heel",
+    "cat": "mus-10s",
+    "franchise": "Kinky Boots",
+    "game": "Sex Is in the Heel",
+    "year": 2013,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-waitress-she-used-to-be-mine",
+    "cat": "mus-10s",
+    "franchise": "Waitress",
+    "game": "She Used to Be Mine",
+    "year": 2016,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-mean-girls-meet-the-plastics",
+    "cat": "mus-10s",
+    "franchise": "Mean Girls",
+    "game": "Meet the Plastics",
+    "year": 2018,
+    "platform": "Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-heathers-candy-store",
+    "cat": "mus-10s",
+    "franchise": "Heathers: The Musical",
+    "game": "Candy Store",
+    "year": 2014,
+    "platform": "Off-Broadway",
+    "lang": "en"
+  },
+  {
+    "id": "mus-wonka-a-world-of-your-own",
+    "cat": "mus-10s",
+    "franchise": "Wonka",
+    "game": "A World of Your Own",
+    "year": 2023,
+    "platform": "Película",
+    "lang": "en"
+  }
+]

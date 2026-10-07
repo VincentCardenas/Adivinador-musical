@@ -1,5 +1,5 @@
 /*
- * Catálogo: Musicales (122 pistas: 102 en su grabación original y 20 en español).
+ * Catálogo: Musicales (222 pistas: 200 en su grabación original y 22 en español).
  * Teatro y películas musicales por época (año del estreno del musical; `year` es el de la grabación
  * que suena y `platform` la versión: Broadway, Londres, Película, México, Madrid…). Nada de Disney,
  * que ya tiene su propio tema.
@@ -19,6 +19,10 @@
   // Primero la tienda de México y, si ahí no está, la de Estados Unidos.
   const am = (song) => [apple({ song: song, country: 'mx' }), apple({ song: song })];
   const amAlbum = (album, match) => [apple({ album: album, match: match, country: 'mx' }), apple({ album: album, match: match })];
+  const busca = (musical, cancion, otros) => {
+    const o = { term: musical + ' ' + cancion, match: [cancion].concat(otros || []), album_hint: musical };
+    return [apple(Object.assign({ country: 'mx' }, o)), apple(o)];
+  };
 
   // Otros nombres de cada musical (cómo se conoce en español): el buscador de Experto los acepta
   // para listar sus canciones ("vaselina" muestra las de Grease). Nunca se muestran como respuesta.
@@ -32,6 +36,8 @@
     'Man of La Mancha': ['El hombre de La Mancha'],
     'Oklahoma!': ['Oklahoma'],
     'The King and I': ['El rey y yo'],
+    'Guys and Dolls': ['Ellos y ellas'],
+    'Bye Bye Birdie': ['Un beso para Birdie'],
     'Joseph and the Amazing Technicolor Dreamcoat': ['José el soñador', 'Joseph'],
     'Jesus Christ Superstar': ['Jesucristo Superstar'],
     'Grease': ['Vaselina'],
@@ -42,6 +48,8 @@
     'Les Misérables': ['Los miserables', 'Les Mis'],
     'The Phantom of the Opera': ['El fantasma de la ópera'],
     'Little Shop of Horrors': ['La tiendita del horror', 'La tienda de los horrores'],
+    'Avenue Q': ['Avenida Q'],
+    'Spring Awakening': ['Despertar de primavera'],
     'Moulin Rouge!': ['Moulin Rouge: Amor en rojo'],
     'In the Heights': ['En el barrio'],
     'Mentiras': ['Mentiras: El musical'],
@@ -62,7 +70,7 @@
   );
 
   AM.CATALOG.push(
-    /* ───────────── Clásicos (antes de 1970) (31) ───────────── */
+    /* ───────────── Clásicos (antes de 1970) (56) ───────────── */
     {
       id: 'mus-oz-over-the-rainbow', cat: 'mus-clasicos', franchise: 'The Wizard of Oz', game: 'Over the Rainbow',
       title: 'Over the Rainbow', composer: 'Judy Garland', year: 1939, platform: 'Película', lang: 'en',
@@ -228,7 +236,132 @@
       sources: am(1442413954),
     },
 
-    /* ───────────── 70s y 80s (36) ───────────── */
+        {
+      id: 'mus-ding-dong-witch', cat: 'mus-clasicos', franchise: "The Wizard of Oz", game: "Ding-Dong! The Witch Is Dead",
+      title: "Ding-Dong! The Witch Is Dead", composer: "Judy Garland y elenco", year: 1939, platform: "Película", lang: 'en',
+      sources: busca('The Wizard of Oz', 'Ding-Dong! The Witch Is Dead'),
+    },
+    {
+      id: 'mus-if-i-only-had-a-brain', cat: 'mus-clasicos', franchise: "The Wizard of Oz", game: "If I Only Had a Brain",
+      title: "If I Only Had a Brain", composer: "Ray Bolger y Judy Garland", year: 1939, platform: "Película", lang: 'en',
+      sources: busca('The Wizard of Oz', 'If I Only Had a Brain'),
+    },
+    {
+      id: 'mus-moses-supposes', cat: 'mus-clasicos', franchise: "Singin' in the Rain", game: "Moses Supposes",
+      title: "Moses Supposes", composer: "Gene Kelly y Donald O'Connor", year: 1952, platform: "Película", lang: 'en',
+      sources: busca('Singin\' in the Rain', 'Moses Supposes'),
+    },
+    {
+      id: 'mus-you-were-meant-for-me', cat: 'mus-clasicos', franchise: "Singin' in the Rain", game: "You Were Meant for Me",
+      title: "You Were Meant for Me", composer: "Gene Kelly", year: 1952, platform: "Película", lang: 'en',
+      sources: busca('Singin\' in the Rain', 'You Were Meant for Me'),
+    },
+    {
+      id: 'mus-wss-i-feel-pretty', cat: 'mus-clasicos', franchise: "West Side Story", game: "I Feel Pretty",
+      title: "I Feel Pretty", composer: "Marni Nixon y elenco", year: 1961, platform: "Película", lang: 'en',
+      sources: busca('West Side Story', 'I Feel Pretty'),
+    },
+    {
+      id: 'mus-wss-somethings-coming', cat: 'mus-clasicos', franchise: "West Side Story", game: "Something's Coming",
+      title: "Something's Coming", composer: "Jim Bryant", year: 1961, platform: "Película", lang: 'en',
+      sources: busca('West Side Story', 'Something\'s Coming'),
+    },
+    {
+      id: 'mus-wss-somewhere', cat: 'mus-clasicos', franchise: "West Side Story", game: "Somewhere",
+      title: "Somewhere", composer: "Reri Grist", year: 1961, platform: "Película", lang: 'en',
+      sources: busca('West Side Story', 'Somewhere'),
+    },
+    {
+      id: 'mus-sound-climb-evry-mountain', cat: 'mus-clasicos', franchise: "The Sound of Music", game: "Climb Ev'ry Mountain",
+      title: "Climb Ev'ry Mountain", composer: "Peggy Wood", year: 1965, platform: "Película", lang: 'en',
+      sources: busca('The Sound of Music', 'Climb Ev\'ry Mountain'),
+    },
+    {
+      id: 'mus-sound-sixteen-going-on-seventeen', cat: 'mus-clasicos', franchise: "The Sound of Music", game: "Sixteen Going on Seventeen",
+      title: "Sixteen Going on Seventeen", composer: "Charmian Carr y Daniel Truhitte", year: 1965, platform: "Película", lang: 'en',
+      sources: busca('The Sound of Music', 'Sixteen Going on Seventeen'),
+    },
+    {
+      id: 'mus-sound-the-lonely-goatherd', cat: 'mus-clasicos', franchise: "The Sound of Music", game: "The Lonely Goatherd",
+      title: "The Lonely Goatherd", composer: "Julie Andrews y los niños von Trapp", year: 1965, platform: "Película", lang: 'en',
+      sources: busca('The Sound of Music', 'The Lonely Goatherd'),
+    },
+    {
+      id: 'mus-sound-so-long-farewell', cat: 'mus-clasicos', franchise: "The Sound of Music", game: "So Long, Farewell",
+      title: "So Long, Farewell", composer: "Los niños von Trapp", year: 1965, platform: "Película", lang: 'en',
+      sources: busca('The Sound of Music', 'So Long, Farewell'),
+    },
+    {
+      id: 'mus-mfl-wouldnt-it-be-loverly', cat: 'mus-clasicos', franchise: "My Fair Lady", game: "Wouldn't It Be Loverly",
+      title: "Wouldn't It Be Loverly", composer: "Marni Nixon", year: 1964, platform: "Película", lang: 'en',
+      sources: busca('My Fair Lady', 'Wouldn\'t It Be Loverly'),
+    },
+    {
+      id: 'mus-mfl-the-rain-in-spain', cat: 'mus-clasicos', franchise: "My Fair Lady", game: "The Rain in Spain",
+      title: "The Rain in Spain", composer: "Rex Harrison, Marni Nixon y Wilfrid Hyde-White", year: 1964, platform: "Película", lang: 'en',
+      sources: busca('My Fair Lady', 'The Rain in Spain'),
+    },
+    {
+      id: 'mus-mfl-on-the-street', cat: 'mus-clasicos', franchise: "My Fair Lady", game: "On the Street Where You Live",
+      title: "On the Street Where You Live", composer: "Bill Shirley", year: 1964, platform: "Película", lang: 'en',
+      sources: busca('My Fair Lady', 'On the Street Where You Live'),
+    },
+    {
+      id: 'mus-mfl-get-me-to-the-church', cat: 'mus-clasicos', franchise: "My Fair Lady", game: "Get Me to the Church on Time",
+      title: "Get Me to the Church on Time", composer: "Stanley Holloway y elenco", year: 1964, platform: "Película", lang: 'en',
+      sources: busca('My Fair Lady', 'Get Me to the Church on Time'),
+    },
+    {
+      id: 'mus-fiddler-matchmaker', cat: 'mus-clasicos', franchise: "Fiddler on the Roof", game: "Matchmaker, Matchmaker",
+      title: "Matchmaker, Matchmaker", composer: "Elenco de la película", year: 1971, platform: "Película", lang: 'en',
+      sources: busca('Fiddler on the Roof', 'Matchmaker, Matchmaker'),
+    },
+    {
+      id: 'mus-fiddler-to-life', cat: 'mus-clasicos', franchise: "Fiddler on the Roof", game: "To Life",
+      title: "To Life", composer: "Topol y elenco", year: 1971, platform: "Película", lang: 'en',
+      sources: busca('Fiddler on the Roof', 'To Life'),
+    },
+    {
+      id: 'mus-oklahoma-surrey', cat: 'mus-clasicos', franchise: "Oklahoma!", game: "The Surrey with the Fringe on Top",
+      title: "The Surrey with the Fringe on Top", composer: "Gordon MacRae", year: 1955, platform: "Película", lang: 'en',
+      sources: busca('Oklahoma!', 'The Surrey with the Fringe on Top'),
+    },
+    {
+      id: 'mus-oklahoma-people-will-say', cat: 'mus-clasicos', franchise: "Oklahoma!", game: "People Will Say We're in Love",
+      title: "People Will Say We're in Love", composer: "Gordon MacRae y Shirley Jones", year: 1955, platform: "Película", lang: 'en',
+      sources: busca('Oklahoma!', 'People Will Say We\'re in Love'),
+    },
+    {
+      id: 'mus-oklahoma-title', cat: 'mus-clasicos', franchise: "Oklahoma!", game: "Oklahoma",
+      title: "Oklahoma", composer: "Gordon MacRae y elenco", year: 1955, platform: "Película", lang: 'en',
+      sources: busca('Oklahoma!', 'Oklahoma'),
+    },
+    {
+      id: 'mus-king-i-getting-to-know-you', cat: 'mus-clasicos', franchise: "The King and I", game: "Getting to Know You",
+      title: "Getting to Know You", composer: "Marni Nixon y elenco", year: 1956, platform: "Película", lang: 'en',
+      sources: busca('The King and I', 'Getting to Know You'),
+    },
+    {
+      id: 'mus-king-i-hello-young-lovers', cat: 'mus-clasicos', franchise: "The King and I", game: "Hello, Young Lovers",
+      title: "Hello, Young Lovers", composer: "Marni Nixon", year: 1956, platform: "Película", lang: 'en',
+      sources: busca('The King and I', 'Hello, Young Lovers'),
+    },
+    {
+      id: 'mus-guys-luck-be-a-lady', cat: 'mus-clasicos', franchise: "Guys and Dolls", game: "Luck Be a Lady",
+      title: "Luck Be a Lady", composer: "Marlon Brando y elenco", year: 1955, platform: "Película", lang: 'en',
+      sources: busca('Guys and Dolls', 'Luck Be a Lady'),
+    },
+    {
+      id: 'mus-guys-sit-down-rockin', cat: 'mus-clasicos', franchise: "Guys and Dolls", game: "Sit Down, You're Rockin' the Boat",
+      title: "Sit Down, You're Rockin' the Boat", composer: "Stubby Kaye y elenco", year: 1955, platform: "Película", lang: 'en',
+      sources: busca('Guys and Dolls', 'Sit Down, You\'re Rockin\' the Boat'),
+    },
+    {
+      id: 'mus-birdie-put-on-a-happy-face', cat: 'mus-clasicos', franchise: "Bye Bye Birdie", game: "Put on a Happy Face",
+      title: "Put on a Happy Face", composer: "Dick Van Dyke", year: 1963, platform: "Película", lang: 'en',
+      sources: busca('Bye Bye Birdie', 'Put on a Happy Face'),
+    },
+    /* ───────────── 70s y 80s (61) ───────────── */
     {
       id: 'mus-jcs-superstar', cat: 'mus-7080', franchise: 'Jesus Christ Superstar', game: 'Superstar',
       title: 'Superstar', composer: 'Murray Head', year: 1970, platform: 'Álbum original', lang: 'en',
@@ -432,7 +565,134 @@
       sources: am(1595966908),
     },
 
-    /* ───────────── 90s y 2000s (27) ───────────── */
+        {
+      id: 'mus-grease-sandy', cat: 'mus-7080', franchise: "Grease", game: "Sandy",
+      title: "Sandy", composer: "John Travolta", year: 1978, platform: "Película", lang: 'en',
+      sources: busca('Grease', 'Sandy'),
+    },
+    {
+      id: 'mus-grease-beauty-school', cat: 'mus-7080', franchise: "Grease", game: "Beauty School Dropout",
+      title: "Beauty School Dropout", composer: "Frankie Avalon", year: 1978, platform: "Película", lang: 'en',
+      sources: busca('Grease', 'Beauty School Dropout'),
+    },
+    {
+      id: 'mus-grease-worse-things', cat: 'mus-7080', franchise: "Grease", game: "There Are Worse Things I Could Do",
+      title: "There Are Worse Things I Could Do", composer: "Stockard Channing", year: 1978, platform: "Película", lang: 'en',
+      sources: busca('Grease', 'There Are Worse Things I Could Do'),
+    },
+    {
+      id: 'mus-grease-sandra-dee', cat: 'mus-7080', franchise: "Grease", game: "Look at Me, I'm Sandra Dee",
+      title: "Look at Me, I'm Sandra Dee", composer: "Stockard Channing", year: 1978, platform: "Película", lang: 'en',
+      sources: busca('Grease', 'Look at Me, I\'m Sandra Dee'),
+    },
+    {
+      id: 'mus-grease-freddy-mi-amor', cat: 'mus-7080', franchise: "Grease", game: "Freddy, mi amor",
+      title: "Freddy, mi amor", composer: "Timbiriche", year: 1984, platform: "México", lang: 'es',
+      aka: ["Freddy, My Love"],
+      sources: busca('Grease', 'Freddy, mi amor'),
+    },
+    {
+      id: 'mus-grease-noches-de-verano', cat: 'mus-7080', franchise: "Grease", game: "Noches de verano",
+      title: "Noches de verano", composer: "Timbiriche", year: 1984, platform: "México", lang: 'es',
+      aka: ["Summer Nights"],
+      sources: busca('Grease', 'Noches de verano'),
+    },
+    {
+      id: 'mus-jcs-heaven-on-their-minds', cat: 'mus-7080', franchise: "Jesus Christ Superstar", game: "Heaven on Their Minds",
+      title: "Heaven on Their Minds", composer: "Carl Anderson", year: 1973, platform: "Película", lang: 'en',
+      sources: busca('Jesus Christ Superstar', 'Heaven on Their Minds'),
+    },
+    {
+      id: 'mus-jcs-everythings-alright', cat: 'mus-7080', franchise: "Jesus Christ Superstar", game: "Everything's Alright",
+      title: "Everything's Alright", composer: "Yvonne Elliman, Carl Anderson y Ted Neeley", year: 1973, platform: "Película", lang: 'en',
+      sources: busca('Jesus Christ Superstar', 'Everything\'s Alright'),
+    },
+    {
+      id: 'mus-jcs-king-herods-song', cat: 'mus-7080', franchise: "Jesus Christ Superstar", game: "King Herod's Song",
+      title: "King Herod's Song", composer: "Josh Mostel", year: 1973, platform: "Película", lang: 'en',
+      sources: busca('Jesus Christ Superstar', 'King Herod\'s Song'),
+    },
+    {
+      id: 'mus-rocky-sweet-transvestite', cat: 'mus-7080', franchise: "The Rocky Horror Picture Show", game: "Sweet Transvestite",
+      title: "Sweet Transvestite", composer: "Tim Curry", year: 1975, platform: "Película", lang: 'en',
+      sources: busca('The Rocky Horror Picture Show', 'Sweet Transvestite'),
+    },
+    {
+      id: 'mus-rocky-science-fiction', cat: 'mus-7080', franchise: "The Rocky Horror Picture Show", game: "Science Fiction/Double Feature",
+      title: "Science Fiction/Double Feature", composer: "Richard O'Brien", year: 1975, platform: "Película", lang: 'en',
+      sources: busca('The Rocky Horror Picture Show', 'Science Fiction/Double Feature'),
+    },
+    {
+      id: 'mus-rocky-touch-a-touch-me', cat: 'mus-7080', franchise: "The Rocky Horror Picture Show", game: "Touch-a, Touch-a, Touch-a, Touch Me",
+      title: "Touch-a, Touch-a, Touch-a, Touch Me", composer: "Susan Sarandon", year: 1975, platform: "Película", lang: 'en',
+      sources: busca('The Rocky Horror Picture Show', 'Touch-a, Touch-a, Touch-a, Touch Me'),
+    },
+    {
+      id: 'mus-chicago-roxie', cat: 'mus-7080', franchise: "Chicago", game: "Roxie",
+      title: "Roxie", composer: "Renée Zellweger", year: 2002, platform: "Película", lang: 'en',
+      sources: busca('Chicago', 'Roxie'),
+    },
+    {
+      id: 'mus-chicago-when-youre-good', cat: 'mus-7080', franchise: "Chicago", game: "When You're Good to Mama",
+      title: "When You're Good to Mama", composer: "Queen Latifah", year: 2002, platform: "Película", lang: 'en',
+      sources: busca('Chicago', 'When You\'re Good to Mama'),
+    },
+    {
+      id: 'mus-chicago-mister-cellophane', cat: 'mus-7080', franchise: "Chicago", game: "Mister Cellophane",
+      title: "Mister Cellophane", composer: "John C. Reilly", year: 2002, platform: "Película", lang: 'en',
+      sources: busca('Chicago', 'Mister Cellophane'),
+    },
+    {
+      id: 'mus-chicago-razzle-dazzle', cat: 'mus-7080', franchise: "Chicago", game: "Razzle Dazzle",
+      title: "Razzle Dazzle", composer: "Richard Gere", year: 2002, platform: "Película", lang: 'en',
+      sources: busca('Chicago', 'Razzle Dazzle'),
+    },
+    {
+      id: 'mus-annie-never-fully-dressed', cat: 'mus-7080', franchise: "Annie", game: "You're Never Fully Dressed Without a Smile",
+      title: "You're Never Fully Dressed Without a Smile", composer: "Peter Marshall y las huérfanas", year: 1982, platform: "Película", lang: 'en',
+      sources: busca('Annie', 'You\'re Never Fully Dressed Without a Smile'),
+    },
+    {
+      id: 'mus-annie-easy-street', cat: 'mus-7080', franchise: "Annie", game: "Easy Street",
+      title: "Easy Street", composer: "Carol Burnett, Tim Curry y Bernadette Peters", year: 1982, platform: "Película", lang: 'en',
+      sources: busca('Annie', 'Easy Street'),
+    },
+    {
+      id: 'mus-evita-buenos-aires', cat: 'mus-7080', franchise: "Evita", game: "Buenos Aires",
+      title: "Buenos Aires", composer: "Madonna", year: 1996, platform: "Película", lang: 'en',
+      sources: busca('Evita', 'Buenos Aires'),
+    },
+    {
+      id: 'mus-evita-another-suitcase', cat: 'mus-7080', franchise: "Evita", game: "Another Suitcase in Another Hall",
+      title: "Another Suitcase in Another Hall", composer: "Madonna", year: 1996, platform: "Película", lang: 'en',
+      sources: busca('Evita', 'Another Suitcase in Another Hall'),
+    },
+    {
+      id: 'mus-cats-jellicle-songs', cat: 'mus-7080', franchise: "Cats", game: "Jellicle Songs for Jellicle Cats",
+      title: "Jellicle Songs for Jellicle Cats", composer: "Elenco original de Londres", year: 1981, platform: "Londres", lang: 'en',
+      sources: busca('Cats', 'Jellicle Songs for Jellicle Cats'),
+    },
+    {
+      id: 'mus-cats-mr-mistoffelees', cat: 'mus-7080', franchise: "Cats", game: "Mr. Mistoffelees",
+      title: "Mr. Mistoffelees", composer: "Wayne Sleep y elenco", year: 1981, platform: "Londres", lang: 'en',
+      sources: busca('Cats', 'Mr. Mistoffelees'),
+    },
+    {
+      id: 'mus-lesmis-bring-him-home', cat: 'mus-7080', franchise: "Les Misérables", game: "Bring Him Home",
+      title: "Bring Him Home", composer: "Colm Wilkinson", year: 1985, platform: "Londres", lang: 'en',
+      sources: busca('Les Misérables', 'Bring Him Home'),
+    },
+    {
+      id: 'mus-lesmis-stars', cat: 'mus-7080', franchise: "Les Misérables", game: "Stars",
+      title: "Stars", composer: "Philip Quast", year: 1985, platform: "Londres", lang: 'en',
+      sources: busca('Les Misérables', 'Stars'),
+    },
+    {
+      id: 'mus-lesmis-empty-chairs', cat: 'mus-7080', franchise: "Les Misérables", game: "Empty Chairs at Empty Tables",
+      title: "Empty Chairs at Empty Tables", composer: "Michael Ball", year: 1985, platform: "Londres", lang: 'en',
+      sources: busca('Les Misérables', 'Empty Chairs at Empty Tables'),
+    },
+    /* ───────────── 90s y 2000s (52) ───────────── */
     {
       id: 'mus-rent-seasons-of-love', cat: 'mus-9000', franchise: 'Rent', game: 'Seasons of Love',
       title: 'Seasons of Love', composer: 'Elenco de la película', year: 2005, platform: 'Película', lang: 'en',
@@ -575,7 +835,132 @@
       sources: am(1648407749),
     },
 
-    /* ───────────── 2010 en adelante (28) ───────────── */
+        {
+      id: 'mus-phantom-masquerade', cat: 'mus-9000', franchise: "The Phantom of the Opera", game: "Masquerade",
+      title: "Masquerade", composer: "Elenco original de Londres", year: 1986, platform: "Londres", lang: 'en',
+      sources: busca('The Phantom of the Opera', 'Masquerade'),
+    },
+    {
+      id: 'mus-phantom-wishing-you-were', cat: 'mus-9000', franchise: "The Phantom of the Opera", game: "Wishing You Were Somehow Here Again",
+      title: "Wishing You Were Somehow Here Again", composer: "Sarah Brightman", year: 1986, platform: "Londres", lang: 'en',
+      sources: busca('The Phantom of the Opera', 'Wishing You Were Somehow Here Again'),
+    },
+    {
+      id: 'mus-phantom-point-of-no-return', cat: 'mus-9000', franchise: "The Phantom of the Opera", game: "The Point of No Return",
+      title: "The Point of No Return", composer: "Michael Crawford y Sarah Brightman", year: 1986, platform: "Londres", lang: 'en',
+      sources: busca('The Phantom of the Opera', 'The Point of No Return'),
+    },
+    {
+      id: 'mus-phantom-think-of-me', cat: 'mus-9000', franchise: "The Phantom of the Opera", game: "Think of Me",
+      title: "Think of Me", composer: "Sarah Brightman", year: 1986, platform: "Londres", lang: 'en',
+      sources: busca('The Phantom of the Opera', 'Think of Me'),
+    },
+    {
+      id: 'mus-rent-out-tonight', cat: 'mus-9000', franchise: "Rent", game: "Out Tonight",
+      title: "Out Tonight", composer: "Daphne Rubin-Vega", year: 1996, platform: "Broadway", lang: 'en',
+      sources: busca('Rent', 'Out Tonight'),
+    },
+    {
+      id: 'mus-rent-ill-cover-you', cat: 'mus-9000', franchise: "Rent", game: "I'll Cover You",
+      title: "I'll Cover You", composer: "Jesse L. Martin y Wilson Jermaine Heredia", year: 1996, platform: "Broadway", lang: 'en',
+      sources: busca('Rent', 'I\'ll Cover You'),
+    },
+    {
+      id: 'mus-rent-light-my-candle', cat: 'mus-9000', franchise: "Rent", game: "Light My Candle",
+      title: "Light My Candle", composer: "Adam Pascal y Daphne Rubin-Vega", year: 1996, platform: "Broadway", lang: 'en',
+      sources: busca('Rent', 'Light My Candle'),
+    },
+    {
+      id: 'mus-rent-la-vie-boheme', cat: 'mus-9000', franchise: "Rent", game: "La Vie Bohème",
+      title: "La Vie Bohème", composer: "Elenco original de Broadway", year: 1996, platform: "Broadway", lang: 'en',
+      sources: busca('Rent', 'La Vie Bohème'),
+    },
+    {
+      id: 'mus-mamma-sos', cat: 'mus-9000', franchise: "Mamma Mia!", game: "SOS",
+      title: "SOS", composer: "Meryl Streep y Pierce Brosnan", year: 2008, platform: "Película", lang: 'en',
+      sources: busca('Mamma Mia!', 'SOS'),
+    },
+    {
+      id: 'mus-mamma-take-a-chance', cat: 'mus-9000', franchise: "Mamma Mia!", game: "Take a Chance on Me",
+      title: "Take a Chance on Me", composer: "Julie Walters y Stellan Skarsgård", year: 2008, platform: "Película", lang: 'en',
+      sources: busca('Mamma Mia!', 'Take a Chance on Me'),
+    },
+    {
+      id: 'mus-mamma-the-winner-takes-it-all', cat: 'mus-9000', franchise: "Mamma Mia!", game: "The Winner Takes It All",
+      title: "The Winner Takes It All", composer: "Meryl Streep", year: 2008, platform: "Película", lang: 'en',
+      sources: busca('Mamma Mia!', 'The Winner Takes It All'),
+    },
+    {
+      id: 'mus-mamma-honey-honey', cat: 'mus-9000', franchise: "Mamma Mia!", game: "Honey, Honey",
+      title: "Honey, Honey", composer: "Amanda Seyfried, Ashley Lilley y Rachel McDowall", year: 2008, platform: "Película", lang: 'en',
+      sources: busca('Mamma Mia!', 'Honey, Honey'),
+    },
+    {
+      id: 'mus-mamma-super-trouper', cat: 'mus-9000', franchise: "Mamma Mia!", game: "Super Trouper",
+      title: "Super Trouper", composer: "Meryl Streep, Christine Baranski y Julie Walters", year: 2008, platform: "Película", lang: 'en',
+      sources: busca('Mamma Mia!', 'Super Trouper'),
+    },
+    {
+      id: 'mus-wicked-the-wizard-and-i', cat: 'mus-9000', franchise: "Wicked", game: "The Wizard and I",
+      title: "The Wizard and I", composer: "Idina Menzel y Carole Shelley", year: 2003, platform: "Broadway", lang: 'en',
+      sources: busca('Wicked', 'The Wizard and I'),
+    },
+    {
+      id: 'mus-wicked-no-good-deed', cat: 'mus-9000', franchise: "Wicked", game: "No Good Deed",
+      title: "No Good Deed", composer: "Idina Menzel", year: 2003, platform: "Broadway", lang: 'en',
+      sources: busca('Wicked', 'No Good Deed'),
+    },
+    {
+      id: 'mus-wicked-dancing-through-life', cat: 'mus-9000', franchise: "Wicked", game: "Dancing Through Life",
+      title: "Dancing Through Life", composer: "Norbert Leo Butz y elenco", year: 2003, platform: "Broadway", lang: 'en',
+      sources: busca('Wicked', 'Dancing Through Life'),
+    },
+    {
+      id: 'mus-wicked-one-short-day', cat: 'mus-9000', franchise: "Wicked", game: "One Short Day",
+      title: "One Short Day", composer: "Kristin Chenoweth, Idina Menzel y elenco", year: 2003, platform: "Broadway", lang: 'en',
+      sources: busca('Wicked', 'One Short Day'),
+    },
+    {
+      id: 'mus-wicked-as-long-as-youre-mine', cat: 'mus-9000', franchise: "Wicked", game: "As Long as You're Mine",
+      title: "As Long as You're Mine", composer: "Idina Menzel y Leo Norbert Butz", year: 2003, platform: "Broadway", lang: 'en',
+      sources: busca('Wicked', 'As Long as You\'re Mine'),
+    },
+    {
+      id: 'mus-hairspray-i-can-hear-the-bells', cat: 'mus-9000', franchise: "Hairspray", game: "I Can Hear the Bells",
+      title: "I Can Hear the Bells", composer: "Nikki Blonsky", year: 2007, platform: "Película", lang: 'en',
+      sources: busca('Hairspray', 'I Can Hear the Bells'),
+    },
+    {
+      id: 'mus-hairspray-welcome-to-the-60s', cat: 'mus-9000', franchise: "Hairspray", game: "Welcome to the 60's",
+      title: "Welcome to the 60's", composer: "Nikki Blonsky y John Travolta", year: 2007, platform: "Película", lang: 'en',
+      sources: busca('Hairspray', 'Welcome to the 60\'s'),
+    },
+    {
+      id: 'mus-hairspray-without-love', cat: 'mus-9000', franchise: "Hairspray", game: "Without Love",
+      title: "Without Love", composer: "Zac Efron, Nikki Blonsky, Elijah Kelley y Amanda Bynes", year: 2007, platform: "Película", lang: 'en',
+      sources: busca('Hairspray', 'Without Love'),
+    },
+    {
+      id: 'mus-heights-breathe', cat: 'mus-9000', franchise: "In the Heights", game: "Breathe",
+      title: "Breathe", composer: "Mandy Gonzalez", year: 2008, platform: "Broadway", lang: 'en',
+      sources: busca('In the Heights', 'Breathe'),
+    },
+    {
+      id: 'mus-heights-96000', cat: 'mus-9000', franchise: "In the Heights", game: "96,000",
+      title: "96,000", composer: "Lin-Manuel Miranda y elenco", year: 2008, platform: "Broadway", lang: 'en',
+      sources: busca('In the Heights', '96,000'),
+    },
+    {
+      id: 'mus-heights-carnaval-del-barrio', cat: 'mus-9000', franchise: "In the Heights", game: "Carnaval del Barrio",
+      title: "Carnaval del Barrio", composer: "Andréa Burns y elenco", year: 2008, platform: "Broadway", lang: 'en',
+      sources: busca('In the Heights', 'Carnaval del Barrio'),
+    },
+    {
+      id: 'mus-avenue-q-if-you-were-gay', cat: 'mus-9000', franchise: "Avenue Q", game: "If You Were Gay",
+      title: "If You Were Gay", composer: "John Tartaglia y Rick Lyon", year: 2003, platform: "Broadway", lang: 'en',
+      sources: busca('Avenue Q', 'If You Were Gay'),
+    },
+    /* ───────────── 2010 en adelante (53) ───────────── */
     {
       id: 'mus-hamilton-alexander-hamilton', cat: 'mus-10s', franchise: 'Hamilton', game: 'Alexander Hamilton',
       title: 'Alexander Hamilton', composer: 'Elenco original de Broadway', year: 2015, platform: 'Broadway', lang: 'en',
@@ -718,6 +1103,131 @@
       id: 'mus-wonka-a-world-of-your-own', cat: 'mus-10s', franchise: 'Wonka', game: 'A World of Your Own',
       title: 'A World of Your Own', composer: 'Timothée Chalamet', year: 2023, platform: 'Película', lang: 'en',
       sources: am(1718982342),
+    },
+    {
+      id: 'mus-hamilton-wait-for-it', cat: 'mus-10s', franchise: "Hamilton", game: "Wait for It",
+      title: "Wait for It", composer: "Leslie Odom, Jr. y elenco", year: 2015, platform: "Broadway", lang: 'en',
+      sources: busca('Hamilton', 'Wait for It'),
+    },
+    {
+      id: 'mus-hamilton-the-schuyler-sisters', cat: 'mus-10s', franchise: "Hamilton", game: "The Schuyler Sisters",
+      title: "The Schuyler Sisters", composer: "Renée Elise Goldsberry, Phillipa Soo, Jasmine Cephas Jones y elenco", year: 2015, platform: "Broadway", lang: 'en',
+      sources: busca('Hamilton', 'The Schuyler Sisters'),
+    },
+    {
+      id: 'mus-hamilton-dear-theodosia', cat: 'mus-10s', franchise: "Hamilton", game: "Dear Theodosia",
+      title: "Dear Theodosia", composer: "Lin-Manuel Miranda y Leslie Odom, Jr.", year: 2015, platform: "Broadway", lang: 'en',
+      sources: busca('Hamilton', 'Dear Theodosia'),
+    },
+    {
+      id: 'mus-hamilton-burn', cat: 'mus-10s', franchise: "Hamilton", game: "Burn",
+      title: "Burn", composer: "Phillipa Soo", year: 2015, platform: "Broadway", lang: 'en',
+      sources: busca('Hamilton', 'Burn'),
+    },
+    {
+      id: 'mus-hamilton-the-room-where-it-happens', cat: 'mus-10s', franchise: "Hamilton", game: "The Room Where It Happens",
+      title: "The Room Where It Happens", composer: "Leslie Odom, Jr., Lin-Manuel Miranda y elenco", year: 2015, platform: "Broadway", lang: 'en',
+      sources: busca('Hamilton', 'The Room Where It Happens'),
+    },
+    {
+      id: 'mus-hamilton-helpless', cat: 'mus-10s', franchise: "Hamilton", game: "Helpless",
+      title: "Helpless", composer: "Phillipa Soo y elenco", year: 2015, platform: "Broadway", lang: 'en',
+      sources: busca('Hamilton', 'Helpless'),
+    },
+    {
+      id: 'mus-hamilton-non-stop', cat: 'mus-10s', franchise: "Hamilton", game: "Non-Stop",
+      title: "Non-Stop", composer: "Lin-Manuel Miranda, Leslie Odom, Jr. y elenco", year: 2015, platform: "Broadway", lang: 'en',
+      sources: busca('Hamilton', 'Non-Stop'),
+    },
+    {
+      id: 'mus-hamilton-guns-and-ships', cat: 'mus-10s', franchise: "Hamilton", game: "Guns and Ships",
+      title: "Guns and Ships", composer: "Daveed Diggs, Leslie Odom, Jr. y elenco", year: 2015, platform: "Broadway", lang: 'en',
+      sources: busca('Hamilton', 'Guns and Ships'),
+    },
+    {
+      id: 'mus-showman-never-enough', cat: 'mus-10s', franchise: "The Greatest Showman", game: "Never Enough",
+      title: "Never Enough", composer: "Loren Allred", year: 2017, platform: "Película", lang: 'en',
+      sources: busca('The Greatest Showman', 'Never Enough'),
+    },
+    {
+      id: 'mus-showman-from-now-on', cat: 'mus-10s', franchise: "The Greatest Showman", game: "From Now On",
+      title: "From Now On", composer: "Hugh Jackman y elenco", year: 2017, platform: "Película", lang: 'en',
+      sources: busca('The Greatest Showman', 'From Now On'),
+    },
+    {
+      id: 'mus-showman-the-other-side', cat: 'mus-10s', franchise: "The Greatest Showman", game: "The Other Side",
+      title: "The Other Side", composer: "Hugh Jackman y Zac Efron", year: 2017, platform: "Película", lang: 'en',
+      sources: busca('The Greatest Showman', 'The Other Side'),
+    },
+    {
+      id: 'mus-showman-come-alive', cat: 'mus-10s', franchise: "The Greatest Showman", game: "Come Alive",
+      title: "Come Alive", composer: "Hugh Jackman, Keala Settle, Daniel Everidge y Zendaya", year: 2017, platform: "Película", lang: 'en',
+      sources: busca('The Greatest Showman', 'Come Alive'),
+    },
+    {
+      id: 'mus-showman-tightrope', cat: 'mus-10s', franchise: "The Greatest Showman", game: "Tightrope",
+      title: "Tightrope", composer: "Michelle Williams", year: 2017, platform: "Película", lang: 'en',
+      sources: busca('The Greatest Showman', 'Tightrope'),
+    },
+    {
+      id: 'mus-lalaland-a-lovely-night', cat: 'mus-10s', franchise: "La La Land", game: "A Lovely Night",
+      title: "A Lovely Night", composer: "Ryan Gosling y Emma Stone", year: 2016, platform: "Película", lang: 'en',
+      sources: busca('La La Land', 'A Lovely Night'),
+    },
+    {
+      id: 'mus-lalaland-someone-in-the-crowd', cat: 'mus-10s', franchise: "La La Land", game: "Someone in the Crowd",
+      title: "Someone in the Crowd", composer: "Emma Stone, Callie Hernandez, Sonoya Mizuno y Jessica Rothe", year: 2016, platform: "Película", lang: 'en',
+      sources: busca('La La Land', 'Someone in the Crowd'),
+    },
+    {
+      id: 'mus-deh-for-forever', cat: 'mus-10s', franchise: "Dear Evan Hansen", game: "For Forever",
+      title: "For Forever", composer: "Ben Platt", year: 2017, platform: "Broadway", lang: 'en',
+      sources: busca('Dear Evan Hansen', 'For Forever'),
+    },
+    {
+      id: 'mus-deh-sincerely-me', cat: 'mus-10s', franchise: "Dear Evan Hansen", game: "Sincerely, Me",
+      title: "Sincerely, Me", composer: "Mike Faist, Ben Platt y Will Roland", year: 2017, platform: "Broadway", lang: 'en',
+      sources: busca('Dear Evan Hansen', 'Sincerely, Me'),
+    },
+    {
+      id: 'mus-deh-words-fail', cat: 'mus-10s', franchise: "Dear Evan Hansen", game: "Words Fail",
+      title: "Words Fail", composer: "Ben Platt", year: 2017, platform: "Broadway", lang: 'en',
+      sources: busca('Dear Evan Hansen', 'Words Fail'),
+    },
+    {
+      id: 'mus-six-dont-lose-ur-head', cat: 'mus-10s', franchise: "Six", game: "Don't Lose Ur Head",
+      title: "Don't Lose Ur Head", composer: "Christina Modestou y elenco", year: 2018, platform: "Londres", lang: 'en',
+      sources: busca('Six', 'Don\'t Lose Ur Head'),
+    },
+    {
+      id: 'mus-six-heart-of-stone', cat: 'mus-10s', franchise: "Six", game: "Heart of Stone",
+      title: "Heart of Stone", composer: "Natalie Paris y elenco", year: 2018, platform: "Londres", lang: 'en',
+      sources: busca('Six', 'Heart of Stone'),
+    },
+    {
+      id: 'mus-six-all-you-wanna-do', cat: 'mus-10s', franchise: "Six", game: "All You Wanna Do",
+      title: "All You Wanna Do", composer: "Aimie Atkinson y elenco", year: 2018, platform: "Londres", lang: 'en',
+      sources: busca('Six', 'All You Wanna Do'),
+    },
+    {
+      id: 'mus-hadestown-wait-for-me', cat: 'mus-10s', franchise: "Hadestown", game: "Wait for Me",
+      title: "Wait for Me", composer: "André De Shields, Reeve Carney y elenco", year: 2019, platform: "Broadway", lang: 'en',
+      sources: busca('Hadestown', 'Wait for Me'),
+    },
+    {
+      id: 'mus-hadestown-way-down', cat: 'mus-10s', franchise: "Hadestown", game: "Way Down Hadestown",
+      title: "Way Down Hadestown", composer: "Amber Gray, André De Shields y elenco", year: 2019, platform: "Broadway", lang: 'en',
+      sources: busca('Hadestown', 'Way Down Hadestown'),
+    },
+    {
+      id: 'mus-hadestown-why-we-build', cat: 'mus-10s', franchise: "Hadestown", game: "Why We Build the Wall",
+      title: "Why We Build the Wall", composer: "Patrick Page y elenco", year: 2019, platform: "Broadway", lang: 'en',
+      sources: busca('Hadestown', 'Why We Build the Wall'),
+    },
+    {
+      id: 'mus-beetlejuice-dead-mom', cat: 'mus-10s', franchise: "Beetlejuice", game: "Dead Mom",
+      title: "Dead Mom", composer: "Sophia Anne Caruso", year: 2019, platform: "Broadway", lang: 'en',
+      sources: busca('Beetlejuice', 'Dead Mom'),
     },
   );
 

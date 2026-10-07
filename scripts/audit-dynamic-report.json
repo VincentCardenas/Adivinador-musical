@@ -1,0 +1,14 @@
+{
+  "musicales": {
+    "totales": 0,
+    "ok": 0,
+    "fallas": 0,
+    "fallidas": []
+  },
+  "canciones": {
+    "totales": 0,
+    "ok": 0,
+    "fallas": 0,
+    "fallidas": []
+  }
+}

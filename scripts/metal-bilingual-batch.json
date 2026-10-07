@@ -1,0 +1,1052 @@
+[
+  {
+    "id": "song-guante-de-piel",
+    "cat": "song-metal",
+    "franchise": "Rata Blanca",
+    "game": "Guante de piel",
+    "title": "Guante de piel",
+    "year": 1988,
+    "lang": "es",
+    "sources": "busca('Rata Blanca', 'Guante de piel')"
+  },
+  {
+    "id": "song-el-sueno-de-la-gitana",
+    "cat": "song-metal",
+    "franchise": "Rata Blanca",
+    "game": "El sueño de la gitana",
+    "title": "El sueño de la gitana",
+    "year": 1988,
+    "lang": "es",
+    "sources": "busca('Rata Blanca', 'El sueño de la gitana')"
+  },
+  {
+    "id": "song-chico-callejero",
+    "cat": "song-metal",
+    "franchise": "Rata Blanca",
+    "game": "Chico callejero",
+    "title": "Chico callejero",
+    "year": 1988,
+    "lang": "es",
+    "sources": "busca('Rata Blanca', 'Chico callejero')"
+  },
+  {
+    "id": "song-dias-duros-rata",
+    "cat": "song-metal",
+    "franchise": "Rata Blanca",
+    "game": "Días duros",
+    "title": "Días duros",
+    "year": 1990,
+    "lang": "es",
+    "sources": "busca('Rata Blanca', 'Días duros')"
+  },
+  {
+    "id": "song-guerrero-del-arco-iris",
+    "cat": "song-metal",
+    "franchise": "Rata Blanca",
+    "game": "Guerrero del arco iris",
+    "title": "Guerrero del arco iris",
+    "year": 1991,
+    "lang": "es",
+    "sources": "busca('Rata Blanca', 'Guerrero del arco iris')"
+  },
+  {
+    "id": "song-la-boca-del-lobo",
+    "cat": "song-metal",
+    "franchise": "Rata Blanca",
+    "game": "La boca del lobo",
+    "title": "La boca del lobo",
+    "year": 1991,
+    "lang": "es",
+    "sources": "busca('Rata Blanca', 'La boca del lobo')"
+  },
+  {
+    "id": "song-volviendo-a-casa",
+    "cat": "song-metal",
+    "franchise": "Rata Blanca",
+    "game": "Volviendo a casa",
+    "title": "Volviendo a casa",
+    "year": 2002,
+    "lang": "es",
+    "sources": "busca('Rata Blanca', 'Volviendo a casa')"
+  },
+  {
+    "id": "song-talisman-rata",
+    "cat": "song-metal",
+    "franchise": "Rata Blanca",
+    "game": "Talismán",
+    "title": "Talismán",
+    "year": 2008,
+    "lang": "es",
+    "sources": "busca('Rata Blanca', 'Talismán')"
+  },
+  {
+    "id": "song-aun-estas-en-mis-suenos",
+    "cat": "song-metal",
+    "franchise": "Rata Blanca",
+    "game": "Aún estás en mis sueños",
+    "title": "Aún estás en mis sueños",
+    "year": 2005,
+    "lang": "es",
+    "sources": "busca('Rata Blanca', 'Aún estás en mis sueños')"
+  },
+  {
+    "id": "song-baron-rojo-tema",
+    "cat": "song-metal",
+    "franchise": "Barón Rojo",
+    "game": "Barón Rojo",
+    "title": "Barón Rojo",
+    "year": 1981,
+    "lang": "es",
+    "sources": "busca('Barón Rojo', 'Barón Rojo')"
+  },
+  {
+    "id": "song-larga-vida-al-rock",
+    "cat": "song-metal",
+    "franchise": "Barón Rojo",
+    "game": "Larga vida al rock and roll",
+    "title": "Larga vida al rock and roll",
+    "year": 1981,
+    "lang": "es",
+    "sources": "busca('Barón Rojo', 'Larga vida al rock and roll')"
+  },
+  {
+    "id": "song-resistire-baron",
+    "cat": "song-metal",
+    "franchise": "Barón Rojo",
+    "game": "Resistiré",
+    "title": "Resistiré",
+    "year": 1982,
+    "lang": "es",
+    "sources": "busca('Barón Rojo', 'Resistiré')"
+  },
+  {
+    "id": "song-cuerdas-de-acero",
+    "cat": "song-metal",
+    "franchise": "Barón Rojo",
+    "game": "Cuerdas de acero",
+    "title": "Cuerdas de acero",
+    "year": 1985,
+    "lang": "es",
+    "sources": "busca('Barón Rojo', 'Cuerdas de acero')"
+  },
+  {
+    "id": "song-hijos-de-cain",
+    "cat": "song-metal",
+    "franchise": "Barón Rojo",
+    "game": "Hijos de Caín",
+    "title": "Hijos de Caín",
+    "year": 1985,
+    "lang": "es",
+    "sources": "busca('Barón Rojo', 'Hijos de Caín')"
+  },
+  {
+    "id": "song-con-botas-sucias",
+    "cat": "song-metal",
+    "franchise": "Barón Rojo",
+    "game": "Con botas sucias",
+    "title": "Con botas sucias",
+    "year": 1981,
+    "lang": "es",
+    "sources": "busca('Barón Rojo', 'Con botas sucias')"
+  },
+  {
+    "id": "song-casi-me-mato",
+    "cat": "song-metal",
+    "franchise": "Barón Rojo",
+    "game": "Casi me mato",
+    "title": "Casi me mato",
+    "year": 1983,
+    "lang": "es",
+    "sources": "busca('Barón Rojo', 'Casi me mato')"
+  },
+  {
+    "id": "song-tierra-de-vandalos",
+    "cat": "song-metal",
+    "franchise": "Barón Rojo",
+    "game": "Tierra de vándalos",
+    "title": "Tierra de vándalos",
+    "year": 1985,
+    "lang": "es",
+    "sources": "busca('Barón Rojo', 'Tierra de vándalos')"
+  },
+  {
+    "id": "song-sombras-en-la-oscuridad",
+    "cat": "song-metal",
+    "franchise": "Ángeles del Infierno",
+    "game": "Sombras en la oscuridad",
+    "title": "Sombras en la oscuridad",
+    "year": 1985,
+    "lang": "es",
+    "sources": "busca('Ángeles del Infierno', 'Sombras en la oscuridad')"
+  },
+  {
+    "id": "song-al-otro-lado-del-silencio",
+    "cat": "song-metal",
+    "franchise": "Ángeles del Infierno",
+    "game": "Al otro lado del silencio",
+    "title": "Al otro lado del silencio",
+    "year": 1986,
+    "lang": "es",
+    "sources": "busca('Ángeles del Infierno', 'Al otro lado del silencio')"
+  },
+  {
+    "id": "song-si-tu-no-estas-aqui-angeles",
+    "cat": "song-metal",
+    "franchise": "Ángeles del Infierno",
+    "game": "Si tú no estás aquí",
+    "title": "Si tú no estás aquí",
+    "year": 1988,
+    "lang": "es",
+    "sources": "busca('Ángeles del Infierno', 'Si tú no estás aquí')"
+  },
+  {
+    "id": "song-con-las-botas-puestas",
+    "cat": "song-metal",
+    "franchise": "Ángeles del Infierno",
+    "game": "Con las botas puestas",
+    "title": "Con las botas puestas",
+    "year": 1984,
+    "lang": "es",
+    "sources": "busca('Ángeles del Infierno', 'Con las botas puestas')"
+  },
+  {
+    "id": "song-unidos-por-el-rock",
+    "cat": "song-metal",
+    "franchise": "Ángeles del Infierno",
+    "game": "Unidos por el rock",
+    "title": "Unidos por el rock",
+    "year": 1984,
+    "lang": "es",
+    "sources": "busca('Ángeles del Infierno', 'Unidos por el rock')"
+  },
+  {
+    "id": "song-fuera-de-la-ley",
+    "cat": "song-metal",
+    "franchise": "Ángeles del Infierno",
+    "game": "Fuera de la ley",
+    "title": "Fuera de la ley",
+    "year": 1985,
+    "lang": "es",
+    "sources": "busca('Ángeles del Infierno', 'Fuera de la ley')"
+  },
+  {
+    "id": "song-la-danza-del-fuego",
+    "cat": "song-metal",
+    "franchise": "Mägo de Oz",
+    "game": "La danza del fuego",
+    "title": "La danza del fuego",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('Mägo de Oz', 'La danza del fuego')"
+  },
+  {
+    "id": "song-hasta-que-el-cuerpo-aguante",
+    "cat": "song-metal",
+    "franchise": "Mägo de Oz",
+    "game": "Hasta que el cuerpo aguante",
+    "title": "Hasta que el cuerpo aguante",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('Mägo de Oz', 'Hasta que el cuerpo aguante')"
+  },
+  {
+    "id": "song-la-costa-del-silencio",
+    "cat": "song-metal",
+    "franchise": "Mägo de Oz",
+    "game": "La costa del silencio",
+    "title": "La costa del silencio",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('Mägo de Oz', 'La costa del silencio')"
+  },
+  {
+    "id": "song-gaia-mago-de-oz",
+    "cat": "song-metal",
+    "franchise": "Mägo de Oz",
+    "game": "Gaia",
+    "title": "Gaia",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('Mägo de Oz', 'Gaia')"
+  },
+  {
+    "id": "song-el-cantar-de-la-luna",
+    "cat": "song-metal",
+    "franchise": "Mägo de Oz",
+    "game": "El cantar de la luna oscura",
+    "title": "El cantar de la luna oscura",
+    "year": 1998,
+    "lang": "es",
+    "sources": "busca('Mägo de Oz', 'El cantar de la luna oscura')"
+  },
+  {
+    "id": "song-finisterra-mago",
+    "cat": "song-metal",
+    "franchise": "Mägo de Oz",
+    "game": "Finisterra",
+    "title": "Finisterra",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('Mägo de Oz', 'Finisterra')"
+  },
+  {
+    "id": "song-hoy-toca-ser-feliz",
+    "cat": "song-metal",
+    "franchise": "Mägo de Oz",
+    "game": "Hoy toca ser feliz",
+    "title": "Hoy toca ser feliz",
+    "year": 2005,
+    "lang": "es",
+    "sources": "busca('Mägo de Oz', 'Hoy toca ser feliz')"
+  },
+  {
+    "id": "song-diabulus-in-musica-mago",
+    "cat": "song-metal",
+    "franchise": "Mägo de Oz",
+    "game": "Diabulus in musica",
+    "title": "Diabulus in musica",
+    "year": 2005,
+    "lang": "es",
+    "sources": "busca('Mägo de Oz', 'Diabulus in musica')"
+  },
+  {
+    "id": "song-va-a-estallar-el-obus",
+    "cat": "song-metal",
+    "franchise": "Obús",
+    "game": "Va a estallar el obús",
+    "title": "Va a estallar el obús",
+    "year": 1981,
+    "lang": "es",
+    "sources": "busca('Obús', 'Va a estallar el obús')"
+  },
+  {
+    "id": "song-dinero-dinero-obus",
+    "cat": "song-metal",
+    "franchise": "Obús",
+    "game": "Dinero, dinero",
+    "title": "Dinero, dinero",
+    "year": 1982,
+    "lang": "es",
+    "sources": "busca('Obús', 'Dinero, dinero')"
+  },
+  {
+    "id": "song-vamos-muy-bien",
+    "cat": "song-metal",
+    "franchise": "Obús",
+    "game": "Vamos muy bien",
+    "title": "Vamos muy bien",
+    "year": 1984,
+    "lang": "es",
+    "sources": "busca('Obús', 'Vamos muy bien')"
+  },
+  {
+    "id": "song-te-visitara-la-muerte",
+    "cat": "song-metal",
+    "franchise": "Obús",
+    "game": "Te visitará la muerte",
+    "title": "Te visitará la muerte",
+    "year": 1984,
+    "lang": "es",
+    "sources": "busca('Obús', 'Te visitará la muerte')"
+  },
+  {
+    "id": "song-pesadilla-nuclear",
+    "cat": "song-metal",
+    "franchise": "Obús",
+    "game": "Pesadilla nuclear",
+    "title": "Pesadilla nuclear",
+    "year": 1981,
+    "lang": "es",
+    "sources": "busca('Obús', 'Pesadilla nuclear')"
+  },
+  {
+    "id": "song-sangre-de-reyes",
+    "cat": "song-metal",
+    "franchise": "Tierra Santa",
+    "game": "Sangre de reyes",
+    "title": "Sangre de reyes",
+    "year": 2001,
+    "lang": "es",
+    "sources": "busca('Tierra Santa', 'Sangre de reyes')"
+  },
+  {
+    "id": "song-legendario-tierra-santa",
+    "cat": "song-metal",
+    "franchise": "Tierra Santa",
+    "game": "Legendario",
+    "title": "Legendario",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Tierra Santa', 'Legendario')"
+  },
+  {
+    "id": "song-tierras-de-leyenda",
+    "cat": "song-metal",
+    "franchise": "Tierra Santa",
+    "game": "Tierras de leyenda",
+    "title": "Tierras de leyenda",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('Tierra Santa', 'Tierras de leyenda')"
+  },
+  {
+    "id": "song-la-cancion-del-pirata",
+    "cat": "song-metal",
+    "franchise": "Tierra Santa",
+    "game": "La canción del pirata",
+    "title": "La canción del pirata",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('Tierra Santa', 'La canción del pirata')"
+  },
+  {
+    "id": "song-pegaso-tierra-santa",
+    "cat": "song-metal",
+    "franchise": "Tierra Santa",
+    "game": "Pegaso",
+    "title": "Pegaso",
+    "year": 2001,
+    "lang": "es",
+    "sources": "busca('Tierra Santa', 'Pegaso')"
+  },
+  {
+    "id": "song-las-walkirias",
+    "cat": "song-metal",
+    "franchise": "Tierra Santa",
+    "game": "Las walkirias",
+    "title": "Las walkirias",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('Tierra Santa', 'Las walkirias')"
+  },
+  {
+    "id": "song-si-amaneciera-saratoga",
+    "cat": "song-metal",
+    "franchise": "Saratoga",
+    "game": "Si amaneciera",
+    "title": "Si amaneciera",
+    "year": 2005,
+    "lang": "es",
+    "sources": "busca('Saratoga', 'Si amaneciera')"
+  },
+  {
+    "id": "song-maldito-corazon-saratoga",
+    "cat": "song-metal",
+    "franchise": "Saratoga",
+    "game": "Maldito corazón",
+    "title": "Maldito corazón",
+    "year": 2005,
+    "lang": "es",
+    "sources": "busca('Saratoga', 'Maldito corazón')"
+  },
+  {
+    "id": "song-vientos-de-guerra",
+    "cat": "song-metal",
+    "franchise": "Saratoga",
+    "game": "Vientos de guerra",
+    "title": "Vientos de guerra",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Saratoga', 'Vientos de guerra')"
+  },
+  {
+    "id": "song-perro-traidor",
+    "cat": "song-metal",
+    "franchise": "Saratoga",
+    "game": "Perro traidor",
+    "title": "Perro traidor",
+    "year": 2000,
+    "lang": "es",
+    "sources": "busca('Saratoga', 'Perro traidor')"
+  },
+  {
+    "id": "song-las-puertas-del-cielo",
+    "cat": "song-metal",
+    "franchise": "Saratoga",
+    "game": "Las puertas del cielo",
+    "title": "Las puertas del cielo",
+    "year": 2002,
+    "lang": "es",
+    "sources": "busca('Saratoga', 'Las puertas del cielo')"
+  },
+  {
+    "id": "song-tu-mismo-warcry",
+    "cat": "song-metal",
+    "franchise": "WarCry",
+    "game": "Tú mismo",
+    "title": "Tú mismo",
+    "year": 2002,
+    "lang": "es",
+    "sources": "busca('WarCry', 'Tú mismo')"
+  },
+  {
+    "id": "song-hoy-gano-yo-warcry",
+    "cat": "song-metal",
+    "franchise": "WarCry",
+    "game": "Hoy gano yo",
+    "title": "Hoy gano yo",
+    "year": 2002,
+    "lang": "es",
+    "sources": "busca('WarCry', 'Hoy gano yo')"
+  },
+  {
+    "id": "song-capitan-lawrence",
+    "cat": "song-metal",
+    "franchise": "WarCry",
+    "game": "Capitán Lawrence",
+    "title": "Capitán Lawrence",
+    "year": 2002,
+    "lang": "es",
+    "sources": "busca('WarCry', 'Capitán Lawrence')"
+  },
+  {
+    "id": "song-aire-warcry",
+    "cat": "song-metal",
+    "franchise": "WarCry",
+    "game": "Aire",
+    "title": "Aire",
+    "year": 2004,
+    "lang": "es",
+    "sources": "busca('WarCry', 'Aire')"
+  },
+  {
+    "id": "song-nana-warcry",
+    "cat": "song-metal",
+    "franchise": "WarCry",
+    "game": "Nana",
+    "title": "Nana",
+    "year": 2004,
+    "lang": "es",
+    "sources": "busca('WarCry', 'Nana')"
+  },
+  {
+    "id": "song-la-vida-en-un-beso",
+    "cat": "song-metal",
+    "franchise": "WarCry",
+    "game": "La vida en un beso",
+    "title": "La vida en un beso",
+    "year": 2006,
+    "lang": "es",
+    "sources": "busca('WarCry', 'La vida en un beso')"
+  },
+  {
+    "id": "song-torquemada-avalanch",
+    "cat": "song-metal",
+    "franchise": "Avalanch",
+    "game": "Torquemada",
+    "title": "Torquemada",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Avalanch', 'Torquemada')"
+  },
+  {
+    "id": "song-lucero-avalanch",
+    "cat": "song-metal",
+    "franchise": "Avalanch",
+    "game": "Lucero",
+    "title": "Lucero",
+    "year": 2003,
+    "lang": "es",
+    "sources": "busca('Avalanch', 'Lucero')"
+  },
+  {
+    "id": "song-xana-avalanch",
+    "cat": "song-metal",
+    "franchise": "Avalanch",
+    "game": "Xana",
+    "title": "Xana",
+    "year": 2001,
+    "lang": "es",
+    "sources": "busca('Avalanch', 'Xana')"
+  },
+  {
+    "id": "song-pelayo-avalanch",
+    "cat": "song-metal",
+    "franchise": "Avalanch",
+    "game": "Pelayo",
+    "title": "Pelayo",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Avalanch', 'Pelayo')"
+  },
+  {
+    "id": "song-hijo-de-la-luna-stravaganzza",
+    "cat": "song-metal",
+    "franchise": "Stravaganzza",
+    "game": "Hijo de la luna",
+    "title": "Hijo de la luna",
+    "year": 2006,
+    "lang": "es",
+    "sources": "busca('Stravaganzza', 'Hijo de la luna')"
+  },
+  {
+    "id": "song-escudo-y-espada",
+    "cat": "song-metal",
+    "franchise": "Kraken",
+    "game": "Escudo y espada",
+    "title": "Escudo y espada",
+    "year": 1987,
+    "lang": "es",
+    "sources": "busca('Kraken', 'Escudo y espada')"
+  },
+  {
+    "id": "song-muere-libre-kraken",
+    "cat": "song-metal",
+    "franchise": "Kraken",
+    "game": "Muere libre",
+    "title": "Muere libre",
+    "year": 1987,
+    "lang": "es",
+    "sources": "busca('Kraken', 'Muere libre')"
+  },
+  {
+    "id": "song-lenguaje-de-mi-piel",
+    "cat": "song-metal",
+    "franchise": "Kraken",
+    "game": "Lenguaje de mi piel",
+    "title": "Lenguaje de mi piel",
+    "year": 1993,
+    "lang": "es",
+    "sources": "busca('Kraken', 'Lenguaje de mi piel')"
+  },
+  {
+    "id": "song-vestido-de-cristal",
+    "cat": "song-metal",
+    "franchise": "Kraken",
+    "game": "Vestido de cristal",
+    "title": "Vestido de cristal",
+    "year": 1989,
+    "lang": "es",
+    "sources": "busca('Kraken', 'Vestido de cristal')"
+  },
+  {
+    "id": "song-destruccion-hermetica",
+    "cat": "song-metal",
+    "franchise": "Hermética",
+    "game": "Destrucción",
+    "title": "Destrucción",
+    "year": 1989,
+    "lang": "es",
+    "sources": "busca('Hermética', 'Destrucción')"
+  },
+  {
+    "id": "song-victimas-del-vaciamiento",
+    "cat": "song-metal",
+    "franchise": "Hermética",
+    "game": "Víctimas del vaciamiento",
+    "title": "Víctimas del vaciamiento",
+    "year": 1994,
+    "lang": "es",
+    "sources": "busca('Hermética', 'Víctimas del vaciamiento')"
+  },
+  {
+    "id": "song-soy-de-la-esquina",
+    "cat": "song-metal",
+    "franchise": "Hermética",
+    "game": "Soy de la esquina",
+    "title": "Soy de la esquina",
+    "year": 1991,
+    "lang": "es",
+    "sources": "busca('Hermética', 'Soy de la esquina')"
+  },
+  {
+    "id": "song-tu-medicina-hermetica",
+    "cat": "song-metal",
+    "franchise": "Hermética",
+    "game": "Tu medicina",
+    "title": "Tu medicina",
+    "year": 1991,
+    "lang": "es",
+    "sources": "busca('Hermética', 'Tu medicina')"
+  },
+  {
+    "id": "song-del-camionero",
+    "cat": "song-metal",
+    "franchise": "Hermética",
+    "game": "Del camionero",
+    "title": "Del camionero",
+    "year": 1994,
+    "lang": "es",
+    "sources": "busca('Hermética', 'Del camionero')"
+  },
+  {
+    "id": "song-sintoma-de-la-infeccion",
+    "cat": "song-metal",
+    "franchise": "Malón",
+    "game": "Síntoma de la infección",
+    "title": "Síntoma de la infección",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('Malón', 'Síntoma de la infección')"
+  },
+  {
+    "id": "song-castigador-por-herencia",
+    "cat": "song-metal",
+    "franchise": "Malón",
+    "game": "Castigador por herencia",
+    "title": "Castigador por herencia",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('Malón', 'Castigador por herencia')"
+  },
+  {
+    "id": "song-gato-negro-malon",
+    "cat": "song-metal",
+    "franchise": "Malón",
+    "game": "Gato negro",
+    "title": "Gato negro",
+    "year": 1996,
+    "lang": "es",
+    "sources": "busca('Malón', 'Gato negro')"
+  },
+  {
+    "id": "song-el-nuevo-camino-animal",
+    "cat": "song-metal",
+    "franchise": "A.N.I.M.A.L.",
+    "game": "El nuevo camino del hombre",
+    "title": "El nuevo camino del hombre",
+    "year": 1996,
+    "lang": "es",
+    "sources": "busca('A.N.I.M.A.L.', 'El nuevo camino del hombre')"
+  },
+  {
+    "id": "song-lejos-de-casa-animal",
+    "cat": "song-metal",
+    "franchise": "A.N.I.M.A.L.",
+    "game": "Lejos de casa",
+    "title": "Lejos de casa",
+    "year": 1996,
+    "lang": "es",
+    "sources": "busca('A.N.I.M.A.L.', 'Lejos de casa')"
+  },
+  {
+    "id": "song-loco-pro-animal",
+    "cat": "song-metal",
+    "franchise": "A.N.I.M.A.L.",
+    "game": "Loco pro",
+    "title": "Loco pro",
+    "year": 1998,
+    "lang": "es",
+    "sources": "busca('A.N.I.M.A.L.', 'Loco pro')"
+  },
+  {
+    "id": "song-solo-por-ser-indios",
+    "cat": "song-metal",
+    "franchise": "A.N.I.M.A.L.",
+    "game": "Sólo por ser indios",
+    "title": "Sólo por ser indios",
+    "year": 1994,
+    "lang": "es",
+    "sources": "busca('A.N.I.M.A.L.', 'Sólo por ser indios')"
+  },
+  {
+    "id": "song-se-vos-almafuerte",
+    "cat": "song-metal",
+    "franchise": "Almafuerte",
+    "game": "Sé vos",
+    "title": "Sé vos",
+    "year": 1998,
+    "lang": "es",
+    "sources": "busca('Almafuerte', 'Sé vos')"
+  },
+  {
+    "id": "song-a-vos-amigo",
+    "cat": "song-metal",
+    "franchise": "Almafuerte",
+    "game": "A vos amigo",
+    "title": "A vos amigo",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Almafuerte', 'A vos amigo')"
+  },
+  {
+    "id": "song-toro-y-pampa",
+    "cat": "song-metal",
+    "franchise": "Almafuerte",
+    "game": "Toro y pampa",
+    "title": "Toro y pampa",
+    "year": 2006,
+    "lang": "es",
+    "sources": "busca('Almafuerte', 'Toro y pampa')"
+  },
+  {
+    "id": "song-matando-gueros",
+    "cat": "song-metal",
+    "franchise": "Brujería",
+    "game": "Matando güeros",
+    "title": "Matando güeros",
+    "year": 1993,
+    "lang": "es",
+    "sources": "busca('Brujería', 'Matando güeros')"
+  },
+  {
+    "id": "song-la-migra-brujeria",
+    "cat": "song-metal",
+    "franchise": "Brujería",
+    "game": "La migra",
+    "title": "La migra",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('Brujería', 'La migra')"
+  },
+  {
+    "id": "song-colas-de-rata",
+    "cat": "song-metal",
+    "franchise": "Brujería",
+    "game": "Colas de rata",
+    "title": "Colas de rata",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('Brujería', 'Colas de rata')"
+  },
+  {
+    "id": "song-raza-odiada",
+    "cat": "song-metal",
+    "franchise": "Brujería",
+    "game": "Raza odiada (Pito Wilson)",
+    "title": "Raza odiada (Pito Wilson)",
+    "year": 1995,
+    "lang": "es",
+    "sources": "busca('Brujería', 'Raza odiada (Pito Wilson)')"
+  },
+  {
+    "id": "song-america-resorte",
+    "cat": "song-metal",
+    "franchise": "Resorte",
+    "game": "América",
+    "title": "América",
+    "year": 1997,
+    "lang": "es",
+    "sources": "busca('Resorte', 'América')"
+  },
+  {
+    "id": "song-puro-rock-resorte",
+    "cat": "song-metal",
+    "franchise": "Resorte",
+    "game": "Puro rock",
+    "title": "Puro rock",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Resorte', 'Puro rock')"
+  },
+  {
+    "id": "song-aqui-no-es-donde",
+    "cat": "song-metal",
+    "franchise": "Resorte",
+    "game": "Aquí no es donde",
+    "title": "Aquí no es donde",
+    "year": 1999,
+    "lang": "es",
+    "sources": "busca('Resorte', 'Aquí no es donde')"
+  },
+  {
+    "id": "song-muerto-en-la-cruz",
+    "cat": "song-metal",
+    "franchise": "Transmetal",
+    "game": "Muerto en la cruz",
+    "title": "Muerto en la cruz",
+    "year": 1988,
+    "lang": "es",
+    "sources": "busca('Transmetal', 'Muerto en la cruz')"
+  },
+  {
+    "id": "song-infierno-de-dante",
+    "cat": "song-metal",
+    "franchise": "Transmetal",
+    "game": "Infierno de Dante",
+    "title": "Infierno de Dante",
+    "year": 1993,
+    "lang": "es",
+    "sources": "busca('Transmetal', 'Infierno de Dante')"
+  },
+  {
+    "id": "song-el-llamado-de-la-hembra",
+    "cat": "song-metal",
+    "franchise": "Transmetal",
+    "game": "El llamado de la hembra",
+    "title": "El llamado de la hembra",
+    "year": 1996,
+    "lang": "es",
+    "sources": "busca('Transmetal', 'El llamado de la hembra')"
+  },
+  {
+    "id": "song-el-loco-luzbel",
+    "cat": "song-metal",
+    "franchise": "Luzbel",
+    "game": "El loco",
+    "title": "El loco",
+    "year": 1985,
+    "lang": "es",
+    "sources": "busca('Luzbel', 'El loco')"
+  },
+  {
+    "id": "song-por-piedad-luzbel",
+    "cat": "song-metal",
+    "franchise": "Luzbel",
+    "game": "Por piedad",
+    "title": "Por piedad",
+    "year": 1986,
+    "lang": "es",
+    "sources": "busca('Luzbel', 'Por piedad')"
+  },
+  {
+    "id": "song-pasaporte-al-infierno",
+    "cat": "song-metal",
+    "franchise": "Luzbel",
+    "game": "Pasaporte al infierno",
+    "title": "Pasaporte al infierno",
+    "year": 1986,
+    "lang": "es",
+    "sources": "busca('Luzbel', 'Pasaporte al infierno')"
+  },
+  {
+    "id": "song-el-tirano-gillman",
+    "cat": "song-metal",
+    "franchise": "Gillman",
+    "game": "El tirano",
+    "title": "El tirano",
+    "year": 1984,
+    "lang": "es",
+    "sources": "busca('Gillman', 'El tirano')"
+  },
+  {
+    "id": "song-asesino-arkangel",
+    "cat": "song-metal",
+    "franchise": "Arkangel",
+    "game": "Asesino",
+    "title": "Asesino",
+    "year": 1981,
+    "lang": "es",
+    "sources": "busca('Arkangel', 'Asesino')"
+  },
+  {
+    "id": "song-en-la-nada-agora",
+    "cat": "song-metal",
+    "franchise": "Agora",
+    "game": "En la nada",
+    "title": "En la nada",
+    "year": 2004,
+    "lang": "es",
+    "sources": "busca('Agora', 'En la nada')"
+  },
+  {
+    "id": "song-refugio-agora",
+    "cat": "song-metal",
+    "franchise": "Agora",
+    "game": "Refugio",
+    "title": "Refugio",
+    "year": 2008,
+    "lang": "es",
+    "sources": "busca('Agora', 'Refugio')"
+  },
+  {
+    "id": "song-children-of-the-grave",
+    "cat": "song-metal",
+    "franchise": "Black Sabbath",
+    "game": "Children of the Grave",
+    "title": "Children of the Grave",
+    "year": 1971,
+    "lang": "en",
+    "sources": "busca('Black Sabbath', 'Children of the Grave')"
+  },
+  {
+    "id": "song-nib-black-sabbath",
+    "cat": "song-metal",
+    "franchise": "Black Sabbath",
+    "game": "N.I.B.",
+    "title": "N.I.B.",
+    "year": 1970,
+    "lang": "en",
+    "sources": "busca('Black Sabbath', 'N.I.B.')"
+  },
+  {
+    "id": "song-shot-in-the-dark-ozzy",
+    "cat": "song-metal",
+    "franchise": "Ozzy Osbourne",
+    "game": "Shot in the Dark",
+    "title": "Shot in the Dark",
+    "year": 1986,
+    "lang": "en",
+    "sources": "busca('Ozzy Osbourne', 'Shot in the Dark')"
+  },
+  {
+    "id": "song-electric-eye",
+    "cat": "song-metal",
+    "franchise": "Judas Priest",
+    "game": "Electric Eye",
+    "title": "Electric Eye",
+    "year": 1982,
+    "lang": "en",
+    "sources": "busca('Judas Priest', 'Electric Eye')"
+  },
+  {
+    "id": "song-turbo-lover",
+    "cat": "song-metal",
+    "franchise": "Judas Priest",
+    "game": "Turbo Lover",
+    "title": "Turbo Lover",
+    "year": 1986,
+    "lang": "en",
+    "sources": "busca('Judas Priest', 'Turbo Lover')"
+  },
+  {
+    "id": "song-aces-high",
+    "cat": "song-metal",
+    "franchise": "Iron Maiden",
+    "game": "Aces High",
+    "title": "Aces High",
+    "year": 1984,
+    "lang": "en",
+    "sources": "busca('Iron Maiden', 'Aces High')"
+  },
+  {
+    "id": "song-2-minutes-to-midnight",
+    "cat": "song-metal",
+    "franchise": "Iron Maiden",
+    "game": "2 Minutes to Midnight",
+    "title": "2 Minutes to Midnight",
+    "year": 1984,
+    "lang": "en",
+    "sources": "busca('Iron Maiden', '2 Minutes to Midnight')"
+  },
+  {
+    "id": "song-battery-metallica",
+    "cat": "song-metal",
+    "franchise": "Metallica",
+    "game": "Battery",
+    "title": "Battery",
+    "year": 1986,
+    "lang": "en",
+    "sources": "busca('Metallica', 'Battery')"
+  },
+  {
+    "id": "song-creeping-death",
+    "cat": "song-metal",
+    "franchise": "Metallica",
+    "game": "Creeping Death",
+    "title": "Creeping Death",
+    "year": 1984,
+    "lang": "en",
+    "sources": "busca('Metallica', 'Creeping Death')"
+  },
+  {
+    "id": "song-tornado-of-souls",
+    "cat": "song-metal",
+    "franchise": "Megadeth",
+    "game": "Tornado of Souls",
+    "title": "Tornado of Souls",
+    "year": 1990,
+    "lang": "en",
+    "sources": "busca('Megadeth', 'Tornado of Souls')"
+  },
+  {
+    "id": "song-im-broken-pantera",
+    "cat": "song-metal",
+    "franchise": "Pantera",
+    "game": "I'm Broken",
+    "title": "I'm Broken",
+    "year": 1994,
+    "lang": "en",
+    "sources": "busca('Pantera', 'I\\'m Broken')"
+  }
+]

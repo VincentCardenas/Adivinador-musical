@@ -1,0 +1,2364 @@
+{
+  "generado": "2026-10-07T23:23:47.531Z",
+  "catalogo": "anime",
+  "aceptadas": [
+    {
+      "id": "ani-astro-boy-tetsuwan-atom",
+      "franchise": "Astro Boy",
+      "title": "Tetsuwan Atom",
+      "elegido": {
+        "id": "40Ce9_wQycc",
+        "title": "Astro Boy Tetsuwan Atom Opening (2003) Subtitulado al Español",
+        "seconds": 91,
+        "channel": "Rodolfo Kuman",
+        "score": 10.85,
+        "consulta": "Astro Boy opening Tetsuwan Atom Kamitakada Junior Chorus"
+      }
+    },
+    {
+      "id": "ani-kimba-el-leon-blanco",
+      "franchise": "Kimba, el león blanco",
+      "title": "Jungle Taitei",
+      "elegido": {
+        "id": "J8nbzxuiqTk",
+        "title": "Janguru Taitei, El imperio de la jungla, Kimba, El León Blanco,1966   opening",
+        "seconds": 189,
+        "channel": "kittys (gatos) S",
+        "score": 8.85,
+        "consulta": "Kimba, el león blanco opening Jungle Taitei Susumu Ishikawa"
+      }
+    },
+    {
+      "id": "ani-la-princesa-caballero",
+      "franchise": "La princesa caballero",
+      "title": "Ribbon no Kishi",
+      "elegido": {
+        "id": "HSn2gTl2t10",
+        "title": "Princess Knight | Ribbon no Kishi | Opening",
+        "seconds": 104,
+        "channel": "ManhwaFan",
+        "score": 10.55,
+        "consulta": "La princesa caballero opening Ribbon no Kishi Yoko Maekawa"
+      }
+    },
+    {
+      "id": "ani-gegege-no-kitaro-tema",
+      "franchise": "GeGeGe no Kitaro",
+      "title": "GeGeGe no Kitaro",
+      "elegido": {
+        "id": "q0bXQQzetDg",
+        "title": "Kazuo Kumakura - \"Gegege no Kitaro\" (Sub español)",
+        "seconds": 160,
+        "channel": "KOTORI Channel 2",
+        "score": 11,
+        "consulta": "GeGeGe no Kitaro opening GeGeGe no Kitaro Kazuo Kumakura"
+      }
+    },
+    {
+      "id": "ani-dororo-hone-made-aishite",
+      "franchise": "Dororo",
+      "title": "Dororo no Uta",
+      "elegido": {
+        "id": "sxiE9s_NWJk",
+        "title": "Dororo - Dororo no Uta",
+        "seconds": 111,
+        "channel": "Anime no Memories",
+        "score": 9.25,
+        "consulta": "Dororo opening Dororo no Uta Toshiko Fujita"
+      }
+    },
+    {
+      "id": "ani-ashita-no-joe-opening",
+      "franchise": "Ashita no Joe",
+      "title": "Ashita no Joe",
+      "elegido": {
+        "id": "VhrQDLsf0oU",
+        "title": "Ashita No Joe | Opening 1 FULL | «Bitou Isao - Ashita No Joe (Versión Aniversario)» | SUB ESP",
+        "seconds": 285,
+        "channel": "Rose Caffè",
+        "score": 11.85,
+        "consulta": "Ashita no Joe opening Ashita no Joe Isao Sasaki"
+      }
+    },
+    {
+      "id": "ani-lupin-iii-theme",
+      "franchise": "Lupin III",
+      "title": "Lupin the Third Theme",
+      "elegido": {
+        "id": "wyylkdfeIKM",
+        "title": "Charlie Kosei - Lupin the Third Theme Song II (Theme of Lupin III, II)",
+        "seconds": 346,
+        "channel": "Sing in the Tunes",
+        "score": 10.85,
+        "consulta": "Lupin III opening Lupin the Third Theme Charlie Kosei"
+      }
+    },
+    {
+      "id": "ani-gatchaman-fuerza-g",
+      "franchise": "Gatchaman",
+      "title": "Gatchaman no Uta",
+      "elegido": {
+        "id": "TB9s1K9n9F8",
+        "title": "Masato Shimon - Gatchaman No Uta | Kagaku Ninjatai Gatchaman - Opening (sub español)",
+        "seconds": 81,
+        "channel": "jaofer.animemusic",
+        "score": 12,
+        "consulta": "Gatchaman opening Gatchaman no Uta Masato Shimon"
+      }
+    },
+    {
+      "id": "ani-cutie-honey-tema",
+      "franchise": "Cutie Honey",
+      "title": "Cutie Honey",
+      "elegido": {
+        "id": "T_OgBnrrbYM",
+        "title": "cutie honey the live opening v1 1080p",
+        "seconds": 90,
+        "channel": "manganihon",
+        "score": 11,
+        "consulta": "Cutie Honey Cutie Honey opening"
+      }
+    },
+    {
+      "id": "ani-casshan-shinzo-ningen",
+      "franchise": "Casshan",
+      "title": "Tatakae! Casshan",
+      "elegido": {
+        "id": "6G2CDTOmCiI",
+        "title": "Isao Sasaki - Tatakae! Casshan",
+        "seconds": 161,
+        "channel": "Shinzou Ningen",
+        "score": 11,
+        "consulta": "Casshan opening Tatakae! Casshan Isao Sasaki"
+      }
+    },
+    {
+      "id": "ani-great-mazinger-ore-wa",
+      "franchise": "Great Mazinger",
+      "title": "Ore wa Great Mazinger",
+      "elegido": {
+        "id": "g7z2v2eX41c",
+        "title": "Ore wa Great Mazinger (I am Great Mazinger) - Ichiro Mizuki - Great Mazinger Opening Theme [ENG CC]",
+        "seconds": 143,
+        "channel": "bunger robo",
+        "score": 12,
+        "consulta": "Great Mazinger opening Ore wa Great Mazinger Ichiro Mizuki"
+      }
+    },
+    {
+      "id": "ani-space-battleship-yamato",
+      "franchise": "Space Battleship Yamato",
+      "title": "Uchuu Senkan Yamato",
+      "elegido": {
+        "id": "H1K8Jq0CsQ0",
+        "title": "STAR BLAZERS 2022 | Opening | Uchuu Senkan Yamato 2202 - ISAO SASAKI | aniverse",
+        "seconds": 91,
+        "channel": "KSM Anime",
+        "score": 11.7,
+        "consulta": "Space Battleship Yamato opening Uchuu Senkan Yamato Isao Sasaki"
+      }
+    },
+    {
+      "id": "ani-ufo-robot-grendizer",
+      "franchise": "Grendizer",
+      "title": "Tobe! Grendizer",
+      "elegido": {
+        "id": "Diqk47c2wiQ",
+        "title": "Tobe! Grendizer (Fly! Grendizer) - Isao Sasaki - Grendizer Opening Theme [ENG CC]",
+        "seconds": 155,
+        "channel": "bunger robo",
+        "score": 11.55,
+        "consulta": "Grendizer opening Tobe! Grendizer Isao Sasaki"
+      }
+    },
+    {
+      "id": "ani-el-perro-de-flandes",
+      "franchise": "El perro de Flandes",
+      "title": "Yoake no Michi",
+      "elegido": {
+        "id": "tEQsSX7KqF8",
+        "title": "Yoake no Michi/Kumiko Osugi, Antwerp Children Chorus [Music Box] (Anime \"Dog of Flanders\" OP)",
+        "seconds": 74,
+        "channel": "R3 Music Box",
+        "score": 11.25,
+        "consulta": "El perro de Flandes opening Yoake no Michi Kumiko Osugi"
+      }
+    },
+    {
+      "id": "ani-marco-de-los-apeninos",
+      "franchise": "Marco",
+      "title": "Sougen no Marco",
+      "elegido": {
+        "id": "HXhCqWJIQzs",
+        "title": "[Haha o Tazunete Sanzenri] Sougen no Marco ~ Sub Español",
+        "seconds": 178,
+        "channel": "Aria Evangeline",
+        "score": 9.55,
+        "consulta": "Marco opening Sougen no Marco Kumiko Osugi"
+      }
+    },
+    {
+      "id": "ani-capitan-futuro-tema",
+      "franchise": "Capitán Futuro",
+      "title": "Yume no Funanori",
+      "elegido": {
+        "id": "wS0Eu1uG0HA",
+        "title": "Animetal Captain Future   OP   Yume no funanori",
+        "seconds": 64,
+        "channel": "Aden Sama",
+        "score": 10.4,
+        "consulta": "Capitán Futuro opening Yume no Funanori Takatoya"
+      }
+    },
+    {
+      "id": "ani-gundam-tobe-gundam",
+      "franchise": "Mobile Suit Gundam",
+      "title": "Tobe! Gundam",
+      "elegido": {
+        "id": "m0bvHt8qKOk",
+        "title": "Tobe! Gundam (Fly! Gundam) - Kou Ikeda - Mobile Suit Gundam Opening Theme [ENG CC]",
+        "seconds": 166,
+        "channel": "bunger robo",
+        "score": 12,
+        "consulta": "Mobile Suit Gundam opening Tobe! Gundam Koh Ikeda"
+      }
+    },
+    {
+      "id": "ani-lady-oscar-la-rosa-de-versalles",
+      "franchise": "La rosa de Versalles",
+      "title": "Bara wa Utsukushiku Chiru",
+      "elegido": {
+        "id": "cvbC-8qP0yM",
+        "title": "Lady Oscar// La rosa de Versalles (OP) - Bara wa utsukushiku chiru; sub esp",
+        "seconds": 201,
+        "channel": "我 mia ೃ",
+        "score": 11,
+        "consulta": "La rosa de Versalles opening Bara wa Utsukushiku Chiru Reiko Suzuki"
+      }
+    },
+    {
+      "id": "ani-doraemon-no-uta",
+      "franchise": "Doraemon",
+      "title": "Doraemon no Uta",
+      "elegido": {
+        "id": "F5cZMdBDYU8",
+        "title": "Doraemon no Uta (Kumiko Osugi) - Doraemon Opening Song",
+        "seconds": 175,
+        "channel": "P' Music Archive",
+        "score": 12,
+        "consulta": "Doraemon opening Doraemon no Uta Kumiko Osugi"
+      }
+    },
+    {
+      "id": "ani-dr-slump-wai-wai-world",
+      "franchise": "Dr. Slump",
+      "title": "Wai Wai World",
+      "elegido": {
+        "id": "umgTlSO_Qmw",
+        "title": "Dr. Slump (Arale) - Opening English \"Wai Wai World\"",
+        "seconds": 70,
+        "channel": "Music Is Life 2",
+        "score": 10.7,
+        "consulta": "Dr. Slump opening Wai Wai World Amede"
+      }
+    },
+    {
+      "id": "ani-urusei-yatsura-lum-love-song",
+      "franchise": "Urusei Yatsura",
+      "title": "Lum no Love Song",
+      "elegido": {
+        "id": "0XkZ-3RvC4A",
+        "title": "Urusei Yatsura OP 1 HQ Full [Lum no love song - Matsutani Yuko]",
+        "seconds": 159,
+        "channel": "funny hood vine compilations",
+        "score": 11.85,
+        "consulta": "Urusei Yatsura opening Lum no Love Song Yuko Matsutani"
+      }
+    },
+    {
+      "id": "ani-macross-ai-senshi",
+      "franchise": "Macross",
+      "title": "Macross",
+      "elegido": {
+        "id": "jH2ZomNCPWE",
+        "title": "Super Dimension Fortress Macross OP / Opening - Macross by Makoto Fujiwara",
+        "seconds": 94,
+        "channel": "Xsaru",
+        "score": 11.4,
+        "consulta": "Macross opening Macross Makoto Fujiwara"
+      }
+    },
+    {
+      "id": "ani-armored-trooper-votoms-honoo-no-sadame",
+      "franchise": "Armored Trooper Votoms",
+      "title": "Honoo no Sadame",
+      "elegido": {
+        "id": "OotKZVLeU_Q",
+        "title": "VOTOMS opening - Honoo no Sadame | English lyrics",
+        "seconds": 195,
+        "channel": "Wickendiana",
+        "score": 9.95,
+        "consulta": "Armored Trooper Votoms opening Honoo no Sadame TETSU"
+      }
+    },
+    {
+      "id": "ani-cats-eye-anri",
+      "franchise": "Cat's Eye",
+      "title": "CAT'S EYE",
+      "elegido": {
+        "id": "k-BrT2SQ7SI",
+        "title": "CAT'S EYE | \"Cat's Eye\" by Anri | Official Opening Theme",
+        "seconds": 93,
+        "channel": "Anime! on TMS Official Channel",
+        "score": 12,
+        "consulta": "Cat's Eye opening CAT'S EYE Anri"
+      }
+    },
+    {
+      "id": "ani-kinnikuman-go-fight",
+      "franchise": "Kinnikuman",
+      "title": "Kinnikuman Go Fight!",
+      "elegido": {
+        "id": "x4scqkonxEw",
+        "title": "【公式】アニメ『キン肉マン』OP映像：串田アキラ「キン肉マン Go Fight!」/Kinnikuman",
+        "seconds": 91,
+        "channel": "TAB Channel / タブ【Toei Animation Beyond】",
+        "score": 11,
+        "consulta": "Kinnikuman opening Kinnikuman Go Fight! Akira Kushida"
+      }
+    },
+    {
+      "id": "ani-hokuto-no-ken-ai-wo-torimodose",
+      "franchise": "Hokuto no Ken",
+      "title": "Ai wo Torimodose!!",
+      "elegido": {
+        "id": "pRFxpHSNxkA",
+        "title": "Fist of the North Star - Opening 1 v1 【Ai wo Torimodose!!】 4K / UHD Creditless | CC",
+        "seconds": 134,
+        "channel": "Neobrane",
+        "score": 11,
+        "consulta": "Hokuto no Ken opening Ai wo Torimodose!! Crystal King"
+      }
+    },
+    {
+      "id": "ani-touch-yoshimi-iwasaki",
+      "franchise": "Touch",
+      "title": "Touch",
+      "elegido": {
+        "id": "aBu9LDKZIF4",
+        "title": "「Touch」by Yoshimi Iwasaki",
+        "seconds": 191,
+        "channel": "S H",
+        "score": 11,
+        "consulta": "Touch opening Touch Yoshimi Iwasaki"
+      }
+    },
+    {
+      "id": "ani-zeta-gundam-toki-wo-koete",
+      "franchise": "Mobile Suit Zeta Gundam",
+      "title": "Zeta - Toki wo Koete",
+      "elegido": {
+        "id": "Mnjj1h7SOzE",
+        "title": "Mami Ayukawa Zeta – Toki wo Koete (Mobile Suit Zeta Gundam OP 1) single release commercial",
+        "seconds": 29,
+        "channel": "GarryMooreFan",
+        "score": 10.8,
+        "consulta": "Mobile Suit Zeta Gundam opening Zeta - Toki wo Koete Mami Ayukawa"
+      }
+    },
+    {
+      "id": "ani-city-hunter-ai-yo-kienaide",
+      "franchise": "City Hunter",
+      "title": "City Hunter ~Ai yo Kienaide~",
+      "elegido": {
+        "id": "_1x0cGFy07U",
+        "title": "City Hunter-Ai Yo Kienaide",
+        "seconds": 247,
+        "channel": "Kahoru Kohiruimaki",
+        "score": 10,
+        "consulta": "City Hunter opening City Hunter ~Ai yo Kienaide~ Kahoru Kohiruimaki"
+      }
+    },
+    {
+      "id": "ani-kimagure-orange-road-night-of-summer-side",
+      "franchise": "Kimagure Orange Road",
+      "title": "Night of Summer Side",
+      "elegido": {
+        "id": "zpJLMiVzKIg",
+        "title": "Night of the summer side - Masanori Ikeda (池田政典) - Kimagure Orange Road",
+        "seconds": 146,
+        "channel": "CyberFred KOR",
+        "score": 11,
+        "consulta": "Kimagure Orange Road opening Night of Summer Side Masanori Ikeda"
+      }
+    },
+    {
+      "id": "ani-ranma-jajauma-ni-sasenaide",
+      "franchise": "Ranma ½",
+      "title": "Jajauma ni Sasenaide",
+      "elegido": {
+        "id": "lzTctLs_Q5E",
+        "title": "*JAJAUMA NI SASENAIDE* (じゃじゃ馬にさせないで) - ETSUKO NISHIO (西尾悦子) -  1989 / OPENING 1 RANMA 1/2 (らんま½)",
+        "seconds": 142,
+        "channel": "PRIVADO 80s",
+        "score": 12,
+        "consulta": "Ranma ½ opening Jajauma ni Sasenaide Etsuko Nishio"
+      }
+    },
+    {
+      "id": "ani-patlabor-sono-mama-no-kimi-de-ite",
+      "franchise": "Mobile Police Patlabor",
+      "title": "Sono Mama no Kimi de Ite",
+      "elegido": {
+        "id": "0oQX6TPbI3A",
+        "title": "機動警察パトレイバー ON TELEVISION - Patlabor: The Mobile Police - NC OP 01 ~ [ Sono Mama no Kimi de Ite ]",
+        "seconds": 118,
+        "channel": "Classics OPED Collection",
+        "score": 10.85,
+        "consulta": "Mobile Police Patlabor opening Sono Mama no Kimi de Ite Chieko Nikaido"
+      }
+    },
+    {
+      "id": "ani-gunbuster-active-heart",
+      "franchise": "Gunbuster",
+      "title": "Active Heart",
+      "elegido": {
+        "id": "ZLhPBQpXafY",
+        "title": "酒井法子 Noriko Sakai - アクティブ・ハート Active Heart | トップをねらえ! Gunbuster OP (Full Translated Lyrics)",
+        "seconds": 202,
+        "channel": "Ultraman Haru0",
+        "score": 11.85,
+        "consulta": "Gunbuster opening Active Heart Noriko Hidaka"
+      }
+    },
+    {
+      "id": "ani-bubblegum-crisis-konya-wa-hurricane",
+      "franchise": "Bubblegum Crisis",
+      "title": "Konya wa Hurricane",
+      "elegido": {
+        "id": "o45hKbb36gM",
+        "title": "Konyawa Hurricane (Remastered 2022) [Bubblegum Crisis Soundtrack]/Kinuko Omori m:Joetastic",
+        "seconds": 283,
+        "channel": "刻々帝",
+        "score": 10.1,
+        "consulta": "Bubblegum Crisis opening Konya wa Hurricane Kinuko Omori"
+      }
+    },
+    {
+      "id": "ani-space-adventure-cobra-daydream-romance",
+      "franchise": "Space Adventure Cobra",
+      "title": "Cobra",
+      "elegido": {
+        "id": "xQEjSsSP8O4",
+        "title": "SPACE ADVENTURE COBRA OPENING",
+        "seconds": 81,
+        "channel": "canal digital 2020",
+        "score": 9.95,
+        "consulta": "Space Adventure Cobra Cobra opening"
+      }
+    },
+    {
+      "id": "ani-maison-ikkoku-kanashimi-yo-konnichiwa",
+      "franchise": "Maison Ikkoku",
+      "title": "Kanashimi yo Konnichiwa",
+      "elegido": {
+        "id": "ka5MqDofPmg",
+        "title": "Kanashimi Yo Konnichiwa Español. Buenos días tristeza. (Charm Lydia) Maison Ikkoku op 1",
+        "seconds": 235,
+        "channel": "Giovany Music J",
+        "score": 10.55,
+        "consulta": "Maison Ikkoku opening Kanashimi yo Konnichiwa Yuki Saito"
+      }
+    },
+    {
+      "id": "ani-dirty-pair-russian-roulette",
+      "franchise": "Dirty Pair",
+      "title": "Ru-Ru-Ru-Russian Roulette",
+      "elegido": {
+        "id": "7wlLZ1cSxjE",
+        "title": "Ru-Ru-Ru-Russian Roulette - Meiko Nakahara | Dirty Pair OP",
+        "seconds": 225,
+        "channel": "Franksong",
+        "score": 11.55,
+        "consulta": "Dirty Pair Ru-Ru-Ru-Russian Roulette opening"
+      }
+    },
+    {
+      "id": "ani-kiteretsu-daihyakka-oryori-koshinkyoku",
+      "franchise": "Kiteretsu Daihyakka",
+      "title": "Oryori Koshinkyoku",
+      "elegido": {
+        "id": "1VdvspWjjbI",
+        "title": "Oryori Koshinkyoku (Kiteretsu Daihyakka) | YUKA",
+        "seconds": 82,
+        "channel": "Anisong.fr",
+        "score": 10.85,
+        "consulta": "Kiteretsu Daihyakka opening Oryori Koshinkyoku Yuka"
+      }
+    },
+    {
+      "id": "ani-anpanman-march",
+      "franchise": "Soreike! Anpanman",
+      "title": "Anpanman no March",
+      "elegido": {
+        "id": "D6xpDiCoAsg",
+        "title": "Anpanman March/Dreaming [Music Box] (Anime \"Anpanman\" OP)",
+        "seconds": 58,
+        "channel": "R3 Music Box",
+        "score": 11.1,
+        "consulta": "Soreike! Anpanman opening Anpanman no March Dreaming"
+      }
+    },
+    {
+      "id": "ani-rurouni-kenshin-sobakasu",
+      "franchise": "Rurouni Kenshin",
+      "title": "Sobakasu",
+      "elegido": {
+        "id": "HtVGA1EA7eo",
+        "title": "Judy Mary   Sobakasu Samurai X opening en concierto",
+        "seconds": 288,
+        "channel": "historygame ulises",
+        "score": 11.4,
+        "consulta": "Rurouni Kenshin opening Sobakasu JUDY AND MARY"
+      }
+    },
+    {
+      "id": "ani-rurouni-kenshin-1-2-no-shinwa",
+      "franchise": "Rurouni Kenshin",
+      "title": "1/2",
+      "elegido": {
+        "id": "UQZ5NnuaziQ",
+        "title": "Makoto Kawamoto One half (Rurouni Kenshin opening)",
+        "seconds": 312,
+        "channel": "Pinkie Cherry",
+        "score": 8,
+        "consulta": "Rurouni Kenshin opening 1/2 Makoto Kawamoto"
+      }
+    },
+    {
+      "id": "ani-berserk-tell-me-why",
+      "franchise": "Berserk",
+      "title": "Tell Me Why",
+      "elegido": {
+        "id": "j0xtuYULJNM",
+        "title": "Berserk 1997 OP FULL | Penpals \"Tell me why\" | Sub Español & Lyrics English",
+        "seconds": 207,
+        "channel": "AngelOBRSK Lyrics",
+        "score": 12,
+        "consulta": "Berserk opening Tell Me Why PENPALS"
+      }
+    },
+    {
+      "id": "ani-gto-drivers-high",
+      "franchise": "Great Teacher Onizuka",
+      "title": "Driver's High",
+      "elegido": {
+        "id": "2JGl6UzfPkE",
+        "title": "GTO the Animation Opening 1 | Driver's High",
+        "seconds": 107,
+        "channel": "Crunchyroll",
+        "score": 12,
+        "consulta": "Great Teacher Onizuka opening Driver's High L'Arc~en~Ciel"
+      }
+    },
+    {
+      "id": "ani-serial-experiments-lain-duvet",
+      "franchise": "Serial Experiments Lain",
+      "title": "Duvet",
+      "elegido": {
+        "id": "vYwgRdqVLt0",
+        "title": "duvet ; bôa - sub español | Serial Experiments Lain OP",
+        "seconds": 219,
+        "channel": "sevnkx",
+        "score": 11.7,
+        "consulta": "Serial Experiments Lain opening Duvet Bôa"
+      }
+    },
+    {
+      "id": "ani-revolutionary-girl-utena-rondo-revolution",
+      "franchise": "Revolutionary Girl Utena",
+      "title": "Rondo-revolution",
+      "elegido": {
+        "id": "PZUS7pm7IuQ",
+        "title": "Shoujo Kakumei Utena 🌹 - Rondo Revolution (Sub Español // Romaji)",
+        "seconds": 273,
+        "channel": "Fernando Galvis 902 ⭐",
+        "score": 9.55,
+        "consulta": "Revolutionary Girl Utena opening Rondo-revolution Masami Okui"
+      }
+    },
+    {
+      "id": "ani-dragon-ball-z-we-gotta-power",
+      "franchise": "Dragon Ball",
+      "title": "We Gotta Power",
+      "elegido": {
+        "id": "_Nv0OGlUHEY",
+        "title": "Dragon Ball Z Opening 2 -\"We Gotta Power\" -Hironobu Kageyama (Sub español 1080p)",
+        "seconds": 109,
+        "channel": "Lina VDA",
+        "score": 12,
+        "consulta": "Dragon Ball opening We Gotta Power Hironobu Kageyama"
+      }
+    },
+    {
+      "id": "ani-las-guerreras-magicas-yuzurenai-negai",
+      "franchise": "Las Guerreras Mágicas",
+      "title": "Yuzurenai Negai",
+      "elegido": {
+        "id": "oHEeYOWXdVQ",
+        "title": "YUZURENAI NEGAI | MAGIC KNIGHT RAYEARTH「Opening」",
+        "seconds": 231,
+        "channel": "Dante's World",
+        "score": 10.7,
+        "consulta": "Las Guerreras Mágicas opening Yuzurenai Negai Naomi Tamura"
+      }
+    },
+    {
+      "id": "ani-cardcaptor-sakura-platinum",
+      "franchise": "Sakura Card Captor",
+      "title": "Platinum",
+      "elegido": {
+        "id": "yIE8ujVjUmE",
+        "title": "Sakura Card Captor OP 3 - Platinum (Maaya Sakamoto) - Traducida al Español",
+        "seconds": 266,
+        "channel": "hjinlovsub",
+        "score": 11.25,
+        "consulta": "Sakura Card Captor opening Platinum Maaya Sakamoto"
+      }
+    },
+    {
+      "id": "ani-slayers-get-along",
+      "franchise": "Slayers",
+      "title": "Get Along",
+      "elegido": {
+        "id": "YuwuE8vgYok",
+        "title": "Megumi Hayashibara & Masami Okui (Get Along - Llevarse Bien) en Vivo, Slayers opening sub español",
+        "seconds": 254,
+        "channel": "Bertrix Anime",
+        "score": 11.7,
+        "consulta": "Slayers opening Get Along Megumi Hayashibara y Masami Okui"
+      }
+    },
+    {
+      "id": "ani-slayers-next-give-a-reason",
+      "franchise": "Slayers",
+      "title": "Give a reason",
+      "elegido": {
+        "id": "ITyheBukJqI",
+        "title": "Megumi Hayashibara Give a Reason - Dar una Razón en Vivo, Slayers Next opening completo sub español",
+        "seconds": 273,
+        "channel": "Bertrix Anime",
+        "score": 11.1,
+        "consulta": "Slayers opening Give a reason Megumi Hayashibara"
+      }
+    },
+    {
+      "id": "ani-victory-gundam-stand-up-to-the-victory",
+      "franchise": "Mobile Suit Victory Gundam",
+      "title": "STAND UP TO THE VICTORY",
+      "elegido": {
+        "id": "OwhB9s86P6k",
+        "title": "Mobile Suit Victory Gundam - Opening 1 - [Stand Up To The Victory]",
+        "seconds": 81,
+        "channel": "Amira",
+        "score": 10.55,
+        "consulta": "Mobile Suit Victory Gundam opening STAND UP TO THE VICTORY Tomohisa Kawazoe"
+      }
+    },
+    {
+      "id": "ani-g-gundam-flying-in-the-sky",
+      "franchise": "Mobile Fighter G Gundam",
+      "title": "Flying in the Sky",
+      "elegido": {
+        "id": "q50VYTPkasc",
+        "title": "G Gundam OP 1 FLYING IN THE SKY BD / BluRay with English Subtitles",
+        "seconds": 83,
+        "channel": "AceTaco",
+        "score": 10.7,
+        "consulta": "Mobile Fighter G Gundam opening Flying in the Sky Yoshifumi Ushima"
+      }
+    },
+    {
+      "id": "ani-gundam-wing-just-communication",
+      "franchise": "Mobile Suit Gundam Wing",
+      "title": "JUST COMMUNICATION",
+      "elegido": {
+        "id": "oNJ4aBoRipg",
+        "title": "Mobile Suit Gundam Wing Opening 1 | Just Communication by Two-Mix",
+        "seconds": 91,
+        "channel": "Crunchyroll",
+        "score": 13,
+        "consulta": "Mobile Suit Gundam Wing opening JUST COMMUNICATION TWO-MIX"
+      }
+    },
+    {
+      "id": "ani-gundam-wing-rhythm-emotion",
+      "franchise": "Mobile Suit Gundam Wing",
+      "title": "RHYTHM EMOTION",
+      "elegido": {
+        "id": "ICOwBtm8L_s",
+        "title": "Mobile Suit Gundam Wing - Opening 2 | Rhythm Emotion V2 w/ Beeps",
+        "seconds": 91,
+        "channel": "Crunchyroll",
+        "score": 12,
+        "consulta": "Mobile Suit Gundam Wing opening RHYTHM EMOTION TWO-MIX"
+      }
+    },
+    {
+      "id": "ani-gundam-x-dreams",
+      "franchise": "After War Gundam X",
+      "title": "DREAMS",
+      "elegido": {
+        "id": "p689DPREs4c",
+        "title": "After War Gundam X - OP1 (no credits), Romantic Mode, Dreams",
+        "seconds": 80,
+        "channel": "gundampixel",
+        "score": 10.55,
+        "consulta": "After War Gundam X opening DREAMS Romantic Mode"
+      }
+    },
+    {
+      "id": "ani-outlaw-star-through-the-night",
+      "franchise": "Outlaw Star",
+      "title": "Through the Night",
+      "elegido": {
+        "id": "0Ci6icQ3OGg",
+        "title": "Outlaw Star Opening - Through The Night (Japanese Subs)",
+        "seconds": 91,
+        "channel": "5550th Axel",
+        "score": 10.85,
+        "consulta": "Outlaw Star opening Through the Night Masahiko Arimachi"
+      }
+    },
+    {
+      "id": "ani-vision-of-escaflowne-yakusoku-wa-iranai",
+      "franchise": "The Vision of Escaflowne",
+      "title": "Yakusoku wa Iranai",
+      "elegido": {
+        "id": "V8cc1PWTM6A",
+        "title": "Maaya Sakamoto - \"Yakusoku wa Iranai\" - Sub. Español - (Escaflowne Opening)",
+        "seconds": 213,
+        "channel": "ジェレミー",
+        "score": 12,
+        "consulta": "The Vision of Escaflowne opening Yakusoku wa Iranai Maaya Sakamoto"
+      }
+    },
+    {
+      "id": "ani-ranma-little-date",
+      "franchise": "Ranma ½",
+      "title": "Little Date",
+      "elegido": {
+        "id": "lyo9y29jCa0",
+        "title": "Ranma ½ — Opening Theme \"Little Date\".",
+        "seconds": 89,
+        "channel": "Yumiko Jun Chie",
+        "score": 11,
+        "consulta": "Ranma ½ opening Little Date ribbon"
+      }
+    },
+    {
+      "id": "ani-shin-chan-oora-wa-ninkimono",
+      "franchise": "Shin-chan",
+      "title": "Oora wa Ninkimono",
+      "elegido": {
+        "id": "aSd9xoRiVGY",
+        "title": "Akiko Yajima / Shinchan (Ora wa Ninki Mono - 25th | I am Super Popular) ShinChan Opening 16",
+        "seconds": 212,
+        "channel": "ANIGANIME",
+        "score": 9.55,
+        "consulta": "Shin-chan opening Oora wa Ninkimono Akiko Yajima"
+      }
+    },
+    {
+      "id": "ani-hunter-x-hunter-1999-ohayou",
+      "franchise": "Hunter x Hunter",
+      "title": "Ohayou",
+      "elegido": {
+        "id": "1gvIATRCtO8",
+        "title": "Hunter x Hunter opening song (Ohayou by Keno mv)",
+        "seconds": 277,
+        "channel": "yong potapenko",
+        "score": 11.85,
+        "consulta": "Hunter x Hunter opening Ohayou Keno"
+      }
+    },
+    {
+      "id": "ani-detective-conan-mune-ga-doki-doki",
+      "franchise": "Detective Conan",
+      "title": "Mune ga Doki Doki",
+      "elegido": {
+        "id": "7FBCnlHLVMk",
+        "title": "The High Lows - Mune Ga Doki Doki (Detective Conan Opening 01 Lyrics Romanji)",
+        "seconds": 249,
+        "channel": "The Boy Production",
+        "score": 11.25,
+        "consulta": "Detective Conan opening Mune ga Doki Doki THE HIGH-LOWS"
+      }
+    },
+    {
+      "id": "ani-detective-conan-unmei-no-roulette",
+      "franchise": "Detective Conan",
+      "title": "Unmei no Roulette Mawashite",
+      "elegido": {
+        "id": "TL2gcHvxv2Q",
+        "title": "Detective Conan - OP4 | ZARD - \"Unmei no Roulette Mawashite\"",
+        "seconds": 111,
+        "channel": "Animistic 2",
+        "score": 10.85,
+        "consulta": "Detective Conan opening Unmei no Roulette Mawashite ZARD"
+      }
+    },
+    {
+      "id": "ani-tenchi-muyo-theme",
+      "franchise": "Tenchi Muyo!",
+      "title": "Tenchi Muyo!",
+      "elegido": {
+        "id": "enVUFiKmbdU",
+        "title": "Tenchi Muyou! TV (天地無用! TV) OP Full By SONIA",
+        "seconds": 266,
+        "channel": "Pidgey Orville",
+        "score": 12,
+        "consulta": "Tenchi Muyo! opening Tenchi Muyo! SONIA"
+      }
+    },
+    {
+      "id": "ani-fushigi-yuugi-itooshii-hito-no-tame-ni",
+      "franchise": "Fushigi Yuugi",
+      "title": "Itooshii Hito no Tame ni",
+      "elegido": {
+        "id": "C4THEJGae_g",
+        "title": "Fushigi Yuugi Opening (Itooshii Hito no Tame ni) Live Action Concept",
+        "seconds": 91,
+        "channel": "REPLai Studio",
+        "score": 10.55,
+        "consulta": "Fushigi Yuugi opening Itooshii Hito no Tame ni Akemi Satou"
+      }
+    },
+    {
+      "id": "ani-golden-boy-opening",
+      "franchise": "Golden Boy",
+      "title": "STUDY A GO!! GO!!",
+      "elegido": {
+        "id": "bW2ytNTC-8A",
+        "title": "Golden Boy OST Study A Go Go",
+        "seconds": 215,
+        "channel": "WilliamHungVEVO",
+        "score": 11,
+        "consulta": "Golden Boy opening STUDY A GO!! GO!! Golden Girls"
+      }
+    },
+    {
+      "id": "ani-nadia-blue-water",
+      "franchise": "Nadia: The Secret of Blue Water",
+      "title": "Blue Water",
+      "elegido": {
+        "id": "9CNb6P-vcdM",
+        "title": "Blue Water - Nadia: The Secret Of Blue Water Opening [Full]",
+        "seconds": 245,
+        "channel": "DQ8ReSlime",
+        "score": 11,
+        "consulta": "Nadia: The Secret of Blue Water opening Blue Water Miho Morikawa"
+      }
+    },
+    {
+      "id": "ani-martian-successor-nadesico-you-get-to-burning",
+      "franchise": "Martian Successor Nadesico",
+      "title": "YOU GET TO BURNING",
+      "elegido": {
+        "id": "q0nclPlZb1c",
+        "title": "Martian Successor Nadesico Op -  You Get To Burning! Matsuzawa Yumi",
+        "seconds": 249,
+        "channel": "El tío Hikigaya",
+        "score": 11.7,
+        "consulta": "Martian Successor Nadesico opening YOU GET TO BURNING Yumi Matsuzawa"
+      }
+    },
+    {
+      "id": "ani-initial-d-around-the-world",
+      "franchise": "Initial D",
+      "title": "around the world",
+      "elegido": {
+        "id": "La3KtXTIKNs",
+        "title": "Initial D 1st Stage Opening 1 - Around The World - M.O.V.E",
+        "seconds": 312,
+        "channel": "ANIMES, GAMES & MOVIES OST",
+        "score": 10.85,
+        "consulta": "Initial D opening around the world move"
+      }
+    },
+    {
+      "id": "ani-initial-d-rage-your-dream",
+      "franchise": "Initial D",
+      "title": "Rage your dream",
+      "elegido": {
+        "id": "jfLWWUm4o_U",
+        "title": "Initial D OST -m.o.v.e-  Rage Your Dream  (English Lyric)",
+        "seconds": 275,
+        "channel": "MoonSongLyric",
+        "score": 10,
+        "consulta": "Initial D opening Rage your dream move"
+      }
+    },
+    {
+      "id": "ani-turn-a-gundam-turn-a-turn",
+      "franchise": "Turn A Gundam",
+      "title": "Turn A Turn",
+      "elegido": {
+        "id": "nxtT-7fTO9o",
+        "title": "Turn A Gundam 1st OP song HD",
+        "seconds": 83,
+        "channel": "RX",
+        "score": 10.7,
+        "consulta": "Turn A Gundam opening Turn A Turn Hideki Saijo"
+      }
+    },
+    {
+      "id": "ani-blue-seed-carnival-babel",
+      "franchise": "Blue Seed",
+      "title": "CARNIVAL BABEL",
+      "elegido": {
+        "id": "hwQVtycXyZw",
+        "title": "【アニソン】森口博子 with 酒井ミキオ - CARNIVAL・BABEL ～カルナバル・バベル～（アニメ『BLUE SEED』OPテーマ, オリジナル：TAKADA BAND）",
+        "seconds": 209,
+        "channel": "ラジオ深夜便 AM放送局 1242kHz",
+        "score": 11.25,
+        "consulta": "Blue Seed opening CARNIVAL BABEL Takada Band"
+      }
+    },
+    {
+      "id": "ani-slam-dunk-my-friend",
+      "franchise": "Slam Dunk",
+      "title": "My Friend",
+      "elegido": {
+        "id": "9qFeroM4riI",
+        "title": "Slam Dunk Ending 4 (ZARD - My Friend) English Subbed [1080]",
+        "seconds": 95,
+        "channel": "Jose Sugar",
+        "score": 11,
+        "consulta": "Slam Dunk opening My Friend ZARD"
+      }
+    },
+    {
+      "id": "ani-fma-melissa",
+      "franchise": "Fullmetal Alchemist",
+      "title": "Melissa",
+      "elegido": {
+        "id": "1HOhxibhCWg",
+        "title": "FULLMETAL ALCHEMIST | Opening 1 | Melissa - Porno Graffitti | Anime",
+        "seconds": 102,
+        "channel": "KSM Anime",
+        "score": 11.55,
+        "consulta": "Fullmetal Alchemist opening Melissa Porno Graffitti"
+      }
+    },
+    {
+      "id": "ani-fma-ready-steady-go",
+      "franchise": "Fullmetal Alchemist",
+      "title": "Ready Steady Go",
+      "elegido": {
+        "id": "ZVHKq1zLpp0",
+        "title": "(4K HDR) Fullmetal Alchemist OP - Ready Steady Go!",
+        "seconds": 90,
+        "channel": "Sebsiglesias",
+        "score": 11,
+        "consulta": "Fullmetal Alchemist opening Ready Steady Go L'Arc~en~Ciel"
+      }
+    },
+    {
+      "id": "ani-fma-rewrite",
+      "franchise": "Fullmetal Alchemist",
+      "title": "Rewrite",
+      "elegido": {
+        "id": "VcsSgDulm0I",
+        "title": "FULLMETAL ALCHEMIST | Opening 4 | Rewrite - Asian Kung-Fu Generation | Anime",
+        "seconds": 98,
+        "channel": "KSM Anime",
+        "score": 12,
+        "consulta": "Fullmetal Alchemist opening Rewrite Asian Kung-Fu Generation"
+      }
+    },
+    {
+      "id": "ani-naruto-haruka-kanata",
+      "franchise": "Naruto",
+      "title": "Haruka Kanata",
+      "elegido": {
+        "id": "slq_YcCI5xk",
+        "title": "NARUTO | Opening 2 | Haruka Kanata - Asian Kung-Fu Generation | aniverse",
+        "seconds": 93,
+        "channel": "KSM Anime",
+        "score": 10.95,
+        "consulta": "Naruto opening Haruka Kanata Asian Kung-Fu Generation"
+      }
+    },
+    {
+      "id": "ani-naruto-seishun-kyousoukyoku",
+      "franchise": "Naruto",
+      "title": "Seishun Kyousoukyoku",
+      "elegido": {
+        "id": "UeiCa_-NTgI",
+        "title": "seishun kyousoukyoku ( youth rhapsody ) [ kanji / romaji / en lyrics ] Sambomaster Naruto OP 5",
+        "seconds": 287,
+        "channel": "starr",
+        "score": 10.65,
+        "consulta": "Naruto opening Seishun Kyousoukyoku Sambomaster"
+      }
+    },
+    {
+      "id": "ani-naruto-shippuden-heros-come-back",
+      "franchise": "Naruto",
+      "title": "Hero's Come Back!!",
+      "elegido": {
+        "id": "EBNl8bwdVcA",
+        "title": "Naruto Shippuden - Opening 1 | Hero's Come Back",
+        "seconds": 100,
+        "channel": "Crunchyroll",
+        "score": 12,
+        "consulta": "Naruto opening Hero's Come Back!! nobodyknows+"
+      }
+    },
+    {
+      "id": "ani-naruto-shippuden-diver",
+      "franchise": "Naruto",
+      "title": "Diver",
+      "elegido": {
+        "id": "P1yJ51DH-18",
+        "title": "Naruto Shippuden Opening 8 | Diver by NICO Touches the Walls",
+        "seconds": 100,
+        "channel": "Crunchyroll",
+        "score": 13,
+        "consulta": "Naruto opening Diver NICO Touches the Walls"
+      }
+    },
+    {
+      "id": "ani-bleach-d-tecnolife",
+      "franchise": "Bleach",
+      "title": "D-tecnolife",
+      "elegido": {
+        "id": "h1MoLQ9Wcv0",
+        "title": "OPENING 2 | BLEACH | D-tecnoLife by UVERworld | VIZ",
+        "seconds": 91,
+        "channel": "vizmedia",
+        "score": 12,
+        "consulta": "Bleach opening D-tecnolife UVERworld"
+      }
+    },
+    {
+      "id": "ani-bleach-ichirin-no-hana",
+      "franchise": "Bleach",
+      "title": "Ichirin no Hana",
+      "elegido": {
+        "id": "eIm0dpBjQPg",
+        "title": "OPENING 3 | BLEACH | ICHIRIN NO HANA by HIGH and MIGHTY COLOR | VIZ",
+        "seconds": 96,
+        "channel": "vizmedia",
+        "score": 12,
+        "consulta": "Bleach opening Ichirin no Hana HIGH and MIGHTY COLOR"
+      }
+    },
+    {
+      "id": "ani-bleach-alones",
+      "franchise": "Bleach",
+      "title": "ALONES",
+      "elegido": {
+        "id": "WEN4qOcVKeM",
+        "title": "OPENING 6 | BLEACH | ALONES by Aqua Timez | VIZ",
+        "seconds": 95,
+        "channel": "vizmedia",
+        "score": 12,
+        "consulta": "Bleach opening ALONES Aqua Timez"
+      }
+    },
+    {
+      "id": "ani-bleach-shojo-s",
+      "franchise": "Bleach",
+      "title": "Shojo S",
+      "elegido": {
+        "id": "HN_-WaTLD_A",
+        "title": "OPENING 10 | BLEACH | ShojoS by SCANDAL | VIZ",
+        "seconds": 95,
+        "channel": "vizmedia",
+        "score": 12,
+        "consulta": "Bleach opening Shojo S SCANDAL"
+      }
+    },
+    {
+      "id": "ani-bleach-velonica",
+      "franchise": "Bleach",
+      "title": "Velonica",
+      "elegido": {
+        "id": "almG54sVBuw",
+        "title": "OPENING 9 | BLEACH | Velonica by Aqua Timez | VIZ",
+        "seconds": 96,
+        "channel": "vizmedia",
+        "score": 12,
+        "consulta": "Bleach opening Velonica Aqua Timez"
+      }
+    },
+    {
+      "id": "ani-death-note-whats-up-people",
+      "franchise": "Death Note",
+      "title": "What's up, people?!",
+      "elegido": {
+        "id": "gbj18cOcOyQ",
+        "title": "Death Note opening 2 (Maximunm The Hormone - What`s Up People?)",
+        "seconds": 82,
+        "channel": "Karpuzikov",
+        "score": 11.25,
+        "consulta": "Death Note opening What's up, people?! Maximum the Hormone"
+      }
+    },
+    {
+      "id": "ani-soul-eater-resonance",
+      "franchise": "Soul Eater",
+      "title": "Resonance",
+      "elegido": {
+        "id": "zzJ8U8OtEsE",
+        "title": "Soul Eater Opening | Resonance by T.M. Revolution",
+        "seconds": 89,
+        "channel": "Crunchyroll",
+        "score": 13,
+        "consulta": "Soul Eater opening Resonance T.M.Revolution"
+      }
+    },
+    {
+      "id": "ani-soul-eater-papermoon",
+      "franchise": "Soul Eater",
+      "title": "PAPERMOON",
+      "elegido": {
+        "id": "-eYK3YP524A",
+        "title": "Soul Eater Opening 2 | Papermoon",
+        "seconds": 89,
+        "channel": "Crunchyroll",
+        "score": 11.85,
+        "consulta": "Soul Eater opening PAPERMOON Tommy heavenly6"
+      }
+    },
+    {
+      "id": "ani-gurren-lagann-sorairo-days",
+      "franchise": "Gurren Lagann",
+      "title": "Sorairo Days",
+      "elegido": {
+        "id": "vVGa8I0Atcg",
+        "title": "Shoko Nakagawa『Sorairo Days』 ～ TENGEN TOPPA GURREN LAGANN special music video ～",
+        "seconds": 262,
+        "channel": "Shoko Nakagawa OFFICIAL YouTube CHANNEL",
+        "score": 10.85,
+        "consulta": "Gurren Lagann opening Sorairo Days Shoko Nakagawa"
+      }
+    },
+    {
+      "id": "ani-code-geass-r2-o2",
+      "franchise": "Code Geass",
+      "title": "O2",
+      "elegido": {
+        "id": "G8CFuZ9MseQ",
+        "title": "Code Geass Opening | COLORS by FLOW",
+        "seconds": 90,
+        "channel": "Crunchyroll",
+        "score": 8,
+        "consulta": "Code Geass opening 2008"
+      }
+    },
+    {
+      "id": "ani-code-geass-r2-world-end",
+      "franchise": "Code Geass",
+      "title": "WORLD END",
+      "elegido": {
+        "id": "mvFWDUhzrSo",
+        "title": "Code Geass R2 Opening 5:「WORLD END」by Flow (60FPS)",
+        "seconds": 89,
+        "channel": "TraceMemories",
+        "score": 11.7,
+        "consulta": "Code Geass opening WORLD END FLOW"
+      }
+    },
+    {
+      "id": "ani-inuyasha-fukai-mori",
+      "franchise": "Inuyasha",
+      "title": "Fukai Mori",
+      "elegido": {
+        "id": "qIoDWTF0qSo",
+        "title": "Do As Infinity / Fukai Mori (Bosque profundo)",
+        "seconds": 257,
+        "channel": "avex",
+        "score": 11,
+        "consulta": "Inuyasha opening Fukai Mori Do As Infinity"
+      }
+    },
+    {
+      "id": "ani-inuyasha-one-day-one-dream",
+      "franchise": "Inuyasha",
+      "title": "One Day, One Dream",
+      "elegido": {
+        "id": "dzrKXFPqd2U",
+        "title": "Inuyasha ; OP 5 | One Day, One Dream - Tackey & Tsubasa | [Letra en español + Romaji ]",
+        "seconds": 244,
+        "channel": "~RanmaCBZ•",
+        "score": 11.7,
+        "consulta": "Inuyasha opening One Day, One Dream Tackey & Tsubasa"
+      }
+    },
+    {
+      "id": "ani-one-piece-believe",
+      "franchise": "One Piece",
+      "title": "Believe",
+      "elegido": {
+        "id": "v1kkTV5BO-U",
+        "title": "One Piece OP 2  - Believe Lyrics",
+        "seconds": 231,
+        "channel": "o0o AnimeLyrics o0o",
+        "score": 10.55,
+        "consulta": "One Piece opening Believe Folder5"
+      }
+    },
+    {
+      "id": "ani-one-piece-bon-voyage",
+      "franchise": "One Piece",
+      "title": "BON VOYAGE!",
+      "elegido": {
+        "id": "tiBPGLWZe4s",
+        "title": "One Piece - Op 4 - Bon Voyage! (Bon Bon Blanco)",
+        "seconds": 279,
+        "channel": "Anime Z",
+        "score": 11.7,
+        "consulta": "One Piece opening BON VOYAGE! Bon-Bon Blanco"
+      }
+    },
+    {
+      "id": "ani-one-piece-crazy-rainbow",
+      "franchise": "One Piece",
+      "title": "Crazy Rainbow",
+      "elegido": {
+        "id": "Av13bQ0Tdks",
+        "title": "One Piece OP / Opening 8 \"Crazy Rainbow\" by Tackey and Tsubasa [4K 60FPS]",
+        "seconds": 180,
+        "channel": "Anicrad",
+        "score": 11.1,
+        "consulta": "One Piece opening Crazy Rainbow Tackey & Tsubasa"
+      }
+    },
+    {
+      "id": "ani-one-piece-share-the-world",
+      "franchise": "One Piece",
+      "title": "Share The World",
+      "elegido": {
+        "id": "PCfN6WccvhA",
+        "title": "「 ONE PIECE OP 11 」TVXQ/Tohoshinki (東方神起) – Share The World (Color Coded Lyrics Kan/Rom/Eng)",
+        "seconds": 213,
+        "channel": "MOON LIGHT",
+        "score": 11.25,
+        "consulta": "One Piece opening Share The World Tohoshinki"
+      }
+    },
+    {
+      "id": "ani-eureka-seven-days",
+      "franchise": "Eureka Seven",
+      "title": "DAYS",
+      "elegido": {
+        "id": "pjxcIAbTAe0",
+        "title": "Eureka Seven Opening 1 (Days - Flow) Sub Español",
+        "seconds": 252,
+        "channel": "SupA",
+        "score": 10.65,
+        "consulta": "Eureka Seven opening DAYS FLOW"
+      }
+    },
+    {
+      "id": "ani-eureka-seven-sakura",
+      "franchise": "Eureka Seven",
+      "title": "sakura",
+      "elegido": {
+        "id": "ENnIMN5rTiM",
+        "title": "Nirgilis - sakura | Eureka Seven OP 4 FULL subtitulado al español y romaji",
+        "seconds": 275,
+        "channel": "NegaKev",
+        "score": 11.55,
+        "consulta": "Eureka Seven opening sakura NIRGILIS"
+      }
+    },
+    {
+      "id": "ani-d-gray-man-innocent-sorrow",
+      "franchise": "D.Gray-man",
+      "title": "INNOCENT SORROW",
+      "elegido": {
+        "id": "BnmIKo7tNhc",
+        "title": "Innocent Sorrow - abingdon boys school // Sub Español + Romaji // D. Gray Man OP 01",
+        "seconds": 258,
+        "channel": "ツ Iza sub ღ",
+        "score": 11.4,
+        "consulta": "D.Gray-man opening INNOCENT SORROW abingdon boys school"
+      }
+    },
+    {
+      "id": "ani-d-gray-man-doubt-and-trust",
+      "franchise": "D.Gray-man",
+      "title": "Doubt & Trust",
+      "elegido": {
+        "id": "WeTFkXl8Cf4",
+        "title": "ACCESS - Doubt & Trust (D'GRAY MAN ディー・グレイマン OPENING)",
+        "seconds": 251,
+        "channel": "VirtualFakeman",
+        "score": 11.55,
+        "consulta": "D.Gray-man opening Doubt & Trust access"
+      }
+    },
+    {
+      "id": "ani-gintama-pray",
+      "franchise": "Gintama",
+      "title": "Pray",
+      "elegido": {
+        "id": "OQYcEEkG_V0",
+        "title": "Gintama - Opening 1 | Pray",
+        "seconds": 100,
+        "channel": "Crunchyroll",
+        "score": 12,
+        "consulta": "Gintama opening Pray Tommy heavenly6"
+      }
+    },
+    {
+      "id": "ani-gintama-donten",
+      "franchise": "Gintama",
+      "title": "Donten",
+      "elegido": {
+        "id": "DnWCcJ7OTtA",
+        "title": "Gintama - Opening 5 | Donten",
+        "seconds": 100,
+        "channel": "Crunchyroll",
+        "score": 12,
+        "consulta": "Gintama opening Donten DOES"
+      }
+    },
+    {
+      "id": "ani-katekyo-hitman-reborn-boys-and-girls",
+      "franchise": "Katekyo Hitman Reborn!",
+      "title": "BOYS & GIRLS",
+      "elegido": {
+        "id": "7jfdgD-aW4A",
+        "title": "LM.C - Boys & Girls//Katekyo Hitman Reborn Opening 2 (Sub Español)",
+        "seconds": 246,
+        "channel": "Multifandom_AMV",
+        "score": 10.55,
+        "consulta": "Katekyo Hitman Reborn! opening BOYS & GIRLS LM.C"
+      }
+    },
+    {
+      "id": "ani-haruhi-suzumiya-bouken-desho-desho",
+      "franchise": "The Melancholy of Haruhi Suzumiya",
+      "title": "Bouken Desho Desho?",
+      "elegido": {
+        "id": "UQxgFFRuIpM",
+        "title": "Bouken deshou deshou - Aya Hirano (op Haruhi Suzumiya) // Subtitulado español y romaji //",
+        "seconds": 266,
+        "channel": "makamaka",
+        "score": 11.1,
+        "consulta": "The Melancholy of Haruhi Suzumiya opening Bouken Desho Desho? Aya Hirano"
+      }
+    },
+    {
+      "id": "ani-lucky-star-motteke-sailor-fuku",
+      "franchise": "Lucky Star",
+      "title": "Motteke! Sailor Fuku",
+      "elegido": {
+        "id": "qwhSJF1jCmU",
+        "title": "Lucky Star Opening | Motteke! Sailor Fuku",
+        "seconds": 101,
+        "channel": "Crunchyroll",
+        "score": 11.7,
+        "consulta": "Lucky Star opening Motteke! Sailor Fuku Aya Hirano, Emiri Kato, Kaori Fukuhara y Aya Endo"
+      }
+    },
+    {
+      "id": "ani-toradora-pre-parade",
+      "franchise": "Toradora!",
+      "title": "Pre-Parade",
+      "elegido": {
+        "id": "GUJKD_rkHeg",
+        "title": "Pre-Parade - (Rie Kugimiya, Yui Horie, Eri Kitamura) [Lyrics Rom°Kan°Eng] Toradora Opening 1",
+        "seconds": 208,
+        "channel": "Kol0w",
+        "score": 10.8,
+        "consulta": "Toradora! opening Pre-Parade Rie Kugimiya, Eri Kitamura y Yui Horie"
+      }
+    },
+    {
+      "id": "ani-bakemonogatari-renai-circulation",
+      "franchise": "Monogatari Series",
+      "title": "Renai Circulation",
+      "elegido": {
+        "id": "jQ6gPyYNgPo",
+        "title": "Bakemonogatari Opening 4 - Ren'ai Circulation (RAW)",
+        "seconds": 92,
+        "channel": "Antihero",
+        "score": 10.7,
+        "consulta": "Monogatari Series opening Renai Circulation Kana Hanazawa"
+      }
+    },
+    {
+      "id": "ani-bakemonogatari-staple-stable",
+      "franchise": "Monogatari Series",
+      "title": "staple stable",
+      "elegido": {
+        "id": "a5UMwmtked4",
+        "title": "01. Bakemonogatari Opening 1 - \"staple stable\" by Chiwa Saito",
+        "seconds": 91,
+        "channel": "ASOBU Channel GA (MAL)",
+        "score": 10.95,
+        "consulta": "Monogatari Series opening staple stable Chiwa Saito"
+      }
+    },
+    {
+      "id": "ani-darker-than-black-howling",
+      "franchise": "Darker than Black",
+      "title": "HOWLING",
+      "elegido": {
+        "id": "iZn2P64bP5U",
+        "title": "Darker Than Black Opening 1『 HOWLING 🎭🔫』- Abingdon Boys School (Lyrics)",
+        "seconds": 290,
+        "channel": "LyricsVerse",
+        "score": 11.1,
+        "consulta": "Darker than Black opening HOWLING abingdon boys school"
+      }
+    },
+    {
+      "id": "ani-sao-ignite",
+      "franchise": "Sword Art Online",
+      "title": "IGNITE",
+      "elegido": {
+        "id": "hoxUfOTE5II",
+        "title": "Eir Aoi「IGNITE」Music Video (Sword Art Online)",
+        "seconds": 249,
+        "channel": "藍井エイル Official YouTube Channel",
+        "score": 11,
+        "consulta": "Sword Art Online opening IGNITE Eir Aoi"
+      }
+    },
+    {
+      "id": "ani-sao-adamas",
+      "franchise": "Sword Art Online",
+      "title": "ADAMAS",
+      "elegido": {
+        "id": "5-aazdelI5c",
+        "title": "Sword Art Online  Alicization Opening Full『LiSA   ADAMAS』【ENG Sub】",
+        "seconds": 224,
+        "channel": "KILLER",
+        "score": 11.85,
+        "consulta": "Sword Art Online opening ADAMAS LiSA"
+      }
+    },
+    {
+      "id": "ani-sao-resister",
+      "franchise": "Sword Art Online",
+      "title": "RESISTER",
+      "elegido": {
+        "id": "RPZwWt6_unE",
+        "title": "ASCA 「RESISTER」 Music Video FULL (Anime \"Sword Art Online Alicization\" OP)",
+        "seconds": 235,
+        "channel": "ASCA Official YouTube Channel",
+        "score": 11.7,
+        "consulta": "Sword Art Online opening RESISTER ASCA"
+      }
+    },
+    {
+      "id": "ani-haikyuu-im-a-believer",
+      "franchise": "Haikyuu!!",
+      "title": "I'm a Believer",
+      "elegido": {
+        "id": "8pftDzifVtc",
+        "title": "I'M A BELIEVER, SPYAIR // haikyuu op 3 (sub español & romaji)",
+        "seconds": 214,
+        "channel": "mei subs.",
+        "score": 12,
+        "consulta": "Haikyuu!! opening I'm a Believer SPYAIR"
+      }
+    },
+    {
+      "id": "ani-haikyuu-hikariare",
+      "franchise": "Haikyuu!!",
+      "title": "Hikariare",
+      "elegido": {
+        "id": "f_6RvgSndHE",
+        "title": "『Hikari Are』- BURNOUT SYNDROMES | Haikyuu!! OP 5 ϟ Sub. español",
+        "seconds": 242,
+        "channel": "kirakira",
+        "score": 11.25,
+        "consulta": "Haikyuu!! opening Hikariare BURNOUT SYNDROMES"
+      }
+    },
+    {
+      "id": "ani-haikyuu-fly-high",
+      "franchise": "Haikyuu!!",
+      "title": "FLY HIGH!!",
+      "elegido": {
+        "id": "7aNg8cV65Os",
+        "title": "Haikyu!! Season 2 Opening 2 | Fly High!! by BURNOUT SYNDROMES",
+        "seconds": 101,
+        "channel": "Crunchyroll",
+        "score": 11.33,
+        "consulta": "Haikyuu!! opening FLY HIGH!! BURNOUT SYNDROMES"
+      }
+    },
+    {
+      "id": "ani-black-clover-haruka-mirai",
+      "franchise": "Black Clover",
+      "title": "Haruka Mirai",
+      "elegido": {
+        "id": "_6KZI74zKfE",
+        "title": "Black Clover Opening 1 | Haruka Mirai by Kankaku Piero",
+        "seconds": 90,
+        "channel": "Crunchyroll",
+        "score": 12.85,
+        "consulta": "Black Clover opening Haruka Mirai Kankaku Piero"
+      }
+    },
+    {
+      "id": "ani-black-clover-paint-it-black",
+      "franchise": "Black Clover",
+      "title": "PAiNT it BLACK",
+      "elegido": {
+        "id": "5zSx8QD-fkA",
+        "title": "Black Clover Opening 2 | PAiNT it BLACK by BiSH",
+        "seconds": 91,
+        "channel": "Crunchyroll",
+        "score": 13,
+        "consulta": "Black Clover opening PAiNT it BLACK BiSH"
+      }
+    },
+    {
+      "id": "ani-black-clover-stories",
+      "franchise": "Black Clover",
+      "title": "Stories",
+      "elegido": {
+        "id": "IM4amhrJTvE",
+        "title": "Black Clover - Opening 11 | Stories",
+        "seconds": 100,
+        "channel": "Crunchyroll",
+        "score": 12,
+        "consulta": "Black Clover opening Stories Snow Man"
+      }
+    },
+    {
+      "id": "ani-jojo-sono-chi-no-sadame",
+      "franchise": "JoJo's Bizarre Adventure",
+      "title": "Sono Chi no Sadame",
+      "elegido": {
+        "id": "A5ECz4rWjko",
+        "title": "Sono Chi no Sadame - Hiroaki Tommy Tominaga [Jojo’s Bizarre Adventure Opening 1] | MSMC",
+        "seconds": 92,
+        "channel": "Glasses Duck",
+        "score": 11.25,
+        "consulta": "JoJo's Bizarre Adventure opening Sono Chi no Sadame Hiroaki \"TOMMY\" Tominaga"
+      }
+    },
+    {
+      "id": "ani-jojo-stand-proud",
+      "franchise": "JoJo's Bizarre Adventure",
+      "title": "STAND PROUD",
+      "elegido": {
+        "id": "N_gwQ3_jXwA",
+        "title": "JoJo's Bizarre Adventure『 STAND PROUD 』Dio's Cool Adventure Moondust Crusaders - Opening 3",
+        "seconds": 103,
+        "channel": "Benji",
+        "score": 10.85,
+        "consulta": "JoJo's Bizarre Adventure opening STAND PROUD Jin Hashimoto"
+      }
+    },
+    {
+      "id": "ani-jojo-crazy-noisy-bizarre-town",
+      "franchise": "JoJo's Bizarre Adventure",
+      "title": "Crazy Noisy Bizarre Town",
+      "elegido": {
+        "id": "NvsnQwBsoh8",
+        "title": "Crazy Noisy Bizarre Town - THE DU [Jojo’s Bizarre Adventure Opening 5] ￼| MSMC",
+        "seconds": 75,
+        "channel": "Glasses Duck",
+        "score": 10.4,
+        "consulta": "JoJo's Bizarre Adventure opening Crazy Noisy Bizarre Town THE DU"
+      }
+    },
+    {
+      "id": "ani-jojo-fighting-gold",
+      "franchise": "JoJo's Bizarre Adventure",
+      "title": "Fighting Gold",
+      "elegido": {
+        "id": "uiXQ9tw6YfE",
+        "title": "JJBA: Vento Aureo OP Creditless - Fighting Gold / Coda con SFX (Version 1 y 2)",
+        "seconds": 184,
+        "channel": "Solo dime Raiden",
+        "score": 11.1,
+        "consulta": "JoJo's Bizarre Adventure opening Fighting Gold Coda"
+      }
+    },
+    {
+      "id": "ani-steins-gate-hacking-to-the-gate",
+      "franchise": "Steins;Gate",
+      "title": "Hacking to the Gate",
+      "elegido": {
+        "id": "DC72ydjdHvU",
+        "title": "[Op 1 Steins;Gate] Itou Kanako - Hacking to the Gate (Sub español ~ Lyrics)",
+        "seconds": 257,
+        "channel": "M R",
+        "score": 11.55,
+        "consulta": "Steins;Gate opening Hacking to the Gate Kanako Ito"
+      }
+    },
+    {
+      "id": "ani-fate-zero-oath-sign",
+      "franchise": "Fate/Zero",
+      "title": "oath sign",
+      "elegido": {
+        "id": "aK2-jBqwEWU",
+        "title": "Fate Zero Opening 1 『 Oath Sign 』by LiSA",
+        "seconds": 91,
+        "channel": "My Anime Time.",
+        "score": 10.8,
+        "consulta": "Fate/Zero opening oath sign LiSA"
+      }
+    },
+    {
+      "id": "ani-fate-zero-to-the-beginning",
+      "franchise": "Fate/Zero",
+      "title": "to the beginning",
+      "elegido": {
+        "id": "4cNbQ1x__jA",
+        "title": "Fate/Zero - Opening 2 Full『to the beginning』by Kalafina",
+        "seconds": 284,
+        "channel": "GAccel Kun",
+        "score": 11.85,
+        "consulta": "Fate/Zero opening to the beginning Kalafina"
+      }
+    },
+    {
+      "id": "ani-fate-ubw-ideal-white",
+      "franchise": "Fate/stay night",
+      "title": "ideal white",
+      "elegido": {
+        "id": "sg_V3Sr2Yzw",
+        "title": "Honkai Star Rail x Fate/Stay Night UBW Opening 1 (ideal white - Mashiro Ayano)",
+        "seconds": 94,
+        "channel": "Cyrillus",
+        "score": 10.95,
+        "consulta": "Fate/stay night opening ideal white Mashiro Ayano"
+      }
+    },
+    {
+      "id": "ani-fate-ubw-brave-shine",
+      "franchise": "Fate/stay night",
+      "title": "Brave Shine",
+      "elegido": {
+        "id": "WofLTwSi0uo",
+        "title": "Opening 2 Fate Stay Night [UBW] Aimer — Brave Shine [sub Español]",
+        "seconds": 91,
+        "channel": "Dn XxmaxX",
+        "score": 11.7,
+        "consulta": "Fate/stay night opening Brave Shine Aimer"
+      }
+    },
+    {
+      "id": "ani-no-game-no-life-this-game",
+      "franchise": "No Game No Life",
+      "title": "This game",
+      "elegido": {
+        "id": "6CBp4qylX6I",
+        "title": "No Game No Life Opening | This Game by Konomi Suzuki",
+        "seconds": 100,
+        "channel": "Crunchyroll",
+        "score": 13,
+        "consulta": "No Game No Life opening This game Konomi Suzuki"
+      }
+    },
+    {
+      "id": "ani-rezero-redo",
+      "franchise": "Re:Zero",
+      "title": "Redo",
+      "elegido": {
+        "id": "0Vwwr3VGsYg",
+        "title": "Re:ZERO - Starting Life in Another World Opening 1 | Redo",
+        "seconds": 91,
+        "channel": "Crunchyroll",
+        "score": 12,
+        "consulta": "Re:Zero opening Redo Konomi Suzuki"
+      }
+    },
+    {
+      "id": "ani-rezero-paradisus-paradoxum",
+      "franchise": "Re:Zero",
+      "title": "Paradisus-Paradoxum",
+      "elegido": {
+        "id": "-0NNRpr9KAk",
+        "title": "Re:Zero Opening 2 | MYTH&ROID - Paradisus-Paradoxum | Original lyrics, English sub & Sub español",
+        "seconds": 249,
+        "channel": "RainbowHeads",
+        "score": 11.85,
+        "consulta": "Re:Zero opening Paradisus-Paradoxum MYTH & ROID"
+      }
+    },
+    {
+      "id": "ani-noragami-goya-no-machiawase",
+      "franchise": "Noragami",
+      "title": "Goya no Machiawase",
+      "elegido": {
+        "id": "gWCnKoEgfP0",
+        "title": "Noragami Opening | Goya wa Machiawase",
+        "seconds": 91,
+        "channel": "Crunchyroll",
+        "score": 11.7,
+        "consulta": "Noragami opening Goya no Machiawase Hello Sleepwalkers"
+      }
+    },
+    {
+      "id": "ani-noragami-aragoto-kyouran-hey-kids",
+      "franchise": "Noragami",
+      "title": "Kyouran Hey Kids!!",
+      "elegido": {
+        "id": "C-o8pTi6vd8",
+        "title": "〈NORAGAMI ARAGOTO〉OP THEME SONG  THE ORAL CIGARETTES 「Kyouran Hey Kids!!」Music Video",
+        "seconds": 267,
+        "channel": "THE ORAL CIGARETTES",
+        "score": 11.85,
+        "consulta": "Noragami opening Kyouran Hey Kids!! THE ORAL CIGARETTES"
+      }
+    },
+    {
+      "id": "ani-kill-la-kill-sirius",
+      "franchise": "Kill la Kill",
+      "title": "Sirius",
+      "elegido": {
+        "id": "XY3RhMPMWAk",
+        "title": "Eir Aoi「Sirius (シリウス)」Music Video (Kill la Kill)",
+        "seconds": 269,
+        "channel": "藍井エイル Official YouTube Channel",
+        "score": 11,
+        "consulta": "Kill la Kill opening Sirius Eir Aoi"
+      }
+    },
+    {
+      "id": "ani-psycho-pass-abnormalize",
+      "franchise": "Psycho-Pass",
+      "title": "Abnormalize",
+      "elegido": {
+        "id": "rxuR-52cyNw",
+        "title": "Psycho Pass Opening 1 full  [ Ling Tosite Sigure - Abnormalize ]  ENG SUB",
+        "seconds": 219,
+        "channel": "Maxtopten",
+        "score": 11.55,
+        "consulta": "Psycho-Pass opening Abnormalize Ling tosite sigure"
+      }
+    },
+    {
+      "id": "ani-psycho-pass-all-alone-with-you",
+      "franchise": "Psycho-Pass",
+      "title": "All Alone With You",
+      "elegido": {
+        "id": "94k03l8yKIA",
+        "title": "EGOIST『All Alone With You』Music Video（TV anime『PSYCHO-PASS』ep12-22 Ending theme）",
+        "seconds": 358,
+        "channel": "EGOIST Official YouTube Channel",
+        "score": 11,
+        "consulta": "Psycho-Pass opening All Alone With You EGOIST"
+      }
+    },
+    {
+      "id": "ani-akame-ga-kill-skyreach",
+      "franchise": "Akame ga Kill!",
+      "title": "Skyreach",
+      "elegido": {
+        "id": "Q9IN61D92OY",
+        "title": "Skyreach   Amamiya Sora Akame ga Kill OP live",
+        "seconds": 265,
+        "channel": "ElFuesa TTM",
+        "score": 11.25,
+        "consulta": "Akame ga Kill! opening Skyreach Sora Amamiya"
+      }
+    },
+    {
+      "id": "ani-the-promised-neverland-touch-off",
+      "franchise": "The Promised Neverland",
+      "title": "Touch Off",
+      "elegido": {
+        "id": "HGhjyd8ZE78",
+        "title": "The Promised Neverland Opening Full  (Lyrics) UVERworld - Touch off",
+        "seconds": 261,
+        "channel": "WANKE音楽",
+        "score": 11.7,
+        "consulta": "The Promised Neverland opening Touch Off UVERworld"
+      }
+    },
+    {
+      "id": "ani-dr-stone-good-morning-world",
+      "franchise": "Dr. Stone",
+      "title": "Good Morning World!",
+      "elegido": {
+        "id": "OX9X1vqNEnY",
+        "title": "BURNOUT SYNDROMES 『Good Morning [New] World!』 Music Video (『Dr.STONE Ryusui』 Opening Theme)",
+        "seconds": 260,
+        "channel": "BURNOUT SYNDROMES Official YouTube Channel",
+        "score": 11.55,
+        "consulta": "Dr. Stone opening Good Morning World! BURNOUT SYNDROMES"
+      }
+    },
+    {
+      "id": "ani-vinland-saga-mukanjyo",
+      "franchise": "Vinland Saga",
+      "title": "MUKANJYO",
+      "elegido": {
+        "id": "l5wAdQ-UkWY",
+        "title": "VINLAND SAGA Opening 1 | Mukanjyo by Survive Said the Prophet",
+        "seconds": 101,
+        "channel": "Crunchyroll",
+        "score": 12.85,
+        "consulta": "Vinland Saga opening MUKANJYO Survive Said The Prophet"
+      }
+    },
+    {
+      "id": "ani-fire-force-inferno",
+      "franchise": "Fire Force",
+      "title": "Inferno",
+      "elegido": {
+        "id": "JBqxVX_LXvk",
+        "title": "Fire Force Opening 1 | Inferno by Mrs.GREEN APPLE",
+        "seconds": 90,
+        "channel": "Crunchyroll",
+        "score": 13,
+        "consulta": "Fire Force opening Inferno Mrs. GREEN APPLE"
+      }
+    },
+    {
+      "id": "ani-demon-slayer-kizuna-no-kiseki",
+      "franchise": "Demon Slayer",
+      "title": "Kizuna no Kiseki",
+      "elegido": {
+        "id": "05G4RyT9DjY",
+        "title": "Demon Slayer Season 3 Opening Theme - Kizuna no Kiseki",
+        "seconds": 125,
+        "channel": "AniClipsCollection",
+        "score": 11,
+        "consulta": "Demon Slayer opening Kizuna no Kiseki MAN WITH A MISSION x milet"
+      }
+    },
+    {
+      "id": "ani-demon-slayer-mugen",
+      "franchise": "Demon Slayer",
+      "title": "Mugen",
+      "elegido": {
+        "id": "RhTFbQ3HQRM",
+        "title": "Demon Slayer Opening 5 | \"MUGEN\" by MY FIRST STORY x HYDE",
+        "seconds": 91,
+        "channel": "AniThemes",
+        "score": 11.4,
+        "consulta": "Demon Slayer opening Mugen MY FIRST STORY x HYDE"
+      }
+    },
+    {
+      "id": "ani-spy-x-family-souvenir",
+      "franchise": "Spy x Family",
+      "title": "SOUVENIR",
+      "elegido": {
+        "id": "EpsImB4uLHg",
+        "title": "Opening 2; Spy x Family || Souvenir; Bump Of Chicken (Sub Español + Romaji) FULL VERSION",
+        "seconds": 261,
+        "channel": "-ˋˏ ᴊᴏꜱᴇʟʏɴ 幽玄 ˎˊ-",
+        "score": 11.7,
+        "consulta": "Spy x Family opening SOUVENIR BUMP OF CHICKEN"
+      }
+    },
+    {
+      "id": "ani-spy-x-family-kura-kura",
+      "franchise": "Spy x Family",
+      "title": "Kura Kura",
+      "elegido": {
+        "id": "kYaKVklM4GI",
+        "title": "Spy x Family Opening 3 | Kura Kura - Ado | Full Ver. | Sub Español / Romaji",
+        "seconds": 209,
+        "channel": "VKhanyeeLyrics;歌言",
+        "score": 11.55,
+        "consulta": "Spy x Family opening Kura Kura Ado"
+      }
+    },
+    {
+      "id": "ani-frieren-haru",
+      "franchise": "Frieren",
+      "title": "Haru (Sunny)",
+      "elegido": {
+        "id": "uF7eT3nhyZ0",
+        "title": "Sousou no Frieren - Opening 2 FULL \"Haru (Sunny)\" by Yorushika (Lyrics)",
+        "seconds": 272,
+        "channel": "Jamong",
+        "score": 11.7,
+        "consulta": "Frieren opening Haru yorushika"
+      }
+    },
+    {
+      "id": "ani-oshi-no-ko-fatal",
+      "franchise": "Oshi no Ko",
+      "title": "Fatal",
+      "elegido": {
+        "id": "GYpMWcOVOmM",
+        "title": "Oshi no Ko Season 2 Opening | Fatal | GEMN | Sub Español",
+        "seconds": 220,
+        "channel": "Syndornx",
+        "score": 12,
+        "consulta": "Oshi no Ko opening Fatal GEMN"
+      }
+    },
+    {
+      "id": "ani-chainsaw-man-hawatari",
+      "franchise": "Chainsaw Man",
+      "title": "Hawatari 2 Oku Centi",
+      "elegido": {
+        "id": "DE-C_oxL_Q4",
+        "title": "Reze vs Denji 4K | HAWATARI NIOKU CENTI | Chainsaw Man – The Movie: Reze Arc",
+        "seconds": 247,
+        "channel": "Yoru",
+        "score": 9.4,
+        "consulta": "Chainsaw Man opening Hawatari 2 Oku Centi Maximum the Hormone"
+      }
+    },
+    {
+      "id": "ani-bleach-tybw-scar",
+      "franchise": "Bleach",
+      "title": "Scar",
+      "elegido": {
+        "id": "pb_fwnVamdI",
+        "title": "Scar / Tatsuya Kitani - Music Video (“BLEACH: Thousand Year Blood War” Opening Theme)",
+        "seconds": 261,
+        "channel": "キタニタツヤ / Tatsuya Kitani",
+        "score": 11.85,
+        "consulta": "Bleach opening Scar Tatsuya Kitani"
+      }
+    },
+    {
+      "id": "ani-bleach-tybw-stars",
+      "franchise": "Bleach",
+      "title": "STARS",
+      "elegido": {
+        "id": "bHME-AwOnc4",
+        "title": "Part 2 OPENING | STARS by w.o.d | BLEACH: Thousand Year-Blood War | VIZ",
+        "seconds": 95,
+        "channel": "vizmedia",
+        "score": 10.85,
+        "consulta": "Bleach opening STARS w.o.d."
+      }
+    },
+    {
+      "id": "ani-bleach-tybw-kotoba",
+      "franchise": "Bleach",
+      "title": "Kotoba ni Dekinai",
+      "elegido": {
+        "id": "Eib3OGSGLh8",
+        "title": "Bleach: Sennen Kessen hen (Opening) | SIX LOUNGE - Kotoba ni sezu tomo Lyrics_Kan/Rom/Eng)",
+        "seconds": 190,
+        "channel": "Haeya",
+        "score": 8.95,
+        "consulta": "Bleach opening Kotoba ni Dekinai SIX LOUNGE"
+      }
+    },
+    {
+      "id": "ani-hells-paradise-work",
+      "franchise": "Hell's Paradise",
+      "title": "WORK",
+      "elegido": {
+        "id": "04WuoQMhhxw",
+        "title": "Hell's Paradise Opening 1 | \"Work\" by Ringo Sheena and Millennium Parade",
+        "seconds": 101,
+        "channel": "Crunchyroll",
+        "score": 13,
+        "consulta": "Hell's Paradise opening WORK Ringo Sheena x millennium parade"
+      }
+    },
+    {
+      "id": "ani-kaiju-no-8-abyss",
+      "franchise": "Kaiju No. 8",
+      "title": "Abyss",
+      "elegido": {
+        "id": "CFjI21M9wZs",
+        "title": "“Kaiju No. 8” Opening Theme Animation｜'ABYSS' by YUNGBLUD",
+        "seconds": 91,
+        "channel": "TOHO animation チャンネル",
+        "score": 11.85,
+        "consulta": "Kaiju No. 8 opening Abyss YUNGBLUD"
+      }
+    },
+    {
+      "id": "ani-wind-breaker-zettai-reido",
+      "franchise": "Wind Breaker",
+      "title": "Zettai Reido",
+      "elegido": {
+        "id": "R0NyvBFRFSU",
+        "title": "WIND BREAKER - Opening FULL \"Zettai Reido (Absolute Zero)\" by natori (Lyrics)",
+        "seconds": 199,
+        "channel": "Jamong",
+        "score": 11.4,
+        "consulta": "Wind Breaker opening Zettai Reido natori"
+      }
+    },
+    {
+      "id": "ani-dungeon-meshi-sleep-walking-orchestra",
+      "franchise": "Delicious in Dungeon",
+      "title": "Sleep Walking Orchestra",
+      "elegido": {
+        "id": "NAc8LWXYgAs",
+        "title": "Delicious in Dungeon - Opening Full | \"Sleep Walking Orchestra\" by BUMP OF CHICKEN (Lyrics)",
+        "seconds": 237,
+        "channel": "Kirasa",
+        "score": 11.7,
+        "consulta": "Delicious in Dungeon opening Sleep Walking Orchestra BUMP OF CHICKEN"
+      }
+    },
+    {
+      "id": "ani-dungeon-meshi-unmei",
+      "franchise": "Delicious in Dungeon",
+      "title": "Unmei",
+      "elegido": {
+        "id": "x-Pek_U3I2g",
+        "title": "Delicious in Dungeon - Full Opening 2 [Unmei \"運命\" ] by Sumika | Lyrics (English-Romaji-Kanji)",
+        "seconds": 221,
+        "channel": "『SHUSUI』ᶻᵉʳᵒ",
+        "score": 11.85,
+        "consulta": "Delicious in Dungeon opening Unmei sumika"
+      }
+    },
+    {
+      "id": "ani-mashle-knock-out",
+      "franchise": "Mashle",
+      "title": "Knock Out",
+      "elegido": {
+        "id": "V0PJKWwXAY4",
+        "title": "MASHLE Opening Full『Knock Out』by Taiiku Okazaki",
+        "seconds": 231,
+        "channel": "SukiMelody",
+        "score": 12,
+        "consulta": "Mashle opening Knock Out Taiiku Okazaki"
+      }
+    },
+    {
+      "id": "ani-solo-leveling-request",
+      "franchise": "Solo Leveling",
+      "title": "Request",
+      "elegido": {
+        "id": "ebYmIov9zAY",
+        "title": "krage - request (Music Video) 【TV Anime「Solo Leveling」ending theme】",
+        "seconds": 229,
+        "channel": "krage Official YouTube Channel ",
+        "score": 8.65,
+        "consulta": "Solo Leveling opening Request TK from Ling tosite sigure"
+      }
+    },
+    {
+      "id": "ani-shangri-la-frontier-broken-games",
+      "franchise": "Shangri-La Frontier",
+      "title": "BROKEN GAMES",
+      "elegido": {
+        "id": "GasIaj6iNOU",
+        "title": "Shangri-la Frontier - Opening 1 | Broken Games",
+        "seconds": 101,
+        "channel": "Crunchyroll",
+        "score": 11.85,
+        "consulta": "Shangri-La Frontier opening BROKEN GAMES FZMZ"
+      }
+    },
+    {
+      "id": "ani-blue-lock-boujakunokarisuma",
+      "franchise": "Blue Lock",
+      "title": "Boujaku no Charisma",
+      "elegido": {
+        "id": "qU1XxZ37j7g",
+        "title": "BLUE LOCK 2nd Season Opening \"Boujaku no Charisma\" by Unison Square Garden",
+        "seconds": 101,
+        "channel": "Crunchyroll",
+        "score": 13,
+        "consulta": "Blue Lock opening Boujaku no Charisma UNISON SQUARE GARDEN"
+      }
+    },
+    {
+      "id": "ani-bocchi-the-rock-seishun-complex",
+      "franchise": "Bocchi the Rock!",
+      "title": "Seishun Complex",
+      "elegido": {
+        "id": "dlSbEP4V-gI",
+        "title": "BOCCHI THE ROCK! Opening | Seishun Complex by Kessoku Band",
+        "seconds": 100,
+        "channel": "Crunchyroll",
+        "score": 13,
+        "consulta": "Bocchi the Rock! opening Seishun Complex Kessoku Band"
+      }
+    },
+    {
+      "id": "ani-cyberpunk-edgerunners-this-fffire",
+      "franchise": "Cyberpunk: Edgerunners",
+      "title": "This Fffire",
+      "elegido": {
+        "id": "43d0Jq1XKXI",
+        "title": "Cyberpunk: Edgerunners | Opening Credits: \"This Fffire - Franz Ferdinand\"",
+        "seconds": 225,
+        "channel": "Trailer Music",
+        "score": 11.4,
+        "consulta": "Cyberpunk: Edgerunners opening This Fffire Franz Ferdinand"
+      }
+    },
+    {
+      "id": "ani-kaguya-sama-giri-giri",
+      "franchise": "Kaguya-sama: Love Is War",
+      "title": "GIRI GIRI",
+      "elegido": {
+        "id": "NithFu9aSlY",
+        "title": "Kaguya-sama: Love Is War Season 3 - Opening Full 『Masayuki Suzuki - GIRI GIRI feat Suu』",
+        "seconds": 289,
+        "channel": "Melodic Star",
+        "score": 11.7,
+        "consulta": "Kaguya-sama: Love Is War opening GIRI GIRI Masayuki Suzuki feat. Suu"
+      }
+    },
+    {
+      "id": "ani-kaguya-sama-daddy-daddy-do",
+      "franchise": "Kaguya-sama: Love Is War",
+      "title": "DADDY ! DADDY ! DO !",
+      "elegido": {
+        "id": "edYcEcyd3t8",
+        "title": "Kaguya-sama: Love is War 2 OP sub español - romaji lyrics ; DADDY! DADDY! DO! - Masayuki Suzuki",
+        "seconds": 268,
+        "channel": "sevnkx",
+        "score": 11.55,
+        "consulta": "Kaguya-sama: Love Is War opening DADDY ! DADDY ! DO ! Masayuki Suzuki feat. Airi Suzuki"
+      }
+    },
+    {
+      "id": "ani-mob-psycho-100-iii-1",
+      "franchise": "Mob Psycho 100",
+      "title": "1",
+      "elegido": {
+        "id": "Bw-5Lka7gPE",
+        "title": "Mob Psycho 100 Opening | 99",
+        "seconds": 101,
+        "channel": "Crunchyroll",
+        "score": 9,
+        "consulta": "Mob Psycho 100 opening 1 MOB CHOIR"
+      }
+    },
+    {
+      "id": "ani-vinland-saga-river",
+      "franchise": "Vinland Saga",
+      "title": "River",
+      "elegido": {
+        "id": "V-uTOWL8X0w",
+        "title": "Anonymouz - River (ヴィンランド・サガ [VINLAND SAGA] SEASON 2 OPテーマ)",
+        "seconds": 202,
+        "channel": "Daizy デイジー",
+        "score": 12,
+        "consulta": "Vinland Saga opening River Anonymouz"
+      }
+    },
+    {
+      "id": "ani-chainsaw-man-chu-tayousei",
+      "franchise": "Chainsaw Man",
+      "title": "Chu, Tayousei.",
+      "elegido": {
+        "id": "BBc7oXJFnCA",
+        "title": "Chainsaw Man ED7: Ano - Chu, Tayousei (Romanized & English Subbed)",
+        "seconds": 89,
+        "channel": "cj iwakura",
+        "score": 10.4,
+        "consulta": "Chainsaw Man opening Chu, Tayousei. ano"
+      }
+    },
+    {
+      "id": "ani-lycoris-recoil-alive",
+      "franchise": "Lycoris Recoil",
+      "title": "ALIVE",
+      "elegido": {
+        "id": "Vi-1402wYtI",
+        "title": "ClariS \"ALIVE\" Music Video (TV Anime \"Lycoris Recoil\" Opening Theme)",
+        "seconds": 222,
+        "channel": "ClariS Official YouTube Channel",
+        "score": 11.85,
+        "consulta": "Lycoris Recoil opening ALIVE ClariS"
+      }
+    },
+    {
+      "id": "ani-rezero-season-2-realize",
+      "franchise": "Re:Zero",
+      "title": "Realize",
+      "elegido": {
+        "id": "AwHapidVQlI",
+        "title": "Re:Zero Season 2 - Opening Full『Realize』by Konomi Suzuki",
+        "seconds": 256,
+        "channel": "AniMelody – Anime Music",
+        "score": 12,
+        "consulta": "Re:Zero opening Realize Konomi Suzuki"
+      }
+    },
+    {
+      "id": "ani-rezero-season-2-long-shot",
+      "franchise": "Re:Zero",
+      "title": "Long shot",
+      "elegido": {
+        "id": "wp7l9oolXS0",
+        "title": "Re:Zero Season 2 Part 2 - Opening Full『Long shot』by Mayu Maeshima",
+        "seconds": 289,
+        "channel": "AniMelody – Anime Music",
+        "score": 12,
+        "consulta": "Re:Zero opening Long shot Mayu Maeshima"
+      }
+    },
+    {
+      "id": "ani-mushoku-tensei-spiral",
+      "franchise": "Mushoku Tensei",
+      "title": "spiral",
+      "elegido": {
+        "id": "fE9trKOuT3Q",
+        "title": "LONGMAN “spiral”(“Mushoku Tensei Ⅱ Jobless Reincarnation”Opening theme)",
+        "seconds": 242,
+        "channel": "LONGMAN official YouTube channel",
+        "score": 11.7,
+        "consulta": "Mushoku Tensei opening spiral LONGMAN"
+      }
+    },
+    {
+      "id": "ani-the-eminence-in-shadow-highest",
+      "franchise": "The Eminence in Shadow",
+      "title": "HIGHEST",
+      "elegido": {
+        "id": "1w2ylCSwB70",
+        "title": "The Eminence in Shadow Opening Full『HIGHEST』by OxT",
+        "seconds": 245,
+        "channel": "GAccel Kun",
+        "score": 11.85,
+        "consulta": "The Eminence in Shadow opening HIGHEST OxT"
+      }
+    },
+    {
+      "id": "ani-the-dangers-in-my-heart-shayou",
+      "franchise": "The Dangers in My Heart",
+      "title": "Shayou",
+      "elegido": {
+        "id": "f7-py7h-9IA",
+        "title": "The Dangers in My Heart - Opening Full『Shayou』by Yorushika",
+        "seconds": 233,
+        "channel": "GAccel Kun",
+        "score": 12,
+        "consulta": "The Dangers in My Heart opening Shayou yorushika"
+      }
+    },
+    {
+      "id": "ani-tokyo-revengers-white-noise",
+      "franchise": "Tokyo Revengers",
+      "title": "White Noise",
+      "elegido": {
+        "id": "xo0ZOS_8mM8",
+        "title": "Tokyo Revengers Season 2 & 3 - Opening FULL ''White Noise\" by Official HIGE DANdism (Lyrics)",
+        "seconds": 253,
+        "channel": "Jamong",
+        "score": 12,
+        "consulta": "Tokyo Revengers opening White Noise Official HIGE DANDism"
+      }
+    },
+    {
+      "id": "ani-tengoku-daimakyou-innocent-arrogance",
+      "franchise": "Heavenly Delusion",
+      "title": "innocent arrogance",
+      "elegido": {
+        "id": "xTb2Dothdgk",
+        "title": "Tengoku Daimakyou OP Full // BiSH - innocent arrogance ϟ sub español + romaji",
+        "seconds": 227,
+        "channel": "ᴋ ɪ ʀ ᴇ ɪ",
+        "score": 12,
+        "consulta": "Heavenly Delusion opening innocent arrogance BiSH"
+      }
+    },
+    {
+      "id": "ani-zom-100-song-of-the-dead",
+      "franchise": "Zom 100",
+      "title": "Song of the Dead",
+      "elegido": {
+        "id": "Tt4_enX63K0",
+        "title": "OPENING #2 |  Song of the Dead by KANA-BOON | Zom 100: Bucket List of the Dead | VIZ",
+        "seconds": 95,
+        "channel": "vizmedia",
+        "score": 12,
+        "consulta": "Zom 100 opening Song of the Dead KANA-BOON"
+      }
+    },
+    {
+      "id": "ani-my-dress-up-darling-sansan-days",
+      "franchise": "My Dress-Up Darling",
+      "title": "Sansan Days",
+      "elegido": {
+        "id": "UrZszkvBfzI",
+        "title": "My Dress-Up Darling - Opening Full『San San Days』by Spira Spica",
+        "seconds": 267,
+        "channel": "GAccel Kun",
+        "score": 11.4,
+        "consulta": "My Dress-Up Darling opening Sansan Days Spira Spica"
+      }
+    }
+  ],
+  "dudosas": [
+    {
+      "id": "ani-trigun-ht",
+      "franchise": "Trigun",
+      "title": "H.T",
+      "elegido": {
+        "id": "4OxFSy8G5wk",
+        "title": "Trigun - Opening HD",
+        "seconds": 91,
+        "channel": "Redthundereign",
+        "score": 7,
+        "consulta": "Trigun H.T opening"
+      }
+    },
+    {
+      "id": "ani-inuyasha-i-am",
+      "franchise": "Inuyasha",
+      "title": "I am",
+      "elegido": {
+        "id": "xkHxhVo57Tg",
+        "title": "InuYasha - Opening Full 2『I Am』by Hitomi - Lyrics",
+        "seconds": 286,
+        "channel": "友人",
+        "score": 7.85,
+        "consulta": "Inuyasha opening I am hitomi"
+      }
+    },
+    {
+      "id": "ani-katekyo-hitman-reborn-88",
+      "franchise": "Katekyo Hitman Reborn!",
+      "title": "88",
+      "elegido": {
+        "id": "ECoBdjspiaw",
+        "title": "Katekyo Hitman Reborn!-Opening 1 FULL//Sub español",
+        "seconds": 262,
+        "channel": "CancionesSUB",
+        "score": 6.85,
+        "consulta": "Katekyo Hitman Reborn! opening 2008"
+      }
+    },
+    {
+      "id": "ani-ranking-of-kings-boy",
+      "franchise": "Ranking of Kings",
+      "title": "BOY",
+      "elegido": {
+        "id": "n0QNaym0jDI",
+        "title": "King Gnu - BOY",
+        "seconds": 244,
+        "channel": "King Gnu official YouTube channel",
+        "score": 6,
+        "consulta": "Ranking of Kings opening BOY King Gnu"
+      }
+    }
+  ],
+  "pendientes": [
+    {
+      "id": "ani-ranking-of-kings-naked-hero",
+      "franchise": "Ranking of Kings",
+      "title": "Naked Hero",
+      "motivo": "sin candidato confiable",
+      "candidato": {
+        "id": "dWZAH5w8jkQ",
+        "title": "Ranking of Kings Opening 2 | Naked Hero by Vaundy",
+        "seconds": 101,
+        "channel": "Crunchyroll",
+        "score": 3,
+        "consulta": "Ranking of Kings opening Naked Hero Vaundy"
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "generado": "2026-10-07T23:34:57.390Z",
+  "catalogo": "anime",
+  "nota": "Pistas retiradas por no tener una fuente verificada. Cada una conserva su bloque original (con IDs que NO eran reales).",
+  "revision": {
+    "dudosas": [
+      {
+        "id": "ani-trigun-ht",
+        "franchise": "Trigun",
+        "title": "H.T",
+        "elegido": {
+          "id": "4OxFSy8G5wk",
+          "title": "Trigun - Opening HD",
+          "seconds": 91,
+          "channel": "Redthundereign",
+          "score": 7,
+          "consulta": "Trigun H.T opening"
+        }
+      },
+      {
+        "id": "ani-inuyasha-i-am",
+        "franchise": "Inuyasha",
+        "title": "I am",
+        "elegido": {
+          "id": "xkHxhVo57Tg",
+          "title": "InuYasha - Opening Full 2『I Am』by Hitomi - Lyrics",
+          "seconds": 286,
+          "channel": "友人",
+          "score": 7.85,
+          "consulta": "Inuyasha opening I am hitomi"
+        }
+      },
+      {
+        "id": "ani-katekyo-hitman-reborn-88",
+        "franchise": "Katekyo Hitman Reborn!",
+        "title": "88",
+        "elegido": {
+          "id": "ECoBdjspiaw",
+          "title": "Katekyo Hitman Reborn!-Opening 1 FULL//Sub español",
+          "seconds": 262,
+          "channel": "CancionesSUB",
+          "score": 6.85,
+          "consulta": "Katekyo Hitman Reborn! opening 2008"
+        }
+      },
+      {
+        "id": "ani-ranking-of-kings-boy",
+        "franchise": "Ranking of Kings",
+        "title": "BOY",
+        "elegido": {
+          "id": "n0QNaym0jDI",
+          "title": "King Gnu - BOY",
+          "seconds": 244,
+          "channel": "King Gnu official YouTube channel",
+          "score": 6,
+          "consulta": "Ranking of Kings opening BOY King Gnu"
+        }
+      }
+    ],
+    "pendientes": [
+      {
+        "id": "ani-ranking-of-kings-naked-hero",
+        "franchise": "Ranking of Kings",
+        "title": "Naked Hero",
+        "motivo": "sin candidato confiable",
+        "candidato": {
+          "id": "dWZAH5w8jkQ",
+          "title": "Ranking of Kings Opening 2 | Naked Hero by Vaundy",
+          "seconds": 101,
+          "channel": "Crunchyroll",
+          "score": 3,
+          "consulta": "Ranking of Kings opening Naked Hero Vaundy"
+        }
+      }
+    ]
+  },
+  "retiradas": []
+}

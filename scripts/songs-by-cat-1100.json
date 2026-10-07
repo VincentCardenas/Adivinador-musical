@@ -1,0 +1,5514 @@
+{
+  "song-rock": [
+    {
+      "franchise": "Ritchie Valens",
+      "game": "La Bamba",
+      "lang": "es"
+    },
+    {
+      "franchise": "The Rolling Stones",
+      "game": "(I Can't Get No) Satisfaction",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Beatles",
+      "game": "Hey Jude",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Beatles",
+      "game": "Let It Be",
+      "lang": "en"
+    },
+    {
+      "franchise": "Santana",
+      "game": "Oye cómo va",
+      "lang": "es"
+    },
+    {
+      "franchise": "Led Zeppelin",
+      "game": "Stairway to Heaven",
+      "lang": "en"
+    },
+    {
+      "franchise": "Queen",
+      "game": "Bohemian Rhapsody",
+      "lang": "en"
+    },
+    {
+      "franchise": "Eagles",
+      "game": "Hotel California",
+      "lang": "en"
+    },
+    {
+      "franchise": "Queen",
+      "game": "Don't Stop Me Now",
+      "lang": "en"
+    },
+    {
+      "franchise": "Queen",
+      "game": "Another One Bites the Dust",
+      "lang": "en"
+    },
+    {
+      "franchise": "AC/DC",
+      "game": "Back in Black",
+      "lang": "en"
+    },
+    {
+      "franchise": "Nacha Pop",
+      "game": "La chica de ayer",
+      "lang": "es"
+    },
+    {
+      "franchise": "Journey",
+      "game": "Don't Stop Believin'",
+      "lang": "en"
+    },
+    {
+      "franchise": "Toto",
+      "game": "Africa",
+      "lang": "en"
+    },
+    {
+      "franchise": "Survivor",
+      "game": "Eye of the Tiger",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Police",
+      "game": "Every Breath You Take",
+      "lang": "en"
+    },
+    {
+      "franchise": "La Unión",
+      "game": "Lobo-hombre en París",
+      "lang": "es"
+    },
+    {
+      "franchise": "Hombres G",
+      "game": "Devuélveme a mi chica",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Prisioneros",
+      "game": "El baile de los que sobran",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bon Jovi",
+      "game": "Livin' on a Prayer",
+      "lang": "en"
+    },
+    {
+      "franchise": "Soda Stereo",
+      "game": "Persiana americana",
+      "lang": "es"
+    },
+    {
+      "franchise": "Guns N' Roses",
+      "game": "Sweet Child O' Mine",
+      "lang": "en"
+    },
+    {
+      "franchise": "Soda Stereo",
+      "game": "En la ciudad de la furia",
+      "lang": "es"
+    },
+    {
+      "franchise": "Caifanes",
+      "game": "La negra Tomasa",
+      "lang": "es"
+    },
+    {
+      "franchise": "Soda Stereo",
+      "game": "De música ligera",
+      "lang": "es"
+    },
+    {
+      "franchise": "Héroes del Silencio",
+      "game": "Entre dos tierras",
+      "lang": "es"
+    },
+    {
+      "franchise": "Maná",
+      "game": "Rayando el sol",
+      "lang": "es"
+    },
+    {
+      "franchise": "Alejandra Guzmán",
+      "game": "Hacer el amor con otro",
+      "lang": "es"
+    },
+    {
+      "franchise": "R.E.M.",
+      "game": "Losing My Religion",
+      "lang": "en"
+    },
+    {
+      "franchise": "Guns N' Roses",
+      "game": "November Rain",
+      "lang": "en"
+    },
+    {
+      "franchise": "Nirvana",
+      "game": "Smells Like Teen Spirit",
+      "lang": "en"
+    },
+    {
+      "franchise": "Radiohead",
+      "game": "Creep",
+      "lang": "en"
+    },
+    {
+      "franchise": "Maná",
+      "game": "Oye mi amor",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Fabulosos Cadillacs",
+      "game": "Matador",
+      "lang": "es"
+    },
+    {
+      "franchise": "Enanitos Verdes",
+      "game": "Lamento boliviano",
+      "lang": "es"
+    },
+    {
+      "franchise": "The Cranberries",
+      "game": "Zombie",
+      "lang": "en"
+    },
+    {
+      "franchise": "Oasis",
+      "game": "Wonderwall",
+      "lang": "en"
+    },
+    {
+      "franchise": "Café Tacvba",
+      "game": "Chilanga banda",
+      "lang": "es"
+    },
+    {
+      "franchise": "Jarabe de Palo",
+      "game": "La flaca",
+      "lang": "es"
+    },
+    {
+      "franchise": "Smash Mouth",
+      "game": "All Star",
+      "lang": "en"
+    },
+    {
+      "franchise": "Santana y Maná",
+      "game": "Corazón espinado",
+      "lang": "es"
+    },
+    {
+      "franchise": "Maná",
+      "game": "Mariposa traicionera",
+      "lang": "es"
+    },
+    {
+      "franchise": "Café Tacvba",
+      "game": "Eres",
+      "lang": "es"
+    },
+    {
+      "franchise": "The White Stripes",
+      "game": "Seven Nation Army",
+      "lang": "en"
+    },
+    {
+      "franchise": "Green Day",
+      "game": "Boulevard of Broken Dreams",
+      "lang": "en"
+    },
+    {
+      "franchise": "Juanes",
+      "game": "La camisa negra",
+      "lang": "es"
+    },
+    {
+      "franchise": "The Killers",
+      "game": "Mr. Brightside",
+      "lang": "en"
+    },
+    {
+      "franchise": "Coldplay",
+      "game": "Viva la Vida",
+      "lang": "en"
+    },
+    {
+      "franchise": "Zoé",
+      "game": "Labios rotos",
+      "lang": "es"
+    },
+    {
+      "franchise": "Imagine Dragons",
+      "game": "Radioactive",
+      "lang": "en"
+    },
+    {
+      "franchise": "Chuck Berry",
+      "game": "Johnny B. Goode",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Beatles",
+      "game": "Come Together",
+      "lang": "en"
+    },
+    {
+      "franchise": "Creedence Clearwater Revival",
+      "game": "Have You Ever Seen the Rain?",
+      "lang": "en"
+    },
+    {
+      "franchise": "Deep Purple",
+      "game": "Smoke on the Water",
+      "lang": "en"
+    },
+    {
+      "franchise": "Aerosmith",
+      "game": "Dream On",
+      "lang": "en"
+    },
+    {
+      "franchise": "Queen",
+      "game": "We Will Rock You",
+      "lang": "en"
+    },
+    {
+      "franchise": "Queen",
+      "game": "We Are the Champions",
+      "lang": "en"
+    },
+    {
+      "franchise": "Pink Floyd",
+      "game": "Another Brick in the Wall, Pt. 2",
+      "lang": "en"
+    },
+    {
+      "franchise": "Joan Jett & the Blackhearts",
+      "game": "I Love Rock 'n Roll",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Clash",
+      "game": "Should I Stay or Should I Go",
+      "lang": "en"
+    },
+    {
+      "franchise": "Van Halen",
+      "game": "Jump",
+      "lang": "en"
+    },
+    {
+      "franchise": "Charly García",
+      "game": "Demoliendo hoteles",
+      "lang": "es"
+    },
+    {
+      "franchise": "Soda Stereo",
+      "game": "Trátame suavemente",
+      "lang": "es"
+    },
+    {
+      "franchise": "El Tri",
+      "game": "Triste canción",
+      "lang": "es"
+    },
+    {
+      "franchise": "Soda Stereo",
+      "game": "Cuando pase el temblor",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bon Jovi",
+      "game": "You Give Love a Bad Name",
+      "lang": "en"
+    },
+    {
+      "franchise": "Guns N' Roses",
+      "game": "Welcome to the Jungle",
+      "lang": "en"
+    },
+    {
+      "franchise": "Guns N' Roses",
+      "game": "Paradise City",
+      "lang": "en"
+    },
+    {
+      "franchise": "Los Enanitos Verdes",
+      "game": "Guitarras blancas",
+      "lang": "es"
+    },
+    {
+      "franchise": "Héroes del Silencio",
+      "game": "Maldito duende",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Prisioneros",
+      "game": "Tren al sur",
+      "lang": "es"
+    },
+    {
+      "franchise": "Red Hot Chili Peppers",
+      "game": "Under the Bridge",
+      "lang": "en"
+    },
+    {
+      "franchise": "Pearl Jam",
+      "game": "Alive",
+      "lang": "en"
+    },
+    {
+      "franchise": "Nirvana",
+      "game": "Come as You Are",
+      "lang": "en"
+    },
+    {
+      "franchise": "Caifanes",
+      "game": "No dejes que...",
+      "lang": "es"
+    },
+    {
+      "franchise": "Fito Páez",
+      "game": "El amor después del amor",
+      "lang": "es"
+    },
+    {
+      "franchise": "The Cranberries",
+      "game": "Linger",
+      "lang": "en"
+    },
+    {
+      "franchise": "Caifanes",
+      "game": "Afuera",
+      "lang": "es"
+    },
+    {
+      "franchise": "Café Tacvba",
+      "game": "La ingrata",
+      "lang": "es"
+    },
+    {
+      "franchise": "Café Tacvba",
+      "game": "El baile y el salón",
+      "lang": "es"
+    },
+    {
+      "franchise": "El Tri",
+      "game": "Las piedras rodantes",
+      "lang": "es"
+    },
+    {
+      "franchise": "Green Day",
+      "game": "Basket Case",
+      "lang": "en"
+    },
+    {
+      "franchise": "Héroes del Silencio",
+      "game": "La chispa adecuada",
+      "lang": "es"
+    },
+    {
+      "franchise": "Oasis",
+      "game": "Don't Look Back in Anger",
+      "lang": "en"
+    },
+    {
+      "franchise": "Blur",
+      "game": "Song 2",
+      "lang": "en"
+    },
+    {
+      "franchise": "Molotov",
+      "game": "Gimme the Power",
+      "lang": "es"
+    },
+    {
+      "franchise": "Red Hot Chili Peppers",
+      "game": "Californication",
+      "lang": "en"
+    },
+    {
+      "franchise": "Los Enanitos Verdes",
+      "game": "Luz de día",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bon Jovi",
+      "game": "It's My Life",
+      "lang": "en"
+    },
+    {
+      "franchise": "Coldplay",
+      "game": "Clocks",
+      "lang": "en"
+    },
+    {
+      "franchise": "Green Day",
+      "game": "American Idiot",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Killers",
+      "game": "Somebody Told Me",
+      "lang": "en"
+    },
+    {
+      "franchise": "Foo Fighters",
+      "game": "The Pretender",
+      "lang": "en"
+    },
+    {
+      "franchise": "Muse",
+      "game": "Uprising",
+      "lang": "en"
+    },
+    {
+      "franchise": "Måneskin",
+      "game": "Beggin'",
+      "lang": "en"
+    },
+    {
+      "franchise": "Soundgarden",
+      "game": "Black Hole Sun",
+      "lang": "en"
+    },
+    {
+      "franchise": "Foo Fighters",
+      "game": "Learn to Fly",
+      "lang": "en"
+    },
+    {
+      "franchise": "Kings of Leon",
+      "game": "Sex on Fire",
+      "lang": "en"
+    },
+    {
+      "franchise": "Arctic Monkeys",
+      "game": "Do I Wanna Know?",
+      "lang": "en"
+    },
+    {
+      "franchise": "Imagine Dragons",
+      "game": "Believer",
+      "lang": "en"
+    }
+  ],
+  "song-pop": [
+    {
+      "franchise": "Los Diablos",
+      "game": "Un rayo de sol",
+      "lang": "es"
+    },
+    {
+      "franchise": "Juan Gabriel",
+      "game": "No tengo dinero",
+      "lang": "es"
+    },
+    {
+      "franchise": "Stevie Wonder",
+      "game": "Superstition",
+      "lang": "en"
+    },
+    {
+      "franchise": "Jeanette",
+      "game": "Por qué te vas",
+      "lang": "es"
+    },
+    {
+      "franchise": "ABBA",
+      "game": "Dancing Queen",
+      "lang": "en"
+    },
+    {
+      "franchise": "Bee Gees",
+      "game": "Stayin' Alive",
+      "lang": "en"
+    },
+    {
+      "franchise": "Gloria Gaynor",
+      "game": "I Will Survive",
+      "lang": "en"
+    },
+    {
+      "franchise": "Earth, Wind & Fire",
+      "game": "September",
+      "lang": "en"
+    },
+    {
+      "franchise": "Village People",
+      "game": "Y.M.C.A.",
+      "lang": "en"
+    },
+    {
+      "franchise": "Yuri",
+      "game": "Maldita primavera",
+      "lang": "es"
+    },
+    {
+      "franchise": "Michael Jackson",
+      "game": "Billie Jean",
+      "lang": "en"
+    },
+    {
+      "franchise": "Cyndi Lauper",
+      "game": "Girls Just Want to Have Fun",
+      "lang": "en"
+    },
+    {
+      "franchise": "Eurythmics",
+      "game": "Sweet Dreams (Are Made of This)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Alaska y Dinarama",
+      "game": "Ni tú ni nadie",
+      "lang": "es"
+    },
+    {
+      "franchise": "Wham!",
+      "game": "Wake Me Up Before You Go-Go",
+      "lang": "en"
+    },
+    {
+      "franchise": "a-ha",
+      "game": "Take On Me",
+      "lang": "en"
+    },
+    {
+      "franchise": "Mecano",
+      "game": "Hijo de la luna",
+      "lang": "es"
+    },
+    {
+      "franchise": "Whitney Houston",
+      "game": "I Wanna Dance with Somebody",
+      "lang": "en"
+    },
+    {
+      "franchise": "Rick Astley",
+      "game": "Never Gonna Give You Up",
+      "lang": "en"
+    },
+    {
+      "franchise": "Timbiriche",
+      "game": "Tú y yo somos uno mismo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Madonna",
+      "game": "Like a Prayer",
+      "lang": "en"
+    },
+    {
+      "franchise": "Los del Río",
+      "game": "Macarena",
+      "lang": "es"
+    },
+    {
+      "franchise": "Shakira",
+      "game": "Estoy aquí",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ricky Martin",
+      "game": "María",
+      "lang": "es"
+    },
+    {
+      "franchise": "Thalía",
+      "game": "Piel morena",
+      "lang": "es"
+    },
+    {
+      "franchise": "Spice Girls",
+      "game": "Wannabe",
+      "lang": "en"
+    },
+    {
+      "franchise": "Alejandro Sanz",
+      "game": "Corazón partío",
+      "lang": "es"
+    },
+    {
+      "franchise": "Britney Spears",
+      "game": "...Baby One More Time",
+      "lang": "en"
+    },
+    {
+      "franchise": "Cher",
+      "game": "Believe",
+      "lang": "en"
+    },
+    {
+      "franchise": "Backstreet Boys",
+      "game": "I Want It That Way",
+      "lang": "en"
+    },
+    {
+      "franchise": "Ricky Martin",
+      "game": "Livin' la Vida Loca",
+      "lang": "en"
+    },
+    {
+      "franchise": "Manu Chao",
+      "game": "Me gustas tú",
+      "lang": "es"
+    },
+    {
+      "franchise": "Avril Lavigne",
+      "game": "Complicated",
+      "lang": "en"
+    },
+    {
+      "franchise": "Beyoncé",
+      "game": "Crazy in Love",
+      "lang": "en"
+    },
+    {
+      "franchise": "La Oreja de Van Gogh",
+      "game": "Rosas",
+      "lang": "es"
+    },
+    {
+      "franchise": "Britney Spears",
+      "game": "Toxic",
+      "lang": "en"
+    },
+    {
+      "franchise": "RBD",
+      "game": "Rebelde",
+      "lang": "es"
+    },
+    {
+      "franchise": "Shakira",
+      "game": "La tortura",
+      "lang": "es"
+    },
+    {
+      "franchise": "Shakira",
+      "game": "Hips Don't Lie",
+      "lang": "en"
+    },
+    {
+      "franchise": "Amy Winehouse",
+      "game": "Rehab",
+      "lang": "en"
+    },
+    {
+      "franchise": "Rihanna",
+      "game": "Umbrella",
+      "lang": "en"
+    },
+    {
+      "franchise": "Lady Gaga",
+      "game": "Poker Face",
+      "lang": "en"
+    },
+    {
+      "franchise": "Black Eyed Peas",
+      "game": "I Gotta Feeling",
+      "lang": "en"
+    },
+    {
+      "franchise": "Adele",
+      "game": "Rolling in the Deep",
+      "lang": "en"
+    },
+    {
+      "franchise": "Carly Rae Jepsen",
+      "game": "Call Me Maybe",
+      "lang": "en"
+    },
+    {
+      "franchise": "Gotye",
+      "game": "Somebody That I Used to Know",
+      "lang": "en"
+    },
+    {
+      "franchise": "Pharrell Williams",
+      "game": "Happy",
+      "lang": "en"
+    },
+    {
+      "franchise": "Lorde",
+      "game": "Royals",
+      "lang": "en"
+    },
+    {
+      "franchise": "Enrique Iglesias",
+      "game": "Bailando",
+      "lang": "es"
+    },
+    {
+      "franchise": "Taylor Swift",
+      "game": "Shake It Off",
+      "lang": "en"
+    },
+    {
+      "franchise": "Mark Ronson y Bruno Mars",
+      "game": "Uptown Funk",
+      "lang": "en"
+    },
+    {
+      "franchise": "Natalia Lafourcade",
+      "game": "Hasta la raíz",
+      "lang": "es"
+    },
+    {
+      "franchise": "Carlos Vives y Shakira",
+      "game": "La bicicleta",
+      "lang": "es"
+    },
+    {
+      "franchise": "Camila Cabello",
+      "game": "Havana",
+      "lang": "en"
+    },
+    {
+      "franchise": "Ed Sheeran",
+      "game": "Shape of You",
+      "lang": "en"
+    },
+    {
+      "franchise": "Billie Eilish",
+      "game": "bad guy",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Weeknd",
+      "game": "Blinding Lights",
+      "lang": "en"
+    },
+    {
+      "franchise": "Glass Animals",
+      "game": "Heat Waves",
+      "lang": "en"
+    },
+    {
+      "franchise": "Dua Lipa",
+      "game": "Levitating",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Weeknd",
+      "game": "Save Your Tears",
+      "lang": "en"
+    },
+    {
+      "franchise": "Olivia Rodrigo",
+      "game": "drivers license",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Kid LAROI y Justin Bieber",
+      "game": "STAY",
+      "lang": "en"
+    },
+    {
+      "franchise": "Taylor Swift",
+      "game": "Anti-Hero",
+      "lang": "en"
+    },
+    {
+      "franchise": "Harry Styles",
+      "game": "As It Was",
+      "lang": "en"
+    },
+    {
+      "franchise": "SZA",
+      "game": "Kill Bill",
+      "lang": "en"
+    },
+    {
+      "franchise": "Sam Smith y Kim Petras",
+      "game": "Unholy",
+      "lang": "en"
+    },
+    {
+      "franchise": "Miley Cyrus",
+      "game": "Flowers",
+      "lang": "en"
+    },
+    {
+      "franchise": "Benson Boone",
+      "game": "Beautiful Things",
+      "lang": "en"
+    },
+    {
+      "franchise": "Billie Eilish",
+      "game": "BIRDS OF A FEATHER",
+      "lang": "en"
+    },
+    {
+      "franchise": "Sabrina Carpenter",
+      "game": "Espresso",
+      "lang": "en"
+    },
+    {
+      "franchise": "Michael Jackson",
+      "game": "Thriller",
+      "lang": "en"
+    },
+    {
+      "franchise": "Madonna",
+      "game": "Material Girl",
+      "lang": "en"
+    },
+    {
+      "franchise": "Madonna",
+      "game": "Vogue",
+      "lang": "en"
+    },
+    {
+      "franchise": "ABBA",
+      "game": "Mamma Mia",
+      "lang": "en"
+    },
+    {
+      "franchise": "Chayanne",
+      "game": "Salomé",
+      "lang": "es"
+    },
+    {
+      "franchise": "Chayanne",
+      "game": "Torero",
+      "lang": "es"
+    },
+    {
+      "franchise": "Paulina Rubio",
+      "game": "Y yo sigo aquí",
+      "lang": "es"
+    },
+    {
+      "franchise": "Paulina Rubio",
+      "game": "Ni una sola palabra",
+      "lang": "es"
+    },
+    {
+      "franchise": "Julieta Venegas",
+      "game": "Limón y sal",
+      "lang": "es"
+    },
+    {
+      "franchise": "Julieta Venegas",
+      "game": "Me voy",
+      "lang": "es"
+    },
+    {
+      "franchise": "Belanova",
+      "game": "Rosa pastel",
+      "lang": "es"
+    },
+    {
+      "franchise": "Belanova",
+      "game": "Por ti",
+      "lang": "es"
+    },
+    {
+      "franchise": "Miranda!",
+      "game": "Don",
+      "lang": "es"
+    },
+    {
+      "franchise": "Miranda!",
+      "game": "Perfecta",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ha*Ash",
+      "game": "Perdón, perdón",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ha*Ash",
+      "game": "Lo aprendí de ti",
+      "lang": "es"
+    },
+    {
+      "franchise": "Jesse & Joy",
+      "game": "¡Corre!",
+      "lang": "es"
+    },
+    {
+      "franchise": "Lady Gaga",
+      "game": "Bad Romance",
+      "lang": "en"
+    },
+    {
+      "franchise": "Katy Perry",
+      "game": "Firework",
+      "lang": "en"
+    },
+    {
+      "franchise": "Katy Perry",
+      "game": "Roar",
+      "lang": "en"
+    },
+    {
+      "franchise": "Bruno Mars",
+      "game": "Just the Way You Are",
+      "lang": "en"
+    },
+    {
+      "franchise": "Bruno Mars",
+      "game": "24K Magic",
+      "lang": "en"
+    },
+    {
+      "franchise": "Taylor Swift",
+      "game": "Blank Space",
+      "lang": "en"
+    },
+    {
+      "franchise": "Taylor Swift",
+      "game": "Cruel Summer",
+      "lang": "en"
+    },
+    {
+      "franchise": "Dua Lipa",
+      "game": "Don't Start Now",
+      "lang": "en"
+    },
+    {
+      "franchise": "Ariana Grande",
+      "game": "7 rings",
+      "lang": "en"
+    },
+    {
+      "franchise": "Justin Bieber",
+      "game": "Baby",
+      "lang": "en"
+    },
+    {
+      "franchise": "Maroon 5",
+      "game": "Sugar",
+      "lang": "en"
+    },
+    {
+      "franchise": "Sia",
+      "game": "Chandelier",
+      "lang": "en"
+    },
+    {
+      "franchise": "Sabrina Carpenter",
+      "game": "Please Please Please",
+      "lang": "en"
+    }
+  ],
+  "song-rap": [
+    {
+      "franchise": "Run-DMC",
+      "game": "Walk This Way",
+      "lang": "en"
+    },
+    {
+      "franchise": "Vanilla Ice",
+      "game": "Ice Ice Baby",
+      "lang": "en"
+    },
+    {
+      "franchise": "MC Hammer",
+      "game": "U Can't Touch This",
+      "lang": "en"
+    },
+    {
+      "franchise": "Sir Mix-a-Lot",
+      "game": "Baby Got Back",
+      "lang": "en"
+    },
+    {
+      "franchise": "Ice Cube",
+      "game": "It Was a Good Day",
+      "lang": "en"
+    },
+    {
+      "franchise": "House of Pain",
+      "game": "Jump Around",
+      "lang": "en"
+    },
+    {
+      "franchise": "Wu-Tang Clan",
+      "game": "C.R.E.A.M.",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Notorious B.I.G.",
+      "game": "Juicy",
+      "lang": "en"
+    },
+    {
+      "franchise": "Beastie Boys",
+      "game": "Sabotage",
+      "lang": "en"
+    },
+    {
+      "franchise": "2Pac",
+      "game": "California Love",
+      "lang": "en"
+    },
+    {
+      "franchise": "Coolio",
+      "game": "Gangsta's Paradise",
+      "lang": "en"
+    },
+    {
+      "franchise": "Fugees",
+      "game": "Ready or Not",
+      "lang": "en"
+    },
+    {
+      "franchise": "Control Machete",
+      "game": "¿Comprendes Mendes?",
+      "lang": "es"
+    },
+    {
+      "franchise": "Will Smith",
+      "game": "Gettin' Jiggy wit It",
+      "lang": "en"
+    },
+    {
+      "franchise": "2Pac",
+      "game": "Changes",
+      "lang": "en"
+    },
+    {
+      "franchise": "Dr. Dre",
+      "game": "Still D.R.E.",
+      "lang": "en"
+    },
+    {
+      "franchise": "Orishas",
+      "game": "537 C.U.B.A.",
+      "lang": "es"
+    },
+    {
+      "franchise": "OutKast",
+      "game": "Ms. Jackson",
+      "lang": "en"
+    },
+    {
+      "franchise": "Eminem",
+      "game": "The Real Slim Shady",
+      "lang": "en"
+    },
+    {
+      "franchise": "Missy Elliott",
+      "game": "Get Ur Freak On",
+      "lang": "en"
+    },
+    {
+      "franchise": "Nelly",
+      "game": "Hot in Herre",
+      "lang": "en"
+    },
+    {
+      "franchise": "Eminem",
+      "game": "Lose Yourself",
+      "lang": "en"
+    },
+    {
+      "franchise": "Eminem",
+      "game": "Till I Collapse",
+      "lang": "en"
+    },
+    {
+      "franchise": "Eminem",
+      "game": "Without Me",
+      "lang": "en"
+    },
+    {
+      "franchise": "Molotov",
+      "game": "Frijolero",
+      "lang": "es"
+    },
+    {
+      "franchise": "OutKast",
+      "game": "Hey Ya!",
+      "lang": "en"
+    },
+    {
+      "franchise": "50 Cent",
+      "game": "In da Club",
+      "lang": "en"
+    },
+    {
+      "franchise": "Akwid",
+      "game": "No hay manera",
+      "lang": "es"
+    },
+    {
+      "franchise": "Black Eyed Peas",
+      "game": "Where Is the Love?",
+      "lang": "en"
+    },
+    {
+      "franchise": "Snoop Dogg",
+      "game": "Drop It Like It's Hot",
+      "lang": "en"
+    },
+    {
+      "franchise": "Usher",
+      "game": "Yeah!",
+      "lang": "en"
+    },
+    {
+      "franchise": "Kanye West",
+      "game": "Gold Digger",
+      "lang": "en"
+    },
+    {
+      "franchise": "Kanye West",
+      "game": "Stronger",
+      "lang": "en"
+    },
+    {
+      "franchise": "JAY-Z",
+      "game": "Empire State of Mind",
+      "lang": "en"
+    },
+    {
+      "franchise": "Macklemore y Ryan Lewis",
+      "game": "Can't Hold Us",
+      "lang": "en"
+    },
+    {
+      "franchise": "Calle 13",
+      "game": "Latinoamérica",
+      "lang": "es"
+    },
+    {
+      "franchise": "Nicki Minaj",
+      "game": "Super Bass",
+      "lang": "en"
+    },
+    {
+      "franchise": "Canserbero",
+      "game": "Es épico",
+      "lang": "es"
+    },
+    {
+      "franchise": "Eminem",
+      "game": "Rap God",
+      "lang": "en"
+    },
+    {
+      "franchise": "Drake",
+      "game": "Hotline Bling",
+      "lang": "en"
+    },
+    {
+      "franchise": "Wiz Khalifa",
+      "game": "See You Again",
+      "lang": "en"
+    },
+    {
+      "franchise": "Cardi B",
+      "game": "Bodak Yellow",
+      "lang": "en"
+    },
+    {
+      "franchise": "Kendrick Lamar",
+      "game": "HUMBLE.",
+      "lang": "en"
+    },
+    {
+      "franchise": "Post Malone",
+      "game": "rockstar",
+      "lang": "en"
+    },
+    {
+      "franchise": "Drake",
+      "game": "God's Plan",
+      "lang": "en"
+    },
+    {
+      "franchise": "Juice WRLD",
+      "game": "Lucid Dreams",
+      "lang": "en"
+    },
+    {
+      "franchise": "Travis Scott",
+      "game": "SICKO MODE",
+      "lang": "en"
+    },
+    {
+      "franchise": "Lil Nas X",
+      "game": "Old Town Road",
+      "lang": "en"
+    },
+    {
+      "franchise": "Residente",
+      "game": "René",
+      "lang": "es"
+    },
+    {
+      "franchise": "Kendrick Lamar",
+      "game": "Not Like Us",
+      "lang": "en"
+    },
+    {
+      "franchise": "Grandmaster Flash and The Furious Five",
+      "game": "The Message",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Sugarhill Gang",
+      "game": "Rapper's Delight",
+      "lang": "en"
+    },
+    {
+      "franchise": "Dr. Dre",
+      "game": "The Next Episode",
+      "lang": "en"
+    },
+    {
+      "franchise": "Snoop Dogg",
+      "game": "Gin and Juice",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Notorious B.I.G.",
+      "game": "Hypnotize",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Notorious B.I.G.",
+      "game": "Big Poppa",
+      "lang": "en"
+    },
+    {
+      "franchise": "2Pac",
+      "game": "Dear Mama",
+      "lang": "en"
+    },
+    {
+      "franchise": "2Pac",
+      "game": "Hit 'Em Up",
+      "lang": "en"
+    },
+    {
+      "franchise": "DMX",
+      "game": "X Gon' Give It to Ya",
+      "lang": "en"
+    },
+    {
+      "franchise": "DMX",
+      "game": "Ruff Ryders' Anthem",
+      "lang": "en"
+    },
+    {
+      "franchise": "50 Cent",
+      "game": "Candy Shop",
+      "lang": "en"
+    },
+    {
+      "franchise": "50 Cent",
+      "game": "21 Questions",
+      "lang": "en"
+    },
+    {
+      "franchise": "Eminem",
+      "game": "Stan",
+      "lang": "en"
+    },
+    {
+      "franchise": "Eminem",
+      "game": "Mockingbird",
+      "lang": "en"
+    },
+    {
+      "franchise": "JAY-Z",
+      "game": "99 Problems",
+      "lang": "en"
+    },
+    {
+      "franchise": "Kanye West",
+      "game": "Heartless",
+      "lang": "en"
+    },
+    {
+      "franchise": "Kanye West",
+      "game": "POWER",
+      "lang": "en"
+    },
+    {
+      "franchise": "Busta Rhymes",
+      "game": "Break Ya Neck",
+      "lang": "en"
+    },
+    {
+      "franchise": "Nelly",
+      "game": "Dilemma",
+      "lang": "en"
+    },
+    {
+      "franchise": "Terror Squad",
+      "game": "Lean Back",
+      "lang": "en"
+    },
+    {
+      "franchise": "Flo Rida",
+      "game": "Low",
+      "lang": "en"
+    },
+    {
+      "franchise": "T.I.",
+      "game": "Live Your Life",
+      "lang": "en"
+    },
+    {
+      "franchise": "Lil Wayne",
+      "game": "A Milli",
+      "lang": "en"
+    },
+    {
+      "franchise": "Lil Wayne",
+      "game": "Lollipop",
+      "lang": "en"
+    },
+    {
+      "franchise": "Drake",
+      "game": "One Dance",
+      "lang": "en"
+    },
+    {
+      "franchise": "Kendrick Lamar",
+      "game": "Alright",
+      "lang": "en"
+    },
+    {
+      "franchise": "Kendrick Lamar",
+      "game": "Swimming Pools (Drank)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Kendrick Lamar",
+      "game": "DNA.",
+      "lang": "en"
+    },
+    {
+      "franchise": "Post Malone",
+      "game": "Circles",
+      "lang": "en"
+    },
+    {
+      "franchise": "Post Malone y Swae Lee",
+      "game": "Sunflower",
+      "lang": "en"
+    },
+    {
+      "franchise": "Travis Scott",
+      "game": "Goosebumps",
+      "lang": "en"
+    },
+    {
+      "franchise": "Future",
+      "game": "Mask Off",
+      "lang": "en"
+    },
+    {
+      "franchise": "Migos",
+      "game": "Bad and Boujee",
+      "lang": "en"
+    },
+    {
+      "franchise": "Cardi B",
+      "game": "I Like It",
+      "lang": "en"
+    },
+    {
+      "franchise": "Megan Thee Stallion",
+      "game": "Savage",
+      "lang": "en"
+    },
+    {
+      "franchise": "Doja Cat",
+      "game": "Say So",
+      "lang": "en"
+    },
+    {
+      "franchise": "Jack Harlow",
+      "game": "First Class",
+      "lang": "en"
+    },
+    {
+      "franchise": "Cartel de Santa",
+      "game": "Todas mueren por mí",
+      "lang": "es"
+    },
+    {
+      "franchise": "Cartel de Santa",
+      "game": "Éxtasis",
+      "lang": "es"
+    },
+    {
+      "franchise": "Cartel de Santa",
+      "game": "Leve",
+      "lang": "es"
+    },
+    {
+      "franchise": "Cartel de Santa",
+      "game": "Bombos y tarolas",
+      "lang": "es"
+    },
+    {
+      "franchise": "Canserbero",
+      "game": "Maquiavélico",
+      "lang": "es"
+    },
+    {
+      "franchise": "Canserbero",
+      "game": "Querer querernos",
+      "lang": "es"
+    },
+    {
+      "franchise": "Santa Fe Klan",
+      "game": "Así soy",
+      "lang": "es"
+    },
+    {
+      "franchise": "Santa Fe Klan",
+      "game": "Debo entender",
+      "lang": "es"
+    },
+    {
+      "franchise": "Trueno",
+      "game": "Dance Crip",
+      "lang": "es"
+    },
+    {
+      "franchise": "Wos",
+      "game": "Canguro",
+      "lang": "es"
+    },
+    {
+      "franchise": "Duki",
+      "game": "Goteo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Duki",
+      "game": "She Don't Give a FO",
+      "lang": "es"
+    },
+    {
+      "franchise": "Khea, Duki y Cazzu",
+      "game": "Loca",
+      "lang": "es"
+    }
+  ],
+  "song-reggaeton": [
+    {
+      "franchise": "Tego Calderón",
+      "game": "Pa' que retozen",
+      "lang": "es"
+    },
+    {
+      "franchise": "Don Omar",
+      "game": "Dile",
+      "lang": "es"
+    },
+    {
+      "franchise": "Don Omar",
+      "game": "Pobre diabla",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ivy Queen",
+      "game": "Quiero bailar",
+      "lang": "es"
+    },
+    {
+      "franchise": "Daddy Yankee",
+      "game": "Gasolina",
+      "lang": "es"
+    },
+    {
+      "franchise": "Daddy Yankee",
+      "game": "Lo que pasó, pasó",
+      "lang": "es"
+    },
+    {
+      "franchise": "Calle 13",
+      "game": "Atrévete-te-te",
+      "lang": "es"
+    },
+    {
+      "franchise": "Wisin & Yandel",
+      "game": "Rakata",
+      "lang": "es"
+    },
+    {
+      "franchise": "Flex",
+      "game": "Te quiero",
+      "lang": "es"
+    },
+    {
+      "franchise": "Don Omar",
+      "game": "Salió el sol",
+      "lang": "es"
+    },
+    {
+      "franchise": "Don Omar",
+      "game": "Danza Kuduro",
+      "lang": "es"
+    },
+    {
+      "franchise": "Daddy Yankee",
+      "game": "Limbo",
+      "lang": "es"
+    },
+    {
+      "franchise": "J Balvin",
+      "game": "Ay vamos",
+      "lang": "es"
+    },
+    {
+      "franchise": "Plan B",
+      "game": "Mi vecinita",
+      "lang": "es"
+    },
+    {
+      "franchise": "Nicky Jam y Enrique Iglesias",
+      "game": "El perdón",
+      "lang": "es"
+    },
+    {
+      "franchise": "J Balvin",
+      "game": "Ginza",
+      "lang": "es"
+    },
+    {
+      "franchise": "Shakira y Maluma",
+      "game": "Chantaje",
+      "lang": "es"
+    },
+    {
+      "franchise": "Nicky Jam",
+      "game": "Hasta el amanecer",
+      "lang": "es"
+    },
+    {
+      "franchise": "Danny Ocean",
+      "game": "Me rehúso",
+      "lang": "es"
+    },
+    {
+      "franchise": "Zion & Lennox",
+      "game": "Otra vez",
+      "lang": "es"
+    },
+    {
+      "franchise": "Maluma",
+      "game": "Corazón",
+      "lang": "es"
+    },
+    {
+      "franchise": "Natti Natasha y Ozuna",
+      "game": "Criminal",
+      "lang": "es"
+    },
+    {
+      "franchise": "Luis Fonsi y Daddy Yankee",
+      "game": "Despacito",
+      "lang": "es"
+    },
+    {
+      "franchise": "Maluma",
+      "game": "Felices los 4",
+      "lang": "es"
+    },
+    {
+      "franchise": "Becky G y Bad Bunny",
+      "game": "Mayores",
+      "lang": "es"
+    },
+    {
+      "franchise": "J Balvin",
+      "game": "Mi gente",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ozuna",
+      "game": "Se preparó",
+      "lang": "es"
+    },
+    {
+      "franchise": "Daddy Yankee",
+      "game": "Dura",
+      "lang": "es"
+    },
+    {
+      "franchise": "DJ Snake",
+      "game": "Taki Taki",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bad Bunny",
+      "game": "Callaíta",
+      "lang": "es"
+    },
+    {
+      "franchise": "Anuel AA, Daddy Yankee y Karol G",
+      "game": "China",
+      "lang": "es"
+    },
+    {
+      "franchise": "Daddy Yankee",
+      "game": "Con calma",
+      "lang": "es"
+    },
+    {
+      "franchise": "Myke Towers",
+      "game": "La playa",
+      "lang": "es"
+    },
+    {
+      "franchise": "Sech",
+      "game": "Otro trago",
+      "lang": "es"
+    },
+    {
+      "franchise": "Karol G y Nicki Minaj",
+      "game": "Tusa",
+      "lang": "es"
+    },
+    {
+      "franchise": "Karol G",
+      "game": "Bichota",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bad Bunny y Jhay Cortez",
+      "game": "Dákiti",
+      "lang": "es"
+    },
+    {
+      "franchise": "Maluma",
+      "game": "Hawái",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bad Bunny y Rosalía",
+      "game": "La noche de anoche",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bad Bunny",
+      "game": "Safaera",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bad Bunny",
+      "game": "Yo perreo sola",
+      "lang": "es"
+    },
+    {
+      "franchise": "Farruko",
+      "game": "Pepas",
+      "lang": "es"
+    },
+    {
+      "franchise": "Rauw Alejandro",
+      "game": "Todo de ti",
+      "lang": "es"
+    },
+    {
+      "franchise": "Feid",
+      "game": "Feliz cumpleaños Ferxxo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bad Bunny",
+      "game": "Me porto bonito",
+      "lang": "es"
+    },
+    {
+      "franchise": "Karol G",
+      "game": "Provenza",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bizarrap y Quevedo",
+      "game": "Quevedo: Bzrp Music Sessions, Vol. 52",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bad Bunny",
+      "game": "Tití me preguntó",
+      "lang": "es"
+    },
+    {
+      "franchise": "Karol G y Shakira",
+      "game": "TQG",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bad Bunny",
+      "game": "DtMF",
+      "lang": "es"
+    },
+    {
+      "franchise": "Don Omar",
+      "game": "Dale Don Dale",
+      "lang": "es"
+    },
+    {
+      "franchise": "Héctor & Tito",
+      "game": "Baila morena",
+      "lang": "es"
+    },
+    {
+      "franchise": "Daddy Yankee",
+      "game": "Rompe",
+      "lang": "es"
+    },
+    {
+      "franchise": "Daddy Yankee",
+      "game": "Ella me levantó",
+      "lang": "es"
+    },
+    {
+      "franchise": "Daddy Yankee",
+      "game": "Llamado de emergencia",
+      "lang": "es"
+    },
+    {
+      "franchise": "Luny Tunes",
+      "game": "Mayor que yo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Wisin & Yandel",
+      "game": "Noche de sexo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Wisin & Yandel",
+      "game": "Pam Pam",
+      "lang": "es"
+    },
+    {
+      "franchise": "Wisin & Yandel",
+      "game": "Sexy movimiento",
+      "lang": "es"
+    },
+    {
+      "franchise": "Wisin & Yandel",
+      "game": "Abusadora",
+      "lang": "es"
+    },
+    {
+      "franchise": "Alexis & Fido",
+      "game": "5 letras",
+      "lang": "es"
+    },
+    {
+      "franchise": "Alexis & Fido",
+      "game": "Una en un millón",
+      "lang": "es"
+    },
+    {
+      "franchise": "Plan B",
+      "game": "Fanática sensual",
+      "lang": "es"
+    },
+    {
+      "franchise": "Plan B",
+      "game": "Candy",
+      "lang": "es"
+    },
+    {
+      "franchise": "Plan B",
+      "game": "Si no le contesto",
+      "lang": "es"
+    },
+    {
+      "franchise": "Zion & Lennox",
+      "game": "Yo voy",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ángel & Khriz",
+      "game": "Ven báilalo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Tito El Bambino",
+      "game": "El amor",
+      "lang": "es"
+    },
+    {
+      "franchise": "Tito El Bambino",
+      "game": "Siente el boom",
+      "lang": "es"
+    },
+    {
+      "franchise": "Tony Dize",
+      "game": "El doctorado",
+      "lang": "es"
+    },
+    {
+      "franchise": "R.K.M & Ken-Y",
+      "game": "Down",
+      "lang": "es"
+    },
+    {
+      "franchise": "R.K.M & Ken-Y",
+      "game": "Me matas",
+      "lang": "es"
+    },
+    {
+      "franchise": "J Álvarez",
+      "game": "La pregunta",
+      "lang": "es"
+    },
+    {
+      "franchise": "Farruko",
+      "game": "Passion Whine",
+      "lang": "es"
+    },
+    {
+      "franchise": "Farruko",
+      "game": "Chillax",
+      "lang": "es"
+    },
+    {
+      "franchise": "Nicky Jam",
+      "game": "Travesuras",
+      "lang": "es"
+    },
+    {
+      "franchise": "Nicky Jam y J Balvin",
+      "game": "X",
+      "lang": "es"
+    },
+    {
+      "franchise": "J Balvin",
+      "game": "6 AM",
+      "lang": "es"
+    },
+    {
+      "franchise": "J Balvin",
+      "game": "Bobo",
+      "lang": "es"
+    },
+    {
+      "franchise": "J Balvin",
+      "game": "Rojo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Maluma",
+      "game": "Borró cassette",
+      "lang": "es"
+    },
+    {
+      "franchise": "Maluma",
+      "game": "Sobrio",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ozuna",
+      "game": "Dile que tú me quieres",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ozuna",
+      "game": "Tu foto",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ozuna",
+      "game": "Caramelo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bad Bunny",
+      "game": "Chambea",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bad Bunny",
+      "game": "Amorfoda",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bad Bunny",
+      "game": "Moscú Mule",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bad Bunny",
+      "game": "Monaco",
+      "lang": "es"
+    },
+    {
+      "franchise": "Karol G",
+      "game": "Mi cama",
+      "lang": "es"
+    },
+    {
+      "franchise": "Karol G",
+      "game": "Cairo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Karol G",
+      "game": "Amargura",
+      "lang": "es"
+    },
+    {
+      "franchise": "Rauw Alejandro y Chencho Corleone",
+      "game": "Desesperados",
+      "lang": "es"
+    },
+    {
+      "franchise": "Rauw Alejandro",
+      "game": "Punto 40",
+      "lang": "es"
+    },
+    {
+      "franchise": "Feid",
+      "game": "Normal",
+      "lang": "es"
+    },
+    {
+      "franchise": "Yandel y Feid",
+      "game": "Yandel 150",
+      "lang": "es"
+    },
+    {
+      "franchise": "Feid",
+      "game": "Luna",
+      "lang": "es"
+    },
+    {
+      "franchise": "Myke Towers",
+      "game": "LALA",
+      "lang": "es"
+    },
+    {
+      "franchise": "Manuel Turizo",
+      "game": "Una Lady Como Tú",
+      "lang": "es"
+    },
+    {
+      "franchise": "Luck Ra",
+      "game": "Hola perdida",
+      "lang": "es"
+    }
+  ],
+  "song-regional": [
+    {
+      "franchise": "Pedro Infante",
+      "game": "Amorcito corazón",
+      "lang": "es"
+    },
+    {
+      "franchise": "Jorge Negrete",
+      "game": "México lindo y querido",
+      "lang": "es"
+    },
+    {
+      "franchise": "Pedro Infante",
+      "game": "Cien años",
+      "lang": "es"
+    },
+    {
+      "franchise": "José Alfredo Jiménez",
+      "game": "Caminos de Guanajuato",
+      "lang": "es"
+    },
+    {
+      "franchise": "Lola Beltrán",
+      "game": "Cucurrucucú paloma",
+      "lang": "es"
+    },
+    {
+      "franchise": "Javier Solís",
+      "game": "Sombras",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Tigres del Norte",
+      "game": "Contrabando y traición",
+      "lang": "es"
+    },
+    {
+      "franchise": "Vicente Fernández",
+      "game": "Volver, volver",
+      "lang": "es"
+    },
+    {
+      "franchise": "Vicente Fernández",
+      "game": "El Rey",
+      "lang": "es"
+    },
+    {
+      "franchise": "Rocío Dúrcal",
+      "game": "Amor eterno",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Tigres del Norte",
+      "game": "La jaula de oro",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Tigres del Norte",
+      "game": "La puerta negra",
+      "lang": "es"
+    },
+    {
+      "franchise": "Vicente Fernández",
+      "game": "Mujeres divinas",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Bukis",
+      "game": "Tu cárcel",
+      "lang": "es"
+    },
+    {
+      "franchise": "Vicente Fernández",
+      "game": "Por tu maldito amor",
+      "lang": "es"
+    },
+    {
+      "franchise": "Chalino Sánchez",
+      "game": "Nieves de enero",
+      "lang": "es"
+    },
+    {
+      "franchise": "Banda Machos",
+      "game": "La culebra",
+      "lang": "es"
+    },
+    {
+      "franchise": "Vicente Fernández",
+      "game": "Lástima que seas ajena",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Temerarios",
+      "game": "Mi vida eres tú",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bronco",
+      "game": "Que no quede huella",
+      "lang": "es"
+    },
+    {
+      "franchise": "Alejandro Fernández",
+      "game": "Como quien pierde una estrella",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Tucanes de Tijuana",
+      "game": "La chona",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Tigres del Norte",
+      "game": "Jefe de jefes",
+      "lang": "es"
+    },
+    {
+      "franchise": "Pepe Aguilar",
+      "game": "Por mujeres como tú",
+      "lang": "es"
+    },
+    {
+      "franchise": "Joan Sebastian",
+      "game": "Secreto de amor",
+      "lang": "es"
+    },
+    {
+      "franchise": "Banda El Recodo",
+      "game": "Y llegaste tú",
+      "lang": "es"
+    },
+    {
+      "franchise": "Jenni Rivera",
+      "game": "La gran señora",
+      "lang": "es"
+    },
+    {
+      "franchise": "La Arrolladora Banda El Limón",
+      "game": "Llamada de mi ex",
+      "lang": "es"
+    },
+    {
+      "franchise": "Calibre 50",
+      "game": "Corrido de Juanito",
+      "lang": "es"
+    },
+    {
+      "franchise": "Banda MS",
+      "game": "El color de tus ojos",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ariel Camacho y Los Plebes del Rancho",
+      "game": "El karma",
+      "lang": "es"
+    },
+    {
+      "franchise": "Banda MS",
+      "game": "Mi razón de ser",
+      "lang": "es"
+    },
+    {
+      "franchise": "Banda MS",
+      "game": "Hermosa experiencia",
+      "lang": "es"
+    },
+    {
+      "franchise": "Julión Álvarez",
+      "game": "Te hubieras ido antes",
+      "lang": "es"
+    },
+    {
+      "franchise": "Christian Nodal",
+      "game": "Adiós amor",
+      "lang": "es"
+    },
+    {
+      "franchise": "Calibre 50",
+      "game": "Siempre te voy a querer",
+      "lang": "es"
+    },
+    {
+      "franchise": "Christian Nodal",
+      "game": "De los besos que te di",
+      "lang": "es"
+    },
+    {
+      "franchise": "Natanael Cano",
+      "game": "Amor tumbado",
+      "lang": "es"
+    },
+    {
+      "franchise": "Grupo Firme y Carin León",
+      "game": "El tóxico",
+      "lang": "es"
+    },
+    {
+      "franchise": "Grupo Firme",
+      "game": "Ya supérame",
+      "lang": "es"
+    },
+    {
+      "franchise": "Gera MX y Christian Nodal",
+      "game": "Botella tras botella",
+      "lang": "es"
+    },
+    {
+      "franchise": "Fuerza Regida y Grupo Frontera",
+      "game": "Bebe dame",
+      "lang": "es"
+    },
+    {
+      "franchise": "Carin León",
+      "game": "Primera cita",
+      "lang": "es"
+    },
+    {
+      "franchise": "Junior H y Peso Pluma",
+      "game": "El Azul",
+      "lang": "es"
+    },
+    {
+      "franchise": "Eslabon Armado y Peso Pluma",
+      "game": "Ella baila sola",
+      "lang": "es"
+    },
+    {
+      "franchise": "Eslabon Armado y DannyLux",
+      "game": "Jugaste y sufrí",
+      "lang": "es"
+    },
+    {
+      "franchise": "Peso Pluma y Natanael Cano",
+      "game": "PRC",
+      "lang": "es"
+    },
+    {
+      "franchise": "Peso Pluma y Jasiel Núñez",
+      "game": "Rosa pastel",
+      "lang": "es"
+    },
+    {
+      "franchise": "Fuerza Regida",
+      "game": "TQM",
+      "lang": "es"
+    },
+    {
+      "franchise": "Xavi",
+      "game": "La diabla",
+      "lang": "es"
+    },
+    {
+      "franchise": "José Alfredo Jiménez",
+      "game": "Si nos dejan",
+      "lang": "es"
+    },
+    {
+      "franchise": "José Alfredo Jiménez",
+      "game": "Ella",
+      "lang": "es"
+    },
+    {
+      "franchise": "Pedro Infante",
+      "game": "Fallaste corazón",
+      "lang": "es"
+    },
+    {
+      "franchise": "Javier Solís",
+      "game": "Esclavo y amo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Antonio Aguilar",
+      "game": "Albur de amor",
+      "lang": "es"
+    },
+    {
+      "franchise": "Antonio Aguilar",
+      "game": "Tristes recuerdos",
+      "lang": "es"
+    },
+    {
+      "franchise": "Vicente Fernández",
+      "game": "A mi manera",
+      "lang": "es"
+    },
+    {
+      "franchise": "Vicente Fernández",
+      "game": "Acá entre nos",
+      "lang": "es"
+    },
+    {
+      "franchise": "Vicente Fernández",
+      "game": "Estos celos",
+      "lang": "es"
+    },
+    {
+      "franchise": "Juan Gabriel",
+      "game": "Se me olvidó otra vez",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Tigres del Norte",
+      "game": "Golpes en el corazón",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Tigres del Norte",
+      "game": "La mesa del rincón",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Tucanes de Tijuana",
+      "game": "El tucanazo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bronco",
+      "game": "Con zapatos de tacón",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Temerarios",
+      "game": "Eres un sueño",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Temerarios",
+      "game": "Ven porque te necesito",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Bukis",
+      "game": "Quiéreme",
+      "lang": "es"
+    },
+    {
+      "franchise": "Intocable",
+      "game": "¿Y todo para qué?",
+      "lang": "es"
+    },
+    {
+      "franchise": "Intocable",
+      "game": "Fuerte no soy",
+      "lang": "es"
+    },
+    {
+      "franchise": "Intocable",
+      "game": "Enséñame a olvidarte",
+      "lang": "es"
+    },
+    {
+      "franchise": "Grupo Duelo",
+      "game": "Sentimientos de cartón",
+      "lang": "es"
+    },
+    {
+      "franchise": "Pesado",
+      "game": "A chillar a otra parte",
+      "lang": "es"
+    },
+    {
+      "franchise": "Pesado",
+      "game": "Ojalá que te mueras",
+      "lang": "es"
+    },
+    {
+      "franchise": "Banda El Recodo",
+      "game": "Te presumo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Banda El Recodo",
+      "game": "Pena tras pena",
+      "lang": "es"
+    },
+    {
+      "franchise": "La Arrolladora Banda El Limón",
+      "game": "El ruido de tus zapatos",
+      "lang": "es"
+    },
+    {
+      "franchise": "La Arrolladora Banda El Limón",
+      "game": "Sobre mis pies",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Cardenales de Nuevo León",
+      "game": "Belleza de cantina",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Invasores de Nuevo León",
+      "game": "Aguanta corazón",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ramón Ayala",
+      "game": "Tragos amargos",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ramón Ayala",
+      "game": "Casas de madera",
+      "lang": "es"
+    },
+    {
+      "franchise": "Chalino Sánchez",
+      "game": "Alma enamorada",
+      "lang": "es"
+    },
+    {
+      "franchise": "Valentín Elizalde",
+      "game": "Vete ya",
+      "lang": "es"
+    },
+    {
+      "franchise": "Valentín Elizalde",
+      "game": "Como me duele",
+      "lang": "es"
+    },
+    {
+      "franchise": "Valentín Elizalde",
+      "game": "Soy así",
+      "lang": "es"
+    },
+    {
+      "franchise": "Jenni Rivera",
+      "game": "Inolvidable",
+      "lang": "es"
+    },
+    {
+      "franchise": "Jenni Rivera",
+      "game": "No llega el olvido",
+      "lang": "es"
+    },
+    {
+      "franchise": "Julión Álvarez",
+      "game": "Terrenal",
+      "lang": "es"
+    },
+    {
+      "franchise": "Julión Álvarez",
+      "game": "El amor de su vida",
+      "lang": "es"
+    },
+    {
+      "franchise": "Calibre 50",
+      "game": "Si te pudiera mentir",
+      "lang": "es"
+    },
+    {
+      "franchise": "Christian Nodal",
+      "game": "No te contaron mal",
+      "lang": "es"
+    },
+    {
+      "franchise": "Carin León y Maluma",
+      "game": "Según quién",
+      "lang": "es"
+    },
+    {
+      "franchise": "Carin León",
+      "game": "La boda del Huitlacoche",
+      "lang": "es"
+    },
+    {
+      "franchise": "Peso Pluma, Gabito Ballesteros y Junior H",
+      "game": "LADY GAGA",
+      "lang": "es"
+    },
+    {
+      "franchise": "Natanael Cano",
+      "game": "Mi bello ángel",
+      "lang": "es"
+    },
+    {
+      "franchise": "Junior H y Oscar Maydon",
+      "game": "Fin de semana",
+      "lang": "es"
+    },
+    {
+      "franchise": "Chino Pacas",
+      "game": "El Gordo Trae El Mando",
+      "lang": "es"
+    },
+    {
+      "franchise": "Carin León y Grupo Frontera",
+      "game": "Que vuelvas",
+      "lang": "es"
+    },
+    {
+      "franchise": "Fuerza Regida y Marshmello",
+      "game": "HARLEY QUINN",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Tigres del Norte",
+      "game": "Corazón de oro",
+      "lang": "es"
+    }
+  ],
+  "song-baladas": [
+    {
+      "franchise": "Elvis Presley",
+      "game": "Can't Help Falling in Love",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Righteous Brothers",
+      "game": "Unchained Melody",
+      "lang": "en"
+    },
+    {
+      "franchise": "Raphael",
+      "game": "Yo soy aquel",
+      "lang": "es"
+    },
+    {
+      "franchise": "Louis Armstrong",
+      "game": "What a Wonderful World",
+      "lang": "en"
+    },
+    {
+      "franchise": "Frank Sinatra",
+      "game": "My Way",
+      "lang": "en"
+    },
+    {
+      "franchise": "José José",
+      "game": "El Triste",
+      "lang": "es"
+    },
+    {
+      "franchise": "Mercedes Sosa",
+      "game": "Gracias a la vida",
+      "lang": "es"
+    },
+    {
+      "franchise": "John Lennon",
+      "game": "Imagine",
+      "lang": "en"
+    },
+    {
+      "franchise": "Nino Bravo",
+      "game": "Libre",
+      "lang": "es"
+    },
+    {
+      "franchise": "Mocedades",
+      "game": "Eres tú",
+      "lang": "es"
+    },
+    {
+      "franchise": "José José",
+      "game": "Gavilán o paloma",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bee Gees",
+      "game": "How Deep Is Your Love",
+      "lang": "en"
+    },
+    {
+      "franchise": "Julio Iglesias",
+      "game": "Me olvidé de vivir",
+      "lang": "es"
+    },
+    {
+      "franchise": "Camilo Sesto",
+      "game": "Vivir así es morir de amor",
+      "lang": "es"
+    },
+    {
+      "franchise": "José José",
+      "game": "Almohada",
+      "lang": "es"
+    },
+    {
+      "franchise": "Julio Iglesias",
+      "game": "Hey",
+      "lang": "es"
+    },
+    {
+      "franchise": "Camilo Sesto",
+      "game": "Perdóname",
+      "lang": "es"
+    },
+    {
+      "franchise": "Diana Ross y Lionel Richie",
+      "game": "Endless Love",
+      "lang": "en"
+    },
+    {
+      "franchise": "Rocío Dúrcal",
+      "game": "La gata bajo la lluvia",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bonnie Tyler",
+      "game": "Total Eclipse of the Heart",
+      "lang": "en"
+    },
+    {
+      "franchise": "Juan Gabriel",
+      "game": "Querida",
+      "lang": "es"
+    },
+    {
+      "franchise": "Whitney Houston",
+      "game": "Greatest Love of All",
+      "lang": "en"
+    },
+    {
+      "franchise": "Juan Gabriel",
+      "game": "Hasta que te conocí",
+      "lang": "es"
+    },
+    {
+      "franchise": "Emmanuel",
+      "game": "Toda la vida",
+      "lang": "es"
+    },
+    {
+      "franchise": "Luis Miguel",
+      "game": "Ahora te puedes marchar",
+      "lang": "es"
+    },
+    {
+      "franchise": "José José",
+      "game": "Lo que no fue no será",
+      "lang": "es"
+    },
+    {
+      "franchise": "Luis Miguel",
+      "game": "La incondicional",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bryan Adams",
+      "game": "(Everything I Do) I Do It for You",
+      "lang": "en"
+    },
+    {
+      "franchise": "Whitney Houston",
+      "game": "I Will Always Love You",
+      "lang": "en"
+    },
+    {
+      "franchise": "Mariah Carey",
+      "game": "Hero",
+      "lang": "en"
+    },
+    {
+      "franchise": "Ricardo Arjona",
+      "game": "Historia de taxi",
+      "lang": "es"
+    },
+    {
+      "franchise": "Laura Pausini",
+      "game": "La soledad",
+      "lang": "es"
+    },
+    {
+      "franchise": "Alejandro Sanz",
+      "game": "Amiga mía",
+      "lang": "es"
+    },
+    {
+      "franchise": "Celine Dion",
+      "game": "My Heart Will Go On",
+      "lang": "en"
+    },
+    {
+      "franchise": "Aerosmith",
+      "game": "I Don't Want to Miss a Thing",
+      "lang": "en"
+    },
+    {
+      "franchise": "Marco Antonio Solís",
+      "game": "Si no te hubieras ido",
+      "lang": "es"
+    },
+    {
+      "franchise": "Cristian Castro",
+      "game": "Azul",
+      "lang": "es"
+    },
+    {
+      "franchise": "Enrique Iglesias",
+      "game": "Héroe",
+      "lang": "es"
+    },
+    {
+      "franchise": "Alex Ubago",
+      "game": "Sin miedo a nada",
+      "lang": "es"
+    },
+    {
+      "franchise": "Sin Bandera",
+      "game": "Entra en mi vida",
+      "lang": "es"
+    },
+    {
+      "franchise": "Reyli Barba",
+      "game": "Amor del bueno",
+      "lang": "es"
+    },
+    {
+      "franchise": "Reik",
+      "game": "Yo quisiera",
+      "lang": "es"
+    },
+    {
+      "franchise": "Camila",
+      "game": "Coleccionista de canciones",
+      "lang": "es"
+    },
+    {
+      "franchise": "Camila",
+      "game": "Todo cambió",
+      "lang": "es"
+    },
+    {
+      "franchise": "Camila",
+      "game": "Mientes",
+      "lang": "es"
+    },
+    {
+      "franchise": "Adele",
+      "game": "Someone Like You",
+      "lang": "en"
+    },
+    {
+      "franchise": "John Legend",
+      "game": "All of Me",
+      "lang": "en"
+    },
+    {
+      "franchise": "Ed Sheeran",
+      "game": "Perfect",
+      "lang": "en"
+    },
+    {
+      "franchise": "Lady Gaga y Bradley Cooper",
+      "game": "Shallow",
+      "lang": "en"
+    },
+    {
+      "franchise": "Lady Gaga y Bruno Mars",
+      "game": "Die With A Smile",
+      "lang": "en"
+    },
+    {
+      "franchise": "Nino Bravo",
+      "game": "Un beso y una flor",
+      "lang": "es"
+    },
+    {
+      "franchise": "Roberto Carlos",
+      "game": "El gato que está triste y azul",
+      "lang": "es"
+    },
+    {
+      "franchise": "Roberto Carlos",
+      "game": "Amigo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Camilo Sesto",
+      "game": "Algo de mí",
+      "lang": "es"
+    },
+    {
+      "franchise": "Camilo Sesto",
+      "game": "Jamás",
+      "lang": "es"
+    },
+    {
+      "franchise": "José José",
+      "game": "40 y 20",
+      "lang": "es"
+    },
+    {
+      "franchise": "José José",
+      "game": "Desesperado",
+      "lang": "es"
+    },
+    {
+      "franchise": "José José",
+      "game": "Vamos a darnos tiempo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Juan Gabriel",
+      "game": "Abrázame muy fuerte",
+      "lang": "es"
+    },
+    {
+      "franchise": "Juan Gabriel",
+      "game": "Yo no nací para amar",
+      "lang": "es"
+    },
+    {
+      "franchise": "Rocío Dúrcal",
+      "game": "Costumbres",
+      "lang": "es"
+    },
+    {
+      "franchise": "Raphael",
+      "game": "Como yo te amo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Emmanuel",
+      "game": "Todo se derrumbó dentro de mí",
+      "lang": "es"
+    },
+    {
+      "franchise": "Manuel Mijares",
+      "game": "Para amarnos más",
+      "lang": "es"
+    },
+    {
+      "franchise": "Manuel Mijares y Lucero",
+      "game": "El privilegio de amar",
+      "lang": "es"
+    },
+    {
+      "franchise": "Luis Miguel",
+      "game": "Tengo todo excepto a ti",
+      "lang": "es"
+    },
+    {
+      "franchise": "Luis Miguel",
+      "game": "Culpable o no",
+      "lang": "es"
+    },
+    {
+      "franchise": "Luis Miguel",
+      "game": "Entrégate",
+      "lang": "es"
+    },
+    {
+      "franchise": "Luis Miguel",
+      "game": "Hasta que me olvides",
+      "lang": "es"
+    },
+    {
+      "franchise": "Cristian Castro",
+      "game": "Nunca voy a olvidarte",
+      "lang": "es"
+    },
+    {
+      "franchise": "Cristian Castro",
+      "game": "Por amarte así",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ricardo Montaner",
+      "game": "Tan enamorados",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ricardo Montaner",
+      "game": "Me va a extrañar",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ricardo Montaner",
+      "game": "Bésame",
+      "lang": "es"
+    },
+    {
+      "franchise": "Franco De Vita",
+      "game": "Te amo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Franco De Vita",
+      "game": "Un buen perdedor",
+      "lang": "es"
+    },
+    {
+      "franchise": "Franco De Vita",
+      "game": "Tú de qué vas",
+      "lang": "es"
+    },
+    {
+      "franchise": "Chayanne",
+      "game": "Dejaría todo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Chayanne",
+      "game": "Un siglo sin ti",
+      "lang": "es"
+    },
+    {
+      "franchise": "Alejandro Fernández",
+      "game": "Si tú supieras",
+      "lang": "es"
+    },
+    {
+      "franchise": "Alejandro Fernández",
+      "game": "Me dediqué a perderte",
+      "lang": "es"
+    },
+    {
+      "franchise": "Sin Bandera",
+      "game": "Kilómetros",
+      "lang": "es"
+    },
+    {
+      "franchise": "Sin Bandera",
+      "game": "Que lloro",
+      "lang": "es"
+    },
+    {
+      "franchise": "Reik",
+      "game": "Noviembre sin ti",
+      "lang": "es"
+    },
+    {
+      "franchise": "Reik",
+      "game": "Sabes",
+      "lang": "es"
+    },
+    {
+      "franchise": "Reik",
+      "game": "Creo en ti",
+      "lang": "es"
+    },
+    {
+      "franchise": "Camila",
+      "game": "Bésame",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ha*Ash",
+      "game": "Te dejo en libertad",
+      "lang": "es"
+    },
+    {
+      "franchise": "Jesse & Joy",
+      "game": "Ecos de amor",
+      "lang": "es"
+    },
+    {
+      "franchise": "Laura Pausini",
+      "game": "En cambio no",
+      "lang": "es"
+    },
+    {
+      "franchise": "Laura Pausini",
+      "game": "Se fue",
+      "lang": "es"
+    },
+    {
+      "franchise": "Celine Dion",
+      "game": "Because You Loved Me",
+      "lang": "en"
+    },
+    {
+      "franchise": "Elton John",
+      "game": "Your Song",
+      "lang": "en"
+    },
+    {
+      "franchise": "George Michael",
+      "game": "Careless Whisper",
+      "lang": "en"
+    },
+    {
+      "franchise": "Phil Collins",
+      "game": "Against All Odds (Take a Look at Me Now)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Eric Clapton",
+      "game": "Tears in Heaven",
+      "lang": "en"
+    },
+    {
+      "franchise": "Christina Perri",
+      "game": "A Thousand Years",
+      "lang": "en"
+    },
+    {
+      "franchise": "Sam Smith",
+      "game": "Stay With Me",
+      "lang": "en"
+    },
+    {
+      "franchise": "Lewis Capaldi",
+      "game": "Someone You Loved",
+      "lang": "en"
+    },
+    {
+      "franchise": "Olivia Rodrigo",
+      "game": "traitor",
+      "lang": "en"
+    }
+  ],
+  "song-electronica": [
+    {
+      "franchise": "Haddaway",
+      "game": "What Is Love",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Prodigy",
+      "game": "Firestarter",
+      "lang": "en"
+    },
+    {
+      "franchise": "Daft Punk",
+      "game": "Around the World",
+      "lang": "en"
+    },
+    {
+      "franchise": "Aqua",
+      "game": "Barbie Girl",
+      "lang": "en"
+    },
+    {
+      "franchise": "Eiffel 65",
+      "game": "Blue (Da Ba Dee)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Stardust",
+      "game": "Music Sounds Better with You",
+      "lang": "en"
+    },
+    {
+      "franchise": "Fatboy Slim",
+      "game": "The Rockafeller Skank",
+      "lang": "en"
+    },
+    {
+      "franchise": "Alice Deejay",
+      "game": "Better Off Alone",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Chemical Brothers",
+      "game": "Hey Boy Hey Girl",
+      "lang": "en"
+    },
+    {
+      "franchise": "Moby",
+      "game": "Porcelain",
+      "lang": "en"
+    },
+    {
+      "franchise": "Darude",
+      "game": "Sandstorm"
+    },
+    {
+      "franchise": "Daft Punk",
+      "game": "One More Time",
+      "lang": "en"
+    },
+    {
+      "franchise": "Daft Punk",
+      "game": "Harder, Better, Faster, Stronger",
+      "lang": "en"
+    },
+    {
+      "franchise": "Kinky",
+      "game": "Más",
+      "lang": "es"
+    },
+    {
+      "franchise": "Benny Benassi",
+      "game": "Satisfaction",
+      "lang": "en"
+    },
+    {
+      "franchise": "Eric Prydz",
+      "game": "Call on Me",
+      "lang": "en"
+    },
+    {
+      "franchise": "Belanova",
+      "game": "Baila mi corazón",
+      "lang": "es"
+    },
+    {
+      "franchise": "Cascada",
+      "game": "Everytime We Touch",
+      "lang": "en"
+    },
+    {
+      "franchise": "Nortec Collective: Bostich + Fussible",
+      "game": "Tijuana Makes Me Happy",
+      "lang": "en"
+    },
+    {
+      "franchise": "deadmau5",
+      "game": "Ghosts 'n' Stuff",
+      "lang": "en"
+    },
+    {
+      "franchise": "David Guetta",
+      "game": "Memories",
+      "lang": "en"
+    },
+    {
+      "franchise": "Skrillex",
+      "game": "Scary Monsters and Nice Sprites",
+      "lang": "en"
+    },
+    {
+      "franchise": "Skrillex",
+      "game": "Bangarang",
+      "lang": "en"
+    },
+    {
+      "franchise": "Calvin Harris",
+      "game": "Feel So Close",
+      "lang": "en"
+    },
+    {
+      "franchise": "Avicii",
+      "game": "Levels",
+      "lang": "en"
+    },
+    {
+      "franchise": "David Guetta",
+      "game": "Titanium",
+      "lang": "en"
+    },
+    {
+      "franchise": "Zedd",
+      "game": "Clarity",
+      "lang": "en"
+    },
+    {
+      "franchise": "Swedish House Mafia",
+      "game": "Don't You Worry Child",
+      "lang": "en"
+    },
+    {
+      "franchise": "Martin Garrix",
+      "game": "Animals"
+    },
+    {
+      "franchise": "Daft Punk",
+      "game": "Get Lucky",
+      "lang": "en"
+    },
+    {
+      "franchise": "Avicii",
+      "game": "Hey Brother",
+      "lang": "en"
+    },
+    {
+      "franchise": "Tiësto",
+      "game": "Red Lights",
+      "lang": "en"
+    },
+    {
+      "franchise": "Armin van Buuren",
+      "game": "This Is What It Feels Like",
+      "lang": "en"
+    },
+    {
+      "franchise": "DJ Snake y Lil Jon",
+      "game": "Turn Down for What",
+      "lang": "en"
+    },
+    {
+      "franchise": "Avicii",
+      "game": "Wake Me Up",
+      "lang": "en"
+    },
+    {
+      "franchise": "Kygo",
+      "game": "Firestone",
+      "lang": "en"
+    },
+    {
+      "franchise": "Robin Schulz",
+      "game": "Prayer in C",
+      "lang": "en"
+    },
+    {
+      "franchise": "Calvin Harris",
+      "game": "Summer",
+      "lang": "en"
+    },
+    {
+      "franchise": "Avicii",
+      "game": "The Nights",
+      "lang": "en"
+    },
+    {
+      "franchise": "Alan Walker",
+      "game": "Faded",
+      "lang": "en"
+    },
+    {
+      "franchise": "Major Lazer",
+      "game": "Lean On",
+      "lang": "en"
+    },
+    {
+      "franchise": "Marshmello",
+      "game": "Alone"
+    },
+    {
+      "franchise": "The Chainsmokers",
+      "game": "Closer",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Chainsmokers",
+      "game": "Don't Let Me Down",
+      "lang": "en"
+    },
+    {
+      "franchise": "Calvin Harris",
+      "game": "This Is What You Came For",
+      "lang": "en"
+    },
+    {
+      "franchise": "Kygo y Selena Gomez",
+      "game": "It Ain't Me",
+      "lang": "en"
+    },
+    {
+      "franchise": "Marshmello y Bastille",
+      "game": "Happier",
+      "lang": "en"
+    },
+    {
+      "franchise": "Calvin Harris y Dua Lipa",
+      "game": "One Kiss",
+      "lang": "en"
+    },
+    {
+      "franchise": "Bizarrap y Nathy Peluso",
+      "game": "Nathy Peluso: Bzrp Music Sessions, Vol. 36",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bizarrap y Shakira",
+      "game": "Shakira: Bzrp Music Sessions, Vol. 53",
+      "lang": "es"
+    },
+    {
+      "franchise": "Kraftwerk",
+      "game": "The Model",
+      "lang": "en"
+    },
+    {
+      "franchise": "New Order",
+      "game": "Blue Monday",
+      "lang": "en"
+    },
+    {
+      "franchise": "Depeche Mode",
+      "game": "Enjoy the Silence",
+      "lang": "en"
+    },
+    {
+      "franchise": "Snap!",
+      "game": "Rhythm Is a Dancer",
+      "lang": "en"
+    },
+    {
+      "franchise": "Corona",
+      "game": "The Rhythm of the Night",
+      "lang": "en"
+    },
+    {
+      "franchise": "Scatman John",
+      "game": "Scatman (Ski-Ba-Bop-Ba-Dop-Bop)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Robert Miles",
+      "game": "Children"
+    },
+    {
+      "franchise": "Faithless",
+      "game": "Insomnia",
+      "lang": "en"
+    },
+    {
+      "franchise": "The Prodigy",
+      "game": "Breathe",
+      "lang": "en"
+    },
+    {
+      "franchise": "ATB",
+      "game": "9 PM (Till I Come)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Vengaboys",
+      "game": "Boom, Boom, Boom, Boom!!",
+      "lang": "en"
+    },
+    {
+      "franchise": "Vengaboys",
+      "game": "We Like to Party!",
+      "lang": "en"
+    },
+    {
+      "franchise": "Paul van Dyk",
+      "game": "For an Angel"
+    },
+    {
+      "franchise": "Modjo",
+      "game": "Lady (Hear Me Tonight)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Safri Duo",
+      "game": "Played-A-Live (The Bongo Song)"
+    },
+    {
+      "franchise": "Gigi D'Agostino",
+      "game": "L'Amour Toujours",
+      "lang": "en"
+    },
+    {
+      "franchise": "Tiësto",
+      "game": "Adagio for Strings"
+    },
+    {
+      "franchise": "Bob Sinclar",
+      "game": "World, Hold On",
+      "lang": "en"
+    },
+    {
+      "franchise": "Bob Sinclar",
+      "game": "Love Generation",
+      "lang": "en"
+    },
+    {
+      "franchise": "Fedde Le Grand",
+      "game": "Put Your Hands Up for Detroit",
+      "lang": "en"
+    },
+    {
+      "franchise": "Guru Josh Project",
+      "game": "Infinity 2008",
+      "lang": "en"
+    },
+    {
+      "franchise": "Kid Cudi",
+      "game": "Day 'n' Nite (Crookers Remix)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Edward Maya y Vika Jigulina",
+      "game": "Stereo Love",
+      "lang": "en"
+    },
+    {
+      "franchise": "Inna",
+      "game": "Hot",
+      "lang": "en"
+    },
+    {
+      "franchise": "Yolanda Be Cool y DCUP",
+      "game": "We No Speak Americano",
+      "lang": "it"
+    },
+    {
+      "franchise": "Swedish House Mafia",
+      "game": "One (Your Name)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Afrojack",
+      "game": "Take Over Control",
+      "lang": "en"
+    },
+    {
+      "franchise": "Duck Sauce",
+      "game": "Barbra Streisand",
+      "lang": "en"
+    },
+    {
+      "franchise": "Sak Noel",
+      "game": "Loca People",
+      "lang": "en"
+    },
+    {
+      "franchise": "Alesso y Sebastian Ingrosso",
+      "game": "Calling (Lose My Mind)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Otto Knows",
+      "game": "Million Voices",
+      "lang": "en"
+    },
+    {
+      "franchise": "Steve Aoki",
+      "game": "Pursuit of Happiness (Remix)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Hardwell",
+      "game": "Spaceman",
+      "lang": "en"
+    },
+    {
+      "franchise": "Dimitri Vegas & Like Mike y Martin Garrix",
+      "game": "Tremor"
+    },
+    {
+      "franchise": "DVBBS y Borgeous",
+      "game": "Tsunami"
+    },
+    {
+      "franchise": "Oliver Heldens y Becky Hill",
+      "game": "Gecko (Overdrive)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Galantis",
+      "game": "Runaway (U & I)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Jack Ü y Justin Bieber",
+      "game": "Where Are Ü Now",
+      "lang": "en"
+    },
+    {
+      "franchise": "Duke Dumont",
+      "game": "Ocean Drive",
+      "lang": "en"
+    },
+    {
+      "franchise": "Axwell /\\ Ingrosso",
+      "game": "More Than You Know",
+      "lang": "en"
+    },
+    {
+      "franchise": "Fisher",
+      "game": "Losing It"
+    },
+    {
+      "franchise": "Meduza",
+      "game": "Piece of Your Heart",
+      "lang": "en"
+    },
+    {
+      "franchise": "Regard",
+      "game": "Ride It",
+      "lang": "en"
+    },
+    {
+      "franchise": "SAINt JHN",
+      "game": "Roses (Imanbek Remix)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Tiësto",
+      "game": "The Business",
+      "lang": "en"
+    },
+    {
+      "franchise": "ACRAZE",
+      "game": "Do It To It",
+      "lang": "en"
+    },
+    {
+      "franchise": "Fred again..",
+      "game": "Delilah (pull me out of this)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Peggy Gou",
+      "game": "(It Goes Like) Nanana",
+      "lang": "en"
+    },
+    {
+      "franchise": "David Guetta y Bebe Rexha",
+      "game": "I'm Good (Blue)",
+      "lang": "en"
+    },
+    {
+      "franchise": "John Summit y Hayla",
+      "game": "Where You Are",
+      "lang": "en"
+    }
+  ],
+  "song-cumbia": [
+    {
+      "franchise": "Lucho Bermúdez",
+      "game": "Colombia tierra querida",
+      "lang": "es"
+    },
+    {
+      "franchise": "La Sonora Santanera",
+      "game": "El mudo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Mike Laure",
+      "game": "Tiburón a la vista",
+      "lang": "es"
+    },
+    {
+      "franchise": "Mike Laure",
+      "game": "La cosecha de mujeres",
+      "lang": "es"
+    },
+    {
+      "franchise": "La Sonora Santanera",
+      "game": "La boa",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Mirlos",
+      "game": "La danza de los mirlos",
+      "lang": "es"
+    },
+    {
+      "franchise": "Aniceto Molina",
+      "game": "Cumbia sampuesana",
+      "lang": "es"
+    },
+    {
+      "franchise": "Rigo Tovar",
+      "game": "Lamento de amor",
+      "lang": "es"
+    },
+    {
+      "franchise": "Rigo Tovar",
+      "game": "Mi Matamoros querido",
+      "lang": "es"
+    },
+    {
+      "franchise": "Chico Che y La Crisis",
+      "game": "Quién pompó",
+      "lang": "es"
+    },
+    {
+      "franchise": "La Sonora Dinamita",
+      "game": "Mi cucu",
+      "lang": "es"
+    },
+    {
+      "franchise": "La Sonora Dinamita",
+      "game": "Se me perdió la cadenita",
+      "lang": "es"
+    },
+    {
+      "franchise": "La Sonora Dinamita",
+      "game": "Que nadie sepa mi sufrir",
+      "lang": "es"
+    },
+    {
+      "franchise": "Selena",
+      "game": "Baila esta cumbia",
+      "lang": "es"
+    },
+    {
+      "franchise": "Fito Olivares",
+      "game": "Juana la cubana",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bronco",
+      "game": "Sergio el bailador",
+      "lang": "es"
+    },
+    {
+      "franchise": "Selena",
+      "game": "Como la flor",
+      "lang": "es"
+    },
+    {
+      "franchise": "Selena",
+      "game": "La carcacha",
+      "lang": "es"
+    },
+    {
+      "franchise": "Selena",
+      "game": "No debes jugar",
+      "lang": "es"
+    },
+    {
+      "franchise": "Selena",
+      "game": "Amor prohibido",
+      "lang": "es"
+    },
+    {
+      "franchise": "Selena",
+      "game": "Bidi Bidi Bom Bom",
+      "lang": "es"
+    },
+    {
+      "franchise": "Selena",
+      "game": "El chico del apartamento 512",
+      "lang": "es"
+    },
+    {
+      "franchise": "Selena",
+      "game": "Fotos y recuerdos",
+      "lang": "es"
+    },
+    {
+      "franchise": "Selena",
+      "game": "Si una vez",
+      "lang": "es"
+    },
+    {
+      "franchise": "Selena",
+      "game": "Techno cumbia",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Ángeles Azules",
+      "game": "Entrega de amor",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Ángeles Azules",
+      "game": "17 años",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Ángeles Azules",
+      "game": "Cómo te voy a olvidar",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Ángeles Azules",
+      "game": "El listón de tu pelo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Ángeles Azules",
+      "game": "Juventud",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Ángeles Azules",
+      "game": "Mi niña mujer",
+      "lang": "es"
+    },
+    {
+      "franchise": "Antonio Ríos",
+      "game": "Nunca me faltes",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ráfaga",
+      "game": "Mentirosa",
+      "lang": "es"
+    },
+    {
+      "franchise": "Celso Piña y Café Tacvba",
+      "game": "Aunque no sea conmigo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Kumbia Kings",
+      "game": "Azúcar",
+      "lang": "es"
+    },
+    {
+      "franchise": "Celso Piña",
+      "game": "Cumbia sobre el río",
+      "lang": "es"
+    },
+    {
+      "franchise": "Kumbia Kings",
+      "game": "Fuiste mala",
+      "lang": "es"
+    },
+    {
+      "franchise": "Kumbia Kings",
+      "game": "Na na na (Dulce niña)",
+      "lang": "es"
+    },
+    {
+      "franchise": "A.B. Quintanilla III y los Kumbia All Starz",
+      "game": "Chiquilla",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bomba Estéreo",
+      "game": "Fuego",
+      "lang": "es"
+    },
+    {
+      "franchise": "Lila Downs",
+      "game": "La cumbia del mole",
+      "lang": "es"
+    },
+    {
+      "franchise": "Grupo 5",
+      "game": "Motor y motivo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Ángeles Azules y Carla Morrison",
+      "game": "Las maravillas de la vida",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Ángeles Azules y Ximena Sariñana",
+      "game": "Mis sentimientos",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Ángeles Azules y Natalia Lafourcade",
+      "game": "Nunca es suficiente",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Ángeles Azules, Belinda y Lalo Ebratt",
+      "game": "Amor a primera vista",
+      "lang": "es"
+    },
+    {
+      "franchise": "Grupo Frontera",
+      "game": "No se va",
+      "lang": "es"
+    },
+    {
+      "franchise": "Grupo Frontera y Bad Bunny",
+      "game": "Un x100to",
+      "lang": "es"
+    },
+    {
+      "franchise": "Grupo Cañaveral y Joey Montana",
+      "game": "El cumbión",
+      "lang": "es"
+    },
+    {
+      "franchise": "Américo y Vicentico",
+      "game": "Te vas",
+      "lang": "es"
+    },
+    {
+      "franchise": "Andrés Landero",
+      "game": "La pava congona",
+      "lang": "es"
+    },
+    {
+      "franchise": "Pastor López",
+      "game": "El ausente",
+      "lang": "es"
+    },
+    {
+      "franchise": "Pastor López",
+      "game": "Golpe con golpe",
+      "lang": "es"
+    },
+    {
+      "franchise": "Pastor López",
+      "game": "Traicionera",
+      "lang": "es"
+    },
+    {
+      "franchise": "Rodolfo Aicardi",
+      "game": "La colegiala",
+      "lang": "es"
+    },
+    {
+      "franchise": "Rodolfo Aicardi",
+      "game": "Cariñito",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Destellos",
+      "game": "Elsa",
+      "lang": "es"
+    },
+    {
+      "franchise": "Cuarteto Continental",
+      "game": "Cumbia de los pajaritos",
+      "lang": "es"
+    },
+    {
+      "franchise": "La Sonora Dinamita",
+      "game": "Capullo y sorullo",
+      "lang": "es"
+    },
+    {
+      "franchise": "La Sonora Dinamita",
+      "game": "Escándalo",
+      "lang": "es"
+    },
+    {
+      "franchise": "La Sonora Dinamita",
+      "game": "Mil horas",
+      "lang": "es"
+    },
+    {
+      "franchise": "La Sonora Dinamita",
+      "game": "Oye",
+      "lang": "es"
+    },
+    {
+      "franchise": "La Sonora Dinamita",
+      "game": "Maruja",
+      "lang": "es"
+    },
+    {
+      "franchise": "Chico Che y La Crisis",
+      "game": "De quén chón",
+      "lang": "es"
+    },
+    {
+      "franchise": "Fito Olivares",
+      "game": "El colesterol",
+      "lang": "es"
+    },
+    {
+      "franchise": "Fito Olivares",
+      "game": "La güera Salomé",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Bybys",
+      "game": "Buscándola",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Ángeles de Charly",
+      "game": "Un sueño",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Ángeles de Charly",
+      "game": "Amor secreto",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Ángeles de Charly",
+      "game": "Me volví a acordar de ti",
+      "lang": "es"
+    },
+    {
+      "franchise": "Grupo Cañaveral",
+      "game": "Tiene espinas el rosal",
+      "lang": "es"
+    },
+    {
+      "franchise": "Grupo Cañaveral",
+      "game": "No te voy a perdonar",
+      "lang": "es"
+    },
+    {
+      "franchise": "Grupo Cañaveral",
+      "game": "Hasta el cielo lloro",
+      "lang": "es"
+    },
+    {
+      "franchise": "Aarón y su Grupo Ilusión",
+      "game": "Todo me gusta de ti",
+      "lang": "es"
+    },
+    {
+      "franchise": "Rayito Colombiano",
+      "game": "El baile de la ranita",
+      "lang": "es"
+    },
+    {
+      "franchise": "Rayito Colombiano",
+      "game": "Muchachita consentida",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Askis",
+      "game": "¡Ay! El amor",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Askis",
+      "game": "Amor regresa",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Askis",
+      "game": "Vienes y te vas",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Socios del Ritmo",
+      "game": "Llorar",
+      "lang": "es"
+    },
+    {
+      "franchise": "Margarita la Diosa de la Cumbia",
+      "game": "Amor de mis amores",
+      "lang": "es"
+    },
+    {
+      "franchise": "Margarita la Diosa de la Cumbia",
+      "game": "Mi bombón",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ráfaga",
+      "game": "Una ráfaga de amor",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ráfaga",
+      "game": "Luna",
+      "lang": "es"
+    },
+    {
+      "franchise": "Gilda",
+      "game": "No me arrepiento de este amor",
+      "lang": "es"
+    },
+    {
+      "franchise": "Gilda",
+      "game": "Fuiste",
+      "lang": "es"
+    },
+    {
+      "franchise": "Gilda",
+      "game": "Se me ha perdido un corazón",
+      "lang": "es"
+    },
+    {
+      "franchise": "Damas Gratis",
+      "game": "Se te ve la tanga",
+      "lang": "es"
+    },
+    {
+      "franchise": "Damas Gratis",
+      "game": "Me vas a extrañar",
+      "lang": "es"
+    },
+    {
+      "franchise": "Damas Gratis",
+      "game": "Los dueños del pabellón",
+      "lang": "es"
+    },
+    {
+      "franchise": "Amar Azul",
+      "game": "Yo tomo licor",
+      "lang": "es"
+    },
+    {
+      "franchise": "Amar Azul",
+      "game": "El polvito del amor",
+      "lang": "es"
+    },
+    {
+      "franchise": "La Cumbia",
+      "game": "Porque te amo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Néstor en Bloque",
+      "game": "Una calle me separa",
+      "lang": "es"
+    },
+    {
+      "franchise": "El Polaco",
+      "game": "Deja de llorar",
+      "lang": "es"
+    },
+    {
+      "franchise": "Yerba Brava",
+      "game": "La cumbia de los trapos",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Palmeras",
+      "game": "El bombón",
+      "lang": "es"
+    },
+    {
+      "franchise": "Los Palmeras",
+      "game": "Olvídala",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ke Personajes, Big One y FMK",
+      "game": "Un finde",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ke Personajes y Onda Sabanera",
+      "game": "Pobre corazón",
+      "lang": "es"
+    }
+  ],
+  "song-salsa": [
+    {
+      "franchise": "Celia Cruz",
+      "game": "Bemba colorá",
+      "lang": "es"
+    },
+    {
+      "franchise": "Willie Colón y Héctor Lavoe",
+      "game": "Che Che Colé",
+      "lang": "es"
+    },
+    {
+      "franchise": "Fania All-Stars",
+      "game": "Quítate tú",
+      "lang": "es"
+    },
+    {
+      "franchise": "Richie Ray y Bobby Cruz",
+      "game": "Sonido bestial",
+      "lang": "es"
+    },
+    {
+      "franchise": "Willie Colón y Héctor Lavoe",
+      "game": "Aguanile",
+      "lang": "es"
+    },
+    {
+      "franchise": "Willie Colón y Héctor Lavoe",
+      "game": "Calle Luna, Calle Sol",
+      "lang": "es"
+    },
+    {
+      "franchise": "Willie Colón y Héctor Lavoe",
+      "game": "Todo tiene su final",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ismael Rivera",
+      "game": "El Nazareno",
+      "lang": "es"
+    },
+    {
+      "franchise": "Celia Cruz y Johnny Pacheco",
+      "game": "Quimbara",
+      "lang": "es"
+    },
+    {
+      "franchise": "Fruko y sus Tesos",
+      "game": "El preso",
+      "lang": "es"
+    },
+    {
+      "franchise": "Oscar D'León",
+      "game": "Llorarás",
+      "lang": "es"
+    },
+    {
+      "franchise": "El Gran Combo de Puerto Rico",
+      "game": "Un verano en Nueva York",
+      "lang": "es"
+    },
+    {
+      "franchise": "Héctor Lavoe",
+      "game": "Periódico de ayer",
+      "lang": "es"
+    },
+    {
+      "franchise": "Willie Colón y Rubén Blades",
+      "game": "Pablo Pueblo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Willie Colón y Rubén Blades",
+      "game": "Buscando guayaba",
+      "lang": "es"
+    },
+    {
+      "franchise": "Héctor Lavoe",
+      "game": "El cantante",
+      "lang": "es"
+    },
+    {
+      "franchise": "Rubén Blades",
+      "game": "Pedro Navaja",
+      "lang": "es"
+    },
+    {
+      "franchise": "Willie Colón y Rubén Blades",
+      "game": "Plástico",
+      "lang": "es"
+    },
+    {
+      "franchise": "Willie Colón",
+      "game": "Idilio",
+      "lang": "es"
+    },
+    {
+      "franchise": "Héctor Lavoe",
+      "game": "Juanito Alimaña",
+      "lang": "es"
+    },
+    {
+      "franchise": "El Gran Combo de Puerto Rico",
+      "game": "Me liberé",
+      "lang": "es"
+    },
+    {
+      "franchise": "Grupo Niche",
+      "game": "Cali pachanguero",
+      "lang": "es"
+    },
+    {
+      "franchise": "Rubén Blades",
+      "game": "Decisiones",
+      "lang": "es"
+    },
+    {
+      "franchise": "Frankie Ruiz",
+      "game": "La cura",
+      "lang": "es"
+    },
+    {
+      "franchise": "Joe Arroyo",
+      "game": "Rebelión",
+      "lang": "es"
+    },
+    {
+      "franchise": "Eddie Santiago",
+      "game": "Tú me quemas",
+      "lang": "es"
+    },
+    {
+      "franchise": "Frankie Ruiz",
+      "game": "Desnúdate mujer",
+      "lang": "es"
+    },
+    {
+      "franchise": "Grupo Niche",
+      "game": "Gotas de lluvia",
+      "lang": "es"
+    },
+    {
+      "franchise": "Eddie Santiago",
+      "game": "Lluvia",
+      "lang": "es"
+    },
+    {
+      "franchise": "Joe Arroyo",
+      "game": "En Barranquilla me quedo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Willie Colón",
+      "game": "El gran varón",
+      "lang": "es"
+    },
+    {
+      "franchise": "Grupo Niche",
+      "game": "Una aventura",
+      "lang": "es"
+    },
+    {
+      "franchise": "Joe Arroyo",
+      "game": "La noche",
+      "lang": "es"
+    },
+    {
+      "franchise": "Jerry Rivera",
+      "game": "Amores como el nuestro",
+      "lang": "es"
+    },
+    {
+      "franchise": "Jerry Rivera",
+      "game": "Cuenta conmigo",
+      "lang": "es"
+    },
+    {
+      "franchise": "La India",
+      "game": "Ese hombre",
+      "lang": "es"
+    },
+    {
+      "franchise": "Marc Anthony",
+      "game": "Te conozco bien",
+      "lang": "es"
+    },
+    {
+      "franchise": "Marc Anthony",
+      "game": "Contra la corriente",
+      "lang": "es"
+    },
+    {
+      "franchise": "Tito Nieves",
+      "game": "I Like It Like That",
+      "lang": "en"
+    },
+    {
+      "franchise": "Celia Cruz",
+      "game": "La vida es un carnaval",
+      "lang": "es"
+    },
+    {
+      "franchise": "Marc Anthony",
+      "game": "Y hubo alguien",
+      "lang": "es"
+    },
+    {
+      "franchise": "Celia Cruz",
+      "game": "La negra tiene tumbao",
+      "lang": "es"
+    },
+    {
+      "franchise": "Gilberto Santa Rosa",
+      "game": "Que alguien me diga",
+      "lang": "es"
+    },
+    {
+      "franchise": "Victor Manuelle",
+      "game": "Tengo ganas",
+      "lang": "es"
+    },
+    {
+      "franchise": "Celia Cruz",
+      "game": "Ríe y llora",
+      "lang": "es"
+    },
+    {
+      "franchise": "Marc Anthony",
+      "game": "Tu amor me hace bien",
+      "lang": "es"
+    },
+    {
+      "franchise": "Marc Anthony",
+      "game": "Valió la pena",
+      "lang": "es"
+    },
+    {
+      "franchise": "Marc Anthony",
+      "game": "Ahora quién",
+      "lang": "es"
+    },
+    {
+      "franchise": "Marc Anthony",
+      "game": "Flor pálida",
+      "lang": "es"
+    },
+    {
+      "franchise": "Marc Anthony",
+      "game": "Vivir mi vida",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ray Barretto",
+      "game": "Indestructible",
+      "lang": "es"
+    },
+    {
+      "franchise": "Ismael Miranda",
+      "game": "Así se compone un son",
+      "lang": "es"
+    },
+    {
+      "franchise": "Willie Colón y Héctor Lavoe",
+      "game": "Ausencia",
+      "lang": "es"
+    },
+    {
+      "franchise": "Héctor Lavoe",
+      "game": "Triste y vacía",
+      "lang": "es"
+    },
+    {
+      "franchise": "Héctor Lavoe",
+      "game": "Escándalo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Cheo Feliciano",
+      "game": "Anacaona",
+      "lang": "es"
+    },
+    {
+      "franchise": "Cheo Feliciano",
+      "game": "El ratón",
+      "lang": "es"
+    },
+    {
+      "franchise": "El Gran Combo de Puerto Rico",
+      "game": "Brujería",
+      "lang": "es"
+    },
+    {
+      "franchise": "El Gran Combo de Puerto Rico",
+      "game": "Ojos chinos",
+      "lang": "es"
+    },
+    {
+      "franchise": "El Gran Combo de Puerto Rico",
+      "game": "Ámame",
+      "lang": "es"
+    },
+    {
+      "franchise": "El Gran Combo de Puerto Rico",
+      "game": "Trampolín",
+      "lang": "es"
+    },
+    {
+      "franchise": "El Gran Combo de Puerto Rico",
+      "game": "No hay cama pa' tanta gente",
+      "lang": "es"
+    },
+    {
+      "franchise": "Sonora Ponceña",
+      "game": "Fuego en el 23",
+      "lang": "es"
+    },
+    {
+      "franchise": "Sonora Ponceña",
+      "game": "Yambeqúe",
+      "lang": "es"
+    },
+    {
+      "franchise": "Sonora Ponceña",
+      "game": "Boranda",
+      "lang": "es"
+    },
+    {
+      "franchise": "Roberto Roena",
+      "game": "Con los pobres estoy",
+      "lang": "es"
+    },
+    {
+      "franchise": "Roberto Roena",
+      "game": "Marejada feliz",
+      "lang": "es"
+    },
+    {
+      "franchise": "Roberto Roena",
+      "game": "Cómo te hago entender",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bobby Valentín",
+      "game": "El muñeco de la ciudad",
+      "lang": "es"
+    },
+    {
+      "franchise": "Bobby Valentín",
+      "game": "La boda de ella",
+      "lang": "es"
+    },
+    {
+      "franchise": "Oscar D'León",
+      "game": "Detalles",
+      "lang": "es"
+    },
+    {
+      "franchise": "Oscar D'León",
+      "game": "Ven morena",
+      "lang": "es"
+    },
+    {
+      "franchise": "Oscar D'León",
+      "game": "Melao de caña",
+      "lang": "es"
+    },
+    {
+      "franchise": "Frankie Ruiz",
+      "game": "Tú con él",
+      "lang": "es"
+    },
+    {
+      "franchise": "Frankie Ruiz",
+      "game": "Mi libertad",
+      "lang": "es"
+    },
+    {
+      "franchise": "Frankie Ruiz",
+      "game": "Puerto Rico",
+      "lang": "es"
+    },
+    {
+      "franchise": "Lalo Rodríguez",
+      "game": "Ven, devórame otra vez",
+      "lang": "es"
+    },
+    {
+      "franchise": "Luis Enrique",
+      "game": "Yo no sé mañana",
+      "lang": "es"
+    },
+    {
+      "franchise": "Luis Enrique",
+      "game": "Date un chance",
+      "lang": "es"
+    },
+    {
+      "franchise": "Rey Ruiz",
+      "game": "Mi media mitad",
+      "lang": "es"
+    },
+    {
+      "franchise": "Rey Ruiz",
+      "game": "No me acostumbro",
+      "lang": "es"
+    },
+    {
+      "franchise": "Gilberto Santa Rosa",
+      "game": "Conciencia",
+      "lang": "es"
+    },
+    {
+      "franchise": "Gilberto Santa Rosa",
+      "game": "Vivir sin ella",
+      "lang": "es"
+    },
+    {
+      "franchise": "Gilberto Santa Rosa",
+      "game": "Perdóname",
+      "lang": "es"
+    },
+    {
+      "franchise": "Gilberto Santa Rosa",
+      "game": "La agarro bajando",
+      "lang": "es"
+    },
+    {
+      "franchise": "Victor Manuelle",
+      "game": "Dile a ella",
+      "lang": "es"
+    },
+    {
+      "franchise": "Victor Manuelle",
+      "game": "He tratado",
+      "lang": "es"
+    },
+    {
+      "franchise": "Victor Manuelle",
+      "game": "Apiádate de mí",
+      "lang": "es"
+    },
+    {
+      "franchise": "Jerry Rivera",
+      "game": "Cara de niño",
+      "lang": "es"
+    },
+    {
+      "franchise": "Jerry Rivera",
+      "game": "Qué hay de malo",
+      "lang": "es"
+    },
+    {
+      "franchise": "Grupo Niche",
+      "game": "Sin sentimiento",
+      "lang": "es"
+    },
+    {
+      "franchise": "Grupo Niche",
+      "game": "Busca por dentro",
+      "lang": "es"
+    },
+    {
+      "franchise": "Grupo Niche",
+      "game": "Nuestro sueño",
+      "lang": "es"
+    },
+    {
+      "franchise": "Guayacán Orquesta",
+      "game": "Oiga, mire, vea",
+      "lang": "es"
+    },
+    {
+      "franchise": "Guayacán Orquesta",
+      "game": "Cada día que pasa",
+      "lang": "es"
+    },
+    {
+      "franchise": "Fruko y sus Tesos",
+      "game": "Tania",
+      "lang": "es"
+    },
+    {
+      "franchise": "Fruko y sus Tesos",
+      "game": "Los charcos",
+      "lang": "es"
+    },
+    {
+      "franchise": "Tito Rojas",
+      "game": "Señora de madrugada",
+      "lang": "es"
+    },
+    {
+      "franchise": "Tito Rojas",
+      "game": "Siempre seré",
+      "lang": "es"
+    },
+    {
+      "franchise": "Sonora Carruseles",
+      "game": "Micaela",
+      "lang": "es"
+    }
+  ],
+  "song-metal": [
+    {
+      "franchise": "Black Sabbath",
+      "game": "Iron Man",
+      "lang": "en"
+    },
+    {
+      "franchise": "Black Sabbath",
+      "game": "Paranoid",
+      "lang": "en"
+    },
+    {
+      "franchise": "Motörhead",
+      "game": "Ace of Spades",
+      "lang": "en"
+    },
+    {
+      "franchise": "Judas Priest",
+      "game": "Breaking the Law",
+      "lang": "en"
+    },
+    {
+      "franchise": "Ozzy Osbourne",
+      "game": "Crazy Train",
+      "lang": "en"
+    },
+    {
+      "franchise": "Barón Rojo",
+      "game": "Los rockeros van al infierno",
+      "lang": "es"
+    },
+    {
+      "franchise": "Iron Maiden",
+      "game": "Run to the Hills",
+      "lang": "en"
+    },
+    {
+      "franchise": "Dio",
+      "game": "Holy Diver",
+      "lang": "en"
+    },
+    {
+      "franchise": "Iron Maiden",
+      "game": "The Trooper",
+      "lang": "en"
+    },
+    {
+      "franchise": "Scorpions",
+      "game": "Rock You Like a Hurricane",
+      "lang": "en"
+    },
+    {
+      "franchise": "Twisted Sister",
+      "game": "We're Not Gonna Take It",
+      "lang": "en"
+    },
+    {
+      "franchise": "Metallica",
+      "game": "Master of Puppets",
+      "lang": "en"
+    },
+    {
+      "franchise": "Slayer",
+      "game": "Raining Blood",
+      "lang": "en"
+    },
+    {
+      "franchise": "Europe",
+      "game": "The Final Countdown",
+      "lang": "en"
+    },
+    {
+      "franchise": "Def Leppard",
+      "game": "Pour Some Sugar on Me",
+      "lang": "en"
+    },
+    {
+      "franchise": "Metallica",
+      "game": "One",
+      "lang": "en"
+    },
+    {
+      "franchise": "Mötley Crüe",
+      "game": "Kickstart My Heart",
+      "lang": "en"
+    },
+    {
+      "franchise": "Pantera",
+      "game": "Cowboys from Hell",
+      "lang": "en"
+    },
+    {
+      "franchise": "Rata Blanca",
+      "game": "La leyenda del hada y el mago",
+      "lang": "es"
+    },
+    {
+      "franchise": "Rata Blanca",
+      "game": "Mujer amante",
+      "lang": "es"
+    },
+    {
+      "franchise": "Metallica",
+      "game": "Enter Sandman",
+      "lang": "en"
+    },
+    {
+      "franchise": "Metallica",
+      "game": "Nothing Else Matters",
+      "lang": "en"
+    },
+    {
+      "franchise": "Iron Maiden",
+      "game": "Fear of the Dark",
+      "lang": "en"
+    },
+    {
+      "franchise": "Rage Against the Machine",
+      "game": "Killing in the Name",
+      "lang": "en"
+    },
+    {
+      "franchise": "Megadeth",
+      "game": "Symphony of Destruction",
+      "lang": "en"
+    },
+    {
+      "franchise": "Pantera",
+      "game": "Walk",
+      "lang": "en"
+    },
+    {
+      "franchise": "Rammstein",
+      "game": "Du hast",
+      "lang": "de"
+    },
+    {
+      "franchise": "Korn",
+      "game": "Freak on a Leash",
+      "lang": "en"
+    },
+    {
+      "franchise": "Mägo de Oz",
+      "game": "Molinos de viento",
+      "lang": "es"
+    },
+    {
+      "franchise": "Disturbed",
+      "game": "Down with the Sickness",
+      "lang": "en"
+    },
+    {
+      "franchise": "Mägo de Oz",
+      "game": "Fiesta pagana",
+      "lang": "es"
+    },
+    {
+      "franchise": "Linkin Park",
+      "game": "In the End",
+      "lang": "en"
+    },
+    {
+      "franchise": "Papa Roach",
+      "game": "Last Resort",
+      "lang": "en"
+    },
+    {
+      "franchise": "Linkin Park",
+      "game": "One Step Closer",
+      "lang": "en"
+    },
+    {
+      "franchise": "Limp Bizkit",
+      "game": "Rollin'",
+      "lang": "en"
+    },
+    {
+      "franchise": "System of a Down",
+      "game": "Aerials",
+      "lang": "en"
+    },
+    {
+      "franchise": "System of a Down",
+      "game": "Chop Suey!",
+      "lang": "en"
+    },
+    {
+      "franchise": "Rammstein",
+      "game": "Sonne",
+      "lang": "de"
+    },
+    {
+      "franchise": "System of a Down",
+      "game": "Toxicity",
+      "lang": "en"
+    },
+    {
+      "franchise": "Godsmack",
+      "game": "I Stand Alone",
+      "lang": "en"
+    },
+    {
+      "franchise": "Evanescence",
+      "game": "Bring Me to Life",
+      "lang": "en"
+    },
+    {
+      "franchise": "Linkin Park",
+      "game": "Faint",
+      "lang": "en"
+    },
+    {
+      "franchise": "Linkin Park",
+      "game": "Numb",
+      "lang": "en"
+    },
+    {
+      "franchise": "Slipknot",
+      "game": "Duality",
+      "lang": "en"
+    },
+    {
+      "franchise": "System of a Down",
+      "game": "B.Y.O.B.",
+      "lang": "en"
+    },
+    {
+      "franchise": "Avenged Sevenfold",
+      "game": "Bat Country",
+      "lang": "en"
+    },
+    {
+      "franchise": "Slipknot",
+      "game": "Psychosocial",
+      "lang": "en"
+    },
+    {
+      "franchise": "Bring Me the Horizon",
+      "game": "Can You Feel My Heart",
+      "lang": "en"
+    },
+    {
+      "franchise": "Avenged Sevenfold",
+      "game": "Hail to the King",
+      "lang": "en"
+    },
+    {
+      "franchise": "Ghost",
+      "game": "Mary on a Cross",
+      "lang": "en"
+    },
+    {
+      "franchise": "Black Sabbath",
+      "game": "War Pigs",
+      "lang": "en"
+    },
+    {
+      "franchise": "Deep Purple",
+      "game": "Highway Star",
+      "lang": "en"
+    },
+    {
+      "franchise": "Judas Priest",
+      "game": "Painkiller",
+      "lang": "en"
+    },
+    {
+      "franchise": "Judas Priest",
+      "game": "Living After Midnight",
+      "lang": "en"
+    },
+    {
+      "franchise": "Judas Priest",
+      "game": "You've Got Another Thing Comin'",
+      "lang": "en"
+    },
+    {
+      "franchise": "Iron Maiden",
+      "game": "The Number of the Beast",
+      "lang": "en"
+    },
+    {
+      "franchise": "Iron Maiden",
+      "game": "Wasted Years",
+      "lang": "en"
+    },
+    {
+      "franchise": "Iron Maiden",
+      "game": "Hallowed Be Thy Name",
+      "lang": "en"
+    },
+    {
+      "franchise": "Ozzy Osbourne",
+      "game": "Bark at the Moon",
+      "lang": "en"
+    },
+    {
+      "franchise": "Ozzy Osbourne",
+      "game": "Mr. Crowley",
+      "lang": "en"
+    },
+    {
+      "franchise": "Dio",
+      "game": "Rainbow in the Dark",
+      "lang": "en"
+    },
+    {
+      "franchise": "Quiet Riot",
+      "game": "Cum On Feel the Noize",
+      "lang": "en"
+    },
+    {
+      "franchise": "Scorpions",
+      "game": "Wind of Change",
+      "lang": "en"
+    },
+    {
+      "franchise": "Skid Row",
+      "game": "18 and Life",
+      "lang": "en"
+    },
+    {
+      "franchise": "Skid Row",
+      "game": "Youth Gone Wild",
+      "lang": "en"
+    },
+    {
+      "franchise": "Whitesnake",
+      "game": "Here I Go Again",
+      "lang": "en"
+    },
+    {
+      "franchise": "Metallica",
+      "game": "Seek & Destroy",
+      "lang": "en"
+    },
+    {
+      "franchise": "Metallica",
+      "game": "Fade to Black",
+      "lang": "en"
+    },
+    {
+      "franchise": "Metallica",
+      "game": "For Whom the Bell Tolls",
+      "lang": "en"
+    },
+    {
+      "franchise": "Metallica",
+      "game": "Sad but True",
+      "lang": "en"
+    },
+    {
+      "franchise": "Megadeth",
+      "game": "Peace Sells",
+      "lang": "en"
+    },
+    {
+      "franchise": "Megadeth",
+      "game": "Holy Wars... The Punishment Due",
+      "lang": "en"
+    },
+    {
+      "franchise": "Megadeth",
+      "game": "A Tout Le Monde",
+      "lang": "en"
+    },
+    {
+      "franchise": "Slayer",
+      "game": "South of Heaven",
+      "lang": "en"
+    },
+    {
+      "franchise": "Anthrax",
+      "game": "Madhouse",
+      "lang": "en"
+    },
+    {
+      "franchise": "Sepultura",
+      "game": "Roots Bloody Roots",
+      "lang": "en"
+    },
+    {
+      "franchise": "Sepultura",
+      "game": "Refuse/Resist",
+      "lang": "en"
+    },
+    {
+      "franchise": "Pantera",
+      "game": "Cemetery Gates",
+      "lang": "en"
+    },
+    {
+      "franchise": "Pantera",
+      "game": "5 Minutes Alone",
+      "lang": "en"
+    },
+    {
+      "franchise": "Rammstein",
+      "game": "Deutschland",
+      "lang": "de"
+    },
+    {
+      "franchise": "Rammstein",
+      "game": "Feuer frei!",
+      "lang": "de"
+    },
+    {
+      "franchise": "Rammstein",
+      "game": "Ich will",
+      "lang": "de"
+    },
+    {
+      "franchise": "Marilyn Manson",
+      "game": "The Beautiful People",
+      "lang": "en"
+    },
+    {
+      "franchise": "Marilyn Manson",
+      "game": "Sweet Dreams (Are Made of This)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Korn",
+      "game": "Blind",
+      "lang": "en"
+    },
+    {
+      "franchise": "Korn",
+      "game": "Falling Away from Me",
+      "lang": "en"
+    },
+    {
+      "franchise": "Deftones",
+      "game": "Change (In the House of Flies)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Deftones",
+      "game": "My Own Summer (Shove It)",
+      "lang": "en"
+    },
+    {
+      "franchise": "Limp Bizkit",
+      "game": "Break Stuff",
+      "lang": "en"
+    },
+    {
+      "franchise": "Limp Bizkit",
+      "game": "My Way",
+      "lang": "en"
+    },
+    {
+      "franchise": "Slipknot",
+      "game": "Wait and Bleed",
+      "lang": "en"
+    },
+    {
+      "franchise": "Slipknot",
+      "game": "Before I Forget",
+      "lang": "en"
+    },
+    {
+      "franchise": "Disturbed",
+      "game": "The Sound of Silence",
+      "lang": "en"
+    },
+    {
+      "franchise": "Disturbed",
+      "game": "Stricken",
+      "lang": "en"
+    },
+    {
+      "franchise": "Avenged Sevenfold",
+      "game": "Nightmare",
+      "lang": "en"
+    },
+    {
+      "franchise": "Avenged Sevenfold",
+      "game": "Afterlife",
+      "lang": "en"
+    },
+    {
+      "franchise": "Nightwish",
+      "game": "Wish I Had an Angel",
+      "lang": "en"
+    },
+    {
+      "franchise": "Nightwish",
+      "game": "Nemo",
+      "lang": "en"
+    },
+    {
+      "franchise": "Helloween",
+      "game": "I Want Out",
+      "lang": "en"
+    },
+    {
+      "franchise": "Ángeles del Infierno",
+      "game": "Maldito sea tu nombre",
+      "lang": "es"
+    }
+  ],
+  "song-kpop": [
+    {
+      "franchise": "Girls' Generation",
+      "game": "Gee",
+      "lang": "ko"
+    },
+    {
+      "franchise": "SUPER JUNIOR",
+      "game": "Sorry, Sorry",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BIGBANG",
+      "game": "FANTASTIC BABY",
+      "lang": "ko"
+    },
+    {
+      "franchise": "PSY",
+      "game": "Gangnam Style",
+      "lang": "ko"
+    },
+    {
+      "franchise": "PSY",
+      "game": "Gentleman",
+      "lang": "ko"
+    },
+    {
+      "franchise": "EXO",
+      "game": "Growl",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BIGBANG",
+      "game": "BANG BANG BANG",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BLACKPINK",
+      "game": "BOOMBAYAH",
+      "lang": "ko"
+    },
+    {
+      "franchise": "TWICE",
+      "game": "CHEER UP",
+      "lang": "ko"
+    },
+    {
+      "franchise": "TWICE",
+      "game": "TT",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BTS",
+      "game": "DNA",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BTS",
+      "game": "Spring Day",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BLACKPINK",
+      "game": "DDU-DU DDU-DU",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BTS",
+      "game": "FAKE LOVE",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BTS",
+      "game": "IDOL",
+      "lang": "ko"
+    },
+    {
+      "franchise": "SUPER JUNIOR",
+      "game": "Lo Siento",
+      "lang": "ko"
+    },
+    {
+      "franchise": "EXO",
+      "game": "Love Shot",
+      "lang": "ko"
+    },
+    {
+      "franchise": "JENNIE",
+      "game": "SOLO",
+      "lang": "ko"
+    },
+    {
+      "franchise": "TWICE",
+      "game": "What is Love?",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BTS",
+      "game": "Boy With Luv",
+      "lang": "ko"
+    },
+    {
+      "franchise": "ITZY",
+      "game": "DALLA DALLA",
+      "lang": "ko"
+    },
+    {
+      "franchise": "TWICE",
+      "game": "FANCY",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BLACKPINK",
+      "game": "Kill This Love",
+      "lang": "ko"
+    },
+    {
+      "franchise": "Red Velvet",
+      "game": "Psycho",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BTS",
+      "game": "Dynamite",
+      "lang": "en"
+    },
+    {
+      "franchise": "Stray Kids",
+      "game": "God's Menu",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BLACKPINK",
+      "game": "How You Like That",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BTS",
+      "game": "Butter",
+      "lang": "en"
+    },
+    {
+      "franchise": "LISA",
+      "game": "LALISA",
+      "lang": "ko"
+    },
+    {
+      "franchise": "LISA",
+      "game": "MONEY",
+      "lang": "en"
+    },
+    {
+      "franchise": "aespa",
+      "game": "Next Level",
+      "lang": "ko"
+    },
+    {
+      "franchise": "LE SSERAFIM",
+      "game": "ANTIFRAGILE",
+      "lang": "ko"
+    },
+    {
+      "franchise": "NewJeans",
+      "game": "Ditto",
+      "lang": "ko"
+    },
+    {
+      "franchise": "NewJeans",
+      "game": "Hype Boy",
+      "lang": "ko"
+    },
+    {
+      "franchise": "IVE",
+      "game": "LOVE DIVE",
+      "lang": "ko"
+    },
+    {
+      "franchise": "Stray Kids",
+      "game": "MANIAC",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BLACKPINK",
+      "game": "Pink Venom",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BLACKPINK",
+      "game": "Shut Down",
+      "lang": "ko"
+    },
+    {
+      "franchise": "(G)I-DLE",
+      "game": "TOMBOY",
+      "lang": "ko"
+    },
+    {
+      "franchise": "JISOO",
+      "game": "FLOWER",
+      "lang": "ko"
+    },
+    {
+      "franchise": "IVE",
+      "game": "I AM",
+      "lang": "ko"
+    },
+    {
+      "franchise": "Jimin",
+      "game": "Like Crazy",
+      "lang": "ko"
+    },
+    {
+      "franchise": "LE SSERAFIM",
+      "game": "Perfect Night",
+      "lang": "en"
+    },
+    {
+      "franchise": "(G)I-DLE",
+      "game": "Queencard",
+      "lang": "ko"
+    },
+    {
+      "franchise": "Stray Kids",
+      "game": "S-Class",
+      "lang": "ko"
+    },
+    {
+      "franchise": "Jung Kook",
+      "game": "Seven",
+      "lang": "en"
+    },
+    {
+      "franchise": "SEVENTEEN",
+      "game": "Super",
+      "lang": "ko"
+    },
+    {
+      "franchise": "NewJeans",
+      "game": "Super Shy",
+      "lang": "ko"
+    },
+    {
+      "franchise": "ROSÉ y Bruno Mars",
+      "game": "APT.",
+      "lang": "en"
+    },
+    {
+      "franchise": "aespa",
+      "game": "Supernova",
+      "lang": "ko"
+    },
+    {
+      "franchise": "SHINee",
+      "game": "Ring Ding Dong",
+      "lang": "ko"
+    },
+    {
+      "franchise": "SHINee",
+      "game": "Lucifer",
+      "lang": "ko"
+    },
+    {
+      "franchise": "2NE1",
+      "game": "I Am the Best",
+      "lang": "ko"
+    },
+    {
+      "franchise": "2NE1",
+      "game": "FIRE",
+      "lang": "ko"
+    },
+    {
+      "franchise": "Girls' Generation",
+      "game": "I GOT A BOY",
+      "lang": "ko"
+    },
+    {
+      "franchise": "Girls' Generation",
+      "game": "The Boys",
+      "lang": "ko"
+    },
+    {
+      "franchise": "f(x)",
+      "game": "4 Walls",
+      "lang": "ko"
+    },
+    {
+      "franchise": "f(x)",
+      "game": "Electric Shock",
+      "lang": "ko"
+    },
+    {
+      "franchise": "Wonder Girls",
+      "game": "Nobody",
+      "lang": "ko"
+    },
+    {
+      "franchise": "SISTAR",
+      "game": "Touch My Body",
+      "lang": "ko"
+    },
+    {
+      "franchise": "EXID",
+      "game": "Up & Down",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BIGBANG",
+      "game": "Haru Haru",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BIGBANG",
+      "game": "LOSER",
+      "lang": "ko"
+    },
+    {
+      "franchise": "TAEYANG",
+      "game": "Eyes, Nose, Lips",
+      "lang": "ko"
+    },
+    {
+      "franchise": "G-DRAGON",
+      "game": "Crooked",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BTS",
+      "game": "Blood Sweat & Tears",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BTS",
+      "game": "MIC Drop",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BTS",
+      "game": "Fire",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BTS",
+      "game": "DOPE",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BTS",
+      "game": "Life Goes On",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BLACKPINK",
+      "game": "As If It's Your Last",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BLACKPINK",
+      "game": "Playing with Fire",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BLACKPINK",
+      "game": "Whistle",
+      "lang": "ko"
+    },
+    {
+      "franchise": "BLACKPINK",
+      "game": "Lovesick Girls",
+      "lang": "ko"
+    },
+    {
+      "franchise": "TWICE",
+      "game": "LIKEY",
+      "lang": "ko"
+    },
+    {
+      "franchise": "TWICE",
+      "game": "Feel Special",
+      "lang": "ko"
+    },
+    {
+      "franchise": "TWICE",
+      "game": "I CAN'T STOP ME",
+      "lang": "ko"
+    },
+    {
+      "franchise": "TWICE",
+      "game": "The Feels",
+      "lang": "en"
+    },
+    {
+      "franchise": "Red Velvet",
+      "game": "Bad Boy",
+      "lang": "ko"
+    },
+    {
+      "franchise": "Red Velvet",
+      "game": "Red Flavor",
+      "lang": "ko"
+    },
+    {
+      "franchise": "MAMAMOO",
+      "game": "HIP",
+      "lang": "ko"
+    },
+    {
+      "franchise": "ITZY",
+      "game": "WANNABE",
+      "lang": "ko"
+    },
+    {
+      "franchise": "ITZY",
+      "game": "LOCO",
+      "lang": "ko"
+    },
+    {
+      "franchise": "TOMORROW X TOGETHER",
+      "game": "CROWN",
+      "lang": "ko"
+    },
+    {
+      "franchise": "TOMORROW X TOGETHER",
+      "game": "Sugar Rush Ride",
+      "lang": "ko"
+    },
+    {
+      "franchise": "ENHYPEN",
+      "game": "FEVER",
+      "lang": "ko"
+    },
+    {
+      "franchise": "ENHYPEN",
+      "game": "Bite Me",
+      "lang": "ko"
+    },
+    {
+      "franchise": "SEVENTEEN",
+      "game": "HOT",
+      "lang": "ko"
+    },
+    {
+      "franchise": "SEVENTEEN",
+      "game": "Don't Wanna Cry",
+      "lang": "ko"
+    },
+    {
+      "franchise": "Stray Kids",
+      "game": "Thunderous",
+      "lang": "ko"
+    },
+    {
+      "franchise": "Stray Kids",
+      "game": "Back Door",
+      "lang": "ko"
+    },
+    {
+      "franchise": "ATEEZ",
+      "game": "BOUNCY (K-HOT CHILLI PEPPERS)",
+      "lang": "ko"
+    },
+    {
+      "franchise": "NCT 127",
+      "game": "Kick It",
+      "lang": "ko"
+    },
+    {
+      "franchise": "aespa",
+      "game": "Black Mamba",
+      "lang": "ko"
+    },
+    {
+      "franchise": "aespa",
+      "game": "Drama",
+      "lang": "ko"
+    },
+    {
+      "franchise": "LE SSERAFIM",
+      "game": "UNFORGIVEN",
+      "lang": "ko"
+    },
+    {
+      "franchise": "LE SSERAFIM",
+      "game": "EASY",
+      "lang": "ko"
+    },
+    {
+      "franchise": "NewJeans",
+      "game": "OMG",
+      "lang": "ko"
+    },
+    {
+      "franchise": "IVE",
+      "game": "After LIKE",
+      "lang": "ko"
+    },
+    {
+      "franchise": "ILLIT",
+      "game": "Magnetic",
+      "lang": "ko"
+    }
+  ]
+}
