@@ -46,7 +46,7 @@ create table if not exists public.scores (
     (modo = 'experto'       and rondas <= 10 and puntos <= aciertos * 500) or
     (modo = 'supervivencia' and rondas <= aciertos + 3 and puntos <= aciertos * 400)
   ),
-  constraint version_corta check (version is null or char_length(version) <= 12)
+  constraint version_corta check (version is null or char_length(version) <= 30)
 );
 
 -- Temas válidos. `create table if not exists` no toca una tabla que ya existe, así que la lista
@@ -55,6 +55,11 @@ create table if not exists public.scores (
 alter table public.scores drop constraint if exists tema_valido;
 alter table public.scores add constraint tema_valido
   check (tema in ('juegos', 'series', 'caricaturas', 'anime', 'disney', 'musicales', 'canciones'));
+
+-- Actualizar la constraint de la longitud de la versión en bases existentes.
+alter table public.scores drop constraint if exists version_corta;
+alter table public.scores add constraint version_corta
+  check (version is null or char_length(version) <= 30);
 
 create index if not exists scores_ranking_idx on public.scores (tema, modo, puntos desc, created_at);
 create index if not exists scores_nick_idx on public.scores (lower(nick), created_at desc);
