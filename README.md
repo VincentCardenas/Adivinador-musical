@@ -22,7 +22,7 @@ Hecho con HTML, CSS y JavaScript puro (sin frameworks ni compilación).
 | --- | --- |
 | 🎯 **Clásico** | 10 rondas, 4 opciones y 20 s por ronda. Adivinas la respuesta "amplia": la saga del videojuego, la serie, la caricatura, la película, el musical o el artista que canta. Responder rápido da más puntos y las rachas multiplican (x1.5 con 3 aciertos seguidos, x2 con 5). |
 | 🎧 **Experto** | Estilo Heardle. Empiezas con **1 segundo** de audio; cada fallo o salto desbloquea más (1 → 2 → 4 → 7 → 11 → 16 s). Hay que escribir la respuesta **exacta** (el juego, la película, la canción…); si aciertas la saga, el musical o el artista pero no la respuesta, te avisa con 🟨. En Musicales vale el título original o el de la versión en español (*Gethsemane* o *Getsemaní*). |
-| ❤️ **Supervivencia** | Opciones con la respuesta exacta (¿Halo 2 o Halo 3? ¿Toy Story o Toy Story 2?), 3 vidas y el reloj se acorta cada 3 aciertos. |
+| ❤️ **Supervivencia** | Opciones con la respuesta exacta (¿Halo 2 o Halo 3? ¿Toy Story o Toy Story 2?), 3 vidas y el reloj se acorta cada 3 aciertos. Cada 5 canciones (la 5, la 10, la 15…) hay una **ronda bonus ⭐**: si aciertas, recuperas una vida (con las 3 vidas, solo suma sus puntos) y si fallas, no pierdes ninguna. |
 | 🗂️ **Sagas** | Solo en Videojuegos. Eliges una saga (Super Mario, Zelda, Pokémon, Kirby, Donkey Kong, Sonic, Final Fantasy, Halo, Mega Man o Street Fighter) y adivinas **qué canción es** entre 4 opciones: de **toda la saga** (cada opción dice juego y canción, como *Halo 3 - One Final Effort* u *Ocarina of Time - Zelda's Lullaby*) o de **un solo juego** (solo el nombre de la canción; se puede elegir si el juego tiene al menos 5). 10 rondas (o una por canción si el juego tiene menos) y 20 s por ronda. Solo música original: nada de remakes ni remasters (Halo va de Combat Evolved a Reach). Tiene récord por saga, pero no entra al ranking global. |
 
 Además puedes filtrar por categorías, guardar récords por tema y modo, compartir tu resultado con emojis
@@ -237,6 +237,13 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **1.9.4**: **ronda bonus en Supervivencia**. Cada 5 canciones (la 5, la 10, la 15…) toca una ronda bonus ⭐: se
+  anuncia con un aviso y un sonido, el marcador y el reloj se pintan de dorado y, si aciertas, recuperas una vida (hasta
+  las 3 de inicio; si ya las tienes todas, solo suma sus puntos normales). Si la fallas o se acaba el tiempo, no pierdes
+  vida. Al compartir, las rondas bonus acertadas salen como ⭐, y los resultados dicen cuántas vidas recuperaste.
+  Como ahora se puede fallar más de 3 veces, **para el ranking hay que volver a correr `supabase/schema.sql`** (regla
+  `puntaje_posible`: en Supervivencia se aceptan 3 fallos más uno por cada ronda bonus). Mientras no se corra, las
+  partidas con más de 3 fallos no se pueden guardar y el juego lo avisa.
 - **1.9.3-exp-hotfix2**: en Caricaturas, la época "2010 en adelante" se separa en tres: **2010 a 2014** (32),
   **2015 a 2019** (28) y **2020 en adelante** (5). Quien tenía elegida "2010 en adelante" queda con las tres. Entra
   *Kick Buttowski: Medio doble de riesgo* (Disney XD, 2010) con su entrada en español latino: 296 caricaturas.

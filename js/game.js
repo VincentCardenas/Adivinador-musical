@@ -20,8 +20,9 @@
     },
     supervivencia: {
       id: 'supervivencia', name: 'Supervivencia', icon: '❤️',
-      describe: (T) => `3 vidas · ${T.survivalGoal} · el reloj se acorta mientras más aciertas.`,
-      rounds: Infinity, answer: 'game', lives: 3, timeLimit: 15, minTime: 7,
+      describe: (T) => `3 vidas · ${T.survivalGoal} · el reloj se acorta mientras más aciertas. Cada 5 canciones hay ronda bonus ⭐: si aciertas, recuperas una vida.`,
+      // bonusEvery: cada cuántas rondas toca una ronda bonus (acertarla devuelve una vida; fallarla no la quita).
+      rounds: Infinity, answer: 'game', lives: 3, timeLimit: 15, minTime: 7, bonusEvery: 5,
     },
     // Solo en Videojuegos: eliges una saga (o un juego de ella) y adivinas qué canción es.
     sagas: {
@@ -350,6 +351,11 @@
     return Math.max(mode.minTime, mode.timeLimit - Math.floor(correctSoFar / 3));
   }
 
+  /** ¿La ronda número `round` (la primera es 1) es ronda bonus? En Supervivencia: la 5, la 10, la 15… */
+  function isBonusRound(mode, round) {
+    return !!mode.bonusEvery && round > 0 && round % mode.bonusEvery === 0;
+  }
+
   function rank(mode, stats, T) {
     const ranks = (T || AM.THEMES[0]).ranks;
     if (mode.id === 'supervivencia') {
@@ -368,7 +374,7 @@
       if (h.tries <= 3) return '🟨';
       return '🟧';
     }
-    if (h.result === 'ok') return '🟩';
+    if (h.result === 'ok') return h.bonus ? '⭐' : '🟩';
     if (h.result === 'timeout') return '⬛';
     return '🟥';
   }
@@ -378,7 +384,8 @@
     const grid = history.map((h) => emojiFor(mode, h)).join('');
     const lines = [`${T.icon} ¿Qué suena? · ${T.label} — ${mode.name}`, grid];
     if (mode.id === 'supervivencia') {
-      lines.push(`Aciertos: ${stats.correct} · ${stats.score} pts · racha máx. ${stats.bestStreak}`);
+      const lives = stats.livesWon ? ` · ❤️ +${stats.livesWon}` : '';
+      lines.push(`Aciertos: ${stats.correct} · ${stats.score} pts · racha máx. ${stats.bestStreak}${lives}`);
     } else {
       lines.push(`${stats.correct}/${stats.total} · ${stats.score} pts · racha máx. ${stats.bestStreak}`);
     }
@@ -390,6 +397,6 @@
     sameArtist: sameArtist, sameVersion: sameVersion, sameAnswer: sameAnswer,
     sagaTracks: sagaTracks, sagaGames: sagaGames, sagaScope: sagaScope, sagaGameName: sagaGameName,
     franchiseOf: franchiseOf, makeChoices: makeChoices, multiplier: multiplier,
-    timedPoints: timedPoints, timeLimit: timeLimit, rank: rank, emojiFor: emojiFor, shareText: shareText,
+    timedPoints: timedPoints, timeLimit: timeLimit, isBonusRound: isBonusRound, rank: rank, emojiFor: emojiFor, shareText: shareText,
   };
 })(window.AM = window.AM || {});

@@ -500,6 +500,7 @@
       bestStreak: 0,
       correct: 0,
       lives: mode.lives || 0,
+      livesWon: 0, // vidas recuperadas en rondas bonus (Supervivencia)
       history: [],
       token: 0,
       cur: null,
@@ -536,9 +537,10 @@
     updateHUD();
   }
 
-  function updateHUD(bump) {
+  function updateHUD(bump, lifeUp) {
     const g = game;
-    $('#hud-round').textContent = isFinite(g.total) ? `${g.round}/${g.total}` : `Ronda ${g.round}`;
+    const bonus = !!(g.cur && g.cur.bonus);
+    $('#hud-round').textContent = (isFinite(g.total) ? `${g.round}/${g.total}` : `Ronda ${g.round}`) + (bonus ? ' ⭐' : '');
     const score = $('#hud-score');
     score.textContent = fmt(g.score);
     if (bump) {
@@ -548,7 +550,7 @@
     }
     if (g.mode.lives) {
       const lives = Math.max(0, g.lives);
-      $('#hud-extra').innerHTML = `<span class="hearts" aria-label="${lives} vidas">${'❤️'.repeat(lives)}${'🖤'.repeat(g.mode.lives - lives)}</span>`;
+      $('#hud-extra').innerHTML = `<span class="hearts${lifeUp ? ' is-gain' : ''}" aria-label="${lives} vidas">${'❤️'.repeat(lives)}${'🖤'.repeat(Math.max(0, g.mode.lives - lives))}</span>`;
     } else {
       $('#hud-extra').textContent = '🔥 ' + g.streak;
     }
@@ -560,6 +562,7 @@
 
   function resetRoundUI() {
     cancelAnimationFrame(timerRaf);
+    setBonusUI(false);
     $('#reveal').hidden = true;
     $('#btn-tap').hidden = true;
     $('#btn-replay').disabled = true;
@@ -628,11 +631,28 @@
       step: 0,
       attempts: [],
       choices: null,
+      bonus: AM.Logic.isBonusRound(g.mode, g.round),
     };
     updateHUD();
+    if (g.cur.bonus) announceBonus(g);
     if (g.mode.id === 'experto') renderAttempts();
     else renderOptions();
     playClip();
+  }
+
+  /* ── ronda bonus (Supervivencia): cada `bonusEvery` rondas; acertarla devuelve una vida y fallarla no la quita ── */
+
+  function setBonusUI(on) {
+    $('#screen-game').classList.toggle('is-bonus', on);
+    $('#bonus-badge').hidden = !on;
+  }
+
+  function announceBonus(g) {
+    $('#bonus-text').textContent = g.lives < g.mode.lives
+      ? 'Si aciertas, recuperas una vida ❤️ · si fallas, no pierdes nada'
+      : 'Ya tienes todas tus vidas · si fallas, no pierdes nada';
+    setBonusUI(true);
+    sfx('bonus');
   }
 
   /** Reproduce el fragmento de la ronda actual. */
@@ -788,7 +808,9 @@
     const correctValue = cur.track[g.mode.answer];
     const ok = choice === correctValue;
     const timeout = choice == null;
+    const bonus = !!cur.bonus;
     let points = 0;
+    let lifeUp = false;
 
     if (ok) {
       g.streak++;
@@ -796,14 +818,21 @@
       g.bestStreak = Math.max(g.bestStreak, g.streak);
       points = AM.Logic.timedPoints(1 - elapsed(cur) / cur.timeLimit, g.streak);
       g.score += points;
-      sfx('correct');
+      // Ronda bonus acertada: recupera una vida (hasta el máximo del modo).
+      if (bonus && g.lives < g.mode.lives) {
+        g.lives++;
+        g.livesWon++;
+        lifeUp = true;
+      }
+      sfx(lifeUp ? 'life' : 'correct');
     } else {
       g.streak = 0;
-      if (g.mode.lives) g.lives--;
+      // En la ronda bonus no se pierde vida.
+      if (g.mode.lives && !bonus) g.lives--;
       sfx(timeout ? 'timeout' : 'wrong');
     }
 
-    g.history.push({ track: cur.track, meta: cur.cand.meta, result: ok ? 'ok' : (timeout ? 'timeout' : 'bad'), points: points, guess: choice });
+    g.history.push({ track: cur.track, meta: cur.cand.meta, result: ok ? 'ok' : (timeout ? 'timeout' : 'bad'), points: points, guess: choice, bonus: bonus, lifeUp: lifeUp });
 
     $$('.option', $('#options')).forEach((b) => {
       const value = cur.choices[Number(b.dataset.i)];
@@ -814,8 +843,8 @@
     });
 
     AM.Engine.setLimit(Infinity); // que la canción siga sonando durante la revelación
-    updateHUD(ok);
-    showReveal(ok, points, { timeout: timeout, guess: choice, mult: AM.Logic.multiplier(g.streak) });
+    updateHUD(ok, lifeUp);
+    showReveal(ok, points, { timeout: timeout, guess: choice, mult: AM.Logic.multiplier(g.streak), bonus: bonus, lifeUp: lifeUp });
   }
 
   /* ── modo Experto ── */
@@ -1030,17 +1059,24 @@
 
     const head = $('#reveal-head');
     head.className = 'reveal-head ' + (ok ? 'is-ok' : 'is-bad');
+    // Ronda bonus de Supervivencia: qué pasó con las vidas.
+    let bonusNote = '';
+    if (opts.bonus) {
+      bonusNote = `<small class="bonus-note">${ok
+        ? (opts.lifeUp ? '⭐ Ronda bonus: ¡recuperaste una vida! ❤️' : '⭐ Ronda bonus: ya tenías todas tus vidas')
+        : '⭐ Ronda bonus: no pierdes vida'}</small>`;
+    }
     if (ok) {
       let extra = '';
       if (opts.mult > 1) extra = `<small>Bonus de racha x${opts.mult}</small>`;
       if (opts.tries) extra = `<small>${opts.tries === 1 ? '¡A la primera!' : `En ${opts.tries} intentos`}</small>`;
-      head.innerHTML = `¡Correcto! +${fmt(points)}${extra}`;
+      head.innerHTML = `¡Correcto! +${fmt(points)}${extra}${bonusNote}`;
     } else if (opts.timeout) {
-      head.innerHTML = '¡Se acabó el tiempo!';
+      head.innerHTML = '¡Se acabó el tiempo!' + bonusNote;
     } else if (opts.gaveUp) {
       head.innerHTML = 'Se acabaron los intentos';
     } else {
-      head.innerHTML = 'Incorrecto' + (opts.guess ? `<small>Elegiste: ${esc(opts.guess)}</small>` : '');
+      head.innerHTML = 'Incorrecto' + (opts.guess ? `<small>Elegiste: ${esc(opts.guess)}</small>` : '') + bonusNote;
     }
 
     // En Sagas la respuesta es la canción: va grande, y el juego abajo.
@@ -1118,6 +1154,7 @@
     cancelAnimationFrame(timerRaf);
     AM.Engine.stop();
     Viz.setActive(false);
+    setBonusUI(false);
 
     if (!g.history.length) {
       game = null;
@@ -1129,7 +1166,7 @@
     if (exhausted && g.mode.lives && g.lives > 0) toast('¡Escuchaste todas las pistas disponibles!', 4000);
 
     const T = g.theme;
-    const stats = { score: g.score, correct: g.correct, total: g.history.length, bestStreak: g.bestStreak };
+    const stats = { score: g.score, correct: g.correct, total: g.history.length, bestStreak: g.bestStreak, livesWon: g.livesWon };
     const prev = Records.get(g.record[0], g.record[1]);
     const isRecord = g.score > prev && g.score > 0;
     if (isRecord) Records.set(g.record[0], g.record[1], g.score);
@@ -1169,6 +1206,7 @@
           <div class="stat"><b>${stats.correct}/${stats.total}</b><span>aciertos</span></div>
           <div class="stat"><b>${pct}%</b><span>precisión</span></div>
           <div class="stat"><b>🔥 ${stats.bestStreak}</b><span>mejor racha</span></div>
+          ${g.mode.bonusEvery ? `<div class="stat"><b>❤️ +${stats.livesWon}</b><span>vidas recuperadas</span></div>` : ''}
         </div>
         <p class="share-grid" aria-label="Resumen de rondas">${grid}</p>
         <div class="results-actions">
@@ -1331,10 +1369,13 @@
       input.disabled = false;
       $('#board-save').disabled = false;
       const why = err && err.message ? err.message : 'error desconocido';
-      // Un tema nuevo necesita que la base acepte su nombre (supabase/schema.sql → tema_valido).
+      // Un tema nuevo necesita que la base acepte su nombre (supabase/schema.sql → tema_valido), y las
+      // vidas de las rondas bonus, que la base acepte más de 3 fallos en Supervivencia (→ puntaje_posible).
       msg.textContent = /tema_valido/.test(why)
         ? `El ranking global de ${AM.theme(ctx.entry.tema).label} todavía no está activado, así que tu puntaje no se pudo subir.`
-        : 'No se pudo guardar: ' + why + '. Inténtalo de nuevo.';
+        : /puntaje_posible/.test(why) && ctx.entry.modo === 'supervivencia'
+          ? 'El ranking todavía no está listo para las rondas bonus de Supervivencia, así que tu puntaje no se pudo subir.'
+          : 'No se pudo guardar: ' + why + '. Inténtalo de nuevo.';
     }
   });
 

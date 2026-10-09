@@ -39,12 +39,13 @@ create table if not exists public.scores (
     and aciertos <= rondas and racha <= aciertos
   ),
   -- Topes por modo: Clásico y Supervivencia dan como máximo 400 puntos por acierto
-  -- (200 de base × racha x2); Experto, 500. Clásico y Experto duran 10 rondas;
-  -- en Supervivencia solo puedes fallar 3 veces.
+  -- (200 de base × racha x2); Experto, 500. Clásico y Experto duran 10 rondas.
+  -- En Supervivencia puedes fallar 3 veces, más una por cada ronda bonus (1 de cada 5 rondas):
+  -- acertarla te devuelve una vida y fallarla no te la quita (desde la v1.9.4).
   constraint puntaje_posible check (
     (modo = 'clasico'       and rondas <= 10 and puntos <= aciertos * 400) or
     (modo = 'experto'       and rondas <= 10 and puntos <= aciertos * 500) or
-    (modo = 'supervivencia' and rondas <= aciertos + 3 and puntos <= aciertos * 400)
+    (modo = 'supervivencia' and rondas - aciertos <= 3 + rondas / 5 and puntos <= aciertos * 400)
   ),
   constraint version_corta check (version is null or char_length(version) <= 30)
 );
@@ -60,6 +61,15 @@ alter table public.scores add constraint tema_valido
 alter table public.scores drop constraint if exists version_corta;
 alter table public.scores add constraint version_corta
   check (version is null or char_length(version) <= 30);
+
+-- Topes de puntaje en bases existentes. Desde la v1.9.4, Supervivencia tiene rondas bonus
+-- (las rondas 5, 10, 15…) y se puede fallar más de 3 veces: hay que volver a correr este archivo.
+alter table public.scores drop constraint if exists puntaje_posible;
+alter table public.scores add constraint puntaje_posible check (
+  (modo = 'clasico'       and rondas <= 10 and puntos <= aciertos * 400) or
+  (modo = 'experto'       and rondas <= 10 and puntos <= aciertos * 500) or
+  (modo = 'supervivencia' and rondas - aciertos <= 3 + rondas / 5 and puntos <= aciertos * 400)
+);
 
 create index if not exists scores_ranking_idx on public.scores (tema, modo, puntos desc, created_at);
 create index if not exists scores_nick_idx on public.scores (lower(nick), created_at desc);

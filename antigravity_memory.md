@@ -95,6 +95,9 @@
 * **Filtros e Indexación (`js/themes.js`):**
   * Soporte para épocas temporales (`antes de 1980`, `80s`, `90s`, `00s`, `10s`, `20s`) basado en el atributo numérico `year`.
   * Filtro de idiomas (`es`, `en`, `ambos`/`todos`) que garantiza selecciones parejas y sin sesgos gracias a la paridad 100 ES / 100 EN en los géneros bilingües.
+* **Modos de juego (`js/game.js` + `js/app.js`):**
+  * Supervivencia: 3 vidas. Desde la v1.9.4, cada 5 rondas (la 5, 10, 15…) hay ronda bonus (`bonusEvery: 5`, `AM.Logic.isBonusRound`): acertarla devuelve una vida (máximo 3) y fallarla no la quita.
+  * El ranking (Supabase) valida cada puntaje con la regla `puntaje_posible` de `supabase/schema.sql` (en Supervivencia: `rondas - aciertos <= 3 + rondas / 5`). Si cambian las reglas de vidas o puntos, hay que actualizar esa regla y volver a correr el archivo en el SQL Editor de Supabase.
 
 ## Convenciones y Lecciones Aprendidas
 1. **Unicidad de Identificadores:** Todos los `id` de pista deben seguir formato kebab-case único con prefijo de tema (`song-...`, `mus-...`). Cuando existen títulos homónimos entre artistas o géneros, se incluye el identificador de artista (`song-rosa-pastel-belanova`, `mus-grease-summer-nights`).

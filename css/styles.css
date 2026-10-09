@@ -526,6 +526,12 @@ a { color: var(--cyan); }
 .hud-score.bump { animation: bump 0.4s ease; }
 @keyframes bump { 40% { transform: scale(1.25); } }
 .hearts { letter-spacing: 3px; }
+.hearts.is-gain { display: inline-block; animation: heart-gain 0.9s ease; }
+@keyframes heart-gain {
+  0% { transform: scale(1); filter: none; }
+  35% { transform: scale(1.35); filter: drop-shadow(0 0 10px rgba(255, 60, 172, 0.9)); }
+  100% { transform: scale(1); filter: none; }
+}
 
 /* ── Disco + visualizador ── */
 .stage {
@@ -599,6 +605,40 @@ a { color: var(--cyan); }
   font-family: var(--font-pixel);
   font-size: 11px;
 }
+
+/* ── Ronda bonus (Supervivencia): letrero entre el reloj y la pregunta ── */
+.bonus-banner {
+  margin: 14px auto 0;
+  max-width: 520px;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--amber);
+  background: rgba(255, 204, 51, 0.12);
+  text-align: center;
+  box-shadow: 0 0 18px rgba(255, 204, 51, 0.3);
+  animation: bonus-glow 1.6s ease-in-out infinite;
+}
+.bonus-banner[hidden] { display: none; }
+.bonus-banner b {
+  display: block;
+  color: var(--amber);
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.bonus-banner span {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+@keyframes bonus-glow {
+  50% { box-shadow: 0 0 30px rgba(255, 204, 51, 0.55); }
+}
+.screen.is-bonus .timer-fill { background: linear-gradient(90deg, var(--amber), var(--pink)); }
+.screen.is-bonus .options .option:not(.is-correct):not(.is-wrong):not(.is-dim) { border-color: rgba(255, 204, 51, 0.55); }
+.reveal-head .bonus-note { color: var(--amber); font-weight: 700; }
 
 /* ── Tiempo ── */
 .timer {
@@ -1444,4 +1484,5 @@ kbd {
   .disc { animation: none; }
   .screen.is-active, .reveal { animation: none; }
   .report-details, .done-badge { animation: none; }
+  .bonus-banner, .hearts.is-gain { animation: none; }
 }

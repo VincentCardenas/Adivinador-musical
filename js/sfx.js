@@ -54,6 +54,14 @@
     tick: () => tone(1250, 0, 0.03, { gain: 0.25 }),
     end: () => [523.25, 392, 523.25, 659.25].forEach((f, i) => tone(f, i * 0.11, 0.16, { gain: 0.55, type: 'triangle' })),
     record: () => [523.25, 659.25, 783.99, 1046.5, 783.99, 1046.5].forEach((f, i) => tone(f, i * 0.09, 0.14, { gain: 0.6 })),
+    // Empieza una ronda bonus (Supervivencia): destellos que suben.
+    bonus: () => [1046.5, 1318.5, 1568, 2093].forEach((f, i) => tone(f, i * 0.05, 0.1, { gain: 0.4, type: 'triangle' })),
+    // Ronda bonus acertada: recuperas una vida.
+    life: () => {
+      [523.25, 783.99, 1046.5].forEach((f, i) => tone(f, i * 0.07, 0.1, { gain: 0.6 }));
+      tone(1318.5, 0.21, 0.32, { gain: 0.55, type: 'triangle' });
+      tone(1567.98, 0.27, 0.3, { gain: 0.3, type: 'triangle' });
+    },
   };
 
   function play(name) {

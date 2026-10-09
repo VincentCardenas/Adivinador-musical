@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=1.9.3-exp-hotfix2">
+  <link rel="stylesheet" href="css/styles.css?v=1.9.4">
 </head>
 <body>
   <div class="bg" aria-hidden="true">
@@ -102,6 +102,10 @@
         <div class="clip-progress" id="clip-progress"></div>
       </div>
 
+      <div class="bonus-banner" id="bonus-badge" role="status" hidden>
+        <b>⭐ Ronda bonus</b>
+        <span id="bonus-text">Si aciertas, recuperas una vida ❤️ · si fallas, no pierdes nada</span>
+      </div>
       <p class="status" id="status" aria-live="polite">Cargando pista…</p>
 
       <div class="controls">
@@ -172,7 +176,7 @@
     <ul class="help-modes">
       <li><strong>🎯 Clásico:</strong> 10 rondas con 4 opciones: la saga del videojuego, la serie, la caricatura, la película, el musical o el artista que canta. Tienes 20 s; mientras más rápido aciertes, más puntos. Encadenar aciertos multiplica: x1.5 con racha de 3 y x2 con racha de 5.</li>
       <li><strong>🎧 Experto:</strong> estilo Heardle. Empiezas con solo 1 segundo de audio. Cada fallo o salto desbloquea más (1 → 2 → 4 → 7 → 11 → 16 s). Escribe la respuesta <em>exacta</em> (el juego, la película, la canción…); si atinas a la saga, al musical o al artista pero no a la respuesta, te avisamos con 🟨.</li>
-      <li><strong>❤️ Supervivencia:</strong> opciones con la respuesta exacta (¿Halo 2 o Halo 3? ¿Toy Story o Toy Story 2?), 3 vidas y el reloj se acorta cada 3 aciertos. ¿Hasta dónde llegas?</li>
+      <li><strong>❤️ Supervivencia:</strong> opciones con la respuesta exacta (¿Halo 2 o Halo 3? ¿Toy Story o Toy Story 2?), 3 vidas y el reloj se acorta cada 3 aciertos. Cada 5 canciones hay una <strong>ronda bonus ⭐</strong>: si aciertas recuperas una vida (si ya tienes las 3, solo suma puntos) y si fallas no pierdes ninguna. ¿Hasta dónde llegas?</li>
     </ul>
     <h3>Épocas, géneros y filtros</h3>
     <p class="muted">Series, caricaturas, anime, Disney y musicales se separan por época: elige solo las que quieras. Canciones se separa por género (rock, pop, rap, reggaetón, regional mexicano, baladas, electrónica, cumbia, salsa, metal y K-pop) y arriba eliges la época y el idioma. En Disney puedes incluir o quitar las películas de Pixar, y en Musicales elegir canciones en español, en inglés o de ambas.</p>
@@ -297,27 +301,27 @@
   </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <div class="version" id="app-version" aria-label="Versión de la app">v1.9.3-exp-hotfix2</div>
+  <div class="version" id="app-version" aria-label="Versión de la app">v1.9.4</div>
 
   <!-- Reproductor de YouTube oculto (solo audio para el juego) -->
   <div id="yt-host" aria-hidden="true"><div id="yt-player"></div></div>
 
-  <script src="js/config.js?v=1.9.3-exp-hotfix2" defer></script>
-  <script src="js/catalog.js?v=1.9.3-exp-hotfix2" defer></script>
-  <script src="js/catalog-series.js?v=1.9.3-exp-hotfix2" defer></script>
-  <script src="js/catalog-caricaturas.js?v=1.9.3-exp-hotfix2" defer></script>
-  <script src="js/catalog-anime.js?v=1.9.3-exp-hotfix2" defer></script>
-  <script src="js/catalog-disney.js?v=1.9.3-exp-hotfix2" defer></script>
-  <script src="js/catalog-musicales.js?v=1.9.3-exp-hotfix2" defer></script>
-  <script src="js/catalog-canciones.js?v=1.9.3-exp-hotfix2" defer></script>
-  <script src="js/catalog-sagas.js?v=1.9.3-exp-hotfix2" defer></script>
-  <script src="js/themes.js?v=1.9.3-exp-hotfix2" defer></script>
-  <script src="js/sources.js?v=1.9.3-exp-hotfix2" defer></script>
-  <script src="js/loudness.js?v=1.9.3-exp-hotfix2" defer></script>
-  <script src="js/engine.js?v=1.9.3-exp-hotfix2" defer></script>
-  <script src="js/sfx.js?v=1.9.3-exp-hotfix2" defer></script>
-  <script src="js/game.js?v=1.9.3-exp-hotfix2" defer></script>
-  <script src="js/scores.js?v=1.9.3-exp-hotfix2" defer></script>
-  <script src="js/app.js?v=1.9.3-exp-hotfix2" defer></script>
+  <script src="js/config.js?v=1.9.4" defer></script>
+  <script src="js/catalog.js?v=1.9.4" defer></script>
+  <script src="js/catalog-series.js?v=1.9.4" defer></script>
+  <script src="js/catalog-caricaturas.js?v=1.9.4" defer></script>
+  <script src="js/catalog-anime.js?v=1.9.4" defer></script>
+  <script src="js/catalog-disney.js?v=1.9.4" defer></script>
+  <script src="js/catalog-musicales.js?v=1.9.4" defer></script>
+  <script src="js/catalog-canciones.js?v=1.9.4" defer></script>
+  <script src="js/catalog-sagas.js?v=1.9.4" defer></script>
+  <script src="js/themes.js?v=1.9.4" defer></script>
+  <script src="js/sources.js?v=1.9.4" defer></script>
+  <script src="js/loudness.js?v=1.9.4" defer></script>
+  <script src="js/engine.js?v=1.9.4" defer></script>
+  <script src="js/sfx.js?v=1.9.4" defer></script>
+  <script src="js/game.js?v=1.9.4" defer></script>
+  <script src="js/scores.js?v=1.9.4" defer></script>
+  <script src="js/app.js?v=1.9.4" defer></script>
 </body>
 </html>
