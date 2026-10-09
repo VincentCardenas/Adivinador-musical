@@ -1360,6 +1360,11 @@
       input.focus();
       return;
     }
+    if (AM.Scores.isOffensive(nick)) {
+      msg.textContent = 'Ese nickname no se permite en el ranking. Escoge otro.';
+      input.focus();
+      return;
+    }
     ctx.saving = true;
     input.disabled = true;
     $('#board-save').disabled = true;
@@ -1385,6 +1390,8 @@
       // vidas de las rondas bonus, que la base acepte más de 3 fallos en Supervivencia (→ puntaje_posible).
       msg.textContent = /tema_valido/.test(why)
         ? `El ranking global de ${AM.theme(ctx.entry.tema).label} todavía no está activado, así que tu puntaje no se pudo subir.`
+        : /nick_permitido/.test(why)
+          ? 'Ese nickname no se permite en el ranking. Escoge otro.'
         : /puntaje_posible/.test(why) && ctx.entry.modo === 'supervivencia'
           ? 'El ranking todavía no está listo para las rondas bonus de Supervivencia, así que tu puntaje no se pudo subir.'
           : 'No se pudo guardar: ' + why + '. Inténtalo de nuevo.';

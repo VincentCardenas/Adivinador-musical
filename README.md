@@ -82,7 +82,11 @@ está activado.
 Qué permiten las reglas: cualquiera puede **ver** el ranking y **agregar** su puntaje, pero nadie puede
 editar ni borrar desde el juego. La base rechaza nicknames raros (de 2 a 16 letras, números, espacios,
 `.`, `_` o `-`), puntajes imposibles para cada modo y el spam (un mismo nickname no puede guardar dos
-puntajes en menos de 20 s). Si alguien pone un nickname feo, bórralo desde **Table Editor → scores**.
+puntajes en menos de 20 s). También rechaza **nicknames ofensivos** (insultos racistas, homofóbicos o de odio
+y groserías fuertes, aunque vengan con números en vez de letras o pegados a otra palabra): el juego no deja
+guardarlos ni los muestra, y la base tiene la misma regla (`nick_ofensivo` en `schema.sql`; las listas de
+[`js/scores.js`](js/scores.js) y de la base tienen que ser iguales, y `node scripts/validate-nick-filter.js`
+lo revisa). Si se cuela uno que no está en la lista, bórralo desde **Table Editor → scores** y agrégalo a las dos.
 
 Dos detalles del plan gratis de Supabase:
 
@@ -237,6 +241,14 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **1.9.5-hotfix1**: el ranking ya no acepta **nicknames ofensivos**: el juego no deja guardarlos (avisa que ese
+  nickname no se permite) ni los muestra en la tabla, y la base los rechaza aunque alguien se salte el juego
+  (regla `nick_permitido` con la función `nick_ofensivo`; al correr `schema.sql` también se borran los puntajes que
+  ya tengan uno). En la base del ranking ya quedó activa la regla de las rondas bonus de la 1.9.4, así que esos
+  puntajes de Supervivencia ya se pueden guardar. Además, en Canciones, 28 canciones a dúo que nunca encontraban
+  audio (*Under Pressure*, *One Sweet Day*, las *Bzrp Music Sessions*, varias de Calvin Harris, David Guetta y
+  Avicii…) ahora sí: Apple nunca escribe "y" en un dueto ("Queen & David Bowie", o el segundo como "feat."), así
+  que `busca()` ahora busca por el primero del crédito y acepta a cualquiera de ellos.
 - **1.9.5**: nuevo género **Country** 🪕 en Canciones, con **100 canciones en inglés**: de Hank Williams, Johnny Cash,
   Patsy Cline y Dolly Parton a Shania Twain, Carrie Underwood, Morgan Wallen, Zach Bryan, Beyoncé y Shaboozey (28 de
   antes de 1980, 12 de los 80, 16 de los 90, 16 de los 2000, 17 de los 2010 y 11 de 2020 en adelante). Todas se buscan

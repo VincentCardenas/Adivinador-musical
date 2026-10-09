@@ -16,7 +16,8 @@
     * **Cumbia:** 100 ES (Total: 100)
     * **Salsa:** 99 ES / 1 EN (Total: 100)
     * **K-pop:** 93 KO / 7 EN (Total: 100)
-    * **Country:** 100 EN (Total: 100) — desde la v1.9.5, de 1952 a 2024, todas con `busca()`. Los duetos van como "Artista y Artista" en `franchise` y `busca()` usa al artista principal (el que Apple pone primero).
+    * **Country:** 100 EN (Total: 100) — desde la v1.9.5, de 1952 a 2024, todas con `busca()`. Los duetos van como "Artista y Artista" en `franchise`.
+  * **Duetos en `busca()` (desde la v1.9.5-hotfix1):** Apple nunca escribe "y" en un crédito ("Queen & David Bowie", o el segundo como "(feat. …)" en el título). Si el artista que recibe `busca()` trae " y ", primero busca por el primero del crédito y acepta la canción de cualquiera de ellos; la búsqueda con el nombre completo queda de respaldo para grupos que sí se llaman así ("Alaska y Dinarama", "Fruko y sus Tesos"). Se puede pasar el dueto tal cual o solo el artista principal.
   * Formato estándar de registro:
     ```javascript
     {
@@ -99,6 +100,7 @@
 * **Categorías nuevas y selección guardada (`loadCats()` en `js/app.js`):** el jugador guarda sus categorías elegidas por tema (`am.catsByTheme`). Desde la v1.9.5 también se guarda `am.catsKnown` (las categorías que ya vio): una categoría nueva entra elegida solo si el jugador tenía elegidas todas las demás de ese tema. Al agregar una categoría nueva, añade su id a `AM.NEW_CATEGORIES` en su catálogo (como `song-country`), para los jugadores que vienen de antes de la 1.9.5 y aún no tienen `catsKnown`. Si una categoría se divide o cambia de id, usa `AM.CATEGORY_RENAMES`.
 * **Modos de juego (`js/game.js` + `js/app.js`):**
   * Supervivencia: 3 vidas. Desde la v1.9.4, cada 5 rondas (la 5, 10, 15…) hay ronda bonus (`bonusEvery: 5`, `AM.Logic.isBonusRound`): acertarla devuelve una vida (máximo 3) y fallarla no la quita.
+  * Nicknames ofensivos (desde la v1.9.5-hotfix1): `AM.Scores.isOffensive` en `js/scores.js` no deja guardarlos ni los muestra, y la base los rechaza con la regla `nick_permitido` (función `nick_ofensivo` en `supabase/schema.sql`). Las dos listas (PALABRAS completas y PEGADAS dentro de otra palabra) tienen que ser idénticas: `node scripts/validate-nick-filter.js` lo revisa y prueba ejemplos que deben pasar ("Computadora", "Maricarmen", "Vergara", "Kike"…).
   * El ranking (Supabase) valida cada puntaje con la regla `puntaje_posible` de `supabase/schema.sql` (en Supervivencia: `rondas - aciertos <= 3 + rondas / 5`). Si cambian las reglas de vidas o puntos, hay que actualizar esa regla y volver a correr el archivo en el SQL Editor de Supabase.
 
 ## Convenciones y Lecciones Aprendidas

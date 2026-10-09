@@ -8,7 +8,8 @@
  * Fuentes, en el orden en que se prueban: `am(id…)` es el ID fijo de una canción en Apple Music,
  * `disco(id, título)` la busca dentro de un álbum y `busca(artista, canción)` la busca en Apple filtrada
  * por artista (para Canciones, sources.js acepta ahí "(feat. …)", "(Remastered …)" y parecidos, pero
- * nunca versiones en vivo, covers ni remixes).
+ * nunca versiones en vivo, covers ni remixes). A `busca()` se le puede pasar el dueto tal cual
+ * ("Queen y David Bowie"): busca por el primero y acepta a cualquiera de los dos.
  */
 (function (AM) {
   'use strict';
@@ -17,9 +18,20 @@
   // Primero la tienda de México y, si ahí no está, la de Estados Unidos.
   const am = (...ids) => ids.flatMap((id) => [apple({ song: id, country: 'mx' }), apple({ song: id })]);
   const disco = (album, match) => [apple({ album: album, match: match, country: 'mx' }), apple({ album: album, match: match })];
+  /*
+   * Duetos: el crédito va como "Queen y David Bowie", pero Apple nunca escribe "y": pone "Queen & David Bowie"
+   * o deja al segundo en el título ("Sweet Nothing (feat. Florence Welch)"). Si el artista trae " y ", primero
+   * se busca por el primero del crédito y se acepta la canción de cualquiera de ellos; la búsqueda con el nombre
+   * completo queda de respaldo para los grupos que sí se llaman así ("Alaska y Dinarama", "Fruko y sus Tesos").
+   */
   const busca = (artista, cancion, otros) => {
-    const o = { term: artista + ' ' + cancion, artist: artista, match: [cancion].concat(otros || []) };
-    return [apple(Object.assign({ country: 'mx' }, o)), apple(o)];
+    const match = [cancion].concat(otros || []);
+    const o = { term: artista + ' ' + cancion, artist: artista, match: match };
+    const out = [apple(Object.assign({ country: 'mx' }, o)), apple(o)];
+    const partes = /\sy\s/.test(artista) ? artista.split(/\s*,\s*|\s+y\s+/).filter(Boolean) : [];
+    if (partes.length < 2) return out;
+    const d = { term: partes[0] + ' ' + cancion, artist: [artista].concat(partes), match: match };
+    return [apple(Object.assign({ country: 'mx' }, d)), apple(d)].concat(out);
   };
 
   AM.CATEGORIES.push(
