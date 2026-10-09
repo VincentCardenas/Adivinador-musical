@@ -25,9 +25,8 @@ try {
 }
 
 const categories = sandbox.AM.CATEGORIES.filter((c) => c.theme === 'caricaturas');
-const catalog = sandbox.AM.CATALOG.filter((c) =>
-  ['toon-clasicas', 'toon-80s', 'toon-90s', 'toon-00s', 'toon-10s'].includes(c.cat)
-);
+const catIds = categories.map((c) => c.id);
+const catalog = sandbox.AM.CATALOG.filter((c) => catIds.includes(c.cat));
 
 console.log(`📋 Categorías de Caricaturas: ${categories.length}`);
 console.log(`🧸 Total de caricaturas en catálogo: ${catalog.length}`);

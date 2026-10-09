@@ -40,13 +40,16 @@
   };
 
   // Categorías por tema. Las versiones anteriores guardaban solo las de videojuegos en "cats".
+  // Si una categoría se dividió (AM.CATEGORY_RENAMES, como "2010 en adelante" de Caricaturas), las nuevas quedan elegidas.
   (function loadCats() {
     const saved = Store.get('catsByTheme', null) || {};
     const legacy = Store.get('cats', null);
+    const renames = AM.CATEGORY_RENAMES || {};
     AM.THEMES.forEach((T) => {
       const all = AM.themeCategories(T.id).map((c) => c.id);
       let list = saved[T.id];
       if (!list && T.id === 'juegos' && Array.isArray(legacy)) list = legacy;
+      if (Array.isArray(list)) list = Array.from(new Set([].concat(...list.map((c) => (Array.isArray(renames[c]) ? renames[c] : [c])))));
       list = Array.isArray(list) ? list.filter((c) => all.indexOf(c) >= 0) : all.slice();
       settings.cats[T.id] = list.length ? list : all.slice();
     });

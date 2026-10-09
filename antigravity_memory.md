@@ -70,9 +70,9 @@
       }
       ```
     * Resolución de fuentes: clips oficiales de Crunchyroll y canales de animación en YouTube (`yt(id)`), complementados con previews oficiales de Apple Music (`apple({ song, country })`).
-  * `js/catalog-caricaturas.js` gestiona el catálogo de entradas de caricaturas en español latino por época (`toon-clasicas`, `toon-80s`, `toon-90s`, `toon-00s`, `toon-10s`).
-    * Conteo consolidado: **295 pistas totales** (todas en doblaje latinoamericano oficial).
-      * Distribuido en 5 épocas: Clásicas (antes de 1980), Años 80, Años 90, 2000s, 2010 en adelante.
+  * `js/catalog-caricaturas.js` gestiona el catálogo de entradas de caricaturas en español latino por época (`toon-clasicas`, `toon-80s`, `toon-90s`, `toon-00s`, `toon-1014`, `toon-1519`, `toon-20s`).
+    * Conteo consolidado: **296 pistas totales** (todas en doblaje latinoamericano oficial).
+      * Distribuido en 7 épocas: Clásicas (antes de 1980), Años 80, Años 90, 2000s, 2010 a 2014, 2015 a 2019 y 2020 en adelante (desde la v1.9.3-exp-hotfix2; antes las tres últimas eran una sola, `toon-10s`, y `AM.CATEGORY_RENAMES` + `loadCats()` en app.js pasan esa selección guardada a las tres nuevas).
     * Formato estándar de registro en Caricaturas:
       ```javascript
       {

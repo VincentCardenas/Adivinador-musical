@@ -6,7 +6,7 @@ Adivinador musical: suena un fragmento de música **oficial** y tienes que recon
 | --- | --- | --- |
 | 🎮 **Videojuegos** | La saga y el juego (Halo, Zelda, Pokémon, Elden Ring…): 281 pistas de 127 sagas y 215 juegos | Nintendo, Xbox, PlayStation, Indie, Retro, RPG, Acción, Online |
 | 📺 **Series** | La serie por su entrada o tema principal (Friends, Lost, Stranger Things, El Chavo…) | Por época: clásicas, 90s, 2000s, 2010s y 2020 en adelante |
-| 🧸 **Caricaturas** | La caricatura por su entrada, **todas en español latino**: 295 caricaturas inolvidables, desde Los Picapiedra, Don Gato, Scooby-Doo y Thundercats hasta Fenomenoide, Bob Esponja, Los Padrinos Mágicos, Ben 10, Hora de Aventura y Gravity Falls | Por época: clásicas (antes de 1980), 80s, 90s, 2000s y 2010 en adelante |
+| 🧸 **Caricaturas** | La caricatura por su entrada, **todas en español latino**: 296 caricaturas inolvidables, desde Los Picapiedra, Don Gato, Scooby-Doo y Thundercats hasta Fenomenoide, Bob Esponja, Los Padrinos Mágicos, Ben 10, Hora de Aventura y Gravity Falls | Por época: clásicas (antes de 1980), 80s, 90s, 2000s, 2010 a 2014, 2015 a 2019 y 2020 en adelante |
 | 🎌 **Anime** | El anime por su opening: 251 openings icónicos, desde Astro Boy, Mazinger Z, Caballeros del Zodiaco y Dragon Ball hasta Sailor Moon, Evangelion, Naruto, Bleach, Attack on Titan, Demon Slayer, Jujutsu Kaisen, Chainsaw Man, Frieren y Dandadan | Por época: clásicos (antes de 1990), 90s, 2000s, 2010s y 2020 en adelante |
 | 🏰 **Disney** | La película por sus canciones **en español latino** (El rey león, Frozen, Coco…) | Por época: clásicos, renacimiento, 2000s, 2010s y 2020 en adelante. Interruptor para incluir o quitar **Pixar** |
 | 🎭 **Musicales** | De qué musical es (Clásico) o qué canción es (Experto y Supervivencia): 222 canciones (200 en grabación original y 22 en español) de las obras cumbres de teatro y cine musical, siempre con su nombre original (Grease, The Phantom of the Opera, Wicked, Hamilton, Six, Guys and Dolls, Spring Awakening, Avenue Q…), o en versiones en español famosas (Timbiriche, Camilo Sesto, elenco de México, Madrid…) | Por época: clásicos, 70s y 80s, 90s y 2000s y 2010 en adelante. Selector de idioma: **español, inglés o ambos** |
@@ -237,6 +237,9 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **1.9.3-exp-hotfix2**: en Caricaturas, la época "2010 en adelante" se separa en tres: **2010 a 2014** (32),
+  **2015 a 2019** (28) y **2020 en adelante** (5). Quien tenía elegida "2010 en adelante" queda con las tres. Entra
+  *Kick Buttowski: Medio doble de riesgo* (Disney XD, 2010) con su entrada en español latino: 296 caricaturas.
 - **1.9.2**: **30 caricaturas nuevas** de Nickelodeon y Cartoon Network, 15 y 15 (de 76 a **106**). *Doug*, *CatDog*,
   *La vida moderna de Rocko*, *Chowder*, *Invasor Zim* y *Un show más* dejan de ser solo señuelo y ya tienen pista. De Nick
   llegan también *¡Aaahh!!! Monstruos*, *Rocket Power*, *Ginger*, *Zona Tiza*, *La robot adolescente*, *El Tigre*, *Los
