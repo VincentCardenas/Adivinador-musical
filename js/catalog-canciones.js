@@ -1,7 +1,7 @@
 /*
- * Catálogo: Canciones famosas (1716 pistas en 11 géneros).
+ * Catálogo: Canciones famosas (1816 pistas en 12 géneros).
  * Por género: rock, pop, rap y hip-hop, reggaetón, regional mexicano, baladas, electrónica, cumbia, salsa,
- * metal y K-pop (sin bachata). La época se elige aparte en el inicio (filtro `era` de themes.js, según `year`).
+ * metal, K-pop y country (sin bachata). La época se elige aparte en el inicio (filtro `era` de themes.js, según `year`).
  * `franchise` es el artista (respuesta del modo Clásico) y `lang` el idioma (es / en / de / ko) para el filtro
  * del inicio: con "Español" o "Inglés" solo entran esas; las de otros idiomas (coreano, alemán) suenan con
  * "Todos", y las instrumentales no llevan `lang` y entran con cualquier opción.
@@ -34,7 +34,10 @@
     { id: 'song-salsa', theme: 'canciones', label: 'Salsa', icon: '💃' },
     { id: 'song-metal', theme: 'canciones', label: 'Metal', icon: '🤘' },
     { id: 'song-kpop', theme: 'canciones', label: 'K-pop', icon: '💜' },
+    { id: 'song-country', theme: 'canciones', label: 'Country', icon: '🪕' },
   );
+  // Géneros nuevos: a quien ya tenía elegidos todos los demás le aparecen elegidos (ver loadCats en app.js).
+  AM.NEW_CATEGORIES = (AM.NEW_CATEGORIES || []).concat(['song-country']);
 
   AM.CATALOG.push(
     /* ───────────── Rock (200) ───────────── */
@@ -8627,6 +8630,507 @@
       id: 'song-magnetic-illit', cat: 'song-kpop', franchise: 'ILLIT', game: 'Magnetic',
       title: 'Magnetic', year: 2024, lang: 'ko',
       sources: busca('ILLIT', 'Magnetic'),
+    },
+    /* ───────────── Country (100) ───────────── */
+    {
+      id: 'song-your-cheatin-heart', cat: 'song-country', franchise: 'Hank Williams', game: 'Your Cheatin\' Heart',
+      title: 'Your Cheatin\' Heart', year: 1953, lang: 'en',
+      sources: busca('Hank Williams', 'Your Cheatin\' Heart'),
+    },
+    {
+      id: 'song-jambalaya-on-the-bayou', cat: 'song-country', franchise: 'Hank Williams', game: 'Jambalaya (On the Bayou)',
+      title: 'Jambalaya (On the Bayou)', year: 1952, lang: 'en',
+      sources: busca('Hank Williams', 'Jambalaya (On the Bayou)', ['Jambalaya']),
+    },
+    {
+      id: 'song-folsom-prison-blues', cat: 'song-country', franchise: 'Johnny Cash', game: 'Folsom Prison Blues',
+      title: 'Folsom Prison Blues', year: 1955, lang: 'en',
+      sources: busca('Johnny Cash', 'Folsom Prison Blues'),
+    },
+    {
+      id: 'song-i-walk-the-line', cat: 'song-country', franchise: 'Johnny Cash', game: 'I Walk the Line',
+      title: 'I Walk the Line', year: 1956, lang: 'en',
+      sources: busca('Johnny Cash', 'I Walk the Line'),
+    },
+    {
+      id: 'song-ring-of-fire', cat: 'song-country', franchise: 'Johnny Cash', game: 'Ring of Fire',
+      title: 'Ring of Fire', year: 1963, lang: 'en',
+      sources: busca('Johnny Cash', 'Ring of Fire'),
+    },
+    {
+      id: 'song-jackson', cat: 'song-country', franchise: 'Johnny Cash y June Carter', game: 'Jackson',
+      title: 'Jackson', year: 1967, lang: 'en',
+      sources: busca('Johnny Cash', 'Jackson'),
+    },
+    {
+      id: 'song-crazy', cat: 'song-country', franchise: 'Patsy Cline', game: 'Crazy',
+      title: 'Crazy', year: 1961, lang: 'en',
+      sources: busca('Patsy Cline', 'Crazy'),
+    },
+    {
+      id: 'song-el-paso', cat: 'song-country', franchise: 'Marty Robbins', game: 'El Paso',
+      title: 'El Paso', year: 1959, lang: 'en',
+      sources: busca('Marty Robbins', 'El Paso'),
+    },
+    {
+      id: 'song-big-iron', cat: 'song-country', franchise: 'Marty Robbins', game: 'Big Iron',
+      title: 'Big Iron', year: 1959, lang: 'en',
+      sources: busca('Marty Robbins', 'Big Iron'),
+    },
+    {
+      id: 'song-king-of-the-road', cat: 'song-country', franchise: 'Roger Miller', game: 'King of the Road',
+      title: 'King of the Road', year: 1965, lang: 'en',
+      sources: busca('Roger Miller', 'King of the Road'),
+    },
+    {
+      id: 'song-mama-tried', cat: 'song-country', franchise: 'Merle Haggard', game: 'Mama Tried',
+      title: 'Mama Tried', year: 1968, lang: 'en',
+      sources: busca('Merle Haggard', 'Mama Tried'),
+    },
+    {
+      id: 'song-stand-by-your-man', cat: 'song-country', franchise: 'Tammy Wynette', game: 'Stand by Your Man',
+      title: 'Stand by Your Man', year: 1968, lang: 'en',
+      sources: busca('Tammy Wynette', 'Stand by Your Man'),
+    },
+    {
+      id: 'song-wichita-lineman', cat: 'song-country', franchise: 'Glen Campbell', game: 'Wichita Lineman',
+      title: 'Wichita Lineman', year: 1968, lang: 'en',
+      sources: busca('Glen Campbell', 'Wichita Lineman'),
+    },
+    {
+      id: 'song-rhinestone-cowboy', cat: 'song-country', franchise: 'Glen Campbell', game: 'Rhinestone Cowboy',
+      title: 'Rhinestone Cowboy', year: 1975, lang: 'en',
+      sources: busca('Glen Campbell', 'Rhinestone Cowboy'),
+    },
+    {
+      id: 'song-coal-miners-daughter', cat: 'song-country', franchise: 'Loretta Lynn', game: 'Coal Miner\'s Daughter',
+      title: 'Coal Miner\'s Daughter', year: 1970, lang: 'en',
+      sources: busca('Loretta Lynn', 'Coal Miner\'s Daughter'),
+    },
+    {
+      id: 'song-rose-garden', cat: 'song-country', franchise: 'Lynn Anderson', game: 'Rose Garden',
+      title: 'Rose Garden', year: 1970, lang: 'en',
+      sources: busca('Lynn Anderson', 'Rose Garden', ['(I Never Promised You A) Rose Garden']),
+    },
+    {
+      id: 'song-take-me-home-country-roads', cat: 'song-country', franchise: 'John Denver', game: 'Take Me Home, Country Roads',
+      title: 'Take Me Home, Country Roads', year: 1971, lang: 'en',
+      sources: busca('John Denver', 'Take Me Home, Country Roads'),
+    },
+    {
+      id: 'song-jolene', cat: 'song-country', franchise: 'Dolly Parton', game: 'Jolene',
+      title: 'Jolene', year: 1973, lang: 'en',
+      sources: busca('Dolly Parton', 'Jolene'),
+    },
+    {
+      id: 'song-delta-dawn', cat: 'song-country', franchise: 'Tanya Tucker', game: 'Delta Dawn',
+      title: 'Delta Dawn', year: 1972, lang: 'en',
+      sources: busca('Tanya Tucker', 'Delta Dawn'),
+    },
+    {
+      id: 'song-the-most-beautiful-girl', cat: 'song-country', franchise: 'Charlie Rich', game: 'The Most Beautiful Girl',
+      title: 'The Most Beautiful Girl', year: 1973, lang: 'en',
+      sources: busca('Charlie Rich', 'The Most Beautiful Girl'),
+    },
+    {
+      id: 'song-before-the-next-teardrop-falls', cat: 'song-country', franchise: 'Freddy Fender', game: 'Before the Next Teardrop Falls',
+      title: 'Before the Next Teardrop Falls', year: 1975, lang: 'en',
+      sources: busca('Freddy Fender', 'Before the Next Teardrop Falls'),
+    },
+    {
+      id: 'song-blue-eyes-crying-in-the-rain', cat: 'song-country', franchise: 'Willie Nelson', game: 'Blue Eyes Crying in the Rain',
+      title: 'Blue Eyes Crying in the Rain', year: 1975, lang: 'en',
+      sources: busca('Willie Nelson', 'Blue Eyes Crying in the Rain'),
+    },
+    {
+      id: 'song-convoy', cat: 'song-country', franchise: 'C.W. McCall', game: 'Convoy',
+      title: 'Convoy', year: 1975, lang: 'en',
+      sources: busca('C.W. McCall', 'Convoy'),
+    },
+    {
+      id: 'song-east-bound-and-down', cat: 'song-country', franchise: 'Jerry Reed', game: 'East Bound and Down',
+      title: 'East Bound and Down', year: 1977, lang: 'en',
+      sources: busca('Jerry Reed', 'East Bound and Down', ['Eastbound and Down']),
+    },
+    {
+      id: 'song-luckenbach-texas', cat: 'song-country', franchise: 'Waylon Jennings', game: 'Luckenbach, Texas',
+      title: 'Luckenbach, Texas', year: 1977, lang: 'en',
+      sources: busca('Waylon Jennings', 'Luckenbach, Texas', ['Luckenbach, Texas (Back to the Basics of Love)']),
+    },
+    {
+      id: 'song-mammas-dont-let-your-babies-grow-up-to-be-cowboys', cat: 'song-country', franchise: 'Waylon Jennings y Willie Nelson', game: 'Mammas Don\'t Let Your Babies Grow Up to Be Cowboys',
+      title: 'Mammas Don\'t Let Your Babies Grow Up to Be Cowboys', year: 1978, lang: 'en',
+      sources: busca('Waylon Jennings', 'Mammas Don\'t Let Your Babies Grow Up to Be Cowboys', ['Mamas Don\'t Let Your Babies Grow Up to Be Cowboys']),
+    },
+    {
+      id: 'song-the-gambler', cat: 'song-country', franchise: 'Kenny Rogers', game: 'The Gambler',
+      title: 'The Gambler', year: 1978, lang: 'en',
+      sources: busca('Kenny Rogers', 'The Gambler'),
+    },
+    {
+      id: 'song-the-devil-went-down-to-georgia', cat: 'song-country', franchise: 'The Charlie Daniels Band', game: 'The Devil Went Down to Georgia',
+      title: 'The Devil Went Down to Georgia', year: 1979, lang: 'en',
+      sources: busca('Charlie Daniels', 'The Devil Went Down to Georgia'),
+    },
+    {
+      id: 'song-9-to-5', cat: 'song-country', franchise: 'Dolly Parton', game: '9 to 5',
+      title: '9 to 5', year: 1980, lang: 'en',
+      sources: busca('Dolly Parton', '9 to 5'),
+    },
+    {
+      id: 'song-on-the-road-again', cat: 'song-country', franchise: 'Willie Nelson', game: 'On the Road Again',
+      title: 'On the Road Again', year: 1980, lang: 'en',
+      sources: busca('Willie Nelson', 'On the Road Again'),
+    },
+    {
+      id: 'song-he-stopped-loving-her-today', cat: 'song-country', franchise: 'George Jones', game: 'He Stopped Loving Her Today',
+      title: 'He Stopped Loving Her Today', year: 1980, lang: 'en',
+      sources: busca('George Jones', 'He Stopped Loving Her Today'),
+    },
+    {
+      id: 'song-a-country-boy-can-survive', cat: 'song-country', franchise: 'Hank Williams Jr.', game: 'A Country Boy Can Survive',
+      title: 'A Country Boy Can Survive', year: 1981, lang: 'en',
+      sources: busca('Hank Williams Jr.', 'A Country Boy Can Survive'),
+    },
+    {
+      id: 'song-elvira', cat: 'song-country', franchise: 'The Oak Ridge Boys', game: 'Elvira',
+      title: 'Elvira', year: 1981, lang: 'en',
+      sources: busca('Oak Ridge Boys', 'Elvira'),
+    },
+    {
+      id: 'song-mountain-music', cat: 'song-country', franchise: 'Alabama', game: 'Mountain Music',
+      title: 'Mountain Music', year: 1982, lang: 'en',
+      sources: busca('Alabama', 'Mountain Music'),
+    },
+    {
+      id: 'song-amarillo-by-morning', cat: 'song-country', franchise: 'George Strait', game: 'Amarillo by Morning',
+      title: 'Amarillo by Morning', year: 1982, lang: 'en',
+      sources: busca('George Strait', 'Amarillo by Morning'),
+    },
+    {
+      id: 'song-always-on-my-mind', cat: 'song-country', franchise: 'Willie Nelson', game: 'Always on My Mind',
+      title: 'Always on My Mind', year: 1982, lang: 'en',
+      sources: busca('Willie Nelson', 'Always on My Mind'),
+    },
+    {
+      id: 'song-islands-in-the-stream', cat: 'song-country', franchise: 'Kenny Rogers y Dolly Parton', game: 'Islands in the Stream',
+      title: 'Islands in the Stream', year: 1983, lang: 'en',
+      sources: busca('Kenny Rogers', 'Islands in the Stream'),
+    },
+    {
+      id: 'song-guitars-cadillacs', cat: 'song-country', franchise: 'Dwight Yoakam', game: 'Guitars, Cadillacs',
+      title: 'Guitars, Cadillacs', year: 1986, lang: 'en',
+      sources: busca('Dwight Yoakam', 'Guitars, Cadillacs'),
+    },
+    {
+      id: 'song-forever-and-ever-amen', cat: 'song-country', franchise: 'Randy Travis', game: 'Forever and Ever, Amen',
+      title: 'Forever and Ever, Amen', year: 1987, lang: 'en',
+      sources: busca('Randy Travis', 'Forever and Ever, Amen'),
+    },
+    {
+      id: 'song-fishin-in-the-dark', cat: 'song-country', franchise: 'Nitty Gritty Dirt Band', game: 'Fishin\' in the Dark',
+      title: 'Fishin\' in the Dark', year: 1987, lang: 'en',
+      sources: busca('Nitty Gritty Dirt Band', 'Fishin\' in the Dark'),
+    },
+    {
+      id: 'song-achy-breaky-heart', cat: 'song-country', franchise: 'Billy Ray Cyrus', game: 'Achy Breaky Heart',
+      title: 'Achy Breaky Heart', year: 1992, lang: 'en',
+      sources: busca('Billy Ray Cyrus', 'Achy Breaky Heart'),
+    },
+    {
+      id: 'song-boot-scootin-boogie', cat: 'song-country', franchise: 'Brooks & Dunn', game: 'Boot Scootin\' Boogie',
+      title: 'Boot Scootin\' Boogie', year: 1992, lang: 'en',
+      sources: busca('Brooks & Dunn', 'Boot Scootin\' Boogie'),
+    },
+    {
+      id: 'song-neon-moon', cat: 'song-country', franchise: 'Brooks & Dunn', game: 'Neon Moon',
+      title: 'Neon Moon', year: 1992, lang: 'en',
+      sources: busca('Brooks & Dunn', 'Neon Moon'),
+    },
+    {
+      id: 'song-chattahoochee', cat: 'song-country', franchise: 'Alan Jackson', game: 'Chattahoochee',
+      title: 'Chattahoochee', year: 1993, lang: 'en',
+      sources: busca('Alan Jackson', 'Chattahoochee'),
+    },
+    {
+      id: 'song-shouldve-been-a-cowboy', cat: 'song-country', franchise: 'Toby Keith', game: 'Should\'ve Been a Cowboy',
+      title: 'Should\'ve Been a Cowboy', year: 1993, lang: 'en',
+      sources: busca('Toby Keith', 'Should\'ve Been a Cowboy'),
+    },
+    {
+      id: 'song-independence-day', cat: 'song-country', franchise: 'Martina McBride', game: 'Independence Day',
+      title: 'Independence Day', year: 1994, lang: 'en',
+      sources: busca('Martina McBride', 'Independence Day'),
+    },
+    {
+      id: 'song-check-yes-or-no', cat: 'song-country', franchise: 'George Strait', game: 'Check Yes or No',
+      title: 'Check Yes or No', year: 1995, lang: 'en',
+      sources: busca('George Strait', 'Check Yes or No'),
+    },
+    {
+      id: 'song-any-man-of-mine', cat: 'song-country', franchise: 'Shania Twain', game: 'Any Man of Mine',
+      title: 'Any Man of Mine', year: 1995, lang: 'en',
+      sources: busca('Shania Twain', 'Any Man of Mine'),
+    },
+    {
+      id: 'song-strawberry-wine', cat: 'song-country', franchise: 'Deana Carter', game: 'Strawberry Wine',
+      title: 'Strawberry Wine', year: 1996, lang: 'en',
+      sources: busca('Deana Carter', 'Strawberry Wine'),
+    },
+    {
+      id: 'song-how-do-i-live', cat: 'song-country', franchise: 'LeAnn Rimes', game: 'How Do I Live',
+      title: 'How Do I Live', year: 1997, lang: 'en',
+      sources: busca('LeAnn Rimes', 'How Do I Live'),
+    },
+    {
+      id: 'song-man-i-feel-like-a-woman', cat: 'song-country', franchise: 'Shania Twain', game: 'Man! I Feel Like a Woman!',
+      title: 'Man! I Feel Like a Woman!', year: 1997, lang: 'en',
+      sources: busca('Shania Twain', 'Man! I Feel Like a Woman!'),
+    },
+    {
+      id: 'song-youre-still-the-one', cat: 'song-country', franchise: 'Shania Twain', game: 'You\'re Still the One',
+      title: 'You\'re Still the One', year: 1997, lang: 'en',
+      sources: busca('Shania Twain', 'You\'re Still the One'),
+    },
+    {
+      id: 'song-this-kiss', cat: 'song-country', franchise: 'Faith Hill', game: 'This Kiss',
+      title: 'This Kiss', year: 1998, lang: 'en',
+      sources: busca('Faith Hill', 'This Kiss'),
+    },
+    {
+      id: 'song-wide-open-spaces', cat: 'song-country', franchise: 'The Chicks', game: 'Wide Open Spaces',
+      title: 'Wide Open Spaces', year: 1998, lang: 'en',
+      sources: busca('The Chicks', 'Wide Open Spaces'),
+    },
+    {
+      id: 'song-she-thinks-my-tractors-sexy', cat: 'song-country', franchise: 'Kenny Chesney', game: 'She Thinks My Tractor\'s Sexy',
+      title: 'She Thinks My Tractor\'s Sexy', year: 1999, lang: 'en',
+      sources: busca('Kenny Chesney', 'She Thinks My Tractor\'s Sexy'),
+    },
+    {
+      id: 'song-how-do-you-like-me-now', cat: 'song-country', franchise: 'Toby Keith', game: 'How Do You Like Me Now?!',
+      title: 'How Do You Like Me Now?!', year: 1999, lang: 'en',
+      sources: busca('Toby Keith', 'How Do You Like Me Now?!'),
+    },
+    {
+      id: 'song-i-hope-you-dance', cat: 'song-country', franchise: 'Lee Ann Womack', game: 'I Hope You Dance',
+      title: 'I Hope You Dance', year: 2000, lang: 'en',
+      sources: busca('Lee Ann Womack', 'I Hope You Dance'),
+    },
+    {
+      id: 'song-goodbye-earl', cat: 'song-country', franchise: 'The Chicks', game: 'Goodbye Earl',
+      title: 'Goodbye Earl', year: 2000, lang: 'en',
+      sources: busca('The Chicks', 'Goodbye Earl'),
+    },
+    {
+      id: 'song-austin', cat: 'song-country', franchise: 'Blake Shelton', game: 'Austin',
+      title: 'Austin', year: 2001, lang: 'en',
+      sources: busca('Blake Shelton', 'Austin'),
+    },
+    {
+      id: 'song-its-five-oclock-somewhere', cat: 'song-country', franchise: 'Alan Jackson y Jimmy Buffett', game: 'It\'s Five O\'Clock Somewhere',
+      title: 'It\'s Five O\'Clock Somewhere', year: 2003, lang: 'en',
+      sources: busca('Alan Jackson', 'It\'s Five O\'Clock Somewhere'),
+    },
+    {
+      id: 'song-whiskey-lullaby', cat: 'song-country', franchise: 'Brad Paisley y Alison Krauss', game: 'Whiskey Lullaby',
+      title: 'Whiskey Lullaby', year: 2003, lang: 'en',
+      sources: busca('Brad Paisley', 'Whiskey Lullaby'),
+    },
+    {
+      id: 'song-redneck-woman', cat: 'song-country', franchise: 'Gretchen Wilson', game: 'Redneck Woman',
+      title: 'Redneck Woman', year: 2004, lang: 'en',
+      sources: busca('Gretchen Wilson', 'Redneck Woman'),
+    },
+    {
+      id: 'song-bless-the-broken-road', cat: 'song-country', franchise: 'Rascal Flatts', game: 'Bless the Broken Road',
+      title: 'Bless the Broken Road', year: 2004, lang: 'en',
+      sources: busca('Rascal Flatts', 'Bless the Broken Road'),
+    },
+    {
+      id: 'song-jesus-take-the-wheel', cat: 'song-country', franchise: 'Carrie Underwood', game: 'Jesus, Take the Wheel',
+      title: 'Jesus, Take the Wheel', year: 2005, lang: 'en',
+      sources: busca('Carrie Underwood', 'Jesus, Take the Wheel'),
+    },
+    {
+      id: 'song-before-he-cheats', cat: 'song-country', franchise: 'Carrie Underwood', game: 'Before He Cheats',
+      title: 'Before He Cheats', year: 2005, lang: 'en',
+      sources: busca('Carrie Underwood', 'Before He Cheats'),
+    },
+    {
+      id: 'song-our-song', cat: 'song-country', franchise: 'Taylor Swift', game: 'Our Song',
+      title: 'Our Song', year: 2006, lang: 'en',
+      sources: busca('Taylor Swift', 'Our Song'),
+    },
+    {
+      id: 'song-teardrops-on-my-guitar', cat: 'song-country', franchise: 'Taylor Swift', game: 'Teardrops on My Guitar',
+      title: 'Teardrops on My Guitar', year: 2006, lang: 'en',
+      sources: busca('Taylor Swift', 'Teardrops on My Guitar'),
+    },
+    {
+      id: 'song-gunpowder-and-lead', cat: 'song-country', franchise: 'Miranda Lambert', game: 'Gunpowder & Lead',
+      title: 'Gunpowder & Lead', year: 2007, lang: 'en',
+      sources: busca('Miranda Lambert', 'Gunpowder & Lead'),
+    },
+    {
+      id: 'song-chicken-fried', cat: 'song-country', franchise: 'Zac Brown Band', game: 'Chicken Fried',
+      title: 'Chicken Fried', year: 2008, lang: 'en',
+      sources: busca('Zac Brown Band', 'Chicken Fried'),
+    },
+    {
+      id: 'song-big-green-tractor', cat: 'song-country', franchise: 'Jason Aldean', game: 'Big Green Tractor',
+      title: 'Big Green Tractor', year: 2009, lang: 'en',
+      sources: busca('Jason Aldean', 'Big Green Tractor'),
+    },
+    {
+      id: 'song-need-you-now', cat: 'song-country', franchise: 'Lady A', game: 'Need You Now',
+      title: 'Need You Now', year: 2009, lang: 'en',
+      sources: busca('Lady A', 'Need You Now'),
+    },
+    {
+      id: 'song-the-house-that-built-me', cat: 'song-country', franchise: 'Miranda Lambert', game: 'The House That Built Me',
+      title: 'The House That Built Me', year: 2009, lang: 'en',
+      sources: busca('Miranda Lambert', 'The House That Built Me'),
+    },
+    {
+      id: 'song-stuck-like-glue', cat: 'song-country', franchise: 'Sugarland', game: 'Stuck Like Glue',
+      title: 'Stuck Like Glue', year: 2010, lang: 'en',
+      sources: busca('Sugarland', 'Stuck Like Glue'),
+    },
+    {
+      id: 'song-red-solo-cup', cat: 'song-country', franchise: 'Toby Keith', game: 'Red Solo Cup',
+      title: 'Red Solo Cup', year: 2011, lang: 'en',
+      sources: busca('Toby Keith', 'Red Solo Cup'),
+    },
+    {
+      id: 'song-country-girl-shake-it-for-me', cat: 'song-country', franchise: 'Luke Bryan', game: 'Country Girl (Shake It for Me)',
+      title: 'Country Girl (Shake It for Me)', year: 2011, lang: 'en',
+      sources: busca('Luke Bryan', 'Country Girl (Shake It for Me)'),
+    },
+    {
+      id: 'song-springsteen', cat: 'song-country', franchise: 'Eric Church', game: 'Springsteen',
+      title: 'Springsteen', year: 2011, lang: 'en',
+      sources: busca('Eric Church', 'Springsteen'),
+    },
+    {
+      id: 'song-cruise', cat: 'song-country', franchise: 'Florida Georgia Line', game: 'Cruise',
+      title: 'Cruise', year: 2012, lang: 'en',
+      sources: busca('Florida Georgia Line', 'Cruise'),
+    },
+    {
+      id: 'song-wagon-wheel', cat: 'song-country', franchise: 'Darius Rucker', game: 'Wagon Wheel',
+      title: 'Wagon Wheel', year: 2013, lang: 'en',
+      sources: busca('Darius Rucker', 'Wagon Wheel'),
+    },
+    {
+      id: 'song-follow-your-arrow', cat: 'song-country', franchise: 'Kacey Musgraves', game: 'Follow Your Arrow',
+      title: 'Follow Your Arrow', year: 2013, lang: 'en',
+      sources: busca('Kacey Musgraves', 'Follow Your Arrow'),
+    },
+    {
+      id: 'song-girl-crush', cat: 'song-country', franchise: 'Little Big Town', game: 'Girl Crush',
+      title: 'Girl Crush', year: 2014, lang: 'en',
+      sources: busca('Little Big Town', 'Girl Crush'),
+    },
+    {
+      id: 'song-tennessee-whiskey', cat: 'song-country', franchise: 'Chris Stapleton', game: 'Tennessee Whiskey',
+      title: 'Tennessee Whiskey', year: 2015, lang: 'en',
+      sources: busca('Chris Stapleton', 'Tennessee Whiskey'),
+    },
+    {
+      id: 'song-die-a-happy-man', cat: 'song-country', franchise: 'Thomas Rhett', game: 'Die a Happy Man',
+      title: 'Die a Happy Man', year: 2015, lang: 'en',
+      sources: busca('Thomas Rhett', 'Die a Happy Man'),
+    },
+    {
+      id: 'song-humble-and-kind', cat: 'song-country', franchise: 'Tim McGraw', game: 'Humble and Kind',
+      title: 'Humble and Kind', year: 2015, lang: 'en',
+      sources: busca('Tim McGraw', 'Humble and Kind'),
+    },
+    {
+      id: 'song-body-like-a-back-road', cat: 'song-country', franchise: 'Sam Hunt', game: 'Body Like a Back Road',
+      title: 'Body Like a Back Road', year: 2017, lang: 'en',
+      sources: busca('Sam Hunt', 'Body Like a Back Road'),
+    },
+    {
+      id: 'song-meant-to-be', cat: 'song-country', franchise: 'Bebe Rexha y Florida Georgia Line', game: 'Meant to Be',
+      title: 'Meant to Be', year: 2017, lang: 'en',
+      sources: busca('Bebe Rexha', 'Meant to Be'),
+    },
+    {
+      id: 'song-beautiful-crazy', cat: 'song-country', franchise: 'Luke Combs', game: 'Beautiful Crazy',
+      title: 'Beautiful Crazy', year: 2018, lang: 'en',
+      sources: busca('Luke Combs', 'Beautiful Crazy'),
+    },
+    {
+      id: 'song-whiskey-glasses', cat: 'song-country', franchise: 'Morgan Wallen', game: 'Whiskey Glasses',
+      title: 'Whiskey Glasses', year: 2018, lang: 'en',
+      sources: busca('Morgan Wallen', 'Whiskey Glasses'),
+    },
+    {
+      id: 'song-10-000-hours', cat: 'song-country', franchise: 'Dan + Shay y Justin Bieber', game: '10,000 Hours',
+      title: '10,000 Hours', year: 2019, lang: 'en',
+      sources: busca('Dan + Shay', '10,000 Hours'),
+    },
+    {
+      id: 'song-the-bones', cat: 'song-country', franchise: 'Maren Morris', game: 'The Bones',
+      title: 'The Bones', year: 2019, lang: 'en',
+      sources: busca('Maren Morris', 'The Bones'),
+    },
+    {
+      id: 'song-fancy-like', cat: 'song-country', franchise: 'Walker Hayes', game: 'Fancy Like',
+      title: 'Fancy Like', year: 2021, lang: 'en',
+      sources: busca('Walker Hayes', 'Fancy Like'),
+    },
+    {
+      id: 'song-buy-dirt', cat: 'song-country', franchise: 'Jordan Davis y Luke Bryan', game: 'Buy Dirt',
+      title: 'Buy Dirt', year: 2021, lang: 'en',
+      sources: busca('Jordan Davis', 'Buy Dirt'),
+    },
+    {
+      id: 'song-something-in-the-orange', cat: 'song-country', franchise: 'Zach Bryan', game: 'Something in the Orange',
+      title: 'Something in the Orange', year: 2022, lang: 'en',
+      sources: busca('Zach Bryan', 'Something in the Orange'),
+    },
+    {
+      id: 'song-heart-like-a-truck', cat: 'song-country', franchise: 'Lainey Wilson', game: 'Heart Like a Truck',
+      title: 'Heart Like a Truck', year: 2022, lang: 'en',
+      sources: busca('Lainey Wilson', 'Heart Like a Truck'),
+    },
+    {
+      id: 'song-last-night', cat: 'song-country', franchise: 'Morgan Wallen', game: 'Last Night',
+      title: 'Last Night', year: 2023, lang: 'en',
+      sources: busca('Morgan Wallen', 'Last Night'),
+    },
+    {
+      id: 'song-fast-car', cat: 'song-country', franchise: 'Luke Combs', game: 'Fast Car',
+      title: 'Fast Car', year: 2023, lang: 'en',
+      sources: busca('Luke Combs', 'Fast Car'),
+    },
+    {
+      id: 'song-i-remember-everything', cat: 'song-country', franchise: 'Zach Bryan y Kacey Musgraves', game: 'I Remember Everything',
+      title: 'I Remember Everything', year: 2023, lang: 'en',
+      sources: busca('Zach Bryan', 'I Remember Everything'),
+    },
+    {
+      id: 'song-need-a-favor', cat: 'song-country', franchise: 'Jelly Roll', game: 'Need a Favor',
+      title: 'Need a Favor', year: 2023, lang: 'en',
+      sources: busca('Jelly Roll', 'Need a Favor'),
+    },
+    {
+      id: 'song-texas-hold-em', cat: 'song-country', franchise: 'Beyoncé', game: 'Texas Hold \'Em',
+      title: 'Texas Hold \'Em', year: 2024, lang: 'en',
+      sources: busca('Beyoncé', 'Texas Hold \'Em'),
+    },
+    {
+      id: 'song-a-bar-song-tipsy', cat: 'song-country', franchise: 'Shaboozey', game: 'A Bar Song (Tipsy)',
+      title: 'A Bar Song (Tipsy)', year: 2024, lang: 'en',
+      sources: busca('Shaboozey', 'A Bar Song (Tipsy)'),
+    },
+    {
+      id: 'song-i-had-some-help', cat: 'song-country', franchise: 'Post Malone y Morgan Wallen', game: 'I Had Some Help',
+      title: 'I Had Some Help', year: 2024, lang: 'en',
+      sources: busca('Post Malone', 'I Had Some Help'),
     },
   );
 

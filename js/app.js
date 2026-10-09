@@ -41,18 +41,30 @@
 
   // Categorías por tema. Las versiones anteriores guardaban solo las de videojuegos en "cats".
   // Si una categoría se dividió (AM.CATEGORY_RENAMES, como "2010 en adelante" de Caricaturas), las nuevas quedan elegidas.
+  // Una categoría que el jugador no había visto (como el género Country) entra elegida si tenía elegidas todas
+  // las demás de ese tema, para que quien jugaba con "Todo" no la encuentre apagada. "catsKnown" guarda las que ya vio;
+  // antes de la 1.9.5 no se guardaba, así que se asume que conocía todas menos las de AM.NEW_CATEGORIES.
   (function loadCats() {
     const saved = Store.get('catsByTheme', null) || {};
     const legacy = Store.get('cats', null);
     const renames = AM.CATEGORY_RENAMES || {};
+    const expand = (list) => Array.from(new Set([].concat(...list.map((c) => (Array.isArray(renames[c]) ? renames[c] : [c])))));
+    const ids = AM.CATEGORIES.map((c) => c.id);
+    const knownList = Store.get('catsKnown', null);
+    const known = new Set(expand(Array.isArray(knownList) ? knownList : ids.filter((c) => (AM.NEW_CATEGORIES || []).indexOf(c) < 0)));
+    let added = false;
     AM.THEMES.forEach((T) => {
       const all = AM.themeCategories(T.id).map((c) => c.id);
       let list = saved[T.id];
       if (!list && T.id === 'juegos' && Array.isArray(legacy)) list = legacy;
-      if (Array.isArray(list)) list = Array.from(new Set([].concat(...list.map((c) => (Array.isArray(renames[c]) ? renames[c] : [c])))));
+      if (Array.isArray(list)) list = expand(list);
       list = Array.isArray(list) ? list.filter((c) => all.indexOf(c) >= 0) : all.slice();
+      const fresh = all.filter((c) => !known.has(c) && list.indexOf(c) < 0);
+      if (fresh.length && all.every((c) => fresh.indexOf(c) >= 0 || list.indexOf(c) >= 0)) { list = list.concat(fresh); added = true; }
       settings.cats[T.id] = list.length ? list : all.slice();
     });
+    Store.set('catsKnown', ids);
+    if (added) Store.set('catsByTheme', settings.cats);
   })();
   if (!AM.modeAvailable(settings.mode, settings.theme)) settings.mode = 'clasico';
   if (!AM.SAGAS.some((x) => x.id === settings.saga.id)) settings.saga = { id: AM.SAGAS[0].id, game: '' };

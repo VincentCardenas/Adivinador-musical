@@ -10,7 +10,7 @@ Adivinador musical: suena un fragmento de música **oficial** y tienes que recon
 | 🎌 **Anime** | El anime por su opening: 251 openings icónicos, desde Astro Boy, Mazinger Z, Caballeros del Zodiaco y Dragon Ball hasta Sailor Moon, Evangelion, Naruto, Bleach, Attack on Titan, Demon Slayer, Jujutsu Kaisen, Chainsaw Man, Frieren y Dandadan | Por época: clásicos (antes de 1990), 90s, 2000s, 2010s y 2020 en adelante |
 | 🏰 **Disney** | La película por sus canciones **en español latino** (El rey león, Frozen, Coco…) | Por época: clásicos, renacimiento, 2000s, 2010s y 2020 en adelante. Interruptor para incluir o quitar **Pixar** |
 | 🎭 **Musicales** | De qué musical es (Clásico) o qué canción es (Experto y Supervivencia): 222 canciones (200 en grabación original y 22 en español) de las obras cumbres de teatro y cine musical, siempre con su nombre original (Grease, The Phantom of the Opera, Wicked, Hamilton, Six, Guys and Dolls, Spring Awakening, Avenue Q…), o en versiones en español famosas (Timbiriche, Camilo Sesto, elenco de México, Madrid…) | Por época: clásicos, 70s y 80s, 90s y 2000s y 2010 en adelante. Selector de idioma: **español, inglés o ambos** |
-| 🎤 **Canciones** | Quién la canta (Clásico) o qué canción es (Experto y Supervivencia): 1,716 canciones famosas, de Pedro Infante y Queen a Bad Bunny, Peso Pluma y BLACKPINK | Por género: rock, pop, rap y hip-hop, baladas, electrónica y metal (con **100 en español y 100 en inglés** cada uno); regional mexicano, reggaetón, cumbia y salsa (**100 en español** cada uno); y **K-pop** (100 en coreano e internacional). Selector de época (antes de 1980, 80s, 90s, 2000s, 2010s y 2020s) y de idioma: **español, inglés o todos** |
+| 🎤 **Canciones** | Quién la canta (Clásico) o qué canción es (Experto y Supervivencia): 1,816 canciones famosas, de Pedro Infante, Queen y Johnny Cash a Bad Bunny, Peso Pluma y BLACKPINK | Por género: rock, pop, rap y hip-hop, baladas, electrónica y metal (con **100 en español y 100 en inglés** cada uno); regional mexicano, reggaetón, cumbia y salsa (**100 en español** cada uno); **K-pop** (100 en coreano e internacional) y **country** (100 en inglés). Selector de época (antes de 1980, 80s, 90s, 2000s, 2010s y 2020s) y de idioma: **español, inglés o todos** |
 
 Al terminar una partida puedes guardar tu puntaje con un **nickname** en el **ranking global** (uno por tema y modo).
 
@@ -183,7 +183,7 @@ para *Grease*) van en `AM.FRANCHISE_AKA`, al principio de [`js/catalog-musicales
 con ellos el buscador de Experto lista sus canciones, pero nunca se muestran como respuesta. Las pistas de un DLC o expansión van con el nombre del juego base y el del DLC en
 `aka` (como *Wrath of the Lich King* en *World of Warcraft*). En los catálogos nuevos cada categoría lleva
 `theme` para saber a qué tema pertenece. En Canciones, `cat` es el género (`song-rock`, `song-pop`, `song-rap`, `song-reggaeton`,
-`song-regional`, `song-baladas`, `song-electronica`, `song-cumbia`, `song-salsa`, `song-metal` o `song-kpop`) y `year` decide en qué época sale.
+`song-regional`, `song-baladas`, `song-electronica`, `song-cumbia`, `song-salsa`, `song-metal`, `song-kpop` o `song-country`) y `year` decide en qué época sale.
 
 Tipos de fuente (se prueban **en el orden en que aparecen**):
 
@@ -237,6 +237,14 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **1.9.5**: nuevo género **Country** 🪕 en Canciones, con **100 canciones en inglés**: de Hank Williams, Johnny Cash,
+  Patsy Cline y Dolly Parton a Shania Twain, Carrie Underwood, Morgan Wallen, Zach Bryan, Beyoncé y Shaboozey (28 de
+  antes de 1980, 12 de los 80, 16 de los 90, 16 de los 2000, 17 de los 2010 y 11 de 2020 en adelante). Todas se buscan
+  en Apple Music por artista con `busca()`, sin IDs escritos a mano. Canciones pasa a **1,816 canciones en 12 géneros**.
+  Como todas son en inglés, con el idioma en *Español* el country no aporta canciones (igual que el reggaetón con
+  *Inglés*). Quien ya tenía elegidos todos los géneros encuentra Country elegido también (quien había escogido solo
+  algunos lo ve apagado, para no cambiarle su selección). El ranking no cambia: no hay que volver a correr
+  `supabase/schema.sql`.
 - **1.9.4**: **ronda bonus en Supervivencia**. Cada 5 canciones (la 5, la 10, la 15…) toca una ronda bonus ⭐: se
   anuncia con un aviso y un sonido, el marcador y el reloj se pintan de dorado y, si aciertas, recuperas una vida (hasta
   las 3 de inicio; si ya las tienes todas, solo suma sus puntos normales). Si la fallas o se acaba el tiempo, no pierdes

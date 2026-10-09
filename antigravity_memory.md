@@ -3,8 +3,8 @@
 ## Arquitectura y Estructura del Sistema
 * **Frontend Estático Modular:** La aplicación corre enteramente sobre Vanilla JS sin frameworks pesados, exponiendo módulos bajo el namespace global `window.AM`.
 * **Catálogos por Temas:** 
-  * `js/catalog-canciones.js` gestiona el catálogo de canciones famosas categorizadas en 11 géneros musicales (`song-rock`, `song-pop`, `song-rap`, `song-reggaeton`, `song-regional`, `song-baladas`, `song-electronica`, `song-cumbia`, `song-salsa`, `song-metal`, `song-kpop`).
-  * Conteo consolidado bilingüe: **1,716 pistas totales**.
+  * `js/catalog-canciones.js` gestiona el catálogo de canciones famosas categorizadas en 12 géneros musicales (`song-rock`, `song-pop`, `song-rap`, `song-reggaeton`, `song-regional`, `song-baladas`, `song-electronica`, `song-cumbia`, `song-salsa`, `song-metal`, `song-kpop`, `song-country`).
+  * Conteo consolidado bilingüe: **1,816 pistas totales**.
     * **Rock:** 100 ES / 100 EN (Total: 200)
     * **Pop:** 100 ES / 100 EN (Total: 200)
     * **Rap y hip-hop:** 100 ES / 100 EN (Total: 200)
@@ -16,6 +16,7 @@
     * **Cumbia:** 100 ES (Total: 100)
     * **Salsa:** 99 ES / 1 EN (Total: 100)
     * **K-pop:** 93 KO / 7 EN (Total: 100)
+    * **Country:** 100 EN (Total: 100) — desde la v1.9.5, de 1952 a 2024, todas con `busca()`. Los duetos van como "Artista y Artista" en `franchise` y `busca()` usa al artista principal (el que Apple pone primero).
   * Formato estándar de registro:
     ```javascript
     {
@@ -95,6 +96,7 @@
 * **Filtros e Indexación (`js/themes.js`):**
   * Soporte para épocas temporales (`antes de 1980`, `80s`, `90s`, `00s`, `10s`, `20s`) basado en el atributo numérico `year`.
   * Filtro de idiomas (`es`, `en`, `ambos`/`todos`) que garantiza selecciones parejas y sin sesgos gracias a la paridad 100 ES / 100 EN en los géneros bilingües.
+* **Categorías nuevas y selección guardada (`loadCats()` en `js/app.js`):** el jugador guarda sus categorías elegidas por tema (`am.catsByTheme`). Desde la v1.9.5 también se guarda `am.catsKnown` (las categorías que ya vio): una categoría nueva entra elegida solo si el jugador tenía elegidas todas las demás de ese tema. Al agregar una categoría nueva, añade su id a `AM.NEW_CATEGORIES` en su catálogo (como `song-country`), para los jugadores que vienen de antes de la 1.9.5 y aún no tienen `catsKnown`. Si una categoría se divide o cambia de id, usa `AM.CATEGORY_RENAMES`.
 * **Modos de juego (`js/game.js` + `js/app.js`):**
   * Supervivencia: 3 vidas. Desde la v1.9.4, cada 5 rondas (la 5, 10, 15…) hay ronda bonus (`bonusEvery: 5`, `AM.Logic.isBonusRound`): acertarla devuelve una vida (máximo 3) y fallarla no la quita.
   * El ranking (Supabase) valida cada puntaje con la regla `puntaje_posible` de `supabase/schema.sql` (en Supervivencia: `rondas - aciertos <= 3 + rondas / 5`). Si cambian las reglas de vidas o puntos, hay que actualizar esa regla y volver a correr el archivo en el SQL Editor de Supabase.

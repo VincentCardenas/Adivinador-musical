@@ -16,6 +16,7 @@
  *   * Cumbia: 100 ES
  *   * Salsa: 100 ES
  *   * K-pop: 100 total (coreano/global)
+ *   * Country: 100 total (en inglés)
  */
 
 const fs = require('fs');
@@ -60,7 +61,8 @@ const expectedCats = [
   'song-cumbia',
   'song-salsa',
   'song-metal',
-  'song-kpop'
+  'song-kpop',
+  'song-country'
 ];
 
 const bilingualCats = [
