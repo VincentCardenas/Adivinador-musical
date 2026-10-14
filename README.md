@@ -241,22 +241,27 @@ La versión actual se ve en la esquina inferior izquierda del juego (en el celul
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
-- **2.0**: **configurador por partes, con forma de cassette**. Revisión de diseño con las guías de Apple (HIG) y
-  rediseño del inicio:
-  - La partida se arma en tres partes del **lado A**: **A1 Tema**, **A2 Modo** y **A3 Música**. Hay una abierta a
-    la vez; las cerradas muestran lo elegido ("🧸 Caricaturas", "Rock y Pop · Español · 120 pistas") y se abren con un
-    toque. Al elegir tema o modo se pasa sola a la siguiente, como antes.
-  - **La casetera** resume la partida en la etiqueta de un cassette (tema, modo, música, pistas, rondas y tu récord)
-    y siempre tiene el botón **▶ Jugar**: ya no hay que pasar por los tres pasos. Quien vuelve encuentra las tres
-    partes cerradas con su última configuración y juega con un toque (reemplaza a "⚡ Jugar con la última
-    configuración"). En pantallas anchas va a un lado; en el celular queda pegada abajo, en una sola fila.
-  - En Música: **Todas / Ninguna** para elegir géneros o épocas de golpe (antes "✨ Todo" era un chip más que no se
-    podía apagar), un ✓ en los elegidos (no solo el color) y la **Época** de Canciones en un menú desplegable (7
-    opciones no cabían en una fila en el celular). Si faltan pistas, la casetera lo dice y lleva a Música.
-  - Accesibilidad: el número de los chips elegidos pasa de blanco sobre rosa (3.2:1) a oscuro sobre rosa (6.1:1);
-    flechas para moverse entre temas y modos, y el foco sigue a la parte que se abre; Enter juega; las animaciones
-    nuevas respetan "reducir movimiento". En el celular el encabezado es más compacto para que el configurador se
-    vea sin bajar.
+- **2.0**: **inicio estilo "setlist"**, como el selector de canciones de los juegos de ritmo (Guitar Hero y
+  compañía), tras una revisión de diseño con las guías de Apple (HIG):
+  - La partida se arma en **tres partes numeradas** en un solo panel: **1 Tema**, **2 Modo** y **3 Música**. Hay
+    una abierta a la vez; las cerradas muestran lo elegido ("🧸 Caricaturas", "Rock y Pop · Español · 120 pistas")
+    y se abren con un toque. Al elegir tema o modo se pasa sola a la siguiente.
+  - **Listas de setlist**: cada opción es una fila; la elegida lleva una **barra inclinada color atardecer** (rosa a
+    ámbar) con ✓. Los temas muestran ejemplos (*Halo, Kirby, Zelda…*) y cuántas pistas tienen.
+  - **Modos con gemas de dificultad**, de 5: Clásico ●●○○○ Fácil, Sagas ●●●○○ Medio, Supervivencia ●●●●○ Difícil y
+    Experto ●●●●● Máximo, con su descripción y tu récord.
+  - **Música en pads**: los géneros o épocas son botones grandes con ✓, con **Todas / Ninguna**; la **Época** de
+    Canciones va en un menú desplegable. En **Sagas**, una sola lista: tocar la saga es "toda la saga" y debajo
+    están sus juegos para jugar uno solo (ya no hay que elegir "un juego" aparte).
+  - **Tu partida** resume todo y siempre tiene el botón verde **▶ Jugar**: quien vuelve encuentra su última
+    configuración y juega con un toque (reemplaza a "⚡ Jugar con la última configuración"). Sus **cinco trastes**
+    (verde, rojo, amarillo, azul y naranja) se encienden cuando la partida está lista y se apagan si faltan pistas.
+    En pantallas anchas va a un lado; en el celular queda pegada abajo.
+  - **Teclado, como en los menús de esos juegos**: ↑ ↓ para moverte, Enter elige, Esc cierra, 1 2 3 van a cada
+    parte y Mayús+Enter juega desde donde sea (la leyenda se ve abajo del panel con mouse y teclado).
+  - Accesibilidad: contrastes medidos (texto oscuro sobre la barra: 6:1 o más), selección marcada con ✓ y no solo
+    con color, lector de pantalla con "Dificultad: Fácil, 2 de 5" y un aviso único de cuántas pistas hay, modo de
+    colores forzados, "reducir movimiento" y sin desbordes a 320 px. En el celular el encabezado es más compacto.
   - La **1.9.6** quedó guardada en la rama `respaldo-v1.9.6` para volver a ella si hace falta.
 - **1.9.6**: **configurador paso a paso**. El inicio ya no es una página larga: la partida se arma en
   3 pasos (1. **Tema**, 2. **Modo**, 3. **Música**) con botones Atrás/Siguiente y el botón Jugar al final.

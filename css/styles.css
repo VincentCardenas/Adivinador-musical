@@ -21,6 +21,18 @@
   --red: #ff4d6d;
   --green: #34e89e;
 
+  /* Configurador "setlist": barra de selección, trastes y superficies (contrastes WCAG medidos) */
+  --bar-grad: linear-gradient(100deg, #ff3cac 0%, #ff8470 55%, #ffcc33 100%);
+  --on-bar: #0b0a18;   /* 6.06:1 en el rosa (lo peor), 13:1 en el ámbar */
+  --on-bar-2: #3a1236; /* texto secundario sobre la barra: 4.92:1 en el rosa */
+  --tile-on: #3f1d49;
+  --gem-off: #7d78a6;  /* gema hueca: 4.19:1 sobre el panel */
+  --fret-g: #34e89e;
+  --fret-r: #ff4d6d;
+  --fret-y: #ffcc33;
+  --fret-b: #4d9fff;
+  --fret-o: #ff9147;
+
   --font-pixel: 'Press Start 2P', ui-monospace, monospace;
   --font-ui: 'Chakra Petch', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
@@ -328,123 +340,6 @@ a { color: var(--cyan); }
   font-size: 11px;
 }
 
-/* Temas (videojuegos, series, caricaturas, anime, Disney, musicales, canciones) */
-.themes {
-  display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: 12px;
-}
-.theme-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  padding: 16px 8px 14px;
-  border-radius: var(--radius);
-  border: 2px solid var(--border);
-  background: var(--panel);
-  box-shadow: var(--shadow);
-  text-align: center;
-  transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
-}
-@media (hover: hover) {
-  .theme-card:hover { transform: translateY(-3px); border-color: var(--border-hi); }
-}
-.theme-card.is-selected {
-  border-color: var(--pink);
-  background: rgba(255, 60, 172, 0.12);
-  box-shadow: 0 0 0 4px rgba(255, 60, 172, 0.14), 0 0 30px rgba(255, 60, 172, 0.22);
-}
-.theme-icon { font-size: 32px; line-height: 1; }
-.theme-name { font-weight: 700; font-size: 14px; }
-.theme-count { color: var(--muted); font-size: 12px; }
-
-.modes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 14px;
-}
-.mode-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  padding: 18px;
-  text-align: left;
-  border-radius: var(--radius);
-  border: 2px solid var(--border);
-  background: var(--panel);
-  box-shadow: var(--shadow);
-  transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
-}
-@media (hover: hover) {
-  .mode-card:hover { transform: translateY(-3px); border-color: var(--border-hi); }
-}
-.mode-card.is-selected {
-  border-color: var(--cyan);
-  box-shadow: 0 0 0 4px rgba(45, 226, 230, 0.15), 0 0 30px rgba(45, 226, 230, 0.25);
-}
-.mode-card.is-selected::after {
-  content: '✓';
-  position: absolute;
-  top: 12px;
-  right: 14px;
-  width: 26px;
-  height: 26px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--cyan);
-  color: var(--bg);
-  font-weight: 700;
-}
-.mode-icon { font-size: 30px; line-height: 1; }
-.mode-name { font-family: var(--font-pixel); font-size: 13px; line-height: 1.4; }
-.mode-desc { color: var(--muted); font-size: 14px; line-height: 1.45; }
-.mode-record {
-  margin-top: auto;
-  padding-top: 6px;
-  font-size: 13px;
-  color: var(--amber);
-}
-
-.chips { display: flex; flex-wrap: wrap; gap: 10px; }
-.chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 9px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--panel);
-  font-weight: 600;
-  font-size: 14px;
-  transition: background 0.15s, border-color 0.15s, color 0.15s;
-}
-.chip span {
-  min-width: 24px;
-  padding: 1px 7px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  font-size: 12px;
-  text-align: center;
-}
-@media (hover: hover) {
-  .chip:hover { border-color: var(--border-hi); }
-}
-.chip.is-on {
-  background: rgba(255, 60, 172, 0.16);
-  border-color: var(--pink);
-}
-.chip.is-on span { background: var(--pink); color: var(--bg); } /* 6.1:1 (en blanco era 3.2:1) */
-.chip:not(.is-on) { color: var(--muted); }
-.chip.is-on::after { content: '✓'; font-weight: 700; color: var(--pink); }
-/* Modo Sagas: filas del paso 3 (sagas, "toda la saga / un juego" y juegos) */
-.saga-row { display: flex; flex-wrap: wrap; gap: 10px; width: 100%; }
-.saga-row + .saga-row { margin-top: 4px; }
-
 /* Filtros del tema (Pixar, idioma) */
 .filters { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin: 0 0 14px; }
 .switch {
@@ -489,7 +384,6 @@ a { color: var(--cyan); }
   border: 1px solid var(--border);
   background: var(--panel);
 }
-.segmented-label { padding: 0 8px 0 10px; font-weight: 600; font-size: 14px; color: var(--muted); }
 .segmented button {
   padding: 6px 14px;
   border-radius: 999px;
@@ -508,60 +402,71 @@ a { color: var(--cyan); }
 .seen-info { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
 .seen-info .btn-link { font-size: 13px; padding: 0 2px; }
 
-/* ── Configurador por partes (cassette) ──
-   Lado A: tres partes (A1 tema, A2 modo, A3 música), una abierta a la vez. La casetera resume la
-   partida y tiene el botón Jugar: a un lado en pantallas anchas y pegada abajo en el celular. */
+/* ── Configurador "setlist" ──
+   Como el selector de canciones de los juegos de ritmo: tres partes numeradas en un solo panel (una
+   abierta a la vez), listas con una barra de selección inclinada color atardecer, gemas de dificultad,
+   pads para las categorías y "Tu partida" con cinco trastes que se encienden cuando se puede jugar.
+   Los colores de los trastes solo decoran: el significado lo dan cuántas gemas hay, llenas o huecas, y el ✓. */
 .mixer {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 290px;
+  grid-template-columns: minmax(0, 1fr) 300px;
   align-items: start;
   gap: 20px;
   margin-top: 22px;
 }
-.parts { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
-.part {
+.setlist { min-width: 0; }
+.parts {
+  min-width: 0;
   border-radius: 16px;
-  border: 1px solid var(--border);
-  background: var(--panel);
+  border: 1px solid #524790;
+  background: rgba(26, 23, 54, 0.94);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(6px);
-  scroll-margin-top: 72px;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  overflow: clip;
 }
-.part.is-open {
-  border-color: var(--border-hi);
-  box-shadow: var(--shadow), inset 3px 0 0 var(--pink);
-}
+.part { scroll-margin-top: 72px; }
+.part + .part { border-top: 1px solid #352f62; }
+.part.is-open { box-shadow: inset 3px 0 0 var(--pink); }
 .part-head { margin: 0; font: inherit; }
 .part-toggle {
   width: 100%;
-  min-height: 64px;
+  min-height: 60px;
   display: grid;
   grid-template-columns: auto auto minmax(0, 1fr) auto;
   align-items: center;
   gap: 12px;
   padding: 10px 16px;
   border: 0;
-  border-radius: 16px;
   background: none;
   text-align: left;
 }
+/* Placa inclinada con el número de la parte */
 .part-tag {
+  position: relative;
+  isolation: isolate;
   display: grid;
   place-items: center;
-  width: 40px;
+  width: 36px;
   height: 30px;
-  border-radius: 6px;
-  border: 1px solid var(--border-hi);
-  background: var(--bg-2);
   font-family: var(--font-pixel);
   font-size: 11px;
   color: var(--muted);
 }
-.part.is-open .part-tag { border-color: var(--pink); color: var(--text); background: rgba(255, 60, 172, 0.16); }
+.part-tag::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 5px;
+  border: 1px solid #524790;
+  background: var(--bg-2);
+  transform: skewX(-10deg);
+}
+.part.is-open .part-tag { color: var(--bg); }
+.part.is-open .part-tag::before { border-color: transparent; background: var(--bar-grad); }
 .part-name {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--muted);
@@ -573,19 +478,17 @@ a { color: var(--cyan); }
   font-weight: 600;
   font-size: 16px;
 }
+.part-value .warn { color: var(--amber); }
 .part-change { font-size: 13px; font-weight: 600; color: var(--cyan); white-space: nowrap; }
 .part-change::after { content: 'Cambiar ▾'; }
 .part.is-open .part-change { color: var(--muted); }
 .part.is-open .part-change::after { content: 'Cerrar ▴'; }
 @media (hover: hover) {
-  .part-toggle:hover .part-tag { border-color: var(--cyan); }
+  .part-toggle:hover .part-tag::before { border-color: var(--cyan); }
   .part-toggle:hover .part-change { text-decoration: underline; text-underline-offset: 3px; }
 }
-.part-body { padding: 2px 16px 18px; animation: part-in 0.25s ease both; }
-@keyframes part-in {
-  from { opacity: 0; transform: translateY(-6px); }
-  to { opacity: 1; transform: none; }
-}
+.part-body { padding: 0 16px 18px; animation: part-in 0.16s ease both; }
+@keyframes part-in { from { opacity: 0; } to { opacity: 1; } }
 .part-q {
   display: flex;
   flex-wrap: wrap;
@@ -596,53 +499,233 @@ a { color: var(--cyan); }
   font-weight: 700;
 }
 .part-q small { color: var(--amber); font-size: 14px; font-weight: 600; }
-@media (min-width: 901px) {
-  /* Al lado de la casetera caben 4 temas por fila (4 + 3) */
-  .part .themes { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
-}
-.part .modes { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
-.part .filters { margin-bottom: 14px; }
-.cats-head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 4px 12px;
-  margin: 0 0 10px;
-}
-.cats-label { font-weight: 700; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
-.cats-actions { display: flex; gap: 14px; }
-.cats-actions .btn-link { min-height: 32px; padding: 4px 2px; }
-.cats-actions .btn-link:disabled { opacity: 0.4; cursor: default; text-decoration: none; }
-.part .seen-info { margin-top: 14px; }
 
-/* Menú desplegable de un filtro con muchas opciones (Época) */
-.popup {
-  display: inline-flex;
+/* ── Filas del setlist (temas, modos, sagas y juegos) ── */
+.set-list { display: flex; flex-direction: column; gap: 6px; }
+.set-row {
+  position: relative;
+  isolation: isolate;
+  display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 4px 4px 4px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--panel);
-}
-.popup-label { font-weight: 600; font-size: 14px; color: var(--muted); }
-.popup select {
-  min-height: 36px;
-  padding: 6px 34px 6px 14px;
+  gap: 12px;
+  width: 100%;
+  min-height: 56px;
+  padding: 8px 18px;
   border: 0;
+  border-radius: 8px;
+  background: none;
+  color: var(--text);
+  text-align: left;
+}
+/* La barra va en ::before para inclinarla sin inclinar el texto */
+.set-row::before {
+  content: '';
+  position: absolute;
+  inset: 0 6px;
+  z-index: -1;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transform: skewX(-10deg);
+  transition: background-color 0.12s, border-color 0.12s;
+}
+.set-row[aria-checked='true']::before {
+  background: var(--bar-grad);
+  box-shadow: 0 6px 18px rgba(255, 60, 172, 0.28);
+}
+@media (hover: hover) {
+  .set-row[aria-checked='false']:hover::before { background: rgba(45, 226, 230, 0.1); border-color: rgba(45, 226, 230, 0.6); }
+}
+.set-row:focus-visible,
+.pad:focus-visible,
+.filter .segmented button:focus-visible,
+.btn-play:focus-visible {
+  outline: 3px solid var(--cyan);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px var(--bg), 0 0 18px 4px rgba(45, 226, 230, 0.35); /* el hueco oscuro separa el cian del rosa (2:1) y del verde */
+}
+.row-icon { flex: none; width: 28px; font-size: 24px; line-height: 1; text-align: center; }
+.row-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.row-title { font-size: 16px; font-weight: 700; line-height: 1.25; }
+.row-sub { font-size: 13px; font-weight: 500; line-height: 1.35; color: var(--muted); }
+.set-row--theme .row-sub { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.row-record { font-size: 12px; font-weight: 600; color: var(--amber); }
+.row-count { flex: none; font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.row-count small { font-size: 12px; font-weight: 500; color: var(--muted); }
+.row-check { flex: none; width: 16px; font-size: 16px; font-weight: 700; visibility: hidden; }
+.set-row[aria-checked='true'] { color: var(--on-bar); }
+.set-row[aria-checked='true'] .row-check { visibility: visible; }
+.set-row[aria-checked='true'] :is(.row-sub, .row-record, .row-count small, .gem-word) { color: var(--on-bar-2); }
+.set-row--mode { min-height: 72px; align-items: center; }
+.row-level { flex: none; display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.gem-word { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
+.set-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0 2px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.set-divider::before,
+.set-divider::after { content: ''; flex: 1; border-top: 1px dashed #524790; }
+
+/* Sagas: una lista; los juegos de la saga elegida van debajo, con sangría */
+.set-row--saga { min-height: 48px; }
+.set-row--saga.is-parent::before { background: none; border-color: transparent; box-shadow: inset 3px 0 0 var(--pink); transform: none; }
+.group-label {
+  margin: 2px 0 0 24px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.set-row--game {
+  width: calc(100% - 24px);
+  min-height: 44px;
+  margin-left: 24px;
+  padding-left: 16px;
+  box-shadow: inset 3px 0 0 #524790;
+  border-radius: 0 8px 8px 0;
+}
+.set-row--game .row-title { font-size: 15px; font-weight: 600; }
+
+/* Gemas de dificultad: 5, las llenas son el nivel */
+.gems {
+  display: inline-flex;
+  gap: 4px;
+  padding: 5px 8px;
   border-radius: 999px;
-  background: var(--cyan) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%230b0a18' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 14px center;
-  color: var(--bg);
+  background: var(--bg);
+}
+.gem {
+  --c: var(--fret-g);
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--c);
+  background: var(--c);
+}
+.gem[data-fret='r'] { --c: var(--fret-r); }
+.gem[data-fret='y'] { --c: var(--fret-y); }
+.gem[data-fret='b'] { --c: var(--fret-b); }
+.gem[data-fret='o'] { --c: var(--fret-o); }
+.gem.is-off { background: transparent; border-color: var(--gem-off); }
+.mini-gems { display: inline-flex; gap: 2px; margin-left: 4px; vertical-align: middle; }
+.mini-gems .gem { width: 8px; height: 8px; border-width: 1.5px; }
+
+/* ── Filtros (Pixar, idioma, época) ── */
+.filter { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.filter-label { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
+.filter .segmented { padding: 3px; border-color: #524790; background: var(--bg); }
+.filter .segmented button { min-height: 38px; padding: 6px 14px; color: var(--muted); }
+.filter .segmented button.is-on { background: var(--pink); color: var(--bg); font-weight: 700; }
+.filters .switch { min-height: 44px; }
+.filters .switch.is-on { border-color: var(--pink); }
+.filters .switch.is-on .switch-track { background: var(--pink); }
+.popup { display: inline-flex; }
+.popup select {
+  min-height: 44px;
+  padding: 8px 40px 8px 14px;
+  border: 1px solid #8a85b3;
+  border-radius: 12px;
+  background: var(--panel-hi) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23f1eeff' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 14px center;
+  color: var(--text);
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px; /* 16 px: iOS no hace zoom al tocarlo */
   -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
 }
+.popup.is-changed select { border: 2px solid var(--pink); padding: 7px 39px 7px 13px; }
 .popup select option { background: var(--panel-solid); color: var(--text); }
 
-/* La casetera */
+/* ── Categorías: pads ── */
+.cats-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 12px;
+  min-height: 44px;
+  margin: 0 0 6px;
+}
+.cats-label { font-weight: 700; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
+.cats-actions { display: flex; gap: 14px; }
+.cats-actions .btn-link { min-height: 44px; padding: 4px 2px; }
+.cats-actions .btn-link:disabled { opacity: 0.45; cursor: default; text-decoration: none; }
+.pads {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+}
+.pads.is-saga { display: block; }
+.pad {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas: "icon label gem" "icon count gem";
+  align-items: center;
+  column-gap: 8px;
+  min-height: 56px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid #6f6aa3;
+  background: var(--panel-solid);
+  color: var(--muted);
+  text-align: left;
+}
+.pad-icon { grid-area: icon; font-size: 20px; line-height: 1; }
+.pad-label { grid-area: label; font-size: 14px; font-weight: 600; line-height: 1.2; overflow-wrap: break-word; }
+.pad-count { grid-area: count; font-size: 12px; font-variant-numeric: tabular-nums; }
+.pad-gem {
+  grid-area: gem;
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--gem-off);
+}
+.pad[aria-pressed='true'] { padding: 7px 9px; border: 2px solid var(--pink); background: var(--tile-on); color: var(--text); }
+.pad[aria-pressed='true'] .pad-count { color: var(--muted); }
+.pad[aria-pressed='true'] .pad-gem { border-color: var(--pink); background: var(--pink); }
+.pad[aria-pressed='true'] .pad-gem::after { content: '✓'; color: var(--bg); font-size: 11px; font-weight: 700; line-height: 1; }
+@media (hover: hover) {
+  .pad[aria-pressed='false']:hover { border-color: var(--cyan); }
+}
+.part .seen-info { margin-top: 14px; }
+
+/* ── Leyenda de controles (solo con mouse y teclado) ── */
+.legend { display: none; }
+@media (hover: hover) and (pointer: fine) {
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 18px;
+    margin: 12px 0 0;
+    font-size: 13px;
+    color: var(--muted);
+  }
+}
+.legend > span { display: inline-flex; align-items: center; gap: 5px; }
+.legend .gem { width: 12px; height: 12px; }
+kbd {
+  display: inline-block;
+  min-width: 22px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #2c2752;
+  color: var(--text);
+  font: 600 12px/1.3 var(--font-ui);
+  text-align: center;
+}
+
+/* ── Tu partida ── */
 .deck {
   position: sticky;
   top: 74px;
@@ -655,103 +738,94 @@ a { color: var(--cyan); }
   background: var(--panel-solid);
   box-shadow: var(--shadow);
 }
-.cassette {
-  position: relative;
-  padding: 12px 12px 14px;
-  border-radius: 12px;
-  background:
-    radial-gradient(circle at 10px 10px, var(--bg) 3px, transparent 4px),
-    radial-gradient(circle at calc(100% - 10px) 10px, var(--bg) 3px, transparent 4px),
-    linear-gradient(160deg, #2b2650, #1d1940);
-  border: 1px solid var(--border-hi);
-  box-shadow: inset 0 -10px 0 rgba(0, 0, 0, 0.18);
-}
-.cassette-label {
-  position: relative;
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  grid-template-areas: "side title" "side sub";
-  column-gap: 10px;
-  align-items: center;
-  padding: 8px 10px 16px;
-  border-radius: 6px;
-  /* Etiqueta de papel con las franjas de color de los cassettes de los 80 */
-  background:
-    linear-gradient(to bottom, transparent calc(100% - 12px), var(--pink) calc(100% - 12px), var(--pink) calc(100% - 8px),
-      var(--amber) calc(100% - 8px), var(--amber) calc(100% - 4px), var(--cyan) calc(100% - 4px)),
-    #f1eeff;
-  color: #0b0a18;
-}
-.cassette-side {
-  grid-area: side;
-  display: grid;
-  place-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 6px;
-  background: #0b0a18;
-  color: #f1eeff;
-  font-family: var(--font-pixel);
-  font-size: 13px;
-}
-.cassette-title {
-  grid-area: title;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-family: var(--font-pixel);
-  font-size: 12px;
-  line-height: 1.6;
-  text-transform: uppercase;
-}
-.cassette-sub {
-  grid-area: sub;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-weight: 600;
-  font-size: 13px;
-  color: #3d3760;
-}
-.cassette-window {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 8px;
-  width: 78%;
-  margin: 12px auto 0;
-  padding: 7px 12px;
-  border-radius: 999px;
-  background: rgba(11, 10, 24, 0.75);
-  border: 1px solid var(--border);
-}
-.reel {
-  width: 34px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle closest-side, #0b0a18 0 30%, transparent 34%),
-    radial-gradient(circle closest-side, transparent 0 56%, #5b4a6b 60%),
-    repeating-conic-gradient(#f1eeff 0 14deg, transparent 14deg 60deg);
-  border: 2px solid #f1eeff;
-}
-.tape {
-  height: 12px;
-  border-radius: 3px;
-  background: linear-gradient(to bottom, #4a3646, #2c1f2b);
-}
-@keyframes reel { to { transform: rotate(360deg); } }
-.deck:has(.btn-play:not(:disabled):hover) .reel,
-.deck:has(.btn-play:focus-visible) .reel { animation: reel 1.4s linear infinite; }
+.deck-info { display: flex; flex-direction: column; gap: 4px; }
 .deck-info p { margin: 0; }
-.deck-what { font-weight: 700; font-size: 16px; }
-.mixer .deck-what { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.deck-line { font-size: 14px; color: var(--muted); }
-.dl-mode { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.deck-record { margin-top: 2px !important; font-size: 14px; color: var(--amber); }
-.btn-play { font-family: var(--font-pixel); font-size: 14px; padding: 16px 24px; width: 100%; }
-.deck .start-hint { margin: 0; min-height: 0; font-size: 13px; text-align: center; }
+.deck-label { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
+.deck-what { font-family: var(--font-pixel); font-size: 12px; line-height: 1.6; text-transform: uppercase; }
+.deck-mode { font-size: 15px; font-weight: 600; }
+.deck-music, .deck-line { font-size: 14px; color: var(--muted); }
+.dl-mode { display: none; }
+.deck-record { font-size: 14px; color: var(--amber); }
+.deck .start-hint { margin: 4px 0 0; min-height: 0; font-size: 13px; color: var(--muted); }
 .deck.is-short .start-hint { color: var(--amber); }
+
+/* La línea de trastes: huecos si faltan pistas; se encienden de verde a naranja cuando ya se puede jugar */
+.strikeline {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 32px;
+}
+.strikeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  margin-top: -1px;
+  background: #524790;
+}
+.strikeline i {
+  --c: var(--fret-g);
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 3px solid var(--gem-off);
+  background: var(--bg);
+  transition: background-color 0.12s, border-color 0.12s, box-shadow 0.12s;
+}
+.strikeline i[data-fret='r'] { --c: var(--fret-r); }
+.strikeline i[data-fret='y'] { --c: var(--fret-y); }
+.strikeline i[data-fret='b'] { --c: var(--fret-b); }
+.strikeline i[data-fret='o'] { --c: var(--fret-o); }
+.deck.is-lit .strikeline i {
+  border-color: var(--c);
+  background: var(--c);
+  box-shadow: 0 0 6px color-mix(in srgb, var(--c) 35%, transparent), inset 0 0 0 5px rgba(11, 10, 24, 0.35);
+  animation: fret-on 0.14s cubic-bezier(0.2, 0.8, 0.2, 1) calc(var(--i) * 60ms) both;
+}
+@keyframes fret-on {
+  from { background: var(--bg); border-color: var(--gem-off); box-shadow: none; transform: scale(0.7); }
+  60% { transform: scale(1.18); box-shadow: 0 0 14px color-mix(in srgb, var(--c) 60%, transparent); }
+  to { transform: scale(1); }
+}
+
+.btn-play {
+  width: 100%;
+  min-height: 52px;
+  padding: 14px 20px;
+  border: 0;
+  background: var(--green);
+  color: var(--bg);
+  font-family: var(--font-pixel);
+  font-size: 14px;
+  box-shadow: 0 5px 0 #1a7a52;
+}
+@media (hover: hover) {
+  .btn-play:not(:disabled):hover { filter: brightness(1.08); }
+}
+.btn-play:not(:disabled):active { transform: translateY(4px); box-shadow: 0 1px 0 #1a7a52; }
+.btn-play:disabled { opacity: 1; background: #2a2650; color: var(--muted); box-shadow: none; }
+.deck.is-lit .btn-play:not(:disabled) {
+  box-shadow: 0 5px 0 #1a7a52, 0 0 16px rgba(45, 226, 230, 0.3);
+  animation: play-halo 0.2s ease 0.38s both;
+}
+@keyframes play-halo {
+  from { box-shadow: 0 5px 0 #1a7a52, 0 0 0 rgba(45, 226, 230, 0); }
+  60% { box-shadow: 0 5px 0 #1a7a52, 0 0 22px rgba(45, 226, 230, 0.45); }
+}
+.deck.is-lit .btn-play:focus-visible { box-shadow: 0 0 0 2px var(--bg), 0 0 18px 4px rgba(45, 226, 230, 0.35); }
+
+/* Modo de colores forzados (alto contraste de Windows): la selección se marca con el color del sistema */
+@media (forced-colors: active) {
+  .set-row::before, .part-tag::before { display: none; }
+  .set-row[aria-checked='true'] { outline: 2px solid Highlight; outline-offset: -2px; }
+  .pad[aria-pressed='true'] { outline: 2px solid Highlight; }
+  .gem, .strikeline i { forced-color-adjust: none; }
+}
 
 /* ── HUD de partida ── */
 .hud {
@@ -1713,76 +1787,76 @@ kbd {
   .hero .eq { display: none; }
   .mixer { margin-top: 16px; }
   .part-toggle { gap: 10px; padding: 10px 12px; }
-  .part-tag { width: 36px; }
+  .part-toggle { min-height: 56px; }
   .part-name { font-size: 12px; letter-spacing: 1px; }
   .part-value { font-size: 15px; }
   .part-change::after { content: '▾'; font-size: 16px; }
   .part.is-open .part-change::after { content: '▴'; }
   .part-body { padding: 0 12px 16px; }
   .part-q { font-size: 18px; }
-  .part .modes { grid-template-columns: 1fr; }
-  .themes { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
-  .theme-card { padding: 12px 4px 10px; }
-  .theme-icon { font-size: 26px; }
-  .theme-name { font-size: 13px; }
+  .set-row { padding: 8px 14px; }
+  .set-row--theme { min-height: 52px; }
+  .set-row--game { min-height: 44px; }
+  .row-icon { width: 24px; font-size: 22px; }
+  .gems { gap: 3px; padding: 4px 6px; }
+  .gems .gem { width: 10px; height: 10px; }
+  .filter { flex-direction: column; align-items: stretch; }
+  .filter .segmented { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; }
+  .filter .segmented button { min-height: 38px; padding: 6px 8px; }
+  .popup, .popup select { width: 100%; }
+  .pads { grid-template-columns: repeat(auto-fill, minmax(min(124px, 100%), 1fr)); }
   .board-list li { grid-template-columns: 28px 1fr auto; gap: 8px; }
   .board-list .b-detail { display: none; }
   .board-form .btn { flex: 1 1 100%; }
 }
 @media (max-width: 900px) {
-  /* La casetera baja y queda pegada al borde de abajo, en una sola fila: cassette, resumen y Jugar. */
+  /* "Tu partida" baja y queda pegada al borde de abajo, en una fila: resumen y Jugar, con los trastes encima. */
   .mixer { grid-template-columns: minmax(0, 1fr); gap: 12px; }
   .deck {
     top: auto;
     bottom: 0;
     z-index: 45;
     display: grid;
-    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
     gap: 6px 12px;
-    margin: 0 -16px;
-    padding: 10px 16px max(10px, env(safe-area-inset-bottom));
+    margin: 8px -16px 0;
+    padding: 16px 16px max(12px, env(safe-area-inset-bottom));
     border-radius: 18px 18px 0 0;
     border-width: 1px 0 0;
     box-shadow: 0 -12px 30px rgba(0, 0, 0, 0.45);
   }
-  .cassette { width: 60px; padding: 5px 5px 6px; border-radius: 7px; box-shadow: none; background: linear-gradient(160deg, #2b2650, #1d1940); }
-  .cassette-label { display: block; height: 11px; padding: 0; border-radius: 2px; }
-  .cassette-label > span { display: none; }
-  .cassette-window { width: 100%; margin-top: 4px; padding: 2px 4px; gap: 3px; }
-  .reel { width: 14px; border-width: 1px; }
-  .tape { height: 5px; }
-  .mixer .deck-what { position: static; width: auto; height: auto; overflow: hidden; clip: auto; text-overflow: ellipsis; font-size: 15px; }
+  .deck-label, .deck-mode, .deck-music, .deck-record { display: none; }
+  .deck-info { gap: 0; min-width: 0; }
+  .deck-what { font-family: var(--font-ui); font-size: 15px; font-weight: 700; text-transform: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .deck-line { font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .deck-record { display: none; }
-  .btn-play { width: auto; padding: 14px 18px; font-size: 12px; }
-  .deck .start-hint { display: none; grid-column: 1 / -1; text-align: left; }
-  .deck.is-short .start-hint { display: block; }
-  .dl-mode { position: static; width: auto; height: auto; clip: auto; overflow: visible; }
+  .dl-mode { display: inline; }
   .dl-facts { display: none; }
-  /* Con la casetera pegada abajo, la versión se ve al final de la página en vez de en la esquina. */
+  .deck .start-hint { display: none; }
+  .deck.is-short .start-hint { display: block; margin-top: 2px; white-space: normal; }
+  .strikeline { position: absolute; top: -9px; left: 24px; right: 24px; height: 18px; pointer-events: none; }
+  .strikeline::before { display: none; }
+  .strikeline i { width: 18px; height: 18px; border-width: 2px; }
+  .deck.is-lit .strikeline i { box-shadow: 0 0 6px color-mix(in srgb, var(--c) 35%, transparent), inset 0 0 0 3px rgba(11, 10, 24, 0.35); }
+  .btn-play { width: auto; min-height: 48px; padding: 12px 18px; font-size: 12px; }
+  /* Con "Tu partida" pegada abajo, la versión se ve al final de la página en vez de en la esquina. */
   body:has(#screen-home.is-active) .version { display: none; }
   body:has(#screen-home.is-active) .footer-version { display: block; }
-  .themes { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  /* Con 7 temas la última tarjeta queda sola en su fila: ocupa todo el ancho, en horizontal. */
-  .theme-card:last-child:nth-child(3n + 1) {
-    grid-column: 1 / -1;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-    padding: 12px 12px;
-  }
 }
-
 @media (max-width: 360px) {
   .volume input { width: 56px; } /* a 320 px la barra de arriba se salía 11 px */
+  .row-title { font-size: 15px; }
+  .pad-label { font-size: 13px; }
+  .set-row--mode { flex-wrap: wrap; }
+  .set-row--mode .row-level { order: 3; flex-direction: row; align-items: center; margin-left: 40px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .bg-grid, .eq i, .btn-tap, .record-badge { animation: none; }
   .disc { animation: none; }
   .screen.is-active, .reveal { animation: none; }
-  .part-body, .deck .reel { animation: none !important; }
+  .part-body, .strikeline i, .btn-play { animation: none !important; transition: none !important; }
+  .set-row::before { transition: none; }
   .report-details, .done-badge { animation: none; }
   .bonus-banner, .hearts.is-gain { animation: none; }
 }

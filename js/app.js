@@ -164,6 +164,7 @@
     $$('.screen').forEach((s) => s.classList.toggle('is-active', s.id === 'screen-' + name));
     window.scrollTo(0, 0);
     Viz.setVisible(name === 'game');
+    if (name === 'home') requestAnimationFrame(lightStrikeline);
   }
 
   function setStatus(text, loading) {
@@ -260,17 +261,45 @@
 
   /* ═════════ pantalla de inicio ═════════ */
 
+  /*
+   * El inicio es un "setlist", como el selector de canciones de los juegos de ritmo: listas verticales con
+   * una barra de selección inclinada, gemas de dificultad en los modos, pads para las categorías y una
+   * línea de cinco trastes en "Tu partida" que se enciende cuando la partida se puede jugar.
+   */
+
+  // Orden y nivel de los modos en el inicio (solo interfaz: las reglas siguen en game.js).
+  const MODE_ORDER = ['clasico', 'supervivencia', 'experto', 'sagas'];
+  const MODE_LEVEL = { clasico: 2, sagas: 3, supervivencia: 4, experto: 5 };
+  const LEVEL_NAME = { 2: 'Fácil', 3: 'Medio', 4: 'Difícil', 5: 'Máximo' };
+  const FRETS = ['g', 'r', 'y', 'b', 'o'];
+
+  /** Gemas de dificultad: `level` llenas de 5 (lo que cuenta es cuántas, no el color). */
+  function gems(level, cls) {
+    return `<span class="${cls || 'gems'}" aria-hidden="true">${FRETS.map((f, i) =>
+      `<i class="gem${i < level ? '' : ' is-off'}" data-fret="${f}"></i>`).join('')}</span>`;
+  }
+
+  /** En un grupo de opciones solo la elegida (o la primera) entra con Tab; las demás, con las flechas. */
+  function roving(group) {
+    if (!group) return;
+    const items = $$('[role="radio"]', group);
+    const on = items.find((b) => b.getAttribute('aria-checked') === 'true') || items[0];
+    items.forEach((b) => { b.tabIndex = b === on ? 0 : -1; });
+  }
+
   function renderThemes() {
     $('#themes').innerHTML = AM.THEMES.map((T) => {
       const sel = T.id === settings.theme;
       const n = AM.Logic.scope(T.id, settings.filters[T.id]).tracks.length;
       return `
-        <button type="button" class="theme-card${sel ? ' is-selected' : ''}" role="radio" aria-checked="${sel}" data-theme="${T.id}">
-          <span class="theme-icon" aria-hidden="true">${T.icon}</span>
-          <span class="theme-name">${esc(T.label)}</span>
-          <span class="theme-count">${n} pistas</span>
+        <button type="button" class="set-row set-row--theme" role="radio" aria-checked="${sel}" data-theme="${T.id}">
+          <span class="row-icon" aria-hidden="true">${T.icon}</span>
+          <span class="row-main"><span class="row-title">${esc(T.label)}</span><span class="row-sub">${esc(T.clasicoExample || '')}</span></span>
+          <span class="row-count">${fmt(n)}<small> pistas</small></span>
+          <span class="row-check" aria-hidden="true">✓</span>
         </button>`;
     }).join('');
+    roving($('#themes'));
   }
 
   function renderHero() {
@@ -282,18 +311,28 @@
 
   function renderModes() {
     const T = theme();
-    $('#modes').innerHTML = Object.keys(AM.MODES).filter((id) => AM.modeAvailable(id, T.id)).map((id) => {
+    const ids = MODE_ORDER.filter((id) => AM.MODES[id] && AM.modeAvailable(id, T.id))
+      .concat(Object.keys(AM.MODES).filter((id) => MODE_ORDER.indexOf(id) < 0 && AM.modeAvailable(id, T.id)));
+    $('#modes').innerHTML = ids.map((id) => {
       const m = AM.MODES[id];
       const sel = id === settings.mode;
+      const level = MODE_LEVEL[id] || 3;
       const rec = id === 'sagas' ? Records.get('sagas', sagaRecordKey()) : Records.get(T.id, id);
-      return `
-        <button type="button" class="mode-card${sel ? ' is-selected' : ''}" role="radio" aria-checked="${sel}" data-mode="${id}">
-          <span class="mode-icon" aria-hidden="true">${m.icon}</span>
-          <span class="mode-name">${esc(m.name)}</span>
-          <span class="mode-desc">${esc(m.describe(T))}</span>
-          <span class="mode-record">🏆 Récord: <strong>${rec ? fmt(rec) : '—'}</strong></span>
+      const divider = id === 'sagas' ? '<p class="set-divider" aria-hidden="true">Solo en Videojuegos</p>' : '';
+      return `${divider}
+        <button type="button" class="set-row set-row--mode" role="radio" aria-checked="${sel}" data-mode="${id}">
+          <span class="row-icon" aria-hidden="true">${m.icon}</span>
+          <span class="row-main">
+            <span class="row-title">${esc(m.name)}</span>
+            <span class="sr-only">Dificultad: ${LEVEL_NAME[level]}, ${level} de 5.</span>
+            <span class="row-sub">${esc(m.describe(T))}</span>
+            ${rec ? `<span class="row-record"><span aria-hidden="true">🏆</span><span class="sr-only">Tu récord:</span> ${fmt(rec)}</span>` : ''}
+          </span>
+          <span class="row-level" aria-hidden="true">${gems(level)}<b class="gem-word">${LEVEL_NAME[level]}</b></span>
+          <span class="row-check" aria-hidden="true">✓</span>
         </button>`;
     }).join('');
+    roving($('#modes'));
   }
 
   /*
@@ -312,97 +351,151 @@
             <span>${f.icon ? f.icon + ' ' : ''}${esc(f.label)}</span>
           </button>`;
       }
+      const lid = 'f-' + f.id;
       if (f.options.length > 5) {
-        return `<label class="popup">
-            <span class="popup-label">${esc(f.label)}</span>
-            <select data-filter="${f.id}">${f.options.map((o) =>
-              `<option value="${esc(o.value)}"${vals[f.id] === o.value ? ' selected' : ''}>${esc(o.label)}</option>`).join('')}
-            </select>
-          </label>`;
+        return `<div class="filter">
+            <label class="filter-label" id="${lid}" for="sel-${f.id}">${esc(f.label)}</label>
+            <span class="popup${vals[f.id] !== f.default ? ' is-changed' : ''}">
+              <select id="sel-${f.id}" data-filter="${f.id}">${f.options.map((o) =>
+                `<option value="${esc(o.value)}"${vals[f.id] === o.value ? ' selected' : ''}>${esc(o.label)}</option>`).join('')}
+              </select>
+            </span>
+          </div>`;
       }
-      return `<div class="segmented" role="radiogroup" aria-label="${esc(f.label)}">
-          <span class="segmented-label">${esc(f.label)}:</span>
-          ${f.options.map((o) => {
-            const on = vals[f.id] === o.value;
-            return `<button type="button" role="radio" aria-checked="${on}" class="${on ? 'is-on' : ''}" data-filter="${f.id}" data-value="${esc(o.value)}">${esc(o.label)}</button>`;
-          }).join('')}
+      return `<div class="filter">
+          <span class="filter-label" id="${lid}">${esc(f.label)}</span>
+          <div class="segmented" role="radiogroup" aria-labelledby="${lid}">
+            ${f.options.map((o) => {
+              const on = vals[f.id] === o.value;
+              return `<button type="button" role="radio" aria-checked="${on}" class="${on ? 'is-on' : ''}" data-filter="${f.id}" data-value="${esc(o.value)}">${esc(o.label)}</button>`;
+            }).join('')}
+          </div>
         </div>`;
     }).join('');
+    $$('#filters .segmented').forEach(roving);
   }
 
   function catsLabel(T) { return T.catsLabel || 'Épocas'; }
 
   function renderChips() {
-    $('#step3-title').textContent = sagaMode() ? 'Elige una saga' : '¿Qué quieres escuchar?';
-    $('#cats-head').hidden = sagaMode();
-    if (sagaMode()) { $('#chips').setAttribute('aria-label', 'Saga'); renderSagaPicker(); return; }
-    $('#chips').removeAttribute('aria-label');
+    const saga = sagaMode();
+    const box = $('#chips');
+    $('#part-name-3').textContent = saga ? 'Saga' : 'Música';
+    $('#step3-title').textContent = saga ? 'Elige una saga (o uno de sus juegos)' : '¿Qué quieres escuchar?';
+    $('#cats-head').hidden = saga;
+    box.classList.toggle('is-saga', saga);
+    if (saga) {
+      box.removeAttribute('role');
+      box.removeAttribute('aria-labelledby');
+      renderSagaPicker();
+      return;
+    }
+    box.setAttribute('role', 'group');
+    box.setAttribute('aria-labelledby', 'cats-label');
     const sc = scope();
     const cats = themeCats();
+    const list = AM.themeCategories(settings.theme);
     const counts = {};
     sc.tracks.forEach((t) => { counts[t.cat] = (counts[t.cat] || 0) + 1; });
     $('#cats-label').textContent = catsLabel(theme());
-    $('[data-cats="all"]').disabled = cats.length === allCats().length;
+    $('#cats-count').textContent = ` · ${cats.length} de ${list.length}`;
+    $('[data-cats="all"]').disabled = cats.length === list.length;
     $('[data-cats="none"]').disabled = !cats.length;
-    $('#chips').innerHTML = AM.themeCategories(settings.theme).map((c) => {
+    box.innerHTML = list.map((c) => {
       const on = cats.indexOf(c.id) >= 0;
-      return `<button type="button" class="chip${on ? ' is-on' : ''}" data-cat="${c.id}" aria-pressed="${on}">${c.icon} ${esc(c.label)} <span>${counts[c.id] || 0}</span></button>`;
+      return `<button type="button" class="pad" data-cat="${c.id}" aria-pressed="${on}">
+          <span class="pad-icon" aria-hidden="true">${c.icon}</span>
+          <span class="pad-label">${esc(c.label)}</span>
+          <span class="pad-count">${fmt(counts[c.id] || 0)}<span class="sr-only"> pistas</span></span>
+          <span class="pad-gem" aria-hidden="true"></span>
+        </button>`;
     }).join('');
     updatePoolInfo();
   }
 
   /*
-   * Parte A3 del modo Sagas: la saga, "toda la saga / un juego" y, si es un juego, cuál.
-   * Solo se puede elegir un juego que tenga al menos AM.MIN_POOL canciones distintas.
+   * Parte 3 del modo Sagas: una sola lista. Tocar una saga es "toda la saga"; debajo de la elegida van sus
+   * juegos (solo los que tienen al menos AM.MIN_POOL canciones distintas) para jugar uno solo.
    */
   function renderSagaPicker() {
     const sel = sagaInfo();
     const games = sagaPlayableGames();
-    const all = !settings.saga.game;
-    const sagas = AM.SAGAS.map((x) => {
-      const on = x.id === sel.id;
-      return `<button type="button" class="chip${on ? ' is-on' : ''}" role="radio" aria-checked="${on}" data-saga="${x.id}">${x.icon} ${esc(x.label)} <span>${AM.Logic.sagaTracks(x.id).length}</span></button>`;
-    }).join('');
-    const scopeSel = `
-      <div class="segmented" role="radiogroup" aria-label="Qué canciones">
-        <span class="segmented-label">Canciones de:</span>
-        <button type="button" role="radio" aria-checked="${all}" class="${all ? 'is-on' : ''}" data-saga-scope="all">Toda la saga</button>
-        <button type="button" role="radio" aria-checked="${!all}" class="${all ? '' : 'is-on'}" data-saga-scope="game"${games.length ? '' : ' disabled'}>Un juego</button>
-      </div>`;
-    // "The Legend of Zelda: Ocarina of Time" → "Ocarina of Time" (la saga ya está elegida arriba)
+    // "The Legend of Zelda: Ocarina of Time" → "Ocarina of Time" (la saga ya está arriba)
     const short = (game) => AM.Logic.sagaGameName(sel, game);
-    const gameChips = all ? '' : games.map((g) => {
-      const on = g.game === settings.saga.game;
-      return `<button type="button" class="chip${on ? ' is-on' : ''}" role="radio" aria-checked="${on}" data-saga-game="${esc(g.game)}" title="${esc(g.game)}">${esc(short(g.game))} <span>${g.songs}</span></button>`;
+    const rows = AM.SAGAS.map((x) => {
+      const isSel = x.id === sel.id;
+      const on = isSel && !settings.saga.game;
+      let html = `
+        <button type="button" class="set-row set-row--saga${isSel && !on ? ' is-parent' : ''}" role="radio" aria-checked="${on}" data-saga="${x.id}">
+          <span class="row-icon" aria-hidden="true">${x.icon}</span>
+          <span class="row-main"><span class="row-title">${esc(x.label)}</span>${isSel ? `<span class="row-sub">${on ? 'Toda la saga' : 'Elegiste un juego'}</span>` : ''}</span>
+          <span class="row-count">${AM.Logic.sagaTracks(x.id).length}<span class="sr-only"> canciones</span></span>
+          <span class="row-check" aria-hidden="true">✓</span>
+        </button>`;
+      if (isSel && games.length) {
+        html += '<p class="group-label" aria-hidden="true">o solo un juego:</p>' + games.map((g) => {
+          const gOn = g.game === settings.saga.game;
+          return `
+            <button type="button" class="set-row set-row--game" role="radio" aria-checked="${gOn}" data-saga-game="${esc(g.game)}" title="${esc(g.game)}"
+                    aria-label="${esc(`${short(g.game)}, juego de ${sel.label}, ${g.songs} canciones`)}">
+              <span class="row-main"><span class="row-title">${esc(short(g.game))}</span></span>
+              <span class="row-count">${g.songs}</span>
+              <span class="row-check" aria-hidden="true">✓</span>
+            </button>`;
+        }).join('');
+      }
+      return html;
     }).join('');
-    $('#chips').innerHTML = `
-      <div class="saga-row" role="radiogroup" aria-label="Saga">${sagas}</div>
-      <div class="saga-row">${scopeSel}</div>
-      ${gameChips ? `<div class="saga-row" role="radiogroup" aria-label="Juego">${gameChips}</div>` : ''}`;
+    $('#chips').innerHTML = `<div class="set-list saga-list" role="radiogroup" aria-label="Saga o juego">${rows}</div>`;
+    roving($('#chips .saga-list'));
     updatePoolInfo();
   }
+
+  /*
+   * "Incluye Halo, Kirby, Zelda y más": la muestra se queda fija mientras no cambie el tema, el modo o la
+   * saga (antes cambiaba con cada toque) y solo se vuelve a sortear si un nombre ya no está en las pistas.
+   */
+  let hintCache = { key: '', names: [] };
+  function sampleNames(list, n) {
+    const key = [settings.theme, settings.mode, settings.saga.id, settings.saga.game].join('|');
+    if (hintCache.key !== key || hintCache.names.some((x) => list.indexOf(x) < 0)) hintCache = { key: key, names: AM.Logic.sample(list, n) };
+    return hintCache.names;
+  }
+
+  let lastOk = null;  // ¿la partida se podía jugar en el render anterior? (para encender los trastes)
+  let statusTimer = 0;
 
   function updatePoolInfo() {
     const pool = currentPool();
     const saga = sagaMode();
     const ok = pool.length >= AM.MIN_POOL;
-    $('#pool-count').textContent = `${fmt(pool.length)} ${saga ? 'canciones' : 'pistas'}`;
+    const unit = saga ? 'canciones' : 'pistas';
+    $('#pool-count').textContent = `${fmt(pool.length)} ${unit}`;
     $('#btn-start').disabled = !ok;
     $('#deck').classList.toggle('is-short', !ok);
+    let status;
     if (!ok) {
-      $('#start-hint').innerHTML = esc(saga
+      status = saga
         ? `Faltan canciones: se necesitan al menos ${AM.MIN_POOL}.`
-        : `Faltan pistas: elige más ${catsLabel(theme()).toLowerCase()}${theme().filters.length ? ' o cambia los filtros' : ''} (se necesitan al menos ${AM.MIN_POOL}).`) +
-        ' <button type="button" class="btn-link" data-open-part="3">Elegir música</button>';
+        : `Faltan pistas: elige más ${catsLabel(theme()).toLowerCase()}${theme().filters.length ? ' o cambia los filtros' : ''} (se necesitan al menos ${AM.MIN_POOL}).`;
+      $('#start-hint').innerHTML = esc(status) + ' <button type="button" class="btn-link" data-open-part="3">Elegir música</button>';
     } else if (saga) {
-      const names = settings.saga.game
-        ? AM.Logic.sample(Array.from(new Set(pool.map((t) => t.title))), 3)
-        : AM.Logic.sample(Array.from(new Set(pool.map((t) => t.game))), 3);
+      const names = sampleNames(Array.from(new Set(pool.map((t) => (settings.saga.game ? t.title : t.game)))), 3);
       $('#start-hint').textContent = `${settings.saga.game ? 'Canciones como' : 'Incluye'} ${names.join(', ')} y más.`;
     } else {
-      const names = AM.Logic.sample(Array.from(new Set(pool.map((t) => t.franchise))), 3);
+      const names = sampleNames(Array.from(new Set(pool.map((t) => t.franchise))), 3);
       $('#start-hint').textContent = `Incluye ${names.join(', ')} y más.`;
     }
+    // Los trastes se apagan si faltan pistas y se vuelven a encender cuando ya alcanzan.
+    if (!ok) $('#deck').classList.remove('is-lit');
+    else if (lastOk === false) lightStrikeline();
+    // El lector de pantalla oye el cambio una sola vez (y no al cargar la página).
+    if (lastOk !== null) {
+      const text = ok ? `${fmt(pool.length)} ${unit} listas para jugar` : status;
+      clearTimeout(statusTimer);
+      statusTimer = setTimeout(() => { if ($('#pool-status').textContent !== text) $('#pool-status').textContent = text; }, 400);
+    }
+    lastOk = ok;
     const heard = pool.filter((t) => History.seen[t.id]).length;
     const hidden = History.hidden.length;
     const where = saga ? (settings.saga.game ? 'de este juego' : 'de esta saga') : 'de lo que elegiste';
@@ -412,6 +505,15 @@
     if (hidden) info += ` ${hidden} oculta${hidden === 1 ? '' : 's'} por tus reportes.`;
     $('#seen-info').innerHTML = esc(info) + (heard ? ' <button type="button" class="btn-link" id="btn-reset-seen">Reiniciar historial</button>' : '');
     renderDeck();
+  }
+
+  /** El único momento animado del inicio: los cinco trastes se encienden, de verde a naranja. */
+  function lightStrikeline() {
+    const deck = $('#deck');
+    if (deck.classList.contains('is-short')) return;
+    deck.classList.remove('is-lit');
+    void deck.offsetWidth; // reinicia la animación
+    deck.classList.add('is-lit');
   }
 
   $('#seen-info').addEventListener('click', (e) => {
@@ -431,10 +533,9 @@
   }
 
   /*
-   * Configurador por partes, con forma de cassette: A1 tema, A2 modo y A3 música.
-   * Una parte abierta a la vez; las cerradas muestran lo elegido y se abren con un toque.
-   * La casetera (a un lado en pantallas anchas, abajo en el celular) resume la partida y siempre
-   * tiene el botón Jugar: lo elegido se guarda, así que quien vuelve puede jugar sin abrir nada.
+   * Tres partes numeradas: 1 tema, 2 modo y 3 música. Una abierta a la vez; las cerradas muestran lo
+   * elegido y se abren con un toque. "Tu partida" (a un lado en pantallas anchas, abajo en el celular)
+   * siempre tiene el botón Jugar: lo elegido se guarda, así que quien vuelve juega sin abrir nada.
    */
   const parts = { open: Store.get('configured', false) ? 0 : 1 };
   const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -452,6 +553,12 @@
       const r = head.getBoundingClientRect();
       if (r.top < 64 || r.top > window.innerHeight * 0.6) head.scrollIntoView({ block: 'start', behavior: reduceMotion ? 'auto' : 'smooth' });
     }
+  }
+
+  /** Abre una parte y lleva el foco a lo elegido en ella (o a su encabezado). */
+  function goPart(n) {
+    openPart(n, true);
+    ($(`#part-body-${n} [aria-checked="true"]`) || $(`#part-btn-${n}`)).focus({ preventScroll: true });
   }
 
   /** Lo elegido en Música, en palabras: "Rock y Pop · Español", "3 de 5 épocas", "Todas las épocas". */
@@ -486,21 +593,24 @@
     return `${rounds} rondas · 4 opciones`;
   }
 
-  /** Etiqueta del cassette, valores de las partes cerradas y resumen de la casetera. */
+  /** Valores de las partes cerradas y "Tu partida". */
   function renderDeck() {
     const T = theme();
     const m = AM.MODES[settings.mode] || AM.MODES.clasico;
+    const level = MODE_LEVEL[m.id] || 3;
     const pool = currentPool();
+    const ok = pool.length >= AM.MIN_POOL;
     const music = musicSummary();
     const count = `${fmt(pool.length)} ${sagaMode() ? 'canciones' : 'pistas'}`;
-    $('#pick-1').textContent = `${T.icon} ${T.label}`;
-    $('#pick-2').textContent = `${m.icon} ${m.name}`;
-    $('#pick-3').textContent = `${music} · ${count}`;
-    $('#deck-title').textContent = T.label;
-    $('#deck-sub').textContent = `${m.name} · ${music}`;
-    // En la barra del celular: tema arriba y "modo · pistas" abajo. En pantallas anchas el modo ya está
-    // en la etiqueta del cassette (que es decorativa), así que ahí solo lo lee el lector de pantalla.
-    $('#deck-what').textContent = `${T.icon} ${T.label}`;
+    const themeHtml = `<span aria-hidden="true">${T.icon}</span> ${esc(T.label)}`;
+    const modeHtml = `<span aria-hidden="true">${m.icon}</span> ${esc(m.name)}${gems(level, 'mini-gems')}<span class="sr-only">, dificultad ${LEVEL_NAME[level]}</span>`;
+    $('#pick-1').innerHTML = themeHtml;
+    $('#pick-2').innerHTML = modeHtml;
+    $('#pick-3').innerHTML = ok ? esc(`${music} · ${count}`) : `<span class="warn">⚠ Faltan pistas</span> · ${esc(count)}`;
+    $('#deck-what').innerHTML = themeHtml;
+    $('#deck-mode').innerHTML = modeHtml;
+    $('#deck-music').textContent = music;
+    // En el celular solo se ven el tema y esta línea, así que ahí lleva también el modo (.dl-mode).
     $('#deck-line').innerHTML = `<span class="dl-mode">${m.icon} ${esc(m.name)} · </span>${esc(count)}<span class="dl-facts"> · ${esc(modeFacts(m, pool.length))}</span>`;
     const rec = sagaMode() ? Records.get('sagas', sagaRecordKey()) : Records.get(T.id, m.id);
     $('#deck-record').textContent = rec ? `🏆 Tu récord: ${fmt(rec)}` : '🏆 Aún sin récord';
@@ -515,7 +625,7 @@
   });
   $('#deck').addEventListener('click', (e) => {
     const btn = e.target.closest('[data-open-part]');
-    if (btn) openPart(Number(btn.dataset.openPart), true);
+    if (btn) goPart(Number(btn.dataset.openPart));
   });
 
   // Elegir tema o modo cierra esa parte y abre la siguiente.
@@ -526,32 +636,52 @@
       if (parts.open !== n) return;
       const wasHere = $(`.part[data-part="${n}"]`).contains(document.activeElement);
       openPart(n + 1, true);
-      // Con teclado, el foco sigue a la parte que se abrió (en Modo, a la tarjeta elegida).
+      // Con teclado, el foco sigue a la parte que se abrió (en Modo, a la fila elegida).
       if (wasHere) ($(`.part[data-part="${n + 1}"] [aria-checked="true"]`) || $(`#part-btn-${n + 1}`)).focus({ preventScroll: true });
     }, reduceMotion ? 0 : 220);
   }
 
-  // Flechas entre las tarjetas de tema y de modo (Enter o Espacio las eligen, como cualquier botón).
-  ['#themes', '#modes'].forEach((sel) => {
-    $(sel).addEventListener('keydown', (e) => {
-      const keys = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 };
-      if (!(e.key in keys)) return;
-      const cards = $$('[role="radio"]', $(sel));
-      const i = cards.indexOf(document.activeElement);
-      if (i < 0) return;
-      e.preventDefault();
-      cards[(i + keys[e.key] + cards.length) % cards.length].focus();
-    });
+  // Flechas (y Inicio/Fin) dentro de cada lista: mueven el foco sin elegir, así que no abren la parte
+  // siguiente. Enter o Espacio eligen, como en cualquier botón.
+  $('#parts').addEventListener('keydown', (e) => {
+    const keys = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1, Home: 'first', End: 'last' };
+    if (!(e.key in keys) || e.altKey || e.ctrlKey || e.metaKey) return;
+    const group = e.target.closest('[role="radiogroup"], .pads');
+    if (!group) return;
+    const radios = group.matches('[role="radiogroup"]');
+    const items = radios ? $$('[role="radio"]', group) : $$('.pad', group);
+    const i = items.indexOf(document.activeElement);
+    if (i < 0) return;
+    e.preventDefault();
+    const k = keys[e.key];
+    const next = items[k === 'first' ? 0 : k === 'last' ? items.length - 1 : (i + k + items.length) % items.length];
+    if (radios) items.forEach((b) => { b.tabIndex = b === next ? 0 : -1; });
+    next.focus();
   });
 
-  // Enter (fuera de un botón o campo) empieza a jugar con lo que muestra la casetera.
+  // Teclas del inicio: Mayús+Enter juega desde donde sea; Enter fuera de un botón o campo, también.
+  // Esc cierra la parte abierta; 1, 2 y 3 van a Tema, Modo y Música (solo con el foco en el configurador).
   document.addEventListener('keydown', (e) => {
-    if (e.key !== 'Enter' || e.altKey || e.ctrlKey || e.metaKey) return;
+    if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey) return;
     if (!$('#screen-home').classList.contains('is-active') || document.querySelector('dialog[open]')) return;
     const tag = (e.target && e.target.tagName || '').toLowerCase();
-    if (tag === 'button' || tag === 'a' || tag === 'input' || tag === 'textarea' || tag === 'select') return;
-    e.preventDefault();
-    if (!$('#btn-start').disabled) startGame();
+    const field = tag === 'input' || tag === 'textarea' || tag === 'select';
+    if (e.key === 'Enter' && (e.shiftKey || !(field || tag === 'button' || tag === 'a'))) {
+      e.preventDefault();
+      if (!$('#btn-start').disabled) startGame();
+      return;
+    }
+    if (field || !e.target.closest) return;
+    if (e.key === 'Escape') {
+      const part = e.target.closest('.part.is-open');
+      if (!part) return;
+      e.preventDefault();
+      openPart(0);
+      $(`#part-btn-${part.dataset.part}`).focus();
+    } else if (/^[123]$/.test(e.key) && e.target.closest('#parts, #deck')) {
+      e.preventDefault();
+      goPart(Number(e.key));
+    }
   });
 
   $('#themes').addEventListener('click', (e) => {
@@ -608,7 +738,7 @@
     sfx('click');
     renderModes();
     renderFilters();
-    renderChips(); // la parte A3 cambia en el modo Sagas
+    renderChips(); // la parte 3 cambia en el modo Sagas
     const now = $(`[data-mode="${settings.mode}"]`);
     if (now) now.focus();
   });
@@ -625,19 +755,18 @@
   });
 
   $('#chips').addEventListener('click', (e) => {
-    const sagaBtn = e.target.closest('[data-saga], [data-saga-scope], [data-saga-game]');
+    const sagaBtn = e.target.closest('[data-saga], [data-saga-game]');
     if (sagaBtn) {
-      if (sagaBtn.disabled) return;
       if (sagaBtn.dataset.saga) settings.saga = { id: sagaBtn.dataset.saga, game: '' };
-      else if (sagaBtn.dataset.sagaScope === 'all') settings.saga.game = '';
-      else if (sagaBtn.dataset.sagaScope === 'game') {
-        const games = sagaPlayableGames();
-        if (!settings.saga.game && games.length) settings.saga.game = games[0].game;
-      } else settings.saga.game = sagaBtn.dataset.sagaGame;
+      else settings.saga.game = sagaBtn.dataset.sagaGame;
       Store.set('saga', settings.saga);
       sfx('click');
       renderModes(); // el récord del modo Sagas es por saga
       renderChips();
+      const again = sagaBtn.dataset.saga
+        ? $(`#chips [data-saga="${sagaBtn.dataset.saga}"]`)
+        : $(`#chips [data-saga-game="${CSS.escape(settings.saga.game)}"]`);
+      if (again) again.focus();
       return;
     }
     const chip = e.target.closest('[data-cat]');
@@ -2243,4 +2372,5 @@
 
   if (location.protocol === 'file:') $('#file-warning').hidden = false;
   renderHome();
+  lightStrikeline();
 })(window.AM = window.AM || {});
