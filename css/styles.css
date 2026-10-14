@@ -506,6 +506,114 @@ a { color: var(--cyan); }
 .seen-info { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
 .seen-info .btn-link { font-size: 13px; padding: 0 2px; }
 
+/* ── Configurador paso a paso ── */
+.quick-row { display: flex; flex-direction: column; align-items: center; gap: 6px; margin: 24px 0 0; text-align: center; }
+.quick-desc { margin: 0; color: var(--muted); font-size: 13px; }
+.wizard {
+  margin-top: 24px;
+  padding: 22px;
+  border-radius: 20px;
+  border: 1px solid var(--border-hi);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(6px);
+}
+.wizard-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 0 0 22px;
+  padding: 0;
+  list-style: none;
+}
+.wizard-steps li { position: relative; }
+.wizard-steps li + li::before {
+  content: '';
+  position: absolute;
+  top: 19px;
+  left: calc(-50% + 24px);
+  width: calc(100% - 40px);
+  height: 2px;
+  background: var(--border-hi);
+}
+.wstep-tab {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--muted);
+}
+.wstep-num {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid var(--border-hi);
+  background: var(--bg-2);
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  color: var(--text);
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+.wstep-name { font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; margin-top: 2px; }
+.wstep-pick {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  color: var(--text);
+  opacity: 0.85;
+}
+.wstep-tab.is-done .wstep-num { background: rgba(52, 232, 158, 0.18); border-color: var(--green); font-size: 0; }
+.wstep-tab.is-done .wstep-num::after { content: '✓'; font-family: var(--font-ui); font-size: 16px; }
+.wstep-tab.is-current { color: var(--text); }
+.wstep-tab.is-current .wstep-num {
+  background: linear-gradient(135deg, var(--pink), var(--violet));
+  border-color: transparent;
+  box-shadow: 0 0 18px rgba(255, 60, 172, 0.5);
+}
+@media (hover: hover) {
+  .wstep-tab:hover .wstep-num { border-color: var(--cyan); }
+}
+.wstep.is-active { animation: wstep-in 0.3s ease both; }
+@keyframes wstep-in {
+  from { opacity: 0; transform: translateX(14px); }
+  to { opacity: 1; transform: none; }
+}
+.wstep-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 6px 10px;
+  margin: 0 0 18px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+.wstep-title small { color: var(--amber); font-size: 14px; font-weight: 600; }
+.wstep .filters { margin-bottom: 14px; }
+.wstep .start-hint { text-align: center; margin: 16px 0 0; }
+.wstep .seen-info { text-align: center; }
+.wizard-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+.wizard-nav .btn-primary { margin-left: auto; }
+.btn-play { font-family: var(--font-pixel); font-size: 14px; padding: 14px 30px; }
+
 /* ── HUD de partida ── */
 .hud {
   display: grid;
@@ -1459,6 +1567,19 @@ kbd {
   .round-row .r-num { display: none; }
   .round-row img { width: 40px; height: 40px; }
   .guess-actions .btn { flex: 1; }
+  .wizard { padding: 16px; margin-top: 18px; border-radius: 16px; }
+  .wstep-title { font-size: 19px; }
+  .wstep-name { font-size: 11px; letter-spacing: 1px; }
+  .wstep-pick { font-size: 11px; }
+  .wizard-nav {
+    position: sticky;
+    bottom: 0;
+    z-index: 45;
+    margin: 18px -16px -16px;
+    padding: 12px 16px 12px 64px; /* deja libre la esquina de la versión */
+    background: var(--panel-solid);
+    border-radius: 0 0 16px 16px;
+  }
   .themes { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
   .theme-card { padding: 12px 4px 10px; }
   .theme-icon { font-size: 26px; }

@@ -393,6 +393,7 @@
       : 'Todas estas pistas son nuevas para ti.';
     if (hidden) info += ` ${hidden} oculta${hidden === 1 ? '' : 's'} por tus reportes.`;
     $('#seen-info').innerHTML = esc(info) + (heard ? ' <button type="button" class="btn-link" id="btn-reset-seen">Reiniciar historial</button>' : '');
+    renderWizard();
   }
 
   $('#seen-info').addEventListener('click', (e) => {
@@ -408,7 +409,79 @@
     renderModes();
     renderFilters();
     renderChips();
+    goStep(wizard.step);
   }
+
+  /* ── Configurador paso a paso: 1) tema, 2) modo, 3) música ── */
+
+  const wizard = { step: 1 };
+
+  function goStep(n) {
+    wizard.step = Math.max(1, Math.min(3, n));
+    $$('.wstep').forEach((el) => {
+      const on = Number(el.dataset.step) === wizard.step;
+      el.hidden = !on;
+      el.classList.toggle('is-active', on);
+    });
+    $$('.wstep-tab').forEach((btn) => {
+      const k = Number(btn.dataset.goto);
+      btn.classList.toggle('is-current', k === wizard.step);
+      btn.classList.toggle('is-done', k < wizard.step);
+      if (k === wizard.step) btn.setAttribute('aria-current', 'step'); else btn.removeAttribute('aria-current');
+    });
+    $('#btn-back').disabled = wizard.step === 1;
+    $('#btn-next-step').hidden = wizard.step === 3;
+    $('#btn-start').hidden = wizard.step !== 3;
+    renderWizard();
+  }
+
+  /** Texto corto de lo elegido en cada paso (se ve bajo el número del paso y en el atajo). */
+  function wizardPicks() {
+    const T = theme();
+    const m = AM.MODES[settings.mode] || {};
+    const pool = currentPool();
+    let music = `${pool.length} pistas`;
+    if (sagaMode()) {
+      const sel = sagaInfo();
+      music = settings.saga.game ? AM.Logic.sagaGameName(sel, settings.saga.game) : (sel && sel.label) || music;
+    }
+    return { theme: `${T.icon} ${T.label}`, mode: `${m.icon || ''} ${m.name || ''}`.trim(), music: music, pool: pool };
+  }
+
+  function renderWizard() {
+    const p = wizardPicks();
+    $('#pick-1').textContent = p.theme;
+    $('#pick-2').textContent = p.mode;
+    $('#pick-3').textContent = p.music;
+    const ok = p.pool.length >= AM.MIN_POOL;
+    const quick = !!Store.get('configured', false) && ok;
+    $('#quick-row').hidden = !quick;
+    if (quick) $('#quick-desc').textContent = `${p.theme} · ${p.mode} · ${p.music}`;
+  }
+
+  $$('.wstep-tab').forEach((btn) => btn.addEventListener('click', () => { sfx('click'); goStep(Number(btn.dataset.goto)); }));
+  $('#btn-back').addEventListener('click', () => { sfx('click'); goStep(wizard.step - 1); });
+  $('#btn-next-step').addEventListener('click', () => { sfx('click'); goStep(wizard.step + 1); });
+  $('#btn-quick').addEventListener('click', startGame);
+
+  // Elegir tema o modo lleva solo al paso siguiente.
+  $('#themes').addEventListener('click', (e) => {
+    if (e.target.closest('[data-theme]') && wizard.step === 1) setTimeout(() => goStep(2), 220);
+  });
+  $('#modes').addEventListener('click', (e) => {
+    if (e.target.closest('[data-mode]') && wizard.step === 2) setTimeout(() => goStep(3), 220);
+  });
+
+  // Enter avanza entre pasos (y en el último empieza a jugar).
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter' || e.altKey || e.ctrlKey || e.metaKey) return;
+    if (!$('#screen-home').classList.contains('is-active') || document.querySelector('dialog[open]')) return;
+    const tag = (e.target && e.target.tagName || '').toLowerCase();
+    if (tag === 'button' || tag === 'a' || tag === 'input' || tag === 'textarea' || tag === 'select') return;
+    e.preventDefault();
+    if (wizard.step < 3) goStep(wizard.step + 1);
+    else if (!$('#btn-start').disabled) startGame();
+  });
 
   $('#themes').addEventListener('click', (e) => {
     const card = e.target.closest('[data-theme]');
@@ -485,6 +558,7 @@
   /* ═════════ partida ═════════ */
 
   function startGame() {
+    Store.set('configured', true);
     const saga = sagaMode() ? sagaInfo() : null;
     const base = AM.MODES[AM.modeAvailable(settings.mode, settings.theme) ? settings.mode : 'clasico'];
     // En Sagas, el nombre del modo lleva la saga o el juego (se ve en el marcador, resultados y al compartir).

@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=1.9.5-hotfix1">
+  <link rel="stylesheet" href="css/styles.css?v=1.9.6">
 </head>
 <body>
   <div class="bg" aria-hidden="true">
@@ -53,20 +53,43 @@
         </div>
       </div>
 
-      <h2 class="section-title"><span class="step">1</span> Elige un tema</h2>
-      <div class="themes" id="themes" role="radiogroup" aria-label="Tema"></div>
+      <div class="quick-row" id="quick-row" hidden>
+        <button class="btn btn-ghost" id="btn-quick" type="button">⚡ Jugar con la última configuración</button>
+        <p class="quick-desc" id="quick-desc"></p>
+      </div>
 
-      <h2 class="section-title"><span class="step">2</span> Elige un modo</h2>
-      <div class="modes" id="modes" role="radiogroup" aria-label="Modo de juego"></div>
+      <div class="wizard" id="wizard">
+        <ol class="wizard-steps" aria-label="Pasos para armar la partida">
+          <li><button type="button" class="wstep-tab is-current" data-goto="1"><span class="wstep-num">1</span><span class="wstep-name">Tema</span><span class="wstep-pick" id="pick-1"></span></button></li>
+          <li><button type="button" class="wstep-tab" data-goto="2"><span class="wstep-num">2</span><span class="wstep-name">Modo</span><span class="wstep-pick" id="pick-2"></span></button></li>
+          <li><button type="button" class="wstep-tab" data-goto="3"><span class="wstep-num">3</span><span class="wstep-name">Música</span><span class="wstep-pick" id="pick-3"></span></button></li>
+        </ol>
 
-      <h2 class="section-title"><span class="step">3</span> <span id="step3-title">¿Qué quieres escuchar?</span> <small id="pool-count"></small></h2>
-      <div class="filters" id="filters" hidden></div>
-      <div class="chips" id="chips" aria-label="Categorías"></div>
+        <div class="wizard-body">
+          <div class="wstep is-active" data-step="1">
+            <h2 class="wstep-title">¿De qué quieres adivinar la música?</h2>
+            <div class="themes" id="themes" role="radiogroup" aria-label="Tema"></div>
+          </div>
 
-      <div class="start-row">
-        <button class="btn btn-primary btn-xl" id="btn-start" type="button">▶ Jugar</button>
-        <p class="start-hint" id="start-hint" aria-live="polite"></p>
-        <p class="seen-info" id="seen-info"></p>
+          <div class="wstep" data-step="2" hidden>
+            <h2 class="wstep-title">¿Cómo quieres jugar?</h2>
+            <div class="modes" id="modes" role="radiogroup" aria-label="Modo de juego"></div>
+          </div>
+
+          <div class="wstep" data-step="3" hidden>
+            <h2 class="wstep-title"><span id="step3-title">¿Qué quieres escuchar?</span> <small id="pool-count"></small></h2>
+            <div class="filters" id="filters" hidden></div>
+            <div class="chips" id="chips" aria-label="Categorías"></div>
+            <p class="start-hint" id="start-hint" aria-live="polite"></p>
+            <p class="seen-info" id="seen-info"></p>
+          </div>
+        </div>
+
+        <div class="wizard-nav">
+          <button class="btn btn-ghost" id="btn-back" type="button">◀ Atrás</button>
+          <button class="btn btn-primary" id="btn-next-step" type="button">Siguiente ▶</button>
+          <button class="btn btn-primary btn-play" id="btn-start" type="button" hidden>▶ Jugar</button>
+        </div>
       </div>
     </section>
 
@@ -301,27 +324,27 @@
   </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <div class="version" id="app-version" aria-label="Versión de la app">v1.9.5-hotfix1</div>
+  <div class="version" id="app-version" aria-label="Versión de la app">v1.9.6</div>
 
   <!-- Reproductor de YouTube oculto (solo audio para el juego) -->
   <div id="yt-host" aria-hidden="true"><div id="yt-player"></div></div>
 
-  <script src="js/config.js?v=1.9.5-hotfix1" defer></script>
-  <script src="js/catalog.js?v=1.9.5-hotfix1" defer></script>
-  <script src="js/catalog-series.js?v=1.9.5-hotfix1" defer></script>
-  <script src="js/catalog-caricaturas.js?v=1.9.5-hotfix1" defer></script>
-  <script src="js/catalog-anime.js?v=1.9.5-hotfix1" defer></script>
-  <script src="js/catalog-disney.js?v=1.9.5-hotfix1" defer></script>
-  <script src="js/catalog-musicales.js?v=1.9.5-hotfix1" defer></script>
-  <script src="js/catalog-canciones.js?v=1.9.5-hotfix1" defer></script>
-  <script src="js/catalog-sagas.js?v=1.9.5-hotfix1" defer></script>
-  <script src="js/themes.js?v=1.9.5-hotfix1" defer></script>
-  <script src="js/sources.js?v=1.9.5-hotfix1" defer></script>
-  <script src="js/loudness.js?v=1.9.5-hotfix1" defer></script>
-  <script src="js/engine.js?v=1.9.5-hotfix1" defer></script>
-  <script src="js/sfx.js?v=1.9.5-hotfix1" defer></script>
-  <script src="js/game.js?v=1.9.5-hotfix1" defer></script>
-  <script src="js/scores.js?v=1.9.5-hotfix1" defer></script>
-  <script src="js/app.js?v=1.9.5-hotfix1" defer></script>
+  <script src="js/config.js?v=1.9.6" defer></script>
+  <script src="js/catalog.js?v=1.9.6" defer></script>
+  <script src="js/catalog-series.js?v=1.9.6" defer></script>
+  <script src="js/catalog-caricaturas.js?v=1.9.6" defer></script>
+  <script src="js/catalog-anime.js?v=1.9.6" defer></script>
+  <script src="js/catalog-disney.js?v=1.9.6" defer></script>
+  <script src="js/catalog-musicales.js?v=1.9.6" defer></script>
+  <script src="js/catalog-canciones.js?v=1.9.6" defer></script>
+  <script src="js/catalog-sagas.js?v=1.9.6" defer></script>
+  <script src="js/themes.js?v=1.9.6" defer></script>
+  <script src="js/sources.js?v=1.9.6" defer></script>
+  <script src="js/loudness.js?v=1.9.6" defer></script>
+  <script src="js/engine.js?v=1.9.6" defer></script>
+  <script src="js/sfx.js?v=1.9.6" defer></script>
+  <script src="js/game.js?v=1.9.6" defer></script>
+  <script src="js/scores.js?v=1.9.6" defer></script>
+  <script src="js/app.js?v=1.9.6" defer></script>
 </body>
 </html>

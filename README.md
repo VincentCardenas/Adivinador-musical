@@ -241,6 +241,11 @@ La versión actual se ve en la esquina inferior izquierda del juego. Para public
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **1.9.6**: **configurador paso a paso**. El inicio ya no es una página larga: la partida se arma en
+  3 pasos (1. **Tema**, 2. **Modo**, 3. **Música**) con botones Atrás/Siguiente y el botón Jugar al final.
+  Al elegir tema o modo se pasa solo al siguiente paso, cada paso muestra lo elegido (🎌 Anime · 🎯 Clásico ·
+  251 pistas), Enter también avanza, y tras la primera partida aparece **⚡ Jugar con la última configuración**.
+  Todo lo demás (filtros, categorías, sagas, ranking) funciona igual.
 - **1.9.5-hotfix1**: el ranking ya no acepta **nicknames ofensivos**: el juego no deja guardarlos (avisa que ese
   nickname no se permite) ni los muestra en la tabla, y la base los rechaza aunque alguien se salte el juego
   (regla `nick_permitido` con la función `nick_ofensivo`; al correr `schema.sql` también se borran los puntajes que
