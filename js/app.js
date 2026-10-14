@@ -555,10 +555,24 @@
     }
   }
 
-  /** Abre una parte y lleva el foco a lo elegido en ella (o a su encabezado). */
-  function goPart(n) {
+  /** Enfoca sin que el elemento quede tapado (la página se mueve lo justo; ver scroll-margin en el CSS). */
+  function focusInView(el) {
+    if (!el) return;
+    el.focus({ preventScroll: true });
+    el.scrollIntoView({ block: 'nearest', behavior: reduceMotion ? 'auto' : 'smooth' });
+  }
+
+  /**
+   * Abre una parte y lleva el foco a lo elegido en ella; con `first`, al primer control de la parte
+   * (lo que usa "Elegir música"). Si no hay ninguno, a su encabezado.
+   */
+  function goPart(n, first) {
     openPart(n, true);
-    ($(`#part-body-${n} [aria-checked="true"]`) || $(`#part-btn-${n}`)).focus({ preventScroll: true });
+    const body = $(`#part-body-${n}`);
+    const target = first
+      ? $$('button, select', body).find((el) => !el.disabled && el.tabIndex >= 0 && el.offsetParent)
+      : $('[aria-checked="true"]', body);
+    focusInView(target || $(`#part-btn-${n}`));
   }
 
   /** Lo elegido en Música, en palabras: "Rock y Pop · Español", "3 de 5 épocas", "Todas las épocas". */
@@ -625,7 +639,7 @@
   });
   $('#deck').addEventListener('click', (e) => {
     const btn = e.target.closest('[data-open-part]');
-    if (btn) goPart(Number(btn.dataset.openPart));
+    if (btn) goPart(Number(btn.dataset.openPart), true);
   });
 
   // Elegir tema o modo cierra esa parte y abre la siguiente.
@@ -637,7 +651,7 @@
       const wasHere = $(`.part[data-part="${n}"]`).contains(document.activeElement);
       openPart(n + 1, true);
       // Con teclado, el foco sigue a la parte que se abrió (en Modo, a la fila elegida).
-      if (wasHere) ($(`.part[data-part="${n + 1}"] [aria-checked="true"]`) || $(`#part-btn-${n + 1}`)).focus({ preventScroll: true });
+      if (wasHere) focusInView($(`.part[data-part="${n + 1}"] [aria-checked="true"]`) || $(`#part-btn-${n + 1}`));
     }, reduceMotion ? 0 : 220);
   }
 
@@ -659,8 +673,15 @@
     next.focus();
   });
 
+  // Al salir de una lista con Tab, solo la opción elegida vuelve a ser parada de Tab.
+  $('#parts').addEventListener('focusout', (e) => {
+    const group = e.target.closest && e.target.closest('[role="radiogroup"]');
+    if (group && !group.contains(e.relatedTarget)) roving(group);
+  });
+
   // Teclas del inicio: Mayús+Enter juega desde donde sea; Enter fuera de un botón o campo, también.
-  // Esc cierra la parte abierta; 1, 2 y 3 van a Tema, Modo y Música (solo con el foco en el configurador).
+  // Esc cierra la parte abierta; 1, 2 y 3 van a Tema, Modo y Música (con el foco en el configurador o en
+  // ninguna parte; nunca mientras se escribe).
   document.addEventListener('keydown', (e) => {
     if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey) return;
     if (!$('#screen-home').classList.contains('is-active') || document.querySelector('dialog[open]')) return;
@@ -672,13 +693,15 @@
       return;
     }
     if (field || !e.target.closest) return;
+    // Sin nada enfocado (al cargar, al volver de una partida o tras tocar el fondo) también valen.
+    const onPage = e.target === document.body || e.target === document.documentElement;
     if (e.key === 'Escape') {
-      const part = e.target.closest('.part.is-open');
+      const part = e.target.closest('.part.is-open') || (onPage && $('.part.is-open'));
       if (!part) return;
       e.preventDefault();
       openPart(0);
-      $(`#part-btn-${part.dataset.part}`).focus();
-    } else if (/^[123]$/.test(e.key) && e.target.closest('#parts, #deck')) {
+      focusInView($(`#part-btn-${part.dataset.part}`));
+    } else if (/^[123]$/.test(e.key) && (onPage || e.target.closest('#parts, #deck'))) {
       e.preventDefault();
       goPart(Number(e.key));
     }
@@ -757,6 +780,9 @@
   $('#chips').addEventListener('click', (e) => {
     const sagaBtn = e.target.closest('[data-saga], [data-saga-game]');
     if (sagaBtn) {
+      // Al cambiar de saga desaparecen los juegos de la anterior: se compensa para que la fila tocada
+      // se quede bajo el dedo y no se cuele otra saga.
+      const y0 = sagaBtn.getBoundingClientRect().top;
       if (sagaBtn.dataset.saga) settings.saga = { id: sagaBtn.dataset.saga, game: '' };
       else settings.saga.game = sagaBtn.dataset.sagaGame;
       Store.set('saga', settings.saga);
@@ -766,7 +792,10 @@
       const again = sagaBtn.dataset.saga
         ? $(`#chips [data-saga="${sagaBtn.dataset.saga}"]`)
         : $(`#chips [data-saga-game="${CSS.escape(settings.saga.game)}"]`);
-      if (again) again.focus();
+      if (again) {
+        again.focus({ preventScroll: true });
+        window.scrollBy(0, again.getBoundingClientRect().top - y0);
+      }
       return;
     }
     const chip = e.target.closest('[data-cat]');

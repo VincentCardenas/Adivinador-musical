@@ -44,7 +44,7 @@
 *::before,
 *::after { box-sizing: border-box; }
 
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: 72px; } /* deja libre la barra de arriba al enfocar o desplazar */
 
 body {
   margin: 0;
@@ -424,7 +424,6 @@ a { color: var(--cyan); }
   overflow: hidden;
   overflow: clip;
 }
-.part { scroll-margin-top: 72px; }
 .part + .part { border-top: 1px solid #352f62; }
 .part.is-open { box-shadow: inset 3px 0 0 var(--pink); }
 .part-head { margin: 0; font: inherit; }
@@ -483,6 +482,7 @@ a { color: var(--cyan); }
 .part-change::after { content: 'Cambiar ▾'; }
 .part.is-open .part-change { color: var(--muted); }
 .part.is-open .part-change::after { content: 'Cerrar ▴'; }
+.part-toggle:focus-visible { outline-offset: -5px; border-radius: 14px; }
 @media (hover: hover) {
   .part-toggle:hover .part-tag::before { border-color: var(--cyan); }
   .part-toggle:hover .part-change { text-decoration: underline; text-underline-offset: 3px; }
@@ -517,23 +517,19 @@ a { color: var(--cyan); }
   color: var(--text);
   text-align: left;
 }
-/* La barra va en ::before para inclinarla sin inclinar el texto */
+/* La barra va en ::before para inclinarla sin inclinar el texto. La inclinación es fija (10 px), así
+   que en una fila alta (un modo con descripción larga) no se sale de la fila. */
 .set-row::before {
   content: '';
   position: absolute;
-  inset: 0 6px;
+  inset: 0;
   z-index: -1;
-  border-radius: 8px;
-  border: 1px solid transparent;
-  transform: skewX(-10deg);
-  transition: background-color 0.12s, border-color 0.12s;
+  clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+  transition: background-color 0.12s;
 }
-.set-row[aria-checked='true']::before {
-  background: var(--bar-grad);
-  box-shadow: 0 6px 18px rgba(255, 60, 172, 0.28);
-}
+.set-row[aria-checked='true']::before { background: var(--bar-grad); }
 @media (hover: hover) {
-  .set-row[aria-checked='false']:hover::before { background: rgba(45, 226, 230, 0.1); border-color: rgba(45, 226, 230, 0.6); }
+  .set-row[aria-checked='false']:hover::before { background: rgba(45, 226, 230, 0.14); }
 }
 .set-row:focus-visible,
 .pad:focus-visible,
@@ -574,7 +570,7 @@ a { color: var(--cyan); }
 
 /* Sagas: una lista; los juegos de la saga elegida van debajo, con sangría */
 .set-row--saga { min-height: 48px; }
-.set-row--saga.is-parent::before { background: none; border-color: transparent; box-shadow: inset 3px 0 0 var(--pink); transform: none; }
+.set-row--saga.is-parent::before { background: none; clip-path: none; box-shadow: inset 3px 0 0 var(--pink); }
 .group-label {
   margin: 2px 0 0 24px;
   font-size: 12px;
@@ -621,8 +617,8 @@ a { color: var(--cyan); }
 /* ── Filtros (Pixar, idioma, época) ── */
 .filter { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
 .filter-label { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
-.filter .segmented { padding: 3px; border-color: #524790; background: var(--bg); }
-.filter .segmented button { min-height: 38px; padding: 6px 14px; color: var(--muted); }
+.filter .segmented { padding: 2px; border-color: #524790; background: var(--bg); }
+.filter .segmented button { min-height: 44px; padding: 6px 14px; color: var(--muted); white-space: nowrap; }
 .filter .segmented button.is-on { background: var(--pink); color: var(--bg); font-weight: 700; }
 .filters .switch { min-height: 44px; }
 .filters .switch.is-on { border-color: var(--pink); }
@@ -656,19 +652,20 @@ a { color: var(--cyan); }
 }
 .cats-label { font-weight: 700; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
 .cats-actions { display: flex; gap: 14px; }
-.cats-actions .btn-link { min-height: 44px; padding: 4px 2px; }
+.cats-actions .btn-link { min-width: 44px; min-height: 44px; padding: 4px 2px; }
 .cats-actions .btn-link:disabled { opacity: 0.45; cursor: default; text-decoration: none; }
 .pads {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(124px, 100%), 1fr));
   gap: 8px;
 }
 .pads.is-saga { display: block; }
 .pad {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
-  grid-template-areas: "icon label gem" "icon count gem";
+  grid-template-areas: "icon label label" "icon count gem";
   align-items: center;
+  align-content: center;
   column-gap: 8px;
   min-height: 56px;
   padding: 8px 10px;
@@ -679,7 +676,7 @@ a { color: var(--cyan); }
   text-align: left;
 }
 .pad-icon { grid-area: icon; font-size: 20px; line-height: 1; }
-.pad-label { grid-area: label; font-size: 14px; font-weight: 600; line-height: 1.2; overflow-wrap: break-word; }
+.pad-label { grid-area: label; font-size: 14px; font-weight: 600; line-height: 1.2; overflow-wrap: break-word; hyphens: auto; }
 .pad-count { grid-area: count; font-size: 12px; font-variant-numeric: tabular-nums; }
 .pad-gem {
   grid-area: gem;
@@ -714,10 +711,11 @@ a { color: var(--cyan); }
 }
 .legend > span { display: inline-flex; align-items: center; gap: 5px; }
 .legend .gem { width: 12px; height: 12px; }
-kbd {
+.legend kbd {
   display: inline-block;
   min-width: 22px;
   padding: 2px 6px;
+  border: 0;
   border-radius: 4px;
   background: #2c2752;
   color: var(--text);
@@ -746,7 +744,8 @@ kbd {
 .deck-music, .deck-line { font-size: 14px; color: var(--muted); }
 .dl-mode { display: none; }
 .deck-record { font-size: 14px; color: var(--amber); }
-.deck .start-hint { margin: 4px 0 0; min-height: 0; font-size: 13px; color: var(--muted); }
+.deck .start-hint { margin: 0; min-height: 0; font-size: 13px; color: var(--muted); }
+.deck .start-hint .btn-link { display: inline-flex; align-items: center; min-height: 44px; padding: 0 4px; font-size: 13px; }
 .deck.is-short .start-hint { color: var(--amber); }
 
 /* La línea de trastes: huecos si faltan pistas; se encienden de verde a naranja cuando ya se puede jugar */
@@ -822,8 +821,15 @@ kbd {
 /* Modo de colores forzados (alto contraste de Windows): la selección se marca con el color del sistema */
 @media (forced-colors: active) {
   .set-row::before, .part-tag::before { display: none; }
-  .set-row[aria-checked='true'] { outline: 2px solid Highlight; outline-offset: -2px; }
-  .pad[aria-pressed='true'] { outline: 2px solid Highlight; }
+  .set-row[aria-checked='true'] { border: 2px solid Highlight; }
+  .pad[aria-pressed='true'] { border-color: Highlight; }
+  .set-row:focus-visible, .pad:focus-visible, .filter .segmented button:focus-visible, .btn-play:focus-visible { outline: 3px solid CanvasText; outline-offset: 3px; }
+  .filter .segmented button[aria-checked='true'] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
+  .switch-track { border: 1px solid CanvasText; }
+  .switch-dot { forced-color-adjust: none; background: CanvasText; }
+  .filters .switch.is-on .switch-track { forced-color-adjust: none; background: Highlight; }
+  .filters .switch.is-on .switch-dot { background: HighlightText; }
+  .btn-play { border: 2px solid ButtonText; }
   .gem, .strikeline i { forced-color-adjust: none; }
 }
 
@@ -1804,7 +1810,8 @@ kbd {
   .filter .segmented { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; }
   .filter .segmented button { min-height: 38px; padding: 6px 8px; }
   .popup, .popup select { width: 100%; }
-  .pads { grid-template-columns: repeat(auto-fill, minmax(min(124px, 100%), 1fr)); }
+  .filters { flex-direction: column; align-items: stretch; }
+  .filter, .filters .switch { width: 100%; }
   .board-list li { grid-template-columns: 28px 1fr auto; gap: 8px; }
   .board-list .b-detail { display: none; }
   .board-form .btn { flex: 1 1 100%; }
@@ -1832,8 +1839,10 @@ kbd {
   .deck-line { font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .dl-mode { display: inline; }
   .dl-facts { display: none; }
-  .deck .start-hint { display: none; }
-  .deck.is-short .start-hint { display: block; margin-top: 2px; white-space: normal; }
+  .deck-info { grid-column: 1; grid-row: 1; }
+  .btn-play { grid-column: 2; grid-row: 1; }
+  .deck .start-hint { display: none; grid-column: 1 / -1; grid-row: 2; }
+  .deck.is-short .start-hint { display: block; }
   .strikeline { position: absolute; top: -9px; left: 24px; right: 24px; height: 18px; pointer-events: none; }
   .strikeline::before { display: none; }
   .strikeline i { width: 18px; height: 18px; border-width: 2px; }
@@ -1841,6 +1850,7 @@ kbd {
   .btn-play { width: auto; min-height: 48px; padding: 12px 18px; font-size: 12px; }
   /* Con "Tu partida" pegada abajo, la versión se ve al final de la página en vez de en la esquina. */
   body:has(#screen-home.is-active) .version { display: none; }
+  html:has(#screen-home.is-active) { scroll-padding-bottom: calc(110px + env(safe-area-inset-bottom)); }
   body:has(#screen-home.is-active) .footer-version { display: block; }
 }
 @media (max-width: 360px) {
@@ -1848,7 +1858,8 @@ kbd {
   .row-title { font-size: 15px; }
   .pad-label { font-size: 13px; }
   .set-row--mode { flex-wrap: wrap; }
-  .set-row--mode .row-level { order: 3; flex-direction: row; align-items: center; margin-left: 40px; }
+  .set-row--mode .row-main { flex: 1 1 calc(100% - 64px); }
+  .set-row--mode .row-level { order: 3; flex: 1 0 100%; flex-direction: row; align-items: center; justify-content: flex-start; gap: 8px; padding-left: 36px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
