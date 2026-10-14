@@ -7,6 +7,7 @@
  *   - `game`      → respuesta exacta de Experto y Supervivencia (juego, canción, película…)
  * `lineIcon`: si el tema lo trae, debajo de cada canción se muestra su `franchise` con ese ícono
  * (🎭 Wicked) en vez del nombre de la canción, que ya es la respuesta.
+ * `catsLabel`: cómo se llaman sus categorías en el configurador ("Géneros"; si no lo trae, "Épocas").
  * Este archivo se carga después de todos los catálogos y marca cada pista con su tema.
  */
 (function (AM) {
@@ -52,7 +53,7 @@
 
   AM.THEMES = [
     {
-      id: 'juegos', label: 'Videojuegos', icon: '🎮',
+      id: 'juegos', label: 'Videojuegos', icon: '🎮', catsLabel: 'Categorías',
       kicker: 'Adivinador musical para gamers',
       sub: 'Escucha el soundtrack oficial y adivina de qué videojuego es.',
       broad: 'saga', broadArt: 'la saga', broadPl: 'sagas',
@@ -188,7 +189,7 @@
       filters: [
         {
           id: 'pixar', type: 'toggle', default: true,
-          label: 'Incluir películas de Pixar', icon: '💡',
+          label: 'Incluir películas de Pixar', icon: '💡', offLabel: 'Sin Pixar',
           keep: (t, on) => on || !t.pixar,
         },
       ],
@@ -241,7 +242,7 @@
       },
     },
     {
-      id: 'canciones', label: 'Canciones', icon: '🎤',
+      id: 'canciones', label: 'Canciones', icon: '🎤', catsLabel: 'Géneros',
       kicker: 'Adivinador musical de canciones famosas',
       sub: 'Escucha el fragmento y adivina qué canción es (y quién la canta). Elige los géneros, la época y el idioma.',
       broad: 'artista', broadArt: 'el artista', broadPl: 'artistas',

@@ -296,10 +296,14 @@
     }).join('');
   }
 
+  /*
+   * Filtros del tema (Pixar, idioma, época). Un selector con más de 5 opciones (Época) va en un menú
+   * desplegable en vez de una fila de botones: en el celular la fila no cabía y bajaba de renglón.
+   */
   function renderFilters() {
     const T = theme();
     const vals = scope().values;
-    $('#filters').hidden = !T.filters.length;
+    $('#filters').hidden = !T.filters.length || sagaMode();
     $('#filters').innerHTML = T.filters.map((f) => {
       if (f.type === 'toggle') {
         const on = !!vals[f.id];
@@ -307,6 +311,14 @@
             <span class="switch-track" aria-hidden="true"><span class="switch-dot"></span></span>
             <span>${f.icon ? f.icon + ' ' : ''}${esc(f.label)}</span>
           </button>`;
+      }
+      if (f.options.length > 5) {
+        return `<label class="popup">
+            <span class="popup-label">${esc(f.label)}</span>
+            <select data-filter="${f.id}">${f.options.map((o) =>
+              `<option value="${esc(o.value)}"${vals[f.id] === o.value ? ' selected' : ''}>${esc(o.label)}</option>`).join('')}
+            </select>
+          </label>`;
       }
       return `<div class="segmented" role="radiogroup" aria-label="${esc(f.label)}">
           <span class="segmented-label">${esc(f.label)}:</span>
@@ -318,25 +330,29 @@
     }).join('');
   }
 
+  function catsLabel(T) { return T.catsLabel || 'Épocas'; }
+
   function renderChips() {
     $('#step3-title').textContent = sagaMode() ? 'Elige una saga' : '¿Qué quieres escuchar?';
-    if (sagaMode()) { renderSagaPicker(); return; }
+    $('#cats-head').hidden = sagaMode();
+    if (sagaMode()) { $('#chips').setAttribute('aria-label', 'Saga'); renderSagaPicker(); return; }
+    $('#chips').removeAttribute('aria-label');
     const sc = scope();
     const cats = themeCats();
     const counts = {};
     sc.tracks.forEach((t) => { counts[t.cat] = (counts[t.cat] || 0) + 1; });
-    const all = cats.length === allCats().length;
-    $('#chips').innerHTML =
-      `<button type="button" class="chip${all ? ' is-on' : ''}" data-cat="__all" aria-pressed="${all}">✨ Todo <span>${sc.tracks.length}</span></button>` +
-      AM.themeCategories(settings.theme).map((c) => {
-        const on = cats.indexOf(c.id) >= 0;
-        return `<button type="button" class="chip${on ? ' is-on' : ''}" data-cat="${c.id}" aria-pressed="${on}">${c.icon} ${esc(c.label)} <span>${counts[c.id] || 0}</span></button>`;
-      }).join('');
+    $('#cats-label').textContent = catsLabel(theme());
+    $('[data-cats="all"]').disabled = cats.length === allCats().length;
+    $('[data-cats="none"]').disabled = !cats.length;
+    $('#chips').innerHTML = AM.themeCategories(settings.theme).map((c) => {
+      const on = cats.indexOf(c.id) >= 0;
+      return `<button type="button" class="chip${on ? ' is-on' : ''}" data-cat="${c.id}" aria-pressed="${on}">${c.icon} ${esc(c.label)} <span>${counts[c.id] || 0}</span></button>`;
+    }).join('');
     updatePoolInfo();
   }
 
   /*
-   * Paso 3 del modo Sagas: la saga, "toda la saga / un juego" y, si es un juego, cuál.
+   * Parte A3 del modo Sagas: la saga, "toda la saga / un juego" y, si es un juego, cuál.
    * Solo se puede elegir un juego que tenga al menos AM.MIN_POOL canciones distintas.
    */
   function renderSagaPicker() {
@@ -370,30 +386,32 @@
     const pool = currentPool();
     const saga = sagaMode();
     const ok = pool.length >= AM.MIN_POOL;
-    $('#pool-count').textContent = `${pool.length} ${saga ? 'canciones' : 'pistas'}`;
+    $('#pool-count').textContent = `${fmt(pool.length)} ${saga ? 'canciones' : 'pistas'}`;
     $('#btn-start').disabled = !ok;
+    $('#deck').classList.toggle('is-short', !ok);
     if (!ok) {
-      $('#start-hint').textContent = saga
+      $('#start-hint').innerHTML = esc(saga
         ? `Faltan canciones: se necesitan al menos ${AM.MIN_POOL}.`
-        : `Elige más categorías${theme().filters.length ? ' o cambia los filtros' : ''}: se necesitan al menos ${AM.MIN_POOL} pistas.`;
+        : `Faltan pistas: elige más ${catsLabel(theme()).toLowerCase()}${theme().filters.length ? ' o cambia los filtros' : ''} (se necesitan al menos ${AM.MIN_POOL}).`) +
+        ' <button type="button" class="btn-link" data-open-part="3">Elegir música</button>';
     } else if (saga) {
       const names = settings.saga.game
         ? AM.Logic.sample(Array.from(new Set(pool.map((t) => t.title))), 3)
         : AM.Logic.sample(Array.from(new Set(pool.map((t) => t.game))), 3);
       $('#start-hint').textContent = `${settings.saga.game ? 'Canciones como' : 'Incluye'} ${names.join(', ')} y más.`;
     } else {
-      const names = AM.Logic.sample(Array.from(new Set(pool.map((t) => t.franchise))), 4);
+      const names = AM.Logic.sample(Array.from(new Set(pool.map((t) => t.franchise))), 3);
       $('#start-hint').textContent = `Incluye ${names.join(', ')} y más.`;
     }
     const heard = pool.filter((t) => History.seen[t.id]).length;
     const hidden = History.hidden.length;
-    const where = saga ? (settings.saga.game ? 'de este juego' : 'de esta saga') : 'de estas categorías';
+    const where = saga ? (settings.saga.game ? 'de este juego' : 'de esta saga') : 'de lo que elegiste';
     let info = heard
       ? `Has escuchado ${heard} de ${pool.length} pistas ${where}; primero suenan las que te faltan.`
       : 'Todas estas pistas son nuevas para ti.';
     if (hidden) info += ` ${hidden} oculta${hidden === 1 ? '' : 's'} por tus reportes.`;
     $('#seen-info').innerHTML = esc(info) + (heard ? ' <button type="button" class="btn-link" id="btn-reset-seen">Reiniciar historial</button>' : '');
-    renderWizard();
+    renderDeck();
   }
 
   $('#seen-info').addEventListener('click', (e) => {
@@ -409,83 +427,138 @@
     renderModes();
     renderFilters();
     renderChips();
-    goStep(wizard.step);
+    openPart(parts.open);
   }
 
-  /* ── Configurador paso a paso: 1) tema, 2) modo, 3) música ── */
+  /*
+   * Configurador por partes, con forma de cassette: A1 tema, A2 modo y A3 música.
+   * Una parte abierta a la vez; las cerradas muestran lo elegido y se abren con un toque.
+   * La casetera (a un lado en pantallas anchas, abajo en el celular) resume la partida y siempre
+   * tiene el botón Jugar: lo elegido se guarda, así que quien vuelve puede jugar sin abrir nada.
+   */
+  const parts = { open: Store.get('configured', false) ? 0 : 1 };
+  const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  const wizard = { step: 1 };
-
-  function goStep(n) {
-    wizard.step = Math.max(1, Math.min(3, n));
-    $$('.wstep').forEach((el) => {
-      const on = Number(el.dataset.step) === wizard.step;
-      el.hidden = !on;
-      el.classList.toggle('is-active', on);
+  function openPart(n, scroll) {
+    parts.open = n;
+    $$('.part').forEach((el) => {
+      const on = Number(el.dataset.part) === n;
+      el.classList.toggle('is-open', on);
+      $('.part-toggle', el).setAttribute('aria-expanded', String(on));
+      $('.part-body', el).hidden = !on;
     });
-    $$('.wstep-tab').forEach((btn) => {
-      const k = Number(btn.dataset.goto);
-      btn.classList.toggle('is-current', k === wizard.step);
-      btn.classList.toggle('is-done', k < wizard.step);
-      if (k === wizard.step) btn.setAttribute('aria-current', 'step'); else btn.removeAttribute('aria-current');
-    });
-    $('#btn-back').disabled = wizard.step === 1;
-    $('#btn-next-step').hidden = wizard.step === 3;
-    $('#btn-start').hidden = wizard.step !== 3;
-    renderWizard();
+    if (n && scroll) {
+      const head = $(`.part[data-part="${n}"]`);
+      const r = head.getBoundingClientRect();
+      if (r.top < 64 || r.top > window.innerHeight * 0.6) head.scrollIntoView({ block: 'start', behavior: reduceMotion ? 'auto' : 'smooth' });
+    }
   }
 
-  /** Texto corto de lo elegido en cada paso (se ve bajo el número del paso y en el atajo). */
-  function wizardPicks() {
-    const T = theme();
-    const m = AM.MODES[settings.mode] || {};
-    const pool = currentPool();
-    let music = `${pool.length} pistas`;
+  /** Lo elegido en Música, en palabras: "Rock y Pop · Español", "3 de 5 épocas", "Todas las épocas". */
+  function musicSummary() {
     if (sagaMode()) {
       const sel = sagaInfo();
-      music = settings.saga.game ? AM.Logic.sagaGameName(sel, settings.saga.game) : (sel && sel.label) || music;
+      return settings.saga.game ? AM.Logic.sagaGameName(sel, settings.saga.game) : `${sel.icon} ${sel.label}`;
     }
-    return { theme: `${T.icon} ${T.label}`, mode: `${m.icon || ''} ${m.name || ''}`.trim(), music: music, pool: pool };
+    const T = theme();
+    const list = AM.themeCategories(T.id);
+    const on = list.filter((c) => themeCats().indexOf(c.id) >= 0);
+    const label = catsLabel(T).toLowerCase();
+    let cats;
+    if (on.length === list.length) cats = (label === 'géneros' ? 'Todos los ' : 'Todas las ') + label;
+    else if (!on.length) cats = label === 'géneros' ? 'Ningún género' : 'Ninguna ' + label.replace(/s$/, '');
+    else if (on.length <= 2) cats = on.map((c) => c.label).join(' y ');
+    else cats = `${on.length} de ${list.length} ${label}`;
+    const vals = scope().values;
+    const extra = T.filters.filter((f) => vals[f.id] !== f.default).map((f) => {
+      if (f.type === 'toggle') return f.offLabel || f.label;
+      const o = f.options.find((x) => x.value === vals[f.id]);
+      return o ? o.label : '';
+    }).filter(Boolean);
+    return [cats].concat(extra).join(' · ');
   }
 
-  function renderWizard() {
-    const p = wizardPicks();
-    $('#pick-1').textContent = p.theme;
-    $('#pick-2').textContent = p.mode;
-    $('#pick-3').textContent = p.music;
-    const ok = p.pool.length >= AM.MIN_POOL;
-    const quick = !!Store.get('configured', false) && ok;
-    $('#quick-row').hidden = !quick;
-    if (quick) $('#quick-desc').textContent = `${p.theme} · ${p.mode} · ${p.music}`;
+  /** Lo que trae el modo, como lo jugará: con menos pistas que rondas, hay una ronda por pista. */
+  function modeFacts(m, pool) {
+    if (m.lives) return `${m.lives} vidas`;
+    const rounds = Math.min(m.rounds, pool);
+    if (m.steps) return `${rounds} rondas · de ${m.steps[0]} a ${m.steps[m.steps.length - 1]} s`;
+    return `${rounds} rondas · 4 opciones`;
   }
 
-  $$('.wstep-tab').forEach((btn) => btn.addEventListener('click', () => { sfx('click'); goStep(Number(btn.dataset.goto)); }));
-  $('#btn-back').addEventListener('click', () => { sfx('click'); goStep(wizard.step - 1); });
-  $('#btn-next-step').addEventListener('click', () => { sfx('click'); goStep(wizard.step + 1); });
-  $('#btn-quick').addEventListener('click', startGame);
+  /** Etiqueta del cassette, valores de las partes cerradas y resumen de la casetera. */
+  function renderDeck() {
+    const T = theme();
+    const m = AM.MODES[settings.mode] || AM.MODES.clasico;
+    const pool = currentPool();
+    const music = musicSummary();
+    const count = `${fmt(pool.length)} ${sagaMode() ? 'canciones' : 'pistas'}`;
+    $('#pick-1').textContent = `${T.icon} ${T.label}`;
+    $('#pick-2').textContent = `${m.icon} ${m.name}`;
+    $('#pick-3').textContent = `${music} · ${count}`;
+    $('#deck-title').textContent = T.label;
+    $('#deck-sub').textContent = `${m.name} · ${music}`;
+    // En la barra del celular: tema arriba y "modo · pistas" abajo. En pantallas anchas el modo ya está
+    // en la etiqueta del cassette (que es decorativa), así que ahí solo lo lee el lector de pantalla.
+    $('#deck-what').textContent = `${T.icon} ${T.label}`;
+    $('#deck-line').innerHTML = `<span class="dl-mode">${m.icon} ${esc(m.name)} · </span>${esc(count)}<span class="dl-facts"> · ${esc(modeFacts(m, pool.length))}</span>`;
+    const rec = sagaMode() ? Records.get('sagas', sagaRecordKey()) : Records.get(T.id, m.id);
+    $('#deck-record').textContent = rec ? `🏆 Tu récord: ${fmt(rec)}` : '🏆 Aún sin récord';
+  }
 
-  // Elegir tema o modo lleva solo al paso siguiente.
-  $('#themes').addEventListener('click', (e) => {
-    if (e.target.closest('[data-theme]') && wizard.step === 1) setTimeout(() => goStep(2), 220);
+  $('#parts').addEventListener('click', (e) => {
+    const btn = e.target.closest('.part-toggle');
+    if (!btn) return;
+    const n = Number(btn.closest('.part').dataset.part);
+    sfx('click');
+    openPart(parts.open === n ? 0 : n, true);
   });
-  $('#modes').addEventListener('click', (e) => {
-    if (e.target.closest('[data-mode]') && wizard.step === 2) setTimeout(() => goStep(3), 220);
+  $('#deck').addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-open-part]');
+    if (btn) openPart(Number(btn.dataset.openPart), true);
   });
 
-  // Enter avanza entre pasos (y en el último empieza a jugar).
+  // Elegir tema o modo cierra esa parte y abre la siguiente.
+  let advanceTimer = 0;
+  function advanceFrom(n) {
+    clearTimeout(advanceTimer);
+    advanceTimer = setTimeout(() => {
+      if (parts.open !== n) return;
+      const wasHere = $(`.part[data-part="${n}"]`).contains(document.activeElement);
+      openPart(n + 1, true);
+      // Con teclado, el foco sigue a la parte que se abrió (en Modo, a la tarjeta elegida).
+      if (wasHere) ($(`.part[data-part="${n + 1}"] [aria-checked="true"]`) || $(`#part-btn-${n + 1}`)).focus({ preventScroll: true });
+    }, reduceMotion ? 0 : 220);
+  }
+
+  // Flechas entre las tarjetas de tema y de modo (Enter o Espacio las eligen, como cualquier botón).
+  ['#themes', '#modes'].forEach((sel) => {
+    $(sel).addEventListener('keydown', (e) => {
+      const keys = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 };
+      if (!(e.key in keys)) return;
+      const cards = $$('[role="radio"]', $(sel));
+      const i = cards.indexOf(document.activeElement);
+      if (i < 0) return;
+      e.preventDefault();
+      cards[(i + keys[e.key] + cards.length) % cards.length].focus();
+    });
+  });
+
+  // Enter (fuera de un botón o campo) empieza a jugar con lo que muestra la casetera.
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Enter' || e.altKey || e.ctrlKey || e.metaKey) return;
     if (!$('#screen-home').classList.contains('is-active') || document.querySelector('dialog[open]')) return;
     const tag = (e.target && e.target.tagName || '').toLowerCase();
     if (tag === 'button' || tag === 'a' || tag === 'input' || tag === 'textarea' || tag === 'select') return;
     e.preventDefault();
-    if (wizard.step < 3) goStep(wizard.step + 1);
-    else if (!$('#btn-start').disabled) startGame();
+    if (!$('#btn-start').disabled) startGame();
   });
 
   $('#themes').addEventListener('click', (e) => {
     const card = e.target.closest('[data-theme]');
-    if (!card || card.dataset.theme === settings.theme) return;
+    if (!card) return;
+    advanceFrom(1);
+    if (card.dataset.theme === settings.theme) return;
     settings.theme = card.dataset.theme;
     Store.set('theme', settings.theme);
     if (!AM.modeAvailable(settings.mode, settings.theme)) {
@@ -494,33 +567,61 @@
     }
     sfx('click');
     renderHome();
+    const now = $(`[data-theme="${settings.theme}"]`);
+    if (now) now.focus();
   });
 
-  $('#filters').addEventListener('click', (e) => {
-    const btn = e.target.closest('[data-filter]');
-    if (!btn) return;
+  function setFilter(id, value) {
     const T = theme();
-    const f = T.filters.find((x) => x.id === btn.dataset.filter);
+    const f = T.filters.find((x) => x.id === id);
     if (!f) return;
     const vals = Object.assign({}, scope().values);
-    vals[f.id] = f.type === 'toggle' ? !vals[f.id] : btn.dataset.value;
+    vals[f.id] = f.type === 'toggle' ? !vals[f.id] : value;
     settings.filters[T.id] = vals;
     Store.set('filters', settings.filters);
     sfx('click');
     renderThemes();
     renderFilters();
     renderChips();
+  }
+  $('#filters').addEventListener('click', (e) => {
+    const btn = e.target.closest('button[data-filter]');
+    if (!btn) return;
+    setFilter(btn.dataset.filter, btn.dataset.value);
+    const again = $(`#filters button[data-filter="${btn.dataset.filter}"]${btn.dataset.value ? `[data-value="${btn.dataset.value}"]` : ''}`);
+    if (again) again.focus();
+  });
+  $('#filters').addEventListener('change', (e) => {
+    const sel = e.target.closest('select[data-filter]');
+    if (!sel) return;
+    setFilter(sel.dataset.filter, sel.value);
+    const again = $(`#filters select[data-filter="${sel.dataset.filter}"]`);
+    if (again) again.focus();
   });
 
   $('#modes').addEventListener('click', (e) => {
     const card = e.target.closest('[data-mode]');
     if (!card) return;
+    advanceFrom(2);
     settings.mode = card.dataset.mode;
     Store.set('mode', settings.mode);
     sfx('click');
     renderModes();
     renderFilters();
-    renderChips(); // el paso 3 cambia en el modo Sagas
+    renderChips(); // la parte A3 cambia en el modo Sagas
+    const now = $(`[data-mode="${settings.mode}"]`);
+    if (now) now.focus();
+  });
+
+  $('#cats-head').addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-cats]');
+    if (!btn || btn.disabled) return;
+    settings.cats[settings.theme] = btn.dataset.cats === 'all' ? allCats() : [];
+    Store.set('catsByTheme', settings.cats);
+    sfx('click');
+    renderChips();
+    // El botón que se tocó queda desactivado: el foco pasa al otro.
+    $(`[data-cats="${btn.dataset.cats === 'all' ? 'none' : 'all'}"]`).focus();
   });
 
   $('#chips').addEventListener('click', (e) => {
@@ -543,14 +644,12 @@
     if (!chip) return;
     const id = chip.dataset.cat;
     const cats = themeCats();
-    let next;
-    if (id === '__all') next = allCats();
-    else if (cats.indexOf(id) >= 0) next = cats.filter((c) => c !== id);
-    else next = cats.concat([id]);
-    settings.cats[settings.theme] = next;
+    settings.cats[settings.theme] = cats.indexOf(id) >= 0 ? cats.filter((c) => c !== id) : cats.concat([id]);
     Store.set('catsByTheme', settings.cats);
     sfx('click');
     renderChips();
+    const again = $(`#chips [data-cat="${id}"]`);
+    if (again) again.focus();
   });
 
   $('#btn-start').addEventListener('click', startGame);
@@ -2137,7 +2236,10 @@
   /* ═════════ arranque ═════════ */
 
   renderReportsButton();
-  if (AM.CONFIG && AM.CONFIG.version) $('#app-version').textContent = 'v' + AM.CONFIG.version;
+  if (AM.CONFIG && AM.CONFIG.version) {
+    $('#app-version').textContent = 'v' + AM.CONFIG.version;
+    $('#footer-version').textContent = 'Versión ' + AM.CONFIG.version;
+  }
 
   if (location.protocol === 'file:') $('#file-warning').hidden = false;
   renderHome();

@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=1.9.6">
+  <link rel="stylesheet" href="css/styles.css?v=2.0">
 </head>
 <body>
   <div class="bg" aria-hidden="true">
@@ -53,43 +53,86 @@
         </div>
       </div>
 
-      <div class="quick-row" id="quick-row" hidden>
-        <button class="btn btn-ghost" id="btn-quick" type="button">⚡ Jugar con la última configuración</button>
-        <p class="quick-desc" id="quick-desc"></p>
-      </div>
+      <!-- Configurador por partes: un cassette. Lado A = las tres partes (tema, modo, música);
+           la casetera muestra lo elegido y siempre tiene a la mano el botón Jugar. -->
+      <div class="mixer">
+        <div class="parts" id="parts">
+          <section class="part" data-part="1">
+            <h2 class="part-head">
+              <button type="button" class="part-toggle" id="part-btn-1" aria-expanded="false" aria-controls="part-body-1">
+                <span class="part-tag" aria-hidden="true">A1</span>
+                <span class="part-name">Tema</span>
+                <span class="part-value" id="pick-1"></span>
+                <span class="part-change" aria-hidden="true"></span>
+              </button>
+            </h2>
+            <div class="part-body" id="part-body-1" role="region" aria-labelledby="part-btn-1" hidden>
+              <p class="part-q">¿De qué quieres adivinar la música?</p>
+              <div class="themes" id="themes" role="radiogroup" aria-label="Tema"></div>
+            </div>
+          </section>
 
-      <div class="wizard" id="wizard">
-        <ol class="wizard-steps" aria-label="Pasos para armar la partida">
-          <li><button type="button" class="wstep-tab is-current" data-goto="1"><span class="wstep-num">1</span><span class="wstep-name">Tema</span><span class="wstep-pick" id="pick-1"></span></button></li>
-          <li><button type="button" class="wstep-tab" data-goto="2"><span class="wstep-num">2</span><span class="wstep-name">Modo</span><span class="wstep-pick" id="pick-2"></span></button></li>
-          <li><button type="button" class="wstep-tab" data-goto="3"><span class="wstep-num">3</span><span class="wstep-name">Música</span><span class="wstep-pick" id="pick-3"></span></button></li>
-        </ol>
+          <section class="part" data-part="2">
+            <h2 class="part-head">
+              <button type="button" class="part-toggle" id="part-btn-2" aria-expanded="false" aria-controls="part-body-2">
+                <span class="part-tag" aria-hidden="true">A2</span>
+                <span class="part-name">Modo</span>
+                <span class="part-value" id="pick-2"></span>
+                <span class="part-change" aria-hidden="true"></span>
+              </button>
+            </h2>
+            <div class="part-body" id="part-body-2" role="region" aria-labelledby="part-btn-2" hidden>
+              <p class="part-q">¿Cómo quieres jugar?</p>
+              <div class="modes" id="modes" role="radiogroup" aria-label="Modo de juego"></div>
+            </div>
+          </section>
 
-        <div class="wizard-body">
-          <div class="wstep is-active" data-step="1">
-            <h2 class="wstep-title">¿De qué quieres adivinar la música?</h2>
-            <div class="themes" id="themes" role="radiogroup" aria-label="Tema"></div>
-          </div>
-
-          <div class="wstep" data-step="2" hidden>
-            <h2 class="wstep-title">¿Cómo quieres jugar?</h2>
-            <div class="modes" id="modes" role="radiogroup" aria-label="Modo de juego"></div>
-          </div>
-
-          <div class="wstep" data-step="3" hidden>
-            <h2 class="wstep-title"><span id="step3-title">¿Qué quieres escuchar?</span> <small id="pool-count"></small></h2>
-            <div class="filters" id="filters" hidden></div>
-            <div class="chips" id="chips" aria-label="Categorías"></div>
-            <p class="start-hint" id="start-hint" aria-live="polite"></p>
-            <p class="seen-info" id="seen-info"></p>
-          </div>
+          <section class="part" data-part="3">
+            <h2 class="part-head">
+              <button type="button" class="part-toggle" id="part-btn-3" aria-expanded="false" aria-controls="part-body-3">
+                <span class="part-tag" aria-hidden="true">A3</span>
+                <span class="part-name">Música</span>
+                <span class="part-value" id="pick-3"></span>
+                <span class="part-change" aria-hidden="true"></span>
+              </button>
+            </h2>
+            <div class="part-body" id="part-body-3" role="region" aria-labelledby="part-btn-3" hidden>
+              <p class="part-q"><span id="step3-title">¿Qué quieres escuchar?</span> <small id="pool-count"></small></p>
+              <div class="filters" id="filters" hidden></div>
+              <div class="cats-head" id="cats-head">
+                <span class="cats-label" id="cats-label">Categorías</span>
+                <span class="cats-actions">
+                  <button type="button" class="btn-link" data-cats="all">Todas</button>
+                  <button type="button" class="btn-link" data-cats="none">Ninguna</button>
+                </span>
+              </div>
+              <div class="chips" id="chips" role="group" aria-labelledby="cats-label"></div>
+              <p class="seen-info" id="seen-info"></p>
+            </div>
+          </section>
         </div>
 
-        <div class="wizard-nav">
-          <button class="btn btn-ghost" id="btn-back" type="button">◀ Atrás</button>
-          <button class="btn btn-primary" id="btn-next-step" type="button">Siguiente ▶</button>
-          <button class="btn btn-primary btn-play" id="btn-start" type="button" hidden>▶ Jugar</button>
-        </div>
+        <aside class="deck" id="deck" aria-label="Tu partida">
+          <div class="cassette" aria-hidden="true">
+            <div class="cassette-label">
+              <span class="cassette-side">A</span>
+              <span class="cassette-title" id="deck-title"></span>
+              <span class="cassette-sub" id="deck-sub"></span>
+            </div>
+            <div class="cassette-window">
+              <i class="reel"></i>
+              <span class="tape"></span>
+              <i class="reel"></i>
+            </div>
+          </div>
+          <div class="deck-info">
+            <p class="deck-what" id="deck-what"></p>
+            <p class="deck-line" id="deck-line"></p>
+            <p class="deck-record" id="deck-record"></p>
+          </div>
+          <button class="btn btn-primary btn-play" id="btn-start" type="button">▶ Jugar</button>
+          <p class="start-hint" id="start-hint" aria-live="polite"></p>
+        </aside>
       </div>
     </section>
 
@@ -189,6 +232,7 @@
       <button class="btn-link" id="btn-my-reports" type="button">🚩 Mis reportes</button>
       <button class="btn-link" id="btn-diag" type="button">🛠 Verificar catálogo</button>
     </div>
+    <p class="footer-version" id="footer-version"></p>
   </footer>
 
   <!-- ═════════ CÓMO JUGAR ═════════ -->
@@ -324,27 +368,27 @@
   </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <div class="version" id="app-version" aria-label="Versión de la app">v1.9.6</div>
+  <div class="version" id="app-version" aria-label="Versión de la app">v2.0</div>
 
   <!-- Reproductor de YouTube oculto (solo audio para el juego) -->
   <div id="yt-host" aria-hidden="true"><div id="yt-player"></div></div>
 
-  <script src="js/config.js?v=1.9.6" defer></script>
-  <script src="js/catalog.js?v=1.9.6" defer></script>
-  <script src="js/catalog-series.js?v=1.9.6" defer></script>
-  <script src="js/catalog-caricaturas.js?v=1.9.6" defer></script>
-  <script src="js/catalog-anime.js?v=1.9.6" defer></script>
-  <script src="js/catalog-disney.js?v=1.9.6" defer></script>
-  <script src="js/catalog-musicales.js?v=1.9.6" defer></script>
-  <script src="js/catalog-canciones.js?v=1.9.6" defer></script>
-  <script src="js/catalog-sagas.js?v=1.9.6" defer></script>
-  <script src="js/themes.js?v=1.9.6" defer></script>
-  <script src="js/sources.js?v=1.9.6" defer></script>
-  <script src="js/loudness.js?v=1.9.6" defer></script>
-  <script src="js/engine.js?v=1.9.6" defer></script>
-  <script src="js/sfx.js?v=1.9.6" defer></script>
-  <script src="js/game.js?v=1.9.6" defer></script>
-  <script src="js/scores.js?v=1.9.6" defer></script>
-  <script src="js/app.js?v=1.9.6" defer></script>
+  <script src="js/config.js?v=2.0" defer></script>
+  <script src="js/catalog.js?v=2.0" defer></script>
+  <script src="js/catalog-series.js?v=2.0" defer></script>
+  <script src="js/catalog-caricaturas.js?v=2.0" defer></script>
+  <script src="js/catalog-anime.js?v=2.0" defer></script>
+  <script src="js/catalog-disney.js?v=2.0" defer></script>
+  <script src="js/catalog-musicales.js?v=2.0" defer></script>
+  <script src="js/catalog-canciones.js?v=2.0" defer></script>
+  <script src="js/catalog-sagas.js?v=2.0" defer></script>
+  <script src="js/themes.js?v=2.0" defer></script>
+  <script src="js/sources.js?v=2.0" defer></script>
+  <script src="js/loudness.js?v=2.0" defer></script>
+  <script src="js/engine.js?v=2.0" defer></script>
+  <script src="js/sfx.js?v=2.0" defer></script>
+  <script src="js/game.js?v=2.0" defer></script>
+  <script src="js/scores.js?v=2.0" defer></script>
+  <script src="js/app.js?v=2.0" defer></script>
 </body>
 </html>

@@ -237,10 +237,27 @@ supabase/schema.sql       Tabla y reglas del ranking global
 
 ## Versiones
 
-La versión actual se ve en la esquina inferior izquierda del juego. Para publicar una nueva, cambia
+La versión actual se ve en la esquina inferior izquierda del juego (en el celular, en el inicio, al final de la página). Para publicar una nueva, cambia
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **2.0**: **configurador por partes, con forma de cassette**. Revisión de diseño con las guías de Apple (HIG) y
+  rediseño del inicio:
+  - La partida se arma en tres partes del **lado A**: **A1 Tema**, **A2 Modo** y **A3 Música**. Hay una abierta a
+    la vez; las cerradas muestran lo elegido ("🧸 Caricaturas", "Rock y Pop · Español · 120 pistas") y se abren con un
+    toque. Al elegir tema o modo se pasa sola a la siguiente, como antes.
+  - **La casetera** resume la partida en la etiqueta de un cassette (tema, modo, música, pistas, rondas y tu récord)
+    y siempre tiene el botón **▶ Jugar**: ya no hay que pasar por los tres pasos. Quien vuelve encuentra las tres
+    partes cerradas con su última configuración y juega con un toque (reemplaza a "⚡ Jugar con la última
+    configuración"). En pantallas anchas va a un lado; en el celular queda pegada abajo, en una sola fila.
+  - En Música: **Todas / Ninguna** para elegir géneros o épocas de golpe (antes "✨ Todo" era un chip más que no se
+    podía apagar), un ✓ en los elegidos (no solo el color) y la **Época** de Canciones en un menú desplegable (7
+    opciones no cabían en una fila en el celular). Si faltan pistas, la casetera lo dice y lleva a Música.
+  - Accesibilidad: el número de los chips elegidos pasa de blanco sobre rosa (3.2:1) a oscuro sobre rosa (6.1:1);
+    flechas para moverse entre temas y modos, y el foco sigue a la parte que se abre; Enter juega; las animaciones
+    nuevas respetan "reducir movimiento". En el celular el encabezado es más compacto para que el configurador se
+    vea sin bajar.
+  - La **1.9.6** quedó guardada en la rama `respaldo-v1.9.6` para volver a ella si hace falta.
 - **1.9.6**: **configurador paso a paso**. El inicio ya no es una página larga: la partida se arma en
   3 pasos (1. **Tema**, 2. **Modo**, 3. **Música**) con botones Atrás/Siguiente y el botón Jugar al final.
   Al elegir tema o modo se pasa solo al siguiente paso, cada paso muestra lo elegido (🎌 Anime · 🎯 Clásico ·
