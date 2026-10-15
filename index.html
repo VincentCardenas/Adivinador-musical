@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=1.9.6">
+  <link rel="stylesheet" href="css/styles.css?v=2.0">
 </head>
 <body>
   <div class="bg" aria-hidden="true">
@@ -53,43 +53,92 @@
         </div>
       </div>
 
-      <div class="quick-row" id="quick-row" hidden>
-        <button class="btn btn-ghost" id="btn-quick" type="button">⚡ Jugar con la última configuración</button>
-        <p class="quick-desc" id="quick-desc"></p>
-      </div>
+      <!-- Configurador "setlist": tres partes numeradas (tema, modo, música), una abierta a la vez; las
+           cerradas muestran lo elegido. "Tu partida" resume la partida y siempre tiene el botón Jugar;
+           sus cinco trastes se encienden cuando la partida se puede jugar. -->
+      <div class="mixer">
+        <div class="setlist">
+          <div class="parts" id="parts">
+            <section class="part" data-part="1">
+              <h2 class="part-head">
+                <button type="button" class="part-toggle" id="part-btn-1" aria-expanded="false" aria-controls="part-body-1">
+                  <span class="part-tag" aria-hidden="true">1</span>
+                  <span class="part-name">Tema</span>
+                  <span class="part-value" id="pick-1"></span>
+                  <span class="part-change" aria-hidden="true"></span>
+                </button>
+              </h2>
+              <div class="part-body" id="part-body-1" role="region" aria-labelledby="part-btn-1" hidden>
+                <p class="part-q">¿De qué quieres adivinar la música?</p>
+                <div class="set-list" id="themes" role="radiogroup" aria-label="Tema"></div>
+              </div>
+            </section>
 
-      <div class="wizard" id="wizard">
-        <ol class="wizard-steps" aria-label="Pasos para armar la partida">
-          <li><button type="button" class="wstep-tab is-current" data-goto="1"><span class="wstep-num">1</span><span class="wstep-name">Tema</span><span class="wstep-pick" id="pick-1"></span></button></li>
-          <li><button type="button" class="wstep-tab" data-goto="2"><span class="wstep-num">2</span><span class="wstep-name">Modo</span><span class="wstep-pick" id="pick-2"></span></button></li>
-          <li><button type="button" class="wstep-tab" data-goto="3"><span class="wstep-num">3</span><span class="wstep-name">Música</span><span class="wstep-pick" id="pick-3"></span></button></li>
-        </ol>
+            <section class="part" data-part="2">
+              <h2 class="part-head">
+                <button type="button" class="part-toggle" id="part-btn-2" aria-expanded="false" aria-controls="part-body-2">
+                  <span class="part-tag" aria-hidden="true">2</span>
+                  <span class="part-name">Modo</span>
+                  <span class="part-value" id="pick-2"></span>
+                  <span class="part-change" aria-hidden="true"></span>
+                </button>
+              </h2>
+              <div class="part-body" id="part-body-2" role="region" aria-labelledby="part-btn-2" hidden>
+                <p class="part-q">¿Cómo quieres jugar?</p>
+                <div class="set-list" id="modes" role="radiogroup" aria-label="Modo de juego"></div>
+              </div>
+            </section>
 
-        <div class="wizard-body">
-          <div class="wstep is-active" data-step="1">
-            <h2 class="wstep-title">¿De qué quieres adivinar la música?</h2>
-            <div class="themes" id="themes" role="radiogroup" aria-label="Tema"></div>
+            <section class="part" data-part="3">
+              <h2 class="part-head">
+                <button type="button" class="part-toggle" id="part-btn-3" aria-expanded="false" aria-controls="part-body-3">
+                  <span class="part-tag" aria-hidden="true">3</span>
+                  <span class="part-name" id="part-name-3">Música</span>
+                  <span class="part-value" id="pick-3"></span>
+                  <span class="part-change" aria-hidden="true"></span>
+                </button>
+              </h2>
+              <div class="part-body" id="part-body-3" role="region" aria-labelledby="part-btn-3" hidden>
+                <p class="part-q"><span id="step3-title">¿Qué quieres escuchar?</span> <small id="pool-count"></small></p>
+                <div class="filters" id="filters" hidden></div>
+                <div class="cats-head" id="cats-head">
+                  <span class="cats-label"><span id="cats-label">Categorías</span><span class="cats-count" id="cats-count"></span></span>
+                  <span class="cats-actions">
+                    <button type="button" class="btn-link" data-cats="all">Todas</button>
+                    <button type="button" class="btn-link" data-cats="none">Ninguna</button>
+                  </span>
+                </div>
+                <div class="pads" id="chips" role="group" aria-labelledby="cats-label"></div>
+                <p class="seen-info" id="seen-info"></p>
+              </div>
+            </section>
           </div>
 
-          <div class="wstep" data-step="2" hidden>
-            <h2 class="wstep-title">¿Cómo quieres jugar?</h2>
-            <div class="modes" id="modes" role="radiogroup" aria-label="Modo de juego"></div>
-          </div>
-
-          <div class="wstep" data-step="3" hidden>
-            <h2 class="wstep-title"><span id="step3-title">¿Qué quieres escuchar?</span> <small id="pool-count"></small></h2>
-            <div class="filters" id="filters" hidden></div>
-            <div class="chips" id="chips" aria-label="Categorías"></div>
-            <p class="start-hint" id="start-hint" aria-live="polite"></p>
-            <p class="seen-info" id="seen-info"></p>
-          </div>
+          <p class="legend" id="home-legend">
+            <span><kbd>↑</kbd><kbd>↓</kbd> Moverte</span>
+            <span><i class="gem" data-fret="g" aria-hidden="true"></i><kbd>Enter</kbd> Elegir</span>
+            <span><i class="gem" data-fret="r" aria-hidden="true"></i><kbd>Esc</kbd> Cerrar</span>
+            <span><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> Ir a parte</span>
+            <span><kbd>Mayús</kbd>+<kbd>Enter</kbd> Jugar</span>
+          </p>
         </div>
 
-        <div class="wizard-nav">
-          <button class="btn btn-ghost" id="btn-back" type="button">◀ Atrás</button>
-          <button class="btn btn-primary" id="btn-next-step" type="button">Siguiente ▶</button>
-          <button class="btn btn-primary btn-play" id="btn-start" type="button" hidden>▶ Jugar</button>
-        </div>
+        <aside class="deck" id="deck" aria-label="Tu partida">
+          <div class="deck-info">
+            <p class="deck-label" aria-hidden="true">Tu partida</p>
+            <p class="deck-what" id="deck-what"></p>
+            <p class="deck-mode" id="deck-mode"></p>
+            <p class="deck-music" id="deck-music"></p>
+            <p class="deck-line" id="deck-line"></p>
+            <p class="deck-record" id="deck-record"></p>
+          </div>
+          <p class="start-hint" id="start-hint"></p>
+          <div class="strikeline" aria-hidden="true">
+            <i data-fret="g" style="--i:0"></i><i data-fret="r" style="--i:1"></i><i data-fret="y" style="--i:2"></i><i data-fret="b" style="--i:3"></i><i data-fret="o" style="--i:4"></i>
+          </div>
+          <button class="btn btn-play" id="btn-start" type="button"><span aria-hidden="true">▶</span> Jugar</button>
+          <p class="sr-only" id="pool-status" aria-live="polite"></p>
+        </aside>
       </div>
     </section>
 
@@ -189,6 +238,7 @@
       <button class="btn-link" id="btn-my-reports" type="button">🚩 Mis reportes</button>
       <button class="btn-link" id="btn-diag" type="button">🛠 Verificar catálogo</button>
     </div>
+    <p class="footer-version" id="footer-version"></p>
   </footer>
 
   <!-- ═════════ CÓMO JUGAR ═════════ -->
@@ -198,8 +248,8 @@
     <p>Elige un <strong>tema</strong> (videojuegos, series, caricaturas, anime, Disney, musicales o canciones famosas), escucha un fragmento de la música <strong>oficial</strong> y adivina de dónde es.</p>
     <ul class="help-modes">
       <li><strong>🎯 Clásico:</strong> 10 rondas con 4 opciones: la saga del videojuego, la serie, la caricatura, la película, el musical o el artista que canta. Tienes 20 s; mientras más rápido aciertes, más puntos. Encadenar aciertos multiplica: x1.5 con racha de 3 y x2 con racha de 5.</li>
-      <li><strong>🎧 Experto:</strong> estilo Heardle. Empiezas con solo 1 segundo de audio. Cada fallo o salto desbloquea más (1 → 2 → 4 → 7 → 11 → 16 s). Escribe la respuesta <em>exacta</em> (el juego, la película, la canción…); si atinas a la saga, al musical o al artista pero no a la respuesta, te avisamos con 🟨.</li>
       <li><strong>❤️ Supervivencia:</strong> opciones con la respuesta exacta (¿Halo 2 o Halo 3? ¿Toy Story o Toy Story 2?), 3 vidas y el reloj se acorta cada 3 aciertos. Cada 5 canciones hay una <strong>ronda bonus ⭐</strong>: si aciertas recuperas una vida (si ya tienes las 3, solo suma puntos) y si fallas no pierdes ninguna. ¿Hasta dónde llegas?</li>
+      <li><strong>🎧 Experto:</strong> estilo Heardle. Empiezas con solo 1 segundo de audio. Cada fallo o salto desbloquea más (1 → 2 → 4 → 7 → 11 → 16 s). Escribe la respuesta <em>exacta</em> (el juego, la película, la canción…); si atinas a la saga, al musical o al artista pero no a la respuesta, te avisamos con 🟨.</li>
     </ul>
     <h3>Épocas, géneros y filtros</h3>
     <p class="muted">Series, caricaturas, anime, Disney y musicales se separan por época: elige solo las que quieras. Canciones se separa por género (rock, pop, rap, reggaetón, regional mexicano, baladas, electrónica, cumbia, salsa, metal, K-pop y country) y arriba eliges la época y el idioma. En Disney puedes incluir o quitar las películas de Pixar, y en Musicales elegir canciones en español, en inglés o de ambas.</p>
@@ -210,6 +260,7 @@
       <li><kbd>1</kbd>–<kbd>4</kbd> elegir opción</li>
       <li><kbd>Espacio</kbd> repetir / escuchar</li>
       <li><kbd>Enter</kbd> siguiente ronda</li>
+      <li>En el inicio: <kbd>↑</kbd> <kbd>↓</kbd> moverte · <kbd>Enter</kbd> elegir · <kbd>Esc</kbd> cerrar · <kbd>1</kbd>–<kbd>3</kbd> ir a Tema, Modo o Música · <kbd>Mayús</kbd>+<kbd>Enter</kbd> jugar</li>
     </ul>
     <h3>¿De dónde sale la música?</h3>
     <p class="muted">Los previews oficiales de Apple Music (álbumes y soundtracks publicados por las disqueras y editoras) y, cuando algo no está ahí (como casi todo Nintendo), de YouTube. Disney suena con su doblaje en español latino, y los musicales con su grabación original o sus versiones en español. Si alguna pista ya no está disponible, el juego la cambia sola por otra.</p>
@@ -324,27 +375,27 @@
   </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <div class="version" id="app-version" aria-label="Versión de la app">v1.9.6</div>
+  <div class="version" id="app-version" aria-label="Versión de la app">v2.0</div>
 
   <!-- Reproductor de YouTube oculto (solo audio para el juego) -->
   <div id="yt-host" aria-hidden="true"><div id="yt-player"></div></div>
 
-  <script src="js/config.js?v=1.9.6" defer></script>
-  <script src="js/catalog.js?v=1.9.6" defer></script>
-  <script src="js/catalog-series.js?v=1.9.6" defer></script>
-  <script src="js/catalog-caricaturas.js?v=1.9.6" defer></script>
-  <script src="js/catalog-anime.js?v=1.9.6" defer></script>
-  <script src="js/catalog-disney.js?v=1.9.6" defer></script>
-  <script src="js/catalog-musicales.js?v=1.9.6" defer></script>
-  <script src="js/catalog-canciones.js?v=1.9.6" defer></script>
-  <script src="js/catalog-sagas.js?v=1.9.6" defer></script>
-  <script src="js/themes.js?v=1.9.6" defer></script>
-  <script src="js/sources.js?v=1.9.6" defer></script>
-  <script src="js/loudness.js?v=1.9.6" defer></script>
-  <script src="js/engine.js?v=1.9.6" defer></script>
-  <script src="js/sfx.js?v=1.9.6" defer></script>
-  <script src="js/game.js?v=1.9.6" defer></script>
-  <script src="js/scores.js?v=1.9.6" defer></script>
-  <script src="js/app.js?v=1.9.6" defer></script>
+  <script src="js/config.js?v=2.0" defer></script>
+  <script src="js/catalog.js?v=2.0" defer></script>
+  <script src="js/catalog-series.js?v=2.0" defer></script>
+  <script src="js/catalog-caricaturas.js?v=2.0" defer></script>
+  <script src="js/catalog-anime.js?v=2.0" defer></script>
+  <script src="js/catalog-disney.js?v=2.0" defer></script>
+  <script src="js/catalog-musicales.js?v=2.0" defer></script>
+  <script src="js/catalog-canciones.js?v=2.0" defer></script>
+  <script src="js/catalog-sagas.js?v=2.0" defer></script>
+  <script src="js/themes.js?v=2.0" defer></script>
+  <script src="js/sources.js?v=2.0" defer></script>
+  <script src="js/loudness.js?v=2.0" defer></script>
+  <script src="js/engine.js?v=2.0" defer></script>
+  <script src="js/sfx.js?v=2.0" defer></script>
+  <script src="js/game.js?v=2.0" defer></script>
+  <script src="js/scores.js?v=2.0" defer></script>
+  <script src="js/app.js?v=2.0" defer></script>
 </body>
 </html>
