@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T23:02:23.765Z",
+  "generatedAt": "2026-10-16T23:06:43.598Z",
   "resumen": {
     "series": {
       "total": 192,
@@ -37,9 +37,9 @@
       "muertas": 0
     },
     "disney": {
-      "total": 71,
-      "ok": 59,
-      "dudosas": 12,
+      "total": 92,
+      "ok": 71,
+      "dudosas": 21,
       "dudosasRevisadas": 0,
       "muertas": 0
     },
@@ -8668,9 +8668,9 @@
     },
     "disney": {
       "resumen": {
-        "total": 71,
-        "ok": 59,
-        "dudosas": 12,
+        "total": 92,
+        "ok": 71,
+        "dudosas": 21,
         "dudosasRevisadas": 0,
         "muertas": 0
       },
@@ -8736,6 +8736,147 @@
               "lengthSeconds": 231,
               "loudnessDb": -11.02,
               "checkedAt": "2026-10-16T20:41:23.359Z"
+            }
+          ]
+        },
+        {
+          "id": "dis-dumbo-cuando-veo-un-elefante-volar",
+          "cat": "dis-clasica",
+          "franchise": "Dumbo",
+          "game": "Dumbo",
+          "title": "Cuando veo un elefante volar",
+          "composer": "Doblaje latino",
+          "estado": "dudosa",
+          "revisada": null,
+          "motivos": [
+            "Debería ser doblaje latino pero el video no dice latino/español"
+          ],
+          "primeraFuente": {
+            "kind": "yt",
+            "id": "Y-7oUEBulhU",
+            "start": 0,
+            "ok": true,
+            "oembedStatus": 200,
+            "playabilityStatus": "OK",
+            "playableInEmbed": true,
+            "reason": "OK",
+            "title": "Dumbo - Nunca vi un elefante volar",
+            "channel": "DulceSweet",
+            "lengthSeconds": 108,
+            "loudnessDb": -3.0100002,
+            "checkedWatchPage": true,
+            "checkedAt": "2026-10-16T23:04:10.620Z"
+          },
+          "fuentes": [
+            {
+              "kind": "yt",
+              "id": "Y-7oUEBulhU",
+              "start": 0,
+              "ok": true,
+              "oembedStatus": 200,
+              "playabilityStatus": "OK",
+              "playableInEmbed": true,
+              "reason": "OK",
+              "title": "Dumbo - Nunca vi un elefante volar",
+              "channel": "DulceSweet",
+              "lengthSeconds": 108,
+              "loudnessDb": -3.0100002,
+              "checkedWatchPage": true,
+              "checkedAt": "2026-10-16T23:04:10.620Z"
+            }
+          ]
+        },
+        {
+          "id": "dis-bambi-la-cancion-de-la-lluvia",
+          "cat": "dis-clasica",
+          "franchise": "Bambi",
+          "game": "Bambi",
+          "title": "La canción de la lluvia",
+          "composer": "Doblaje latino",
+          "estado": "dudosa",
+          "revisada": null,
+          "motivos": [
+            "Debería ser doblaje latino pero el video no dice latino/español"
+          ],
+          "primeraFuente": {
+            "kind": "yt",
+            "id": "P6VfW6KSdGk",
+            "start": 0,
+            "ok": true,
+            "oembedStatus": 200,
+            "playabilityStatus": "OK",
+            "playableInEmbed": true,
+            "reason": "OK",
+            "title": "Bambi: Las gotitas",
+            "channel": "DisneyMusic1992",
+            "lengthSeconds": 225,
+            "loudnessDb": -3.7399998,
+            "checkedWatchPage": true,
+            "checkedAt": "2026-10-16T23:04:12.694Z"
+          },
+          "fuentes": [
+            {
+              "kind": "yt",
+              "id": "P6VfW6KSdGk",
+              "start": 0,
+              "ok": true,
+              "oembedStatus": 200,
+              "playabilityStatus": "OK",
+              "playableInEmbed": true,
+              "reason": "OK",
+              "title": "Bambi: Las gotitas",
+              "channel": "DisneyMusic1992",
+              "lengthSeconds": 225,
+              "loudnessDb": -3.7399998,
+              "checkedWatchPage": true,
+              "checkedAt": "2026-10-16T23:04:12.694Z"
+            }
+          ]
+        },
+        {
+          "id": "dis-el-libro-de-la-selva-quiero-ser-como-tu",
+          "cat": "dis-clasica",
+          "franchise": "El libro de la selva",
+          "game": "El libro de la selva",
+          "title": "Quiero ser como tú",
+          "composer": "Germán Valdés \"Tin Tan\"",
+          "estado": "dudosa",
+          "revisada": null,
+          "motivos": [
+            "Debería ser doblaje latino pero el video no dice latino/español"
+          ],
+          "primeraFuente": {
+            "kind": "yt",
+            "id": "rcXF7xWnOUA",
+            "start": 0,
+            "ok": true,
+            "oembedStatus": 200,
+            "playabilityStatus": "OK",
+            "playableInEmbed": true,
+            "reason": "OK",
+            "title": "El Libro de la selva Quiero Ser Como Tu 2016",
+            "channel": "Maricel Del Castillo- Nicolas Caruso",
+            "lengthSeconds": 72,
+            "loudnessDb": -1.3900003,
+            "checkedWatchPage": true,
+            "checkedAt": "2026-10-16T23:04:21.035Z"
+          },
+          "fuentes": [
+            {
+              "kind": "yt",
+              "id": "rcXF7xWnOUA",
+              "start": 0,
+              "ok": true,
+              "oembedStatus": 200,
+              "playabilityStatus": "OK",
+              "playableInEmbed": true,
+              "reason": "OK",
+              "title": "El Libro de la selva Quiero Ser Como Tu 2016",
+              "channel": "Maricel Del Castillo- Nicolas Caruso",
+              "lengthSeconds": 72,
+              "loudnessDb": -1.3900003,
+              "checkedWatchPage": true,
+              "checkedAt": "2026-10-16T23:04:21.035Z"
             }
           ]
         },
@@ -9008,6 +9149,53 @@
           ]
         },
         {
+          "id": "dis-tarzan-hijo-de-hombre",
+          "cat": "dis-renacimiento",
+          "franchise": "Tarzán",
+          "game": "Tarzán",
+          "title": "Hijo de hombre",
+          "composer": "Phil Collins",
+          "estado": "dudosa",
+          "revisada": null,
+          "motivos": [
+            "Debería ser doblaje latino pero el video no dice latino/español"
+          ],
+          "primeraFuente": {
+            "kind": "yt",
+            "id": "QczRVx2rtE4",
+            "start": 0,
+            "ok": true,
+            "oembedStatus": 200,
+            "playabilityStatus": "OK",
+            "playableInEmbed": true,
+            "reason": "OK",
+            "title": "Tarzán - Hijo De Hombre (By: Phil Collins) (Letra)",
+            "channel": "Lyrx Music",
+            "lengthSeconds": 200,
+            "loudnessDb": -2.2000008,
+            "checkedWatchPage": true,
+            "checkedAt": "2026-10-16T23:04:35.114Z"
+          },
+          "fuentes": [
+            {
+              "kind": "yt",
+              "id": "QczRVx2rtE4",
+              "start": 0,
+              "ok": true,
+              "oembedStatus": 200,
+              "playabilityStatus": "OK",
+              "playableInEmbed": true,
+              "reason": "OK",
+              "title": "Tarzán - Hijo De Hombre (By: Phil Collins) (Letra)",
+              "channel": "Lyrx Music",
+              "lengthSeconds": 200,
+              "loudnessDb": -2.2000008,
+              "checkedWatchPage": true,
+              "checkedAt": "2026-10-16T23:04:35.114Z"
+            }
+          ]
+        },
+        {
           "id": "dis-chicken-little-ya-no-se-quien-soy",
           "cat": "dis-2000s",
           "franchise": "Chicken Little",
@@ -9181,6 +9369,101 @@
           ]
         },
         {
+          "id": "dis-monsters-inc-si-no-estoy-contigo",
+          "cat": "dis-2000s",
+          "franchise": "Monsters, Inc.",
+          "game": "Monsters, Inc.",
+          "title": "Si no estoy contigo",
+          "composer": "Doblaje latino",
+          "estado": "dudosa",
+          "revisada": null,
+          "motivos": [
+            "Dice castellano/España cuando debe ser doblaje latino",
+            "Debería ser doblaje latino pero el video no dice latino/español"
+          ],
+          "primeraFuente": {
+            "kind": "yt",
+            "id": "PhLS1Ilxzog",
+            "start": 0,
+            "ok": true,
+            "oembedStatus": 200,
+            "playabilityStatus": "OK",
+            "playableInEmbed": true,
+            "reason": "OK",
+            "title": "Monstruos SA- Si no estoy contigo (Castellano)",
+            "channel": "Disper82",
+            "lengthSeconds": 137,
+            "loudnessDb": -10.01,
+            "checkedWatchPage": true,
+            "checkedAt": "2026-10-16T23:04:37.328Z"
+          },
+          "fuentes": [
+            {
+              "kind": "yt",
+              "id": "PhLS1Ilxzog",
+              "start": 0,
+              "ok": true,
+              "oembedStatus": 200,
+              "playabilityStatus": "OK",
+              "playableInEmbed": true,
+              "reason": "OK",
+              "title": "Monstruos SA- Si no estoy contigo (Castellano)",
+              "channel": "Disper82",
+              "lengthSeconds": 137,
+              "loudnessDb": -10.01,
+              "checkedWatchPage": true,
+              "checkedAt": "2026-10-16T23:04:37.328Z"
+            }
+          ]
+        },
+        {
+          "id": "dis-tierra-de-osos-en-marcha-estoy",
+          "cat": "dis-2000s",
+          "franchise": "Tierra de osos",
+          "game": "Tierra de osos",
+          "title": "En marcha estoy",
+          "composer": "Phil Collins",
+          "estado": "dudosa",
+          "revisada": null,
+          "motivos": [
+            "Debería ser doblaje latino pero el video no dice latino/español"
+          ],
+          "primeraFuente": {
+            "kind": "yt",
+            "id": "7YJ-hCw1vQg",
+            "start": 0,
+            "ok": true,
+            "oembedStatus": 200,
+            "playabilityStatus": "OK",
+            "playableInEmbed": true,
+            "reason": "OK",
+            "title": "Tierra De Osos - En Marcha Estoy (By: Phil Collins) (Video & Letra)",
+            "channel": "Lyrx Music",
+            "lengthSeconds": 255,
+            "loudnessDb": 0.75,
+            "checkedWatchPage": true,
+            "checkedAt": "2026-10-16T23:04:43.014Z"
+          },
+          "fuentes": [
+            {
+              "kind": "yt",
+              "id": "7YJ-hCw1vQg",
+              "start": 0,
+              "ok": true,
+              "oembedStatus": 200,
+              "playabilityStatus": "OK",
+              "playableInEmbed": true,
+              "reason": "OK",
+              "title": "Tierra De Osos - En Marcha Estoy (By: Phil Collins) (Video & Letra)",
+              "channel": "Lyrx Music",
+              "lengthSeconds": 255,
+              "loudnessDb": 0.75,
+              "checkedWatchPage": true,
+              "checkedAt": "2026-10-16T23:04:43.014Z"
+            }
+          ]
+        },
+        {
           "id": "dis-valiente-viento-y-cielo-alcanzar",
           "cat": "dis-2010s",
           "franchise": "Valiente",
@@ -9240,6 +9523,100 @@
               "lengthSeconds": 185,
               "loudnessDb": 3.6300001,
               "checkedAt": "2026-10-16T20:42:20.977Z"
+            }
+          ]
+        },
+        {
+          "id": "dis-frozen-una-aventura-congelada-por-primera-vez-en-anos",
+          "cat": "dis-2010s",
+          "franchise": "Frozen",
+          "game": "Frozen: Una aventura congelada",
+          "title": "Por primera vez en años",
+          "composer": "Romina Marroquín Payró y Carmen Sarahi",
+          "estado": "dudosa",
+          "revisada": null,
+          "motivos": [
+            "Debería ser doblaje latino pero el video no dice latino/español"
+          ],
+          "primeraFuente": {
+            "kind": "yt",
+            "id": "3e5P6CiwjaA",
+            "start": 0,
+            "ok": true,
+            "oembedStatus": 200,
+            "playabilityStatus": "OK",
+            "playableInEmbed": true,
+            "reason": "OK",
+            "title": "Carmen López, Gisela - Por Primera Vez en Años (De \"Frozen: El Reino del Hielo\")",
+            "channel": "disneymusicesVEVO",
+            "lengthSeconds": 221,
+            "loudnessDb": -5.5799999,
+            "checkedWatchPage": true,
+            "checkedAt": "2026-10-16T23:04:59.724Z"
+          },
+          "fuentes": [
+            {
+              "kind": "yt",
+              "id": "3e5P6CiwjaA",
+              "start": 0,
+              "ok": true,
+              "oembedStatus": 200,
+              "playabilityStatus": "OK",
+              "playableInEmbed": true,
+              "reason": "OK",
+              "title": "Carmen López, Gisela - Por Primera Vez en Años (De \"Frozen: El Reino del Hielo\")",
+              "channel": "disneymusicesVEVO",
+              "lengthSeconds": 221,
+              "loudnessDb": -5.5799999,
+              "checkedWatchPage": true,
+              "checkedAt": "2026-10-16T23:04:59.724Z"
+            }
+          ]
+        },
+        {
+          "id": "dis-moana-un-mar-de-aventuras-brillo",
+          "cat": "dis-2010s",
+          "franchise": "Moana",
+          "game": "Moana: Un mar de aventuras",
+          "title": "Brillo",
+          "composer": "Mauricio Pérez",
+          "estado": "dudosa",
+          "revisada": null,
+          "motivos": [
+            "Debería ser doblaje latino pero el video no dice latino/español"
+          ],
+          "primeraFuente": {
+            "kind": "yt",
+            "id": "beiUZSieBt0",
+            "start": 0,
+            "ok": true,
+            "oembedStatus": 200,
+            "playabilityStatus": "OK",
+            "playableInEmbed": true,
+            "reason": "OK",
+            "title": "Dan Osorio - Brillo (De \"Moana: un mar de aventuras\"/Con letra)",
+            "channel": "DisneyMusicLAVEVO",
+            "lengthSeconds": 201,
+            "loudnessDb": -1.9799995,
+            "checkedWatchPage": true,
+            "checkedAt": "2026-10-16T23:05:06.502Z"
+          },
+          "fuentes": [
+            {
+              "kind": "yt",
+              "id": "beiUZSieBt0",
+              "start": 0,
+              "ok": true,
+              "oembedStatus": 200,
+              "playabilityStatus": "OK",
+              "playableInEmbed": true,
+              "reason": "OK",
+              "title": "Dan Osorio - Brillo (De \"Moana: un mar de aventuras\"/Con letra)",
+              "channel": "DisneyMusicLAVEVO",
+              "lengthSeconds": 201,
+              "loudnessDb": -1.9799995,
+              "checkedWatchPage": true,
+              "checkedAt": "2026-10-16T23:05:06.502Z"
             }
           ]
         },
@@ -9429,6 +9806,53 @@
               "lengthSeconds": 265,
               "loudnessDb": 3.96,
               "checkedAt": "2026-10-16T20:42:32.107Z"
+            }
+          ]
+        },
+        {
+          "id": "dis-elementos-steal-the-show",
+          "cat": "dis-2020s",
+          "franchise": "Elementos",
+          "game": "Elementos",
+          "title": "Steal the Show",
+          "composer": "Lauv",
+          "estado": "dudosa",
+          "revisada": null,
+          "motivos": [
+            "Debería ser doblaje latino pero el video no dice latino/español"
+          ],
+          "primeraFuente": {
+            "kind": "yt",
+            "id": "DwuJeGYlYyw",
+            "start": 0,
+            "ok": true,
+            "oembedStatus": 200,
+            "playabilityStatus": "OK",
+            "playableInEmbed": true,
+            "reason": "OK",
+            "title": "Lauv - Steal The Show (From \"Elemental\")",
+            "channel": "DisneyMusicVEVO",
+            "lengthSeconds": 193,
+            "loudnessDb": -4.5499992,
+            "checkedWatchPage": true,
+            "checkedAt": "2026-10-16T23:05:25.820Z"
+          },
+          "fuentes": [
+            {
+              "kind": "yt",
+              "id": "DwuJeGYlYyw",
+              "start": 0,
+              "ok": true,
+              "oembedStatus": 200,
+              "playabilityStatus": "OK",
+              "playableInEmbed": true,
+              "reason": "OK",
+              "title": "Lauv - Steal The Show (From \"Elemental\")",
+              "channel": "DisneyMusicVEVO",
+              "lengthSeconds": 193,
+              "loudnessDb": -4.5499992,
+              "checkedWatchPage": true,
+              "checkedAt": "2026-10-16T23:05:25.820Z"
             }
           ]
         }

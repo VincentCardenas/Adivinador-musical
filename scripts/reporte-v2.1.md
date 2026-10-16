@@ -511,11 +511,16 @@ Incluye:
 | **Series** | `tv-10s` | 29 | +20 | +20 | **49** | ✅ Completado |
 | **Series** | `tv-20s` | 11 | +14 | +14 | **25** | ✅ Completado |
 | **Series (Total)** | — | **122** | **+70** | **+70** | **192** | ✅ **Meta lograda (192)** |
+| **Disney** | `dis-clasica` | 13 | +5 | +5 | **18** | ✅ Completado |
+| **Disney** | `dis-renacimiento` | 19 | +4 | +4 | **23** | ✅ Completado |
+| **Disney** | `dis-2000s` | 15 | +3 | +3 | **18** | ✅ Completado |
+| **Disney** | `dis-2010s` | 16 | +4 | +4 | **20** | ✅ Completado |
+| **Disney** | `dis-2020s` | 8 | +5 | +5 | **13** | ✅ Completado |
+| **Disney (Total)** | — | **71** | **+21** | **+21** | **92** | ✅ **Meta lograda (92)** |
 
 ## 6. Pendiente por aplicar (resto de Fase 3 y Fase 4)
 
 - **Fase 3 (Expansión +20 % por categoría):**
-  - Disney: +21 pistas nuevas (meta final: 92 pistas).
   - Musicales: +47 pistas nuevas, con al menos 3 en `mus-clasicos` y 3 en `mus-10s` en español (`lang: 'es'`) (meta final: 269 pistas).
   - Caricaturas: +54 adicionales (+11 ya recuperadas en Fase 2 = +65 total; meta final: 361 pistas).
   - Anime: +47 adicionales (+5 ya recuperadas en Fase 2 = +52 total; meta final: 303 pistas).

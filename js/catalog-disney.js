@@ -1,5 +1,5 @@
 /*
- * Catálogo: Películas de Disney y Pixar (71 pistas).
+ * Catálogo: Películas de Disney y Pixar (92 pistas).
  * Canciones de películas de Disney en español latino, por época. `pixar: true` marca las de Pixar (se pueden quitar desde el inicio).
  * Mismo formato que catalog.js; las fuentes se prueban en el orden en que aparecen.
  */
@@ -18,7 +18,7 @@
   );
 
   AM.CATALOG.push(
-    /* ───────────── Clásicos (1937–1988) (13) ───────────── */
+    /* ───────────── Clásicos (1937–1988) (18) ───────────── */
     {
       id: 'dis-blanca-nieves-y-los-siete-enanos-hei-ho', cat: 'dis-clasica', franchise: 'Blanca Nieves y los siete enanos', game: 'Blanca Nieves y los siete enanos',
       title: 'Hei-Ho', composer: 'Doblaje latino', year: 1937,
@@ -87,7 +87,33 @@
       title: 'No me preocupo', composer: 'Michael Cruz', year: 1988,
       sources: [yt('0u4BAQ0B0s4')],
     },
-    /* ───────────── Renacimiento (1989–1999) (19) ───────────── */
+    {
+      id: 'dis-dumbo-cuando-veo-un-elefante-volar', cat: 'dis-clasica', franchise: 'Dumbo', game: 'Dumbo',
+      title: 'Cuando veo un elefante volar', composer: 'Doblaje latino', year: 1941,
+      sources: [yt('Y-7oUEBulhU')],
+    },
+    {
+      id: 'dis-bambi-la-cancion-de-la-lluvia', cat: 'dis-clasica', franchise: 'Bambi', game: 'Bambi',
+      title: 'La canción de la lluvia', composer: 'Doblaje latino', year: 1942,
+      sources: [yt('P6VfW6KSdGk')],
+    },
+    {
+      id: 'dis-cenicienta-sonar-es-desear', cat: 'dis-clasica', franchise: 'Cenicienta', game: 'Cenicienta',
+      title: 'Soñar es desear', composer: 'Evangelina Elizondo', year: 1950,
+      aka: ['La Cenicienta'],
+      sources: [apple({ song: 1624896787, country: 'mx' }), yt('_j2jSJFqzKc')],
+    },
+    {
+      id: 'dis-mary-poppins-con-un-poco-de-azucar', cat: 'dis-clasica', franchise: 'Mary Poppins', game: 'Mary Poppins',
+      title: 'Con un poco de azúcar', composer: 'Doblaje latino', year: 1964,
+      sources: [yt('hnVqUB_jJs4')],
+    },
+    {
+      id: 'dis-el-libro-de-la-selva-quiero-ser-como-tu', cat: 'dis-clasica', franchise: 'El libro de la selva', game: 'El libro de la selva',
+      title: 'Quiero ser como tú', composer: 'Germán Valdés "Tin Tan"', year: 1967,
+      sources: [yt('rcXF7xWnOUA')],
+    },
+    /* ───────────── Renacimiento (1989–1999) (23) ───────────── */
     {
       id: 'dis-la-sirenita-bajo-el-mar', cat: 'dis-renacimiento', franchise: 'La sirenita', game: 'La sirenita',
       title: 'Bajo el mar', composer: 'Michael Cruz', year: 1989,
@@ -183,7 +209,27 @@
       title: 'Cuando alguien me amaba', composer: 'Doblaje latino', year: 1999, pixar: true,
       sources: [yt('BCKMsbaNbKw'), yt('iIopDqbjqbo')],
     },
-    /* ───────────── 2000–2009 (15) ───────────── */
+    {
+      id: 'dis-aladdin-un-amigo-fiel-en-mi', cat: 'dis-renacimiento', franchise: 'Aladdín', game: 'Aladdín',
+      title: 'Un amigo fiel en mí', composer: 'Ruben Trujillo', year: 1992,
+      sources: [apple({ song: 1618857318, country: 'mx' }), yt('I-jj3ARkeCg')],
+    },
+    {
+      id: 'dis-el-rey-leon-esta-noche-es-para-amar', cat: 'dis-renacimiento', franchise: 'El rey león', game: 'El rey león',
+      title: 'Esta noche es para amar', composer: 'Renato López y Claudia Pizá', year: 1994,
+      sources: [apple({ song: 517299279, country: 'mx' }), yt('ePEyE9y1fKw')],
+    },
+    {
+      id: 'dis-hercules-no-hablare-de-mi-amor', cat: 'dis-renacimiento', franchise: 'Hércules', game: 'Hércules',
+      title: 'No hablaré de mi amor', composer: 'Tatiana', year: 1997,
+      sources: [yt('yuepVFniTO4')],
+    },
+    {
+      id: 'dis-tarzan-hijo-de-hombre', cat: 'dis-renacimiento', franchise: 'Tarzán', game: 'Tarzán',
+      title: 'Hijo de hombre', composer: 'Phil Collins', year: 1999,
+      sources: [yt('QczRVx2rtE4')],
+    },
+    /* ───────────── 2000–2009 (18) ───────────── */
     {
       id: 'dis-lilo-y-stitch-he-mele-no-lilo', cat: 'dis-2000s', franchise: 'Lilo y Stitch', game: 'Lilo y Stitch',
       title: 'He Mele No Lilo', composer: 'Mark Keali\'i Ho\'omalu', year: 2002,
@@ -266,7 +312,23 @@
       title: 'Lo que soy (This Is Me)', composer: 'Demi Lovato', year: 2008,
       sources: [yt('oObiJAipqoA'), yt('pLPvgdHPrSQ')],
     },
-    /* ───────────── 2010–2019 (16) ───────────── */
+    {
+      id: 'dis-monsters-inc-si-no-estoy-contigo', cat: 'dis-2000s', franchise: 'Monsters, Inc.', game: 'Monsters, Inc.',
+      title: 'Si no estoy contigo', composer: 'Doblaje latino', year: 2001, pixar: true,
+      sources: [yt('PhLS1Ilxzog')],
+    },
+    {
+      id: 'dis-tierra-de-osos-en-marcha-estoy', cat: 'dis-2000s', franchise: 'Tierra de osos', game: 'Tierra de osos',
+      title: 'En marcha estoy', composer: 'Phil Collins', year: 2003,
+      aka: ['Hermano oso', 'Brother Bear'],
+      sources: [yt('7YJ-hCw1vQg')],
+    },
+    {
+      id: 'dis-la-princesa-y-el-sapo-amigos-del-mas-alla', cat: 'dis-2000s', franchise: 'La princesa y el sapo', game: 'La princesa y el sapo',
+      title: 'Amigos del más allá', composer: 'Mauricio Pérez', year: 2009,
+      sources: [yt('CA5qk28npHg')],
+    },
+    /* ───────────── 2010–2019 (20) ───────────── */
     {
       id: 'dis-enredados-veo-en-ti-la-luz', cat: 'dis-2010s', franchise: 'Enredados', game: 'Enredados',
       title: 'Veo en ti la luz', composer: 'Chayanne y Danna Paola', year: 2010,
@@ -354,7 +416,29 @@
       title: 'Muéstrate', composer: 'Carmen Sarahi y Leslie Gil', year: 2019,
       sources: [apple({ song: 1487754979, country: 'mx' })],
     },
-    /* ───────────── 2020 en adelante (8) ───────────── */
+    {
+      id: 'dis-toy-story-3-hay-un-amigo-en-mi', cat: 'dis-2010s', franchise: 'Toy Story', game: 'Toy Story 3',
+      title: 'Hay un amigo en mí (para Buzz Español)', composer: 'Gipsy Kings', year: 2010, pixar: true,
+      sources: [apple({ song: 1443804769, country: 'mx' }), yt('Q1-Ron-Zz6Y')],
+    },
+    {
+      id: 'dis-frozen-una-aventura-congelada-por-primera-vez-en-anos', cat: 'dis-2010s', franchise: 'Frozen', game: 'Frozen: Una aventura congelada',
+      title: 'Por primera vez en años', composer: 'Romina Marroquín Payró y Carmen Sarahi', year: 2013,
+      aka: ['Frozen'],
+      sources: [yt('3e5P6CiwjaA')],
+    },
+    {
+      id: 'dis-moana-un-mar-de-aventuras-brillo', cat: 'dis-2010s', franchise: 'Moana', game: 'Moana: Un mar de aventuras',
+      title: 'Brillo', composer: 'Mauricio Pérez', year: 2016,
+      aka: ['Moana'],
+      sources: [yt('beiUZSieBt0')],
+    },
+    {
+      id: 'dis-coco-el-latido-de-mi-corazon', cat: 'dis-2010s', franchise: 'Coco', game: 'Coco',
+      title: 'El latido de mi corazón', composer: 'Luis Ángel Gómez Jaramillo', year: 2017, pixar: true,
+      sources: [apple({ song: 1440726687, country: 'mx' }), yt('ZZkVaNWvatM')],
+    },
+    /* ───────────── 2020 en adelante (13) ───────────── */
     {
       id: 'dis-encanto-no-se-habla-de-bruno', cat: 'dis-2020s', franchise: 'Encanto', game: 'Encanto',
       title: 'No se habla de Bruno', composer: 'Carolina Gaitán - La Gaita y Mauro Castillo', year: 2021,
@@ -397,29 +481,50 @@
       title: 'Al final', composer: 'Sara Paula Gómez Arias', year: 2024,
       sources: [yt('E0xyhIGdt0w'), yt('D82t_7mUHXI')],
     },
+    {
+      id: 'dis-soul-it-s-all-right', cat: 'dis-2020s', franchise: 'Soul', game: 'Soul',
+      title: 'It\'s All Right', composer: 'Jon Batiste y Celeste', year: 2020, pixar: true,
+      sources: [apple({ song: 1544502525, country: 'mx' }), yt('txdUE10OopA')],
+    },
+    {
+      id: 'dis-raya-y-el-ultimo-dragon-hasta-vencer', cat: 'dis-2020s', franchise: 'Raya y el último dragón', game: 'Raya y el último dragón',
+      title: 'Hasta vencer', composer: 'Danna Paola', year: 2021,
+      sources: [apple({ song: 1554007696, country: 'mx' }), yt('eoqjGb-g1fk')],
+    },
+    {
+      id: 'dis-encanto-inspiracion', cat: 'dis-2020s', franchise: 'Encanto', game: 'Encanto',
+      title: 'Inspiración', composer: 'Olga Lucía Vives e Isabel Garcés', year: 2021,
+      sources: [apple({ song: 1596162960, country: 'mx' }), yt('FklTtTtAljg')],
+    },
+    {
+      id: 'dis-elementos-steal-the-show', cat: 'dis-2020s', franchise: 'Elementos', game: 'Elementos',
+      title: 'Steal the Show', composer: 'Lauv', year: 2023, pixar: true,
+      aka: ['Elemental'],
+      sources: [yt('DwuJeGYlYyw')],
+    },
+    {
+      id: 'dis-mufasa-el-rey-leon-yo-siempre-quise-un-hermano', cat: 'dis-2020s', franchise: 'El rey león', game: 'Mufasa: El rey león',
+      title: 'Yo siempre quise un hermano', composer: 'Doblaje latino', year: 2024,
+      sources: [apple({ song: 1784905299, country: 'mx' }), yt('sWtOe-q8D9Y')],
+    },
   );
 
   // Señuelos: aparecen como opciones incorrectas y en el buscador de Experto.
   AM.EXTRA_GAMES.push(
-    { theme: 'disney', franchise: 'Bambi', game: 'Bambi' },
-    { theme: 'disney', franchise: 'Dumbo', game: 'Dumbo' },
     { theme: 'disney', franchise: 'Fantasía', game: 'Fantasía' },
     { theme: 'disney', franchise: 'La espada en la piedra', game: 'La espada en la piedra' },
     { theme: 'disney', franchise: 'Los rescatadores', game: 'Los rescatadores' },
     { theme: 'disney', franchise: 'El zorro y el sabueso', game: 'El zorro y el sabueso' },
     { theme: 'disney', franchise: 'Bichos', game: 'Bichos', pixar: true },
     { theme: 'disney', franchise: 'Monsters, Inc.', game: 'Monsters University', pixar: true },
-    { theme: 'disney', franchise: 'Toy Story', game: 'Toy Story 3', pixar: true },
     { theme: 'disney', franchise: 'Toy Story', game: 'Toy Story 4', pixar: true },
     { theme: 'disney', franchise: 'Buscando a Nemo', game: 'Buscando a Dory', pixar: true },
     { theme: 'disney', franchise: 'Los increíbles', game: 'Los increíbles 2', pixar: true },
     { theme: 'disney', franchise: 'Cars', game: 'Cars 2', pixar: true },
     { theme: 'disney', franchise: 'Toy Story', game: 'Lightyear', pixar: true },
-    { theme: 'disney', franchise: 'Raya y el último dragón', game: 'Raya y el último dragón' },
     { theme: 'disney', franchise: 'Atlantis: El imperio perdido', game: 'Atlantis: El imperio perdido' },
     { theme: 'disney', franchise: 'Bolt', game: 'Bolt' },
     { theme: 'disney', franchise: 'Ralph', game: 'Ralph rompe Internet' },
-    { theme: 'disney', franchise: 'El rey león', game: 'Mufasa: El rey león' },
     { theme: 'disney', franchise: 'El rey león', game: 'El rey león 2: El tesoro de Simba' },
     { theme: 'disney', franchise: 'Aladdín', game: 'Aladdín: El retorno de Jafar' },
     { theme: 'disney', franchise: 'La sirenita', game: 'La sirenita 2: Regreso al mar' },
