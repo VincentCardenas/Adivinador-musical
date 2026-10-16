@@ -1,5 +1,5 @@
 /*
- * Catálogo: Series de TV (122 pistas).
+ * Catálogo: Series de TV (192 pistas).
  * Entradas y temas principales de series, separados por la década en que se estrenaron.
  * Mismo formato que catalog.js; las fuentes se prueban en el orden en que aparecen.
  */
@@ -21,7 +21,7 @@
   );
 
   AM.CATALOG.push(
-    /* ───────────── Clásicas (antes de 1990) (35) ───────────── */
+    /* ───────────── Clásicas (antes de 1990) (41) ───────────── */
     {
       id: 'tv-cheers-where-everybody-knows-your-name', cat: 'tv-clasicas', franchise: 'Cheers', game: 'Cheers',
       title: 'Where Everybody Knows Your Name', composer: 'Gary Portnoy', year: 1982, platform: 'NBC',
@@ -224,7 +224,43 @@
       aka: ['ALF'],
       sources: [yt('0I_3bu9zgDk'), yt('zD9pEaOqAqw')],
     },
-    /* ───────────── Años 90 (29) ───────────── */
+    {
+      id: 'tv-el-zorro-1957-zorro-theme', cat: 'tv-clasicas', franchise: 'El Zorro (1957)', game: 'El Zorro (1957)',
+      title: 'Zorro Theme', composer: 'Norman Foster y George Bruns', year: 1957, platform: 'ABC',
+      aka: ['Zorro', 'El Zorro de Disney'],
+      sources: [yt('eSgbxPtyv1U'), yt('lQnle_3KuOE')],
+    },
+    {
+      id: 'tv-el-llanero-solitario-lone-ranger-theme', cat: 'tv-clasicas', franchise: 'El llanero solitario', game: 'El llanero solitario',
+      title: 'William Tell Overture (Lone Ranger Theme)', composer: 'Gioachino Rossini', year: 1949, platform: 'ABC',
+      aka: ['The Lone Ranger'],
+      sources: [yt('p9lf76xOA5k'), yt('hxIuIxqo2So')],
+    },
+    {
+      id: 'tv-los-munster-the-munsters-theme', cat: 'tv-clasicas', franchise: 'Los Munster', game: 'Los Munster',
+      title: 'The Munsters Theme', composer: 'Jack Marshall', year: 1964, platform: 'CBS',
+      aka: ['The Munsters', 'La familia Monster'],
+      sources: [yt('JdrbLvFJkB4'), yt('vgmiBjJFOSA')],
+    },
+    {
+      id: 'tv-kung-fu-kung-fu-theme', cat: 'tv-clasicas', franchise: 'Kung Fu', game: 'Kung Fu',
+      title: 'Kung Fu Theme', composer: 'Jim Helms', year: 1972, platform: 'ABC',
+      aka: ['Kung Fu (1972)'],
+      sources: [yt('mfU8pfUawEE'), yt('T2t-1CPJXYo')],
+    },
+    {
+      id: 'tv-el-chapulin-colorado-baroque-hoedown', cat: 'tv-clasicas', franchise: 'El Chapulín Colorado', game: 'El Chapulín Colorado',
+      title: 'Baroque Hoedown (Tema de El Chapulín Colorado)', composer: 'Jean-Jacques Perrey y Gershon Kingsley', year: 1973, platform: 'Televisa',
+      aka: ['Chapulín Colorado'],
+      sources: [apple({ song: 711739109, country: 'mx' }), yt('N63K43wHz4g')],
+    },
+    {
+      id: 'tv-los-anos-maravillosos-with-a-little-help-from-my-friends', cat: 'tv-clasicas', franchise: 'Los años maravillosos', game: 'Los años maravillosos',
+      title: 'With a Little Help from My Friends', composer: 'Joe Cocker', year: 1988, platform: 'ABC',
+      aka: ['The Wonder Years'],
+      sources: [apple({ song: 1434916256, country: 'mx' }), yt('LpwabPQW4p4')],
+    },
+    /* ───────────── Años 90 (41) ───────────── */
     {
       id: 'tv-friends-i-ll-be-there-for-you', cat: 'tv-90s', franchise: 'Friends', game: 'Friends',
       title: 'I\'ll Be There for You', composer: 'The Rembrandts', year: 1994, platform: 'NBC',
@@ -387,7 +423,75 @@
       title: 'Cambio dolor', composer: 'Natalia Oreiro', year: 1998, platform: 'Telefe',
       sources: buscaTv('Natalia Oreiro Cambio dolor', { match: ['Cambio dolor'], artist: ['Natalia Oreiro'], album_hint: ['Natalia Oreiro'] }),
     },
-    /* ───────────── 2000s (26) ───────────── */
+    {
+      id: 'tv-clarissa-lo-explica-todo-way-cool', cat: 'tv-90s', franchise: 'Clarissa lo explica todo', game: 'Clarissa lo explica todo',
+      title: 'Way Cool (Clarissa Theme)', composer: 'Rachel Sweet', year: 1991, platform: 'Nickelodeon',
+      aka: ['Clarissa Explains It All'],
+      sources: [yt('y0BerpDmVSE'), yt('DqAmG9A7TBc')],
+    },
+    {
+      id: 'tv-mejorando-la-casa-iron-johns-rock', cat: 'tv-90s', franchise: 'Mejorando la casa', game: 'Mejorando la casa',
+      title: 'Iron John\'s Rock', composer: 'Dan Foliart', year: 1991, platform: 'ABC',
+      aka: ['Home Improvement'],
+      sources: [yt('JoWgn_uzNWE'), yt('gwM3a8QnWOc')],
+    },
+    {
+      id: 'tv-melrose-place-melrose-place-theme', cat: 'tv-90s', franchise: 'Melrose Place', game: 'Melrose Place',
+      title: 'Melrose Place Theme', composer: 'Tim Truman', year: 1992, platform: 'Fox',
+      sources: [yt('5FoSXRxFYDk'), yt('cVCROJSCEoU')],
+    },
+    {
+      id: 'tv-el-mundo-de-beakman-beakmans-world-theme', cat: 'tv-90s', franchise: 'El mundo de Beakman', game: 'El mundo de Beakman',
+      title: 'Beakman\'s World Theme', composer: 'Mark Mothersbaugh', year: 1992, platform: 'TLC / CBS',
+      aka: ['Beakman\'s World'],
+      sources: [yt('7lXijSAicNM'), yt('ut541DsesD4')],
+    },
+    {
+      id: 'tv-walker-texas-ranger-the-eyes-of-the-ranger', cat: 'tv-90s', franchise: 'Walker, Texas Ranger', game: 'Walker, Texas Ranger',
+      title: 'The Eyes of the Ranger', composer: 'Chuck Norris', year: 1993, platform: 'CBS',
+      aka: ['Walker, guardabosques de Texas'],
+      sources: [yt('NIYZVSElmj4'), yt('AXPQwI4g410')],
+    },
+    {
+      id: 'tv-las-aventuras-de-pete-y-pete-hey-sandy', cat: 'tv-90s', franchise: 'Las aventuras de Pete y Pete', game: 'Las aventuras de Pete y Pete',
+      title: 'Hey Sandy', composer: 'Polaris', year: 1993, platform: 'Nickelodeon',
+      aka: ['The Adventures of Pete & Pete', 'Pete y Pete'],
+      sources: [apple({ song: 79309107, country: 'mx' }), yt('qkGtGt1L6iU')],
+    },
+    {
+      id: 'tv-lois-y-clark-lois-and-clark-main-title', cat: 'tv-90s', franchise: 'Lois y Clark: las nuevas aventuras de Superman', game: 'Lois y Clark: las nuevas aventuras de Superman',
+      title: 'Lois & Clark Main Title', composer: 'Jay Gruska', year: 1993, platform: 'ABC',
+      aka: ['Lois & Clark: The New Adventures of Superman', 'Lois y Clark'],
+      sources: [yt('5-N3o1IAxFc'), yt('giTNQ1Q9j74')],
+    },
+    {
+      id: 'tv-hercules-los-viajes-legendarios-main-title', cat: 'tv-90s', franchise: 'Hércules: los viajes legendarios', game: 'Hércules: los viajes legendarios',
+      title: 'Hercules: The Legendary Journeys Main Title', composer: 'Joseph LoDuca', year: 1995, platform: 'Sindicación',
+      aka: ['Hercules: The Legendary Journeys'],
+      sources: [apple({ song: 1444068891, country: 'mx' }), yt('xmJHe-oifcI')],
+    },
+    {
+      id: 'tv-lazos-de-amor-lazos-de-amor', cat: 'tv-90s', franchise: 'Lazos de amor', game: 'Lazos de amor',
+      title: 'Lazos de amor', composer: 'Lucero', year: 1995, platform: 'Televisa',
+      sources: [apple({ song: 1484678184, country: 'mx' }), yt('k_2ys901CWk')],
+    },
+    {
+      id: 'tv-sabrina-la-bruja-adolescente-theme', cat: 'tv-90s', franchise: 'Sabrina, la bruja adolescente', game: 'Sabrina, la bruja adolescente',
+      title: 'Sabrina the Teenage Witch Theme', composer: 'Danny Lux', year: 1996, platform: 'ABC',
+      aka: ['Sabrina the Teenage Witch'],
+      sources: [yt('Cz8y2aZ3eN4'), yt('YOU0f0eDLe4')],
+    },
+    {
+      id: 'tv-el-privilegio-de-amar-el-privilegio-de-amar', cat: 'tv-90s', franchise: 'El privilegio de amar', game: 'El privilegio de amar',
+      title: 'El privilegio de amar', composer: 'Mijares y Lucero', year: 1998, platform: 'Televisa',
+      sources: [apple({ song: 1444036441, country: 'mx' }), yt('hW3pptHt3gM')],
+    },
+    {
+      id: 'tv-rosalinda-rosalinda', cat: 'tv-90s', franchise: 'Rosalinda', game: 'Rosalinda',
+      title: 'Rosalinda', composer: 'Thalía', year: 1999, platform: 'Televisa',
+      sources: [apple({ song: 724343282, country: 'mx' }), yt('ir2MnpB7wcQ')],
+    },
+    /* ───────────── 2000s (44) ───────────── */
     {
       id: 'tv-lost-life-and-death', cat: 'tv-00s', franchise: 'Lost', game: 'Lost',
       title: 'Life and Death', composer: 'Michael Giacchino y Tim Simonec', year: 2004, platform: 'ABC',
@@ -529,7 +633,105 @@
       title: 'It\'s a Jungle Out There', composer: 'Randy Newman', year: 2002, platform: 'USA Network',
       sources: buscaTv('Randy Newman It\'s a Jungle Out There', { match: ['It\'s a Jungle Out There'], artist: ['Randy Newman'], album_hint: ['Monk'] }),
     },
-    /* ───────────── 2010s (21) ───────────── */
+    {
+      id: 'tv-lizzie-mcguire-if-you-believe', cat: 'tv-00s', franchise: 'Lizzie McGuire', game: 'Lizzie McGuire',
+      title: 'If You Believe (Lizzie McGuire Theme)', composer: 'Elliot Lurie', year: 2001, platform: 'Disney Channel',
+      sources: [yt('n_TO9E3ugLM'), yt('QKDqLVxpq7o')],
+    },
+    {
+      id: 'tv-dos-hombres-y-medio-manly-men', cat: 'tv-00s', franchise: 'Dos hombres y medio', game: 'Dos hombres y medio',
+      title: 'Manly Men', composer: 'Chuck Lorre, Lee Aronsohn y Grant Geissman', year: 2003, platform: 'CBS',
+      aka: ['Two and a Half Men'],
+      sources: [yt('bl5q4AIGGZQ'), yt('ObEc39sdrtA')],
+    },
+    {
+      id: 'tv-es-tan-raven-thats-so-raven', cat: 'tv-00s', franchise: 'Es tan Raven', game: 'Es tan Raven',
+      title: 'That\'s So Raven', composer: 'Raven-Symoné', year: 2003, platform: 'Disney Channel',
+      aka: ['That\'s So Raven'],
+      sources: [apple({ song: 1542833542, country: 'mx' }), yt('gpH_PIqT-q8')],
+    },
+    {
+      id: 'tv-amor-real-amor-real', cat: 'tv-00s', franchise: 'Amor real', game: 'Amor real',
+      title: 'Amor real', composer: 'Sin Bandera', year: 2003, platform: 'Televisa',
+      sources: [apple({ song: 268500737, country: 'mx' }), yt('ULz5Sxbte6E')],
+    },
+    {
+      id: 'tv-pasion-de-gavilanes-fiera-inquieta', cat: 'tv-00s', franchise: 'Pasión de gavilanes', game: 'Pasión de gavilanes',
+      title: 'Fiera inquieta', composer: 'Ángela María Forero', year: 2003, platform: 'Telemundo / Caracol',
+      sources: [yt('gS5yUIwI9U8'), yt('EfE3UbHfgR4')],
+    },
+    {
+      id: 'tv-manual-de-ned-i-make-my-own-rules', cat: 'tv-00s', franchise: 'Manual de supervivencia escolar de Ned', game: 'Manual de supervivencia escolar de Ned',
+      title: 'I Make My Own Rules', composer: 'Lyle Workman', year: 2004, platform: 'Nickelodeon',
+      aka: ['Ned\'s Declassified School Survival Guide', 'El manual de Ned'],
+      sources: [yt('s9Z6HlgX9jc'), yt('yUzVIE3VFO8')],
+    },
+    {
+      id: 'tv-rubi-la-descarada', cat: 'tv-00s', franchise: 'Rubí', game: 'Rubí',
+      title: 'La descarada', composer: 'Reyli Barba', year: 2004, platform: 'Televisa',
+      sources: [apple({ song: 355620707, country: 'mx' }), yt('J-Az8MrpXps')],
+    },
+    {
+      id: 'tv-supernatural-carry-on-wayward-son', cat: 'tv-00s', franchise: 'Supernatural', game: 'Supernatural',
+      title: 'Carry On Wayward Son', composer: 'Kansas', year: 2005, platform: 'The WB / The CW',
+      aka: ['Sobrenatural'],
+      sources: [apple({ song: 190655992, country: 'mx' }), yt('2X_2IdybTV0')],
+    },
+    {
+      id: 'tv-zoey-101-follow-me', cat: 'tv-00s', franchise: 'Zoey 101', game: 'Zoey 101',
+      title: 'Follow Me', composer: 'Jamie Lynn Spears', year: 2005, platform: 'Nickelodeon',
+      sources: [yt('YquxXthted4'), yt('uTgUwMWBeJk')],
+    },
+    {
+      id: 'tv-zack-y-cody-here-i-am', cat: 'tv-00s', franchise: 'Zack y Cody: gemelos en acción', game: 'Zack y Cody: gemelos en acción',
+      title: 'Here I Am', composer: 'Loren Ellis y Drew Seeley', year: 2005, platform: 'Disney Channel',
+      aka: ['The Suite Life of Zack & Cody', 'Zack y Cody'],
+      sources: [yt('HNW2OvPCP8M'), yt('_9dYvfao6WY')],
+    },
+    {
+      id: 'tv-la-madrastra-viveme', cat: 'tv-00s', franchise: 'La madrastra', game: 'La madrastra',
+      title: 'Víveme', composer: 'Laura Pausini', year: 2005, platform: 'Televisa',
+      sources: [apple({ song: 128216290, country: 'mx' }), yt('fR_WnjBp9i8')],
+    },
+    {
+      id: 'tv-fea-mas-bella-el-club-de-las-feas', cat: 'tv-00s', franchise: 'La fea más bella', game: 'La fea más bella',
+      title: 'El club de las feas', composer: 'Banda El Recodo', year: 2006, platform: 'Televisa',
+      sources: [apple({ song: 1444016967, country: 'mx' }), yt('XLkdwxql3BE')],
+    },
+    {
+      id: 'tv-gossip-girl-main-title', cat: 'tv-00s', franchise: 'Gossip Girl', game: 'Gossip Girl',
+      title: 'Gossip Girl Main Title', composer: 'Transcenders', year: 2007, platform: 'The CW',
+      aka: ['Chica indiscreta'],
+      sources: [yt('1aiBSo0NkcE')],
+    },
+    {
+      id: 'tv-destilando-amor-por-amarte', cat: 'tv-00s', franchise: 'Destilando amor', game: 'Destilando amor',
+      title: 'Por amarte', composer: 'Pepe Aguilar', year: 2007, platform: 'Televisa',
+      sources: [apple({ song: 1713953063, country: 'mx' }), yt('ZoEdZ4E7Tn0')],
+    },
+    {
+      id: 'tv-fuego-en-la-sangre-para-siempre', cat: 'tv-00s', franchise: 'Fuego en la sangre', game: 'Fuego en la sangre',
+      title: 'Para siempre', composer: 'Vicente Fernández', year: 2008, platform: 'Televisa',
+      sources: [apple({ song: 264215071, country: 'mx' }), yt('e33Z2BPKwxE')],
+    },
+    {
+      id: 'tv-glee-dont-stop-believin', cat: 'tv-00s', franchise: 'Glee', game: 'Glee',
+      title: 'Don\'t Stop Believin\'', composer: 'Glee Cast', year: 2009, platform: 'Fox',
+      sources: [apple({ song: 347886835, country: 'mx' }), yt('ZwgmmcKSSaU')],
+    },
+    {
+      id: 'tv-modern-family-main-title', cat: 'tv-00s', franchise: 'Modern Family', game: 'Modern Family',
+      title: 'Modern Family Theme', composer: 'Gabriel Mann', year: 2009, platform: 'ABC',
+      aka: ['Familia moderna'],
+      sources: [yt('8baceGL07Gs'), yt('1e4yQm7J3jE')],
+    },
+    {
+      id: 'tv-sunny-entre-estrellas-so-far-so-great', cat: 'tv-00s', franchise: 'Sunny, entre estrellas', game: 'Sunny, entre estrellas',
+      title: 'So Far So Great', composer: 'Demi Lovato', year: 2009, platform: 'Disney Channel',
+      aka: ['Sonny with a Chance'],
+      sources: [apple({ song: 1445739394, country: 'mx' }), yt('nHUFqsv5RZ8')],
+    },
+    /* ───────────── 2010s (41) ───────────── */
     {
       id: 'tv-game-of-thrones-main-title', cat: 'tv-10s', franchise: 'Game of Thrones', game: 'Game of Thrones',
       title: 'Main Title', composer: 'Ramin Djawadi', year: 2011, platform: 'HBO',
@@ -640,7 +842,115 @@
       aka: ['Pequeñas mentiras'],
       sources: [apple({ song: 1440804347, country: 'mx' })],
     },
-    /* ───────────── 2020 en adelante (11) ───────────── */
+    {
+      id: 'tv-victorious-make-it-shine', cat: 'tv-10s', franchise: 'Victorious', game: 'Victorious',
+      title: 'Make It Shine', composer: 'Victoria Justice', year: 2010, platform: 'Nickelodeon',
+      sources: [apple({ song: 6777916665, country: 'mx' }), yt('nfCDhU1L-Pw')],
+    },
+    {
+      id: 'tv-big-time-rush-big-time-rush', cat: 'tv-10s', franchise: 'Big Time Rush', game: 'Big Time Rush',
+      title: 'Big Time Rush', composer: 'Big Time Rush', year: 2010, platform: 'Nickelodeon',
+      sources: [apple({ song: 6817089907, country: 'mx' }), yt('SN_MY9uDUEw')],
+    },
+    {
+      id: 'tv-buena-suerte-charlie-hang-in-there-baby', cat: 'tv-10s', franchise: 'Buena suerte, Charlie', game: 'Buena suerte, Charlie',
+      title: 'Hang In There Baby', composer: 'Bridgit Mendler', year: 2010, platform: 'Disney Channel',
+      aka: ['Good Luck Charlie'],
+      sources: [apple({ song: 1443545641, country: 'mx' }), yt('Ugjzkw1LYxA')],
+    },
+    {
+      id: 'tv-a-todo-ritmo-shake-it-up', cat: 'tv-10s', franchise: 'A todo ritmo', game: 'A todo ritmo',
+      title: 'Shake It Up', composer: 'Selena Gomez', year: 2010, platform: 'Disney Channel',
+      aka: ['Shake It Up'],
+      sources: [apple({ song: 1445849098, country: 'mx' }), yt('CmHhE7woSpM')],
+    },
+    {
+      id: 'tv-teresa-esa-hembra-es-mala', cat: 'tv-10s', franchise: 'Teresa', game: 'Teresa',
+      title: 'Esa hembra es mala', composer: 'Gloria Trevi', year: 2010, platform: 'Televisa',
+      sources: [apple({ song: 1445156615, country: 'mx' }), yt('Co1SLTz1bDM')],
+    },
+    {
+      id: 'tv-black-mirror-opening-theme', cat: 'tv-10s', franchise: 'Black Mirror', game: 'Black Mirror',
+      title: 'Black Mirror Opening Theme', composer: 'Jon Opstad', year: 2011, platform: 'Channel 4 / Netflix',
+      sources: [yt('UqJInhA0P1k'), yt('o4x1Q9Apg8o')],
+    },
+    {
+      id: 'tv-jessie-hey-jessie', cat: 'tv-10s', franchise: 'Jessie', game: 'Jessie',
+      title: 'Hey Jessie', composer: 'Debby Ryan', year: 2011, platform: 'Disney Channel',
+      sources: [apple({ song: 1443545635, country: 'mx' }), yt('d5SYWpQOAFE')],
+    },
+    {
+      id: 'tv-austin-y-ally-cant-do-it-without-you', cat: 'tv-10s', franchise: 'Austin y Ally', game: 'Austin y Ally',
+      title: 'Can\'t Do It Without You', composer: 'Ross Lynch', year: 2011, platform: 'Disney Channel',
+      aka: ['Austin & Ally'],
+      sources: [yt('hHxxDM-43v0'), yt('hraM3pBE1dU')],
+    },
+    {
+      id: 'tv-violetta-en-mi-mundo', cat: 'tv-10s', franchise: 'Violetta', game: 'Violetta',
+      title: 'En mi mundo', composer: 'Martina Stoessel', year: 2012, platform: 'Disney Channel',
+      sources: [apple({ song: 1532928769, country: 'mx' }), yt('YJBe8ftC4oI')],
+    },
+    {
+      id: 'tv-amores-verdaderos-no-me-compares', cat: 'tv-10s', franchise: 'Amores verdaderos', game: 'Amores verdaderos',
+      title: 'No me compares', composer: 'Alejandro Sanz', year: 2012, platform: 'Televisa',
+      sources: [apple({ song: 1443236410, country: 'mx' }), yt('vpUDf_ITZLg')],
+    },
+    {
+      id: 'tv-abismo-de-pasion-solo-un-suspiro', cat: 'tv-10s', franchise: 'Abismo de pasión', game: 'Abismo de pasión',
+      title: 'Solo un suspiro', composer: 'Óscar Cruz y Alejandra Orozco', year: 2012, platform: 'Televisa',
+      sources: [yt('h53LsTsExoM'), yt('Lveojy88EeA')],
+    },
+    {
+      id: 'tv-liv-y-maddie-better-in-stereo', cat: 'tv-10s', franchise: 'Liv y Maddie', game: 'Liv y Maddie',
+      title: 'Better in Stereo', composer: 'Dove Cameron', year: 2013, platform: 'Disney Channel',
+      aka: ['Liv and Maddie'],
+      sources: [apple({ song: 1444220584, country: 'mx' }), yt('B1Yior3umyI')],
+    },
+    {
+      id: 'tv-lo-que-la-vida-me-robo-el-perdedor', cat: 'tv-10s', franchise: 'Lo que la vida me robó', game: 'Lo que la vida me robó',
+      title: 'El perdedor', composer: 'Enrique Iglesias y Marco Antonio Solís', year: 2013, platform: 'Televisa',
+      sources: [apple({ song: 1440819823, country: 'mx' }), yt('tLcfAnN2QgY')],
+    },
+    {
+      id: 'tv-outlander-the-skye-boat-song', cat: 'tv-10s', franchise: 'Outlander', game: 'Outlander',
+      title: 'The Skye Boat Song', composer: 'Bear McCreary (feat. Raya Yarbrough)', year: 2014, platform: 'Starz',
+      aka: ['Forastera'],
+      sources: [apple({ song: 1029187185, country: 'mx' }), yt('9y_Va7k37h4')],
+    },
+    {
+      id: 'tv-soy-luna-alas', cat: 'tv-10s', franchise: 'Soy Luna', game: 'Soy Luna',
+      title: 'Alas', composer: 'Karol Sevilla', year: 2016, platform: 'Disney Channel',
+      sources: [apple({ song: 1879593895, country: 'mx' }), yt('yFchuO_Vovc')],
+    },
+    {
+      id: 'tv-cobra-kai-awaken', cat: 'tv-10s', franchise: 'Cobra Kai', game: 'Cobra Kai',
+      title: 'Awaken (Cobra Kai Main Theme)', composer: 'Leo Birenberg y Zach Robinson', year: 2018, platform: 'YouTube Red / Netflix',
+      sources: [yt('uCtOIOZ7b8s'), yt('UUsBiOSTQ6E')],
+    },
+    {
+      id: 'tv-elite-opening-theme', cat: 'tv-10s', franchise: 'Élite', game: 'Élite',
+      title: 'Élite Opening Theme', composer: 'Lucas Vidal', year: 2018, platform: 'Netflix',
+      aka: ['Elite'],
+      sources: [yt('OwP77tioj98'), yt('IyoB3DLVkLI')],
+    },
+    {
+      id: 'tv-luis-miguel-la-serie-cuando-calienta-el-sol', cat: 'tv-10s', franchise: 'Luis Miguel: la serie', game: 'Luis Miguel: la serie',
+      title: 'Cuando calienta el sol', composer: 'Diego Boneta', year: 2018, platform: 'Netflix',
+      aka: ['Luis Miguel'],
+      sources: [apple({ song: 1398090229, country: 'mx' }), yt('7uGizHFs_lE')],
+    },
+    {
+      id: 'tv-the-boys-main-theme', cat: 'tv-10s', franchise: 'The Boys', game: 'The Boys',
+      title: 'The Boys Main Theme', composer: 'Christopher Lennertz', year: 2019, platform: 'Prime Video',
+      sources: [yt('1-4cnsq6Mx0'), yt('qUe74ZJEp34')],
+    },
+    {
+      id: 'tv-euphoria-still-dont-know-my-name', cat: 'tv-10s', franchise: 'Euphoria', game: 'Euphoria',
+      title: 'Still Don\'t Know My Name', composer: 'Labrinth', year: 2019, platform: 'HBO',
+      aka: ['Euforia'],
+      sources: [apple({ song: 1481092695, country: 'mx' }), yt('fq8ZkL3-8Kg')],
+    },
+    /* ───────────── 2020 en adelante (25) ───────────── */
     {
       id: 'tv-el-juego-del-calamar-way-back-then', cat: 'tv-20s', franchise: 'El juego del calamar', game: 'El juego del calamar',
       title: 'Way Back Then', composer: 'Jung Jae Il', year: 2021, platform: 'Netflix',
@@ -700,6 +1010,89 @@
       title: 'No Return', composer: 'Craig Wedren y Anna Waronker', year: 2021, platform: 'Showtime',
       sources: [apple({ song: 1603330780, country: 'mx' })],
     },
+    {
+      id: 'tv-gambito-de-dama-main-title', cat: 'tv-20s', franchise: 'Gambito de dama', game: 'Gambito de dama',
+      title: 'Main Title (The Queen\'s Gambit)', composer: 'Carlos Rafael Rivera', year: 2020, platform: 'Netflix',
+      aka: ['The Queen\'s Gambit'],
+      sources: [apple({ song: 1658426690, country: 'mx' }), yt('gXtmCdWd1Cs')],
+    },
+    {
+      id: 'tv-emily-en-paris-main-title', cat: 'tv-20s', franchise: 'Emily en París', game: 'Emily en París',
+      title: 'Emily in Paris Main Title', composer: 'James Newton Howard', year: 2020, platform: 'Netflix',
+      aka: ['Emily in Paris'],
+      sources: [yt('cSSGIS3rDrM'), yt('yMpD1iOmFtw')],
+    },
+    {
+      id: 'tv-lupin-main-theme', cat: 'tv-20s', franchise: 'Lupin', game: 'Lupin',
+      title: 'Arsène (Lupin Main Theme)', composer: 'Mathieu Lamboley', year: 2021, platform: 'Netflix',
+      sources: [apple({ song: 1658411858, country: 'mx' }), yt('LqLISfd8s1M')],
+    },
+    {
+      id: 'tv-el-libro-de-boba-fett-theme', cat: 'tv-20s', franchise: 'El libro de Boba Fett', game: 'El libro de Boba Fett',
+      title: 'The Book of Boba Fett', composer: 'Ludwig Göransson', year: 2021, platform: 'Disney+',
+      aka: ['The Book of Boba Fett'],
+      sources: [apple({ song: 1606019321, country: 'mx' }), yt('3a0tH0fkvW8')],
+    },
+    {
+      id: 'tv-la-casa-del-dragon-main-title', cat: 'tv-20s', franchise: 'Game of Thrones', game: 'La casa del dragón',
+      title: 'House of the Dragon (Main Title)', composer: 'Ramin Djawadi', year: 2022, platform: 'HBO',
+      aka: ['House of the Dragon'],
+      sources: [yt('MvEKGxyJ9Vg'), yt('HIblsDVSq_k')],
+    },
+    {
+      id: 'tv-los-anillos-de-poder-main-title', cat: 'tv-20s', franchise: 'El Señor de los Anillos: los Anillos de Poder', game: 'El Señor de los Anillos: los Anillos de Poder',
+      title: 'The Lord of the Rings: The Rings of Power Main Title', composer: 'Howard Shore', year: 2022, platform: 'Prime Video',
+      aka: ['The Lord of the Rings: The Rings of Power', 'Los Anillos de Poder'],
+      sources: [apple({ song: 1647431758, country: 'mx' }), yt('F1efWC-qEjM')],
+    },
+    {
+      id: 'tv-andor-main-title-theme', cat: 'tv-20s', franchise: 'Andor', game: 'Andor',
+      title: 'Andor (Main Title Theme)', composer: 'Nicholas Britell', year: 2022, platform: 'Disney+',
+      aka: ['Star Wars: Andor'],
+      sources: [apple({ song: 1652582783, country: 'mx' }), yt('73fQOkfHk8Q')],
+    },
+    {
+      id: 'tv-the-bear-new-noise', cat: 'tv-20s', franchise: 'The Bear', game: 'The Bear',
+      title: 'New Noise', composer: 'Refused', year: 2022, platform: 'FX / Hulu',
+      aka: ['El oso'],
+      sources: [apple({ song: 1485027943, country: 'mx' }), yt('NkAe30aEG5c')],
+    },
+    {
+      id: 'tv-moon-knight-main-theme', cat: 'tv-20s', franchise: 'Moon Knight', game: 'Moon Knight',
+      title: 'Moon Knight', composer: 'Hesham Nazih', year: 2022, platform: 'Disney+',
+      aka: ['Caballero Luna'],
+      sources: [apple({ song: 1620595966, country: 'mx' }), yt('2uJYMlMdqeI')],
+    },
+    {
+      id: 'tv-obi-wan-kenobi-main-theme', cat: 'tv-20s', franchise: 'Obi-Wan Kenobi', game: 'Obi-Wan Kenobi',
+      title: 'Obi-Wan', composer: 'John Williams', year: 2022, platform: 'Disney+',
+      aka: ['Star Wars: Obi-Wan Kenobi'],
+      sources: [apple({ song: 1631245338, country: 'mx' }), yt('HLn8e3aU7eI')],
+    },
+    {
+      id: 'tv-one-piece-live-action-wealth-fame-power', cat: 'tv-20s', franchise: 'One Piece (serie de TV)', game: 'One Piece (serie de TV)',
+      title: 'Wealth Fame Power', composer: 'Sonya Belousova y Giona Ostinelli', year: 2023, platform: 'Netflix',
+      aka: ['One Piece Live Action'],
+      sources: [apple({ song: 1701004772, country: 'mx' }), yt('i9mci2uWBjg')],
+    },
+    {
+      id: 'tv-ahsoka-main-theme', cat: 'tv-20s', franchise: 'Ahsoka', game: 'Ahsoka',
+      title: 'Ahsoka - End Credits', composer: 'Kevin Kiner', year: 2023, platform: 'Disney+',
+      aka: ['Star Wars: Ahsoka'],
+      sources: [apple({ song: 1703626445, country: 'mx' }), yt('uF5IPOEFndw')],
+    },
+    {
+      id: 'tv-shogun-main-title', cat: 'tv-20s', franchise: 'Shōgun', game: 'Shōgun',
+      title: 'Shōgun Main Title', composer: 'Atticus Ross, Leopold Ross y Nick Chuba', year: 2024, platform: 'FX',
+      aka: ['Shogun'],
+      sources: [apple({ song: 1730619131, country: 'mx' }), yt('wjZ_nkI08b4')],
+    },
+    {
+      id: 'tv-fallout-i-dont-want-to-set-the-world-on-fire', cat: 'tv-20s', franchise: 'Fallout (serie de TV)', game: 'Fallout (serie de TV)',
+      title: 'I Don\'t Want to Set the World on Fire', composer: 'The Ink Spots', year: 2024, platform: 'Prime Video',
+      aka: ['Fallout'],
+      sources: [apple({ song: 1682355393, country: 'mx' }), yt('TmIwm5RElRs')],
+    },
   );
 
   // Señuelos: aparecen como opciones incorrectas y en el buscador de Experto.
@@ -707,26 +1100,7 @@
     { theme: 'series', franchise: 'Bonanza', game: 'Bonanza' },
     { theme: 'series', franchise: 'Columbo', game: 'Columbo' },
     { theme: 'series', franchise: 'Hechizada', game: 'Hechizada' },
-    { theme: 'series', franchise: 'Los Munster', game: 'Los Munster' },
-    { theme: 'series', franchise: 'Los años maravillosos', game: 'Los años maravillosos' },
-    { theme: 'series', franchise: 'Melrose Place', game: 'Melrose Place' },
-    { theme: 'series', franchise: 'Sabrina, la bruja adolescente', game: 'Sabrina, la bruja adolescente' },
-    { theme: 'series', franchise: 'Glee', game: 'Glee' },
-    { theme: 'series', franchise: 'Gossip Girl', game: 'Gossip Girl' },
-    { theme: 'series', franchise: 'Modern Family', game: 'Modern Family' },
-    { theme: 'series', franchise: 'Euphoria', game: 'Euphoria' },
-    { theme: 'series', franchise: 'The Boys', game: 'The Boys' },
-    { theme: 'series', franchise: 'Cobra Kai', game: 'Cobra Kai' },
-    { theme: 'series', franchise: 'Élite', game: 'Élite' },
-    { theme: 'series', franchise: 'Black Mirror', game: 'Black Mirror' },
-    { theme: 'series', franchise: 'Outlander', game: 'Outlander' },
-    { theme: 'series', franchise: 'Lupin', game: 'Lupin' },
-    { theme: 'series', franchise: 'The Bear', game: 'The Bear' },
-    { theme: 'series', franchise: 'Andor', game: 'Andor' },
-    { theme: 'series', franchise: 'Shōgun', game: 'Shōgun' },
-    { theme: 'series', franchise: 'Supernatural', game: 'Supernatural' },
     { theme: 'series', franchise: 'Star Trek', game: 'Star Trek: La nueva generación' },
     { theme: 'series', franchise: 'The Walking Dead', game: 'The Walking Dead: Dead City' },
-    { theme: 'series', franchise: 'Game of Thrones', game: 'La casa del dragón' },
   );
 })(window.AM = window.AM || {});

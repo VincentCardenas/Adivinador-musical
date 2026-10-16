@@ -1,4 +1,19 @@
 {
+  "79309107": {
+    "tipo": "apple",
+    "id": 79309107,
+    "consulta": "Polaris Hey Sandy",
+    "titulo": "Hey Sandy",
+    "canal_o_artista": "polaris",
+    "album": "Music from the Adventures of Pete & Pete",
+    "duracion": 156,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/df/e5/54/dfe554f2-b0e8-ef13-20f1-01622f8ce3da/mzaf_15810703906288319666.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:57:18.509Z"
+  },
   "80446176": {
     "tipo": "apple",
     "id": 80446176,
@@ -44,6 +59,21 @@
     },
     "fecha": "2026-10-16T20:55:36.184Z"
   },
+  "128216290": {
+    "tipo": "apple",
+    "id": 128216290,
+    "consulta": "Laura Pausini Viveme",
+    "titulo": "Víveme",
+    "canal_o_artista": "Laura Pausini",
+    "album": "Escucha",
+    "duracion": 237,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/31/70/66/3170667f-7892-3266-67b3-18fb063ff6c4/mzaf_8180885667597533792.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:58:21.505Z"
+  },
   "152110725": {
     "tipo": "apple",
     "id": 152110725,
@@ -58,6 +88,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/61/84/8a6184ca-e2ac-3ab2-22c8-7f9a225f6907/mzaf_14264896141174548805.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:15:02.138Z"
+  },
+  "190655992": {
+    "tipo": "apple",
+    "id": 190655992,
+    "consulta": "Kansas Carry On Wayward Son Leftoverture",
+    "titulo": "Carry On Wayward Son",
+    "canal_o_artista": "Kansas",
+    "album": "Leftoverture (Expanded Edition)",
+    "duracion": 323,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/71/4e/97/714e9707-b396-30a2-83ee-9a0a411a77dc/mzaf_17771455412700079863.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:58:09.808Z"
   },
   "193585778": {
     "tipo": "apple",
@@ -118,6 +163,36 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a6/c0/24/a6c024fd-bd8a-ff9d-4eba-73767609ad90/mzaf_16484569894417758736.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:15:01.928Z"
+  },
+  "264215071": {
+    "tipo": "apple",
+    "id": 264215071,
+    "consulta": "Vicente Fernandez Para Siempre",
+    "titulo": "Para Siempre",
+    "canal_o_artista": "Vicente Fernández",
+    "album": "Para Siempre",
+    "duracion": 171,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/28/11/ce2811d7-a0a5-68e1-2cb5-a636153f9e64/mzaf_15290369830093879415.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:58:40.773Z"
+  },
+  "268500737": {
+    "tipo": "apple",
+    "id": 268500737,
+    "consulta": "Sin Bandera Amor Real",
+    "titulo": "Amor Real",
+    "canal_o_artista": "Sin Bandera",
+    "album": "Hasta Ahora",
+    "duracion": 245,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/db/3c/24/db3c242a-79d7-8ce7-d732-13f0ef467905/mzaf_7662168695557633785.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:57:55.132Z"
   },
   "274659377": {
     "tipo": "apple",
@@ -374,6 +449,21 @@
     },
     "fecha": "2026-10-16T20:59:38.385Z"
   },
+  "347886835": {
+    "tipo": "apple",
+    "id": 347886835,
+    "consulta": "Glee Cast Don't Stop Believin",
+    "titulo": "Don't Stop Believin'",
+    "canal_o_artista": "Glee Cast",
+    "album": "Glee: The Music, Volume 1",
+    "duracion": 232,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ff/0f/91/ff0f911f-7bb5-8f6f-73df-a7b9a79a2b24/mzaf_13098275679360889613.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:58:44.007Z"
+  },
   "353190043": {
     "tipo": "apple",
     "id": 353190043,
@@ -388,6 +478,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/30/18/76/mzm.avpjlrys.aac.p.m4a"
     },
     "fecha": "2026-10-16T20:55:29.375Z"
+  },
+  "355620707": {
+    "tipo": "apple",
+    "id": 355620707,
+    "consulta": "Reyli Barba La Descarada",
+    "titulo": "La Descarada",
+    "canal_o_artista": "Reyli Barba",
+    "album": "Reyli en la Luna",
+    "duracion": 204,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/5f/9a/e15f9a15-2d4e-f93b-6c5f-1a1850805872/mzaf_4044988092299896462.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:58:06.684Z"
   },
   "370521529": {
     "tipo": "apple",
@@ -749,6 +854,21 @@
     },
     "fecha": "2026-10-16T21:10:39.637Z"
   },
+  "711739109": {
+    "tipo": "apple",
+    "id": 711739109,
+    "consulta": "Jean-Jacques Perrey Baroque Hoedown",
+    "titulo": "Baroque Hoedown",
+    "canal_o_artista": "Perrey & Kingsley",
+    "album": "The Essential Perrey & Kingsley",
+    "duracion": 148,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/82/8f/30/828f3063-1c2e-c6dc-8698-d2c0b77d4da9/mzaf_14004611508998100631.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:56:51.325Z"
+  },
   "720491051": {
     "tipo": "apple",
     "id": 720491051,
@@ -763,6 +883,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/77/4d/c6/774dc621-aed5-e3a5-c383-cf5d7db3a9bb/mzaf_736750919047248033.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:11:07.124Z"
+  },
+  "724343282": {
+    "tipo": "apple",
+    "id": 724343282,
+    "consulta": "Thalia Rosalinda",
+    "titulo": "Rosalinda",
+    "canal_o_artista": "Thalia",
+    "album": "Arrasando",
+    "duracion": 233,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/47/05/c4470542-45c1-3bc5-999f-aa78abb7bc90/mzaf_16490440386641660579.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:57:40.314Z"
   },
   "724922732": {
     "tipo": "apple",
@@ -1048,6 +1183,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/b6/a9/37b6a913-2929-a49c-c41e-6b891e109253/mzaf_1547164918897191140.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:06:46.775Z"
+  },
+  "1029187185": {
+    "tipo": "apple",
+    "id": 1029187185,
+    "consulta": "Bear McCreary Outlander The Skye Boat Song",
+    "titulo": "Outlander - The Skye Boat Song (feat. Raya Yarbrough) [Extended) []",
+    "canal_o_artista": "Bear McCreary",
+    "album": "Outlander: Season 1, Vol. 2 (Original Television Soundtrack)",
+    "duracion": 268,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/59/ff/1e/59ff1ead-22b4-642d-d9c9-0a2e23f1000b/mzaf_11151572454098549758.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:59:45.586Z"
   },
   "1030676214": {
     "tipo": "apple",
@@ -1484,6 +1634,21 @@
     },
     "fecha": "2026-10-16T21:11:30.685Z"
   },
+  "1398090229": {
+    "tipo": "apple",
+    "id": 1398090229,
+    "consulta": "Diego Boneta Cuando Calienta el Sol Luis Miguel",
+    "titulo": "Cuando Calienta el Sol",
+    "canal_o_artista": "Diego Boneta",
+    "album": "Luis Miguel La Serie (Soundtrack)",
+    "duracion": 237,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/ef/e3/2befe3ed-6a9c-09dc-d791-6c341392b9d5/mzaf_15503858154446307379.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:00:02.048Z"
+  },
   "1410776543": {
     "tipo": "apple",
     "id": 1410776543,
@@ -1543,6 +1708,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4b/1d/ed/4b1dedc1-55ad-90fe-d4ad-b168369b8664/mzaf_17083667525917306580.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:00:38.350Z"
+  },
+  "1434916256": {
+    "tipo": "apple",
+    "id": 1434916256,
+    "consulta": "Joe Cocker With a Little Help from My Friends",
+    "titulo": "With a Little Help from My Friends",
+    "canal_o_artista": "Joe Cocker",
+    "album": "With a Little Help from My Friends",
+    "duracion": 312,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c1/75/ae/c175aedb-d7cf-6959-b2fe-2eb9f175178e/mzaf_2824155462480965026.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:56:54.502Z"
   },
   "1436661359": {
     "tipo": "apple",
@@ -1753,6 +1933,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/54/80/bb/5480bbd8-97db-fb15-c030-131ee3d55acc/mzaf_13117506892239235596.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:18:09.891Z"
+  },
+  "1440819823": {
+    "tipo": "apple",
+    "id": 1440819823,
+    "consulta": "Enrique Iglesias Marco Antonio Solis El Perdedor",
+    "titulo": "El Perdedor (feat. Marco Antonio Solís)",
+    "canal_o_artista": "Enrique Iglesias",
+    "album": "SEX and LOVE (Deluxe Edition)",
+    "duracion": 191,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/db/40/49/db4049f0-cd5e-8a45-4000-7b347d62dbd1/mzaf_4308643020496875152.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:59:42.295Z"
   },
   "1440844488": {
     "tipo": "apple",
@@ -2024,6 +2219,21 @@
     },
     "fecha": "2026-10-16T21:06:47.432Z"
   },
+  "1443236410": {
+    "tipo": "apple",
+    "id": 1443236410,
+    "consulta": "Alejandro Sanz No Me Compares",
+    "titulo": "No Me Compares",
+    "canal_o_artista": "Alejandro Sanz",
+    "album": "La Música No Se Toca",
+    "duracion": 278,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a7/4d/00/a74d00f2-87d5-1ea8-c0c4-16f5b1e6f479/mzaf_6506709732146745490.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:59:30.967Z"
+  },
   "1443271591": {
     "tipo": "apple",
     "id": 1443271591,
@@ -2038,6 +2248,36 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/53/6b/99/536b993a-464c-45d8-1476-b34b8a086f25/mzaf_1765140474817056577.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:00:13.051Z"
+  },
+  "1443545635": {
+    "tipo": "apple",
+    "id": 1443545635,
+    "consulta": "Debby Ryan Hey Jessie",
+    "titulo": "Hey Jessie (From \"Jessie\")",
+    "canal_o_artista": "Debby Ryan",
+    "album": "Make Your Mark: Ultimate Playlist",
+    "duracion": 144,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/a6/e3/e2a6e369-5d37-9675-0a54-fd889cd793b1/mzaf_547969325467898081.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:59:20.286Z"
+  },
+  "1443545641": {
+    "tipo": "apple",
+    "id": 1443545641,
+    "consulta": "Bridgit Mendler Hang In There Baby",
+    "titulo": "Hang In There Baby (From \"Good Luck Charlie\")",
+    "canal_o_artista": "Bridgit Mendler",
+    "album": "Make Your Mark: Ultimate Playlist",
+    "duracion": 162,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/85/3d/3c/853d3c04-9b4b-8846-d8a2-3c46cff6e905/mzaf_9107142028115686562.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:59:02.924Z"
   },
   "1443647691": {
     "tipo": "apple",
@@ -2083,6 +2323,51 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e8/a9/76/e8a976e6-87ee-e542-d821-67f615a6f791/mzaf_15027344878303357478.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:00:02.548Z"
+  },
+  "1444016967": {
+    "tipo": "apple",
+    "id": 1444016967,
+    "consulta": "Banda El Recodo El Club de las Feas",
+    "titulo": "El Club de las Feas",
+    "canal_o_artista": "Banda El Recodo de Cruz Lizárraga",
+    "album": "Más Fuerte Que Nunca",
+    "duracion": 163,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/d7/c5/77d7c5ef-fedd-04e9-1371-6e11e0e701c1/mzaf_11987103050868277680.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:58:24.471Z"
+  },
+  "1444036441": {
+    "tipo": "apple",
+    "id": 1444036441,
+    "consulta": "Mijares El Privilegio de Amar",
+    "titulo": "El Privilegio de Amar",
+    "canal_o_artista": "Mijares",
+    "album": "El Privilegio de Amar",
+    "duracion": 236,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0f/01/9f/0f019fb4-a3be-acc2-43c0-0bd0d5abddeb/mzaf_16557045384226059380.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:57:37.279Z"
+  },
+  "1444068891": {
+    "tipo": "apple",
+    "id": 1444068891,
+    "consulta": "Joseph LoDuca Hercules The Legendary Journeys Main Title",
+    "titulo": "Hercules Main Title",
+    "canal_o_artista": "Joseph LoDuca & Randy Thornton",
+    "album": "Hercules: The Legendary Journeys, Vol. 4 (Original Television Soundtrack)",
+    "duracion": 67,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/52/79/9c/52799cab-fe31-ee94-a04f-83d92e1d8d0b/mzaf_4544830895674733617.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:57:27.412Z"
   },
   "1444069072": {
     "tipo": "apple",
@@ -2174,6 +2459,21 @@
     },
     "fecha": "2026-10-16T21:00:13.579Z"
   },
+  "1444220584": {
+    "tipo": "apple",
+    "id": 1444220584,
+    "consulta": "Dove Cameron Better in Stereo",
+    "titulo": "Better in Stereo (Theme Song from “Liv and Maddie”)",
+    "canal_o_artista": "Dove Cameron",
+    "album": "Disney Channel Play It Loud",
+    "duracion": 154,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2e/c6/d5/2ec6d5e9-c2d9-8f0f-3783-e333049291f2/mzaf_11468819083824046435.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:59:38.817Z"
+  },
   "1444573376": {
     "tipo": "apple",
     "id": 1444573376,
@@ -2249,6 +2549,21 @@
     },
     "fecha": "2026-10-16T21:08:28.785Z"
   },
+  "1445156615": {
+    "tipo": "apple",
+    "id": 1445156615,
+    "consulta": "Gloria Trevi Esa Hembra Es Mala",
+    "titulo": "Esa Hembra Es Mala",
+    "canal_o_artista": "Gloria Trevi",
+    "album": "Gloria (Deluxe Edition)",
+    "duracion": 239,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/2d/13/662d1384-72ca-782a-2be3-d7605f7ee528/mzaf_3281781982482254496.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:59:09.531Z"
+  },
   "1445291833": {
     "tipo": "apple",
     "id": 1445291833,
@@ -2263,6 +2578,36 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8e/36/6a/8e366a15-802c-cada-5adc-44bb3d6c4a43/mzaf_9955598426620429810.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:18:10.076Z"
+  },
+  "1445739394": {
+    "tipo": "apple",
+    "id": 1445739394,
+    "consulta": "Demi Lovato So Far So Great",
+    "titulo": "So Far So Great (Theme Song to \"Sonny With a Chance\")",
+    "canal_o_artista": "Demi Lovato",
+    "album": "Here We Go Again (Deluxe Video Version)",
+    "duracion": 135,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/aa/e3/33/aae33394-cb52-9488-d0cb-75badae213ca/mzaf_11973494622251434910.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:58:52.850Z"
+  },
+  "1445849098": {
+    "tipo": "apple",
+    "id": 1445849098,
+    "consulta": "Selena Gomez Shake It Up",
+    "titulo": "Shake It Up",
+    "canal_o_artista": "Selena Gomez",
+    "album": "Shake It Up: Break It Down (Deluxe Edition) [Soundtrack from the TV Series]",
+    "duracion": 180,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/af/1a/ceaf1a55-6a50-048f-5de6-947d0bc249a0/mzaf_1096749628861016589.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:59:06.255Z"
   },
   "1446233212": {
     "tipo": "apple",
@@ -2639,6 +2984,21 @@
     },
     "fecha": "2026-10-16T21:08:36.127Z"
   },
+  "1481092695": {
+    "tipo": "apple",
+    "id": 1481092695,
+    "consulta": "Labrinth Still Don't Know My Name Euphoria",
+    "titulo": "Still Don't Know My Name (From \"Euphoria: Season 1\" Soundtrack)",
+    "canal_o_artista": "Labrinth",
+    "album": "Euphoria (Original Score from the HBO Series)",
+    "duracion": 153,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/24/88/01248853-b547-51e7-1453-3d15e1156b4f/mzaf_8601458320172187942.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:00:09.311Z"
+  },
   "1482434472": {
     "tipo": "apple",
     "id": 1482434472,
@@ -2668,6 +3028,36 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e9/e9/a9/e9e9a93a-ec7b-72ce-1746-9d412fa5cc38/mzaf_13912554587467661246.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:11:45.223Z"
+  },
+  "1484678184": {
+    "tipo": "apple",
+    "id": 1484678184,
+    "consulta": "Lucero Lazos de Amor",
+    "titulo": "Lazos De Amor",
+    "canal_o_artista": "Lucero",
+    "album": "Lazos De Amor - EP",
+    "duracion": 204,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0c/62/1d/0c621d3b-c589-e0e7-49c1-1307f847e11e/mzaf_12823847824048623328.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:57:30.414Z"
+  },
+  "1485027943": {
+    "tipo": "apple",
+    "id": 1485027943,
+    "consulta": "Refused New Noise The Shape of Punk to Come",
+    "titulo": "New Noise",
+    "canal_o_artista": "Refused",
+    "album": "The Shape of Punk to Come",
+    "duracion": 310,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/32/37/63/32376388-d4b8-2d72-78b5-4c9956565f72/mzaf_12550661368697395276.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:00:37.580Z"
   },
   "1487877733": {
     "tipo": "apple",
@@ -2878,6 +3268,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9f/48/45/9f4845b6-7aed-0b33-01ce-b8c9247f9308/mzaf_16213341495661770506.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:08:49.018Z"
+  },
+  "1532928769": {
+    "tipo": "apple",
+    "id": 1532928769,
+    "consulta": "Martina Stoessel En Mi Mundo Violetta",
+    "titulo": "En Mi Mundo (From \"Violetta\" Music from the TV Series)",
+    "canal_o_artista": "Martina Stoessel",
+    "album": "Violetta",
+    "duracion": 213,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/1d/3b/021d3b45-9673-4227-bf1c-084e48ad5c17/mzaf_14573686239012240714.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:59:27.734Z"
   },
   "1535768529": {
     "tipo": "apple",
@@ -3253,6 +3658,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5e/b5/12/5eb51286-5e56-2fe4-6343-b41ee785069f/mzaf_16392325772038087612.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:07:09.245Z"
+  },
+  "1542833542": {
+    "tipo": "apple",
+    "id": 1542833542,
+    "consulta": "Raven-Symone That's So Raven",
+    "titulo": "That's So Raven (Theme Song)",
+    "canal_o_artista": "Raven-Symoné",
+    "album": "Songs from That's So Raven",
+    "duracion": 51,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/21/ed/f2/21edf20f-b642-e1f5-6574-7e1fc611ff32/mzaf_7177142615917351893.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:57:52.013Z"
   },
   "1546061848": {
     "tipo": "apple",
@@ -3809,6 +4229,21 @@
     },
     "fecha": "2026-10-16T21:08:29.703Z"
   },
+  "1606019321": {
+    "tipo": "apple",
+    "id": 1606019321,
+    "consulta": "Ludwig Goransson The Book of Boba Fett",
+    "titulo": "The Book of Boba Fett",
+    "canal_o_artista": "Ludwig Göransson",
+    "album": "The Book of Boba Fett: Vol. 1 (Chapters 1-4) [Original Soundtrack]",
+    "duracion": 176,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6f/36/05/6f3605e3-15ac-6ba3-164e-80e7c6ba4c14/mzaf_11952287804523631574.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:00:23.543Z"
+  },
   "1608608752": {
     "tipo": "apple",
     "id": 1608608752,
@@ -3974,6 +4409,21 @@
     },
     "fecha": "2026-10-16T21:02:13.450Z"
   },
+  "1620595966": {
+    "tipo": "apple",
+    "id": 1620595966,
+    "consulta": "Hesham Nazih Moon Knight",
+    "titulo": "Moon Knight",
+    "canal_o_artista": "Hesham Nazih",
+    "album": "Moon Knight (Original Soundtrack)",
+    "duracion": 130,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/f9/39/e2f9398c-8cb4-5127-1ff1-d37c1b9cceef/mzaf_12830867733930803941.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:00:41.030Z"
+  },
   "1624897102": {
     "tipo": "apple",
     "id": 1624897102,
@@ -4003,6 +4453,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/34/fb/b734fbd2-fffe-647e-9995-72b1bfc0521b/mzaf_12744633901421443016.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T20:56:27.837Z"
+  },
+  "1631245338": {
+    "tipo": "apple",
+    "id": 1631245338,
+    "consulta": "John Williams Obi-Wan",
+    "titulo": "Obi-Wan",
+    "canal_o_artista": "John Williams",
+    "album": "Obi-Wan Kenobi (Original Soundtrack)",
+    "duracion": 247,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ca/ae/0b/caae0be3-ad1a-95e2-22ae-d4e8c6db4945/mzaf_5745596773965633052.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:00:44.326Z"
   },
   "1631895293": {
     "tipo": "apple",
@@ -4034,6 +4499,21 @@
     },
     "fecha": "2026-10-16T21:00:13.922Z"
   },
+  "1647431758": {
+    "tipo": "apple",
+    "id": 1647431758,
+    "consulta": "Howard Shore The Lord of the Rings The Rings of Power Main Title",
+    "titulo": "The Lord of the Rings: The Rings of Power Main Title",
+    "canal_o_artista": "Howard Shore",
+    "album": "The Lord of the Rings: The Rings of Power (Season One: Amazon Original Series Soundtrack)",
+    "duracion": 94,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/4e/be/994ebeca-8c9f-82e8-f392-b30256a879d1/mzaf_5923568938835228844.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:00:30.927Z"
+  },
   "1650880351": {
     "tipo": "apple",
     "id": 1650880351,
@@ -4064,6 +4544,21 @@
     },
     "fecha": "2026-10-16T21:11:22.835Z"
   },
+  "1652582783": {
+    "tipo": "apple",
+    "id": 1652582783,
+    "consulta": "Nicholas Britell Andor Main Title Theme",
+    "titulo": "Andor (Main Title Theme) Episode 5",
+    "canal_o_artista": "Nicholas Britell",
+    "album": "Andor: Vol. 2 (Episodes 5-8) [Original Score]",
+    "duracion": 68,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6b/c2/ff/6bc2ff25-ea8f-6f6c-9049-37c7a5e2c5f0/mzaf_10997665073515305759.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:00:34.316Z"
+  },
   "1653082206": {
     "tipo": "apple",
     "id": 1653082206,
@@ -4078,6 +4573,36 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/85/54/2a/85542a69-05e5-789d-f6b1-58ffb1201d3e/mzaf_4303479077308441835.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:11:07.352Z"
+  },
+  "1658411858": {
+    "tipo": "apple",
+    "id": 1658411858,
+    "consulta": "Mathieu Lamboley Lupin Arsene",
+    "titulo": "Arsène",
+    "canal_o_artista": "Mathieu Lamboley",
+    "album": "Lupin (Music from Pt. 1 Of the Netflix Original Series)",
+    "duracion": 148,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ad/96/cf/ad96cf60-0d17-a6d1-2df4-e3992f5e5c19/mzaf_9539445353258938205.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:00:20.402Z"
+  },
+  "1658426690": {
+    "tipo": "apple",
+    "id": 1658426690,
+    "consulta": "Carlos Rafael Rivera Main Title The Queen's Gambit",
+    "titulo": "Main Title",
+    "canal_o_artista": "Carlos Rafael Rivera",
+    "album": "The Queen's Gambit (Music from the Netflix Limited Series)",
+    "duracion": 110,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fa/eb/43/faeb4309-3972-0e7a-087b-c69c1b5fe195/mzaf_16964253238894726885.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:00:13.063Z"
   },
   "1669576759": {
     "tipo": "apple",
@@ -4153,6 +4678,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/28/ae/8f/28ae8f62-34c3-c480-66c6-ed799e577af6/mzaf_7272915227304183072.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:07:48.724Z"
+  },
+  "1682355393": {
+    "tipo": "apple",
+    "id": 1682355393,
+    "consulta": "The Ink Spots I Don't Want to Set the World on Fire",
+    "titulo": "I Don't Want to Set the World on Fire (Remastered)",
+    "canal_o_artista": "The Ink Spots",
+    "album": "I Don't Want to Set the World on Fire (Remastered) - Single",
+    "duracion": 170,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/cf/62/f3/cf62f346-c1b9-bffd-a373-44eea6a1b259/mzaf_9222187276387970741.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:00:57.811Z"
   },
   "1687595814": {
     "tipo": "apple",
@@ -4424,6 +4964,21 @@
     },
     "fecha": "2026-10-16T21:12:36.626Z"
   },
+  "1701004772": {
+    "tipo": "apple",
+    "id": 1701004772,
+    "consulta": "Sonya Belousova Giona Ostinelli Wealth Fame Power One Piece",
+    "titulo": "Wealth Fame Power",
+    "canal_o_artista": "Sonya Belousova & Giona Ostinelli",
+    "album": "One Piece (Soundtrack from the Netflix Series)",
+    "duracion": 225,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b8/b2/ba/b8b2ba72-adf2-9a94-c4cd-8bf72a9d1262/mzaf_13730347236080571103.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:00:47.509Z"
+  },
   "1701158251": {
     "tipo": "apple",
     "id": 1701158251,
@@ -4454,6 +5009,21 @@
     },
     "fecha": "2026-10-16T20:55:28.812Z"
   },
+  "1703626445": {
+    "tipo": "apple",
+    "id": 1703626445,
+    "consulta": "Kevin Kiner Ahsoka End Credits",
+    "titulo": "Ahsoka - End Credits (From \"Ahsoka\")",
+    "canal_o_artista": "Kevin Kiner",
+    "album": "Ahsoka - End Credits (From \"Ahsoka\") - Single",
+    "duracion": 223,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/1e/ef/ea1eefd4-db06-7764-1fbc-f94be7ebbc6f/mzaf_13536307084495938131.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:00:51.035Z"
+  },
   "1713321272": {
     "tipo": "apple",
     "id": 1713321272,
@@ -4483,6 +5053,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/50/6e/dc/506edcae-8dd6-d522-87e9-da14c7001f77/mzaf_18205022223062901958.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:12:29.953Z"
+  },
+  "1713953063": {
+    "tipo": "apple",
+    "id": 1713953063,
+    "consulta": "Pepe Aguilar Por Amarte",
+    "titulo": "Por Amarte (Destilando Amor)",
+    "canal_o_artista": "Pepe Aguilar",
+    "album": "Enamorado",
+    "duracion": 229,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/d3/86/b0d38680-b25b-6c77-bf02-d4f2205b2ebf/mzaf_9371766455019563096.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:58:37.647Z"
   },
   "1714599986": {
     "tipo": "apple",
@@ -4573,6 +5158,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c1/76/a6/c176a62e-9607-5539-9593-849347f57bb5/mzaf_18009055625982207776.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T20:55:37.062Z"
+  },
+  "1730619131": {
+    "tipo": "apple",
+    "id": 1730619131,
+    "consulta": "Atticus Ross Leopold Ross Nick Chuba Shogun Main Title",
+    "titulo": "Main Title (Shōgun)",
+    "canal_o_artista": "Atticus Ross, Leopold Ross & Nick Chuba",
+    "album": "Shōgun (Original Soundtrack)",
+    "duracion": 112,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/c1/75/95c175de-55f8-5037-6d52-625e0919f101/mzaf_5635395385006636085.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:00:54.297Z"
   },
   "1731016011": {
     "tipo": "apple",
@@ -5368,6 +5968,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/28/5c/1f285c55-1311-84ea-14f8-abeecbc24a12/mzaf_13076747440608907229.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:09:14.523Z"
+  },
+  "1879593895": {
+    "tipo": "apple",
+    "id": 1879593895,
+    "consulta": "Karol Sevilla Alas Soy Luna",
+    "titulo": "Alas - Versión 2026 (De \"Soy Luna: Volver a rodar\"  Disney+)",
+    "canal_o_artista": "Karol Sevilla, Elenco de Soy Luna & Disney",
+    "album": "Alas - Versión 2026 (De \"Soy Luna: Volver a rodar\" | Disney+) - Single",
+    "duracion": 213,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/09/4e/04094e56-493a-d115-5dd1-a40627bff577/mzaf_16453605284789221757.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:59:48.826Z"
   },
   "1886029868": {
     "tipo": "apple",
@@ -14377,5 +14992,1854 @@
       "playableInEmbed": true
     },
     "fecha": "2026-10-16T21:20:28.577Z"
+  },
+  "eSgbxPtyv1U": {
+    "tipo": "youtube",
+    "id": "eSgbxPtyv1U",
+    "consulta": "Walt Disney Zorro TV Series 1957 Intro Opening Theme Song",
+    "titulo": "Walt Disney's Zorro - Original Intro (Black & White)",
+    "canal_o_artista": "freedogshampoo",
+    "album": null,
+    "duracion": 44,
+    "pais": "mx",
+    "loudnessDb": -7.6599998,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:56:36.325Z"
+  },
+  "lQnle_3KuOE": {
+    "tipo": "youtube",
+    "id": "lQnle_3KuOE",
+    "consulta": "Walt Disney Zorro TV Series 1957 Intro Opening Theme Song",
+    "titulo": "Zorro  1957 - 1959 Opening and Closing Theme (With Snippets)",
+    "canal_o_artista": "TeeVees Greatest",
+    "album": null,
+    "duracion": 108,
+    "pais": "mx",
+    "loudnessDb": 0.47999954,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:56:38.316Z"
+  },
+  "p9lf76xOA5k": {
+    "tipo": "youtube",
+    "id": "p9lf76xOA5k",
+    "consulta": "The Lone Ranger TV Intro Opening Theme William Tell Overture",
+    "titulo": "The Lone Ranger 1949 - 1957 Opening and Closing Theme",
+    "canal_o_artista": "TeeVees Greatest",
+    "album": null,
+    "duracion": 122,
+    "pais": "mx",
+    "loudnessDb": -6.3799992,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:56:40.791Z"
+  },
+  "hxIuIxqo2So": {
+    "tipo": "youtube",
+    "id": "hxIuIxqo2So",
+    "consulta": "The Lone Ranger TV Intro Opening Theme William Tell Overture",
+    "titulo": "The Lone Ranger Opening Theme Song",
+    "canal_o_artista": "HoughsVideos",
+    "album": null,
+    "duracion": 27,
+    "pais": "mx",
+    "loudnessDb": -9.4699993,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:56:42.635Z"
+  },
+  "JdrbLvFJkB4": {
+    "tipo": "youtube",
+    "id": "JdrbLvFJkB4",
+    "consulta": "The Munsters 1964 TV Intro Opening Theme Song",
+    "titulo": "The Munsters TV Theme Song | The Munsters",
+    "canal_o_artista": "The Munsters",
+    "album": null,
+    "duracion": 45,
+    "pais": "mx",
+    "loudnessDb": -10.15,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:56:45.178Z"
+  },
+  "vgmiBjJFOSA": {
+    "tipo": "youtube",
+    "id": "vgmiBjJFOSA",
+    "consulta": "The Munsters 1964 TV Intro Opening Theme Song",
+    "titulo": "The Munsters Opening (in COLOR) - POP-COLORTURE.com",
+    "canal_o_artista": "POP COLORTURE",
+    "album": null,
+    "duracion": 51,
+    "pais": "mx",
+    "loudnessDb": -6.4799995,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:56:46.494Z"
+  },
+  "mfU8pfUawEE": {
+    "tipo": "youtube",
+    "id": "mfU8pfUawEE",
+    "consulta": "Kung Fu 1972 TV Series Intro Opening Theme Jim Helms",
+    "titulo": "Kung Fu (1972) Opening titles.",
+    "canal_o_artista": "philo1978",
+    "album": null,
+    "duracion": 168,
+    "pais": "mx",
+    "loudnessDb": 5.8000002,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:56:48.998Z"
+  },
+  "T2t-1CPJXYo": {
+    "tipo": "youtube",
+    "id": "T2t-1CPJXYo",
+    "consulta": "Kung Fu 1972 TV Series Intro Opening Theme Jim Helms",
+    "titulo": "KUNG FU TV SERIES MAIN THEME",
+    "canal_o_artista": "mophfr",
+    "album": null,
+    "duracion": 91,
+    "pais": "mx",
+    "loudnessDb": 3.04,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:56:50.345Z"
+  },
+  "N63K43wHz4g": {
+    "tipo": "youtube",
+    "id": "N63K43wHz4g",
+    "consulta": "El Chapulin Colorado intro entrada original 1973",
+    "titulo": "Tema de abertura El Chapulín Colorado (1973-1975)",
+    "canal_o_artista": "Mundo CH (YT)",
+    "album": null,
+    "duracion": 86,
+    "pais": "mx",
+    "loudnessDb": -7.7999992,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:56:53.833Z"
+  },
+  "LpwabPQW4p4": {
+    "tipo": "youtube",
+    "id": "LpwabPQW4p4",
+    "consulta": "The Wonder Years Intro Opening Joe Cocker With a Little Help from My Friends",
+    "titulo": "Joe Cocker - With A Little Help From My Friends (Live)",
+    "canal_o_artista": "JoeCockerVEVO",
+    "album": null,
+    "duracion": 528,
+    "pais": "mx",
+    "loudnessDb": -2.4300003,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:56:57.039Z"
+  },
+  "y0BerpDmVSE": {
+    "tipo": "youtube",
+    "id": "y0BerpDmVSE",
+    "consulta": "Clarissa Explains It All Intro Opening Theme Nickelodeon",
+    "titulo": "Clarissa Explains It All Official Theme Song | NickRewind",
+    "canal_o_artista": "NickRewind",
+    "album": null,
+    "duracion": 61,
+    "pais": "mx",
+    "loudnessDb": -5.0499992,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:56:59.561Z"
+  },
+  "DqAmG9A7TBc": {
+    "tipo": "youtube",
+    "id": "DqAmG9A7TBc",
+    "consulta": "Clarissa Explains It All Intro Opening Theme Nickelodeon",
+    "titulo": "Clarissa Explains It All Intro (HD)",
+    "canal_o_artista": "Mad Warren",
+    "album": null,
+    "duracion": 50,
+    "pais": "mx",
+    "loudnessDb": -8.5,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:00.952Z"
+  },
+  "JoWgn_uzNWE": {
+    "tipo": "youtube",
+    "id": "JoWgn_uzNWE",
+    "consulta": "Home Improvement Intro Opening Theme Song 1991",
+    "titulo": "Home Improvement - Season 1 Opening Theme (1991-1992)",
+    "canal_o_artista": "The T.V. Show Opener and Closer",
+    "album": null,
+    "duracion": 74,
+    "pais": "mx",
+    "loudnessDb": -9.1299992,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:03.214Z"
+  },
+  "gwM3a8QnWOc": {
+    "tipo": "youtube",
+    "id": "gwM3a8QnWOc",
+    "consulta": "Home Improvement Intro Opening Theme Song 1991",
+    "titulo": "HOME IMPROVEMENT - All Openings - (1991-1999) - Theme Song Credits Intro - Opening Credits",
+    "canal_o_artista": "A FUSCO - Classic TV",
+    "album": null,
+    "duracion": 453,
+    "pais": "mx",
+    "loudnessDb": -2.3299999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:04.746Z"
+  },
+  "5FoSXRxFYDk": {
+    "tipo": "youtube",
+    "id": "5FoSXRxFYDk",
+    "consulta": "Melrose Place Opening Credits Theme Song Tim Truman",
+    "titulo": "Tim Truman - Melrose Place Theme (Remastered)",
+    "canal_o_artista": "Retro Roman",
+    "album": null,
+    "duracion": 188,
+    "pais": "mx",
+    "loudnessDb": 1.1000004,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:07.272Z"
+  },
+  "2NGhOwNPoVM": {
+    "tipo": "youtube",
+    "id": "2NGhOwNPoVM",
+    "consulta": "Melrose Place Opening Credits Theme Song Tim Truman",
+    "titulo": "Theme of \"Melrose Place\" ~ Tim Truman (Extended w/DL)",
+    "canal_o_artista": "Awesmic",
+    "album": null,
+    "duracion": 600,
+    "pais": "mx",
+    "loudnessDb": 1.3299999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:08.661Z"
+  },
+  "cVCROJSCEoU": {
+    "tipo": "youtube",
+    "id": "cVCROJSCEoU",
+    "consulta": "Melrose Place Opening Credits Theme Song Tim Truman",
+    "titulo": "Melrose Place 2009 Opening Credits",
+    "canal_o_artista": "pier86",
+    "album": null,
+    "duracion": 66,
+    "pais": "mx",
+    "loudnessDb": 6.0900002,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:10.012Z"
+  },
+  "7lXijSAicNM": {
+    "tipo": "youtube",
+    "id": "7lXijSAicNM",
+    "consulta": "Beakman's World Intro Opening Theme Song",
+    "titulo": "Beakman's World - Theme",
+    "canal_o_artista": "SlayerMatt69",
+    "album": null,
+    "duracion": 105,
+    "pais": "mx",
+    "loudnessDb": 8.2399998,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:12.253Z"
+  },
+  "ut541DsesD4": {
+    "tipo": "youtube",
+    "id": "ut541DsesD4",
+    "consulta": "Beakman's World Intro Opening Theme Song",
+    "titulo": "Beakman's World Intro",
+    "canal_o_artista": "I Love TV Intros",
+    "album": null,
+    "duracion": 46,
+    "pais": "mx",
+    "loudnessDb": -8.1399994,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:13.552Z"
+  },
+  "NIYZVSElmj4": {
+    "tipo": "youtube",
+    "id": "NIYZVSElmj4",
+    "consulta": "Walker Texas Ranger Intro Opening Theme Song Eyes of the Ranger Chuck Norris",
+    "titulo": "Walker, Texas Ranger - Intro Theme Song #3 | HQ | Chuck Norris",
+    "canal_o_artista": "MrNorrisVideos",
+    "album": null,
+    "duracion": 41,
+    "pais": "mx",
+    "loudnessDb": -10.969999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:15.986Z"
+  },
+  "AXPQwI4g410": {
+    "tipo": "youtube",
+    "id": "AXPQwI4g410",
+    "consulta": "Walker Texas Ranger Intro Opening Theme Song Eyes of the Ranger Chuck Norris",
+    "titulo": "Walker Texas Ranger lyrics",
+    "canal_o_artista": "YellowKitty43",
+    "album": null,
+    "duracion": 40,
+    "pais": "mx",
+    "loudnessDb": -0.26000023,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:17.635Z"
+  },
+  "qkGtGt1L6iU": {
+    "tipo": "youtube",
+    "id": "qkGtGt1L6iU",
+    "consulta": "The Adventures of Pete and Pete Intro Opening Hey Sandy Polaris",
+    "titulo": "POLARIS - Hey Sandy",
+    "canal_o_artista": "Mark Mulcahy",
+    "album": null,
+    "duracion": 155,
+    "pais": "mx",
+    "loudnessDb": 1.9399996,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:21.169Z"
+  },
+  "5-N3o1IAxFc": {
+    "tipo": "youtube",
+    "id": "5-N3o1IAxFc",
+    "consulta": "Lois and Clark The New Adventures of Superman Intro Opening Theme",
+    "titulo": "The New Adventures of Superman Season 1 2 3 & 4 Intros",
+    "canal_o_artista": "TheNWPSL GM",
+    "album": null,
+    "duracion": 291,
+    "pais": "mx",
+    "loudnessDb": -5.6700001,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:23.615Z"
+  },
+  "wkBlh5QMWtg": {
+    "tipo": "youtube",
+    "id": "wkBlh5QMWtg",
+    "consulta": "Lois and Clark The New Adventures of Superman Intro Opening Theme",
+    "titulo": "1993-1997 Lois & Clark: The New Adventures of Superman Intro's Season 1-4",
+    "canal_o_artista": "BatmanRobinSuperman",
+    "album": null,
+    "duracion": 584,
+    "pais": "mx",
+    "loudnessDb": -5.1399994,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:25.095Z"
+  },
+  "giTNQ1Q9j74": {
+    "tipo": "youtube",
+    "id": "giTNQ1Q9j74",
+    "consulta": "Lois and Clark The New Adventures of Superman Intro Opening Theme",
+    "titulo": "Lois and Clark Opening Credits and Theme Song",
+    "canal_o_artista": "Steven",
+    "album": null,
+    "duracion": 76,
+    "pais": "mx",
+    "loudnessDb": -9.3999996,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:26.519Z"
+  },
+  "xmJHe-oifcI": {
+    "tipo": "youtube",
+    "id": "xmJHe-oifcI",
+    "consulta": "Hercules The Legendary Journeys Intro Opening Theme",
+    "titulo": "Hercules: The Legendary Journeys (1995, Opening)",
+    "canal_o_artista": "Name Undefined",
+    "album": null,
+    "duracion": 64,
+    "pais": "mx",
+    "loudnessDb": -8.5499992,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:29.684Z"
+  },
+  "k_2ys901CWk": {
+    "tipo": "youtube",
+    "id": "k_2ys901CWk",
+    "consulta": "Lazos de Amor entrada telenovela Lucero",
+    "titulo": "Lazos de Amor Entrada (Televisa, 1995)",
+    "canal_o_artista": "Entradas de Telenovela",
+    "album": null,
+    "duracion": 100,
+    "pais": "mx",
+    "loudnessDb": -2.8500004,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:32.475Z"
+  },
+  "Cz8y2aZ3eN4": {
+    "tipo": "youtube",
+    "id": "Cz8y2aZ3eN4",
+    "consulta": "Sabrina the Teenage Witch Season 1 Opening Intro Theme",
+    "titulo": "Sabrina the Teenage Witch (1996) Season 1 -  Opening Theme",
+    "canal_o_artista": "AnahaB Telly",
+    "album": null,
+    "duracion": 21,
+    "pais": "mx",
+    "loudnessDb": -3.4200001,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:34.789Z"
+  },
+  "YOU0f0eDLe4": {
+    "tipo": "youtube",
+    "id": "YOU0f0eDLe4",
+    "consulta": "Sabrina the Teenage Witch Season 1 Opening Intro Theme",
+    "titulo": "Sabrina, the Teenage Witch - Season 1 Intro",
+    "canal_o_artista": "MikeTVVideos",
+    "album": null,
+    "duracion": 20,
+    "pais": "mx",
+    "loudnessDb": -8.9400005,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:36.416Z"
+  },
+  "hW3pptHt3gM": {
+    "tipo": "youtube",
+    "id": "hW3pptHt3gM",
+    "consulta": "Mijares Lucero El privilegio de amar entrada telenovela",
+    "titulo": "México / El privilegio de amar",
+    "canal_o_artista": "Felipe Eugenio Benítez Valerio",
+    "album": null,
+    "duracion": 100,
+    "pais": "mx",
+    "loudnessDb": -5.7800007,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:39.613Z"
+  },
+  "ir2MnpB7wcQ": {
+    "tipo": "youtube",
+    "id": "ir2MnpB7wcQ",
+    "consulta": "Thalia Rosalinda entrada telenovela oficial",
+    "titulo": "México / Rosalinda",
+    "canal_o_artista": "Felipe Eugenio Benítez Valerio",
+    "album": null,
+    "duracion": 89,
+    "pais": "mx",
+    "loudnessDb": -5.2600002,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:42.465Z"
+  },
+  "n_TO9E3ugLM": {
+    "tipo": "youtube",
+    "id": "n_TO9E3ugLM",
+    "consulta": "Lizzie McGuire Theme Song Opening Intro Disney Channel",
+    "titulo": "Lizzie McGuire Theme Song 🎧 | @disneychannel",
+    "canal_o_artista": "Disney Channel",
+    "album": null,
+    "duracion": 40,
+    "pais": "mx",
+    "loudnessDb": -5.2099991,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:45.286Z"
+  },
+  "QKDqLVxpq7o": {
+    "tipo": "youtube",
+    "id": "QKDqLVxpq7o",
+    "consulta": "Lizzie McGuire Theme Song Opening Intro Disney Channel",
+    "titulo": "Lizzie McGuire 1ª y 2ª Temporada [Opening]",
+    "canal_o_artista": "luar2125",
+    "album": null,
+    "duracion": 38,
+    "pais": "mx",
+    "loudnessDb": -3.7800007,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:46.680Z"
+  },
+  "bl5q4AIGGZQ": {
+    "tipo": "youtube",
+    "id": "bl5q4AIGGZQ",
+    "consulta": "Two and a Half Men Intro Opening Theme Song Manly Men",
+    "titulo": "Two And A Half Men Opening Theme Song",
+    "canal_o_artista": "OpeningThemeSongs",
+    "album": null,
+    "duracion": 26,
+    "pais": "mx",
+    "loudnessDb": -0.18000031,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:49.338Z"
+  },
+  "ObEc39sdrtA": {
+    "tipo": "youtube",
+    "id": "ObEc39sdrtA",
+    "consulta": "Two and a Half Men Intro Opening Theme Song Manly Men",
+    "titulo": "Two and a Half Men - Intro",
+    "canal_o_artista": "Pedro Maich",
+    "album": null,
+    "duracion": 25,
+    "pais": "mx",
+    "loudnessDb": -10,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:51.025Z"
+  },
+  "gpH_PIqT-q8": {
+    "tipo": "youtube",
+    "id": "gpH_PIqT-q8",
+    "consulta": "That's So Raven Theme Song Opening Intro Disney Channel",
+    "titulo": "Theme Song 🎶 | That's So Raven | Disney Channel",
+    "canal_o_artista": "Disney Channel",
+    "album": null,
+    "duracion": 51,
+    "pais": "mx",
+    "loudnessDb": -2.7800007,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:54.369Z"
+  },
+  "ULz5Sxbte6E": {
+    "tipo": "youtube",
+    "id": "ULz5Sxbte6E",
+    "consulta": "Sin Bandera Amor Real telenovela entrada",
+    "titulo": "Amor Real - Amor Real | Sin Bandera (Video Oficial)",
+    "canal_o_artista": "Jiban TC",
+    "album": null,
+    "duracion": 269,
+    "pais": "mx",
+    "loudnessDb": 2.3999996,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:57:57.432Z"
+  },
+  "gS5yUIwI9U8": {
+    "tipo": "youtube",
+    "id": "gS5yUIwI9U8",
+    "consulta": "Pasion de Gavilanes Fiera Inquieta entrada oficial",
+    "titulo": "Fiera Inquieta - Pasión de Gavilanes | Canción de apertura completo | Rosario Montes (2022)",
+    "canal_o_artista": "Cuenta de videos",
+    "album": null,
+    "duracion": 189,
+    "pais": "mx",
+    "loudnessDb": -3.1000004,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:00.281Z"
+  },
+  "EfE3UbHfgR4": {
+    "tipo": "youtube",
+    "id": "EfE3UbHfgR4",
+    "consulta": "Pasion de Gavilanes Fiera Inquieta entrada oficial",
+    "titulo": "Pasión de Gavilanes - Fiera Inquieta (Quién es ese Hombre) [Official Video] HD",
+    "canal_o_artista": "Julian Ross 14",
+    "album": null,
+    "duracion": 197,
+    "pais": "mx",
+    "loudnessDb": -5.9799995,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:01.861Z"
+  },
+  "s9Z6HlgX9jc": {
+    "tipo": "youtube",
+    "id": "s9Z6HlgX9jc",
+    "consulta": "Ned's Declassified School Survival Guide Intro Opening Theme Song",
+    "titulo": "Ned's Declassified School Survival Guide - Intro | Theme Song",
+    "canal_o_artista": "wocky slush",
+    "album": null,
+    "duracion": 26,
+    "pais": "mx",
+    "loudnessDb": -7.1900005,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:04.379Z"
+  },
+  "yUzVIE3VFO8": {
+    "tipo": "youtube",
+    "id": "yUzVIE3VFO8",
+    "consulta": "Ned's Declassified School Survival Guide Intro Opening Theme Song",
+    "titulo": "Ned's Declassified School Survival Guide - Season 1 Theme Song",
+    "canal_o_artista": "John Doe",
+    "album": null,
+    "duracion": 40,
+    "pais": "mx",
+    "loudnessDb": -3.25,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:05.792Z"
+  },
+  "J-Az8MrpXps": {
+    "tipo": "youtube",
+    "id": "J-Az8MrpXps",
+    "consulta": "Reyli La Descarada Rubi entrada telenovela",
+    "titulo": "Rubi 2004 - La Descarada | Reyli (Video Oficial)",
+    "canal_o_artista": "Jiban TC",
+    "album": null,
+    "duracion": 225,
+    "pais": "mx",
+    "loudnessDb": 3.5799999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:08.913Z"
+  },
+  "2X_2IdybTV0": {
+    "tipo": "youtube",
+    "id": "2X_2IdybTV0",
+    "consulta": "Kansas Carry On Wayward Son Official Audio",
+    "titulo": "Kansas - Carry On Wayward Son (Official Audio)",
+    "canal_o_artista": "kansasVEVO",
+    "album": null,
+    "duracion": 323,
+    "pais": "mx",
+    "loudnessDb": -2.0799999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:12.312Z"
+  },
+  "YquxXthted4": {
+    "tipo": "youtube",
+    "id": "YquxXthted4",
+    "consulta": "Zoey 101 Theme Song Intro Follow Me Jamie Lynn Spears",
+    "titulo": "Zoey 101 Intro Song |High Quality|Follow Me| Jamie Lynn Spears",
+    "canal_o_artista": "Nickelodeon Songs",
+    "album": null,
+    "duracion": 61,
+    "pais": "mx",
+    "loudnessDb": 0.029999733,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:14.961Z"
+  },
+  "uTgUwMWBeJk": {
+    "tipo": "youtube",
+    "id": "uTgUwMWBeJk",
+    "consulta": "Zoey 101 Theme Song Intro Follow Me Jamie Lynn Spears",
+    "titulo": "jamie lynn spears; follow me (zoey 101)//español",
+    "canal_o_artista": "sweetbad",
+    "album": null,
+    "duracion": 211,
+    "pais": "mx",
+    "loudnessDb": 6.23,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:16.575Z"
+  },
+  "HNW2OvPCP8M": {
+    "tipo": "youtube",
+    "id": "HNW2OvPCP8M",
+    "consulta": "The Suite Life of Zack and Cody Theme Song Intro Opening Disney Channel",
+    "titulo": "The Suite Life of Zack and Cody Intro Recreation",
+    "canal_o_artista": "David Clossey",
+    "album": null,
+    "duracion": 80,
+    "pais": "mx",
+    "loudnessDb": 0.77999973,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:19.217Z"
+  },
+  "_9dYvfao6WY": {
+    "tipo": "youtube",
+    "id": "_9dYvfao6WY",
+    "consulta": "The Suite Life of Zack and Cody Theme Song Intro Opening Disney Channel",
+    "titulo": "Suite Life of Zack and Cody - Theme Song | Disney+ Throwbacks | Disney+",
+    "canal_o_artista": "Walt Disney Studios Canada",
+    "album": null,
+    "duracion": 44,
+    "pais": "mx",
+    "loudnessDb": -2.6499996,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:20.591Z"
+  },
+  "fR_WnjBp9i8": {
+    "tipo": "youtube",
+    "id": "fR_WnjBp9i8",
+    "consulta": "Laura Pausini Viveme La Madrastra telenovela",
+    "titulo": "Laura Pausini - Cabecera \"La Madrastra\"",
+    "canal_o_artista": "Manuel HR",
+    "album": null,
+    "duracion": 96,
+    "pais": "mx",
+    "loudnessDb": -4.2800007,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:23.748Z"
+  },
+  "XLkdwxql3BE": {
+    "tipo": "youtube",
+    "id": "XLkdwxql3BE",
+    "consulta": "La fea mas bella entrada Banda El Recodo El club de las feas",
+    "titulo": "Banda El Recodo - El Club de las Feas",
+    "canal_o_artista": "Banda El Recodo",
+    "album": null,
+    "duracion": 171,
+    "pais": "mx",
+    "loudnessDb": -7.5799999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:26.555Z"
+  },
+  "P3Nmt3Ttcic": {
+    "tipo": "youtube",
+    "id": "P3Nmt3Ttcic",
+    "consulta": "Gossip Girl Intro Opening Credits Theme",
+    "titulo": "Gossip Girl Intro",
+    "canal_o_artista": "tamakitono",
+    "album": null,
+    "duracion": 12,
+    "pais": "mx",
+    "loudnessDb": -0.55000019,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:28.920Z"
+  },
+  "mF1tgVV2Y38": {
+    "tipo": "youtube",
+    "id": "mF1tgVV2Y38",
+    "consulta": "Gossip Girl Intro Opening Credits Theme",
+    "titulo": "Gossip Girl - Opening Intro",
+    "canal_o_artista": "Pretty Little Liars",
+    "album": null,
+    "duracion": 12,
+    "pais": "mx",
+    "loudnessDb": -14.84,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:30.842Z"
+  },
+  "gk6QuPkPy9Q": {
+    "tipo": "youtube",
+    "id": "gk6QuPkPy9Q",
+    "consulta": "Gossip Girl Intro Opening Credits Theme",
+    "titulo": "Gossip Girl Opening  (HD)",
+    "canal_o_artista": "Giulio Marino",
+    "album": null,
+    "duracion": 12,
+    "pais": "mx",
+    "loudnessDb": -3.1100006,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:32.103Z"
+  },
+  "1aiBSo0NkcE": {
+    "tipo": "youtube",
+    "id": "1aiBSo0NkcE",
+    "consulta": "Gossip Girl Intro Opening Credits Theme",
+    "titulo": "Gossip Girl Opening Credits",
+    "canal_o_artista": "theinsider401",
+    "album": null,
+    "duracion": 34,
+    "pais": "mx",
+    "loudnessDb": 2.54,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:33.579Z"
+  },
+  "pCALN-u5Jl4": {
+    "tipo": "youtube",
+    "id": "pCALN-u5Jl4",
+    "consulta": "Gossip Girl Intro Opening Credits Theme",
+    "titulo": "Gossip Girl - Intro",
+    "canal_o_artista": "New York CZ/SK Fanclub",
+    "album": null,
+    "duracion": 11,
+    "pais": "mx",
+    "loudnessDb": -15.889999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:35.303Z"
+  },
+  "xqLGKW9j3K4": {
+    "tipo": "youtube",
+    "id": "xqLGKW9j3K4",
+    "consulta": "Gossip Girl Intro Opening Credits Theme",
+    "titulo": "Gossip Girl Entrada español latino (Intro)",
+    "canal_o_artista": "Jose Angel Santos Zapiain",
+    "album": null,
+    "duracion": 12,
+    "pais": "mx",
+    "loudnessDb": -8.5900002,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:36.772Z"
+  },
+  "ZoEdZ4E7Tn0": {
+    "tipo": "youtube",
+    "id": "ZoEdZ4E7Tn0",
+    "consulta": "Pepe Aguilar Por Amarte Destilando Amor",
+    "titulo": "Pepe Aguilar - Por Amarte - Oficial",
+    "canal_o_artista": "Pepe Aguilar",
+    "album": null,
+    "duracion": 225,
+    "pais": "mx",
+    "loudnessDb": -6.6900005,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:39.850Z"
+  },
+  "e33Z2BPKwxE": {
+    "tipo": "youtube",
+    "id": "e33Z2BPKwxE",
+    "consulta": "Vicente Fernandez Para Siempre Fuego en la sangre",
+    "titulo": "Para Siempre - Vicente Fernández | Fuego en la Sangre Telenovela",
+    "canal_o_artista": "Helen",
+    "album": null,
+    "duracion": 170,
+    "pais": "mx",
+    "loudnessDb": 3.1199999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:43.239Z"
+  },
+  "3Dc1d46O3O8": {
+    "tipo": "youtube",
+    "id": "3Dc1d46O3O8",
+    "consulta": "Glee Cast Don't Stop Believin Official",
+    "titulo": "Don't Stop Believin' (Cover of Journey)",
+    "canal_o_artista": "Glee Cast - Topic",
+    "album": null,
+    "duracion": 232,
+    "pais": "mx",
+    "loudnessDb": 6.8600001,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:46.467Z"
+  },
+  "ZwgmmcKSSaU": {
+    "tipo": "youtube",
+    "id": "ZwgmmcKSSaU",
+    "consulta": "Glee Cast Don't Stop Believin Official",
+    "titulo": "Glee - Don't Stop Believin' (Pilot Version) full performance HD (Official Music Video)",
+    "canal_o_artista": "MrGleekos10",
+    "album": null,
+    "duracion": 188,
+    "pais": "mx",
+    "loudnessDb": 2.0100002,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:47.979Z"
+  },
+  "8baceGL07Gs": {
+    "tipo": "youtube",
+    "id": "8baceGL07Gs",
+    "consulta": "Modern Family Intro Opening Theme Song Gabriel Mann",
+    "titulo": "MODERN FAMILY - Main Theme By Gabriel Mann | ABC",
+    "canal_o_artista": "Geek Music",
+    "album": null,
+    "duracion": 83,
+    "pais": "mx",
+    "loudnessDb": 1.8299999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:50.545Z"
+  },
+  "1e4yQm7J3jE": {
+    "tipo": "youtube",
+    "id": "1e4yQm7J3jE",
+    "consulta": "Modern Family Intro Opening Theme Song Gabriel Mann",
+    "titulo": "Modern Family Main Theme",
+    "canal_o_artista": "Geek Music - Topic",
+    "album": null,
+    "duracion": 83,
+    "pais": "mx",
+    "loudnessDb": 0.52000046,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:51.905Z"
+  },
+  "nHUFqsv5RZ8": {
+    "tipo": "youtube",
+    "id": "nHUFqsv5RZ8",
+    "consulta": "Sonny With a Chance Theme Song Demi Lovato So Far So Great",
+    "titulo": "So Far So Great (Theme Song to Sonny with a Chance)",
+    "canal_o_artista": "Demi Lovato - Topic",
+    "album": null,
+    "duracion": 135,
+    "pais": "mx",
+    "loudnessDb": 4.8299999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:55.718Z"
+  },
+  "6777916665": {
+    "tipo": "apple",
+    "id": 6777916665,
+    "consulta": "Victorious Cast Victoria Justice Make It Shine",
+    "titulo": "Make It Shine (Victorious Theme)",
+    "canal_o_artista": "Victorious Cast & Victoria Justice",
+    "album": "Victorious (Music from the TV Show \"Victorious\")",
+    "duracion": 189,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6a/0f/ed/6a0fedfd-5d7e-8e89-79cb-defd11e42e4e/mzaf_1829620581612982474.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:58:56.420Z"
+  },
+  "nfCDhU1L-Pw": {
+    "tipo": "youtube",
+    "id": "nfCDhU1L-Pw",
+    "consulta": "Victorious Theme Song Make It Shine Victoria Justice",
+    "titulo": "Victoria Justice (Victorious) - Make It Shine (music video)",
+    "canal_o_artista": "My Music Channel",
+    "album": null,
+    "duracion": 191,
+    "pais": "mx",
+    "loudnessDb": -3.3299999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:58:58.970Z"
+  },
+  "6817089907": {
+    "tipo": "apple",
+    "id": 6817089907,
+    "consulta": "Big Time Rush Big Time Rush",
+    "titulo": "Big Time Rush (Live)",
+    "canal_o_artista": "Big Time Rush",
+    "album": "Ziggo Dome 2025 (Live)",
+    "duracion": 117,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/0e/b7/330eb75b-362b-65e0-f8bb-ca63ab5cd915/mzaf_740237409672930022.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T22:58:59.687Z"
+  },
+  "SN_MY9uDUEw": {
+    "tipo": "youtube",
+    "id": "SN_MY9uDUEw",
+    "consulta": "Big Time Rush Theme Song Intro Opening Nickelodeon",
+    "titulo": "Big Time Rush Intro [4K 60FPS]",
+    "canal_o_artista": "BufferOverflow",
+    "album": null,
+    "duracion": 50,
+    "pais": "mx",
+    "loudnessDb": -7.0799999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:01.944Z"
+  },
+  "Ugjzkw1LYxA": {
+    "tipo": "youtube",
+    "id": "Ugjzkw1LYxA",
+    "consulta": "Good Luck Charlie Theme Song Hang In There Baby Bridgit Mendler",
+    "titulo": "Hang In There Baby (From \"Good Luck Charlie\")",
+    "canal_o_artista": "Bridgit Mendler - Topic",
+    "album": null,
+    "duracion": 162,
+    "pais": "mx",
+    "loudnessDb": 7.5100002,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:05.234Z"
+  },
+  "CmHhE7woSpM": {
+    "tipo": "youtube",
+    "id": "CmHhE7woSpM",
+    "consulta": "Shake It Up Theme Song Selena Gomez Disney Channel",
+    "titulo": "「 Selena Gómez - Shake it Up✧ letra 」A todo ritmo ✨",
+    "canal_o_artista": "Donna",
+    "album": null,
+    "duracion": 177,
+    "pais": "mx",
+    "loudnessDb": 5.3000002,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:08.361Z"
+  },
+  "Co1SLTz1bDM": {
+    "tipo": "youtube",
+    "id": "Co1SLTz1bDM",
+    "consulta": "Gloria Trevi Esa Hembra Es Mala Teresa telenovela",
+    "titulo": "Teresa Gloria Trevi Esa Hembra es Mala",
+    "canal_o_artista": "MAYFA2P",
+    "album": null,
+    "duracion": 237,
+    "pais": "mx",
+    "loudnessDb": -0.80287552,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:12.225Z"
+  },
+  "jXq23Tq9FeU": {
+    "tipo": "youtube",
+    "id": "jXq23Tq9FeU",
+    "consulta": "Black Mirror Intro Opening Theme Sound Effect Extended",
+    "titulo": "Black Mirror -- Opening title sequence",
+    "canal_o_artista": "Enzo Cicero",
+    "album": null,
+    "duracion": 18,
+    "pais": "mx",
+    "loudnessDb": -2.2800007,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:14.608Z"
+  },
+  "UqJInhA0P1k": {
+    "tipo": "youtube",
+    "id": "UqJInhA0P1k",
+    "consulta": "Black Mirror Intro Opening Theme Sound Effect Extended",
+    "titulo": "The Black Mirror intro",
+    "canal_o_artista": "GOG",
+    "album": null,
+    "duracion": 182,
+    "pais": "mx",
+    "loudnessDb": 1.8100004,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:16.243Z"
+  },
+  "Dw6XAHFSkjc": {
+    "tipo": "youtube",
+    "id": "Dw6XAHFSkjc",
+    "consulta": "Black Mirror Intro Opening Theme Sound Effect Extended",
+    "titulo": "Black Mirror opening intro",
+    "canal_o_artista": "BlazeZone",
+    "album": null,
+    "duracion": 19,
+    "pais": "mx",
+    "loudnessDb": -6.8299999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:17.546Z"
+  },
+  "o4x1Q9Apg8o": {
+    "tipo": "youtube",
+    "id": "o4x1Q9Apg8o",
+    "consulta": "Black Mirror Intro Opening Theme Sound Effect Extended",
+    "titulo": "Black Mirror: Intro (Netflix) (1)",
+    "canal_o_artista": "Shaun O'Hagan",
+    "album": null,
+    "duracion": 27,
+    "pais": "mx",
+    "loudnessDb": 4.2299995,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:19.299Z"
+  },
+  "d5SYWpQOAFE": {
+    "tipo": "youtube",
+    "id": "d5SYWpQOAFE",
+    "consulta": "Jessie Theme Song Hey Jessie Debby Ryan Disney Channel",
+    "titulo": "Hey Jessie (From \"Jessie\")",
+    "canal_o_artista": "Debby Ryan - Topic",
+    "album": null,
+    "duracion": 144,
+    "pais": "mx",
+    "loudnessDb": 6.0799999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:22.626Z"
+  },
+  "hHxxDM-43v0": {
+    "tipo": "youtube",
+    "id": "hHxxDM-43v0",
+    "consulta": "Austin and Ally Theme Song Can't Do It Without You Ross Lynch",
+    "titulo": "Can’t Do It Without You (Duet)",
+    "canal_o_artista": "Austin Moon - Topic",
+    "album": null,
+    "duracion": 52,
+    "pais": "mx",
+    "loudnessDb": 7.5255814,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:25.472Z"
+  },
+  "hraM3pBE1dU": {
+    "tipo": "youtube",
+    "id": "hraM3pBE1dU",
+    "consulta": "Austin and Ally Theme Song Can't Do It Without You Ross Lynch",
+    "titulo": "Ross Lynch - Can't Do It Without You [sub. español]",
+    "canal_o_artista": "Cometa :3",
+    "album": null,
+    "duracion": 167,
+    "pais": "mx",
+    "loudnessDb": 7.3299999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:26.986Z"
+  },
+  "YJBe8ftC4oI": {
+    "tipo": "youtube",
+    "id": "YJBe8ftC4oI",
+    "consulta": "Violetta En mi mundo Martina Stoessel Disney Channel",
+    "titulo": "Martina Stoessel - En Mi Mundo (from \"Violetta\")",
+    "canal_o_artista": "DisneyMusicVEVO",
+    "album": null,
+    "duracion": 200,
+    "pais": "mx",
+    "loudnessDb": 0.19999981,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:30.007Z"
+  },
+  "vpUDf_ITZLg": {
+    "tipo": "youtube",
+    "id": "vpUDf_ITZLg",
+    "consulta": "Alejandro Sanz No Me Compares Amores Verdaderos",
+    "titulo": "Alejandro Sanz - No Me Compares (Official Video)",
+    "canal_o_artista": "AlejandroSanzVEVO",
+    "album": null,
+    "duracion": 286,
+    "pais": "mx",
+    "loudnessDb": -6.6499996,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:33.060Z"
+  },
+  "h53LsTsExoM": {
+    "tipo": "youtube",
+    "id": "h53LsTsExoM",
+    "consulta": "Solo un suspiro Abismo de pasion entrada telenovela",
+    "titulo": "Solo un suspiro - Alejandra Orozco y Oscar Cruz | Abismo de Pasión",
+    "canal_o_artista": "Helen",
+    "album": null,
+    "duracion": 227,
+    "pais": "mx",
+    "loudnessDb": 5.2799997,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:36.440Z"
+  },
+  "Lveojy88EeA": {
+    "tipo": "youtube",
+    "id": "Lveojy88EeA",
+    "consulta": "Solo un suspiro Abismo de pasion entrada telenovela",
+    "titulo": "Sólo un suspiro - Óscar Cruz y Alejandra Orozco (Audio Original)",
+    "canal_o_artista": "Jonny V",
+    "album": null,
+    "duracion": 254,
+    "pais": "mx",
+    "loudnessDb": 4.3800001,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:38.063Z"
+  },
+  "B1Yior3umyI": {
+    "tipo": "youtube",
+    "id": "B1Yior3umyI",
+    "consulta": "Liv and Maddie Theme Song Better in Stereo Dove Cameron",
+    "titulo": "Cast - Liv and Maddie - Better in Stereo (from \"Liv and Maddie\")",
+    "canal_o_artista": "DisneyMusicVEVO",
+    "album": null,
+    "duracion": 182,
+    "pais": "mx",
+    "loudnessDb": 1.6700001,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:41.537Z"
+  },
+  "tLcfAnN2QgY": {
+    "tipo": "youtube",
+    "id": "tLcfAnN2QgY",
+    "consulta": "Enrique Iglesias El Perdedor ft Marco Antonio Solis",
+    "titulo": "Enrique Iglesias - El Perdedor (Pop) ft. Marco Antonio Solís",
+    "canal_o_artista": "EnriqueIglesiasVEVO",
+    "album": null,
+    "duracion": 262,
+    "pais": "mx",
+    "loudnessDb": -1.1899996,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:44.734Z"
+  },
+  "9y_Va7k37h4": {
+    "tipo": "youtube",
+    "id": "9y_Va7k37h4",
+    "consulta": "Outlander Opening Title Theme The Skye Boat Song Bear McCreary",
+    "titulo": "Outlander Main Title Theme (Skye Boat Song) (feat. Raya Yarbrough)",
+    "canal_o_artista": "Bear McCreary - Topic",
+    "album": null,
+    "duracion": 97,
+    "pais": "mx",
+    "loudnessDb": 0.71000004,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:48.143Z"
+  },
+  "yFchuO_Vovc": {
+    "tipo": "youtube",
+    "id": "yFchuO_Vovc",
+    "consulta": "Soy Luna Alas Karol Sevilla Disney Channel",
+    "titulo": "Elenco de Soy Luna, Karol Sevilla - Alas - Versión 2026 (De \"Soy Luna: Volver a rodar\" | Disney+)",
+    "canal_o_artista": "DisneyMusicLAVEVO",
+    "album": null,
+    "duracion": 214,
+    "pais": "mx",
+    "loudnessDb": 0,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:51.311Z"
+  },
+  "uCtOIOZ7b8s": {
+    "tipo": "youtube",
+    "id": "uCtOIOZ7b8s",
+    "consulta": "Cobra Kai Soundtrack Awaken Leo Birenberg Zach Robinson",
+    "titulo": "Quiver (Extended)",
+    "canal_o_artista": "Leo Birenberg & Zach Robinson - Topic",
+    "album": null,
+    "duracion": 232,
+    "pais": "mx",
+    "loudnessDb": 1.8199997,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:54.158Z"
+  },
+  "UUsBiOSTQ6E": {
+    "tipo": "youtube",
+    "id": "UUsBiOSTQ6E",
+    "consulta": "Cobra Kai Soundtrack Awaken Leo Birenberg Zach Robinson",
+    "titulo": "Awake the Snake",
+    "canal_o_artista": "Leo Birenberg & Zach Robinson - Topic",
+    "album": null,
+    "duracion": 127,
+    "pais": "mx",
+    "loudnessDb": 1.8199997,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:55.701Z"
+  },
+  "5nnvRhO6Fx0": {
+    "tipo": "youtube",
+    "id": "5nnvRhO6Fx0",
+    "consulta": "Elite Netflix Intro Opening Theme Song",
+    "titulo": "Elite:Oficial intro",
+    "canal_o_artista": "Play séries Tv",
+    "album": null,
+    "duracion": 11,
+    "pais": "mx",
+    "loudnessDb": 2.8999996,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:58.113Z"
+  },
+  "OwP77tioj98": {
+    "tipo": "youtube",
+    "id": "OwP77tioj98",
+    "consulta": "Elite Netflix Intro Opening Theme Song",
+    "titulo": "ELITE Season 1 | Opening Credits",
+    "canal_o_artista": "Rafael Araujo",
+    "album": null,
+    "duracion": 41,
+    "pais": "mx",
+    "loudnessDb": -0.010000229,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T22:59:59.739Z"
+  },
+  "IyoB3DLVkLI": {
+    "tipo": "youtube",
+    "id": "IyoB3DLVkLI",
+    "consulta": "Elite Netflix Intro Opening Theme Song",
+    "titulo": "ELITE | INTRO/OPENING CREDITS [FANMADE]",
+    "canal_o_artista": "lvrcore",
+    "album": null,
+    "duracion": 92,
+    "pais": "mx",
+    "loudnessDb": 4.8199997,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:01.197Z"
+  },
+  "7uGizHFs_lE": {
+    "tipo": "youtube",
+    "id": "7uGizHFs_lE",
+    "consulta": "Diego Boneta Cuando Calienta el Sol Luis Miguel La Serie",
+    "titulo": "Diego Boneta - Cuando Calienta el Sol (Luis Miguel La Serie - Audio)",
+    "canal_o_artista": "LuisMiguelLaSeriVEVO",
+    "album": null,
+    "duracion": 240,
+    "pais": "mx",
+    "loudnessDb": 5.79,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:04.342Z"
+  },
+  "1-4cnsq6Mx0": {
+    "tipo": "youtube",
+    "id": "1-4cnsq6Mx0",
+    "consulta": "The Boys Soundtrack Christopher Lennertz Translucent Alive Main Theme",
+    "titulo": "Translucent Alive",
+    "canal_o_artista": "Christopher Lennertz - Topic",
+    "album": null,
+    "duracion": 76,
+    "pais": "mx",
+    "loudnessDb": 4.2600002,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:06.946Z"
+  },
+  "qUe74ZJEp34": {
+    "tipo": "youtube",
+    "id": "qUe74ZJEp34",
+    "consulta": "The Boys Soundtrack Christopher Lennertz Translucent Alive Main Theme",
+    "titulo": "Christopher Lennertz - Translucent Alive",
+    "canal_o_artista": "Thorthunder24",
+    "album": null,
+    "duracion": 77,
+    "pais": "mx",
+    "loudnessDb": 5.3299999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:08.422Z"
+  },
+  "fq8ZkL3-8Kg": {
+    "tipo": "youtube",
+    "id": "fq8ZkL3-8Kg",
+    "consulta": "Labrinth Still Don't Know My Name Euphoria Official",
+    "titulo": "Labrinth - Still Don’t Know My Name (Official Video) | euphoria (Original HBO Score)",
+    "canal_o_artista": "LabrinthVEVO",
+    "album": null,
+    "duracion": 155,
+    "pais": "mx",
+    "loudnessDb": 5.5799999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:12.368Z"
+  },
+  "gXtmCdWd1Cs": {
+    "tipo": "youtube",
+    "id": "gXtmCdWd1Cs",
+    "consulta": "The Queen's Gambit Soundtrack Main Title Carlos Rafael Rivera",
+    "titulo": "The Queen’s Gambit | Main Title (Netflix Original Soundtrack) – Music by Carlos Rafael Rivera",
+    "canal_o_artista": "Carlos Rafael Rivera",
+    "album": null,
+    "duracion": 110,
+    "pais": "mx",
+    "loudnessDb": 4.1599998,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:15.450Z"
+  },
+  "cSSGIS3rDrM": {
+    "tipo": "youtube",
+    "id": "cSSGIS3rDrM",
+    "consulta": "Emily in Paris Intro Opening Theme Netflix",
+    "titulo": "Emily in Paris Intro, Season 1 Episode 1",
+    "canal_o_artista": "TV Themesongs",
+    "album": null,
+    "duracion": 56,
+    "pais": "mx",
+    "loudnessDb": -9.3899994,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:18.027Z"
+  },
+  "yMpD1iOmFtw": {
+    "tipo": "youtube",
+    "id": "yMpD1iOmFtw",
+    "consulta": "Emily in Paris Intro Opening Theme Netflix",
+    "titulo": "All episode intros Emily in Paris | Lily Collins | Lucas Bravo | Ashley Park | Netflix",
+    "canal_o_artista": "GRWM 🤍💛",
+    "album": null,
+    "duracion": 80,
+    "pais": "mx",
+    "loudnessDb": -1.7600002,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:19.550Z"
+  },
+  "LqLISfd8s1M": {
+    "tipo": "youtube",
+    "id": "LqLISfd8s1M",
+    "consulta": "Mathieu Lamboley Arsene Lupin Netflix Soundtrack",
+    "titulo": "Arsène",
+    "canal_o_artista": "Mathieu Lamboley - Topic",
+    "album": null,
+    "duracion": 148,
+    "pais": "mx",
+    "loudnessDb": -0.010000229,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:22.677Z"
+  },
+  "3a0tH0fkvW8": {
+    "tipo": "youtube",
+    "id": "3a0tH0fkvW8",
+    "consulta": "The Book of Boba Fett Main Theme Ludwig Goransson Official",
+    "titulo": "Ludwig Göransson - The Book of Boba Fett (From \"The Book of Boba Fett\"/Audio Only)",
+    "canal_o_artista": "DisneyMusicVEVO",
+    "album": null,
+    "duracion": 178,
+    "pais": "mx",
+    "loudnessDb": 1.0799999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:25.902Z"
+  },
+  "MvEKGxyJ9Vg": {
+    "tipo": "youtube",
+    "id": "MvEKGxyJ9Vg",
+    "consulta": "House of the Dragon Official Opening Credits Intro HBO Ramin Djawadi",
+    "titulo": "House of the Dragon | S3 Opening Credits | HBO Max",
+    "canal_o_artista": "GameofThrones",
+    "album": null,
+    "duracion": 126,
+    "pais": "mx",
+    "loudnessDb": -0.64000034,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:28.493Z"
+  },
+  "HIblsDVSq_k": {
+    "tipo": "youtube",
+    "id": "HIblsDVSq_k",
+    "consulta": "House of the Dragon Official Opening Credits Intro HBO Ramin Djawadi",
+    "titulo": "Season 2 Opening Credits | House of The Dragon | Season 2 | HBO",
+    "canal_o_artista": "GameofThrones",
+    "album": null,
+    "duracion": 122,
+    "pais": "mx",
+    "loudnessDb": -3.1700001,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:30.000Z"
+  },
+  "F1efWC-qEjM": {
+    "tipo": "youtube",
+    "id": "F1efWC-qEjM",
+    "consulta": "Howard Shore The Lord of the Rings The Rings of Power Main Title",
+    "titulo": "The Lord of the Rings: The Rings of Power Main Title",
+    "canal_o_artista": "Release - Topic",
+    "album": null,
+    "duracion": 94,
+    "pais": "mx",
+    "loudnessDb": 0.77999973,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:33.590Z"
+  },
+  "73fQOkfHk8Q": {
+    "tipo": "youtube",
+    "id": "73fQOkfHk8Q",
+    "consulta": "Nicholas Britell Andor Main Title Theme Episode 1",
+    "titulo": "Andor (Main Title Theme) - Episode 1",
+    "canal_o_artista": "Nicholas Britell - Topic",
+    "album": null,
+    "duracion": 78,
+    "pais": "mx",
+    "loudnessDb": 3.79,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:36.695Z"
+  },
+  "NkAe30aEG5c": {
+    "tipo": "youtube",
+    "id": "NkAe30aEG5c",
+    "consulta": "Refused New Noise Official",
+    "titulo": "Refused - New Noise (Official Video)",
+    "canal_o_artista": "Epitaph Records",
+    "album": null,
+    "duracion": 313,
+    "pais": "mx",
+    "loudnessDb": 2.6000004,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:40.256Z"
+  },
+  "2uJYMlMdqeI": {
+    "tipo": "youtube",
+    "id": "2uJYMlMdqeI",
+    "consulta": "Hesham Nazih Moon Knight Main Theme Official",
+    "titulo": "Hesham Nazih - Moon Knight (From \"Moon Knight\"/Audio Only)",
+    "canal_o_artista": "MarvelMusicVEVO",
+    "album": null,
+    "duracion": 131,
+    "pais": "mx",
+    "loudnessDb": 0.10000038,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:43.294Z"
+  },
+  "HLn8e3aU7eI": {
+    "tipo": "youtube",
+    "id": "HLn8e3aU7eI",
+    "consulta": "John Williams Obi-Wan Theme Official Audio",
+    "titulo": "John Williams - Obi-Wan (From \"Obi-Wan Kenobi\"/Official Audio)",
+    "canal_o_artista": "DisneyMusicVEVO",
+    "album": null,
+    "duracion": 249,
+    "pais": "mx",
+    "loudnessDb": -1.1700001,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:46.668Z"
+  },
+  "i9mci2uWBjg": {
+    "tipo": "youtube",
+    "id": "i9mci2uWBjg",
+    "consulta": "Wealth Fame Power One Piece Netflix Soundtrack Sonya Belousova",
+    "titulo": "Wealth Fame Power | One Piece | Official Soundtrack | Netflix",
+    "canal_o_artista": "Netflix Music",
+    "album": null,
+    "duracion": 235,
+    "pais": "mx",
+    "loudnessDb": 3.6999998,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:50.309Z"
+  },
+  "uF5IPOEFndw": {
+    "tipo": "youtube",
+    "id": "uF5IPOEFndw",
+    "consulta": "Kevin Kiner Ahsoka End Credits Main Theme Official",
+    "titulo": "Kevin Kiner - Ahsoka - End Credits (From \"Ahsoka\"/Visualizer Video)",
+    "canal_o_artista": "DisneyMusicVEVO",
+    "album": null,
+    "duracion": 225,
+    "pais": "mx",
+    "loudnessDb": -0.77999973,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:53.566Z"
+  },
+  "wjZ_nkI08b4": {
+    "tipo": "youtube",
+    "id": "wjZ_nkI08b4",
+    "consulta": "Shogun Main Title Atticus Ross Leopold Ross Nick Chuba FX",
+    "titulo": "Main Title (Shōgun)",
+    "canal_o_artista": "Atticus Ross - Topic",
+    "album": null,
+    "duracion": 112,
+    "pais": "mx",
+    "loudnessDb": 6.1500001,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:00:56.948Z"
+  },
+  "TmIwm5RElRs": {
+    "tipo": "youtube",
+    "id": "TmIwm5RElRs",
+    "consulta": "The Ink Spots I Don't Want to Set the World on Fire Fallout",
+    "titulo": "I Don't Want to Set the World on Fire",
+    "canal_o_artista": "The Ink Spots - Topic",
+    "album": null,
+    "duracion": 180,
+    "pais": "mx",
+    "loudnessDb": -7.4200001,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:01:00.157Z"
   }
 }

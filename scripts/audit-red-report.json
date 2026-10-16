@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-16T22:51:44.833Z",
+  "generatedAt": "2026-10-16T23:02:23.765Z",
   "resumen": {
     "series": {
-      "total": 122,
-      "ok": 118,
-      "dudosas": 4,
+      "total": 192,
+      "ok": 186,
+      "dudosas": 6,
       "dudosasRevisadas": 0,
       "muertas": 0
     },
@@ -54,9 +54,9 @@
   "temas": {
     "series": {
       "resumen": {
-        "total": 122,
-        "ok": 118,
-        "dudosas": 4,
+        "total": 192,
+        "ok": 186,
+        "dudosas": 6,
         "dudosasRevisadas": 0,
         "muertas": 0
       },
@@ -268,6 +268,126 @@
               "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/68/94/de/6894de01-d3b4-9a1b-0e04-a62ac57c8d20/mzaf_12378677692244702081.plus.aac.p.m4a",
               "country": "mx",
               "checkedAt": "2026-10-16T20:09:17.276Z"
+            }
+          ]
+        },
+        {
+          "id": "tv-outlander-the-skye-boat-song",
+          "cat": "tv-10s",
+          "franchise": "Outlander",
+          "game": "Outlander",
+          "title": "The Skye Boat Song",
+          "composer": "Bear McCreary (feat. Raya Yarbrough)",
+          "estado": "dudosa",
+          "revisada": null,
+          "motivos": [
+            "Pista/álbum de Apple contiene \"extended\""
+          ],
+          "primeraFuente": {
+            "kind": "apple-song",
+            "song": 1029187185,
+            "ok": true,
+            "trackId": 1029187185,
+            "title": "Outlander - The Skye Boat Song (feat. Raya Yarbrough) [Extended) []",
+            "artist": "Bear McCreary",
+            "album": "Outlander: Season 1, Vol. 2 (Original Television Soundtrack)",
+            "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/59/ff/1e/59ff1ead-22b4-642d-d9c9-0a2e23f1000b/mzaf_11151572454098549758.plus.aac.p.m4a",
+            "durationSeconds": 268,
+            "country": "mx",
+            "checkedAt": "2026-10-16T22:59:45.586Z"
+          },
+          "fuentes": [
+            {
+              "kind": "apple-song",
+              "song": 1029187185,
+              "ok": true,
+              "trackId": 1029187185,
+              "title": "Outlander - The Skye Boat Song (feat. Raya Yarbrough) [Extended) []",
+              "artist": "Bear McCreary",
+              "album": "Outlander: Season 1, Vol. 2 (Original Television Soundtrack)",
+              "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/59/ff/1e/59ff1ead-22b4-642d-d9c9-0a2e23f1000b/mzaf_11151572454098549758.plus.aac.p.m4a",
+              "durationSeconds": 268,
+              "country": "mx",
+              "checkedAt": "2026-10-16T22:59:45.586Z"
+            },
+            {
+              "kind": "yt",
+              "id": "9y_Va7k37h4",
+              "start": 0,
+              "ok": true,
+              "oembedStatus": 200,
+              "playabilityStatus": "OK",
+              "playableInEmbed": true,
+              "reason": "OK",
+              "title": "Outlander Main Title Theme (Skye Boat Song) (feat. Raya Yarbrough)",
+              "channel": "Bear McCreary - Topic",
+              "lengthSeconds": 97,
+              "loudnessDb": 0.71000004,
+              "checkedWatchPage": true,
+              "checkedAt": "2026-10-16T22:59:48.143Z"
+            }
+          ]
+        },
+        {
+          "id": "tv-cobra-kai-awaken",
+          "cat": "tv-10s",
+          "franchise": "Cobra Kai",
+          "game": "Cobra Kai",
+          "title": "Awaken (Cobra Kai Main Theme)",
+          "composer": "Leo Birenberg y Zach Robinson",
+          "estado": "dudosa",
+          "revisada": null,
+          "motivos": [
+            "Título/canal contiene \"extended\""
+          ],
+          "primeraFuente": {
+            "kind": "yt",
+            "id": "uCtOIOZ7b8s",
+            "start": 0,
+            "ok": true,
+            "oembedStatus": 200,
+            "playabilityStatus": "OK",
+            "playableInEmbed": true,
+            "reason": "OK",
+            "title": "Quiver (Extended)",
+            "channel": "Leo Birenberg & Zach Robinson - Topic",
+            "lengthSeconds": 232,
+            "loudnessDb": 1.8199997,
+            "checkedWatchPage": true,
+            "checkedAt": "2026-10-16T22:59:54.158Z"
+          },
+          "fuentes": [
+            {
+              "kind": "yt",
+              "id": "uCtOIOZ7b8s",
+              "start": 0,
+              "ok": true,
+              "oembedStatus": 200,
+              "playabilityStatus": "OK",
+              "playableInEmbed": true,
+              "reason": "OK",
+              "title": "Quiver (Extended)",
+              "channel": "Leo Birenberg & Zach Robinson - Topic",
+              "lengthSeconds": 232,
+              "loudnessDb": 1.8199997,
+              "checkedWatchPage": true,
+              "checkedAt": "2026-10-16T22:59:54.158Z"
+            },
+            {
+              "kind": "yt",
+              "id": "UUsBiOSTQ6E",
+              "start": 0,
+              "ok": true,
+              "oembedStatus": 200,
+              "playabilityStatus": "OK",
+              "playableInEmbed": true,
+              "reason": "OK",
+              "title": "Awake the Snake",
+              "channel": "Leo Birenberg & Zach Robinson - Topic",
+              "lengthSeconds": 127,
+              "loudnessDb": 1.8199997,
+              "checkedWatchPage": true,
+              "checkedAt": "2026-10-16T22:59:55.701Z"
             }
           ]
         }

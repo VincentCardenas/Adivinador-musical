@@ -501,14 +501,24 @@ Incluye:
   - antes: busca('Six', 'Heart of Stone')
   - ahora: am 1465183513 «Heart of Stone (feat. Natalie Paris)» (SIX — Six: The Musical (Studio Cast Recording), us) · am 1620248651 «Heart of Stone (feat. Abby Mueller)» (SIX — SIX: LIVE ON OPENING NIGHT (Original Broadway Cast Recording), us) · yt wMY7nZHNp7U «SIX the Musical (featuring Natalie Paris) - Heart of Stone (from the Studio Cast Recording)» (SIX, 313s)
 
-## 5. Pendiente por aplicar (Fase 3 y Fase 4)
+## 5. Fase 3: Pistas agregadas por categoría (progreso actual)
+
+| Tema | Categoría | Antes | Meta (+20 %) | Agregadas | Total actual | Estado |
+|---|---|---:|---:|---:|---:|---|
+| **Series** | `tv-clasicas` | 28 | +6 | +6 | **34** | ✅ Completado |
+| **Series** | `tv-90s` | 23 | +12 | +12 | **35** | ✅ Completado |
+| **Series** | `tv-00s` | 31 | +18 | +18 | **49** | ✅ Completado |
+| **Series** | `tv-10s` | 29 | +20 | +20 | **49** | ✅ Completado |
+| **Series** | `tv-20s` | 11 | +14 | +14 | **25** | ✅ Completado |
+| **Series (Total)** | — | **122** | **+70** | **+70** | **192** | ✅ **Meta lograda (192)** |
+
+## 6. Pendiente por aplicar (resto de Fase 3 y Fase 4)
 
 - **Fase 3 (Expansión +20 % por categoría):**
-  - Series: +70 pistas nuevas (meta final: 192 pistas).
-  - Caricaturas: +54 adicionales (+11 ya recuperadas en Fase 2 = +65 total; meta final: 361 pistas).
-  - Anime: +47 adicionales (+5 ya recuperadas en Fase 2 = +52 total; meta final: 303 pistas).
   - Disney: +21 pistas nuevas (meta final: 92 pistas).
   - Musicales: +47 pistas nuevas, con al menos 3 en `mus-clasicos` y 3 en `mus-10s` en español (`lang: 'es'`) (meta final: 269 pistas).
+  - Caricaturas: +54 adicionales (+11 ya recuperadas en Fase 2 = +65 total; meta final: 361 pistas).
+  - Anime: +47 adicionales (+5 ya recuperadas en Fase 2 = +52 total; meta final: 303 pistas).
   - Videojuegos: +61 pistas nuevas (meta final: 342 pistas).
   - Sagas (`SAGA_TRACKS`): +37 pistas nuevas, completando primero los 13 juegos con menos de 5 pistas (meta final: 221 pistas).
 - **Fase 4:** Revisión de dudosas restantes (`scripts/audit-red-revisadas.json`), verificación en navegador (`scripts/verificar-v2.1/`) y subida de versión a 2.1.
