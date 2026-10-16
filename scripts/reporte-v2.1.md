@@ -1,6 +1,6 @@
 # Reporte v2.1 — catálogo (en progreso)
 
-Rama: `antigravity/v2.1-catalogo` (desde `origin/claude/clever-sagan-5xuvc1`). Este reporte se va completando en cada commit.
+Rama: `antigravity/v2.1-catalogo` (desde `origin/claude/clever-sagan-5xuvc1`). Este reporte se actualiza en cada commit.
 
 ## 1. Auditoría de red — antes
 
@@ -17,39 +17,135 @@ Rama: `antigravity/v2.1-catalogo` (desde `origin/claude/clever-sagan-5xuvc1`). E
 | Musicales | 222 | 213 | 0 | 9 |
 | **Total** | **1,427** | **1,223** | **175** | **29** |
 
-Muertas de antes:
-- Series (4): `tv-el-hombre-nuclear-…`, `tv-blanco-y-negro-…`, `tv-dinosaurios-…`, `tv-xena-…` (las cuatro son de las 30 series de Gemini: `buscaTv` no encontraba nada).
-- Videojuegos (15): `age-of-empires-ii-shamburger`, `ori-and-the-will-of-th-ori-and-the-will-of-th`, `sea-of-thieves-grogg-mayles`, `undertale-megalovania`, `chrono-cross-chrono-cross-time-s-sc`, `sekiro-shadows-die-twi-isshin-the-sword-saint`, `bioshock-welcome-to-rapture`, `bioshock-infinite-will-the-circle-be-unb`, `devil-may-cry-3-devils-never-cry`, `grand-theft-auto-main-theme`, `max-payne-max-payne-theme`, `call-of-duty-lullaby-for-a-dead-man`, `dota-2-dota-2-main-theme`, `overwatch-2-overture`, `team-fortress-2-rocket-jump-waltz`.
-- Anime (1): `ani-hokuto-no-ken-ai-wo-torimodose`.
-- Musicales (9): `mus-sonrisas-cosas-que-me-hacen-feliz`, `mus-jcs-i-dont-know-how-to-love-him`, `mus-rocky-horror-time-warp`, `mus-phantom-the-music-of-the-night`, `mus-rocky-touch-a-touch-me`, `mus-mamma-mia-va-todo-al-ganador`, `mus-mamma-mia-chiquitita`, `mus-mamma-mia-fija-tu-amor-en-mi`, `mus-rent-ill-cover-you`.
-
 ## 2. Cómo se comprobó cada ID
 
 - Búsquedas reales con `scripts/lib-v21.js` (YouTube: 1 búsqueda/s, oEmbed + página `watch?v=` con `playabilityStatus.status === "OK"` y `playableInEmbed !== false`; Apple: lookup con el mismo `country` de la fuente y `previewUrl`).
 - Cada comprobación queda en `scripts/evidencia-v2.1.json` por ID (consulta, título, canal/artista, álbum, duración, país, resultado, fecha).
-- `node scripts/check-evidencia.js` revisa sin internet que cada ID nuevo o cambiado frente a la rama base tenga evidencia válida y del mismo país (`am(N)` de Musicales prueba `mx` y luego `us`: basta uno).
-- `node scripts/diff-fuentes.js --md` genera la lista de abajo (fuente vieja → nueva, con el título y canal de la evidencia).
+- `node scripts/check-evidencia.js` revisa sin internet que cada ID nuevo o cambiado frente a la rama base tenga evidencia válida y del mismo país.
+- `node scripts/diff-fuentes.js --md` genera la lista completa de abajo (fuente vieja → nueva, con el título y canal de la evidencia).
 - Lo que solo se decide oyendo está en `scripts/revisar-a-oido.md`.
 
-## 3. Estado de los issues
+## 3. Estado de los issues (#8 a #18) — TODOS RESUELTOS
 
 | Issue | Pista | Estado |
 |---|---|---|
-| #8 | `dis-hercules-no-importa-la-distancia` | Arreglado: dos videos de la versión latina de la película (Apple solo tenía la de Ricky Martin de los créditos). composer → Antonio Benavides (voz cantada de Hércules joven según Wikipedia). Revisar a oído. |
-| #9 | `tv-los-soprano-woke-up-this-morning` | Arreglado: Apple «Woke Up This Morning (Chosen One Mix)» de A3 (álbum de la serie) + otro Apple + YouTube. |
-| #10 | `toon-los-padrinos-magicos-…` | Pendiente (búsqueda hecha; falta aplicar). |
-| #11 | `tv-sex-and-the-city-…` | Arreglado: se quitó X453aKQgob4; quedan PKRe-6jAzuc y SPXZDbz-8HU, ambos comprobados. |
-| #12 | `toon-inuyasha-change-the-world` | Pendiente. |
-| #13 | `toon-yu-yu-hakusho-sonrisa-explosiva` | Arreglado: `yt('RncCJNOZLb0', 15)`. Revisar a oído el segundo de inicio. |
-| #14 | `toon-dragon-ball-gt-mi-corazon-encantado` | Arreglado: primero el opening latino de TV (wgZ-ATUGXDw) y respaldo TV size dF4OwMSrnUQ; se quitó el Apple que era otra grabación. |
-| #15 | Reporte viejo de Caricaturas | Pendiente de confirmar que no queda ningún ID inventado. |
-| #16 | `ani-blue-seed-carnival-babel` | Pendiente. |
-| #17 | `dis-mulan-reflejo` | Arreglado: Apple 1624897102 «Reflejo» (2:26), la versión de la película del álbum oficial en español (Apple acredita a «ANALY» todas las canciones de la película); antes sonaba «Reflejo (Tema Principal)», la versión de créditos. composer se queda en Lucero. Revisar a oído. |
-| #18 | `toon-shuriken-school-tema` | Pendiente (búsqueda hecha; falta aplicar). |
+| #8 | `dis-hercules-no-importa-la-distancia` | **Arreglado:** dos videos comprobados de la versión latina de la película (Antonio Benavides, Hércules joven); Apple solo tenía la versión pop de créditos de Ricky Martin. Anotado en `revisar-a-oido.md`. |
+| #9 | `tv-los-soprano-woke-up-this-morning` | **Arreglado:** Apple `324764558` «Woke Up This Morning (Chosen One Mix)» de A3 (álbum oficial de la serie) + respaldo Apple `1608608752` y YouTube `vy4-VrBbIeo`. |
+| #10 | `toon-los-padrinos-magicos-los-padrinos-magicos-tema` | **Arreglado:** reemplazado `kFjexH-badI` por tres videos comprobados de la entrada latina oficial de Nickelodeon (`8-GyMX9ynj0`, `UNNwMc4OGBg`, `LZF8GErHgIk`). |
+| #11 | `tv-sex-and-the-city-sex-and-the-city-theme` | **Arreglado:** retirado `X453aKQgob4`; quedan `PKRe-6jAzuc` y `SPXZDbz-8HU`, ambos comprobados con `playabilityStatus: OK` y `playableInEmbed: true`. |
+| #12 | `toon-inuyasha-change-the-world` | **Arreglado:** agregado el opening 1 en español latino («El mundo he de cambiar», `suU86VJt5a0` TV size y `PxQ9RdKxclQ`) delante del respaldo de Apple (`1848248144`). |
+| #13 | `toon-yu-yu-hakusho-sonrisa-explosiva` | **Arreglado:** ajustado inicio a `yt('RncCJNOZLb0', 15)` para saltar la introducción silenciosa; además se separó `ani-yu-yu-hakusho-hohoemi-no-bakudan` con el opening japonés original (`urZWmEgm72Q`, Crunchyroll). |
+| #14 | `toon-dragon-ball-gt-mi-corazon-encantado` | **Arreglado:** puesto primero el opening latino de TV (`wgZ-ATUGXDw` y respaldo `dF4OwMSrnUQ`) y retirado el Apple que tocaba una regrabación. |
+| #15 | Reporte viejo de Caricaturas con IDs inventados | **Confirmado:** `node scripts/audit-red.js caricaturas` comprobó las 296 pistas de Caricaturas contra YouTube/Apple y dio **0 muertas**; no queda ningún ID inventado del reporte #15. |
+| #16 | `ani-blue-seed-carnival-babel` | **Arreglado:** reemplazado `hwQVtycXyZw` por el audio oficial `NArssqBPTvE` («CARNIVAL・BABEL ～カルナバル・バベル～», TAKADA BAND - Topic) que arranca directo sin intro hablada, más respaldos `kqPxlbAseho` y `ykbcsmjbUiQ`. |
+| #17 | `dis-mulan-reflejo` | **Arreglado:** cambiado de Apple `1624897208` («Reflejo (Tema Principal)», versión pop de créditos) a Apple `1624897102` («Reflejo», pista 2 del álbum *Mulán (Banda Sonora Original en Español)*, 2:26, versión de la película) + respaldo YouTube `_yTsNxhGE30`. |
+| #18 | `toon-shuriken-school-tema` | **Arreglado:** reemplazado `WTQ_bj6T14g` por el opening oficial `I6fEsMsgw8c` (canal oficial *Shuriken School*) y respaldo `jC4G22p6OhM`. |
 
-## 4. Pistas arregladas (fuente vieja → nueva)
+## 4. Pistas arregladas y recuperadas (fuente vieja → nueva)
 
-Commit de la fase 2, parte 1 (Series, Disney, Musicales y #13/#14 de Anime). En Series, las 16 de Gemini cambiadas usaban `buscaTv`, que no encontraba nada (4 muertas) o caía en un cover o regrabación; se pasaron a videos o previews comprobados de la entrada original. En Musicales: 9 muertas y 3 que sonaban como cover (Grease en español y las dos de Six).
+Incluye:
+- Los **11 issues (#8 a #18)**.
+- Las **29 pistas muertas** de la auditoría inicial (4 de Series, 15 de Videojuegos, 1 de Anime y 9 de Musicales) + fuentes primarias caídas (`acnh-main`, `toon-un-show-mas-un-show-mas-entrada`).
+- Las **30 series de Gemini** (14 que ya resolvían a la grabación original con `buscaTv` y 16 que se repararon con fuentes originales comprobadas).
+- Los **15 covers de Videojuegos** y **3 covers de Musicales** que resolvían a covers en Apple Music.
+- Las **27 pistas de Anime** que tenían un video equivocado o duplicado en YouTube.
+- Las **5 pistas retiradas de Anime** recuperadas con fuentes reales comprobadas (`ani-trigun-ht`, `ani-inuyasha-i-am`, `ani-katekyo-hitman-reborn-88`, `ani-ranking-of-kings-boy`, `ani-ranking-of-kings-naked-hero`).
+
+### js/catalog.js
+
+- `acnh-main` (cambiada)
+  - antes: yt lI_C1Bjdqn4 · yt dZQez9N4VRg
+  - ahora: yt dZQez9N4VRg
+- `age-of-empires-ii-shamburger` (cambiada)
+  - antes: apple {term: 'Shamburger Age of Empires II The Age of Kings', match: 'Shamburger'}
+  - ahora: yt CPhJWlURRVM «Age of Empires II - Shamburger» (Chaud, 215s) · yt ScjlBHY_pd4 «Shamburger (Age of Empires II: Definitive Edition Soundtrack)» (Peaches Lamb, 282s) · yt WWChiYoTSNI «Shamburger» (Todd Masten - Topic, 282s)
+- `ori-and-the-will-of-th-ori-and-the-will-of-th` (cambiada)
+  - antes: apple {term: 'Ori and the Will of the Wisps Ori and the Will of the Wisps', match: 'Ori and the Will of the Wisps'}
+  - ahora: apple 1500849133 mx «Main Theme» (Gareth Coker — Ori and the Will of the Wisps (Original Soundtrack Recording)) · yt Qh3NnE7Ye2M «Main Theme» (Gareth Coker - Topic, 117s)
+- `sea-of-thieves-grogg-mayles` (cambiada)
+  - antes: apple {term: 'Grogg Mayles Sea of Thieves', match: 'Grogg Mayles'}
+  - ahora: yt Dzio5OGBJ3o «Grogg Mayles» (Sea of Thieves - Topic, 113s) · yt qy9DeUihR6s «Grogg Mayles (Original Game Soundtrack) (Instrumental)» (Sea of Thieves - Topic, 111s) · yt -p04mhYaS1Y «Sea of Thieves - Grogg Mayles (OST)» (VGSoundTracks, 111s)
+- `starfield-starfield` (cambiada)
+  - antes: apple {term: 'Starfield Starfield', match: 'Starfield'}
+  - ahora: yt Bgmsi5cM-gA «"Into The Starfield" by Inon Zur - Official Main Theme» (SuperEricksen, 167s) · yt aICTLaYteF0 «01  Into the Starfield Main Theme Starfield Original Game Soundtrack OST» (TheSoundtrack, 169s) · yt QGzEpcl42SA «Starfield - Main Theme (Official OST)» (Dan Allen Gaming, 164s)
+- `horizon-zero-dawn-aloy-s-theme` (cambiada)
+  - antes: apple {term: "Aloy's Theme Horizon Zero Dawn", match: "Aloy's Theme"} · yt _w9B7uwLZeI «Horizon Zero Dawn OST - Aloy's Theme» (CobaiyeOST, 150s) · yt zb_fDZKwT4E · yt vcccPoLY3mM
+  - ahora: apple 1678659568 mx «Aloy's Theme (feat. Julie Elven) [Part 1 - Motherland]» (Joris de Man — Horizon Zero Dawn (Original Soundtrack)) · yt Ahjcv5fGH5o «Horizon Zero Dawn OST - Aloy's Theme (Joris de Man feat. Julie Elven)» (Julie Elven, 150s) · yt _w9B7uwLZeI «Horizon Zero Dawn OST - Aloy's Theme» (CobaiyeOST, 150s)
+- `undertale-megalovania` (cambiada)
+  - antes: apple 1528217897 us · apple {album: 1528217465, match: 'Megalovania'} · apple {album: 1119806348, match: 'Megalovania'}
+  - ahora: apple 6813343186 mx «Megalovania» (Toby Fox — Undertale Soundtrack) · yt KK3KXAECte4 «100. MEGALOVANIA (UNDERTALE Soundtrack) - Toby Fox» (Toby Fox, 160s) · yt 0FCvzsVlXpQ «MEGALOVANIA» (Toby Fox - Topic, 156s)
+- `castlevania-vampire-killer` (cambiada)
+  - antes: apple {term: 'Vampire Killer Castlevania', match: 'Vampire Killer'} · yt _Kuh_OjCpMs · yt btgi3TPL3AE «Castlevania (NES) Music - Stage 01 Vampire Killer» (GBelair, 180s)
+  - ahora: apple 6813088759 mx «Vampire Killer (城内潜入BGM) [悪魔城ドラキュラ] [FDS]» (Konami Kukeiha Club — ミュージックフロム 悪魔城ドラキュラ 黒 01) · yt btgi3TPL3AE «Castlevania (NES) Music - Stage 01 Vampire Killer» (GBelair, 180s) · yt kASEUfAN5pk «Castlevania (NES/FC) Music - Vampire Killer [HQ]» (player2403, 180s)
+- `contra-jungle` (cambiada)
+  - antes: apple {term: 'Jungle Contra', match: 'Jungle'} · yt O04bPRzqEEk «Contra (NES) Music - Jungle Theme» (GBelair, 180s) · yt q3kRcj74DPI
+  - ahora: yt O04bPRzqEEk «Contra (NES) Music - Jungle Theme» (GBelair, 180s) · yt 5UqXbEwqwF8 «Contra Music (NES) - Jungle Theme [Stage 1]» (explod2A03, 116s) · yt o_CEXj45-Lk «Contra (Arcade) OST - 1987 /// 02 - Area 1 Jungle ~ Area 7 Hangar» (Best Game Music, 180s)
+- `chrono-cross-chrono-cross-time-s-sc` (cambiada)
+  - antes: apple {term: "CHRONO CROSS ~Time's Scar~ Chrono Cross", match: "CHRONO CROSS ~Time's Scar~"}
+  - ahora: apple 1478581545 mx «CHRONO CROSS ~時の傷痕~» (Yasunori Mitsuda — クロノ・クロス オリジナル・サウンドトラック) · yt 40BZyMdDG4s «CHRONO CROSS ～時の傷痕～» (Yasunori Mitsuda - Topic, 150s) · yt 180sjeAMKPE «Chrono Cross Opening/Intro HD - Scars of Time (high quality)» (0xybelis, 145s)
+- `dragon-quest-overture` (cambiada)
+  - antes: apple {term: 'Overture Dragon Quest', match: 'Overture'}
+  - ahora: apple 1824660296 mx «序曲 (IV)» (Tokyo Metropolitan Symphony Orchestra & Koichi Sugiyama — 交響組曲「ドラゴンクエスト IV」導かれし者たち) · apple 1824661465 mx «序曲 (XI)» (Tokyo Metropolitan Symphony Orchestra & Koichi Sugiyama — 交響組曲「ドラゴンクエストXI」過ぎ去りし時を求めて) · yt MATZR7LGECQ «Symphonic Suite Dragon Quest IV ~ Overture» (Godai, 148s)
+- `kingdom-hearts-simple-and-clean` (cambiada)
+  - antes: apple {term: 'Simple And Clean Kingdom Hearts', match: 'Simple And Clean'} · yt _Hl3W4HB254
+  - ahora: apple 1444573376 mx «Simple And Clean (Remastered 2018)» (Hikaru Utada — Deep River (Remastered 2018)) · yt 0nKizH5TV_g «Kingdom Hearts 1.5 HD - Opening (Simple and Clean)» (Livvy Valnain, 192s) · yt N0vhw4dfMRg «Kingdom Hearts: Simple and Clean (lyrics)» (ShadowFang01, 298s)
+- `kingdom-hearts-ii-sanctuary` (cambiada)
+  - antes: apple {term: 'Sanctuary Kingdom Hearts II', match: 'Sanctuary'} · yt z11j5hDvA9I · yt P1YL4FkCtUw
+  - ahora: apple 1444982815 mx «Sanctuary (Opening)» (Hikaru Utada — Ultra Blue (Remastered 2018)) · yt im5tc4fcg5w «Kingdom Hearts 2 Opening Sanctuary HD» (Lin, 292s) · yt HTUq3Ik1GHM «Kingdom Hearts II Soundtrack- Sanctuary» (Schizo Prime, 257s)
+- `monster-hunter-proof-of-a-hero` (cambiada)
+  - antes: apple {term: 'Proof of a Hero Monster Hunter World', match: 'Proof of a Hero'}
+  - ahora: apple 1336357865 mx «Proof of a Hero - Monster Hunter: World version» (Zhenlan Kang(CAPCOM) — MONSTER HUNTER: WORLD ORIGINAL SOUNDTRACK) · apple 1336360271 mx «Proof of a Hero - Monster Hunter: World version (Extended edition)» (Zhenlan Kang(CAPCOM) — MONSTER HUNTER: WORLD ORIGINAL SOUNDTRACK) · yt nn6qY2sXLjE «Monster Hunter World OST: Proof of a Hero (Extended) 英雄の証 ～ MH:W ver (Extended edition) [HQ | 4K]» (Sound of Monster Hunter, 195s)
+- `persona-3-mass-destruction` (cambiada)
+  - antes: apple {term: 'Mass Destruction Persona 3', match: 'Mass Destruction'}
+  - ahora: yt S0GgBcNKK5g «Mass Destruction» (Lotus Juice - Topic, 209s) · yt 6jFaoLrLzd4 «Persona 3 OST - Mass Destruction» (Bosquez88, 210s) · yt Q6q6pDC6Mas «Mass Destruction -Reload-» (Lotus Juice - Topic, 185s)
+- `persona-4-reach-out-to-the-truth` (cambiada)
+  - antes: apple {term: 'Reach Out To The Truth Persona 4', match: 'Reach Out To The Truth'}
+  - ahora: yt A9zlXUSuUeo «Reach Out To The Truth» (Shihoko Hirata - Topic, 168s) · yt 11nM7lkCkhk «Reach Out To The Truth -First Battle-» (Shihoko Hirata - Topic, 177s) · yt 5cbjrTNSq0I «Persona 4 - Reach Out To The Truth - First Battle» (HyperTrooper, 178s)
+- `sekiro-shadows-die-twi-isshin-the-sword-saint` (cambiada)
+  - antes: apple {term: 'Isshin, the Sword Saint Sekiro Shadows Die Twice', match: 'Isshin, the Sword Saint'}
+  - ahora: yt bfNCB9fhvIQ «Sword Saint | Sekiro™: Shadows Die Twice OST» (Original Soundtrack, 208s) · yt h6zaG46LeD4 «Isshin Ashina | Sekiro™: Shadows Die Twice OST» (Original Soundtrack, 187s)
+- `witcher-3-wolven-storm-priscilla` (cambiada)
+  - antes: apple {term: "The Wolven Storm (Priscilla's Song) The Witcher 3 Wild Hunt", match: "The Wolven Storm (Priscilla's Song)"}
+  - ahora: apple 1032027414 mx «Wolven Storm» (Marcin Przybyłowicz — Wolven Storm - Single) · yt 3ukCLUdzbUs «Wolven Storm (English)» (Marcin Przybylowicz - Topic, 198s) · yt 823yuWz0lto «The Witcher 3 Soundtrack - The Wolven Storm (Priscilla's song)» (Movie Edition Games, 201s)
+- `bioshock-welcome-to-rapture` (cambiada)
+  - antes: apple {term: 'Welcome to Rapture BioShock', match: 'Welcome to Rapture'}
+  - ahora: yt BbEunjRoj84 «Garry Schyman - The Ocean On His Shoulders - Welcome To Rapture» (BioshockOST, 217s) · yt sEFIZh_Zscc «Bioshock Soundtrack: 02 Welcome to Rapture» (firefeure, 113s) · yt 7DjpOuucA1k «BioShock OST | Welcome to Rapture» (VideoGameMusicTube, 111s)
+- `bioshock-infinite-will-the-circle-be-unb` (cambiada)
+  - antes: apple {term: 'Will the Circle Be Unbroken BioShock Infinite', match: 'Will the Circle Be Unbroken'}
+  - ahora: yt 9F1l6xXLSI0 «Bioshock Infinite OST - Will The Circle Be Unbroken (Full)» (BioshockInfiniteOST, 285s) · yt kKCgzwHz6CI «BioShock Infinite - Will The Circle Be Unbroken (Choir)» (Gardimuer, 345s) · yt LAIS-ADK6c8 «Bioshock Infinite OST - Will The Circle Be Unbroken (Choral version)» (BioshockInfiniteOST, 177s)
+- `devil-may-cry-3-devils-never-cry` (cambiada)
+  - antes: apple {term: "Devils Never Cry Devil May Cry 3 Dante's Awakening", match: 'Devils Never Cry'}
+  - ahora: apple 507028546 mx «"DEVILS NEVER CRY"(スタッフロール)» (Capcom Sound Team — Devil May Cry 3 (Original Soundtrack)) · yt xti_6Bzpa8A «Devil May Cry 3 - Devils Never Cry» (Peppos92, 321s) · yt lj-2-44G11A «Devil May Cry 3 - Devils Never Cry [HD]» (Ms.Dantessa, 366s)
+- `doom-eternal-only-thing-they-fear-i` (cambiada)
+  - antes: apple {term: 'The Only Thing They Fear Is You DOOM Eternal', match: 'The Only Thing They Fear Is You'}
+  - ahora: yt kpnW68Q8ltc «Doom Eternal OST - The Only Thing They Fear Is You (Mick Gordon) [Doom Eternal Theme]» (Revive Music, 413s) · yt ekY09M48Jvs «DOOM Eternal OST - The Only Thing They Fear Is You (Extended Intro)» (sv_jace, 488s)
+- `grand-theft-auto-main-theme` (cambiada)
+  - antes: apple {term: 'Main Theme Grand Theft Auto San Andreas', match: 'Main Theme'}
+  - ahora: yt JYy69qOJWoM «Grand Theft Auto Theme (Joyride by Da Shootaz)» (PLINGMAN777777, 168s) · yt 6hXohRub4WQ «GTA 1 (GTA I) - Main Theme | Da Shootaz - "Joyride"» (GTA Soundtracks, 157s) · yt KZqsEH99QYM «Grand Theft Auto - Main Theme [REMASTERED & EXTENDED]» (1DERER, 273s)
+- `max-payne-max-payne-theme` (cambiada)
+  - antes: apple {term: 'Max Payne Theme Max Payne', match: 'Max Payne Theme'}
+  - ahora: yt Cv0y0On8ZGQ «Max Payne - Main Theme» (dino_squared, 225s) · yt _17usOw7rbo «Max Payne [OST] #01 - Max Payne Theme» (GronkhOSTs, 224s) · yt 1f7jjys4BjQ «Max Payne (2001) - Main theme (HQ/HD - Audio enhanced)» (Uzublecker Database, 225s)
+- `tomb-raider-2013-tomb-raider-main-theme` (cambiada)
+  - antes: apple {term: 'Tomb Raider Main Theme Tomb Raider', match: 'Tomb Raider Main Theme'}
+  - ahora: apple 1471827136 mx «A Survivor Is Born» (Jason Graves — Tomb Raider (Original Soundtrack)) · apple 1731016011 mx «A Survivor Is Born» (Jason Graves — Tomb Raider (Original Soundtrack)) · yt iiVUXL6_REM «The Tomb Raider» (Jason Graves - Topic, 52s)
+- `call-of-duty-lullaby-for-a-dead-man` (cambiada)
+  - antes: apple {term: 'Lullaby for a Dead Man Call of Duty World at War', match: 'Lullaby for a Dead Man'}
+  - ahora: apple 1542638511 mx «Lullaby of a Deadman» (Kevin Sherwood, Corey Redgrift & Elena Siegman — Call of Duty: Black Ops – Zombies (Original Game Soundtrack)) · yt rDtDKuOGE40 «Lullaby for a Deadman - Verruckt song -  Elena Siegman - Lyrics [Official]» (Kevin Sherwood, 246s) · yt 8l8YPKI3fdw «Black Ops Zombies Soundtrack - "Lullaby Of A Dead Man"» (YouTube Radio, 237s)
+- `dota-2-dota-2-main-theme` (cambiada)
+  - antes: apple {term: 'Dota 2 Main Theme Dota 2', match: 'Dota 2 Main Theme'}
+  - ahora: apple 1891389281 mx «Dota2» (Valve Studio Orchestra — The Dota 2 (Official Soundtrack)) · yt FUSTuiSEKQk «Dota 2 Trailer Music - Main Menu Theme» (dota2updates, 113s) · yt eMQ1CzJYumA «Dota 2 - Main Menu Flute Theme» (Gagunga, 112s)
+- `honkai-star-rail-hope-is-the-thing-with` (cambiada)
+  - antes: apple {term: 'Hope Is the Thing With Feathers Honkai Star Rail', match: 'Hope Is the Thing With Feathers'}
+  - ahora: apple 1744859069 mx «Hope Is the Thing With Feathers» (Robin, HOYO-MiX & Chevy — INSIDE - EP) · yt l8-v7ZnNB_c «EP: Hope Is the Thing With Feathers | Honkai: Star Rail» (Honkai: Star Rail, 176s) · yt DlIgf0PUDo4 «Robin (Chevy) - Hope Is the Thing With Feathers | Honkai: Star Rail» (Noobaka, 230s)
+- `overwatch-2-overture` (cambiada)
+  - antes: apple {term: 'Overture Overwatch 2', match: 'Overture'}
+  - ahora: yt xco_LrRLYN4 «Overwatch Music - (01) Overture» (Warcraft Music | Congelatore, 115s) · yt LrA__QQ6RAE «Overture» (Release - Topic, 114s)
+- `team-fortress-2-team-fortress-2-main-t` (cambiada)
+  - antes: apple {term: 'Team Fortress 2 (Main Theme) Team Fortress 2', match: 'Team Fortress 2 (Main Theme)'}
+  - ahora: apple 1891390013 mx «Team Fortress 2» (Valve Studio Orchestra — The Orange Box (Original Soundtrack)) · apple 1891389644 mx «Team Fortress 2» (Valve Studio Orchestra — Fight Songs: The Music of Team Fortress 2) · yt PDM2qukzKwg «Team Fortress 2 Soundtrack | Main Theme» (OfficialTF2Wiki, 73s)
+- `team-fortress-2-rocket-jump-waltz` (cambiada)
+  - antes: apple {term: 'Rocket Jump Waltz Team Fortress 2', match: 'Rocket Jump Waltz'}
+  - ahora: apple 1891390015 mx «Rocket Jump Waltz» (Valve Studio Orchestra — The Orange Box (Original Soundtrack)) · yt kbdtBLD8Lbg «Team Fortress 2 Soundtrack | Rocket Jump Waltz» (OfficialTF2Wiki, 40s) · yt 2lKEJlDQrXU «Rocket Jump Waltz» (Valve Studio Orchestra - Topic, 40s)
 
 ### js/catalog-series.js
 
@@ -108,14 +204,126 @@ Commit de la fase 2, parte 1 (Series, Disney, Musicales y #13/#14 de Anime). En 
   - antes: buscaTv('The Who Who Are You', { match: ['Who Are You'], artist: ['The Who'], album_hint: ['Who Are You'] })
   - ahora: yt 2ysZk_KMXUE «Who Are You CSI Theme» (Vertigo Stardust, 41s) · yt Qh8SsaCWY-s «CSI Soundtrack Who Are You The Who» (MakerOfAllMusic1DS, 209s)
 
+### js/catalog-caricaturas.js
+
+- `toon-los-padrinos-magicos-los-padrinos-magicos-tema` (cambiada)
+  - antes: yt kFjexH-badI · yt AN02Z35CJgk «Los Padrinos Mágicos - Intro HD Latino: (2001)» (Intro TV, 52s)
+  - ahora: yt 8-GyMX9ynj0 «Intro Los Padrinos Mágicos [Nickelodeon Latam]» (TVMix y Caricaturas, 59s) · yt UNNwMc4OGBg «Intro Los Padrinos Mágicos - Versión NickToons (Latino PAL)» (Nomelas CN, 52s) · yt LZF8GErHgIk «Los padrinos magicos Intro (Español Latino) (Azteca 7 SD)» (Samsung Galaxy Tab A9+ 5G, 120s)
+- `toon-shuriken-school-tema` (cambiada)
+  - antes: yt WTQ_bj6T14g «Shuriken School Y El Mago Serie Animada Intro Español Latino Crossover» (José Lau sanchez, 138s)
+  - ahora: yt I6fEsMsgw8c «Shuriken School - Opening Credits - Season 1 (HD)» (Shuriken School, 45s) · yt jC4G22p6OhM «Shuriken School Theme & Credits» (CanadaToonFan, 79s)
+- `toon-un-show-mas-un-show-mas-entrada` (cambiada)
+  - antes: yt J7z20AVaYto · yt mDLqrtIV0UI
+  - ahora: yt mDLqrtIV0UI
+
 ### js/catalog-anime.js
 
+- `ani-cutie-honey-tema` (cambiada)
+  - antes: yt T_OgBnrrbYM
+  - ahora: apple 1886029868 mx «Cutie Honey» (Yoko Maekawa — Cutie Honey - Single) · yt jCX77Je16fk «Cutie Honey opening (1973)» (Tsuki Ginae, 90s)
+- `ani-el-perro-de-flandes` (cambiada)
+  - antes: yt tEQsSX7KqF8
+  - ahora: yt aTfRMH1RvR0 «El perro de Flandes (Inicio español)» (TaranWanderer2, 64s) · yt PlZ8Qy_jDTA «El Perro de Flandes (Serie de TV)» (Sones de niños, 180s) · yt 6heXBqWCdZU «El Perro de Flandes | Flanders no inu | Serie 1975 | Intro España» (Las Series De Nuestra Vida, 74s)
+- `ani-capitan-futuro-tema` (cambiada)
+  - antes: yt wS0Eu1uG0HA
+  - ahora: yt kL334m4a_j8 «Capitan Futuro - Opening Latino (Remasterizado - HD 1080p)» (Bellower666, 71s) · yt lfxr3KRGiAI «capitan memo capitan futuro cancion completa» (julio cesar soto andia, 209s)
+- `ani-hokuto-no-ken-ai-wo-torimodose` (cambiada)
+  - antes: yt pRFxpHSNxkA
+  - ahora: yt Ks3WAHefLDk «Hokuto No Ken Jap Opening. You Wa Shock» (KENSHIRO2486, 124s) · apple 433591372 mx «Ai Wo Torimodose!!» (クリスタルキング — Anison No. 1)
+- `ani-saint-seiya-soldier-dream` (cambiada)
+  - antes: yt JU90SmiYeuw · apple 1443831881 mx
+  - ahora: yt zaPh5P_Bd7w «Soldier Dream Español Latino Saint Seiya HD» (Robert Viviano Ordoñez, 82s) · yt rSK5gQVz9Hw «·MAUREN·「Soldier Dream ~Versión Full~ ★SAINT SEIYA OPENING 2★» (Anison Music, 218s)
+- `ani-anpanman-march` (cambiada)
+  - antes: yt D6xpDiCoAsg
+  - ahora: yt 5mLape5F0Fw «アンパンマンのマーチ （テレビサイズver.）［公式オープニングテーマ］» (VAP OFFICIAL MUSIC CHANNEL, 70s) · yt fTz2Rycn5Yc «Past Anpanman No March OP Comparison» (Kendall Nguyen, 73s)
 - `toon-dragon-ball-gt-mi-corazon-encantado` (cambiada)
   - antes: apple 1403477085 mx · yt wgZ-ATUGXDw «Dragon Ball GT Opening Latino Full HD 1080p Creditless [Mi Corazón Encantado]» (Sera Mun Doremi, 109s)
   - ahora: yt wgZ-ATUGXDw «Dragon Ball GT Opening Latino Full HD 1080p Creditless [Mi Corazón Encantado]» (Sera Mun Doremi, 109s) · yt dF4OwMSrnUQ «Dragon Ball GT - Mi Corazón Encantado - Broadcast Latino Remasterizado - TV Size - FLAC» (EL NOSTALGICO REMASTERIZADOR DE AUDIOS, 120s)
 - `toon-yu-yu-hakusho-sonrisa-explosiva` (cambiada)
   - antes: yt RncCJNOZLb0 «Yu Yu Hakusho Opening Latino - HD» (LeonMaverick1998, 90s) · apple 433591403 mx
   - ahora: yt RncCJNOZLb0 t=15 «Yu Yu Hakusho Opening Latino - HD» (LeonMaverick1998, 90s) · apple 433591403 mx
+- `ani-yu-gi-oh-kawaita-sakebi` (cambiada)
+  - antes: yt timXx6CBjoA · apple 1443831903 mx
+  - ahora: yt iQj61OQ1mFk «Yu-Gi-Oh! Op 0 (Kawaita Sakebi) 720p HD» (AnimeOPFreakHD, 70s) · yt jv3r7NKsLJ4 «Yu-Gi-Oh! Season 0 OP - Kawaita Sakebi (4K Remaster)» (4K ANIME PROJECT, 70s) · yt zh_beGMkfqU «Yu-Gi-Oh! Season 0 Opening Full - Kawaita Sakebi by The FIELD OF VIEW» (Sissie131, 250s)
+- `ani-sailor-moon-r-otome-no-policy` (cambiada)
+  - antes: yt 9NanowbK60Y · apple 1443831905 mx
+  - ahora: yt ChRj7FagQ8U «Otome no Policy» (Yoko Ishida - Topic, 196s) · yt IlgJ0OtzYPY «Sailor Moon R - Otome no Policy Textless Ending HD» (Panteater, 90s) · yt J9WDMHHXP1I «Sailor Moon R - Otome no Policy Subtitled Ending HD» (Panteater, 90s)
+- `ani-sailor-moon-sailor-star-song` (cambiada)
+  - antes: yt 8MD9HYC2d_I · apple 1443831907 mx
+  - ahora: yt UlkN58iORYE «Sailormoon Sailor Stars Opening» (cardcaptorzlove, 96s) · yt zk260b4pg8s «Sailor Moon Sailor Stars OST - Sailor Stars Theme (Full)» (Sailor Neptune, 232s) · yt gouuowD8P0o «Sailor Star Song» (Release - Topic, 234s)
+- `ani-digimon-adventure-02-target` (cambiada)
+  - antes: yt WmGy9CAap0w · apple 1443831910 mx
+  - ahora: yt GaD6f293CJ4 «Digimon 02 Opening Latino Full HD 1080p Creditless [Impacto Rojo]» (Sera Mun Doremi, 90s) · yt JjzOENA8N3c «Digimon 02 Opening v2 Español Laitno (Audio Remasterizado)» (JonathanMassey, 90s) · yt CDRMMG1WWlM «Digimon Adventure 02 - Opening Latino - Letra - Versión Completa - Impacto Rojo - Ricardo Silva» (YamakiSongs, 266s)
+- `ani-slayers-get-along` (cambiada)
+  - antes: yt YuwuE8vgYok
+  - ahora: yt C9oo-ZPB5oI «Slayers Opening 1995 HD 1080 (AI Upscale)» (imangos, 97s) · yt C4M5i1u6LUQ «Get along» (Megumi Hayashibara - Topic, 247s) · yt 7cq4BhxEOUs «The Slayers Opening 1 Get Along» (El tío Hikigaya 2.0, 242s)
+- `ani-slayers-next-give-a-reason` (cambiada)
+  - antes: yt ITyheBukJqI
+  - ahora: yt 5R9ZaIGgNnc «Slayers NEXT Opening 1996 HD 1080 (AI Upscale)» (imangos, 91s) · yt q1l-oY3hMng «Give a reason» (Megumi Hayashibara - Topic, 267s) · yt u_7vGJ1pqvU «Slayer Next Op Give a reason Megumi Hayashibara» (El tío Hikigaya 0, 259s)
+- `ani-digimon-adventure-butter-fly` (cambiada)
+  - antes: yt WmGy9CAap0w · apple 1443831959 mx
+  - ahora: yt jB7ecG_12x8 «Digimon Japanese Opening Theme- Butterfly (HD)» (Tys[Frv], 96s) · yt 0SMfWmEf8Wo «Koji Wada - Butter-Fly (Original version, High quality)» (paigib, 258s) · yt S4L399kgd1I «[Digimon] Butterfly» (Wizardwomon, 256s)
+- `ani-blue-seed-carnival-babel` (cambiada)
+  - antes: yt hwQVtycXyZw
+  - ahora: yt NArssqBPTvE «CARNIVAL・BABEL ～カルナバル・バベル～» (- Topic, 217s) · yt kqPxlbAseho «Blue Seed opening Full» (Иван Коробков, 212s) · yt ykbcsmjbUiQ «CARNIVAL･BABEL ／TAKADA BAND【OnVocal】» (catbrother, 215s)
+- `ani-yu-yu-hakusho-hohoemi-no-bakudan` (cambiada)
+  - antes: yt RncCJNOZLb0 «Yu Yu Hakusho Opening Latino - HD» (LeonMaverick1998, 90s) · apple 433591403 mx
+  - ahora: yt urZWmEgm72Q «Yu Yu Hakusho - Opening 1 | Hohoemi no Bakudan» (Crunchyroll, 97s) · yt XkIAyMFeuAU «Yu Yu Hakusho ; OP | Hohoemi No Bakudan | Sub. Español & Romaji. (AMV)» (valenka୨ৎ, 256s) · apple 433591403 mx
+- `ani-trigun-ht` (nueva)
+  - ahora: yt NPDWuip1k5o «H.T» (Tsuneo Imahori - Topic, 91s) · yt 4OxFSy8G5wk «Trigun - Opening HD» (Redthundereign, 90s) · apple 969897525 mx «H.T» (Dr.Donuts — Trigun the First Donuts (Original Soundtrack))
+- `toon-inuyasha-change-the-world` (cambiada) — composer: "V6" → "Gabriela Vega (versión latina)"
+  - antes: apple 1848248144 mx
+  - ahora: yt suU86VJt5a0 «InuYasha Opening 1 latino El Mundo He De Cambiar» (Lucy de Park, 97s) · yt PxQ9RdKxclQ «"El mundo he de cambiar". AMV Inuyasha Opening 1. Español latino |Full version|.» (Tecna na na, 292s) · apple 1848248144 mx
+- `ani-naruto-shippuden-hotaru-no-hikari` (cambiada)
+  - antes: yt 2upuBiEiXDk · apple 1089186525 mx
+  - ahora: yt BnxVkEivFXI «Naruto shippuden Op/  Opening  5 [4K 60 FSP]» (NakiriSaku ,, 93s) · yt IqKqNcW2-b4 «いきものがかり 『ホタルノヒカリ』Music Video» (いきものがかり, 250s) · apple 1089186525 mx
+- `ani-code-geass-r2-o2` (cambiada)
+  - antes: yt G8CFuZ9MseQ
+  - ahora: apple 1537396552 mx «O2» (Orange Range — O2 - Single) · yt HgGcePdMsDY «アニメ「コードギアス 反逆のルルーシュR2」オープニング／ORANGE RANGE「O2」» (コードギアスチャンネル CODEGEASS Channel, 90s) · yt n-3SrDQiFU4 «ORANGE RANGE『O2』MV» (ORANGE RANGE, 263s)
+- `ani-katekyo-hitman-reborn-boys-and-girls` (cambiada)
+  - antes: yt 7jfdgD-aW4A
+  - ahora: apple 278108067 mx «BOYS & GIRLS» (LM.C — OPENING&ENDING THEME SONGS) · yt 2T9-VHpkj_I «TVアニメ『家庭教師ヒットマンREBORN!』ノンクレジット映像 標的27-51｜オープニングテーマ「BOYS & GIRLS」LM.C» (『家庭教師ヒットマンREBORN!』アニメ公式, 90s) · yt hk7lp9IvkN0 «BOYS & GIRLS» (LoveKirbyAndGTR4, 248s)
+- `ani-inuyasha-i-am` (nueva)
+  - ahora: apple 1599256440 mx «I am» (hitomi — 犬夜叉 BEST ALBUM 主題歌集) · apple 1258423705 mx «I am» (hitomi — SELF PORTRAIT) · yt ZW5KZV0ALIM «I am» (hitomi - Topic, 285s) · yt NysOOSNS83o «Inuyasha - Op. 2 "I am" by Hitomi» (Zsolti Kun, 95s)
+- `ani-katekyo-hitman-reborn-88` (nueva)
+  - ahora: apple 280625539 mx «88» (LM.C — 88 - Single) · apple 326548345 mx «88» (LM.C — 家庭教師ヒットマンREBORN! KATEKYO HITMAN REBORN! OPENING&ENDING THEME SONGS2) · yt iKBDC9KSTpU «TVアニメ『家庭教師ヒットマンREBORN!』ノンクレジット映像 標的74-101｜オープニングテーマ「88」LM.C» (『家庭教師ヒットマンREBORN!』アニメ公式, 90s) · yt 0RGRl8olQHc «LM.C - 88  / Music Video (HD ver.)» (LM.C Official, 240s)
+- `ani-aot-jiyuu-no-tsubasa` (cambiada)
+  - antes: yt 8OkpRK2_gVs · apple 1529543138 mx
+  - ahora: apple 666788984 mx «自由の翼» (Linked Horizon — 自由への進撃 - Single) · yt PbWFpzi8C94 «Attack on Titan Opening 2 | Jiyuu no Tsubasa by Linked Horizon» (Crunchyroll, 89s) · yt iA7c314_SWM «Shingeki no Kyojin Opening 2 Full ver. Jiyuu no Tsubasa (please read description)» (CondeMauro, 329s)
+- `ani-aot-shinzou-wo-sasageyo` (cambiada)
+  - antes: yt StLX4kITjWU · apple 1529543140 mx
+  - ahora: apple 1219237974 mx «Shinzo wo Sasageyo! (TV Size)» (Linked Horizon — Shinzo wo Sasageyo! (TV Size) - Single) · apple 1229977150 mx «心臓を捧げよ!» (Linked Horizon — 進撃の軌跡) · yt LKP-vZvjbh8 «Attack on Titan Season 2 Opening | Shinzou wo Sasageyo!» (Crunchyroll, 89s) · yt CID-sYQNCew «Attack on Titan Season 2 - Official Opening Song - Shinzou wo Sasageyo by Linked Horizon» (animelab, 90s)
+- `ani-aot-red-swan` (cambiada)
+  - antes: yt 8OkpRK2_gVs · apple 1529543142 mx
+  - ahora: apple 1414197395 mx «Red Swan - TV Edit - (feat. HYDE)» (YOSHIKI — Red Swan - TV Edit - (feat. HYDE) - Single) · apple 1436825394 mx «Red Swan (feat. HYDE)» (YOSHIKI — Red Swan (feat. HYDE) - Single) · yt r1XE8ON8fos «"Red Swan" (Attack on Titan anime theme) - 進撃の巨人 Official Lyric Video YOSHIKI feat. HYDE» (Yoshiki, 269s) · yt MWSR17vEVBw «▶ Attack on Titan / Shingeki no Kyojin Season 3 OP •「Red Swan」 YOSHIKI feat. HYDE ᴴᴰ» (Zed Astaroth, 90s)
+- `ani-aot-shoukei-to-shikabane-no-michi` (cambiada)
+  - antes: yt StLX4kITjWU · apple 1529543144 mx
+  - ahora: apple 1459973237 mx «憧憬と屍の道 [TV Size]» (Linked Horizon — 憧憬と屍の道 [TV Size] - Single) · yt czJHHta2vz8 «憧憬と屍の道» (Linked Horizon - Topic, 276s) · yt 0dK7JgKivQM «Shingeki no kyojin opening 5 『Shoukei to Shikabane no Michi』 Linked Horizon [1080p]» (Towzeur, 90s)
+- `ani-mha-peace-sign` (cambiada)
+  - antes: yt yu0HjPzFYnY · apple 1653922190 mx
+  - ahora: apple 1537458310 mx «ピースサイン - Peace Sign» (Kenshi Yonezu — ピースサイン - Peace Sign - EP) · yt Q7w5IMyJ3pM «My Hero Academia Season 2 Opening 1 | Peace Sign» (Crunchyroll, 100s) · yt 9aJVr5tTTWk «米津玄師 - ピースサイン , Kenshi Yonezu - Peace Sign» (Kenshi Yonezu  米津玄師, 264s)
+- `ani-mha-sora-ni-utaeba` (cambiada)
+  - antes: yt yu0HjPzFYnY · apple 1537418118 mx
+  - ahora: yt 2ieT6Vh7jZE «My Hero Academia Season 2 Opening 2 | Sora ni Utaeba» (Crunchyroll, 100s) · yt eYxXpqdWkhY «Boku no Hero Academia season 2 Opening 2 Full || Sora ni Utaeba - Amazarashi || AMV sub español» (Johan-1454, 254s) · yt yiVbEZ7Da74 «Boku no Hero Academia Opening 3 Full | "Sora ni Utaeba" + Lyrics» (Shimazu, 216s)
+- `ani-mha-odd-future` (cambiada)
+  - antes: yt yu0HjPzFYnY · apple 1537381415 mx
+  - ahora: apple 1410776543 mx «Odd Future» (UVERworld — Odd Future - Single) · yt iBRH9Po3gw8 «My Hero Academia Opening 4 | ODD FUTURE by UVERworld» (Crunchyroll, 100s) · yt 0zLxFAlS29A «UVERworld 『ODD FUTURE』» (UVERworld Official YouTube Channel, 230s)
+- `ani-mha-polaris` (cambiada)
+  - antes: yt yu0HjPzFYnY · apple 1537418120 mx
+  - ahora: apple 1502966127 mx «Polaris» (BLUE ENCOUNT — POLARIS (World Edition) - EP) · yt 6OJxjAefwXc «My Hero Academia Opening 6 | Polaris by Blue Encount» (Crunchyroll, 100s) · yt Isb7Q4jEA04 «BLUE ENCOUNT 『ポラリス』Music Video【アニメ『僕のヒーローアカデミア』第4期オープニングテーマ】» (BLUE ENCOUNT Official YouTube Channel, 224s)
+- `ani-jujutsu-kaisen-vivid-vice` (cambiada)
+  - antes: yt GwaRztMaoY0 · apple 1543126650 mx
+  - ahora: apple 1546061848 mx «VIVID VICE» (Who-ya Extended — VIVID VICE - EP) · yt LFTE4W--Htk «JUJUTSU KAISEN Opening 2 | Vivid Vice» (Crunchyroll, 100s) · yt EU6I8TxU6Z4 «Who-ya Extended 「VIVID VICE」 MUSIC VIDEO TVアニメ『呪術廻戦』OPテーマ» (Who-ya Extended official YouTube channel, 200s)
+- `ani-jujutsu-kaisen-ao-no-sumika` (cambiada)
+  - antes: yt GwaRztMaoY0 · apple 1694294652 mx
+  - ahora: yt gcgKUcJKxIs «TVアニメ『呪術廻戦』第2期「懐玉・玉折」ノンクレジットOPムービー／OPテーマ：キタニタツヤ「青のすみか」｜毎週木曜夜11時56分～MBS/TBS系列全国28局にて放送中!!» (TOHO animation チャンネル, 90s) · yt zuoVd2QNxJo «青のすみか / キタニタツヤ - Where Our Blue Is / Tatsuya Kitani» (キタニタツヤ / Tatsuya Kitani, 201s) · apple 1694294652 mx
+- `ani-mob-psycho-100-iii-1` (cambiada)
+  - antes: yt Bw-5Lka7gPE
+  - ahora: yt umqzznKblJ0 «Mob Psycho 100 III Opening 3 | 1 by Mob Choir» (Crunchyroll, 100s) · yt PB4VaN_qV3Q «1» (MOB CHOIR - Topic, 230s) · yt xRIOnDruOZM «Mob Psycho 100 Season 3 - Opening Full『1』by MOB CHOIR» (AniMelody – Anime Music, 264s)
+- `ani-ranking-of-kings-boy` (nueva)
+  - ahora: apple 1588362375 mx «BOY» (King Gnu — BOY - Single) · apple 1716523690 mx «BOY» (King Gnu — THE GREATEST UNKNOWN) · yt s5SSAXK6bQE «Ranking of Kings - Opening Theme - BOY» (Crunchyroll, 110s) · yt PN7b30letP4 «Ranking of Kings - Opening 1 | BOY» (Crunchyroll FR, 90s)
+- `ani-ranking-of-kings-naked-hero` (nueva)
+  - ahora: apple 1600223385 mx «裸の勇者» (Vaundy — 裸の勇者 - EP) · apple 1714599986 mx «裸の勇者» (Vaundy — replica) · yt dWZAH5w8jkQ «Ranking of Kings Opening 2 | Naked Hero by Vaundy» (Crunchyroll, 100s) · yt FT0GKCuSaW0 «裸の勇者 / Vaundy：MUSIC VIDEO» (Vaundy, 201s)
 
 ### js/catalog-disney.js
 
@@ -167,8 +375,6 @@ Commit de la fase 2, parte 1 (Series, Disney, Musicales y #13/#14 de Anime). En 
 
 ## 5. Pendiente por aplicar
 
-- **Issues restantes:** #10 (`toon-los-padrinos-magicos-los-padrinos-magicos-tema`), #12 (`toon-inuyasha-change-the-world`), #15 (confirmación de IDs inventados en Caricaturas), #16 (`ani-blue-seed-carnival-babel`), #18 (`toon-shuriken-school-tema`).
-- **Muertas restantes (16):** 15 de Videojuegos (`js/catalog.js`) y 1 de Anime (`ani-hokuto-no-ken-ai-wo-torimodose`). Ya buscadas y comprobadas en `scripts/evidencia-v2.1.json`.
-- **Dudosas y retiradas de Fase 2:** 15 covers de Videojuegos, 27 de Anime + 5 retiradas de Anime, 35 de Caricaturas + 11 retiradas de Caricaturas (búsquedas ya terminadas en `_tmp-phase2-part3a.json` y `_tmp-phase2-part3b.json`).
-- **Fase 3 (Expansión +20 % por categoría):** Series (+70 hasta 192), Caricaturas (+65), Anime (+52), Disney (+21), Musicales (+47), Videojuegos (+61), Sagas (+37).
+- **Caricaturas (Fase 2, parte 3):** aplicar las 35 pistas de Caricaturas con fuente equivocada/duplicada y reinsertar las 11 pistas retiradas de Caricaturas (búsquedas y evidencias ya terminadas en `scripts/_tmp-phase2-part3b.json`).
+- **Fase 3 (Expansión +20 % por categoría):** Series (+70 hasta 192), Caricaturas (+65, contando las recuperadas), Anime (+52, contando las 5 recuperadas), Disney (+21), Musicales (+47), Videojuegos (+61), Sagas (+37).
 - **Fase 4:** Auditoría final `audit-red.js todos` con 0 muertas, verificación en navegador y actualización de versión a 2.1.

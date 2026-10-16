@@ -14,3 +14,7 @@ Pistas cuya versión o segundo de inicio solo se puede confirmar escuchando. Abr
 | `mus-rocky-horror-time-warp` (respaldo YouTube) | El video dura 255 s y es la escena de la película: confirmar que la canción empieza pronto. | https://www.youtube.com/watch?v=u1O2-oFmWXM |
 | `tv-el-hombre-nuclear-the-six-million-dollar-man-theme` | El primer video trae la introducción hablada («Steve Austin, astronauta…») antes de la música. | https://www.youtube.com/watch?v=0CPJ-AbCsT8 |
 | `tv-alf-alf-theme` | El primer video es una recopilación de entradas (123 s): confirmar que la primera es la conocida. | https://www.youtube.com/watch?v=0I_3bu9zgDk |
+| `toon-inuyasha-change-the-world` (#12) | Opening 1 en español latino («El mundo he de cambiar», Gabriela Vega). Confirmar que arranca directo. | https://www.youtube.com/watch?v=suU86VJt5a0 · respaldo https://www.youtube.com/watch?v=PxQ9RdKxclQ |
+| `ani-blue-seed-carnival-babel` (#16) | Tema oficial en `- Topic` (`NArssqBPTvE`): confirmar que la música empieza de inmediato. | https://www.youtube.com/watch?v=NArssqBPTvE |
+| `toon-los-padrinos-magicos-los-padrinos-magicos-tema` (#10) | Entrada latina de Nickelodeon (`8-GyMX9ynj0`). | https://www.youtube.com/watch?v=8-GyMX9ynj0 |
+| `toon-shuriken-school-tema` (#18) | Entrada oficial del canal *Shuriken School* (`I6fEsMsgw8c`). | https://www.youtube.com/watch?v=I6fEsMsgw8c |

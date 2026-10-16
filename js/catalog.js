@@ -31,7 +31,7 @@
     {
       id: 'acnh-main', cat: 'nintendo', franchise: 'Animal Crossing', game: 'Animal Crossing: New Horizons',
       title: 'Main Theme', composer: 'Yasuaki Iwata y equipo', year: 2020, platform: 'Switch',
-      sources: [yt('lI_C1Bjdqn4'), yt('dZQez9N4VRg')],
+      sources: [yt('dZQez9N4VRg')],
     },
     {
       id: 'banjo-kazooie-spiral-mountain', cat: 'nintendo', franchise: 'Banjo-Kazooie', game: 'Banjo-Kazooie',
@@ -323,7 +323,7 @@
     {
       id: 'age-of-empires-ii-shamburger', cat: 'xbox', franchise: 'Age of Empires', game: 'Age of Empires II: The Age of Kings',
       title: 'Shamburger', composer: 'Stephen Rippy', year: 1999, platform: 'PC',
-      sources: [apple({ term: 'Shamburger Age of Empires II  The Age of Kings', match: 'Shamburger' })],
+      sources: [yt('CPhJWlURRVM'), yt('ScjlBHY_pd4'), yt('WWChiYoTSNI')],
     },
     {
       id: 'alan-wake-children-of-the-elder', cat: 'xbox', franchise: 'Alan Wake', game: 'Alan Wake',
@@ -421,7 +421,7 @@
     {
       id: 'ori-and-the-will-of-th-ori-and-the-will-of-th', cat: 'xbox', franchise: 'Ori', game: 'Ori and the Will of the Wisps',
       title: 'Ori and the Will of the Wisps', composer: 'Gareth Coker', year: 2020, platform: 'Xbox One',
-      sources: [apple({ term: 'Ori and the Will of the Wisps Ori and the Will of the Wisps', match: 'Ori and the Will of the Wisps' })],
+      sources: [apple({ song: 1500849133, country: 'mx' }), yt('Qh3NnE7Ye2M')],
     },
     {
       id: 'psychonauts-milla-s-dance-party', cat: 'xbox', franchise: 'Psychonauts', game: 'Psychonauts',
@@ -431,12 +431,12 @@
     {
       id: 'sea-of-thieves-grogg-mayles', cat: 'xbox', franchise: 'Sea of Thieves', game: 'Sea of Thieves',
       title: 'Grogg Mayles', composer: 'Robin Beanland', year: 2018, platform: 'Xbox One / PC',
-      sources: [apple({ term: 'Grogg Mayles Sea of Thieves', match: 'Grogg Mayles' })],
+      sources: [yt('Dzio5OGBJ3o'), yt('qy9DeUihR6s'), yt('-p04mhYaS1Y')],
     },
     {
       id: 'starfield-starfield', cat: 'xbox', franchise: 'Starfield', game: 'Starfield',
       title: 'Starfield', composer: 'Inon Zur', year: 2023, platform: 'Xbox Series X|S / PC',
-      sources: [apple({ term: 'Starfield Starfield', match: 'Starfield' })],
+      sources: [yt('Bgmsi5cM-gA'), yt('aICTLaYteF0'), yt('QGzEpcl42SA')],
     },
 
     /* ───────────── PlayStation (34) ───────────── */
@@ -525,7 +525,7 @@
     {
       id: 'horizon-zero-dawn-aloy-s-theme', cat: 'playstation', franchise: 'Horizon', game: 'Horizon Zero Dawn',
       title: "Aloy's Theme", composer: 'Joris de Man', year: 2017, platform: 'PS4',
-      sources: [apple({ term: "Aloy's Theme Horizon Zero Dawn", match: "Aloy's Theme" }), yt('_w9B7uwLZeI'), yt('zb_fDZKwT4E'), yt('vcccPoLY3mM')],
+      sources: [apple({ song: 1678659568, country: 'mx' }), yt('Ahjcv5fGH5o'), yt('_w9B7uwLZeI')],
     },
     {
       id: 'ico-you-were-there', cat: 'playstation', franchise: 'ICO', game: 'ICO',
@@ -948,7 +948,7 @@
     {
       id: 'undertale-megalovania', cat: 'indie', franchise: 'Undertale', game: 'Undertale',
       title: 'Megalovania', composer: 'Toby Fox', year: 2015, platform: 'PC',
-      sources: [apple({ song: 1528217897 }), apple({ album: 1528217465, match: 'Megalovania' }), apple({ album: 1119806348, match: 'Megalovania' })],
+      sources: [apple({ song: 6813343186, country: 'mx' }), yt('KK3KXAECte4'), yt('0FCvzsVlXpQ')],
     },
     {
       id: 'undertale-hopes-and-dreams', cat: 'indie', franchise: 'Undertale', game: 'Undertale',
@@ -975,7 +975,7 @@
     {
       id: 'castlevania-vampire-killer', cat: 'retro', franchise: 'Castlevania', game: 'Castlevania',
       title: 'Vampire Killer', composer: 'Kinuyo Yamashita', year: 1986, platform: 'NES',
-      sources: [apple({ term: 'Vampire Killer Castlevania', match: 'Vampire Killer' }), yt('_Kuh_OjCpMs'), yt('btgi3TPL3AE')],
+      sources: [apple({ song: 6813088759, country: 'mx' }), yt('btgi3TPL3AE'), yt('kASEUfAN5pk')],
     },
     {
       id: 'castlevania-ii-bloody-tears', cat: 'retro', franchise: 'Castlevania', game: "Castlevania II: Simon's Quest",
@@ -995,7 +995,7 @@
     {
       id: 'contra-jungle', cat: 'retro', franchise: 'Contra', game: 'Contra',
       title: 'Jungle', composer: 'Kiyohiro Sada, Hidenori Maezawa', year: 1988, platform: 'NES',
-      sources: [apple({ term: 'Jungle Contra', match: 'Jungle' }), yt('O04bPRzqEEk'), yt('q3kRcj74DPI')],
+      sources: [yt('O04bPRzqEEk'), yt('5UqXbEwqwF8'), yt('o_CEXj45-Lk')],
     },
     {
       id: 'doom-1993-at-doom-s-gate', cat: 'retro', franchise: 'DOOM', game: 'DOOM (1993)',
@@ -1147,7 +1147,7 @@
     {
       id: 'chrono-cross-chrono-cross-time-s-sc', cat: 'rpg', franchise: 'Chrono Trigger', game: 'Chrono Cross',
       title: "CHRONO CROSS ~Time's Scar~", composer: 'Yasunori Mitsuda', year: 1999, platform: 'PlayStation',
-      sources: [apple({ term: "CHRONO CROSS ~Time's Scar~ Chrono Cross", match: "CHRONO CROSS ~Time's Scar~" })],
+      sources: [apple({ song: 1478581545, country: 'mx' }), yt('40BZyMdDG4s'), yt('180sjeAMKPE')],
     },
     {
       id: 'clair-obscur-lumiere', cat: 'rpg', franchise: 'Clair Obscur', game: 'Clair Obscur: Expedition 33',
@@ -1187,7 +1187,7 @@
     {
       id: 'dragon-quest-overture', cat: 'rpg', franchise: 'Dragon Quest', game: 'Dragon Quest',
       title: 'Overture', composer: 'Koichi Sugiyama', year: 1986, platform: 'NES / Famicom',
-      sources: [apple({ term: 'Overture Dragon Quest', match: 'Overture' })],
+      sources: [apple({ song: 1824660296, country: 'mx' }), apple({ song: 1824661465, country: 'mx' }), yt('MATZR7LGECQ')],
     },
     {
       id: 'er-main', cat: 'rpg', franchise: 'Elden Ring', game: 'Elden Ring',
@@ -1267,12 +1267,12 @@
     {
       id: 'kingdom-hearts-simple-and-clean', cat: 'rpg', franchise: 'Kingdom Hearts', game: 'Kingdom Hearts',
       title: 'Simple And Clean', composer: 'Utada Hikaru', year: 2002, platform: 'PlayStation 2',
-      sources: [apple({ term: 'Simple And Clean Kingdom Hearts', match: 'Simple And Clean' }), yt('_Hl3W4HB254')],
+      sources: [apple({ song: 1444573376, country: 'mx' }), yt('0nKizH5TV_g'), yt('N0vhw4dfMRg')],
     },
     {
       id: 'kingdom-hearts-ii-sanctuary', cat: 'rpg', franchise: 'Kingdom Hearts', game: 'Kingdom Hearts II',
       title: 'Sanctuary', composer: 'Utada Hikaru', year: 2005, platform: 'PlayStation 2',
-      sources: [apple({ term: 'Sanctuary Kingdom Hearts II', match: 'Sanctuary' }), yt('z11j5hDvA9I'), yt('P1YL4FkCtUw')],
+      sources: [apple({ song: 1444982815, country: 'mx' }), yt('im5tc4fcg5w'), yt('HTUq3Ik1GHM')],
     },
     {
       id: 'kingdom-hearts-iii-don-t-think-twice', cat: 'rpg', franchise: 'Kingdom Hearts', game: 'Kingdom Hearts III',
@@ -1292,7 +1292,7 @@
     {
       id: 'monster-hunter-proof-of-a-hero', cat: 'rpg', franchise: 'Monster Hunter', game: 'Monster Hunter: World',
       title: 'Proof of a Hero', composer: 'Masato Kohda', year: 2018, platform: 'PS4 / Xbox One / PC',
-      sources: [apple({ term: 'Proof of a Hero Monster Hunter  World', match: 'Proof of a Hero' })],
+      sources: [apple({ song: 1336357865, country: 'mx' }), apple({ song: 1336360271, country: 'mx' }), yt('nn6qY2sXLjE')],
     },
     {
       id: 'nier-automata-weight-of-the-world-en', cat: 'rpg', franchise: 'NieR', game: 'NieR:Automata',
@@ -1317,13 +1317,13 @@
     {
       id: 'persona-3-mass-destruction', cat: 'rpg', franchise: 'Persona', game: 'Persona 3',
       title: 'Mass Destruction', composer: 'Shoji Meguro', year: 2006, platform: 'PlayStation 2',
-      sources: [apple({ term: 'Mass Destruction Persona 3', match: 'Mass Destruction' })],
+      sources: [yt('S0GgBcNKK5g'), yt('6jFaoLrLzd4'), yt('Q6q6pDC6Mas')],
     },
     {
       id: 'persona-4-reach-out-to-the-truth', cat: 'rpg', franchise: 'Persona', game: 'Persona 4',
       title: 'Reach Out To The Truth', composer: 'Shoji Meguro', year: 2008, platform: 'PlayStation 2',
       aka: ['Persona 4 Golden'],
-      sources: [apple({ term: 'Reach Out To The Truth Persona 4', match: 'Reach Out To The Truth' })],
+      sources: [yt('A9zlXUSuUeo'), yt('11nM7lkCkhk'), yt('5cbjrTNSq0I')],
     },
     {
       id: 'p5-lwc', cat: 'rpg', franchise: 'Persona', game: 'Persona 5',
@@ -1346,7 +1346,7 @@
     {
       id: 'sekiro-shadows-die-twi-isshin-the-sword-saint', cat: 'rpg', franchise: 'Sekiro', game: 'Sekiro: Shadows Die Twice',
       title: 'Isshin, the Sword Saint', composer: 'Yuka Kitamura', year: 2019, platform: 'PS4 / Xbox One / PC',
-      sources: [apple({ term: 'Isshin, the Sword Saint Sekiro  Shadows Die Twice', match: 'Isshin, the Sword Saint' })],
+      sources: [yt('bfNCB9fhvIQ'), yt('h6zaG46LeD4')],
     },
     {
       id: 'elder-scrolls-iv-reign-of-the-septims', cat: 'rpg', franchise: 'The Elder Scrolls', game: 'The Elder Scrolls IV: Oblivion',
@@ -1376,7 +1376,7 @@
     {
       id: 'witcher-3-wolven-storm-priscilla', cat: 'rpg', franchise: 'The Witcher', game: 'The Witcher 3: Wild Hunt',
       title: "The Wolven Storm (Priscilla's Song)", composer: 'Marcin Przybyłowicz', year: 2015, platform: 'PC / PS4 / Xbox One',
-      sources: [apple({ term: "The Wolven Storm (Priscilla's Song) The Witcher 3  Wild Hunt", match: "The Wolven Storm (Priscilla's Song)" })],
+      sources: [apple({ song: 1032027414, country: 'mx' }), yt('3ukCLUdzbUs'), yt('823yuWz0lto')],
     },
 
     /* ───────────── Acción y aventura (31) ───────────── */
@@ -1405,17 +1405,17 @@
     {
       id: 'bioshock-welcome-to-rapture', cat: 'accion', franchise: 'BioShock', game: 'BioShock',
       title: 'Welcome to Rapture', composer: 'Garry Schyman', year: 2007, platform: 'PC / Xbox 360',
-      sources: [apple({ term: 'Welcome to Rapture BioShock', match: 'Welcome to Rapture' })],
+      sources: [yt('BbEunjRoj84'), yt('sEFIZh_Zscc'), yt('7DjpOuucA1k')],
     },
     {
       id: 'bioshock-infinite-will-the-circle-be-unb', cat: 'accion', franchise: 'BioShock', game: 'BioShock Infinite',
       title: 'Will the Circle Be Unbroken', composer: 'Courtnee Draper y Troy Baker', year: 2013, platform: 'PC / PS3 / Xbox 360',
-      sources: [apple({ term: 'Will the Circle Be Unbroken BioShock Infinite', match: 'Will the Circle Be Unbroken' })],
+      sources: [yt('9F1l6xXLSI0'), yt('kKCgzwHz6CI'), yt('LAIS-ADK6c8')],
     },
     {
       id: 'devil-may-cry-3-devils-never-cry', cat: 'accion', franchise: 'Devil May Cry', game: "Devil May Cry 3: Dante's Awakening",
       title: 'Devils Never Cry', composer: 'Tetsuya Shibata', year: 2005, platform: 'PlayStation 2',
-      sources: [apple({ term: "Devils Never Cry Devil May Cry 3  Dante's Awakening", match: 'Devils Never Cry' })],
+      sources: [apple({ song: 507028546, country: 'mx' }), yt('xti_6Bzpa8A'), yt('lj-2-44G11A')],
     },
     {
       id: 'devil-may-cry-5-devil-trigger', cat: 'accion', franchise: 'Devil May Cry', game: 'Devil May Cry 5',
@@ -1440,12 +1440,12 @@
     {
       id: 'doom-eternal-only-thing-they-fear-i', cat: 'accion', franchise: 'DOOM', game: 'DOOM Eternal',
       title: 'The Only Thing They Fear Is You', composer: 'Mick Gordon', year: 2020, platform: 'PC / PS4 / Xbox One',
-      sources: [apple({ term: 'The Only Thing They Fear Is You DOOM Eternal', match: 'The Only Thing They Fear Is You' })],
+      sources: [yt('kpnW68Q8ltc'), yt('ekY09M48Jvs')],
     },
     {
       id: 'grand-theft-auto-main-theme', cat: 'accion', franchise: 'Grand Theft Auto', game: 'Grand Theft Auto: San Andreas',
       title: 'Main Theme', composer: 'Michael Hunter', year: 2004, platform: 'PlayStation 2',
-      sources: [apple({ term: 'Main Theme Grand Theft Auto  San Andreas', match: 'Main Theme' })],
+      sources: [yt('JYy69qOJWoM'), yt('6hXohRub4WQ'), yt('KZqsEH99QYM')],
     },
     {
       id: 'grand-theft-auto-iv-soviet-connection', cat: 'accion', franchise: 'Grand Theft Auto', game: 'Grand Theft Auto IV',
@@ -1465,7 +1465,7 @@
     {
       id: 'max-payne-max-payne-theme', cat: 'accion', franchise: 'Max Payne', game: 'Max Payne',
       title: 'Max Payne Theme', composer: 'Kärtsy Hatakka y Kimmo Kajasto', year: 2001, platform: 'PC / PS2 / Xbox',
-      sources: [apple({ term: 'Max Payne Theme Max Payne', match: 'Max Payne Theme' })],
+      sources: [yt('Cv0y0On8ZGQ'), yt('_17usOw7rbo'), yt('1f7jjys4BjQ')],
     },
     {
       id: 'metal-gear-rising-rules-of-nature', cat: 'accion', franchise: 'Metal Gear', game: 'Metal Gear Rising: Revengeance',
@@ -1535,7 +1535,7 @@
     {
       id: 'tomb-raider-2013-tomb-raider-main-theme', cat: 'accion', franchise: 'Tomb Raider', game: 'Tomb Raider (2013)',
       title: 'Tomb Raider Main Theme', composer: 'Jason Graves', year: 2013, platform: 'PC / PS3 / Xbox 360',
-      sources: [apple({ term: 'Tomb Raider Main Theme Tomb Raider', match: 'Tomb Raider Main Theme' })],
+      sources: [apple({ song: 1471827136, country: 'mx' }), apple({ song: 1731016011, country: 'mx' }), yt('iiVUXL6_REM')],
     },
 
     /* ───────────── Online y multijugador (26) ───────────── */
@@ -1557,7 +1557,7 @@
     {
       id: 'call-of-duty-lullaby-for-a-dead-man', cat: 'online', franchise: 'Call of Duty', game: 'Call of Duty: World at War',
       title: 'Lullaby for a Dead Man', composer: 'Kevin Sherwood (feat. Elena Siegman)', year: 2008, platform: 'PS3 / Xbox 360 / PC',
-      sources: [apple({ term: 'Lullaby for a Dead Man Call of Duty  World at War', match: 'Lullaby for a Dead Man' })],
+      sources: [apple({ song: 1542638511, country: 'mx' }), yt('rDtDKuOGE40'), yt('8l8YPKI3fdw')],
     },
     {
       id: 'call-of-duty-115', cat: 'online', franchise: 'Call of Duty', game: 'Call of Duty: Black Ops',
@@ -1572,7 +1572,7 @@
     {
       id: 'dota-2-dota-2-main-theme', cat: 'online', franchise: 'Dota 2', game: 'Dota 2',
       title: 'Dota 2 Main Theme', composer: 'Jason Hayes, Tim Larkin', year: 2013, platform: 'PC',
-      sources: [apple({ term: 'Dota 2 Main Theme Dota 2', match: 'Dota 2 Main Theme' })],
+      sources: [apple({ song: 1891389281, country: 'mx' }), yt('FUSTuiSEKQk'), yt('eMQ1CzJYumA')],
     },
     {
       id: 'fall-guys-everybody-falls-fall-g', cat: 'online', franchise: 'Fall Guys', game: 'Fall Guys',
@@ -1602,7 +1602,7 @@
     {
       id: 'honkai-star-rail-hope-is-the-thing-with', cat: 'online', franchise: 'Honkai: Star Rail', game: 'Honkai: Star Rail',
       title: 'Hope Is the Thing With Feathers', composer: 'HOYO-MiX (feat. Chevy)', year: 2023, platform: 'PC / PS5 / Mobile',
-      sources: [apple({ term: 'Hope Is the Thing With Feathers Honkai  Star Rail', match: 'Hope Is the Thing With Feathers' })],
+      sources: [apple({ song: 1744859069, country: 'mx' }), yt('l8-v7ZnNB_c'), yt('DlIgf0PUDo4')],
     },
     {
       id: 'league-of-legends-legends-never-die', cat: 'online', franchise: 'League of Legends', game: 'League of Legends',
@@ -1622,7 +1622,7 @@
     {
       id: 'overwatch-2-overture', cat: 'online', franchise: 'Overwatch', game: 'Overwatch 2',
       title: 'Overture', composer: 'Sam Cardon', year: 2022, platform: 'PC / PS5 / Xbox Series / Switch',
-      sources: [apple({ term: 'Overture Overwatch 2', match: 'Overture' })],
+      sources: [yt('xco_LrRLYN4'), yt('LrA__QQ6RAE')],
     },
     {
       id: 'runescape-sea-shanty-2', cat: 'online', franchise: 'RuneScape', game: 'RuneScape',
@@ -1632,12 +1632,12 @@
     {
       id: 'team-fortress-2-team-fortress-2-main-t', cat: 'online', franchise: 'Team Fortress 2', game: 'Team Fortress 2',
       title: 'Team Fortress 2 (Main Theme)', composer: 'Mike Morasky', year: 2007, platform: 'PC',
-      sources: [apple({ term: 'Team Fortress 2 (Main Theme) Team Fortress 2', match: 'Team Fortress 2 (Main Theme)' })],
+      sources: [apple({ song: 1891390013, country: 'mx' }), apple({ song: 1891389644, country: 'mx' }), yt('PDM2qukzKwg')],
     },
     {
       id: 'team-fortress-2-rocket-jump-waltz', cat: 'online', franchise: 'Team Fortress 2', game: 'Team Fortress 2',
       title: 'Rocket Jump Waltz', composer: 'Mike Morasky', year: 2007, platform: 'PC',
-      sources: [apple({ term: 'Rocket Jump Waltz Team Fortress 2', match: 'Rocket Jump Waltz' })],
+      sources: [apple({ song: 1891390015, country: 'mx' }), yt('kbdtBLD8Lbg'), yt('2lKEJlDQrXU')],
     },
     {
       id: 'valorant-die-for-you', cat: 'online', franchise: 'Valorant', game: 'Valorant',

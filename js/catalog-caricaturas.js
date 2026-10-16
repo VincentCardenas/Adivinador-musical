@@ -995,7 +995,7 @@
       id: 'toon-los-padrinos-magicos-los-padrinos-magicos-tema', cat: 'toon-00s', franchise: 'Los Padrinos Mágicos', game: 'Los Padrinos Mágicos',
       title: 'Los Padrinos Mágicos (tema)', composer: 'Ron Jones', year: 2001, platform: 'Nickelodeon',
       aka: ['The Fairly OddParents'],
-      sources: [yt('kFjexH-badI'), yt('AN02Z35CJgk')],
+      sources: [yt('8-GyMX9ynj0'), yt('UNNwMc4OGBg'), yt('LZF8GErHgIk')],
     },
     {
       id: 'toon-danny-phantom-danny-phantom-theme', cat: 'toon-00s', franchise: 'Danny Phantom', game: 'Danny Phantom',
@@ -1226,9 +1226,9 @@
     },
     {
       id: 'toon-shuriken-school-tema', cat: 'toon-00s', franchise: "Shuriken School", game: "Shuriken School",
-      title: "Shuriken School (tema latino)", composer: "Tom Webster", year: 2006, platform: "Xilam",
+      title: "Shuriken School (tema)", composer: "Tom Webster", year: 2006, platform: "Xilam",
       aka: ["Shuriken School"],
-      sources: [yt('WTQ_bj6T14g')],
+      sources: [yt('I6fEsMsgw8c'), yt('jC4G22p6OhM')],
     },
     {
       id: 'toon-martin-mystery-tema', cat: 'toon-00s', franchise: "Martin Mystery", game: "Martin Mystery",
@@ -1454,7 +1454,7 @@
       id: 'toon-un-show-mas-un-show-mas-entrada', cat: 'toon-1014', franchise: 'Un show más', game: 'Un show más',
       title: 'Un show más (entrada)', year: 2010, platform: 'Cartoon Network',
       aka: ['Regular Show'],
-      sources: [yt('J7z20AVaYto'), yt('mDLqrtIV0UI')],
+      sources: [yt('mDLqrtIV0UI')],
     },
     {
       id: 'toon-kung-fu-panda-la-leyenda-de-po-kung-fu-panda-entrada', cat: 'toon-1014', franchise: 'Kung Fu Panda: La leyenda de Po', game: 'Kung Fu Panda: La leyenda de Po',
