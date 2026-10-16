@@ -517,11 +517,15 @@ Incluye:
 | **Disney** | `dis-2010s` | 16 | +4 | +4 | **20** | ✅ Completado |
 | **Disney** | `dis-2020s` | 8 | +5 | +5 | **13** | ✅ Completado |
 | **Disney (Total)** | — | **71** | **+21** | **+21** | **92** | ✅ **Meta lograda (92)** |
+| **Musicales** | `mus-clasicos` | 56 | +12 | +12 (3 `es`) | **68** | ✅ Completado |
+| **Musicales** | `mus-7080` | 61 | +13 | +13 | **74** | ✅ Completado |
+| **Musicales** | `mus-9000` | 52 | +11 | +11 (2 `es`) | **63** | ✅ Completado |
+| **Musicales** | `mus-10s` | 53 | +11 | +11 (3 `es`) | **64** | ✅ Completado |
+| **Musicales (Total)** | — | **222** | **+47** | **+47** | **269** | ✅ **Meta lograda (269: 239 orig / 30 es)** |
 
 ## 6. Pendiente por aplicar (resto de Fase 3 y Fase 4)
 
 - **Fase 3 (Expansión +20 % por categoría):**
-  - Musicales: +47 pistas nuevas, con al menos 3 en `mus-clasicos` y 3 en `mus-10s` en español (`lang: 'es'`) (meta final: 269 pistas).
   - Caricaturas: +54 adicionales (+11 ya recuperadas en Fase 2 = +65 total; meta final: 361 pistas).
   - Anime: +47 adicionales (+5 ya recuperadas en Fase 2 = +52 total; meta final: 303 pistas).
   - Videojuegos: +61 pistas nuevas (meta final: 342 pistas).

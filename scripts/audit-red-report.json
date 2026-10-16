@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T23:06:43.598Z",
+  "generatedAt": "2026-10-16T23:12:19.346Z",
   "resumen": {
     "series": {
       "total": 192,
@@ -44,9 +44,9 @@
       "muertas": 0
     },
     "musicales": {
-      "total": 222,
-      "ok": 220,
-      "dudosas": 2,
+      "total": 269,
+      "ok": 263,
+      "dudosas": 6,
       "dudosasRevisadas": 0,
       "muertas": 0
     }
@@ -9860,14 +9860,118 @@
     },
     "musicales": {
       "resumen": {
-        "total": 222,
-        "ok": 220,
-        "dudosas": 2,
+        "total": 269,
+        "ok": 263,
+        "dudosas": 6,
         "dudosasRevisadas": 0,
         "muertas": 0
       },
       "muertas": [],
       "dudosas": [
+        {
+          "id": "mus-sonrisas-do-re-mi-es",
+          "cat": "mus-clasicos",
+          "franchise": "The Sound of Music",
+          "game": "Do-Re-Mi (español)",
+          "title": "Do-Re-Mi",
+          "composer": "Silvia Luchetti y elenco",
+          "estado": "dudosa",
+          "revisada": null,
+          "motivos": [
+            "Franquicia con varias pistas pero la fuente no coincide con título/compositor/entrega específica (\"Sonrisas y Lágrimas - DO RE MI (Reparto Gira 2011-2012)\" · \"BroadwayWorld Spain - musicales y teatro musical\")"
+          ],
+          "primeraFuente": {
+            "kind": "yt",
+            "id": "SnL94BLgUkE",
+            "start": 0,
+            "ok": true,
+            "oembedStatus": 200,
+            "playabilityStatus": "OK",
+            "playableInEmbed": true,
+            "reason": "OK",
+            "title": "Sonrisas y Lágrimas - DO RE MI (Reparto Gira 2011-2012)",
+            "channel": "BroadwayWorld Spain - musicales y teatro musical",
+            "lengthSeconds": 396,
+            "loudnessDb": 2.4799995,
+            "checkedWatchPage": true,
+            "checkedAt": "2026-10-16T23:08:04.614Z"
+          },
+          "fuentes": [
+            {
+              "kind": "yt",
+              "id": "SnL94BLgUkE",
+              "start": 0,
+              "ok": true,
+              "oembedStatus": 200,
+              "playabilityStatus": "OK",
+              "playableInEmbed": true,
+              "reason": "OK",
+              "title": "Sonrisas y Lágrimas - DO RE MI (Reparto Gira 2011-2012)",
+              "channel": "BroadwayWorld Spain - musicales y teatro musical",
+              "lengthSeconds": 396,
+              "loudnessDb": 2.4799995,
+              "checkedWatchPage": true,
+              "checkedAt": "2026-10-16T23:08:04.614Z"
+            }
+          ]
+        },
+        {
+          "id": "mus-joseph-go-go-go-joseph",
+          "cat": "mus-clasicos",
+          "franchise": "Joseph and the Amazing Technicolor Dreamcoat",
+          "game": "Go, Go, Go Joseph",
+          "title": "Go, Go, Go Joseph",
+          "composer": "Jason Donovan y elenco",
+          "estado": "dudosa",
+          "revisada": null,
+          "motivos": [
+            "Franquicia con varias pistas pero la fuente no coincide con título/compositor/entrega específica (\"Go, Go, Go Joseph\" · \"Andrew Lloyd Webber, \"Joseph And The Amazing Technicolor Dreamcoat\" 1993 Los Angeles Cast, Kelli Rabke & Michael Damian\")"
+          ],
+          "primeraFuente": {
+            "kind": "apple-song",
+            "song": 1843485446,
+            "ok": true,
+            "trackId": 1843485446,
+            "title": "Go, Go, Go Joseph",
+            "artist": "Andrew Lloyd Webber, \"Joseph And The Amazing Technicolor Dreamcoat\" 1993 Los Angeles Cast, Kelli Rabke & Michael Damian",
+            "album": "Joseph and the Amazing Technicolor Dreamcoat (1993 Los Angeles Cast Recording)",
+            "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/11/ba/9411ba04-cc3c-b5d8-dd9b-8c1136866112/mzaf_18262728682982501620.plus.aac.p.m4a",
+            "durationSeconds": 323,
+            "country": "mx",
+            "checkedAt": "2026-10-16T23:08:28.879Z"
+          },
+          "fuentes": [
+            {
+              "kind": "apple-song",
+              "song": 1843485446,
+              "ok": true,
+              "trackId": 1843485446,
+              "title": "Go, Go, Go Joseph",
+              "artist": "Andrew Lloyd Webber, \"Joseph And The Amazing Technicolor Dreamcoat\" 1993 Los Angeles Cast, Kelli Rabke & Michael Damian",
+              "album": "Joseph and the Amazing Technicolor Dreamcoat (1993 Los Angeles Cast Recording)",
+              "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/11/ba/9411ba04-cc3c-b5d8-dd9b-8c1136866112/mzaf_18262728682982501620.plus.aac.p.m4a",
+              "durationSeconds": 323,
+              "country": "mx",
+              "checkedAt": "2026-10-16T23:08:28.879Z"
+            },
+            {
+              "kind": "yt",
+              "id": "MFCJ6qB26YA",
+              "start": 0,
+              "ok": true,
+              "oembedStatus": 200,
+              "playabilityStatus": "OK",
+              "playableInEmbed": true,
+              "reason": "OK",
+              "title": "'Go Go Go Joseph' | Joseph and The Amazing Technicolor Dreamcoat",
+              "channel": "The Shows Must Go On!",
+              "lengthSeconds": 393,
+              "loudnessDb": -5.6499996,
+              "checkedWatchPage": true,
+              "checkedAt": "2026-10-16T23:08:31.580Z"
+            }
+          ]
+        },
         {
           "id": "mus-mamma-mia-chiquitita",
           "cat": "mus-9000",
@@ -10000,6 +10104,110 @@
               "loudnessDb": 1.21,
               "checkedWatchPage": true,
               "checkedAt": "2026-10-16T21:01:48.062Z"
+            }
+          ]
+        },
+        {
+          "id": "mus-mentiras-mentiras",
+          "cat": "mus-9000",
+          "franchise": "Mentiras",
+          "game": "Mentiras",
+          "title": "Mentiras",
+          "composer": "Elenco original de Mentiras",
+          "estado": "dudosa",
+          "revisada": null,
+          "motivos": [
+            "Franquicia con varias pistas pero la fuente no coincide con título/compositor/entrega específica (\"Él me mintió / Mentiras / Mentiras\" · \"Mentiras el Musical\")"
+          ],
+          "primeraFuente": {
+            "kind": "apple-song",
+            "song": 328877997,
+            "ok": true,
+            "trackId": 328877997,
+            "title": "Él me mintió / Mentiras / Mentiras",
+            "artist": "Mentiras el Musical",
+            "album": "Mentiras OST",
+            "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/84/f4/ef84f4c0-5b5c-5101-324f-32b5e9e0d95c/mzaf_3810731920302017444.plus.aac.p.m4a",
+            "durationSeconds": 141,
+            "country": "mx",
+            "checkedAt": "2026-10-16T23:09:50.916Z"
+          },
+          "fuentes": [
+            {
+              "kind": "apple-song",
+              "song": 328877997,
+              "ok": true,
+              "trackId": 328877997,
+              "title": "Él me mintió / Mentiras / Mentiras",
+              "artist": "Mentiras el Musical",
+              "album": "Mentiras OST",
+              "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/84/f4/ef84f4c0-5b5c-5101-324f-32b5e9e0d95c/mzaf_3810731920302017444.plus.aac.p.m4a",
+              "durationSeconds": 141,
+              "country": "mx",
+              "checkedAt": "2026-10-16T23:09:50.916Z"
+            },
+            {
+              "kind": "yt",
+              "id": "m9v4e0tpRYk",
+              "start": 0,
+              "ok": true,
+              "oembedStatus": 200,
+              "playabilityStatus": "OK",
+              "playableInEmbed": true,
+              "reason": "OK",
+              "title": "Él Me Mintió, Mentiras, Lo Juro | Mentiras: La Serie",
+              "channel": "Prime Video México",
+              "lengthSeconds": 128,
+              "loudnessDb": -3.1200008,
+              "checkedWatchPage": true,
+              "checkedAt": "2026-10-16T23:09:53.158Z"
+            }
+          ]
+        },
+        {
+          "id": "mus-matilda-ninos-rebeldes",
+          "cat": "mus-10s",
+          "franchise": "Matilda the Musical",
+          "game": "Niños rebeldes",
+          "title": "Niños rebeldes (Revolting Children)",
+          "composer": "Elenco en español",
+          "estado": "dudosa",
+          "revisada": null,
+          "motivos": [
+            "Título/canal contiene \"karaoke\""
+          ],
+          "primeraFuente": {
+            "kind": "yt",
+            "id": "uxWOfawV8yQ",
+            "start": 0,
+            "ok": true,
+            "oembedStatus": 200,
+            "playabilityStatus": "OK",
+            "playableInEmbed": true,
+            "reason": "OK",
+            "title": "Karaoke: ¡Estas niñas y niños no se quedarán callados! | Matilda, de Roald Dahl: El musical",
+            "channel": "Netflix Latinoamérica",
+            "lengthSeconds": 175,
+            "loudnessDb": -2.9799995,
+            "checkedWatchPage": true,
+            "checkedAt": "2026-10-16T23:10:10.321Z"
+          },
+          "fuentes": [
+            {
+              "kind": "yt",
+              "id": "uxWOfawV8yQ",
+              "start": 0,
+              "ok": true,
+              "oembedStatus": 200,
+              "playabilityStatus": "OK",
+              "playableInEmbed": true,
+              "reason": "OK",
+              "title": "Karaoke: ¡Estas niñas y niños no se quedarán callados! | Matilda, de Roald Dahl: El musical",
+              "channel": "Netflix Latinoamérica",
+              "lengthSeconds": 175,
+              "loudnessDb": -2.9799995,
+              "checkedWatchPage": true,
+              "checkedAt": "2026-10-16T23:10:10.321Z"
             }
           ]
         }

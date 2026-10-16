@@ -1,5 +1,5 @@
 /*
- * Catálogo: Musicales (222 pistas: 200 en su grabación original y 22 en español).
+ * Catálogo: Musicales (269 pistas: 239 en su grabación original y 30 en español).
  * Teatro y películas musicales por época (año del estreno del musical; `year` es el de la grabación
  * que suena y `platform` la versión: Broadway, Londres, Película, México, Madrid…). Nada de Disney,
  * que ya tiene su propio tema.
@@ -71,7 +71,7 @@
   );
 
   AM.CATALOG.push(
-    /* ───────────── Clásicos (antes de 1970) (56) ───────────── */
+    /* ───────────── Clásicos (antes de 1970) (68) ───────────── */
     {
       id: 'mus-oz-over-the-rainbow', cat: 'mus-clasicos', franchise: 'The Wizard of Oz', game: 'Over the Rainbow',
       title: 'Over the Rainbow', composer: 'Judy Garland', year: 1939, platform: 'Película', lang: 'en',
@@ -362,7 +362,71 @@
       title: "Put on a Happy Face", composer: "Dick Van Dyke", year: 1963, platform: "Película", lang: 'en',
       sources: busca('Bye Bye Birdie', 'Put on a Happy Face'),
     },
-    /* ───────────── 70s y 80s (61) ───────────── */
+    {
+      id: 'mus-la-mancha-el-sueno-imposible', cat: 'mus-clasicos', franchise: 'Man of La Mancha', game: 'El sueño imposible',
+      title: 'El sueño imposible', composer: 'Plácido Domingo', year: 1996, platform: 'Versión en español', lang: 'es',
+      aka: ['The Impossible Dream'],
+      sources: [yt('2GAr_FDMWCo')],
+    },
+    {
+      id: 'mus-fiddler-si-yo-fuera-rico', cat: 'mus-clasicos', franchise: 'Fiddler on the Roof', game: 'Si yo fuera rico',
+      title: 'Si yo fuera rico', composer: 'Manolo Fábregas', year: 1970, platform: 'México', lang: 'es',
+      aka: ['If I Were a Rich Man'],
+      sources: [yt('rKSI68osEds')],
+    },
+    {
+      id: 'mus-sonrisas-do-re-mi-es', cat: 'mus-clasicos', franchise: 'The Sound of Music', game: 'Do-Re-Mi (español)',
+      title: 'Do-Re-Mi', composer: 'Silvia Luchetti y elenco', year: 2011, platform: 'Madrid', lang: 'es',
+      aka: ['Do-Re-Mi'],
+      sources: [yt('SnL94BLgUkE')],
+    },
+    {
+      id: 'mus-cabaret-willkommen', cat: 'mus-clasicos', franchise: 'Cabaret', game: 'Willkommen',
+      title: 'Willkommen', composer: 'Joel Grey', year: 1972, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1475840921, country: 'mx' }), yt('hBlB8RAJEEc')],
+    },
+    {
+      id: 'mus-cabaret-mein-herr', cat: 'mus-clasicos', franchise: 'Cabaret', game: 'Mein Herr',
+      title: 'Mein Herr', composer: 'Liza Minnelli', year: 1972, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1475840928, country: 'mx' }), yt('DgjOedirhcQ')],
+    },
+    {
+      id: 'mus-funny-girl-people', cat: 'mus-clasicos', franchise: 'Funny Girl', game: 'People',
+      title: 'People', composer: 'Barbra Streisand', year: 1968, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 190623264, country: 'mx' }), yt('n_WhJjQfOXM')],
+    },
+    {
+      id: 'mus-hair-let-the-sunshine-in', cat: 'mus-clasicos', franchise: 'Hair', game: 'Let the Sunshine In',
+      title: 'The Flesh Failures (Let the Sunshine In)', composer: 'Elenco original de Broadway', year: 1968, platform: 'Broadway', lang: 'en',
+      aka: ['The Flesh Failures (Let the Sunshine In)'],
+      sources: [apple({ song: 530283462, country: 'mx' }), yt('pwDsFLV1TM8')],
+    },
+    {
+      id: 'mus-oliver-food-glorious-food', cat: 'mus-clasicos', franchise: 'Oliver!', game: 'Food, Glorious Food',
+      title: 'Food, Glorious Food', composer: 'Elenco de Oliver!', year: 1968, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 286652266, country: 'mx' }), yt('zgdv7Ra_aW4')],
+    },
+    {
+      id: 'mus-oliver-where-is-love', cat: 'mus-clasicos', franchise: 'Oliver!', game: 'Where Is Love?',
+      title: 'Where Is Love?', composer: 'Mark Lester', year: 1968, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 340660128, country: 'mx' }), yt('RID2Nh5wqfU')],
+    },
+    {
+      id: 'mus-joseph-close-every-door', cat: 'mus-clasicos', franchise: 'Joseph and the Amazing Technicolor Dreamcoat', game: 'Close Every Door',
+      title: 'Close Every Door', composer: 'Jason Donovan', year: 1991, platform: 'Londres', lang: 'en',
+      sources: [apple({ song: 1843485523, country: 'mx' }), yt('d8reEiq4ui8')],
+    },
+    {
+      id: 'mus-joseph-go-go-go-joseph', cat: 'mus-clasicos', franchise: 'Joseph and the Amazing Technicolor Dreamcoat', game: 'Go, Go, Go Joseph',
+      title: 'Go, Go, Go Joseph', composer: 'Jason Donovan y elenco', year: 1991, platform: 'Londres', lang: 'en',
+      sources: [apple({ song: 1843485446, country: 'mx' }), yt('MFCJ6qB26YA')],
+    },
+    {
+      id: 'mus-gypsy-everythings-coming-up-roses', cat: 'mus-clasicos', franchise: 'Gypsy', game: 'Everything\'s Coming Up Roses',
+      title: 'Everything\'s Coming Up Roses', composer: 'Ethel Merman', year: 1959, platform: 'Broadway', lang: 'en',
+      sources: [apple({ song: 164926661, country: 'mx' }), yt('mPPAtQ9FpMY')],
+    },
+    /* ───────────── 70s y 80s (74) ───────────── */
     {
       id: 'mus-jcs-superstar', cat: 'mus-7080', franchise: 'Jesus Christ Superstar', game: 'Superstar',
       title: 'Superstar', composer: 'Murray Head', year: 1970, platform: 'Álbum original', lang: 'en',
@@ -693,7 +757,72 @@
       title: "Empty Chairs at Empty Tables", composer: "Michael Ball", year: 1985, platform: "Londres", lang: 'en',
       sources: busca('Les Misérables', 'Empty Chairs at Empty Tables'),
     },
-    /* ───────────── 90s y 2000s (52) ───────────── */
+    {
+      id: 'mus-grease-title', cat: 'mus-7080', franchise: 'Grease', game: 'Grease',
+      title: 'Grease', composer: 'Frankie Valli', year: 1978, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 360749620, country: 'mx' }), yt('ZC7v2gFsCz0')],
+    },
+    {
+      id: 'mus-grease-we-go-together', cat: 'mus-7080', franchise: 'Grease', game: 'We Go Together',
+      title: 'We Go Together', composer: 'John Travolta y Olivia Newton-John', year: 1978, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1440844889, country: 'mx' }), yt('kx2P1bSFOTo')],
+    },
+    {
+      id: 'mus-les-mis-on-my-own', cat: 'mus-7080', franchise: 'Les Misérables', game: 'On My Own',
+      title: 'On My Own', composer: 'Samantha Barks', year: 2012, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1440824544, country: 'mx' }), yt('deUgUoJ4z5I')],
+    },
+    {
+      id: 'mus-les-mis-master-of-the-house', cat: 'mus-7080', franchise: 'Les Misérables', game: 'Master of the House',
+      title: 'Master of the House', composer: 'Sacha Baron Cohen y Helena Bonham Carter', year: 2012, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1440824463, country: 'mx' }), yt('iLN9GLRC5is')],
+    },
+    {
+      id: 'mus-les-mis-castle-on-a-cloud', cat: 'mus-7080', franchise: 'Les Misérables', game: 'Castle on a Cloud',
+      title: 'Castle on a Cloud', composer: 'Isabelle Allen', year: 2012, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1442461660, country: 'mx' }), yt('z-X3eHq-KGw')],
+    },
+    {
+      id: 'mus-phantom-angel-of-music', cat: 'mus-7080', franchise: 'The Phantom of the Opera', game: 'Angel of Music',
+      title: 'Angel of Music', composer: 'Sarah Brightman y Michael Crawford', year: 1986, platform: 'Londres', lang: 'en',
+      sources: [apple({ song: 1843488345, country: 'mx' }), yt('tTqkedebbN4')],
+    },
+    {
+      id: 'mus-little-shop-skid-row', cat: 'mus-7080', franchise: 'Little Shop of Horrors', game: 'Skid Row (Downtown)',
+      title: 'Skid Row (Downtown)', composer: 'Rick Moranis, Ellen Greene y elenco', year: 1986, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1492371223, country: 'mx' }), yt('ZgSQJv01JPw')],
+    },
+    {
+      id: 'mus-little-shop-feed-me', cat: 'mus-7080', franchise: 'Little Shop of Horrors', game: 'Feed Me (Git It)',
+      title: 'Feed Me (Git It)', composer: 'Levi Stubbs y Rick Moranis', year: 1986, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1434903439, country: 'mx' }), yt('K6w3xb8gqpE')],
+    },
+    {
+      id: 'mus-little-shop-dentist', cat: 'mus-7080', franchise: 'Little Shop of Horrors', game: 'Dentist!',
+      title: 'Dentist!', composer: 'Steve Martin', year: 1986, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1434903435, country: 'mx' }), yt('lXbQwJjC688')],
+    },
+    {
+      id: 'mus-dreamgirls-listen', cat: 'mus-7080', franchise: 'Dreamgirls', game: 'Listen',
+      title: 'Listen', composer: 'Beyoncé', year: 2006, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 464321089, country: 'mx' }), yt('_ympijPVXbc')],
+    },
+    {
+      id: 'mus-dreamgirls-one-night-only', cat: 'mus-7080', franchise: 'Dreamgirls', game: 'One Night Only',
+      title: 'One Night Only', composer: 'Jennifer Hudson', year: 2006, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 464321087, country: 'mx' }), yt('VMPuhHVIIp0')],
+    },
+    {
+      id: 'mus-into-the-woods-agony', cat: 'mus-7080', franchise: 'Into the Woods', game: 'Agony',
+      title: 'Agony', composer: 'Chris Pine y Billy Magnussen', year: 2014, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1440807122, country: 'mx' }), yt('tvsDObIQFhg')],
+    },
+    {
+      id: 'mus-sweeney-todd-johanna', cat: 'mus-7080', franchise: 'Sweeney Todd', game: 'Johanna',
+      title: 'Johanna', composer: 'Jamie Campbell Bower y Johnny Depp', year: 2007, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 269738389, country: 'mx' }), yt('QHngALI0PIk')],
+    },
+    /* ───────────── 90s y 2000s (63) ───────────── */
     {
       id: 'mus-rent-seasons-of-love', cat: 'mus-9000', franchise: 'Rent', game: 'Seasons of Love',
       title: 'Seasons of Love', composer: 'Elenco de la película', year: 2005, platform: 'Película', lang: 'en',
@@ -961,7 +1090,62 @@
       title: "If You Were Gay", composer: "John Tartaglia y Rick Lyon", year: 2003, platform: "Broadway", lang: 'en',
       sources: busca('Avenue Q', 'If You Were Gay'),
     },
-    /* ───────────── 2010 en adelante (53) ───────────── */
+    {
+      id: 'mus-mamma-mia-gimme-gimme-gimme', cat: 'mus-9000', franchise: 'Mamma Mia!', game: 'Gimme! Gimme! Gimme! (A Man After Midnight)',
+      title: 'Gimme! Gimme! Gimme! (A Man After Midnight)', composer: 'Amanda Seyfried', year: 2008, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1440768885, country: 'mx' }), yt('Zrp68sXgyWA')],
+    },
+    {
+      id: 'mus-mamma-mia-voulez-vous', cat: 'mus-9000', franchise: 'Mamma Mia!', game: 'Voulez-Vous',
+      title: 'Voulez-Vous', composer: 'Elenco de la película', year: 2008, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1440768903, country: 'mx' }), yt('G0FGbBTxp88')],
+    },
+    {
+      id: 'mus-mamma-mia-money-money-money', cat: 'mus-9000', franchise: 'Mamma Mia!', game: 'Money, Money, Money',
+      title: 'Money, Money, Money', composer: 'Meryl Streep', year: 2008, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1440768337, country: 'mx' }), yt('hQMCvBa_M2I')],
+    },
+    {
+      id: 'mus-moulin-rouge-el-tango-de-roxanne', cat: 'mus-9000', franchise: 'Moulin Rouge!', game: 'El Tango de Roxanne',
+      title: 'El Tango de Roxanne', composer: 'Ewan McGregor, José Feliciano y Jacek Koman', year: 2001, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1440892663, country: 'mx' }), yt('Rn0xXo1gwGY')],
+    },
+    {
+      id: 'mus-moulin-rouge-your-song', cat: 'mus-9000', franchise: 'Moulin Rouge!', game: 'Your Song',
+      title: 'Your Song', composer: 'Ewan McGregor y Alessandro Safina', year: 2001, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1440845813, country: 'mx' }), yt('KH3Fdckq_ak')],
+    },
+    {
+      id: 'mus-wicked-no-one-mourns-the-wicked', cat: 'mus-9000', franchise: 'Wicked', game: 'No One Mourns the Wicked',
+      title: 'No One Mourns the Wicked', composer: 'Kristin Chenoweth y elenco', year: 2003, platform: 'Broadway', lang: 'en',
+      sources: [apple({ song: 1449619423, country: 'mx' }), yt('Fe9N3Xcwtso')],
+    },
+    {
+      id: 'mus-tick-tick-boom-30-90', cat: 'mus-9000', franchise: 'tick, tick... BOOM!', game: '30/90',
+      title: '30/90', composer: 'Andrew Garfield', year: 2021, platform: 'Película', lang: 'en',
+      sources: [yt('kCt1MWLel1Q')],
+    },
+    {
+      id: 'mus-legally-blonde-so-much-better', cat: 'mus-9000', franchise: 'Legally Blonde', game: 'So Much Better',
+      title: 'So Much Better', composer: 'Laura Bell Bundy', year: 2007, platform: 'Broadway', lang: 'en',
+      sources: [apple({ song: 1270809409, country: 'mx' }), yt('2uS4z0eiuLY')],
+    },
+    {
+      id: 'mus-spring-awakening-mama-who-bore-me', cat: 'mus-9000', franchise: 'Spring Awakening', game: 'Mama Who Bore Me',
+      title: 'Mama Who Bore Me', composer: 'Lea Michele', year: 2006, platform: 'Broadway', lang: 'en',
+      sources: [apple({ song: 1440732243, country: 'mx' }), yt('BwelAuPuC0E')],
+    },
+    {
+      id: 'mus-mentiras-mentiras', cat: 'mus-9000', franchise: 'Mentiras', game: 'Mentiras',
+      title: 'Mentiras', composer: 'Elenco original de Mentiras', year: 2009, platform: 'México', lang: 'es',
+      sources: [apple({ song: 328877997, country: 'mx' }), yt('m9v4e0tpRYk')],
+    },
+    {
+      id: 'mus-hnmpl-maquillaje', cat: 'mus-9000', franchise: 'Hoy no me puedo levantar', game: 'Maquillaje',
+      title: 'Maquillaje', composer: 'Elenco de Hoy no me puedo levantar', year: 2006, platform: 'México', lang: 'es',
+      sources: [apple({ song: 1755231891, country: 'mx' }), yt('1PvLt4vzfVc')],
+    },
+    /* ───────────── 2010 en adelante (64) ───────────── */
     {
       id: 'mus-hamilton-alexander-hamilton', cat: 'mus-10s', franchise: 'Hamilton', game: 'Alexander Hamilton',
       title: 'Alexander Hamilton', composer: 'Elenco original de Broadway', year: 2015, platform: 'Broadway', lang: 'en',
@@ -1229,6 +1413,64 @@
       id: 'mus-beetlejuice-dead-mom', cat: 'mus-10s', franchise: "Beetlejuice", game: "Dead Mom",
       title: "Dead Mom", composer: "Sophia Anne Caruso", year: 2019, platform: "Broadway", lang: 'en',
       sources: busca('Beetlejuice', 'Dead Mom'),
+    },
+    {
+      id: 'mus-kpop-libre', cat: 'mus-10s', franchise: 'KPop Demon Hunters', game: 'Libre',
+      title: 'Libre (Free - versión en español)', composer: 'Doblaje en español', year: 2025, platform: 'Doblaje en español', lang: 'es',
+      aka: ['Free'],
+      sources: [yt('--EwJmB6WqY')],
+    },
+    {
+      id: 'mus-kpop-tu-idolo', cat: 'mus-10s', franchise: 'KPop Demon Hunters', game: 'Tu ídolo',
+      title: 'Tu ídolo (Your Idol - versión en español)', composer: 'Saja Boys (doblaje)', year: 2025, platform: 'Doblaje en español', lang: 'es',
+      aka: ['Your Idol'],
+      sources: [apple({ song: 1820264156, country: 'mx' }), yt('T7Q7ZhNyHqk')],
+    },
+    {
+      id: 'mus-matilda-ninos-rebeldes', cat: 'mus-10s', franchise: 'Matilda the Musical', game: 'Niños rebeldes',
+      title: 'Niños rebeldes (Revolting Children)', composer: 'Elenco en español', year: 2022, platform: 'Versión en español', lang: 'es',
+      aka: ['Revolting Children'],
+      sources: [yt('uxWOfawV8yQ')],
+    },
+    {
+      id: 'mus-matilda-when-i-grow-up', cat: 'mus-10s', franchise: 'Matilda the Musical', game: 'When I Grow Up',
+      title: 'When I Grow Up', composer: 'Elenco de la película', year: 2022, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1664565197, country: 'mx' }), yt('CEe0tj8aGpQ')],
+    },
+    {
+      id: 'mus-matilda-naughty', cat: 'mus-10s', franchise: 'Matilda the Musical', game: 'Naughty',
+      title: 'Naughty', composer: 'Alisha Weir', year: 2022, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1651697757, country: 'mx' }), yt('QV53Vy7KFLQ')],
+    },
+    {
+      id: 'mus-book-of-mormon-i-believe', cat: 'mus-10s', franchise: 'The Book of Mormon', game: 'I Believe',
+      title: 'I Believe', composer: 'Andrew Rannells', year: 2011, platform: 'Broadway', lang: 'en',
+      sources: [yt('GVJgmp2Tc2s')],
+    },
+    {
+      id: 'mus-beetlejuice-whole-being-dead-thing', cat: 'mus-10s', franchise: 'Beetlejuice', game: 'The Whole "Being Dead" Thing',
+      title: 'The Whole "Being Dead" Thing', composer: 'Alex Brightman', year: 2019, platform: 'Broadway', lang: 'en',
+      sources: [apple({ song: 1466050454, country: 'mx' }), yt('sWtbpEB27UE')],
+    },
+    {
+      id: 'mus-heathers-seventeen', cat: 'mus-10s', franchise: 'Heathers: The Musical', game: 'Seventeen',
+      title: 'Seventeen', composer: 'Barrett Wilbert Weed y Ryan McCartan', year: 2014, platform: 'Off-Broadway', lang: 'en',
+      sources: [apple({ song: 887521561, country: 'mx' }), yt('Er6cBpR63XA')],
+    },
+    {
+      id: 'mus-heathers-dead-girl-walking', cat: 'mus-10s', franchise: 'Heathers: The Musical', game: 'Dead Girl Walking',
+      title: 'Dead Girl Walking', composer: 'Barrett Wilbert Weed y Ryan McCartan', year: 2014, platform: 'Off-Broadway', lang: 'en',
+      sources: [apple({ song: 887521674, country: 'mx' }), yt('3EyDyxGZn_Y')],
+    },
+    {
+      id: 'mus-mean-girls-world-burn', cat: 'mus-10s', franchise: 'Mean Girls', game: 'World Burn',
+      title: 'World Burn', composer: 'Taylor Louderman y elenco', year: 2018, platform: 'Broadway', lang: 'en',
+      sources: [apple({ song: 1372107799, country: 'mx' }), yt('3rU2Xf1LK-g')],
+    },
+    {
+      id: 'mus-wonka-pure-imagination', cat: 'mus-10s', franchise: 'Wonka', game: 'Pure Imagination',
+      title: 'Pure Imagination', composer: 'Timothée Chalamet', year: 2023, platform: 'Película', lang: 'en',
+      sources: [apple({ song: 1718982503, country: 'mx' }), yt('O9Hngn4Zcbk')],
     },
   );
 

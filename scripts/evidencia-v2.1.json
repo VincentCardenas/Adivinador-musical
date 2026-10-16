@@ -89,6 +89,36 @@
     },
     "fecha": "2026-10-16T21:15:02.138Z"
   },
+  "164926661": {
+    "tipo": "apple",
+    "id": 164926661,
+    "consulta": "apple-search:mx:Ethel Merman Everything's Coming Up Roses Gypsy",
+    "titulo": "Gypsy: Everything's Coming Up Roses",
+    "canal_o_artista": "Ethel Merman",
+    "album": "Gypsy (Original 1959 Broadway Cast Recording)",
+    "duracion": 186,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4e/79/ed/4e79ed5f-94be-a6d2-8639-bd8376fdfdb1/mzaf_11359035148924915626.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:08:32.189Z"
+  },
+  "190623264": {
+    "tipo": "apple",
+    "id": 190623264,
+    "consulta": "apple-search:mx:Barbra Streisand People Funny Girl",
+    "titulo": "People",
+    "canal_o_artista": "Barbra Streisand",
+    "album": "Funny Girl (Original Soundtrack Recording)",
+    "duracion": 301,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/97/3d/80/973d80d0-8c0f-f7e1-3eb4-32978d807857/mzaf_10394365747763085630.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:08:11.940Z"
+  },
   "190655992": {
     "tipo": "apple",
     "id": 190655992,
@@ -194,6 +224,21 @@
     },
     "fecha": "2026-10-16T22:57:55.132Z"
   },
+  "269738389": {
+    "tipo": "apple",
+    "id": 269738389,
+    "consulta": "apple-search:mx:Sweeney Todd Johanna Johnny Depp",
+    "titulo": "Johanna",
+    "canal_o_artista": "Jamie Campbell Bower, Johnny Depp & Laura Michelle Kelly",
+    "album": "Sweeney Todd - The Demon Barber of Fleet Street (The Motion Picture Soundtrack)",
+    "duracion": 342,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d3/ff/0e/d3ff0e38-1dcf-c81e-0b60-662655d99625/mzaf_215482187863889274.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:09:14.939Z"
+  },
   "274659377": {
     "tipo": "apple",
     "id": 274659377,
@@ -268,6 +313,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7c/2a/89/7c2a89ca-5bbf-ecd4-23ba-98619fc66a84/mzaf_9610728460091711032.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:12:57.579Z"
+  },
+  "286652266": {
+    "tipo": "apple",
+    "id": 286652266,
+    "consulta": "apple-search:mx:Oliver Food Glorious Food",
+    "titulo": "Food, Glorious Food",
+    "canal_o_artista": "The \"Oliver! 1994\" Kids Ensemble",
+    "album": "Oliver! (1994 London Palladium Cast Recording)",
+    "duracion": 212,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4a/d6/b0/4ad6b0e5-a59a-fa17-bc90-2194b00945d8/mzaf_4953291961093057581.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:08:18.405Z"
   },
   "290303003": {
     "tipo": "apple",
@@ -404,6 +464,36 @@
     },
     "fecha": "2026-10-16T21:12:57.219Z"
   },
+  "328877997": {
+    "tipo": "apple",
+    "id": 328877997,
+    "consulta": "apple-search:mx:Mentiras el musical Mentiras",
+    "titulo": "Él me mintió / Mentiras / Mentiras",
+    "canal_o_artista": "Mentiras el Musical",
+    "album": "Mentiras OST",
+    "duracion": 141,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/84/f4/ef84f4c0-5b5c-5101-324f-32b5e9e0d95c/mzaf_3810731920302017444.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:09:50.916Z"
+  },
+  "340660128": {
+    "tipo": "apple",
+    "id": 340660128,
+    "consulta": "apple-search:mx:Oliver Where Is Love",
+    "titulo": "Where Is Love",
+    "canal_o_artista": "Oliver",
+    "album": "The Best Love Songs Vol.1",
+    "duracion": 270,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c6/25/2a/c6252ac0-1352-1b0f-0bfb-127cf0d5801d/mzaf_8801280015176082875.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:08:21.835Z"
+  },
   "344823879": {
     "tipo": "apple",
     "id": 344823879,
@@ -493,6 +583,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/5f/9a/e15f9a15-2d4e-f93b-6c5f-1a1850805872/mzaf_4044988092299896462.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T22:58:06.684Z"
+  },
+  "360749620": {
+    "tipo": "apple",
+    "id": 360749620,
+    "consulta": "apple-search:mx:Frankie Valli Grease",
+    "titulo": "Grease",
+    "canal_o_artista": "Frankie Valli",
+    "album": "Frankie Valli... Is the Word",
+    "duracion": 207,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/51/d5/f5/51d5f532-aa85-dc2a-941a-1dbb2218a140/mzaf_9928285905198487282.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:08:35.304Z"
   },
   "370521529": {
     "tipo": "apple",
@@ -599,6 +704,36 @@
     },
     "fecha": "2026-10-16T20:55:29.734Z"
   },
+  "464321087": {
+    "tipo": "apple",
+    "id": 464321087,
+    "consulta": "apple-search:mx:Dreamgirls One Night Only Jennifer Hudson",
+    "titulo": "One Night Only (Highlights Version)",
+    "canal_o_artista": "Deena Jones & The Dreams & Jennifer Hudson",
+    "album": "Dreamgirls (Music from the Motion Picture)",
+    "duracion": 178,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/85/9e/91/859e9153-3a9d-b506-a697-b7ad6d645156/mzaf_1019845686128510017.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:09:08.192Z"
+  },
+  "464321089": {
+    "tipo": "apple",
+    "id": 464321089,
+    "consulta": "apple-search:mx:Beyonce Listen Dreamgirls",
+    "titulo": "Listen",
+    "canal_o_artista": "Beyoncé",
+    "album": "Dreamgirls (Music from the Motion Picture)",
+    "duracion": 219,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/59/73/9d/59739dc8-c01c-39a0-07ae-f049c2d277f6/mzaf_16185907189091645202.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:09:04.670Z"
+  },
   "468578001": {
     "tipo": "apple",
     "id": 468578001,
@@ -703,6 +838,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/0a/29/c40a29b4-42fd-3ff2-59d4-63cf2e7c3d6c/mzaf_7163380337732885493.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:15:02.531Z"
+  },
+  "530283462": {
+    "tipo": "apple",
+    "id": 530283462,
+    "consulta": "apple-search:mx:Hair Broadway Flesh Failures Let the Sunshine In",
+    "titulo": "The Flesh Failures (Let the Sunshine In)",
+    "canal_o_artista": "Broadway Cast",
+    "album": "Hair (A Rock Musical)",
+    "duracion": 217,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/89/22/b7/8922b7a6-6d27-119f-8a19-8c41e61e605c/mzaf_1737044201778611034.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:08:15.211Z"
   },
   "544342609": {
     "tipo": "apple",
@@ -973,6 +1123,36 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/Music6/v4/d3/e2/bb/d3e2bb8d-b36e-dbab-251e-1c8b3f8abe1c/mzaf_1087671063134334217.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T20:55:51.961Z"
+  },
+  "887521561": {
+    "tipo": "apple",
+    "id": 887521561,
+    "consulta": "apple-search:mx:Barrett Wilbert Weed Ryan McCartan Seventeen Heathers",
+    "titulo": "Seventeen",
+    "canal_o_artista": "Barrett Wilbert Weed & Ryan McCartan",
+    "album": "Heathers: The Musical (World Premiere Cast Recording)",
+    "duracion": 192,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b6/1d/f6/b61df6c8-4c02-e4c5-6589-400a7be83085/mzaf_6507667079960584123.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:10:28.768Z"
+  },
+  "887521674": {
+    "tipo": "apple",
+    "id": 887521674,
+    "consulta": "apple-search:mx:Barrett Wilbert Weed Dead Girl Walking Heathers",
+    "titulo": "Dead Girl Walking (Reprise)",
+    "canal_o_artista": "Michelle Duffy, Daniel Cooney, Barrett Wilbert Weed, Elle McLemore & Ryan McCartan",
+    "album": "Heathers: The Musical (World Premiere Cast Recording)",
+    "duracion": 167,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/e8/af/25e8afec-ad56-94e3-5e2a-b4775113ba6c/mzaf_7838458018259965597.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:10:32.060Z"
   },
   "891913380": {
     "tipo": "apple",
@@ -1574,6 +1754,21 @@
     },
     "fecha": "2026-10-16T21:11:31.061Z"
   },
+  "1270809409": {
+    "tipo": "apple",
+    "id": 1270809409,
+    "consulta": "apple-search:mx:Laura Bell Bundy So Much Better Legally Blonde",
+    "titulo": "So Much Better",
+    "canal_o_artista": "Laura Bell Bundy & Legally Blonde Ensemble",
+    "album": "Legally Blonde the Musical (Original Broadway Cast Recording)",
+    "duracion": 209,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/47/7c/63/477c635c-dc7f-1c1d-4b11-75a84b97d7b8/mzaf_16319202101457410977.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:09:44.448Z"
+  },
   "1317646260": {
     "tipo": "apple",
     "id": 1317646260,
@@ -1633,6 +1828,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6b/f2/17/6bf21745-69c3-f5b3-d354-a226af4f72ea/mzaf_6618292381790999994.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:00:38.714Z"
+  },
+  "1372107799": {
+    "tipo": "apple",
+    "id": 1372107799,
+    "consulta": "apple-search:mx:Taylor Louderman World Burn Mean Girls",
+    "titulo": "World Burn",
+    "canal_o_artista": "Taylor Louderman & Original Broadway Cast of Mean Girls",
+    "album": "Mean Girls (Original Broadway Cast Recording)",
+    "duracion": 203,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/17/d7/f917d709-82a0-ff8e-76ce-096fc86ed594/mzaf_15894938865389148735.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:10:35.291Z"
   },
   "1390461961": {
     "tipo": "apple",
@@ -1723,6 +1933,36 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4b/1d/ed/4b1dedc1-55ad-90fe-d4ad-b168369b8664/mzaf_17083667525917306580.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:00:38.350Z"
+  },
+  "1434903435": {
+    "tipo": "apple",
+    "id": 1434903435,
+    "consulta": "apple-search:mx:Steve Martin Dentist Little Shop of Horrors",
+    "titulo": "Dentist!",
+    "canal_o_artista": "Steve Martin, Michelle Weeks, Tichina Arnold & Tisha Campbell",
+    "album": "Little Shop of Horrors (Original Motion Picture Soundtrack)",
+    "duracion": 149,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/d7/58/f7d758dd-d857-74f1-2a2e-b0125ad54e90/mzaf_10544250437354907084.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:09:01.338Z"
+  },
+  "1434903439": {
+    "tipo": "apple",
+    "id": 1434903439,
+    "consulta": "apple-search:mx:Levi Stubbs Rick Moranis Feed Me Git It Little Shop",
+    "titulo": "Feed Me (Git It)",
+    "canal_o_artista": "Levi Stubbs, Rick Moranis, Michelle Weeks, Tichina Arnold & Tisha Campbell",
+    "album": "Little Shop of Horrors (Original Motion Picture Soundtrack)",
+    "duracion": 207,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/10/45/0b/10450b7c-e29a-c8a9-b639-e7847c17fffa/mzaf_12934082426606979289.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:08:58.084Z"
   },
   "1434916256": {
     "tipo": "apple",
@@ -1889,6 +2129,21 @@
     },
     "fecha": "2026-10-16T23:05:07.109Z"
   },
+  "1440732243": {
+    "tipo": "apple",
+    "id": 1440732243,
+    "consulta": "apple-search:mx:Lea Michele Mama Who Bore Me Spring Awakening",
+    "titulo": "Mama Who Bore Me",
+    "canal_o_artista": "Lea Michele",
+    "album": "Spring Awakening (feat. Steven Sater)",
+    "duracion": 141,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5e/c1/62/5ec162c2-9d2c-1fc9-0c1b-0aee71ebbbdb/mzaf_13248104935882445820.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:09:47.534Z"
+  },
   "1440765079": {
     "tipo": "apple",
     "id": 1440765079,
@@ -1904,6 +2159,51 @@
     },
     "fecha": "2026-10-16T21:02:13.631Z"
   },
+  "1440768337": {
+    "tipo": "apple",
+    "id": 1440768337,
+    "consulta": "apple-search:mx:Meryl Streep Money Money Money Mamma Mia",
+    "titulo": "Money, Money, Money",
+    "canal_o_artista": "Meryl Streep, Julie Walters & Christine Baranski",
+    "album": "Mamma Mia! (The Movie Soundtrack feat. the Songs of ABBA) [Bonus Track Version]",
+    "duracion": 186,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e8/d4/f4/e8d4f42d-286f-5156-852d-7fae8a7afa3a/mzaf_6745009444898640931.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:09:24.809Z"
+  },
+  "1440768885": {
+    "tipo": "apple",
+    "id": 1440768885,
+    "consulta": "apple-search:mx:Amanda Seyfried Gimme Gimme Gimme Mamma Mia",
+    "titulo": "Gimme! Gimme! Gimme! (A Man After Midnight)",
+    "canal_o_artista": "Amanda Seyfried, Ashley Lilley & Rachel McDowall",
+    "album": "Mamma Mia! (The Movie Soundtrack feat. the Songs of ABBA) [Bonus Track Version]",
+    "duracion": 232,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5b/a1/8b/5ba18bf2-8e6a-c6af-d4ba-a83f39d54778/mzaf_8477438360379248041.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:09:18.321Z"
+  },
+  "1440768903": {
+    "tipo": "apple",
+    "id": 1440768903,
+    "consulta": "apple-search:mx:Mamma Mia Cast Voulez-Vous",
+    "titulo": "Voulez-Vous",
+    "canal_o_artista": "Cast of Mamma Mia! the Movie, Philip Michael, Christine Baranski, Julie Walters & Stellan Skarsgård",
+    "album": "Mamma Mia! (The Movie Soundtrack feat. the Songs of ABBA) [Bonus Track Version]",
+    "duracion": 275,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5a/e2/53/5ae25367-59ee-cbd0-e366-8d0491cc6e82/mzaf_1155720450629499501.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:09:21.582Z"
+  },
   "1440799469": {
     "tipo": "apple",
     "id": 1440799469,
@@ -1918,6 +2218,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/57/9f/48579f47-ce31-1a68-92bd-0545e9e65b5d/mzaf_1994552200038032899.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:00:13.230Z"
+  },
+  "1440807122": {
+    "tipo": "apple",
+    "id": 1440807122,
+    "consulta": "apple-search:mx:Chris Pine Billy Magnussen Agony Into the Woods",
+    "titulo": "Agony",
+    "canal_o_artista": "Chris Pine & Billy Magnussen",
+    "album": "Into the Woods (2014 Motion Picture Soundtrack) [Deluxe Edition]",
+    "duracion": 153,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/95/6a/4e/956a4e51-3e78-5681-e1d6-3e9fa7219ee3/mzaf_3132873356961635010.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:09:11.409Z"
   },
   "1440812436": {
     "tipo": "apple",
@@ -1979,6 +2294,36 @@
     },
     "fecha": "2026-10-16T22:59:42.295Z"
   },
+  "1440824463": {
+    "tipo": "apple",
+    "id": 1440824463,
+    "consulta": "apple-search:mx:Sacha Baron Cohen Master of the House Les Miserables",
+    "titulo": "Master of the House",
+    "canal_o_artista": "Sacha Baron Cohen, Helena Bonham Carter & Les Misérables Cast",
+    "album": "Les Misérables (Highlights from the Motion Picture Soundtrack)",
+    "duracion": 292,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2a/7f/35/2a7f3587-4cb2-ade5-5568-83598fb32f6f/mzaf_10241485815772990771.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:08:45.077Z"
+  },
+  "1440824544": {
+    "tipo": "apple",
+    "id": 1440824544,
+    "consulta": "apple-search:mx:Samantha Barks On My Own Les Miserables",
+    "titulo": "On My Own",
+    "canal_o_artista": "Samantha Barks",
+    "album": "Les Misérables (Highlights from the Motion Picture Soundtrack)",
+    "duracion": 191,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/18/7a/65/187a654e-c04a-b41f-ba82-51aae6c965b8/mzaf_18404846535502455280.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:08:41.932Z"
+  },
   "1440844488": {
     "tipo": "apple",
     "id": 1440844488,
@@ -2039,6 +2384,21 @@
     },
     "fecha": "2026-10-16T21:01:44.585Z"
   },
+  "1440844889": {
+    "tipo": "apple",
+    "id": 1440844889,
+    "consulta": "apple-search:mx:John Travolta Olivia Newton-John We Go Together Grease",
+    "titulo": "We Go Together",
+    "canal_o_artista": "John Travolta & Olivia Newton-John",
+    "album": "Grease (The Original Soundtrack from the Motion Picture)",
+    "duracion": 180,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/e8/44/d4e844c7-d72a-7cb1-080c-cc8355c10a22/mzaf_9651309656560266392.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:08:38.660Z"
+  },
   "1440845173": {
     "tipo": "apple",
     "id": 1440845173,
@@ -2083,6 +2443,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/18/3d/1a/183d1acb-b554-d089-c1f7-6e1b2ce2b1b5/mzaf_2925963837042098692.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:01:44.755Z"
+  },
+  "1440845813": {
+    "tipo": "apple",
+    "id": 1440845813,
+    "consulta": "apple-search:mx:Ewan McGregor Alessandro Safina Your Song Moulin Rouge",
+    "titulo": "Your Song",
+    "canal_o_artista": "Ewan McGregor & Alessandro Safina",
+    "album": "Music From Baz Luhrmann's Film Moulin Rouge (Original Motion Picture Soundtrack)",
+    "duracion": 219,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/69/f6/7a/69f67a5b-215b-e7df-0cd0-b2b6014c703c/mzaf_819981308720511245.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:09:31.251Z"
   },
   "1440851268": {
     "tipo": "apple",
@@ -2174,6 +2549,21 @@
     },
     "fecha": "2026-10-16T21:08:20.928Z"
   },
+  "1440892663": {
+    "tipo": "apple",
+    "id": 1440892663,
+    "consulta": "apple-search:mx:Ewan McGregor Jose Feliciano El Tango de Roxanne Moulin Rouge",
+    "titulo": "El Tango de Roxanne",
+    "canal_o_artista": "José Feliciano, Ewan McGregor & Jacek Koman",
+    "album": "Moulin Rouge (Soundtrack from the Motion Picture)",
+    "duracion": 284,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0b/35/8b/0b358b61-4b76-049b-97c8-9a8067ed8ac8/mzaf_13985734200231847844.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:09:28.142Z"
+  },
   "1440896193": {
     "tipo": "apple",
     "id": 1440896193,
@@ -2218,6 +2608,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b5/b1/16/b5b11676-4d95-0d28-3cc4-b36304254874/mzaf_1875190500059878210.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:00:26.045Z"
+  },
+  "1442461660": {
+    "tipo": "apple",
+    "id": 1442461660,
+    "consulta": "apple-search:mx:Isabelle Allen Castle on a Cloud Les Miserables",
+    "titulo": "Castle On a Cloud",
+    "canal_o_artista": "Isabelle Allen",
+    "album": "Les Misérables (The Motion Picture Soundtrack Deluxe) [Deluxe Edition]",
+    "duracion": 72,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/38/c4/4c/38c44c03-7dee-000a-2a0b-45c245b85746/mzaf_15345883875923009318.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:08:48.366Z"
   },
   "1442977089": {
     "tipo": "apple",
@@ -2669,6 +3074,21 @@
     },
     "fecha": "2026-10-16T21:11:38.234Z"
   },
+  "1449619423": {
+    "tipo": "apple",
+    "id": 1449619423,
+    "consulta": "apple-search:mx:Kristin Chenoweth No One Mourns the Wicked",
+    "titulo": "No One Mourns the Wicked",
+    "canal_o_artista": "Kristin Chenoweth, Sean McCourt, Cristy Candler & Jan Neuberger",
+    "album": "Wicked (15th Anniversary Special Edition)",
+    "duracion": 401,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/93/30/1e/93301e86-0780-b1e8-95fd-75e42c49f0d0/mzaf_7810197491061978474.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:09:34.574Z"
+  },
   "1450695872": {
     "tipo": "apple",
     "id": 1450695872,
@@ -2774,6 +3194,21 @@
     },
     "fecha": "2026-10-16T21:11:45.411Z"
   },
+  "1466050454": {
+    "tipo": "apple",
+    "id": 1466050454,
+    "consulta": "apple-search:mx:Alex Brightman The Whole Being Dead Thing Beetlejuice",
+    "titulo": "The Whole \"Being Dead\" Thing",
+    "canal_o_artista": "Alex Brightman & Beetlejuice Original Broadway Cast Recording Ensemble",
+    "album": "Beetlejuice (Original Broadway Cast Recording)",
+    "duracion": 224,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/61/a7/cb/61a7cbae-a36b-ed85-39a5-05e0478e0970/mzaf_14081355450428316755.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:10:25.782Z"
+  },
   "1467139927": {
     "tipo": "apple",
     "id": 1467139927,
@@ -2848,6 +3283,36 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fc/7c/e5/fc7ce576-f26a-effa-c57a-269d902bb06e/mzaf_638731020607834547.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:02:13.266Z"
+  },
+  "1475840921": {
+    "tipo": "apple",
+    "id": 1475840921,
+    "consulta": "apple-search:mx:Joel Grey Willkommen Cabaret",
+    "titulo": "Willkommen",
+    "canal_o_artista": "Joel Grey",
+    "album": "Cabaret (Original 1972 Movie Soundtrack)",
+    "duracion": 268,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/97/c7/53/97c7535d-deb3-7530-79b8-900bab0eb850/mzaf_17415023711013718429.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:08:05.404Z"
+  },
+  "1475840928": {
+    "tipo": "apple",
+    "id": 1475840928,
+    "consulta": "apple-search:mx:Liza Minnelli Mein Herr Cabaret",
+    "titulo": "Mein Herr",
+    "canal_o_artista": "Liza Minnelli",
+    "album": "Cabaret (Original 1972 Movie Soundtrack)",
+    "duracion": 214,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/b0/a3/36b0a3a6-a57b-a5eb-908e-c0005392e839/mzaf_10998075700909304425.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:08:08.715Z"
   },
   "1475949235": {
     "tipo": "apple",
@@ -3118,6 +3583,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/fe/31/fc/fe31fce5-5a2d-829c-93c9-69f29a80ac43/mzaf_2384925424731934773.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:11:45.775Z"
+  },
+  "1492371223": {
+    "tipo": "apple",
+    "id": 1492371223,
+    "consulta": "apple-search:mx:Little Shop of Horrors Skid Row Downtown",
+    "titulo": "Skid Row (Downtown)",
+    "canal_o_artista": "Tammy Blanchard, Jonathan Groff, Christian Borle, Tom Alan Robbins, Salome Smith, Teddy Yudain & Little Shop of Horrors Off-Broadway Revival Company",
+    "album": "Little Shop of Horrors (The New Off-Broadway Cast Album)",
+    "duracion": 252,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/22/e2/af22e2ec-c072-c060-deec-ac85428e15e8/mzaf_1065230561707364411.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:08:54.950Z"
   },
   "1494928075": {
     "tipo": "apple",
@@ -4664,6 +5144,21 @@
     },
     "fecha": "2026-10-16T21:11:22.835Z"
   },
+  "1651697757": {
+    "tipo": "apple",
+    "id": 1651697757,
+    "consulta": "apple-search:mx:Alisha Weir Naughty Matilda",
+    "titulo": "Naughty",
+    "canal_o_artista": "Alisha Weir & The Cast of Roald Dahl's Matilda The Musical",
+    "album": "Roald Dahl's Matilda The Musical (Soundtrack from the Netflix Film)",
+    "duracion": 188,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9b/d8/fb/9bd8fb03-dcfe-92fd-034e-d06ce59c1946/mzaf_10235534708808774182.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:10:14.280Z"
+  },
   "1652582783": {
     "tipo": "apple",
     "id": 1652582783,
@@ -4723,6 +5218,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fa/eb/43/faeb4309-3972-0e7a-087b-c69c1b5fe195/mzaf_16964253238894726885.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T23:00:13.063Z"
+  },
+  "1664565197": {
+    "tipo": "apple",
+    "id": 1664565197,
+    "consulta": "apple-search:mx:Matilda When I Grow Up",
+    "titulo": "When I Grow Up",
+    "canal_o_artista": "Original Broadway Cast Of Matilda The Musical",
+    "album": "Matilda the Musical (Deluxe Edition of Original Broadway Cast Recording)",
+    "duracion": 219,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/50/52/d150522f-94fe-ab07-f92c-59de6c23b2a7/mzaf_4490558787292065471.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:10:11.034Z"
   },
   "1669576759": {
     "tipo": "apple",
@@ -5249,6 +5759,21 @@
     },
     "fecha": "2026-10-16T21:13:04.231Z"
   },
+  "1718982503": {
+    "tipo": "apple",
+    "id": 1718982503,
+    "consulta": "apple-search:mx:Timothee Chalamet Pure Imagination Wonka",
+    "titulo": "Pure Imagination (from \"Wonka\")",
+    "canal_o_artista": "Timothée Chalamet",
+    "album": "Wonka (Original Motion Picture Soundtrack)",
+    "duracion": 188,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2c/57/df/2c57dfb7-521c-d372-95b0-e090f24a4a13/mzaf_18396333786171041963.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:10:38.593Z"
+  },
   "1726641562": {
     "tipo": "apple",
     "id": 1726641562,
@@ -5473,6 +5998,21 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/f6/dd/b5f6dd2f-a7a4-a364-bfb2-4ab4b0a682da/mzaf_2644764726987864860.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:12:29.205Z"
+  },
+  "1755231891": {
+    "tipo": "apple",
+    "id": 1755231891,
+    "consulta": "apple-search:mx:Hoy no me puedo levantar Maquillaje",
+    "titulo": "Maquillaje",
+    "canal_o_artista": "Fino Señores",
+    "album": "Hoy No Me Puedo Levantar (Obra Musical HNMPL)",
+    "duracion": 154,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9e/98/bd/9e98bd08-7fc5-9e8a-2779-2e5e97c3e2d8/mzaf_11199441971652320554.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:09:54.206Z"
   },
   "1758497284": {
     "tipo": "apple",
@@ -5774,6 +6314,21 @@
     },
     "fecha": "2026-10-16T21:10:12.826Z"
   },
+  "1820264156": {
+    "tipo": "apple",
+    "id": 1820264156,
+    "consulta": "apple-search:mx:Saja Boys Tu idolo",
+    "titulo": "Your Idol",
+    "canal_o_artista": "Saja Boys, Andrew Choi, Neckwav, Danny Chung, KEVIN WOO, samUIL Lee & KPop Demon Hunters Cast",
+    "album": "KPop Demon Hunters (Soundtrack from the Netflix Film)",
+    "duracion": 192,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d8/e7/5e/d8e75ee4-b429-2425-f1b3-e8a5c2d4b204/mzaf_2625132553354081486.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:10:04.693Z"
+  },
   "1820476716": {
     "tipo": "apple",
     "id": 1820476716,
@@ -6013,6 +6568,51 @@
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/59/5a/c7/595ac733-da3f-c0d0-dbd8-bae3f178b0be/mzaf_13138334410081318670.plus.aac.p.m4a"
     },
     "fecha": "2026-10-16T21:01:00.404Z"
+  },
+  "1843485446": {
+    "tipo": "apple",
+    "id": 1843485446,
+    "consulta": "apple-search:mx:Go Go Go Joseph Andrew Lloyd Webber",
+    "titulo": "Go, Go, Go Joseph",
+    "canal_o_artista": "Andrew Lloyd Webber, \"Joseph And The Amazing Technicolor Dreamcoat\" 1993 Los Angeles Cast, Kelli Rabke & Michael Damian",
+    "album": "Joseph and the Amazing Technicolor Dreamcoat (1993 Los Angeles Cast Recording)",
+    "duracion": 323,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/11/ba/9411ba04-cc3c-b5d8-dd9b-8c1136866112/mzaf_18262728682982501620.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:08:28.879Z"
+  },
+  "1843485523": {
+    "tipo": "apple",
+    "id": 1843485523,
+    "consulta": "apple-search:mx:Jason Donovan Close Every Door Joseph",
+    "titulo": "Close Every Door to Me",
+    "canal_o_artista": "\"Joseph And The Amazing Technicolor Dreamcoat\" 1991 London Cast, Andrew Lloyd Webber & Jason Donovan",
+    "album": "Andrew Lloyd Webber's New Production of Joseph and the Amazing Technicolor Dreamcoat",
+    "duracion": 229,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3b/64/69/3b6469c1-dd2c-1858-083b-cd4589931284/mzaf_12741380499052036370.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:08:25.564Z"
+  },
+  "1843488345": {
+    "tipo": "apple",
+    "id": 1843488345,
+    "consulta": "apple-search:mx:Sarah Brightman Michael Crawford Angel of Music Phantom",
+    "titulo": "Little Lotte / The Mirror (Angel of Music)",
+    "canal_o_artista": "Steve Barton, Sarah Brightman & Michael Crawford",
+    "album": "The Phantom of the Opera (Original 1986 London Cast)",
+    "duracion": 169,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/3c/ba/fc3cba44-8829-c1d1-7073-040d42d6a937/mzaf_17400614456426165488.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-16T23:08:51.573Z"
   },
   "1843488431": {
     "tipo": "apple",
@@ -17333,5 +17933,804 @@
       "playableInEmbed": true
     },
     "fecha": "2026-10-16T23:05:28.862Z"
+  },
+  "2GAr_FDMWCo": {
+    "tipo": "youtube",
+    "id": "2GAr_FDMWCo",
+    "consulta": "El sueño imposible Man of La Mancha español Placido Domingo",
+    "titulo": "Plácido Domingo y esperanza Azteca-sueño imposible",
+    "canal_o_artista": "luis angel guzman",
+    "album": null,
+    "duracion": 219,
+    "pais": "mx",
+    "loudnessDb": -0.37055683,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:07:56.246Z"
+  },
+  "rKSI68osEds": {
+    "tipo": "youtube",
+    "id": "rKSI68osEds",
+    "consulta": "Si yo fuera rico El violinista en el tejado español musical",
+    "titulo": "Si yo fuera rico - El violinista en el tejado - El Depa",
+    "canal_o_artista": "El DepaTV",
+    "album": null,
+    "duracion": 344,
+    "pais": "mx",
+    "loudnessDb": 4.8299999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:07:58.399Z"
+  },
+  "SnL94BLgUkE": {
+    "tipo": "youtube",
+    "id": "SnL94BLgUkE",
+    "consulta": "Do Re Mi Sonrisas y lagrimas musical español",
+    "titulo": "Sonrisas y Lágrimas - DO RE MI (Reparto Gira 2011-2012)",
+    "canal_o_artista": "BroadwayWorld Spain - musicales y teatro musical",
+    "album": null,
+    "duracion": 396,
+    "pais": "mx",
+    "loudnessDb": 2.4799995,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:08:04.614Z"
+  },
+  "hBlB8RAJEEc": {
+    "tipo": "youtube",
+    "id": "hBlB8RAJEEc",
+    "consulta": "Joel Grey Willkommen Cabaret 1972",
+    "titulo": "Cabaret (1972) - Willkommen",
+    "canal_o_artista": "ghost122769",
+    "album": null,
+    "duracion": 296,
+    "pais": "mx",
+    "loudnessDb": -13.709999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:08:07.778Z"
+  },
+  "DgjOedirhcQ": {
+    "tipo": "youtube",
+    "id": "DgjOedirhcQ",
+    "consulta": "Liza Minnelli Mein Herr Cabaret",
+    "titulo": "Liza Minnelli - Mein Herr from Cabaret (60 FPS HD) 1972",
+    "canal_o_artista": "Que No - Cantaron En Español",
+    "album": null,
+    "duracion": 228,
+    "pais": "mx",
+    "loudnessDb": -6.0699997,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:08:11.096Z"
+  },
+  "n_WhJjQfOXM": {
+    "tipo": "youtube",
+    "id": "n_WhJjQfOXM",
+    "consulta": "Barbra Streisand People Funny Girl",
+    "titulo": "Funny Girl (1968) 4K - People (Barbra Streisand Song) | Movieclips",
+    "canal_o_artista": "Movieclips",
+    "album": null,
+    "duracion": 181,
+    "pais": "mx",
+    "loudnessDb": -6.0100002,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:08:14.243Z"
+  },
+  "pwDsFLV1TM8": {
+    "tipo": "youtube",
+    "id": "pwDsFLV1TM8",
+    "consulta": "Hair Broadway The Flesh Failures Let the Sunshine In",
+    "titulo": "HAIR - The Flesh Failures/Let The Sunshine In Broadway 2009 Gavin Creel Caissie Levy",
+    "canal_o_artista": "Outmost Essential",
+    "album": null,
+    "duracion": 287,
+    "pais": "mx",
+    "loudnessDb": 4.6400003,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:08:17.429Z"
+  },
+  "zgdv7Ra_aW4": {
+    "tipo": "youtube",
+    "id": "zgdv7Ra_aW4",
+    "consulta": "Oliver Food Glorious Food 1968",
+    "titulo": "Oliver! (1968) - Food, Glorious Food Scene (1/10) | Movieclips",
+    "canal_o_artista": "Movieclips",
+    "album": null,
+    "duracion": 153,
+    "pais": "mx",
+    "loudnessDb": -8.4699993,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:08:20.720Z"
+  },
+  "RID2Nh5wqfU": {
+    "tipo": "youtube",
+    "id": "RID2Nh5wqfU",
+    "consulta": "Oliver Where Is Love 1968",
+    "titulo": "Oliver! (1968) - Where Is Love? Scene (3/10) | Movieclips",
+    "canal_o_artista": "Movieclips",
+    "album": null,
+    "duracion": 154,
+    "pais": "mx",
+    "loudnessDb": -12.559999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:08:24.918Z"
+  },
+  "d8reEiq4ui8": {
+    "tipo": "youtube",
+    "id": "d8reEiq4ui8",
+    "consulta": "Jason Donovan Close Every Door Joseph",
+    "titulo": "'Close Every Door' Donny Osmond | Joseph and the Amazing Technicolor Dreamcoat",
+    "canal_o_artista": "The Shows Must Go On!",
+    "album": null,
+    "duracion": 294,
+    "pais": "mx",
+    "loudnessDb": -2.5200005,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:08:27.969Z"
+  },
+  "MFCJ6qB26YA": {
+    "tipo": "youtube",
+    "id": "MFCJ6qB26YA",
+    "consulta": "Go Go Go Joseph Andrew Lloyd Webber",
+    "titulo": "'Go Go Go Joseph' | Joseph and The Amazing Technicolor Dreamcoat",
+    "canal_o_artista": "The Shows Must Go On!",
+    "album": null,
+    "duracion": 393,
+    "pais": "mx",
+    "loudnessDb": -5.6499996,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:08:31.580Z"
+  },
+  "mPPAtQ9FpMY": {
+    "tipo": "youtube",
+    "id": "mPPAtQ9FpMY",
+    "consulta": "Ethel Merman Everything's Coming Up Roses Gypsy",
+    "titulo": "Gypsy: Everything's Coming Up Roses",
+    "canal_o_artista": "Ethel Merman - Topic",
+    "album": null,
+    "duracion": 186,
+    "pais": "mx",
+    "loudnessDb": 2.2628517,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:08:34.428Z"
+  },
+  "ZC7v2gFsCz0": {
+    "tipo": "youtube",
+    "id": "ZC7v2gFsCz0",
+    "consulta": "Frankie Valli Grease Official Audio",
+    "titulo": "Frankie Valli - Grease (Official Audio)",
+    "canal_o_artista": "RHINO",
+    "album": null,
+    "duracion": 206,
+    "pais": "mx",
+    "loudnessDb": 4.5699997,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:08:37.545Z"
+  },
+  "kx2P1bSFOTo": {
+    "tipo": "youtube",
+    "id": "kx2P1bSFOTo",
+    "consulta": "Grease We Go Together John Travolta Olivia Newton-John",
+    "titulo": "Grease - We Go Together",
+    "canal_o_artista": "ꬺтᴠ™",
+    "album": null,
+    "duracion": 310,
+    "pais": "mx",
+    "loudnessDb": -3.7900009,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:08:41.190Z"
+  },
+  "deUgUoJ4z5I": {
+    "tipo": "youtube",
+    "id": "deUgUoJ4z5I",
+    "consulta": "Samantha Barks On My Own Les Miserables",
+    "titulo": "Les Misérables (2012) - On My Own Scene (5/10) | Movieclips",
+    "canal_o_artista": "Movieclips",
+    "album": null,
+    "duracion": 200,
+    "pais": "mx",
+    "loudnessDb": -7.0799999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:08:44.532Z"
+  },
+  "iLN9GLRC5is": {
+    "tipo": "youtube",
+    "id": "iLN9GLRC5is",
+    "consulta": "Master of the House Les Miserables Sacha Baron Cohen",
+    "titulo": "Les Misérables (2012) - Master of the House Scene (3/10) | Movieclips",
+    "canal_o_artista": "Movieclips",
+    "album": null,
+    "duracion": 241,
+    "pais": "mx",
+    "loudnessDb": -2.7800007,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:08:47.187Z"
+  },
+  "z-X3eHq-KGw": {
+    "tipo": "youtube",
+    "id": "z-X3eHq-KGw",
+    "consulta": "Castle on a Cloud Les Miserables Isabelle Allen",
+    "titulo": "Castle On A Cloud",
+    "canal_o_artista": "Isabelle Allen - Topic",
+    "album": null,
+    "duracion": 72,
+    "pais": "mx",
+    "loudnessDb": -9.681778,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:08:50.584Z"
+  },
+  "tTqkedebbN4": {
+    "tipo": "youtube",
+    "id": "tTqkedebbN4",
+    "consulta": "Angel of Music Sarah Brightman Michael Crawford Phantom of the Opera",
+    "titulo": "Angel Of Music- Phantom of The Opera (original cast)",
+    "canal_o_artista": "brokenbeyondrepair23",
+    "album": null,
+    "duracion": 140,
+    "pais": "mx",
+    "loudnessDb": -9.7700005,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:08:54.139Z"
+  },
+  "ZgSQJv01JPw": {
+    "tipo": "youtube",
+    "id": "ZgSQJv01JPw",
+    "consulta": "Little Shop of Horrors Skid Row Downtown 1986",
+    "titulo": "Little Shop of Horrors (1986) : Skid Row (Downtown) HD [Lyrics Hardsub]",
+    "canal_o_artista": "storm filter",
+    "album": null,
+    "duracion": 252,
+    "pais": "mx",
+    "loudnessDb": -6.6000004,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:08:57.591Z"
+  },
+  "K6w3xb8gqpE": {
+    "tipo": "youtube",
+    "id": "K6w3xb8gqpE",
+    "consulta": "Little Shop of Horrors Feed Me Git It 1986",
+    "titulo": "Little Shop of Horrors - \"Feed Me\" (1986) - (4K)",
+    "canal_o_artista": "VideoXL",
+    "album": null,
+    "duracion": 350,
+    "pais": "mx",
+    "loudnessDb": 3.9399996,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:09:00.395Z"
+  },
+  "lXbQwJjC688": {
+    "tipo": "youtube",
+    "id": "lXbQwJjC688",
+    "consulta": "Steve Martin Dentist Little Shop of Horrors 1986",
+    "titulo": "\"Dentist!\" - A song from a dark comedy-musical \"Little Shop Of Horrors\" with lyrics embedded...",
+    "canal_o_artista": "Coal Nete",
+    "album": null,
+    "duracion": 157,
+    "pais": "mx",
+    "loudnessDb": -6.7299995,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:09:03.503Z"
+  },
+  "_ympijPVXbc": {
+    "tipo": "youtube",
+    "id": "_ympijPVXbc",
+    "consulta": "Beyonce Listen Dreamgirls Official",
+    "titulo": "Beyoncé Sings \"Listen\" from Dreamgirls (2006) - FULL Song | Paramount Movies",
+    "canal_o_artista": "Paramount Movies",
+    "album": null,
+    "duracion": 359,
+    "pais": "mx",
+    "loudnessDb": -1.8699999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:09:07.655Z"
+  },
+  "VMPuhHVIIp0": {
+    "tipo": "youtube",
+    "id": "VMPuhHVIIp0",
+    "consulta": "Dreamgirls One Night Only Jennifer Hudson",
+    "titulo": "Beyonce and Jennifer Hudson Sing “One Night Only” | Dreamgirls | Paramount Movies",
+    "canal_o_artista": "Paramount Movies",
+    "album": null,
+    "duracion": 246,
+    "pais": "mx",
+    "loudnessDb": -4.7099991,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:09:10.730Z"
+  },
+  "tvsDObIQFhg": {
+    "tipo": "youtube",
+    "id": "tvsDObIQFhg",
+    "consulta": "Into the Woods Agony Chris Pine Billy Magnussen",
+    "titulo": "Into the Woods | Agony (1080p)",
+    "canal_o_artista": "Camila DS",
+    "album": null,
+    "duracion": 167,
+    "pais": "mx",
+    "loudnessDb": -4.7800007,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:09:14.422Z"
+  },
+  "QHngALI0PIk": {
+    "tipo": "youtube",
+    "id": "QHngALI0PIk",
+    "consulta": "Sweeney Todd Johanna 2007",
+    "titulo": "Sweeney Todd: Johanna (Reprise) (2007)",
+    "canal_o_artista": "Hải Anh Nguyễn",
+    "album": null,
+    "duracion": 326,
+    "pais": "mx",
+    "loudnessDb": -9.0100002,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:09:17.143Z"
+  },
+  "Zrp68sXgyWA": {
+    "tipo": "youtube",
+    "id": "Zrp68sXgyWA",
+    "consulta": "Mamma Mia Gimme Gimme Gimme Amanda Seyfried",
+    "titulo": "Gimme! Gimme! Gimme! (A Man After Midnight) | Mamma Mia",
+    "canal_o_artista": "The Shows Must Go On!",
+    "album": null,
+    "duracion": 241,
+    "pais": "mx",
+    "loudnessDb": -2.5100002,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:09:21.006Z"
+  },
+  "G0FGbBTxp88": {
+    "tipo": "youtube",
+    "id": "G0FGbBTxp88",
+    "consulta": "Mamma Mia Voulez-Vous Movie Cast",
+    "titulo": "Voulez-Vous (From 'Mamma Mia!' Original Motion Picture Soundtrack)",
+    "canal_o_artista": "Cast of Mamma Mia! The Movie - Topic",
+    "album": null,
+    "duracion": 275,
+    "pais": "mx",
+    "loudnessDb": 5.4899998,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:09:24.081Z"
+  },
+  "hQMCvBa_M2I": {
+    "tipo": "youtube",
+    "id": "hQMCvBa_M2I",
+    "consulta": "Meryl Streep Money Money Money Mamma Mia",
+    "titulo": "Mamma Mia!: Money, Money, Money (HD CLIP)",
+    "canal_o_artista": "Binge Society",
+    "album": null,
+    "duracion": 216,
+    "pais": "mx",
+    "loudnessDb": -5.2099991,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:09:27.056Z"
+  },
+  "Rn0xXo1gwGY": {
+    "tipo": "youtube",
+    "id": "Rn0xXo1gwGY",
+    "consulta": "Moulin Rouge El Tango de Roxanne Ewan McGregor",
+    "titulo": "El Tango De Roxanne- Moulin Rouge",
+    "canal_o_artista": "Madison College",
+    "album": null,
+    "duracion": 347,
+    "pais": "mx",
+    "loudnessDb": -0.35000038,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:09:30.504Z"
+  },
+  "KH3Fdckq_ak": {
+    "tipo": "youtube",
+    "id": "KH3Fdckq_ak",
+    "consulta": "Ewan McGregor Your Song Moulin Rouge",
+    "titulo": "Moulin Rouge! - Your Song (Ft. Ewan McGregor) (1080p)",
+    "canal_o_artista": "@Duke_Top_Videos",
+    "album": null,
+    "duracion": 196,
+    "pais": "mx",
+    "loudnessDb": -4.1100006,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:09:33.965Z"
+  },
+  "Fe9N3Xcwtso": {
+    "tipo": "youtube",
+    "id": "Fe9N3Xcwtso",
+    "consulta": "Wicked No One Mourns the Wicked Kristin Chenoweth",
+    "titulo": "No One Mourns The Wicked (From \"Wicked\" Original Broadway Cast Recording/2003 / Audio)",
+    "canal_o_artista": "WickedVEVO",
+    "album": null,
+    "duracion": 401,
+    "pais": "mx",
+    "loudnessDb": 3.8900003,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:09:36.965Z"
+  },
+  "kCt1MWLel1Q": {
+    "tipo": "youtube",
+    "id": "kCt1MWLel1Q",
+    "consulta": "Andrew Garfield 30/90 tick tick BOOM",
+    "titulo": "tick, tick… BOOM! | Andrew Garfield “30/90” Official Song Clip | Netflix",
+    "canal_o_artista": "Still Watching Netflix",
+    "album": null,
+    "duracion": 105,
+    "pais": "mx",
+    "loudnessDb": -3.4099998,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:09:43.500Z"
+  },
+  "2uS4z0eiuLY": {
+    "tipo": "youtube",
+    "id": "2uS4z0eiuLY",
+    "consulta": "Legally Blonde So Much Better Laura Bell Bundy",
+    "titulo": "Laura Bell Bundy - So Much Better (Legally Blonde Broadway)",
+    "canal_o_artista": "legallywicked",
+    "album": null,
+    "duracion": 214,
+    "pais": "mx",
+    "loudnessDb": -4.3299999,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:09:46.872Z"
+  },
+  "BwelAuPuC0E": {
+    "tipo": "youtube",
+    "id": "BwelAuPuC0E",
+    "consulta": "Lea Michele Mama Who Bore Me Spring Awakening",
+    "titulo": "LEA MICHELE Spring Awakening",
+    "canal_o_artista": "aurora spiderwoman",
+    "album": null,
+    "duracion": 126,
+    "pais": "mx",
+    "loudnessDb": -13.98,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:09:49.631Z"
+  },
+  "m9v4e0tpRYk": {
+    "tipo": "youtube",
+    "id": "m9v4e0tpRYk",
+    "consulta": "Mentiras el musical Mentiras cancion",
+    "titulo": "Él Me Mintió, Mentiras, Lo Juro | Mentiras: La Serie",
+    "canal_o_artista": "Prime Video México",
+    "album": null,
+    "duracion": 128,
+    "pais": "mx",
+    "loudnessDb": -3.1200008,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:09:53.158Z"
+  },
+  "1PvLt4vzfVc": {
+    "tipo": "youtube",
+    "id": "1PvLt4vzfVc",
+    "consulta": "Hoy no me puedo levantar musical Maquillaje",
+    "titulo": "Hoy No Me Puedo Levantar El Musical - Maquillaje (México 2020)",
+    "canal_o_artista": "MusicalesMX",
+    "album": null,
+    "duracion": 159,
+    "pais": "mx",
+    "loudnessDb": 0.77000046,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:09:56.599Z"
+  },
+  "--EwJmB6WqY": {
+    "tipo": "youtube",
+    "id": "--EwJmB6WqY",
+    "consulta": "KPop Demon Hunters Libre español Free",
+    "titulo": "Free: Las guerreras K-pop 2025 | Clip oficial | Netflix",
+    "canal_o_artista": "Netflix Latinoamérica",
+    "album": null,
+    "duracion": 171,
+    "pais": "mx",
+    "loudnessDb": -6.6599998,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:10:04.064Z"
+  },
+  "T7Q7ZhNyHqk": {
+    "tipo": "youtube",
+    "id": "T7Q7ZhNyHqk",
+    "consulta": "Saja Boys Tu idolo español Your Idol KPop Demon Hunters",
+    "titulo": "Your Idol: Las guerreras K-pop 2025  | Clip oficial | Netflix",
+    "canal_o_artista": "Netflix Latinoamérica",
+    "album": null,
+    "duracion": 107,
+    "pais": "mx",
+    "loudnessDb": -3.6800003,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:10:07.024Z"
+  },
+  "uxWOfawV8yQ": {
+    "tipo": "youtube",
+    "id": "uxWOfawV8yQ",
+    "consulta": "Matilda Ninos rebeldes español Revolting Children",
+    "titulo": "Karaoke: ¡Estas niñas y niños no se quedarán callados! | Matilda, de Roald Dahl: El musical",
+    "canal_o_artista": "Netflix Latinoamérica",
+    "album": null,
+    "duracion": 175,
+    "pais": "mx",
+    "loudnessDb": -2.9799995,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:10:10.321Z"
+  },
+  "CEe0tj8aGpQ": {
+    "tipo": "youtube",
+    "id": "CEe0tj8aGpQ",
+    "consulta": "Matilda When I Grow Up Official",
+    "titulo": "When I Grow Up",
+    "canal_o_artista": "Matilda the Musical Original Cast - Topic",
+    "album": null,
+    "duracion": 217,
+    "pais": "mx",
+    "loudnessDb": 2.1999998,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:10:13.720Z"
+  },
+  "QV53Vy7KFLQ": {
+    "tipo": "youtube",
+    "id": "QV53Vy7KFLQ",
+    "consulta": "Matilda Naughty Alisha Weir",
+    "titulo": "'Naughty' ft. Alisha Weir - Dublin Peace Proms 2024",
+    "canal_o_artista": "CBOI Official",
+    "album": null,
+    "duracion": 266,
+    "pais": "mx",
+    "loudnessDb": 0.44999981,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:10:16.564Z"
+  },
+  "GVJgmp2Tc2s": {
+    "tipo": "youtube",
+    "id": "GVJgmp2Tc2s",
+    "consulta": "Andrew Rannells I Believe The Book of Mormon",
+    "titulo": "I Believe from the Book of Mormon Musical on the 65th Tony Awards.",
+    "canal_o_artista": "Kevin price",
+    "album": null,
+    "duracion": 324,
+    "pais": "mx",
+    "loudnessDb": -13.25,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:10:25.017Z"
+  },
+  "sWtbpEB27UE": {
+    "tipo": "youtube",
+    "id": "sWtbpEB27UE",
+    "consulta": "Alex Brightman The Whole Being Dead Thing Beetlejuice",
+    "titulo": "Watch the Opening Number From Beetlejuice on Broadway - \"The Whole Being Dead Thing\"",
+    "canal_o_artista": "Playbill",
+    "album": null,
+    "duracion": 308,
+    "pais": "mx",
+    "loudnessDb": -4.2000008,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:10:28.101Z"
+  },
+  "Er6cBpR63XA": {
+    "tipo": "youtube",
+    "id": "Er6cBpR63XA",
+    "consulta": "Heathers The Musical Seventeen Barrett Wilbert Weed",
+    "titulo": "Seventeen",
+    "canal_o_artista": "Barrett Wilbert Weed - Topic",
+    "album": null,
+    "duracion": 192,
+    "pais": "mx",
+    "loudnessDb": 1.0900002,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:10:31.153Z"
+  },
+  "3EyDyxGZn_Y": {
+    "tipo": "youtube",
+    "id": "3EyDyxGZn_Y",
+    "consulta": "Heathers The Musical Dead Girl Walking",
+    "titulo": "Dead Girl Walking - Heathers: The Musical +LYRICS",
+    "canal_o_artista": "Heathers Musical Lyrics",
+    "album": null,
+    "duracion": 203,
+    "pais": "mx",
+    "loudnessDb": 3.3400002,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:10:34.408Z"
+  },
+  "3rU2Xf1LK-g": {
+    "tipo": "youtube",
+    "id": "3rU2Xf1LK-g",
+    "consulta": "Mean Girls Broadway World Burn Taylor Louderman",
+    "titulo": "World Burn",
+    "canal_o_artista": "Taylor Louderman - Topic",
+    "album": null,
+    "duracion": 203,
+    "pais": "mx",
+    "loudnessDb": 6.5900002,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:10:37.810Z"
+  },
+  "O9Hngn4Zcbk": {
+    "tipo": "youtube",
+    "id": "O9Hngn4Zcbk",
+    "consulta": "Timothee Chalamet Pure Imagination Wonka",
+    "titulo": "Wonka 2023 - Pure Imagination - Timothée Chalamet",
+    "canal_o_artista": "baessist-z",
+    "album": null,
+    "duracion": 251,
+    "pais": "mx",
+    "loudnessDb": -10.67,
+    "resultado": {
+      "oembed": 200,
+      "playabilityStatus": "OK",
+      "playableInEmbed": true
+    },
+    "fecha": "2026-10-16T23:10:40.861Z"
   }
 }
