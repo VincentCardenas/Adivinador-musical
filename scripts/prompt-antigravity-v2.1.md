@@ -3,9 +3,28 @@ Eres el encargado del catálogo de "Adivinador musical" (repositorio VincentCard
 Tienes internet: úsalo para comprobar cada fuente de audio de verdad. Por eso te toca este encargo: en sesiones anteriores, sin internet, se inventaron IDs de audio y hubo que repararlos. No puedes oír el audio, así que lo que solo se decide oyendo lo dejas anotado para el usuario.
 
 ## 0. Antes de empezar
-1. Con git status limpio (si no lo está, detente y avisa): git fetch origin y crea la rama antigravity/v2.1-catalogo desde origin/claude/clever-sagan-5xuvc1. Esa rama tiene main más 30 series nuevas sin comprobar.
-2. Lee antigravity_memory.md, planificacion_proyecto.md, la sección del README sobre cómo agregar pistas, js/themes.js, js/sources.js y el encabezado de cada catálogo. Sus reglas siguen vigentes.
+1. Tu copia local se quedó en la 1.9.3-experimental: su README termina en la 1.9.2 y en tus expansiones 1.10 a 1.13. En GitHub ya hay siete versiones más (ver la sección siguiente). No partas de esa copia ni de tu memoria.
+   - git status debe estar limpio. Si no lo está, detente y avisa.
+   - Si tienes commits locales que no están en GitHub, no los borres ni los mezcles: detente y avisa.
+   - Si todo está bien: git fetch origin y crea la rama antigravity/v2.1-catalogo desde origin/claude/clever-sagan-5xuvc1. Esa rama tiene main (versión 2.0) más 30 series nuevas sin comprobar.
+2. Ya en la rama nueva, vuelve a leer desde los archivos: antigravity_memory.md (llega hasta la 1.9.5-hotfix1), planificacion_proyecto.md, la sección del README sobre cómo agregar pistas, js/themes.js, js/sources.js y el encabezado de cada catálogo. Sus reglas siguen vigentes. Si algo de tu memoria contradice el código actual, manda el código.
 3. Para probar el juego: node scripts/server.js (puerto 8080). No funciona con file://.
+
+## Lo que cambió desde la 1.9.3-experimental (tu copia no lo tiene)
+- 1.9.3-exp-hotfix2: en Caricaturas, "2010 en adelante" se dividió en tres épocas: toon-1014 (2010 a 2014), toon-1519 (2015 a 2019) y toon-20s (2020 en adelante). AM.CATEGORY_RENAMES y loadCats() pasan la selección guardada a las nuevas. Llegó Kick Buttowski: Caricaturas tiene 296.
+- 1.9.4: ronda bonus en Supervivencia. Cada 5 rondas hay una (bonusEvery: 5); acertarla devuelve una vida.
+- 1.9.5: género Country en Canciones (100 canciones): Canciones tiene 1,816, no 1,716. Se guarda am.catsKnown, y las categorías nuevas van en AM.NEW_CATEGORIES.
+- 1.9.5-hotfix1: el ranking bloquea nicknames ofensivos (js/scores.js y supabase/schema.sql, revisado con validate-nick-filter.js). busca() de Canciones acepta duetos "Artista y Artista".
+- 1.9.6: configurador paso a paso en el inicio. Está guardado en la rama respaldo-v1.9.6 y el tag v1.9.6 para regresar a él si hace falta: no los toques.
+- 2.0, en main y publicada como release V2.0 (PR #19):
+  - el inicio se rediseñó estilo "setlist": tres partes en un panel (1 Tema, 2 Modo, 3 Música) y el resumen "Tu partida" con el botón ▶ Jugar;
+  - cambió index.html, css/styles.css, todo el bloque del inicio de js/app.js y un poco js/themes.js (catsLabel y offLabel). No toques nada de eso;
+  - los catálogos no cambiaron, y "🛠 Verificar catálogo" sigue al pie de la página.
+- Después de la 2.0, en la rama claude/clever-sagan-5xuvc1 (todavía no en main):
+  - 30 series nuevas en js/catalog-series.js, con el ayudante buscaTv (busca en Apple Music, primero México y luego EE. UU.). Las agregó scripts/build-series-gemini.js desde scripts/series-gemini-1.json;
+  - Mi bella genio y Alf dejaron de ser señuelos;
+  - este prompt, en scripts/prompt-antigravity-v2.1.md.
+- La versión actual es 2.0: js/config.js y los ?v=2.0 de index.html. La siguiente será la 2.1.
 
 ## Reglas que no se rompen
 - NUNCA escribas, adivines ni completes de memoria un ID de YouTube o de Apple. Cada ID sale de una búsqueda real que hiciste ahora, y lo compruebas así:
@@ -154,7 +173,10 @@ Si te sobra tiempo: agrega un respaldo comprobado a las pistas que tienen una so
    - js/config.js (version);
    - todos los ?v= de index.html;
    - una entrada en el historial del README, arriba de 2.0, que diga qué se arregló, qué se agregó por tema y qué issues se arreglaron.
-7. Anota en antigravity_memory.md las herramientas y reglas nuevas, como audit-red.js y cómo se usa.
+7. Pon al día antigravity_memory.md:
+   - lo que falta después de la 1.9.5-hotfix1: la 1.9.6, la 2.0 y la 2.1 (ver "Lo que cambió desde la 1.9.3-experimental");
+   - las herramientas y reglas nuevas, como audit-red.js y cómo se usa;
+   - las cifras nuevas de cada catálogo.
 
 ## Entrega
 - Sube la rama antigravity/v2.1-catalogo con los commits de cada fase y tema.
