@@ -66,7 +66,7 @@
 - [x] 4. Ejecutar `node scripts/audit-red.js todos`, generar `scripts/audit-red-report.json`, respaldar las métricas iniciales ("antes") por tema para el reporte final, verificar `check-phase4.js` y hacer commit + push a `antigravity/v2.1-catalogo`.
 
 ### Fase 2: Corrección de Issues (#8–#18), Fuentes Muertas, 16 Retiradas y 30 Series de Gemini
-- [ ] 5. Resolver los 11 issues abiertos (#8 a #18) buscando y comprobando fuentes reales en `scripts/evidencia-v2.1.json` y registrando tiempos de inicio en `scripts/revisar-a-oido.md`:
+- [x] 5. Resolver los 11 issues abiertos (#8 a #18) buscando y comprobando fuentes reales en `scripts/evidencia-v2.1.json` y registrando tiempos de inicio en `scripts/revisar-a-oido.md`:
   - `#8` `dis-hercules-no-importa-la-distancia` (doblaje latino de la película).
   - `#9` `tv-los-soprano-woke-up-this-morning` (versión de entrada de TV, *Chosen One Mix* de Alabama 3).
   - `#10` `toon-los-padrinos-magicos-los-padrinos-magicos-tema` (entrada latina oficial de TV).
@@ -78,10 +78,10 @@
   - `#16` `ani-blue-seed-carnival-babel` (`yt(id, start)` o video donde la música arranque a tiempo).
   - `#17` `dis-mulan-reflejo` (grabación de la película cantada por Lucero).
   - `#18` `toon-shuriken-school-tema` (reemplazar video caído `WTQ_bj6T14g`).
-- [ ] 6. Reparar todas las pistas clasificadas como `muerta` o claramente equivocadas en la Fase 1 en todos los temas (sin tocar Canciones ni fuentes sanas); retirar a `scripts/pendientes-v2.1.json` únicamente las que no tengan ninguna fuente real disponible.
-- [ ] 7. Auditar con la lógica real de `js/sources.js` las 30 series agregadas por `scripts/build-series-gemini.js`: ajustar `match`, `artist`, `album_hint` o cambiar a `yt(id)` comprobado cuando `buscaTv` falle o devuelva un cover; pasar a `DESCARTADAS` en `scripts/build-series-gemini.js` las que no tengan fuente válida.
-- [ ] 8. Re-evaluar desde cero las 16 pistas retiradas en la reparación anterior (5 de Anime y 11 de Caricaturas, tomando metadatos de `scripts/backups/catalog-{anime,caricaturas}.pre-fix.js` y candidatos de `scripts/pendientes-{anime,caricaturas}.json` pero comprobando cada ID contra la red) y reincorporar solo las que tengan fuente real válida.
-- [ ] 9. Actualizar conteos de cabeceras y secciones tras las correcciones de la Fase 2, ejecutar `node scripts/check-phase4.js`, y hacer commit (incluyendo `Fixes #8` a `Fixes #18`) + push a `antigravity/v2.1-catalogo`.
+- [x] 6. Reparar todas las pistas clasificadas como `muerta` o claramente equivocadas en la Fase 1 en todos los temas (sin tocar Canciones ni fuentes sanas); retirar a `scripts/pendientes-v2.1.json` únicamente las que no tengan ninguna fuente real disponible.
+- [x] 7. Auditar con la lógica real de `js/sources.js` las 30 series agregadas por `scripts/build-series-gemini.js`: ajustar `match`, `artist`, `album_hint` o cambiar a `yt(id)` comprobado cuando `buscaTv` falle o devuelva un cover; pasar a `DESCARTADAS` en `scripts/build-series-gemini.js` las que no tengan fuente válida.
+- [x] 8. Re-evaluar desde cero las 16 pistas retiradas en la reparación anterior (5 de Anime y 11 de Caricaturas, tomando metadatos de `scripts/backups/catalog-{anime,caricaturas}.pre-fix.js` y candidatos de `scripts/pendientes-{anime,caricaturas}.json` pero comprobando cada ID contra la red) y reincorporar solo las que tengan fuente real válida.
+- [x] 9. Actualizar conteos de cabeceras y secciones tras las correcciones de la Fase 2, ejecutar `node scripts/check-phase4.js`, y hacer commit (incluyendo `Fixes #8` a `Fixes #18`) + push a `antigravity/v2.1-catalogo`.
 
 ### Fase 3: Expansión de Catálogos (+20 % por Categoría)
 - [ ] 10. **Series (`js/catalog-series.js`):** Crear y ejecutar `scripts/build-series-v21.js` para alcanzar la meta de **192 pistas totales** (reparto orientativo: `tv-clasicas` +6, `tv-90s` +12, `tv-00s` +18, `tv-10s` +20, `tv-20s` +14; incluyendo *Walker, Texas Ranger*, *Sabrina, la bruja adolescente* y *Dos hombres y medio* si se halla su entrada en YouTube, sin repetir el resto de `series-gemini-1.json`, limpiando señuelos en `AM.EXTRA_GAMES`). Ejecutar validaciones y hacer commit + push.

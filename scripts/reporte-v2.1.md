@@ -2,28 +2,29 @@
 
 Rama: `antigravity/v2.1-catalogo` (desde `origin/claude/clever-sagan-5xuvc1`). Este reporte se actualiza en cada commit.
 
-## 1. Auditoría de red — antes
+## 1. Auditoría de red — antes vs. tras Fase 2
 
-`node scripts/audit-red.js todos` sobre la rama base (`scripts/audit-red-antes.json`, 2026-10-16):
+`node scripts/audit-red.js todos` (`scripts/audit-red-antes.json` vs. `scripts/audit-red-report.json`):
 
-| Tema | Total | OK | Dudosas | Muertas |
-|---|---:|---:|---:|---:|
-| Series | 122 | 114 | 4 | 4 |
-| Videojuegos | 281 | 263 | 3 | 15 |
-| Sagas | 184 | 167 | 17 | 0 |
-| Caricaturas | 296 | 221 | 75 | 0 |
-| Anime | 251 | 186 | 64 | 1 |
-| Disney | 71 | 59 | 12 | 0 |
-| Musicales | 222 | 213 | 0 | 9 |
-| **Total** | **1,427** | **1,223** | **175** | **29** |
+| Tema | Antes (Total / OK / Dudosas / Muertas) | Tras Fase 2 (Total / OK / Dudosas / Muertas) |
+|---|---|---|
+| Series | 122 / 114 / 4 / 4 | 122 / 118 / 4 / **0** |
+| Videojuegos | 281 / 263 / 3 / 15 | 281 / 276 / 5 / **0** |
+| Sagas | 184 / 167 / 17 / 0 | 184 / 167 / 17 / **0** |
+| Caricaturas | 296 / 221 / 75 / 0 | 307 (+11 recuperadas) / 237 / 70 / **0** |
+| Anime | 251 / 186 / 64 / 1 | 256 (+5 recuperadas) / 213 / 43 / **0** |
+| Disney | 71 / 59 / 12 / 0 | 71 / 59 / 12 / **0** |
+| Musicales | 222 / 213 / 0 / 9 | 222 / 220 / 2 / **0** |
+| **Total** | **1,427 / 1,223 / 175 / 29** | **1,443 / 1,290 / 153 / 0** |
 
 ## 2. Cómo se comprobó cada ID
 
 - Búsquedas reales con `scripts/lib-v21.js` (YouTube: 1 búsqueda/s, oEmbed + página `watch?v=` con `playabilityStatus.status === "OK"` y `playableInEmbed !== false`; Apple: lookup con el mismo `country` de la fuente y `previewUrl`).
 - Cada comprobación queda en `scripts/evidencia-v2.1.json` por ID (consulta, título, canal/artista, álbum, duración, país, resultado, fecha).
-- `node scripts/check-evidencia.js` revisa sin internet que cada ID nuevo o cambiado frente a la rama base tenga evidencia válida y del mismo país.
+- `node scripts/check-evidencia.js` revisa sin internet que cada ID nuevo o cambiado frente a la rama base tenga evidencia válida y del mismo país (380 IDs revisados, 0 sin evidencia).
 - `node scripts/diff-fuentes.js --md` genera la lista completa de abajo (fuente vieja → nueva, con el título y canal de la evidencia).
 - Lo que solo se decide oyendo está en `scripts/revisar-a-oido.md`.
+- Ninguna pista tuvo que quitarse (`scripts/pendientes-v2.1.json` vacío `[]`).
 
 ## 3. Estado de los issues (#8 a #18) — TODOS RESUELTOS
 
@@ -36,20 +37,20 @@ Rama: `antigravity/v2.1-catalogo` (desde `origin/claude/clever-sagan-5xuvc1`). E
 | #12 | `toon-inuyasha-change-the-world` | **Arreglado:** agregado el opening 1 en español latino («El mundo he de cambiar», `suU86VJt5a0` TV size y `PxQ9RdKxclQ`) delante del respaldo de Apple (`1848248144`). |
 | #13 | `toon-yu-yu-hakusho-sonrisa-explosiva` | **Arreglado:** ajustado inicio a `yt('RncCJNOZLb0', 15)` para saltar la introducción silenciosa; además se separó `ani-yu-yu-hakusho-hohoemi-no-bakudan` con el opening japonés original (`urZWmEgm72Q`, Crunchyroll). |
 | #14 | `toon-dragon-ball-gt-mi-corazon-encantado` | **Arreglado:** puesto primero el opening latino de TV (`wgZ-ATUGXDw` y respaldo `dF4OwMSrnUQ`) y retirado el Apple que tocaba una regrabación. |
-| #15 | Reporte viejo de Caricaturas con IDs inventados | **Confirmado:** `node scripts/audit-red.js caricaturas` comprobó las 296 pistas de Caricaturas contra YouTube/Apple y dio **0 muertas**; no queda ningún ID inventado del reporte #15. |
+| #15 | Reporte viejo de Caricaturas con IDs inventados | **Confirmado:** `node scripts/audit-red.js caricaturas` comprobó todas las pistas de Caricaturas contra YouTube/Apple y dio **0 muertas**; no queda ningún ID inventado del reporte #15. |
 | #16 | `ani-blue-seed-carnival-babel` | **Arreglado:** reemplazado `hwQVtycXyZw` por el audio oficial `NArssqBPTvE` («CARNIVAL・BABEL ～カルナバル・バベル～», TAKADA BAND - Topic) que arranca directo sin intro hablada, más respaldos `kqPxlbAseho` y `ykbcsmjbUiQ`. |
 | #17 | `dis-mulan-reflejo` | **Arreglado:** cambiado de Apple `1624897208` («Reflejo (Tema Principal)», versión pop de créditos) a Apple `1624897102` («Reflejo», pista 2 del álbum *Mulán (Banda Sonora Original en Español)*, 2:26, versión de la película) + respaldo YouTube `_yTsNxhGE30`. |
 | #18 | `toon-shuriken-school-tema` | **Arreglado:** reemplazado `WTQ_bj6T14g` por el opening oficial `I6fEsMsgw8c` (canal oficial *Shuriken School*) y respaldo `jC4G22p6OhM`. |
 
-## 4. Pistas arregladas y recuperadas (fuente vieja → nueva)
+## 4. Pistas arregladas y recuperadas en Fase 2 (fuente vieja → nueva)
 
 Incluye:
 - Los **11 issues (#8 a #18)**.
 - Las **29 pistas muertas** de la auditoría inicial (4 de Series, 15 de Videojuegos, 1 de Anime y 9 de Musicales) + fuentes primarias caídas (`acnh-main`, `toon-un-show-mas-un-show-mas-entrada`).
-- Las **30 series de Gemini** (14 que ya resolvían a la grabación original con `buscaTv` y 16 que se repararon con fuentes originales comprobadas).
+- Las **30 series de Gemini** (14 que ya resolvían a la grabación original con `buscaTv` y 16 reparadas con fuentes originales comprobadas).
 - Los **15 covers de Videojuegos** y **3 covers de Musicales** que resolvían a covers en Apple Music.
-- Las **27 pistas de Anime** que tenían un video equivocado o duplicado en YouTube.
-- Las **5 pistas retiradas de Anime** recuperadas con fuentes reales comprobadas (`ani-trigun-ht`, `ani-inuyasha-i-am`, `ani-katekyo-hitman-reborn-88`, `ani-ranking-of-kings-boy`, `ani-ranking-of-kings-naked-hero`).
+- Las **27 pistas de Anime** y **35 pistas de Caricaturas** con video equivocado, duplicado o corto.
+- Las **16 pistas retiradas** en la reparación anterior (5 de Anime y 11 de Caricaturas), todas recuperadas con fuentes reales comprobadas.
 
 ### js/catalog.js
 
@@ -206,15 +207,142 @@ Incluye:
 
 ### js/catalog-caricaturas.js
 
+- `toon-canuto-y-canito-tema` (cambiada)
+  - antes: yt YWHvV9qKXbg
+  - ahora: yt N0ltSTIoQYA «Boomerang spot - Canuto y Canito - Augie Doggie» (carloscentella, 61s) · yt CxCjSAhm6Og «Augie Doggie and Doggie Daddy (1959) - Extended Main Theme» (robmic, 64s) · yt JFJhf7P6Li0 «TV THEME - "AUGIE DOGGIE"» (Pirate Radio U.S.A., 28s)
+- `toon-superman-filmation-1966-tema` (cambiada)
+  - antes: yt WAQW_u9eiuU
+  - ahora: yt Vp8yZoc4Bbs «Las Nuevas Aventuras de Superman (1966) | Intro Original | Español Latino | Remasterizada en Full HD» (Long Play Chile, 54s) · yt -BnMrpMd1Rc «OPENING  LAS NUEVAS AVENTURAS DE SUPERMAN 1966   TV RIP CANAL WARNER» (SuperEddiejam, 55s) · yt XY9rOVu0RBk «New Adventures of Superman Theme Song (1966)» (Kurtis Findlay, 56s)
+- `toon-batman-filmation-1968-tema` (cambiada)
+  - antes: yt Fgz9cJScRik
+  - ahora: yt jKkhUwK7bXo «Las aventuras de Batman y Robin (intro de 1968).» (¡Archivo nostálgico!, 59s) · yt ZjAFAV7S6Sg «batman y robin 1968 audio latino» (Retro'X Tv, 201s) · yt N94ljLAeplk «The Adventures of Batman | 1968 Cartoon Intro» (Near Mint Fanboys, 61s)
+- `toon-archie-show-sugar-sugar` (cambiada)
+  - antes: yt hfuU-xOj8lA
+  - ahora: yt WGl0sdlIDiU «Los Archies Intro 1968» (GMJCZP, 58s) · yt j3plj_Xplus «The Archies - Sugar, Sugar (Official Animated Music Video)» (TheArchiesVEVO, 182s) · apple 214805381 mx «Sugar, Sugar» (The Archies — Sugar, Sugar - Single) · apple 1412839444 mx «Sugar, Sugar» (The Archies — Everything's Archie)
+- `toon-nuevas-peliculas-scooby-doo-tema` (cambiada)
+  - antes: yt 6Jj8sIcCsuU
+  - ahora: yt vQrfORAuxjA «Las Nuevas películas de Scooby Doo (1972) en Azteca 7 Estreno Intro» (Martín Arredondo, 77s) · yt M7QXmazyPnk «Nuevas películas de Scooby Doo (1972) en Azteca 7 Estreno Intro» (Araceli Medina Gomez, 62s) · yt FeRm2esVSdY «1972 The New Scooby-Doo Movies Intro S1» (ScoobyDooEpisodes, 61s)
+- `toon-dinamita-perro-maravilla-tema` (nueva)
+  - ahora: yt rkeIwShrX74 «Fabulman y Dinamita intro latino» (MF RETRO VINTAGE, 73s) · yt ngi7qrPCYDc «DINAMITA Y FABULMAN  Intro Español Latino» (J.L MEGA-RETRO, 71s) · yt VxxL2YvNkzE «Dynomutt Dog Wonder TV intro (1978)» (Fabs Jimenez, 59s)
+- `toon-frankenstein-jr-los-imposibles-tema` (nueva)
+  - ahora: yt XrkRs8s7pY0 «Los imposibles intro español latino» (Retro'X Tv, 46s) · yt xtInRPbNn3U «Opening los imposibles y frankenstein jr» (TV CLASICOS, 51s) · yt qjftOJhpPU4 «Open | Frankenstein Jr. & The Impossibles | Warner Archive» (Warner Bros. Classics, 50s)
+- `toon-simiolon-y-la-pandilla-tema` (nueva)
+  - ahora: yt D_d583FHxPQ «The Great Grape Ape Show Intro» (CockGoblin, 61s) · yt 6xv8hi7JOGc «TV THEME - "THE GREAT GRAPE APE SHOW"» (Pirate Radio U.S.A., 54s)
+- `toon-pequenos-picapiedra-tema` (cambiada)
+  - antes: yt DJAp5DrYX_s
+  - ahora: yt eaN7TYMV70Y «Los Pequeños Picapiedra Intro latino» (Soy Retro, 60s) · yt bvp6DlAKhmM «Los Pequeños Picapiedra - Intro» (T. C. Intros Latinos, 75s) · yt ozALyhvfsRk «THE FLINTSTONE KIDS (Opening Sequence)» (K.J. Norman, 66s)
+- `toon-cachorro-scooby-doo-tema` (cambiada)
+  - antes: yt 6Jj8sIcCsuU
+  - ahora: yt OJ79j5n-dWY «Un Cachorro Llamado Scooby Doo - Intro Latino» (El Canal Retro, 62s) · yt ezq4yUD7WXo «Un Cachorro Llamado Scooby Doo 1988 (Español Latino)» (Generación Retro, 184s) · yt yVraEch7IhA «A Pup Named Scooby-Doo (Theme Song)» (platypusduck54, 62s)
+- `toon-daniel-el-travieso-dic-tema` (cambiada)
+  - antes: yt 0mxI4nDiIIc «Daniel El Travieso - Intro latino» (T. C. Intros Latinos, 70s)
+  - ahora: yt K6omA3sFMyQ «Daniel El Travieso - Intro (Latino) HD» (CaricaturasDeAyer, 61s) · yt 0mxI4nDiIIc «Daniel El Travieso - Intro latino» (T. C. Intros Latinos, 70s) · yt LLdAVXOeNHk «Dennis The Menace Cartoon Theme Song/Intro [HQ - 1986]» (ArisGreek30, 62s)
+- `toon-capitan-n-el-amo-del-juego-tema` (nueva)
+  - ahora: yt ZLKhjYiwQEQ «Capitan N Opening 1» (PastTies, 77s) · yt GQbr7_CkgPA «Captain N: The Game Master Season 2 opening» (WordsmithVG, 31s) · yt qbJomK-v2Is «Captain N & The Videogame Masters» (neslink, 28s)
+- `toon-godzilla-serie-animada-90s-tema` (cambiada)
+  - antes: yt rirhQSAPDV8
+  - ahora: yt 1b2CtgkwJQA «Godzilla: The Series (Opening)» (jigsaw332, 72s) · yt VkTQqUNLp64 «Godzilla:The Series Intro HD 720P» (NINE ART, 64s) · yt C8Vg9d7CaaY «Classic TV Theme: Godzilla, The Series (Full Stereo)» (David Gideon, 126s)
+- `toon-cuatro-fantasticos-1994-tema` (cambiada)
+  - antes: yt eLZyt2eKFO4
+  - ahora: yt _wkvydrFAwQ «Los 4 Fantásticos - Intro en Español (Serie 1994)» (Ciber Cosmos, 61s) · yt JqdNhWLaEPI «Serie 90´s Los 4 Fantasticos Intro 1» (franco meza, 108s) · yt XggH5-vLlUQ «Fantastic Four Cartoon Intro» (MikeSchwartzWrites, 66s)
+- `toon-superman-serie-animada-tema` (cambiada)
+  - antes: yt WAQW_u9eiuU
+  - ahora: yt SjS2TqzuzoY «Superman: The Animated Series | Intro | HBO Max» (HBO Max Latinoamérica, 62s) · yt Q7DQAjR7rgY «Superman: The Animated Series (Main Title)» (Shirley Walker - Topic, 66s) · yt cUYyKD10fEw «Superman The Animated Series 1996 Intro 4k» (Black Machine, 60s)
+- `toon-beavis-y-butt-head-tema` (cambiada)
+  - antes: yt tIDDZfRfN34
+  - ahora: yt 3p2rWlCQ7cI «BEAVIS AND BUTT-HEAD - Main Theme  By Mike Judge | MTV» (Geek Music, 127s) · yt aWvd8ouoy3g «Mike Judge's Beavis and Butt-Head (2022) Intro» (fiumba2, 21s)
+- `toon-el-zorro-1997-serie-tema` (nueva)
+  - ahora: yt BlcfuwTASnU «Zorro 1997 La Serie Animada (Español Latino)» (Generación Retro, 61s) · yt uvK6SFlDkfQ «The New Adventures of Zorro 1997   Intro Opening» (Neal Hernandez, 58s)
+- `toon-dinosaurios-extremos-tema` (nueva)
+  - ahora: yt cQiJZJaw7qU «Extremodinos [Opening Latino].mp4» (oditel, 60s) · yt VI__EW_fPJs «Extreme Dinosaurs Intro HQ» (thomziq, 60s) · yt 4G-pv7P3aJU «Extreme Dinosaurs Full Intro Theme» (IntroKingOfMelody, 114s)
+- `toon-fantasma-2040-tema` (nueva)
+  - ahora: yt B-QaC0nHSMs «El fantasma 2040» (Actv Latino, 59s) · yt xPF4g4kC9a4 «Phantom 2040 Intro» (Dalton Barron, 62s) · yt r2HEvWUNzwQ «The Phantom.mov» (GeraldOBrienMusic, 59s)
+- `toon-mighty-max-serie-tema` (nueva)
+  - ahora: yt oaA-dMLG-1E «RESTORED Mighty Max Opening (Intro)» (Mighty Max Restoration Project, 57s) · yt tS_h8D1ZlLs «Mighty Max Intro» (SlayerMatt69, 70s)
+- `toon-oggy-y-las-cucarachas-tema` (nueva)
+  - ahora: yt 5jSU_VkSdKY «Oggy and the Cockroaches - Opening Credits - Season 4 (HD)» (Xilam Animation, 31s) · yt 5YImzqFQ2vU «The Mini-Golf War - Oggy and the Cockroaches Soundtrack OST» (Liem_Tran4, 36s)
 - `toon-los-padrinos-magicos-los-padrinos-magicos-tema` (cambiada)
   - antes: yt kFjexH-badI · yt AN02Z35CJgk «Los Padrinos Mágicos - Intro HD Latino: (2001)» (Intro TV, 52s)
   - ahora: yt 8-GyMX9ynj0 «Intro Los Padrinos Mágicos [Nickelodeon Latam]» (TVMix y Caricaturas, 59s) · yt UNNwMc4OGBg «Intro Los Padrinos Mágicos - Versión NickToons (Latino PAL)» (Nomelas CN, 52s) · yt LZF8GErHgIk «Los padrinos magicos Intro (Español Latino) (Azteca 7 SD)» (Samsung Galaxy Tab A9+ 5G, 120s)
+- `toon-peppa-pig-peppa-pig-theme` (cambiada)
+  - antes: yt bwtTZVUmV94 «PEPPA LA CERDITA - INTRO (ESPAÑOL LATINO DISCOVERY KIDS)» (Peppa La Cerdita, 16s) · yt iUjKJzjGImw «Peppa Pig | intro | versión 3 | Discovery Kids» (TonyDK, 15s)
+  - ahora: yt wulejb3mZK0 «Theme Music From Peppa Pig» (Peppa Pig - Topic, 39s)
+- `toon-el-campamento-de-lazlo-el-campamento-de-lazlo-tema` (cambiada)
+  - antes: yt UjixodxQX_U · yt va-i4lrvzBE
+  - ahora: yt lUCAQfipGvE «El campamento de lazlo intro latino» (Magic y Cartoon del recuerdo, 36s) · yt M7VVJG6KFpk «camp lazlo intro latino» (promos escenas intros y mas, 47s) · yt Pan0F0y_OMs «Camp Lazlo Theme Song» (Scooby-Doo Fan, 38s)
 - `toon-shuriken-school-tema` (cambiada)
   - antes: yt WTQ_bj6T14g «Shuriken School Y El Mago Serie Animada Intro Español Latino Crossover» (José Lau sanchez, 138s)
   - ahora: yt I6fEsMsgw8c «Shuriken School - Opening Credits - Season 1 (HD)» (Shuriken School, 45s) · yt jC4G22p6OhM «Shuriken School Theme & Credits» (CanadaToonFan, 79s)
+- `toon-liga-de-la-justicia-ilimitada-tema` (cambiada)
+  - antes: yt Q51kns5haj4
+  - ahora: yt ufM59OOvPw0 «Liga De La Justicia Ilimitada Opening Español Latino (1080p HD)» (Demis Facundo Hereñú, 60s) · yt GTwzS8Uf8o0 «Liga de la Justicia Ilimitada Intro Opening Justice League Unlimited» (Ayumintro, 60s) · yt pesEIkgz5Ko «Justice League Unlimited Theme» (Michael McCuistion - Topic, 62s)
+- `toon-the-batman-2004-tema` (cambiada)
+  - antes: yt Fgz9cJScRik
+  - ahora: yt p4qLo_-OS8M «THE BATMAN 2004 SERIES SEASON 1 INTRO HD» (Jack X, 61s) · yt dtKsB6lUXfU «U2 - Theme From 'The Batman' (Visualiser)» (U2VEVO, 103s) · yt it1AVeGS3dw «The Batman - Season 4-5 | Opening Theme (English) (HD)» (Ben10Petya, 60s)
+- `toon-batman-el-valiente-tema` (cambiada)
+  - antes: yt Fgz9cJScRik
+  - ahora: yt uczM19x3aNM «Batman: The Brave and the Bold Theme» (Andy Sturmer - Topic, 32s) · yt 9g9r4TFTFyk «"Batman: The Brave and The Bold" Opening Titles» (The World's Finest, 31s)
+- `toon-x-men-evolution-tema` (cambiada)
+  - antes: yt YypzWfwOC3A
+  - ahora: yt tYSpja6JBZo «X-Men Evolution Opening» (reconmeee, 51s) · yt jwXCV2ZB2iw «X-Men: Evolution - Season 3-4 | Opening Theme (English) (HD)» (Ben10Petya, 60s)
+- `toon-wolverine-y-los-x-men-tema` (cambiada)
+  - antes: yt YypzWfwOC3A
+  - ahora: yt mVGIukft1Gs «Wolverine and the X-Men (Intro) [HD]» (DanChaotic1, 45s) · yt Tw8uoMfhIjo «Wolverine and the X-Men - Opening» (Gemma Jones, 74s) · yt 0f2RES_A49Q «Wolverine and the X Men Intro Theme» (Chris, 30s)
+- `toon-spider-man-mtv-2003-tema` (cambiada)
+  - antes: yt 2887MsT5Axw «Spiderman / Hombre Araña - Opening Latino (remasterizado)» (Bellower666, 61s)
+  - ahora: yt 1g8l0Bbbij8 «Spider-Man TNAS Intro (1080p HD)» (SpiderSlim716, 31s) · yt RihN05tCwyo «Spider-Man TNAS Live Action Intro» (ArachnidoComics, 31s)
+- `toon-static-shock-choque-estatico-tema` (cambiada)
+  - antes: yt EeaGn0ON968
+  - ahora: yt qDct-i8JZhc «Static Shock - Opening 1» (Static Shock Latino, 61s) · yt -oHskbJ9nEs «Static Shock - Opening 2» (Static Shock Latino, 60s) · yt 10AWeHE4X8M «Static Shock Opening» (stinnetnator, 61s)
+- `toon-tutenstein-discovery-kids-tema` (cambiada)
+  - antes: yt l8NX7FyrNfE
+  - ahora: yt 2wmzRZzGRtc «Tutenstein: Theme Song» (Tutenstein - Official Channel, 67s)
+- `toon-star-wars-clone-wars-2008-tema` (cambiada)
+  - antes: yt SU4WjBo1O84
+  - ahora: yt tacl5JYFb78 «Star Wars la Guerra de los Clones Intro español latino» (José Carlos, 80s) · yt iKZgzM8Ghns «Star Wars Main Title & A Galaxy Divided» (Kevin Kiner - Topic, 73s) · yt UxZRZsq-Aj4 «Star Wars The Clone Wars Main Title (Original) - Kevin Kiner» (Clone Gunner Commander Jedi, 22s)
+- `toon-el-chavo-animado-tema` (nueva)
+  - ahora: yt gFh3Xo3LpoQ «El Chavo Animado introducción completa.» (Veronica Bottaro, 71s) · yt UQT5HA2RjPI «El Chavo Animado Intro (Discovery Kids)» (FRAN!, 68s)
+- `toon-dibo-el-dragon-de-los-deseos-tema` (nueva)
+  - ahora: yt HWUfMvlQfH4 «Dibo: El Dragón de los Deseos (Intro) (Solo en Audio)» (The Fernando Dalmatian 206, 61s) · yt RvEDxs9QTNc «Dibo - cancion del regalo - canciones infantiles» (DibujosPekes, 72s) · yt tKAtNr-9NtU «Dibo the gift dragon official theme song opening» (Animation Music Hub, 61s)
+- `toon-el-increible-mundo-de-gumball-the-amazing-world-of-gumb` (cambiada)
+  - antes: yt jKxdMtEzrKs «El increíble mundo de Gumball | Intro en español | HBO Max» (HBO Max Latinoamérica, 19s) · yt X7PmWMQJTqU
+  - ahora: yt eYuifjzBfFM «El Maravilloso mundo de Gumball creditos» (Bryan Escarate Salinas, 30s) · yt YfAgvE-XSz8 «The Amazing World Of Gumball Credits» (Fernando11101, 35s) · yt oK8jcNqc8Xw «The Amazing World Of Gumball Extended Intro Song!!!» (CLOVER!, 61s)
 - `toon-un-show-mas-un-show-mas-entrada` (cambiada)
   - antes: yt J7z20AVaYto · yt mDLqrtIV0UI
   - ahora: yt mDLqrtIV0UI
+- `toon-ultimate-spider-man-tema` (cambiada)
+  - antes: yt 2887MsT5Axw «Spiderman / Hombre Araña - Opening Latino (remasterizado)» (Bellower666, 61s)
+  - ahora: yt RmX11ysUu5M «The Ultimate Intro (Ultimate Spider-Man)» (Marvel Kids Archive, 60s)
+- `toon-hulk-agentes-de-smash-tema` (cambiada)
+  - antes: yt TDniH6eZtdc
+  - ahora: yt fvjSpukiwzk «Promo de Hulk y los Agentes de S.M.A.S.H» (JonathanMassey, 30s) · yt Id9dVsZwg2E «HULK and the Agents of S M A S H  Intro (2013-2015)» (Οι Φύλακες της Νοσταλγίας, 30s)
+- `toon-vengadores-unidos-tema` (cambiada)
+  - antes: yt yYAK1xW4l1Y «Los Vengadores los Héroes Más Poderosos del Planeta: Opening Español Latino» (JonathanMassey, 63s)
+  - ahora: yt wJGogU_082I «Los Vengadores Unidos de Marvel   Opening» (SecretSpyFull, 36s)
+- `toon-star-wars-rebels-tema` (cambiada)
+  - antes: yt SU4WjBo1O84
+  - ahora: apple 1440629907 mx «Rebels Theme» (Kevin Kiner — Star Wars Rebels: Season One (Original Soundtrack)) · yt _kzU06rrIws «Rebels Theme» (Kevin Kiner - Topic, 56s) · yt Gjuux2b4wN4 «Star Wars Rebels Soundtack: Title Theme» (Rebel “Rebels Report” Report, 53s)
+- `toon-thundercats-2011-tema` (cambiada)
+  - antes: yt fQKEQz4as8U
+  - ahora: yt 8OTJvFxY1CM «Thundercats 2011 Opening» (balgus82, 78s) · yt fe8hOF6Ly3o «My ThunderCats 2011 Intro HD» (Micke Johansson, 76s)
+- `toon-linterna-verde-serie-animada-tema` (cambiada)
+  - antes: yt _MfSBvh0Cdo
+  - ahora: yt iMcyoP06tXw «Opening de Linterna Verde la Serie Animada» (Enter Series, 22s) · yt o-Xm4wNqMMM «GREEN LANTERN OST - Main Theme - Frederik Wiedmann» (chris banks, 36s) · yt Yv0D1fBgJDo «Green Lantern: The Animated Series (2012) Intro 4k Remaster» (The Animation Nation, 22s)
+- `toon-cuidado-con-batman-tema` (cambiada)
+  - antes: yt Fgz9cJScRik
+  - ahora: yt gjS4E8-uUzU «Beware the Batman - Opening Credits» (IGN, 25s) · yt uTQ3CHBA9TA «Beware The Batman Intro 2013 720p HD» (CutSprings, 20s) · yt 3bzPVlBpqrA «Beware the Batman (Cuidado con Batman) Descarga El Primer Capitulo» (Milton Cesar, 87s)
+- `toon-star-wars-resistencia-tema` (cambiada)
+  - antes: yt SU4WjBo1O84
+  - ahora: yt YSJNIeD8lNA «Star Wars Resistance Main Title - Michael Tavera» (Clone Gunner Commander Jedi, 81s) · yt o1FbdtsC9OA «Star Wars Resistance - Credits Music (HD)» (Jamie64, 36s)
+- `toon-patoaventuras-2017-tema` (cambiada)
+  - antes: yt Xzg2U6Sw79s
+  - ahora: yt C9sZaB3SB0I «Patoaventuras (2017) | Intro (Tema de entrada) | Español Latinoamericano» (Tano Upload Canciones, 57s) · yt cWTbg07-XOw «DuckTales (2017) - Mexican Spanish Theme [Full]» (Leon Paradox, 130s) · yt greRWnaQWc4 «Felicia Barton - DuckTales (From "DuckTales"/Extended Version/Audio Only)» (DisneyMusicVEVO, 121s)
+- `toon-muppet-babies-2018-tema` (cambiada)
+  - antes: yt GJvcHymNNug
+  - ahora: yt EqN_uisnzpU «🎶 La Canción de Muppet Babies» (Disney Jr. Latinoamérica, 59s) · yt Y91bLY6k_7o «Muppet Babies Theme 2018» (Renee Elise Goldsberry - Topic, 62s) · yt QX5Ju-x63AY «Muppet Babies Theme 2018 (From "Muppet Babies")» (Renee Elise Goldsberry - Topic, 63s)
+- `toon-villanos-cartoon-network-tema` (cambiada)
+  - antes: yt Q52_R7ono2w
+  - ahora: yt rpvEAtm8hJE «🎩Enganchado | Villanos PILOTO ORIGINAL | 4K Latino | Time Machine 📼» (Time Machine 4K, 91s) · yt WQ09RSOjcNM «Villanos | Cartoon Network | Temporada Uno sneek peak - Alan Ituriel» (Vi Cherry, 28s) · yt vVQpKhl_ugE «Villainous ALL INTROS | Villanos» (Kako, 67s)
 
 ### js/catalog-anime.js
 
@@ -373,8 +501,14 @@ Incluye:
   - antes: busca('Six', 'Heart of Stone')
   - ahora: am 1465183513 «Heart of Stone (feat. Natalie Paris)» (SIX — Six: The Musical (Studio Cast Recording), us) · am 1620248651 «Heart of Stone (feat. Abby Mueller)» (SIX — SIX: LIVE ON OPENING NIGHT (Original Broadway Cast Recording), us) · yt wMY7nZHNp7U «SIX the Musical (featuring Natalie Paris) - Heart of Stone (from the Studio Cast Recording)» (SIX, 313s)
 
-## 5. Pendiente por aplicar
+## 5. Pendiente por aplicar (Fase 3 y Fase 4)
 
-- **Caricaturas (Fase 2, parte 3):** aplicar las 35 pistas de Caricaturas con fuente equivocada/duplicada y reinsertar las 11 pistas retiradas de Caricaturas (búsquedas y evidencias ya terminadas en `scripts/_tmp-phase2-part3b.json`).
-- **Fase 3 (Expansión +20 % por categoría):** Series (+70 hasta 192), Caricaturas (+65, contando las recuperadas), Anime (+52, contando las 5 recuperadas), Disney (+21), Musicales (+47), Videojuegos (+61), Sagas (+37).
-- **Fase 4:** Auditoría final `audit-red.js todos` con 0 muertas, verificación en navegador y actualización de versión a 2.1.
+- **Fase 3 (Expansión +20 % por categoría):**
+  - Series: +70 pistas nuevas (meta final: 192 pistas).
+  - Caricaturas: +54 adicionales (+11 ya recuperadas en Fase 2 = +65 total; meta final: 361 pistas).
+  - Anime: +47 adicionales (+5 ya recuperadas en Fase 2 = +52 total; meta final: 303 pistas).
+  - Disney: +21 pistas nuevas (meta final: 92 pistas).
+  - Musicales: +47 pistas nuevas, con al menos 3 en `mus-clasicos` y 3 en `mus-10s` en español (`lang: 'es'`) (meta final: 269 pistas).
+  - Videojuegos: +61 pistas nuevas (meta final: 342 pistas).
+  - Sagas (`SAGA_TRACKS`): +37 pistas nuevas, completando primero los 13 juegos con menos de 5 pistas (meta final: 221 pistas).
+- **Fase 4:** Revisión de dudosas restantes (`scripts/audit-red-revisadas.json`), verificación en navegador (`scripts/verificar-v2.1/`) y subida de versión a 2.1.
