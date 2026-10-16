@@ -150,8 +150,8 @@
     },
     {
       id: 'dis-hercules-no-importa-la-distancia', cat: 'dis-renacimiento', franchise: 'Hércules', game: 'Hércules',
-      title: 'No importa la distancia', composer: 'Ricky Martin', year: 1997,
-      sources: [apple({ song: 185392252, country: 'mx' })],
+      title: 'No importa la distancia', composer: 'Antonio Benavides', year: 1997,
+      sources: [yt('A1AYx-qIdec'), yt('KUKMMK7g3aw')],
     },
     {
       id: 'dis-hercules-de-cero-a-heroe', cat: 'dis-renacimiento', franchise: 'Hércules', game: 'Hércules',
@@ -161,7 +161,7 @@
     {
       id: 'dis-mulan-reflejo', cat: 'dis-renacimiento', franchise: 'Mulán', game: 'Mulán',
       title: 'Reflejo', composer: 'Lucero', year: 1998,
-      sources: [apple({ song: 1624897208, country: 'mx' })],
+      sources: [apple({ song: 1624897102, country: 'mx' }), yt('_yTsNxhGE30')],
     },
     {
       id: 'dis-mulan-hombres-de-accion-seran-hoy', cat: 'dis-renacimiento', franchise: 'Mulán', game: 'Mulán',

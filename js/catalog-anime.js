@@ -322,7 +322,7 @@
     {
       id: 'toon-dragon-ball-gt-mi-corazon-encantado', cat: 'anime-90s', franchise: 'Dragon Ball', game: 'Dragon Ball GT',
       title: 'Mi corazón encantado', composer: 'Aaron Montalvo', year: 1996, platform: 'Toei Animation',
-      sources: [apple({ song: 1403477085, country: 'mx' }), yt('wgZ-ATUGXDw')],
+      sources: [yt('wgZ-ATUGXDw'), yt('dF4OwMSrnUQ')],
     },
     {
       id: 'toon-neon-genesis-evangelion-a-cruel-angel-s-thesis', cat: 'anime-90s', franchise: 'Neon Genesis Evangelion', game: 'Neon Genesis Evangelion',
@@ -354,7 +354,7 @@
     {
       id: 'toon-yu-yu-hakusho-sonrisa-explosiva', cat: 'anime-90s', franchise: 'Yu Yu Hakusho', game: 'Yu Yu Hakusho',
       title: 'Sonrisa explosiva', composer: 'Versión latina (original: Matsuko Mawatari)', year: 1992, platform: 'Pierrot',
-      sources: [yt('RncCJNOZLb0'), apple({ song: 433591403, country: 'mx' })],
+      sources: [yt('RncCJNOZLb0', 15), apple({ song: 433591403, country: 'mx' })],
     },
         {
       id: 'ani-rurouni-kenshin-sobakasu', cat: 'anime-90s', franchise: "Rurouni Kenshin", game: "Rurouni Kenshin",

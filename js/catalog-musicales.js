@@ -16,6 +16,7 @@
   'use strict';
 
   const apple = (o) => Object.assign({ type: 'itunes' }, o);
+  const yt = (id, start) => ({ type: 'youtube', id: id, start: start || 0 });
   // Primero la tienda de México y, si ahí no está, la de Estados Unidos.
   const am = (song) => [apple({ song: song, country: 'mx' }), apple({ song: song })];
   const amAlbum = (album, match) => [apple({ album: album, match: match, country: 'mx' }), apple({ album: album, match: match })];
@@ -233,7 +234,7 @@
       id: 'mus-sonrisas-cosas-que-me-hacen-feliz', cat: 'mus-clasicos', franchise: 'The Sound of Music', game: 'Cosas que me hacen feliz',
       title: 'Cosas que me hacen feliz', composer: 'Noemí Mazoy y Silvia Luchetti', year: 2011, platform: 'Madrid', lang: 'es',
       aka: ['My Favorite Things'],
-      sources: am(1442413954),
+      sources: [yt('uu0OP85Uhbc'), yt('jgFEV8qVFek')],
     },
 
         {
@@ -371,7 +372,7 @@
       id: 'mus-jcs-i-dont-know-how-to-love-him', cat: 'mus-7080', franchise: 'Jesus Christ Superstar', game: 'I Don\'t Know How to Love Him',
       title: 'I Don\'t Know How to Love Him', composer: 'Yvonne Elliman', year: 1970, platform: 'Álbum original', lang: 'en',
       aka: ['No sé cómo amarle'],
-      sources: am(1440808479),
+      sources: [...am(1576870092), ...am(1440659210), yt('ry3Q1wFClu8')],
     },
     {
       id: 'mus-grease-summer-nights', cat: 'mus-7080', franchise: 'Grease', game: 'Summer Nights',
@@ -398,7 +399,7 @@
       id: 'mus-rocky-horror-time-warp', cat: 'mus-7080', franchise: 'The Rocky Horror Picture Show', game: 'Time Warp',
       title: 'The Time Warp', composer: 'Richard O\'Brien, Patricia Quinn y Nell Campbell', year: 1975, platform: 'Película', lang: 'en',
       aka: ['The Time Warp'],
-      sources: [...am(1024228176), ...am(293627177)],
+      sources: [...am(6795892417), ...am(6798894562), yt('u1O2-oFmWXM')],
     },
     {
       id: 'mus-chicago-all-that-jazz', cat: 'mus-7080', franchise: 'Chicago', game: 'All That Jazz',
@@ -462,7 +463,7 @@
       id: 'mus-phantom-the-music-of-the-night', cat: 'mus-7080', franchise: 'The Phantom of the Opera', game: 'The Music of the Night',
       title: 'The Music of the Night', composer: 'Michael Crawford', year: 1986, platform: 'Londres', lang: 'en',
       aka: ['La música de la noche'],
-      sources: am(1452159654),
+      sources: [...am(1843488431), ...am(1843482049), yt('4JXFOnWYMAg')],
     },
     {
       id: 'mus-phantom-all-i-ask-of-you', cat: 'mus-7080', franchise: 'The Phantom of the Opera', game: 'All I Ask of You',
@@ -595,7 +596,7 @@
       id: 'mus-grease-noches-de-verano', cat: 'mus-7080', franchise: "Grease", game: "Noches de verano",
       title: "Noches de verano", composer: "Timbiriche", year: 1984, platform: "México", lang: 'es',
       aka: ["Summer Nights"],
-      sources: busca('Grease', 'Noches de verano'),
+      sources: [...am(1886593807), yt('dufaepx47X4'), yt('UCrfiGrLPDU')],
     },
     {
       id: 'mus-jcs-heaven-on-their-minds', cat: 'mus-7080', franchise: "Jesus Christ Superstar", game: "Heaven on Their Minds",
@@ -625,7 +626,7 @@
     {
       id: 'mus-rocky-touch-a-touch-me', cat: 'mus-7080', franchise: "The Rocky Horror Picture Show", game: "Touch-a, Touch-a, Touch-a, Touch Me",
       title: "Touch-a, Touch-a, Touch-a, Touch Me", composer: "Susan Sarandon", year: 1975, platform: "Película", lang: 'en',
-      sources: busca('The Rocky Horror Picture Show', 'Touch-a, Touch-a, Touch-a, Touch Me'),
+      sources: [...am(6795892805), ...am(6798894575)],
     },
     {
       id: 'mus-chicago-roxie', cat: 'mus-7080', franchise: "Chicago", game: "Roxie",
@@ -769,12 +770,12 @@
       id: 'mus-mamma-mia-va-todo-al-ganador', cat: 'mus-9000', franchise: 'Mamma Mia!', game: 'Va todo al ganador',
       title: 'Va todo al ganador', composer: 'Nina', year: 2004, platform: 'Madrid', lang: 'es',
       aka: ['The Winner Takes It All'],
-      sources: am(1440848090),
+      sources: [yt('8GfRenrapjA'), yt('CvO9aII8QtQ')],
     },
     {
       id: 'mus-mamma-mia-chiquitita', cat: 'mus-9000', franchise: 'Mamma Mia!', game: 'Chiquitita',
       title: 'Chiquitita', composer: 'Nina, Marta Valverde y Paula Sebastián', year: 2004, platform: 'Madrid', lang: 'es',
-      sources: am(1440847475),
+      sources: [yt('ChPnown8esE'), yt('hl4FXPpn8lE')],
     },
     {
       id: 'mus-mentiras-castillos', cat: 'mus-9000', franchise: 'Mentiras', game: 'Castillos',
@@ -816,7 +817,7 @@
       id: 'mus-mamma-mia-fija-tu-amor-en-mi', cat: 'mus-9000', franchise: 'Mamma Mia!', game: 'Fija tu amor en mí',
       title: 'Fija tu amor en mí', composer: 'Mariona Castillo y Leandro Rivera', year: 2004, platform: 'Madrid', lang: 'es',
       aka: ['Lay All Your Love on Me'],
-      sources: am(1440847579),
+      sources: [yt('RXZLo7PzVnc'), yt('3hK8QY-rUEw')],
     },
     {
       id: 'mus-mentiras-me-alimento-de-ti', cat: 'mus-9000', franchise: 'Mentiras', game: 'Me alimento de ti',
@@ -863,7 +864,7 @@
     {
       id: 'mus-rent-ill-cover-you', cat: 'mus-9000', franchise: "Rent", game: "I'll Cover You",
       title: "I'll Cover You", composer: "Jesse L. Martin y Wilson Jermaine Heredia", year: 1996, platform: "Broadway", lang: 'en',
-      sources: busca('Rent', 'I\'ll Cover You'),
+      sources: [...am(1440845173), ...am(80446176), yt('WNmW-soLOMg')],
     },
     {
       id: 'mus-rent-light-my-candle', cat: 'mus-9000', franchise: "Rent", game: "Light My Candle",
@@ -1197,12 +1198,12 @@
     {
       id: 'mus-six-dont-lose-ur-head', cat: 'mus-10s', franchise: "Six", game: "Don't Lose Ur Head",
       title: "Don't Lose Ur Head", composer: "Christina Modestou y elenco", year: 2018, platform: "Londres", lang: 'en',
-      sources: busca('Six', 'Don\'t Lose Ur Head'),
+      sources: [...am(1465183509), ...am(1620248488), yt('kAthQG1aKho')],
     },
     {
       id: 'mus-six-heart-of-stone', cat: 'mus-10s', franchise: "Six", game: "Heart of Stone",
       title: "Heart of Stone", composer: "Natalie Paris y elenco", year: 2018, platform: "Londres", lang: 'en',
-      sources: busca('Six', 'Heart of Stone'),
+      sources: [...am(1465183513), ...am(1620248651), yt('wMY7nZHNp7U')],
     },
     {
       id: 'mus-six-all-you-wanna-do', cat: 'mus-10s', franchise: "Six", game: "All You Wanna Do",
