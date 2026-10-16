@@ -1,5 +1,5 @@
 /*
- * Catálogo: Series de TV (92 pistas).
+ * Catálogo: Series de TV (122 pistas).
  * Entradas y temas principales de series, separados por la década en que se estrenaron.
  * Mismo formato que catalog.js; las fuentes se prueban en el orden en que aparecen.
  */
@@ -8,6 +8,9 @@
 
   const apple = (o) => Object.assign({ type: 'itunes' }, o);
   const yt = (id, start) => ({ type: 'youtube', id: id, start: start || 0 });
+  // Busca la pista en Apple Music con cada término, en México y luego en EE. UU.; `match`, `artist` y `album_hint` la validan.
+  const buscaTv = (terms, o) => [].concat(terms).reduce((out, term) =>
+    out.concat(['mx', 'us'].map((country) => apple(Object.assign({ term: term, country: country }, o)))), []);
 
   AM.CATEGORIES.push(
     { id: 'tv-clasicas', theme: 'series', label: 'Clásicas (antes de 1990)', icon: '📼' },
@@ -18,7 +21,7 @@
   );
 
   AM.CATALOG.push(
-    /* ───────────── Clásicas (antes de 1990) (20) ───────────── */
+    /* ───────────── Clásicas (antes de 1990) (35) ───────────── */
     {
       id: 'tv-cheers-where-everybody-knows-your-name', cat: 'tv-clasicas', franchise: 'Cheers', game: 'Cheers',
       title: 'Where Everybody Knows Your Name', composer: 'Gary Portnoy', year: 1982, platform: 'NBC',
@@ -131,7 +134,97 @@
       title: 'Dallas Theme', composer: 'Jerrold Immel', year: 1978, platform: 'CBS',
       sources: [yt('4vZNWdFd1UM'), yt('8sKX3tWaOew')],
     },
-    /* ───────────── Años 90 (17) ───────────── */
+    {
+      id: 'tv-la-isla-de-gilligan-the-ballad-of-gilligan-s-isle', cat: 'tv-clasicas', franchise: 'La isla de Gilligan', game: 'La isla de Gilligan',
+      title: 'The Ballad of Gilligan\'s Isle', composer: 'The Wellingtons', year: 1964, platform: 'CBS',
+      aka: ['Gilligan\'s Island'],
+      sources: buscaTv(['The Wellingtons Gilligan\'s Isle', 'Gilligan\'s Island Television\'s Greatest Hits'], { match: ['The Ballad of Gilligan\'s Isle', 'Gilligan\'s Island'], artist: ['The Wellingtons', 'The Eligibles'], album_hint: ['Television\'s Greatest Hits'] }),
+    },
+    {
+      id: 'tv-mi-bella-genio-jeannie', cat: 'tv-clasicas', franchise: 'Mi bella genio', game: 'Mi bella genio',
+      title: 'Jeannie', composer: 'Hugo Montenegro', year: 1965, platform: 'NBC',
+      aka: ['I Dream of Jeannie'],
+      sources: buscaTv(['Hugo Montenegro Jeannie', 'I Dream of Jeannie Television\'s Greatest Hits'], { match: ['Jeannie', 'I Dream of Jeannie'], artist: ['Hugo Montenegro'], album_hint: ['Television\'s Greatest Hits'] }),
+    },
+    {
+      id: 'tv-el-superagente-86-get-smart-theme', cat: 'tv-clasicas', franchise: 'El superagente 86', game: 'El superagente 86',
+      title: 'Get Smart Theme', composer: 'Irving Szathmary', year: 1965, platform: 'NBC',
+      aka: ['Get Smart'],
+      sources: buscaTv(['Irving Szathmary Get Smart', 'Get Smart Television\'s Greatest Hits'], { match: ['Theme from Get Smart', 'Get Smart Theme', 'Get Smart'], artist: ['Irving Szathmary'], album_hint: ['Television\'s Greatest Hits'] }),
+    },
+    {
+      id: 'tv-el-show-de-benny-hill-yakety-sax', cat: 'tv-clasicas', franchise: 'El show de Benny Hill', game: 'El show de Benny Hill',
+      title: 'Yakety Sax', composer: 'Boots Randolph', year: 1969, platform: 'Thames Television',
+      aka: ['The Benny Hill Show', 'Benny Hill'],
+      sources: buscaTv('Boots Randolph Yakety Sax', { match: ['Yakety Sax'], artist: ['Boots Randolph'], album_hint: ['Yakety Sax'] }),
+    },
+    {
+      id: 'tv-la-familia-ingalls-little-house-on-the-prairie-theme', cat: 'tv-clasicas', franchise: 'La familia Ingalls', game: 'La familia Ingalls',
+      title: 'Little House on the Prairie Theme', composer: 'David Rose', year: 1974, platform: 'NBC',
+      aka: ['Little House on the Prairie', 'La pequeña casa en la pradera'],
+      sources: buscaTv('David Rose Little House on the Prairie', { match: ['Little House on the Prairie Main Title', 'Little House on the Prairie Theme', 'Little House on the Prairie'], artist: ['David Rose'], album_hint: ['Television\'s Greatest Hits', 'Little House on the Prairie'] }),
+    },
+    {
+      id: 'tv-el-hombre-nuclear-the-six-million-dollar-man-theme', cat: 'tv-clasicas', franchise: 'El hombre nuclear', game: 'El hombre nuclear',
+      title: 'The Six Million Dollar Man Theme', composer: 'Oliver Nelson', year: 1974, platform: 'ABC',
+      aka: ['The Six Million Dollar Man', 'El hombre de los seis millones de dólares'],
+      sources: buscaTv(['Oliver Nelson Six Million Dollar Man', 'Six Million Dollar Man Television\'s Greatest Hits'], { match: ['Theme from The Six Million Dollar Man', 'The Six Million Dollar Man Theme', 'The Six Million Dollar Man'], artist: ['Oliver Nelson'], album_hint: ['Television\'s Greatest Hits'] }),
+    },
+    {
+      id: 'tv-la-mujer-maravilla-wonder-woman', cat: 'tv-clasicas', franchise: 'La mujer maravilla', game: 'La mujer maravilla',
+      title: 'Wonder Woman', composer: 'Charles Fox y Norman Gimbel', year: 1975, platform: 'ABC',
+      aka: ['Wonder Woman'],
+      sources: buscaTv(['Charles Fox Wonder Woman', 'Wonder Woman Television\'s Greatest Hits'], { match: ['Wonder Woman', 'Wonder Woman Theme', 'Theme from Wonder Woman'], artist: ['Charles Fox'], album_hint: ['Television\'s Greatest Hits'] }),
+    },
+    {
+      id: 'tv-los-angeles-de-charlie-charlie-s-angels-theme', cat: 'tv-clasicas', franchise: 'Los ángeles de Charlie', game: 'Los ángeles de Charlie',
+      title: 'Charlie\'s Angels Theme', composer: 'Jack Elliott y Allyn Ferguson', year: 1976, platform: 'ABC',
+      aka: ['Charlie\'s Angels'],
+      sources: buscaTv(['Jack Elliott Allyn Ferguson Charlie\'s Angels', 'Charlie\'s Angels Television\'s Greatest Hits'], { match: ['Theme from Charlie\'s Angels', 'Charlie\'s Angels Theme', 'Charlie\'s Angels'], artist: ['Jack Elliott', 'Allyn Ferguson'], album_hint: ['Television\'s Greatest Hits'] }),
+    },
+    {
+      id: 'tv-el-increible-hulk-1977-the-lonely-man', cat: 'tv-clasicas', franchise: 'El increíble Hulk (1977)', game: 'El increíble Hulk (1977)',
+      title: 'The Lonely Man', composer: 'Joe Harnell', year: 1977, platform: 'CBS',
+      aka: ['The Incredible Hulk', 'El increíble Hulk'],
+      sources: buscaTv('Joe Harnell Lonely Man', { match: ['The Lonely Man Theme', 'The Lonely Man'], artist: ['Joe Harnell'], album_hint: ['The Incredible Hulk'] }),
+    },
+    {
+      id: 'tv-chips-chips-theme', cat: 'tv-clasicas', franchise: 'CHiPs', game: 'CHiPs',
+      title: 'CHiPs Theme', composer: 'John Parker', year: 1977, platform: 'NBC',
+      aka: ['CHiPs: Patrulla motorizada', 'Patrulla motorizada'],
+      sources: buscaTv(['John Parker CHiPs', 'CHiPs Television\'s Greatest Hits'], { match: ['Theme from CHiPs', 'CHiPs Theme', 'CHiPs'], artist: ['John Parker'], album_hint: ['Television\'s Greatest Hits'] }),
+    },
+    {
+      id: 'tv-blanco-y-negro-it-takes-diff-rent-strokes', cat: 'tv-clasicas', franchise: 'Blanco y negro', game: 'Blanco y negro',
+      title: 'It Takes Diff\'rent Strokes', composer: 'Alan Thicke', year: 1978, platform: 'NBC',
+      aka: ['Diff\'rent Strokes', 'Arnold'],
+      sources: buscaTv(['Alan Thicke Diff\'rent Strokes', 'Diff\'rent Strokes Television\'s Greatest Hits'], { match: ['It Takes Diff\'rent Strokes', 'It Takes a Diff\'rent Strokes', 'Diff\'rent Strokes'], artist: ['Alan Thicke'], album_hint: ['Television\'s Greatest Hits'] }),
+    },
+    {
+      id: 'tv-los-duques-de-hazzard-good-ol-boys', cat: 'tv-clasicas', franchise: 'Los Duques de Hazzard', game: 'Los Duques de Hazzard',
+      title: 'Good Ol\' Boys', composer: 'Waylon Jennings', year: 1979, platform: 'CBS',
+      aka: ['The Dukes of Hazzard'],
+      sources: buscaTv('Waylon Jennings Good Ol\' Boys', { match: ['Theme from The Dukes of Hazzard (Good Ol\' Boys)', 'Good Ol\' Boys'], artist: ['Waylon Jennings'], album_hint: ['Music Man', 'The Dukes of Hazzard'] }),
+    },
+    {
+      id: 'tv-magnum-theme-from-magnum-p-i', cat: 'tv-clasicas', franchise: 'Magnum', game: 'Magnum',
+      title: 'Theme from Magnum P.I.', composer: 'Mike Post', year: 1980, platform: 'CBS',
+      aka: ['Magnum, P.I.', 'Magnum P.I.'],
+      sources: buscaTv('Mike Post Magnum', { match: ['Theme from Magnum P.I.', 'Magnum P.I.', 'Magnum, P.I.'], artist: ['Mike Post'], album_hint: ['Television Theme Songs', 'Television\'s Greatest Hits'] }),
+    },
+    {
+      id: 'tv-luz-de-luna-moonlighting', cat: 'tv-clasicas', franchise: 'Luz de luna', game: 'Luz de luna',
+      title: 'Moonlighting', composer: 'Al Jarreau', year: 1985, platform: 'ABC',
+      aka: ['Moonlighting'],
+      sources: buscaTv('Al Jarreau Moonlighting', { match: ['Moonlighting (Theme)', 'Moonlighting'], artist: ['Al Jarreau'], album_hint: ['Moonlighting'] }),
+    },
+    {
+      id: 'tv-alf-alf-theme', cat: 'tv-clasicas', franchise: 'Alf', game: 'Alf',
+      title: 'ALF Theme', composer: 'Alf Clausen', year: 1986, platform: 'NBC',
+      aka: ['ALF'],
+      sources: buscaTv(['Alf Clausen ALF', 'ALF Television\'s Greatest Hits'], { match: ['Theme from ALF', 'ALF Theme', 'ALF'], artist: ['Alf Clausen'], album_hint: ['Television\'s Greatest Hits'] }),
+    },
+    /* ───────────── Años 90 (29) ───────────── */
     {
       id: 'tv-friends-i-ll-be-there-for-you', cat: 'tv-90s', franchise: 'Friends', game: 'Friends',
       title: 'I\'ll Be There for You', composer: 'The Rembrandts', year: 1994, platform: 'NBC',
@@ -227,7 +320,74 @@
       aka: ['Yo soy Betty, la fea'],
       sources: [apple({ song: 6807168698, country: 'mx' })],
     },
-    /* ───────────── 2000s (23) ───────────── */
+    {
+      id: 'tv-beverly-hills-90210-beverly-hills-90210-theme', cat: 'tv-90s', franchise: 'Beverly Hills 90210', game: 'Beverly Hills 90210',
+      title: 'Beverly Hills, 90210 Theme', composer: 'John E. Davis', year: 1990, platform: 'Fox',
+      aka: ['Beverly Hills, 90210', 'Sensación de vivir'],
+      sources: buscaTv(['John E. Davis Beverly Hills 90210', 'Beverly Hills 90210 Television\'s Greatest Hits'], { match: ['Theme from Beverly Hills, 90210', 'Beverly Hills, 90210 Theme', 'Beverly Hills 90210'], artist: ['John E. Davis'], album_hint: ['Television\'s Greatest Hits', 'Beverly Hills, 90210'] }),
+    },
+    {
+      id: 'tv-mr-bean-ecce-homo-qui-est-faba', cat: 'tv-90s', franchise: 'Mr. Bean', game: 'Mr. Bean',
+      title: 'Ecce homo qui est faba', composer: 'Howard Goodall', year: 1990, platform: 'ITV',
+      aka: ['Mister Bean'],
+      sources: buscaTv(['Howard Goodall Mr. Bean', 'Ecce homo qui est faba'], { match: ['Ecce homo qui est faba', 'Mr. Bean Theme', 'Mr. Bean'], artist: ['Howard Goodall', 'Southwark Cathedral', 'Christ Church'], album_hint: ['Mr. Bean'] }),
+    },
+    {
+      id: 'tv-dinosaurios-dinosaurs-theme', cat: 'tv-90s', franchise: 'Dinosaurios', game: 'Dinosaurios',
+      title: 'Dinosaurs Theme', composer: 'Bruce Broughton', year: 1991, platform: 'ABC',
+      aka: ['Dinosaurs'],
+      sources: buscaTv(['Bruce Broughton Dinosaurs', 'Dinosaurs Television\'s Greatest Hits'], { match: ['Dinosaurs Main Title', 'Dinosaurs Theme', 'Dinosaurs'], artist: ['Bruce Broughton'], album_hint: ['Television\'s Greatest Hits'] }),
+    },
+    {
+      id: 'tv-highlander-princes-of-the-universe', cat: 'tv-90s', franchise: 'Highlander', game: 'Highlander',
+      title: 'Princes of the Universe', composer: 'Queen', year: 1992, platform: 'Sindicación',
+      aka: ['Highlander: The Series', 'Highlander: El inmortal'],
+      sources: buscaTv('Queen Princes of the Universe', { match: ['Princes of the Universe'], artist: ['Queen'], album_hint: ['A Kind of Magic'] }),
+    },
+    {
+      id: 'tv-la-ninera-the-nanny-named-fran', cat: 'tv-90s', franchise: 'La niñera', game: 'La niñera',
+      title: 'The Nanny Named Fran', composer: 'Ann Hampton Callaway', year: 1993, platform: 'CBS',
+      aka: ['The Nanny'],
+      sources: buscaTv(['Ann Hampton Callaway Nanny', 'The Nanny Television\'s Greatest Hits'], { match: ['The Nanny Named Fran', 'The Nanny'], artist: ['Ann Hampton Callaway'], album_hint: ['Television\'s Greatest Hits'] }),
+    },
+    {
+      id: 'tv-corazon-salvaje-corazon-salvaje', cat: 'tv-90s', franchise: 'Corazón salvaje', game: 'Corazón salvaje',
+      title: 'Corazón salvaje', composer: 'Mijares', year: 1993, platform: 'Televisa',
+      sources: buscaTv('Mijares Corazón salvaje', { match: ['Corazón salvaje'], artist: ['Mijares'], album_hint: ['Encadenado'] }),
+    },
+    {
+      id: 'tv-marimar-marimar', cat: 'tv-90s', franchise: 'Marimar', game: 'Marimar',
+      title: 'Marimar', composer: 'Thalía', year: 1994, platform: 'Televisa',
+      sources: buscaTv('Thalía Marimar', { match: ['Marimar'], artist: ['Thalía'], album_hint: ['En éxtasis'] }),
+    },
+    {
+      id: 'tv-maria-la-del-barrio-maria-la-del-barrio', cat: 'tv-90s', franchise: 'María la del barrio', game: 'María la del barrio',
+      title: 'María la del barrio', composer: 'Thalía', year: 1995, platform: 'Televisa',
+      sources: buscaTv('Thalía María la del barrio', { match: ['María la del barrio'], artist: ['Thalía'], album_hint: ['En éxtasis'] }),
+    },
+    {
+      id: 'tv-escalofrios-goosebumps-theme', cat: 'tv-90s', franchise: 'Escalofríos', game: 'Escalofríos',
+      title: 'Goosebumps Theme', composer: 'Jack Lenz', year: 1995, platform: 'YTV',
+      aka: ['Goosebumps', 'Pesadillas'],
+      sources: buscaTv('Jack Lenz Goosebumps', { match: ['Goosebumps Theme', 'Theme from Goosebumps', 'Goosebumps Main Title'], artist: ['Jack Lenz'], album_hint: ['Goosebumps'] }),
+    },
+    {
+      id: 'tv-xena-la-princesa-guerrera-xena-warrior-princess-main-title', cat: 'tv-90s', franchise: 'Xena: la princesa guerrera', game: 'Xena: la princesa guerrera',
+      title: 'Xena: Warrior Princess Main Title', composer: 'Joseph LoDuca', year: 1995, platform: 'Sindicación',
+      aka: ['Xena: Warrior Princess', 'Xena'],
+      sources: buscaTv('Joseph LoDuca Xena', { match: ['Main Title (from "Xena: Warrior Princess")', 'Xena: Warrior Princess Main Title', 'Xena: Warrior Princess Theme', 'Xena: Warrior Princess'], artist: ['Joseph LoDuca'], album_hint: ['Xena: Warrior Princess', 'Xena'] }),
+    },
+    {
+      id: 'tv-la-usurpadora-la-usurpadora', cat: 'tv-90s', franchise: 'La usurpadora', game: 'La usurpadora',
+      title: 'La usurpadora', composer: 'Pandora', year: 1998, platform: 'Televisa',
+      sources: buscaTv('Pandora La usurpadora', { match: ['La usurpadora'], artist: ['Pandora'] }),
+    },
+    {
+      id: 'tv-muneca-brava-cambio-dolor', cat: 'tv-90s', franchise: 'Muñeca brava', game: 'Muñeca brava',
+      title: 'Cambio dolor', composer: 'Natalia Oreiro', year: 1998, platform: 'Telefe',
+      sources: buscaTv('Natalia Oreiro Cambio dolor', { match: ['Cambio dolor'], artist: ['Natalia Oreiro'], album_hint: ['Natalia Oreiro'] }),
+    },
+    /* ───────────── 2000s (26) ───────────── */
     {
       id: 'tv-lost-life-and-death', cat: 'tv-00s', franchise: 'Lost', game: 'Lost',
       title: 'Life and Death', composer: 'Michael Giacchino y Tim Simonec', year: 2004, platform: 'ABC',
@@ -351,6 +511,23 @@
       title: 'Everything Is Not What It Seems', composer: 'Selena Gomez', year: 2007, platform: 'Disney Channel',
       aka: ['Wizards of Waverly Place'],
       sources: [apple({ song: 741203416, country: 'mx' })],
+    },
+    {
+      id: 'tv-gilmore-girls-where-you-lead', cat: 'tv-00s', franchise: 'Gilmore Girls', game: 'Gilmore Girls',
+      title: 'Where You Lead', composer: 'Carole King y Louise Goffin', year: 2000, platform: 'The WB',
+      aka: ['Las chicas Gilmore', 'Tal para cual'],
+      sources: buscaTv(['Carole King Louise Goffin Where You Lead', 'Carole King Where You Lead'], { match: ['Where You Lead', 'Where You Lead I Will Follow'], artist: ['Carole King', 'Louise Goffin'], album_hint: ['Our Little Corner of the World', 'Gilmore Girls'] }),
+    },
+    {
+      id: 'tv-csi-en-la-escena-del-crimen-who-are-you', cat: 'tv-00s', franchise: 'CSI: En la escena del crimen', game: 'CSI: En la escena del crimen',
+      title: 'Who Are You', composer: 'The Who', year: 2000, platform: 'CBS',
+      aka: ['CSI', 'CSI: Crime Scene Investigation', 'CSI: Las Vegas'],
+      sources: buscaTv('The Who Who Are You', { match: ['Who Are You'], artist: ['The Who'], album_hint: ['Who Are You'] }),
+    },
+    {
+      id: 'tv-monk-it-s-a-jungle-out-there', cat: 'tv-00s', franchise: 'Monk', game: 'Monk',
+      title: 'It\'s a Jungle Out There', composer: 'Randy Newman', year: 2002, platform: 'USA Network',
+      sources: buscaTv('Randy Newman It\'s a Jungle Out There', { match: ['It\'s a Jungle Out There'], artist: ['Randy Newman'], album_hint: ['Monk'] }),
     },
     /* ───────────── 2010s (21) ───────────── */
     {
@@ -530,9 +707,7 @@
     { theme: 'series', franchise: 'Bonanza', game: 'Bonanza' },
     { theme: 'series', franchise: 'Columbo', game: 'Columbo' },
     { theme: 'series', franchise: 'Hechizada', game: 'Hechizada' },
-    { theme: 'series', franchise: 'Mi bella genio', game: 'Mi bella genio' },
     { theme: 'series', franchise: 'Los Munster', game: 'Los Munster' },
-    { theme: 'series', franchise: 'Alf', game: 'Alf' },
     { theme: 'series', franchise: 'Los años maravillosos', game: 'Los años maravillosos' },
     { theme: 'series', franchise: 'Melrose Place', game: 'Melrose Place' },
     { theme: 'series', franchise: 'Sabrina, la bruja adolescente', game: 'Sabrina, la bruja adolescente' },
