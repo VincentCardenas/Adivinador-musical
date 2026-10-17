@@ -1,0 +1,37 @@
+[
+  {
+    "id": "ani-yu-yu-hakusho-hohoemi-no-bakudan",
+    "tema": "anime",
+    "motivo": "Repetida: es la misma canción y la misma serie que toon-yu-yu-hakusho-sonrisa-explosiva, una en japonés y otra en latino. Para el jugador es la misma pregunta con la misma respuesta. Yu Yu Hakusho es un clásico doblado en México, así que se queda el opening latino. Antes de la 2.1 las dos pistas tocaban el mismo video latino (RncCJNOZLb0). El anime no tiene filtro de idioma: lang solo se usa en canciones.",
+    "bloque": "{\n      id: 'ani-yu-yu-hakusho-hohoemi-no-bakudan', cat: 'anime-90s', franchise: \"Yu Yu Hakusho\", game: \"Yu Yu Hakusho\",\n      title: \"Hohoemi no Bakudan\", composer: \"Matsuko Mawatari\", year: 1992, platform: \"Studio Pierrot\",\n      aka: [\"Sonrisa explosiva original\"],\n      sources: [yt('urZWmEgm72Q'), yt('XkIAyMFeuAU'), apple({ song: 433591403, country: 'mx' })],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "ani-digimon-adventure-butter-fly",
+    "tema": "anime",
+    "motivo": "Repetida: 'Butter-Fly' es el mismo opening que toon-digimon-si-tu-lo-deseas-puedes-volar (versión latina de Ricardo Silva). Antes las dos pistas usaban el mismo video latino WmGy9CAap0w. Digimon es un clásico doblado en México y se queda la latina. Esa pista ya tiene aka 'Digimon Adventure', así que el nombre se sigue aceptando como respuesta.",
+    "bloque": "{\n      id: 'ani-digimon-adventure-butter-fly', cat: 'anime-90s', franchise: \"Digimon\", game: \"Digimon Adventure\",\n      title: \"Butter-Fly\", composer: \"Koji Wada\", year: 1999, platform: \"Toei Animation\",\n      aka: [\"Digimon Adventure OP\"],\n      sources: [yt('jB7ecG_12x8'), yt('0SMfWmEf8Wo'), yt('S4L399kgd1I')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "dis-el-libro-de-la-selva-quiero-ser-como-tu",
+    "tema": "disney",
+    "motivo": "La única fuente (yt rcXF7xWnOUA) es un video de 72 s titulado 'El Libro de la selva Quiero Ser Como Tu 2016', subido por un canal de personas ('Maricel Del Castillo- Nicolas Caruso'). Por el '2016' parece un recital casero o el remake, no el doblaje de 1967 con Tin Tan que describe la pista. No hay otra fuente buena. Hay que volver a buscar el doblaje original en la próxima ronda.",
+    "bloque": "{\n      id: 'dis-el-libro-de-la-selva-quiero-ser-como-tu', cat: 'dis-clasica', franchise: 'El libro de la selva', game: 'El libro de la selva',\n      title: 'Quiero ser como tú', composer: 'Germán Valdés \"Tin Tan\"', year: 1967,\n      sources: [yt('rcXF7xWnOUA')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "dis-monsters-inc-si-no-estoy-contigo",
+    "tema": "disney",
+    "motivo": "La única fuente (yt PhLS1Ilxzog) dice '(Castellano)' en el título, usa 'Monstruos SA', el nombre de España, y la subió un usuario (Disper82). Es el doblaje de España, no el latino, y no hay otra fuente. Hay que volver a buscar la versión latina.",
+    "bloque": "{\n      id: 'dis-monsters-inc-si-no-estoy-contigo', cat: 'dis-2000s', franchise: 'Monsters, Inc.', game: 'Monsters, Inc.',\n      title: 'Si no estoy contigo', composer: 'Doblaje latino', year: 2001, pixar: true,\n      sources: [yt('PhLS1Ilxzog')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "dis-frozen-una-aventura-congelada-por-primera-vez-en-anos",
+    "tema": "disney",
+    "motivo": "La única fuente (yt 3e5P6CiwjaA) es la versión de España: acredita a Carmen López y Gisela, usa el título 'Frozen: El Reino del Hielo' y está en disneymusicesVEVO. No coincide con el composer (Romina Marroquín Payró y Carmen Sarahi, las voces latinas) y no hay otra fuente. Hay que volver a buscar la versión de DisneyMusicLAVEVO.",
+    "bloque": "{\n      id: 'dis-frozen-una-aventura-congelada-por-primera-vez-en-anos', cat: 'dis-2010s', franchise: 'Frozen', game: 'Frozen: Una aventura congelada',\n      title: 'Por primera vez en años', composer: 'Romina Marroquín Payró y Carmen Sarahi', year: 2013,\n      aka: ['Frozen'],\n      sources: [yt('3e5P6CiwjaA')],\n    },",
+    "quitada": "revisión 2.1"
+  }
+]
