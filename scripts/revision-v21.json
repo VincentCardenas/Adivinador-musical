@@ -1,0 +1,973 @@
+{
+ "generado": "2026-10-17",
+ "fuente": "Revisores Sonnet por tema, verificador adversarial Sonnet y árbitro final Opus, sobre la evidencia de scripts/evidencia-v2.1.json (sin red).",
+ "decisiones": [
+  {
+   "tema": "series",
+   "id": "tv-cobra-kai-awaken",
+   "op": "revisar_a_oido",
+   "motivo": "Ninguna fuente se llama 'Awaken' ni 'Main Title': una es 'Quiver (Extended)' (232 s) y la otra 'Awake the Snake' (127 s), las dos son cues del score. Parece que el título 'Awaken' se inventó. No sé con certeza qué cue es la música de entrada, así que no reordeno a ciegas.",
+   "nota": "Escucha https://www.youtube.com/watch?v=UUsBiOSTQ6E ('Awake the Snake') y https://www.youtube.com/watch?v=uCtOIOZ7b8s ('Quiver (Extended)'). Si alguna tiene el riff de guitarra de la entrada de Cobra Kai, ponla primero y cambia el título de la pista al nombre de ese cue. Si ninguna se parece a la entrada ni se reconoce como Cobra Kai, quita la pista."
+  },
+  {
+   "tema": "series",
+   "id": "tv-big-time-rush-big-time-rush",
+   "op": "quitar_fuente",
+   "fuente": "apple:6817089907",
+   "motivo": "La que suena primero es 'Big Time Rush (Live)' del álbum 'Ziggo Dome 2025 (Live)', un concierto. Se quita. La que queda, yt SN_MY9uDUEw ('Big Time Rush Intro', 50 s), es la entrada de la serie."
+  },
+  {
+   "tema": "series",
+   "id": "tv-big-time-rush-big-time-rush",
+   "op": "cambiar_campo",
+   "campo": "year",
+   "valor": 2009,
+   "motivo": "La serie se estrenó en Nickelodeon el 28 de noviembre de 2009 con el piloto 'Big Time Audition'; la temporada regular arrancó en enero de 2010. El catálogo usa el año de estreno (Glee y Modern Family van con 2009)."
+  },
+  {
+   "tema": "series",
+   "id": "tv-big-time-rush-big-time-rush",
+   "op": "mover_categoria",
+   "categoria": "tv-00s",
+   "motivo": "Con year 2009 le toca la época 2000s. Es lo mismo que se hizo con Glee, Modern Family y Sonny (2009 en tv-00s), aunque esas series siguieron al aire después de 2010."
+  },
+  {
+   "tema": "series",
+   "id": "tv-soy-luna-alas",
+   "op": "revisar_a_oido",
+   "motivo": "Las dos fuentes son la regrabación 'Versión 2026' de 'Soy Luna: Volver a rodar', no la entrada de 2016. Aun así es la misma canción, cantada por Karol Sevilla y el elenco, y la respuesta (Soy Luna) sigue siendo correcta, así que no se quita. Sin internet no puedo agregar la grabación original.",
+   "nota": "Escucha https://music.apple.com/mx/song/1879593895 y https://www.youtube.com/watch?v=yFchuO_Vovc. Si la Versión 2026 se reconoce como la 'Alas' de la entrada de 2016, déjala por ahora. Cuando haya red, reemplázala o ponle delante la grabación original de 2016 (álbum 'Soy Luna (Música de la serie de Disney Channel)'). Si suena muy distinta, quita la pista hasta tener la original."
+  },
+  {
+   "tema": "series",
+   "id": "tv-zack-y-cody-here-i-am",
+   "op": "quitar_fuente",
+   "fuente": "yt:HNW2OvPCP8M",
+   "motivo": "'Intro Recreation' es una recreación hecha por un aficionado (canal David Clossey). Se quita y queda primero la entrada oficial, yt _9dYvfao6WY (Walt Disney Studios Canada, 'Theme Song | Disney+ Throwbacks', 44 s)."
+  },
+  {
+   "tema": "series",
+   "id": "tv-outlander-the-skye-boat-song",
+   "op": "reordenar_fuentes",
+   "orden": [
+    "yt:9y_Va7k37h4",
+    "apple:1029187185"
+   ],
+   "motivo": "La entrada de la serie es 'Outlander Main Title Theme (Skye Boat Song)' (Bear McCreary - Topic, 97 s), así que suena primero. La Apple '[Extended]' es la misma canción y queda de respaldo, porque su preview puede caer en un pasaje que no sale en la entrada."
+  },
+  {
+   "tema": "series",
+   "id": "tv-lois-y-clark-lois-and-clark-main-title",
+   "op": "reordenar_fuentes",
+   "orden": [
+    "yt:giTNQ1Q9j74",
+    "yt:5-N3o1IAxFc"
+   ],
+   "motivo": "Primero va el intro suelto 'Lois and Clark Opening Credits and Theme Song' (76 s). La compilación de las 4 temporadas (291 s) se queda de respaldo: empieza en el segundo 0 con el intro de la temporada 1 y el tema es el mismo, así que si suena da el audio correcto."
+  },
+  {
+   "tema": "series",
+   "id": "tv-alf-alf-theme",
+   "op": "nada",
+   "motivo": "La primera fuente, 'All Openings 1986-1990' (123 s, unas 4 entradas cortas), es del canal de Paul Fusco ('A FUSCO - Classic TV') y empieza en el segundo 0 con la entrada de la temporada 1. El tema de Alf Clausen es el mismo en todas las temporadas y la compilación es corta. La entrada del piloto es solo respaldo. No hace falta escucharla."
+  },
+  {
+   "tema": "series",
+   "id": "tv-emily-en-paris-main-title",
+   "op": "nada",
+   "motivo": "La primera fuente ('Emily in Paris Intro, Season 1 Episode 1', 56 s) es correcta, y la compilación de entradas solo es respaldo. Sobre el compositor: hasta donde recuerdo, James Newton Howard aparece en los créditos de la música de la serie, junto con Chris Alan Lee. No tengo conocimiento firme de que esté mal, y escucharla no lo resuelve, así que no se cambia."
+  },
+  {
+   "tema": "series",
+   "id": "tv-melrose-place-melrose-place-theme",
+   "op": "quitar_fuente",
+   "fuente": "yt:cVCROJSCEoU",
+   "motivo": "'Melrose Place 2009 Opening Credits' es la entrada del reboot de 2009, que es otra serie, y la pista es de la original de 1992. Se quita. La primera, 'Tim Truman - Melrose Place Theme (Remastered)' (188 s), es el tema completo del compositor correcto, y en el segundo 0 empieza la melodía."
+  },
+  {
+   "tema": "series",
+   "id": "tv-elite-opening-theme",
+   "op": "quitar_fuente",
+   "fuente": "yt:IyoB3DLVkLI",
+   "motivo": "El título dice '[FANMADE]': es un intro hecho por fans, no la entrada oficial. Se queda solo 'ELITE Season 1 | Opening Credits' (41 s)."
+  },
+  {
+   "tema": "series",
+   "id": "tv-pasion-de-gavilanes-fiera-inquieta",
+   "op": "revisar_a_oido",
+   "motivo": "Por los títulos no se puede saber si la primera fuente ('... Rosario Montes (2022)', 189 s) es la grabación de la entrada de 2003 o la de la segunda temporada de 2022. Ninguna de las dos es de un canal oficial.",
+   "nota": "Escucha https://www.youtube.com/watch?v=gS5yUIwI9U8 y https://www.youtube.com/watch?v=EfE3UbHfgR4. Si la primera es una versión nueva de 2022 y la segunda es la entrada de 2003, invierte el orden. Si las dos son la original, déjalas como están."
+  },
+  {
+   "tema": "series",
+   "id": "tv-black-mirror-opening-theme",
+   "op": "quitar_fuente",
+   "fuente": "yt:UqJInhA0P1k",
+   "motivo": "'The Black Mirror intro' viene del canal GOG y dura 182 s. Casi seguro es la intro del videojuego de aventura 'The Black Mirror' (2003), que GOG vende, no la de la serie. Se quita y queda 'Black Mirror: Intro (Netflix)' (27 s). Que sea poco adivinable no es motivo para quitar la pista."
+  },
+  {
+   "tema": "series",
+   "id": "tv-the-boys-main-theme",
+   "op": "cambiar_campo",
+   "campo": "title",
+   "valor": "Translucent Alive",
+   "motivo": "Las dos fuentes son el cue 'Translucent Alive' de Christopher Lennertz (Topic oficial y otro canal), no una pista llamada 'Main Theme'. El título tiene que decir lo que suena, sea o no la música de entrada."
+  },
+  {
+   "tema": "series",
+   "id": "tv-the-boys-main-theme",
+   "op": "revisar_a_oido",
+   "motivo": "No se puede confirmar que 'Translucent Alive' sea la música del título de la serie. Si no lo es, es un cue del score que casi nadie en México va a reconocer.",
+   "nota": "Escucha https://www.youtube.com/watch?v=1-4cnsq6Mx0. Si se reconoce como la música de la entrada (title card) de The Boys, déjala. Si es un cue de fondo que nadie identificaría, quita la pista."
+  },
+  {
+   "tema": "series",
+   "id": "tv-mejorando-la-casa-iron-johns-rock",
+   "op": "nada",
+   "motivo": "Lo que suena primero es la entrada de la temporada 1 (74 s), que es correcta. La compilación 1991-1999 es solo respaldo y en el segundo 0 empieza con esa misma entrada, del mismo tema, así que si llega a sonar da el audio correcto. No es una versión incorrecta, por eso se deja."
+  },
+  {
+   "tema": "series",
+   "id": "tv-los-anos-maravillosos-with-a-little-help-from-my-friends",
+   "op": "quitar_fuente",
+   "fuente": "yt:LpwabPQW4p4",
+   "motivo": "Es una versión en vivo de 528 s (probablemente Woodstock) con otro arreglo y una introducción larga, no la grabación de estudio de 1968 que usó la serie. Una versión en vivo no es la correcta aunque sea respaldo, y la primera fuente (Apple, estudio) es buena, así que se quita."
+  },
+  {
+   "tema": "series",
+   "id": "tv-los-munster-the-munsters-theme",
+   "op": "nada",
+   "motivo": "En México se usa 'Los Munster' (por ejemplo, la película de 2022), y 'La familia Monster' y 'The Munsters' ya están en aka. No hay evidencia firme de que el nombre esté mal."
+  },
+  {
+   "tema": "series",
+   "id": "tv-walker-texas-ranger-the-eyes-of-the-ranger",
+   "op": "cambiar_campo",
+   "campo": "aka",
+   "valor": [],
+   "motivo": "En México y Latinoamérica la serie se transmitió como 'Walker, Texas Ranger', con el nombre en inglés. 'Walker, guardabosques de Texas' es una traducción literal equivocada (un Texas Ranger es policía, no guardabosques) que nunca fue título oficial, y podría salir como sugerencia rara en el buscador de Experto. El nombre principal ya cubre la serie."
+  },
+  {
+   "tema": "series",
+   "id": "tv-la-casa-del-dragon-main-title",
+   "op": "nada",
+   "motivo": "El catálogo ya usa la franquicia madre para los spin-offs: 'Star Trek' en Star Trek: La nueva generación y 'The Walking Dead' en Dead City. La entrada de La casa del dragón usa el tema de Game of Thrones de Ramin Djawadi, así que en Clásico tiene sentido que la respuesta sea 'Game of Thrones'. Las fuentes son oficiales (canal GameofThrones)."
+  },
+  {
+   "tema": "series",
+   "id": "tv-el-privilegio-de-amar-el-privilegio-de-amar",
+   "op": "revisar_a_oido",
+   "motivo": "La entrada de la telenovela de 1998 es un dueto de Mijares y Lucero, así que composer='Mijares y Lucero' (en Series ese campo lleva al intérprete) es correcto y no se cambia. Lo que hay que confirmar es si la grabación de Apple, que solo dice 'Mijares', es el dueto o una versión de Mijares solo.",
+   "nota": "Escucha https://music.apple.com/mx/song/1444036441. Si canta Lucero con Mijares, se queda así. Si es solo Mijares, pon primero https://www.youtube.com/watch?v=hW3pptHt3gM ('México / El privilegio de amar', 100 s), si esa sí es la entrada con el dueto."
+  },
+  {
+   "tema": "series",
+   "id": "tv-las-aventuras-de-pete-y-pete-hey-sandy",
+   "op": "nada",
+   "motivo": "Las fuentes son correctas: Apple, del álbum 'Music from the Adventures of Pete & Pete', y el canal de Mark Mulcahy. Que sea poco conocida en México no es motivo para quitarla."
+  },
+  {
+   "tema": "series",
+   "id": "tv-sabrina-la-bruja-adolescente-theme",
+   "op": "nada",
+   "motivo": "La entrada de la temporada 1 dura unos 20 s. Las dos fuentes (21 y 20 s) son de la entrada correcta."
+  },
+  {
+   "tema": "series",
+   "id": "tv-la-familia-ingalls-little-house-on-the-prairie-theme",
+   "op": "nada",
+   "motivo": "La única fuente ('Season 1 - Opening Theme', 52 s) es de la entrada correcta, y 'Enhanced' se refiere a la imagen. Sin internet no se puede agregar un respaldo, y tener una sola fuente no es un error."
+  },
+  {
+   "tema": "series",
+   "id": "tv-ahsoka-main-theme",
+   "op": "nada",
+   "motivo": "Apple y DisneyMusicVEVO tienen 'Ahsoka - End Credits' de Kevin Kiner, que es el tema principal de la serie y coincide con el registro. Va junto a las otras series de Star Wars del catálogo. No hay error."
+  },
+  {
+   "tema": "series",
+   "id": "tv-el-mundo-de-beakman-beakmans-world-theme",
+   "op": "nada",
+   "motivo": "Es un programa de imagen real con guion y personajes (Beakman, Lester, Josie), no un reality, un concurso ni una caricatura, así que cabe en la regla. Es muy conocido en México y las fuentes son de la entrada."
+  },
+  {
+   "tema": "series",
+   "id": "tv-los-soprano-woke-up-this-morning",
+   "op": "nada",
+   "motivo": "Issue #9 resuelto: ahora suena primero 'Woke Up This Morning (Chosen One Mix)' del álbum oficial de la serie, que es la mezcla de la entrada que se pedía. Hay respaldos con la misma mezcla."
+  },
+  {
+   "tema": "series",
+   "id": "tv-sex-and-the-city-sex-and-the-city-theme",
+   "op": "nada",
+   "motivo": "Issue #11 resuelto: se quitó la fuente que no sonaba, y ahora va primero 'Season 1 - Opening Theme' (37 s) con la entrada original como respaldo (55 s)."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-el-increible-mundo-de-gumball-the-amazing-world-of-gumb",
+   "op": "revisar_a_oido",
+   "motivo": "Las dos primeras fuentes son los créditos, no la intro. La intro oficial de HBO Max (19 s) ya se quitó por durar menos de 20 s y no se puede volver a agregar. Solo escuchando se sabe si la música de los créditos es el mismo tema de Ben Locke y si suena limpia.",
+   "nota": "Escucha https://www.youtube.com/watch?v=eYuifjzBfFM y https://www.youtube.com/watch?v=YfAgvE-XSz8. Si desde el segundo 0 suena la melodía de la intro de Gumball, sin voces ni otra música, déjalas así. Si no, pon primero https://www.youtube.com/watch?v=oK8jcNqc8Xw (antes confirma que sea el tema original alargado y no un remix de fans) y quita las de créditos. Si ninguna sirve, hay que buscar una intro nueva de más de 20 s."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-batman-el-valiente-tema",
+   "op": "cambiar_campo",
+   "campo": "composer",
+   "valor": "Andy Sturmer",
+   "motivo": "El tema principal de Batman: The Brave and the Bold es de Andy Sturmer. La fuente 1 es el audio oficial del canal 'Andy Sturmer - Topic'. McCuistion, Ritmanis y Carter hicieron el score, no el tema."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-oggy-y-las-cucarachas-tema",
+   "op": "cambiar_campo",
+   "campo": "composer",
+   "valor": "Hugues Le Bars",
+   "motivo": "La música de Oggy y las cucarachas (Xilam, 1998) es de Hugues Le Bars. 'Huguette Chevalier' no corresponde a nadie conocido de la serie."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-oggy-y-las-cucarachas-tema",
+   "op": "quitar_fuente",
+   "fuente": "yt:5YImzqFQ2vU",
+   "motivo": "La fuente 2 es la música de un episodio ('The Mini-Golf War'), no el tema de entrada. La fuente 1 es la apertura oficial del canal de Xilam y basta."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-villanos-cartoon-network-tema",
+   "op": "revisar_a_oido",
+   "motivo": "La fuente 1 es el piloto original, un corto con su propia música. La 2 es un avance de 28 s y la 3 es una compilación de todas las intros. Ninguna se ve claramente como la entrada latina de la serie.",
+   "nota": "Escucha https://www.youtube.com/watch?v=rpvEAtm8hJE. Si es la música del piloto y no la entrada de la serie Villanos, revisa https://www.youtube.com/watch?v=vVQpKhl_ugE (ALL INTROS: sirve si los primeros 20 s son la entrada latina) y https://www.youtube.com/watch?v=WQ09RSOjcNM (avance de 28 s: sirve si es la entrada sin locución). Pon primero la que sea la entrada latina. Si ninguna lo es, busca una fuente nueva."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-un-show-mas-un-show-mas-entrada",
+   "op": "revisar_a_oido",
+   "motivo": "La única fuente que queda no trae metadatos. No se puede comprobar que sea la entrada, que no sea una edición de fans ni que dure más de 20 s. El composer es opcional, así que que falte no es un defecto.",
+   "nota": "Escucha https://www.youtube.com/watch?v=mDLqrtIV0UI y confirma que sea la entrada de Un show más (el riff de la intro) y que dure más de 20 s. La entrada es casi toda instrumental, así que el idioma importa poco. Si no es la entrada o dura muy poco, la pista se queda sin fuentes válidas: hay que agregar una o quitar la pista."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-archie-show-sugar-sugar",
+   "op": "revisar_a_oido",
+   "motivo": "La fuente 1 es la 'Intro 1968' del programa, y la intro de 1968 puede no ser 'Sugar, Sugar' (sencillo de 1969). Las fuentes 2 a 4 sí son 'Sugar, Sugar' en inglés. Solo escuchando se sabe si el título y el audio coinciden.",
+   "nota": "Escucha https://www.youtube.com/watch?v=WGl0sdlIDiU. Si es 'Sugar, Sugar' en español, déjala así. Si es otra canción (por ejemplo 'Everything's Archie' o una instrumental), pon primero https://www.youtube.com/watch?v=j3plj_Xplus (el video oficial de The Archies) y cambia el título a 'Sugar, Sugar', sin '(tema latino)'. Ojo con el compositor: 'Sugar, Sugar' es de Jeff Barry y Andy Kim; The Archies son los intérpretes."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-canuto-y-canito-tema",
+   "op": "revisar_a_oido",
+   "motivo": "La fuente 1 es un 'spot' de Boomerang. Puede traer locución o logos encima del tema. Corrige la duración, pero hay que confirmar que sea la entrada limpia.",
+   "nota": "Escucha https://www.youtube.com/watch?v=N0ltSTIoQYA. Si desde el segundo 0 suena el tema de Canuto y Canito sin locución del canal, déjala primero. Si trae locución o no es el tema, pon primero https://www.youtube.com/watch?v=CxCjSAhm6Og y cambia el título a 'Canuto y Canito (tema)'."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-hulk-agentes-de-smash-tema",
+   "op": "revisar_a_oido",
+   "motivo": "La fuente 1 es un 'Promo' y puede traer locución de promoción en lugar de la entrada. La duración coincide con la intro, pero solo escuchando se confirma.",
+   "nota": "Escucha https://www.youtube.com/watch?v=fvjSpukiwzk. Si es la entrada sin locución, déjala primero. Si trae voz de promo, pon primero https://www.youtube.com/watch?v=Id9dVsZwg2E. Antes confirma que esa no sea el doblaje griego (es de un canal griego) y que suene la versión original o la latina."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-beavis-y-butt-head-tema",
+   "op": "nada",
+   "motivo": "Se acepta lo que dice el verificador. La fuente 1 es el 'Main Theme' de Mike Judge, sin señales de cover, remix ni compilación. Durar 127 s está dentro del rango, y el riff suena desde el inicio. El cambio arregló la fuente de 17 s."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-star-wars-clone-wars-2008-tema",
+   "op": "revisar_a_oido",
+   "motivo": "La fuente 1 no dice el año y dura 80 s. Podría ser de la serie de 2003 o traer mucha narración. Las fuentes 2 y 3 son la música de Kiner de 2008 y la respaldan.",
+   "nota": "Escucha https://www.youtube.com/watch?v=tacl5JYFb78. Si es la entrada de la serie de 2008 (la versión de Kevin Kiner del tema de Star Wars, con narración latina), déjala primero. Si es la serie de Tartakovsky de 2003 o la música tarda en entrar, pon primero https://www.youtube.com/watch?v=iKZgzM8Ghns (audio oficial de Kevin Kiner)."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-cuatro-fantasticos-1994-tema",
+   "op": "nada",
+   "motivo": "Se acepta lo que dice el verificador. El título de la fuente 1 la ata a la serie de 1994, la consulta pedía latino y nada indica doblaje de España. Que falte la palabra 'latino' no basta para dudar."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-daniel-el-travieso-dic-tema",
+   "op": "revisar_a_oido",
+   "motivo": "La pista de 1986 ya tiene primero su propia fuente latina (K6omA3sFMyQ). Pero 0mxI4nDiIIc, que está en segundo lugar, es la única fuente de toon-daniel-el-travieso-70s-tema. Si es la misma intro, el tema tendría la misma canción dos veces. Hasta donde sé, Hanna-Barbera no hizo una serie de Daniel el Travieso en los 70, así que el dato dudoso es el de la pista 'clásico'.",
+   "nota": "Escucha https://www.youtube.com/watch?v=K6omA3sFMyQ y https://www.youtube.com/watch?v=0mxI4nDiIIc. Si son la misma intro de DIC de 1986, la pista toon-daniel-el-travieso-70s-tema ('Daniel el Travieso (clásico)', Hoyt Curtin 1970) es un repetido: quítala. En esta pista puedes dejar 0mxI4nDiIIc como respaldo. Si 0mxI4nDiIIc es otra intro (por ejemplo la de 1993), quítala de esta pista y corrige los datos de la pista 'clásico' para que describan esa serie."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-daniel-el-travieso-70s-tema",
+   "op": "revisar_a_oido",
+   "motivo": "Va ligada al hallazgo de toon-daniel-el-travieso-dic-tema. Su única fuente (0mxI4nDiIIc) también está en la pista de 1986, y no conozco ninguna serie de Daniel el Travieso de Hanna-Barbera de 1970.",
+   "nota": "Escucha https://www.youtube.com/watch?v=0mxI4nDiIIc y compárala con https://www.youtube.com/watch?v=K6omA3sFMyQ. Si suena la misma intro de DIC de 1986, quita esta pista por repetida."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-godzilla-serie-animada-90s-tema",
+   "op": "nada",
+   "motivo": "Se acepta lo que dice el verificador. Las tres fuentes son de Godzilla: The Series (1998) y el título ya no dice 'latino', así que es coherente. El cambio corrigió que antes sonaba la serie de Hanna-Barbera. Buscar un doblaje latino sería una mejora opcional, no un error."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-simiolon-y-la-pandilla-tema",
+   "op": "nada",
+   "motivo": "Se acepta lo que dice el verificador. Las dos fuentes son el tema de The Great Grape Ape Show y el título no dice 'latino'. Que el franchise y el game se llamen distinto no es un error demostrado. Que sea poco conocida no es motivo para quitarla."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-capitan-n-el-amo-del-juego-tema",
+   "op": "nada",
+   "motivo": "Se acepta lo que dice el verificador. 'Capitan N Opening 1' es la apertura de la primera temporada, que es más larga que la de las temporadas 2 y 3, así que 77 s es normal. Las otras fuentes son de la misma serie. Que sea poco conocida no es motivo para quitarla."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-dibo-el-dragon-de-los-deseos-tema",
+   "op": "cambiar_campo",
+   "campo": "composer",
+   "valor": null,
+   "motivo": "'Ocon Animation Studios' es el estudio que produjo la serie, no un compositor. No hay un dato firme del compositor real y el campo es opcional, así que se quita en vez de dejar un dato falso."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-el-chavo-animado-tema",
+   "op": "cambiar_campo",
+   "campo": "title",
+   "valor": "Qué bonita vecindad (tema latino)",
+   "motivo": "'Qué' es exclamativo y lleva acento. La canción de Chespirito se llama 'Qué bonita vecindad'."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-shuriken-school-tema",
+   "op": "nada",
+   "motivo": "Se acepta lo que dice el verificador. La fuente 1 es la apertura oficial del canal de la serie (45 s), ya no hay 'crossover' (issue #18 resuelto) y el título '(tema)' coincide con que suena en inglés. Que sea poco conocida no es motivo para quitarla."
+  },
+  {
+   "tema": "caricaturas",
+   "id": "toon-los-padrinos-magicos-los-padrinos-magicos-tema",
+   "op": "cambiar_campo",
+   "campo": "title",
+   "valor": "Los Padrinos Mágicos (tema latino)",
+   "motivo": "El issue #10 está resuelto: las tres fuentes son la entrada cantada del doblaje latino (Nickelodeon Latam, NickToons Latino y Azteca 7). Según la convención del catálogo, cuando suena el doblaje el título dice '(tema latino)'."
+  },
+  {
+   "tema": "anime",
+   "id": "ani-yu-yu-hakusho-hohoemi-no-bakudan",
+   "op": "quitar_pista",
+   "motivo": "Repetida: es la misma canción y la misma serie que toon-yu-yu-hakusho-sonrisa-explosiva, una en japonés y otra en latino. Para el jugador es la misma pregunta con la misma respuesta. Yu Yu Hakusho es un clásico doblado en México, así que se queda el opening latino. Antes de la 2.1 las dos pistas tocaban el mismo video latino (RncCJNOZLb0). El anime no tiene filtro de idioma: lang solo se usa en canciones."
+  },
+  {
+   "tema": "anime",
+   "id": "toon-yu-yu-hakusho-sonrisa-explosiva",
+   "op": "quitar_fuente",
+   "fuente": "apple:433591403",
+   "motivo": "Confirmado en scripts/audit-sources-report.json: Apple 433591403 es 'Hohoemi No Bakudan' de 馬渡 松子 (la versión japonesa) y está marcado coherente:false. Si falla el video, la pista latina sonaría en japonés. Se queda solo el video latino RncCJNOZLb0 con start 15."
+  },
+  {
+   "tema": "anime",
+   "id": "toon-yu-yu-hakusho-sonrisa-explosiva",
+   "op": "nada",
+   "motivo": "El start 15 (#13) ya está en scripts/revisar-a-oido.md, línea 7, con esta misma verificación (https://www.youtube.com/watch?v=RncCJNOZLb0&t=15). No lo vuelvo a agregar para no duplicar la fila. Si a los 15 s ya suena la música, el reporte queda resuelto aunque no empiece justo en el 10."
+  },
+  {
+   "tema": "anime",
+   "id": "ani-digimon-adventure-butter-fly",
+   "op": "quitar_pista",
+   "motivo": "Repetida: 'Butter-Fly' es el mismo opening que toon-digimon-si-tu-lo-deseas-puedes-volar (versión latina de Ricardo Silva). Antes las dos pistas usaban el mismo video latino WmGy9CAap0w. Digimon es un clásico doblado en México y se queda la latina. Esa pista ya tiene aka 'Digimon Adventure', así que el nombre se sigue aceptando como respuesta."
+  },
+  {
+   "tema": "anime",
+   "id": "ani-hokuto-no-ken-ai-wo-torimodose",
+   "op": "nada",
+   "motivo": "'YOU wa SHOCK' es el estribillo de 'Ai wo Torimodose!!' de Crystal King y así llaman muchos al primer opening. El video salió de esa búsqueda y el Apple de respaldo es la misma canción. Los 124 s son normales. Solo se cambió un ID muerto, y el registro ya era el original japonés."
+  },
+  {
+   "tema": "anime",
+   "id": "ani-el-perro-de-flandes",
+   "op": "quitar_fuente",
+   "fuente": "yt:6heXBqWCdZU",
+   "motivo": "El título dice expresamente 'Intro España' (canal Las Series De Nuestra Vida). Para México no sirve como respaldo, sea cual sea el resultado de la revisión a oído de las otras dos fuentes."
+  },
+  {
+   "tema": "anime",
+   "id": "ani-el-perro-de-flandes",
+   "op": "revisar_a_oido",
+   "motivo": "'Inicio español' no dice latino. Además, el verificador encontró en .yt-cache un video de 64 s de 'Librería Parejo' que hace pensar que ese audio es el de España.",
+   "nota": "Escuchar https://www.youtube.com/watch?v=aTfRMH1RvR0 (TaranWanderer2, 64 s, suena primero) y https://www.youtube.com/watch?v=PlZ8Qy_jDTA (Sones de niños, 180 s), y compararlas con la entrada de España que se quitó: https://www.youtube.com/watch?v=6heXBqWCdZU. Si la primera es la misma canción y el mismo canto que la de España, es doblaje de España: subir la segunda si esa sí es la latina. Si ninguna es latina, reemplazarlas por la entrada latina o por el original japonés 'Yoake no Michi' (Kumiko Osugi), que es lo que describen los datos."
+  },
+  {
+   "tema": "anime",
+   "id": "toon-inuyasha-change-the-world",
+   "op": "quitar_fuente",
+   "fuente": "apple:1848248144",
+   "motivo": "Confirmado en scripts/audit-sources-report.json: Apple 1848248144 es 'CHANGE THE WORLD' de V6 en japonés, justo la versión que originó el reporte #12. Quedan los dos videos latinos de 'El mundo he de cambiar' (suU86VJt5a0, que suena primero, y PxQ9RdKxclQ). La revisión a oído ya está en scripts/revisar-a-oido.md."
+  },
+  {
+   "tema": "anime",
+   "id": "ani-cutie-honey-tema",
+   "op": "nada",
+   "motivo": "No se conoce un doblaje latino del opening de Cutie Honey (1973), así que el motivo 'debería ser latino' de la auditoría no tiene arreglo. Las dos fuentes son la canción correcta (Yoko Maekawa) y los datos están bien. Que sea poco conocida no es motivo para quitarla."
+  },
+  {
+   "tema": "anime",
+   "id": "ani-anpanman-march",
+   "op": "nada",
+   "motivo": "La primera fuente es el opening oficial de VAP en versión TV (70 s) y resuelve lo de 'music box'. No hay doblaje latino que se pueda exigir. El respaldo de comparación dura 73 s, es la misma canción y solo suena si falla el oficial. Poco conocida pero correcta."
+  },
+  {
+   "tema": "anime",
+   "id": "ani-yu-gi-oh-kawaita-sakebi",
+   "op": "nada",
+   "motivo": "Las tres fuentes son 'Kawaita Sakebi' de FIELD OF VIEW, el opening de la serie de Toei de 1998, y los datos están bien. No repite a toon-yu-gi-oh-yu-gi-oh-opening, que es el opening latino de Duel Monsters, y la nueva fuente arregla el ID compartido. Poco conocida pero correcta."
+  },
+  {
+   "tema": "anime",
+   "id": "ani-katekyo-hitman-reborn-88",
+   "op": "nada",
+   "motivo": "Pista nueva. Las fuentes son correctas (Apple '88' de LM.C y el no-credit oficial del OP4) y los datos son coherentes (2008, Artland). Poco conocida en México, pero eso no es motivo para quitarla."
+  },
+  {
+   "tema": "anime",
+   "id": "ani-katekyo-hitman-reborn-boys-and-girls",
+   "op": "nada",
+   "motivo": "Las fuentes son correctas (Apple 'BOYS & GIRLS' de LM.C y el no-credit oficial del OP2) y resuelven el motivo 'amv'. Los datos son coherentes. Poco conocida pero correcta."
+  },
+  {
+   "tema": "anime",
+   "id": "ani-jujutsu-kaisen-vivid-vice",
+   "op": "mover_categoria",
+   "categoria": "anime-20s",
+   "motivo": "Es de 2021 y la serie empezó en 2020. La sección anime-10s es '2010s' y anime-20s es '2020 en adelante', donde ya están las demás pistas de Jujutsu Kaisen."
+  },
+  {
+   "tema": "anime",
+   "id": "ani-digimon-adventure-02-target",
+   "op": "cambiar_campo",
+   "campo": "title",
+   "valor": "Impacto Rojo (Target ~Akai Shougeki~)",
+   "motivo": "Las tres fuentes son el opening latino, que se conoce como 'Impacto Rojo'. Dejo el original entre paréntesis, como en 'La fantástica aventura (Makafushigi Adventure!)' del mismo catálogo. No lo meto en aka porque en js/game.js aka son nombres alternos de la serie para adivinar, no títulos de canción."
+  },
+  {
+   "tema": "anime",
+   "id": "ani-digimon-adventure-02-target",
+   "op": "cambiar_campo",
+   "campo": "composer",
+   "valor": "Ricardo Silva (versión latina)",
+   "motivo": "Lo que suena es la versión latina de Ricardo Silva, como dice la tercera fuente ('Impacto Rojo - Ricardo Silva'), no la de Koji Wada. Va igual que la pista hermana toon-digimon-si-tu-lo-deseas-puedes-volar ('Ricardo Silva') y que Inuyasha ('Gabriela Vega (versión latina)')."
+  },
+  {
+   "tema": "anime",
+   "id": "ani-digimon-adventure-02-target",
+   "op": "mover_categoria",
+   "categoria": "anime-00s",
+   "motivo": "Época mal: Digimon Adventure 02 se estrenó en abril de 2000 (year 2000) y está en 'Años 90'. Las otras pistas de 2000 (Inuyasha, Yu-Gi-Oh!, Hamtaro) están en anime-00s, y es la única de anime-90s fuera de su década."
+  },
+  {
+   "tema": "anime",
+   "id": "ani-mha-sora-ni-utaeba",
+   "op": "nada",
+   "motivo": "La primera fuente (Crunchyroll, 100 s) es correcta, igual que los datos. El AMV de respaldo trae el audio original completo de la misma canción (254 s, lo que dura la versión completa), así que no es otra versión. Solo sonaría si falla Crunchyroll, y tiene otro respaldo detrás."
+  },
+  {
+   "tema": "disney",
+   "id": "dis-el-libro-de-la-selva-quiero-ser-como-tu",
+   "op": "quitar_pista",
+   "motivo": "La única fuente (yt rcXF7xWnOUA) es un video de 72 s titulado 'El Libro de la selva Quiero Ser Como Tu 2016', subido por un canal de personas ('Maricel Del Castillo- Nicolas Caruso'). Por el '2016' parece un recital casero o el remake, no el doblaje de 1967 con Tin Tan que describe la pista. No hay otra fuente buena. Hay que volver a buscar el doblaje original en la próxima ronda."
+  },
+  {
+   "tema": "disney",
+   "id": "dis-monsters-inc-si-no-estoy-contigo",
+   "op": "quitar_pista",
+   "motivo": "La única fuente (yt PhLS1Ilxzog) dice '(Castellano)' en el título, usa 'Monstruos SA', el nombre de España, y la subió un usuario (Disper82). Es el doblaje de España, no el latino, y no hay otra fuente. Hay que volver a buscar la versión latina."
+  },
+  {
+   "tema": "disney",
+   "id": "dis-frozen-una-aventura-congelada-por-primera-vez-en-anos",
+   "op": "quitar_pista",
+   "motivo": "La única fuente (yt 3e5P6CiwjaA) es la versión de España: acredita a Carmen López y Gisela, usa el título 'Frozen: El Reino del Hielo' y está en disneymusicesVEVO. No coincide con el composer (Romina Marroquín Payró y Carmen Sarahi, las voces latinas) y no hay otra fuente. Hay que volver a buscar la versión de DisneyMusicLAVEVO."
+  },
+  {
+   "tema": "disney",
+   "id": "dis-cenicienta-sonar-es-desear",
+   "op": "quitar_fuente",
+   "fuente": "apple:1624896787",
+   "motivo": "La fuente Apple es un popurrí de 7 piezas ('Los Pequeños Sastres/La Canción del Trabajo/.../Soñar es Desear/...') y no trae start, así que lo primero que suena no es la canción. El video _j2jSJFqzKc (Disney Jr. Latinoamérica, 87 s) sí es 'Soñar es desear' sola y en latino. Queda como única fuente."
+  },
+  {
+   "tema": "disney",
+   "id": "dis-moana-un-mar-de-aventuras-brillo",
+   "op": "cambiar_campo",
+   "campo": "composer",
+   "valor": "Dan Osorio",
+   "motivo": "El video oficial de DisneyMusicLAVEVO acredita a 'Dan Osorio - Brillo (De \"Moana: un mar de aventuras\")', el intérprete de Tamatoa en el doblaje latino. 'Mauricio Pérez' parece copiado de la pista de La princesa y el sapo."
+  },
+  {
+   "tema": "disney",
+   "id": "dis-mulan-reflejo",
+   "op": "cambiar_campo",
+   "campo": "composer",
+   "valor": "Analy",
+   "motivo": "Lo primero que suena es Apple 1624897102, 'Reflejo' de ANALY, del álbum 'Mulán (Banda Sonora Original en Español)'. En ese mismo álbum, Lucero firma 'Reflejo (Tema Principal)', la versión pop de los créditos que se quitó a propósito. El composer debe describir la versión de la película que suena ahora, no la de Lucero."
+  },
+  {
+   "tema": "disney",
+   "id": "dis-mulan-reflejo",
+   "op": "revisar_a_oido",
+   "nota": "Escucha https://music.apple.com/mx/song/1624897102 (ANALY) y https://www.youtube.com/watch?v=_yTsNxhGE30 (escena 'Mi reflejo'). Confirma que las dos son la misma voz, la del doblaje latino de la película. El reporte #17 pedía 'la de la película, Lucero', pero según el álbum oficial la de Lucero es la versión pop de créditos (Apple 1624897208) y la de la película es la de Analy. Si de verdad quieres la de Lucero, habría que volver a esa fuente y poner composer Lucero.",
+   "motivo": "El reporte #17 quedó como 'dudoso': lo que pidió el usuario (película y Lucero) no cuadra con los datos del álbum. Solo escuchando se confirma qué versión es la de la escena."
+  },
+  {
+   "tema": "disney",
+   "id": "dis-hercules-no-importa-la-distancia",
+   "op": "revisar_a_oido",
+   "nota": "Escucha https://www.youtube.com/watch?v=A1AYx-qIdec (y https://www.youtube.com/watch?v=KUKMMK7g3aw, que dura lo mismo). 1) Confirma que es la voz de Hércules en el doblaje latino de la película y no el sencillo pop de Ricky Martin: los 281 s se parecen más a la duración de un sencillo que a la de la escena (unos 3 min). 2) Si arranca con diálogo, anota el segundo donde empieza la canción para el start. 3) Busca en los créditos si el cantante es Antonio Benavides o Antonio Bencomo y corrige el composer.",
+   "motivo": "El reporte #8 se resolvió quitando la versión de Ricky Martin, pero las dos fuentes nuevas duran 281 s, más que la escena de la película. Además el nombre del intérprete no es coherente (Benavides o Bencomo). Solo escuchando se decide."
+  },
+  {
+   "tema": "disney",
+   "id": "dis-la-princesa-y-el-sapo-amigos-del-mas-alla",
+   "op": "nada",
+   "motivo": "El video (Lyrx Music) dice '(Latino)' y es la canción del Dr. Facilier. La diferencia de título ('Influencia en el más allá' frente a 'Amigos del más allá') es de nombre, no de canción, y el jugador adivina la película. No tengo un dato firme para cambiar el título ni el composer."
+  },
+  {
+   "tema": "disney",
+   "id": "dis-dumbo-cuando-veo-un-elefante-volar",
+   "op": "revisar_a_oido",
+   "nota": "Escucha https://www.youtube.com/watch?v=Y-7oUEBulhU (canal DulceSweet, 108 s). Confirma que es el doblaje latino de Dumbo y no el de otro país. Fíjate también en cómo se canta el título: si dicen 'Nunca vi un elefante volar', como dice el video, cambia el title de la pista a ese nombre.",
+   "motivo": "La subió un usuario, el título no dice 'latino' y no coincide con el de la pista. Solo escuchando se confirma el doblaje y el nombre correcto."
+  },
+  {
+   "tema": "disney",
+   "id": "dis-bambi-la-cancion-de-la-lluvia",
+   "op": "revisar_a_oido",
+   "nota": "Escucha https://www.youtube.com/watch?v=P6VfW6KSdGk ('Bambi: Las gotitas', 225 s). Confirma que es el doblaje latino y no el de España. Mira también si la parte cantada empieza tarde dentro de la secuencia de la lluvia; si es así, anota el segundo para el start. Si la canción se llama 'Las gotitas' en el doblaje, ajusta el title.",
+   "motivo": "La subió un usuario y el título no indica idioma ni coincide con el de la pista. Por la duración puede ser la secuencia completa de la tormenta. Es poco conocida, pero se queda si es correcta."
+  },
+  {
+   "tema": "disney",
+   "id": "dis-mary-poppins-con-un-poco-de-azucar",
+   "op": "nada",
+   "motivo": "El video dice [MARY POPPINS LATINO] y dura 243 s, más o menos lo que dura la canción completa en la película y en la banda sonora (unos 4 min, con la escena de ordenar el cuarto). El verso hablado del inicio es parte de la canción. No hay un defecto concreto que corregir."
+  },
+  {
+   "tema": "disney",
+   "id": "dis-tierra-de-osos-en-marcha-estoy",
+   "op": "nada",
+   "motivo": "El título del video coincide con la pista ('En Marcha Estoy (By: Phil Collins)') y con el composer. Que el canal no sea oficial y la duración (255 s) no son defectos concretos."
+  },
+  {
+   "tema": "disney",
+   "id": "dis-elementos-steal-the-show",
+   "op": "nada",
+   "motivo": "Es la fuente oficial (DisneyMusicVEVO), de Lauv, y la canción principal de Elemental. El título en inglés es a propósito. Ser poco conocida no es motivo para quitarla."
+  },
+  {
+   "tema": "disney",
+   "id": "dis-soul-it-s-all-right",
+   "op": "nada",
+   "motivo": "La fuente Apple 1544502525 y el video oficial coinciden con la pista (Jon Batiste y Celeste, versión dueto de Soul). Ser poco conocida no es motivo para quitarla."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-kpop-tu-idolo",
+   "op": "quitar_fuente",
+   "fuente": "apple:1820264156",
+   "motivo": "La fuente Apple que suena primero es 'Your Idol' del soundtrack original en inglés (Saja Boys: Andrew Choi, Neckwav, etc.). No puede abrir una pista marcada como lang es y 'versión en español'. Queda el clip oficial de Netflix Latinoamérica."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-kpop-tu-idolo",
+   "op": "revisar_a_oido",
+   "motivo": "Ahora la única fuente es el clip de Netflix Latinoamérica, que conserva el título en inglés. Hay que confirmar que la canción esté cantada en español.",
+   "nota": "Escucha https://www.youtube.com/watch?v=T7Q7ZhNyHqk (clip oficial de Netflix Latinoamérica, 107 s). 1) Confirma que 'Your Idol' se canta en español (doblaje latino). 2) Si empieza con diálogo, pon start en el segundo en que empieza la canción. 3) Si se canta en inglés, la pista no es 'versión en español': vuelve a poner como fuente Apple https://music.apple.com/mx/song/1820264156 (original en inglés), cambia lang a en, title y game a 'Your Idol', y quita el aka."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-kpop-libre",
+   "op": "revisar_a_oido",
+   "motivo": "Es una sola fuente: un clip oficial cuyo título conserva 'Free'. Solo oyéndolo se confirma que la canción esté doblada al español y que no empiece con diálogo.",
+   "nota": "Escucha https://www.youtube.com/watch?v=--EwJmB6WqY (clip oficial de Netflix Latinoamérica, 171 s). 1) Confirma que 'Free' se canta en español y anota con qué título o coro se canta; si no es 'Libre', corrige title y game. 2) Es probable que el clip abra con diálogo entre Rumi y Jinu: pon start en el segundo en que empieza a cantarse. 3) Si la canción está en inglés, cambia lang a en, title y game a 'Free', y quita el aka."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-joseph-go-go-go-joseph",
+   "op": "cambiar_campo",
+   "campo": "composer",
+   "valor": "Michael Damian, Kelli Rabke y elenco",
+   "motivo": "La fuente que suena primero (Apple 1843485446) es la grabación del reparto de Los Ángeles de 1993 con Michael Damian (José) y Kelli Rabke (narradora), no la de Jason Donovan. Se ajustan los datos a lo que suena."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-joseph-go-go-go-joseph",
+   "op": "cambiar_campo",
+   "campo": "year",
+   "valor": 1993,
+   "motivo": "El álbum que suena es 'Joseph and the Amazing Technicolor Dreamcoat (1993 Los Angeles Cast Recording)'."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-joseph-go-go-go-joseph",
+   "op": "cambiar_campo",
+   "campo": "platform",
+   "valor": "Los Ángeles",
+   "motivo": "La grabación que suena es la del reparto de Los Ángeles de 1993, no la de Londres de 1991. La categoría no cambia: va por la época del musical (1968)."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-matilda-when-i-grow-up",
+   "op": "cambiar_campo",
+   "campo": "composer",
+   "valor": "Elenco original de Broadway",
+   "motivo": "Las dos fuentes (Apple 1664565197 y el canal Topic del Original Cast) son la grabación del elenco original de Broadway, no la película de Netflix de 2022."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-matilda-when-i-grow-up",
+   "op": "cambiar_campo",
+   "campo": "year",
+   "valor": 2013,
+   "motivo": "Matilda se estrenó en Broadway en 2013, el año de la grabación del Original Broadway Cast que suena. Sigue en mus-10s."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-matilda-when-i-grow-up",
+   "op": "cambiar_campo",
+   "campo": "platform",
+   "valor": "Broadway",
+   "motivo": "Lo que suena es el disco del elenco de Broadway, no la película."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-oliver-food-glorious-food",
+   "op": "cambiar_campo",
+   "campo": "year",
+   "valor": 1994,
+   "motivo": "Lo que suena primero (Apple 286652266) es el 'Oliver! 1994 Kids Ensemble' del álbum de la reposición del London Palladium de 1994. Es una grabación válida y limpia. Se ajustan los datos en vez de reordenar; el clip de la película queda como respaldo."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-oliver-food-glorious-food",
+   "op": "cambiar_campo",
+   "campo": "platform",
+   "valor": "Londres",
+   "motivo": "La grabación que suena es la reposición del London Palladium de 1994, no la película."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-oliver-food-glorious-food",
+   "op": "cambiar_campo",
+   "campo": "composer",
+   "valor": "Elenco infantil de Oliver!",
+   "motivo": "La grabación que suena la canta el elenco infantil ('Kids Ensemble') de la producción de 1994."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-little-shop-skid-row",
+   "op": "cambiar_campo",
+   "campo": "year",
+   "valor": 2019,
+   "motivo": "Lo que suena primero (Apple 1492371223) es el álbum de la reposición Off-Broadway de 2019 (Groff, Blanchard, Borle), no la película de 1986. El respaldo de la película es un video con letra incrustada de un canal particular, peor como fuente principal. Se ajustan los datos. Sigue en mus-7080 por la época del musical."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-little-shop-skid-row",
+   "op": "cambiar_campo",
+   "campo": "platform",
+   "valor": "Off-Broadway",
+   "motivo": "El álbum que suena es 'Little Shop of Horrors (The New Off-Broadway Cast Album)'."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-little-shop-skid-row",
+   "op": "cambiar_campo",
+   "campo": "composer",
+   "valor": "Jonathan Groff, Tammy Blanchard y elenco",
+   "motivo": "Son los intérpretes principales de la grabación que suena, según el crédito de Apple."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-oliver-where-is-love",
+   "op": "quitar_fuente",
+   "fuente": "apple:340660128",
+   "motivo": "La fuente Apple está acreditada a un artista 'Oliver' en la recopilación 'The Best Love Songs Vol.1' y dura 270 s, mucho más que el número de la película (unos 150 s). Casi seguro es un cover. Queda el clip de Movieclips de la película de 1968 (154 s), que coincide con los datos."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-oliver-where-is-love",
+   "op": "cambiar_campo",
+   "campo": "composer",
+   "valor": "Mark Lester (voz de Kathe Green)",
+   "motivo": "En la película de 1968 la voz cantada de Oliver (Mark Lester) la dobló Kathe Green, hija del director musical Johnny Green. Se sigue el criterio del catálogo de acreditar a quien canta (como Marni Nixon en 'Shall We Dance?')."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-heathers-dead-girl-walking",
+   "op": "quitar_fuente",
+   "fuente": "apple:887521674",
+   "motivo": "La fuente Apple es 'Dead Girl Walking (Reprise)', otra pista del disco con otra letra, otros cantantes y 167 s. Queda el video con letra de 203 s, que encaja con la canción principal de Weed y McCartan que describen los datos."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-mentiras-mentiras",
+   "op": "revisar_a_oido",
+   "motivo": "Las dos fuentes son popurrís que abren con 'Él me mintió'. Solo oyendo se sabe si la vista previa de Apple cae en 'Mentiras'. No se quita, porque Mentiras es muy conocido en México y la pista sí contiene la canción.",
+   "nota": "Escucha la vista previa de https://music.apple.com/mx/song/328877997 ('Él me mintió / Mentiras / Mentiras', 141 s, elenco original). Si lo que se oye es la canción 'Mentiras' (la de Daniela Romo), déjala. Si se oye 'Él me mintió' u otra canción, la pista no sirve así. El respaldo https://www.youtube.com/watch?v=m9v4e0tpRYk también es popurrí ('Él Me Mintió, Mentiras, Lo Juro') y es de la serie de Prime Video, no del elenco original. Si lo pones primero, fija start en el segundo en que empieza 'Mentiras' y ajusta platform y year a la serie. Si ninguna de las dos sirve, quita la pista."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-la-mancha-el-sueno-imposible",
+   "op": "revisar_a_oido",
+   "motivo": "La única fuente es un concierto en vivo de Plácido Domingo con la orquesta Esperanza Azteca, subido por un usuario. El año 1996 no describe este video, porque esa orquesta juvenil es muy posterior. Solo oyéndolo se decide si el audio es aceptable y en qué segundo empezar.",
+   "nota": "Escucha https://www.youtube.com/watch?v=2GAr_FDMWCo (219 s, canal 'luis angel guzman'). 1) Confirma que se canta en español y que el audio es limpio, no grabado desde el público. 2) Si empieza con aplausos o presentación, pon start en el segundo en que empieza la canción. 3) Corrige year al año del concierto (búscalo en la descripción del video; 1996 no corresponde) y platform a algo como 'En vivo con Esperanza Azteca'. Si el audio es malo, quita la pista: 'The Impossible Dream' ya está en el catálogo con aka 'El sueño imposible'."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-book-of-mormon-i-believe",
+   "op": "revisar_a_oido",
+   "motivo": "La única fuente es la transmisión de los Tony 2011 (324 s), más larga que la canción. Con start 0 es probable que empiece con un presentador que diga 'The Book of Mormon' y revele la respuesta. La poca fama de la canción no es motivo para quitarla.",
+   "nota": "Escucha https://www.youtube.com/watch?v=GVJgmp2Tc2s (actuación de Andrew Rannells en los premios Tony 2011, video de un usuario). Pon start en el segundo en que empieza la música de 'I Believe', saltando la presentación y los aplausos. Si el presentador habla encima de la música y no se puede evitar, quita la pista."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-matilda-ninos-rebeldes",
+   "op": "revisar_a_oido",
+   "motivo": "La única fuente es un video 'Karaoke' de Netflix. Hay que confirmar que trae las voces del doblaje y no solo la pista instrumental.",
+   "nota": "Escucha https://www.youtube.com/watch?v=uxWOfawV8yQ ('Karaoke' de Netflix Latinoamérica, 175 s). 1) Confirma que se oyen las voces del doblaje en español y no una pista instrumental para cantar. Si es solo instrumental, quita la pista: 'Revolting Children' en inglés ya está en el catálogo. 2) Anota con qué título o coro se canta en español; si no es 'Niños rebeldes', corrige title y game. 3) Si empieza con diálogo, ajusta start."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-phantom-angel-of-music",
+   "op": "revisar_a_oido",
+   "motivo": "La fuente Apple es el tema combinado 'Little Lotte / The Mirror (Angel of Music)', que abre con Raoul y Christine. Solo oyendo la vista previa se sabe si cae en la parte de 'Angel of Music'. El composer (Brightman y Crawford) sí corresponde a la parte del espejo.",
+   "nota": "Escucha la vista previa de https://music.apple.com/mx/song/1843488345 (169 s, elenco original de Londres 1986). Si cae en la parte del espejo (Christine y el Fantasma cantando 'Angel of Music'), déjala como está. Si cae en 'Little Lotte' (Raoul y Christine), pon primero https://www.youtube.com/watch?v=tTqkedebbN4, tras confirmar que es el elenco original. Si ese video es el número 'Angel of Music' de Christine y Meg, cambia composer a 'Sarah Brightman y Janet Devenish'."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-hnmpl-maquillaje",
+   "op": "revisar_a_oido",
+   "motivo": "La fuente Apple está acreditada a 'Fino Señores', en un álbum 'Hoy No Me Puedo Levantar (Obra Musical HNMPL)' de reciente publicación. Apunta a una producción independiente o escolar, no al elenco de México de 2006. El respaldo es de la producción de México 2020. Solo oyendo se decide.",
+   "nota": "Escucha la vista previa de https://music.apple.com/mx/song/1755231891 (artista 'Fino Señores', 154 s). Si suena a producción amateur o escolar, quita esa fuente y deja https://www.youtube.com/watch?v=1PvLt4vzfVc ('México 2020', canal MusicalesMX); confirma que ese video tenga audio limpio de la producción y cambia year a 2020. Si la de Apple suena a elenco profesional, deja la pista como está."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-sweeney-todd-johanna",
+   "op": "nada",
+   "motivo": "La fuente que suena primero, Apple 269738389 'Johanna' (342 s, Bower, Depp y Laura Michelle Kelly), es del soundtrack de la película de 2007 y coincide con el composer. El respaldo '(Reprise)' de 326 s es casi seguro el mismo número de la película. No hay problema."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-matilda-naughty",
+   "op": "quitar_fuente",
+   "fuente": "yt:QV53Vy7KFLQ",
+   "motivo": "El respaldo es una actuación en vivo (Dublin Peace Proms 2024), no la grabación de la película. Hay una fuente buena (Apple 1651697757, soundtrack de la película de Netflix), así que la fuente en vivo se quita según el criterio."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-hair-let-the-sunshine-in",
+   "op": "revisar_a_oido",
+   "motivo": "La fuente Apple está acreditada al genérico 'Broadway Cast' en el álbum 'Hair (A Rock Musical)'. Puede ser una regrabación. El respaldo es la reposición de 2009. Ninguna fuente confirma el elenco original de 1968. El aka igual al título es inofensivo.",
+   "nota": "Escucha la vista previa de https://music.apple.com/mx/song/530283462 (217 s) y compárala con el elenco original de Broadway de 1968; la pista 'Aquarius' del catálogo usa ese disco. Si es la de 1968, déjala. Si es una regrabación, pon primero https://www.youtube.com/watch?v=pwDsFLV1TM8 (reposición de Broadway 2009) y cambia year a 2009 y composer a 'Gavin Creel, Caissie Levy y elenco'. La categoría sigue en mus-clasicos."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-joseph-close-every-door",
+   "op": "nada",
+   "motivo": "La fuente que suena primero (Apple 1843485523, Londres 1991, Jason Donovan) coincide con los datos. El respaldo de Donny Osmond es el video oficial de otra producción del mismo musical. No es cover ni en vivo, y solo se usa si falla Apple."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-moulin-rouge-el-tango-de-roxanne",
+   "op": "quitar_fuente",
+   "fuente": "yt:Rn0xXo1gwGY",
+   "motivo": "El respaldo viene del canal de una universidad ('Madison College'), sin intérpretes en el título, y dura 347 s, contra 284 s del soundtrack. Lo más probable es que sea una interpretación de alumnos. La fuente principal de Apple (1440892663, soundtrack con Feliciano, McGregor y Koman) es correcta y se queda."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-dreamgirls-one-night-only",
+   "op": "nada",
+   "motivo": "Apple 464321087 es del soundtrack de la película, con Jennifer Hudson y Deena Jones & The Dreams. Que sea la 'Highlights Version' de 178 s no impide reconocerla. El respaldo de Paramount es la escena de la película."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-fiddler-si-yo-fuera-rico",
+   "op": "revisar_a_oido",
+   "motivo": "La única fuente es un video de un canal pequeño ('El DepaTV') que no confirma que sea Manolo Fábregas en 1970. Dura 344 s, así que puede abrir con el monólogo hablado de Tevye. Solo oyendo se sabe qué versión es y dónde empezar.",
+   "nota": "Escucha https://www.youtube.com/watch?v=rKSI68osEds (344 s). 1) Identifica la versión: la producción mexicana de 1970 con Manolo Fábregas, otra producción en español o el doblaje de la película. Si no es Fábregas 1970, corrige composer, year y platform según lo que suene. 2) Si empieza con el monólogo hablado o con presentación, pon start en el segundo en que empieza la canción. 3) Si es una grabación casera con mal audio, quita la pista: 'If I Were a Rich Man' ya está con aka 'Si yo fuera rico'."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-sonrisas-do-re-mi-es",
+   "op": "revisar_a_oido",
+   "motivo": "No es un repetido real. El catálogo mantiene a propósito pares en español e inglés, y game ya los distingue con '(español)'. El aka igual al título es inofensivo. Lo único por revisar es el inicio: es una sola fuente de 396 s con start 0.",
+   "nota": "Escucha https://www.youtube.com/watch?v=SnL94BLgUkE (BroadwayWorld Spain, 396 s). Si empieza con diálogo, presentación o cortinilla, pon start en el segundo en que María empieza a cantar. Si no, déjala."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-tick-tick-boom-30-90",
+   "op": "nada",
+   "motivo": "Es el clip oficial de Netflix de la canción y corresponde a los datos. Que sea poco conocida en México no es motivo para quitarla."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-legally-blonde-so-much-better",
+   "op": "nada",
+   "motivo": "Apple 1270809409 es el Original Broadway Cast con Laura Bell Bundy y coincide con los datos. Que sea poco conocida no es motivo para quitarla, y Legally Blonde es conocida en México."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-spring-awakening-mama-who-bore-me",
+   "op": "nada",
+   "motivo": "Apple 1440732243 (Lea Michele, Broadway 2006) coincide con los datos. Que sea de nicho no es motivo para quitarla."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-heathers-seventeen",
+   "op": "nada",
+   "motivo": "Apple 887521561 y el canal Topic coinciden con los datos: Weed y McCartan, World Premiere Cast Recording. Que sea de nicho no es motivo para quitarla."
+  },
+  {
+   "tema": "musicales",
+   "id": "mus-gypsy-everythings-coming-up-roses",
+   "op": "nada",
+   "motivo": "Apple 164926661 y el canal Topic son el Original 1959 Broadway Cast con Ethel Merman y coinciden con los datos. Es un estándar conocido; no se quita."
+  },
+  {
+   "tema": "juegos",
+   "id": "grand-theft-auto-main-theme",
+   "op": "cambiar_campo",
+   "campo": "game",
+   "valor": "Grand Theft Auto",
+   "motivo": "Las tres fuentes son el tema del GTA original de 1997 ('Joyride' de Da Shootaz) y ninguna es San Andreas. La música es válida y original del juego, así que corrijo los datos para que describan lo que suena en vez de quitar la pista."
+  },
+  {
+   "tema": "juegos",
+   "id": "grand-theft-auto-main-theme",
+   "op": "cambiar_campo",
+   "campo": "year",
+   "valor": 1997,
+   "motivo": "El año del catálogo es el del juego. Grand Theft Auto (el primero) salió en 1997."
+  },
+  {
+   "tema": "juegos",
+   "id": "grand-theft-auto-main-theme",
+   "op": "cambiar_campo",
+   "campo": "platform",
+   "valor": "PC / PlayStation",
+   "motivo": "GTA 1 salió en PC (DOS/Windows) y PlayStation, no en PS2."
+  },
+  {
+   "tema": "juegos",
+   "id": "grand-theft-auto-main-theme",
+   "op": "cambiar_campo",
+   "campo": "composer",
+   "valor": "Da Shootaz",
+   "motivo": "Michael Hunter compuso el tema de San Andreas, no esta música. Las fuentes acreditan 'Joyride' a Da Shootaz, la banda de la radio de GTA 1."
+  },
+  {
+   "tema": "juegos",
+   "id": "grand-theft-auto-main-theme",
+   "op": "quitar_fuente",
+   "fuente": "yt:KZqsEH99QYM",
+   "motivo": "'Grand Theft Auto - Main Theme [REMASTERED & EXTENDED]' (273 s, canal 1DERER) es una remasterización hecha por fans, no la grabación original. Quedan dos fuentes buenas (JYy69qOJWoM y 6hXohRub4WQ)."
+  },
+  {
+   "tema": "juegos",
+   "id": "bioshock-welcome-to-rapture",
+   "op": "quitar_fuente",
+   "fuente": "yt:BbEunjRoj84",
+   "motivo": "Junta dos pistas en un video de 217 s ('The Ocean On His Shoulders - Welcome To Rapture'). Con start 0 suena primero 'The Ocean On His Shoulders' y no se sabe en qué segundo exacto empieza la pista. Las otras dos fuentes son la pista sola."
+  },
+  {
+   "tema": "juegos",
+   "id": "bioshock-welcome-to-rapture",
+   "op": "reordenar_fuentes",
+   "orden": [
+    "yt:sEFIZh_Zscc",
+    "yt:7DjpOuucA1k"
+   ],
+   "motivo": "Pongo primero 'Bioshock Soundtrack: 02 Welcome to Rapture' (113 s) y luego 'BioShock OST | Welcome to Rapture' (111 s). Las dos son la pista sola y correcta."
+  },
+  {
+   "tema": "juegos",
+   "id": "dragon-quest-overture",
+   "op": "revisar_a_oido",
+   "nota": "Lo primero que suena es la Obertura de la Suite Sinfónica de Dragon Quest IV (Tokyo Metropolitan SO, dirige Sugiyama), no la versión 8 bits de NES de 1986 que dicen los datos. Escucha https://music.apple.com/mx/song/1824660296 (también https://music.apple.com/mx/song/1824661465, versión XI, y https://www.youtube.com/watch?v=MATZR7LGECQ). Si se reconoce como la marcha de Dragon Quest, déjala: es una grabación oficial del compositor y la misma pieza en toda la saga. Si quieres que suene la versión del juego de 1986, hay que buscar una fuente nueva del chiptune de NES, porque ninguna de las actuales lo es.",
+   "motivo": "El desajuste es real pero no grave. Es la misma composición oficial de Sugiyama en arreglo sinfónico, no es cover ni fanmade, y la respuesta (Dragon Quest) es la misma. Que se quede depende de qué tan reconocible sea al oído, y no hay otra fuente para reordenar."
+  },
+  {
+   "tema": "juegos",
+   "id": "overwatch-2-overture",
+   "op": "revisar_a_oido",
+   "nota": "Escucha https://www.youtube.com/watch?v=xco_LrRLYN4 y confirma si es el tema del menú principal de Overwatch 2 (2022). El video dice 'Overwatch Music - (01) Overture' sin el '2', pero eso no prueba que sea del Overwatch de 2016. Si es del Overwatch original, cambia game a 'Overwatch', year a 2016, platform a 'PC / PS4 / Xbox One' y revisa el compositor. Si es Overwatch 2, déjalo, pero conviene agregar ['Overwatch', 'Overwatch 2'] a AM.VERSIONS: 'Overwatch' es juego señuelo en AM.EXTRA_GAMES y podría salir como opción junto a 'Overwatch 2'.",
+   "motivo": "El revisor y el verificador quieren cambiar los datos a Overwatch 2016 solo porque al título de un video subido por un fan le falta el '2'. Eso no basta para cambiar campos, y la consulta, las duraciones (115 y 114 s) y el compositor que trae la entrada cuadran con Overwatch 2. Solo escuchando se resuelve."
+  },
+  {
+   "tema": "juegos",
+   "id": "tomb-raider-2013-tomb-raider-main-theme",
+   "op": "revisar_a_oido",
+   "nota": "Escucha https://music.apple.com/mx/song/1471827136 ('A Survivor Is Born', Jason Graves). Suele presentarse como el tema principal de Tomb Raider 2013, así que confirma que es el motivo del menú/tráiler. La segunda (https://music.apple.com/mx/song/1731016011) es la misma pista en otra edición del álbum. Revisa también https://www.youtube.com/watch?v=iiVUXL6_REM ('The Tomb Raider', 52 s): si es otro fragmento corto distinto al tema, se puede quitar porque es solo respaldo.",
+   "motivo": "Todas las fuentes son del OST oficial de Jason Graves, pero ninguna se llama 'Main Theme'. Lo más probable es que 'A Survivor Is Born' sea el tema principal, aunque los datos no lo prueban. Hay que confirmarlo escuchando."
+  },
+  {
+   "tema": "juegos",
+   "id": "persona-3-mass-destruction",
+   "op": "quitar_fuente",
+   "fuente": "yt:Q6q6pDC6Mas",
+   "motivo": "'Mass Destruction -Reload-' es un arreglo regrabado para Persona 3 Reload (2024), que es otro juego (está en AM.VERSIONS) y ya tiene su propia pista. La entrada es Persona 3 (2006, PS2) y las dos primeras fuentes (209 y 210 s) son la versión original."
+  },
+  {
+   "tema": "juegos",
+   "id": "contra-jungle",
+   "op": "quitar_fuente",
+   "fuente": "yt:o_CEXj45-Lk",
+   "motivo": "Es la versión arcade de 1987. El título 'Area 1 Jungle ~ Area 7 Hangar' quizá solo indica que la misma música suena en ambas áreas y no que sea una compilación, pero de todos modos no es la versión NES de 1988 que describen la entrada y sus compositores (Sada y Maezawa hicieron el arreglo para NES). Quedan dos fuentes NES buenas."
+  },
+  {
+   "tema": "juegos",
+   "id": "call-of-duty-lullaby-for-a-dead-man",
+   "op": "nada",
+   "motivo": "'Lullaby of a Deadman' es la misma canción de Verrückt con el título alterno. El álbum de Black Ops Zombies junta las canciones de World at War y los créditos (Kevin Sherwood, Elena Siegman) coinciden. La fuente de YouTube viene del canal oficial de Kevin Sherwood. No hay evidencia de que sea otra grabación."
+  },
+  {
+   "tema": "juegos",
+   "id": "sekiro-shadows-die-twi-isshin-the-sword-saint",
+   "op": "nada",
+   "motivo": "La primera fuente ('Sword Saint', 208 s, canal Original Soundtrack) es la pista correcta y es la que suena. 'Isshin Ashina' probablemente es otra pelea, la del final Shura, pero es del mismo juego y solo suena si falla la primera. Quitarla dejaría con una sola fuente una pista que ya estuvo 'muerta'. No compensa."
+  },
+  {
+   "tema": "juegos",
+   "id": "bioshock-infinite-will-the-circle-be-unb",
+   "op": "nada",
+   "motivo": "Lo que suena primero es 'Will The Circle Be Unbroken (Full)' (BioshockInfiniteOST, 285 s), que corresponde a la entrada. Las versiones de coro también son música del mismo juego (la escena del bautizo) y solo son respaldo. No son covers ni de otra obra."
+  },
+  {
+   "tema": "juegos",
+   "id": "acnh-main",
+   "op": "revisar_a_oido",
+   "nota": "Ahora la única fuente es https://www.youtube.com/watch?v=dZQez9N4VRg y no tiene título, canal ni duración. Antes era el respaldo de lI_C1Bjdqn4 y probablemente nunca se escuchó. Confirma que desde el segundo 0 suena el Main Theme de Animal Crossing: New Horizons (la música del título). Si no lo es, la pista queda sin fuente válida y hay que buscar una nueva.",
+   "motivo": "No hay error demostrado, pero sin metadatos no se puede confirmar qué suena. Además ahora es la única fuente, así que vale una escucha rápida."
+  },
+  {
+   "tema": "juegos",
+   "id": "chrono-cross-chrono-cross-time-s-sc",
+   "op": "nada",
+   "motivo": "Usar franchise 'Chrono Trigger' es intencional y coherente con el resto del catálogo: las otras dos pistas de la saga lo usan y AM.EXTRA_GAMES tiene ['Chrono Trigger', 'Chrono Cross']. Cambiarlo solo aquí separaría la saga. Las fuentes (Mitsuda, OST de Chrono Cross) son correctas."
+  },
+  {
+   "tema": "juegos",
+   "id": "age-of-empires-ii-shamburger",
+   "op": "nada",
+   "motivo": "Lo que suena primero es la versión clásica (Chaud, 215 s), que corresponde a The Age of Kings (1999). Las otras dos son la versión de la Definitive Edition, la misma composición del mismo juego remasterizado, y quedan como respaldo válido. Es un juego popular en PC en México."
+  },
+  {
+   "tema": "juegos",
+   "id": "sea-of-thieves-grogg-mayles",
+   "op": "nada",
+   "motivo": "Las fuentes son del canal oficial 'Sea of Thieves - Topic' y coinciden con la entrada. La versión instrumental es del mismo OST. Que sea poco conocida no es motivo para quitarla."
+  },
+  {
+   "tema": "juegos",
+   "id": "honkai-star-rail-hope-is-the-thing-with",
+   "op": "nada",
+   "motivo": "Las tres fuentes coinciden (Apple 'Robin, HOYO-MiX & Chevy', canal oficial de Honkai: Star Rail y un tercero). El año 2023 sigue la regla del catálogo de poner el año del juego y no el de la canción, igual que en League of Legends. Que sea poco reconocible no es un defecto."
+  }
+ ]
+}

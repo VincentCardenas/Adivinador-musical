@@ -15,7 +15,7 @@
   'use strict';
 
   AM.CONFIG = {
-    version: '2.0',
+    version: '2.1',
     repo: 'VincentCardenas/Adivinador-musical',
     reportTemplate: 'reporte-cancion.yml',
     scoreboard: {

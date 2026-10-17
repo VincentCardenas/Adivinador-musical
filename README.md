@@ -4,12 +4,12 @@ Adivinador musical: suena un fragmento de música **oficial** y tienes que recon
 
 | Tema | ¿Qué adivinas? | Categorías |
 | --- | --- | --- |
-| 🎮 **Videojuegos** | La saga y el juego (Halo, Zelda, Pokémon, Elden Ring…): 281 pistas de 127 sagas y 215 juegos | Nintendo, Xbox, PlayStation, Indie, Retro, RPG, Acción, Online |
+| 🎮 **Videojuegos** | La saga y el juego (Halo, Zelda, Pokémon, Elden Ring…): 342 pistas de 131 sagas y 232 juegos | Nintendo, Xbox, PlayStation, Indie, Retro, RPG, Acción, Online |
 | 📺 **Series** | La serie por su entrada o tema principal (Friends, Lost, Stranger Things, El Chavo…) | Por época: clásicas, 90s, 2000s, 2010s y 2020 en adelante |
-| 🧸 **Caricaturas** | La caricatura por su entrada, **todas en español latino**: 296 caricaturas inolvidables, desde Los Picapiedra, Don Gato, Scooby-Doo y Thundercats hasta Fenomenoide, Bob Esponja, Los Padrinos Mágicos, Ben 10, Hora de Aventura y Gravity Falls | Por época: clásicas (antes de 1980), 80s, 90s, 2000s, 2010 a 2014, 2015 a 2019 y 2020 en adelante |
-| 🎌 **Anime** | El anime por su opening: 251 openings icónicos, desde Astro Boy, Mazinger Z, Caballeros del Zodiaco y Dragon Ball hasta Sailor Moon, Evangelion, Naruto, Bleach, Attack on Titan, Demon Slayer, Jujutsu Kaisen, Chainsaw Man, Frieren y Dandadan | Por época: clásicos (antes de 1990), 90s, 2000s, 2010s y 2020 en adelante |
+| 🧸 **Caricaturas** | La caricatura por su entrada, **todas en español latino**: 358 caricaturas inolvidables, desde Los Picapiedra, Don Gato, Scooby-Doo y Thundercats hasta Fenomenoide, Bob Esponja, Los Padrinos Mágicos, Ben 10, Hora de Aventura y Gravity Falls | Por época: clásicas (antes de 1980), 80s, 90s, 2000s, 2010 a 2014, 2015 a 2019 y 2020 en adelante |
+| 🎌 **Anime** | El anime por su opening: 303 openings icónicos, desde Astro Boy, Mazinger Z, Caballeros del Zodiaco y Dragon Ball hasta Sailor Moon, Evangelion, Naruto, Bleach, Attack on Titan, Demon Slayer, Jujutsu Kaisen, Chainsaw Man, Frieren y Dandadan | Por época: clásicos (antes de 1990), 90s, 2000s, 2010s y 2020 en adelante |
 | 🏰 **Disney** | La película por sus canciones **en español latino** (El rey león, Frozen, Coco…) | Por época: clásicos, renacimiento, 2000s, 2010s y 2020 en adelante. Interruptor para incluir o quitar **Pixar** |
-| 🎭 **Musicales** | De qué musical es (Clásico) o qué canción es (Experto y Supervivencia): 222 canciones (200 en grabación original y 22 en español) de las obras cumbres de teatro y cine musical, siempre con su nombre original (Grease, The Phantom of the Opera, Wicked, Hamilton, Six, Guys and Dolls, Spring Awakening, Avenue Q…), o en versiones en español famosas (Timbiriche, Camilo Sesto, elenco de México, Madrid…) | Por época: clásicos, 70s y 80s, 90s y 2000s y 2010 en adelante. Selector de idioma: **español, inglés o ambos** |
+| 🎭 **Musicales** | De qué musical es (Clásico) o qué canción es (Experto y Supervivencia): 269 canciones (239 en grabación original y 30 en español) de las obras cumbres de teatro y cine musical, siempre con su nombre original (Grease, The Phantom of the Opera, Wicked, Hamilton, Six, Guys and Dolls, Spring Awakening, Avenue Q…), o en versiones en español famosas (Timbiriche, Camilo Sesto, elenco de México, Madrid…) | Por época: clásicos, 70s y 80s, 90s y 2000s y 2010 en adelante. Selector de idioma: **español, inglés o ambos** |
 | 🎤 **Canciones** | Quién la canta (Clásico) o qué canción es (Experto y Supervivencia): 1,816 canciones famosas, de Pedro Infante, Queen y Johnny Cash a Bad Bunny, Peso Pluma y BLACKPINK | Por género: rock, pop, rap y hip-hop, baladas, electrónica y metal (con **100 en español y 100 en inglés** cada uno); regional mexicano, reggaetón, cumbia y salsa (**100 en español** cada uno); **K-pop** (100 en coreano e internacional) y **country** (100 en inglés). Selector de época (antes de 1980, 80s, 90s, 2000s, 2010s y 2020s) y de idioma: **español, inglés o todos** |
 
 Al terminar una partida puedes guardar tu puntaje con un **nickname** en el **ranking global** (uno por tema y modo).
@@ -241,6 +241,43 @@ La versión actual se ve en la esquina inferior izquierda del juego (en el celul
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **2.1**: **catálogo revisado en red, 11 reportes arreglados y 149 pistas más**. Es la primera versión en la que las fuentes de audio de todos los temas, menos Canciones, se probaron de verdad contra YouTube y Apple Music.
+  - **Auditoría de red** (`scripts/audit-red.js`):
+    - En YouTube revisa que el video exista, que se pueda insertar y que no esté bloqueado en México.
+    - En Apple revisa que el preview exista en el país de la fuente.
+    - Las búsquedas por término y por álbum las prueba con la lógica real del juego.
+    - Antes había **29 pistas que no sonaban**; ahora no queda ninguna.
+  - **Los 11 reportes de GitHub, #8 a #18:**
+    - Hércules y Mulán con la versión de la película.
+    - Los Soprano con la «Chosen One Mix» de la tele.
+    - Los Padrinos Mágicos, Inuyasha y Dragon Ball GT con su entrada latina de TV.
+    - Sex and the City y Shuriken School con videos que sí suenan.
+    - Yu Yu Hakusho y Blue Seed arrancan donde empieza la música.
+    - Se confirmó que ya no queda ningún ID inventado del #15.
+  - **Pistas arregladas:**
+    - Las **30 series de Gemini** se comprobaron una por una.
+    - Se quitaron **covers** en Videojuegos y Musicales.
+    - Se repararon 35 caricaturas y 27 animes que tenían un video equivocado, repetido o muy corto.
+    - Volvieron las **16 pistas** que se habían retirado por tener IDs inventados.
+  - **Pistas nuevas:**
+
+    | Tema | Antes | Ahora | Detalle |
+    |---|---:|---:|---|
+    | 📺 Series | 122 | 192 | +70, repartidas en las cinco épocas |
+    | 🏰 Disney | 71 | 89 | +18 en las cinco épocas |
+    | 🎭 Musicales | 222 | 269 | +47; cada época tiene ahora al menos 5 en español (antes, Clásicos y 2010 en adelante tenían solo 2) |
+    | 🧸 Caricaturas | 296 | 358 | +62: 11 recuperadas y 53 nuevas en las siete épocas; se quitaron 2 que sonaban con el video de otra serie |
+    | 🎌 Anime | 251 | 303 | +52: 5 recuperadas, 49 nuevas y 2 repetidas fuera |
+    | 🎮 Videojuegos | 281 | 342 | +61 en las ocho categorías |
+    | 🗡️ Sagas | 184 | 202 | +37 nuevas solo para el modo Sagas; 19 que ya estaban pasaron a Videojuegos y siguen sonando en Sagas |
+
+  - **Revisión antes de publicar:**
+    - Agentes revisaron cada pista nueva o cambiada con los títulos, canales y duraciones que dejó la auditoría.
+    - Se quitaron 5 pistas: 2 openings japoneses que repetían su versión latina, 2 canciones de Disney con doblaje de España y 1 que no era la escena de la película.
+    - Se quitaron 20 fuentes: versiones en vivo, videos hechos por fans, covers y arreglos de otro juego.
+    - Se corrigieron datos: años, épocas, intérpretes y títulos.
+    - Lo que solo se decide oyendo quedó en [`scripts/revisar-a-oido.md`](scripts/revisar-a-oido.md).
+    - El detalle completo está en [`scripts/reporte-v2.1.md`](scripts/reporte-v2.1.md).
 - **2.0**: **inicio estilo "setlist"**, como el selector de canciones de los juegos de ritmo (Guitar Hero y
   compañía), tras una revisión de diseño con las guías de Apple (HIG):
   - La partida se arma en **tres partes numeradas** en un solo panel: **1 Tema**, **2 Modo** y **3 Música**. Hay

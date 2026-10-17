@@ -5,7 +5,7 @@
  * - Unicidad estricta de IDs
  * - Campos requeridos (id, cat, franchise, game, title, year, lang, sources)
  * - Distribución por épocas (Clásicos, 70s-80s, 90s-00s, 2010+)
- * - Conteo total esperado: 222 pistas (122 iniciales + 100 nuevas)
+ * - Conteo total esperado: 269 pistas (122 iniciales + 100 nuevas)
  */
 
 const fs = require('fs');
@@ -108,8 +108,8 @@ if (hasErrors) {
   process.exit(1);
 }
 
-if (catalog.length === 222) {
-  console.log(`\n🎉 ¡Validación exitosa! El catálogo de Musicales tiene exactamente 222 canciones.`);
+if (catalog.length === 269) {
+  console.log(`\n🎉 ¡Validación exitosa! El catálogo de Musicales tiene exactamente 269 canciones.`);
 } else {
-  console.log(`\nℹ️  Estado actual: ${catalog.length} / 222 canciones.`);
+  console.log(`\nℹ️  Estado actual: ${catalog.length} / 269 canciones.`);
 }
