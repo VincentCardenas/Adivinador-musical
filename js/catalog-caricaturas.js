@@ -1,5 +1,5 @@
 /*
- * Catálogo: Caricaturas (360 pistas).
+ * Catálogo: Caricaturas (359 pistas).
  * Entradas de caricaturas por época. Cuando existe, suena primero la entrada en español latino (YouTube) y el preview oficial de Apple queda de respaldo.
  * Mismo formato que catalog.js; las fuentes se prueban en el orden en que aparecen.
  */
@@ -373,7 +373,7 @@
       aka: ['Speed Buggy', 'Speedbuggy'],
       sources: [yt('CHJFWTePG9I')],
     },
-    /* ───────────── Años 80 (60) ───────────── */
+    /* ───────────── Años 80 (59) ───────────── */
     {
       id: 'toon-los-pitufos-los-pitufos-tema', cat: 'toon-80s', franchise: 'Los Pitufos', game: 'Los Pitufos',
       title: 'Los Pitufos (tema)', composer: 'Hoyt Curtin', year: 1981, platform: 'Hanna-Barbera',
@@ -676,12 +676,6 @@
       title: "Capitán N (tema)", composer: "Haim Saban y Shuki Levy", year: 1989, platform: "DIC Entertainment",
       aka: ["Captain N: The Game Master"],
       sources: [yt('ZLKhjYiwQEQ'), yt('GQbr7_CkgPA'), yt('qbJomK-v2Is')],
-    },
-    {
-      id: 'toon-el-hombre-arana-y-sus-sorprendentes-amigos-tema', cat: 'toon-80s', franchise: 'El Hombre Araña', game: 'El Hombre Araña y sus sorprendentes amigos',
-      title: 'El Hombre Araña y sus sorprendentes amigos (tema latino)', composer: 'Dennis C. Brown', year: 1981, platform: 'Marvel Productions / NBC',
-      aka: ['Spider-Man and His Amazing Friends', 'Spiderman y sus asombrosos amigos'],
-      sources: [yt('PU1qbf4X9ko'), yt('d0cidlD_eh4')],
     },
     {
       id: 'toon-los-13-fantasmas-de-scooby-doo-tema', cat: 'toon-80s', franchise: 'Scooby-Doo', game: 'Los 13 fantasmas de Scooby-Doo',

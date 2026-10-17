@@ -33,5 +33,145 @@
     "motivo": "La única fuente (yt 3e5P6CiwjaA) es la versión de España: acredita a Carmen López y Gisela, usa el título 'Frozen: El Reino del Hielo' y está en disneymusicesVEVO. No coincide con el composer (Romina Marroquín Payró y Carmen Sarahi, las voces latinas) y no hay otra fuente. Hay que volver a buscar la versión de DisneyMusicLAVEVO.",
     "bloque": "{\n      id: 'dis-frozen-una-aventura-congelada-por-primera-vez-en-anos', cat: 'dis-2010s', franchise: 'Frozen', game: 'Frozen: Una aventura congelada',\n      title: 'Por primera vez en años', composer: 'Romina Marroquín Payró y Carmen Sarahi', year: 2013,\n      aka: ['Frozen'],\n      sources: [yt('3e5P6CiwjaA')],\n    },",
     "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-super-mario-bros-underground-theme",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (super-mario-bros-underground-theme) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-super-mario-bros-underground-theme', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario Bros.',\n      title: 'Underground Theme', composer: 'Koji Kondo', year: 1985, platform: 'NES',\n      sources: [yt('c0SuIMUoShI'), yt('UOwyFPgjPQ4')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-super-mario-galaxy-rosalina-in-the-observatory",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (super-mario-galaxy-rosalina-in-the-observatory) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-super-mario-galaxy-rosalina-in-the-observatory', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario Galaxy',\n      title: 'Rosalina in the Observatory', composer: 'Mahito Yokota y Koji Kondo', year: 2007, platform: 'Wii',\n      sources: [yt('S-bdAQDnE6I'), yt('OlzA4gV1-vU')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-super-mario-sunshine-bianco-hills",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (super-mario-sunshine-bianco-hills) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-super-mario-sunshine-bianco-hills', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario Sunshine',\n      title: 'Bianco Hills', composer: 'Koji Kondo y Shinobu Tanaka', year: 2002, platform: 'GameCube',\n      sources: [yt('AEY8tfNtu7U'), yt('nx1A1xStMRs')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-super-mario-world-athletic-theme",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (super-mario-world-athletic-theme) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-super-mario-world-athletic-theme', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario World',\n      title: 'Athletic Theme', composer: 'Koji Kondo', year: 1990, platform: 'SNES',\n      sources: [yt('46yfRJy9N7c'), yt('XF2fA1epvLE')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-super-mario-odyssey-steam-gardens",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (super-mario-odyssey-steam-gardens) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-super-mario-odyssey-steam-gardens', saga: 'mario', franchise: 'Super Mario', game: 'Super Mario Odyssey',\n      title: 'Steam Gardens', composer: 'Naoto Kubo, Shiho Fujii y Koji Kondo', year: 2017, platform: 'Nintendo Switch',\n      sources: [yt('OhogRNHLW30'), yt('pOvPPn_q0U8')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-the-legend-of-zelda-ocarina-of-time-song-of-storms",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (the-legend-of-zelda-ocarina-of-time-song-of-storms) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-the-legend-of-zelda-ocarina-of-time-song-of-storms', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Ocarina of Time',\n      title: 'Song of Storms', composer: 'Koji Kondo', year: 1998, platform: 'Nintendo 64',\n      sources: [yt('UtgHZaq0EGs'), yt('XTDSJCYWuQA')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-the-legend-of-zelda-ocarina-of-time-zeldas-lullaby",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (the-legend-of-zelda-ocarina-of-time-zelda-s-lullaby) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-the-legend-of-zelda-ocarina-of-time-zeldas-lullaby', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Ocarina of Time',\n      title: 'Zelda\\'s Lullaby', composer: 'Koji Kondo', year: 1998, platform: 'Nintendo 64',\n      sources: [yt('EPhfbtjqWM8')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-the-legend-of-zelda-the-wind-waker-outset-island",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (the-legend-of-zelda-the-wind-waker-outset-island) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-the-legend-of-zelda-the-wind-waker-outset-island', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: The Wind Waker',\n      title: 'Outset Island', composer: 'Kenta Nagata, Hajime Wakai, Toru Minegishi y Koji Kondo', year: 2002, platform: 'GameCube',\n      sources: [yt('vwMCZ6B499c'), yt('uG960gmNiKY')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-halo-combat-evolved-truth-and-reconciliation-suite",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (halo-combat-evolved-truth-and-reconciliation-suite) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-halo-combat-evolved-truth-and-reconciliation-suite', saga: 'halo', franchise: 'Halo', game: 'Halo: Combat Evolved',\n      title: 'Truth and Reconciliation Suite', composer: 'Martin O\\'Donnell y Michael Salvatori', year: 2001, platform: 'Xbox',\n      sources: [apple({ song: 1682519548, country: 'us' }), yt('xSHYFQ_LUIk'), yt('SB6y9q4hEQw')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-halo-3-never-forget",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (halo-3-never-forget) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-halo-3-never-forget', saga: 'halo', franchise: 'Halo', game: 'Halo 3',\n      title: 'Never Forget', composer: 'Martin O\\'Donnell y Michael Salvatori', year: 2007, platform: 'Xbox 360',\n      sources: [apple({ song: 1682510979, country: 'us' }), yt('OOHXjgEY_RQ'), yt('JX5O3n9K_d0')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-halo-reach-winter-contingency",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (halo-reach-winter-contingency) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-halo-reach-winter-contingency', saga: 'halo', franchise: 'Halo', game: 'Halo: Reach',\n      title: 'Winter Contingency', composer: 'Martin O\\'Donnell y Michael Salvatori', year: 2010, platform: 'Xbox 360',\n      sources: [apple({ song: 1682514374, country: 'us' }), yt('JUeBfZxh1cc'), yt('kY1b3jsKfvI')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-halo-3-odst-deference-for-darkness",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (halo-3-odst-rain) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-halo-3-odst-deference-for-darkness', saga: 'halo', franchise: 'Halo', game: 'Halo 3: ODST',\n      title: 'Deference for Darkness', composer: 'Martin O\\'Donnell y Michael Salvatori', year: 2009, platform: 'Xbox 360',\n      sources: [apple({ song: 1682503376, country: 'us' }), yt('346rm-hPLA4')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-sonic-the-hedgehog-2-casino-night-zone",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (sonic-the-hedgehog-2-casino-night-zone) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-sonic-the-hedgehog-2-casino-night-zone', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic the Hedgehog 2',\n      title: 'Casino Night Zone', composer: 'Masato Nakamura', year: 1992, platform: 'Mega Drive',\n      sources: [apple({ song: 1571062950, country: 'us' }), yt('0gw7A3Ao7Y8'), yt('x_jsB_aABoI')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-street-fighter-ii-chun-lis-theme",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (street-fighter-ii-chun-li-s-theme) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-street-fighter-ii-chun-lis-theme', saga: 'street-fighter', franchise: 'Street Fighter', game: 'Street Fighter II',\n      title: 'Chun-Li\\'s Theme', composer: 'Yoko Shimomura e Isao Abe', year: 1991, platform: 'Arcade / SNES',\n      sources: [apple({ song: 1085989772, country: 'jp' }), yt('V2j1kFEBWyw')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-final-fantasy-vii-aeriths-theme",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (final-fantasy-vii-aerith-s-theme) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-final-fantasy-vii-aeriths-theme', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy VII',\n      title: 'Aerith\\'s Theme', composer: 'Nobuo Uematsu', year: 1997, platform: 'PlayStation',\n      sources: [apple({ song: 61017453, country: 'us' }), yt('iqMbmkUpihA')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-final-fantasy-x-suteki-da-ne",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (final-fantasy-x-suteki-da-ne) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-final-fantasy-x-suteki-da-ne', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy X',\n      title: 'Suteki da ne', composer: 'Nobuo Uematsu, Masashi Hamauzu y Junya Nakano', year: 2001, platform: 'PlayStation 2',\n      sources: [apple({ song: 62445434, country: 'mx' }), yt('Ze6w1sLvymM')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-final-fantasy-vi-terras-theme",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (final-fantasy-vi-terra-s-theme) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-final-fantasy-vi-terras-theme', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy VI',\n      title: 'Terra\\'s Theme', composer: 'Nobuo Uematsu', year: 1994, platform: 'SNES',\n      sources: [apple({ song: 62446770, country: 'mx' }), yt('PiI7rDqv9FQ'), yt('xLLI0TjYoNU')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-sonic-adventure-2-escape-from-the-city",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (sonic-adventure-2-city-escape) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-sonic-adventure-2-escape-from-the-city', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic Adventure 2',\n      title: 'Escape from the City', composer: 'Jun Senoue', year: 2001, platform: 'Dreamcast',\n      sources: [apple({ song: 929920756, country: 'us' }), yt('5WcyVvWZJU4'), yt('YQDDkG24DVw')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "saga-pokemon-red-and-blue-pallet-town",
+    "tema": "sagas",
+    "motivo": "Repetida: la misma canción está en catalog.js (pokemon-red-and-blue-pallet-town-theme) y suena en Sagas desde ahí.",
+    "bloque": "{\n      id: 'saga-pokemon-red-and-blue-pallet-town', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Red & Blue',\n      title: 'Pallet Town', composer: 'Junichi Masuda', year: 1996, platform: 'Game Boy',\n      sources: [yt('kO09V19wwlE'), yt('cOWRNLaCMJg')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "toon-el-hombre-arana-y-sus-sorprendentes-amigos-tema",
+    "tema": "caricaturas",
+    "motivo": "Sus dos videos (PU1qbf4X9ko y d0cidlD_eh4) son de «Spidey y sus sorprendentes amigos» (2021), que ya está como toon-spidey-y-su-superequipo-tema; no se encontró la entrada de 1981.",
+    "bloque": "{\n      id: 'toon-el-hombre-arana-y-sus-sorprendentes-amigos-tema', cat: 'toon-80s', franchise: 'El Hombre Araña', game: 'El Hombre Araña y sus sorprendentes amigos',\n      title: 'El Hombre Araña y sus sorprendentes amigos (tema latino)', composer: 'Dennis C. Brown', year: 1981, platform: 'Marvel Productions / NBC',\n      aka: ['Spider-Man and His Amazing Friends', 'Spiderman y sus asombrosos amigos'],\n      sources: [yt('PU1qbf4X9ko'), yt('d0cidlD_eh4')],\n    },",
+    "quitada": "revisión 2.1"
   }
 ]

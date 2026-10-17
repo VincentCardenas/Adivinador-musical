@@ -16,11 +16,12 @@ const vm = require('vm');
 const ROOT = path.join(__dirname, '..');
 const JS = path.join(ROOT, 'js');
 const PROBAR = process.argv.includes('--probar');
-const DECISIONES = JSON.parse(fs.readFileSync(path.join(__dirname, 'revision-v21.json'), 'utf8')).decisiones;
+const ARCH_DEC = process.argv.slice(2).find((a) => a.endsWith('.json')) || 'revision-v21.json';
+const DECISIONES = JSON.parse(fs.readFileSync(path.join(__dirname, ARCH_DEC), 'utf8')).decisiones;
 
 const ARCHIVOS = {
   juegos: 'catalog.js', series: 'catalog-series.js', caricaturas: 'catalog-caricaturas.js', anime: 'catalog-anime.js',
-  disney: 'catalog-disney.js', musicales: 'catalog-musicales.js',
+  disney: 'catalog-disney.js', musicales: 'catalog-musicales.js', sagas: 'catalog-sagas.js',
 };
 const SECCIONES = {
   series: [['tv-clasicas', 'Clásicas (antes de 1990)'], ['tv-90s', 'Años 90'], ['tv-00s', '2000s'], ['tv-10s', '2010s'], ['tv-20s', '2020 en adelante']],
@@ -32,6 +33,7 @@ const ENCABEZADO = {
   caricaturas: [/Catálogo: Caricaturas \(\d+ pistas\)/, (ts) => `Catálogo: Caricaturas (${ts.length} pistas)`],
   anime: [/Catálogo: Anime \(\d+ pistas\)/, (ts) => `Catálogo: Anime (${ts.length} pistas)`],
   disney: [/Catálogo: Películas de Disney y Pixar \(\d+ pistas\)/, (ts) => `Catálogo: Películas de Disney y Pixar (${ts.length} pistas)`],
+  sagas: [/Archivo generado \(\d+ canciones\)/, (ts) => `Archivo generado (${ts.length} canciones)`],
   musicales: [/Catálogo: Musicales \(\d+ pistas: \d+ en su grabación original y \d+ en español\)/,
     (ts) => `Catálogo: Musicales (${ts.length} pistas: ${ts.filter((t) => t.lang !== 'es').length} en su grabación original y ${ts.filter((t) => t.lang === 'es').length} en español)`],
 };
@@ -133,7 +135,7 @@ function editarCampo(text, campo, valor) {
 function recontar(tema, code) {
   fs.writeFileSync(path.join(JS, ARCHIVOS[tema]), code);
   const AM = loadAll();
-  const ts = AM.CATALOG.filter((t) => t.theme === tema);
+  const ts = tema === 'sagas' ? AM.SAGA_TRACKS : AM.CATALOG.filter((t) => t.theme === tema);
   if (ENCABEZADO[tema]) code = code.replace(ENCABEZADO[tema][0], ENCABEZADO[tema][1](ts));
   const secs = SECCIONES[tema] || [];
   for (const [cat, label] of secs) code = code.replace(new RegExp(`(/\\* ─+ ${esc(label)} )\\(\\d+\\)`), `$1(${ts.filter((t) => t.cat === cat).length})`);
@@ -148,7 +150,7 @@ function recontar(tema, code) {
 
 function main() {
   const AM0 = loadAll();
-  const temaDe = new Map(AM0.CATALOG.map((t) => [t.id, t.theme]));
+  const temaDe = new Map(AM0.CATALOG.map((t) => [t.id, t.theme]).concat(AM0.SAGA_TRACKS.map((t) => [t.id, 'sagas'])));
   const codigo = {};
   const pendientes = JSON.parse(fs.readFileSync(path.join(__dirname, 'pendientes-v2.1.json'), 'utf8'));
   const oido = [];

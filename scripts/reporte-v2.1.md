@@ -526,14 +526,18 @@ Cuentas reales del archivo, después de la revisión de Claude (sección 7). "An
 | Musicales | `mus-9000` | 52 | 63 | +11 |
 | Musicales | `mus-10s` | 53 | 64 | +11 |
 | **Musicales** | — | **222** | **269** | **+47** ✅ (239 originales y 30 en español) |
-| **Caricaturas** | — | **296** | **360** | +11 recuperadas y +53 de la segunda tanda (sección 6) |
+| **Caricaturas** | — | **296** | **359** | +11 recuperadas y +52 de la segunda tanda (sección 6) |
 | **Anime** | — | **251** | **303** | +5 recuperadas, −2 repetidas y +49 de la segunda tanda |
 | **Videojuegos** | — | **281** | **342** | +61 de la segunda tanda ✅ |
-| **Sagas** | — | **184** | **221** | +37 de la segunda tanda ✅ |
+| **Sagas** | — | **184** | **202** | +37 de la segunda tanda ✅ y −19 que pasaron a Videojuegos (sección 6) |
 
 ## 6. Segunda tanda: Caricaturas, Anime, Videojuegos y Sagas
 
 La segunda tanda completa el +20 % de Caricaturas, Anime, Videojuegos y Sagas. Los candidatos los eligieron agentes Sonnet, los revisó un crítico Sonnet y Opus decidió los casos con duda; están en `scripts/candidatos-v22.json` (331). Sus fuentes las buscó de verdad `scripts/build-resto-v22.js` en la computadora del usuario, con red y sin IA, porque YouTube bloquea la verificación desde servidores en la nube. Resultado (`scripts/resultado-v22.json`): **200 pistas aceptadas** y 3 descartadas. Todas las metas se cumplieron menos `toon-clasicas`, que quedó en 58 de 59. Cada ID nuevo tiene su evidencia en `scripts/evidencia-v2.1.json`.
+
+Después se quitaron 20 pistas (`scripts/revision-v21-repetidas.json`; bloques en `scripts/pendientes-v2.1.json`):
+- 19 de `SAGA_TRACKS` cuya canción quedó también en catalog.js. El modo Sagas la sigue tocando desde ahí. Tres se habrían repetido por llamarse distinto: Pallet Town, City Escape y Rain/Deference for Darkness.
+- `toon-el-hombre-arana-y-sus-sorprendentes-amigos-tema` (1981): sus dos videos eran de «Spidey y sus sorprendentes amigos» (2021), que ya está en el catálogo.
 
 ## 7. Revisión de Claude (sin red, sobre la evidencia)
 

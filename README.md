@@ -6,7 +6,7 @@ Adivinador musical: suena un fragmento de música **oficial** y tienes que recon
 | --- | --- | --- |
 | 🎮 **Videojuegos** | La saga y el juego (Halo, Zelda, Pokémon, Elden Ring…): 342 pistas de 131 sagas y 232 juegos | Nintendo, Xbox, PlayStation, Indie, Retro, RPG, Acción, Online |
 | 📺 **Series** | La serie por su entrada o tema principal (Friends, Lost, Stranger Things, El Chavo…) | Por época: clásicas, 90s, 2000s, 2010s y 2020 en adelante |
-| 🧸 **Caricaturas** | La caricatura por su entrada, **todas en español latino**: 360 caricaturas inolvidables, desde Los Picapiedra, Don Gato, Scooby-Doo y Thundercats hasta Fenomenoide, Bob Esponja, Los Padrinos Mágicos, Ben 10, Hora de Aventura y Gravity Falls | Por época: clásicas (antes de 1980), 80s, 90s, 2000s, 2010 a 2014, 2015 a 2019 y 2020 en adelante |
+| 🧸 **Caricaturas** | La caricatura por su entrada, **todas en español latino**: 359 caricaturas inolvidables, desde Los Picapiedra, Don Gato, Scooby-Doo y Thundercats hasta Fenomenoide, Bob Esponja, Los Padrinos Mágicos, Ben 10, Hora de Aventura y Gravity Falls | Por época: clásicas (antes de 1980), 80s, 90s, 2000s, 2010 a 2014, 2015 a 2019 y 2020 en adelante |
 | 🎌 **Anime** | El anime por su opening: 303 openings icónicos, desde Astro Boy, Mazinger Z, Caballeros del Zodiaco y Dragon Ball hasta Sailor Moon, Evangelion, Naruto, Bleach, Attack on Titan, Demon Slayer, Jujutsu Kaisen, Chainsaw Man, Frieren y Dandadan | Por época: clásicos (antes de 1990), 90s, 2000s, 2010s y 2020 en adelante |
 | 🏰 **Disney** | La película por sus canciones **en español latino** (El rey león, Frozen, Coco…) | Por época: clásicos, renacimiento, 2000s, 2010s y 2020 en adelante. Interruptor para incluir o quitar **Pixar** |
 | 🎭 **Musicales** | De qué musical es (Clásico) o qué canción es (Experto y Supervivencia): 269 canciones (239 en grabación original y 30 en español) de las obras cumbres de teatro y cine musical, siempre con su nombre original (Grease, The Phantom of the Opera, Wicked, Hamilton, Six, Guys and Dolls, Spring Awakening, Avenue Q…), o en versiones en español famosas (Timbiriche, Camilo Sesto, elenco de México, Madrid…) | Por época: clásicos, 70s y 80s, 90s y 2000s y 2010 en adelante. Selector de idioma: **español, inglés o ambos** |
@@ -266,10 +266,10 @@ archivos nuevos en vez de usar los guardados en caché).
     | 📺 Series | 122 | 192 | +70, repartidas en las cinco épocas |
     | 🏰 Disney | 71 | 89 | +18 en las cinco épocas |
     | 🎭 Musicales | 222 | 269 | +47; cada época tiene ahora al menos 5 en español (antes, Clásicos y 2010 en adelante tenían solo 2) |
-    | 🧸 Caricaturas | 296 | 360 | +64: 11 recuperadas y 53 nuevas en las siete épocas |
+    | 🧸 Caricaturas | 296 | 359 | +63: 11 recuperadas y 52 nuevas en las siete épocas |
     | 🎌 Anime | 251 | 303 | +52: 5 recuperadas, 49 nuevas y 2 repetidas fuera |
     | 🎮 Videojuegos | 281 | 342 | +61 en las ocho categorías |
-    | 🗡️ Sagas | 184 | 221 | +37 solo para el modo Sagas |
+    | 🗡️ Sagas | 184 | 202 | +37 nuevas solo para el modo Sagas; 19 que ya estaban pasaron a Videojuegos y siguen sonando en Sagas |
 
   - **Revisión antes de publicar:**
     - Agentes revisaron cada pista nueva o cambiada con los títulos, canales y duraciones que dejó la auditoría.

@@ -1,0 +1,104 @@
+{
+ "decisiones": [
+  {
+   "id": "saga-super-mario-bros-underground-theme",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (super-mario-bros-underground-theme) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-super-mario-galaxy-rosalina-in-the-observatory",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (super-mario-galaxy-rosalina-in-the-observatory) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-super-mario-sunshine-bianco-hills",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (super-mario-sunshine-bianco-hills) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-super-mario-world-athletic-theme",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (super-mario-world-athletic-theme) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-super-mario-odyssey-steam-gardens",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (super-mario-odyssey-steam-gardens) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-the-legend-of-zelda-ocarina-of-time-song-of-storms",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (the-legend-of-zelda-ocarina-of-time-song-of-storms) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-the-legend-of-zelda-ocarina-of-time-zeldas-lullaby",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (the-legend-of-zelda-ocarina-of-time-zelda-s-lullaby) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-the-legend-of-zelda-the-wind-waker-outset-island",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (the-legend-of-zelda-the-wind-waker-outset-island) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-halo-combat-evolved-truth-and-reconciliation-suite",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (halo-combat-evolved-truth-and-reconciliation-suite) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-halo-3-never-forget",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (halo-3-never-forget) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-halo-reach-winter-contingency",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (halo-reach-winter-contingency) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-halo-3-odst-deference-for-darkness",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (halo-3-odst-rain) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-sonic-the-hedgehog-2-casino-night-zone",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (sonic-the-hedgehog-2-casino-night-zone) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-street-fighter-ii-chun-lis-theme",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (street-fighter-ii-chun-li-s-theme) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-final-fantasy-vii-aeriths-theme",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (final-fantasy-vii-aerith-s-theme) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-final-fantasy-x-suteki-da-ne",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (final-fantasy-x-suteki-da-ne) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-final-fantasy-vi-terras-theme",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (final-fantasy-vi-terra-s-theme) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-sonic-adventure-2-escape-from-the-city",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (sonic-adventure-2-city-escape) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "saga-pokemon-red-and-blue-pallet-town",
+   "op": "quitar_pista",
+   "motivo": "Repetida: la misma canción está en catalog.js (pokemon-red-and-blue-pallet-town-theme) y suena en Sagas desde ahí."
+  },
+  {
+   "id": "toon-el-hombre-arana-y-sus-sorprendentes-amigos-tema",
+   "op": "quitar_pista",
+   "motivo": "Sus dos videos (PU1qbf4X9ko y d0cidlD_eh4) son de «Spidey y sus sorprendentes amigos» (2021), que ya está como toon-spidey-y-su-superequipo-tema; no se encontró la entrada de 1981."
+  }
+ ]
+}
