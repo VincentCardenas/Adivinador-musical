@@ -1,0 +1,6402 @@
+{
+ "aceptadas": [
+  {
+   "key": "toon-los-superamigos-tema",
+   "id": "toon-los-superamigos-tema",
+   "tema": "caricaturas",
+   "cat": "toon-clasicas",
+   "game": "Los Superamigos",
+   "title": "Los Superamigos (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "TOcTFhtzl8c",
+     "titulo": "Los SuperAmigos (Español Latino)",
+     "canal": "Generación Retro",
+     "dur": 120,
+     "loudnessDb": -12.33,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Los Superamigos intro español latino"
+    },
+    {
+     "id": "Djr3UUJ0MFA",
+     "titulo": "Los Super Amigos 1973 - Intro latino",
+     "canal": "Marcuino",
+     "dur": 62,
+     "loudnessDb": -6.5100002,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Los Superamigos intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-scooby-doo-y-scrappy-doo-tema",
+   "id": "toon-scooby-doo-y-scrappy-doo-tema",
+   "tema": "caricaturas",
+   "cat": "toon-clasicas",
+   "game": "Scooby-Doo y Scrappy-Doo",
+   "title": "Scooby-Doo y Scrappy-Doo (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "hOv36P1mw6U",
+     "titulo": "Scooby Doo y Scrappy Doo - Intro Latino",
+     "canal": "T. C. Intros Latinos",
+     "dur": 57,
+     "loudnessDb": -3.0200005,
+     "captions": [],
+     "consulta": "Scooby-Doo y Scrappy-Doo intro español latino"
+    },
+    {
+     "id": "WBrpZDSHMZU",
+     "titulo": "El show de Scooby Doo y Scrappy Doo   Intro Latino",
+     "canal": "Generación Retro",
+     "dur": 62,
+     "loudnessDb": 0.77999973,
+     "captions": [],
+     "consulta": "Scooby-Doo y Scrappy-Doo intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-pixie-y-dixie-y-el-gato-jinks-tema",
+   "id": "toon-pixie-y-dixie-y-el-gato-jinks-tema",
+   "tema": "caricaturas",
+   "cat": "toon-clasicas",
+   "game": "Pixie y Dixie y el gato Jinks",
+   "title": "Pixie y Dixie (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "04XWGUt2i8s",
+     "titulo": "Pixie y Dixie (Español Latino)",
+     "canal": "Generación Retro",
+     "dur": 120,
+     "loudnessDb": -21.709999,
+     "captions": [],
+     "consulta": "Pixie y Dixie intro español latino"
+    },
+    {
+     "id": "Q-2HXXRx8SU",
+     "titulo": "Pixie and Dixie and Mr Jinks Intro Latino",
+     "canal": "Orlando Quintero",
+     "dur": 20,
+     "loudnessDb": 0.47999954,
+     "captions": [],
+     "consulta": "Pixie y Dixie intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-snoopy-y-charlie-brown-especiales-de-tv-tema",
+   "id": "toon-snoopy-y-charlie-brown-especiales-de-tv-tema",
+   "tema": "caricaturas",
+   "cat": "toon-clasicas",
+   "game": "Snoopy y Charlie Brown (especiales de TV)",
+   "title": "Linus and Lucy",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "x6zypc_LhnM",
+     "titulo": "Vince Guaraldi Trio - Linus And Lucy",
+     "canal": "VinceGuaraldiVEVO",
+     "dur": 184,
+     "loudnessDb": -7.4699993,
+     "captions": null,
+     "consulta": "Linus and Lucy Vince Guaraldi Trio"
+    },
+    {
+     "id": "dURiJSJkWFM",
+     "titulo": "Linus And Lucy",
+     "canal": "Vince Guaraldi Trio - Topic",
+     "dur": 186,
+     "loudnessDb": 0.089594841,
+     "captions": null,
+     "consulta": "Linus and Lucy Vince Guaraldi Trio"
+    }
+   ],
+   "apple": {
+    "song": 1650319530,
+    "country": "mx",
+    "titulo": "Linus And Lucy",
+    "artista": "Vince Guaraldi Trio",
+    "album": "A Charlie Brown Christmas (Original 1965 TV Soundtrack) [2022 Mix]"
+   }
+  },
+  {
+   "key": "toon-ardilla-secreta-tema",
+   "id": "toon-ardilla-secreta-tema",
+   "tema": "caricaturas",
+   "cat": "toon-clasicas",
+   "game": "Ardilla Secreta",
+   "title": "Ardilla Secreta (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "oSRNpuPWDfM",
+     "titulo": "Intro El Inspector Ardilla (Secret Squirrel 1965 - 1968)Español Latino.",
+     "canal": "RetroSound TV",
+     "dur": 54,
+     "loudnessDb": -16.110001,
+     "captions": [],
+     "consulta": "Ardilla Secreta intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-el-hombre-arana-y-sus-sorprendentes-amigos-tema",
+   "id": "toon-el-hombre-arana-y-sus-sorprendentes-amigos-tema",
+   "tema": "caricaturas",
+   "cat": "toon-80s",
+   "game": "El Hombre Araña y sus sorprendentes amigos",
+   "title": "El Hombre Araña y sus sorprendentes amigos (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "PU1qbf4X9ko",
+     "titulo": "Spidey y sus sorprendentes amigos temporada 2 intro en latino",
+     "canal": "Ghosthy",
+     "dur": 61,
+     "loudnessDb": -1.4200001,
+     "captions": [],
+     "consulta": "El Hombre Araña y sus sorprendentes amigos intro español latino"
+    },
+    {
+     "id": "d0cidlD_eh4",
+     "titulo": "Spidey y sus sorprendentes amigos - Intro (Español Latino)",
+     "canal": "ToonBafoon",
+     "dur": 62,
+     "loudnessDb": -4.4599991,
+     "captions": [],
+     "consulta": "El Hombre Araña y sus sorprendentes amigos intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-los-13-fantasmas-de-scooby-doo-tema",
+   "id": "toon-los-13-fantasmas-de-scooby-doo-tema",
+   "tema": "caricaturas",
+   "cat": "toon-80s",
+   "game": "Los 13 fantasmas de Scooby-Doo",
+   "title": "Los 13 fantasmas de Scooby-Doo (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "79xULZTwYok",
+     "titulo": "Los 13 Fantasmas De Scooby Doo (Español Latino)",
+     "canal": "Generación Retro",
+     "dur": 184,
+     "loudnessDb": -1.46,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Los 13 fantasmas de Scooby-Doo intro español latino"
+    },
+    {
+     "id": "knMxIr4DRLk",
+     "titulo": "Scooby doo y los 13 fantasmas Latino HD.mp4",
+     "canal": "Jemm54",
+     "dur": 59,
+     "loudnessDb": 0.36999989,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Los 13 fantasmas de Scooby-Doo intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-ricky-ricon-tema",
+   "id": "toon-ricky-ricon-tema",
+   "tema": "caricaturas",
+   "cat": "toon-80s",
+   "game": "Ricky Ricón",
+   "title": "Ricky Ricón (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "OfTd3Zjv5k8",
+     "titulo": "Ricky Ricon intro latino",
+     "canal": "Soy Retro",
+     "dur": 37,
+     "loudnessDb": -16.77,
+     "captions": [],
+     "consulta": "Ricky Ricón intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-pac-man-serie-animada-tema",
+   "id": "toon-pac-man-serie-animada-tema",
+   "tema": "caricaturas",
+   "cat": "toon-80s",
+   "game": "Pac-Man (serie animada)",
+   "title": "Pac-Man (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "nDAKHRQtCfM",
+     "titulo": "Pac-Man 1982 temporada 1 intro en español latino",
+     "canal": "gamingdroid",
+     "dur": 27,
+     "loudnessDb": -0.35000038,
+     "captions": [],
+     "consulta": "Pac-Man caricatura 1982 intro español latino"
+    },
+    {
+     "id": "jfwpznn-xXI",
+     "titulo": "Pac Man Hanna Barbera 80s Audio Latino",
+     "canal": "Retro Cartoons",
+     "dur": 113,
+     "loudnessDb": -5.0100002,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Pac-Man caricatura 1982 intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-gobots-tema",
+   "id": "toon-gobots-tema",
+   "tema": "caricaturas",
+   "cat": "toon-80s",
+   "game": "GoBots",
+   "title": "GoBots (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "dyK3_IDAkfE",
+     "titulo": "GoBots (Español Latino) Opening + Fragmento",
+     "canal": "Raro VHS",
+     "dur": 157,
+     "loudnessDb": -5.7199993,
+     "captions": [],
+     "consulta": "GoBots intro español latino"
+    },
+    {
+     "id": "ZVX070VYvTM",
+     "titulo": "El desafío de los Gobots  Hanna- Barbera (Español Latino)",
+     "canal": "Generación Retro",
+     "dur": 120,
+     "loudnessDb": -12.360001,
+     "captions": [],
+     "consulta": "GoBots intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-thundarr-el-barbaro-tema",
+   "id": "toon-thundarr-el-barbaro-tema",
+   "tema": "caricaturas",
+   "cat": "toon-80s",
+   "game": "Thundarr el Bárbaro",
+   "title": "Thundarr el Bárbaro (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "TISlEy-yJH0",
+     "titulo": "Thundarr el barbaro - intro latino",
+     "canal": "Recuerdos Animados",
+     "dur": 60,
+     "loudnessDb": 2.5699997,
+     "captions": [],
+     "consulta": "Thundarr el Bárbaro intro español latino"
+    },
+    {
+     "id": "hUqQNTLvXMc",
+     "titulo": "Thundarr el barbaro intro español latino (mejor calidad)",
+     "canal": "zappinglatino",
+     "dur": 59,
+     "loudnessDb": -9.1812954,
+     "captions": [],
+     "consulta": "Thundarr el Bárbaro intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-los-wuzzles-tema",
+   "id": "toon-los-wuzzles-tema",
+   "tema": "caricaturas",
+   "cat": "toon-80s",
+   "game": "Los Wuzzles",
+   "title": "Los Wuzzles (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "Bz-9eqOGI9g",
+     "titulo": "Los wuzzles intro Latino",
+     "canal": "Retro Tops",
+     "dur": 61,
+     "loudnessDb": -5.1299992,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Los Wuzzles intro español latino"
+    },
+    {
+     "id": "o6wgmejBBkc",
+     "titulo": "Los Wuzzles - Español latino",
+     "canal": "Audios Latinos Retro",
+     "dur": 65,
+     "loudnessDb": -6.9500008,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Los Wuzzles intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-ewoks-tema",
+   "id": "toon-ewoks-tema",
+   "tema": "caricaturas",
+   "cat": "toon-80s",
+   "game": "Ewoks",
+   "title": "Ewoks (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "-qNwU2xhDjs",
+     "titulo": "Intro Ewoks español",
+     "canal": "Muppet",
+     "dur": 59,
+     "loudnessDb": -4.5799999,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Ewoks serie animada intro español latino"
+    },
+    {
+     "id": "ozpOeSVNRSg",
+     "titulo": "Ewoks Intro en Español",
+     "canal": "Retro",
+     "dur": 60,
+     "loudnessDb": -1.0500002,
+     "captions": [],
+     "consulta": "Ewoks serie animada intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-los-inhumanoides-tema",
+   "id": "toon-los-inhumanoides-tema",
+   "tema": "caricaturas",
+   "cat": "toon-80s",
+   "game": "Los Inhumanoides",
+   "title": "Los Inhumanoides (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "4uk551FvTio",
+     "titulo": "inhumanoids Español latino",
+     "canal": "Moscaconlentes clásico",
+     "dur": 30,
+     "loudnessDb": 1.6999998,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Los Inhumanoides intro español latino"
+    },
+    {
+     "id": "5GjP9zooKhA",
+     "titulo": "Inhumanoids en Español Latino",
+     "canal": "Actv Latino",
+     "dur": 32,
+     "loudnessDb": -5.5200005,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Los Inhumanoides intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-tom-y-jerry-kids-tema",
+   "id": "toon-tom-y-jerry-kids-tema",
+   "tema": "caricaturas",
+   "cat": "toon-90s",
+   "game": "Tom y Jerry Kids",
+   "title": "Tom y Jerry Kids (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "DuUH18XoFCc",
+     "titulo": "Tom y Jerry Kids (Intro Latino)",
+     "canal": "LaRetroTv",
+     "dur": 61,
+     "loudnessDb": 1.8164196,
+     "captions": [],
+     "consulta": "Tom y Jerry Kids intro español latino"
+    },
+    {
+     "id": "CmefKs2HFPY",
+     "titulo": "Tom y Jerry Kids  (Español Latino)",
+     "canal": "Generación Retro",
+     "dur": 184,
+     "loudnessDb": -10.92,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Tom y Jerry Kids intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-los-castores-cascarrabias-tema",
+   "id": "toon-los-castores-cascarrabias-tema",
+   "tema": "caricaturas",
+   "cat": "toon-90s",
+   "game": "Los Castores Cascarrabias",
+   "title": "Los Castores Cascarrabias (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "G1YOgszzE34",
+     "titulo": "Los Castores Cascarrabias (El Rap de los Hermanos Castor) Latino",
+     "canal": "ZekeZevon",
+     "dur": 26,
+     "loudnessDb": -7.75,
+     "captions": [],
+     "consulta": "Los Castores Cascarrabias intro español latino"
+    },
+    {
+     "id": "cCekZlB2BMA",
+     "titulo": "La presa de Dagget y Norbert | Los castores cascarrabias (español latino)",
+     "canal": "Trozos de la infancia",
+     "dur": 32,
+     "loudnessDb": -4.3999996,
+     "captions": [],
+     "consulta": "The Angry Beavers intro latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-el-show-de-ren-y-stimpy-tema",
+   "id": "toon-el-show-de-ren-y-stimpy-tema",
+   "tema": "caricaturas",
+   "cat": "toon-90s",
+   "game": "El show de Ren y Stimpy",
+   "title": "Ren y Stimpy (entrada)",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "W5NfgKPVZ2g",
+     "titulo": "The Ren and Stimpy Show [INTRO]",
+     "canal": "JustDemoReels",
+     "dur": 45,
+     "loudnessDb": -4.7999992,
+     "captions": null,
+     "consulta": "Ren y Stimpy intro"
+    },
+    {
+     "id": "YOeFi-RkaZM",
+     "titulo": "Ren and Stimpy Show intro - Original",
+     "canal": "SnailBitMyEye",
+     "dur": 44,
+     "loudnessDb": -10.57,
+     "captions": null,
+     "consulta": "Ren y Stimpy intro"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-el-mundo-de-bobby-tema",
+   "id": "toon-el-mundo-de-bobby-tema",
+   "tema": "caricaturas",
+   "cat": "toon-90s",
+   "game": "El mundo de Bobby",
+   "title": "El mundo de Bobby (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "ncIlt8bmueM",
+     "titulo": "El Mundo de Bobby 1993 (Español Latino)",
+     "canal": "Generación Retro",
+     "dur": 180,
+     "loudnessDb": 8.3199997,
+     "captions": [],
+     "consulta": "El mundo de Bobby intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-peter-pan-y-los-piratas-tema",
+   "id": "toon-peter-pan-y-los-piratas-tema",
+   "tema": "caricaturas",
+   "cat": "toon-90s",
+   "game": "Peter Pan y los piratas",
+   "title": "Peter Pan y los piratas (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "UhVdi3XoPzU",
+     "titulo": "Intro Peter Pan y Los Piratas (Audio Latino)",
+     "canal": "Pura nostalgia Cr",
+     "dur": 72,
+     "loudnessDb": 5.6300001,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Peter Pan y los piratas intro español latino"
+    },
+    {
+     "id": "fI1YDTxBpOo",
+     "titulo": "Peter pan y los piratas comercial latino fox kids",
+     "canal": "Baul de Recuerdos",
+     "dur": 30,
+     "loudnessDb": -13.25,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Peter Pan y los Piratas Fox Kids opening latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-tale-spin-tema",
+   "id": "toon-tale-spin-tema",
+   "tema": "caricaturas",
+   "cat": "toon-90s",
+   "game": "Tale Spin",
+   "title": "Tale Spin (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "aP3DgasbIpM",
+     "titulo": "Intro Aventureros Del Aire (TaleSpin 1990 - 1991)Español Latino.",
+     "canal": "RetroSound TV",
+     "dur": 59,
+     "loudnessDb": -15.08,
+     "captions": [],
+     "consulta": "Tale Spin intro español latino Disney"
+    },
+    {
+     "id": "oYPPjtwwXek",
+     "titulo": "Aventureros del Aire: TaleSpin (Español Latino)",
+     "canal": "Generación Retro",
+     "dur": 180,
+     "loudnessDb": -4.5599995,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Tale Spin intro español latino Disney"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-bonkers-tema",
+   "id": "toon-bonkers-tema",
+   "tema": "caricaturas",
+   "cat": "toon-90s",
+   "game": "Bonkers",
+   "title": "Bonkers (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "wdixPoS6nl0",
+     "titulo": "Bonkers Intro Latino",
+     "canal": "Gurschieoszoa",
+     "dur": 60,
+     "loudnessDb": -6.9500008,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Bonkers intro español latino Disney"
+    },
+    {
+     "id": "DIT4eqKA4VY",
+     "titulo": "Bonkers Intro (Latino)",
+     "canal": "JoséTheCartoonsTVFan2026",
+     "dur": 61,
+     "loudnessDb": -11.440001,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Bonkers intro español latino Disney"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-marsupilami-tema",
+   "id": "toon-marsupilami-tema",
+   "tema": "caricaturas",
+   "cat": "toon-90s",
+   "game": "Marsupilami",
+   "title": "Marsupilami (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "jKNhW5a0g8c",
+     "titulo": "Marsupilami - Español Latino",
+     "canal": "Moscaconlentes clásico",
+     "dur": 60,
+     "loudnessDb": 8.6800003,
+     "captions": [],
+     "consulta": "Marsupilami serie Disney intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-johnny-test-tema",
+   "id": "toon-johnny-test-tema",
+   "tema": "caricaturas",
+   "cat": "toon-00s",
+   "game": "Johnny Test",
+   "title": "Johnny Test (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "TA67Cfu_9ak",
+     "titulo": "Johnny Test - Intro (Español Latino/Latin Spanish)",
+     "canal": "ABTube27",
+     "dur": 60,
+     "loudnessDb": -0.53999996,
+     "captions": [],
+     "consulta": "Johnny Test intro español latino"
+    },
+    {
+     "id": "volB9RMvd7A",
+     "titulo": "Johnny Test Intro Latino Temporada 1 16:9 HD",
+     "canal": "Nomelas CN",
+     "dur": 60,
+     "loudnessDb": 1.4899998,
+     "captions": [],
+     "consulta": "Johnny Test intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-las-aventuras-de-jackie-chan-tema",
+   "id": "toon-las-aventuras-de-jackie-chan-tema",
+   "tema": "caricaturas",
+   "cat": "toon-00s",
+   "game": "Las aventuras de Jackie Chan",
+   "title": "Las aventuras de Jackie Chan (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "gbNWbhRXqGs",
+     "titulo": "Las Aventuras de Jackie Chan - Intro Latino",
+     "canal": "T. C. Intros Latinos",
+     "dur": 42,
+     "loudnessDb": -5.1800003,
+     "captions": [],
+     "consulta": "Las aventuras de Jackie Chan intro español latino"
+    },
+    {
+     "id": "7VxFl2W73v0",
+     "titulo": "Las Aventuras de Jackie Chan - Intro Latino",
+     "canal": "T. C. Intros Latinos",
+     "dur": 55,
+     "loudnessDb": -5.3999996,
+     "captions": [],
+     "consulta": "Las aventuras de Jackie Chan intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-las-tortugas-ninja-2003-tema",
+   "id": "toon-las-tortugas-ninja-2003-tema",
+   "tema": "caricaturas",
+   "cat": "toon-00s",
+   "game": "Las Tortugas Ninja (2003)",
+   "title": "Las Tortugas Ninja 2003 (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "X56M5mWMFwk",
+     "titulo": "Tortugas Ninja 2003 Opening Español Latino",
+     "canal": "newkeandrebell04",
+     "dur": 61,
+     "loudnessDb": 5.0799999,
+     "captions": [],
+     "consulta": "Las Tortugas Ninja 2003 intro español latino"
+    },
+    {
+     "id": "0FUBH1enBi8",
+     "titulo": "Teenage Mutant Ninja Turtles (2003) Theme Song (V1) (Español Mexicano/Mexican Spanish)",
+     "canal": "Chris Collins The 14th",
+     "dur": 61,
+     "loudnessDb": 6.5900002,
+     "captions": [
+      "ar",
+      "es",
+      "en",
+      "pt"
+     ],
+     "consulta": "Las Tortugas Ninja 2003 intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-ben-10-fuerza-alienigena-tema",
+   "id": "toon-ben-10-fuerza-alienigena-tema",
+   "tema": "caricaturas",
+   "cat": "toon-00s",
+   "game": "Ben 10: Fuerza alienígena",
+   "title": "Ben 10: Fuerza alienígena (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "f0P3ojhyBvw",
+     "titulo": "Intro De Ben 10 Fuerza Alienígena Temporada 1 [Español Latino]",
+     "canal": "PLANETA TOONS",
+     "dur": 31,
+     "loudnessDb": -3.4300003,
+     "captions": [],
+     "consulta": "Ben 10 Fuerza Alienígena intro español latino"
+    },
+    {
+     "id": "SijXs5gvT1Y",
+     "titulo": "Intro De Ben 10 Fuerza Alienígena Temporada 1 [Español Latino]",
+     "canal": "PLANETA TOONS",
+     "dur": 32,
+     "loudnessDb": 0.15999985,
+     "captions": [],
+     "consulta": "Ben 10 Fuerza Alienígena intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-el-show-de-garfield-tema",
+   "id": "toon-el-show-de-garfield-tema",
+   "tema": "caricaturas",
+   "cat": "toon-00s",
+   "game": "El show de Garfield",
+   "title": "El show de Garfield (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "ODRTvW8Ovrc",
+     "titulo": "Intro De El Show De Garfield [Español Latino]",
+     "canal": "PLANETA TOONS",
+     "dur": 27,
+     "loudnessDb": -3.6499996,
+     "captions": [
+      "es"
+     ],
+     "consulta": "El show de Garfield intro español latino"
+    },
+    {
+     "id": "pGnuph2AfQY",
+     "titulo": "El Show de Garfield Intro (Español Latino) (Azteca 7, Kidsiete SD) (27/04/2026)",
+     "canal": "Mathias Sulbaron Ramos El Loquendero 7",
+     "dur": 87,
+     "loudnessDb": -9.7299995,
+     "captions": [
+      "es"
+     ],
+     "consulta": "El show de Garfield intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-transformers-animated-tema",
+   "id": "toon-transformers-animated-tema",
+   "tema": "caricaturas",
+   "cat": "toon-00s",
+   "game": "Transformers Animated",
+   "title": "Transformers Animated (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "9xh3zhOp_Ss",
+     "titulo": "intro Transformers animated Español latino doblaje Colombia",
+     "canal": "Archivos de Steve: promos y Loquendo",
+     "dur": 30,
+     "loudnessDb": 10.72,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Transformers Animated intro español latino"
+    },
+    {
+     "id": "aI0JnFrsO8M",
+     "titulo": "Transformers Animated (Intro) (Español Latino)",
+     "canal": "El Basurero de Bugs Bunny El Random",
+     "dur": 30,
+     "loudnessDb": 10.66,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Transformers Animated intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-go-diego-go-tema",
+   "id": "toon-go-diego-go-tema",
+   "tema": "caricaturas",
+   "cat": "toon-00s",
+   "game": "Go, Diego, Go!",
+   "title": "Go, Diego, Go! (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "qRSazZe0Xas",
+     "titulo": "(DO NOT BLOCK) Go, Diego, Go! Intro Español Latino (International, Univision Variant)",
+     "canal": "The Green Ducky",
+     "dur": 54,
+     "loudnessDb": -7.3299999,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Go Diego Go intro español latino"
+    },
+    {
+     "id": "18f7WUbm1n0",
+     "titulo": "Go, Diego, Go! intro comparación Tema Musical Opening Temporada 1, 2, 3, 4 y 5 en Español Latino",
+     "canal": "DubsMarlonTV",
+     "dur": 54,
+     "loudnessDb": 0.27999973,
+     "captions": [],
+     "consulta": "Go Diego Go intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-los-pequenos-einsteins-tema",
+   "id": "toon-los-pequenos-einsteins-tema",
+   "tema": "caricaturas",
+   "cat": "toon-00s",
+   "game": "Los Pequeños Einsteins",
+   "title": "Los Pequeños Einsteins (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "i-AaQJWAYtE",
+     "titulo": "¡Canta la Canción de Intro en Doblaje Español Latino “Edición Navideño” de los Little Einsteins!",
+     "canal": "Maximiliano Velazquez Rodriguez Productions",
+     "dur": 61,
+     "loudnessDb": 2.5,
+     "captions": [
+      "es",
+      "en"
+     ],
+     "consulta": "Los Pequeños Einsteins intro español latino"
+    },
+    {
+     "id": "ey-XM3MTEKg",
+     "titulo": "Little Einsteins - Latin Spanish Theme Song (Season 1)",
+     "canal": "Christmas Yes Sunny Day No",
+     "dur": 60,
+     "loudnessDb": -2.6700001,
+     "captions": [],
+     "consulta": "Los Pequeños Einsteins intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-mis-amigos-tigger-y-pooh-tema",
+   "id": "toon-mis-amigos-tigger-y-pooh-tema",
+   "tema": "caricaturas",
+   "cat": "toon-00s",
+   "game": "Mis amigos Tigger y Pooh",
+   "title": "Mis amigos Tigger y Pooh (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "z9Bgf-PgfeQ",
+     "titulo": "Mis amigos Tigger y Pooh - intro - Español Latino",
+     "canal": "Claudio Figueroa",
+     "dur": 60,
+     "loudnessDb": -4.8299999,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Mis amigos Tigger y Pooh intro español latino"
+    },
+    {
+     "id": "zLZwiSmOmhE",
+     "titulo": "WINNIE POOH MIS AMIGOS TIGGER Y POOH NOVELA CANCION DEL JURAMENTO CANCION COMPLETA ESPAÑOL LATINO",
+     "canal": "Esteban Exequiel Ponce",
+     "dur": 87,
+     "loudnessDb": -5.1700001,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Mis amigos Tigger y Pooh intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-manny-a-la-obra-tema",
+   "id": "toon-manny-a-la-obra-tema",
+   "tema": "caricaturas",
+   "cat": "toon-00s",
+   "game": "Manny a la obra",
+   "title": "Manny a la obra (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "inv6YfEeJEU",
+     "titulo": "Manny a la obra - Intro en español latino (Playhouse Disney)",
+     "canal": "Puncri_242",
+     "dur": 51,
+     "loudnessDb": -1.4399996,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Manny a la obra intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-clifford-el-gran-perro-colorado-tema",
+   "id": "toon-clifford-el-gran-perro-colorado-tema",
+   "tema": "caricaturas",
+   "cat": "toon-00s",
+   "game": "Clifford, el gran perro colorado",
+   "title": "Clifford, el gran perro colorado (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "O-LG7tyQTUk",
+     "titulo": "Clifford el gran perro rojo canción de inico (Esp Latino)",
+     "canal": "Fer Rodriguez",
+     "dur": 60,
+     "loudnessDb": -12.5,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Clifford el gran perro colorado intro español latino"
+    },
+    {
+     "id": "bCOCnPi1qO0",
+     "titulo": "Clifford el gran perro rojo Intro Latino",
+     "canal": "Yuliana Angelica Mm",
+     "dur": 60,
+     "loudnessDb": -6,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Clifford el gran perro colorado intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-bebes-looney-tunes-tema",
+   "id": "toon-bebes-looney-tunes-tema",
+   "tema": "caricaturas",
+   "cat": "toon-00s",
+   "game": "Bebés Looney Tunes",
+   "title": "Bebés Looney Tunes (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "LfUEdFjs7MM",
+     "titulo": "Baby Looney Tunes - Intro Latino",
+     "canal": "T. C. Intros Latinos",
+     "dur": 48,
+     "loudnessDb": -15.200001,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Bebés Looney Tunes intro español latino"
+    },
+    {
+     "id": "5lWpW2Ypaws",
+     "titulo": "Baby Looney Tunes Intro Latino CN",
+     "canal": "OldTimes18cn",
+     "dur": 32,
+     "loudnessDb": -14.58,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Bebés Looney Tunes intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-las-tortugas-ninja-2012-tema",
+   "id": "toon-las-tortugas-ninja-2012-tema",
+   "tema": "caricaturas",
+   "cat": "toon-1014",
+   "game": "Las Tortugas Ninja (2012)",
+   "title": "Las Tortugas Ninja 2012 (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "2C_sakgU-d8",
+     "titulo": "Las Tortugas Ninja (2012) (Intro) (Español Latino)",
+     "canal": "The Fernando Dalmatian 206",
+     "dur": 59,
+     "loudnessDb": -2.7900009,
+     "captions": [],
+     "consulta": "Las Tortugas Ninja 2012 intro español latino"
+    },
+    {
+     "id": "kGoOllt0gac",
+     "titulo": "Las Tortugas Ninja (2012) intro Tema Opening Canción de la Apertura Temporada 1 en Español Latino",
+     "canal": "DubsMarlonTV",
+     "dur": 60,
+     "loudnessDb": -5.9200001,
+     "captions": [],
+     "consulta": "Las Tortugas Ninja 2012 intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-los-octonautas-tema",
+   "id": "toon-los-octonautas-tema",
+   "tema": "caricaturas",
+   "cat": "toon-1014",
+   "game": "Los Octonautas",
+   "title": "Los Octonautas (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "5eXfESK5li4",
+     "titulo": "Octonautas Intro Español Latino Hd",
+     "canal": "Ale Y Jorge Lagos Padre e Hijo",
+     "dur": 44,
+     "loudnessDb": 0.65999985,
+     "captions": [],
+     "consulta": "Los Octonautas intro español latino"
+    },
+    {
+     "id": "IrQbJLNpkJU",
+     "titulo": "Octonauts - Creature Report (Spanish)",
+     "canal": "Octonauts Stuff",
+     "dur": 60,
+     "loudnessDb": -1.2600002,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Octonauts tema latino Disney Junior"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-princesita-sofia-tema",
+   "id": "toon-princesita-sofia-tema",
+   "tema": "caricaturas",
+   "cat": "toon-1014",
+   "game": "Princesita Sofía",
+   "title": "Princesita Sofía (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "y8aN2WgKZXg",
+     "titulo": "Princesita Sofia - Intro en Español Latino",
+     "canal": "Sofia1ra",
+     "dur": 54,
+     "loudnessDb": -12.889999,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Princesita Sofía intro español latino"
+    },
+    {
+     "id": "YqwQq-_dhnc",
+     "titulo": "Sofia the First: Royal Magic - Intro (Latin Spanish)",
+     "canal": "Sammy's on It!",
+     "dur": 52,
+     "loudnessDb": 0.65999985,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Princesita Sofía intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-jake-y-los-piratas-de-nunca-jamas-tema",
+   "id": "toon-jake-y-los-piratas-de-nunca-jamas-tema",
+   "tema": "caricaturas",
+   "cat": "toon-1014",
+   "game": "Jake y los piratas de Nunca Jamás",
+   "title": "Jake y los piratas de Nunca Jamás (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "_3OEUiPjxl8",
+     "titulo": "Jake Y Los Piratas De Nunca Jámas / Intro (Español Latino)",
+     "canal": "Jake Y Los Piratas De Nunca Jamas",
+     "dur": 76,
+     "loudnessDb": -4.7299995,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Jake y los piratas de Nunca Jamás intro español latino"
+    },
+    {
+     "id": "sQmse4PFff0",
+     "titulo": "Jake Y Los Piratas De Nunca Jamas / Intro 3 (Español Latino)",
+     "canal": "Jake Y Los Piratas De Nunca Jamas",
+     "dur": 59,
+     "loudnessDb": -4.1399994,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Jake y los piratas de Nunca Jamás intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-doctora-juguetes-tema",
+   "id": "toon-doctora-juguetes-tema",
+   "tema": "caricaturas",
+   "cat": "toon-1014",
+   "game": "Doctora Juguetes",
+   "title": "Doctora Juguetes (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "W3aTBtAZaNs",
+     "titulo": "Doctora Juguetes y su Hospital (Intro) (Español Latino)",
+     "canal": "The Fernando Dalmatian 206",
+     "dur": 54,
+     "loudnessDb": -9.0100002,
+     "captions": [],
+     "consulta": "Doctora Juguetes intro español latino"
+    },
+    {
+     "id": "yfoIONQIwFE",
+     "titulo": "Opening De La Doctora Juguetes Latino Disney Junior",
+     "canal": "Emanuel Da silva",
+     "dur": 55,
+     "loudnessDb": -14.049999,
+     "captions": [],
+     "consulta": "Doctora Juguetes intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-transformers-prime-tema",
+   "id": "toon-transformers-prime-tema",
+   "tema": "caricaturas",
+   "cat": "toon-1014",
+   "game": "Transformers Prime",
+   "title": "Transformers Prime (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "d2nVSRhuzfU",
+     "titulo": "Transformers Prime (Intro) (Español Latino)",
+     "canal": "The Fernando Dalmatian 206",
+     "dur": 38,
+     "loudnessDb": -6.1700001,
+     "captions": [],
+     "consulta": "Transformers Prime intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-dragones-jinetes-de-mema-tema",
+   "id": "toon-dragones-jinetes-de-mema-tema",
+   "tema": "caricaturas",
+   "cat": "toon-1014",
+   "game": "Dragones: Jinetes de Mema",
+   "title": "Dragones: Jinetes de Mema (tema)",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "GJC9t9Lb7BQ",
+     "titulo": "Dragons: Riders of Berk - Intro (2013) (Cartoon Network HD UK Airing)",
+     "canal": "Raul Rios Reupload",
+     "dur": 21,
+     "loudnessDb": -4.5599995,
+     "captions": null,
+     "consulta": "Dragones Jinetes de Mema intro"
+    },
+    {
+     "id": "f5STRi_Vk_E",
+     "titulo": "Lanzamiento de Dragones - Los jinetes de Mema",
+     "canal": "CanalBoingES",
+     "dur": 25,
+     "loudnessDb": 3.4934101,
+     "captions": null,
+     "consulta": "Dragones Jinetes de Mema intro"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-she-ra-y-las-princesas-del-poder-tema",
+   "id": "toon-she-ra-y-las-princesas-del-poder-tema",
+   "tema": "caricaturas",
+   "cat": "toon-1519",
+   "game": "She-Ra y las princesas del poder",
+   "title": "She-Ra y las princesas del poder (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "oRTPeKUiaqc",
+     "titulo": "She-Ra Y Las Princesas Del Poder | Intro Latino | V1",
+     "canal": "Dauk0._",
+     "dur": 30,
+     "loudnessDb": -3.3600006,
+     "captions": [],
+     "consulta": "She-Ra y las princesas del poder intro español latino"
+    },
+    {
+     "id": "P4xLA_hpio8",
+     "titulo": "She-Ra and the Princesses of Power - Intro (Latin American Spanish, version 2)",
+     "canal": "katzlang+",
+     "dur": 30,
+     "loudnessDb": -1.9899998,
+     "captions": [
+      "es"
+     ],
+     "consulta": "She-Ra y las princesas del poder intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-voltron-el-defensor-legendario-tema",
+   "id": "toon-voltron-el-defensor-legendario-tema",
+   "tema": "caricaturas",
+   "cat": "toon-1519",
+   "game": "Voltron: El defensor legendario",
+   "title": "Voltron: El defensor legendario (tema)",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "fJ4eaPLpxIQ",
+     "titulo": "DREAMWORKS VOLTRON LEGENDARY DEFENDER THEME SONG",
+     "canal": "Kaiser",
+     "dur": 50,
+     "loudnessDb": -2.1800003,
+     "captions": null,
+     "consulta": "Voltron Legendary Defender opening theme"
+    },
+    {
+     "id": "yeX1o-C8jJg",
+     "titulo": "Voltron: Legendary Defender | Theme Song | Netflix After School",
+     "canal": "Netflix Family",
+     "dur": 75,
+     "loudnessDb": -6.2064686,
+     "captions": null,
+     "consulta": "Voltron Legendary Defender opening theme"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-la-ley-de-milo-murphy-tema",
+   "id": "toon-la-ley-de-milo-murphy-tema",
+   "tema": "caricaturas",
+   "cat": "toon-1519",
+   "game": "La ley de Milo Murphy",
+   "title": "La ley de Milo Murphy (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "Dt4n934TpdA",
+     "titulo": "La ley de Milo Murphy: Es mi mundo - Intro (Español latino con logo - HD - Letra)",
+     "canal": "Milo Murphy Latino",
+     "dur": 40,
+     "loudnessDb": -6.3799992,
+     "captions": [
+      "es"
+     ],
+     "consulta": "La ley de Milo Murphy intro español latino"
+    },
+    {
+     "id": "B4uZwvpSCL8",
+     "titulo": "La ley de Milo Murphy: Es mi mundo - Créditos finales (Español latino - Letra)",
+     "canal": "Milo Murphy Latino",
+     "dur": 40,
+     "loudnessDb": -6.6599998,
+     "captions": [
+      "es"
+     ],
+     "consulta": "La ley de Milo Murphy intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-shimmer-y-shine-tema",
+   "id": "toon-shimmer-y-shine-tema",
+   "tema": "caricaturas",
+   "cat": "toon-1519",
+   "game": "Shimmer y Shine",
+   "title": "Shimmer y Shine (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "pNMePOkmV_I",
+     "titulo": "Shimmer and Shine Latinoamérica | Canción Oficial (Canción) | Nick Jr.",
+     "canal": "Nick Jr. en Español",
+     "dur": 40,
+     "loudnessDb": -2.8299999,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Shimmer y Shine intro español latino"
+    },
+    {
+     "id": "tAAqDeeO04E",
+     "titulo": "Shimmer y Shine intro Tema Musical Opening comparación temporada 1, 2, 3 y 4 en Español Latino",
+     "canal": "DubsMarlonTV",
+     "dur": 40,
+     "loudnessDb": 5.71,
+     "captions": [],
+     "consulta": "Shimmer y Shine intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-el-chapulin-colorado-animado-tema",
+   "id": "toon-el-chapulin-colorado-animado-tema",
+   "tema": "caricaturas",
+   "cat": "toon-1519",
+   "game": "El Chapulín Colorado animado",
+   "title": "El Chapulín Colorado animado (tema)",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "AdWKujHWNEY",
+     "titulo": "El Chapulín Colorado Animado (Intro) (Español Latino) (Solo en Audio)",
+     "canal": "The Fernando Dalmatian 206",
+     "dur": 37,
+     "loudnessDb": -7.0400009,
+     "captions": null,
+     "consulta": "El Chapulín Colorado animado intro"
+    },
+    {
+     "id": "Oley9lKx_z8",
+     "titulo": "El Chapulín Colorado Animado Intro En Distrito Comedia En RPASTEN",
+     "canal": "Carlos Andrés Cruz Ramos Telerín",
+     "dur": 36,
+     "loudnessDb": -3.7199993,
+     "captions": null,
+     "consulta": "El Chapulín Colorado animado intro"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-mickey-aventuras-sobre-ruedas-tema",
+   "id": "toon-mickey-aventuras-sobre-ruedas-tema",
+   "tema": "caricaturas",
+   "cat": "toon-1519",
+   "game": "Mickey: Aventuras sobre ruedas",
+   "title": "Mickey: Aventuras sobre ruedas (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "kD582xLeHcE",
+     "titulo": "Mickey: Aventuras sobre ruedas (Intro) (Español Latino)",
+     "canal": "Mickey Mouse 2008",
+     "dur": 60,
+     "loudnessDb": 5.9899998,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Mickey Aventuras sobre ruedas intro español latino"
+    },
+    {
+     "id": "cD-9lSzecgM",
+     "titulo": "Mickey Aventuras sobre ruedas intro Español Latino vs English",
+     "canal": "Angel Sebastián Delgado Severino",
+     "dur": 116,
+     "loudnessDb": -3.1900005,
+     "captions": [
+      "es",
+      "hi",
+      "en",
+      "it",
+      "pt"
+     ],
+     "consulta": "Mickey Aventuras sobre ruedas intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-spidey-y-su-superequipo-tema",
+   "id": "toon-spidey-y-su-superequipo-tema",
+   "tema": "caricaturas",
+   "cat": "toon-20s",
+   "game": "Spidey y su superequipo",
+   "title": "Spidey y su superequipo (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "d0cidlD_eh4",
+     "titulo": "Spidey y sus sorprendentes amigos - Intro (Español Latino)",
+     "canal": "ToonBafoon",
+     "dur": 62,
+     "loudnessDb": -4.4599991,
+     "captions": [],
+     "consulta": "Spidey y su superequipo intro español latino"
+    },
+    {
+     "id": "PU1qbf4X9ko",
+     "titulo": "Spidey y sus sorprendentes amigos temporada 2 intro en latino",
+     "canal": "Ghosthy",
+     "dur": 61,
+     "loudnessDb": -1.4200001,
+     "captions": [],
+     "consulta": "Spidey y su superequipo intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-mickey-mouse-funhouse-tema",
+   "id": "toon-mickey-mouse-funhouse-tema",
+   "tema": "caricaturas",
+   "cat": "toon-20s",
+   "game": "Mickey Mouse Funhouse",
+   "title": "Mickey Mouse Funhouse (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "fhVmjMCQ1ng",
+     "titulo": "Mickey Mouse Funhouse (Intro) (Español Latino)",
+     "canal": "The Fernando Dalmatian 206",
+     "dur": 48,
+     "loudnessDb": -3.6299992,
+     "captions": [],
+     "consulta": "Mickey Mouse Funhouse intro español latino"
+    },
+    {
+     "id": "q_vJmOhnygA",
+     "titulo": "Mickey Mouse Funhouse - Intro - Español Latino",
+     "canal": "BuddyTheSu-purrWildKitty2005",
+     "dur": 48,
+     "loudnessDb": -3.3600006,
+     "captions": [],
+     "consulta": "Mickey Mouse Funhouse canción de entrada latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-tiny-toons-looniversidad-tema",
+   "id": "toon-tiny-toons-looniversidad-tema",
+   "tema": "caricaturas",
+   "cat": "toon-20s",
+   "game": "Tiny Toons: Looniversidad",
+   "title": "Tiny Toons: Looniversidad (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "w6cDqzMJRPk",
+     "titulo": "Cartoon Network Latino - Estreno de Tiny Toons: Looniversidad - 20 de Octubre 2023",
+     "canal": "CNLA Lost Media",
+     "dur": 161,
+     "loudnessDb": -0.69999981,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Tiny Toons Looniversidad intro español latino"
+    },
+    {
+     "id": "ji54h_ee-7U",
+     "titulo": "Tiny Toons Looniversity (Intro) (Español Latino)",
+     "canal": "The Fernando Dalmatian 206",
+     "dur": 61,
+     "loudnessDb": -7.0300007,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Tiny Toons Looniversity opening latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-que-pasaria-si-tema",
+   "id": "toon-que-pasaria-si-tema",
+   "tema": "caricaturas",
+   "cat": "toon-20s",
+   "game": "¿Qué pasaría si...?",
+   "title": "¿Qué pasaría si...? (tema)",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "1CURxCYUQI0",
+     "titulo": "Main Title (From \"What If…Captain Carter Were The First Avenger?\"/Audio Only)",
+     "canal": "MarvelMusicVEVO",
+     "dur": 70,
+     "loudnessDb": -1.8199997,
+     "captions": null,
+     "consulta": "Marvel What If...? main title theme Laura Karpman"
+    },
+    {
+     "id": "_WESjw0QiXo",
+     "titulo": "What If...? Main Title Theme | Laura Karpman | Marvel Studios What If...? | Cosmic BEYONDER",
+     "canal": "Cosmic BEYONDER",
+     "dur": 67,
+     "loudnessDb": 2,
+     "captions": null,
+     "consulta": "Marvel What If...? main title theme Laura Karpman"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-invencible-tema",
+   "id": "toon-invencible-tema",
+   "tema": "caricaturas",
+   "cat": "toon-20s",
+   "game": "Invencible",
+   "title": "Invencible (tema)",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "KovvmdNUpEs",
+     "titulo": "Invincible S3 Opening Scene | Invincible | Prime Video",
+     "canal": "Prime Video",
+     "dur": 311,
+     "loudnessDb": -3.3600006,
+     "captions": null,
+     "consulta": "Invincible intro Amazon Prime Video"
+    },
+    {
+     "id": "gF73gPQQsR4",
+     "titulo": "Invincible Theme by John Paesano",
+     "canal": "Julio Carrasco",
+     "dur": 65,
+     "loudnessDb": 1.9399996,
+     "captions": null,
+     "consulta": "Invincible main title theme John Paesano"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "toon-speed-buggy-tema",
+   "id": "toon-speed-buggy-tema",
+   "tema": "caricaturas",
+   "cat": "toon-clasicas",
+   "game": "Speed Buggy",
+   "title": "Speed Buggy (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "CHJFWTePG9I",
+     "titulo": "Speed Buggy Hanna-Barbera (Español Latino)",
+     "canal": "Generación Retro",
+     "dur": 120,
+     "loudnessDb": 1.4899998,
+     "captions": [],
+     "consulta": "Speed Buggy intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-galaxy-express-999-pelicula-1979-the-galaxy-express-999",
+   "id": "ani-galaxy-express-999-pelicula-1979-the-galaxy-express-999",
+   "tema": "anime",
+   "cat": "anime-clasicos",
+   "game": "Galaxy Express 999 (película 1979)",
+   "title": "The Galaxy Express 999",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "TgrQ5faJyLE",
+     "titulo": "The Galaxy Express 999",
+     "canal": "Godiego - Topic",
+     "dur": 209,
+     "loudnessDb": 3.8500004,
+     "captions": null,
+     "consulta": "Godiego The Galaxy Express 999 opening"
+    },
+    {
+     "id": "Gq-b_iNrQaQ",
+     "titulo": "Galaxy Express 999 Opening",
+     "canal": "wilsonx81",
+     "dur": 80,
+     "loudnessDb": 4.7200003,
+     "captions": null,
+     "consulta": "Godiego The Galaxy Express 999 opening"
+    }
+   ],
+   "apple": {
+    "song": 1579015797,
+    "country": "mx",
+    "titulo": "The Galaxy Express 999",
+    "artista": "Godiego",
+    "album": "The Galaxy Express 999 - Single"
+   }
+  },
+  {
+   "key": "ani-city-hunter-get-wild",
+   "id": "ani-city-hunter-get-wild",
+   "tema": "anime",
+   "cat": "anime-clasicos",
+   "game": "City Hunter",
+   "title": "Get Wild",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "wK3_ZhGpKsQ",
+     "titulo": "City Hunter (1987) Ending - Get Wild",
+     "canal": "RetroCrush",
+     "dur": 78,
+     "loudnessDb": -6.6599998,
+     "captions": null,
+     "consulta": "City Hunter ending Get Wild TM Network"
+    },
+    {
+     "id": "mwK4kMUqlqI",
+     "titulo": "Get Wild - 2023 REMASTER -",
+     "canal": "TM NETWORK - Topic",
+     "dur": 243,
+     "loudnessDb": 5.8000002,
+     "captions": null,
+     "consulta": "City Hunter ending Get Wild TM Network"
+    }
+   ],
+   "apple": {
+    "song": 1537085349,
+    "country": "mx",
+    "titulo": "Get Wild",
+    "artista": "TM NETWORK",
+    "album": "Get Wild - EP"
+   }
+  },
+  {
+   "key": "ani-macross-do-you-remember-love-ai-oboete-imasu-ka",
+   "id": "ani-macross-do-you-remember-love-ai-oboete-imasu-ka",
+   "tema": "anime",
+   "cat": "anime-clasicos",
+   "game": "Macross: Do You Remember Love?",
+   "title": "Ai Oboete Imasu ka",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "2pcDnCBICyg",
+     "titulo": "MACROSS: \"Ai Oboete Imasu ka\" - Do You Remember Love? - 4K UHD",
+     "canal": "ROBOTECH 4K The Macross Saga",
+     "dur": 383,
+     "loudnessDb": 1.5100002,
+     "captions": null,
+     "consulta": "Macross Do You Remember Love Ai Oboete Imasu ka Mari Iijima"
+    },
+    {
+     "id": "RsKB1nawqXQ",
+     "titulo": "愛・おぼえていますか",
+     "canal": "Mari Iijima - Topic",
+     "dur": 308,
+     "loudnessDb": 4.7200003,
+     "captions": null,
+     "consulta": "Macross Do You Remember Love Ai Oboete Imasu ka Mari Iijima"
+    }
+   ],
+   "apple": {
+    "song": 332039786,
+    "country": "mx",
+    "titulo": "Ai Oboete Imasu Ka",
+    "artista": "Mari Iijima",
+    "album": "Palette"
+   }
+  },
+  {
+   "key": "ani-la-abeja-maya-la-abeja-maya-tema-latino",
+   "id": "ani-la-abeja-maya-la-abeja-maya-tema-latino",
+   "tema": "anime",
+   "cat": "anime-clasicos",
+   "game": "La abeja Maya",
+   "title": "La abeja Maya (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "gt5bY4UXVHc",
+     "titulo": "La Abeja Maya - Intro Completa - Español Latino",
+     "canal": "Claudio Figueroa",
+     "dur": 179,
+     "loudnessDb": 3.04,
+     "captions": [
+      "es"
+     ],
+     "consulta": "La abeja Maya intro clasico español latino"
+    },
+    {
+     "id": "KRQEjnobOvU",
+     "titulo": "la abeja maya opening latino",
+     "canal": "vanguar82",
+     "dur": 72,
+     "loudnessDb": -2.7299995,
+     "captions": [
+      "es"
+     ],
+     "consulta": "La abeja Maya intro clasico español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-vicky-el-vikingo-vicky-el-vikingo-tema-latino",
+   "id": "ani-vicky-el-vikingo-vicky-el-vikingo-tema-latino",
+   "tema": "anime",
+   "cat": "anime-clasicos",
+   "game": "Vicky el Vikingo",
+   "title": "Vicky el Vikingo (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "VSfnIiDKZeg",
+     "titulo": "Vicky el vikingo intro español",
+     "canal": "Fernando Alonso Guaman Romero",
+     "dur": 30,
+     "loudnessDb": -7.4699993,
+     "captions": [],
+     "consulta": "Vicky el Vikingo intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-remi-el-nino-sin-familia-remi-tema-latino",
+   "id": "ani-remi-el-nino-sin-familia-remi-tema-latino",
+   "tema": "anime",
+   "cat": "anime-clasicos",
+   "game": "Remi, el niño sin familia",
+   "title": "Remi (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "V6VnIWkQ38w",
+     "titulo": "Remi Intro Latino Remasterizado",
+     "canal": "GMJCZP",
+     "dur": 91,
+     "loudnessDb": 4.1899996,
+     "captions": [],
+     "consulta": "Remi el niño sin familia intro español latino"
+    },
+    {
+     "id": "gzmWBmkY-Nw",
+     "titulo": "Remi Opening Latino - Caminante (Saa Aruki Hajimeyou) - 1977 Rocío Garcel Versión Completa",
+     "canal": "Loco Por las Caricaturas",
+     "dur": 179,
+     "loudnessDb": 1.0799999,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Remi el niño sin familia intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-ana-de-las-tejas-verdes-ana-de-las-tejas-verdes-tema",
+   "id": "ani-ana-de-las-tejas-verdes-ana-de-las-tejas-verdes-tema",
+   "tema": "anime",
+   "cat": "anime-clasicos",
+   "game": "Ana de las Tejas Verdes",
+   "title": "Ana de las Tejas Verdes (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "mfoDos6LDKs",
+     "titulo": "ANA DE TEJAS VERDES 2019 OPENDING COMPLETO SUB LATINO ESPAÑOL EN 1080p FULLHD",
+     "canal": "GRANDES SERIES",
+     "dur": 271,
+     "loudnessDb": -15.940001,
+     "captions": [],
+     "consulta": "Ana de las tejas verdes intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-rascal-el-mapache-rascal-el-mapache-tema-latino",
+   "id": "ani-rascal-el-mapache-rascal-el-mapache-tema-latino",
+   "tema": "anime",
+   "cat": "anime-clasicos",
+   "game": "Rascal el mapache",
+   "title": "Rascal el mapache (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "UqXd5iIRIw0",
+     "titulo": "Rascal, el mapache (Cierre español)",
+     "canal": "TaranWanderer2",
+     "dur": 24,
+     "loudnessDb": -4.3299999,
+     "captions": [],
+     "consulta": "Rascal el mapache intro español latino"
+    },
+    {
+     "id": "2o96gMSqJx0",
+     "titulo": "Cierre Rascal el mapache español",
+     "canal": "Muppet",
+     "dur": 24,
+     "loudnessDb": -4.7800007,
+     "captions": [],
+     "consulta": "Rascal el mapache intro español latino"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-los-caballeros-del-zodiaco-blue-forever",
+   "id": "ani-los-caballeros-del-zodiaco-blue-forever",
+   "tema": "anime",
+   "cat": "anime-clasicos",
+   "game": "Los Caballeros del Zodiaco",
+   "title": "Blue Forever",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "s_4K4MyEOZU",
+     "titulo": "Blue Forever by Make-Up |Saint Seiya| Complete Song Collection|",
+     "canal": "Seiji Kikuchi ~ Music Channel",
+     "dur": 248,
+     "loudnessDb": 2.5100002,
+     "captions": null,
+     "consulta": "Saint Seiya ending 1 Blue Forever Make-Up"
+    },
+    {
+     "id": "K61Sbd7hqxs",
+     "titulo": "HAKUREN | MAKE-UP - BLUE FOREVER (1996 VERSION) | LYRIC VIDEO",
+     "canal": "Hakuren",
+     "dur": 371,
+     "loudnessDb": -4.5200005,
+     "captions": null,
+     "consulta": "Saint Seiya ending 1 Blue Forever Make-Up"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-georgie-georgie-tema-latino",
+   "id": "ani-georgie-georgie-tema-latino",
+   "tema": "anime",
+   "cat": "anime-clasicos",
+   "game": "Georgie",
+   "title": "Georgie (tema latino)",
+   "latino": true,
+   "youtube": [
+    {
+     "id": "FmZd0lcjkKo",
+     "titulo": "Lady Georgie Opening Español",
+     "canal": "dnangelcarhec",
+     "dur": 99,
+     "loudnessDb": -4.7600002,
+     "captions": [
+      "es"
+     ],
+     "consulta": "Georgie intro español latino"
+    },
+    {
+     "id": "T2pc2mh4VZA",
+     "titulo": "Lady Georgie Opening Español",
+     "canal": "AMANTES DEL ANIME",
+     "dur": 96,
+     "loudnessDb": -1.7299995,
+     "captions": [],
+     "consulta": "Georgie opening latino 1983 serie"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-cowboy-bebop-the-real-folk-blues",
+   "id": "ani-cowboy-bebop-the-real-folk-blues",
+   "tema": "anime",
+   "cat": "anime-90s",
+   "game": "Cowboy Bebop",
+   "title": "The Real Folk Blues",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "CjUVTEExfBg",
+     "titulo": "The Real Folk Blues",
+     "canal": "Mai Yamane - Topic",
+     "dur": 377,
+     "loudnessDb": 5.3299999,
+     "captions": null,
+     "consulta": "Cowboy Bebop ending The Real Folk Blues Mai Yamane"
+    },
+    {
+     "id": "x_ll_l1o7t4",
+     "titulo": "Cowboy Bebop - The Real Folk Blues part 2",
+     "canal": "pinanooditonivandjo",
+     "dur": 201,
+     "loudnessDb": -10.110001,
+     "captions": null,
+     "consulta": "Cowboy Bebop ending The Real Folk Blues Mai Yamane"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-neon-genesis-evangelion-fly-me-to-the-moon",
+   "id": "ani-neon-genesis-evangelion-fly-me-to-the-moon",
+   "tema": "anime",
+   "cat": "anime-90s",
+   "game": "Neon Genesis Evangelion",
+   "title": "Fly Me to the Moon",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "z2AyJTOR_qw",
+     "titulo": "Neon Genesis Evangelion - Ending Theme v1「Fly Me to the Moon」Claire",
+     "canal": "daiku[a]nim",
+     "dur": 65,
+     "loudnessDb": -7.1299992,
+     "captions": null,
+     "consulta": "Neon Genesis Evangelion ending Fly Me to the Moon Claire"
+    },
+    {
+     "id": "rwlqV4yhZyU",
+     "titulo": "Neon Genesis Evangelion — FLY ME TO THE MOON — CLAIRE ED Ending Full NGE OST Lyrics (Reupload)",
+     "canal": "Somerando",
+     "dur": 271,
+     "loudnessDb": 0.78999996,
+     "captions": null,
+     "consulta": "Neon Genesis Evangelion ending Fly Me to the Moon Claire"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-slam-dunk-anata-dake-mitsumeteru",
+   "id": "ani-slam-dunk-anata-dake-mitsumeteru",
+   "tema": "anime",
+   "cat": "anime-90s",
+   "game": "Slam Dunk",
+   "title": "Anata Dake Mitsumeteru",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "xMOmmwD4xWo",
+     "titulo": "Slam Dunk - Ending Full 1『Anata Dake Mitsumeteru』by Maki Ohguro - Lyrics",
+     "canal": "友人",
+     "dur": 282,
+     "loudnessDb": 1.7799997,
+     "captions": null,
+     "consulta": "Slam Dunk ending 1 Anata Dake Mitsumeteru Maki Ohguro"
+    },
+    {
+     "id": "d9eudCNJv1E",
+     "titulo": "あなただけ見つめてる (2019 Remastered)",
+     "canal": "Maki Ohguro - Topic",
+     "dur": 283,
+     "loudnessDb": 6.0500002,
+     "captions": null,
+     "consulta": "Slam Dunk ending 1 Anata Dake Mitsumeteru Maki Ohguro"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-rurouni-kenshin-heart-of-sword-yoake-mae",
+   "id": "ani-rurouni-kenshin-heart-of-sword-yoake-mae",
+   "tema": "anime",
+   "cat": "anime-90s",
+   "game": "Rurouni Kenshin",
+   "title": "HEART OF SWORD ~Yoake Mae~",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "NFxSCSGxCjQ",
+     "titulo": "HEART OF SWORD",
+     "canal": "T.M. Revolution - Topic",
+     "dur": 244,
+     "loudnessDb": 5.7700005,
+     "captions": null,
+     "consulta": "Rurouni Kenshin ending Heart of Sword T.M.Revolution"
+    },
+    {
+     "id": "ilz3UpuHExw",
+     "titulo": "T.M.Revolution 「HEART OF SWORD 〜夜明け前〜」 るろうに剣心 明治剣客浪漫譚 ED",
+     "canal": "豚",
+     "dur": 95,
+     "loudnessDb": 5.8199997,
+     "captions": null,
+     "consulta": "Rurouni Kenshin ending Heart of Sword T.M.Revolution"
+    }
+   ],
+   "apple": {
+    "song": 1536276700,
+    "country": "mx",
+    "titulo": "HEART OF SWORD 〜夜明け前〜",
+    "artista": "T.M.Revolution",
+    "album": "restoration LEVEL →3"
+   }
+  },
+  {
+   "key": "ani-initial-d-deja-vu",
+   "id": "ani-initial-d-deja-vu",
+   "tema": "anime",
+   "cat": "anime-90s",
+   "game": "Initial D",
+   "title": "Deja Vu",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "tdeJiw6qMkA",
+     "titulo": "DAVE RODGERS / DEJA VU 【Official Lyric Video】【頭文字D/INITIAL D】",
+     "canal": "avex",
+     "dur": 179,
+     "loudnessDb": 3.5900002,
+     "captions": null,
+     "consulta": "Initial D Deja Vu Dave Rodgers"
+    },
+    {
+     "id": "dv13gl0a-FA",
+     "titulo": "Initial D - Deja Vu",
+     "canal": "Pretty ok",
+     "dur": 264,
+     "loudnessDb": 5.1599998,
+     "captions": null,
+     "consulta": "Initial D Deja Vu Dave Rodgers"
+    }
+   ],
+   "apple": {
+    "song": 1477944584,
+    "country": "mx",
+    "titulo": "DEJA VU",
+    "artista": "Dave Rodgers",
+    "album": "SUPER EUROBEAT presents INITIAL D DAVE RODGERS SELECTION"
+   }
+  },
+  {
+   "key": "ani-initial-d-first-stage-running-in-the-90-s",
+   "id": "ani-initial-d-first-stage-running-in-the-90-s",
+   "tema": "anime",
+   "cat": "anime-90s",
+   "game": "Initial D First Stage",
+   "title": "Running in the 90's",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "_Fxil2QY0wE",
+     "titulo": "Running In The 90's",
+     "canal": "MAX COVERI - Topic",
+     "dur": 286,
+     "loudnessDb": 5.3999996,
+     "captions": null,
+     "consulta": "Initial D Running in the 90's Max Coveri"
+    },
+    {
+     "id": "NNaJxMutEIE",
+     "titulo": "MAX COVERI / RUNNING IN THE \"90S\"【頭文字D/INITIAL D】",
+     "canal": "avex",
+     "dur": 291,
+     "loudnessDb": 5.8999996,
+     "captions": null,
+     "consulta": "Initial D Running in the 90's Max Coveri"
+    }
+   ],
+   "apple": {
+    "song": 1451232176,
+    "country": "mx",
+    "titulo": "Running In the 90's",
+    "artista": "Max Coveri",
+    "album": "Running In the 90's - Single"
+   }
+  },
+  {
+   "key": "ani-digimon-adventure-brave-heart",
+   "id": "ani-digimon-adventure-brave-heart",
+   "tema": "anime",
+   "cat": "anime-90s",
+   "game": "Digimon Adventure",
+   "title": "Brave Heart",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "bjO_MIVLQcE",
+     "titulo": "Brave Heart - Digimon",
+     "canal": "MahEmo730",
+     "dur": 252,
+     "loudnessDb": 3.2799997,
+     "captions": null,
+     "consulta": "Digimon Adventure Brave Heart Ayumi Miyazaki"
+    },
+    {
+     "id": "Giar7JSoeaE",
+     "titulo": "Miyazaki Ayumi - Brave Heart",
+     "canal": "OSTDigimon",
+     "dur": 253,
+     "loudnessDb": 3.2399998,
+     "captions": null,
+     "consulta": "Digimon Adventure Brave Heart Ayumi Miyazaki"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-pokemon-mezase-pokemon-master",
+   "id": "ani-pokemon-mezase-pokemon-master",
+   "tema": "anime",
+   "cat": "anime-90s",
+   "game": "Pokémon",
+   "title": "Mezase Pokémon Master",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "hMKf5mE3sdo",
+     "titulo": "Satoshi（CV:Rica Matsumoto） - Mezase Pokémon Master -with my friends- / THE FIRST TAKE",
+     "canal": "THE FIRST TAKE",
+     "dur": 293,
+     "loudnessDb": 5.3100004,
+     "captions": null,
+     "consulta": "Pokémon opening 1 Mezase Pokémon Master Rika Matsumoto"
+    },
+    {
+     "id": "jbHG7fsZVkM",
+     "titulo": "Pokémon Anime Song - Mezase Pokémon Master",
+     "canal": "PocketMonstersMusic",
+     "dur": 252,
+     "loudnessDb": -1.1199999,
+     "captions": null,
+     "consulta": "Pokémon opening 1 Mezase Pokémon Master Rika Matsumoto"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-slayers-try-plenty-of-grit",
+   "id": "ani-slayers-try-plenty-of-grit",
+   "tema": "anime",
+   "cat": "anime-90s",
+   "game": "Slayers TRY",
+   "title": "Plenty of Grit",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "8NF-RdAkTTg",
+     "titulo": "Plenty of grit",
+     "canal": "Megumi Hayashibara - Topic",
+     "dur": 290,
+     "loudnessDb": 7.8400002,
+     "captions": null,
+     "consulta": "Slayers Try opening Plenty of Grit Megumi Hayashibara"
+    },
+    {
+     "id": "Y0NJaoVmSD0",
+     "titulo": "Slayers Try Op - Breeze - Megumi Hayashibara",
+     "canal": "El tío Hikigaya 0",
+     "dur": 261,
+     "loudnessDb": -5.7399998,
+     "captions": null,
+     "consulta": "Slayers Try opening Plenty of Grit Megumi Hayashibara"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-mobile-suit-gundam-wing-last-impression",
+   "id": "ani-mobile-suit-gundam-wing-last-impression",
+   "tema": "anime",
+   "cat": "anime-90s",
+   "game": "Mobile Suit Gundam Wing",
+   "title": "Last Impression",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "_MzTNVYdRXs",
+     "titulo": "LAST IMPRESSION (RADIO EDIT)",
+     "canal": "TWO-MIX - Topic",
+     "dur": 282,
+     "loudnessDb": 5.7600002,
+     "captions": null,
+     "consulta": "Gundam Wing ending Last Impression Two-Mix"
+    },
+    {
+     "id": "bAaYMcrppmI",
+     "titulo": "Gundam W Endless Waltz ending LAST IMPRESSION-Two mix",
+     "canal": "abc8830",
+     "dur": 396,
+     "loudnessDb": -5.0400009,
+     "captions": null,
+     "consulta": "Gundam Wing ending Last Impression Two-Mix"
+    }
+   ],
+   "apple": {
+    "song": 1562657965,
+    "country": "jp",
+    "titulo": "LAST IMPRESSION",
+    "artista": "TWO-MIX",
+    "album": "LAST IMPRESSION - EP"
+   }
+  },
+  {
+   "key": "ani-yu-yu-hakusho-taiyou-ga-mata-kagayaku-toki",
+   "id": "ani-yu-yu-hakusho-taiyou-ga-mata-kagayaku-toki",
+   "tema": "anime",
+   "cat": "anime-90s",
+   "game": "Yu Yu Hakusho",
+   "title": "Taiyou ga Mata Kagayaku Toki",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "1sQRbMbARCo",
+     "titulo": "Hiro Takahashi - Taiyou ga mata Kagayaku Toki (A Carta, Yu Yu Hakusho) Oficial Vídeo",
+     "canal": "Simba",
+     "dur": 317,
+     "loudnessDb": -3.5400009,
+     "captions": null,
+     "consulta": "Yu Yu Hakusho ending 3 Taiyou ga Mata Kagayaku Toki"
+    },
+    {
+     "id": "uS9RPajH_9Y",
+     "titulo": "太陽がまた輝くとき",
+     "canal": "Hiro Takahashi - Topic",
+     "dur": 321,
+     "loudnessDb": 0.11999989,
+     "captions": null,
+     "consulta": "Yu Yu Hakusho ending 3 Taiyou ga Mata Kagayaku Toki"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-mobile-suit-gundam-seed-invoke",
+   "id": "ani-mobile-suit-gundam-seed-invoke",
+   "tema": "anime",
+   "cat": "anime-00s",
+   "game": "Mobile Suit Gundam SEED",
+   "title": "INVOKE",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "a772kuDLGO8",
+     "titulo": "Mobile Suit Gundam Seed Opening 1 HD Remastered",
+     "canal": "xxGUNDAMSEEDxx",
+     "dur": 92,
+     "loudnessDb": 1.29,
+     "captions": null,
+     "consulta": "Mobile Suit Gundam SEED opening 1 Invoke T.M.Revolution"
+    },
+    {
+     "id": "rkcaLGdwXcs",
+     "titulo": "Invoke",
+     "canal": "T.M. Revolution - Topic",
+     "dur": 259,
+     "loudnessDb": 7.2800002,
+     "captions": null,
+     "consulta": "Mobile Suit Gundam SEED opening 1 Invoke T.M.Revolution"
+    }
+   ],
+   "apple": {
+    "song": 704508965,
+    "country": "mx",
+    "titulo": "Invoke",
+    "artista": "T.M.Revolution",
+    "album": "Geisha Boy (Anime Song Experience)"
+   }
+  },
+  {
+   "key": "ani-samurai-champloo-battlecry",
+   "id": "ani-samurai-champloo-battlecry",
+   "tema": "anime",
+   "cat": "anime-00s",
+   "game": "Samurai Champloo",
+   "title": "Battlecry",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "LC7-opq4Gik",
+     "titulo": "nujabes-battlecry",
+     "canal": "DAthirdgenKID",
+     "dur": 200,
+     "loudnessDb": 3.1800003,
+     "captions": null,
+     "consulta": "Samurai Champloo opening Battlecry Nujabes Shing02"
+    },
+    {
+     "id": "Eq6EYcpWB_c",
+     "titulo": "Samurai Champloo Opening | Battlecry",
+     "canal": "Crunchyroll",
+     "dur": 89,
+     "loudnessDb": -8.6700001,
+     "captions": null,
+     "consulta": "Samurai Champloo opening Battlecry Nujabes Shing02"
+    }
+   ],
+   "apple": {
+    "song": 1721842999,
+    "country": "mx",
+    "titulo": "Battlecry (feat. Shing02)",
+    "artista": "Nujabes",
+    "album": "Samurai Champloo Music Record Departure"
+   }
+  },
+  {
+   "key": "ani-elfen-lied-lilium",
+   "id": "ani-elfen-lied-lilium",
+   "tema": "anime",
+   "cat": "anime-00s",
+   "game": "Elfen Lied",
+   "title": "Lilium",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "f3KzmVblyHw",
+     "titulo": "Elfen Lied Lilum lyrics",
+     "canal": "slayer200270",
+     "dur": 182,
+     "loudnessDb": 2.6700001,
+     "captions": null,
+     "consulta": "Elfen Lied opening Lilium"
+    },
+    {
+     "id": "Pv69471Tv0w",
+     "titulo": "Elfen Lied Opening - Lilium 639 hz",
+     "canal": "An1s 愛",
+     "dur": 345,
+     "loudnessDb": -1.6899996,
+     "captions": null,
+     "consulta": "Elfen Lied opening Lilium"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-ghost-in-the-shell-stand-alone-complex-inner-universe",
+   "id": "ani-ghost-in-the-shell-stand-alone-complex-inner-universe",
+   "tema": "anime",
+   "cat": "anime-00s",
+   "game": "Ghost in the Shell: Stand Alone Complex",
+   "title": "Inner Universe",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "QxkMzn4et2U",
+     "titulo": "Ghost in the Shell: Stand Alone Complex Opening [True 1080p HD]",
+     "canal": "No Name",
+     "dur": 90,
+     "loudnessDb": 3.4099998,
+     "captions": null,
+     "consulta": "Ghost in the Shell Stand Alone Complex opening Inner Universe Origa"
+    },
+    {
+     "id": "fQonz5TXtPo",
+     "titulo": "inner universe / origa (Official Audio)",
+     "canal": "FlyingDog",
+     "dur": 295,
+     "loudnessDb": 5.2700005,
+     "captions": null,
+     "consulta": "Ghost in the Shell Stand Alone Complex opening Inner Universe Origa"
+    }
+   ],
+   "apple": {
+    "song": 423766416,
+    "country": "mx",
+    "titulo": "Inner Universe",
+    "artista": "Origa",
+    "album": "GHOST IN THE SHELL: STAND ALONE COMPLEX O.S.T.+"
+   }
+  },
+  {
+   "key": "ani-the-melancholy-of-haruhi-suzumiya-hare-hare-yukai",
+   "id": "ani-the-melancholy-of-haruhi-suzumiya-hare-hare-yukai",
+   "tema": "anime",
+   "cat": "anime-00s",
+   "game": "The Melancholy of Haruhi Suzumiya",
+   "title": "Hare Hare Yukai",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "DshAow74tLI",
+     "titulo": "Haruhi Suzumiya - Ending - Full Version!",
+     "canal": "Megamortal",
+     "dur": 223,
+     "loudnessDb": 7.48,
+     "captions": null,
+     "consulta": "Haruhi Suzumiya ending Hare Hare Yukai"
+    },
+    {
+     "id": "x2iKC0C32-g",
+     "titulo": "Suzumiya Haruhi Ending Special Version blu-ray (HD)",
+     "canal": "The best Hot Trap Girls SUBSCRIBE",
+     "dur": 71,
+     "loudnessDb": -4.8700008,
+     "captions": null,
+     "consulta": "Haruhi Suzumiya ending Hare Hare Yukai"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-k-on-cagayake-girls",
+   "id": "ani-k-on-cagayake-girls",
+   "tema": "anime",
+   "cat": "anime-00s",
+   "game": "K-On!",
+   "title": "Cagayake! GIRLS",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "qN41mx4tA0I",
+     "titulo": "K-ON! - Cagayake! GIRLS! | Kana",
+     "canal": "BoysDeadMonster",
+     "dur": 91,
+     "loudnessDb": -5.5499992,
+     "captions": null,
+     "consulta": "K-ON! OP Cagayake! GIRLS"
+    },
+    {
+     "id": "ua02dloykJ4",
+     "titulo": "Cagayake!GIRLS",
+     "canal": "Release - Topic",
+     "dur": 250,
+     "loudnessDb": 8.1300001,
+     "captions": null,
+     "consulta": "K-ON! OP Cagayake! GIRLS"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-naruto-shippuden-closer",
+   "id": "ani-naruto-shippuden-closer",
+   "tema": "anime",
+   "cat": "anime-00s",
+   "game": "Naruto Shippuden",
+   "title": "Closer",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "BTLFZ2DCjn0",
+     "titulo": "Naruto Shippuden - Opening 4 | Closer",
+     "canal": "Crunchyroll",
+     "dur": 100,
+     "loudnessDb": -1.3873148,
+     "captions": null,
+     "consulta": "Naruto Shippuden opening 4 Closer Joe Inoue"
+    },
+    {
+     "id": "4Cp0WgkgDbQ",
+     "titulo": "Joe Inoue - CLOSER",
+     "canal": "joeinoueVEVO",
+     "dur": 213,
+     "loudnessDb": 3.79,
+     "captions": null,
+     "consulta": "Naruto Shippuden opening 4 Closer Joe Inoue"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-puella-magi-madoka-magica-connect",
+   "id": "ani-puella-magi-madoka-magica-connect",
+   "tema": "anime",
+   "cat": "anime-10s",
+   "game": "Puella Magi Madoka Magica",
+   "title": "Connect",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "OrgpX-_bFqM",
+     "titulo": "Mahou Shoujo Madoka★Magica - Opening HD",
+     "canal": "Senpai Didn't Notice Me",
+     "dur": 90,
+     "loudnessDb": -3.9799995,
+     "captions": null,
+     "consulta": "ClariS Connect Puella Magi Madoka Magica opening"
+    },
+    {
+     "id": "DsX5L29tp1s",
+     "titulo": "Mahou Shoujo Madoka Magica - OPENING HOMURA VER. (Connect)",
+     "canal": "Youmuuu",
+     "dur": 91,
+     "loudnessDb": -6.1399994,
+     "captions": null,
+     "consulta": "ClariS Connect Puella Magi Madoka Magica opening"
+    }
+   ],
+   "apple": {
+    "song": 1011123384,
+    "country": "mx",
+    "titulo": "Connect",
+    "artista": "ClariS",
+    "album": "Claris - Single Best 1st"
+   }
+  },
+  {
+   "key": "ani-los-siete-pecados-capitales-temporada-1-netsujou-no",
+   "id": "ani-los-siete-pecados-capitales-temporada-1-netsujou-no",
+   "tema": "anime",
+   "cat": "anime-10s",
+   "game": "Los Siete Pecados Capitales (Temporada 1)",
+   "title": "Netsujou no Spectrum",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "GjyBMKotPLg",
+     "titulo": "Netsujou no Spectrum - Ikimono Gakari (NNT OP 1) [sub. esp/jap]",
+     "canal": "nochumiau",
+     "dur": 222,
+     "loudnessDb": 6.98,
+     "captions": null,
+     "consulta": "Ikimonogakari Netsujou no Spectrum Nanatsu no Taizai opening"
+    },
+    {
+     "id": "Oc9NgPgUO3E",
+     "titulo": "Ikimono gakari - Netsujou no Spectrum (Nanatsu no Taizai op) [Lyrics Video] | Fimy 1101",
+     "canal": "FimyKun",
+     "dur": 226,
+     "loudnessDb": 7.1199999,
+     "captions": null,
+     "consulta": "Ikimonogakari Netsujou no Spectrum Nanatsu no Taizai opening"
+    }
+   ],
+   "apple": {
+    "song": 1089186534,
+    "country": "mx",
+    "titulo": "Netsujo No Spectrum",
+    "artista": "Ikimonogakari",
+    "album": "Chou Ikimonobakari Tennen Kinen Members Best Selection"
+   }
+  },
+  {
+   "key": "ani-overlord-clattanoia",
+   "id": "ani-overlord-clattanoia",
+   "tema": "anime",
+   "cat": "anime-10s",
+   "game": "Overlord",
+   "title": "Clattanoia",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "v2NNIS9HYFA",
+     "titulo": "Overlord Opening Full - Clattanoia by OxT",
+     "canal": "Ashal",
+     "dur": 238,
+     "loudnessDb": 8.6700001,
+     "captions": null,
+     "consulta": "OxT Clattanoia Overlord opening"
+    },
+    {
+     "id": "saah9UTwaUI",
+     "titulo": "【MV】OxT「Clattanoia」Music Clip フルサイズ",
+     "canal": "mediafactory",
+     "dur": 235,
+     "loudnessDb": 10.09,
+     "captions": null,
+     "consulta": "OxT Clattanoia Overlord opening"
+    }
+   ],
+   "apple": {
+    "song": 1434513147,
+    "country": "mx",
+    "titulo": "Clattanoia",
+    "artista": "OxT",
+    "album": "Hello New World"
+   }
+  },
+  {
+   "key": "ani-parasyte-the-maxim-let-me-hear",
+   "id": "ani-parasyte-the-maxim-let-me-hear",
+   "tema": "anime",
+   "cat": "anime-10s",
+   "game": "Parasyte -the maxim-",
+   "title": "Let Me Hear",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "GeMKMLkaokg",
+     "titulo": "PARASYTE Kiseijuu: Sei no Kakuritsu Opening HD / Fear, And Loathing In Las Vegas - Let Me Hear",
+     "canal": "Gabryel Pedro",
+     "dur": 89,
+     "loudnessDb": -1.71,
+     "captions": null,
+     "consulta": "Fear and Loathing in Las Vegas Let Me Hear Parasyte opening"
+    },
+    {
+     "id": "D-SQqppuGvc",
+     "titulo": "［PV］Let Me Hear/Fear, and Loathing in Las Vegas",
+     "canal": "zenigame0123",
+     "dur": 234,
+     "loudnessDb": 12.24,
+     "captions": null,
+     "consulta": "Fear and Loathing in Las Vegas Let Me Hear Parasyte opening"
+    }
+   ],
+   "apple": {
+    "song": 1045437112,
+    "country": "mx",
+    "titulo": "Let Me Hear",
+    "artista": "Fear, and Loathing in Las Vegas",
+    "album": "Feeling of Unity"
+   }
+  },
+  {
+   "key": "ani-death-parade-flyers",
+   "id": "ani-death-parade-flyers",
+   "tema": "anime",
+   "cat": "anime-10s",
+   "game": "Death Parade",
+   "title": "Flyers",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "Ca5Tf5BDSYI",
+     "titulo": "Death Parade - Opening | Flyers",
+     "canal": "Crunchyroll",
+     "dur": 80,
+     "loudnessDb": -10.110001,
+     "captions": null,
+     "consulta": "BRADIO Flyers Death Parade opening"
+    },
+    {
+     "id": "9wh8FgsEtNQ",
+     "titulo": "BRADIO-Flyers【TVアニメ「デス・パレード」OP曲】(OFFICIAL VIDEO)",
+     "canal": "BRADIO",
+     "dur": 215,
+     "loudnessDb": 8.6800003,
+     "captions": null,
+     "consulta": "BRADIO Flyers Death Parade opening"
+    }
+   ],
+   "apple": {
+    "song": 997230490,
+    "country": "mx",
+    "titulo": "Flyers",
+    "artista": "BRADIO",
+    "album": "Flyers"
+   }
+  },
+  {
+   "key": "ani-sailor-moon-crystal-moon-pride",
+   "id": "ani-sailor-moon-crystal-moon-pride",
+   "tema": "anime",
+   "cat": "anime-10s",
+   "game": "Sailor Moon Crystal",
+   "title": "Moon Pride",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "c0Va228UhRs",
+     "titulo": "【ももクロMV】MOON PRIDE / ももいろクローバーZ（MOON PRIDE／MOMOIRO CLOVER Z \"PRETTY GUARDIAN SAILORMOON Crystal\"）",
+     "canal": "Momoiro Clover Z Channel",
+     "dur": 220,
+     "loudnessDb": -4.5300007,
+     "captions": null,
+     "consulta": "Momoiro Clover Z Moon Pride Sailor Moon Crystal opening"
+    },
+    {
+     "id": "MJWhszImkTc",
+     "titulo": "MOON PRIDE Sailor Moon Crystal Opening MULTILANGUAGE",
+     "canal": "giugiola123 giu",
+     "dur": 100,
+     "loudnessDb": 0,
+     "captions": null,
+     "consulta": "Momoiro Clover Z Moon Pride Sailor Moon Crystal opening"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-kuroko-no-basket-can-do",
+   "id": "ani-kuroko-no-basket-can-do",
+   "tema": "anime",
+   "cat": "anime-10s",
+   "game": "Kuroko no Basket",
+   "title": "Can Do",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "5RVEM8-UKlg",
+     "titulo": "Kuroko's Basketball - Opening 1 | Can Do",
+     "canal": "Crunchyroll",
+     "dur": 100,
+     "loudnessDb": -5.6299992,
+     "captions": null,
+     "consulta": "GRANRODEO Can Do Kuroko no Basket opening"
+    },
+    {
+     "id": "Gou49bzZrvo",
+     "titulo": "GRANRODEO / Can Do",
+     "canal": "Lantis Global Channel",
+     "dur": 279,
+     "loudnessDb": -4.1599998,
+     "captions": null,
+     "consulta": "GRANRODEO Can Do Kuroko no Basket opening"
+    }
+   ],
+   "apple": {
+    "song": 1745968087,
+    "country": "mx",
+    "titulo": "Can Do",
+    "artista": "GRANRODEO",
+    "album": "CRACK STAR FLASH"
+   }
+  },
+  {
+   "key": "ani-ao-no-exorcist-core-pride",
+   "id": "ani-ao-no-exorcist-core-pride",
+   "tema": "anime",
+   "cat": "anime-10s",
+   "game": "Ao no Exorcist",
+   "title": "Core Pride",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "Avs-yTQ53cI",
+     "titulo": "Core Pride",
+     "canal": "UVERworld - Topic",
+     "dur": 259,
+     "loudnessDb": 8.2299995,
+     "captions": null,
+     "consulta": "UVERworld Core Pride Ao no Exorcist opening"
+    },
+    {
+     "id": "fSks0H1wcqc",
+     "titulo": "Blue Exorcist Opening 1 full [ORIGINAL]",
+     "canal": "Anopex Z",
+     "dur": 259,
+     "loudnessDb": 8.2199993,
+     "captions": null,
+     "consulta": "UVERworld Core Pride Ao no Exorcist opening"
+    }
+   ],
+   "apple": {
+    "song": 1633199822,
+    "country": "mx",
+    "titulo": "CORE PRIDE (Instrumental)",
+    "artista": "UVERworld",
+    "album": "INSTRUMENTALS-∞"
+   }
+  },
+  {
+   "key": "ani-konosuba-god-s-blessing-on-this-wonderful-world",
+   "id": "ani-konosuba-god-s-blessing-on-this-wonderful-world",
+   "tema": "anime",
+   "cat": "anime-10s",
+   "game": "KonoSuba: God's Blessing on This Wonderful World!",
+   "title": "Fantastic Dreamer",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "fpG3BPNQepY",
+     "titulo": "KONOSUBA -God's blessing on this wonderful world! Opening | Fantastic Dreamer by Machico",
+     "canal": "Crunchyroll",
+     "dur": 100,
+     "loudnessDb": -9.6028385,
+     "captions": null,
+     "consulta": "Machico Fantastic Dreamer KonoSuba opening"
+    },
+    {
+     "id": "lFLMh-nIgZs",
+     "titulo": "Machico / fantastic dreamer(TVアニメ「この素晴らしい世界に祝福を！」オープニング・テーマ)",
+     "canal": "日本コロムビア 公式YouTubeチャンネル",
+     "dur": 112,
+     "loudnessDb": 2.6000004,
+     "captions": null,
+     "consulta": "Machico Fantastic Dreamer KonoSuba opening"
+    }
+   ],
+   "apple": {
+    "song": 1485837923,
+    "country": "mx",
+    "titulo": "Fantastic Dreamer",
+    "artista": "Machico",
+    "album": "Fantastic Dreamer (Kono Subarashii Sekai Ni Syukufuku Wo! Opening Theme) - EP"
+   }
+  },
+  {
+   "key": "ani-angel-beats-my-soul-your-beats",
+   "id": "ani-angel-beats-my-soul-your-beats",
+   "tema": "anime",
+   "cat": "anime-10s",
+   "game": "Angel Beats!",
+   "title": "My Soul, Your Beats!",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "Eksw56g-WBY",
+     "titulo": "Angel Beats Opening (HD1080p Subbed)",
+     "canal": "Tralfazz74",
+     "dur": 90,
+     "loudnessDb": -8.4500008,
+     "captions": null,
+     "consulta": "Lia My Soul Your Beats Angel Beats opening"
+    },
+    {
+     "id": "al6Z7Z_fN-k",
+     "titulo": "My Soul, Your Beats!",
+     "canal": "Lia - Topic",
+     "dur": 275,
+     "loudnessDb": 4.5799999,
+     "captions": null,
+     "consulta": "Lia My Soul Your Beats Angel Beats opening"
+    }
+   ],
+   "apple": {
+    "song": 838213289,
+    "country": "mx",
+    "titulo": "My Soul, Your Beats!",
+    "artista": "Lia & VISUAL ARTS / Key",
+    "album": "TVアニメーション『Angel Beats!』OP&ED My Soul, Your Beats! / Brave Song - EP"
+   }
+  },
+  {
+   "key": "ani-yuri-on-ice-history-maker",
+   "id": "ani-yuri-on-ice-history-maker",
+   "tema": "anime",
+   "cat": "anime-10s",
+   "game": "Yuri!!! on Ice",
+   "title": "History Maker",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "5u3RGhznctE",
+     "titulo": "Yuri!!! on Ice Opening ''History Maker'' DEAN FUJIOKA",
+     "canal": "Peyamori",
+     "dur": 90,
+     "loudnessDb": -8.7299995,
+     "captions": null,
+     "consulta": "Dean Fujioka History Maker Yuri on Ice opening"
+    },
+    {
+     "id": "nnEOS5kupuc",
+     "titulo": "DEAN FUJIOKA - \"History Maker 〜HITM Ver.〜\" Music Video",
+     "canal": "DEAN FUJIOKA",
+     "dur": 205,
+     "loudnessDb": 8.1499996,
+     "captions": null,
+     "consulta": "Dean Fujioka History Maker Yuri on Ice opening"
+    }
+   ],
+   "apple": {
+    "song": 1840119825,
+    "country": "mx",
+    "titulo": "History Maker",
+    "artista": "DEAN FUJIOKA",
+    "album": "History Maker - Single"
+   }
+  },
+  {
+   "key": "ani-aldnoah-zero-aliez",
+   "id": "ani-aldnoah-zero-aliez",
+   "tema": "anime",
+   "cat": "anime-10s",
+   "game": "Aldnoah.Zero",
+   "title": "aLIEz",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "dNGiRuLABgI",
+     "titulo": "aLIEz",
+     "canal": "Hiroyuki SAWANO - Topic",
+     "dur": 268,
+     "loudnessDb": 5.96,
+     "captions": null,
+     "consulta": "aLIEz SawanoHiroyuki nZk mizuki Aldnoah.Zero opening"
+    },
+    {
+     "id": "wtW529XbOyU",
+     "titulo": "Sawano Hiroyuki - aLIEz Aldnoah.Zero Full Lyrics",
+     "canal": "Hime Nekoxion",
+     "dur": 269,
+     "loudnessDb": 5.96,
+     "captions": null,
+     "consulta": "aLIEz SawanoHiroyuki nZk mizuki Aldnoah.Zero opening"
+    }
+   ],
+   "apple": {
+    "song": 1536128950,
+    "country": "mx",
+    "titulo": "aLIEz (feat. mizuki)",
+    "artista": "SawanoHiroyuki[nZk]",
+    "album": "A/ZaLIEz"
+   }
+  },
+  {
+   "key": "ani-ataque-a-los-titanes-temporada-final-my-war",
+   "id": "ani-ataque-a-los-titanes-temporada-final-my-war",
+   "tema": "anime",
+   "cat": "anime-20s",
+   "game": "Ataque a los titanes (Temporada Final)",
+   "title": "My War",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "P75q_3Qlrqg",
+     "titulo": "Attack on Titan Final Season - Opening 1 | My War",
+     "canal": "Crunchyroll",
+     "dur": 106,
+     "loudnessDb": -4.4899998,
+     "captions": null,
+     "consulta": "Shinsei Kamattechan My War Attack on Titan Final Season opening"
+    },
+    {
+     "id": "Y-eoYLBbZOA",
+     "titulo": "Attack on Titan Opening 6 — My War [1080p 60FPS]",
+     "canal": "Synapse",
+     "dur": 90,
+     "loudnessDb": -4.2000008,
+     "captions": null,
+     "consulta": "Shinsei Kamattechan My War Attack on Titan Final Season opening"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-jujutsu-kaisen-temporada-2-hidden-inventory-akari",
+   "id": "ani-jujutsu-kaisen-temporada-2-hidden-inventory-akari",
+   "tema": "anime",
+   "cat": "anime-20s",
+   "game": "Jujutsu Kaisen (Temporada 2: Hidden Inventory)",
+   "title": "Akari",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "lWvw4rSwxM0",
+     "titulo": "Jujutsu Kaisen Season 2 - Ending FULL \"AKARI\" by Soushi Sakiyama (Lyrics)",
+     "canal": "Jamong",
+     "dur": 239,
+     "loudnessDb": 6.98,
+     "captions": null,
+     "consulta": "Soushi Sakiyama Akari Jujutsu Kaisen Season 2 ending"
+    },
+    {
+     "id": "4jWzGkRsHw8",
+     "titulo": "崎山蒼志 Soushi Sakiyama / 燈 Akari [Official Music Video]",
+     "canal": "崎山蒼志",
+     "dur": 249,
+     "loudnessDb": 7.3899999,
+     "captions": null,
+     "consulta": "Soushi Sakiyama Akari Jujutsu Kaisen Season 2 ending"
+    }
+   ],
+   "apple": {
+    "song": 1692289427,
+    "country": "us",
+    "titulo": "Akari",
+    "artista": "Soushi Sakiyama",
+    "album": "Akari - EP"
+   }
+  },
+  {
+   "key": "ani-black-clover-black-catcher",
+   "id": "ani-black-clover-black-catcher",
+   "tema": "anime",
+   "cat": "anime-20s",
+   "game": "Black Clover",
+   "title": "Black Catcher",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "XMeQeIG_rQg",
+     "titulo": "Black Clover Opening 10 | Black Catcher",
+     "canal": "Crunchyroll",
+     "dur": 100,
+     "loudnessDb": -2.5499992,
+     "captions": null,
+     "consulta": "Vickeblanka Black Catcher Black Clover opening 10"
+    },
+    {
+     "id": "5C8yvJUVB-0",
+     "titulo": "Black Clover Opening 10 Full『Black Catcher』by Vickeblanka | Lyrics",
+     "canal": "Black Clover Music Collection",
+     "dur": 232,
+     "loudnessDb": 6.2358122,
+     "captions": null,
+     "consulta": "Vickeblanka Black Catcher Black Clover opening 10"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-beastars-temporada-2-kaibutsu",
+   "id": "ani-beastars-temporada-2-kaibutsu",
+   "tema": "anime",
+   "cat": "anime-20s",
+   "game": "Beastars (Temporada 2)",
+   "title": "Kaibutsu",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "-5M4lbEpn6c",
+     "titulo": "BEASTARS Season 2 OP (Clean) | Kaibutsu - YOASOBI | Netflix Anime",
+     "canal": "Netflix Anime",
+     "dur": 112,
+     "loudnessDb": 6.4499998,
+     "captions": null,
+     "consulta": "YOASOBI Kaibutsu Beastars Season 2 opening"
+    },
+    {
+     "id": "RONqA3zb4FE",
+     "titulo": "「Creditless」Beastars OP / Opening 2「UHD 60FPS」",
+     "canal": "TriaxFx",
+     "dur": 116,
+     "loudnessDb": 2.8100004,
+     "captions": null,
+     "consulta": "YOASOBI Kaibutsu Beastars Season 2 opening"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-mushoku-tensei-jobless-reincarnation-temporada-1",
+   "id": "ani-mushoku-tensei-jobless-reincarnation-temporada-1",
+   "tema": "anime",
+   "cat": "anime-20s",
+   "game": "Mushoku Tensei: Jobless Reincarnation (Temporada 1)",
+   "title": "Tabibito no Uta",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "pEoCT-Kv5CI",
+     "titulo": "Mushoku Tensei - Opening 『Tabibito no Uta』by Yuiko Ohara",
+     "canal": "izuka yuki",
+     "dur": 89,
+     "loudnessDb": 2.1199999,
+     "captions": null,
+     "consulta": "Yuiko Ohara Tabibito no Uta Mushoku Tensei opening"
+    },
+    {
+     "id": "QG8UZUahRbI",
+     "titulo": "Mushoku Tensei - Opening Full『Tabibito no Uta』by Yuiko Ohara (Lyrics)",
+     "canal": "Kiranime",
+     "dur": 280,
+     "loudnessDb": 6.8800001,
+     "captions": null,
+     "consulta": "Yuiko Ohara Tabibito no Uta Mushoku Tensei opening"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "ani-solo-leveling-temporada-2-arise-from-the-shadow-reawaker",
+   "id": "ani-solo-leveling-temporada-2-arise-from-the-shadow-reawaker",
+   "tema": "anime",
+   "cat": "anime-20s",
+   "game": "Solo Leveling (Temporada 2: Arise from the Shadow)",
+   "title": "ReawakeR",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "oe4XJ851oOk",
+     "titulo": "LiSA『ReawakeR (feat. Felix of Stray Kids)』MUSiC CLiP",
+     "canal": "LiSA Official YouTube",
+     "dur": 192,
+     "loudnessDb": 4.8900003,
+     "captions": null,
+     "consulta": "LiSA ReawakeR feat. Felix of Stray Kids Solo Leveling Season 2 opening"
+    },
+    {
+     "id": "C0zMWogztQs",
+     "titulo": "Solo Leveling Season 2 -Arise from the Shadow- Opening | \"ReawakeR\" by LiSA feat Felix of Stray Kids",
+     "canal": "Crunchyroll",
+     "dur": 100,
+     "loudnessDb": -2.9599991,
+     "captions": null,
+     "consulta": "LiSA ReawakeR feat. Felix of Stray Kids Solo Leveling Season 2 opening"
+    }
+   ],
+   "apple": {
+    "song": 1783371197,
+    "country": "mx",
+    "titulo": "ReawakeR (feat. Felix of Stray Kids)",
+    "artista": "LiSA feat. Felix of Stray Kids",
+    "album": "ReawakeR (feat. Felix of Stray Kids) - Single"
+   }
+  },
+  {
+   "key": "ani-re-zero-starting-life-in-another-world-temporada-3",
+   "id": "ani-re-zero-starting-life-in-another-world-temporada-3",
+   "tema": "anime",
+   "cat": "anime-20s",
+   "game": "Re:Zero − Starting Life in Another World (Temporada 3)",
+   "title": "Reweave",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "hCxZx7uHO1I",
+     "titulo": "Re:ZERO -Starting Life in Another World- Season 3 Opening | \"Reweave\" by Konomi Suzuki",
+     "canal": "Crunchyroll",
+     "dur": 100,
+     "loudnessDb": -4.75,
+     "captions": null,
+     "consulta": "Konomi Suzuki Reweave Re:Zero Season 3 opening"
+    },
+    {
+     "id": "Tp4ay4fIw30",
+     "titulo": "Re:Zero Season 3 - Opening FULL ''Reweave\" by Konomi Suzuki (Lyrics)",
+     "canal": "Jamong",
+     "dur": 241,
+     "loudnessDb": 7.8499999,
+     "captions": null,
+     "consulta": "Konomi Suzuki Reweave Re:Zero Season 3 opening"
+    }
+   ],
+   "apple": {
+    "song": 1766032830,
+    "country": "mx",
+    "titulo": "Reweave",
+    "artista": "Konomi Suzuki",
+    "album": "Reweave - Single"
+   }
+  },
+  {
+   "key": "ani-overlord-temporada-4-voracity",
+   "id": "ani-overlord-temporada-4-voracity",
+   "tema": "anime",
+   "cat": "anime-20s",
+   "game": "Overlord (Temporada 4)",
+   "title": "VORACITY",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "XPOIe6WdhPQ",
+     "titulo": "VORACITY",
+     "canal": "MYTH & ROID - Topic",
+     "dur": 232,
+     "loudnessDb": 7.2399998,
+     "captions": null,
+     "consulta": "MYTH & ROID VORACITY Overlord IV opening"
+    },
+    {
+     "id": "RlnAOQln8jI",
+     "titulo": "[Opening 3] Overlord | MYTH & ROID - VORACITY lyrics (romaji and kanji)",
+     "canal": "Foxielyrics",
+     "dur": 231,
+     "loudnessDb": 7.71,
+     "captions": null,
+     "consulta": "Overlord Season 4 OP VORACITY MYTH ROID full"
+    }
+   ],
+   "apple": {
+    "song": 1410709847,
+    "country": "mx",
+    "titulo": "VORACITY",
+    "artista": "MYTH & ROID",
+    "album": "TVアニメ「オーバーロードIII」オープニングテーマ「VORACITY」 - EP"
+   }
+  },
+  {
+   "key": "ani-la-princesa-mononoke-mononoke-hime",
+   "id": "ani-la-princesa-mononoke-mononoke-hime",
+   "tema": "anime",
+   "cat": "anime-90s",
+   "game": "La princesa Mononoke",
+   "title": "Mononoke Hime",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "cS9LnZGkfW4",
+     "titulo": "Yoshikazu Mera - Mononoke Hime (Princess Mononoke)   米良美一 : もののけ姫      메라 요시카즈 : 원령공주",
+     "canal": "Korean.neri92",
+     "dur": 206,
+     "loudnessDb": -5.3700008,
+     "captions": null,
+     "consulta": "Mononoke Hime Yoshikazu Mera"
+    },
+    {
+     "id": "AAVtZWk1FHo",
+     "titulo": "Yoshikazu Mera - Mononoke Hime (Princess Mononoke)",
+     "canal": "T Johnny",
+     "dur": 208,
+     "loudnessDb": -10.379999,
+     "captions": null,
+     "consulta": "Mononoke Hime Yoshikazu Mera"
+    }
+   ],
+   "apple": {
+    "song": 883501073,
+    "country": "mx",
+    "titulo": "La princesa Mononoke (Versión vocal)",
+    "artista": "Joe Hisaishi & Yoshikazu Mera",
+    "album": "La princesa Mononoke"
+   }
+  },
+  {
+   "key": "super-mario-bros-underground-theme",
+   "id": "super-mario-bros-underground-theme",
+   "tema": "juegos",
+   "cat": "nintendo",
+   "game": "Super Mario Bros.",
+   "title": "Underground Theme",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "c0SuIMUoShI",
+     "titulo": "Super Mario Bros. Underground Theme",
+     "canal": "teamrocketspy621",
+     "dur": 73,
+     "loudnessDb": -7.1000004,
+     "captions": null,
+     "consulta": "Super Mario Bros. NES Underground Theme Koji Kondo"
+    },
+    {
+     "id": "K3Ew9IgYhWc",
+     "titulo": "SSBB music - Super Mario Bros.: Underground Theme",
+     "canal": "SSBBechimetal",
+     "dur": 171,
+     "loudnessDb": 0.079999924,
+     "captions": null,
+     "consulta": "Super Mario Bros. OST Underground Theme"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "super-mario-64-cool-cool-mountain",
+   "id": "super-mario-64-cool-cool-mountain",
+   "tema": "juegos",
+   "cat": "nintendo",
+   "game": "Super Mario 64",
+   "title": "Cool, Cool Mountain",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "zzxHzfvA1sI",
+     "titulo": "Super Mario 64 - Cool Cool Mountain Music",
+     "canal": "mkWIIfreak27",
+     "dur": 212,
+     "loudnessDb": -1.2299995,
+     "captions": null,
+     "consulta": "Super Mario 64 OST Cool, Cool Mountain"
+    },
+    {
+     "id": "LOADdASJnak",
+     "titulo": "Super Mario 64 Soundtrack - Cool, Cool Mountain",
+     "canal": "RadiatorRampardos",
+     "dur": 179,
+     "loudnessDb": -1.2299995,
+     "captions": null,
+     "consulta": "Super Mario 64 OST Cool, Cool Mountain"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "super-mario-galaxy-rosalina-in-the-observatory",
+   "id": "super-mario-galaxy-rosalina-in-the-observatory",
+   "tema": "juegos",
+   "cat": "nintendo",
+   "game": "Super Mario Galaxy",
+   "title": "Rosalina in the Observatory",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "wsGCz59acG0",
+     "titulo": "⭐ Super Smash Bros. Ultimate~ Rosalina in the Observatory / Luma's Theme ⭐",
+     "canal": "Ultimate Gaming Music Studios",
+     "dur": 234,
+     "loudnessDb": 2.6499996,
+     "captions": null,
+     "consulta": "Super Mario Galaxy OST Rosalina in the Observatory"
+    },
+    {
+     "id": "jO6DkVhKaYg",
+     "titulo": "Rosalina in the Observatory (Version 1) - Super Mario Galaxy OST",
+     "canal": "Classic Game Music",
+     "dur": 145,
+     "loudnessDb": -7.1100006,
+     "captions": null,
+     "consulta": "Super Mario Galaxy Music Rosalina in the Observatory Mahito Yokota"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "super-mario-sunshine-bianco-hills",
+   "id": "super-mario-sunshine-bianco-hills",
+   "tema": "juegos",
+   "cat": "nintendo",
+   "game": "Super Mario Sunshine",
+   "title": "Bianco Hills",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "mYh6MSdsKj8",
+     "titulo": "Bianco Hills",
+     "canal": "Almepola VGM",
+     "dur": 166,
+     "loudnessDb": -2.6200008,
+     "captions": null,
+     "consulta": "Super Mario Sunshine OST Bianco Hills"
+    },
+    {
+     "id": "nx1A1xStMRs",
+     "titulo": "Super Mario Sunshine Soundtrack - Bianco Hills",
+     "canal": "RadiatorRampardos",
+     "dur": 167,
+     "loudnessDb": -4.0799999,
+     "captions": null,
+     "consulta": "Super Mario Sunshine OST Bianco Hills"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "super-mario-land-birabuto-kingdom",
+   "id": "super-mario-land-birabuto-kingdom",
+   "tema": "juegos",
+   "cat": "nintendo",
+   "game": "Super Mario Land",
+   "title": "Birabuto Kingdom",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "h90bzs59Bkw",
+     "titulo": "Birabuto Kingdom (Overworld)",
+     "canal": "Parakeet",
+     "dur": 30,
+     "loudnessDb": 1.25,
+     "captions": null,
+     "consulta": "Super Mario Land Game Boy Birabuto Kingdom"
+    },
+    {
+     "id": "4b9RvENE9QY",
+     "titulo": "Super Mario Land Arranged Music: Birabuto Kingdom",
+     "canal": "BogleDominic6",
+     "dur": 176,
+     "loudnessDb": -0.18999958,
+     "captions": null,
+     "consulta": "Super Mario Land Game Boy Birabuto Kingdom"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "super-mario-world-athletic-theme",
+   "id": "super-mario-world-athletic-theme",
+   "tema": "juegos",
+   "cat": "nintendo",
+   "game": "Super Mario World",
+   "title": "Athletic Theme",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "o-bN2lnE1Lc",
+     "titulo": "Koji Kondo - Athletic Theme (Super Mario World)",
+     "canal": "PPF",
+     "dur": 174,
+     "loudnessDb": -2.3299999,
+     "captions": null,
+     "consulta": "Super Mario World SNES Athletic Theme Koji Kondo"
+    },
+    {
+     "id": "XF2fA1epvLE",
+     "titulo": "[GilvaSunner Reupload] Athletic Theme - Super Mario World",
+     "canal": "like wow.",
+     "dur": 160,
+     "loudnessDb": -0.19993019,
+     "captions": null,
+     "consulta": "Super Mario World OST Athletic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "super-mario-odyssey-steam-gardens",
+   "id": "super-mario-odyssey-steam-gardens",
+   "tema": "juegos",
+   "cat": "nintendo",
+   "game": "Super Mario Odyssey",
+   "title": "Steam Gardens",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "OhogRNHLW30",
+     "titulo": "Steam Gardens- Super Mario Odyssey",
+     "canal": "Nintentions Music",
+     "dur": 224,
+     "loudnessDb": 4.2200003,
+     "captions": null,
+     "consulta": "Super Mario Odyssey OST Steam Gardens"
+    },
+    {
+     "id": "memk0kUVhfE",
+     "titulo": "Steam Gardens (Super Mario Odyssey) (Night) - Mario Kart World (OST)",
+     "canal": "WiiPlayz",
+     "dur": 178,
+     "loudnessDb": -2.1900005,
+     "captions": null,
+     "consulta": "Super Mario Odyssey OST Steam Gardens"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "the-legend-of-zelda-overworld-theme",
+   "id": "the-legend-of-zelda-overworld-theme",
+   "tema": "juegos",
+   "cat": "nintendo",
+   "game": "The Legend of Zelda",
+   "title": "Overworld Theme",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "lpEzYEoV9qY",
+     "titulo": "The Legend of Zelda - Overworld",
+     "canal": "Skibicks123",
+     "dur": 107,
+     "loudnessDb": -6.6800003,
+     "captions": null,
+     "consulta": "The Legend of Zelda NES Overworld Theme Koji Kondo"
+    },
+    {
+     "id": "AHJxSo4cDMA",
+     "titulo": "The Legend of Zelda: Overworld Theme - Koji Kondo",
+     "canal": "Bunnysmacker Plays",
+     "dur": 173,
+     "loudnessDb": -3.4599991,
+     "captions": null,
+     "consulta": "The Legend of Zelda NES Overworld Theme Koji Kondo"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "the-legend-of-zelda-ocarina-of-time-song-of-storms",
+   "id": "the-legend-of-zelda-ocarina-of-time-song-of-storms",
+   "tema": "juegos",
+   "cat": "nintendo",
+   "game": "The Legend of Zelda: Ocarina of Time",
+   "title": "Song of Storms",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "UtgHZaq0EGs",
+     "titulo": "Zelda Original Soundtrack - Song of Storms",
+     "canal": "DrSuperMarioMan6464",
+     "dur": 99,
+     "loudnessDb": -0.97999954,
+     "captions": null,
+     "consulta": "Zelda Ocarina of Time OST Song of Storms"
+    },
+    {
+     "id": "VxqtlMtYYOk",
+     "titulo": "The Legend of Zelda Orchestra - Song of Storms - Saria's Song.",
+     "canal": "XirtamNG",
+     "dur": 115,
+     "loudnessDb": -1.8199997,
+     "captions": null,
+     "consulta": "Zelda Ocarina of Time OST Song of Storms"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "the-legend-of-zelda-ocarina-of-time-zelda-s-lullaby",
+   "id": "the-legend-of-zelda-ocarina-of-time-zelda-s-lullaby",
+   "tema": "juegos",
+   "cat": "nintendo",
+   "game": "The Legend of Zelda: Ocarina of Time",
+   "title": "Zelda's Lullaby",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "EPhfbtjqWM8",
+     "titulo": "Zelda Ocarina Of Time - Zelda's Lullaby",
+     "canal": "xkiki94x",
+     "dur": 101,
+     "loudnessDb": 3.2299995,
+     "captions": null,
+     "consulta": "Zelda's Lullaby Ocarina of Time OST"
+    },
+    {
+     "id": "igGDoNPPTd4",
+     "titulo": "Hyrule Symphony - Zelda's Lullaby",
+     "canal": "PaperLink64",
+     "dur": 186,
+     "loudnessDb": -2.8099995,
+     "captions": null,
+     "consulta": "Zelda's Lullaby Ocarina of Time OST"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "the-legend-of-zelda-the-wind-waker-outset-island",
+   "id": "the-legend-of-zelda-the-wind-waker-outset-island",
+   "tema": "juegos",
+   "cat": "nintendo",
+   "game": "The Legend of Zelda: The Wind Waker",
+   "title": "Outset Island",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "vwMCZ6B499c",
+     "titulo": "Outset Island - The Legend of Zelda: The Wind Waker OST",
+     "canal": "Video Game Music",
+     "dur": 127,
+     "loudnessDb": -4.0799999,
+     "captions": null,
+     "consulta": "Zelda The Wind Waker OST Outset Island"
+    },
+    {
+     "id": "uG960gmNiKY",
+     "titulo": "Legend of Zelda -Wind Waker Outset Island song",
+     "canal": "MudkipsLikeYou",
+     "dur": 123,
+     "loudnessDb": -4.0799999,
+     "captions": null,
+     "consulta": "Zelda The Wind Waker OST Outset Island"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "pokemon-red-and-blue-pallet-town-theme",
+   "id": "pokemon-red-and-blue-pallet-town-theme",
+   "tema": "juegos",
+   "cat": "nintendo",
+   "game": "Pokémon Red & Blue",
+   "title": "Pallet Town Theme",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "cOWRNLaCMJg",
+     "titulo": "Pokemon Blue/Red - Pallet Town",
+     "canal": "pokemonmusicmaster",
+     "dur": 72,
+     "loudnessDb": -0.18000031,
+     "captions": null,
+     "consulta": "Pokemon Red Blue OST Pallet Town Theme"
+    },
+    {
+     "id": "kO09V19wwlE",
+     "titulo": "Pallet Town - Pokémon Red/Blue/Yellow Soundtrack",
+     "canal": "Daintii Music",
+     "dur": 72,
+     "loudnessDb": 0.039999962,
+     "captions": null,
+     "consulta": "Pokemon Red Blue OST Pallet Town Theme"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "halo-combat-evolved-truth-and-reconciliation-suite",
+   "id": "halo-combat-evolved-truth-and-reconciliation-suite",
+   "tema": "juegos",
+   "cat": "xbox",
+   "game": "Halo: Combat Evolved",
+   "title": "Truth and Reconciliation Suite",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "lj91a6W91J8",
+     "titulo": "Halo: Combat Evolved OST 02 Truth and Reconciliation Suite",
+     "canal": "Oliver Udholm",
+     "dur": 506,
+     "loudnessDb": -2.1200008,
+     "captions": null,
+     "consulta": "Halo Combat Evolved OST Truth and Reconciliation Suite"
+    },
+    {
+     "id": "SB6y9q4hEQw",
+     "titulo": "Halo Combat Evolved OST #2 Truth And Reconciliation Suite",
+     "canal": "Master John Chief",
+     "dur": 506,
+     "loudnessDb": -1.8299999,
+     "captions": null,
+     "consulta": "Halo Combat Evolved OST Truth and Reconciliation Suite"
+    }
+   ],
+   "apple": {
+    "song": 1682519548,
+    "country": "us",
+    "titulo": "Truth and Reconciliation Suite",
+    "artista": "Martin O'Donnell & Michael Salvatori",
+    "album": "Halo: Combat Evolved (Original Soundtrack)"
+   }
+  },
+  {
+   "key": "halo-3-never-forget",
+   "id": "halo-3-never-forget",
+   "tema": "juegos",
+   "cat": "xbox",
+   "game": "Halo 3",
+   "title": "Never Forget",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "JX5O3n9K_d0",
+     "titulo": "Halo 3 OST - Never Forget",
+     "canal": "Kaidon",
+     "dur": 188,
+     "loudnessDb": -3.7000008,
+     "captions": null,
+     "consulta": "Halo 3 OST Never Forget Martin O'Donnell"
+    },
+    {
+     "id": "OOHXjgEY_RQ",
+     "titulo": "Halo 3 OST - Never Forget",
+     "canal": "Kusovai",
+     "dur": 188,
+     "loudnessDb": -3.6100006,
+     "captions": null,
+     "consulta": "Halo 3 OST Never Forget Martin O'Donnell"
+    }
+   ],
+   "apple": {
+    "song": 1682510979,
+    "country": "us",
+    "titulo": "Never Forget",
+    "artista": "Martin O'Donnell & Michael Salvatori",
+    "album": "Halo 3 (Original Soundtrack)"
+   }
+  },
+  {
+   "key": "halo-reach-winter-contingency",
+   "id": "halo-reach-winter-contingency",
+   "tema": "juegos",
+   "cat": "xbox",
+   "game": "Halo: Reach",
+   "title": "Winter Contingency",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "7u-3FLjO9u0",
+     "titulo": "Halo Reach Soundtrack - (Winter Contingency) Noble Mission",
+     "canal": "The Hosphourian",
+     "dur": 128,
+     "loudnessDb": 0.71000004,
+     "captions": null,
+     "consulta": "Halo Reach OST Winter Contingency"
+    },
+    {
+     "id": "J8TFs9nbM78",
+     "titulo": "Halo Reach Soundtrack - (Winter Contingency) Arrival In Visegrad",
+     "canal": "The Hosphourian",
+     "dur": 71,
+     "loudnessDb": -0.52999973,
+     "captions": null,
+     "consulta": "Winter Contingency Halo Reach Martin O'Donnell"
+    }
+   ],
+   "apple": {
+    "song": 1682514374,
+    "country": "us",
+    "titulo": "Winter Contingency",
+    "artista": "Martin O'Donnell & Michael Salvatori",
+    "album": "Halo: Reach (Original Soundtrack)"
+   }
+  },
+  {
+   "key": "halo-3-odst-rain",
+   "id": "halo-3-odst-rain",
+   "tema": "juegos",
+   "cat": "xbox",
+   "game": "Halo 3: ODST",
+   "title": "Rain",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "yWh9l8RSkPk",
+     "titulo": "Halo 3 ODST: Original Soundtrack - 04 Rain (Deference for Darkness)",
+     "canal": "jesskamo",
+     "dur": 190,
+     "loudnessDb": -6.9400005,
+     "captions": null,
+     "consulta": "Halo 3 ODST OST Rain Martin O'Donnell"
+    },
+    {
+     "id": "346rm-hPLA4",
+     "titulo": "Halo 3: ODST Disc 1 OST 04 Deference for Darkness",
+     "canal": "Oliver Udholm",
+     "dur": 399,
+     "loudnessDb": -6.3999996,
+     "captions": null,
+     "consulta": "Halo 3 ODST OST Rain Martin O'Donnell"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "halo-4-green-and-blue",
+   "id": "halo-4-green-and-blue",
+   "tema": "juegos",
+   "cat": "xbox",
+   "game": "Halo 4",
+   "title": "Green and Blue",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "4j8XkJ0NRNM",
+     "titulo": "Green and Blue",
+     "canal": "Halo - Topic",
+     "dur": 481,
+     "loudnessDb": 3.1300001,
+     "captions": null,
+     "consulta": "Halo 4 OST Green and Blue Neil Davidge"
+    },
+    {
+     "id": "j0EFFf3dMkE",
+     "titulo": "Neil Davidge - Green & Blue (Halo 4 Soundtrack)",
+     "canal": "Chillout Dumas",
+     "dur": 484,
+     "loudnessDb": null,
+     "captions": null,
+     "consulta": "Halo 4 OST Green and Blue Neil Davidge"
+    }
+   ],
+   "apple": {
+    "song": 776715863,
+    "country": "us",
+    "titulo": "Green and Blue",
+    "artista": "Neil Davidge",
+    "album": "Halo 4 (Original Soundtrack) [Deluxe Edition]"
+   }
+  },
+  {
+   "key": "metal-gear-solid-encounter",
+   "id": "metal-gear-solid-encounter",
+   "tema": "juegos",
+   "cat": "playstation",
+   "game": "Metal Gear Solid",
+   "title": "Encounter",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "CezFbGDrB8A",
+     "titulo": "Metal Gear Solid - Encounter - Orchestra Version",
+     "canal": "Rich Douglas",
+     "dur": 150,
+     "loudnessDb": 3.5500002,
+     "captions": null,
+     "consulta": "Metal Gear Solid 1998 music Encounter"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "metal-gear-solid-2-sons-of-liberty-metal-gear-solid-2-main",
+   "id": "metal-gear-solid-2-sons-of-liberty-metal-gear-solid-2-main",
+   "tema": "juegos",
+   "cat": "playstation",
+   "game": "Metal Gear Solid 2: Sons of Liberty",
+   "title": "Metal Gear Solid 2 Main Theme",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "kgsKRc6OgzE",
+     "titulo": "Metal Gear Solid 2 Main Theme - Harry Gregson-Williams",
+     "canal": "Prologue",
+     "dur": 230,
+     "loudnessDb": 2.5900002,
+     "captions": null,
+     "consulta": "Metal Gear Solid 2 Sons of Liberty Main Theme Harry Gregson-Williams"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "god-of-war-2018-ashes",
+   "id": "god-of-war-2018-ashes",
+   "tema": "juegos",
+   "cat": "playstation",
+   "game": "God of War (2018)",
+   "title": "Ashes",
+   "latino": false,
+   "youtube": [],
+   "apple": {
+    "song": 1370192795,
+    "country": "us",
+    "titulo": "Ashes (feat. Eivør)",
+    "artista": "Bear McCreary",
+    "album": "God of War (PlayStation Soundtrack)"
+   }
+  },
+  {
+   "key": "spyro-the-dragon-artisans-home",
+   "id": "spyro-the-dragon-artisans-home",
+   "tema": "juegos",
+   "cat": "playstation",
+   "game": "Spyro the Dragon",
+   "title": "Artisans Home",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "fOlh2TpSkx4",
+     "titulo": "Artisans Home",
+     "canal": "Stewart Copeland - Topic",
+     "dur": 115,
+     "loudnessDb": -0.38000011,
+     "captions": null,
+     "consulta": "Spyro the Dragon PS1 OST Artisans Home Stewart Copeland"
+    },
+    {
+     "id": "9RDtNUhMN_Y",
+     "titulo": "Spyro: Reignited Trilogy - Artisans Home",
+     "canal": "VideoGameMusic",
+     "dur": 209,
+     "loudnessDb": -0.44999981,
+     "captions": null,
+     "consulta": "Spyro the Dragon PS1 OST Artisans Home Stewart Copeland"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "shadow-of-the-colossus-roar-of-the-earth",
+   "id": "shadow-of-the-colossus-roar-of-the-earth",
+   "tema": "juegos",
+   "cat": "playstation",
+   "game": "Shadow of the Colossus",
+   "title": "Roar of the Earth",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "IcN7qpkY3I0",
+     "titulo": "Shadow of the Colossus, Roar of the Earth Soundtrack, The Opened Way",
+     "canal": "littlebigplanet678",
+     "dur": 121,
+     "loudnessDb": 4.4300003,
+     "captions": null,
+     "consulta": "Shadow of the Colossus Roar of the Earth boss theme"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "journey-nascence",
+   "id": "journey-nascence",
+   "tema": "juegos",
+   "cat": "playstation",
+   "game": "Journey",
+   "title": "Nascence",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "TLfj3pAlrs4",
+     "titulo": "Journey Soundtrack (Austin Wintory) - 01. Nascence",
+     "canal": "Journey Soundtrack",
+     "dur": 107,
+     "loudnessDb": -0.15999985,
+     "captions": null,
+     "consulta": "Journey OST Nascence Austin Wintory"
+    },
+    {
+     "id": "1fd5P98Apzg",
+     "titulo": "Austin Wintory - Nascence | Journey (Original Video Game Soundtrack)",
+     "canal": "SonySoundtracksVEVO",
+     "dur": 109,
+     "loudnessDb": -2.8600006,
+     "captions": null,
+     "consulta": "Journey OST Nascence Austin Wintory"
+    }
+   ],
+   "apple": {
+    "song": 1553230093,
+    "country": "us",
+    "titulo": "Nascence",
+    "artista": "Austin Wintory",
+    "album": "Journey (Original Video Game Soundtrack)"
+   }
+  },
+  {
+   "key": "silent-hill-alchemilla",
+   "id": "silent-hill-alchemilla",
+   "tema": "juegos",
+   "cat": "playstation",
+   "game": "Silent Hill",
+   "title": "Alchemilla",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "-oG7TAOjDBY",
+     "titulo": "Silent Hill -  Alchemilla Echoes",
+     "canal": "Silent Hill Soundtrack",
+     "dur": 149,
+     "loudnessDb": -2.3799992,
+     "captions": null,
+     "consulta": "Silent Hill 1 OST Alchemilla Akira Yamaoka"
+    },
+    {
+     "id": "DI8tMvNawVQ",
+     "titulo": "Klagmar's Top VGM #1,977 - Silent Hill: Alchemilla - Main Theme",
+     "canal": "Klagmar",
+     "dur": 240,
+     "loudnessDb": 1.1800003,
+     "captions": null,
+     "consulta": "Silent Hill Alchemilla soundtrack"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "pac-man-intro-theme",
+   "id": "pac-man-intro-theme",
+   "tema": "juegos",
+   "cat": "retro",
+   "game": "Pac-Man",
+   "title": "Intro Theme",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "IqoRcA1aqMk",
+     "titulo": "Pac-Man Intro Music Comparison: Almost Every Version!",
+     "canal": "retrosutra",
+     "dur": 495,
+     "loudnessDb": -0.010000229,
+     "captions": null,
+     "consulta": "Pac-Man original arcade music intro"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "sonic-the-hedgehog-2-casino-night-zone",
+   "id": "sonic-the-hedgehog-2-casino-night-zone",
+   "tema": "juegos",
+   "cat": "retro",
+   "game": "Sonic the Hedgehog 2",
+   "title": "Casino Night Zone",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "0gw7A3Ao7Y8",
+     "titulo": "Casino Night Zone - Sonic the Hedgehog 2 [OST]",
+     "canal": "DeoxysPrime",
+     "dur": 136,
+     "loudnessDb": 2.7200003,
+     "captions": null,
+     "consulta": "Sonic the Hedgehog 2 Casino Night Zone Genesis OST"
+    },
+    {
+     "id": "Kgb30cz8HxI",
+     "titulo": "Sth2 Casino Night Zone Mega Drive Version",
+     "canal": "Masato Nakamura - Topic",
+     "dur": 136,
+     "loudnessDb": 2.8000002,
+     "captions": null,
+     "consulta": "Sonic the Hedgehog 2 Casino Night Zone Genesis OST"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "street-fighter-ii-chun-li-s-theme",
+   "id": "street-fighter-ii-chun-li-s-theme",
+   "tema": "juegos",
+   "cat": "retro",
+   "game": "Street Fighter II",
+   "title": "Chun-Li's Theme",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "GYkZRFpKS48",
+     "titulo": "Street Fighter II Arcade Music - Chun Li Stage - CPS1",
+     "canal": "Lamar Johnson",
+     "dur": 121,
+     "loudnessDb": 3.3599997,
+     "captions": null,
+     "consulta": "Street Fighter II Chun-Li's Theme arcade"
+    },
+    {
+     "id": "3E2gDAamBbw",
+     "titulo": "Street Fighter 2 [OST] - Chun-Li's Theme [Arcade CPS-1 Reconstructed Stereo By 8-BeatsVGM]",
+     "canal": "8-Beats VGM",
+     "dur": 268,
+     "loudnessDb": 3.0600004,
+     "captions": null,
+     "consulta": "Street Fighter II Chun-Li's Theme arcade"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "streets-of-rage-2-dreamer",
+   "id": "streets-of-rage-2-dreamer",
+   "tema": "juegos",
+   "cat": "retro",
+   "game": "Streets of Rage 2",
+   "title": "Dreamer",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "rb6EUJqKrOA",
+     "titulo": "Streets Of Rage 2 \"Dreamer\" sound comparison",
+     "canal": "Yuzo Koshiro",
+     "dur": 156,
+     "loudnessDb": -0.35999966,
+     "captions": null,
+     "consulta": "Streets of Rage 2 OST Dreamer Yuzo Koshiro"
+    },
+    {
+     "id": "Xlb8UYuSIp8",
+     "titulo": "Streets Of Rage 2 - Dreamer",
+     "canal": "James Reigns",
+     "dur": 139,
+     "loudnessDb": -2.1200008,
+     "captions": null,
+     "consulta": "Streets of Rage 2 OST Dreamer Yuzo Koshiro"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "teenage-mutant-ninja-turtles-iv-turtles-in-time-sewer-surfin",
+   "id": "teenage-mutant-ninja-turtles-iv-turtles-in-time-sewer-surfin",
+   "tema": "juegos",
+   "cat": "retro",
+   "game": "Teenage Mutant Ninja Turtles IV: Turtles in Time",
+   "title": "Sewer Surfin'",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "uCWzOtLGnQQ",
+     "titulo": "Teenage Mutant Ninja Turtles IV: Turtles in Time - Sewer Surfin' (SNES OST)",
+     "canal": "Peppi the Dog ˆᴥˆ",
+     "dur": 95,
+     "loudnessDb": 1.8299999,
+     "captions": null,
+     "consulta": "Teenage Mutant Ninja Turtles Turtles in Time SNES Sewer Surfin'"
+    },
+    {
+     "id": "ccKc80Av1HM",
+     "titulo": "[SNES] Teenage Mutant Ninja Turtles Turtles in time Scene 3 | Sewer surfin'",
+     "canal": "Guts",
+     "dur": 177,
+     "loudnessDb": -2.6299992,
+     "captions": null,
+     "consulta": "Teenage Mutant Ninja Turtles Turtles in Time SNES Sewer Surfin'"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "hollow-knight-dirtmouth",
+   "id": "hollow-knight-dirtmouth",
+   "tema": "juegos",
+   "cat": "indie",
+   "game": "Hollow Knight",
+   "title": "Dirtmouth",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "NSlkW1fFkyo",
+     "titulo": "Hollow Knight OST - Dirtmouth",
+     "canal": "Amellifera",
+     "dur": 115,
+     "loudnessDb": -0.43000031,
+     "captions": null,
+     "consulta": "Hollow Knight OST Dirtmouth Christopher Larkin"
+    },
+    {
+     "id": "9Vdv01LsnQM",
+     "titulo": "Dirtmouth",
+     "canal": "Christopher Larkin - Topic",
+     "dur": 323,
+     "loudnessDb": -5.7700005,
+     "captions": null,
+     "consulta": "Hollow Knight OST Dirtmouth Christopher Larkin"
+    }
+   ],
+   "apple": {
+    "song": 1263341720,
+    "country": "us",
+    "titulo": "Dirtmouth",
+    "artista": "Christopher Larkin",
+    "album": "Hollow Knight (Original Soundtrack)"
+   }
+  },
+  {
+   "key": "hollow-knight-mantis-lords",
+   "id": "hollow-knight-mantis-lords",
+   "tema": "juegos",
+   "cat": "indie",
+   "game": "Hollow Knight",
+   "title": "Mantis Lords",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "Lp5M2BAXwSo",
+     "titulo": "Hollow Knight OST - Mantis Lords",
+     "canal": "Amellifera",
+     "dur": 106,
+     "loudnessDb": 2.3000002,
+     "captions": null,
+     "consulta": "Hollow Knight OST Mantis Lords Christopher Larkin"
+    },
+    {
+     "id": "gQZUfMVj6Ag",
+     "titulo": "Mantis Lords",
+     "canal": "Christopher Larkin - Topic",
+     "dur": 210,
+     "loudnessDb": -0.25,
+     "captions": null,
+     "consulta": "Hollow Knight OST Mantis Lords Christopher Larkin"
+    }
+   ],
+   "apple": {
+    "song": 1263341726,
+    "country": "us",
+    "titulo": "Mantis Lords",
+    "artista": "Christopher Larkin",
+    "album": "Hollow Knight (Original Soundtrack)"
+   }
+  },
+  {
+   "key": "hollow-knight-silksong-bonebottom",
+   "id": "hollow-knight-silksong-bonebottom",
+   "tema": "juegos",
+   "cat": "indie",
+   "game": "Hollow Knight: Silksong",
+   "title": "Bonebottom",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "4Zi0K7RnFiQ",
+     "titulo": "Bone Bottom ‐ Hollow Knight Silksong OST Official Soundtrack Original Score",
+     "canal": "Qiuvox",
+     "dur": 184,
+     "loudnessDb": -0.050000191,
+     "captions": null,
+     "consulta": "Hollow Knight Silksong OST Bonebottom"
+    },
+    {
+     "id": "BPFjXniVJaA",
+     "titulo": "Silksong OST - Bonebottom",
+     "canal": "n o o k",
+     "dur": 191,
+     "loudnessDb": -4.9799995,
+     "captions": null,
+     "consulta": "Hollow Knight Silksong OST Bonebottom"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "celeste-confronting-myself",
+   "id": "celeste-confronting-myself",
+   "tema": "juegos",
+   "cat": "indie",
+   "game": "Celeste",
+   "title": "Confronting Myself",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "b_oEDGONSc4",
+     "titulo": "[Official] Celeste Original Soundtrack - 16 - Confronting Myself",
+     "canal": "Lena Raine",
+     "dur": 249,
+     "loudnessDb": 3.9700003,
+     "captions": null,
+     "consulta": "Celeste OST Confronting Myself Lena Raine"
+    },
+    {
+     "id": "0qbRhwEsX4A",
+     "titulo": "Confronting Myself (Game Version) - Celeste Soundtrack: Additional Tracks",
+     "canal": "The Chameleons???",
+     "dur": 408,
+     "loudnessDb": -1.8100004,
+     "captions": null,
+     "consulta": "Celeste OST Confronting Myself Lena Raine"
+    }
+   ],
+   "apple": {
+    "song": 1544899674,
+    "country": "us",
+    "titulo": "Confronting Myself",
+    "artista": "Lena Raine",
+    "album": "Celeste (Original Soundtrack)"
+   }
+  },
+  {
+   "key": "cuphead-inkwell-isle-one",
+   "id": "cuphead-inkwell-isle-one",
+   "tema": "juegos",
+   "cat": "indie",
+   "game": "Cuphead",
+   "title": "Inkwell Isle One",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "osRSZaCswds",
+     "titulo": "Cuphead OST - Inkwell Isle One [Music]",
+     "canal": "MasStream",
+     "dur": 194,
+     "loudnessDb": 3.3000002,
+     "captions": null,
+     "consulta": "Cuphead OST Inkwell Isle One"
+    },
+    {
+     "id": "jvOY2RvuvGs",
+     "titulo": "Inkwell Isle One",
+     "canal": "Kristofer Maddigan - Topic",
+     "dur": 196,
+     "loudnessDb": 3.4353724,
+     "captions": null,
+     "consulta": "Cuphead OST Inkwell Isle One"
+    }
+   ],
+   "apple": {
+    "song": 1305353579,
+    "country": "us",
+    "titulo": "Inkwell Isle One",
+    "artista": "Kristofer Maddigan",
+    "album": "Cuphead (Original Soundtrack)"
+   }
+  },
+  {
+   "key": "cuphead-die-house",
+   "id": "cuphead-die-house",
+   "tema": "juegos",
+   "cat": "indie",
+   "game": "Cuphead",
+   "title": "Die House",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "P3UguXUvECM",
+     "titulo": "Cuphead OST - Die House [Music]",
+     "canal": "MasStream",
+     "dur": 94,
+     "loudnessDb": 2.7281761,
+     "captions": null,
+     "consulta": "Cuphead OST Die House"
+    },
+    {
+     "id": "f9DLhlboCSU",
+     "titulo": "Die House",
+     "canal": "Kristofer Maddigan - Topic",
+     "dur": 97,
+     "loudnessDb": 2.8994789,
+     "captions": null,
+     "consulta": "Cuphead OST Die House"
+    }
+   ],
+   "apple": {
+    "song": 1305353581,
+    "country": "us",
+    "titulo": "Die House",
+    "artista": "Kristofer Maddigan",
+    "album": "Cuphead (Original Soundtrack)"
+   }
+  },
+  {
+   "key": "minecraft-aria-math",
+   "id": "minecraft-aria-math",
+   "tema": "juegos",
+   "cat": "indie",
+   "game": "Minecraft",
+   "title": "Aria Math",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "atgjKEgSqSU",
+     "titulo": "C418 - Aria Math (Minecraft Volume Beta)",
+     "canal": "NycrypticProject",
+     "dur": 309,
+     "loudnessDb": 1.8299999,
+     "captions": null,
+     "consulta": "C418 Aria Math Minecraft Volume Beta"
+    },
+    {
+     "id": "1gqEIJoxSHA",
+     "titulo": "Aria Math 🎧 | Nostalgic Minecraft Music",
+     "canal": "Nostalgic Minecraft Music",
+     "dur": 311,
+     "loudnessDb": 1.7299995,
+     "captions": null,
+     "consulta": "Minecraft Aria Math original soundtrack"
+    }
+   ],
+   "apple": {
+    "song": 1867890258,
+    "country": "us",
+    "titulo": "Aria Math",
+    "artista": "C418",
+    "album": "Minecraft - Volume Beta"
+   }
+  },
+  {
+   "key": "minecraft-haggstrom",
+   "id": "minecraft-haggstrom",
+   "tema": "juegos",
+   "cat": "indie",
+   "game": "Minecraft",
+   "title": "Haggstrom",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "laZusNy8QiY",
+     "titulo": "C418 - Haggstrom - Minecraft Volume Alpha",
+     "canal": "SMORT",
+     "dur": 204,
+     "loudnessDb": -9.4599991,
+     "captions": null,
+     "consulta": "C418 Haggstrom Minecraft Volume Alpha"
+    },
+    {
+     "id": "D09Okc11afI",
+     "titulo": "Minecraft Volume Alpha - 7 - Haggstrom",
+     "canal": "C418",
+     "dur": 204,
+     "loudnessDb": -3.0400009,
+     "captions": null,
+     "consulta": "C418 Haggstrom Minecraft Volume Alpha"
+    }
+   ],
+   "apple": {
+    "song": 1867885429,
+    "country": "us",
+    "titulo": "Haggstrom",
+    "artista": "C418",
+    "album": "Minecraft - Volume Alpha"
+   }
+  },
+  {
+   "key": "geometry-dash-stereo-madness",
+   "id": "geometry-dash-stereo-madness",
+   "tema": "juegos",
+   "cat": "indie",
+   "game": "Geometry Dash",
+   "title": "Stereo Madness",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "tof8_p0F3kg",
+     "titulo": "ForeverBound - Stereo Madness",
+     "canal": "Geometry Dash Music",
+     "dur": 198,
+     "loudnessDb": 2.1199999,
+     "captions": null,
+     "consulta": "Geometry Dash Stereo Madness ForeverBound"
+    },
+    {
+     "id": "Y6-e9J8ualw",
+     "titulo": "Forever Bound - Stereo Madness (Geometry Dash)(Ultra Edit)",
+     "canal": "ForeverBound",
+     "dur": 158,
+     "loudnessDb": 4.5,
+     "captions": null,
+     "consulta": "Geometry Dash Stereo Madness ForeverBound"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "final-fantasy-vii-aerith-s-theme",
+   "id": "final-fantasy-vii-aerith-s-theme",
+   "tema": "juegos",
+   "cat": "rpg",
+   "game": "Final Fantasy VII",
+   "title": "Aerith's Theme",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "iqMbmkUpihA",
+     "titulo": "Final Fantasy VII OST - Aerith's Theme",
+     "canal": "anomaly1",
+     "dur": 259,
+     "loudnessDb": -0.60000038,
+     "captions": null,
+     "consulta": "Final Fantasy VII Aerith's Theme original soundtrack Nobuo Uematsu"
+    },
+    {
+     "id": "_w2jrGbZ27o",
+     "titulo": "Aerith's Theme (Final Fantasy Vii)",
+     "canal": "Nobuo Uematsu - Topic",
+     "dur": 348,
+     "loudnessDb": 1.7628508,
+     "captions": null,
+     "consulta": "Final Fantasy VII Aerith's Theme original soundtrack Nobuo Uematsu"
+    }
+   ],
+   "apple": {
+    "song": 61017453,
+    "country": "us",
+    "titulo": "Aerith's Theme",
+    "artista": "Nobuo Uematsu",
+    "album": "FINAL FANTASY VII (Original Soundtrack)"
+   }
+  },
+  {
+   "key": "final-fantasy-vii-opening-bombing-mission",
+   "id": "final-fantasy-vii-opening-bombing-mission",
+   "tema": "juegos",
+   "cat": "rpg",
+   "game": "Final Fantasy VII",
+   "title": "Opening - Bombing Mission",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "41cqwo504hA",
+     "titulo": "FF7 Bombing Mission (Opening Theme) Music Remake",
+     "canal": "Enrico Deiana",
+     "dur": 263,
+     "loudnessDb": 6.9499998,
+     "captions": null,
+     "consulta": "Final Fantasy VII Opening Bombing Mission original soundtrack"
+    },
+    {
+     "id": "cTCVaxTHbrY",
+     "titulo": "Final Fantasy VII OST - Opening ~ Bombing Mission",
+     "canal": "anomaly1",
+     "dur": 240,
+     "loudnessDb": 0.14999962,
+     "captions": null,
+     "consulta": "Final Fantasy VII Opening Bombing Mission original soundtrack"
+    }
+   ],
+   "apple": {
+    "song": 1439125486,
+    "country": "us",
+    "titulo": "Opening​ - ​Bombing Mission (Final Fantasy VII)",
+    "artista": "Nobuo Uematsu",
+    "album": "Distant Worlds: Music from Final Fantasy"
+   }
+  },
+  {
+   "key": "final-fantasy-viii-eyes-on-me",
+   "id": "final-fantasy-viii-eyes-on-me",
+   "tema": "juegos",
+   "cat": "rpg",
+   "game": "Final Fantasy VIII",
+   "title": "Eyes on Me",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "KDGMU6sdVBE",
+     "titulo": "Final Fantasy VIII (eyes on me By faye wong)",
+     "canal": "wolfking1981",
+     "dur": 343,
+     "loudnessDb": -3.0300007,
+     "captions": null,
+     "consulta": "Faye Wong Eyes On Me Final Fantasy VIII"
+    },
+    {
+     "id": "HNefNLOHVYk",
+     "titulo": "Final Fantasy VIII - Eyes On Me - FF8 - OST",
+     "canal": "Fantasy",
+     "dur": 341,
+     "loudnessDb": 4.3199997,
+     "captions": null,
+     "consulta": "Faye Wong Eyes On Me Final Fantasy VIII"
+    }
+   ],
+   "apple": {
+    "song": 966494172,
+    "country": "us",
+    "titulo": "Eyes On Me",
+    "artista": "Faye Wong",
+    "album": "Eyes On Me - Single"
+   }
+  },
+  {
+   "key": "final-fantasy-x-suteki-da-ne",
+   "id": "final-fantasy-x-suteki-da-ne",
+   "tema": "juegos",
+   "cat": "rpg",
+   "game": "Final Fantasy X",
+   "title": "Suteki Da Ne",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "Vl20g-tBaKc",
+     "titulo": "Rikki - Suteki Da Ne (FINAL FANTASY X HD Remaster)",
+     "canal": "บุรทัช ฟองลมุล",
+     "dur": 376,
+     "loudnessDb": 4.1000004,
+     "captions": null,
+     "consulta": "Final Fantasy X Suteki Da Ne Rikki original"
+    },
+    {
+     "id": "QVshmpyGxRo",
+     "titulo": "Suteki Da Ne - RIKKI",
+     "canal": "Progressence",
+     "dur": 335,
+     "loudnessDb": 3.9399996,
+     "captions": null,
+     "consulta": "Final Fantasy X Suteki Da Ne Rikki original"
+    }
+   ],
+   "apple": {
+    "song": 1439124990,
+    "country": "us",
+    "titulo": "Suteki da Ne (Final Fantasy X)",
+    "artista": "Nobuo Uematsu",
+    "album": "Distant Worlds II: More Music from Final Fantasy"
+   }
+  },
+  {
+   "key": "final-fantasy-vi-terra-s-theme",
+   "id": "final-fantasy-vi-terra-s-theme",
+   "tema": "juegos",
+   "cat": "rpg",
+   "game": "Final Fantasy VI",
+   "title": "Terra's Theme",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "TbYmZSOnyuk",
+     "titulo": "FF6 Terra's Theme Music Remake",
+     "canal": "Enrico Deiana",
+     "dur": 238,
+     "loudnessDb": 6.3000002,
+     "captions": null,
+     "consulta": "Final Fantasy VI Terra's Theme original soundtrack"
+    },
+    {
+     "id": "ObccgHQdos0",
+     "titulo": "[Video Soundtrack] Terra's Theme [FINAL FANTASY VI]",
+     "canal": "SQUARE ENIX MUSIC Channel",
+     "dur": 233,
+     "loudnessDb": -1.3299999,
+     "captions": null,
+     "consulta": "Final Fantasy VI Terra's Theme original soundtrack"
+    }
+   ],
+   "apple": {
+    "song": 62444298,
+    "country": "us",
+    "titulo": "Terra",
+    "artista": "Nobuo Uematsu",
+    "album": "FINAL FANTASY IX (Original Soundtrack)"
+   }
+  },
+  {
+   "key": "final-fantasy-xiii-blinded-by-light",
+   "id": "final-fantasy-xiii-blinded-by-light",
+   "tema": "juegos",
+   "cat": "rpg",
+   "game": "Final Fantasy XIII",
+   "title": "Blinded by Light",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "RPtq1Bpf6q4",
+     "titulo": "Final Fantasy 13 OST Blinded By Light ( Main Battle Theme )",
+     "canal": "M D",
+     "dur": 305,
+     "loudnessDb": 4.257144,
+     "captions": null,
+     "consulta": "Final Fantasy XIII Blinded by Light Masashi Hamauzu OST"
+    },
+    {
+     "id": "e2CAeM7xgHQ",
+     "titulo": "Blinded by Light (From \"Final Fantasy XIII\")",
+     "canal": "Masashi Hamauzu - Topic",
+     "dur": 254,
+     "loudnessDb": 3.0799999,
+     "captions": null,
+     "consulta": "Final Fantasy XIII Blinded by Light Masashi Hamauzu OST"
+    }
+   ],
+   "apple": {
+    "song": 360286659,
+    "country": "us",
+    "titulo": "Blinded By Light",
+    "artista": "Masashi Hamauzu",
+    "album": "FINAL FANTASY XIII (Original Soundtrack)"
+   }
+  },
+  {
+   "key": "chrono-trigger-frog-s-theme",
+   "id": "chrono-trigger-frog-s-theme",
+   "tema": "juegos",
+   "cat": "rpg",
+   "game": "Chrono Trigger",
+   "title": "Frog's Theme",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "JiMmZYx-eXA",
+     "titulo": "Frog's Theme",
+     "canal": "Moyra Rodriguez :3",
+     "dur": 105,
+     "loudnessDb": 1.9099998,
+     "captions": null,
+     "consulta": "Chrono Trigger Frog's Theme original soundtrack Yasunori Mitsuda"
+    },
+    {
+     "id": "8JADKlgXqjU",
+     "titulo": "Frog's Theme",
+     "canal": "Malcolm Robinson - Topic",
+     "dur": 105,
+     "loudnessDb": 3.8199997,
+     "captions": null,
+     "consulta": "Chrono Trigger Frog's Theme original soundtrack Yasunori Mitsuda"
+    }
+   ],
+   "apple": {
+    "song": 324081793,
+    "country": "us",
+    "titulo": "Frog's Theme (Arrange Version)",
+    "artista": "Yasunori Mitsuda",
+    "album": "Chrono Trigger (Original Soundtrack) [DS Version]"
+   }
+  },
+  {
+   "key": "the-elder-scrolls-iii-morrowind-nerevar-rising",
+   "id": "the-elder-scrolls-iii-morrowind-nerevar-rising",
+   "tema": "juegos",
+   "cat": "rpg",
+   "game": "The Elder Scrolls III: Morrowind",
+   "title": "Nerevar Rising",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "0lfCUSB4p6g",
+     "titulo": "Nerevar Rising",
+     "canal": "Jeremy Soule - Topic",
+     "dur": 114,
+     "loudnessDb": -1.46,
+     "captions": null,
+     "consulta": "Morrowind Nerevar Rising Jeremy Soule main theme"
+    },
+    {
+     "id": "C9xch8D--gc",
+     "titulo": "Morrowind OST - 01 Nerevar Rising - HQ Audio",
+     "canal": "Retrostective",
+     "dur": 114,
+     "loudnessDb": -1.5799999,
+     "captions": null,
+     "consulta": "Morrowind Nerevar Rising Jeremy Soule main theme"
+    }
+   ],
+   "apple": {
+    "song": 1849394541,
+    "country": "us",
+    "titulo": "Nerevar Rising",
+    "artista": "Jeremy Soule",
+    "album": "The Elder Scrolls III: Morrowind (Original Game Soundtrack)"
+   }
+  },
+  {
+   "key": "dark-souls-firelink-shrine",
+   "id": "dark-souls-firelink-shrine",
+   "tema": "juegos",
+   "cat": "rpg",
+   "game": "Dark Souls",
+   "title": "Firelink Shrine",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "Gjht7acg9d4",
+     "titulo": "Firelink Shrine",
+     "canal": "Motoi Sakuraba - Topic",
+     "dur": 177,
+     "loudnessDb": -5.8899994,
+     "captions": null,
+     "consulta": "Dark Souls OST Firelink Shrine Motoi Sakuraba"
+    },
+    {
+     "id": "tf8p-biLiOU",
+     "titulo": "Motoi Sakuraba - Firelink Shrine (Dark Souls)",
+     "canal": "Pavlo Henriqve",
+     "dur": 180,
+     "loudnessDb": -5.9699993,
+     "captions": null,
+     "consulta": "Dark Souls OST Firelink Shrine Motoi Sakuraba"
+    }
+   ],
+   "apple": {
+    "song": 1777191191,
+    "country": "us",
+    "titulo": "Firelink Shrine",
+    "artista": "Motoi Sakuraba",
+    "album": "Dark Souls (Original Game Soundtrack)"
+   }
+  },
+  {
+   "key": "dark-souls-ornstein-and-smough",
+   "id": "dark-souls-ornstein-and-smough",
+   "tema": "juegos",
+   "cat": "rpg",
+   "game": "Dark Souls",
+   "title": "Ornstein and Smough",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "hOxLVIPkHTs",
+     "titulo": "Ornstein & Smough",
+     "canal": "Motoi Sakuraba - Topic",
+     "dur": 171,
+     "loudnessDb": 5.2799997,
+     "captions": null,
+     "consulta": "Dark Souls OST Ornstein and Smough Motoi Sakuraba"
+    },
+    {
+     "id": "qzR47RoKUUY",
+     "titulo": "Ornstein and Smough - Dark Souls Soundtrack 15",
+     "canal": "K Playz",
+     "dur": 168,
+     "loudnessDb": 3.8199997,
+     "captions": null,
+     "consulta": "Dark Souls OST Ornstein and Smough Motoi Sakuraba"
+    }
+   ],
+   "apple": {
+    "song": 1777191506,
+    "country": "us",
+    "titulo": "Ornstein & Smough",
+    "artista": "Motoi Sakuraba",
+    "album": "Dark Souls (Original Game Soundtrack)"
+   }
+  },
+  {
+   "key": "yakuza-0-baka-mitai",
+   "id": "yakuza-0-baka-mitai",
+   "tema": "juegos",
+   "cat": "accion",
+   "game": "Yakuza 0",
+   "title": "Baka Mitai",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "NolF1yCK33c",
+     "titulo": "Yakuza OST - Baka Mitai - Kiryu full version(Japanese, Romaji, English lyrics)",
+     "canal": "SugiとHaと日本語",
+     "dur": 290,
+     "loudnessDb": 3.4499998,
+     "captions": null,
+     "consulta": "Yakuza 0 Baka Mitai Kiryu karaoke original"
+    },
+    {
+     "id": "gSTVGZozwEc",
+     "titulo": "-Dame Da Ne- Baka Mitai - Yakuza OST -  Lyrics (Español - Japones)",
+     "canal": "Gianx Attack",
+     "dur": 288,
+     "loudnessDb": -3.4599991,
+     "captions": null,
+     "consulta": "Baka Mitai Yakuza Kazuki Yao"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "grand-theft-auto-vice-city-vice-city-theme",
+   "id": "grand-theft-auto-vice-city-vice-city-theme",
+   "tema": "juegos",
+   "cat": "accion",
+   "game": "Grand Theft Auto: Vice City",
+   "title": "Vice City Theme",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "PE485kpuqrs",
+     "titulo": "GTA: Vice City - Main Theme",
+     "canal": "GTA Soundtracks",
+     "dur": 79,
+     "loudnessDb": 1.4700003,
+     "captions": null,
+     "consulta": "GTA Vice City Main Theme soundtrack"
+    },
+    {
+     "id": "5p1vacn3KcE",
+     "titulo": "Gta Vice City Theme",
+     "canal": "kepopay",
+     "dur": 80,
+     "loudnessDb": 1.6300001,
+     "captions": null,
+     "consulta": "GTA Vice City Main Theme soundtrack"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "sonic-adventure-2-city-escape",
+   "id": "sonic-adventure-2-city-escape",
+   "tema": "juegos",
+   "cat": "accion",
+   "game": "Sonic Adventure 2",
+   "title": "City Escape",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "5WcyVvWZJU4",
+     "titulo": "Escape From the City (City Escape) - Sonic Adventure 2 [OST]",
+     "canal": "DeoxysPrime",
+     "dur": 140,
+     "loudnessDb": 1.2799997,
+     "captions": null,
+     "consulta": "Sonic Adventure 2 City Escape original"
+    },
+    {
+     "id": "qR6mTJRbcaE",
+     "titulo": "Escape From The City ...for City Escape",
+     "canal": "Ted Poley - Topic",
+     "dur": 140,
+     "loudnessDb": 6.6100001,
+     "captions": null,
+     "consulta": "Sonic Adventure 2 City Escape original"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "shadow-the-hedgehog-i-am-all-of-me",
+   "id": "shadow-the-hedgehog-i-am-all-of-me",
+   "tema": "juegos",
+   "cat": "accion",
+   "game": "Shadow the Hedgehog",
+   "title": "I Am... All of Me",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "NucG0kD3pkg",
+     "titulo": "I Am... All Of Me",
+     "canal": "Crush 40 - Topic",
+     "dur": 231,
+     "loudnessDb": 7.5100002,
+     "captions": null,
+     "consulta": "Shadow the Hedgehog I Am All of Me Crush 40"
+    },
+    {
+     "id": "8V1pMQKDPco",
+     "titulo": "I Am (All of Me) - Shadow the Hedgehog [OST]",
+     "canal": "DeoxysPrime",
+     "dur": 231,
+     "loudnessDb": 3.4899998,
+     "captions": null,
+     "consulta": "Shadow the Hedgehog I Am All of Me Crush 40"
+    }
+   ],
+   "apple": {
+    "song": 584342978,
+    "country": "us",
+    "titulo": "I Am... All of Me",
+    "artista": "Crush 40",
+    "album": "Shadow the Hedgehog (Official Soundtrack)"
+   }
+  },
+  {
+   "key": "sonic-unleashed-endless-possibility",
+   "id": "sonic-unleashed-endless-possibility",
+   "tema": "juegos",
+   "cat": "accion",
+   "game": "Sonic Unleashed",
+   "title": "Endless Possibility",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "tJjxKhjR9H4",
+     "titulo": "Endless Possibility - Sonic Unleashed [OST]",
+     "canal": "DeoxysPrime",
+     "dur": 248,
+     "loudnessDb": 5.1499996,
+     "captions": null,
+     "consulta": "Sonic Unleashed Endless Possibility Jaret Reddick"
+    },
+    {
+     "id": "qEJVflx3uGw",
+     "titulo": "Sonic Unleashed | Endless Possibility - Jaret Ray Sub.Español",
+     "canal": "ElRenatoZONE",
+     "dur": 247,
+     "loudnessDb": 4.8999996,
+     "captions": null,
+     "consulta": "Sonic Unleashed Endless Possibility Jaret Reddick"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "assassin-s-creed-odyssey-legend-of-the-eagle-bearer",
+   "id": "assassin-s-creed-odyssey-legend-of-the-eagle-bearer",
+   "tema": "juegos",
+   "cat": "accion",
+   "game": "Assassin's Creed Odyssey",
+   "title": "Legend of the Eagle Bearer",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "eA0nbtxfeq4",
+     "titulo": "Assassin's Creed Odyssey: Legend of the Eagle Bearer (Main Theme) | The Flight",
+     "canal": "Ubisoft Music",
+     "dur": 233,
+     "loudnessDb": 2.8199997,
+     "captions": null,
+     "consulta": "Assassin's Creed Odyssey Legend of the Eagle Bearer Joel Corelitz"
+    },
+    {
+     "id": "UND5wgnIino",
+     "titulo": "Legend of the Eagle Bearer (Main Theme)",
+     "canal": "The Flight - Topic",
+     "dur": 233,
+     "loudnessDb": 3.4300003,
+     "captions": null,
+     "consulta": "Assassin's Creed Odyssey Legend of the Eagle Bearer Joel Corelitz"
+    }
+   ],
+   "apple": {
+    "song": 1640070796,
+    "country": "us",
+    "titulo": "Assassin's Creed Odyssey: Legend of the Eagle Bearer (Main Theme)",
+    "artista": "The Flight",
+    "album": "Assassin's Creed Odyssey: Legend of the Eagle Bearer (Main Theme)"
+   }
+  },
+  {
+   "key": "assassin-s-creed-iii-assassin-s-creed-iii-main-theme",
+   "id": "assassin-s-creed-iii-assassin-s-creed-iii-main-theme",
+   "tema": "juegos",
+   "cat": "accion",
+   "game": "Assassin's Creed III",
+   "title": "Assassin's Creed III Main Theme",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "n5q1ObIH5pk",
+     "titulo": "Assassin’s Creed 3 / Lorne Balfe - Assassin's Creed III Main Theme (Track 01)",
+     "canal": "Ubisoft Music",
+     "dur": 188,
+     "loudnessDb": 4.0900002,
+     "captions": null,
+     "consulta": "Assassin's Creed III Main Theme Lorne Balfe"
+    },
+    {
+     "id": "ut3sL6NI1BE",
+     "titulo": "Assassin's Creed III \"Main Theme\" by Lorne Balfe",
+     "canal": "Lorne Balfe",
+     "dur": 185,
+     "loudnessDb": 3.6499996,
+     "captions": null,
+     "consulta": "Assassin's Creed III Main Theme Lorne Balfe"
+    }
+   ],
+   "apple": {
+    "song": 1640118815,
+    "country": "us",
+    "titulo": "Assassin's Creed III Main Theme",
+    "artista": "Lorne Balfe",
+    "album": "Assassin's Creed 3 (Original Game Soundtrack)"
+   }
+  },
+  {
+   "key": "world-of-warcraft-elwynn-forest",
+   "id": "world-of-warcraft-elwynn-forest",
+   "tema": "juegos",
+   "cat": "online",
+   "game": "World of Warcraft",
+   "title": "Elwynn Forest",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "1yZNuUpTjTo",
+     "titulo": "Elwynn Forest - Original Wow Music",
+     "canal": "Wowmusicable",
+     "dur": 137,
+     "loudnessDb": -8.5,
+     "captions": null,
+     "consulta": "World of Warcraft Elwynn Forest music original"
+    },
+    {
+     "id": "MDMa49NrQPM",
+     "titulo": "Elwynn Forest",
+     "canal": "Release - Topic",
+     "dur": 185,
+     "loudnessDb": -0.050000191,
+     "captions": null,
+     "consulta": "World of Warcraft Elwynn Forest music original"
+    }
+   ],
+   "apple": {
+    "song": 1810417365,
+    "country": "us",
+    "titulo": "Elwynn Forest",
+    "artista": "Jason Hayes & Various Artists",
+    "album": "World of Warcraft Original Soundtrack"
+   }
+  },
+  {
+   "key": "league-of-legends-rise",
+   "id": "league-of-legends-rise",
+   "tema": "juegos",
+   "cat": "online",
+   "game": "League of Legends",
+   "title": "RISE",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "fB8TyLTD7EE",
+     "titulo": "RISE (ft. The Glitch Mob, Mako, and The Word Alive) | Worlds 2018 - League of Legends",
+     "canal": "League of Legends",
+     "dur": 210,
+     "loudnessDb": -2.5100002,
+     "captions": null,
+     "consulta": "RISE ft. The Glitch Mob Mako and The Word Alive Worlds 2018 League of Legends"
+    },
+    {
+     "id": "BZcErUf7S_8",
+     "titulo": "RISE (Lyrics) ft. The Glitch Mob, Mako, and The Word Alive",
+     "canal": "Rare Vibes",
+     "dur": 199,
+     "loudnessDb": 8.6700001,
+     "captions": null,
+     "consulta": "RISE ft. The Glitch Mob Mako and The Word Alive Worlds 2018 League of Legends"
+    }
+   ],
+   "apple": {
+    "song": 1833059354,
+    "country": "us",
+    "titulo": "RISE (feat. The Glitch Mob)",
+    "artista": "League of Legends Music, Mako & The Word Alive",
+    "album": "RISE (feat. The Glitch Mob) - Single"
+   }
+  },
+  {
+   "key": "league-of-legends-get-jinxed",
+   "id": "league-of-legends-get-jinxed",
+   "tema": "juegos",
+   "cat": "online",
+   "game": "League of Legends",
+   "title": "Get Jinxed",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "0nlJuwO0GDs",
+     "titulo": "Get Jinxed (ft. Djerv) | Official Music Video - League of Legends",
+     "canal": "League of Legends",
+     "dur": 172,
+     "loudnessDb": 3.8299999,
+     "captions": null,
+     "consulta": "Get Jinxed Djerv League of Legends"
+    },
+    {
+     "id": "dFwFm8e49Vs",
+     "titulo": "Get Jinxed",
+     "canal": "League Of Legends - Topic",
+     "dur": 155,
+     "loudnessDb": 3.71,
+     "captions": null,
+     "consulta": "Get Jinxed Djerv League of Legends"
+    }
+   ],
+   "apple": {
+    "song": 1832632995,
+    "country": "us",
+    "titulo": "Get Jinxed",
+    "artista": "League of Legends Music & Djerv",
+    "album": "The Music of League of Legends, Vol. 1"
+   }
+  },
+  {
+   "key": "call-of-duty-black-ops-beauty-of-annihilation",
+   "id": "call-of-duty-black-ops-beauty-of-annihilation",
+   "tema": "juegos",
+   "cat": "online",
+   "game": "Call of Duty: Black Ops",
+   "title": "Beauty of Annihilation",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "LAUOpUsR7ME",
+     "titulo": "Beauty of Annihilation - Elena Siegman - Lyrics [Official]",
+     "canal": "Kevin Sherwood",
+     "dur": 273,
+     "loudnessDb": 5.6099997,
+     "captions": null,
+     "consulta": "Call of Duty Black Ops Zombies Beauty of Annihilation Kevin Sherwood"
+    },
+    {
+     "id": "oH3ZvU0UUvI",
+     "titulo": "Beauty of Annihilation (Remaster)",
+     "canal": "CODZombiesCoverMaker",
+     "dur": 273,
+     "loudnessDb": 7.8899999,
+     "captions": null,
+     "consulta": "Call of Duty Black Ops Zombies Beauty of Annihilation Kevin Sherwood"
+    }
+   ],
+   "apple": {
+    "song": 1542638516,
+    "country": "us",
+    "titulo": "Beauty of Annihilation",
+    "artista": "Kevin Sherwood & Elena Siegman",
+    "album": "Call of Duty: Black Ops – Zombies (Original Game Soundtrack)"
+   }
+  },
+  {
+   "key": "final-fantasy-xiv-heavensward-dragonsong",
+   "id": "final-fantasy-xiv-heavensward-dragonsong",
+   "tema": "juegos",
+   "cat": "online",
+   "game": "Final Fantasy XIV: Heavensward",
+   "title": "Dragonsong",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "jqNHNGRxQZY",
+     "titulo": "Susan Calloway - Dragonsong (Español + Inglés) || Final Fantasy XIV: Heavensward",
+     "canal": "elxauma",
+     "dur": 334,
+     "loudnessDb": 2.9099998,
+     "captions": null,
+     "consulta": "Final Fantasy XIV Heavensward Dragonsong Susan Calloway"
+    },
+    {
+     "id": "FtuwltmTp9I",
+     "titulo": "FINAL FANTASY XIV - Dragonsong",
+     "canal": "FINAL FANTASY XIV",
+     "dur": 345,
+     "loudnessDb": 1.0200005,
+     "captions": null,
+     "consulta": "Final Fantasy XIV Heavensward Dragonsong Susan Calloway"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "fortnite-fortnite-lobby-music-chapter-1",
+   "id": "fortnite-fortnite-lobby-music-chapter-1",
+   "tema": "juegos",
+   "cat": "online",
+   "game": "Fortnite",
+   "title": "Fortnite Lobby Music (Chapter 1)",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "HHCAz5mQnYY",
+     "titulo": "Fortnite | Lobby Classic Lobby Music",
+     "canal": "LVP",
+     "dur": 90,
+     "loudnessDb": -0.22999954,
+     "captions": null,
+     "consulta": "Fortnite Chapter 1 Season 1 lobby music original"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-the-legend-of-zelda-twilight-princess-midna-s-lament",
+   "id": "saga-the-legend-of-zelda-twilight-princess-midna-s-lament",
+   "tema": "sagas",
+   "cat": "zelda",
+   "game": "The Legend of Zelda: Twilight Princess",
+   "title": "Midna's Lament",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "sNRx4CwL014",
+     "titulo": "Legend of Zelda: Twilight Princess HD OST - Midna's Lament",
+     "canal": "Pulse Of Me",
+     "dur": 190,
+     "loudnessDb": 0.52999973,
+     "captions": null,
+     "consulta": "Midna's Lament Twilight Princess Original Soundtrack Topic"
+    },
+    {
+     "id": "FUQKP0pt8Mg",
+     "titulo": "Midna's Lament - The Legend of Zelda: Twilight Princess OST",
+     "canal": "Classic Game Music",
+     "dur": 199,
+     "loudnessDb": -3.4200001,
+     "captions": null,
+     "consulta": "Midna's Lament Twilight Princess Original Soundtrack Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-the-legend-of-zelda-twilight-princess-ordon-village",
+   "id": "saga-the-legend-of-zelda-twilight-princess-ordon-village",
+   "tema": "sagas",
+   "cat": "zelda",
+   "game": "The Legend of Zelda: Twilight Princess",
+   "title": "Ordon Village",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "9HdAx_UCgvA",
+     "titulo": "Legend of Zelda: Twilight Princess HD OST - Ordon Village",
+     "canal": "Pulse Of Me",
+     "dur": 193,
+     "loudnessDb": -0.92000008,
+     "captions": null,
+     "consulta": "Ordon Village Twilight Princess Original Soundtrack Topic"
+    },
+    {
+     "id": "01pN6rnaJy8",
+     "titulo": "Ordon Village - The Legend of Zelda: Twilight Princess OST",
+     "canal": "Classic Game Music",
+     "dur": 189,
+     "loudnessDb": -6.2700005,
+     "captions": null,
+     "consulta": "Ordon Village Twilight Princess Original Soundtrack Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-the-legend-of-zelda-twilight-princess-gerudo-desert",
+   "id": "saga-the-legend-of-zelda-twilight-princess-gerudo-desert",
+   "tema": "sagas",
+   "cat": "zelda",
+   "game": "The Legend of Zelda: Twilight Princess",
+   "title": "Gerudo Desert",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "OBE4IqApdAA",
+     "titulo": "Twilight Princess - Gerudo Desert Theme",
+     "canal": "TwilightPrincessSong",
+     "dur": 165,
+     "loudnessDb": -2.1900005,
+     "captions": null,
+     "consulta": "Gerudo Desert Twilight Princess Original Soundtrack Topic"
+    },
+    {
+     "id": "zEAVBSeo7fY",
+     "titulo": "Zelda Twilight Princess - Gerudo Desert",
+     "canal": "xkiki94x",
+     "dur": 169,
+     "loudnessDb": -2.1925545,
+     "captions": null,
+     "consulta": "Gerudo Desert Twilight Princess Original Soundtrack Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-the-legend-of-zelda-twilight-princess-goron-mines",
+   "id": "saga-the-legend-of-zelda-twilight-princess-goron-mines",
+   "tema": "sagas",
+   "cat": "zelda",
+   "game": "The Legend of Zelda: Twilight Princess",
+   "title": "Goron Mines",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "dPznnIBguIg",
+     "titulo": "Zelda Twilight Princess Music   Goron Mines",
+     "canal": "HantaMusic",
+     "dur": 118,
+     "loudnessDb": -0.98999977,
+     "captions": null,
+     "consulta": "Goron Mines Twilight Princess Original Soundtrack Topic"
+    },
+    {
+     "id": "jpJQYWDvL0k",
+     "titulo": "Goron Mines - The Legend of Zelda: Twilight Princess OST",
+     "canal": "Classic Game Music",
+     "dur": 171,
+     "loudnessDb": -7.0699997,
+     "captions": null,
+     "consulta": "Goron Mines Twilight Princess Original Soundtrack Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-the-legend-of-zelda-twilight-princess-midna-s",
+   "id": "saga-the-legend-of-zelda-twilight-princess-midna-s",
+   "tema": "sagas",
+   "cat": "zelda",
+   "game": "The Legend of Zelda: Twilight Princess",
+   "title": "Midna's Desperate Hour",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "RVkJW2zAZwQ",
+     "titulo": "Twilight Princess - Midna's Desperate hour",
+     "canal": "TwilightPrincessSong",
+     "dur": 191,
+     "loudnessDb": 2.7299995,
+     "captions": null,
+     "consulta": "Midna's Desperate Hour Twilight Princess Original Soundtrack Topic"
+    },
+    {
+     "id": "putkDAajYxw",
+     "titulo": "Midna's Desperate Hour (From \"The Legend of Zelda: Twilight Princess\")",
+     "canal": "Rozen - Topic",
+     "dur": 154,
+     "loudnessDb": -0.5,
+     "captions": null,
+     "consulta": "Midna's Desperate Hour Twilight Princess Original Soundtrack Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-final-fantasy-xv-apocalypsis-noctis",
+   "id": "saga-final-fantasy-xv-apocalypsis-noctis",
+   "tema": "sagas",
+   "cat": "final-fantasy",
+   "game": "Final Fantasy XV",
+   "title": "Apocalypsis Noctis",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "hB2CIDg_CUg",
+     "titulo": "Apocalypsis Noctis (From \"Final Fantasy XV\")",
+     "canal": "Yoko Shimomura - Topic",
+     "dur": 131,
+     "loudnessDb": 6.0300002,
+     "captions": null,
+     "consulta": "Apocalypsis Noctis Final Fantasy XV Yoko Shimomura Topic"
+    },
+    {
+     "id": "tBm84VzK8pg",
+     "titulo": "APOCALYPSIS NOCTIS",
+     "canal": "Yoko Shimomura - Topic",
+     "dur": 132,
+     "loudnessDb": 5.7399998,
+     "captions": null,
+     "consulta": "Apocalypsis Noctis Final Fantasy XV Yoko Shimomura Topic"
+    }
+   ],
+   "apple": {
+    "song": 1184244339,
+    "country": "us",
+    "titulo": "Apocalypsis Noctis",
+    "artista": "Yoko Shimomura",
+    "album": "FINAL FANTASY XV (Original Soundtrack)"
+   }
+  },
+  {
+   "key": "saga-final-fantasy-xv-stand-by-me",
+   "id": "saga-final-fantasy-xv-stand-by-me",
+   "tema": "sagas",
+   "cat": "final-fantasy",
+   "game": "Final Fantasy XV",
+   "title": "Stand by Me",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "qv6aw5a8oY8",
+     "titulo": "Florence + The Machine | Stand By Me | Studio Version | Lyric Video | Final Fantasy XV | Tribute HD",
+     "canal": "PazyPlayz",
+     "dur": 255,
+     "loudnessDb": 5.6099997,
+     "captions": null,
+     "consulta": "Florence + The Machine Stand By Me Final Fantasy XV Topic"
+    },
+    {
+     "id": "vv2DSmy3Tro",
+     "titulo": "Florence + The Machine - Stand By Me",
+     "canal": "FlorenceMachineVEVO",
+     "dur": 247,
+     "loudnessDb": 4.9700003,
+     "captions": null,
+     "consulta": "Florence + The Machine Stand By Me Final Fantasy XV Topic"
+    }
+   ],
+   "apple": {
+    "song": 1440893681,
+    "country": "us",
+    "titulo": "Stand By Me",
+    "artista": "Florence + the Machine",
+    "album": "Songs from Final Fantasy XV - Single"
+   }
+  },
+  {
+   "key": "saga-final-fantasy-xv-lestallum",
+   "id": "saga-final-fantasy-xv-lestallum",
+   "tema": "sagas",
+   "cat": "final-fantasy",
+   "game": "Final Fantasy XV",
+   "title": "Lestallum",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "lTFWMvlxnF8",
+     "titulo": "FINAL FANTASY XV OST Lestallum Theme ( Inner City )",
+     "canal": "M D",
+     "dur": 177,
+     "loudnessDb": 3.46,
+     "captions": null,
+     "consulta": "Final Fantasy XV OST Lestallum"
+    },
+    {
+     "id": "vnJ8FXDcq0M",
+     "titulo": "FINAL FANTASY XV OST Lestallum Theme ( Outskirts )",
+     "canal": "M D",
+     "dur": 152,
+     "loudnessDb": 1.3800001,
+     "captions": null,
+     "consulta": "Final Fantasy XV OST Lestallum"
+    }
+   ],
+   "apple": {
+    "song": 1184244329,
+    "country": "us",
+    "titulo": "Lestallum",
+    "artista": "Yoko Shimomura",
+    "album": "FINAL FANTASY XV (Original Soundtrack)"
+   }
+  },
+  {
+   "key": "saga-final-fantasy-xvi-away",
+   "id": "saga-final-fantasy-xvi-away",
+   "tema": "sagas",
+   "cat": "final-fantasy",
+   "game": "Final Fantasy XVI",
+   "title": "Away",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "ZfIXHgAq6Kw",
+     "titulo": "Away (FINAL FANTASY XVI Original Soundtrack)【Audio】",
+     "canal": "SQUARE ENIX MUSIC Channel",
+     "dur": 401,
+     "loudnessDb": 4.5900002,
+     "captions": null,
+     "consulta": "Away Final Fantasy XVI Masayoshi Soken Topic"
+    },
+    {
+     "id": "QR-yr8RBj2s",
+     "titulo": "FINAL FANTASY XVI - Away (Full Suite) [All Versions + Subs][4K]",
+     "canal": "13th Vessel",
+     "dur": 582,
+     "loudnessDb": 4.2299995,
+     "captions": null,
+     "consulta": "Away Final Fantasy XVI Masayoshi Soken Topic"
+    }
+   ],
+   "apple": {
+    "song": 1696572747,
+    "country": "us",
+    "titulo": "Away",
+    "artista": "Masayoshi Soken",
+    "album": "FINAL FANTASY XVI Original Soundtrack"
+   }
+  },
+  {
+   "key": "saga-final-fantasy-xvi-titan-lost",
+   "id": "saga-final-fantasy-xvi-titan-lost",
+   "tema": "sagas",
+   "cat": "final-fantasy",
+   "game": "Final Fantasy XVI",
+   "title": "Titan Lost",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "dkGwV5Hreb8",
+     "titulo": "Titan Lost",
+     "canal": "Masayoshi Soken - Topic",
+     "dur": 458,
+     "loudnessDb": 6.0700002,
+     "captions": null,
+     "consulta": "Titan Lost Final Fantasy XVI Masayoshi Soken Topic"
+    },
+    {
+     "id": "7L_6atLQouc",
+     "titulo": "Final Fantasy XVI  Titan Lost Full OST Theme",
+     "canal": "Mundus",
+     "dur": 127,
+     "loudnessDb": -0.72999954,
+     "captions": null,
+     "consulta": "Titan Lost Final Fantasy XVI Masayoshi Soken Topic"
+    }
+   ],
+   "apple": {
+    "song": 1696573135,
+    "country": "us",
+    "titulo": "Titan Lost",
+    "artista": "Masayoshi Soken",
+    "album": "FINAL FANTASY XVI Original Soundtrack"
+   }
+  },
+  {
+   "key": "saga-final-fantasy-xiv-a-realm-reborn-primal-judgment",
+   "id": "saga-final-fantasy-xiv-a-realm-reborn-primal-judgment",
+   "tema": "sagas",
+   "cat": "final-fantasy",
+   "game": "Final Fantasy XIV: A Realm Reborn",
+   "title": "Primal Judgment",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "QbAuPenTp9A",
+     "titulo": "Primal Judgment - Ifrit Theme",
+     "canal": "Nightwings Beyond",
+     "dur": 201,
+     "loudnessDb": 6.6500001,
+     "captions": null,
+     "consulta": "FFXIV A Realm Reborn OST Primal Judgment Ifrit"
+    },
+    {
+     "id": "7NQc2dDWdxE",
+     "titulo": "Primal Judgment (From \"Final Fantasy XIV\")",
+     "canal": "Nobuo Uematsu - Topic",
+     "dur": 311,
+     "loudnessDb": 5.5699997,
+     "captions": null,
+     "consulta": "Primal Judgment Final Fantasy XIV Masayoshi Soken Topic"
+    }
+   ],
+   "apple": {
+    "song": 970188427,
+    "country": "us",
+    "titulo": "Primal Judgment (From \"Final Fantasy XIV\")",
+    "artista": "Nobuo Uematsu",
+    "album": "Distant Worlds III: More Music from Final Fantasy"
+   }
+  },
+  {
+   "key": "saga-pokemon-black-and-white-accumula-town",
+   "id": "saga-pokemon-black-and-white-accumula-town",
+   "tema": "sagas",
+   "cat": "pokemon",
+   "game": "Pokémon Black & White",
+   "title": "Accumula Town",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "ZXm_nqpkO4M",
+     "titulo": "Accumula Town (Original) - Pokémon Black and White",
+     "canal": "VGM Channel",
+     "dur": 93,
+     "loudnessDb": 0.029999733,
+     "captions": null,
+     "consulta": "Accumula Town Pokemon Black White Topic"
+    },
+    {
+     "id": "rlHSROqpzJw",
+     "titulo": "Accumula Town - Pokémon Black and White (Restored)",
+     "canal": "CoNesTra",
+     "dur": 146,
+     "loudnessDb": -1.9399996,
+     "captions": null,
+     "consulta": "Accumula Town Pokemon Black White Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-pokemon-black-and-white-nimbasa-city",
+   "id": "saga-pokemon-black-and-white-nimbasa-city",
+   "tema": "sagas",
+   "cat": "pokemon",
+   "game": "Pokémon Black & White",
+   "title": "Nimbasa City",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "v1sbSGLLH-s",
+     "titulo": "Nimbasa City - Pokémon Black & White",
+     "canal": "Pokémon Original Soundtrack",
+     "dur": 119,
+     "loudnessDb": 5.1700001,
+     "captions": null,
+     "consulta": "Nimbasa City Pokemon Black White Topic"
+    },
+    {
+     "id": "sYAoD710Dxo",
+     "titulo": "Pokemon Black and White Music: Nimbasa City Music",
+     "canal": "NexGenGama42",
+     "dur": 119,
+     "loudnessDb": 5.1599998,
+     "captions": null,
+     "consulta": "Nimbasa City Pokemon Black White Topic"
+    }
+   ],
+   "apple": {
+    "song": 839755355,
+    "country": "us",
+    "titulo": "Nimbasa City",
+    "artista": "Shota Kageyama & GAME FREAK",
+    "album": "Pokémon Black & Pokémon White: Super Music Collection"
+   }
+  },
+  {
+   "key": "saga-pokemon-black-and-white-castelia-city",
+   "id": "saga-pokemon-black-and-white-castelia-city",
+   "tema": "sagas",
+   "cat": "pokemon",
+   "game": "Pokémon Black & White",
+   "title": "Castelia City",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "BJO_Q3X4IUE",
+     "titulo": "Castelia City: Arrangement ◓ Pokémon Black & White",
+     "canal": "Pokestir",
+     "dur": 259,
+     "loudnessDb": 3.9799995,
+     "captions": null,
+     "consulta": "Castelia City Pokemon Black White Topic"
+    },
+    {
+     "id": "fZk4HPbsFc8",
+     "titulo": "Castelia City - Pokémon Black and White (Restored)",
+     "canal": "CoNesTra",
+     "dur": 202,
+     "loudnessDb": -1.1599998,
+     "captions": null,
+     "consulta": "Castelia City Pokemon Black White Topic"
+    }
+   ],
+   "apple": {
+    "song": 839755349,
+    "country": "us",
+    "titulo": "Castelia City",
+    "artista": "Shota Kageyama & GAME FREAK",
+    "album": "Pokémon Black & Pokémon White: Super Music Collection"
+   }
+  },
+  {
+   "key": "saga-pokemon-black-and-white-striaton-city",
+   "id": "saga-pokemon-black-and-white-striaton-city",
+   "tema": "sagas",
+   "cat": "pokemon",
+   "game": "Pokémon Black & White",
+   "title": "Striaton City",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "tAISeYg0Yac",
+     "titulo": "Striaton City - Pokémon Black & White",
+     "canal": "Pokémon Original Soundtrack",
+     "dur": 71,
+     "loudnessDb": 3.8299999,
+     "captions": null,
+     "consulta": "Striaton City Pokemon Black White Topic"
+    },
+    {
+     "id": "gjQdrXMU0lE",
+     "titulo": "Pokemon Black & White - Striaton City",
+     "canal": "GenerationPokemonNet",
+     "dur": 71,
+     "loudnessDb": 3.0699997,
+     "captions": null,
+     "consulta": "Striaton City Pokemon Black White Topic"
+    }
+   ],
+   "apple": {
+    "song": 839755161,
+    "country": "us",
+    "titulo": "Striaton City",
+    "artista": "Hitomi Sato & GAME FREAK",
+    "album": "Pokémon Black & Pokémon White: Super Music Collection"
+   }
+  },
+  {
+   "key": "saga-pokemon-black-and-white-opelucid-city",
+   "id": "saga-pokemon-black-and-white-opelucid-city",
+   "tema": "sagas",
+   "cat": "pokemon",
+   "game": "Pokémon Black & White",
+   "title": "Opelucid City",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "g356DvtjCOo",
+     "titulo": "Pokemon Black & White - Opelucid City (White)",
+     "canal": "Kuro",
+     "dur": 213,
+     "loudnessDb": -0.77000046,
+     "captions": null,
+     "consulta": "Opelucid City Pokemon Black White Topic"
+    },
+    {
+     "id": "PmqpoJzT6gU",
+     "titulo": "Pokemon Black & White - Opelucid City (Black)",
+     "canal": "Kuro",
+     "dur": 254,
+     "loudnessDb": -4.3299999,
+     "captions": null,
+     "consulta": "Opelucid City Pokemon Black White Topic"
+    }
+   ],
+   "apple": {
+    "song": 839760036,
+    "country": "us",
+    "titulo": "Opelucid City Gym (Pokémon Black)",
+    "artista": "Go Ichinose & GAME FREAK",
+    "album": "Pokémon Black & Pokémon White: Super Music Collection"
+   }
+  },
+  {
+   "key": "saga-pokemon-sword-and-shield-wild-area",
+   "id": "saga-pokemon-sword-and-shield-wild-area",
+   "tema": "sagas",
+   "cat": "pokemon",
+   "game": "Pokémon Sword & Shield",
+   "title": "Wild Area",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "KgsK6avZbaI",
+     "titulo": "\"Wild Area (North) | Pokemon Sword & Shield OST (Official)",
+     "canal": "Vanil",
+     "dur": 380,
+     "loudnessDb": 2.8800001,
+     "captions": null,
+     "consulta": "Wild Area Pokemon Sword Shield Topic"
+    },
+    {
+     "id": "sILPxViY7Vc",
+     "titulo": "Pokémon Sword / Shield - Wild Area (South) 🎵 ᴴᴰ",
+     "canal": "PokéTunes",
+     "dur": 448,
+     "loudnessDb": -4.1800003,
+     "captions": null,
+     "consulta": "Wild Area Pokemon Sword Shield Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-pokemon-sword-and-shield-battle-eternatus",
+   "id": "saga-pokemon-sword-and-shield-battle-eternatus",
+   "tema": "sagas",
+   "cat": "pokemon",
+   "game": "Pokémon Sword & Shield",
+   "title": "Battle! (Eternatus)",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "GzzcX5jG2eU",
+     "titulo": "Battle! Eternatus (Phase 3) - Pokémon Sword & Shield",
+     "canal": "Pokémon Original Soundtrack",
+     "dur": 269,
+     "loudnessDb": 5.1800003,
+     "captions": null,
+     "consulta": "Battle Eternatus Pokemon Sword Shield Topic"
+    },
+    {
+     "id": "FvrPBOWZRKY",
+     "titulo": "Pokémon Sword & Shield - Eternatus Battle Music (HQ)",
+     "canal": "Pokeli",
+     "dur": 300,
+     "loudnessDb": -6.2999992,
+     "captions": null,
+     "consulta": "Battle Eternatus Pokemon Sword Shield Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-pokemon-sword-and-shield-battle-chairman-rose",
+   "id": "saga-pokemon-sword-and-shield-battle-chairman-rose",
+   "tema": "sagas",
+   "cat": "pokemon",
+   "game": "Pokémon Sword & Shield",
+   "title": "Battle! (Chairman Rose)",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "GD4t0zknqQY",
+     "titulo": "Battle! Chairman Rose (Arrangement) - Pokémon Sword and Shield",
+     "canal": "Suic-VGM",
+     "dur": 235,
+     "loudnessDb": -0.43999958,
+     "captions": null,
+     "consulta": "Battle Chairman Rose Pokemon Sword Shield Topic"
+    },
+    {
+     "id": "ugyONbAGE8E",
+     "titulo": "Pokémon Sword & Shield - Chairman Rose Battle Music",
+     "canal": "Pokeli",
+     "dur": 300,
+     "loudnessDb": -6.3299999,
+     "captions": null,
+     "consulta": "Battle Chairman Rose Pokemon Sword Shield Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-pokemon-sword-and-shield-motostoke",
+   "id": "saga-pokemon-sword-and-shield-motostoke",
+   "tema": "sagas",
+   "cat": "pokemon",
+   "game": "Pokémon Sword & Shield",
+   "title": "Motostoke",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "rApeAj22VtY",
+     "titulo": "Motostoke - Pokémon Sword & Shield",
+     "canal": "Pokémon Original Soundtrack",
+     "dur": 193,
+     "loudnessDb": 4.7299995,
+     "captions": null,
+     "consulta": "Motostoke Pokemon Sword Shield Topic"
+    },
+    {
+     "id": "Lkk6nPXoqjs",
+     "titulo": "\"Motostoke City\" | Pokemon Sword & Shield OST (Official)",
+     "canal": "Vanil",
+     "dur": 340,
+     "loudnessDb": 0.56999969,
+     "captions": null,
+     "consulta": "Motostoke Pokemon Sword Shield Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-pokemon-sword-and-shield-hammerlocke",
+   "id": "saga-pokemon-sword-and-shield-hammerlocke",
+   "tema": "sagas",
+   "cat": "pokemon",
+   "game": "Pokémon Sword & Shield",
+   "title": "Hammerlocke",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "M4F_hy61L-E",
+     "titulo": "Hammerlocke - Pokémon Sword & Shield",
+     "canal": "Pokémon Original Soundtrack",
+     "dur": 115,
+     "loudnessDb": 2.4399996,
+     "captions": null,
+     "consulta": "Hammerlocke Pokemon Sword Shield Topic"
+    },
+    {
+     "id": "qealcpBM5Xw",
+     "titulo": "How to reach Hammerlocke through the wilds | Pokemon Sword & Shield",
+     "canal": "Gamerpillar",
+     "dur": 140,
+     "loudnessDb": -10.85,
+     "captions": null,
+     "consulta": "Hammerlocke Pokemon Sword Shield Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-donkey-kong-country-tropical-freeze-amiss-abyss",
+   "id": "saga-donkey-kong-country-tropical-freeze-amiss-abyss",
+   "tema": "sagas",
+   "cat": "donkey-kong",
+   "game": "Donkey Kong Country: Tropical Freeze",
+   "title": "Amiss Abyss",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "WA2WjP6sgrc",
+     "titulo": "Donkey Kong Country: Tropical Freeze Soundtrack - Funky Waters (Amiss Abyss)",
+     "canal": "piplupwater",
+     "dur": 280,
+     "loudnessDb": -2.8999996,
+     "captions": null,
+     "consulta": "Amiss Abyss Donkey Kong Country Tropical Freeze David Wise Topic"
+    },
+    {
+     "id": "3IVNYkFmWN4",
+     "titulo": "Gametracks 236 - Amiss Abyss/ DKCTF",
+     "canal": "sebastian riera",
+     "dur": 281,
+     "loudnessDb": -4.5400009,
+     "captions": null,
+     "consulta": "Amiss Abyss Donkey Kong Country Tropical Freeze David Wise Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-donkey-kong-country-tropical-freeze-busted-bayou",
+   "id": "saga-donkey-kong-country-tropical-freeze-busted-bayou",
+   "tema": "sagas",
+   "cat": "donkey-kong",
+   "game": "Donkey Kong Country: Tropical Freeze",
+   "title": "Busted Bayou",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "iVbK7jbzkPg",
+     "titulo": "Level 1-B: Busted Bayou - Donkey Kong Country: Tropical Freeze - Music",
+     "canal": "Mr. HeliX",
+     "dur": 376,
+     "loudnessDb": 2.0699997,
+     "captions": null,
+     "consulta": "Busted Bayou Donkey Kong Country Tropical Freeze David Wise Topic"
+    },
+    {
+     "id": "95HuSMQSUVo",
+     "titulo": "Donkey Kong Country: Tropical Freeze Soundtrack - Busted Bayou",
+     "canal": "piplupwater",
+     "dur": 383,
+     "loudnessDb": -3.9500008,
+     "captions": null,
+     "consulta": "Busted Bayou Donkey Kong Country Tropical Freeze David Wise Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-donkey-kong-country-tropical-freeze-sawmill-thrill",
+   "id": "saga-donkey-kong-country-tropical-freeze-sawmill-thrill",
+   "tema": "sagas",
+   "cat": "donkey-kong",
+   "game": "Donkey Kong Country: Tropical Freeze",
+   "title": "Sawmill Thrill",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "giwG7djXPKc",
+     "titulo": "Donkey Kong Country: Tropical Freeze Soundtrack - Sawmill Thrill (Midway)",
+     "canal": "piplupwater",
+     "dur": 77,
+     "loudnessDb": 0.050000191,
+     "captions": null,
+     "consulta": "Sawmill Thrill Donkey Kong Country Tropical Freeze David Wise Topic"
+    },
+    {
+     "id": "ZcnMB0vLhzI",
+     "titulo": "Donkey Kong Country: Tropical Freeze Soundtrack - Sawmill Thrill",
+     "canal": "piplupwater",
+     "dur": 143,
+     "loudnessDb": -4.1200008,
+     "captions": null,
+     "consulta": "Sawmill Thrill Donkey Kong Country Tropical Freeze David Wise Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-donkey-kong-country-tropical-freeze-windmill-hills",
+   "id": "saga-donkey-kong-country-tropical-freeze-windmill-hills",
+   "tema": "sagas",
+   "cat": "donkey-kong",
+   "game": "Donkey Kong Country: Tropical Freeze",
+   "title": "Windmill Hills",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "e5ZQL76P10U",
+     "titulo": "Windmill Hills || Donkey Kong Country: Tropical Freeze (Original Game Soundtrack)",
+     "canal": "The AmbiGamer",
+     "dur": 249,
+     "loudnessDb": -1.8999996,
+     "captions": null,
+     "consulta": "Windmill Hills Donkey Kong Country Tropical Freeze David Wise Topic"
+    },
+    {
+     "id": "U1vsBsCoK_I",
+     "titulo": "Donkey Kong Country: Tropical Freeze Soundtrack - Windmill Hills",
+     "canal": "piplupwater",
+     "dur": 141,
+     "loudnessDb": -13.34,
+     "captions": null,
+     "consulta": "Windmill Hills Donkey Kong Country Tropical Freeze David Wise Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-mario-kart-8-deluxe-toad-harbor",
+   "id": "saga-mario-kart-8-deluxe-toad-harbor",
+   "tema": "sagas",
+   "cat": "mario",
+   "game": "Mario Kart 8 Deluxe",
+   "title": "Toad Harbor",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "w85WprAqmvA",
+     "titulo": "Mario Kart 8 Deluxe OST: Toad Harbor",
+     "canal": "FGame OSTs",
+     "dur": 180,
+     "loudnessDb": 3.1999998,
+     "captions": null,
+     "consulta": "Toad Harbor Mario Kart 8 Deluxe OST Topic"
+    },
+    {
+     "id": "7T1LT2S1HsA",
+     "titulo": "Toad Harbor - Mario Kart 8 Deluxe Music",
+     "canal": "TZ Gaming",
+     "dur": 121,
+     "loudnessDb": -0.22000027,
+     "captions": null,
+     "consulta": "Toad Harbor Mario Kart 8 Deluxe OST Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-mario-kart-8-deluxe-mount-wario",
+   "id": "saga-mario-kart-8-deluxe-mount-wario",
+   "tema": "sagas",
+   "cat": "mario",
+   "game": "Mario Kart 8 Deluxe",
+   "title": "Mount Wario",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "clsH66LqND0",
+     "titulo": "Mount Wario - Mario Kart 8 Deluxe Music",
+     "canal": "TZ Gaming",
+     "dur": 153,
+     "loudnessDb": -0.39000034,
+     "captions": null,
+     "consulta": "Mount Wario Mario Kart 8 Deluxe OST Topic"
+    },
+    {
+     "id": "ERq58r_qOy0",
+     "titulo": "Mount Wario - Mario Kart 8 OST",
+     "canal": "Mario Kart Music Enjoyer",
+     "dur": 130,
+     "loudnessDb": -2.3400002,
+     "captions": null,
+     "consulta": "Mount Wario Mario Kart 8 Deluxe OST Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-mario-kart-8-deluxe-sweet-sweet-canyon",
+   "id": "saga-mario-kart-8-deluxe-sweet-sweet-canyon",
+   "tema": "sagas",
+   "cat": "mario",
+   "game": "Mario Kart 8 Deluxe",
+   "title": "Sweet Sweet Canyon",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "zXFC3Xmv11Y",
+     "titulo": "Sweet Sweet Canyon-Mario Kart 8 Deluxe [OST]",
+     "canal": "Everyday OST",
+     "dur": 105,
+     "loudnessDb": -0.10999966,
+     "captions": null,
+     "consulta": "Sweet Sweet Canyon Mario Kart 8 Deluxe OST Topic"
+    },
+    {
+     "id": "Al8sVyRSdnQ",
+     "titulo": "Sweet Sweet Canyon - Mario Kart 8 Deluxe Music",
+     "canal": "TZ Gaming",
+     "dur": 123,
+     "loudnessDb": -0.71000004,
+     "captions": null,
+     "consulta": "Sweet Sweet Canyon Mario Kart 8 Deluxe OST Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-mario-kart-8-deluxe-dolphin-shoals",
+   "id": "saga-mario-kart-8-deluxe-dolphin-shoals",
+   "tema": "sagas",
+   "cat": "mario",
+   "game": "Mario Kart 8 Deluxe",
+   "title": "Dolphin Shoals",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "5qZAjt-72Sk",
+     "titulo": "Mario Kart 8 Deluxe OST - Dolphin Shoals",
+     "canal": "VideoGameMusicCentral",
+     "dur": 187,
+     "loudnessDb": 0.06000042,
+     "captions": null,
+     "consulta": "Dolphin Shoals Mario Kart 8 Deluxe OST Topic"
+    },
+    {
+     "id": "UmAO-wkg4U0",
+     "titulo": "Dolphin Shoals - Mario Kart 8 Deluxe Music",
+     "canal": "TZ Gaming",
+     "dur": 187,
+     "loudnessDb": -0.050000191,
+     "captions": null,
+     "consulta": "Dolphin Shoals Mario Kart 8 Deluxe OST Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-mario-kart-8-deluxe-sunshine-airport",
+   "id": "saga-mario-kart-8-deluxe-sunshine-airport",
+   "tema": "sagas",
+   "cat": "mario",
+   "game": "Mario Kart 8 Deluxe",
+   "title": "Sunshine Airport",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "3yidxkyUdoU",
+     "titulo": "Sunshine Airport - Mario Kart 8 Deluxe Music",
+     "canal": "TZ Gaming",
+     "dur": 125,
+     "loudnessDb": 0.55000019,
+     "captions": null,
+     "consulta": "Sunshine Airport Mario Kart 8 Deluxe OST Topic"
+    },
+    {
+     "id": "WqoRvwVex5A",
+     "titulo": "Sunshine Airport - Mario Kart 8 OST",
+     "canal": "Mario Kart Music Enjoyer",
+     "dur": 119,
+     "loudnessDb": -0.19999981,
+     "captions": null,
+     "consulta": "Sunshine Airport Mario Kart 8 Deluxe OST Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-mario-kart-64-koopa-troopa-beach",
+   "id": "saga-mario-kart-64-koopa-troopa-beach",
+   "tema": "sagas",
+   "cat": "mario",
+   "game": "Mario Kart 64",
+   "title": "Koopa Troopa Beach",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "0sC23vg08w8",
+     "titulo": "Koopa Troopa Beach - Mario Kart 64 (Restored)",
+     "canal": "Cloou",
+     "dur": 134,
+     "loudnessDb": 1.6400003,
+     "captions": null,
+     "consulta": "Koopa Troopa Beach Mario Kart 64 OST"
+    },
+    {
+     "id": "WGFAPl2uu28",
+     "titulo": "Koopa Troopa Beach - Mario Kart 64 OST",
+     "canal": "Neutri Bros.",
+     "dur": 126,
+     "loudnessDb": -1.5500002,
+     "captions": null,
+     "consulta": "Koopa Troopa Beach Mario Kart 64 OST"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-mario-kart-64-frappe-snowland",
+   "id": "saga-mario-kart-64-frappe-snowland",
+   "tema": "sagas",
+   "cat": "mario",
+   "game": "Mario Kart 64",
+   "title": "Frappe Snowland",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "RQkC7As2tR0",
+     "titulo": "Frappe Snowland - Mario Kart 64 (Restored)",
+     "canal": "Cloou",
+     "dur": 141,
+     "loudnessDb": 1.71,
+     "captions": null,
+     "consulta": "Frappe Snowland Mario Kart 64 OST"
+    },
+    {
+     "id": "fW-hUbIQbo0",
+     "titulo": "Frappe Snowland & Sherbet Land",
+     "canal": "Neutri Bros.",
+     "dur": 143,
+     "loudnessDb": -2.2800007,
+     "captions": null,
+     "consulta": "Frappe Snowland Mario Kart 64 OST"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-mario-kart-64-wario-stadium",
+   "id": "saga-mario-kart-64-wario-stadium",
+   "tema": "sagas",
+   "cat": "mario",
+   "game": "Mario Kart 64",
+   "title": "Wario Stadium",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "iAC5xQl3PYc",
+     "titulo": "N64 Wario Stadium (Mario Kart 64) - Mario Kart World (OST)",
+     "canal": "WiiPlayz",
+     "dur": 155,
+     "loudnessDb": 0.97999954,
+     "captions": null,
+     "consulta": "Wario Stadium Mario Kart 64 OST"
+    },
+    {
+     "id": "kAEbY1t7qnA",
+     "titulo": "3 Raceways & Wario Stadium - Mario Kart 64 OST",
+     "canal": "Neutri Bros.",
+     "dur": 169,
+     "loudnessDb": -3.0499992,
+     "captions": null,
+     "consulta": "Wario Stadium Mario Kart 64 OST"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-mario-kart-64-banshee-boardwalk",
+   "id": "saga-mario-kart-64-banshee-boardwalk",
+   "tema": "sagas",
+   "cat": "mario",
+   "game": "Mario Kart 64",
+   "title": "Banshee Boardwalk",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "AfersTlQXhI",
+     "titulo": "Mario Kart 64 Music - Banshee Boardwalk",
+     "canal": "supahmario1",
+     "dur": 111,
+     "loudnessDb": -2.4699993,
+     "captions": null,
+     "consulta": "Banshee Boardwalk Mario Kart 64 OST"
+    },
+    {
+     "id": "rV2GbSonXy8",
+     "titulo": "Mario Kart 64 OST - Banshee Boardwalk",
+     "canal": "Hanternos",
+     "dur": 123,
+     "loudnessDb": -2.8999996,
+     "captions": null,
+     "consulta": "Banshee Boardwalk Mario Kart 64 OST"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-sonic-frontiers-vandalize",
+   "id": "saga-sonic-frontiers-vandalize",
+   "tema": "sagas",
+   "cat": "sonic",
+   "game": "Sonic Frontiers",
+   "title": "Vandalize",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "5U1jO4KL60Y",
+     "titulo": "Vandalize",
+     "canal": "ONE OK ROCK - Topic",
+     "dur": 195,
+     "loudnessDb": 5.8299999,
+     "captions": null,
+     "consulta": "ONE OK ROCK Vandalize Sonic Frontiers"
+    },
+    {
+     "id": "fnyzHd2PoS0",
+     "titulo": "Sonic Frontiers & ONE OK ROCK - \"Vandalize\" Music Video",
+     "canal": "ONE OK ROCK",
+     "dur": 195,
+     "loudnessDb": 5.7700005,
+     "captions": null,
+     "consulta": "ONE OK ROCK Vandalize Sonic Frontiers"
+    }
+   ],
+   "apple": {
+    "song": 1641409650,
+    "country": "us",
+    "titulo": "Vandalize",
+    "artista": "ONE OK ROCK",
+    "album": "Vandalize - Single"
+   }
+  },
+  {
+   "key": "saga-sonic-frontiers-kronos-island",
+   "id": "saga-sonic-frontiers-kronos-island",
+   "tema": "sagas",
+   "cat": "sonic",
+   "game": "Sonic Frontiers",
+   "title": "Kronos Island",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "TaWMW9xLI78",
+     "titulo": "Kronos Island: 2nd Mvt.",
+     "canal": "SEGA - Topic",
+     "dur": 361,
+     "loudnessDb": 1.1800003,
+     "captions": null,
+     "consulta": "Kronos Island Sonic Frontiers Topic"
+    },
+    {
+     "id": "i_e2dQk43hU",
+     "titulo": "Kronos Island (2nd Mvt.) - Sonic Frontiers [OST]",
+     "canal": "DeoxysPrime",
+     "dur": 357,
+     "loudnessDb": -2.9899998,
+     "captions": null,
+     "consulta": "Kronos Island Sonic Frontiers Topic"
+    }
+   ],
+   "apple": null
+  },
+  {
+   "key": "saga-final-fantasy-xvi-heart-of-stone",
+   "id": "saga-final-fantasy-xvi-heart-of-stone",
+   "tema": "sagas",
+   "cat": "final-fantasy",
+   "game": "Final Fantasy XVI",
+   "title": "Heart of Stone",
+   "latino": false,
+   "youtube": [
+    {
+     "id": "21m8mnShc7w",
+     "titulo": "Heart of Stone (Titan)",
+     "canal": "Guitarrista de Atena - Topic",
+     "dur": 243,
+     "loudnessDb": 6.5700002,
+     "captions": null,
+     "consulta": "Heart of Stone Final Fantasy XVI Topic"
+    },
+    {
+     "id": "M46CSDwZuJU",
+     "titulo": "\"Heart Of Stone\" (Titan Theme 3) with Official Lyrics | Final Fantasy XVI",
+     "canal": "hungrychad",
+     "dur": 304,
+     "loudnessDb": 1.3900003,
+     "captions": null,
+     "consulta": "Heart of Stone Final Fantasy XVI Topic"
+    }
+   ],
+   "apple": {
+    "song": 1696573136,
+    "country": "us",
+    "titulo": "Heart of Stone",
+    "artista": "Masayoshi Soken",
+    "album": "FINAL FANTASY XVI Original Soundtrack"
+   }
+  }
+ ],
+ "descartadas": [
+  {
+   "key": "toon-rambo-y-las-fuerzas-de-la-libertad-tema",
+   "tema": "caricaturas",
+   "cat": "toon-80s",
+   "game": "Rambo y las fuerzas de la libertad",
+   "title": "Rambo (tema latino)",
+   "motivo": "no se encontró la entrada en español latino en YouTube"
+  },
+  {
+   "key": "genshin-impact-city-of-winds-and-idylls",
+   "tema": "juegos",
+   "cat": "online",
+   "game": "Genshin Impact",
+   "title": "City of Winds and Idylls",
+   "motivo": "no se encontró ninguna fuente que pase los filtros"
+  },
+  {
+   "key": "call-of-duty-modern-warfare-2-modern-warfare-2-main-theme",
+   "tema": "juegos",
+   "cat": "online",
+   "game": "Call of Duty: Modern Warfare 2",
+   "title": "Modern Warfare 2 Main Theme",
+   "motivo": "no se encontró ninguna fuente que pase los filtros"
+  }
+ ],
+ "generado": "2026-10-17T19:19:29.108Z"
+}

@@ -17,7 +17,7 @@
  *                     fuerte, porque el juego solo puede bajar el volumen, no subirlo.
  *
  * Un juego aparece en "Un juego" solo si tiene al menos 5 canciones con nombres distintos.
- * Archivo generado (184 canciones).
+ * Archivo generado (221 canciones).
  */
 (function (AM) {
   'use strict';
@@ -175,6 +175,60 @@
       title: 'Break Free (Lead the Way)', composer: 'Naoto Kubo, Shiho Fujii y Koji Kondo', year: 2017, platform: 'Nintendo Switch',
       sources: [yt('DNXTxZVZ4UQ'), yt('3I_awBzvjPU')],
     },
+    {
+      id: 'saga-mario-kart-8-deluxe-toad-harbor', saga: 'mario', franchise: 'Mario Kart', game: 'Mario Kart 8 Deluxe',
+      title: 'Toad Harbor', composer: 'Kazumi Totaka, Ryo Nagamatsu, Atsuko Asahi, Yasuaki Iwata', year: 2017, platform: 'Nintendo Switch',
+      aka: ['Puerto Toad', 'Toad Harbour'],
+      sources: [yt('w85WprAqmvA'), yt('7T1LT2S1HsA')],
+    },
+    {
+      id: 'saga-mario-kart-8-deluxe-mount-wario', saga: 'mario', franchise: 'Mario Kart', game: 'Mario Kart 8 Deluxe',
+      title: 'Mount Wario', composer: 'Kazumi Totaka, Ryo Nagamatsu, Atsuko Asahi, Yasuaki Iwata', year: 2017, platform: 'Nintendo Switch',
+      aka: ['Monte Wario'],
+      sources: [yt('clsH66LqND0'), yt('ERq58r_qOy0')],
+    },
+    {
+      id: 'saga-mario-kart-8-deluxe-sweet-sweet-canyon', saga: 'mario', franchise: 'Mario Kart', game: 'Mario Kart 8 Deluxe',
+      title: 'Sweet Sweet Canyon', composer: 'Kazumi Totaka, Ryo Nagamatsu, Atsuko Asahi, Yasuaki Iwata', year: 2017, platform: 'Nintendo Switch',
+      aka: ['Canon Dulce'],
+      sources: [yt('zXFC3Xmv11Y'), yt('Al8sVyRSdnQ')],
+    },
+    {
+      id: 'saga-mario-kart-8-deluxe-dolphin-shoals', saga: 'mario', franchise: 'Mario Kart', game: 'Mario Kart 8 Deluxe',
+      title: 'Dolphin Shoals', composer: 'Kazumi Totaka, Ryo Nagamatsu, Atsuko Asahi, Yasuaki Iwata', year: 2017, platform: 'Nintendo Switch',
+      aka: ['Dolphin Shoals Underwater'],
+      sources: [yt('5qZAjt-72Sk'), yt('UmAO-wkg4U0')],
+    },
+    {
+      id: 'saga-mario-kart-8-deluxe-sunshine-airport', saga: 'mario', franchise: 'Mario Kart', game: 'Mario Kart 8 Deluxe',
+      title: 'Sunshine Airport', composer: 'Kazumi Totaka, Ryo Nagamatsu, Atsuko Asahi, Yasuaki Iwata', year: 2017, platform: 'Nintendo Switch',
+      aka: ['Aeropuerto Sunshine'],
+      sources: [yt('3yidxkyUdoU'), yt('WqoRvwVex5A')],
+    },
+    {
+      id: 'saga-mario-kart-64-koopa-troopa-beach', saga: 'mario', franchise: 'Mario Kart', game: 'Mario Kart 64',
+      title: 'Koopa Troopa Beach', composer: 'Kenta Nagata', year: 1996, platform: 'Nintendo 64',
+      aka: ['Koopa Beach', 'Playa Koopa'],
+      sources: [yt('0sC23vg08w8'), yt('WGFAPl2uu28')],
+    },
+    {
+      id: 'saga-mario-kart-64-frappe-snowland', saga: 'mario', franchise: 'Mario Kart', game: 'Mario Kart 64',
+      title: 'Frappe Snowland', composer: 'Kenta Nagata', year: 1996, platform: 'Nintendo 64',
+      aka: ['Frappe Snow Land'],
+      sources: [yt('RQkC7As2tR0'), yt('fW-hUbIQbo0')],
+    },
+    {
+      id: 'saga-mario-kart-64-wario-stadium', saga: 'mario', franchise: 'Mario Kart', game: 'Mario Kart 64',
+      title: 'Wario Stadium', composer: 'Kenta Nagata', year: 1996, platform: 'Nintendo 64',
+      aka: ['Estadio Wario'],
+      sources: [yt('iAC5xQl3PYc'), yt('kAEbY1t7qnA')],
+    },
+    {
+      id: 'saga-mario-kart-64-banshee-boardwalk', saga: 'mario', franchise: 'Mario Kart', game: 'Mario Kart 64',
+      title: 'Banshee Boardwalk', composer: 'Kenta Nagata', year: 1996, platform: 'Nintendo 64',
+      aka: ['Paseo Banshee'],
+      sources: [yt('AfersTlQXhI'), yt('rV2GbSonXy8')],
+    },
     /* ───────────── zelda ───────────── */
     {
       id: 'saga-the-legend-of-zelda-a-link-to-the-past-hyrule-field-main-th', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: A Link to the Past',
@@ -286,6 +340,36 @@
       title: 'Zora\'s Domain', composer: 'Manaka Kataoka, Yasuaki Iwata y Hajime Wakai', year: 2017, platform: 'Nintendo Switch / Wii U',
       sources: [yt('Ud9ktw40mPQ'), yt('cHcLOLJHlMY')],
     },
+    {
+      id: 'saga-the-legend-of-zelda-twilight-princess-midna-s-lament', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Twilight Princess',
+      title: 'Midna\'s Lament', composer: 'Toru Minegishi, Asuka Ohta', year: 2006, platform: 'GameCube / Wii',
+      aka: ['Midna\'s Theme', 'Tema de Midna', 'Lamento de Midna'],
+      sources: [yt('sNRx4CwL014'), yt('FUQKP0pt8Mg')],
+    },
+    {
+      id: 'saga-the-legend-of-zelda-twilight-princess-ordon-village', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Twilight Princess',
+      title: 'Ordon Village', composer: 'Toru Minegishi, Asuka Ohta', year: 2006, platform: 'GameCube / Wii',
+      aka: ['Aldea Ordon', 'Ordon Village Day'],
+      sources: [yt('9HdAx_UCgvA'), yt('01pN6rnaJy8')],
+    },
+    {
+      id: 'saga-the-legend-of-zelda-twilight-princess-gerudo-desert', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Twilight Princess',
+      title: 'Gerudo Desert', composer: 'Toru Minegishi, Asuka Ohta', year: 2006, platform: 'GameCube / Wii',
+      aka: ['Desierto Gerudo'],
+      sources: [yt('OBE4IqApdAA'), yt('zEAVBSeo7fY')],
+    },
+    {
+      id: 'saga-the-legend-of-zelda-twilight-princess-goron-mines', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Twilight Princess',
+      title: 'Goron Mines', composer: 'Toru Minegishi, Asuka Ohta', year: 2006, platform: 'GameCube / Wii',
+      aka: ['Minas Goron', 'Mina Goron'],
+      sources: [yt('dPznnIBguIg'), yt('jpJQYWDvL0k')],
+    },
+    {
+      id: 'saga-the-legend-of-zelda-twilight-princess-midna-s', saga: 'zelda', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Twilight Princess',
+      title: 'Midna\'s Desperate Hour', composer: 'Toru Minegishi, Asuka Ohta', year: 2006, platform: 'GameCube / Wii',
+      aka: ['Midna\'s Desperate Hour', 'Hora desesperada de Midna'],
+      sources: [yt('RVkJW2zAZwQ'), yt('putkDAajYxw')],
+    },
     /* ───────────── pokemon ───────────── */
     {
       id: 'saga-pokemon-red-and-blue-pallet-town', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Red & Blue',
@@ -371,6 +455,66 @@
       id: 'saga-pokemon-diamond-and-pearl-eterna-forest', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Diamond & Pearl',
       title: 'Eterna Forest', composer: 'Hitomi Sato, Go Ichinose y Junichi Masuda', year: 2006, platform: 'Nintendo DS',
       sources: [apple({ song: 840162936, country: 'us' }), yt('KqkMem4XeJQ'), yt('S8-FXBuVXAs')],
+    },
+    {
+      id: 'saga-pokemon-black-and-white-accumula-town', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Black & White',
+      title: 'Accumula Town', composer: 'Go Ichinose, Shota Kageyama, Hitomi Sato, Junichi Masuda', year: 2010, platform: 'Nintendo DS',
+      aka: ['Pueblo Accumula'],
+      sources: [yt('ZXm_nqpkO4M'), yt('rlHSROqpzJw')],
+    },
+    {
+      id: 'saga-pokemon-black-and-white-nimbasa-city', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Black & White',
+      title: 'Nimbasa City', composer: 'Go Ichinose, Shota Kageyama, Hitomi Sato, Junichi Masuda', year: 2010, platform: 'Nintendo DS',
+      aka: ['Ciudad Nimbasa', 'Nimbasa City Day'],
+      sources: [yt('v1sbSGLLH-s'), yt('sYAoD710Dxo'), apple({ song: 839755355, country: 'us' })],
+    },
+    {
+      id: 'saga-pokemon-black-and-white-castelia-city', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Black & White',
+      title: 'Castelia City', composer: 'Go Ichinose, Shota Kageyama, Hitomi Sato, Junichi Masuda', year: 2010, platform: 'Nintendo DS',
+      aka: ['Ciudad Porcelana'],
+      sources: [yt('BJO_Q3X4IUE'), yt('fZk4HPbsFc8'), apple({ song: 839755349, country: 'us' })],
+    },
+    {
+      id: 'saga-pokemon-black-and-white-striaton-city', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Black & White',
+      title: 'Striaton City', composer: 'Go Ichinose, Shota Kageyama, Hitomi Sato, Junichi Masuda', year: 2010, platform: 'Nintendo DS',
+      aka: ['Ciudad Esmalte'],
+      sources: [yt('tAISeYg0Yac'), yt('gjQdrXMU0lE'), apple({ song: 839755161, country: 'us' })],
+    },
+    {
+      id: 'saga-pokemon-black-and-white-opelucid-city', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Black & White',
+      title: 'Opelucid City', composer: 'Go Ichinose, Shota Kageyama, Hitomi Sato, Junichi Masuda', year: 2010, platform: 'Nintendo DS',
+      aka: ['Ciudad Opelucid'],
+      sources: [yt('g356DvtjCOo'), yt('PmqpoJzT6gU'), apple({ song: 839760036, country: 'us' })],
+    },
+    {
+      id: 'saga-pokemon-sword-and-shield-wild-area', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Sword & Shield',
+      title: 'Wild Area', composer: 'Minako Adachi, Go Ichinose, Shota Kageyama, Hitomi Sato', year: 2019, platform: 'Nintendo Switch',
+      aka: ['Area Salvaje', 'Wild Area (Day)'],
+      sources: [yt('KgsK6avZbaI'), yt('sILPxViY7Vc')],
+    },
+    {
+      id: 'saga-pokemon-sword-and-shield-battle-eternatus', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Sword & Shield',
+      title: 'Battle! (Eternatus)', composer: 'Minako Adachi, Go Ichinose, Shota Kageyama, Hitomi Sato', year: 2019, platform: 'Nintendo Switch',
+      aka: ['Eternatus Battle Theme', 'Battle! Eternatus'],
+      sources: [yt('GzzcX5jG2eU'), yt('FvrPBOWZRKY')],
+    },
+    {
+      id: 'saga-pokemon-sword-and-shield-battle-chairman-rose', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Sword & Shield',
+      title: 'Battle! (Chairman Rose)', composer: 'Minako Adachi, Go Ichinose, Shota Kageyama, Hitomi Sato', year: 2019, platform: 'Nintendo Switch',
+      aka: ['Chairman Rose Battle Theme', 'Battle! Chairman Rose', 'Presidente Rose'],
+      sources: [yt('GD4t0zknqQY'), yt('ugyONbAGE8E')],
+    },
+    {
+      id: 'saga-pokemon-sword-and-shield-motostoke', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Sword & Shield',
+      title: 'Motostoke', composer: 'Minako Adachi, Go Ichinose, Shota Kageyama, Hitomi Sato', year: 2019, platform: 'Nintendo Switch',
+      aka: ['Motostoke City'],
+      sources: [yt('rApeAj22VtY'), yt('Lkk6nPXoqjs')],
+    },
+    {
+      id: 'saga-pokemon-sword-and-shield-hammerlocke', saga: 'pokemon', franchise: 'Pokémon', game: 'Pokémon Sword & Shield',
+      title: 'Hammerlocke', composer: 'Minako Adachi, Go Ichinose, Shota Kageyama, Hitomi Sato', year: 2019, platform: 'Nintendo Switch',
+      aka: ['Hammerlocke City'],
+      sources: [yt('M4F_hy61L-E'), yt('qealcpBM5Xw')],
     },
     /* ───────────── kirby ───────────── */
     {
@@ -509,6 +653,27 @@
       title: 'Creepy Castle', composer: 'Grant Kirkhope', year: 1999, platform: 'Nintendo 64',
       sources: [yt('ftiqcfh15Cc'), yt('BH7QwvrGAhQ')],
     },
+    {
+      id: 'saga-donkey-kong-country-tropical-freeze-amiss-abyss', saga: 'donkey-kong', franchise: 'Donkey Kong', game: 'Donkey Kong Country: Tropical Freeze',
+      title: 'Amiss Abyss', composer: 'David Wise', year: 2014, platform: 'Wii U',
+      aka: ['Tropical Freeze Underwater Theme'],
+      sources: [yt('WA2WjP6sgrc'), yt('3IVNYkFmWN4')],
+    },
+    {
+      id: 'saga-donkey-kong-country-tropical-freeze-busted-bayou', saga: 'donkey-kong', franchise: 'Donkey Kong', game: 'Donkey Kong Country: Tropical Freeze',
+      title: 'Busted Bayou', composer: 'David Wise', year: 2014, platform: 'Wii U',
+      sources: [yt('iVbK7jbzkPg'), yt('95HuSMQSUVo')],
+    },
+    {
+      id: 'saga-donkey-kong-country-tropical-freeze-sawmill-thrill', saga: 'donkey-kong', franchise: 'Donkey Kong', game: 'Donkey Kong Country: Tropical Freeze',
+      title: 'Sawmill Thrill', composer: 'David Wise', year: 2014, platform: 'Wii U',
+      sources: [yt('giwG7djXPKc'), yt('ZcnMB0vLhzI')],
+    },
+    {
+      id: 'saga-donkey-kong-country-tropical-freeze-windmill-hills', saga: 'donkey-kong', franchise: 'Donkey Kong', game: 'Donkey Kong Country: Tropical Freeze',
+      title: 'Windmill Hills', composer: 'David Wise', year: 2014, platform: 'Wii U',
+      sources: [yt('e5ZQL76P10U'), yt('U1vsBsCoK_I')],
+    },
     /* ───────────── sonic ───────────── */
     {
       id: 'saga-sonic-the-hedgehog-marble-zone', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic the Hedgehog',
@@ -630,6 +795,18 @@
       title: 'Find Your Flame', composer: 'Tomoya Ohtani', year: 2022, platform: 'PS5 / Xbox / Switch / PC',
       sources: [apple({ song: 1652703113, country: 'us' }), yt('QL0Z9UvDW3c'), yt('wagkbGcX21k')],
     },
+    {
+      id: 'saga-sonic-frontiers-vandalize', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic Frontiers',
+      title: 'Vandalize', composer: 'ONE OK ROCK', year: 2022, platform: 'PlayStation 5 / Xbox Series X|S / Nintendo Switch / PC',
+      aka: ['Sonic Frontiers Vandalize', 'Vandalize (Sonic Frontiers Main Theme)'],
+      sources: [yt('5U1jO4KL60Y'), yt('fnyzHd2PoS0'), apple({ song: 1641409650, country: 'us' })],
+    },
+    {
+      id: 'saga-sonic-frontiers-kronos-island', saga: 'sonic', franchise: 'Sonic the Hedgehog', game: 'Sonic Frontiers',
+      title: 'Kronos Island', composer: 'Tomoya Ohtani', year: 2022, platform: 'PlayStation 5 / Xbox Series X|S / Nintendo Switch / PC',
+      aka: ['Isla Kronos', 'Kronos Island Theme'],
+      sources: [yt('TaWMW9xLI78'), yt('i_e2dQk43hU')],
+    },
     /* ───────────── final-fantasy ───────────── */
     {
       id: 'saga-final-fantasy-vi-terras-theme', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy VI',
@@ -750,6 +927,47 @@
       id: 'saga-final-fantasy-x-challenge', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy X',
       title: 'Challenge', composer: 'Nobuo Uematsu, Masashi Hamauzu y Junya Nakano', year: 2001, platform: 'PlayStation 2',
       sources: [apple({ song: 62445572, country: 'mx' })],
+    },
+    {
+      id: 'saga-final-fantasy-xv-apocalypsis-noctis', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy XV',
+      title: 'Apocalypsis Noctis', composer: 'Yoko Shimomura', year: 2016, platform: 'PlayStation 4 / Xbox One',
+      aka: ['Final Boss Theme FFXV', 'Ardyn final battle'],
+      sources: [yt('hB2CIDg_CUg'), yt('tBm84VzK8pg'), apple({ song: 1184244339, country: 'us' })],
+    },
+    {
+      id: 'saga-final-fantasy-xv-stand-by-me', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy XV',
+      title: 'Stand by Me', composer: 'Ben E. King, Jerry Leiber, Mike Stoller (versión de Florence + The Machine)', year: 2016, platform: 'PlayStation 4 / Xbox One',
+      aka: ['Stand By Me (Final Fantasy XV Version)', 'Florence and the Machine Stand By Me'],
+      sources: [yt('qv6aw5a8oY8'), yt('vv2DSmy3Tro'), apple({ song: 1440893681, country: 'us' })],
+    },
+    {
+      id: 'saga-final-fantasy-xv-lestallum', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy XV',
+      title: 'Lestallum', composer: 'Yoko Shimomura', year: 2016, platform: 'PlayStation 4 / Xbox One',
+      aka: ['Lestallum Theme'],
+      sources: [yt('lTFWMvlxnF8'), yt('vnJ8FXDcq0M'), apple({ song: 1184244329, country: 'us' })],
+    },
+    {
+      id: 'saga-final-fantasy-xvi-away', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy XVI',
+      title: 'Away', composer: 'Masayoshi Soken', year: 2023, platform: 'PlayStation 5',
+      aka: ['Away Final Fantasy XVI ending theme'],
+      sources: [yt('ZfIXHgAq6Kw'), yt('QR-yr8RBj2s'), apple({ song: 1696572747, country: 'us' })],
+    },
+    {
+      id: 'saga-final-fantasy-xvi-titan-lost', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy XVI',
+      title: 'Titan Lost', composer: 'Masayoshi Soken', year: 2023, platform: 'PlayStation 5',
+      aka: ['Ifrit vs Titan', 'Titan Boss Theme FFXVI'],
+      sources: [yt('dkGwV5Hreb8'), yt('7L_6atLQouc'), apple({ song: 1696573135, country: 'us' })],
+    },
+    {
+      id: 'saga-final-fantasy-xiv-a-realm-reborn-primal-judgment', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy XIV: A Realm Reborn',
+      title: 'Primal Judgment', composer: 'Nobuo Uematsu (arreglo de Masayoshi Soken)', year: 2013, platform: 'PC / PlayStation 3',
+      aka: ['Ifrit Theme FFXIV', 'Ifrit Battle Theme'],
+      sources: [yt('QbAuPenTp9A'), yt('7NQc2dDWdxE'), apple({ song: 970188427, country: 'us' })],
+    },
+    {
+      id: 'saga-final-fantasy-xvi-heart-of-stone', saga: 'final-fantasy', franchise: 'Final Fantasy', game: 'Final Fantasy XVI',
+      title: 'Heart of Stone', composer: 'Masayoshi Soken', year: 2023, platform: 'PlayStation 5',
+      sources: [yt('21m8mnShc7w'), yt('M46CSDwZuJU'), apple({ song: 1696573136, country: 'us' })],
     },
     /* ───────────── halo ───────────── */
     {

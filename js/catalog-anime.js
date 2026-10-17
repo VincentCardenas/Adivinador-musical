@@ -1,5 +1,5 @@
 /*
- * Catálogo: Anime (254 pistas).
+ * Catálogo: Anime (303 pistas).
  * Openings de anime por época (año del opening). Los clásicos suenan primero en español latino (YouTube) y el preview oficial de Apple queda de respaldo.
  * Mismo formato que catalog.js; las fuentes se prueban en el orden en que aparecen.
  */
@@ -18,7 +18,7 @@
   );
 
   AM.CATALOG.push(
-    /* ───────────── Clásicos (antes de 1990) (48) ───────────── */
+    /* ───────────── Clásicos (antes de 1990) (58) ───────────── */
     {
       id: 'toon-meteoro-meteoro-tema', cat: 'anime-clasicos', franchise: 'Meteoro', game: 'Meteoro',
       title: 'Meteoro (tema)', composer: 'Nobuyoshi Koshibe', year: 1967, platform: 'Tatsunoko',
@@ -302,7 +302,67 @@
       aka: ["Anpanman"],
       sources: [yt('5mLape5F0Fw'), yt('fTz2Rycn5Yc')],
     },
-    /* ───────────── Años 90 (47) ───────────── */
+    {
+      id: 'ani-galaxy-express-999-pelicula-1979-the-galaxy-express-999', cat: 'anime-clasicos', franchise: 'Galaxy Express 999', game: 'Galaxy Express 999 (película 1979)',
+      title: 'The Galaxy Express 999', composer: 'Godiego', year: 1979, platform: 'Toei Animation',
+      aka: ['Ginga Tetsudou 999', 'Galaxia Express 999'],
+      sources: [yt('TgrQ5faJyLE'), yt('Gq-b_iNrQaQ'), apple({ song: 1579015797, country: 'mx' })],
+    },
+    {
+      id: 'ani-city-hunter-get-wild', cat: 'anime-clasicos', franchise: 'City Hunter', game: 'City Hunter',
+      title: 'Get Wild', composer: 'TM NETWORK', year: 1987, platform: 'Sunrise',
+      aka: ['City Hunter ED1', 'Cazador de la ciudad'],
+      sources: [yt('wK3_ZhGpKsQ'), yt('mwK4kMUqlqI'), apple({ song: 1537085349, country: 'mx' })],
+    },
+    {
+      id: 'ani-macross-do-you-remember-love-ai-oboete-imasu-ka', cat: 'anime-clasicos', franchise: 'Macross', game: 'Macross: Do You Remember Love?',
+      title: 'Ai Oboete Imasu ka', composer: 'Mari Iijima', year: 1984, platform: 'Studio Nue / Artland',
+      aka: ['Do You Remember Love', 'Macross: Ai Oboete Imasu ka', 'Lynn Minmay'],
+      sources: [yt('2pcDnCBICyg'), yt('RsKB1nawqXQ'), apple({ song: 332039786, country: 'mx' })],
+    },
+    {
+      id: 'ani-la-abeja-maya-la-abeja-maya-tema-latino', cat: 'anime-clasicos', franchise: 'La abeja Maya', game: 'La abeja Maya',
+      title: 'La abeja Maya (tema latino)', composer: 'Karel Svoboda', year: 1975, platform: 'Nippon Animation',
+      aka: ['Maya the Bee', 'Mitsubachi Maya no Bouken'],
+      sources: [yt('gt5bY4UXVHc'), yt('KRQEjnobOvU')],
+    },
+    {
+      id: 'ani-vicky-el-vikingo-vicky-el-vikingo-tema-latino', cat: 'anime-clasicos', franchise: 'Vicky el Vikingo', game: 'Vicky el Vikingo',
+      title: 'Vicky el Vikingo (tema latino)', composer: 'Christian Bruhn', year: 1974, platform: 'Nippon Animation',
+      aka: ['Wickie y los hombres fuertes', 'Chiisana Viking Vickie', 'Vicky the Viking'],
+      sources: [yt('VSfnIiDKZeg')],
+    },
+    {
+      id: 'ani-remi-el-nino-sin-familia-remi-tema-latino', cat: 'anime-clasicos', franchise: 'Remi', game: 'Remi, el niño sin familia',
+      title: 'Remi (tema latino)', composer: 'Versión en español latino', year: 1977, platform: 'TMS Entertainment',
+      aka: ['Nobody\'s Boy Remi', 'Ie Naki Ko Remi', 'Sin Familia'],
+      sources: [yt('V6VnIWkQ38w'), yt('gzmWBmkY-Nw')],
+    },
+    {
+      id: 'ani-ana-de-las-tejas-verdes-ana-de-las-tejas-verdes-tema', cat: 'anime-clasicos', franchise: 'Ana de las Tejas Verdes', game: 'Ana de las Tejas Verdes',
+      title: 'Ana de las Tejas Verdes (tema latino)', composer: 'Versión en español latino', year: 1979, platform: 'Nippon Animation',
+      aka: ['Akage no Anne', 'Anne of Green Gables', 'Ana la de Tejas Verdes'],
+      sources: [yt('mfoDos6LDKs')],
+    },
+    {
+      id: 'ani-rascal-el-mapache-rascal-el-mapache-tema-latino', cat: 'anime-clasicos', franchise: 'Rascal el mapache', game: 'Rascal el mapache',
+      title: 'Rascal el mapache (tema latino)', composer: 'Versión en español latino', year: 1977, platform: 'Nippon Animation',
+      aka: ['Araiguma Rascal', 'Rascal the Raccoon'],
+      sources: [yt('UqXd5iIRIw0'), yt('2o96gMSqJx0')],
+    },
+    {
+      id: 'ani-los-caballeros-del-zodiaco-blue-forever', cat: 'anime-clasicos', franchise: 'Los Caballeros del Zodiaco', game: 'Los Caballeros del Zodiaco',
+      title: 'Blue Forever', composer: 'Make-Up', year: 1986, platform: 'Toei Animation',
+      aka: ['Saint Seiya ED1', 'Saint Seiya Ending'],
+      sources: [yt('s_4K4MyEOZU'), yt('K61Sbd7hqxs')],
+    },
+    {
+      id: 'ani-georgie-georgie-tema-latino', cat: 'anime-clasicos', franchise: 'Georgie', game: 'Georgie',
+      title: 'Georgie (tema latino)', composer: 'Versión en español latino', year: 1983, platform: 'TMS Entertainment',
+      aka: ['Lady Georgie', 'Georgie!'],
+      sources: [yt('FmZd0lcjkKo'), yt('T2pc2mh4VZA')],
+    },
+    /* ───────────── Años 90 (59) ───────────── */
     {
       id: 'toon-pokemon-atrapalos-ya', cat: 'anime-90s', franchise: 'Pokémon', game: 'Pokémon',
       title: '¡Atrápalos ya!', composer: 'Versión latina', year: 1997, platform: 'OLM',
@@ -578,7 +638,79 @@
       aka: ["Vash la Estampida"],
       sources: [yt('NPDWuip1k5o'), yt('4OxFSy8G5wk'), apple({ song: 969897525, country: 'mx' })],
     },
-    /* ───────────── 2000s (52) ───────────── */
+    {
+      id: 'ani-cowboy-bebop-the-real-folk-blues', cat: 'anime-90s', franchise: 'Cowboy Bebop', game: 'Cowboy Bebop',
+      title: 'The Real Folk Blues', composer: 'Seatbelts feat. Mai Yamane', year: 1998, platform: 'Sunrise',
+      aka: ['Cowboy Bebop ending', 'Cowboy Bebop ED'],
+      sources: [yt('CjUVTEExfBg'), yt('x_ll_l1o7t4')],
+    },
+    {
+      id: 'ani-neon-genesis-evangelion-fly-me-to-the-moon', cat: 'anime-90s', franchise: 'Neon Genesis Evangelion', game: 'Neon Genesis Evangelion',
+      title: 'Fly Me to the Moon', composer: 'Claire Littley', year: 1995, platform: 'Gainax',
+      aka: ['Evangelion ED', 'Evangelion ending'],
+      sources: [yt('z2AyJTOR_qw'), yt('rwlqV4yhZyU')],
+    },
+    {
+      id: 'ani-slam-dunk-anata-dake-mitsumeteru', cat: 'anime-90s', franchise: 'Slam Dunk', game: 'Slam Dunk',
+      title: 'Anata Dake Mitsumeteru', composer: 'Maki Ohguro', year: 1993, platform: 'Toei Animation',
+      aka: ['Slam Dunk ED1', 'Slam Dunk ending'],
+      sources: [yt('xMOmmwD4xWo'), yt('d9eudCNJv1E')],
+    },
+    {
+      id: 'ani-rurouni-kenshin-heart-of-sword-yoake-mae', cat: 'anime-90s', franchise: 'Rurouni Kenshin', game: 'Rurouni Kenshin',
+      title: 'HEART OF SWORD ~Yoake Mae~', composer: 'T.M.Revolution', year: 1997, platform: 'Studio Gallop',
+      aka: ['Samurai X ending', 'Rurouni Kenshin ED', 'Kenshin ending'],
+      sources: [yt('NFxSCSGxCjQ'), yt('ilz3UpuHExw'), apple({ song: 1536276700, country: 'mx' })],
+    },
+    {
+      id: 'ani-initial-d-deja-vu', cat: 'anime-90s', franchise: 'Initial D', game: 'Initial D',
+      title: 'Deja Vu', composer: 'Dave Rodgers', year: 1998, platform: 'Studio Gallop',
+      aka: ['Initial D Deja Vu', 'Initial D eurobeat'],
+      sources: [yt('tdeJiw6qMkA'), yt('dv13gl0a-FA'), apple({ song: 1477944584, country: 'mx' })],
+    },
+    {
+      id: 'ani-initial-d-first-stage-running-in-the-90-s', cat: 'anime-90s', franchise: 'Initial D', game: 'Initial D First Stage',
+      title: 'Running in the 90\'s', composer: 'Max Coveri', year: 1998, platform: 'Studio Gallop',
+      aka: ['Initial D Running in the 90s', 'Initial D eurobeat'],
+      sources: [yt('_Fxil2QY0wE'), yt('NNaJxMutEIE'), apple({ song: 1451232176, country: 'mx' })],
+    },
+    {
+      id: 'ani-digimon-adventure-brave-heart', cat: 'anime-90s', franchise: 'Digimon', game: 'Digimon Adventure',
+      title: 'Brave Heart', composer: 'Ayumi Miyazaki', year: 1999, platform: 'Toei Animation',
+      aka: ['Digimon Adventure Brave Heart', 'Digimon Adventure insert song', 'Tema de digievolucion'],
+      sources: [yt('bjO_MIVLQcE'), yt('Giar7JSoeaE')],
+    },
+    {
+      id: 'ani-pokemon-mezase-pokemon-master', cat: 'anime-90s', franchise: 'Pokémon', game: 'Pokémon',
+      title: 'Mezase Pokémon Master', composer: 'Rika Matsumoto', year: 1997, platform: 'OLM',
+      aka: ['Pokémon opening japonés', 'Pokemon Opening 1 Japan'],
+      sources: [yt('hMKf5mE3sdo'), yt('jbHG7fsZVkM')],
+    },
+    {
+      id: 'ani-slayers-try-plenty-of-grit', cat: 'anime-90s', franchise: 'Slayers', game: 'Slayers TRY',
+      title: 'Plenty of Grit', composer: 'Megumi Hayashibara', year: 1997, platform: 'J.C.Staff',
+      aka: ['Slayers Try OP', 'Los Justicieros Try'],
+      sources: [yt('8NF-RdAkTTg'), yt('Y0NJaoVmSD0')],
+    },
+    {
+      id: 'ani-mobile-suit-gundam-wing-last-impression', cat: 'anime-90s', franchise: 'Mobile Suit Gundam Wing', game: 'Mobile Suit Gundam Wing',
+      title: 'Last Impression', composer: 'Two-Mix', year: 1995, platform: 'Sunrise',
+      aka: ['Gundam Wing ending', 'Gundam Wing ED'],
+      sources: [yt('_MzTNVYdRXs'), yt('bAaYMcrppmI'), apple({ song: 1562657965, country: 'jp' })],
+    },
+    {
+      id: 'ani-yu-yu-hakusho-taiyou-ga-mata-kagayaku-toki', cat: 'anime-90s', franchise: 'Yu Yu Hakusho', game: 'Yu Yu Hakusho',
+      title: 'Taiyou ga Mata Kagayaku Toki', composer: 'Hiro Takahashi', year: 1993, platform: 'Pierrot',
+      aka: ['Yu Yu Hakusho ED3', 'Yu Yu Hakusho ending 3'],
+      sources: [yt('1sQRbMbARCo'), yt('uS9RPajH_9Y')],
+    },
+    {
+      id: 'ani-la-princesa-mononoke-mononoke-hime', cat: 'anime-90s', franchise: 'La princesa Mononoke', game: 'La princesa Mononoke',
+      title: 'Mononoke Hime', composer: 'Yoshikazu Mera', year: 1997, platform: 'Studio Ghibli',
+      aka: ['Princess Mononoke', 'Mononoke-hime', 'La princesa Mononoke'],
+      sources: [yt('cS9LnZGkfW4'), yt('AAVtZWk1FHo'), apple({ song: 883501073, country: 'mx' })],
+    },
+    /* ───────────── 2000s (59) ───────────── */
     {
       id: 'toon-naruto-shippuden-blue-bird', cat: 'anime-00s', franchise: 'Naruto', game: 'Naruto Shippuden',
       title: 'Blue Bird', composer: 'Ikimonogakari', year: 2007, platform: 'Pierrot',
@@ -882,7 +1014,49 @@
       aka: ["Digimon 02"],
       sources: [yt('GaD6f293CJ4'), yt('JjzOENA8N3c'), yt('CDRMMG1WWlM')],
     },
-    /* ───────────── 2010s (53) ───────────── */
+    {
+      id: 'ani-mobile-suit-gundam-seed-invoke', cat: 'anime-00s', franchise: 'Mobile Suit Gundam SEED', game: 'Mobile Suit Gundam SEED',
+      title: 'INVOKE', composer: 'T.M.Revolution', year: 2002, platform: 'Sunrise',
+      aka: ['Gundam SEED OP1', 'Gundam SEED opening 1'],
+      sources: [yt('a772kuDLGO8'), yt('rkcaLGdwXcs'), apple({ song: 704508965, country: 'mx' })],
+    },
+    {
+      id: 'ani-samurai-champloo-battlecry', cat: 'anime-00s', franchise: 'Samurai Champloo', game: 'Samurai Champloo',
+      title: 'Battlecry', composer: 'Nujabes feat. Shing02', year: 2004, platform: 'Manglobe',
+      aka: ['Samurai Champloo opening'],
+      sources: [yt('LC7-opq4Gik'), yt('Eq6EYcpWB_c'), apple({ song: 1721842999, country: 'mx' })],
+    },
+    {
+      id: 'ani-elfen-lied-lilium', cat: 'anime-00s', franchise: 'Elfen Lied', game: 'Elfen Lied',
+      title: 'Lilium', composer: 'Kumiko Noma', year: 2004, platform: 'ARMS',
+      aka: ['Elfen Lied opening'],
+      sources: [yt('f3KzmVblyHw'), yt('Pv69471Tv0w')],
+    },
+    {
+      id: 'ani-ghost-in-the-shell-stand-alone-complex-inner-universe', cat: 'anime-00s', franchise: 'Ghost in the Shell', game: 'Ghost in the Shell: Stand Alone Complex',
+      title: 'Inner Universe', composer: 'Origa', year: 2002, platform: 'Production I.G',
+      aka: ['GITS SAC opening', 'Stand Alone Complex opening'],
+      sources: [yt('QxkMzn4et2U'), yt('fQonz5TXtPo'), apple({ song: 423766416, country: 'mx' })],
+    },
+    {
+      id: 'ani-the-melancholy-of-haruhi-suzumiya-hare-hare-yukai', cat: 'anime-00s', franchise: 'The Melancholy of Haruhi Suzumiya', game: 'The Melancholy of Haruhi Suzumiya',
+      title: 'Hare Hare Yukai', composer: 'Aya Hirano, Minori Chihara y Yuko Goto', year: 2006, platform: 'Kyoto Animation',
+      aka: ['Haruhi ending', 'Haruhi Suzumiya ED', 'Happy Happy Yukai'],
+      sources: [yt('DshAow74tLI'), yt('x2iKC0C32-g')],
+    },
+    {
+      id: 'ani-k-on-cagayake-girls', cat: 'anime-00s', franchise: 'K-On!', game: 'K-On!',
+      title: 'Cagayake! GIRLS', composer: 'Hōkago Tea Time', year: 2009, platform: 'Kyoto Animation',
+      aka: ['K-On opening', 'Keion opening'],
+      sources: [yt('qN41mx4tA0I'), yt('ua02dloykJ4')],
+    },
+    {
+      id: 'ani-naruto-shippuden-closer', cat: 'anime-00s', franchise: 'Naruto', game: 'Naruto Shippuden',
+      title: 'Closer', composer: 'Joe Inoue', year: 2008, platform: 'Pierrot',
+      aka: ['Shippuden OP4', 'Naruto Shippuden opening 4'],
+      sources: [yt('BTLFZ2DCjn0'), yt('4Cp0WgkgDbQ')],
+    },
+    /* ───────────── 2010s (65) ───────────── */
     {
       id: 'toon-ataque-a-los-titanes-guren-no-yumiya', cat: 'anime-10s', franchise: 'Ataque a los titanes', game: 'Ataque a los titanes',
       title: 'Guren no Yumiya', composer: 'Linked Horizon', year: 2013, platform: 'Wit Studio',
@@ -1194,7 +1368,79 @@
       aka: ["Enen no Shouboutai","Inferno"],
       sources: [yt('JBqxVX_LXvk')],
     },
-    /* ───────────── 2020 en adelante (54) ───────────── */
+    {
+      id: 'ani-puella-magi-madoka-magica-connect', cat: 'anime-10s', franchise: 'Madoka Magica', game: 'Puella Magi Madoka Magica',
+      title: 'Connect', composer: 'ClariS', year: 2011, platform: 'Shaft',
+      aka: ['Madoka Magica OP', 'Mahou Shoujo Madoka Magica', 'Madoka Magica opening'],
+      sources: [yt('OrgpX-_bFqM'), yt('DsX5L29tp1s'), apple({ song: 1011123384, country: 'mx' })],
+    },
+    {
+      id: 'ani-los-siete-pecados-capitales-temporada-1-netsujou-no', cat: 'anime-10s', franchise: 'Los Siete Pecados Capitales', game: 'Los Siete Pecados Capitales (Temporada 1)',
+      title: 'Netsujou no Spectrum', composer: 'Ikimonogakari', year: 2014, platform: 'A-1 Pictures',
+      aka: ['Nanatsu no Taizai', 'The Seven Deadly Sins', 'Nanatsu no Taizai OP1'],
+      sources: [yt('GjyBMKotPLg'), yt('Oc9NgPgUO3E'), apple({ song: 1089186534, country: 'mx' })],
+    },
+    {
+      id: 'ani-overlord-clattanoia', cat: 'anime-10s', franchise: 'Overlord', game: 'Overlord',
+      title: 'Clattanoia', composer: 'OxT', year: 2015, platform: 'Madhouse',
+      aka: ['Overlord OP1', 'Overlord opening'],
+      sources: [yt('v2NNIS9HYFA'), yt('saah9UTwaUI'), apple({ song: 1434513147, country: 'mx' })],
+    },
+    {
+      id: 'ani-parasyte-the-maxim-let-me-hear', cat: 'anime-10s', franchise: 'Parasyte', game: 'Parasyte -the maxim-',
+      title: 'Let Me Hear', composer: 'Fear, and Loathing in Las Vegas', year: 2014, platform: 'Madhouse',
+      aka: ['Kiseijuu', 'Kiseijuu Sei no Kakuritsu', 'Parasyte opening'],
+      sources: [yt('GeMKMLkaokg'), yt('D-SQqppuGvc'), apple({ song: 1045437112, country: 'mx' })],
+    },
+    {
+      id: 'ani-death-parade-flyers', cat: 'anime-10s', franchise: 'Death Parade', game: 'Death Parade',
+      title: 'Flyers', composer: 'BRADIO', year: 2015, platform: 'Madhouse',
+      aka: ['Death Parade OP', 'Death Parade opening'],
+      sources: [yt('Ca5Tf5BDSYI'), yt('9wh8FgsEtNQ'), apple({ song: 997230490, country: 'mx' })],
+    },
+    {
+      id: 'ani-sailor-moon-crystal-moon-pride', cat: 'anime-10s', franchise: 'Sailor Moon', game: 'Sailor Moon Crystal',
+      title: 'Moon Pride', composer: 'Momoiro Clover Z', year: 2014, platform: 'Toei Animation',
+      aka: ['Sailor Moon Crystal opening', 'Sailor Moon Crystal OP'],
+      sources: [yt('c0Va228UhRs'), yt('MJWhszImkTc')],
+    },
+    {
+      id: 'ani-kuroko-no-basket-can-do', cat: 'anime-10s', franchise: 'Kuroko no Basket', game: 'Kuroko no Basket',
+      title: 'Can Do', composer: 'GRANRODEO', year: 2012, platform: 'Production I.G',
+      aka: ['Kuroko\'s Basketball', 'Kuroko no Basuke', 'Kuroko no Basket OP1'],
+      sources: [yt('5RVEM8-UKlg'), yt('Gou49bzZrvo'), apple({ song: 1745968087, country: 'mx' })],
+    },
+    {
+      id: 'ani-ao-no-exorcist-core-pride', cat: 'anime-10s', franchise: 'Ao no Exorcist', game: 'Ao no Exorcist',
+      title: 'Core Pride', composer: 'UVERworld', year: 2011, platform: 'A-1 Pictures',
+      aka: ['Blue Exorcist', 'Blue Exorcist OP1', 'Ao no Exorcist OP'],
+      sources: [yt('Avs-yTQ53cI'), yt('fSks0H1wcqc'), apple({ song: 1633199822, country: 'mx' })],
+    },
+    {
+      id: 'ani-konosuba-god-s-blessing-on-this-wonderful-world', cat: 'anime-10s', franchise: 'KonoSuba', game: 'KonoSuba: God\'s Blessing on This Wonderful World!',
+      title: 'Fantastic Dreamer', composer: 'Machico', year: 2016, platform: 'Studio Deen',
+      aka: ['Kono Subarashii Sekai ni Shukufuku wo!', 'KonoSuba OP1', 'Konosuba opening'],
+      sources: [yt('fpG3BPNQepY'), yt('lFLMh-nIgZs'), apple({ song: 1485837923, country: 'mx' })],
+    },
+    {
+      id: 'ani-angel-beats-my-soul-your-beats', cat: 'anime-10s', franchise: 'Angel Beats!', game: 'Angel Beats!',
+      title: 'My Soul, Your Beats!', composer: 'Lia', year: 2010, platform: 'P.A. Works',
+      aka: ['Angel Beats opening', 'Angel Beats OP'],
+      sources: [yt('Eksw56g-WBY'), yt('al6Z7Z_fN-k'), apple({ song: 838213289, country: 'mx' })],
+    },
+    {
+      id: 'ani-yuri-on-ice-history-maker', cat: 'anime-10s', franchise: 'Yuri!!! on Ice', game: 'Yuri!!! on Ice',
+      title: 'History Maker', composer: 'Dean Fujioka', year: 2016, platform: 'MAPPA',
+      aka: ['Yuri on Ice', 'Yuri on Ice opening', 'Yuri on Ice OP'],
+      sources: [yt('5u3RGhznctE'), yt('nnEOS5kupuc'), apple({ song: 1840119825, country: 'mx' })],
+    },
+    {
+      id: 'ani-aldnoah-zero-aliez', cat: 'anime-10s', franchise: 'Aldnoah.Zero', game: 'Aldnoah.Zero',
+      title: 'aLIEz', composer: 'SawanoHiroyuki[nZk]:mizuki', year: 2014, platform: 'A-1 Pictures',
+      aka: ['Aldnoah Zero opening', 'Aldnoah Zero OP1'],
+      sources: [yt('dNGiRuLABgI'), yt('wtW529XbOyU'), apple({ song: 1536128950, country: 'mx' })],
+    },
+    /* ───────────── 2020 en adelante (62) ───────────── */
     {
       id: 'toon-jujutsu-kaisen-kaikai-kitan', cat: 'anime-20s', franchise: 'Jujutsu Kaisen', game: 'Jujutsu Kaisen',
       title: 'Kaikai Kitan', composer: 'Eve', year: 2020, platform: 'MAPPA',
@@ -1510,6 +1756,54 @@
       title: "VIVID VICE", composer: "Who-ya Extended", year: 2021, platform: "MAPPA",
       aka: ["Jujutsu Kaisen OP2"],
       sources: [apple({ song: 1546061848, country: 'mx' }), yt('LFTE4W--Htk'), yt('EU6I8TxU6Z4')],
+    },
+    {
+      id: 'ani-ataque-a-los-titanes-temporada-final-my-war', cat: 'anime-20s', franchise: 'Ataque a los titanes', game: 'Ataque a los titanes (Temporada Final)',
+      title: 'My War', composer: 'Shinsei Kamattechan', year: 2020, platform: 'MAPPA',
+      aka: ['Attack on Titan Final Season', 'Shingeki no Kyojin The Final Season', 'Attack on Titan OP5'],
+      sources: [yt('P75q_3Qlrqg'), yt('Y-eoYLBbZOA')],
+    },
+    {
+      id: 'ani-jujutsu-kaisen-temporada-2-hidden-inventory-akari', cat: 'anime-20s', franchise: 'Jujutsu Kaisen', game: 'Jujutsu Kaisen (Temporada 2: Hidden Inventory)',
+      title: 'Akari', composer: 'Soushi Sakiyama', year: 2023, platform: 'MAPPA',
+      aka: ['Jujutsu Kaisen Season 2 ED1', 'Hidden Inventory ending', 'Gojo Past Arc ending'],
+      sources: [yt('lWvw4rSwxM0'), yt('4jWzGkRsHw8'), apple({ song: 1692289427, country: 'us' })],
+    },
+    {
+      id: 'ani-black-clover-black-catcher', cat: 'anime-20s', franchise: 'Black Clover', game: 'Black Clover',
+      title: 'Black Catcher', composer: 'Vickeblanka', year: 2020, platform: 'Pierrot',
+      aka: ['Black Clover OP10', 'Black Clover opening 10'],
+      sources: [yt('XMeQeIG_rQg'), yt('5C8yvJUVB-0')],
+    },
+    {
+      id: 'ani-beastars-temporada-2-kaibutsu', cat: 'anime-20s', franchise: 'Beastars', game: 'Beastars (Temporada 2)',
+      title: 'Kaibutsu', composer: 'YOASOBI', year: 2021, platform: 'Orange',
+      aka: ['Monster', '怪物', 'Beastars Season 2 OP'],
+      sources: [yt('-5M4lbEpn6c'), yt('RONqA3zb4FE')],
+    },
+    {
+      id: 'ani-mushoku-tensei-jobless-reincarnation-temporada-1', cat: 'anime-20s', franchise: 'Mushoku Tensei', game: 'Mushoku Tensei: Jobless Reincarnation (Temporada 1)',
+      title: 'Tabibito no Uta', composer: 'Yuiko Ohara', year: 2021, platform: 'Studio Bind',
+      aka: ['Jobless Reincarnation OP1', 'Mushoku Tensei opening 1', 'Mushoku Tensei Season 1 OP'],
+      sources: [yt('pEoCT-Kv5CI'), yt('QG8UZUahRbI')],
+    },
+    {
+      id: 'ani-solo-leveling-temporada-2-arise-from-the-shadow-reawaker', cat: 'anime-20s', franchise: 'Solo Leveling', game: 'Solo Leveling (Temporada 2: Arise from the Shadow)',
+      title: 'ReawakeR', composer: 'LiSA feat. Felix of Stray Kids', year: 2025, platform: 'A-1 Pictures',
+      aka: ['Solo Leveling Season 2 OP', 'Ore dake Level Up na Ken Season 2'],
+      sources: [yt('oe4XJ851oOk'), yt('C0zMWogztQs'), apple({ song: 1783371197, country: 'mx' })],
+    },
+    {
+      id: 'ani-re-zero-starting-life-in-another-world-temporada-3', cat: 'anime-20s', franchise: 'Re:Zero', game: 'Re:Zero − Starting Life in Another World (Temporada 3)',
+      title: 'Reweave', composer: 'Konomi Suzuki', year: 2024, platform: 'White Fox',
+      aka: ['Re:Zero Season 3 OP', 'Re Zero 3 opening'],
+      sources: [yt('hCxZx7uHO1I'), yt('Tp4ay4fIw30'), apple({ song: 1766032830, country: 'mx' })],
+    },
+    {
+      id: 'ani-overlord-temporada-4-voracity', cat: 'anime-20s', franchise: 'Overlord', game: 'Overlord (Temporada 4)',
+      title: 'VORACITY', composer: 'MYTH & ROID', year: 2022, platform: 'Madhouse',
+      aka: ['Overlord IV OP', 'Overlord Season 4 opening', 'Voracity'],
+      sources: [yt('XPOIe6WdhPQ'), yt('RlnAOQln8jI'), apple({ song: 1410709847, country: 'mx' })],
     },
   );
 

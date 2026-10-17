@@ -27,7 +27,7 @@
   ];
 
   AM.CATALOG = [
-    /* ───────────── Nintendo (57) ───────────── */
+    /* ───────────── Nintendo (69) ───────────── */
     {
       id: 'acnh-main', cat: 'nintendo', franchise: 'Animal Crossing', game: 'Animal Crossing: New Horizons',
       title: 'Main Theme', composer: 'Yasuaki Iwata y equipo', year: 2020, platform: 'Switch',
@@ -319,7 +319,72 @@
       sources: [yt('sMOcg5pzbhE')],
     },
 
-    /* ───────────── Xbox (22) ───────────── */
+    {
+      id: 'super-mario-bros-underground-theme', cat: 'nintendo', franchise: 'Super Mario', game: 'Super Mario Bros.',
+      title: 'Underground Theme', composer: 'Koji Kondo', year: 1985, platform: 'NES',
+      aka: ['Super Mario Bros', 'SMB'],
+      sources: [yt('c0SuIMUoShI'), yt('K3Ew9IgYhWc')],
+    },
+    {
+      id: 'super-mario-64-cool-cool-mountain', cat: 'nintendo', franchise: 'Super Mario', game: 'Super Mario 64',
+      title: 'Cool, Cool Mountain', composer: 'Koji Kondo', year: 1996, platform: 'Nintendo 64',
+      aka: ['SM64'],
+      sources: [yt('zzxHzfvA1sI'), yt('LOADdASJnak')],
+    },
+    {
+      id: 'super-mario-galaxy-rosalina-in-the-observatory', cat: 'nintendo', franchise: 'Super Mario', game: 'Super Mario Galaxy',
+      title: 'Rosalina in the Observatory', composer: 'Mahito Yokota, Koji Kondo', year: 2007, platform: 'Wii',
+      sources: [yt('wsGCz59acG0'), yt('jO6DkVhKaYg')],
+    },
+    {
+      id: 'super-mario-sunshine-bianco-hills', cat: 'nintendo', franchise: 'Super Mario', game: 'Super Mario Sunshine',
+      title: 'Bianco Hills', composer: 'Koji Kondo, Shinobu Tanaka', year: 2002, platform: 'GameCube',
+      sources: [yt('mYh6MSdsKj8'), yt('nx1A1xStMRs')],
+    },
+    {
+      id: 'super-mario-land-birabuto-kingdom', cat: 'nintendo', franchise: 'Super Mario', game: 'Super Mario Land',
+      title: 'Birabuto Kingdom', composer: 'Hirokazu Tanaka', year: 1989, platform: 'Game Boy',
+      sources: [yt('h90bzs59Bkw'), yt('4b9RvENE9QY')],
+    },
+    {
+      id: 'super-mario-world-athletic-theme', cat: 'nintendo', franchise: 'Super Mario', game: 'Super Mario World',
+      title: 'Athletic Theme', composer: 'Koji Kondo', year: 1990, platform: 'SNES',
+      sources: [yt('o-bN2lnE1Lc'), yt('XF2fA1epvLE')],
+    },
+    {
+      id: 'super-mario-odyssey-steam-gardens', cat: 'nintendo', franchise: 'Super Mario', game: 'Super Mario Odyssey',
+      title: 'Steam Gardens', composer: 'Naoto Kubo, Shiho Fujii, Koji Kondo', year: 2017, platform: 'Nintendo Switch',
+      sources: [yt('OhogRNHLW30'), yt('memk0kUVhfE')],
+    },
+    {
+      id: 'the-legend-of-zelda-overworld-theme', cat: 'nintendo', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda',
+      title: 'Overworld Theme', composer: 'Koji Kondo', year: 1986, platform: 'NES',
+      aka: ['Zelda 1', 'The Legend of Zelda (NES)'],
+      sources: [yt('lpEzYEoV9qY'), yt('AHJxSo4cDMA')],
+    },
+    {
+      id: 'the-legend-of-zelda-ocarina-of-time-song-of-storms', cat: 'nintendo', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Ocarina of Time',
+      title: 'Song of Storms', composer: 'Koji Kondo', year: 1998, platform: 'Nintendo 64',
+      sources: [yt('UtgHZaq0EGs'), yt('VxqtlMtYYOk')],
+    },
+    {
+      id: 'the-legend-of-zelda-ocarina-of-time-zelda-s-lullaby', cat: 'nintendo', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Ocarina of Time',
+      title: 'Zelda\'s Lullaby', composer: 'Koji Kondo', year: 1998, platform: 'Nintendo 64',
+      sources: [yt('EPhfbtjqWM8'), yt('igGDoNPPTd4')],
+    },
+    {
+      id: 'the-legend-of-zelda-the-wind-waker-outset-island', cat: 'nintendo', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: The Wind Waker',
+      title: 'Outset Island', composer: 'Kenta Nagata, Hajime Wakai, Toru Minegishi, Koji Kondo', year: 2002, platform: 'GameCube',
+      aka: ['Wind Waker'],
+      sources: [yt('vwMCZ6B499c'), yt('uG960gmNiKY')],
+    },
+    {
+      id: 'pokemon-red-and-blue-pallet-town-theme', cat: 'nintendo', franchise: 'Pokémon', game: 'Pokémon Red & Blue',
+      title: 'Pallet Town Theme', composer: 'Junichi Masuda', year: 1996, platform: 'Game Boy',
+      aka: ['Pokémon Red/Blue', 'Pokémon Red & Green', 'Pokémon Yellow'],
+      sources: [yt('cOWRNLaCMJg'), yt('kO09V19wwlE')],
+    },
+    /* ───────────── Xbox (27) ───────────── */
     {
       id: 'age-of-empires-ii-shamburger', cat: 'xbox', franchise: 'Age of Empires', game: 'Age of Empires II: The Age of Kings',
       title: 'Shamburger', composer: 'Stephen Rippy', year: 1999, platform: 'PC',
@@ -439,7 +504,33 @@
       sources: [yt('Bgmsi5cM-gA'), yt('aICTLaYteF0'), yt('QGzEpcl42SA')],
     },
 
-    /* ───────────── PlayStation (34) ───────────── */
+    {
+      id: 'halo-combat-evolved-truth-and-reconciliation-suite', cat: 'xbox', franchise: 'Halo', game: 'Halo: Combat Evolved',
+      title: 'Truth and Reconciliation Suite', composer: 'Martin O\'Donnell, Michael Salvatori', year: 2001, platform: 'Xbox',
+      aka: ['Halo CE', 'Halo 1'],
+      sources: [apple({ song: 1682519548, country: 'us' }), yt('lj91a6W91J8'), yt('SB6y9q4hEQw')],
+    },
+    {
+      id: 'halo-3-never-forget', cat: 'xbox', franchise: 'Halo', game: 'Halo 3',
+      title: 'Never Forget', composer: 'Martin O\'Donnell, Michael Salvatori', year: 2007, platform: 'Xbox 360',
+      sources: [apple({ song: 1682510979, country: 'us' }), yt('JX5O3n9K_d0'), yt('OOHXjgEY_RQ')],
+    },
+    {
+      id: 'halo-reach-winter-contingency', cat: 'xbox', franchise: 'Halo', game: 'Halo: Reach',
+      title: 'Winter Contingency', composer: 'Martin O\'Donnell, Michael Salvatori', year: 2010, platform: 'Xbox 360',
+      sources: [apple({ song: 1682514374, country: 'us' }), yt('7u-3FLjO9u0'), yt('J8TFs9nbM78')],
+    },
+    {
+      id: 'halo-3-odst-rain', cat: 'xbox', franchise: 'Halo', game: 'Halo 3: ODST',
+      title: 'Rain', composer: 'Martin O\'Donnell, Michael Salvatori', year: 2009, platform: 'Xbox 360',
+      sources: [yt('yWh9l8RSkPk'), yt('346rm-hPLA4')],
+    },
+    {
+      id: 'halo-4-green-and-blue', cat: 'xbox', franchise: 'Halo', game: 'Halo 4',
+      title: 'Green and Blue', composer: 'Neil Davidge', year: 2012, platform: 'Xbox 360',
+      sources: [apple({ song: 776715863, country: 'us' }), yt('4j8XkJ0NRNM'), yt('j0EFFf3dMkE')],
+    },
+    /* ───────────── PlayStation (41) ───────────── */
     {
       id: 'bloodborne-gehrman-the-first-hunt', cat: 'playstation', franchise: 'Bloodborne', game: 'Bloodborne',
       title: 'Gehrman, the First Hunter', composer: 'Varios (Bloodborne OST, FromSoftware)', year: 2015, platform: 'PS4',
@@ -707,7 +798,43 @@
       ],
     },
 
-    /* ───────────── Indie (41) ───────────── */
+    {
+      id: 'metal-gear-solid-encounter', cat: 'playstation', franchise: 'Metal Gear', game: 'Metal Gear Solid',
+      title: 'Encounter', composer: 'Konami Computer Entertainment Japan (Kazuki Muraoka, Hiroyuki Togo, Takanari Ishiyama, Tappi Iwase)', year: 1998, platform: 'PlayStation',
+      sources: [yt('CezFbGDrB8A')],
+    },
+    {
+      id: 'metal-gear-solid-2-sons-of-liberty-metal-gear-solid-2-main', cat: 'playstation', franchise: 'Metal Gear', game: 'Metal Gear Solid 2: Sons of Liberty',
+      title: 'Metal Gear Solid 2 Main Theme', composer: 'Harry Gregson-Williams', year: 2001, platform: 'PlayStation 2',
+      aka: ['MGS2', 'Metal Gear Solid 2'],
+      sources: [yt('kgsKRc6OgzE')],
+    },
+    {
+      id: 'god-of-war-2018-ashes', cat: 'playstation', franchise: 'God of War', game: 'God of War (2018)',
+      title: 'Ashes', composer: 'Bear McCreary', year: 2018, platform: 'PlayStation 4',
+      sources: [apple({ song: 1370192795, country: 'us' })],
+    },
+    {
+      id: 'spyro-the-dragon-artisans-home', cat: 'playstation', franchise: 'Spyro', game: 'Spyro the Dragon',
+      title: 'Artisans Home', composer: 'Stewart Copeland', year: 1998, platform: 'PlayStation',
+      sources: [yt('fOlh2TpSkx4'), yt('9RDtNUhMN_Y')],
+    },
+    {
+      id: 'shadow-of-the-colossus-roar-of-the-earth', cat: 'playstation', franchise: 'Shadow of the Colossus', game: 'Shadow of the Colossus',
+      title: 'Roar of the Earth', composer: 'Kow Otani', year: 2005, platform: 'PlayStation 2',
+      sources: [yt('IcN7qpkY3I0')],
+    },
+    {
+      id: 'journey-nascence', cat: 'playstation', franchise: 'Journey', game: 'Journey',
+      title: 'Nascence', composer: 'Austin Wintory', year: 2012, platform: 'PlayStation 3',
+      sources: [apple({ song: 1553230093, country: 'us' }), yt('TLfj3pAlrs4'), yt('1fd5P98Apzg')],
+    },
+    {
+      id: 'silent-hill-alchemilla', cat: 'playstation', franchise: 'Silent Hill', game: 'Silent Hill',
+      title: 'Alchemilla', composer: 'Akira Yamaoka', year: 1999, platform: 'PlayStation',
+      sources: [yt('-oG7TAOjDBY'), yt('DI8tMvNawVQ')],
+    },
+    /* ───────────── Indie (50) ───────────── */
     {
       id: 'balatro-main-theme', cat: 'indie', franchise: 'Balatro', game: 'Balatro',
       title: 'Main Theme', composer: 'LouisF', year: 2024, platform: 'PC / consoles / mobile',
@@ -971,7 +1098,52 @@
       sources: [apple({ song: 1119807161 }), apple({ term: 'Bonetrousle Undertale', match: 'Bonetrousle' }), yt('M0I76Xp_ntM'), yt('AKAiUtWZ4xY')],
     },
 
-    /* ───────────── Retro 8/16 bits (24) ───────────── */
+    {
+      id: 'hollow-knight-dirtmouth', cat: 'indie', franchise: 'Hollow Knight', game: 'Hollow Knight',
+      title: 'Dirtmouth', composer: 'Christopher Larkin', year: 2017, platform: 'PC / Nintendo Switch / PS4 / Xbox One',
+      sources: [apple({ song: 1263341720, country: 'us' }), yt('NSlkW1fFkyo'), yt('9Vdv01LsnQM')],
+    },
+    {
+      id: 'hollow-knight-mantis-lords', cat: 'indie', franchise: 'Hollow Knight', game: 'Hollow Knight',
+      title: 'Mantis Lords', composer: 'Christopher Larkin', year: 2017, platform: 'PC / Nintendo Switch / PS4 / Xbox One',
+      sources: [apple({ song: 1263341726, country: 'us' }), yt('Lp5M2BAXwSo'), yt('gQZUfMVj6Ag')],
+    },
+    {
+      id: 'hollow-knight-silksong-bonebottom', cat: 'indie', franchise: 'Hollow Knight', game: 'Hollow Knight: Silksong',
+      title: 'Bonebottom', composer: 'Christopher Larkin', year: 2025, platform: 'PC / Nintendo Switch / PS5 / Xbox',
+      sources: [yt('4Zi0K7RnFiQ'), yt('BPFjXniVJaA')],
+    },
+    {
+      id: 'celeste-confronting-myself', cat: 'indie', franchise: 'Celeste', game: 'Celeste',
+      title: 'Confronting Myself', composer: 'Lena Raine', year: 2018, platform: 'PC / Nintendo Switch / PS4 / Xbox One',
+      sources: [apple({ song: 1544899674, country: 'us' }), yt('b_oEDGONSc4'), yt('0qbRhwEsX4A')],
+    },
+    {
+      id: 'cuphead-inkwell-isle-one', cat: 'indie', franchise: 'Cuphead', game: 'Cuphead',
+      title: 'Inkwell Isle One', composer: 'Kristofer Maddigan', year: 2017, platform: 'Xbox One / PC / Nintendo Switch / PS4',
+      sources: [apple({ song: 1305353579, country: 'us' }), yt('osRSZaCswds'), yt('jvOY2RvuvGs')],
+    },
+    {
+      id: 'cuphead-die-house', cat: 'indie', franchise: 'Cuphead', game: 'Cuphead',
+      title: 'Die House', composer: 'Kristofer Maddigan', year: 2017, platform: 'Xbox One / PC / Nintendo Switch / PS4',
+      sources: [apple({ song: 1305353581, country: 'us' }), yt('P3UguXUvECM'), yt('f9DLhlboCSU')],
+    },
+    {
+      id: 'minecraft-aria-math', cat: 'indie', franchise: 'Minecraft', game: 'Minecraft',
+      title: 'Aria Math', composer: 'C418', year: 2013, platform: 'PC / multiplataforma',
+      sources: [apple({ song: 1867890258, country: 'us' }), yt('atgjKEgSqSU'), yt('1gqEIJoxSHA')],
+    },
+    {
+      id: 'minecraft-haggstrom', cat: 'indie', franchise: 'Minecraft', game: 'Minecraft',
+      title: 'Haggstrom', composer: 'C418', year: 2011, platform: 'PC / multiplataforma',
+      sources: [apple({ song: 1867885429, country: 'us' }), yt('laZusNy8QiY'), yt('D09Okc11afI')],
+    },
+    {
+      id: 'geometry-dash-stereo-madness', cat: 'indie', franchise: 'Geometry Dash', game: 'Geometry Dash',
+      title: 'Stereo Madness', composer: 'ForeverBound', year: 2013, platform: 'iOS / Android / PC',
+      sources: [yt('tof8_p0F3kg'), yt('Y6-e9J8ualw')],
+    },
+    /* ───────────── Retro 8/16 bits (29) ───────────── */
     {
       id: 'castlevania-vampire-killer', cat: 'retro', franchise: 'Castlevania', game: 'Castlevania',
       title: 'Vampire Killer', composer: 'Kinuyo Yamashita', year: 1986, platform: 'NES',
@@ -1123,7 +1295,36 @@
       sources: [apple({ term: 'Las Vegas Top Gear', match: 'Las Vegas' }), yt('R-3x8P0YpvA')],
     },
 
-    /* ───────────── RPG y fantasía (46) ───────────── */
+    {
+      id: 'pac-man-intro-theme', cat: 'retro', franchise: 'Pac-Man', game: 'Pac-Man',
+      title: 'Intro Theme', composer: 'Toshio Kai', year: 1980, platform: 'Arcade',
+      sources: [yt('IqoRcA1aqMk')],
+    },
+    {
+      id: 'sonic-the-hedgehog-2-casino-night-zone', cat: 'retro', franchise: 'Sonic the Hedgehog', game: 'Sonic the Hedgehog 2',
+      title: 'Casino Night Zone', composer: 'Masato Nakamura', year: 1992, platform: 'Mega Drive',
+      aka: ['Sonic 2', 'Sonic the Hedgehog 2 (Genesis)'],
+      sources: [yt('0gw7A3Ao7Y8'), yt('Kgb30cz8HxI')],
+    },
+    {
+      id: 'street-fighter-ii-chun-li-s-theme', cat: 'retro', franchise: 'Street Fighter', game: 'Street Fighter II',
+      title: 'Chun-Li\'s Theme', composer: 'Yoko Shimomura', year: 1991, platform: 'Arcade',
+      aka: ['Street Fighter II: The World Warrior'],
+      sources: [yt('GYkZRFpKS48'), yt('3E2gDAamBbw')],
+    },
+    {
+      id: 'streets-of-rage-2-dreamer', cat: 'retro', franchise: 'Streets of Rage', game: 'Streets of Rage 2',
+      title: 'Dreamer', composer: 'Yuzo Koshiro', year: 1992, platform: 'Mega Drive',
+      aka: ['Bare Knuckle II'],
+      sources: [yt('rb6EUJqKrOA'), yt('Xlb8UYuSIp8')],
+    },
+    {
+      id: 'teenage-mutant-ninja-turtles-iv-turtles-in-time-sewer-surfin', cat: 'retro', franchise: 'Teenage Mutant Ninja Turtles', game: 'Teenage Mutant Ninja Turtles IV: Turtles in Time',
+      title: 'Sewer Surfin\'', composer: 'Konami Kukeiha Club', year: 1992, platform: 'SNES',
+      aka: ['Turtles in Time', 'TMNT IV'],
+      sources: [yt('uCWzOtLGnQQ'), yt('ccKc80Av1HM')],
+    },
+    /* ───────────── RPG y fantasía (56) ───────────── */
     {
       id: 'baldur-s-gate-3-i-want-to-live', cat: 'rpg', franchise: "Baldur's Gate", game: "Baldur's Gate 3",
       title: 'I Want to Live', composer: 'Borislav Slavov', year: 2023, platform: 'PC / PS5 / Xbox Series',
@@ -1379,7 +1580,60 @@
       sources: [apple({ song: 1032027414, country: 'mx' }), yt('3ukCLUdzbUs'), yt('823yuWz0lto')],
     },
 
-    /* ───────────── Acción y aventura (31) ───────────── */
+    {
+      id: 'final-fantasy-vii-aerith-s-theme', cat: 'rpg', franchise: 'Final Fantasy', game: 'Final Fantasy VII',
+      title: 'Aerith\'s Theme', composer: 'Nobuo Uematsu', year: 1997, platform: 'PlayStation',
+      aka: ['Aeris\' Theme'],
+      sources: [apple({ song: 61017453, country: 'us' }), yt('iqMbmkUpihA'), yt('_w2jrGbZ27o')],
+    },
+    {
+      id: 'final-fantasy-vii-opening-bombing-mission', cat: 'rpg', franchise: 'Final Fantasy', game: 'Final Fantasy VII',
+      title: 'Opening - Bombing Mission', composer: 'Nobuo Uematsu', year: 1997, platform: 'PlayStation',
+      aka: ['Bombing Mission'],
+      sources: [apple({ song: 1439125486, country: 'us' }), yt('41cqwo504hA'), yt('cTCVaxTHbrY')],
+    },
+    {
+      id: 'final-fantasy-viii-eyes-on-me', cat: 'rpg', franchise: 'Final Fantasy', game: 'Final Fantasy VIII',
+      title: 'Eyes on Me', composer: 'Nobuo Uematsu (voz: Faye Wong)', year: 1999, platform: 'PlayStation',
+      sources: [apple({ song: 966494172, country: 'us' }), yt('KDGMU6sdVBE'), yt('HNefNLOHVYk')],
+    },
+    {
+      id: 'final-fantasy-x-suteki-da-ne', cat: 'rpg', franchise: 'Final Fantasy', game: 'Final Fantasy X',
+      title: 'Suteki Da Ne', composer: 'Nobuo Uematsu (voz: Rikki)', year: 2001, platform: 'PlayStation 2',
+      sources: [apple({ song: 1439124990, country: 'us' }), yt('Vl20g-tBaKc'), yt('QVshmpyGxRo')],
+    },
+    {
+      id: 'final-fantasy-vi-terra-s-theme', cat: 'rpg', franchise: 'Final Fantasy', game: 'Final Fantasy VI',
+      title: 'Terra\'s Theme', composer: 'Nobuo Uematsu', year: 1994, platform: 'Super Nintendo',
+      aka: ['Terra', 'Tina'],
+      sources: [apple({ song: 62444298, country: 'us' }), yt('TbYmZSOnyuk'), yt('ObccgHQdos0')],
+    },
+    {
+      id: 'final-fantasy-xiii-blinded-by-light', cat: 'rpg', franchise: 'Final Fantasy', game: 'Final Fantasy XIII',
+      title: 'Blinded by Light', composer: 'Masashi Hamauzu', year: 2009, platform: 'PS3 / Xbox 360',
+      sources: [apple({ song: 360286659, country: 'us' }), yt('RPtq1Bpf6q4'), yt('e2CAeM7xgHQ')],
+    },
+    {
+      id: 'chrono-trigger-frog-s-theme', cat: 'rpg', franchise: 'Chrono Trigger', game: 'Chrono Trigger',
+      title: 'Frog\'s Theme', composer: 'Yasunori Mitsuda', year: 1995, platform: 'Super Nintendo',
+      sources: [apple({ song: 324081793, country: 'us' }), yt('JiMmZYx-eXA'), yt('8JADKlgXqjU')],
+    },
+    {
+      id: 'the-elder-scrolls-iii-morrowind-nerevar-rising', cat: 'rpg', franchise: 'The Elder Scrolls', game: 'The Elder Scrolls III: Morrowind',
+      title: 'Nerevar Rising', composer: 'Jeremy Soule', year: 2002, platform: 'PC / Xbox',
+      sources: [apple({ song: 1849394541, country: 'us' }), yt('0lfCUSB4p6g'), yt('C9xch8D--gc')],
+    },
+    {
+      id: 'dark-souls-firelink-shrine', cat: 'rpg', franchise: 'Dark Souls', game: 'Dark Souls',
+      title: 'Firelink Shrine', composer: 'Motoi Sakuraba', year: 2011, platform: 'PS3 / Xbox 360 / PC',
+      sources: [apple({ song: 1777191191, country: 'us' }), yt('Gjht7acg9d4'), yt('tf8p-biLiOU')],
+    },
+    {
+      id: 'dark-souls-ornstein-and-smough', cat: 'rpg', franchise: 'Dark Souls', game: 'Dark Souls',
+      title: 'Ornstein and Smough', composer: 'Motoi Sakuraba', year: 2011, platform: 'PS3 / Xbox 360 / PC',
+      sources: [apple({ song: 1777191506, country: 'us' }), yt('hOxLVIPkHTs'), yt('qzR47RoKUUY')],
+    },
+    /* ───────────── Acción y aventura (38) ───────────── */
     {
       id: 'ac2-ezio', cat: 'accion', franchise: "Assassin's Creed", game: "Assassin's Creed II",
       title: "Ezio's Family", composer: 'Jesper Kyd', year: 2009, platform: 'PS3 / Xbox 360',
@@ -1538,7 +1792,44 @@
       sources: [apple({ song: 1471827136, country: 'mx' }), apple({ song: 1731016011, country: 'mx' }), yt('iiVUXL6_REM')],
     },
 
-    /* ───────────── Online y multijugador (26) ───────────── */
+    {
+      id: 'yakuza-0-baka-mitai', cat: 'accion', franchise: 'Yakuza', game: 'Yakuza 0',
+      title: 'Baka Mitai', composer: 'Takaya Kuroda', year: 2015, platform: 'PS3 / PS4 / PC',
+      sources: [yt('NolF1yCK33c'), yt('gSTVGZozwEc')],
+    },
+    {
+      id: 'grand-theft-auto-vice-city-vice-city-theme', cat: 'accion', franchise: 'Grand Theft Auto', game: 'Grand Theft Auto: Vice City',
+      title: 'Vice City Theme', composer: 'Michael Hunter', year: 2002, platform: 'PlayStation 2 / PC / Xbox',
+      aka: ['Main Theme', 'Grand Theft Auto: Vice City Main Theme'],
+      sources: [yt('PE485kpuqrs'), yt('5p1vacn3KcE')],
+    },
+    {
+      id: 'sonic-adventure-2-city-escape', cat: 'accion', franchise: 'Sonic the Hedgehog', game: 'Sonic Adventure 2',
+      title: 'City Escape', composer: 'Jun Senoue (voces: Ted Poley, Tony Harnell)', year: 2001, platform: 'Dreamcast / GameCube / PS3 / Xbox 360 / PC',
+      aka: ['Escape from the City'],
+      sources: [yt('5WcyVvWZJU4'), yt('qR6mTJRbcaE')],
+    },
+    {
+      id: 'shadow-the-hedgehog-i-am-all-of-me', cat: 'accion', franchise: 'Sonic the Hedgehog', game: 'Shadow the Hedgehog',
+      title: 'I Am... All of Me', composer: 'Crush 40 (Jun Senoue)', year: 2005, platform: 'PS2 / GameCube / Xbox',
+      sources: [apple({ song: 584342978, country: 'us' }), yt('NucG0kD3pkg'), yt('8V1pMQKDPco')],
+    },
+    {
+      id: 'sonic-unleashed-endless-possibility', cat: 'accion', franchise: 'Sonic the Hedgehog', game: 'Sonic Unleashed',
+      title: 'Endless Possibility', composer: 'Tomoya Ohtani (voz: Jaret Reddick)', year: 2008, platform: 'PS3 / Xbox 360 / Wii / PS2',
+      sources: [yt('tJjxKhjR9H4'), yt('qEJVflx3uGw')],
+    },
+    {
+      id: 'assassin-s-creed-odyssey-legend-of-the-eagle-bearer', cat: 'accion', franchise: 'Assassin\'s Creed', game: 'Assassin\'s Creed Odyssey',
+      title: 'Legend of the Eagle Bearer', composer: 'The Flight (Joe Henson, Alexis Smith)', year: 2018, platform: 'PC / PS4 / Xbox One',
+      sources: [apple({ song: 1640070796, country: 'us' }), yt('eA0nbtxfeq4'), yt('UND5wgnIino')],
+    },
+    {
+      id: 'assassin-s-creed-iii-assassin-s-creed-iii-main-theme', cat: 'accion', franchise: 'Assassin\'s Creed', game: 'Assassin\'s Creed III',
+      title: 'Assassin\'s Creed III Main Theme', composer: 'Lorne Balfe', year: 2012, platform: 'PC / PS3 / Xbox 360',
+      sources: [apple({ song: 1640118815, country: 'us' }), yt('n5q1ObIH5pk'), yt('ut3sL6NI1BE')],
+    },
+    /* ───────────── Online y multijugador (32) ───────────── */
     {
       id: 'apex-legends-apex-legends-main-them', cat: 'online', franchise: 'Apex Legends', game: 'Apex Legends',
       title: 'Apex Legends: Main Theme', composer: 'Stephen Barton', year: 2019, platform: 'PC / PS4 / Xbox One',
@@ -1669,6 +1960,36 @@
       id: 'warframe-we-all-lift-together', cat: 'online', franchise: 'Warframe', game: 'Warframe',
       title: 'We All Lift Together', composer: 'Keith Power', year: 2013, platform: 'PC / PS4 / Xbox One / Switch',
       sources: [apple({ term: 'We All Lift Together Warframe', match: 'We All Lift Together' })],
+    },
+    {
+      id: 'world-of-warcraft-elwynn-forest', cat: 'online', franchise: 'Warcraft', game: 'World of Warcraft',
+      title: 'Elwynn Forest', composer: 'Jason Hayes, Derek Duke, Tracy W. Bush, Glenn Stafford', year: 2004, platform: 'PC',
+      sources: [apple({ song: 1810417365, country: 'us' }), yt('1yZNuUpTjTo'), yt('MDMa49NrQPM')],
+    },
+    {
+      id: 'league-of-legends-rise', cat: 'online', franchise: 'League of Legends', game: 'League of Legends',
+      title: 'RISE', composer: 'The Glitch Mob, Mako, The Word Alive', year: 2018, platform: 'PC',
+      sources: [apple({ song: 1833059354, country: 'us' }), yt('fB8TyLTD7EE'), yt('BZcErUf7S_8')],
+    },
+    {
+      id: 'league-of-legends-get-jinxed', cat: 'online', franchise: 'League of Legends', game: 'League of Legends',
+      title: 'Get Jinxed', composer: 'Djerv', year: 2013, platform: 'PC',
+      sources: [apple({ song: 1832632995, country: 'us' }), yt('0nlJuwO0GDs'), yt('dFwFm8e49Vs')],
+    },
+    {
+      id: 'call-of-duty-black-ops-beauty-of-annihilation', cat: 'online', franchise: 'Call of Duty', game: 'Call of Duty: Black Ops',
+      title: 'Beauty of Annihilation', composer: 'Kevin Sherwood', year: 2010, platform: 'PC / PS3 / Xbox 360 / Wii',
+      sources: [apple({ song: 1542638516, country: 'us' }), yt('LAUOpUsR7ME'), yt('oH3ZvU0UUvI')],
+    },
+    {
+      id: 'final-fantasy-xiv-heavensward-dragonsong', cat: 'online', franchise: 'Final Fantasy', game: 'Final Fantasy XIV: Heavensward',
+      title: 'Dragonsong', composer: 'Nobuo Uematsu (voz: Susan Calloway; arreglo: Masayoshi Soken)', year: 2015, platform: 'PC / PS4 / PS5',
+      sources: [yt('jqNHNGRxQZY'), yt('FtuwltmTp9I')],
+    },
+    {
+      id: 'fortnite-fortnite-lobby-music-chapter-1', cat: 'online', franchise: 'Fortnite', game: 'Fortnite',
+      title: 'Fortnite Lobby Music (Chapter 1)', composer: 'Epic Games', year: 2017, platform: 'PC / consolas / móvil',
+      sources: [yt('HHCAz5mQnYY')],
     },
   ];
 

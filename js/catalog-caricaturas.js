@@ -1,5 +1,5 @@
 /*
- * Catálogo: Caricaturas (307 pistas).
+ * Catálogo: Caricaturas (360 pistas).
  * Entradas de caricaturas por época. Cuando existe, suena primero la entrada en español latino (YouTube) y el preview oficial de Apple queda de respaldo.
  * Mismo formato que catalog.js; las fuentes se prueban en el orden en que aparecen.
  */
@@ -25,7 +25,7 @@
   });
 
   AM.CATALOG.push(
-    /* ───────────── Clásicas (antes de 1980) (52) ───────────── */
+    /* ───────────── Clásicas (antes de 1980) (58) ───────────── */
     {
       id: 'toon-los-picapiedra-los-picapiedra-tema', cat: 'toon-clasicas', franchise: 'Los Picapiedra', game: 'Los Picapiedra',
       title: 'Los Picapiedra (tema)', composer: 'Hoyt Curtin', year: 1960, platform: 'Hanna-Barbera',
@@ -337,7 +337,43 @@
       aka: ["The Great Grape Ape Show"],
       sources: [yt('D_d583FHxPQ'), yt('6xv8hi7JOGc')],
     },
-    /* ───────────── Años 80 (51) ───────────── */
+    {
+      id: 'toon-los-superamigos-tema', cat: 'toon-clasicas', franchise: 'Los Superamigos', game: 'Los Superamigos',
+      title: 'Los Superamigos (tema latino)', composer: 'Hoyt Curtin', year: 1973, platform: 'Hanna-Barbera',
+      aka: ['Super Friends', 'Los Súper Amigos', 'Superamigos'],
+      sources: [yt('TOcTFhtzl8c'), yt('Djr3UUJ0MFA')],
+    },
+    {
+      id: 'toon-scooby-doo-y-scrappy-doo-tema', cat: 'toon-clasicas', franchise: 'Scooby-Doo', game: 'Scooby-Doo y Scrappy-Doo',
+      title: 'Scooby-Doo y Scrappy-Doo (tema latino)', composer: 'Hoyt Curtin', year: 1979, platform: 'Hanna-Barbera',
+      aka: ['Scooby-Doo and Scrappy-Doo', 'Scooby y Scrappy-Doo'],
+      sources: [yt('hOv36P1mw6U'), yt('WBrpZDSHMZU')],
+    },
+    {
+      id: 'toon-pixie-y-dixie-y-el-gato-jinks-tema', cat: 'toon-clasicas', franchise: 'Pixie y Dixie', game: 'Pixie y Dixie y el gato Jinks',
+      title: 'Pixie y Dixie (tema latino)', composer: 'Hoyt Curtin', year: 1958, platform: 'Hanna-Barbera',
+      aka: ['Pixie and Dixie and Mr. Jinks', 'Pixie, Dixie y el Gato Jinks'],
+      sources: [yt('04XWGUt2i8s'), yt('Q-2HXXRx8SU')],
+    },
+    {
+      id: 'toon-snoopy-y-charlie-brown-especiales-de-tv-tema', cat: 'toon-clasicas', franchise: 'Snoopy', game: 'Snoopy y Charlie Brown (especiales de TV)',
+      title: 'Linus and Lucy', composer: 'Vince Guaraldi', year: 1965, platform: 'CBS / Lee Mendelson Productions',
+      aka: ['Peanuts', 'Charlie Brown', 'Snoopy y Charlie Brown', 'A Charlie Brown Christmas'],
+      sources: [yt('x6zypc_LhnM'), yt('dURiJSJkWFM'), apple({ song: 1650319530, country: 'mx' })],
+    },
+    {
+      id: 'toon-ardilla-secreta-tema', cat: 'toon-clasicas', franchise: 'Ardilla Secreta', game: 'Ardilla Secreta',
+      title: 'Ardilla Secreta (tema latino)', composer: 'Hoyt Curtin', year: 1965, platform: 'Hanna-Barbera',
+      aka: ['Secret Squirrel', 'The Secret Squirrel Show', 'Ardilla Secreta y Morocho Maroon'],
+      sources: [yt('oSRNpuPWDfM')],
+    },
+    {
+      id: 'toon-speed-buggy-tema', cat: 'toon-clasicas', franchise: 'Speed Buggy', game: 'Speed Buggy',
+      title: 'Speed Buggy (tema latino)', composer: 'Hoyt Curtin', year: 1973, platform: 'Hanna-Barbera',
+      aka: ['Speed Buggy', 'Speedbuggy'],
+      sources: [yt('CHJFWTePG9I')],
+    },
+    /* ───────────── Años 80 (60) ───────────── */
     {
       id: 'toon-los-pitufos-los-pitufos-tema', cat: 'toon-80s', franchise: 'Los Pitufos', game: 'Los Pitufos',
       title: 'Los Pitufos (tema)', composer: 'Hoyt Curtin', year: 1981, platform: 'Hanna-Barbera',
@@ -641,7 +677,61 @@
       aka: ["Captain N: The Game Master"],
       sources: [yt('ZLKhjYiwQEQ'), yt('GQbr7_CkgPA'), yt('qbJomK-v2Is')],
     },
-    /* ───────────── Años 90 (68) ───────────── */
+    {
+      id: 'toon-el-hombre-arana-y-sus-sorprendentes-amigos-tema', cat: 'toon-80s', franchise: 'El Hombre Araña', game: 'El Hombre Araña y sus sorprendentes amigos',
+      title: 'El Hombre Araña y sus sorprendentes amigos (tema latino)', composer: 'Dennis C. Brown', year: 1981, platform: 'Marvel Productions / NBC',
+      aka: ['Spider-Man and His Amazing Friends', 'Spiderman y sus asombrosos amigos'],
+      sources: [yt('PU1qbf4X9ko'), yt('d0cidlD_eh4')],
+    },
+    {
+      id: 'toon-los-13-fantasmas-de-scooby-doo-tema', cat: 'toon-80s', franchise: 'Scooby-Doo', game: 'Los 13 fantasmas de Scooby-Doo',
+      title: 'Los 13 fantasmas de Scooby-Doo (tema latino)', composer: 'Hoyt Curtin', year: 1985, platform: 'Hanna-Barbera',
+      aka: ['The 13 Ghosts of Scooby-Doo', 'Los trece fantasmas de Scooby-Doo'],
+      sources: [yt('79xULZTwYok'), yt('knMxIr4DRLk')],
+    },
+    {
+      id: 'toon-ricky-ricon-tema', cat: 'toon-80s', franchise: 'Ricky Ricón', game: 'Ricky Ricón',
+      title: 'Ricky Ricón (tema latino)', composer: 'Hoyt Curtin', year: 1980, platform: 'Hanna-Barbera',
+      aka: ['Richie Rich', 'Ricky Rico', 'Ricky Ricón y Scooby-Doo'],
+      sources: [yt('OfTd3Zjv5k8')],
+    },
+    {
+      id: 'toon-pac-man-serie-animada-tema', cat: 'toon-80s', franchise: 'Pac-Man', game: 'Pac-Man (serie animada)',
+      title: 'Pac-Man (tema latino)', composer: 'Hoyt Curtin', year: 1982, platform: 'Hanna-Barbera',
+      aka: ['Pac-Man: The Animated Series', 'Pac-Man (1982)'],
+      sources: [yt('nDAKHRQtCfM'), yt('jfwpznn-xXI')],
+    },
+    {
+      id: 'toon-gobots-tema', cat: 'toon-80s', franchise: 'GoBots', game: 'GoBots',
+      title: 'GoBots (tema latino)', composer: 'Hoyt Curtin', year: 1984, platform: 'Hanna-Barbera',
+      aka: ['Challenge of the GoBots', 'Go-Bots', 'Los GoBots'],
+      sources: [yt('dyK3_IDAkfE'), yt('ZVX070VYvTM')],
+    },
+    {
+      id: 'toon-thundarr-el-barbaro-tema', cat: 'toon-80s', franchise: 'Thundarr el Bárbaro', game: 'Thundarr el Bárbaro',
+      title: 'Thundarr el Bárbaro (tema latino)', composer: 'Dean Elliott', year: 1980, platform: 'Ruby-Spears / NBC',
+      aka: ['Thundarr the Barbarian'],
+      sources: [yt('TISlEy-yJH0'), yt('hUqQNTLvXMc')],
+    },
+    {
+      id: 'toon-los-wuzzles-tema', cat: 'toon-80s', franchise: 'Los Wuzzles', game: 'Los Wuzzles',
+      title: 'Los Wuzzles (tema latino)', year: 1985, platform: 'Disney',
+      aka: ['The Wuzzles'],
+      sources: [yt('Bz-9eqOGI9g'), yt('o6wgmejBBkc')],
+    },
+    {
+      id: 'toon-ewoks-tema', cat: 'toon-80s', franchise: 'Star Wars', game: 'Ewoks',
+      title: 'Ewoks (tema latino)', composer: 'Patricia Cullen', year: 1985, platform: 'Nelvana / Lucasfilm / ABC',
+      aka: ['Star Wars: Ewoks', 'The Ewoks'],
+      sources: [yt('-qNwU2xhDjs'), yt('ozpOeSVNRSg')],
+    },
+    {
+      id: 'toon-los-inhumanoides-tema', cat: 'toon-80s', franchise: 'Los Inhumanoides', game: 'Los Inhumanoides',
+      title: 'Los Inhumanoides (tema latino)', year: 1986, platform: 'Sunbow / Marvel / Hasbro',
+      aka: ['Inhumanoids'],
+      sources: [yt('4uk551FvTio'), yt('5GjP9zooKhA')],
+    },
+    /* ───────────── Años 90 (76) ───────────── */
     {
       id: 'toon-animaniacs-animaniacs-main-title-theme', cat: 'toon-90s', franchise: 'Animaniacs', game: 'Animaniacs',
       title: 'Animaniacs Main Title Theme', composer: 'Richard Stone', year: 1993, platform: 'Warner Bros.',
@@ -1044,7 +1134,55 @@
       aka: ["Oggy and the Cockroaches"],
       sources: [yt('5jSU_VkSdKY')],
     },
-    /* ───────────── 2000s (71) ───────────── */
+    {
+      id: 'toon-tom-y-jerry-kids-tema', cat: 'toon-90s', franchise: 'Tom y Jerry', game: 'Tom y Jerry Kids',
+      title: 'Tom y Jerry Kids (tema latino)', composer: 'Steve Nelson y Thomas Chase', year: 1990, platform: 'Hanna-Barbera / Fox Kids',
+      aka: ['Tom & Jerry Kids Show', 'Tom y Jerry Niños'],
+      sources: [yt('DuUH18XoFCc'), yt('CmefKs2HFPY')],
+    },
+    {
+      id: 'toon-los-castores-cascarrabias-tema', cat: 'toon-90s', franchise: 'Los Castores Cascarrabias', game: 'Los Castores Cascarrabias',
+      title: 'Los Castores Cascarrabias (tema latino)', year: 1997, platform: 'Nickelodeon',
+      aka: ['The Angry Beavers', 'Castores Cascarrabias'],
+      sources: [yt('G1YOgszzE34'), yt('cCekZlB2BMA')],
+    },
+    {
+      id: 'toon-el-show-de-ren-y-stimpy-tema', cat: 'toon-90s', franchise: 'Ren y Stimpy', game: 'El show de Ren y Stimpy',
+      title: 'Ren y Stimpy (entrada)', composer: 'Chris Reccardi y John Kricfalusi (\'Dog Pound Hop\')', year: 1991, platform: 'Nickelodeon',
+      aka: ['The Ren & Stimpy Show', 'Ren & Stimpy'],
+      sources: [yt('W5NfgKPVZ2g'), yt('YOeFi-RkaZM')],
+    },
+    {
+      id: 'toon-el-mundo-de-bobby-tema', cat: 'toon-90s', franchise: 'El mundo de Bobby', game: 'El mundo de Bobby',
+      title: 'El mundo de Bobby (tema latino)', year: 1990, platform: 'Fox Kids / Film Roman',
+      aka: ['Bobby\'s World'],
+      sources: [yt('ncIlt8bmueM')],
+    },
+    {
+      id: 'toon-peter-pan-y-los-piratas-tema', cat: 'toon-90s', franchise: 'Peter Pan y los piratas', game: 'Peter Pan y los piratas',
+      title: 'Peter Pan y los piratas (tema latino)', year: 1990, platform: 'Fox Kids / TMS',
+      aka: ['Peter Pan and the Pirates'],
+      sources: [yt('UhVdi3XoPzU'), yt('fI1YDTxBpOo')],
+    },
+    {
+      id: 'toon-tale-spin-tema', cat: 'toon-90s', franchise: 'Tale Spin', game: 'Tale Spin',
+      title: 'Tale Spin (tema latino)', year: 1990, platform: 'Disney',
+      aka: ['TaleSpin', 'Tale Spin: Baloo y Kit'],
+      sources: [yt('aP3DgasbIpM'), yt('oYPPjtwwXek')],
+    },
+    {
+      id: 'toon-bonkers-tema', cat: 'toon-90s', franchise: 'Bonkers', game: 'Bonkers',
+      title: 'Bonkers (tema latino)', year: 1993, platform: 'Disney',
+      aka: ['Bonkers D. Bobcat', 'Disney\'s Bonkers'],
+      sources: [yt('wdixPoS6nl0'), yt('DIT4eqKA4VY')],
+    },
+    {
+      id: 'toon-marsupilami-tema', cat: 'toon-90s', franchise: 'Marsupilami', game: 'Marsupilami',
+      title: 'Marsupilami (tema latino)', year: 1993, platform: 'Disney',
+      aka: ['Disney\'s Marsupilami'],
+      sources: [yt('jKNhW5a0g8c')],
+    },
+    /* ───────────── 2000s (83) ───────────── */
     {
       id: 'toon-los-padrinos-magicos-los-padrinos-magicos-tema', cat: 'toon-00s', franchise: 'Los Padrinos Mágicos', game: 'Los Padrinos Mágicos',
       title: 'Los Padrinos Mágicos (tema latino)', composer: 'Ron Jones', year: 2001, platform: 'Nickelodeon',
@@ -1464,7 +1602,79 @@
       aka: ["Dibo the Gift Dragon"],
       sources: [yt('HWUfMvlQfH4'), yt('RvEDxs9QTNc'), yt('tKAtNr-9NtU')],
     },
-    /* ───────────── 2010 a 2014 (32) ───────────── */
+    {
+      id: 'toon-johnny-test-tema', cat: 'toon-00s', franchise: 'Johnny Test', game: 'Johnny Test',
+      title: 'Johnny Test (tema latino)', year: 2005, platform: 'Kids\' WB / Cartoon Network',
+      aka: ['Johnny Test'],
+      sources: [yt('TA67Cfu_9ak'), yt('volB9RMvd7A')],
+    },
+    {
+      id: 'toon-las-aventuras-de-jackie-chan-tema', cat: 'toon-00s', franchise: 'Jackie Chan', game: 'Las aventuras de Jackie Chan',
+      title: 'Las aventuras de Jackie Chan (tema latino)', year: 2000, platform: 'Kids\' WB / Sony Pictures Television',
+      aka: ['Jackie Chan Adventures'],
+      sources: [yt('gbNWbhRXqGs'), yt('7VxFl2W73v0')],
+    },
+    {
+      id: 'toon-las-tortugas-ninja-2003-tema', cat: 'toon-00s', franchise: 'Las Tortugas Ninja', game: 'Las Tortugas Ninja (2003)',
+      title: 'Las Tortugas Ninja 2003 (tema latino)', year: 2003, platform: '4Kids Entertainment / Fox',
+      aka: ['Teenage Mutant Ninja Turtles 2003', 'TMNT 2003'],
+      sources: [yt('X56M5mWMFwk'), yt('0FUBH1enBi8')],
+    },
+    {
+      id: 'toon-ben-10-fuerza-alienigena-tema', cat: 'toon-00s', franchise: 'Ben 10', game: 'Ben 10: Fuerza alienígena',
+      title: 'Ben 10: Fuerza alienígena (tema latino)', composer: 'Kristopher Carter, Michael McCuistion, Lolita Ritmanis', year: 2008, platform: 'Cartoon Network',
+      aka: ['Ben 10: Alien Force', 'Ben 10 Alien Force'],
+      sources: [yt('f0P3ojhyBvw'), yt('SijXs5gvT1Y')],
+    },
+    {
+      id: 'toon-el-show-de-garfield-tema', cat: 'toon-00s', franchise: 'Garfield', game: 'El show de Garfield',
+      title: 'El show de Garfield (tema latino)', year: 2008, platform: 'France 3 / Dargaud Media',
+      aka: ['The Garfield Show'],
+      sources: [yt('ODRTvW8Ovrc'), yt('pGnuph2AfQY')],
+    },
+    {
+      id: 'toon-transformers-animated-tema', cat: 'toon-00s', franchise: 'Transformers', game: 'Transformers Animated',
+      title: 'Transformers Animated (tema latino)', year: 2007, platform: 'Cartoon Network',
+      aka: ['Transformers: Animated'],
+      sources: [yt('9xh3zhOp_Ss'), yt('aI0JnFrsO8M')],
+    },
+    {
+      id: 'toon-go-diego-go-tema', cat: 'toon-00s', franchise: 'Go, Diego, Go!', game: 'Go, Diego, Go!',
+      title: 'Go, Diego, Go! (tema latino)', year: 2005, platform: 'Nickelodeon / Nick Jr.',
+      aka: ['Go, Diego, Go!', '¡Vamos, Diego, vamos!'],
+      sources: [yt('qRSazZe0Xas'), yt('18f7WUbm1n0')],
+    },
+    {
+      id: 'toon-los-pequenos-einsteins-tema', cat: 'toon-00s', franchise: 'Los Pequeños Einsteins', game: 'Los Pequeños Einsteins',
+      title: 'Los Pequeños Einsteins (tema latino)', year: 2005, platform: 'Playhouse Disney',
+      aka: ['Little Einsteins', 'Pequeños Einstein'],
+      sources: [yt('i-AaQJWAYtE'), yt('ey-XM3MTEKg')],
+    },
+    {
+      id: 'toon-mis-amigos-tigger-y-pooh-tema', cat: 'toon-00s', franchise: 'Winnie Pooh', game: 'Mis amigos Tigger y Pooh',
+      title: 'Mis amigos Tigger y Pooh (tema latino)', year: 2007, platform: 'Playhouse Disney',
+      aka: ['Mi amigo Tigger y Pooh', 'My Friends Tigger & Pooh'],
+      sources: [yt('z9Bgf-PgfeQ'), yt('zLZwiSmOmhE')],
+    },
+    {
+      id: 'toon-manny-a-la-obra-tema', cat: 'toon-00s', franchise: 'Manny a la obra', game: 'Manny a la obra',
+      title: 'Manny a la obra (tema latino)', year: 2006, platform: 'Playhouse Disney',
+      aka: ['Handy Manny', 'Manny Manitas'],
+      sources: [yt('inv6YfEeJEU')],
+    },
+    {
+      id: 'toon-clifford-el-gran-perro-colorado-tema', cat: 'toon-00s', franchise: 'Clifford', game: 'Clifford, el gran perro colorado',
+      title: 'Clifford, el gran perro colorado (tema latino)', year: 2000, platform: 'PBS Kids / Scholastic',
+      aka: ['Clifford the Big Red Dog', 'Clifford el gran perro rojo'],
+      sources: [yt('O-LG7tyQTUk'), yt('bCOCnPi1qO0')],
+    },
+    {
+      id: 'toon-bebes-looney-tunes-tema', cat: 'toon-00s', franchise: 'Looney Tunes', game: 'Bebés Looney Tunes',
+      title: 'Bebés Looney Tunes (tema latino)', year: 2002, platform: 'Kids\' WB / Warner Bros. Animation',
+      aka: ['Baby Looney Tunes'],
+      sources: [yt('LfUEdFjs7MM'), yt('5lWpW2Ypaws')],
+    },
+    /* ───────────── 2010 a 2014 (39) ───────────── */
     {
       id: 'toon-hora-de-aventura-hora-de-aventura-tema', cat: 'toon-1014', franchise: 'Hora de aventura', game: 'Hora de aventura',
       title: 'Hora de aventura (tema)', composer: 'Pendleton Ward', year: 2010, platform: 'Cartoon Network',
@@ -1653,7 +1863,49 @@
       aka: ['Kick Buttowski', 'Kick Buttowski: Suburban Daredevil'],
       sources: [yt('exYKnoSBFQM'), yt('SKoN4-sp_F0')],
     },
-    /* ───────────── 2015 a 2019 (28) ───────────── */
+    {
+      id: 'toon-las-tortugas-ninja-2012-tema', cat: 'toon-1014', franchise: 'Las Tortugas Ninja', game: 'Las Tortugas Ninja (2012)',
+      title: 'Las Tortugas Ninja 2012 (tema latino)', year: 2012, platform: 'Nickelodeon',
+      aka: ['Teenage Mutant Ninja Turtles 2012', 'TMNT 2012'],
+      sources: [yt('2C_sakgU-d8'), yt('kGoOllt0gac')],
+    },
+    {
+      id: 'toon-los-octonautas-tema', cat: 'toon-1014', franchise: 'Los Octonautas', game: 'Los Octonautas',
+      title: 'Los Octonautas (tema latino)', year: 2010, platform: 'CBeebies / Silvergate Media',
+      aka: ['Octonauts'],
+      sources: [yt('5eXfESK5li4'), yt('IrQbJLNpkJU')],
+    },
+    {
+      id: 'toon-princesita-sofia-tema', cat: 'toon-1014', franchise: 'Princesita Sofía', game: 'Princesita Sofía',
+      title: 'Princesita Sofía (tema latino)', year: 2013, platform: 'Disney Junior',
+      aka: ['Sofía la Primera', 'Sofia the First'],
+      sources: [yt('y8aN2WgKZXg'), yt('YqwQq-_dhnc')],
+    },
+    {
+      id: 'toon-jake-y-los-piratas-de-nunca-jamas-tema', cat: 'toon-1014', franchise: 'Jake y los piratas de Nunca Jamás', game: 'Jake y los piratas de Nunca Jamás',
+      title: 'Jake y los piratas de Nunca Jamás (tema latino)', year: 2011, platform: 'Disney Junior',
+      aka: ['Jake and the Never Land Pirates'],
+      sources: [yt('_3OEUiPjxl8'), yt('sQmse4PFff0')],
+    },
+    {
+      id: 'toon-doctora-juguetes-tema', cat: 'toon-1014', franchise: 'Doctora Juguetes', game: 'Doctora Juguetes',
+      title: 'Doctora Juguetes (tema latino)', year: 2012, platform: 'Disney Junior',
+      aka: ['Doc McStuffins', 'Doctora Juguetes'],
+      sources: [yt('W3aTBtAZaNs'), yt('yfoIONQIwFE')],
+    },
+    {
+      id: 'toon-transformers-prime-tema', cat: 'toon-1014', franchise: 'Transformers', game: 'Transformers Prime',
+      title: 'Transformers Prime (tema latino)', composer: 'Brian Tyler', year: 2010, platform: 'The Hub / Hasbro Studios',
+      aka: ['Transformers: Prime'],
+      sources: [yt('d2nVSRhuzfU')],
+    },
+    {
+      id: 'toon-dragones-jinetes-de-mema-tema', cat: 'toon-1014', franchise: 'Dragones', game: 'Dragones: Jinetes de Mema',
+      title: 'Dragones: Jinetes de Mema (tema)', composer: 'John Paesano (basado en temas de John Powell)', year: 2012, platform: 'Cartoon Network / DreamWorks Animation',
+      aka: ['Dragons: Riders of Berk', 'Dragones: Defensores de Mema', 'Dragons: Defenders of Berk', 'Dragones: Jinetes de Berk'],
+      sources: [yt('GJC9t9Lb7BQ'), yt('f5STRi_Vk_E')],
+    },
+    /* ───────────── 2015 a 2019 (34) ───────────── */
     {
       id: 'toon-bluey-bluey-theme-tune', cat: 'toon-1519', franchise: 'Bluey', game: 'Bluey',
       title: 'Bluey Theme Tune', composer: 'Joff Bush', year: 2018, platform: 'Ludo Studio',
@@ -1820,7 +2072,43 @@
       aka: ["The Casagrandes"],
       sources: [yt('8NcIX_LaNcY')],
     },
-    /* ───────────── 2020 en adelante (5) ───────────── */
+    {
+      id: 'toon-she-ra-y-las-princesas-del-poder-tema', cat: 'toon-1519', franchise: 'She-Ra', game: 'She-Ra y las princesas del poder',
+      title: 'She-Ra y las princesas del poder (tema latino)', composer: 'Sunna Wehrmeijer', year: 2018, platform: 'Netflix / DreamWorks Animation',
+      aka: ['She-Ra and the Princesses of Power'],
+      sources: [yt('oRTPeKUiaqc'), yt('P4xLA_hpio8')],
+    },
+    {
+      id: 'toon-voltron-el-defensor-legendario-tema', cat: 'toon-1519', franchise: 'Voltron', game: 'Voltron: El defensor legendario',
+      title: 'Voltron: El defensor legendario (tema)', composer: 'Brad Breeck', year: 2016, platform: 'Netflix / DreamWorks Animation',
+      aka: ['Voltron: Legendary Defender'],
+      sources: [yt('fJ4eaPLpxIQ'), yt('yeX1o-C8jJg')],
+    },
+    {
+      id: 'toon-la-ley-de-milo-murphy-tema', cat: 'toon-1519', franchise: 'La ley de Milo Murphy', game: 'La ley de Milo Murphy',
+      title: 'La ley de Milo Murphy (tema latino)', composer: 'Dan Povenmire, Jeff "Swampy" Marsh', year: 2016, platform: 'Disney XD',
+      aka: ['Milo Murphy\'s Law'],
+      sources: [yt('Dt4n934TpdA'), yt('B4uZwvpSCL8')],
+    },
+    {
+      id: 'toon-shimmer-y-shine-tema', cat: 'toon-1519', franchise: 'Shimmer y Shine', game: 'Shimmer y Shine',
+      title: 'Shimmer y Shine (tema latino)', year: 2015, platform: 'Nickelodeon / Nick Jr.',
+      aka: ['Shimmer and Shine'],
+      sources: [yt('pNMePOkmV_I'), yt('tAAqDeeO04E')],
+    },
+    {
+      id: 'toon-el-chapulin-colorado-animado-tema', cat: 'toon-1519', franchise: 'El Chapulín Colorado', game: 'El Chapulín Colorado animado',
+      title: 'El Chapulín Colorado animado (tema)', year: 2015, platform: 'Televisa / Ánima Estudios',
+      aka: ['El Chapulín Colorado: La serie animada', 'Chapulín Colorado animado'],
+      sources: [yt('AdWKujHWNEY'), yt('Oley9lKx_z8')],
+    },
+    {
+      id: 'toon-mickey-aventuras-sobre-ruedas-tema', cat: 'toon-1519', franchise: 'Mickey Mouse', game: 'Mickey: Aventuras sobre ruedas',
+      title: 'Mickey: Aventuras sobre ruedas (tema latino)', year: 2017, platform: 'Disney Junior',
+      aka: ['Mickey and the Roadster Racers', 'Mickey y los superpilotos'],
+      sources: [yt('kD582xLeHcE'), yt('cD-9lSzecgM')],
+    },
+    /* ───────────── 2020 en adelante (10) ───────────── */
     {
       id: 'toon-arcane-enemy', cat: 'toon-20s', franchise: 'Arcane', game: 'Arcane',
       title: 'Enemy', composer: 'Imagine Dragons y Arcane', year: 2021, platform: 'Netflix',
@@ -1849,6 +2137,36 @@
       title: "El show de Cuphead (tema latino)", composer: "Ego Plum", year: 2022, platform: "Studio MDHR / Netflix",
       aka: ["The Cuphead Show!"],
       sources: [yt('yUJfH0gZk1c')],
+    },
+    {
+      id: 'toon-spidey-y-su-superequipo-tema', cat: 'toon-20s', franchise: 'Spidey', game: 'Spidey y su superequipo',
+      title: 'Spidey y su superequipo (tema latino)', year: 2021, platform: 'Disney Junior / Marvel Animation',
+      aka: ['Spidey and His Amazing Friends', 'Spidey y sus sorprendentes amigos'],
+      sources: [yt('d0cidlD_eh4'), yt('PU1qbf4X9ko')],
+    },
+    {
+      id: 'toon-mickey-mouse-funhouse-tema', cat: 'toon-20s', franchise: 'Mickey Mouse', game: 'Mickey Mouse Funhouse',
+      title: 'Mickey Mouse Funhouse (tema latino)', year: 2021, platform: 'Disney Junior',
+      aka: ['La casa divertida de Mickey Mouse', 'Mickey Mouse Funhouse'],
+      sources: [yt('fhVmjMCQ1ng'), yt('q_vJmOhnygA')],
+    },
+    {
+      id: 'toon-tiny-toons-looniversidad-tema', cat: 'toon-20s', franchise: 'Tiny Toons', game: 'Tiny Toons: Looniversidad',
+      title: 'Tiny Toons: Looniversidad (tema latino)', year: 2023, platform: 'Max / Cartoon Network',
+      aka: ['Tiny Toons Looniversity'],
+      sources: [yt('w6cDqzMJRPk'), yt('ji54h_ee-7U')],
+    },
+    {
+      id: 'toon-que-pasaria-si-tema', cat: 'toon-20s', franchise: 'Marvel', game: '¿Qué pasaría si...?',
+      title: '¿Qué pasaría si...? (tema)', composer: 'Laura Karpman', year: 2021, platform: 'Disney+ / Marvel Studios',
+      aka: ['Marvel\'s What If...?', 'What If...?'],
+      sources: [yt('1CURxCYUQI0'), yt('_WESjw0QiXo')],
+    },
+    {
+      id: 'toon-invencible-tema', cat: 'toon-20s', franchise: 'Invencible', game: 'Invencible',
+      title: 'Invencible (tema)', composer: 'John Paesano', year: 2021, platform: 'Amazon Prime Video',
+      aka: ['Invincible'],
+      sources: [yt('KovvmdNUpEs'), yt('gF73gPQQsR4')],
     },
   );
 
