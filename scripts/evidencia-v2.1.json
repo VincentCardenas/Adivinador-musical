@@ -5264,6 +5264,21 @@
     },
     "fecha": "2026-10-16T21:08:42.564Z"
   },
+  "1592056601": {
+    "tipo": "apple",
+    "id": 1592056601,
+    "consulta": "LiSA Akeboshi",
+    "titulo": "明け星 -TV ver.-",
+    "canal_o_artista": "LiSA",
+    "album": "明け星 / 白銀 - EP",
+    "duracion": 94,
+    "pais": "mx",
+    "resultado": {
+      "ok": true,
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/72/2b/6e/722b6e76-89eb-dd93-7e60-4e631c2728d9/mzaf_13222163686070669129.plus.aac.p.m4a"
+    },
+    "fecha": "2026-10-17T23:09:05.674Z"
+  },
   "1592088455": {
     "tipo": "apple",
     "id": 1592088455,

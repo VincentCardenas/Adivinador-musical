@@ -173,5 +173,12 @@
     "motivo": "Sus dos videos (PU1qbf4X9ko y d0cidlD_eh4) son de «Spidey y sus sorprendentes amigos» (2021), que ya está como toon-spidey-y-su-superequipo-tema; no se encontró la entrada de 1981.",
     "bloque": "{\n      id: 'toon-el-hombre-arana-y-sus-sorprendentes-amigos-tema', cat: 'toon-80s', franchise: 'El Hombre Araña', game: 'El Hombre Araña y sus sorprendentes amigos',\n      title: 'El Hombre Araña y sus sorprendentes amigos (tema latino)', composer: 'Dennis C. Brown', year: 1981, platform: 'Marvel Productions / NBC',\n      aka: ['Spider-Man and His Amazing Friends', 'Spiderman y sus asombrosos amigos'],\n      sources: [yt('PU1qbf4X9ko'), yt('d0cidlD_eh4')],\n    },",
     "quitada": "revisión 2.1"
+  },
+  {
+    "id": "toon-daniel-el-travieso-70s-tema",
+    "tema": "caricaturas",
+    "motivo": "Su única fuente (0mxI4nDiIIc) es la entrada latina de la serie de 1986, que ya usa toon-daniel-el-travieso-dic-tema.",
+    "bloque": "{\n      id: 'toon-daniel-el-travieso-70s-tema', cat: 'toon-clasicas', franchise: \"Daniel el Travieso\", game: \"Daniel el Travieso (clásico)\",\n      title: \"Daniel el Travieso (tema latino)\", composer: \"Hoyt Curtin\", year: 1970, platform: \"Hanna-Barbera\",\n      aka: [\"Dennis the Menace\"],\n      sources: [yt('0mxI4nDiIIc')],\n    },",
+    "quitada": "revisión 2.1"
   }
 ]

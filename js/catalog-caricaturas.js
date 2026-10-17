@@ -1,5 +1,5 @@
 /*
- * Catálogo: Caricaturas (359 pistas).
+ * Catálogo: Caricaturas (358 pistas).
  * Entradas de caricaturas por época. Cuando existe, suena primero la entrada en español latino (YouTube) y el preview oficial de Apple queda de respaldo.
  * Mismo formato que catalog.js; las fuentes se prueban en el orden en que aparecen.
  */
@@ -25,7 +25,7 @@
   });
 
   AM.CATALOG.push(
-    /* ───────────── Clásicas (antes de 1980) (58) ───────────── */
+    /* ───────────── Clásicas (antes de 1980) (57) ───────────── */
     {
       id: 'toon-los-picapiedra-los-picapiedra-tema', cat: 'toon-clasicas', franchise: 'Los Picapiedra', game: 'Los Picapiedra',
       title: 'Los Picapiedra (tema)', composer: 'Hoyt Curtin', year: 1960, platform: 'Hanna-Barbera',
@@ -294,12 +294,6 @@
       title: "Gasparín (tema latino)", composer: "Mack David y Jerry Livingston", year: 1959, platform: "Famous Studios",
       aka: ["Casper the Friendly Ghost"],
       sources: [yt('pBajKYdx9lw')],
-    },
-    {
-      id: 'toon-daniel-el-travieso-70s-tema', cat: 'toon-clasicas', franchise: "Daniel el Travieso", game: "Daniel el Travieso (clásico)",
-      title: "Daniel el Travieso (tema latino)", composer: "Hoyt Curtin", year: 1970, platform: "Hanna-Barbera",
-      aka: ["Dennis the Menace"],
-      sources: [yt('0mxI4nDiIIc')],
     },
     {
       id: 'toon-felix-el-gato-tema', cat: 'toon-clasicas', franchise: "Félix el gato", game: "Félix el gato (1959)",

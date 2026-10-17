@@ -99,6 +99,11 @@
    "id": "toon-el-hombre-arana-y-sus-sorprendentes-amigos-tema",
    "op": "quitar_pista",
    "motivo": "Sus dos videos (PU1qbf4X9ko y d0cidlD_eh4) son de «Spidey y sus sorprendentes amigos» (2021), que ya está como toon-spidey-y-su-superequipo-tema; no se encontró la entrada de 1981."
+  },
+  {
+   "id": "toon-daniel-el-travieso-70s-tema",
+   "op": "quitar_pista",
+   "motivo": "Su única fuente (0mxI4nDiIIc) es la entrada latina de la serie de 1986, que ya usa toon-daniel-el-travieso-dic-tema."
   }
  ]
 }

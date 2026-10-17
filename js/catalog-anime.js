@@ -1521,7 +1521,7 @@
       id: 'ani-demon-slayer-akeboshi', cat: 'anime-20s', franchise: "Demon Slayer", game: "Demon Slayer: Kimetsu no Yaiba Mugen Train Arc",
       title: "Akeboshi", composer: "LiSA", year: 2021, platform: "Ufotable",
       aka: ["Mugen Train TV OP","Kimetsu no Yaiba"],
-      sources: [yt('JHw8gwQXpWI'), apple({ song: 1590494480, country: 'mx' })],
+      sources: [apple({ song: 1592056601, country: 'mx' })],
     },
     {
       id: 'ani-demon-slayer-kizuna-no-kiseki', cat: 'anime-20s', franchise: "Demon Slayer", game: "Demon Slayer: Swordsmith Village Arc",
