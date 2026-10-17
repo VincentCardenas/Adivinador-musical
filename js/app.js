@@ -131,7 +131,6 @@
   /** Pregunta que se muestra mientras suena la pista (una categoría puede tener la suya: "¿De qué anime es?"). */
   function question(g) {
     if (g.mode.id === 'sagas') return '¿Qué canción es?';
-    if (g.mode.id === 'sonidos') return '¿De qué saga es este sonido?';
     const T = g.theme;
     const cat = g.cur && AM.CATEGORIES.find((c) => c.id === g.cur.track.cat);
     if (cat && cat.question) return cat.question;
@@ -146,7 +145,7 @@
    * Si Apple da el nombre en japonés (シルエット), se muestra el del catálogo (Silhouette).
    */
   function trackLine(T, t, m) {
-    if (t.sound) return '🔊 ' + t.title;
+    if (t.sound) return '🔊 ' + t.title + ' · ' + t.game;
     if (T.showArtist) return '🎤 ' + t.franchise;
     if (T.lineIcon) return T.lineIcon + ' ' + t.franchise;
     const name = m && m.trackName;
@@ -395,8 +394,9 @@
     }
     if (saga) { renderSagaPicker(); return; }
     if (sound) {
-      const sagas = new Set(scope().tracks.map((t) => t.franchise)).size;
-      box.innerHTML = `<p class="sound-note">🔊 Suenan los ${fmt(scope().tracks.length)} sonidos, de ${sagas} sagas: power-ups, armas, menús, monedas…</p>`;
+      const pool = currentPool(); // sin los ocultos por reportes
+      const sagas = new Set(pool.map((t) => t.franchise)).size;
+      box.innerHTML = `<p class="sound-note">🔊 Suenan los ${fmt(pool.length)} sonidos, de ${sagas} sagas: power-ups, armas, menús, monedas…</p>`;
       updatePoolInfo();
       return;
     }
@@ -485,7 +485,10 @@
     $('#btn-start').disabled = !ok;
     $('#deck').classList.toggle('is-short', !ok);
     let status;
-    if (!ok) {
+    if (!ok && sound) {
+      status = `Faltan sonidos: se necesitan al menos ${AM.MIN_POOL} y ocultaste varios al reportarlos.`;
+      $('#start-hint').textContent = status;
+    } else if (!ok) {
       status = saga
         ? `Faltan canciones: se necesitan al menos ${AM.MIN_POOL}.`
         : `Faltan pistas: elige más ${catsLabel(theme()).toLowerCase()}${theme().filters.length ? ' o cambia los filtros' : ''} (se necesitan al menos ${AM.MIN_POOL}).`;
@@ -511,10 +514,10 @@
     lastOk = ok;
     const heard = pool.filter((t) => History.seen[t.id]).length;
     const hidden = History.hidden.length;
-    const where = saga ? (settings.saga.game ? 'de este juego' : 'de esta saga') : 'de lo que elegiste';
+    const where = sound ? 'de este modo' : saga ? (settings.saga.game ? 'de este juego' : 'de esta saga') : 'de lo que elegiste';
     let info = heard
-      ? `Has escuchado ${heard} de ${pool.length} pistas ${where}; primero suenan las que te faltan.`
-      : 'Todas estas pistas son nuevas para ti.';
+      ? `Has escuchado ${heard} de ${pool.length} ${sound ? 'sonidos' : 'pistas'} ${where}; primero suenan ${sound ? 'los' : 'las'} que te faltan.`
+      : (sound ? 'Todos estos sonidos son nuevos para ti.' : 'Todas estas pistas son nuevas para ti.');
     if (hidden) info += ` ${hidden} oculta${hidden === 1 ? '' : 's'} por tus reportes.`;
     $('#seen-info').innerHTML = esc(info) + (heard ? ' <button type="button" class="btn-link" id="btn-reset-seen">Reiniciar historial</button>' : '');
     renderDeck();
@@ -879,7 +882,7 @@
     $('#expert').hidden = !expert;
     $('#options').hidden = expert;
     $('#btn-replay').textContent = '↺ Repetir';
-    $('#guess-input').placeholder = game.theme.placeholder;
+    $('#guess-input').placeholder = m.placeholder || game.theme.placeholder;
     if (expert) {
       const steps = m.steps;
       const max = steps[steps.length - 1];
@@ -1441,7 +1444,7 @@
 
     // En Sagas la respuesta es la canción: va grande, y el juego abajo.
     const songMode = g.mode.id === 'sagas';
-    $('#reveal-game').textContent = songMode ? t.title : t.game;
+    $('#reveal-game').textContent = songMode ? t.title : t.sound ? t.franchise : t.game; // en Sonidos, la saga (la respuesta)
     $('#reveal-track').textContent = songMode ? '🎮 ' + t.game : trackLine(g.theme, t, m);
     $('#reveal-meta').textContent = [t.composer, t.year, t.platform].filter(Boolean).join(' · ');
     reportCtx = { track: t, meta: m };
@@ -1546,7 +1549,7 @@
           <span class="r-num">${i + 1}</span>
           ${art}
           <div>
-            <div class="r-game">${esc(songMode ? h.track.title : h.track.game)}</div>
+            <div class="r-game">${esc(songMode ? h.track.title : h.track.sound ? h.track.franchise : h.track.game)}</div>
             <div class="r-track">${esc(songMode ? '🎮 ' + h.track.game : trackLine(T, h.track, m))}${link}</div>
           </div>
           <div class="r-res">${AM.Logic.emojiFor(g.mode, h)}<b>${h.points ? '+' + fmt(h.points) : '0'}</b></div>

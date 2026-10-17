@@ -34,7 +34,7 @@
     sonidos: {
       id: 'sonidos', name: 'Sonidos', icon: '🔊',
       describe: () => 'Solo para conocedores. Suena un efecto de un videojuego desde 1 segundo: escribe la saga. 3 vidas.',
-      rounds: Infinity, answer: 'franchise', typed: true, lives: 3,
+      rounds: Infinity, answer: 'franchise', typed: true, lives: 3, placeholder: 'Escribe el nombre de la saga…',
       steps: [1, 2, 3, 5],
       points: [500, 400, 300, 200],
       themes: ['juegos'], ranked: false,

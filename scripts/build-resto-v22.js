@@ -39,7 +39,7 @@ const META = {
   anime: { 'anime-clasicos': 58, 'anime-90s': 59, 'anime-00s': 59, 'anime-10s': 65, 'anime-20s': 62 },
   juegos: { nintendo: 69, xbox: 27, playstation: 41, indie: 50, retro: 29, rpg: 56, accion: 38, online: 32 },
   sagas: { total: 221 },
-  sonidos: { total: 50 },
+  sonidos: { total: 49 },
 };
 
 const TEMAS = {
@@ -145,7 +145,7 @@ async function captionLangs(id) {
   }
 }
 
-async function buscarYoutube(c, tema, cfg) {
+async function buscarYoutube(c, tema, cfg, saltar) {
   const elegidos = [];
   const vistos = new Set();
   const claves = (c.must_any || []).map(norm).filter((k) => k.length >= 3);
@@ -153,7 +153,7 @@ async function buscarYoutube(c, tema, cfg) {
     if (elegidos.length >= 2) break;
     const ids = await lib.searchYoutube(consulta, 6);
     for (const id of ids) {
-      if (elegidos.length >= 2 || vistos.has(id)) continue;
+      if (elegidos.length >= 2 || vistos.has(id) || saltar.has(id)) continue; // saltar: videos de otra pista o reportados
       vistos.add(id);
       const info = await lib.verifyYoutubeId(id, consulta);
       if (!info.ok) continue;
@@ -202,10 +202,10 @@ async function buscarApple(c, cfg) {
   return null;
 }
 
-async function resolver(c, tema, cache) {
+async function resolver(c, tema, cache, saltar) {
   if (cache[c.key]) return cache[c.key];
   const cfg = TEMAS[tema];
-  const yts = await buscarYoutube(c, tema, cfg);
+  const yts = await buscarYoutube(c, tema, cfg, saltar);
   const ap = await buscarApple(c, cfg);
   let res;
   if (c.latino && !yts.length) res = { ok: false, motivo: 'no se encontró la entrada en español latino en YouTube' };
@@ -327,18 +327,23 @@ async function main() {
     const porSeccion = {};
     const lista = candidatos.filter((c) => c.tema === tema);
     console.log(`\n▶ ${tema}: ${lista.length} candidatos`);
-    /* Fuentes que se pueden usar: sin videos de otra pista. */
-    const sinUsados = (res) => {
+    /* Fuentes que se pueden usar: sin videos de otra pista (lo guardado en la caché pudo elegirse antes). */
+    const sinUsados = (res, saltar) => {
       if (!res.ok) return res;
-      const yt = res.yt.filter((y) => !usados.has(y.id));
+      const yt = res.yt.filter((y) => !saltar.has(y.id));
       if (yt.length === res.yt.length) return res;
       if (!yt.length && !res.apple) return { ok: false, motivo: 'sus videos ya los usa otra pista' };
       return Object.assign({}, res, { yt });
     };
     for (const c of lista) {
       if (c.reemplaza) {
-        if (!ids.has(c.id)) { console.log(`  ✗ ${c.id}: no existe, no hay qué reemplazar`); continue; }
-        let res = sinUsados(await resolver(c, tema, cache));
+        if (resultado.aceptadas.some((a) => a.key === c.key && a.reemplaza)) continue; // ya se aplicó (no deshacerlo)
+        const pista = AM.CATALOG.concat(AM[cfg.arr] || []).find((t) => t.id === c.id);
+        if (!pista || !fs.readFileSync(path.join(JS, cfg.file), 'utf8').includes(`id: '${c.id}'`)) { console.log(`  ✗ ${c.id}: no está en ${cfg.file}, no hay qué reemplazar`); continue; }
+        // Puede quedarse con sus videos buenos, pero nunca con los reportados (evitar) ni con los de otra pista.
+        const propios = new Set(pista.sources.filter((x) => x.type === 'youtube').map((x) => x.id));
+        const saltar = new Set([...usados].filter((id) => !propios.has(id)).concat(c.evitar || []));
+        let res = sinUsados(await resolver(c, tema, cache, saltar), saltar);
         if (res.ok && c.latino && !res.yt.length) res = { ok: false, motivo: 'no se encontró la entrada en español latino en YouTube' };
         if (!res.ok) {
           console.log(`  ✗ ${c.game} — ${c.title} (reemplazo): ${res.motivo}. Se queda como estaba.`);
@@ -358,7 +363,7 @@ async function main() {
       if (meta === undefined) { console.log(`  ✗ ${c.key}: categoría desconocida ${metaKey}`); continue; }
       if (ids.has(c.id) || yaCanciones.has(norm(c.game) + '|' + norm(c.title))) continue; // ya está
       if ((cuenta[metaKey] || 0) >= meta) continue; // la categoría ya llegó a su meta
-      let res = sinUsados(await resolver(c, tema, cache));
+      let res = sinUsados(await resolver(c, tema, cache, usados), usados);
       if (res.ok && c.latino && !res.yt.length) res = { ok: false, motivo: 'no se encontró la entrada en español latino en YouTube' };
       if (!res.ok) {
         console.log(`  ✗ ${c.game} — ${c.title}: ${res.motivo}`);

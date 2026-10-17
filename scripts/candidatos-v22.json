@@ -10798,7 +10798,11 @@
   ],
   "latino": false,
   "apple": null,
-  "nota": "Issue #22: sonaba otra versión (-HdHba9kIpE) y el respaldo era un a cappella (Smooth McGroove)."
+  "nota": "Issue #22: sonaba otra versión (-HdHba9kIpE) y el respaldo era un a cappella (Smooth McGroove).",
+  "evitar": [
+   "-HdHba9kIpE",
+   "NijZAy01EbQ"
+  ]
  },
  {
   "key": "fix-ani-d-gray-man-doubt-and-trust",
@@ -10820,6 +10824,9 @@
   ],
   "latino": false,
   "apple": null,
-  "nota": "Issue #21: el video WeTFkXl8Cf4 no sonó."
+  "nota": "Issue #21: el video WeTFkXl8Cf4 no sonó.",
+  "evitar": [
+   "WeTFkXl8Cf4"
+  ]
  }
 ]
