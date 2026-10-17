@@ -216,7 +216,12 @@ function bloque(c, tema, id, srcs) {
   const head = TEMAS[tema].porSaga
     ? `      id: ${q(id)}, saga: ${q(c.saga)}, franchise: ${q(c.franchise)}, game: ${q(c.game)},`
     : `      id: ${q(id)}, cat: ${q(c.cat)}, franchise: ${q(c.franchise)}, game: ${q(c.game)},`;
-  const lines = ['    {', head, `      title: ${q(c.title)}, composer: ${q(c.composer)}, year: ${c.year}, platform: ${q(c.platform)},`];
+  // composer, year y platform solo si se conocen (el juego no muestra campos vacíos)
+  const datos = [`title: ${q(c.title)},`];
+  if (c.composer) datos.push(`composer: ${q(c.composer)},`);
+  if (c.year) datos.push(`year: ${c.year},`);
+  if (c.platform) datos.push(`platform: ${q(c.platform)},`);
+  const lines = ['    {', head, '      ' + datos.join(' ')];
   if (c.aka && c.aka.length) lines.push(`      aka: ${list(c.aka)},`);
   lines.push(`      sources: [${srcs.join(', ')}],`, '    },');
   return lines.join('\n');
