@@ -60,6 +60,7 @@ const loadOrder = [
   'catalog-musicales.js',
   'catalog-canciones.js',
   'catalog-sagas.js',
+  'catalog-sonidos.js',
   'themes.js',
 ];
 
@@ -69,20 +70,20 @@ for (const file of loadOrder) {
 }
 
 const AM = sandbox.AM;
-const allTracks = AM.CATALOG.concat(AM.SAGA_TRACKS || []);
+const allTracks = AM.CATALOG.concat(AM.SAGA_TRACKS || [], AM.SOUND_TRACKS || []);
 
 // 2a. 0 IDs repetidos en AM.CATALOG + AM.SAGA_TRACKS
 const seenIds = new Map();
 for (const t of allTracks) {
   if (!t.id) {
-    fail(`Pista sin id en categoría ${t.cat || t.saga}`);
+    fail(`Pista sin id en categoría ${t.cat || t.saga || 'sonidos'}`);
   } else if (seenIds.has(t.id)) {
-    fail(`ID duplicado: "${t.id}" (${t.cat || t.saga} vs ${seenIds.get(t.id)})`);
+    fail(`ID duplicado: "${t.id}" (${t.cat || t.saga || 'sonidos'} vs ${seenIds.get(t.id)})`);
   } else {
-    seenIds.set(t.id, t.cat || t.saga);
+    seenIds.set(t.id, t.cat || t.saga || 'sonidos');
   }
 }
-if (!failed) ok(`Paso 2a: 0 IDs repetidos entre ${AM.CATALOG.length} pistas de CATALOG y ${(AM.SAGA_TRACKS || []).length} de SAGA_TRACKS.`);
+if (!failed) ok(`Paso 2a: 0 IDs repetidos entre ${AM.CATALOG.length} pistas de CATALOG y ${(AM.SAGA_TRACKS || []).length} de SAGA_TRACKS y ${(AM.SOUND_TRACKS || []).length} de SOUND_TRACKS.`);
 
 // 2b. Verificar cuentas de encabezados y secciones
 const catalogConfigs = [

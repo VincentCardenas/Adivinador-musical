@@ -14,7 +14,7 @@
     experto: {
       id: 'experto', name: 'Experto', icon: '🎧',
       describe: (T) => `Empiezas con 1 segundo. Cada fallo o salto desbloquea más. Escribe ${T.expertGoal}.`,
-      rounds: 10, answer: 'game',
+      rounds: 10, answer: 'game', typed: true,
       steps: [1, 2, 4, 7, 11, 16],
       points: [500, 400, 300, 200, 150, 100],
     },
@@ -30,15 +30,25 @@
       describe: () => '10 rondas · 4 opciones · elige una saga (o uno de sus juegos) y adivina qué canción es.',
       rounds: 10, answer: 'label', timeLimit: 20, themes: ['juegos'], ranked: false,
     },
-  };
-
-  /** ¿El modo existe en este tema? (Sagas solo en Videojuegos). */
-  AM.modeAvailable = (modeId, themeId) => {
-    const m = AM.MODES[modeId];
-    return !!m && (!m.themes || m.themes.indexOf(themeId) >= 0);
+    // Solo en Videojuegos: suena un efecto de sonido (AM.SOUND_TRACKS) y se escribe la saga, como en Experto, con 3 vidas.
+    sonidos: {
+      id: 'sonidos', name: 'Sonidos', icon: '🔊',
+      describe: () => 'Solo para conocedores. Suena un efecto de un videojuego desde 1 segundo: escribe la saga. 3 vidas.',
+      rounds: Infinity, answer: 'franchise', typed: true, lives: 3,
+      steps: [1, 2, 3, 5],
+      points: [500, 400, 300, 200],
+      themes: ['juegos'], ranked: false,
+    },
   };
 
   AM.MIN_POOL = 5;
+
+  /** ¿El modo existe en este tema? (Sagas y Sonidos solo en Videojuegos; Sonidos, si ya hay sonidos). */
+  AM.modeAvailable = (modeId, themeId) => {
+    const m = AM.MODES[modeId];
+    if (modeId === 'sonidos' && (AM.SOUND_TRACKS || []).length < AM.MIN_POOL) return false;
+    return !!m && (!m.themes || m.themes.indexOf(themeId) >= 0);
+  };
 
   function shuffle(list) {
     const a = list.slice();
@@ -358,7 +368,7 @@
 
   function rank(mode, stats, T) {
     const ranks = (T || AM.THEMES[0]).ranks;
-    if (mode.id === 'supervivencia') {
+    if (mode.lives) {
       const hit = ranks.survival.find((r) => stats.correct >= r[0]) || ranks.survival[ranks.survival.length - 1];
       return [hit[1], hit[2]];
     }
@@ -368,7 +378,7 @@
   }
 
   function emojiFor(mode, h) {
-    if (mode.id === 'experto') {
+    if (mode.typed) {
       if (h.result !== 'ok') return '🟥';
       if (h.tries <= 1) return '🟩';
       if (h.tries <= 3) return '🟨';
@@ -383,7 +393,7 @@
     T = T || AM.THEMES[0];
     const grid = history.map((h) => emojiFor(mode, h)).join('');
     const lines = [`${T.icon} ¿Qué suena? · ${T.label} — ${mode.name}`, grid];
-    if (mode.id === 'supervivencia') {
+    if (mode.lives) {
       const lives = stats.livesWon ? ` · ❤️ +${stats.livesWon}` : '';
       lines.push(`Aciertos: ${stats.correct} · ${stats.score} pts · racha máx. ${stats.bestStreak}${lives}`);
     } else {
@@ -392,10 +402,28 @@
     return lines.join('\n');
   }
 
+  /** Alcance del modo Sonidos: los efectos de AM.SOUND_TRACKS; en el buscador van todas las sagas de Videojuegos. */
+  let soundSc = null;
+  function soundScope() {
+    if (soundSc) return soundSc;
+    const aka = AM.FRANCHISE_AKA || {};
+    const sounds = AM.SOUND_TRACKS || [];
+    const sagas = new Map();
+    AM.CATALOG.filter((t) => t.theme === 'juegos').concat(AM.EXTRA_GAMES.filter((g) => g.theme === 'juegos'), sounds).forEach((t) => {
+      if (!sagas.has(t.franchise)) sagas.set(t.franchise, { game: t.franchise, franchise: t.franchise, cat: null, lang: '', aka: (aka[t.franchise] || []).slice() });
+    });
+    sounds.forEach((t) => (t.aka || []).forEach((a) => { const s = sagas.get(t.franchise); if (s.aka.indexOf(a) < 0) s.aka.push(a); }));
+    soundSc = {
+      key: 'sonidos', theme: AM.theme('juegos'), values: {}, keep: () => true, tracks: sounds.slice(), extras: [],
+      games: Array.from(sagas.values()).sort((a, b) => a.game.localeCompare(b.game, 'es')), // en el buscador, "juego" = saga
+    };
+    return soundSc;
+  }
+
   AM.Logic = {
     shuffle: shuffle, sample: sample, scope: scope, pool: pool, buildQueue: buildQueue, allGames: allGames,
     sameArtist: sameArtist, sameVersion: sameVersion, sameAnswer: sameAnswer,
-    sagaTracks: sagaTracks, sagaGames: sagaGames, sagaScope: sagaScope, sagaGameName: sagaGameName,
+    sagaTracks: sagaTracks, sagaGames: sagaGames, sagaScope: sagaScope, sagaGameName: sagaGameName, soundScope: soundScope,
     franchiseOf: franchiseOf, makeChoices: makeChoices, multiplier: multiplier,
     timedPoints: timedPoints, timeLimit: timeLimit, isBonusRound: isBonusRound, rank: rank, emojiFor: emojiFor, shareText: shareText,
   };

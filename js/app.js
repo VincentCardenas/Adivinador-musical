@@ -90,12 +90,14 @@
   function themeCats() { return settings.cats[settings.theme]; }
   function allCats() { return AM.themeCategories(settings.theme).map((c) => c.id); }
   function sagaMode() { return settings.mode === 'sagas' && AM.modeAvailable('sagas', settings.theme); }
+  function soundMode() { return settings.mode === 'sonidos' && AM.modeAvailable('sonidos', settings.theme); }
   function sagaInfo() { return AM.SAGAS.find((x) => x.id === settings.saga.id) || AM.SAGAS[0]; }
   /** Juegos de la saga elegida que tienen suficientes canciones para jugarlos solos. */
   function sagaPlayableGames() { return AM.Logic.sagaGames(settings.saga.id).filter((g) => g.songs >= AM.MIN_POOL); }
   function sagaRecordKey() { return settings.saga.id + ':' + (settings.saga.game || 'all'); }
   function scope() {
     if (sagaMode()) return AM.Logic.sagaScope(settings.saga.id, settings.saga.game);
+    if (soundMode()) return AM.Logic.soundScope();
     return AM.Logic.scope(settings.theme, settings.filters[settings.theme]);
   }
 
@@ -119,7 +121,7 @@
   };
 
   function currentPool() {
-    if (sagaMode()) {
+    if (sagaMode() || soundMode()) {
       const skip = new Set(History.hidden);
       return scope().tracks.filter((t) => !skip.has(t.id));
     }
@@ -129,6 +131,7 @@
   /** Pregunta que se muestra mientras suena la pista (una categoría puede tener la suya: "¿De qué anime es?"). */
   function question(g) {
     if (g.mode.id === 'sagas') return '¿Qué canción es?';
+    if (g.mode.id === 'sonidos') return '¿De qué saga es este sonido?';
     const T = g.theme;
     const cat = g.cur && AM.CATEGORIES.find((c) => c.id === g.cur.track.cat);
     if (cat && cat.question) return cat.question;
@@ -143,6 +146,7 @@
    * Si Apple da el nombre en japonés (シルエット), se muestra el del catálogo (Silhouette).
    */
   function trackLine(T, t, m) {
+    if (t.sound) return '🔊 ' + t.title;
     if (T.showArtist) return '🎤 ' + t.franchise;
     if (T.lineIcon) return T.lineIcon + ' ' + t.franchise;
     const name = m && m.trackName;
@@ -268,8 +272,8 @@
    */
 
   // Orden y nivel de los modos en el inicio (solo interfaz: las reglas siguen en game.js).
-  const MODE_ORDER = ['clasico', 'supervivencia', 'experto', 'sagas'];
-  const MODE_LEVEL = { clasico: 2, sagas: 3, supervivencia: 4, experto: 5 };
+  const MODE_ORDER = ['clasico', 'supervivencia', 'experto', 'sagas', 'sonidos'];
+  const MODE_LEVEL = { clasico: 2, sagas: 3, supervivencia: 4, experto: 5, sonidos: 5 };
   const LEVEL_NAME = { 2: 'Fácil', 3: 'Medio', 4: 'Difícil', 5: 'Máximo' };
   const FRETS = ['g', 'r', 'y', 'b', 'o'];
 
@@ -342,7 +346,7 @@
   function renderFilters() {
     const T = theme();
     const vals = scope().values;
-    $('#filters').hidden = !T.filters.length || sagaMode();
+    $('#filters').hidden = !T.filters.length || sagaMode() || soundMode();
     $('#filters').innerHTML = T.filters.map((f) => {
       if (f.type === 'toggle') {
         const on = !!vals[f.id];
@@ -379,15 +383,21 @@
 
   function renderChips() {
     const saga = sagaMode();
+    const sound = soundMode();
     const box = $('#chips');
-    $('#part-name-3').textContent = saga ? 'Saga' : 'Música';
-    $('#step3-title').textContent = saga ? 'Elige una saga (o uno de sus juegos)' : '¿Qué quieres escuchar?';
-    $('#cats-head').hidden = saga;
+    $('#part-name-3').textContent = saga ? 'Saga' : sound ? 'Sonidos' : 'Música';
+    $('#step3-title').textContent = saga ? 'Elige una saga (o uno de sus juegos)' : sound ? 'Sonidos de videojuegos' : '¿Qué quieres escuchar?';
+    $('#cats-head').hidden = saga || sound;
     box.classList.toggle('is-saga', saga);
-    if (saga) {
+    if (saga || sound) {
       box.removeAttribute('role');
       box.removeAttribute('aria-labelledby');
-      renderSagaPicker();
+    }
+    if (saga) { renderSagaPicker(); return; }
+    if (sound) {
+      const sagas = new Set(scope().tracks.map((t) => t.franchise)).size;
+      box.innerHTML = `<p class="sound-note">🔊 Suenan los ${fmt(scope().tracks.length)} sonidos, de ${sagas} sagas: power-ups, armas, menús, monedas…</p>`;
+      updatePoolInfo();
       return;
     }
     box.setAttribute('role', 'group');
@@ -468,8 +478,9 @@
   function updatePoolInfo() {
     const pool = currentPool();
     const saga = sagaMode();
+    const sound = soundMode();
     const ok = pool.length >= AM.MIN_POOL;
-    const unit = saga ? 'canciones' : 'pistas';
+    const unit = saga ? 'canciones' : sound ? 'sonidos' : 'pistas';
     $('#pool-count').textContent = `${fmt(pool.length)} ${unit}`;
     $('#btn-start').disabled = !ok;
     $('#deck').classList.toggle('is-short', !ok);
@@ -479,6 +490,8 @@
         ? `Faltan canciones: se necesitan al menos ${AM.MIN_POOL}.`
         : `Faltan pistas: elige más ${catsLabel(theme()).toLowerCase()}${theme().filters.length ? ' o cambia los filtros' : ''} (se necesitan al menos ${AM.MIN_POOL}).`;
       $('#start-hint').innerHTML = esc(status) + ' <button type="button" class="btn-link" data-open-part="3">Elegir música</button>';
+    } else if (sound) {
+      $('#start-hint').textContent = `Incluye sonidos de ${sampleNames(Array.from(new Set(pool.map((t) => t.franchise))), 3).join(', ')} y más.`;
     } else if (saga) {
       const names = sampleNames(Array.from(new Set(pool.map((t) => (settings.saga.game ? t.title : t.game)))), 3);
       $('#start-hint').textContent = `${settings.saga.game ? 'Canciones como' : 'Incluye'} ${names.join(', ')} y más.`;
@@ -577,6 +590,7 @@
 
   /** Lo elegido en Música, en palabras: "Rock y Pop · Español", "3 de 5 épocas", "Todas las épocas". */
   function musicSummary() {
+    if (soundMode()) return 'Todos los sonidos';
     if (sagaMode()) {
       const sel = sagaInfo();
       return settings.saga.game ? AM.Logic.sagaGameName(sel, settings.saga.game) : `${sel.icon} ${sel.label}`;
@@ -601,7 +615,7 @@
 
   /** Lo que trae el modo, como lo jugará: con menos pistas que rondas, hay una ronda por pista. */
   function modeFacts(m, pool) {
-    if (m.lives) return `${m.lives} vidas`;
+    if (m.lives) return m.steps ? `${m.lives} vidas · desde ${m.steps[0]} s` : `${m.lives} vidas`;
     const rounds = Math.min(m.rounds, pool);
     if (m.steps) return `${rounds} rondas · de ${m.steps[0]} a ${m.steps[m.steps.length - 1]} s`;
     return `${rounds} rondas · 4 opciones`;
@@ -615,7 +629,7 @@
     const pool = currentPool();
     const ok = pool.length >= AM.MIN_POOL;
     const music = musicSummary();
-    const count = `${fmt(pool.length)} ${sagaMode() ? 'canciones' : 'pistas'}`;
+    const count = `${fmt(pool.length)} ${sagaMode() ? 'canciones' : soundMode() ? 'sonidos' : 'pistas'}`;
     const themeHtml = `<span aria-hidden="true">${T.icon}</span> ${esc(T.label)}`;
     const modeHtml = `<span aria-hidden="true">${m.icon}</span> ${esc(m.name)}${gems(level, 'mini-gems')}<span class="sr-only">, dificultad ${LEVEL_NAME[level]}</span>`;
     $('#pick-1').innerHTML = themeHtml;
@@ -857,7 +871,7 @@
 
   function setupGameUI() {
     const m = game.mode;
-    const expert = m.id === 'experto';
+    const expert = !!m.typed;
     $('#hud-mode').textContent = m.icon + ' ' + m.name;
     $('#hud-extra-label').textContent = m.lives ? 'Vidas' : 'Racha';
     $('#timer').hidden = expert;
@@ -899,7 +913,7 @@
     }
     const mult = AM.Logic.multiplier(g.streak);
     const multEl = $('#mult');
-    multEl.hidden = g.mode.id === 'experto' || mult <= 1;
+    multEl.hidden = g.mode.typed || mult <= 1;
     multEl.textContent = 'Racha x' + mult;
   }
 
@@ -978,7 +992,7 @@
     };
     updateHUD();
     if (g.cur.bonus) announceBonus(g);
-    if (g.mode.id === 'experto') renderAttempts();
+    if (g.mode.typed) renderAttempts();
     else renderOptions();
     playClip();
   }
@@ -1003,7 +1017,7 @@
     const g = game;
     const cur = g && g.cur;
     if (!cur) return;
-    const expert = g.mode.id === 'experto';
+    const expert = !!g.mode.typed;
     const limit = expert && !cur.answered ? g.mode.steps[Math.min(cur.step, g.mode.steps.length - 1)] : Infinity;
     $('#btn-tap').hidden = true;
     if (!cur.started) setStatus('Cargando audio', true);
@@ -1248,7 +1262,9 @@
     closeCombo();
     input.value = '';
     // También vale el otro título de la misma canción ("Gethsemane" cuando suena "Getsemaní").
-    if (hit.game === cur.track.game || AM.Logic.sameAnswer(g.scope, hit.game, cur.track.game)) { finishExpert(true); return; }
+    // En Sonidos la respuesta es la saga: el buscador lista sagas en vez de juegos.
+    const want = cur.track[g.mode.answer];
+    if (hit.game === want || (g.mode.answer === 'game' && AM.Logic.sameAnswer(g.scope, hit.game, want))) { finishExpert(true); return; }
     const partial = g.theme.showArtist
       ? AM.Logic.sameArtist(hit.franchise, cur.track.franchise)
       : hit.franchise === cur.track.franchise;
@@ -1282,7 +1298,7 @@
     let points = 0;
     if (ok) {
       points = g.mode.points[Math.min(cur.attempts.length, g.mode.points.length - 1)];
-      cur.attempts.push({ type: 'ok', text: cur.track.game });
+      cur.attempts.push({ type: 'ok', text: cur.track[g.mode.answer] });
       g.streak++;
       g.correct++;
       g.bestStreak = Math.max(g.bestStreak, g.streak);
@@ -1290,6 +1306,7 @@
       sfx('correct');
     } else {
       g.streak = 0;
+      if (g.mode.lives) g.lives--;
       sfx('timeout');
     }
     g.history.push({ track: cur.track, meta: cur.cand.meta, result: ok ? 'ok' : 'bad', points: points, tries: ok ? tries : 0 });
@@ -1469,11 +1486,11 @@
     Viz.setActive(false);
     const cur = game.cur;
     if (!cur || cur.answered || e.reason === 'manual') return;
-    if (game.mode.id === 'experto') setStatus('¿Lo reconoces? Adivina, salta o vuelve a escuchar.');
+    if (game.mode.typed) setStatus('¿Lo reconoces? Adivina, salta o vuelve a escuchar.');
     else if (e.reason === 'end') setStatus('Se acabó el fragmento. ¡Responde antes de que acabe el tiempo!');
   });
   AM.Engine.on('progress', (e) => {
-    if (inGame() && game.mode.id === 'experto') updateClipBar(e.t);
+    if (inGame() && game.mode.typed) updateClipBar(e.t);
   });
   AM.Engine.on('error', () => { if (inGame()) switchCandidate(); });
   AM.Engine.on('stall', (e) => {
@@ -1823,7 +1840,7 @@
       if ((e.key === 'Enter' || e.key === ' ') && !onButton) { e.preventDefault(); $('#btn-next').click(); }
       return;
     }
-    if (/^[1-4]$/.test(e.key) && game.mode.id !== 'experto') {
+    if (/^[1-4]$/.test(e.key) && !game.mode.typed) {
       const btn = $$('.option', $('#options'))[Number(e.key) - 1];
       if (btn && !btn.disabled) btn.click();
     } else if (e.key === ' ' && !onButton) {
@@ -1938,13 +1955,14 @@
 
   /** Pistas que revisa el verificador: las del modo Sagas (saga o juego elegido) o las categorías elegidas. */
   function verifyPool() {
-    return sagaMode() ? scope().tracks : AM.Logic.pool(themeCats(), [], scope().keep);
+    return sagaMode() || soundMode() ? scope().tracks : AM.Logic.pool(themeCats(), [], scope().keep);
   }
 
   $('#btn-diag').addEventListener('click', () => {
     if (!diag.running) {
       const n = verifyPool().length;
-      $('#diag-scope').textContent = sagaMode()
+      $('#diag-scope').textContent = soundMode() ? `Se verificarán los ${n} sonidos del modo Sonidos.`
+        : sagaMode()
         ? `Se verificarán las ${n} pistas de ${settings.saga.game || 'la saga ' + sagaInfo().label} (modo Sagas).`
         : `Se verificarán las ${n} pistas de ${theme().label} en las categorías que tienes elegidas en el inicio (elige "Todo" para revisar el tema completo).`;
     }
