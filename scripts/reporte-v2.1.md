@@ -21,10 +21,10 @@ Rama: `antigravity/v2.1-catalogo` (desde `origin/claude/clever-sagan-5xuvc1`). E
 
 - Búsquedas reales con `scripts/lib-v21.js` (YouTube: 1 búsqueda/s, oEmbed + página `watch?v=` con `playabilityStatus.status === "OK"` y `playableInEmbed !== false`; Apple: lookup con el mismo `country` de la fuente y `previewUrl`).
 - Cada comprobación queda en `scripts/evidencia-v2.1.json` por ID (consulta, título, canal/artista, álbum, duración, país, resultado, fecha).
-- `node scripts/check-evidencia.js` revisa sin internet que cada ID nuevo o cambiado frente a la rama base tenga evidencia válida y del mismo país (380 IDs revisados, 0 sin evidencia).
+- `node scripts/check-evidencia.js` revisa sin internet que cada ID nuevo o cambiado frente a la rama base tenga evidencia válida y del mismo país (610 IDs revisados contra la rama base `2d85042`, 0 sin evidencia).
 - `node scripts/diff-fuentes.js --md` genera la lista completa de abajo (fuente vieja → nueva, con el título y canal de la evidencia).
 - Lo que solo se decide oyendo está en `scripts/revisar-a-oido.md`.
-- Ninguna pista tuvo que quitarse (`scripts/pendientes-v2.1.json` vacío `[]`).
+- La fase 2 no quitó ninguna pista. La revisión de la sección 7 quitó 5, y su bloque y su motivo están en `scripts/pendientes-v2.1.json`.
 
 ## 3. Estado de los issues (#8 a #18)
 
@@ -532,7 +532,7 @@ Cuentas reales del archivo, después de la revisión de Claude (sección 7). "An
 
 ## 6. Lo que queda para la 2.2
 
-La 2.2 completa el +20 % de Caricaturas, Anime, Videojuegos y Sagas. Los candidatos los eligieron agentes Sonnet, los revisó un crítico Sonnet y Opus decidió los casos con duda. Sus fuentes las busca de verdad `scripts/build-resto-v22.js`, que corre en la computadora del usuario, con red y sin IA:
+La 2.2 completa el +20 % de Caricaturas, Anime, Videojuegos y Sagas. Los candidatos los eligieron agentes Sonnet, los revisó un crítico Sonnet y Opus decidió los casos con duda; van en `scripts/candidatos-v22.json`, que se sube aparte. Sus fuentes las busca de verdad `scripts/build-resto-v22.js`, que corre en la computadora del usuario, con red y sin IA:
 
 ```
 node scripts/build-resto-v22.js todos && node scripts/audit-red.js todos
@@ -546,7 +546,7 @@ Antes de publicar, Claude revisó todo lo nuevo y lo cambiado, sin red y con los
    - 0 IDs repetidos y las cuentas coinciden;
    - cada `game` tiene una sola `franchise`;
    - Canciones y el código del juego quedaron sin cambios;
-   - los **625 IDs** de audio nuevos o cambiados tienen evidencia ok.
+   - los **610 IDs** de audio nuevos o cambiados (454 de YouTube y 156 de Apple) tienen evidencia ok.
 2. **Un revisor Sonnet por tema**, con las reglas de cada uno: doblaje latino, versión original, nada de covers ni repetidos, año, época y datos. Cada hallazgo pasó por un verificador Sonnet que intentó refutarlo.
 3. **Un árbitro Opus por tema** tomó la decisión final de los **140 hallazgos**. Están en `scripts/revision-v21.json` y se aplicaron con `node scripts/aplicar-revision-v21.js` (`--probar` muestra los cambios sin escribir).
 
@@ -585,7 +585,7 @@ Antes de publicar, Claude revisó todo lo nuevo y lo cambiado, sin red y con los
   - Digimon 02 ahora es «Impacto Rojo», la versión latina de Ricardo Silva, en la época 2000s;
   - Jujutsu Kaisen «VIVID VICE» pasa a 2020 en adelante;
   - el tema de GTA es el del primer *Grand Theft Auto* (1997), no el de San Andreas;
-  - año, plataforma e intérprete de la grabación en 5 musicales;
+  - año, plataforma e intérprete de la grabación en 4 musicales, y el intérprete de «Where Is Love?» de Oliver!;
   - compositores de Batman: el valiente, Oggy, Moana y Mulán;
   - títulos de El Chavo animado y Los Padrinos Mágicos.
 - **Para oír.** 34 casos que solo se deciden escuchando quedaron en `scripts/revisar-a-oido.md`, con el enlace y qué decidir en cada uno. Por ejemplo: qué cue de Cobra Kai es la entrada, si la «Versión 2026» de Soy Luna se reconoce y la duración de Hércules.

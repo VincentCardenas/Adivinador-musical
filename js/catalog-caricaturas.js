@@ -1460,7 +1460,7 @@
     },
     {
       id: 'toon-dibo-el-dragon-de-los-deseos-tema', cat: 'toon-00s', franchise: "Dibo el dragón de los deseos", game: "Dibo el dragón de los deseos",
-      title: "Dibo (tema latino)", composer: '', year: 2006, platform: "Discovery Kids",
+      title: "Dibo (tema latino)", year: 2006, platform: "Discovery Kids",
       aka: ["Dibo the Gift Dragon"],
       sources: [yt('HWUfMvlQfH4'), yt('RvEDxs9QTNc'), yt('tKAtNr-9NtU')],
     },

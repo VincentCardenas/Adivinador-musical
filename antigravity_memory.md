@@ -130,7 +130,7 @@
     * los validadores.
     Debe pasar en cada commit.
   * Otros scripts:
-    * `node scripts/check-evidencia.js` revisa que cada ID nuevo o cambiado tenga evidencia;
+    * `node scripts/check-evidencia.js` revisa que cada ID nuevo o cambiado respecto a la base (`2d85042`, de donde salió la 2.1; se cambia con `BASE=<commit>`) tenga evidencia;
     * `node scripts/diff-fuentes.js --md` lista cada cambio de fuente, de la vieja a la nueva;
     * `scripts/build-{series,disney,musicales}-v21.js` agregaron las pistas de la 2.1.
   * `node scripts/aplicar-revision-v21.js [--probar]` aplica las decisiones de `scripts/revision-v21.json` sin red. Las tomaron revisores Sonnet y un árbitro Opus sobre la evidencia, y pueden:
@@ -140,7 +140,7 @@
     * quitar pistas, que van a `scripts/pendientes-v2.1.json`.
     Lo que solo se decide oyendo va a `scripts/revisar-a-oido.md`.
   * `node scripts/build-resto-v22.js <caricaturas|anime|juegos|sagas|todos>` agrega las pistas de la 2.2:
-    * lee los candidatos de `scripts/candidatos-v22.json`, los busca de verdad y aplica filtros deterministas (palabras clave, latino, covers, remakes y duración);
+    * lee los candidatos de `scripts/candidatos-v22.json` (se suben aparte; sin ese archivo el script no corre), los busca de verdad y aplica filtros deterministas (palabras clave, latino, covers, remakes y duración);
     * inserta al final de cada sección, guarda evidencia y es reanudable;
     * se detiene en la meta de cada categoría y deja lo aceptado y lo descartado en `scripts/resultado-v22.json`.
 

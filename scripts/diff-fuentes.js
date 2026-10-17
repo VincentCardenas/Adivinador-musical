@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * Lista, por pista, las fuentes viejas y nuevas respecto a origin/claude/clever-sagan-5xuvc1,
+ * Lista, por pista, las fuentes viejas y nuevas respecto a la base (2d85042),
  * con el título y canal/artista de la evidencia. Sirve para revisar a ojo y para el reporte.
  *   node scripts/diff-fuentes.js [--md] [archivos...]
  */
@@ -10,7 +10,8 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const ROOT = path.join(__dirname, '..');
-const BASE = 'origin/claude/clever-sagan-5xuvc1';
+// Base fija: el commit de donde salió la 2.1 (la rama remota se mueve al subir). Se cambia con BASE=<commit>.
+const BASE = process.env.BASE || '2d85042';
 const args = process.argv.slice(2);
 const md = args.includes('--md');
 const files = args.filter((a) => a !== '--md');

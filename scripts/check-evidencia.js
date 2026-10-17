@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /*
  * Comprueba, sin internet, que cada ID de audio nuevo o cambiado respecto a
- * origin/claude/clever-sagan-5xuvc1 tenga su comprobación en scripts/evidencia-v2.1.json.
+ * la base (2d85042, de donde salió la 2.1) tenga su comprobación en scripts/evidencia-v2.1.json.
  *
  *   node scripts/check-evidencia.js            → revisa todos los catálogos (menos Canciones)
  *   node scripts/check-evidencia.js js/catalog.js js/catalog-anime.js
@@ -18,7 +18,8 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const ROOT = path.join(__dirname, '..');
-const BASE = 'origin/claude/clever-sagan-5xuvc1';
+// Base fija: el commit de donde salió la 2.1 (la rama remota se mueve al subir). Se cambia con BASE=<commit>.
+const BASE = process.env.BASE || '2d85042';
 const DEFAULT_FILES = [
   'js/catalog.js', 'js/catalog-series.js', 'js/catalog-caricaturas.js', 'js/catalog-anime.js',
   'js/catalog-disney.js', 'js/catalog-musicales.js', 'js/catalog-sagas.js',

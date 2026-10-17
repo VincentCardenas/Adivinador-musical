@@ -6,7 +6,7 @@
  *    - cuentas de encabezados y de cada sección coinciden con las pistas reales;
  *    - fuera de Canciones, ningún `game` tiene dos `franchise` distintos dentro de su tema (incluyendo EXTRA_GAMES);
  *    - node scripts/validate-catalog.js sigue dando 1816;
- *    - git diff origin/claude/clever-sagan-5xuvc1 -- js/catalog-canciones.js sale vacío.
+ *    - git diff origin/main -- js/catalog-canciones.js sale vacío.
  * 3. Pasan:
  *    - node scripts/validate-anime.js --offline
  *    - node scripts/validate-caricaturas.js --offline
@@ -212,11 +212,11 @@ try {
 }
 
 try {
-  const diff = execSync('git diff origin/claude/clever-sagan-5xuvc1 -- js/catalog-canciones.js', { cwd: ROOT, encoding: 'utf8' });
+  const diff = execSync('git diff origin/main -- js/catalog-canciones.js', { cwd: ROOT, encoding: 'utf8' });
   if (diff.trim().length > 0) {
-    fail('js/catalog-canciones.js tiene diferencias respecto a origin/claude/clever-sagan-5xuvc1.');
+    fail('js/catalog-canciones.js tiene diferencias respecto a origin/main.');
   } else {
-    ok('Paso 2e: git diff origin/claude/clever-sagan-5xuvc1 -- js/catalog-canciones.js está vacío.');
+    ok('Paso 2e: git diff origin/main -- js/catalog-canciones.js está vacío.');
   }
 } catch (e) {
   fail('No se pudo ejecutar git diff sobre js/catalog-canciones.js: ' + e.message);

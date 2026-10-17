@@ -123,6 +123,8 @@ function valorJs(v) {
 }
 function editarCampo(text, campo, valor) {
   const re = new RegExp(`(\\b${campo}: )('(?:[^'\\\\]|\\\\.)*'|"(?:[^"\\\\]|\\\\.)*"|-?\\d+|true|false|\\[[^\\]]*\\])`);
+  // valor null: el dato no se conoce, así que el campo se quita (como en las pistas que no lo traen)
+  if (valor === null || valor === undefined) return text.replace(new RegExp(re.source + ',[ \\t]*'), '');
   if (re.test(text)) return text.replace(re, (all, pre) => pre + valorJs(valor));
   // campo nuevo: va en su propia línea antes de sources
   return text.replace(/\n(\s*)sources:/, (all, ind) => `\n${ind}${campo}: ${valorJs(valor)},\n${ind}sources:`);

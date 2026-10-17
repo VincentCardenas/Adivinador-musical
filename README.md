@@ -241,7 +241,7 @@ La versión actual se ve en la esquina inferior izquierda del juego (en el celul
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
-- **2.1**: **catálogo revisado en red, 11 reportes arreglados y 149 pistas más**. Es la primera versión en la que cada fuente de audio se probó de verdad contra YouTube y Apple Music.
+- **2.1**: **catálogo revisado en red, 11 reportes arreglados y 149 pistas más**. Es la primera versión en la que las fuentes de audio de todos los temas, menos Canciones, se probaron de verdad contra YouTube y Apple Music.
   - **Auditoría de red** (`scripts/audit-red.js`):
     - En YouTube revisa que el video exista, que se pueda insertar y que no esté bloqueado en México.
     - En Apple revisa que el preview exista en el país de la fuente.
