@@ -9323,42 +9323,8 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-counter-strike-global-offensive-recarga-de-la-ak-47",
-  "id": "sfx-counter-strike-global-offensive-recarga-de-la-ak-47",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Counter-Strike",
-  "game": "Counter-Strike: Global Offensive",
-  "title": "Recarga de la AK-47",
-  "year": 2012,
-  "platform": "PC",
-  "aka": [
-   "Counter Strike",
-   "Counterstrike",
-   "CS",
-   "CSGO",
-   "CS:GO",
-   "CS 1.6",
-   "CS2"
-  ],
-  "yt_queries": [
-   "Counter-Strike AK-47 reload sound effect",
-   "CS:GO AK-47 reload sound",
-   "CS 1.6 AK47 reload sound"
-  ],
-  "must_any": [
-   "cs:go ak-47 reload",
-   "csgo ak-47 reload",
-   "csgo ak47 reload",
-   "counter-strike ak-47 reload",
-   "cs 1.6 ak-47 reload"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
+  "confianza": "alta",
+  "nota_iconico": 5
  },
  {
   "key": "sfx-metal-gear-solid-alerta-al-ser-detectado",
@@ -9388,7 +9354,8 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "alta"
+  "confianza": "alta",
+  "nota_iconico": 5
  },
  {
   "key": "sfx-super-mario-bros-moneda",
@@ -9419,72 +9386,8 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-counter-strike-1-6-bomba-plantada",
-  "id": "sfx-counter-strike-1-6-bomba-plantada",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Counter-Strike",
-  "game": "Counter-Strike 1.6",
-  "title": "Bomba plantada",
-  "year": 2003,
-  "platform": "PC",
-  "aka": [
-   "Counter Strike",
-   "Counterstrike",
-   "CS",
-   "CSGO",
-   "CS:GO",
-   "CS 1.6",
-   "CS2"
-  ],
-  "yt_queries": [
-   "Counter-Strike bomb has been planted sound effect",
-   "CS 1.6 bomb has been planted",
-   "CSGO bomb planted sound"
-  ],
-  "must_any": [
-   "counter-strike bomb has been planted",
-   "counter-strike the bomb has been planted",
-   "cs:go bomb has been planted",
-   "csgo bomb has been planted",
-   "cs 1.6 bomb has been planted"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-the-last-of-us-chasquidos-del-clicker",
-  "id": "sfx-the-last-of-us-chasquidos-del-clicker",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "The Last of Us",
-  "game": "The Last of Us",
-  "title": "Chasquidos del Clicker",
-  "year": 2013,
-  "platform": "PlayStation 3",
-  "aka": [
-   "TLOU",
-   "Last of Us"
-  ],
-  "yt_queries": [
-   "The Last of Us clicker sound effect",
-   "The Last of Us clicker click sound",
-   "TLOU clicker screech sound"
-  ],
-  "must_any": [
-   "last of us clicker",
-   "last of us clickers",
-   "tlou clicker",
-   "tlou clickers",
-   "clicker the last of us"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
+  "confianza": "alta",
+  "nota_iconico": 5
  },
  {
   "key": "sfx-super-mario-bros-vida-extra-1-up",
@@ -9515,7 +9418,8 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "alta"
+  "confianza": "alta",
+  "nota_iconico": 5
  },
  {
   "key": "sfx-minecraft-siseo-del-creeper",
@@ -9544,36 +9448,8 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-angry-birds-lanzamiento-con-la-resortera",
-  "id": "sfx-angry-birds-lanzamiento-con-la-resortera",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Angry Birds",
-  "game": "Angry Birds",
-  "title": "Lanzamiento con la resortera",
-  "year": 2009,
-  "platform": "iOS",
-  "aka": [
-   "Angry Bird"
-  ],
-  "yt_queries": [
-   "Angry Birds slingshot sound effect",
-   "Angry Birds red bird launch sound effect",
-   "Angry Birds bird flying sound"
-  ],
-  "must_any": [
-   "angry birds slingshot",
-   "angry birds launch",
-   "angry birds red bird",
-   "angry birds flying",
-   "angry birds sling"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
+  "confianza": "alta",
+  "nota_iconico": 5
  },
  {
   "key": "sfx-the-legend-of-zelda-ocarina-of-time-abrir-un-cofre",
@@ -9604,63 +9480,8 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-minecraft-aldeano-hmm",
-  "id": "sfx-minecraft-aldeano-hmm",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Minecraft",
-  "game": "Minecraft",
-  "title": "Aldeano (Hmm)",
-  "year": 2011,
-  "platform": "PC",
-  "aka": [
-   "Mine craft"
-  ],
-  "yt_queries": [
-   "Minecraft villager sound effect",
-   "Minecraft villager hmm sound",
-   "Minecraft villager huh sound effect"
-  ],
-  "must_any": [
-   "minecraft villager sound",
-   "minecraft villager hmm",
-   "minecraft villager huh",
-   "minecraft villager noise",
-   "minecraft villager idle"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-clash-royale-risa-del-emote-del-rey",
-  "id": "sfx-clash-royale-risa-del-emote-del-rey",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Clash Royale",
-  "game": "Clash Royale",
-  "title": "Risa del emote del Rey",
-  "year": 2016,
-  "platform": "iOS / Android",
-  "aka": [],
-  "yt_queries": [
-   "Clash Royale laughing emote sound effect",
-   "Clash Royale king laugh sound",
-   "Clash Royale risa emote sonido"
-  ],
-  "must_any": [
-   "clash royale laugh",
-   "clash royale laughing",
-   "clash royale king laugh",
-   "clash royale emote laugh",
-   "clash royale risa"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
+  "confianza": "alta",
+  "nota_iconico": 5
  },
  {
   "key": "sfx-the-legend-of-zelda-secreto-descubierto",
@@ -9691,7 +9512,8 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "alta"
+  "confianza": "alta",
+  "nota_iconico": 5
  },
  {
   "key": "sfx-roblox-oof",
@@ -9718,216 +9540,8 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-plants-vs-zombies-recoger-un-sol",
-  "id": "sfx-plants-vs-zombies-recoger-un-sol",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Plants vs. Zombies",
-  "game": "Plants vs. Zombies",
-  "title": "Recoger un sol",
-  "year": 2009,
-  "platform": "PC",
-  "aka": [
-   "PvZ",
-   "Plantas vs Zombies",
-   "Plantas contra Zombies",
-   "Plants vs Zombies"
-  ],
-  "yt_queries": [
-   "Plants vs Zombies sun collect sound effect",
-   "Plants vs Zombies sun pickup sound",
-   "PvZ sun sound effect"
-  ],
-  "must_any": [
-   "plants vs zombies sun",
-   "pvz sun",
-   "plants vs zombies collect sun",
-   "pvz sun collect"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-the-legend-of-zelda-ocarina-of-time-hey-listen",
-  "id": "sfx-the-legend-of-zelda-ocarina-of-time-hey-listen",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "The Legend of Zelda",
-  "game": "The Legend of Zelda: Ocarina of Time",
-  "title": "¡Hey! ¡Listen!",
-  "year": 1998,
-  "platform": "Nintendo 64",
-  "aka": [
-   "Zelda",
-   "Legend of Zelda",
-   "La Leyenda de Zelda"
-  ],
-  "yt_queries": [
-   "Navi hey listen sound effect",
-   "Zelda Ocarina of Time Navi hey listen",
-   "Navi hey sound effect OoT"
-  ],
-  "must_any": [
-   "navi hey listen",
-   "hey listen navi",
-   "hey listen zelda",
-   "hey listen ocarina",
-   "navi hey"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-among-us-reunion-de-emergencia",
-  "id": "sfx-among-us-reunion-de-emergencia",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Among Us",
-  "game": "Among Us",
-  "title": "Reunion de emergencia",
-  "year": 2018,
-  "platform": "PC",
-  "aka": [
-   "Amongus",
-   "Among-Us"
-  ],
-  "yt_queries": [
-   "Among Us emergency meeting sound effect",
-   "Among Us emergency meeting sound",
-   "Among Us reunion de emergencia sonido"
-  ],
-  "must_any": [
-   "among us emergency meeting",
-   "among us emergency sound",
-   "among us meeting sound",
-   "among us body reported",
-   "among us reunion de emergencia"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-fruit-ninja-rebanar-una-fruta",
-  "id": "sfx-fruit-ninja-rebanar-una-fruta",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Fruit Ninja",
-  "game": "Fruit Ninja",
-  "title": "Rebanar una fruta",
-  "year": 2010,
-  "platform": "iOS",
-  "aka": [],
-  "yt_queries": [
-   "Fruit Ninja slice sound effect",
-   "Fruit Ninja fruit cut sound effect",
-   "Fruit Ninja slash splat sound"
-  ],
-  "must_any": [
-   "fruit ninja slice",
-   "fruit ninja cut",
-   "fruit ninja slash",
-   "fruit ninja splat"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-pokemon-red-and-blue-curar-al-equipo",
-  "id": "sfx-pokemon-red-and-blue-curar-al-equipo",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Pokémon",
-  "game": "Pokémon Red & Blue",
-  "title": "Curar al equipo",
-  "year": 1996,
-  "platform": "Game Boy",
-  "aka": [
-   "Pokemon",
-   "Pokémon Rojo",
-   "Pokemon Rojo y Azul"
-  ],
-  "yt_queries": [
-   "Pokemon center healing sound effect",
-   "Pokemon Center heal jingle",
-   "Pokemon Red Blue pokemon center heal sound"
-  ],
-  "must_any": [
-   "pokemon center heal",
-   "pokemon center healing",
-   "pokemon center jingle",
-   "pokemon center sound",
-   "pokemon centre heal"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-call-of-duty-modern-warfare-2-hitmarker",
-  "id": "sfx-call-of-duty-modern-warfare-2-hitmarker",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Call of Duty",
-  "game": "Call of Duty: Modern Warfare 2",
-  "title": "Hitmarker",
-  "year": 2009,
-  "platform": "Xbox 360",
-  "aka": [
-   "COD",
-   "CoD",
-   "Modern Warfare",
-   "Black Ops"
-  ],
-  "yt_queries": [
-   "Call of Duty hitmarker sound effect",
-   "COD hit marker sound effect",
-   "MW2 hitmarker sound"
-  ],
-  "must_any": [
-   "cod hitmarker",
-   "call of duty hitmarker",
-   "cod hit marker",
-   "call of duty hit marker",
-   "mw2 hitmarker"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-subway-surfers-recoger-una-moneda",
-  "id": "sfx-subway-surfers-recoger-una-moneda",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Subway Surfers",
-  "game": "Subway Surfers",
-  "title": "Recoger una moneda",
-  "year": 2012,
-  "platform": "iOS / Android",
-  "aka": [
-   "Subway"
-  ],
-  "yt_queries": [
-   "Subway Surfers coin sound effect",
-   "Subway Surfers coin collect sound",
-   "Subway Surfers moneda sonido"
-  ],
-  "must_any": [
-   "subway surfers coin",
-   "subway surfers coin sound",
-   "subway surfers collect coin",
-   "subway surfers moneda"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
+  "confianza": "alta",
+  "nota_iconico": 5
  },
  {
   "key": "sfx-sonic-the-hedgehog-recoger-un-anillo",
@@ -9957,235 +9571,8 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-fortnite-abrir-un-cofre-dorado",
-  "id": "sfx-fortnite-abrir-un-cofre-dorado",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Fortnite",
-  "game": "Fortnite",
-  "title": "Abrir un cofre dorado",
-  "year": 2017,
-  "platform": "PC",
-  "aka": [],
-  "yt_queries": [
-   "Fortnite chest opening sound effect",
-   "Fortnite chest sound",
-   "Fortnite cofre sonido"
-  ],
-  "must_any": [
-   "fortnite chest sound",
-   "fortnite chest opening sound",
-   "fortnite chest sound effect",
-   "fortnite cofre sonido"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-geometry-dash-explosion-al-morir",
-  "id": "sfx-geometry-dash-explosion-al-morir",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Geometry Dash",
-  "game": "Geometry Dash",
-  "title": "Explosión al morir",
-  "year": 2013,
-  "platform": "iOS / Android / PC",
-  "aka": [
-   "GD"
-  ],
-  "yt_queries": [
-   "Geometry Dash death sound effect",
-   "Geometry Dash explosion sound effect",
-   "Geometry Dash die sound"
-  ],
-  "must_any": [
-   "geometry dash death",
-   "geometry dash explosion",
-   "geometry dash die",
-   "geometry dash explode"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-sonic-the-hedgehog-perder-los-anillos",
-  "id": "sfx-sonic-the-hedgehog-perder-los-anillos",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Sonic the Hedgehog",
-  "game": "Sonic the Hedgehog",
-  "title": "Perder los anillos",
-  "year": 1991,
-  "platform": "Sega Genesis / Mega Drive",
-  "aka": [
-   "Sonic",
-   "Sonic el erizo"
-  ],
-  "yt_queries": [
-   "Sonic ring loss sound effect",
-   "Sonic lose rings sound effect",
-   "Sonic rings scatter sound"
-  ],
-  "must_any": [
-   "sonic ring loss",
-   "sonic lose rings",
-   "sonic losing rings",
-   "sonic ring scatter",
-   "sonic rings scatter"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-league-of-legends-pentakill",
-  "id": "sfx-league-of-legends-pentakill",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "League of Legends",
-  "game": "League of Legends",
-  "title": "Pentakill",
-  "year": 2009,
-  "platform": "PC",
-  "aka": [
-   "LoL",
-   "LOL",
-   "League"
-  ],
-  "yt_queries": [
-   "League of Legends pentakill sound effect",
-   "LoL pentakill announcer sound",
-   "Pentakill sound League of Legends"
-  ],
-  "must_any": [
-   "league of legends pentakill sound",
-   "lol pentakill sound",
-   "league pentakill sound",
-   "lol pentakill announcer",
-   "league of legends pentakill announcer"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-free-fire-grito-de-victoria-booyah",
-  "id": "sfx-free-fire-grito-de-victoria-booyah",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Free Fire",
-  "game": "Free Fire",
-  "title": "Grito de victoria Booyah",
-  "year": 2017,
-  "platform": "Android / iOS",
-  "aka": [
-   "Garena Free Fire"
-  ],
-  "yt_queries": [
-   "Free Fire booyah sound effect",
-   "Free Fire booyah victory sound",
-   "Booyah Free Fire audio"
-  ],
-  "must_any": [
-   "free fire booyah",
-   "booyah free fire",
-   "garena free fire booyah"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-sonic-the-hedgehog-2-spin-dash",
-  "id": "sfx-sonic-the-hedgehog-2-spin-dash",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Sonic the Hedgehog",
-  "game": "Sonic the Hedgehog 2",
-  "title": "Spin Dash",
-  "year": 1992,
-  "platform": "Sega Genesis / Mega Drive",
-  "aka": [
-   "Sonic",
-   "Sonic el erizo"
-  ],
-  "yt_queries": [
-   "Sonic spin dash sound effect",
-   "Sonic 2 spin dash charge sound",
-   "Sonic spindash sound"
-  ],
-  "must_any": [
-   "sonic spin dash",
-   "spin dash sonic",
-   "sonic spindash",
-   "sonic 2 spin dash",
-   "sonic spin dash sound"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-overwatch-es-mediodia-mccree",
-  "id": "sfx-overwatch-es-mediodia-mccree",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Overwatch",
-  "game": "Overwatch",
-  "title": "Es mediodia (McCree)",
-  "year": 2016,
-  "platform": "PC",
-  "aka": [],
-  "yt_queries": [
-   "Overwatch McCree it's high noon ultimate sound",
-   "Overwatch high noon voice line",
-   "Cassidy high noon Overwatch sound effect"
-  ],
-  "must_any": [
-   "overwatch high noon",
-   "mccree high noon",
-   "cassidy high noon",
-   "overwatch mccree ultimate",
-   "high noon overwatch"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-dark-souls-encender-una-hoguera",
-  "id": "sfx-dark-souls-encender-una-hoguera",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Dark Souls",
-  "game": "Dark Souls",
-  "title": "Encender una hoguera",
-  "year": 2011,
-  "platform": "PlayStation 3 / Xbox 360",
-  "aka": [
-   "Darksouls"
-  ],
-  "yt_queries": [
-   "Dark Souls bonfire lit sound effect",
-   "Dark Souls bonfire sound effect",
-   "Dark Souls bonfire lit"
-  ],
-  "must_any": [
-   "dark souls bonfire lit",
-   "bonfire lit dark souls",
-   "dark souls 3 bonfire lit",
-   "dark souls bonfire sound",
-   "dark souls bonfire sfx"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
+  "confianza": "alta",
+  "nota_iconico": 5
  },
  {
   "key": "sfx-pac-man-comiendo-puntos-waka-waka",
@@ -10216,7 +9603,8 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "alta"
+  "confianza": "alta",
+  "nota_iconico": 5
  },
  {
   "key": "sfx-grand-theft-auto-san-andreas-mision-cumplida",
@@ -10225,7 +9613,7 @@
   "saga": "sonidos",
   "franchise": "Grand Theft Auto",
   "game": "Grand Theft Auto: San Andreas",
-  "title": "Mision cumplida",
+  "title": "Misión cumplida",
   "year": 2004,
   "platform": "PS2",
   "aka": [
@@ -10246,128 +9634,8 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-the-elder-scrolls-v-skyrim-grito-fus-ro-dah",
-  "id": "sfx-the-elder-scrolls-v-skyrim-grito-fus-ro-dah",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "The Elder Scrolls",
-  "game": "The Elder Scrolls V: Skyrim",
-  "title": "Grito Fus Ro Dah",
-  "year": 2011,
-  "platform": "PC / PlayStation 3 / Xbox 360",
-  "aka": [
-   "Skyrim",
-   "Elder Scrolls",
-   "TES"
-  ],
-  "yt_queries": [
-   "Skyrim Fus Ro Dah sound effect",
-   "Skyrim unrelenting force shout sound effect",
-   "Fus Ro Dah Skyrim"
-  ],
-  "must_any": [
-   "fus ro dah",
-   "skyrim unrelenting force",
-   "unrelenting force shout"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-pac-man-perder-una-vida",
-  "id": "sfx-pac-man-perder-una-vida",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Pac-Man",
-  "game": "Pac-Man",
-  "title": "Perder una vida",
-  "year": 1980,
-  "platform": "Arcade",
-  "aka": [
-   "Pacman",
-   "Pac Man",
-   "Comecocos"
-  ],
-  "yt_queries": [
-   "Pac-Man death sound effect",
-   "Pacman dies sound effect",
-   "Pac-Man losing a life sound"
-  ],
-  "must_any": [
-   "pacman death",
-   "pac-man death",
-   "pac man death",
-   "pacman dies",
-   "pac-man dies"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-grand-theft-auto-v-wasted",
-  "id": "sfx-grand-theft-auto-v-wasted",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Grand Theft Auto",
-  "game": "Grand Theft Auto V",
-  "title": "Wasted",
-  "year": 2013,
-  "platform": "PS3",
-  "aka": [
-   "GTA",
-   "GTA 5",
-   "GTA V"
-  ],
-  "yt_queries": [
-   "GTA V wasted sound effect",
-   "GTA wasted sound effect",
-   "GTA 5 wasted sound"
-  ],
-  "must_any": [
-   "gta wasted",
-   "gta v wasted",
-   "gta 5 wasted",
-   "wasted gta",
-   "gta wasted sound"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-final-fantasy-vii-fanfarria-de-victoria",
-  "id": "sfx-final-fantasy-vii-fanfarria-de-victoria",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Final Fantasy",
-  "game": "Final Fantasy VII",
-  "title": "Fanfarria de victoria",
-  "year": 1997,
-  "platform": "PlayStation",
-  "aka": [
-   "FF7",
-   "Final Fantasy VII"
-  ],
-  "yt_queries": [
-   "Final Fantasy VII victory fanfare",
-   "Final Fantasy victory fanfare sound effect",
-   "Final Fantasy 7 battle victory fanfare"
-  ],
-  "must_any": [
-   "final fantasy victory",
-   "final fantasy vii victory",
-   "ff7 victory fanfare",
-   "final fantasy fanfare",
-   "ff victory fanfare"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
+  "confianza": "alta",
+  "nota_iconico": 5
  },
  {
   "key": "sfx-street-fighter-ii-hadouken",
@@ -10398,34 +9666,8 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-portal-torreta-hello",
-  "id": "sfx-portal-torreta-hello",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Portal",
-  "game": "Portal",
-  "title": "Torreta: Hello?",
-  "year": 2007,
-  "platform": "PC",
-  "aka": [],
-  "yt_queries": [
-   "Portal turret hello sound effect",
-   "Portal turret voice lines",
-   "Portal turret target acquired sound"
-  ],
-  "must_any": [
-   "portal turret hello",
-   "portal turret voice",
-   "portal turret sound",
-   "portal turret there you are",
-   "portal turret target acquired"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
+  "confianza": "alta",
+  "nota_iconico": 5
  },
  {
   "key": "sfx-mortal-kombat-finish-him",
@@ -10455,65 +9697,123 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "alta"
+  "confianza": "alta",
+  "nota_iconico": 5
  },
  {
-  "key": "sfx-doom-1993-disparo-de-la-escopeta",
-  "id": "sfx-doom-1993-disparo-de-la-escopeta",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "DOOM",
-  "game": "DOOM (1993)",
-  "title": "Disparo de la escopeta",
-  "year": 1993,
-  "platform": "PC",
-  "aka": [
-   "Doom"
-  ],
-  "yt_queries": [
-   "Doom shotgun sound effect",
-   "Doom 1993 shotgun sound",
-   "Doom shotgun pump sound"
-  ],
-  "must_any": [
-   "doom shotgun sound",
-   "doom shotgun sfx",
-   "doom 1993 shotgun sound",
-   "doom 1 shotgun sound"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-mortal-kombat-ii-toasty",
-  "id": "sfx-mortal-kombat-ii-toasty",
+  "key": "sfx-mortal-kombat-get-over-here-scorpion",
+  "id": "sfx-mortal-kombat-get-over-here-scorpion",
   "tema": "sonidos",
   "saga": "sonidos",
   "franchise": "Mortal Kombat",
-  "game": "Mortal Kombat II",
-  "title": "¡Toasty!",
-  "year": 1993,
+  "game": "Mortal Kombat",
+  "title": "¡Get over here! (Scorpion)",
+  "year": 1992,
   "platform": "Arcade",
   "aka": [
-   "MK",
-   "Mortal Combat"
+   "MK"
   ],
   "yt_queries": [
-   "Mortal Kombat toasty sound effect",
-   "Toasty Mortal Kombat 2 Dan Forden",
-   "Mortal Kombat II toasty"
+   "get over here sound effect scorpion",
+   "mortal kombat get over here sound effect"
   ],
   "must_any": [
-   "mortal kombat toasty",
-   "toasty mortal kombat",
-   "toasty sound",
-   "mk toasty",
-   "mortal kombat 2 toasty"
+   "get over here sound",
+   "scorpion get over here",
+   "mortal kombat get over here"
   ],
   "latino": false,
   "apple": null,
-  "confianza": "alta"
+  "confianza": "alta",
+  "nota_iconico": 5
+ },
+ {
+  "key": "sfx-street-fighter-ii-shoryuken",
+  "id": "sfx-street-fighter-ii-shoryuken",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Street Fighter",
+  "game": "Street Fighter II",
+  "title": "¡Shoryuken!",
+  "year": 1991,
+  "platform": "Arcade",
+  "aka": [
+   "SF",
+   "Street Fighter 2"
+  ],
+  "yt_queries": [
+   "shoryuken sound effect",
+   "street fighter 2 shoryuken sound effect"
+  ],
+  "must_any": [
+   "shoryuken sound",
+   "street fighter shoryuken",
+   "ryu shoryuken"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 5
+ },
+ {
+  "key": "sfx-grand-theft-auto-san-andreas-ah-shit-here-we-go-again-cj",
+  "id": "sfx-grand-theft-auto-san-andreas-ah-shit-here-we-go-again-cj",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Grand Theft Auto",
+  "game": "Grand Theft Auto: San Andreas",
+  "title": "Ah shit, here we go again (CJ)",
+  "year": 2004,
+  "platform": "PlayStation 2",
+  "aka": [
+   "GTA",
+   "San Andreas"
+  ],
+  "yt_queries": [
+   "ah shit here we go again sound effect",
+   "gta san andreas here we go again cj sound effect"
+  ],
+  "must_any": [
+   "ah shit here we go again",
+   "here we go again gta",
+   "here we go again cj",
+   "here we go again san andreas"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 5
+ },
+ {
+  "key": "sfx-among-us-reunion-de-emergencia",
+  "id": "sfx-among-us-reunion-de-emergencia",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Among Us",
+  "game": "Among Us",
+  "title": "Reunión de emergencia",
+  "year": 2018,
+  "platform": "PC",
+  "aka": [
+   "Amongus",
+   "Among-Us"
+  ],
+  "yt_queries": [
+   "Among Us emergency meeting sound effect",
+   "Among Us emergency meeting sound",
+   "Among Us reunion de emergencia sonido"
+  ],
+  "must_any": [
+   "among us emergency meeting",
+   "among us emergency sound",
+   "among us meeting sound",
+   "among us body reported",
+   "among us reunion de emergencia"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4.7
  },
  {
   "key": "sfx-age-of-empires-ii-the-age-of-kings-wololo",
@@ -10544,156 +9844,100 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "alta"
+  "confianza": "alta",
+  "nota_iconico": 4.7
  },
  {
-  "key": "sfx-mario-kart-64-cuenta-regresiva-de-salida",
-  "id": "sfx-mario-kart-64-cuenta-regresiva-de-salida",
+  "key": "sfx-minecraft-aldeano-hmm",
+  "id": "sfx-minecraft-aldeano-hmm",
   "tema": "sonidos",
   "saga": "sonidos",
-  "franchise": "Mario Kart",
-  "game": "Mario Kart 64",
-  "title": "Cuenta regresiva de salida",
-  "year": 1996,
-  "platform": "Nintendo 64",
-  "aka": [
-   "Mariokart",
-   "Mario Cart"
-  ],
-  "yt_queries": [
-   "Mario Kart start countdown sound effect",
-   "Mario Kart 64 race start countdown",
-   "Mario Kart traffic light countdown sound"
-  ],
-  "must_any": [
-   "mario kart countdown",
-   "mario kart 64 countdown",
-   "mario kart 8 countdown",
-   "mario kart race start",
-   "mario kart traffic light"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-warcraft-iii-reign-of-chaos-peon-work-work",
-  "id": "sfx-warcraft-iii-reign-of-chaos-peon-work-work",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Warcraft",
-  "game": "Warcraft III: Reign of Chaos",
-  "title": "Peon: Work work",
-  "year": 2002,
+  "franchise": "Minecraft",
+  "game": "Minecraft",
+  "title": "Aldeano (Hmm)",
+  "year": 2011,
   "platform": "PC",
   "aka": [
-   "WoW",
-   "World of Warcraft",
-   "Warcraft 3"
+   "Mine craft"
   ],
   "yt_queries": [
-   "Warcraft peon work work sound",
-   "Warcraft 3 peon work work",
-   "Warcraft orc peon voice sound effect"
+   "Minecraft villager sound effect",
+   "Minecraft villager hmm sound",
+   "Minecraft villager huh sound effect"
   ],
   "must_any": [
-   "warcraft peon work work",
-   "peon work work",
-   "warcraft 3 peon work",
-   "warcraft peon sound",
-   "warcraft peon voice"
+   "minecraft villager sound",
+   "minecraft villager hmm",
+   "minecraft villager huh",
+   "minecraft villager noise",
+   "minecraft villager idle"
   ],
   "latino": false,
   "apple": null,
-  "confianza": "alta"
+  "confianza": "alta",
+  "nota_iconico": 4.3
  },
  {
-  "key": "sfx-starcraft-construye-mas-pilones",
-  "id": "sfx-starcraft-construye-mas-pilones",
+  "key": "sfx-the-elder-scrolls-v-skyrim-grito-fus-ro-dah",
+  "id": "sfx-the-elder-scrolls-v-skyrim-grito-fus-ro-dah",
   "tema": "sonidos",
   "saga": "sonidos",
-  "franchise": "StarCraft",
-  "game": "StarCraft",
-  "title": "Construye mas pilones",
-  "year": 1998,
-  "platform": "PC",
+  "franchise": "The Elder Scrolls",
+  "game": "The Elder Scrolls V: Skyrim",
+  "title": "Grito Fus Ro Dah",
+  "year": 2011,
+  "platform": "PC / PlayStation 3 / Xbox 360",
   "aka": [
-   "Star Craft",
-   "SC",
-   "SC2"
+   "Skyrim",
+   "Elder Scrolls",
+   "TES"
   ],
   "yt_queries": [
-   "StarCraft you must construct additional pylons",
-   "Starcraft additional pylons sound",
-   "Protoss advisor additional pylons"
+   "Skyrim Fus Ro Dah sound effect",
+   "Skyrim unrelenting force shout sound effect",
+   "Fus Ro Dah Skyrim"
   ],
   "must_any": [
-   "starcraft pylons",
-   "starcraft additional pylons",
-   "construct additional pylons",
-   "protoss additional pylons"
+   "fus ro dah",
+   "skyrim unrelenting force",
+   "unrelenting force shout"
   ],
   "latino": false,
   "apple": null,
-  "confianza": "alta"
+  "confianza": "alta",
+  "nota_iconico": 4.3
  },
  {
-  "key": "sfx-diablo-carne-fresca-el-carnicero",
-  "id": "sfx-diablo-carne-fresca-el-carnicero",
+  "key": "sfx-pac-man-perder-una-vida",
+  "id": "sfx-pac-man-perder-una-vida",
   "tema": "sonidos",
   "saga": "sonidos",
-  "franchise": "Diablo",
-  "game": "Diablo",
-  "title": "Carne fresca (El Carnicero)",
-  "year": 1996,
-  "platform": "PC",
-  "aka": [],
-  "yt_queries": [
-   "Diablo butcher ah fresh meat sound",
-   "Diablo 1 The Butcher fresh meat",
-   "Diablo Butcher voice sound effect"
-  ],
-  "must_any": [
-   "diablo butcher fresh meat",
-   "diablo fresh meat",
-   "diablo ah fresh meat",
-   "butcher ah fresh meat",
-   "diablo butcher sound"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "alta"
- },
- {
-  "key": "sfx-pokemon-red-and-blue-subir-de-nivel",
-  "id": "sfx-pokemon-red-and-blue-subir-de-nivel",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Pokémon",
-  "game": "Pokémon Red & Blue",
-  "title": "Subir de nivel",
-  "year": 1996,
-  "platform": "Game Boy",
+  "franchise": "Pac-Man",
+  "game": "Pac-Man",
+  "title": "Perder una vida",
+  "year": 1980,
+  "platform": "Arcade",
   "aka": [
-   "Pokemon",
-   "Pokémon Rojo",
-   "Pokemon Rojo y Azul"
+   "Pacman",
+   "Pac Man",
+   "Comecocos"
   ],
   "yt_queries": [
-   "Pokemon level up sound effect",
-   "Pokemon Red level up sound",
-   "Pokemon Game Boy level up jingle"
+   "Pac-Man death sound effect",
+   "Pacman dies sound effect",
+   "Pac-Man losing a life sound"
   ],
   "must_any": [
-   "pokemon level up",
-   "pokemon levelup",
-   "pokemon level-up",
-   "pokemon lvl up",
-   "pokemon red level up"
+   "pacman death",
+   "pac-man death",
+   "pac man death",
+   "pacman dies",
+   "pac-man dies"
   ],
   "latino": false,
   "apple": null,
-  "confianza": "media"
+  "confianza": "alta",
+  "nota_iconico": 4.3
  },
  {
   "key": "sfx-counter-strike-1-6-granada-fire-in-the-hole",
@@ -10728,7 +9972,491 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "media"
+  "confianza": "media",
+  "nota_iconico": 4.3
+ },
+ {
+  "key": "sfx-pac-man-musica-de-inicio",
+  "id": "sfx-pac-man-musica-de-inicio",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Pac-Man",
+  "game": "Pac-Man",
+  "title": "Música de inicio",
+  "year": 1980,
+  "platform": "Arcade",
+  "aka": [
+   "Pacman"
+  ],
+  "yt_queries": [
+   "pac man intro sound effect",
+   "pacman start music sound effect",
+   "pac man beginning sound"
+  ],
+  "must_any": [
+   "pac man intro",
+   "pacman intro",
+   "pac man start",
+   "pacman start",
+   "pac man beginning"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4.3
+ },
+ {
+  "key": "sfx-duck-hunt-risa-del-perro",
+  "id": "sfx-duck-hunt-risa-del-perro",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Duck Hunt",
+  "game": "Duck Hunt",
+  "title": "Risa del perro",
+  "year": 1984,
+  "platform": "NES",
+  "aka": [
+   "Caceria de patos"
+  ],
+  "yt_queries": [
+   "duck hunt dog laugh sound effect",
+   "duck hunt dog laughing sound"
+  ],
+  "must_any": [
+   "duck hunt dog laugh",
+   "duck hunt laugh",
+   "duck hunt dog laughing"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4.3
+ },
+ {
+  "key": "sfx-among-us-revelacion-del-impostor-shhh",
+  "id": "sfx-among-us-revelacion-del-impostor-shhh",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Among Us",
+  "game": "Among Us",
+  "title": "Revelación del impostor (Shhh)",
+  "year": 2018,
+  "platform": "Móvil / PC",
+  "aka": [
+   "Amongus"
+  ],
+  "yt_queries": [
+   "among us role reveal sound effect",
+   "among us shh impostor sound effect"
+  ],
+  "must_any": [
+   "among us role reveal",
+   "among us shh",
+   "among us impostor reveal",
+   "among us shhh"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4.3
+ },
+ {
+  "key": "sfx-metal-slug-heavy-machine-gun",
+  "id": "sfx-metal-slug-heavy-machine-gun",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Metal Slug",
+  "game": "Metal Slug",
+  "title": "¡Heavy Machine Gun!",
+  "year": 1996,
+  "platform": "Arcade (Neo Geo)",
+  "aka": [],
+  "yt_queries": [
+   "metal slug heavy machine gun sound effect",
+   "heavy machine gun voice metal slug"
+  ],
+  "must_any": [
+   "metal slug heavy machine",
+   "heavy machine gun metal slug",
+   "heavy machine gun voice"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4.3
+ },
+ {
+  "key": "sfx-counter-strike-1-6-bomba-plantada",
+  "id": "sfx-counter-strike-1-6-bomba-plantada",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Counter-Strike",
+  "game": "Counter-Strike 1.6",
+  "title": "Bomba plantada",
+  "year": 2003,
+  "platform": "PC",
+  "aka": [
+   "Counter Strike",
+   "Counterstrike",
+   "CS",
+   "CSGO",
+   "CS:GO",
+   "CS 1.6",
+   "CS2"
+  ],
+  "yt_queries": [
+   "Counter-Strike bomb has been planted sound effect",
+   "CS 1.6 bomb has been planted",
+   "CSGO bomb planted sound"
+  ],
+  "must_any": [
+   "counter-strike bomb has been planted",
+   "counter-strike the bomb has been planted",
+   "cs:go bomb has been planted",
+   "csgo bomb has been planted",
+   "cs 1.6 bomb has been planted"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4
+ },
+ {
+  "key": "sfx-clash-royale-risa-del-emote-del-rey",
+  "id": "sfx-clash-royale-risa-del-emote-del-rey",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Clash Royale",
+  "game": "Clash Royale",
+  "title": "Risa del emote del Rey",
+  "year": 2016,
+  "platform": "iOS / Android",
+  "aka": [],
+  "yt_queries": [
+   "Clash Royale laughing emote sound effect",
+   "Clash Royale king laugh sound",
+   "Clash Royale risa emote sonido"
+  ],
+  "must_any": [
+   "clash royale laugh",
+   "clash royale laughing",
+   "clash royale king laugh",
+   "clash royale emote laugh",
+   "clash royale risa"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4
+ },
+ {
+  "key": "sfx-the-legend-of-zelda-ocarina-of-time-hey-listen",
+  "id": "sfx-the-legend-of-zelda-ocarina-of-time-hey-listen",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "The Legend of Zelda",
+  "game": "The Legend of Zelda: Ocarina of Time",
+  "title": "¡Hey! ¡Listen!",
+  "year": 1998,
+  "platform": "Nintendo 64",
+  "aka": [
+   "Zelda",
+   "Legend of Zelda",
+   "La Leyenda de Zelda"
+  ],
+  "yt_queries": [
+   "Navi hey listen sound effect",
+   "Zelda Ocarina of Time Navi hey listen",
+   "Navi hey sound effect OoT"
+  ],
+  "must_any": [
+   "navi hey listen",
+   "hey listen navi",
+   "hey listen zelda",
+   "hey listen ocarina",
+   "navi hey"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4
+ },
+ {
+  "key": "sfx-pokemon-red-and-blue-curar-al-equipo",
+  "id": "sfx-pokemon-red-and-blue-curar-al-equipo",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Pokémon",
+  "game": "Pokémon Red & Blue",
+  "title": "Curar al equipo",
+  "year": 1996,
+  "platform": "Game Boy",
+  "aka": [
+   "Pokemon",
+   "Pokémon Rojo",
+   "Pokemon Rojo y Azul"
+  ],
+  "yt_queries": [
+   "Pokemon center healing sound effect",
+   "Pokemon Center heal jingle",
+   "Pokemon Red Blue pokemon center heal sound"
+  ],
+  "must_any": [
+   "pokemon center heal",
+   "pokemon center healing",
+   "pokemon center jingle",
+   "pokemon center sound",
+   "pokemon centre heal"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4
+ },
+ {
+  "key": "sfx-call-of-duty-modern-warfare-2-hitmarker",
+  "id": "sfx-call-of-duty-modern-warfare-2-hitmarker",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Call of Duty",
+  "game": "Call of Duty: Modern Warfare 2",
+  "title": "Hitmarker",
+  "year": 2009,
+  "platform": "Xbox 360",
+  "aka": [
+   "COD",
+   "CoD",
+   "Modern Warfare",
+   "Black Ops"
+  ],
+  "yt_queries": [
+   "Call of Duty hitmarker sound effect",
+   "COD hit marker sound effect",
+   "MW2 hitmarker sound"
+  ],
+  "must_any": [
+   "cod hitmarker",
+   "call of duty hitmarker",
+   "cod hit marker",
+   "call of duty hit marker",
+   "mw2 hitmarker"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4
+ },
+ {
+  "key": "sfx-fortnite-abrir-un-cofre-dorado",
+  "id": "sfx-fortnite-abrir-un-cofre-dorado",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Fortnite",
+  "game": "Fortnite",
+  "title": "Abrir un cofre dorado",
+  "year": 2017,
+  "platform": "PC",
+  "aka": [],
+  "yt_queries": [
+   "Fortnite chest opening sound effect",
+   "Fortnite chest sound",
+   "Fortnite cofre sonido"
+  ],
+  "must_any": [
+   "fortnite chest sound",
+   "fortnite chest opening sound",
+   "fortnite chest sound effect",
+   "fortnite cofre sonido"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4
+ },
+ {
+  "key": "sfx-sonic-the-hedgehog-perder-los-anillos",
+  "id": "sfx-sonic-the-hedgehog-perder-los-anillos",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Sonic the Hedgehog",
+  "game": "Sonic the Hedgehog",
+  "title": "Perder los anillos",
+  "year": 1991,
+  "platform": "Sega Genesis / Mega Drive",
+  "aka": [
+   "Sonic",
+   "Sonic el erizo"
+  ],
+  "yt_queries": [
+   "Sonic ring loss sound effect",
+   "Sonic lose rings sound effect",
+   "Sonic rings scatter sound"
+  ],
+  "must_any": [
+   "sonic ring loss",
+   "sonic lose rings",
+   "sonic losing rings",
+   "sonic ring scatter",
+   "sonic rings scatter"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4
+ },
+ {
+  "key": "sfx-free-fire-grito-de-victoria-booyah",
+  "id": "sfx-free-fire-grito-de-victoria-booyah",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Free Fire",
+  "game": "Free Fire",
+  "title": "Grito de victoria Booyah",
+  "year": 2017,
+  "platform": "Android / iOS",
+  "aka": [
+   "Garena Free Fire"
+  ],
+  "yt_queries": [
+   "Free Fire booyah sound effect",
+   "Free Fire booyah victory sound",
+   "Booyah Free Fire audio"
+  ],
+  "must_any": [
+   "free fire booyah",
+   "booyah free fire",
+   "garena free fire booyah"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4
+ },
+ {
+  "key": "sfx-grand-theft-auto-v-wasted",
+  "id": "sfx-grand-theft-auto-v-wasted",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Grand Theft Auto",
+  "game": "Grand Theft Auto V",
+  "title": "Wasted",
+  "year": 2013,
+  "platform": "PS3",
+  "aka": [
+   "GTA",
+   "GTA 5",
+   "GTA V"
+  ],
+  "yt_queries": [
+   "GTA V wasted sound effect",
+   "GTA wasted sound effect",
+   "GTA 5 wasted sound"
+  ],
+  "must_any": [
+   "gta wasted",
+   "gta v wasted",
+   "gta 5 wasted",
+   "wasted gta",
+   "gta wasted sound"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4
+ },
+ {
+  "key": "sfx-mortal-kombat-ii-toasty",
+  "id": "sfx-mortal-kombat-ii-toasty",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Mortal Kombat",
+  "game": "Mortal Kombat II",
+  "title": "¡Toasty!",
+  "year": 1993,
+  "platform": "Arcade",
+  "aka": [
+   "MK",
+   "Mortal Combat"
+  ],
+  "yt_queries": [
+   "Mortal Kombat toasty sound effect",
+   "Toasty Mortal Kombat 2 Dan Forden",
+   "Mortal Kombat II toasty"
+  ],
+  "must_any": [
+   "mortal kombat toasty",
+   "toasty mortal kombat",
+   "toasty sound",
+   "mk toasty",
+   "mortal kombat 2 toasty"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4
+ },
+ {
+  "key": "sfx-mario-kart-64-cuenta-regresiva-de-salida",
+  "id": "sfx-mario-kart-64-cuenta-regresiva-de-salida",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Mario Kart",
+  "game": "Mario Kart 64",
+  "title": "Cuenta regresiva de salida",
+  "year": 1996,
+  "platform": "Nintendo 64",
+  "aka": [
+   "Mariokart",
+   "Mario Cart"
+  ],
+  "yt_queries": [
+   "Mario Kart start countdown sound effect",
+   "Mario Kart 64 race start countdown",
+   "Mario Kart traffic light countdown sound"
+  ],
+  "must_any": [
+   "mario kart countdown",
+   "mario kart 64 countdown",
+   "mario kart 8 countdown",
+   "mario kart race start",
+   "mario kart traffic light"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4
+ },
+ {
+  "key": "sfx-pokemon-red-and-blue-subir-de-nivel",
+  "id": "sfx-pokemon-red-and-blue-subir-de-nivel",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Pokémon",
+  "game": "Pokémon Red & Blue",
+  "title": "Subir de nivel",
+  "year": 1996,
+  "platform": "Game Boy",
+  "aka": [
+   "Pokemon",
+   "Pokémon Rojo",
+   "Pokemon Rojo y Azul"
+  ],
+  "yt_queries": [
+   "Pokemon level up sound effect",
+   "Pokemon Red level up sound",
+   "Pokemon Game Boy level up jingle"
+  ],
+  "must_any": [
+   "pokemon level up",
+   "pokemon levelup",
+   "pokemon level-up",
+   "pokemon lvl up",
+   "pokemon red level up"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "media",
+  "nota_iconico": 4
  },
  {
   "key": "sfx-resident-evil-4-voz-del-mercader",
@@ -10758,37 +10486,8 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-mario-kart-64-ruleta-de-objetos",
-  "id": "sfx-mario-kart-64-ruleta-de-objetos",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Mario Kart",
-  "game": "Mario Kart 64",
-  "title": "Ruleta de objetos",
-  "year": 1996,
-  "platform": "Nintendo 64",
-  "aka": [
-   "Mariokart",
-   "Mario Cart"
-  ],
-  "yt_queries": [
-   "Mario Kart item box sound effect",
-   "Mario Kart item roulette sound",
-   "Mario Kart 64 item box sound"
-  ],
-  "must_any": [
-   "mario kart item box",
-   "mario kart 64 item box",
-   "mario kart item roulette",
-   "mario kart roulette",
-   "item box mario kart"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
+  "confianza": "media",
+  "nota_iconico": 4
  },
  {
   "key": "sfx-among-us-asesinato-del-impostor",
@@ -10818,37 +10517,8 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-god-of-war-2018-regreso-del-hacha-leviatan",
-  "id": "sfx-god-of-war-2018-regreso-del-hacha-leviatan",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "God of War",
-  "game": "God of War (2018)",
-  "title": "Regreso del Hacha Leviatán",
-  "year": 2018,
-  "platform": "PlayStation 4",
-  "aka": [
-   "GoW",
-   "Kratos"
-  ],
-  "yt_queries": [
-   "God of War Leviathan Axe return sound effect",
-   "God of War axe catch sound effect",
-   "God of War 2018 axe recall sound"
-  ],
-  "must_any": [
-   "leviathan axe return",
-   "leviathan axe recall",
-   "god of war axe return",
-   "god of war axe recall",
-   "god of war axe catch"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
+  "confianza": "media",
+  "nota_iconico": 4
  },
  {
   "key": "sfx-crash-bandicoot-2-cortex-strikes-back-el-whoa-al-caer",
@@ -10877,199 +10547,8 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-halo-combat-evolved-escudo-recargandose",
-  "id": "sfx-halo-combat-evolved-escudo-recargandose",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Halo",
-  "game": "Halo: Combat Evolved",
-  "title": "Escudo recargandose",
-  "year": 2001,
-  "platform": "Xbox",
-  "aka": [],
-  "yt_queries": [
-   "Halo shield recharge sound effect",
-   "Halo Combat Evolved shield recharge sound",
-   "Halo 3 shield recharge sound"
-  ],
-  "must_any": [
-   "halo shield recharge",
-   "halo shields recharging",
-   "halo 3 shield recharge",
-   "halo ce shield recharge",
-   "halo combat evolved shield recharge"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-spyro-the-dragon-recoger-una-gema",
-  "id": "sfx-spyro-the-dragon-recoger-una-gema",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Spyro",
-  "game": "Spyro the Dragon",
-  "title": "Recoger una gema",
-  "year": 1998,
-  "platform": "PlayStation",
-  "aka": [
-   "Spyro the Dragon"
-  ],
-  "yt_queries": [
-   "Spyro the Dragon gem collect sound effect",
-   "Spyro gem sound effect",
-   "Spyro 1 gem pickup sound"
-  ],
-  "must_any": [
-   "spyro gem",
-   "spyro gems",
-   "spyro the dragon gem"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-crash-bandicoot-caja-tnt",
-  "id": "sfx-crash-bandicoot-caja-tnt",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Crash Bandicoot",
-  "game": "Crash Bandicoot",
-  "title": "Caja TNT",
-  "year": 1996,
-  "platform": "PlayStation",
-  "aka": [
-   "Crash"
-  ],
-  "yt_queries": [
-   "Crash Bandicoot TNT crate sound effect",
-   "Crash Bandicoot TNT countdown sound",
-   "Crash TNT box explosion sound effect"
-  ],
-  "must_any": [
-   "crash tnt",
-   "crash bandicoot tnt",
-   "tnt crate crash",
-   "crash tnt box",
-   "tnt box crash"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-call-of-duty-world-at-war-cambio-de-ronda-zombies",
-  "id": "sfx-call-of-duty-world-at-war-cambio-de-ronda-zombies",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Call of Duty",
-  "game": "Call of Duty: World at War",
-  "title": "Cambio de ronda (Zombies)",
-  "year": 2008,
-  "platform": "Xbox 360",
-  "aka": [
-   "COD",
-   "CoD"
-  ],
-  "yt_queries": [
-   "Call of Duty Zombies round change sound",
-   "COD Zombies round start sound effect",
-   "World at War zombies round change sound"
-  ],
-  "must_any": [
-   "cod zombies round change",
-   "call of duty zombies round change",
-   "black ops zombies round change",
-   "world at war zombies round change",
-   "cod zombies round start sound"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-gears-of-war-motosierra-del-lancer",
-  "id": "sfx-gears-of-war-motosierra-del-lancer",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Gears of War",
-  "game": "Gears of War",
-  "title": "Motosierra del Lancer",
-  "year": 2006,
-  "platform": "Xbox 360",
-  "aka": [
-   "Gears"
-  ],
-  "yt_queries": [
-   "Gears of War Lancer chainsaw sound effect",
-   "Gears of War chainsaw revving sound",
-   "Gears of War lancer chainsaw bayonet sound"
-  ],
-  "must_any": [
-   "gears of war chainsaw",
-   "lancer chainsaw",
-   "gears chainsaw"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-kirby-s-dream-land-inhalar-enemigos",
-  "id": "sfx-kirby-s-dream-land-inhalar-enemigos",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Kirby",
-  "game": "Kirby's Dream Land",
-  "title": "Inhalar enemigos",
-  "year": 1992,
-  "platform": "Game Boy",
-  "aka": [],
-  "yt_queries": [
-   "Kirby inhale sound effect",
-   "Kirby suck sound effect",
-   "Kirby's Dream Land inhale sound"
-  ],
-  "must_any": [
-   "kirby inhale",
-   "kirby inhaling",
-   "kirby suck",
-   "kirby sucking sound",
-   "kirby inhale sound"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-valorant-spike-plantada",
-  "id": "sfx-valorant-spike-plantada",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Valorant",
-  "game": "Valorant",
-  "title": "Spike plantada",
-  "year": 2020,
-  "platform": "PC",
-  "aka": [],
-  "yt_queries": [
-   "Valorant spike plant sound effect",
-   "Valorant spike planted sound",
-   "Valorant spike beep sound"
-  ],
-  "must_any": [
-   "valorant spike plant",
-   "valorant spike planted",
-   "valorant spike beep"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
+  "confianza": "media",
+  "nota_iconico": 4
  },
  {
   "key": "sfx-candy-crush-saga-felicitacion-delicious-sweet",
@@ -11098,276 +10577,8 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-metroid-objeto-obtenido",
-  "id": "sfx-metroid-objeto-obtenido",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Metroid",
-  "game": "Metroid",
-  "title": "Objeto obtenido",
-  "year": 1986,
-  "platform": "NES",
-  "aka": [
-   "Super Metroid"
-  ],
-  "yt_queries": [
-   "Metroid item get sound effect",
-   "Metroid item acquired jingle",
-   "Super Metroid item acquired sound"
-  ],
-  "must_any": [
-   "metroid item get",
-   "metroid item acquired",
-   "super metroid item acquired",
-   "metroid item fanfare",
-   "metroid item jingle"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-half-life-2-grito-del-headcrab",
-  "id": "sfx-half-life-2-grito-del-headcrab",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Half-Life",
-  "game": "Half-Life 2",
-  "title": "Grito del Headcrab",
-  "year": 2004,
-  "platform": "PC",
-  "aka": [
-   "Half Life",
-   "HL",
-   "HL2"
-  ],
-  "yt_queries": [
-   "Half-Life headcrab sound effect",
-   "Half-Life 2 headcrab scream sound",
-   "Headcrab sound effect Half-Life"
-  ],
-  "must_any": [
-   "half life headcrab",
-   "half-life headcrab",
-   "half life 2 headcrab",
-   "headcrab sound effect",
-   "headcrab scream"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-elden-ring-descubrir-un-sitio-de-gracia",
-  "id": "sfx-elden-ring-descubrir-un-sitio-de-gracia",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Elden Ring",
-  "game": "Elden Ring",
-  "title": "Descubrir un Sitio de Gracia",
-  "year": 2022,
-  "platform": "PlayStation 5 / Xbox Series / PC",
-  "aka": [
-   "Eldenring"
-  ],
-  "yt_queries": [
-   "Elden Ring site of grace sound effect",
-   "Elden Ring grace discovered sound effect",
-   "Elden Ring site of grace discovered sound"
-  ],
-  "must_any": [
-   "site of grace discovered",
-   "grace discovered sound",
-   "elden ring site of grace sound",
-   "elden ring grace discovered"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-animal-crossing-aldeanos-hablando",
-  "id": "sfx-animal-crossing-aldeanos-hablando",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Animal Crossing",
-  "game": "Animal Crossing",
-  "title": "Aldeanos hablando",
-  "year": 2002,
-  "platform": "GameCube",
-  "aka": [
-   "Animal Crossing New Horizons",
-   "Cruce de animales"
-  ],
-  "yt_queries": [
-   "Animal Crossing Animalese sound effect",
-   "Animal Crossing talking sound effect",
-   "Animal Crossing villager speech sound"
-  ],
-  "must_any": [
-   "animal crossing animalese",
-   "animalese sound",
-   "animal crossing talking",
-   "animal crossing speech",
-   "animal crossing villager voice"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-team-fortress-2-torreta-del-ingeniero",
-  "id": "sfx-team-fortress-2-torreta-del-ingeniero",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Team Fortress 2",
-  "game": "Team Fortress 2",
-  "title": "Torreta del Ingeniero",
-  "year": 2007,
-  "platform": "PC",
-  "aka": [
-   "TF2",
-   "Team Fortress"
-  ],
-  "yt_queries": [
-   "Team Fortress 2 sentry gun sound effect",
-   "TF2 sentry beep sound",
-   "TF2 engineer sentry sound"
-  ],
-  "must_any": [
-   "tf2 sentry sound",
-   "tf2 sentry beep",
-   "tf2 sentry gun sound",
-   "team fortress 2 sentry sound",
-   "tf2 engineer sentry sound"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-the-elder-scrolls-v-skyrim-subir-de-nivel",
-  "id": "sfx-the-elder-scrolls-v-skyrim-subir-de-nivel",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "The Elder Scrolls",
-  "game": "The Elder Scrolls V: Skyrim",
-  "title": "Subir de nivel",
-  "year": 2011,
-  "platform": "PC / PlayStation 3 / Xbox 360",
-  "aka": [
-   "Skyrim",
-   "Elder Scrolls",
-   "TES"
-  ],
-  "yt_queries": [
-   "Skyrim level up sound effect",
-   "Skyrim level up sound",
-   "Skyrim level up notification sound"
-  ],
-  "must_any": [
-   "skyrim level up",
-   "level up skyrim"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-super-smash-bros-melee-el-game-del-anunciador",
-  "id": "sfx-super-smash-bros-melee-el-game-del-anunciador",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Super Smash Bros.",
-  "game": "Super Smash Bros. Melee",
-  "title": "El '¡GAME!' del anunciador",
-  "year": 2001,
-  "platform": "GameCube",
-  "aka": [
-   "Smash Bros",
-   "Smash",
-   "Super Smash Bros",
-   "Super Smash Brothers"
-  ],
-  "yt_queries": [
-   "Super Smash Bros Melee GAME sound effect",
-   "Smash Bros announcer GAME sound effect",
-   "Super Smash Bros Ultimate GAME sound effect"
-  ],
-  "must_any": [
-   "melee game sound",
-   "smash bros melee game",
-   "smash bros game sound",
-   "smash announcer game",
-   "smash ultimate game sound"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-the-sims-sul-sul-simlish",
-  "id": "sfx-the-sims-sul-sul-simlish",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "The Sims",
-  "game": "The Sims",
-  "title": "Sul sul (Simlish)",
-  "year": 2000,
-  "platform": "PC",
-  "aka": [
-   "Sims",
-   "Los Sims"
-  ],
-  "yt_queries": [
-   "The Sims sul sul sound",
-   "Sims Simlish sul sul sound effect",
-   "Los Sims sul sul sonido"
-  ],
-  "must_any": [
-   "sims sul sul",
-   "sul sul sims",
-   "sul sul the sims",
-   "sul sul simlish",
-   "simlish sul sul"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
- },
- {
-  "key": "sfx-final-fantasy-vii-kweh-del-chocobo",
-  "id": "sfx-final-fantasy-vii-kweh-del-chocobo",
-  "tema": "sonidos",
-  "saga": "sonidos",
-  "franchise": "Final Fantasy",
-  "game": "Final Fantasy VII",
-  "title": "Kweh del chocobo",
-  "year": 1997,
-  "platform": "PlayStation",
-  "aka": [
-   "FF",
-   "FF7",
-   "Final Fantasy VII"
-  ],
-  "yt_queries": [
-   "Final Fantasy chocobo kweh sound effect",
-   "Final Fantasy VII chocobo sound effect",
-   "Chocobo kweh sound"
-  ],
-  "must_any": [
-   "chocobo kweh",
-   "chocobo sound effect",
-   "final fantasy chocobo sound",
-   "ff7 chocobo sound",
-   "final fantasy vii chocobo sound"
-  ],
-  "latino": false,
-  "apple": null,
-  "confianza": "media"
+  "confianza": "media",
+  "nota_iconico": 4
  },
  {
   "key": "sfx-space-invaders-marcha-alienigena",
@@ -11397,37 +10608,172 @@
   ],
   "latino": false,
   "apple": null,
-  "confianza": "media"
+  "confianza": "media",
+  "nota_iconico": 4
  },
  {
-  "key": "sfx-mega-man-disparo-del-buster",
-  "id": "sfx-mega-man-disparo-del-buster",
+  "key": "sfx-minecraft-dano-del-jugador",
+  "id": "sfx-minecraft-dano-del-jugador",
   "tema": "sonidos",
   "saga": "sonidos",
-  "franchise": "Mega Man",
-  "game": "Mega Man",
-  "title": "Disparo del buster",
-  "year": 1987,
-  "platform": "NES",
+  "franchise": "Minecraft",
+  "game": "Minecraft",
+  "title": "Daño del jugador",
+  "year": 2011,
+  "platform": "PC",
   "aka": [
-   "Megaman",
-   "Rockman"
+   "Maicra"
   ],
   "yt_queries": [
-   "Mega Man buster shot sound effect",
-   "Mega Man shoot sound effect NES",
-   "Mega Man lemon shot sound"
+   "minecraft damage sound effect",
+   "minecraft hurt sound effect steve",
+   "minecraft player hurt oof sound"
   ],
   "must_any": [
-   "mega man buster",
-   "megaman buster",
-   "mega buster",
-   "mega man shoot",
-   "megaman shoot"
+   "minecraft damage",
+   "minecraft hurt",
+   "minecraft oof",
+   "steve hurt"
   ],
   "latino": false,
   "apple": null,
-  "confianza": "media"
+  "confianza": "alta",
+  "nota_iconico": 4
+ },
+ {
+  "key": "sfx-metal-gear-solid-llamada-del-codec",
+  "id": "sfx-metal-gear-solid-llamada-del-codec",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Metal Gear",
+  "game": "Metal Gear Solid",
+  "title": "Llamada del códec",
+  "year": 1998,
+  "platform": "PlayStation",
+  "aka": [
+   "Metal Gear Solid",
+   "MGS"
+  ],
+  "yt_queries": [
+   "metal gear solid codec sound effect",
+   "mgs codec call ring sound effect"
+  ],
+  "must_any": [
+   "metal gear codec",
+   "mgs codec",
+   "codec sound",
+   "codec call"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4
+ },
+ {
+  "key": "sfx-metal-gear-solid-game-over-snake",
+  "id": "sfx-metal-gear-solid-game-over-snake",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Metal Gear",
+  "game": "Metal Gear Solid",
+  "title": "Game Over: ¡Snake!",
+  "year": 1998,
+  "platform": "PlayStation",
+  "aka": [
+   "Metal Gear Solid",
+   "MGS"
+  ],
+  "yt_queries": [
+   "metal gear solid game over snake sound effect",
+   "snake snake snaaake sound effect"
+  ],
+  "must_any": [
+   "metal gear game over",
+   "mgs game over",
+   "snake snake",
+   "snaaake"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4
+ },
+ {
+  "key": "sfx-clash-royale-grito-del-montapuercos-hog-rider",
+  "id": "sfx-clash-royale-grito-del-montapuercos-hog-rider",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Clash Royale",
+  "game": "Clash Royale",
+  "title": "Grito del Montapuercos (Hog Rider)",
+  "year": 2016,
+  "platform": "Móvil",
+  "aka": [
+   "Clash of Clans",
+   "Clash"
+  ],
+  "yt_queries": [
+   "hog rider sound effect",
+   "hog rider scream clash royale"
+  ],
+  "must_any": [
+   "hog rider",
+   "hog riderrr",
+   "montapuercos"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4
+ },
+ {
+  "key": "sfx-resident-evil-4-detras-de-ti-imbecil",
+  "id": "sfx-resident-evil-4-detras-de-ti-imbecil",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Resident Evil",
+  "game": "Resident Evil 4",
+  "title": "¡Detrás de ti, imbécil!",
+  "year": 2005,
+  "platform": "GameCube / PS2",
+  "aka": [
+   "Biohazard",
+   "RE"
+  ],
+  "yt_queries": [
+   "detras de ti imbecil resident evil 4",
+   "resident evil 4 ganado detras de ti imbecil sonido"
+  ],
+  "must_any": [
+   "detras de ti imbecil"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4
+ },
+ {
+  "key": "sfx-metal-slug-mission-complete",
+  "id": "sfx-metal-slug-mission-complete",
+  "tema": "sonidos",
+  "saga": "sonidos",
+  "franchise": "Metal Slug",
+  "game": "Metal Slug",
+  "title": "¡Mission Complete!",
+  "year": 1996,
+  "platform": "Arcade (Neo Geo)",
+  "aka": [],
+  "yt_queries": [
+   "metal slug mission complete sound effect",
+   "metal slug mission complete voice"
+  ],
+  "must_any": [
+   "metal slug mission complete"
+  ],
+  "latino": false,
+  "apple": null,
+  "confianza": "alta",
+  "nota_iconico": 4
  },
  {
   "key": "fix-super-mario-world-overworld-theme",
