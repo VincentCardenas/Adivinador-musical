@@ -526,17 +526,14 @@ Cuentas reales del archivo, después de la revisión de Claude (sección 7). "An
 | Musicales | `mus-9000` | 52 | 63 | +11 |
 | Musicales | `mus-10s` | 53 | 64 | +11 |
 | **Musicales** | — | **222** | **269** | **+47** ✅ (239 originales y 30 en español) |
-| **Caricaturas** | — | **296** | **307** | +11 recuperadas |
-| **Anime** | — | **251** | **254** | +5 recuperadas y −2 repetidas |
-| Videojuegos y Sagas | — | 281 / 184 | 281 / 184 | sin pistas nuevas (van en la 2.2) |
+| **Caricaturas** | — | **296** | **360** | +11 recuperadas y +53 de la segunda tanda (sección 6) |
+| **Anime** | — | **251** | **303** | +5 recuperadas, −2 repetidas y +49 de la segunda tanda |
+| **Videojuegos** | — | **281** | **342** | +61 de la segunda tanda ✅ |
+| **Sagas** | — | **184** | **221** | +37 de la segunda tanda ✅ |
 
-## 6. Lo que queda para la 2.2
+## 6. Segunda tanda: Caricaturas, Anime, Videojuegos y Sagas
 
-La 2.2 completa el +20 % de Caricaturas, Anime, Videojuegos y Sagas. Los candidatos los eligieron agentes Sonnet, los revisó un crítico Sonnet y Opus decidió los casos con duda; van en `scripts/candidatos-v22.json`, que se sube aparte. Sus fuentes las busca de verdad `scripts/build-resto-v22.js`, que corre en la computadora del usuario, con red y sin IA:
-
-```
-node scripts/build-resto-v22.js todos && node scripts/audit-red.js todos
-```
+La segunda tanda completa el +20 % de Caricaturas, Anime, Videojuegos y Sagas. Los candidatos los eligieron agentes Sonnet, los revisó un crítico Sonnet y Opus decidió los casos con duda; están en `scripts/candidatos-v22.json` (331). Sus fuentes las buscó de verdad `scripts/build-resto-v22.js` en la computadora del usuario, con red y sin IA, porque YouTube bloquea la verificación desde servidores en la nube. Resultado (`scripts/resultado-v22.json`): **200 pistas aceptadas** y 3 descartadas. Todas las metas se cumplieron menos `toon-clasicas`, que quedó en 58 de 59. Cada ID nuevo tiene su evidencia en `scripts/evidencia-v2.1.json`.
 
 ## 7. Revisión de Claude (sin red, sobre la evidencia)
 

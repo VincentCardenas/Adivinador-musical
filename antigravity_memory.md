@@ -54,7 +54,7 @@
       ```
     * Nombres en español: registrados exclusivamente en `AM.FRANCHISE_AKA` para habilitar búsqueda en modo Experto sin alterar el nombre canónico de la obra en `franchise`.
   * `js/catalog-anime.js` gestiona el catálogo de openings de anime por época (`anime-clasicos`, `anime-90s`, `anime-00s`, `anime-10s`, `anime-20s`).
-    * Conteo consolidado (v2.1): **254 pistas totales**.
+    * Conteo consolidado (v2.1): **303 pistas totales**.
       * Distribuido en 5 épocas: Clásicos (antes de 1990), Años 90, 2000s, 2010s, 2020 en adelante.
     * Formato estándar de registro en Anime:
       ```javascript
@@ -73,7 +73,7 @@
       ```
     * Resolución de fuentes: clips oficiales de Crunchyroll y canales de animación en YouTube (`yt(id)`), complementados con previews oficiales de Apple Music (`apple({ song, country })`).
   * `js/catalog-caricaturas.js` gestiona el catálogo de entradas de caricaturas en español latino por época (`toon-clasicas`, `toon-80s`, `toon-90s`, `toon-00s`, `toon-1014`, `toon-1519`, `toon-20s`).
-    * Conteo consolidado (v2.1): **307 pistas totales** (todas en doblaje latinoamericano oficial).
+    * Conteo consolidado (v2.1): **360 pistas totales** (todas en doblaje latinoamericano oficial).
       * Distribuido en 7 épocas: Clásicas (antes de 1980), Años 80, Años 90, 2000s, 2010 a 2014, 2015 a 2019 y 2020 en adelante (desde la v1.9.3-exp-hotfix2; antes las tres últimas eran una sola, `toon-10s`, y `AM.CATEGORY_RENAMES` + `loadCats()` en app.js pasan esa selección guardada a las tres nuevas).
     * Formato estándar de registro en Caricaturas:
       ```javascript
@@ -104,8 +104,8 @@
   * El ranking (Supabase) valida cada puntaje con la regla `puntaje_posible` de `supabase/schema.sql` (en Supervivencia: `rondas - aciertos <= 3 + rondas / 5`). Si cambian las reglas de vidas o puntos, hay que actualizar esa regla y volver a correr el archivo en el SQL Editor de Supabase.
 
 * **Otros catálogos (v2.1):**
-  * Videojuegos (`js/catalog.js`): 281 pistas, de 127 sagas y 214 juegos.
-  * Sagas (`js/catalog-sagas.js`, `AM.SAGA_TRACKS`): 184 pistas.
+  * Videojuegos (`js/catalog.js`): 342 pistas, de 131 sagas y 232 juegos.
+  * Sagas (`js/catalog-sagas.js`, `AM.SAGA_TRACKS`): 221 pistas.
   * Series (`js/catalog-series.js`): 192.
   * Disney (`js/catalog-disney.js`): 89.
 * **Inicio (v1.9.6 → v2.0):**
@@ -139,8 +139,8 @@
     * mover de época;
     * quitar pistas, que van a `scripts/pendientes-v2.1.json`.
     Lo que solo se decide oyendo va a `scripts/revisar-a-oido.md`.
-  * `node scripts/build-resto-v22.js <caricaturas|anime|juegos|sagas|todos>` agrega las pistas de la 2.2:
-    * lee los candidatos de `scripts/candidatos-v22.json` (se suben aparte; sin ese archivo el script no corre), los busca de verdad y aplica filtros deterministas (palabras clave, latino, covers, remakes y duración);
+  * `node scripts/build-resto-v22.js <caricaturas|anime|juegos|sagas|todos>` agregó la segunda tanda de la 2.1 (Caricaturas, Anime, Videojuegos y Sagas; corrió en la PC del usuario porque YouTube bloquea los servidores en la nube):
+    * lee los candidatos de `scripts/candidatos-v22.json` , los busca de verdad y aplica filtros deterministas (palabras clave, latino, covers, remakes y duración);
     * inserta al final de cada sección, guarda evidencia y es reanudable;
     * se detiene en la meta de cada categoría y deja lo aceptado y lo descartado en `scripts/resultado-v22.json`.
 
