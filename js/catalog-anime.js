@@ -1,5 +1,5 @@
 /*
- * Catálogo: Anime (256 pistas).
+ * Catálogo: Anime (254 pistas).
  * Openings de anime por época (año del opening). Los clásicos suenan primero en español latino (YouTube) y el preview oficial de Apple queda de respaldo.
  * Mismo formato que catalog.js; las fuentes se prueban en el orden en que aparecen.
  */
@@ -144,7 +144,7 @@
       id: 'ani-el-perro-de-flandes', cat: 'anime-clasicos', franchise: "El perro de Flandes", game: "El perro de Flandes",
       title: "Yoake no Michi", composer: "Kumiko Osugi", year: 1975, platform: "Nippon Animation",
       aka: ["A Dog of Flanders","Flanders no Inu"],
-      sources: [yt('aTfRMH1RvR0'), yt('PlZ8Qy_jDTA'), yt('6heXBqWCdZU')],
+      sources: [yt('aTfRMH1RvR0'), yt('PlZ8Qy_jDTA')],
     },
     {
       id: 'ani-marco-de-los-apeninos', cat: 'anime-clasicos', franchise: "Marco", game: "Marco",
@@ -302,7 +302,7 @@
       aka: ["Anpanman"],
       sources: [yt('5mLape5F0Fw'), yt('fTz2Rycn5Yc')],
     },
-    /* ───────────── Años 90 (50) ───────────── */
+    /* ───────────── Años 90 (47) ───────────── */
     {
       id: 'toon-pokemon-atrapalos-ya', cat: 'anime-90s', franchise: 'Pokémon', game: 'Pokémon',
       title: '¡Atrápalos ya!', composer: 'Versión latina', year: 1997, platform: 'OLM',
@@ -354,7 +354,7 @@
     {
       id: 'toon-yu-yu-hakusho-sonrisa-explosiva', cat: 'anime-90s', franchise: 'Yu Yu Hakusho', game: 'Yu Yu Hakusho',
       title: 'Sonrisa explosiva', composer: 'Versión latina (original: Matsuko Mawatari)', year: 1992, platform: 'Pierrot',
-      sources: [yt('RncCJNOZLb0', 15), apple({ song: 433591403, country: 'mx' })],
+      sources: [yt('RncCJNOZLb0', 15)],
     },
         {
       id: 'ani-rurouni-kenshin-sobakasu', cat: 'anime-90s', franchise: "Rurouni Kenshin", game: "Rurouni Kenshin",
@@ -415,12 +415,6 @@
       title: "We Gotta Power", composer: "Hironobu Kageyama", year: 1993, platform: "Toei Animation",
       aka: ["DBZ Opening 2","El poder nuestro es"],
       sources: [yt('_Nv0OGlUHEY')],
-    },
-    {
-      id: 'ani-digimon-adventure-02-target', cat: 'anime-90s', franchise: "Digimon", game: "Digimon Adventure 02",
-      title: "Target ~Akai Shougeki~", composer: "Koji Wada", year: 2000, platform: "Toei Animation",
-      aka: ["Digimon 02"],
-      sources: [yt('GaD6f293CJ4'), yt('JjzOENA8N3c'), yt('CDRMMG1WWlM')],
     },
     {
       id: 'ani-las-guerreras-magicas-yuzurenai-negai', cat: 'anime-90s', franchise: "Las Guerreras Mágicas", game: "Magic Knight Rayearth",
@@ -567,12 +561,6 @@
       sources: [yt('nxtT-7fTO9o')],
     },
     {
-      id: 'ani-digimon-adventure-butter-fly', cat: 'anime-90s', franchise: "Digimon", game: "Digimon Adventure",
-      title: "Butter-Fly", composer: "Koji Wada", year: 1999, platform: "Toei Animation",
-      aka: ["Digimon Adventure OP"],
-      sources: [yt('jB7ecG_12x8'), yt('0SMfWmEf8Wo'), yt('S4L399kgd1I')],
-    },
-    {
       id: 'ani-blue-seed-carnival-babel', cat: 'anime-90s', franchise: "Blue Seed", game: "Blue Seed",
       title: "CARNIVAL BABEL", composer: "Takada Band", year: 1994, platform: "Production I.G / Ashi Productions",
       aka: ["Blue Seed"],
@@ -585,18 +573,12 @@
       sources: [yt('9qFeroM4riI')],
     },
     {
-      id: 'ani-yu-yu-hakusho-hohoemi-no-bakudan', cat: 'anime-90s', franchise: "Yu Yu Hakusho", game: "Yu Yu Hakusho",
-      title: "Hohoemi no Bakudan", composer: "Matsuko Mawatari", year: 1992, platform: "Studio Pierrot",
-      aka: ["Sonrisa explosiva original"],
-      sources: [yt('urZWmEgm72Q'), yt('XkIAyMFeuAU'), apple({ song: 433591403, country: 'mx' })],
-    },
-    {
       id: 'ani-trigun-ht', cat: 'anime-90s', franchise: "Trigun", game: "Trigun",
       title: "H.T", composer: "Tsuneo Imahori", year: 1998, platform: "Madhouse",
       aka: ["Vash la Estampida"],
       sources: [yt('NPDWuip1k5o'), yt('4OxFSy8G5wk'), apple({ song: 969897525, country: 'mx' })],
     },
-    /* ───────────── 2000s (51) ───────────── */
+    /* ───────────── 2000s (52) ───────────── */
     {
       id: 'toon-naruto-shippuden-blue-bird', cat: 'anime-00s', franchise: 'Naruto', game: 'Naruto Shippuden',
       title: 'Blue Bird', composer: 'Ikimonogakari', year: 2007, platform: 'Pierrot',
@@ -627,7 +609,7 @@
       id: 'toon-inuyasha-change-the-world', cat: 'anime-00s', franchise: 'Inuyasha', game: 'Inuyasha',
       title: 'Change the World', composer: 'Gabriela Vega (versión latina)', year: 2000, platform: 'Sunrise',
       aka: ['El mundo he de cambiar'],
-      sources: [yt('suU86VJt5a0'), yt('PxQ9RdKxclQ'), apple({ song: 1848248144, country: 'mx' })],
+      sources: [yt('suU86VJt5a0'), yt('PxQ9RdKxclQ')],
     },
     {
       id: 'toon-code-geass-colors', cat: 'anime-00s', franchise: 'Code Geass', game: 'Code Geass',
@@ -894,7 +876,13 @@
       aka: ["Reborn! OP4"],
       sources: [apple({ song: 280625539, country: 'mx' }), apple({ song: 326548345, country: 'mx' }), yt('iKBDC9KSTpU'), yt('0RGRl8olQHc')],
     },
-    /* ───────────── 2010s (54) ───────────── */
+    {
+      id: 'ani-digimon-adventure-02-target', cat: 'anime-00s', franchise: "Digimon", game: "Digimon Adventure 02",
+      title: 'Impacto Rojo (Target ~Akai Shougeki~)', composer: 'Ricardo Silva (versión latina)', year: 2000, platform: "Toei Animation",
+      aka: ["Digimon 02"],
+      sources: [yt('GaD6f293CJ4'), yt('JjzOENA8N3c'), yt('CDRMMG1WWlM')],
+    },
+    /* ───────────── 2010s (53) ───────────── */
     {
       id: 'toon-ataque-a-los-titanes-guren-no-yumiya', cat: 'anime-10s', franchise: 'Ataque a los titanes', game: 'Ataque a los titanes',
       title: 'Guren no Yumiya', composer: 'Linked Horizon', year: 2013, platform: 'Wit Studio',
@@ -1206,13 +1194,7 @@
       aka: ["Enen no Shouboutai","Inferno"],
       sources: [yt('JBqxVX_LXvk')],
     },
-    {
-      id: 'ani-jujutsu-kaisen-vivid-vice', cat: 'anime-10s', franchise: "Jujutsu Kaisen", game: "Jujutsu Kaisen",
-      title: "VIVID VICE", composer: "Who-ya Extended", year: 2021, platform: "MAPPA",
-      aka: ["Jujutsu Kaisen OP2"],
-      sources: [apple({ song: 1546061848, country: 'mx' }), yt('LFTE4W--Htk'), yt('EU6I8TxU6Z4')],
-    },
-    /* ───────────── 2020 en adelante (53) ───────────── */
+    /* ───────────── 2020 en adelante (54) ───────────── */
     {
       id: 'toon-jujutsu-kaisen-kaikai-kitan', cat: 'anime-20s', franchise: 'Jujutsu Kaisen', game: 'Jujutsu Kaisen',
       title: 'Kaikai Kitan', composer: 'Eve', year: 2020, platform: 'MAPPA',
@@ -1522,6 +1504,12 @@
       title: "Naked Hero", composer: "Vaundy", year: 2022, platform: "Wit Studio",
       aka: ["Ousama Ranking OP2"],
       sources: [apple({ song: 1600223385, country: 'mx' }), apple({ song: 1714599986, country: 'mx' }), yt('dWZAH5w8jkQ'), yt('FT0GKCuSaW0')],
+    },
+    {
+      id: 'ani-jujutsu-kaisen-vivid-vice', cat: 'anime-20s', franchise: "Jujutsu Kaisen", game: "Jujutsu Kaisen",
+      title: "VIVID VICE", composer: "Who-ya Extended", year: 2021, platform: "MAPPA",
+      aka: ["Jujutsu Kaisen OP2"],
+      sources: [apple({ song: 1546061848, country: 'mx' }), yt('LFTE4W--Htk'), yt('EU6I8TxU6Z4')],
     },
   );
 

@@ -1040,14 +1040,14 @@
     },
     {
       id: 'toon-oggy-y-las-cucarachas-tema', cat: 'toon-90s', franchise: "Oggy y las cucarachas", game: "Oggy y las cucarachas",
-      title: "Oggy (tema)", composer: "Huguette Chevalier", year: 1998, platform: "Xilam",
+      title: "Oggy (tema)", composer: 'Hugues Le Bars', year: 1998, platform: "Xilam",
       aka: ["Oggy and the Cockroaches"],
-      sources: [yt('5jSU_VkSdKY'), yt('5YImzqFQ2vU')],
+      sources: [yt('5jSU_VkSdKY')],
     },
     /* ───────────── 2000s (71) ───────────── */
     {
       id: 'toon-los-padrinos-magicos-los-padrinos-magicos-tema', cat: 'toon-00s', franchise: 'Los Padrinos Mágicos', game: 'Los Padrinos Mágicos',
-      title: 'Los Padrinos Mágicos (tema)', composer: 'Ron Jones', year: 2001, platform: 'Nickelodeon',
+      title: 'Los Padrinos Mágicos (tema latino)', composer: 'Ron Jones', year: 2001, platform: 'Nickelodeon',
       aka: ['The Fairly OddParents'],
       sources: [yt('8-GyMX9ynj0'), yt('UNNwMc4OGBg'), yt('LZF8GErHgIk')],
     },
@@ -1334,7 +1334,7 @@
     },
     {
       id: 'toon-batman-el-valiente-tema', cat: 'toon-00s', franchise: "Batman", game: "Batman: El valiente",
-      title: "Batman: El valiente (tema)", composer: "Michael McCuistion", year: 2008, platform: "Warner Bros.",
+      title: "Batman: El valiente (tema)", composer: 'Andy Sturmer', year: 2008, platform: "Warner Bros.",
       aka: ["Batman: The Brave and the Bold"],
       sources: [yt('uczM19x3aNM'), yt('9g9r4TFTFyk')],
     },
@@ -1454,13 +1454,13 @@
     },
     {
       id: 'toon-el-chavo-animado-tema', cat: 'toon-00s', franchise: "El Chavo animado", game: "El Chavo animado",
-      title: "Que bonita vecindad (tema latino)", composer: "Roberto Gómez Bolaños", year: 2006, platform: "Ánima Estudios",
+      title: 'Qué bonita vecindad (tema latino)', composer: "Roberto Gómez Bolaños", year: 2006, platform: "Ánima Estudios",
       aka: ["El Chavo: La serie animada"],
       sources: [yt('gFh3Xo3LpoQ'), yt('UQT5HA2RjPI')],
     },
     {
       id: 'toon-dibo-el-dragon-de-los-deseos-tema', cat: 'toon-00s', franchise: "Dibo el dragón de los deseos", game: "Dibo el dragón de los deseos",
-      title: "Dibo (tema latino)", composer: "Ocon Animation Studios", year: 2006, platform: "Discovery Kids",
+      title: "Dibo (tema latino)", composer: '', year: 2006, platform: "Discovery Kids",
       aka: ["Dibo the Gift Dragon"],
       sources: [yt('HWUfMvlQfH4'), yt('RvEDxs9QTNc'), yt('tKAtNr-9NtU')],
     },

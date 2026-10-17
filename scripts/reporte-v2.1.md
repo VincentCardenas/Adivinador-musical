@@ -1,4 +1,4 @@
-# Reporte v2.1 — catálogo (en progreso)
+# Reporte v2.1 — catálogo
 
 Rama: `antigravity/v2.1-catalogo` (desde `origin/claude/clever-sagan-5xuvc1`). Este reporte se actualiza en cada commit.
 
@@ -26,20 +26,22 @@ Rama: `antigravity/v2.1-catalogo` (desde `origin/claude/clever-sagan-5xuvc1`). E
 - Lo que solo se decide oyendo está en `scripts/revisar-a-oido.md`.
 - Ninguna pista tuvo que quitarse (`scripts/pendientes-v2.1.json` vacío `[]`).
 
-## 3. Estado de los issues (#8 a #18) — TODOS RESUELTOS
+## 3. Estado de los issues (#8 a #18)
+
+Todos tienen arreglo. Los que la revisión de Claude (sección 7) dejó para oír están marcados con 🎧 y en `scripts/revisar-a-oido.md`.
 
 | Issue | Pista | Estado |
 |---|---|---|
-| #8 | `dis-hercules-no-importa-la-distancia` | **Arreglado:** dos videos comprobados de la versión latina de la película (Antonio Benavides, Hércules joven); Apple solo tenía la versión pop de créditos de Ricky Martin. Anotado en `revisar-a-oido.md`. |
+| #8 | `dis-hercules-no-importa-la-distancia` | **Arreglado:** dos videos comprobados de la versión latina de la película (Antonio Benavides, Hércules joven); Apple solo tenía la versión pop de créditos de Ricky Martin. Anotado en `revisar-a-oido.md`. 🎧 La revisión pide confirmar a oído que los dos videos (281 s) son la escena de la película y no el sencillo, y si el cantante es Antonio Benavides o Bencomo. |
 | #9 | `tv-los-soprano-woke-up-this-morning` | **Arreglado:** Apple `324764558` «Woke Up This Morning (Chosen One Mix)» de A3 (álbum oficial de la serie) + respaldo Apple `1608608752` y YouTube `vy4-VrBbIeo`. |
 | #10 | `toon-los-padrinos-magicos-los-padrinos-magicos-tema` | **Arreglado:** reemplazado `kFjexH-badI` por tres videos comprobados de la entrada latina oficial de Nickelodeon (`8-GyMX9ynj0`, `UNNwMc4OGBg`, `LZF8GErHgIk`). |
 | #11 | `tv-sex-and-the-city-sex-and-the-city-theme` | **Arreglado:** retirado `X453aKQgob4`; quedan `PKRe-6jAzuc` y `SPXZDbz-8HU`, ambos comprobados con `playabilityStatus: OK` y `playableInEmbed: true`. |
-| #12 | `toon-inuyasha-change-the-world` | **Arreglado:** agregado el opening 1 en español latino («El mundo he de cambiar», `suU86VJt5a0` TV size y `PxQ9RdKxclQ`) delante del respaldo de Apple (`1848248144`). |
-| #13 | `toon-yu-yu-hakusho-sonrisa-explosiva` | **Arreglado:** ajustado inicio a `yt('RncCJNOZLb0', 15)` para saltar la introducción silenciosa; además se separó `ani-yu-yu-hakusho-hohoemi-no-bakudan` con el opening japonés original (`urZWmEgm72Q`, Crunchyroll). |
+| #12 | `toon-inuyasha-change-the-world` | **Arreglado:** agregado el opening 1 en español latino («El mundo he de cambiar», `suU86VJt5a0` TV size y `PxQ9RdKxclQ`) delante del respaldo de Apple (`1848248144`). En la revisión se quitó ese respaldo de Apple: no era la versión latina. Quedan solo los dos videos latinos. |
+| #13 | `toon-yu-yu-hakusho-sonrisa-explosiva` | **Arreglado:** ajustado inicio a `yt('RncCJNOZLb0', 15)` para saltar la introducción silenciosa; además se separó `ani-yu-yu-hakusho-hohoemi-no-bakudan` con el opening japonés original (`urZWmEgm72Q`, Crunchyroll). En la revisión se quitaron el Apple (era el japonés) y la pista `ani-yu-yu-hakusho-hohoemi-no-bakudan`, porque repetía la misma canción y la misma serie. |
 | #14 | `toon-dragon-ball-gt-mi-corazon-encantado` | **Arreglado:** puesto primero el opening latino de TV (`wgZ-ATUGXDw` y respaldo `dF4OwMSrnUQ`) y retirado el Apple que tocaba una regrabación. |
 | #15 | Reporte viejo de Caricaturas con IDs inventados | **Confirmado:** `node scripts/audit-red.js caricaturas` comprobó todas las pistas de Caricaturas contra YouTube/Apple y dio **0 muertas**; no queda ningún ID inventado del reporte #15. |
 | #16 | `ani-blue-seed-carnival-babel` | **Arreglado:** reemplazado `hwQVtycXyZw` por el audio oficial `NArssqBPTvE` («CARNIVAL・BABEL ～カルナバル・バベル～», TAKADA BAND - Topic) que arranca directo sin intro hablada, más respaldos `kqPxlbAseho` y `ykbcsmjbUiQ`. |
-| #17 | `dis-mulan-reflejo` | **Arreglado:** cambiado de Apple `1624897208` («Reflejo (Tema Principal)», versión pop de créditos) a Apple `1624897102` («Reflejo», pista 2 del álbum *Mulán (Banda Sonora Original en Español)*, 2:26, versión de la película) + respaldo YouTube `_yTsNxhGE30`. |
+| #17 | `dis-mulan-reflejo` | **Arreglado:** cambiado de Apple `1624897208` («Reflejo (Tema Principal)», versión pop de créditos) a Apple `1624897102` («Reflejo», pista 2 del álbum *Mulán (Banda Sonora Original en Español)*, 2:26, versión de la película) + respaldo YouTube `_yTsNxhGE30`. 🎧 Según el álbum oficial, la de la película la canta **Analy** (la de Lucero es «Reflejo (Tema Principal)», la versión pop de créditos), así que el composer ahora dice Analy. Confírmalo a oído; si de verdad quieres la de Lucero, se regresa a `1624897208`. |
 | #18 | `toon-shuriken-school-tema` | **Arreglado:** reemplazado `WTQ_bj6T14g` por el opening oficial `I6fEsMsgw8c` (canal oficial *Shuriken School*) y respaldo `jC4G22p6OhM`. |
 
 ## 4. Pistas arregladas y recuperadas en Fase 2 (fuente vieja → nueva)
@@ -501,33 +503,93 @@ Incluye:
   - antes: busca('Six', 'Heart of Stone')
   - ahora: am 1465183513 «Heart of Stone (feat. Natalie Paris)» (SIX — Six: The Musical (Studio Cast Recording), us) · am 1620248651 «Heart of Stone (feat. Abby Mueller)» (SIX — SIX: LIVE ON OPENING NIGHT (Original Broadway Cast Recording), us) · yt wMY7nZHNp7U «SIX the Musical (featuring Natalie Paris) - Heart of Stone (from the Studio Cast Recording)» (SIX, 313s)
 
-## 5. Fase 3: Pistas agregadas por categoría (progreso actual)
+## 5. Fase 3: pistas agregadas por categoría
 
-| Tema | Categoría | Antes | Meta (+20 %) | Agregadas | Total actual | Estado |
-|---|---|---:|---:|---:|---:|---|
-| **Series** | `tv-clasicas` | 28 | +6 | +6 | **34** | ✅ Completado |
-| **Series** | `tv-90s` | 23 | +12 | +12 | **35** | ✅ Completado |
-| **Series** | `tv-00s` | 31 | +18 | +18 | **49** | ✅ Completado |
-| **Series** | `tv-10s` | 29 | +20 | +20 | **49** | ✅ Completado |
-| **Series** | `tv-20s` | 11 | +14 | +14 | **25** | ✅ Completado |
-| **Series (Total)** | — | **122** | **+70** | **+70** | **192** | ✅ **Meta lograda (192)** |
-| **Disney** | `dis-clasica` | 13 | +5 | +5 | **18** | ✅ Completado |
-| **Disney** | `dis-renacimiento` | 19 | +4 | +4 | **23** | ✅ Completado |
-| **Disney** | `dis-2000s` | 15 | +3 | +3 | **18** | ✅ Completado |
-| **Disney** | `dis-2010s` | 16 | +4 | +4 | **20** | ✅ Completado |
-| **Disney** | `dis-2020s` | 8 | +5 | +5 | **13** | ✅ Completado |
-| **Disney (Total)** | — | **71** | **+21** | **+21** | **92** | ✅ **Meta lograda (92)** |
-| **Musicales** | `mus-clasicos` | 56 | +12 | +12 (3 `es`) | **68** | ✅ Completado |
-| **Musicales** | `mus-7080` | 61 | +13 | +13 | **74** | ✅ Completado |
-| **Musicales** | `mus-9000` | 52 | +11 | +11 (2 `es`) | **63** | ✅ Completado |
-| **Musicales** | `mus-10s` | 53 | +11 | +11 (3 `es`) | **64** | ✅ Completado |
-| **Musicales (Total)** | — | **222** | **+47** | **+47** | **269** | ✅ **Meta lograda (269: 239 orig / 30 es)** |
+Cuentas reales del archivo, después de la revisión de Claude (sección 7). "Antes" es la rama base: la 2.0 más las 30 series de Gemini.
 
-## 6. Pendiente por aplicar (resto de Fase 3 y Fase 4)
+| Tema | Categoría | Antes | Ahora | Cambio |
+|---|---|---:|---:|---:|
+| Series | `tv-clasicas` | 35 | 41 | +6 |
+| Series | `tv-90s` | 29 | 41 | +12 |
+| Series | `tv-00s` | 26 | 45 | +19 (incluye Big Time Rush, que pasó de 2010s a 2000s) |
+| Series | `tv-10s` | 21 | 40 | +19 |
+| Series | `tv-20s` | 11 | 25 | +14 |
+| **Series** | — | **122** | **192** | **+70** ✅ |
+| Disney | `dis-clasica` | 13 | 17 | +4 |
+| Disney | `dis-renacimiento` | 19 | 23 | +4 |
+| Disney | `dis-2000s` | 15 | 17 | +2 |
+| Disney | `dis-2010s` | 16 | 19 | +3 |
+| Disney | `dis-2020s` | 8 | 13 | +5 |
+| **Disney** | — | **71** | **89** | **+18** (se agregaron 21 y la revisión quitó 3) |
+| Musicales | `mus-clasicos` | 56 | 68 | +12 |
+| Musicales | `mus-7080` | 61 | 74 | +13 |
+| Musicales | `mus-9000` | 52 | 63 | +11 |
+| Musicales | `mus-10s` | 53 | 64 | +11 |
+| **Musicales** | — | **222** | **269** | **+47** ✅ (239 originales y 30 en español) |
+| **Caricaturas** | — | **296** | **307** | +11 recuperadas |
+| **Anime** | — | **251** | **254** | +5 recuperadas y −2 repetidas |
+| Videojuegos y Sagas | — | 281 / 184 | 281 / 184 | sin pistas nuevas (van en la 2.2) |
 
-- **Fase 3 (Expansión +20 % por categoría):**
-  - Caricaturas: +54 adicionales (+11 ya recuperadas en Fase 2 = +65 total; meta final: 361 pistas).
-  - Anime: +47 adicionales (+5 ya recuperadas en Fase 2 = +52 total; meta final: 303 pistas).
-  - Videojuegos: +61 pistas nuevas (meta final: 342 pistas).
-  - Sagas (`SAGA_TRACKS`): +37 pistas nuevas, completando primero los 13 juegos con menos de 5 pistas (meta final: 221 pistas).
-- **Fase 4:** Revisión de dudosas restantes (`scripts/audit-red-revisadas.json`), verificación en navegador (`scripts/verificar-v2.1/`) y subida de versión a 2.1.
+## 6. Lo que queda para la 2.2
+
+La 2.2 completa el +20 % de Caricaturas, Anime, Videojuegos y Sagas. Los candidatos los eligieron agentes Sonnet, los revisó un crítico Sonnet y Opus decidió los casos con duda. Sus fuentes las busca de verdad `scripts/build-resto-v22.js`, que corre en la computadora del usuario, con red y sin IA:
+
+```
+node scripts/build-resto-v22.js todos && node scripts/audit-red.js todos
+```
+
+## 7. Revisión de Claude (sin red, sobre la evidencia)
+
+Antes de publicar, Claude revisó todo lo nuevo y lo cambiado, sin red y con los títulos, canales, duraciones y álbumes guardados en `scripts/evidencia-v2.1.json`:
+
+1. **Comprobación independiente:**
+   - 0 IDs repetidos y las cuentas coinciden;
+   - cada `game` tiene una sola `franchise`;
+   - Canciones y el código del juego quedaron sin cambios;
+   - los **625 IDs** de audio nuevos o cambiados tienen evidencia ok.
+2. **Un revisor Sonnet por tema**, con las reglas de cada uno: doblaje latino, versión original, nada de covers ni repetidos, año, época y datos. Cada hallazgo pasó por un verificador Sonnet que intentó refutarlo.
+3. **Un árbitro Opus por tema** tomó la decisión final de los **140 hallazgos**. Están en `scripts/revision-v21.json` y se aplicaron con `node scripts/aplicar-revision-v21.js` (`--probar` muestra los cambios sin escribir).
+
+| Tema | Pistas quitadas | Fuentes quitadas o reordenadas | Datos corregidos | Cambio de época | Para oír |
+|---|---:|---:|---:|---:|---:|
+| Series | 0 | 8 | 3 | 1 | 5 |
+| Caricaturas | 0 | 1 | 5 | 0 | 9 |
+| Anime | 2 | 3 | 2 | 2 | 1 |
+| Disney | 3 | 1 | 2 | 0 | 4 |
+| Musicales | 0 | 5 | 13 | 0 | 11 |
+| Videojuegos | 0 | 5 | 4 | 0 | 4 |
+
+- **Pistas quitadas.** Su bloque completo y el motivo están en `scripts/pendientes-v2.1.json`.
+  - `ani-yu-yu-hakusho-hohoemi-no-bakudan` y `ani-digimon-adventure-butter-fly`: la misma canción y la misma serie que su versión latina, que ya está.
+  - `dis-el-libro-de-la-selva-quiero-ser-como-tu`: el único video no era la escena de la película.
+  - `dis-monsters-inc-si-no-estoy-contigo` y `dis-frozen-una-aventura-congelada-por-primera-vez-en-anos`: su única fuente era el doblaje de España.
+- **Fuentes quitadas.**
+  - Versiones en vivo: Big Time Rush, Los años maravillosos y Matilda.
+  - Recreaciones o remasterizaciones de fans: Zack y Cody, Élite y GTA.
+  - Videos de otra cosa:
+    - la intro del videojuego *The Black Mirror*;
+    - el reboot de 2009 de Melrose Place;
+    - música de un episodio de Oggy;
+    - la intro de España de El perro de Flandes.
+  - Apple que tocaba otra versión:
+    - Yu Yu Hakusho e Inuyasha en japonés, en pistas latinas;
+    - un cover de Oliver!;
+    - el reprise de Heathers;
+    - un popurrí de Cenicienta;
+    - KPop Demon Hunters en inglés, en una pista en español.
+  - Arreglos de otro juego o versión: Persona 3 Reload y Contra de arcade.
+  - Un video que juntaba dos pistas: BioShock.
+  - Una interpretación escolar: Moulin Rouge.
+- **Datos corregidos.** Algunos ejemplos:
+  - Big Time Rush es de 2009 y pasa a la época 2000s;
+  - Digimon 02 ahora es «Impacto Rojo», la versión latina de Ricardo Silva, en la época 2000s;
+  - Jujutsu Kaisen «VIVID VICE» pasa a 2020 en adelante;
+  - el tema de GTA es el del primer *Grand Theft Auto* (1997), no el de San Andreas;
+  - año, plataforma e intérprete de la grabación en 5 musicales;
+  - compositores de Batman: el valiente, Oggy, Moana y Mulán;
+  - títulos de El Chavo animado y Los Padrinos Mágicos.
+- **Para oír.** 34 casos que solo se deciden escuchando quedaron en `scripts/revisar-a-oido.md`, con el enlace y qué decidir en cada uno. Por ejemplo: qué cue de Cobra Kai es la entrada, si la «Versión 2026» de Soy Luna se reconoce y la duración de Hércules.
+- **Prueba en el navegador (Chromium):**
+  - cada tema muestra sus cuentas nuevas y se puede empezar partida en los 7 temas y en Sagas;
+  - 0 errores de JS;
+  - aquí no hay red para el audio, así que las pistas se saltan igual que en main.

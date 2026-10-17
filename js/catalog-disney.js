@@ -1,5 +1,5 @@
 /*
- * Catálogo: Películas de Disney y Pixar (92 pistas).
+ * Catálogo: Películas de Disney y Pixar (89 pistas).
  * Canciones de películas de Disney en español latino, por época. `pixar: true` marca las de Pixar (se pueden quitar desde el inicio).
  * Mismo formato que catalog.js; las fuentes se prueban en el orden en que aparecen.
  */
@@ -18,7 +18,7 @@
   );
 
   AM.CATALOG.push(
-    /* ───────────── Clásicos (1937–1988) (18) ───────────── */
+    /* ───────────── Clásicos (1937–1988) (17) ───────────── */
     {
       id: 'dis-blanca-nieves-y-los-siete-enanos-hei-ho', cat: 'dis-clasica', franchise: 'Blanca Nieves y los siete enanos', game: 'Blanca Nieves y los siete enanos',
       title: 'Hei-Ho', composer: 'Doblaje latino', year: 1937,
@@ -101,17 +101,12 @@
       id: 'dis-cenicienta-sonar-es-desear', cat: 'dis-clasica', franchise: 'Cenicienta', game: 'Cenicienta',
       title: 'Soñar es desear', composer: 'Evangelina Elizondo', year: 1950,
       aka: ['La Cenicienta'],
-      sources: [apple({ song: 1624896787, country: 'mx' }), yt('_j2jSJFqzKc')],
+      sources: [yt('_j2jSJFqzKc')],
     },
     {
       id: 'dis-mary-poppins-con-un-poco-de-azucar', cat: 'dis-clasica', franchise: 'Mary Poppins', game: 'Mary Poppins',
       title: 'Con un poco de azúcar', composer: 'Doblaje latino', year: 1964,
       sources: [yt('hnVqUB_jJs4')],
-    },
-    {
-      id: 'dis-el-libro-de-la-selva-quiero-ser-como-tu', cat: 'dis-clasica', franchise: 'El libro de la selva', game: 'El libro de la selva',
-      title: 'Quiero ser como tú', composer: 'Germán Valdés "Tin Tan"', year: 1967,
-      sources: [yt('rcXF7xWnOUA')],
     },
     /* ───────────── Renacimiento (1989–1999) (23) ───────────── */
     {
@@ -186,7 +181,7 @@
     },
     {
       id: 'dis-mulan-reflejo', cat: 'dis-renacimiento', franchise: 'Mulán', game: 'Mulán',
-      title: 'Reflejo', composer: 'Lucero', year: 1998,
+      title: 'Reflejo', composer: 'Analy', year: 1998,
       sources: [apple({ song: 1624897102, country: 'mx' }), yt('_yTsNxhGE30')],
     },
     {
@@ -229,7 +224,7 @@
       title: 'Hijo de hombre', composer: 'Phil Collins', year: 1999,
       sources: [yt('QczRVx2rtE4')],
     },
-    /* ───────────── 2000–2009 (18) ───────────── */
+    /* ───────────── 2000–2009 (17) ───────────── */
     {
       id: 'dis-lilo-y-stitch-he-mele-no-lilo', cat: 'dis-2000s', franchise: 'Lilo y Stitch', game: 'Lilo y Stitch',
       title: 'He Mele No Lilo', composer: 'Mark Keali\'i Ho\'omalu', year: 2002,
@@ -313,11 +308,6 @@
       sources: [yt('oObiJAipqoA'), yt('pLPvgdHPrSQ')],
     },
     {
-      id: 'dis-monsters-inc-si-no-estoy-contigo', cat: 'dis-2000s', franchise: 'Monsters, Inc.', game: 'Monsters, Inc.',
-      title: 'Si no estoy contigo', composer: 'Doblaje latino', year: 2001, pixar: true,
-      sources: [yt('PhLS1Ilxzog')],
-    },
-    {
       id: 'dis-tierra-de-osos-en-marcha-estoy', cat: 'dis-2000s', franchise: 'Tierra de osos', game: 'Tierra de osos',
       title: 'En marcha estoy', composer: 'Phil Collins', year: 2003,
       aka: ['Hermano oso', 'Brother Bear'],
@@ -328,7 +318,7 @@
       title: 'Amigos del más allá', composer: 'Mauricio Pérez', year: 2009,
       sources: [yt('CA5qk28npHg')],
     },
-    /* ───────────── 2010–2019 (20) ───────────── */
+    /* ───────────── 2010–2019 (19) ───────────── */
     {
       id: 'dis-enredados-veo-en-ti-la-luz', cat: 'dis-2010s', franchise: 'Enredados', game: 'Enredados',
       title: 'Veo en ti la luz', composer: 'Chayanne y Danna Paola', year: 2010,
@@ -422,14 +412,8 @@
       sources: [apple({ song: 1443804769, country: 'mx' }), yt('Q1-Ron-Zz6Y')],
     },
     {
-      id: 'dis-frozen-una-aventura-congelada-por-primera-vez-en-anos', cat: 'dis-2010s', franchise: 'Frozen', game: 'Frozen: Una aventura congelada',
-      title: 'Por primera vez en años', composer: 'Romina Marroquín Payró y Carmen Sarahi', year: 2013,
-      aka: ['Frozen'],
-      sources: [yt('3e5P6CiwjaA')],
-    },
-    {
       id: 'dis-moana-un-mar-de-aventuras-brillo', cat: 'dis-2010s', franchise: 'Moana', game: 'Moana: Un mar de aventuras',
-      title: 'Brillo', composer: 'Mauricio Pérez', year: 2016,
+      title: 'Brillo', composer: 'Dan Osorio', year: 2016,
       aka: ['Moana'],
       sources: [yt('beiUZSieBt0')],
     },

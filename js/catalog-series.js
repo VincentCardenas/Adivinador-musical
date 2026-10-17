@@ -258,7 +258,7 @@
       id: 'tv-los-anos-maravillosos-with-a-little-help-from-my-friends', cat: 'tv-clasicas', franchise: 'Los años maravillosos', game: 'Los años maravillosos',
       title: 'With a Little Help from My Friends', composer: 'Joe Cocker', year: 1988, platform: 'ABC',
       aka: ['The Wonder Years'],
-      sources: [apple({ song: 1434916256, country: 'mx' }), yt('LpwabPQW4p4')],
+      sources: [apple({ song: 1434916256, country: 'mx' })],
     },
     /* ───────────── Años 90 (41) ───────────── */
     {
@@ -438,7 +438,7 @@
     {
       id: 'tv-melrose-place-melrose-place-theme', cat: 'tv-90s', franchise: 'Melrose Place', game: 'Melrose Place',
       title: 'Melrose Place Theme', composer: 'Tim Truman', year: 1992, platform: 'Fox',
-      sources: [yt('5FoSXRxFYDk'), yt('cVCROJSCEoU')],
+      sources: [yt('5FoSXRxFYDk')],
     },
     {
       id: 'tv-el-mundo-de-beakman-beakmans-world-theme', cat: 'tv-90s', franchise: 'El mundo de Beakman', game: 'El mundo de Beakman',
@@ -449,7 +449,7 @@
     {
       id: 'tv-walker-texas-ranger-the-eyes-of-the-ranger', cat: 'tv-90s', franchise: 'Walker, Texas Ranger', game: 'Walker, Texas Ranger',
       title: 'The Eyes of the Ranger', composer: 'Chuck Norris', year: 1993, platform: 'CBS',
-      aka: ['Walker, guardabosques de Texas'],
+      aka: [],
       sources: [yt('NIYZVSElmj4'), yt('AXPQwI4g410')],
     },
     {
@@ -462,7 +462,7 @@
       id: 'tv-lois-y-clark-lois-and-clark-main-title', cat: 'tv-90s', franchise: 'Lois y Clark: las nuevas aventuras de Superman', game: 'Lois y Clark: las nuevas aventuras de Superman',
       title: 'Lois & Clark Main Title', composer: 'Jay Gruska', year: 1993, platform: 'ABC',
       aka: ['Lois & Clark: The New Adventures of Superman', 'Lois y Clark'],
-      sources: [yt('5-N3o1IAxFc'), yt('giTNQ1Q9j74')],
+      sources: [yt('giTNQ1Q9j74'), yt('5-N3o1IAxFc')],
     },
     {
       id: 'tv-hercules-los-viajes-legendarios-main-title', cat: 'tv-90s', franchise: 'Hércules: los viajes legendarios', game: 'Hércules: los viajes legendarios',
@@ -491,7 +491,7 @@
       title: 'Rosalinda', composer: 'Thalía', year: 1999, platform: 'Televisa',
       sources: [apple({ song: 724343282, country: 'mx' }), yt('ir2MnpB7wcQ')],
     },
-    /* ───────────── 2000s (44) ───────────── */
+    /* ───────────── 2000s (45) ───────────── */
     {
       id: 'tv-lost-life-and-death', cat: 'tv-00s', franchise: 'Lost', game: 'Lost',
       title: 'Life and Death', composer: 'Michael Giacchino y Tim Simonec', year: 2004, platform: 'ABC',
@@ -686,7 +686,7 @@
       id: 'tv-zack-y-cody-here-i-am', cat: 'tv-00s', franchise: 'Zack y Cody: gemelos en acción', game: 'Zack y Cody: gemelos en acción',
       title: 'Here I Am', composer: 'Loren Ellis y Drew Seeley', year: 2005, platform: 'Disney Channel',
       aka: ['The Suite Life of Zack & Cody', 'Zack y Cody'],
-      sources: [yt('HNW2OvPCP8M'), yt('_9dYvfao6WY')],
+      sources: [yt('_9dYvfao6WY')],
     },
     {
       id: 'tv-la-madrastra-viveme', cat: 'tv-00s', franchise: 'La madrastra', game: 'La madrastra',
@@ -731,7 +731,12 @@
       aka: ['Sonny with a Chance'],
       sources: [apple({ song: 1445739394, country: 'mx' }), yt('nHUFqsv5RZ8')],
     },
-    /* ───────────── 2010s (41) ───────────── */
+    {
+      id: 'tv-big-time-rush-big-time-rush', cat: 'tv-00s', franchise: 'Big Time Rush', game: 'Big Time Rush',
+      title: 'Big Time Rush', composer: 'Big Time Rush', year: 2009, platform: 'Nickelodeon',
+      sources: [yt('SN_MY9uDUEw')],
+    },
+    /* ───────────── 2010s (40) ───────────── */
     {
       id: 'tv-game-of-thrones-main-title', cat: 'tv-10s', franchise: 'Game of Thrones', game: 'Game of Thrones',
       title: 'Main Title', composer: 'Ramin Djawadi', year: 2011, platform: 'HBO',
@@ -848,11 +853,6 @@
       sources: [apple({ song: 6777916665, country: 'mx' }), yt('nfCDhU1L-Pw')],
     },
     {
-      id: 'tv-big-time-rush-big-time-rush', cat: 'tv-10s', franchise: 'Big Time Rush', game: 'Big Time Rush',
-      title: 'Big Time Rush', composer: 'Big Time Rush', year: 2010, platform: 'Nickelodeon',
-      sources: [apple({ song: 6817089907, country: 'mx' }), yt('SN_MY9uDUEw')],
-    },
-    {
       id: 'tv-buena-suerte-charlie-hang-in-there-baby', cat: 'tv-10s', franchise: 'Buena suerte, Charlie', game: 'Buena suerte, Charlie',
       title: 'Hang In There Baby', composer: 'Bridgit Mendler', year: 2010, platform: 'Disney Channel',
       aka: ['Good Luck Charlie'],
@@ -872,7 +872,7 @@
     {
       id: 'tv-black-mirror-opening-theme', cat: 'tv-10s', franchise: 'Black Mirror', game: 'Black Mirror',
       title: 'Black Mirror Opening Theme', composer: 'Jon Opstad', year: 2011, platform: 'Channel 4 / Netflix',
-      sources: [yt('UqJInhA0P1k'), yt('o4x1Q9Apg8o')],
+      sources: [yt('o4x1Q9Apg8o')],
     },
     {
       id: 'tv-jessie-hey-jessie', cat: 'tv-10s', franchise: 'Jessie', game: 'Jessie',
@@ -915,7 +915,7 @@
       id: 'tv-outlander-the-skye-boat-song', cat: 'tv-10s', franchise: 'Outlander', game: 'Outlander',
       title: 'The Skye Boat Song', composer: 'Bear McCreary (feat. Raya Yarbrough)', year: 2014, platform: 'Starz',
       aka: ['Forastera'],
-      sources: [apple({ song: 1029187185, country: 'mx' }), yt('9y_Va7k37h4')],
+      sources: [yt('9y_Va7k37h4'), apple({ song: 1029187185, country: 'mx' })],
     },
     {
       id: 'tv-soy-luna-alas', cat: 'tv-10s', franchise: 'Soy Luna', game: 'Soy Luna',
@@ -931,7 +931,7 @@
       id: 'tv-elite-opening-theme', cat: 'tv-10s', franchise: 'Élite', game: 'Élite',
       title: 'Élite Opening Theme', composer: 'Lucas Vidal', year: 2018, platform: 'Netflix',
       aka: ['Elite'],
-      sources: [yt('OwP77tioj98'), yt('IyoB3DLVkLI')],
+      sources: [yt('OwP77tioj98')],
     },
     {
       id: 'tv-luis-miguel-la-serie-cuando-calienta-el-sol', cat: 'tv-10s', franchise: 'Luis Miguel: la serie', game: 'Luis Miguel: la serie',
@@ -941,7 +941,7 @@
     },
     {
       id: 'tv-the-boys-main-theme', cat: 'tv-10s', franchise: 'The Boys', game: 'The Boys',
-      title: 'The Boys Main Theme', composer: 'Christopher Lennertz', year: 2019, platform: 'Prime Video',
+      title: 'Translucent Alive', composer: 'Christopher Lennertz', year: 2019, platform: 'Prime Video',
       sources: [yt('1-4cnsq6Mx0'), yt('qUe74ZJEp34')],
     },
     {

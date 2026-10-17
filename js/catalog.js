@@ -995,7 +995,7 @@
     {
       id: 'contra-jungle', cat: 'retro', franchise: 'Contra', game: 'Contra',
       title: 'Jungle', composer: 'Kiyohiro Sada, Hidenori Maezawa', year: 1988, platform: 'NES',
-      sources: [yt('O04bPRzqEEk'), yt('5UqXbEwqwF8'), yt('o_CEXj45-Lk')],
+      sources: [yt('O04bPRzqEEk'), yt('5UqXbEwqwF8')],
     },
     {
       id: 'doom-1993-at-doom-s-gate', cat: 'retro', franchise: 'DOOM', game: 'DOOM (1993)',
@@ -1317,7 +1317,7 @@
     {
       id: 'persona-3-mass-destruction', cat: 'rpg', franchise: 'Persona', game: 'Persona 3',
       title: 'Mass Destruction', composer: 'Shoji Meguro', year: 2006, platform: 'PlayStation 2',
-      sources: [yt('S0GgBcNKK5g'), yt('6jFaoLrLzd4'), yt('Q6q6pDC6Mas')],
+      sources: [yt('S0GgBcNKK5g'), yt('6jFaoLrLzd4')],
     },
     {
       id: 'persona-4-reach-out-to-the-truth', cat: 'rpg', franchise: 'Persona', game: 'Persona 4',
@@ -1405,7 +1405,7 @@
     {
       id: 'bioshock-welcome-to-rapture', cat: 'accion', franchise: 'BioShock', game: 'BioShock',
       title: 'Welcome to Rapture', composer: 'Garry Schyman', year: 2007, platform: 'PC / Xbox 360',
-      sources: [yt('BbEunjRoj84'), yt('sEFIZh_Zscc'), yt('7DjpOuucA1k')],
+      sources: [yt('sEFIZh_Zscc'), yt('7DjpOuucA1k')],
     },
     {
       id: 'bioshock-infinite-will-the-circle-be-unb', cat: 'accion', franchise: 'BioShock', game: 'BioShock Infinite',
@@ -1443,9 +1443,9 @@
       sources: [yt('kpnW68Q8ltc'), yt('ekY09M48Jvs')],
     },
     {
-      id: 'grand-theft-auto-main-theme', cat: 'accion', franchise: 'Grand Theft Auto', game: 'Grand Theft Auto: San Andreas',
-      title: 'Main Theme', composer: 'Michael Hunter', year: 2004, platform: 'PlayStation 2',
-      sources: [yt('JYy69qOJWoM'), yt('6hXohRub4WQ'), yt('KZqsEH99QYM')],
+      id: 'grand-theft-auto-main-theme', cat: 'accion', franchise: 'Grand Theft Auto', game: 'Grand Theft Auto',
+      title: 'Main Theme', composer: 'Da Shootaz', year: 1997, platform: 'PC / PlayStation',
+      sources: [yt('JYy69qOJWoM'), yt('6hXohRub4WQ')],
     },
     {
       id: 'grand-theft-auto-iv-soviet-connection', cat: 'accion', franchise: 'Grand Theft Auto', game: 'Grand Theft Auto IV',

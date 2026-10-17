@@ -403,13 +403,13 @@
     },
     {
       id: 'mus-oliver-food-glorious-food', cat: 'mus-clasicos', franchise: 'Oliver!', game: 'Food, Glorious Food',
-      title: 'Food, Glorious Food', composer: 'Elenco de Oliver!', year: 1968, platform: 'Película', lang: 'en',
+      title: 'Food, Glorious Food', composer: 'Elenco infantil de Oliver!', year: 1994, platform: 'Londres', lang: 'en',
       sources: [apple({ song: 286652266, country: 'mx' }), yt('zgdv7Ra_aW4')],
     },
     {
       id: 'mus-oliver-where-is-love', cat: 'mus-clasicos', franchise: 'Oliver!', game: 'Where Is Love?',
-      title: 'Where Is Love?', composer: 'Mark Lester', year: 1968, platform: 'Película', lang: 'en',
-      sources: [apple({ song: 340660128, country: 'mx' }), yt('RID2Nh5wqfU')],
+      title: 'Where Is Love?', composer: 'Mark Lester (voz de Kathe Green)', year: 1968, platform: 'Película', lang: 'en',
+      sources: [yt('RID2Nh5wqfU')],
     },
     {
       id: 'mus-joseph-close-every-door', cat: 'mus-clasicos', franchise: 'Joseph and the Amazing Technicolor Dreamcoat', game: 'Close Every Door',
@@ -418,7 +418,7 @@
     },
     {
       id: 'mus-joseph-go-go-go-joseph', cat: 'mus-clasicos', franchise: 'Joseph and the Amazing Technicolor Dreamcoat', game: 'Go, Go, Go Joseph',
-      title: 'Go, Go, Go Joseph', composer: 'Jason Donovan y elenco', year: 1991, platform: 'Londres', lang: 'en',
+      title: 'Go, Go, Go Joseph', composer: 'Michael Damian, Kelli Rabke y elenco', year: 1993, platform: 'Los Ángeles', lang: 'en',
       sources: [apple({ song: 1843485446, country: 'mx' }), yt('MFCJ6qB26YA')],
     },
     {
@@ -789,7 +789,7 @@
     },
     {
       id: 'mus-little-shop-skid-row', cat: 'mus-7080', franchise: 'Little Shop of Horrors', game: 'Skid Row (Downtown)',
-      title: 'Skid Row (Downtown)', composer: 'Rick Moranis, Ellen Greene y elenco', year: 1986, platform: 'Película', lang: 'en',
+      title: 'Skid Row (Downtown)', composer: 'Jonathan Groff, Tammy Blanchard y elenco', year: 2019, platform: 'Off-Broadway', lang: 'en',
       sources: [apple({ song: 1492371223, country: 'mx' }), yt('ZgSQJv01JPw')],
     },
     {
@@ -1108,7 +1108,7 @@
     {
       id: 'mus-moulin-rouge-el-tango-de-roxanne', cat: 'mus-9000', franchise: 'Moulin Rouge!', game: 'El Tango de Roxanne',
       title: 'El Tango de Roxanne', composer: 'Ewan McGregor, José Feliciano y Jacek Koman', year: 2001, platform: 'Película', lang: 'en',
-      sources: [apple({ song: 1440892663, country: 'mx' }), yt('Rn0xXo1gwGY')],
+      sources: [apple({ song: 1440892663, country: 'mx' })],
     },
     {
       id: 'mus-moulin-rouge-your-song', cat: 'mus-9000', franchise: 'Moulin Rouge!', game: 'Your Song',
@@ -1424,7 +1424,7 @@
       id: 'mus-kpop-tu-idolo', cat: 'mus-10s', franchise: 'KPop Demon Hunters', game: 'Tu ídolo',
       title: 'Tu ídolo (Your Idol - versión en español)', composer: 'Saja Boys (doblaje)', year: 2025, platform: 'Doblaje en español', lang: 'es',
       aka: ['Your Idol'],
-      sources: [apple({ song: 1820264156, country: 'mx' }), yt('T7Q7ZhNyHqk')],
+      sources: [yt('T7Q7ZhNyHqk')],
     },
     {
       id: 'mus-matilda-ninos-rebeldes', cat: 'mus-10s', franchise: 'Matilda the Musical', game: 'Niños rebeldes',
@@ -1434,13 +1434,13 @@
     },
     {
       id: 'mus-matilda-when-i-grow-up', cat: 'mus-10s', franchise: 'Matilda the Musical', game: 'When I Grow Up',
-      title: 'When I Grow Up', composer: 'Elenco de la película', year: 2022, platform: 'Película', lang: 'en',
+      title: 'When I Grow Up', composer: 'Elenco original de Broadway', year: 2013, platform: 'Broadway', lang: 'en',
       sources: [apple({ song: 1664565197, country: 'mx' }), yt('CEe0tj8aGpQ')],
     },
     {
       id: 'mus-matilda-naughty', cat: 'mus-10s', franchise: 'Matilda the Musical', game: 'Naughty',
       title: 'Naughty', composer: 'Alisha Weir', year: 2022, platform: 'Película', lang: 'en',
-      sources: [apple({ song: 1651697757, country: 'mx' }), yt('QV53Vy7KFLQ')],
+      sources: [apple({ song: 1651697757, country: 'mx' })],
     },
     {
       id: 'mus-book-of-mormon-i-believe', cat: 'mus-10s', franchise: 'The Book of Mormon', game: 'I Believe',
@@ -1460,7 +1460,7 @@
     {
       id: 'mus-heathers-dead-girl-walking', cat: 'mus-10s', franchise: 'Heathers: The Musical', game: 'Dead Girl Walking',
       title: 'Dead Girl Walking', composer: 'Barrett Wilbert Weed y Ryan McCartan', year: 2014, platform: 'Off-Broadway', lang: 'en',
-      sources: [apple({ song: 887521674, country: 'mx' }), yt('3EyDyxGZn_Y')],
+      sources: [yt('3EyDyxGZn_Y')],
     },
     {
       id: 'mus-mean-girls-world-burn', cat: 'mus-10s', franchise: 'Mean Girls', game: 'World Burn',
