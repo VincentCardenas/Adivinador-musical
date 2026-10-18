@@ -184,7 +184,7 @@ function main() {
           text = editarFuentes(text, (xs) => xs.map((x) => x.k === 'yt:' + v.yt ? { t: v.segundos ? `yt('${v.yt}', ${v.segundos})` : `yt('${v.yt}')`, k: x.k } : x));
         } else text = editarCampo(text, d.campo, d.valor);
       } else if (d.op === 'revisar_a_oido') {
-        oido.push(`| \`${d.id}\` | ${String(d.nota || d.motivo).replace(/\|/g, '/')} |  |`);
+        oido.push(`| \`${d.id}\` | ${String(d.nota || d.motivo).replace(/\|/g, '/').replace(/yt:([\w-]{11})/g, '[$1](https://www.youtube.com/watch?v=$1)')} |  |`);
         continue;
       } else if (d.op === 'mover_categoria') {
         text = editarCampo(text, 'cat', d.categoria);

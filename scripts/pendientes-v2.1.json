@@ -180,5 +180,26 @@
     "motivo": "Su única fuente (0mxI4nDiIIc) es la entrada latina de la serie de 1986, que ya usa toon-daniel-el-travieso-dic-tema.",
     "bloque": "{\n      id: 'toon-daniel-el-travieso-70s-tema', cat: 'toon-clasicas', franchise: \"Daniel el Travieso\", game: \"Daniel el Travieso (clásico)\",\n      title: \"Daniel el Travieso (tema latino)\", composer: \"Hoyt Curtin\", year: 1970, platform: \"Hanna-Barbera\",\n      aka: [\"Dennis the Menace\"],\n      sources: [yt('0mxI4nDiIIc')],\n    },",
     "quitada": "revisión 2.1"
+  },
+  {
+    "id": "sfx-pac-man-comiendo-puntos-waka-waka",
+    "tema": "sonidos",
+    "motivo": "Ninguna fuente sirve. yt:EJcmz9ssDpw son '15 ... Sound Variations in 30 Seconds' (una compilación de variaciones de 30 s). yt:9JRabuWL_g4 es un sonido beta de Pac-Man World 2 ('SND_CHOMP_TALK', 14 s): es de otro juego y no es el waka waka del arcade.",
+    "bloque": "{\n      id: 'sfx-pac-man-comiendo-puntos-waka-waka', franchise: 'Pac-Man', game: 'Pac-Man',\n      title: 'Comiendo puntos (waka waka)', year: 1980, platform: 'Arcade',\n      aka: ['Pacman', 'Pac Man', 'Comecocos'],\n      sources: [yt('EJcmz9ssDpw'), yt('9JRabuWL_g4')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "sfx-counter-strike-1-6-bomba-plantada",
+    "tema": "sonidos",
+    "motivo": "Confirmado: la única fuente es 'CSGO - The bomb has been planted. (Fake audio)' de 16 s: audio falso, de CS:GO y no de 1.6, y largo para un solo efecto. No queda ninguna fuente aceptable.",
+    "bloque": "{\n      id: 'sfx-counter-strike-1-6-bomba-plantada', franchise: 'Counter-Strike', game: 'Counter-Strike 1.6',\n      title: 'Bomba plantada', year: 2003, platform: 'PC',\n      aka: ['Counter Strike', 'Counterstrike', 'CS', 'CSGO', 'CS:GO', 'CS 1.6', 'CS2'],\n      sources: [yt('_btgg-NsTwA')],\n    },",
+    "quitada": "revisión 2.1"
+  },
+  {
+    "id": "sfx-candy-crush-saga-felicitacion-delicious-sweet",
+    "tema": "sonidos",
+    "motivo": "Las dos fuentes son compilaciones de 30 s: '22/15 Delicious Sound Variations in 30 Seconds'. Las 'variations' se quitan y no queda ningún video que sea un solo efecto.",
+    "bloque": "{\n      id: 'sfx-candy-crush-saga-felicitacion-delicious-sweet', franchise: 'Candy Crush', game: 'Candy Crush Saga',\n      title: 'Felicitación Delicious / Sweet', year: 2012, platform: 'Facebook / iOS / Android',\n      aka: ['Candy Crush Saga'],\n      sources: [yt('s2RH_4EYZlA'), yt('lu3bpDftNcA')],\n    },",
+    "quitada": "revisión 2.1"
   }
 ]

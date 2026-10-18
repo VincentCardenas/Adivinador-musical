@@ -221,7 +221,7 @@
     {
       id: 'super-mario-world-overworld-theme', cat: 'nintendo', franchise: 'Super Mario', game: 'Super Mario World',
       title: 'Overworld Theme', composer: 'Koji Kondo', year: 1990, platform: 'SNES',
-      sources: [yt('tAaGKo4XVvM'), yt('8w4nvCAx45s')],
+      sources: [yt('8w4nvCAx45s'), yt('tAaGKo4XVvM')],
     },
     {
       id: 'sm64-bobomb', cat: 'nintendo', franchise: 'Super Mario', game: 'Super Mario 64',

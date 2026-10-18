@@ -9,7 +9,7 @@
  *                     con scripts/build-resto-v22.js (nunca IDs escritos a mano).
  *
  * El modo aparece cuando hay al menos AM.MIN_POOL sonidos.
- * Archivo generado (48 sonidos).
+ * Archivo generado (45 sonidos).
  */
 (function (AM) {
   'use strict';
@@ -21,7 +21,7 @@
       id: 'sfx-super-mario-bros-power-up-del-hongo', franchise: 'Super Mario', game: 'Super Mario Bros.',
       title: 'Power-up del hongo', year: 1985, platform: 'NES',
       aka: ['Mario', 'Mario Bros', 'Super Mario Bros'],
-      sources: [yt('M_DoUUEgp3Y'), yt('PeHYSWZeJrM')],
+      sources: [yt('PeHYSWZeJrM')],
     },
     {
       id: 'sfx-metal-gear-solid-alerta-al-ser-detectado', franchise: 'Metal Gear', game: 'Metal Gear Solid',
@@ -33,13 +33,13 @@
       id: 'sfx-super-mario-bros-moneda', franchise: 'Super Mario', game: 'Super Mario Bros.',
       title: 'Moneda', year: 1985, platform: 'NES',
       aka: ['Mario', 'Mario Bros', 'Super Mario Bros'],
-      sources: [yt('mQSmVZU5EL4'), yt('gdPFOF91xb0')],
+      sources: [yt('mQSmVZU5EL4')],
     },
     {
       id: 'sfx-super-mario-bros-vida-extra-1-up', franchise: 'Super Mario', game: 'Super Mario Bros.',
       title: 'Vida extra (1-UP)', year: 1985, platform: 'NES',
       aka: ['Mario', 'Mario Bros', 'Super Mario Bros'],
-      sources: [yt('o3Tlv7h9I3Y'), yt('YbI9qmO9roU')],
+      sources: [yt('o3Tlv7h9I3Y')],
     },
     {
       id: 'sfx-minecraft-siseo-del-creeper', franchise: 'Minecraft', game: 'Minecraft',
@@ -57,24 +57,18 @@
       id: 'sfx-the-legend-of-zelda-secreto-descubierto', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda',
       title: 'Secreto descubierto', year: 1986, platform: 'NES',
       aka: ['Zelda', 'Legend of Zelda', 'La Leyenda de Zelda'],
-      sources: [yt('9d3qCPcMgH4'), yt('0vngOmw2hcM')],
+      sources: [yt('0vngOmw2hcM'), yt('9d3qCPcMgH4')],
     },
     {
       id: 'sfx-roblox-oof', franchise: 'Roblox', game: 'Roblox',
       title: 'Oof', year: 2006, platform: 'PC',
-      sources: [yt('3w-2gUSus34'), yt('YTC75cKzuNk')],
+      sources: [yt('3w-2gUSus34')],
     },
     {
       id: 'sfx-sonic-the-hedgehog-recoger-un-anillo', franchise: 'Sonic the Hedgehog', game: 'Sonic the Hedgehog',
       title: 'Recoger un anillo', year: 1991, platform: 'Sega Genesis / Mega Drive',
       aka: ['Sonic', 'Sonic el erizo'],
       sources: [yt('n9GImjHkLmE'), yt('FRgfAPe5s3U')],
-    },
-    {
-      id: 'sfx-pac-man-comiendo-puntos-waka-waka', franchise: 'Pac-Man', game: 'Pac-Man',
-      title: 'Comiendo puntos (waka waka)', year: 1980, platform: 'Arcade',
-      aka: ['Pacman', 'Pac Man', 'Comecocos'],
-      sources: [yt('EJcmz9ssDpw'), yt('9JRabuWL_g4')],
     },
     {
       id: 'sfx-grand-theft-auto-san-andreas-mision-cumplida', franchise: 'Grand Theft Auto', game: 'Grand Theft Auto: San Andreas',
@@ -98,7 +92,7 @@
       id: 'sfx-mortal-kombat-get-over-here-scorpion', franchise: 'Mortal Kombat', game: 'Mortal Kombat',
       title: '¡Get over here! (Scorpion)', year: 1992, platform: 'Arcade',
       aka: ['MK'],
-      sources: [yt('nJg8AXNEvxs'), yt('gEDamnAymjY')],
+      sources: [yt('gEDamnAymjY'), yt('nJg8AXNEvxs')],
     },
     {
       id: 'sfx-street-fighter-ii-shoryuken', franchise: 'Street Fighter', game: 'Street Fighter II',
@@ -122,7 +116,7 @@
       id: 'sfx-age-of-empires-ii-the-age-of-kings-wololo', franchise: 'Age of Empires', game: 'Age of Empires II: The Age of Kings',
       title: 'Wololo', year: 1999, platform: 'PC',
       aka: ['AoE', 'AoE2', 'Age of Empires II'],
-      sources: [yt('RouQqawdB-0'), yt('TnQ7PB4a9Hs')],
+      sources: [yt('RouQqawdB-0')],
     },
     {
       id: 'sfx-minecraft-aldeano-hmm', franchise: 'Minecraft', game: 'Minecraft',
@@ -134,7 +128,7 @@
       id: 'sfx-the-elder-scrolls-v-skyrim-grito-fus-ro-dah', franchise: 'The Elder Scrolls', game: 'The Elder Scrolls V: Skyrim',
       title: 'Grito Fus Ro Dah', year: 2011, platform: 'PC / PlayStation 3 / Xbox 360',
       aka: ['Skyrim', 'Elder Scrolls', 'TES'],
-      sources: [yt('zzH_Wn0R-yo'), yt('peP7yUOo3WM')],
+      sources: [yt('peP7yUOo3WM'), yt('zzH_Wn0R-yo')],
     },
     {
       id: 'sfx-pac-man-perder-una-vida', franchise: 'Pac-Man', game: 'Pac-Man',
@@ -169,13 +163,7 @@
     {
       id: 'sfx-metal-slug-heavy-machine-gun', franchise: 'Metal Slug', game: 'Metal Slug',
       title: '¡Heavy Machine Gun!', year: 1996, platform: 'Arcade (Neo Geo)',
-      sources: [yt('lhXk_cPPm3o'), yt('Pm5vvG3eP_A')],
-    },
-    {
-      id: 'sfx-counter-strike-1-6-bomba-plantada', franchise: 'Counter-Strike', game: 'Counter-Strike 1.6',
-      title: 'Bomba plantada', year: 2003, platform: 'PC',
-      aka: ['Counter Strike', 'Counterstrike', 'CS', 'CSGO', 'CS:GO', 'CS 1.6', 'CS2'],
-      sources: [yt('_btgg-NsTwA')],
+      sources: [yt('lhXk_cPPm3o')],
     },
     {
       id: 'sfx-clash-royale-risa-del-emote-del-rey', franchise: 'Clash Royale', game: 'Clash Royale',
@@ -192,7 +180,7 @@
       id: 'sfx-pokemon-red-and-blue-curar-al-equipo', franchise: 'Pokémon', game: 'Pokémon Red & Blue',
       title: 'Curar al equipo', year: 1996, platform: 'Game Boy',
       aka: ['Pokemon', 'Pokémon Rojo', 'Pokemon Rojo y Azul'],
-      sources: [yt('92w8rQR28ZI'), yt('rnxXP6HWEZo')],
+      sources: [yt('rnxXP6HWEZo')],
     },
     {
       id: 'sfx-call-of-duty-modern-warfare-2-hitmarker', franchise: 'Call of Duty', game: 'Call of Duty: Modern Warfare 2',
@@ -215,7 +203,7 @@
       id: 'sfx-grand-theft-auto-v-wasted', franchise: 'Grand Theft Auto', game: 'Grand Theft Auto V',
       title: 'Wasted', year: 2013, platform: 'PS3',
       aka: ['GTA', 'GTA 5', 'GTA V'],
-      sources: [yt('K3kFQHKE0LA'), yt('_mO-PgUNONo')],
+      sources: [yt('K3kFQHKE0LA')],
     },
     {
       id: 'sfx-mortal-kombat-ii-toasty', franchise: 'Mortal Kombat', game: 'Mortal Kombat II',
@@ -239,7 +227,7 @@
       id: 'sfx-resident-evil-4-voz-del-mercader', franchise: 'Resident Evil', game: 'Resident Evil 4',
       title: 'Voz del Mercader', year: 2005, platform: 'GameCube',
       aka: ['RE', 'Biohazard'],
-      sources: [yt('PVNTXVO4GzY'), yt('xVrWjjIiM6c')],
+      sources: [yt('PVNTXVO4GzY')],
     },
     {
       id: 'sfx-among-us-asesinato-del-impostor', franchise: 'Among Us', game: 'Among Us',
@@ -252,12 +240,6 @@
       title: 'El \'¡Whoa!\' al caer', year: 1997, platform: 'PlayStation',
       aka: ['Crash'],
       sources: [yt('syp5JiNt14o'), yt('5M-9wAmdMWI')],
-    },
-    {
-      id: 'sfx-candy-crush-saga-felicitacion-delicious-sweet', franchise: 'Candy Crush', game: 'Candy Crush Saga',
-      title: 'Felicitación Delicious / Sweet', year: 2012, platform: 'Facebook / iOS / Android',
-      aka: ['Candy Crush Saga'],
-      sources: [yt('s2RH_4EYZlA'), yt('lu3bpDftNcA')],
     },
     {
       id: 'sfx-space-invaders-marcha-alienigena', franchise: 'Space Invaders', game: 'Space Invaders',
@@ -281,7 +263,7 @@
       id: 'sfx-metal-gear-solid-game-over-snake', franchise: 'Metal Gear', game: 'Metal Gear Solid',
       title: 'Game Over: ¡Snake!', year: 1998, platform: 'PlayStation',
       aka: ['Metal Gear Solid', 'MGS'],
-      sources: [yt('MS8OawQegYE'), yt('syYug2rV1qQ')],
+      sources: [yt('syYug2rV1qQ'), yt('MS8OawQegYE')],
     },
     {
       id: 'sfx-clash-royale-grito-del-montapuercos-hog-rider', franchise: 'Clash Royale', game: 'Clash Royale',
@@ -293,7 +275,7 @@
       id: 'sfx-resident-evil-4-detras-de-ti-imbecil', franchise: 'Resident Evil', game: 'Resident Evil 4',
       title: '¡Detrás de ti, imbécil!', year: 2005, platform: 'GameCube / PS2',
       aka: ['Biohazard', 'RE'],
-      sources: [yt('yt0gSPpzUK4'), yt('QMpWfziKo6k')],
+      sources: [yt('QMpWfziKo6k')],
     },
     {
       id: 'sfx-metal-slug-mission-complete', franchise: 'Metal Slug', game: 'Metal Slug',

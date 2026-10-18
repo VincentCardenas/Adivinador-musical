@@ -1,0 +1,175 @@
+{
+ "decisiones": [
+  {
+   "id": "sfx-super-mario-bros-power-up-del-hongo",
+   "op": "quitar_fuente",
+   "fuente": "yt:M_DoUUEgp3Y",
+   "motivo": "Confirmado: el título dice 'Sound Effect Evolution' (12 s), así que es una compilación de versiones. Se queda yt:PeHYSWZeJrM (4 s), que es el efecto de Super Mario Bros solo."
+  },
+  {
+   "id": "sfx-super-mario-bros-moneda",
+   "op": "quitar_fuente",
+   "fuente": "yt:gdPFOF91xb0",
+   "motivo": "Confirmado: 'Coin Sound Effect Evolution (1983-2020)' (16 s) es una evolución entre juegos. Se queda yt:mQSmVZU5EL4 (2 s, Gaming Sound FX)."
+  },
+  {
+   "id": "sfx-super-mario-bros-vida-extra-1-up",
+   "op": "quitar_fuente",
+   "fuente": "yt:YbI9qmO9roU",
+   "motivo": "Confirmado: '1UP Sounds in Mario Games (1983 — 2023)' (14 s) es una compilación de varios juegos. Se queda yt:o3Tlv7h9I3Y ('Super Mario Bros. - 1-UP Mushroom Sound Effect', 6 s)."
+  },
+  {
+   "id": "sfx-minecraft-siseo-del-creeper",
+   "op": "revisar_a_oido",
+   "motivo": "Los dos videos son del Creeper de Minecraft, así que sirven para adivinar la saga, pero la pista es el siseo y yt:jn4xFdPpMUg dice que es la explosión. Solo oyendo se sabe si el primero empieza con el siseo.",
+   "nota": "Oír yt:Yt_8QFteuPQ: en el segundo 0 debe sonar el siseo (la mecha), no la explosión. Oír yt:jn4xFdPpMUg: si es solo la explosión, sin siseo, quitarlo o dejarlo solo de respaldo."
+  },
+  {
+   "id": "sfx-the-legend-of-zelda-ocarina-of-time-abrir-un-cofre",
+   "op": "revisar_a_oido",
+   "motivo": "Los dos títulos son el cofre de Zelda. Duran 14 y 11 s, lo cual cuadra con la secuencia de abrir el cofre y recibir el objeto, pero ninguno dice Ocarina of Time. No hay motivo para quitarlos.",
+   "nota": "Oír yt:69AyYUJUBTg y yt:NuMNVd7vxwI: el sonido del cofre debe empezar en 0 s, sin silencio ni gameplay antes, y debe ser la versión de Ocarina of Time. Si uno es de otro Zelda, ponerlo segundo."
+  },
+  {
+   "id": "sfx-the-legend-of-zelda-secreto-descubierto",
+   "op": "reordenar_fuentes",
+   "orden": [
+    "yt:0vngOmw2hcM",
+    "yt:9d3qCPcMgH4"
+   ],
+   "motivo": "La pista es del Zelda original y yt:9d3qCPcMgH4 es la versión de Ocarina of Time (misma saga, juego distinto). Va primero 'The Legend of Zelda - Secret Sound' (4 s), y la de Ocarina of Time queda de respaldo."
+  },
+  {
+   "id": "sfx-roblox-oof",
+   "op": "quitar_fuente",
+   "fuente": "yt:YTC75cKzuNk",
+   "motivo": "'ROBLOX death sound origin' (10 s) trata del origen del sonido: o explica o pone el audio del juego del que salió, no el efecto de Roblox solo. Se queda yt:3w-2gUSus34 ('Roblox Death Sound (Oof)', 3 s)."
+  },
+  {
+   "id": "sfx-pac-man-comiendo-puntos-waka-waka",
+   "op": "quitar_pista",
+   "motivo": "Ninguna fuente sirve. yt:EJcmz9ssDpw son '15 ... Sound Variations in 30 Seconds' (una compilación de variaciones de 30 s). yt:9JRabuWL_g4 es un sonido beta de Pac-Man World 2 ('SND_CHOMP_TALK', 14 s): es de otro juego y no es el waka waka del arcade."
+  },
+  {
+   "id": "sfx-mortal-kombat-get-over-here-scorpion",
+   "op": "reordenar_fuentes",
+   "orden": [
+    "yt:gEDamnAymjY",
+    "yt:nJg8AXNEvxs"
+   ],
+   "motivo": "yt:nJg8AXNEvxs es de Mortal Kombat 11 y 1 y además trae otra frase ('C'MERE'). Sirve como respaldo porque la frase y la saga son las mismas, pero va primero el 'Sound Effect - Mortal Kombat \"Get Over Here\"' corto y genérico (3 s)."
+  },
+  {
+   "id": "sfx-age-of-empires-ii-the-age-of-kings-wololo",
+   "op": "quitar_fuente",
+   "fuente": "yt:TnQ7PB4a9Hs",
+   "motivo": "Confirmado: 'Minecraft Referencias | Wololo - Referencia a ... Age of Empires' trata de una referencia dentro de Minecraft (otro juego), no del sonido original. Queda yt:RouQqawdB-0 'Age of Empires II: Definitive Edition classic Wololo Monk sound' (8 s), que sí es el efecto.",
+   "nota": "Oír que yt:RouQqawdB-0 empiece con el Wololo en el segundo 0, sin silencio previo."
+  },
+  {
+   "id": "sfx-minecraft-aldeano-hmm",
+   "op": "revisar_a_oido",
+   "motivo": "Ambos títulos son el sonido del aldeano de Minecraft (4 s y 10 s); ninguno es claramente compilación larga ni de otro juego. El de 10 s en plural puede mezclar varios sonidos, pero eso solo se decide oyendo.",
+   "nota": "Oír que el primer sonido de cada video sea el 'Hmm' del aldeano (no golpe, muerte o trato). Si yt:8CUy3n0Yu1A no empieza con el 'Hmm', quitarlo; yt:fiwRZ_j61Dc ya va primero."
+  },
+  {
+   "id": "sfx-the-elder-scrolls-v-skyrim-grito-fus-ro-dah",
+   "op": "reordenar_fuentes",
+   "orden": [
+    "yt:peP7yUOo3WM",
+    "yt:zzH_Wn0R-yo"
+   ],
+   "motivo": "Ambos son el grito. 'Fus Ro Dah (Skyrim) - Sound Effect (HD)' de 3 s es casi seguro solo el efecto desde el segundo 0; el de 11 s (Sath Buttons) puede traer pausa o repeticiones, así que va de respaldo."
+  },
+  {
+   "id": "sfx-metal-slug-heavy-machine-gun",
+   "op": "quitar_fuente",
+   "fuente": "yt:Pm5vvG3eP_A",
+   "motivo": "Confirmado: 'Metal Slug Mario World Heavy Machine Gun sound' es un hack/mezcla con Mario World, no el juego original, y puede confundir con Mario. Queda yt:lhXk_cPPm3o 'Metal slug heavy machine gun (sound effect' de 2 s.",
+   "nota": "Oír que yt:lhXk_cPPm3o sea la voz '¡Heavy Machine Gun!' y no solo los disparos del arma."
+  },
+  {
+   "id": "sfx-counter-strike-1-6-bomba-plantada",
+   "op": "quitar_pista",
+   "motivo": "Confirmado: la única fuente es 'CSGO - The bomb has been planted. (Fake audio)' de 16 s: audio falso, de CS:GO y no de 1.6, y largo para un solo efecto. No queda ninguna fuente aceptable."
+  },
+  {
+   "id": "sfx-pokemon-red-and-blue-curar-al-equipo",
+   "op": "quitar_fuente",
+   "fuente": "yt:92w8rQR28ZI",
+   "motivo": "Confirmado: 30 s grabados en el parque temático PokePark Kanto de Tokio (#themepark), no el jingle del juego. Queda yt:rnxXP6HWEZo 'Poke Center Healing Theme ... #gameboy' de 5 s.",
+   "nota": "Oír que yt:rnxXP6HWEZo sea el jingle original de Game Boy desde el segundo 0, y no una versión o cover del canal (Lu4ronus Music, #nestalgia)."
+  },
+  {
+   "id": "sfx-free-fire-grito-de-victoria-booyah",
+   "op": "revisar_a_oido",
+   "motivo": "Las dos fuentes son de Free Fire y dicen ser el Booyah, pero duran 12 s, que es largo para un solo grito. La 2ª es de un canal de OST y puede ser solo el jingle de victoria, sin la voz.",
+   "nota": "Oír la 1ª (yt:YDHf_YV-nEM): ¿suena la voz 'Booyah!' en el segundo 0, sin jingle ni silencio antes? En la 2ª (yt:C_4OggPyq-A), comprobar si se oye la voz o solo música."
+  },
+  {
+   "id": "sfx-grand-theft-auto-v-wasted",
+   "op": "quitar_fuente",
+   "fuente": "yt:_mO-PgUNONo",
+   "motivo": "'Old and New' es una comparativa de versiones y dura 18 s. Queda la 1ª fuente (yt:K3kFQHKE0LA, 'Wasted/Busted - Sound Effect', 8 s), que sí sirve."
+  },
+  {
+   "id": "sfx-resident-evil-4-voz-del-mercader",
+   "op": "quitar_fuente",
+   "fuente": "yt:xVrWjjIiM6c",
+   "motivo": "'Comparison' es una comparativa de versiones y dura 30 s. Queda la 1ª (yt:PVNTXVO4GzY), cuyo título es la frase del Mercader. Dura 21 s, así que conviene oírla.",
+   "nota": "Oír yt:PVNTXVO4GzY: ¿dice 'What're ya buyin?' en el segundo 0, o hay caminata o escena antes?"
+  },
+  {
+   "id": "sfx-candy-crush-saga-felicitacion-delicious-sweet",
+   "op": "quitar_pista",
+   "motivo": "Las dos fuentes son compilaciones de 30 s: '22/15 Delicious Sound Variations in 30 Seconds'. Las 'variations' se quitan y no queda ningún video que sea un solo efecto."
+  },
+  {
+   "id": "sfx-space-invaders-marcha-alienigena",
+   "op": "revisar_a_oido",
+   "motivo": "La 2ª (yt:cv7Xohkl10s) graba el arranque de un gabinete Midway, dura 18 s y no es el efecto. La 1ª es de Space Invaders, pero se titula 'Slurp' y no queda claro que sea la marcha de 4 notas. No se puede quitar solo la 2ª sin saber si la 1ª es buena.",
+   "nota": "Oír yt:n7T90Cu39Po: ¿es la marcha de 4 notas graves de los invasores desde el segundo 0? Si lo es, quitar yt:cv7Xohkl10s. Si no lo es, quitar la pista."
+  },
+  {
+   "id": "sfx-metal-gear-solid-game-over-snake",
+   "op": "reordenar_fuentes",
+   "orden": [
+    "yt:syYug2rV1qQ",
+    "yt:MS8OawQegYE"
+   ],
+   "motivo": "Las dos sirven. 'Game Over Sound' (6 s) es solo el audio y es más corta, así que va primero. La pantalla 'Clean background' (14 s) queda de respaldo."
+  },
+  {
+   "id": "sfx-clash-royale-grito-del-montapuercos-hog-rider",
+   "op": "revisar_a_oido",
+   "motivo": "Los títulos ('Hog rider sound' y 'Hog rider sound 2', 5 s) parecen el grito, pero son vagos y vienen de canales genéricos. Puede ser una edición o meme, o la voz de Clash of Clans.",
+   "nota": "Oír las dos: ¿es el grito 'Hog Rider!' original de Clash Royale en el segundo 0, sin edición ni efectos de meme?"
+  },
+  {
+   "id": "sfx-resident-evil-4-detras-de-ti-imbecil",
+   "op": "quitar_fuente",
+   "fuente": "yt:yt0gSPpzUK4",
+   "motivo": "'ORIGINAL VS REMAKE' es una comparativa de versiones y dura 29 s. Queda yt:QMpWfziKo6k ('Resident Evil 4 Detras de ti imbecil', 5 s), que sí sirve."
+  },
+  {
+   "id": "super-mario-world-overworld-theme",
+   "op": "reordenar_fuentes",
+   "orden": [
+    "yt:8w4nvCAx45s",
+    "yt:tAaGKo4XVvM"
+   ],
+   "motivo": "Coincide con el paquete. 'Super Mario World OST - Overworld' (retrovgnamusic, 90 s) parece un rip directo del OST de SNES. La de Halo2playa (182 s), con el título raro 'Super Mario: World', es la que más probablemente sea un loop extendido u otra versión, que es lo que dijo el reporte #22. No la quito porque no hay prueba de que no sea el tema original. Queda de respaldo.",
+   "nota": "Escuchar yt:8w4nvCAx45s y confirmar que es el Overworld original de Koji Kondo (SNES), no remix ni cover. Si yt:tAaGKo4XVvM también suena distinta, quitarla."
+  },
+  {
+   "id": "ani-d-gray-man-doubt-and-trust",
+   "op": "reordenar_fuentes",
+   "orden": [
+    "yt:Lzr1OI2eolI",
+    "yt:qPIUvFMjJyA"
+   ],
+   "motivo": "Coincide con el paquete. 'access - Topic' es el canal oficial, y sus 90 s cuadran con la versión TV size del opening 3, así que va primero. La de NERDWAFFEN (258 s, versión completa, canal de fan) estaba en primer lugar y es la candidata a no haber sonado en el reporte #21. Se conserva de respaldo porque el título indica el tema original de access.",
+   "nota": "Confirmar que yt:Lzr1OI2eolI se reproduce incrustado y que es el tema original de access (TV size), no un preview ni un cover."
+  }
+ ]
+}

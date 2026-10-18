@@ -940,7 +940,7 @@
       id: 'ani-d-gray-man-doubt-and-trust', cat: 'anime-00s', franchise: "D.Gray-man", game: "D.Gray-man",
       title: "Doubt & Trust", composer: "access", year: 2007, platform: "TMS Entertainment",
       aka: ["D Gray Man OP3"],
-      sources: [yt('qPIUvFMjJyA'), yt('Lzr1OI2eolI')],
+      sources: [yt('Lzr1OI2eolI'), yt('qPIUvFMjJyA')],
     },
     {
       id: 'ani-gintama-pray', cat: 'anime-00s', franchise: "Gintama", game: "Gintama",
