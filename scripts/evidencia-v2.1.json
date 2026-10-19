@@ -36901,5 +36901,35 @@
       "playableInEmbed": true
     },
     "fecha": "2026-10-18T01:29:27.979Z"
+  },
+  "iUsliYXRMUc": {
+    "tipo": "youtube",
+    "id": "iUsliYXRMUc",
+    "consulta": "propuesto en el reporte #24",
+    "titulo": "Puzzle Solved (The Legend of Zelda: Breath of the Wild OST)",
+    "canal_o_artista": null,
+    "album": null,
+    "duracion": null,
+    "pais": "mx",
+    "resultado": {
+      "oembed": 200,
+      "probadoPorUsuario": "#24"
+    },
+    "fecha": "2026-10-19T02:37:12.731Z"
+  },
+  "HL-waqkb0OE": {
+    "tipo": "youtube",
+    "id": "HL-waqkb0OE",
+    "consulta": "propuesto en el reporte #25",
+    "titulo": "Buhonero: Welcome - Resident Evil Efecto de Sonido",
+    "canal_o_artista": "Sonidos Random BySrMay",
+    "album": null,
+    "duracion": null,
+    "pais": "mx",
+    "resultado": {
+      "oembed": 200,
+      "probadoPorUsuario": "#25"
+    },
+    "fecha": "2026-10-19T02:37:12.731Z"
   }
 }

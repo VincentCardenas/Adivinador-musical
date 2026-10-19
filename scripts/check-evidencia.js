@@ -69,7 +69,8 @@ for (const rel of files) {
     if (!e) problem = 'sin evidencia';
     else if (s.tipo === 'youtube') {
       if (e.tipo !== 'youtube') problem = 'evidencia de otro tipo';
-      else if (!e.resultado || e.resultado.playabilityStatus !== 'OK' || e.resultado.playableInEmbed === false) problem = 'evidencia no OK';
+      // Vale lo que comprobó la red o lo que el usuario probó a mano en un reporte (resultado.probadoPorUsuario: '#N').
+      else if (!e.resultado || (!e.resultado.probadoPorUsuario && (e.resultado.playabilityStatus !== 'OK' || e.resultado.playableInEmbed === false))) problem = 'evidencia no OK';
     } else {
       if (e.tipo !== 'apple') problem = 'evidencia de otro tipo';
       else if (!e.resultado || !e.resultado.previewUrl) problem = 'sin previewUrl';

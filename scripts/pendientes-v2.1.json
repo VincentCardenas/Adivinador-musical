@@ -201,5 +201,19 @@
     "motivo": "Las dos fuentes son compilaciones de 30 s: '22/15 Delicious Sound Variations in 30 Seconds'. Las 'variations' se quitan y no queda ningún video que sea un solo efecto.",
     "bloque": "{\n      id: 'sfx-candy-crush-saga-felicitacion-delicious-sweet', franchise: 'Candy Crush', game: 'Candy Crush Saga',\n      title: 'Felicitación Delicious / Sweet', year: 2012, platform: 'Facebook / iOS / Android',\n      aka: ['Candy Crush Saga'],\n      sources: [yt('s2RH_4EYZlA'), yt('lu3bpDftNcA')],\n    },",
     "quitada": "revisión 2.1"
+  },
+  {
+    "id": "sfx-the-legend-of-zelda-secreto-descubierto",
+    "tema": "sonidos",
+    "fuente": "yt:0vngOmw2hcM",
+    "motivo": "Reporte #24: no sonó o es un cover, no el sonido original. Ahora suena primero el de Ocarina of Time y de respaldo el de Breath of the Wild que propuso el usuario.",
+    "quitada": "2.2.1 (#24)"
+  },
+  {
+    "id": "sfx-resident-evil-4-voz-del-mercader",
+    "tema": "sonidos",
+    "fuente": "yt:PVNTXVO4GzY",
+    "motivo": "Reporte #25: el video del Remake dura 21 s y la frase llega cuando ya se acabó el tiempo. Se cambió por el «Welcome» del Buhonero que propuso el usuario.",
+    "quitada": "2.2.1 (#25)"
   }
 ]

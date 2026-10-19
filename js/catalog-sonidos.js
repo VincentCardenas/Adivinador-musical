@@ -54,10 +54,10 @@
       sources: [yt('69AyYUJUBTg'), yt('NuMNVd7vxwI')],
     },
     {
-      id: 'sfx-the-legend-of-zelda-secreto-descubierto', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda',
-      title: 'Secreto descubierto', year: 1986, platform: 'NES',
+      id: 'sfx-the-legend-of-zelda-secreto-descubierto', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Ocarina of Time',
+      title: 'Secreto descubierto', year: 1998, platform: 'Nintendo 64',
       aka: ['Zelda', 'Legend of Zelda', 'La Leyenda de Zelda'],
-      sources: [yt('0vngOmw2hcM'), yt('9d3qCPcMgH4')],
+      sources: [yt('9d3qCPcMgH4'), yt('iUsliYXRMUc')],
     },
     {
       id: 'sfx-roblox-oof', franchise: 'Roblox', game: 'Roblox',
@@ -226,8 +226,8 @@
     {
       id: 'sfx-resident-evil-4-voz-del-mercader', franchise: 'Resident Evil', game: 'Resident Evil 4',
       title: 'Voz del Mercader', year: 2005, platform: 'GameCube',
-      aka: ['RE', 'Biohazard'],
-      sources: [yt('PVNTXVO4GzY')],
+      aka: ['RE', 'Biohazard', 'Buhonero'],
+      sources: [yt('HL-waqkb0OE')],
     },
     {
       id: 'sfx-among-us-asesinato-del-impostor', franchise: 'Among Us', game: 'Among Us',

@@ -33,12 +33,18 @@
     // Solo en Videojuegos: suena un efecto de sonido (AM.SOUND_TRACKS) y se escribe la saga, como en Experto, con 3 vidas.
     sonidos: {
       id: 'sonidos', name: 'Sonidos', icon: '🔊',
-      describe: () => 'Solo para conocedores. Suena un efecto de un videojuego desde 1 segundo: escribe la saga. 3 vidas.',
+      describe: () => 'Solo para conocedores. Suena un efecto de un videojuego y adivinas la saga: escribiéndola desde 1 segundo o entre 4 opciones contra reloj. 3 vidas.',
       rounds: Infinity, answer: 'franchise', typed: true, lives: 3, placeholder: 'Escribe el nombre de la saga…',
       steps: [1, 2, 3, 5],
       points: [500, 400, 300, 200],
       themes: ['juegos'], ranked: false,
     },
+  };
+
+  // Formas de jugar Sonidos: escribir la saga (el modo tal cual) o 4 opciones con reloj, como Supervivencia pero sin ronda bonus.
+  AM.SOUND_STYLES = {
+    escribir: { label: '✍️ Escribir la saga' },
+    opciones: { label: '⏱️ 4 opciones con reloj', name: 'Sonidos · Opciones', typed: false, steps: null, points: null, timeLimit: 15, minTime: 7, record: 'sonidos-opciones' },
   };
 
   AM.MIN_POOL = 5;
