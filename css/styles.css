@@ -616,7 +616,7 @@ a { color: var(--cyan); }
 .mini-gems { display: inline-flex; gap: 2px; margin-left: 4px; vertical-align: middle; }
 .mini-gems .gem { width: 8px; height: 8px; border-width: 1.5px; }
 
-/* ── Filtros (Pixar, idioma, época) ── */
+/* ── Filtros (Pixar, idioma, épocas de Canciones) ── */
 .filter { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
 .filter-label { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
 .filter .segmented { padding: 2px; border-color: #524790; background: var(--bg); }
@@ -625,22 +625,7 @@ a { color: var(--cyan); }
 .filters .switch { min-height: 44px; }
 .filters .switch.is-on { border-color: var(--pink); }
 .filters .switch.is-on .switch-track { background: var(--pink); }
-.popup { display: inline-flex; }
-.popup select {
-  min-height: 44px;
-  padding: 8px 40px 8px 14px;
-  border: 1px solid #8a85b3;
-  border-radius: 12px;
-  background: var(--panel-hi) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23f1eeff' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 14px center;
-  color: var(--text);
-  font-weight: 600;
-  font-size: 16px; /* 16 px: iOS no hace zoom al tocarlo */
-  -webkit-appearance: none;
-  appearance: none;
-  cursor: pointer;
-}
-.popup.is-changed select { border: 2px solid var(--pink); padding: 7px 39px 7px 13px; }
-.popup select option { background: var(--panel-solid); color: var(--text); }
+.filter-all { color: var(--text); letter-spacing: 0.5px; }
 
 /* ── Categorías: pads ── */
 .cats-head {
@@ -828,7 +813,7 @@ a { color: var(--cyan); }
   .set-row[aria-checked='true'] { border: 2px solid Highlight; }
   .pad[aria-pressed='true'] { border-color: Highlight; }
   .set-row:focus-visible, .pad:focus-visible, .filter .segmented button:focus-visible, .btn-play:focus-visible { outline: 3px solid CanvasText; outline-offset: 3px; }
-  .filter .segmented button[aria-checked='true'] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
+  .filter .segmented button[aria-checked='true'], .filter .segmented button[aria-pressed='true'] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   .switch-track { border: 1px solid CanvasText; }
   .switch-dot { forced-color-adjust: none; background: CanvasText; }
   .filters .switch.is-on .switch-track { forced-color-adjust: none; background: Highlight; }
@@ -1813,7 +1798,7 @@ kbd {
   .filter { flex-direction: column; align-items: stretch; }
   .filter .segmented { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; }
   .filter .segmented button { min-height: 38px; padding: 6px 8px; }
-  .popup, .popup select { width: 100%; }
+  .filter .segmented.is-multi { grid-auto-flow: row; grid-template-columns: repeat(3, 1fr); } /* 6 épocas en 2 filas */
   .filters { flex-direction: column; align-items: stretch; }
   .filter, .filters .switch { width: 100%; }
   .board-list li { grid-template-columns: 28px 1fr auto; gap: 8px; }

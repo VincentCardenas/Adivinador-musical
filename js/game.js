@@ -82,6 +82,11 @@
       let v = filterValues && f.id in filterValues ? filterValues[f.id] : f.default;
       // Un valor guardado que ya no existe (opción renombrada o quitada) vuelve al de siempre.
       if (f.type === 'choice' && !f.options.some((o) => o.value === v)) v = f.default;
+      if (f.type === 'multi') {
+        // Antes de la 2.2.3 la época era una sola ('todas', '80s'…). En el orden de las opciones: clave estable.
+        const list = Array.isArray(v) ? v : [v];
+        v = f.options.map((o) => o.value).filter((x) => list.indexOf(x) >= 0);
+      }
       vals[f.id] = v;
     });
     const key = T.id + '|' + JSON.stringify(vals);

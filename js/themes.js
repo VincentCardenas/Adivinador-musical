@@ -29,11 +29,11 @@
   });
 
   /*
-   * Selector de época (Canciones, que se separa por género): según el `year` de cada pista.
-   * Los señuelos no traen año y entran con cualquier época.
+   * Épocas de Canciones (que se separa por género): botones que se prenden y apagan, se pueden elegir
+   * varias y sin ninguna entran todas. Se decide por el `year` de cada pista; los señuelos no traen año
+   * y entran con cualquier época.
    */
   const ERAS = [
-    { value: 'todas', label: '🕰️ Todas' },
     { value: 'antes', label: 'Antes de 1980', to: 1979 },
     { value: '80s', label: 'Años 80', from: 1980, to: 1989 },
     { value: '90s', label: 'Años 90', from: 1990, to: 1999 },
@@ -41,14 +41,14 @@
     { value: '10s', label: '2010s', from: 2010, to: 2019 },
     { value: '20s', label: '2020s', from: 2020 },
   ];
+  const inEra = (year, v) => {
+    const era = ERAS.find((e) => e.value === v);
+    return !!era && (!era.from || year >= era.from) && (!era.to || year <= era.to);
+  };
   const eraFilter = () => ({
-    id: 'era', type: 'choice', default: 'todas', label: 'Época',
+    id: 'era', type: 'multi', default: [], label: 'Época', allLabel: 'todas',
     options: ERAS.map((e) => ({ value: e.value, label: e.label })),
-    keep: (t, v) => {
-      const era = ERAS.find((e) => e.value === v);
-      if (!era || !t.year) return true;
-      return (!era.from || t.year >= era.from) && (!era.to || t.year <= era.to);
-    },
+    keep: (t, v) => !v.length || !t.year || v.some((x) => inEra(t.year, x)),
   });
 
   AM.THEMES = [

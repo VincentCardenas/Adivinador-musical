@@ -342,10 +342,7 @@
     roving($('#modes'));
   }
 
-  /*
-   * Filtros del tema (Pixar, idioma, época). Un selector con más de 5 opciones (Época) va en un menú
-   * desplegable en vez de una fila de botones: en el celular la fila no cabía y bajaba de renglón.
-   */
+  /* Filtros del tema: Pixar (interruptor), idioma (elige uno) y época de Canciones (varias o ninguna = todas). */
   function renderFilters() {
     const T = theme();
     const vals = scope().values;
@@ -359,14 +356,16 @@
           </button>`;
       }
       const lid = 'f-' + f.id;
-      if (f.options.length > 5) {
+      if (f.type === 'multi') {
+        const on = vals[f.id];
         return `<div class="filter">
-            <label class="filter-label" id="${lid}" for="sel-${f.id}">${esc(f.label)}</label>
-            <span class="popup${vals[f.id] !== f.default ? ' is-changed' : ''}">
-              <select id="sel-${f.id}" data-filter="${f.id}">${f.options.map((o) =>
-                `<option value="${esc(o.value)}"${vals[f.id] === o.value ? ' selected' : ''}>${esc(o.label)}</option>`).join('')}
-              </select>
-            </span>
+            <span class="filter-label" id="${lid}">${esc(f.label)}${on.length ? '' : ` <span class="filter-all">· ${esc(f.allLabel)}</span>`}</span>
+            <div class="segmented is-multi" role="group" aria-labelledby="${lid}">
+              ${f.options.map((o) => {
+                const sel = on.indexOf(o.value) >= 0;
+                return `<button type="button" aria-pressed="${sel}" class="${sel ? 'is-on' : ''}" data-filter="${f.id}" data-value="${esc(o.value)}">${esc(o.label)}</button>`;
+              }).join('')}
+            </div>
           </div>`;
       }
       return `<div class="filter">
@@ -627,6 +626,10 @@
     const vals = scope().values;
     const extra = T.filters.filter((f) => vals[f.id] !== f.default).map((f) => {
       if (f.type === 'toggle') return f.offLabel || f.label;
+      if (f.type === 'multi') {
+        const on = f.options.filter((x) => vals[f.id].indexOf(x.value) >= 0).map((x) => x.label);
+        return on.length <= 2 ? on.join(' y ') : `${on.length} ${f.label.toLowerCase()}s`;
+      }
       const o = f.options.find((x) => x.value === vals[f.id]);
       return o ? o.label : '';
     }).filter(Boolean);
@@ -763,7 +766,10 @@
     const f = T.filters.find((x) => x.id === id);
     if (!f) return;
     const vals = Object.assign({}, scope().values);
-    vals[f.id] = f.type === 'toggle' ? !vals[f.id] : value;
+    const cur = vals[f.id];
+    if (f.type === 'toggle') vals[f.id] = !cur;
+    else if (f.type === 'multi') vals[f.id] = cur.indexOf(value) >= 0 ? cur.filter((x) => x !== value) : cur.concat(value);
+    else vals[f.id] = value;
     settings.filters[T.id] = vals;
     Store.set('filters', settings.filters);
     sfx('click');
@@ -776,13 +782,6 @@
     if (!btn) return;
     setFilter(btn.dataset.filter, btn.dataset.value);
     const again = $(`#filters button[data-filter="${btn.dataset.filter}"]${btn.dataset.value ? `[data-value="${btn.dataset.value}"]` : ''}`);
-    if (again) again.focus();
-  });
-  $('#filters').addEventListener('change', (e) => {
-    const sel = e.target.closest('select[data-filter]');
-    if (!sel) return;
-    setFilter(sel.dataset.filter, sel.value);
-    const again = $(`#filters select[data-filter="${sel.dataset.filter}"]`);
     if (again) again.focus();
   });
 
@@ -1052,8 +1051,15 @@
     const limit = expert && !cur.answered ? g.mode.steps[Math.min(cur.step, g.mode.steps.length - 1)] : Infinity;
     $('#btn-tap').hidden = true;
     if (!cur.started) setStatus('Cargando audio', true);
+    // Repetir a media ronda con reloj: el motor no avisa 'stall' mientras arranca, así que si no suena pronto
+    // se pausa el reloj desde el toque.
+    const t0 = performance.now();
+    const wait = cur.started && !cur.answered && g.mode.timeLimit
+      ? setTimeout(() => { if (game === g && g.cur === cur && !cur.answered) freezeTimer(cur, t0); }, REPLAY_STALL_MS)
+      : 0;
 
     AM.Engine.play(limit).then(() => {
+      clearTimeout(wait);
       if (game !== g || g.cur !== cur) return;
       $('#btn-replay').disabled = false;
       if (!cur.started) {
@@ -1064,6 +1070,7 @@
       }
       setStatus(cur.answered ? '' : expert ? `Escuchando ${limit} s…` : question(g));
     }).catch((e) => {
+      clearTimeout(wait);
       if (game !== g || g.cur !== cur || !e || e.code === 'cancelled') return;
       // Si ni con el toque del botón verde arrancó, no era el navegador: la fuente falló.
       if (e.code === 'blocked' && !tapped) {
@@ -1080,6 +1087,9 @@
     const g = game;
     const cur = g && g.cur;
     if (!cur) return;
+    clearTimeout(cur.stallTimer); // un solo cambio de fuente a la vez
+    // El reloj no corre mientras se carga otra fuente; playClip lo reanuda cuando vuelve a sonar.
+    if (cur.started && !cur.answered && g.mode.timeLimit && !cur.stallAt) cur.stallAt = performance.now();
     setStatus('Esa fuente falló, probando otra', true);
     while (cur.rest.length) {
       const cand = cur.rest.shift();
@@ -1120,6 +1130,7 @@
    * STALL_GIVE_UP_MS, se prueba la siguiente fuente (y si no hay, la ronda no cuenta).
    */
   const STALL_GIVE_UP_MS = 8000;
+  const REPLAY_STALL_MS = 700; // como STALL_MS del motor: un Repetir normal suena antes
 
   function freezeTimer(cur, since) {
     if (cur.stallAt) return;
