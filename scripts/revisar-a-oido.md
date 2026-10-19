@@ -60,6 +60,8 @@ Pistas cuya versión o segundo de inicio solo se puede confirmar escuchando. Abr
 
 ## Sonidos de la 2.2 (Sonnet + árbitro Opus)
 
+**Ya revisado (2.2.1):** el usuario escuchó los 44 sonidos en la página de revisión. Quitó Wololo y la marcha de Space Invaders; en el aldeano, «Finish Him» y el cofre de Ocarina of Time subió el respaldo a principal; cambió el cover de «Curar al equipo» y agregó el orbe de XP de Minecraft. Lo demás quedó bien. La tabla queda como historial.
+
 El modo Sonidos toca cada video desde el segundo 0 y la primera ronda dura 1 s: lo que importa es que el efecto suene de inmediato, sin silencio ni intro. Quitar un video de la lista es cambiar o borrar su `yt('ID')` en `js/catalog-sonidos.js`.
 
 | Pista | Qué escuchar | |

@@ -229,5 +229,26 @@
     "motivo": "Reporte #27: el usuario pidió quitarlo, no es un sonido legendario.",
     "bloque": "{\n      id: 'sfx-free-fire-grito-de-victoria-booyah', franchise: 'Free Fire', game: 'Free Fire',\n      title: 'Grito de victoria Booyah', year: 2017, platform: 'Android / iOS',\n      aka: ['Garena Free Fire'],\n      sources: [yt('YDHf_YV-nEM'), yt('C_4OggPyq-A')],\n    },",
     "quitada": "2.2.1 (#27)"
+  },
+  {
+    "id": "sfx-age-of-empires-ii-the-age-of-kings-wololo",
+    "tema": "sonidos",
+    "motivo": "Revisión a oído (2.2.1): el usuario pidió quitarlo.",
+    "bloque": "{\n      id: 'sfx-age-of-empires-ii-the-age-of-kings-wololo', franchise: 'Age of Empires', game: 'Age of Empires II: The Age of Kings',\n      title: 'Wololo', year: 1999, platform: 'PC',\n      aka: ['AoE', 'AoE2', 'Age of Empires II'],\n      sources: [yt('RouQqawdB-0')],\n    },",
+    "quitada": "2.2.1 (revisión a oído)"
+  },
+  {
+    "id": "sfx-space-invaders-marcha-alienigena",
+    "tema": "sonidos",
+    "motivo": "Revisión a oído (2.2.1): el usuario lo quitó porque no se reconoce.",
+    "bloque": "{\n      id: 'sfx-space-invaders-marcha-alienigena', franchise: 'Space Invaders', game: 'Space Invaders',\n      title: 'Marcha alienígena', year: 1978, platform: 'Arcade',\n      aka: ['Invasores del espacio', 'Marcianitos'],\n      sources: [yt('n7T90Cu39Po'), yt('cv7Xohkl10s')],\n    },",
+    "quitada": "2.2.1 (revisión a oído)"
+  },
+  {
+    "id": "sfx-pokemon-red-and-blue-curar-al-equipo",
+    "tema": "sonidos",
+    "fuente": "yt:rnxXP6HWEZo",
+    "motivo": "Revisión a oído (2.2.1): es un cover. Se cambió por el que propuso el usuario (xcg6M2Xmtbk), que ya tenía evidencia de red.",
+    "quitada": "2.2.1 (revisión a oído)"
   }
 ]

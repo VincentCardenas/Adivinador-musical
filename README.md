@@ -248,8 +248,14 @@ archivos nuevos en vez de usar los guardados en caché).
   - #24 Zelda, «Secreto descubierto»: sonaba un cover. Ahora suena primero el de Ocarina of Time y de respaldo el de Breath of the Wild.
   - #25 Resident Evil 4, «Voz del Mercader»: el video duraba 21 s y la frase llegaba cuando ya se había acabado el tiempo. Ahora es el «Welcome» del Buhonero, corto.
   - #26 Minecraft, «Aldeano (Hmm)»: el video tardaba en empezar; se cambió por uno que suena de inmediato.
-  - #27: se quitó el «Booyah» de Free Fire, que no era un sonido legendario. Quedan **44 sonidos de 24 sagas**.
-  - Los tres videos nuevos los propuso el usuario en su reporte y los probó a mano. `scripts/check-evidencia.js` acepta esa prueba (`probadoPorUsuario`) además de la comprobación de red.
+  - #27: se quitó el «Booyah» de Free Fire, que no era un sonido legendario.
+  - **Revisión a oído de los 44 sonidos**: el usuario escuchó cada uno en una página de revisión.
+    - Se quitaron «Wololo» de Age of Empires y la marcha de Space Invaders, que no se reconoce.
+    - En el aldeano de Minecraft, «Finish Him» y el cofre de Ocarina of Time, el video de respaldo sonaba mejor y pasó a ser el principal.
+    - «Curar al equipo» de Pokémon era un cover; ahora suena el que propuso el usuario.
+    - Nuevo: el orbe de experiencia (XP) de Minecraft.
+    - Quedan **43 sonidos de 22 sagas**.
+  - Los videos nuevos de #24, #25, #26 y el del orbe de XP los propuso el usuario y los probó a mano. `scripts/check-evidencia.js` acepta esa prueba (`probadoPorUsuario`) además de la comprobación de red.
 - **2.2**: **nuevo modo «🔊 Sonidos»** (solo para conocedores) y dos reportes arreglados.
   - **Modo Sonidos**, en Videojuegos: suena un efecto de sonido de un videojuego y escribes la saga.
     - Empiezas con **1 segundo** y tienes 4 intentos (1, 2, 3 y 5 s) y **3 vidas**.
