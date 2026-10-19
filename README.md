@@ -4,7 +4,7 @@ Adivinador musical: suena un fragmento de música **oficial** y tienes que recon
 
 | Tema | ¿Qué adivinas? | Categorías |
 | --- | --- | --- |
-| 🎮 **Videojuegos** | La saga y el juego (Halo, Zelda, Pokémon, Elden Ring…): 342 pistas de 131 sagas y 232 juegos, más 44 efectos de sonido en el modo **Sonidos** | Nintendo, Xbox, PlayStation, Indie, Retro, RPG, Acción, Online |
+| 🎮 **Videojuegos** | La saga y el juego (Halo, Zelda, Pokémon, Elden Ring…): 342 pistas de 131 sagas y 232 juegos, más 43 efectos de sonido en el modo **Sonidos** | Nintendo, Xbox, PlayStation, Indie, Retro, RPG, Acción, Online |
 | 📺 **Series** | La serie por su entrada o tema principal (Friends, Lost, Stranger Things, El Chavo…) | Por época: clásicas, 90s, 2000s, 2010s y 2020 en adelante |
 | 🧸 **Caricaturas** | La caricatura por su entrada, **todas en español latino**: 358 caricaturas inolvidables, desde Los Picapiedra, Don Gato, Scooby-Doo y Thundercats hasta Fenomenoide, Bob Esponja, Los Padrinos Mágicos, Ben 10, Hora de Aventura y Gravity Falls | Por época: clásicas (antes de 1980), 80s, 90s, 2000s, 2010 a 2014, 2015 a 2019 y 2020 en adelante |
 | 🎌 **Anime** | El anime por su opening: 303 openings icónicos, desde Astro Boy, Mazinger Z, Caballeros del Zodiaco y Dragon Ball hasta Sailor Moon, Evangelion, Naruto, Bleach, Attack on Titan, Demon Slayer, Jujutsu Kaisen, Chainsaw Man, Frieren y Dandadan | Por época: clásicos (antes de 1990), 90s, 2000s, 2010s y 2020 en adelante |
@@ -243,7 +243,7 @@ La versión actual se ve en la esquina inferior izquierda del juego (en el celul
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
-- **2.2.1**: **Sonidos con 4 opciones** y dos reportes de sonidos.
+- **2.2.1**: **Sonidos con 4 opciones**, cuatro reportes de sonidos y la revisión a oído de todos.
   - En el modo Sonidos, la parte 3 trae **«Cómo jugar»**: ✍️ escribir la saga (como en la 2.2) o ⏱️ **4 opciones con reloj** (15 s que bajan a 7, como en Supervivencia) **sin ronda bonus**: tus 3 vidas no se recuperan. Cada forma guarda su propio récord.
   - #24 Zelda, «Secreto descubierto»: sonaba un cover. Ahora suena primero el de Ocarina of Time y de respaldo el de Breath of the Wild.
   - #25 Resident Evil 4, «Voz del Mercader»: el video duraba 21 s y la frase llegaba cuando ya se había acabado el tiempo. Ahora es el «Welcome» del Buhonero, corto.

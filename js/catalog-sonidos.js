@@ -265,7 +265,7 @@
       sources: [yt('iSBBsUld8zM'), yt('rJvtzBA1uFY')],
     },
     {
-      id: 'sfx-minecraft-orbe-de-experiencia', franchise: 'Minecraft', game: 'Minecraft',
+      id: 'sfx-minecraft-orbe-de-experiencia-xp', franchise: 'Minecraft', game: 'Minecraft',
       title: 'Orbe de experiencia (XP)', year: 2011, platform: 'PC',
       aka: ['Mine craft'],
       sources: [yt('Ehj0sY9Gc94')],
