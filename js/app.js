@@ -37,6 +37,7 @@
     filters: savedFilters && typeof savedFilters === 'object' ? savedFilters : {}, // { disney: { pixar }, canciones: { lang } }
     volume: isFinite(savedVolume) ? Math.max(0, Math.min(1, savedVolume)) : 0.8,
     sfx: Store.get('sfx', true) !== false,
+    soundStyle: AM.SOUND_STYLES[Store.get('soundStyle', 'escribir')] ? Store.get('soundStyle', 'escribir') : 'escribir', // modo Sonidos
   };
 
   // Categorías por tema. Las versiones anteriores guardaban solo las de videojuegos en "cats".
@@ -91,6 +92,8 @@
   function allCats() { return AM.themeCategories(settings.theme).map((c) => c.id); }
   function sagaMode() { return settings.mode === 'sagas' && AM.modeAvailable('sagas', settings.theme); }
   function soundMode() { return settings.mode === 'sonidos' && AM.modeAvailable('sonidos', settings.theme); }
+  /** El modo Sonidos con la forma de jugar elegida (cada forma guarda su récord). */
+  function soundModeObj() { return Object.assign({}, AM.MODES.sonidos, AM.SOUND_STYLES[settings.soundStyle]); }
   function sagaInfo() { return AM.SAGAS.find((x) => x.id === settings.saga.id) || AM.SAGAS[0]; }
   /** Juegos de la saga elegida que tienen suficientes canciones para jugarlos solos. */
   function sagaPlayableGames() { return AM.Logic.sagaGames(settings.saga.id).filter((g) => g.songs >= AM.MIN_POOL); }
@@ -131,6 +134,7 @@
   /** Pregunta que se muestra mientras suena la pista (una categoría puede tener la suya: "¿De qué anime es?"). */
   function question(g) {
     if (g.mode.id === 'sagas') return '¿Qué canción es?';
+    if (g.cur && g.cur.track.sound) return '¿De qué saga es este sonido?';
     const T = g.theme;
     const cat = g.cur && AM.CATEGORIES.find((c) => c.id === g.cur.track.cat);
     if (cat && cat.question) return cat.question;
@@ -320,7 +324,7 @@
       const m = AM.MODES[id];
       const sel = id === settings.mode;
       const level = MODE_LEVEL[id] || 3;
-      const rec = id === 'sagas' ? Records.get('sagas', sagaRecordKey()) : Records.get(T.id, id);
+      const rec = id === 'sagas' ? Records.get('sagas', sagaRecordKey()) : Records.get(T.id, id === 'sonidos' ? soundModeObj().record || id : id);
       const divider = id === 'sagas' ? '<p class="set-divider" aria-hidden="true">Solo en Videojuegos</p>' : '';
       return `${divider}
         <button type="button" class="set-row set-row--mode" role="radio" aria-checked="${sel}" data-mode="${id}">
@@ -388,6 +392,7 @@
     $('#step3-title').textContent = saga ? 'Elige una saga (o uno de sus juegos)' : sound ? 'Sonidos de videojuegos' : '¿Qué quieres escuchar?';
     $('#cats-head').hidden = saga || sound;
     box.classList.toggle('is-saga', saga);
+    box.classList.toggle('is-sound', sound);
     if (saga || sound) {
       box.removeAttribute('role');
       box.removeAttribute('aria-labelledby');
@@ -396,7 +401,19 @@
     if (sound) {
       const pool = currentPool(); // sin los ocultos por reportes
       const sagas = new Set(pool.map((t) => t.franchise)).size;
-      box.innerHTML = `<p class="sound-note">🔊 Suenan los ${fmt(pool.length)} sonidos, de ${sagas} sagas: power-ups, armas, menús, monedas…</p>`;
+      const styles = AM.SOUND_STYLES;
+      const opciones = settings.soundStyle === 'opciones';
+      box.innerHTML = `<div class="filter">
+          <span class="filter-label" id="lbl-sound-style">Cómo jugar</span>
+          <div class="segmented" role="radiogroup" aria-labelledby="lbl-sound-style">${Object.keys(styles).map((k) => {
+            const on = k === settings.soundStyle;
+            return `<button type="button" role="radio" aria-checked="${on}" class="${on ? 'is-on' : ''}" data-sound-style="${k}">${esc(styles[k].label)}</button>`;
+          }).join('')}</div>
+        </div>
+        <p class="sound-note">🔊 Suenan los ${fmt(pool.length)} sonidos, de ${sagas} sagas: power-ups, armas, menús, monedas… ${opciones
+          ? 'Eliges entre 4 sagas antes de que se acabe el reloj. Sin ronda bonus: tus 3 vidas no se recuperan.'
+          : 'Escribes la saga; empiezas oyendo 1 segundo.'}</p>`;
+      roving($('#chips .segmented'));
       updatePoolInfo();
       return;
     }
@@ -593,7 +610,7 @@
 
   /** Lo elegido en Música, en palabras: "Rock y Pop · Español", "3 de 5 épocas", "Todas las épocas". */
   function musicSummary() {
-    if (soundMode()) return 'Todos los sonidos';
+    if (soundMode()) return 'Todos los sonidos · ' + (settings.soundStyle === 'opciones' ? '4 opciones' : 'escribiendo');
     if (sagaMode()) {
       const sel = sagaInfo();
       return settings.saga.game ? AM.Logic.sagaGameName(sel, settings.saga.game) : `${sel.icon} ${sel.label}`;
@@ -627,7 +644,7 @@
   /** Valores de las partes cerradas y "Tu partida". */
   function renderDeck() {
     const T = theme();
-    const m = AM.MODES[settings.mode] || AM.MODES.clasico;
+    const m = soundMode() ? soundModeObj() : AM.MODES[settings.mode] || AM.MODES.clasico;
     const level = MODE_LEVEL[m.id] || 3;
     const pool = currentPool();
     const ok = pool.length >= AM.MIN_POOL;
@@ -643,7 +660,7 @@
     $('#deck-music').textContent = music;
     // En el celular solo se ven el tema y esta línea, así que ahí lleva también el modo (.dl-mode).
     $('#deck-line').innerHTML = `<span class="dl-mode">${m.icon} ${esc(m.name)} · </span>${esc(count)}<span class="dl-facts"> · ${esc(modeFacts(m, pool.length))}</span>`;
-    const rec = sagaMode() ? Records.get('sagas', sagaRecordKey()) : Records.get(T.id, m.id);
+    const rec = sagaMode() ? Records.get('sagas', sagaRecordKey()) : Records.get(T.id, m.record || m.id);
     $('#deck-record').textContent = rec ? `🏆 Tu récord: ${fmt(rec)}` : '🏆 Aún sin récord';
   }
 
@@ -795,6 +812,17 @@
   });
 
   $('#chips').addEventListener('click', (e) => {
+    const styleBtn = e.target.closest('[data-sound-style]');
+    if (styleBtn) {
+      settings.soundStyle = styleBtn.dataset.soundStyle;
+      Store.set('soundStyle', settings.soundStyle);
+      sfx('click');
+      renderModes(); // el récord del modo es por forma de jugar
+      renderChips();
+      const again = $(`[data-sound-style="${settings.soundStyle}"]`);
+      if (again) again.focus();
+      return;
+    }
     const sagaBtn = e.target.closest('[data-saga], [data-saga-game]');
     if (sagaBtn) {
       // Al cambiar de saga desaparecen los juegos de la anterior: se compensa para que la fila tocada
@@ -836,7 +864,7 @@
     const saga = sagaMode() ? sagaInfo() : null;
     const base = AM.MODES[AM.modeAvailable(settings.mode, settings.theme) ? settings.mode : 'clasico'];
     // En Sagas, el nombre del modo lleva la saga o el juego (se ve en el marcador, resultados y al compartir).
-    const mode = saga ? Object.assign({}, base, { name: 'Sagas · ' + (settings.saga.game || saga.label) }) : base;
+    const mode = saga ? Object.assign({}, base, { name: 'Sagas · ' + (settings.saga.game || saga.label) }) : soundMode() ? soundModeObj() : base;
     const pool = currentPool();
     if (pool.length < AM.MIN_POOL) return;
 
@@ -852,7 +880,7 @@
       queue: saga
         ? AM.Logic.buildQueue(pool, History.seen, 2, settings.saga.game ? 'id' : 'game')
         : AM.Logic.buildQueue(pool, History.seen),
-      record: saga ? ['sagas', sagaRecordKey()] : [settings.theme, mode.id],
+      record: saga ? ['sagas', sagaRecordKey()] : [settings.theme, mode.record || mode.id],
       total: isFinite(mode.rounds) ? Math.min(mode.rounds, pool.length) : Infinity,
       round: 0,
       score: 0,

@@ -4,7 +4,7 @@ Adivinador musical: suena un fragmento de música **oficial** y tienes que recon
 
 | Tema | ¿Qué adivinas? | Categorías |
 | --- | --- | --- |
-| 🎮 **Videojuegos** | La saga y el juego (Halo, Zelda, Pokémon, Elden Ring…): 342 pistas de 131 sagas y 232 juegos, más 45 efectos de sonido en el modo **Sonidos** | Nintendo, Xbox, PlayStation, Indie, Retro, RPG, Acción, Online |
+| 🎮 **Videojuegos** | La saga y el juego (Halo, Zelda, Pokémon, Elden Ring…): 342 pistas de 131 sagas y 232 juegos, más 43 efectos de sonido en el modo **Sonidos** | Nintendo, Xbox, PlayStation, Indie, Retro, RPG, Acción, Online |
 | 📺 **Series** | La serie por su entrada o tema principal (Friends, Lost, Stranger Things, El Chavo…) | Por época: clásicas, 90s, 2000s, 2010s y 2020 en adelante |
 | 🧸 **Caricaturas** | La caricatura por su entrada, **todas en español latino**: 358 caricaturas inolvidables, desde Los Picapiedra, Don Gato, Scooby-Doo y Thundercats hasta Fenomenoide, Bob Esponja, Los Padrinos Mágicos, Ben 10, Hora de Aventura y Gravity Falls | Por época: clásicas (antes de 1980), 80s, 90s, 2000s, 2010 a 2014, 2015 a 2019 y 2020 en adelante |
 | 🎌 **Anime** | El anime por su opening: 303 openings icónicos, desde Astro Boy, Mazinger Z, Caballeros del Zodiaco y Dragon Ball hasta Sailor Moon, Evangelion, Naruto, Bleach, Attack on Titan, Demon Slayer, Jujutsu Kaisen, Chainsaw Man, Frieren y Dandadan | Por época: clásicos (antes de 1990), 90s, 2000s, 2010s y 2020 en adelante |
@@ -24,7 +24,7 @@ Hecho con HTML, CSS y JavaScript puro (sin frameworks ni compilación).
 | 🎧 **Experto** | Estilo Heardle. Empiezas con **1 segundo** de audio; cada fallo o salto desbloquea más (1 → 2 → 4 → 7 → 11 → 16 s). Hay que escribir la respuesta **exacta** (el juego, la película, la canción…); si aciertas la saga, el musical o el artista pero no la respuesta, te avisa con 🟨. En Musicales vale el título original o el de la versión en español (*Gethsemane* o *Getsemaní*). |
 | ❤️ **Supervivencia** | Opciones con la respuesta exacta (¿Halo 2 o Halo 3? ¿Toy Story o Toy Story 2?), 3 vidas y el reloj se acorta cada 3 aciertos. Cada 5 canciones (la 5, la 10, la 15…) hay una **ronda bonus ⭐**: si aciertas, recuperas una vida (con las 3 vidas, solo suma sus puntos) y si fallas, no pierdes ninguna. |
 | 🗂️ **Sagas** | Solo en Videojuegos. Eliges una saga (Super Mario, Zelda, Pokémon, Kirby, Donkey Kong, Sonic, Final Fantasy, Halo, Mega Man o Street Fighter) y adivinas **qué canción es** entre 4 opciones: de **toda la saga** (cada opción dice juego y canción, como *Halo 3 - One Final Effort* u *Ocarina of Time - Zelda's Lullaby*) o de **un solo juego** (solo el nombre de la canción; se puede elegir si el juego tiene al menos 5). 10 rondas (o una por canción si el juego tiene menos) y 20 s por ronda. Solo música original: nada de remakes ni remasters (Halo va de Combat Evolved a Reach). Tiene récord por saga, pero no entra al ranking global. |
-| 🔊 **Sonidos** | Solo en Videojuegos y **solo para conocedores**. Suena un **efecto de sonido** de un videojuego (el hongo de Mario, la bomba plantada de Counter-Strike, el cofre de Zelda, el «Oof» de Roblox…) y escribes **la saga**, como en Experto. Empiezas con **1 segundo** y tienes 4 intentos (1 → 2 → 3 → 5 s) con **3 vidas**. Al revelar se ve la saga y el sonido con su juego. Tiene récord, pero no entra al ranking global. |
+| 🔊 **Sonidos** | Solo en Videojuegos y **solo para conocedores**. Suena un **efecto de sonido** de un videojuego (el hongo de Mario, la bomba plantada de Counter-Strike, el cofre de Zelda, el «Oof» de Roblox…) y adivinas **la saga**, con **3 vidas**. Se juega de dos formas: **escribiéndola** como en Experto (empiezas con **1 segundo** y tienes 4 intentos: 1 → 2 → 3 → 5 s) o con **4 opciones contra reloj** como en Supervivencia, pero **sin ronda bonus**. Al revelar se ve la saga y el sonido con su juego. Tiene récord, pero no entra al ranking global. |
 
 Además puedes filtrar por categorías, guardar récords por tema y modo, compartir tu resultado con emojis
 y, al final, ver la lista de lo que sonó con enlaces para escucharlo completo.
@@ -243,6 +243,19 @@ La versión actual se ve en la esquina inferior izquierda del juego (en el celul
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **2.2.1**: **Sonidos con 4 opciones**, cuatro reportes de sonidos y la revisión a oído de todos.
+  - En el modo Sonidos, la parte 3 trae **«Cómo jugar»**: ✍️ escribir la saga (como en la 2.2) o ⏱️ **4 opciones con reloj** (15 s que bajan a 7, como en Supervivencia) **sin ronda bonus**: tus 3 vidas no se recuperan. Cada forma guarda su propio récord.
+  - #24 Zelda, «Secreto descubierto»: sonaba un cover. Ahora suena primero el de Ocarina of Time y de respaldo el de Breath of the Wild.
+  - #25 Resident Evil 4, «Voz del Mercader»: el video duraba 21 s y la frase llegaba cuando ya se había acabado el tiempo. Ahora es el «Welcome» del Buhonero, corto.
+  - #26 Minecraft, «Aldeano (Hmm)»: el video tardaba en empezar; se cambió por uno que suena de inmediato.
+  - #27: se quitó el «Booyah» de Free Fire, que no era un sonido legendario.
+  - **Revisión a oído de los 44 sonidos**: el usuario escuchó cada uno en una página de revisión.
+    - Se quitaron «Wololo» de Age of Empires y la marcha de Space Invaders, que no se reconoce.
+    - En el aldeano de Minecraft, «Finish Him» y el cofre de Ocarina of Time, el video de respaldo sonaba mejor y pasó a ser el principal.
+    - «Curar al equipo» de Pokémon era un cover; ahora suena el que propuso el usuario.
+    - Nuevo: el orbe de experiencia (XP) de Minecraft.
+    - Quedan **43 sonidos de 22 sagas**.
+  - Los videos nuevos de #24, #25, #26 y el del orbe de XP los propuso el usuario y los probó a mano. `scripts/check-evidencia.js` acepta esa prueba (`probadoPorUsuario`) además de la comprobación de red.
 - **2.2**: **nuevo modo «🔊 Sonidos»** (solo para conocedores) y dos reportes arreglados.
   - **Modo Sonidos**, en Videojuegos: suena un efecto de sonido de un videojuego y escribes la saga.
     - Empiezas con **1 segundo** y tienes 4 intentos (1, 2, 3 y 5 s) y **3 vidas**.

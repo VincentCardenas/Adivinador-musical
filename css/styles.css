@@ -662,6 +662,8 @@ a { color: var(--cyan); }
   gap: 8px;
 }
 .pads.is-saga { display: block; }
+.pads.is-sound { display: block; }
+.pads.is-sound .sound-note { margin-top: 12px; }
 .pad {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;

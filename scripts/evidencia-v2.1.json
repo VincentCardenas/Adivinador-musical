@@ -36901,5 +36901,65 @@
       "playableInEmbed": true
     },
     "fecha": "2026-10-18T01:29:27.979Z"
+  },
+  "iUsliYXRMUc": {
+    "tipo": "youtube",
+    "id": "iUsliYXRMUc",
+    "consulta": "propuesto en el reporte #24",
+    "titulo": "Puzzle Solved (The Legend of Zelda: Breath of the Wild OST)",
+    "canal_o_artista": null,
+    "album": null,
+    "duracion": null,
+    "pais": "mx",
+    "resultado": {
+      "oembed": 200,
+      "probadoPorUsuario": "#24"
+    },
+    "fecha": "2026-10-19T02:37:12.731Z"
+  },
+  "HL-waqkb0OE": {
+    "tipo": "youtube",
+    "id": "HL-waqkb0OE",
+    "consulta": "propuesto en el reporte #25",
+    "titulo": "Buhonero: Welcome - Resident Evil Efecto de Sonido",
+    "canal_o_artista": "Sonidos Random BySrMay",
+    "album": null,
+    "duracion": null,
+    "pais": "mx",
+    "resultado": {
+      "oembed": 200,
+      "probadoPorUsuario": "#25"
+    },
+    "fecha": "2026-10-19T02:37:12.731Z"
+  },
+  "KzIw_9myY6k": {
+    "tipo": "youtube",
+    "id": "KzIw_9myY6k",
+    "consulta": "propuesto en el reporte #26",
+    "titulo": "Minecraft villager noises, but it's more and more high-pitched",
+    "canal_o_artista": "King Otter",
+    "album": null,
+    "duracion": null,
+    "pais": "mx",
+    "resultado": {
+      "oembed": 200,
+      "probadoPorUsuario": "#26"
+    },
+    "fecha": "2026-10-19T02:40:27.000Z"
+  },
+  "Ehj0sY9Gc94": {
+    "tipo": "youtube",
+    "id": "Ehj0sY9Gc94",
+    "consulta": "propuesto en la revisión a oído (2.2.1)",
+    "titulo": "Minecraft xp sound effect",
+    "canal_o_artista": "SOUND EFFECTS AF",
+    "album": null,
+    "duracion": null,
+    "pais": "mx",
+    "resultado": {
+      "oembed": 200,
+      "probadoPorUsuario": "revisión a oído 2.2.1"
+    },
+    "fecha": "2026-10-19T03:16:51.771Z"
   }
 }

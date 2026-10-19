@@ -201,5 +201,54 @@
     "motivo": "Las dos fuentes son compilaciones de 30 s: '22/15 Delicious Sound Variations in 30 Seconds'. Las 'variations' se quitan y no queda ningún video que sea un solo efecto.",
     "bloque": "{\n      id: 'sfx-candy-crush-saga-felicitacion-delicious-sweet', franchise: 'Candy Crush', game: 'Candy Crush Saga',\n      title: 'Felicitación Delicious / Sweet', year: 2012, platform: 'Facebook / iOS / Android',\n      aka: ['Candy Crush Saga'],\n      sources: [yt('s2RH_4EYZlA'), yt('lu3bpDftNcA')],\n    },",
     "quitada": "revisión 2.1"
+  },
+  {
+    "id": "sfx-the-legend-of-zelda-secreto-descubierto",
+    "tema": "sonidos",
+    "fuente": "yt:0vngOmw2hcM",
+    "motivo": "Reporte #24: no sonó o es un cover, no el sonido original. Ahora suena primero el de Ocarina of Time y de respaldo el de Breath of the Wild que propuso el usuario.",
+    "quitada": "2.2.1 (#24)"
+  },
+  {
+    "id": "sfx-resident-evil-4-voz-del-mercader",
+    "tema": "sonidos",
+    "fuente": "yt:PVNTXVO4GzY",
+    "motivo": "Reporte #25: el video del Remake dura 21 s y la frase llega cuando ya se acabó el tiempo. Se cambió por el «Welcome» del Buhonero que propuso el usuario.",
+    "quitada": "2.2.1 (#25)"
+  },
+  {
+    "id": "sfx-minecraft-aldeano-hmm",
+    "tema": "sonidos",
+    "fuente": "yt:fiwRZ_j61Dc",
+    "motivo": "Reporte #26: tardaba mucho en empezar. Ahora suena primero el video que propuso el usuario.",
+    "quitada": "2.2.1 (#26)"
+  },
+  {
+    "id": "sfx-free-fire-grito-de-victoria-booyah",
+    "tema": "sonidos",
+    "motivo": "Reporte #27: el usuario pidió quitarlo, no es un sonido legendario.",
+    "bloque": "{\n      id: 'sfx-free-fire-grito-de-victoria-booyah', franchise: 'Free Fire', game: 'Free Fire',\n      title: 'Grito de victoria Booyah', year: 2017, platform: 'Android / iOS',\n      aka: ['Garena Free Fire'],\n      sources: [yt('YDHf_YV-nEM'), yt('C_4OggPyq-A')],\n    },",
+    "quitada": "2.2.1 (#27)"
+  },
+  {
+    "id": "sfx-age-of-empires-ii-the-age-of-kings-wololo",
+    "tema": "sonidos",
+    "motivo": "Revisión a oído (2.2.1): el usuario pidió quitarlo.",
+    "bloque": "{\n      id: 'sfx-age-of-empires-ii-the-age-of-kings-wololo', franchise: 'Age of Empires', game: 'Age of Empires II: The Age of Kings',\n      title: 'Wololo', year: 1999, platform: 'PC',\n      aka: ['AoE', 'AoE2', 'Age of Empires II'],\n      sources: [yt('RouQqawdB-0')],\n    },",
+    "quitada": "2.2.1 (revisión a oído)"
+  },
+  {
+    "id": "sfx-space-invaders-marcha-alienigena",
+    "tema": "sonidos",
+    "motivo": "Revisión a oído (2.2.1): el usuario lo quitó porque no se reconoce.",
+    "bloque": "{\n      id: 'sfx-space-invaders-marcha-alienigena', franchise: 'Space Invaders', game: 'Space Invaders',\n      title: 'Marcha alienígena', year: 1978, platform: 'Arcade',\n      aka: ['Invasores del espacio', 'Marcianitos'],\n      sources: [yt('n7T90Cu39Po'), yt('cv7Xohkl10s')],\n    },",
+    "quitada": "2.2.1 (revisión a oído)"
+  },
+  {
+    "id": "sfx-pokemon-red-and-blue-curar-al-equipo",
+    "tema": "sonidos",
+    "fuente": "yt:rnxXP6HWEZo",
+    "motivo": "Revisión a oído (2.2.1): es un cover. Se cambió por el que propuso el usuario (xcg6M2Xmtbk), que ya tenía evidencia de red.",
+    "quitada": "2.2.1 (revisión a oído)"
   }
 ]

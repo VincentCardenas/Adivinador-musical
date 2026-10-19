@@ -9,7 +9,7 @@
  *                     con scripts/build-resto-v22.js (nunca IDs escritos a mano).
  *
  * El modo aparece cuando hay al menos AM.MIN_POOL sonidos.
- * Archivo generado (45 sonidos).
+ * Archivo generado (43 sonidos).
  */
 (function (AM) {
   'use strict';
@@ -51,13 +51,13 @@
       id: 'sfx-the-legend-of-zelda-ocarina-of-time-abrir-un-cofre', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Ocarina of Time',
       title: 'Abrir un cofre', year: 1998, platform: 'Nintendo 64',
       aka: ['Zelda', 'Legend of Zelda', 'La Leyenda de Zelda'],
-      sources: [yt('69AyYUJUBTg'), yt('NuMNVd7vxwI')],
+      sources: [yt('NuMNVd7vxwI'), yt('69AyYUJUBTg')],
     },
     {
-      id: 'sfx-the-legend-of-zelda-secreto-descubierto', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda',
-      title: 'Secreto descubierto', year: 1986, platform: 'NES',
+      id: 'sfx-the-legend-of-zelda-secreto-descubierto', franchise: 'The Legend of Zelda', game: 'The Legend of Zelda: Ocarina of Time',
+      title: 'Secreto descubierto', year: 1998, platform: 'Nintendo 64',
       aka: ['Zelda', 'Legend of Zelda', 'La Leyenda de Zelda'],
-      sources: [yt('0vngOmw2hcM'), yt('9d3qCPcMgH4')],
+      sources: [yt('9d3qCPcMgH4'), yt('iUsliYXRMUc')],
     },
     {
       id: 'sfx-roblox-oof', franchise: 'Roblox', game: 'Roblox',
@@ -86,7 +86,7 @@
       id: 'sfx-mortal-kombat-finish-him', franchise: 'Mortal Kombat', game: 'Mortal Kombat',
       title: '¡Finish Him!', year: 1992, platform: 'Arcade',
       aka: ['MK', 'Mortal Combat'],
-      sources: [yt('nc3pdrEM4I8'), yt('ZrjoCWHWlPA')],
+      sources: [yt('ZrjoCWHWlPA'), yt('nc3pdrEM4I8')],
     },
     {
       id: 'sfx-mortal-kombat-get-over-here-scorpion', franchise: 'Mortal Kombat', game: 'Mortal Kombat',
@@ -113,16 +113,10 @@
       sources: [yt('gVylTS6Y1Bs'), yt('FEYOC4AVVzc')],
     },
     {
-      id: 'sfx-age-of-empires-ii-the-age-of-kings-wololo', franchise: 'Age of Empires', game: 'Age of Empires II: The Age of Kings',
-      title: 'Wololo', year: 1999, platform: 'PC',
-      aka: ['AoE', 'AoE2', 'Age of Empires II'],
-      sources: [yt('RouQqawdB-0')],
-    },
-    {
       id: 'sfx-minecraft-aldeano-hmm', franchise: 'Minecraft', game: 'Minecraft',
       title: 'Aldeano (Hmm)', year: 2011, platform: 'PC',
       aka: ['Mine craft'],
-      sources: [yt('fiwRZ_j61Dc'), yt('8CUy3n0Yu1A')],
+      sources: [yt('8CUy3n0Yu1A'), yt('KzIw_9myY6k')],
     },
     {
       id: 'sfx-the-elder-scrolls-v-skyrim-grito-fus-ro-dah', franchise: 'The Elder Scrolls', game: 'The Elder Scrolls V: Skyrim',
@@ -180,7 +174,7 @@
       id: 'sfx-pokemon-red-and-blue-curar-al-equipo', franchise: 'Pokémon', game: 'Pokémon Red & Blue',
       title: 'Curar al equipo', year: 1996, platform: 'Game Boy',
       aka: ['Pokemon', 'Pokémon Rojo', 'Pokemon Rojo y Azul'],
-      sources: [yt('rnxXP6HWEZo')],
+      sources: [yt('xcg6M2Xmtbk')],
     },
     {
       id: 'sfx-call-of-duty-modern-warfare-2-hitmarker', franchise: 'Call of Duty', game: 'Call of Duty: Modern Warfare 2',
@@ -192,12 +186,6 @@
       id: 'sfx-fortnite-abrir-un-cofre-dorado', franchise: 'Fortnite', game: 'Fortnite',
       title: 'Abrir un cofre dorado', year: 2017, platform: 'PC',
       sources: [yt('-whYIavLM1s'), yt('2b7fBOl1diI')],
-    },
-    {
-      id: 'sfx-free-fire-grito-de-victoria-booyah', franchise: 'Free Fire', game: 'Free Fire',
-      title: 'Grito de victoria Booyah', year: 2017, platform: 'Android / iOS',
-      aka: ['Garena Free Fire'],
-      sources: [yt('YDHf_YV-nEM'), yt('C_4OggPyq-A')],
     },
     {
       id: 'sfx-grand-theft-auto-v-wasted', franchise: 'Grand Theft Auto', game: 'Grand Theft Auto V',
@@ -226,8 +214,8 @@
     {
       id: 'sfx-resident-evil-4-voz-del-mercader', franchise: 'Resident Evil', game: 'Resident Evil 4',
       title: 'Voz del Mercader', year: 2005, platform: 'GameCube',
-      aka: ['RE', 'Biohazard'],
-      sources: [yt('PVNTXVO4GzY')],
+      aka: ['RE', 'Biohazard', 'Buhonero'],
+      sources: [yt('HL-waqkb0OE')],
     },
     {
       id: 'sfx-among-us-asesinato-del-impostor', franchise: 'Among Us', game: 'Among Us',
@@ -240,12 +228,6 @@
       title: 'El \'¡Whoa!\' al caer', year: 1997, platform: 'PlayStation',
       aka: ['Crash'],
       sources: [yt('syp5JiNt14o'), yt('5M-9wAmdMWI')],
-    },
-    {
-      id: 'sfx-space-invaders-marcha-alienigena', franchise: 'Space Invaders', game: 'Space Invaders',
-      title: 'Marcha alienígena', year: 1978, platform: 'Arcade',
-      aka: ['Invasores del espacio', 'Marcianitos'],
-      sources: [yt('n7T90Cu39Po'), yt('cv7Xohkl10s')],
     },
     {
       id: 'sfx-minecraft-dano-del-jugador', franchise: 'Minecraft', game: 'Minecraft',
@@ -281,6 +263,12 @@
       id: 'sfx-metal-slug-mission-complete', franchise: 'Metal Slug', game: 'Metal Slug',
       title: '¡Mission Complete!', year: 1996, platform: 'Arcade (Neo Geo)',
       sources: [yt('iSBBsUld8zM'), yt('rJvtzBA1uFY')],
+    },
+    {
+      id: 'sfx-minecraft-orbe-de-experiencia-xp', franchise: 'Minecraft', game: 'Minecraft',
+      title: 'Orbe de experiencia (XP)', year: 2011, platform: 'PC',
+      aka: ['Mine craft'],
+      sources: [yt('Ehj0sY9Gc94')],
     },
   ];
 
