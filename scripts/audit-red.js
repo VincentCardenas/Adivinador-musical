@@ -34,7 +34,7 @@ const CACHE_PATH = path.join(__dirname, '.audit-red-cache.json');
 const REPORT_PATH = path.join(__dirname, 'audit-red-report.json');
 const REVISADAS_PATH = path.join(__dirname, 'audit-red-revisadas.json');
 
-const VALID_TARGETS = ['juegos', 'sagas', 'series', 'caricaturas', 'anime', 'disney', 'musicales', 'todos'];
+const VALID_TARGETS = ['juegos', 'sagas', 'series', 'caricaturas', 'anime', 'disney', 'musicales', 'sonidos', 'todos'];
 const target = (process.argv[2] || 'todos').toLowerCase();
 if (!VALID_TARGETS.includes(target)) {
   console.error(`Uso: node scripts/audit-red.js <${VALID_TARGETS.join('|')}>`);
@@ -290,6 +290,7 @@ function createGameVm() {
     'catalog-musicales.js',
     'catalog-canciones.js',
     'catalog-sagas.js',
+    'catalog-sonidos.js',
     'themes.js',
     'sources.js',
   ];
@@ -605,7 +606,10 @@ function checkCoherenceAndFlags(track, sourceObj, sourceEval, franchiseAkaMap, f
     const start = sourceObj.start || 0;
     if (typeof len === 'number' && len > 0) {
       const effectiveLen = len - start;
-      if (effectiveLen < 20) {
+      if (track.theme === 'sonidos') {
+        // Un efecto de sonido dura de 1 a 30 s.
+        if (effectiveLen < 1 || len > 30) motivos.push(`Duración fuera de 1–30 s para un efecto (${len}s, start=${start}s)`);
+      } else if (effectiveLen < 20) {
         motivos.push(`Duración efectiva menor a 20 s (${effectiveLen}s, total=${len}s, start=${start}s)`);
       } else if (len > 600) {
         motivos.push(`Duración mayor a 10 min (${len}s)`);
@@ -623,13 +627,15 @@ function checkCoherenceAndFlags(track, sourceObj, sourceEval, franchiseAkaMap, f
   const AM = sandbox.AM;
   const franchiseAkaMap = AM.FRANCHISE_AKA || {};
 
-  const allThemes = ['juegos', 'sagas', 'series', 'caricaturas', 'anime', 'disney', 'musicales'];
+  const allThemes = ['juegos', 'sagas', 'series', 'caricaturas', 'anime', 'disney', 'musicales', 'sonidos'];
   const selectedThemes = target === 'todos' ? allThemes : [target];
 
   const tracksByTheme = {};
   for (const th of selectedThemes) {
     if (th === 'sagas') {
       tracksByTheme.sagas = (AM.SAGA_TRACKS || []).map((t) => Object.assign({}, t, { theme: 'sagas' }));
+    } else if (th === 'sonidos') {
+      tracksByTheme.sonidos = (AM.SOUND_TRACKS || []).map((t) => Object.assign({}, t, { theme: 'sonidos' }));
     } else {
       tracksByTheme[th] = AM.CATALOG.filter((t) => t.theme === th);
     }

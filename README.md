@@ -4,7 +4,7 @@ Adivinador musical: suena un fragmento de música **oficial** y tienes que recon
 
 | Tema | ¿Qué adivinas? | Categorías |
 | --- | --- | --- |
-| 🎮 **Videojuegos** | La saga y el juego (Halo, Zelda, Pokémon, Elden Ring…): 342 pistas de 131 sagas y 232 juegos | Nintendo, Xbox, PlayStation, Indie, Retro, RPG, Acción, Online |
+| 🎮 **Videojuegos** | La saga y el juego (Halo, Zelda, Pokémon, Elden Ring…): 342 pistas de 131 sagas y 232 juegos, más 45 efectos de sonido en el modo **Sonidos** | Nintendo, Xbox, PlayStation, Indie, Retro, RPG, Acción, Online |
 | 📺 **Series** | La serie por su entrada o tema principal (Friends, Lost, Stranger Things, El Chavo…) | Por época: clásicas, 90s, 2000s, 2010s y 2020 en adelante |
 | 🧸 **Caricaturas** | La caricatura por su entrada, **todas en español latino**: 358 caricaturas inolvidables, desde Los Picapiedra, Don Gato, Scooby-Doo y Thundercats hasta Fenomenoide, Bob Esponja, Los Padrinos Mágicos, Ben 10, Hora de Aventura y Gravity Falls | Por época: clásicas (antes de 1980), 80s, 90s, 2000s, 2010 a 2014, 2015 a 2019 y 2020 en adelante |
 | 🎌 **Anime** | El anime por su opening: 303 openings icónicos, desde Astro Boy, Mazinger Z, Caballeros del Zodiaco y Dragon Ball hasta Sailor Moon, Evangelion, Naruto, Bleach, Attack on Titan, Demon Slayer, Jujutsu Kaisen, Chainsaw Man, Frieren y Dandadan | Por época: clásicos (antes de 1990), 90s, 2000s, 2010s y 2020 en adelante |
@@ -24,6 +24,7 @@ Hecho con HTML, CSS y JavaScript puro (sin frameworks ni compilación).
 | 🎧 **Experto** | Estilo Heardle. Empiezas con **1 segundo** de audio; cada fallo o salto desbloquea más (1 → 2 → 4 → 7 → 11 → 16 s). Hay que escribir la respuesta **exacta** (el juego, la película, la canción…); si aciertas la saga, el musical o el artista pero no la respuesta, te avisa con 🟨. En Musicales vale el título original o el de la versión en español (*Gethsemane* o *Getsemaní*). |
 | ❤️ **Supervivencia** | Opciones con la respuesta exacta (¿Halo 2 o Halo 3? ¿Toy Story o Toy Story 2?), 3 vidas y el reloj se acorta cada 3 aciertos. Cada 5 canciones (la 5, la 10, la 15…) hay una **ronda bonus ⭐**: si aciertas, recuperas una vida (con las 3 vidas, solo suma sus puntos) y si fallas, no pierdes ninguna. |
 | 🗂️ **Sagas** | Solo en Videojuegos. Eliges una saga (Super Mario, Zelda, Pokémon, Kirby, Donkey Kong, Sonic, Final Fantasy, Halo, Mega Man o Street Fighter) y adivinas **qué canción es** entre 4 opciones: de **toda la saga** (cada opción dice juego y canción, como *Halo 3 - One Final Effort* u *Ocarina of Time - Zelda's Lullaby*) o de **un solo juego** (solo el nombre de la canción; se puede elegir si el juego tiene al menos 5). 10 rondas (o una por canción si el juego tiene menos) y 20 s por ronda. Solo música original: nada de remakes ni remasters (Halo va de Combat Evolved a Reach). Tiene récord por saga, pero no entra al ranking global. |
+| 🔊 **Sonidos** | Solo en Videojuegos y **solo para conocedores**. Suena un **efecto de sonido** de un videojuego (el hongo de Mario, la bomba plantada de Counter-Strike, el cofre de Zelda, el «Oof» de Roblox…) y escribes **la saga**, como en Experto. Empiezas con **1 segundo** y tienes 4 intentos (1 → 2 → 3 → 5 s) con **3 vidas**. Al revelar se ve la saga y el sonido con su juego. Tiene récord, pero no entra al ranking global. |
 
 Además puedes filtrar por categorías, guardar récords por tema y modo, compartir tu resultado con emojis
 y, al final, ver la lista de lo que sonó con enlaces para escucharlo completo.
@@ -223,6 +224,7 @@ js/catalog-disney.js      Disney y Pixar (español latino) por época
 js/catalog-musicales.js   Musicales de teatro y cine (originales y en español) por época
 js/catalog-canciones.js   Canciones famosas por género (con año e idioma)
 js/catalog-sagas.js       Modo Sagas: las 10 sagas y sus canciones extra (generado)
+js/catalog-sonidos.js     Modo Sonidos: efectos de sonido de videojuegos (generado)
 js/themes.js              Los 7 temas: textos, filtros (Pixar, idioma, época) y rangos
 js/sources.js             Resuelve cada pista a un preview de Apple o un video de YouTube
 js/loudness.js            Volumen medido de cada fuente (generado) para que todo suene parejo
@@ -241,6 +243,17 @@ La versión actual se ve en la esquina inferior izquierda del juego (en el celul
 `version` en [`js/config.js`](js/config.js) y los `?v=` de `index.html` (así los navegadores descargan los
 archivos nuevos en vez de usar los guardados en caché).
 
+- **2.2**: **nuevo modo «🔊 Sonidos»** (solo para conocedores) y dos reportes arreglados.
+  - **Modo Sonidos**, en Videojuegos: suena un efecto de sonido de un videojuego y escribes la saga.
+    - Empiezas con **1 segundo** y tienes 4 intentos (1, 2, 3 y 5 s) y **3 vidas**.
+    - Hay **45 sonidos de 25 sagas**, solo icónicos: tres jueces calificaron del 1 al 5 qué tan famoso es cada uno y quedaron los que promedian 4 o más. Algunos: el hongo, la moneda y el 1-UP de Mario; el creeper de Minecraft; el «Oof» de Roblox; los anillos de Sonic; «Hadouken» y «Shoryuken»; «Finish Him» y «Get over here»; «Mission passed» y «Wasted» de GTA; «Wololo»; «Fus Ro Dah».
+    - Al revelar, la saga sale en grande y debajo el sonido con su juego. No entra al ranking global; sí guarda récord.
+    - El modo aparece cuando hay al menos 5 sonidos.
+  - **Reportes arreglados:**
+    - #21 D.Gray-man, «Doubt & Trust»: el video no sonaba; ahora suena primero la versión TV de access (canal Topic).
+    - #22 Super Mario World, «Overworld Theme»: sonaba otra versión; ahora suena primero el OST original.
+  - **Cómo se hizo:** los videos los buscó `scripts/build-resto-v22.js` en el celular del usuario, sin IA y con evidencia de cada ID. Luego revisores Sonnet y un árbitro Opus quitaron 10 videos que no eran el efecto solo (evoluciones de varios juegos, «variations», un parque temático, comparativas) y 3 sonidos sin ningún video bueno (waka waka, bomba plantada de CS y Candy Crush). Lo que solo se decide oyendo está en [`scripts/revisar-a-oido.md`](scripts/revisar-a-oido.md).
+  - El juego pasa a 2.2: `js/config.js` y los `?v=` de `index.html`.
 - **2.1**: **catálogo revisado en red, 11 reportes arreglados y 149 pistas más**. Es la primera versión en la que las fuentes de audio de todos los temas, menos Canciones, se probaron de verdad contra YouTube y Apple Music.
   - **Auditoría de red** (`scripts/audit-red.js`):
     - En YouTube revisa que el video exista, que se pueda insertar y que no esté bloqueado en México.

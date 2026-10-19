@@ -579,6 +579,8 @@ a { color: var(--cyan); }
   text-transform: uppercase;
   color: var(--muted);
 }
+/* Sonidos: la parte 3 no tiene nada que elegir, solo dice qué va a sonar */
+.sound-note { grid-column: 1 / -1; margin: 4px 0; color: var(--muted); font-size: 15px; line-height: 1.5; }
 .set-row--game {
   width: calc(100% - 24px);
   min-height: 44px;

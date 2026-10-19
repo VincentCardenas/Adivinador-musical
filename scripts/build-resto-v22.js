@@ -2,8 +2,10 @@
 'use strict';
 
 /*
- * v2.2: agrega las pistas que faltaron en la 2.1 (Caricaturas, Anime, Videojuegos y Sagas).
- * Uso: node scripts/build-resto-v22.js <caricaturas|anime|juegos|sagas|todos>
+ * Agrega pistas verificadas: la segunda tanda de la 2.1 (Caricaturas, Anime, Videojuegos y Sagas) y,
+ * en la 2.2, los efectos del modo Sonidos (js/catalog-sonidos.js).
+ * Uso: node scripts/build-resto-v22.js <caricaturas|anime|juegos|sagas|sonidos|todos> (o varios: sonidos,juegos,anime)
+ * Un candidato con "reemplaza": true no agrega nada: le cambia las fuentes a esa pista (para reportes).
  *
  * Las canciones las eligió Claude (scripts/candidatos-v22.json, con consultas y palabras clave);
  * este script hace la parte de red en la computadora del usuario, sin IA:
@@ -14,6 +16,7 @@
  *   razonable y, cuando la pista debe ir en español latino, el título lo dice y los subtítulos
  *   automáticos (si el video los trae) no están en otro idioma.
  * - Acepta una pista de Apple solo si tiene preview, el nombre coincide y el artista también.
+ * - Nunca usa un video que ya tenga otra pista del juego.
  * - Inserta al final de cada sección, actualiza las cuentas y para cuando cada categoría llega
  *   a su meta. Es reanudable: lo ya resuelto queda en scripts/.resto-v22-cache.json.
  * Deja scripts/resultado-v22.json con lo aceptado (y qué video/canción se eligió) y lo descartado.
@@ -36,6 +39,7 @@ const META = {
   anime: { 'anime-clasicos': 58, 'anime-90s': 59, 'anime-00s': 59, 'anime-10s': 65, 'anime-20s': 62 },
   juegos: { nintendo: 69, xbox: 27, playstation: 41, indie: 50, retro: 29, rpg: 56, accion: 38, online: 32 },
   sagas: { total: 221 },
+  sonidos: { total: 49 },
 };
 
 const TEMAS = {
@@ -59,10 +63,17 @@ const TEMAS = {
     finTras: 'AM.CATALOG = [', orden: ['apple', 'yt'], maxLen: 600, country: ['us', 'mx'],
   },
   sagas: {
-    file: 'catalog-sagas.js', prefix: 'saga-', porSaga: true,
+    file: 'catalog-sagas.js', prefix: 'saga-', porSaga: true, arr: 'SAGA_TRACKS',
     secciones: ['mario', 'zelda', 'pokemon', 'kirby', 'donkey-kong', 'sonic', 'final-fantasy', 'halo', 'mega-man', 'street-fighter'].map((s) => [s, s]),
     finTras: 'AM.SAGA_TRACKS = [', header: [/Archivo generado \(\d+ canciones\)/, (n) => `Archivo generado (${n} canciones)`],
     orden: ['yt', 'apple'], maxLen: 600, country: ['us', 'mx', 'jp'],
+  },
+  // Un efecto de sonido: video corto con solo ese efecto (sin Apple).
+  sonidos: {
+    file: 'catalog-sonidos.js', prefix: 'sfx-', porSaga: true, arr: 'SOUND_TRACKS', sinSaga: true,
+    secciones: [['sonidos', 'sonidos']],
+    finTras: 'AM.SOUND_TRACKS = [', header: [/Archivo generado \(\d+ sonidos\)/, (n) => `Archivo generado (${n} sonidos)`],
+    orden: ['yt'], minLen: 1, maxLen: 30, country: [],
   },
 };
 
@@ -97,8 +108,9 @@ function extraerArreglo(html, clave) {
   return null;
 }
 
-const MALO_YT = /\s(cover|covers|fandub|fan dub|fanmade|remix|remixed|reaccion|reaccionando|reaction|reacts|karaoke|extended|extendido|extendida|1 hora|1 hour|10 hours|loop|tutorial|piano|guitar|ukulele|amv|parodia|parody|8 bit|8bit|chiptune|nightcore|slowed|sped up|en vivo|live|concierto|concert|medley|megamix|mashup|trailer|teaser|gameplay|walkthrough|review|unboxing|lofi|lo fi|orchestral|orquesta|symphonic|sinfonico|epic version|metal version|ai|ia)\s/;
+const MALO_YT = /\s(cover|covers|fandub|fan dub|fanmade|remix|remixed|reaccion|reaccionando|reaction|reacts|karaoke|extended|extendido|extendida|1 hora|1 hour|10 hours|loop|tutorial|piano|guitar|ukulele|amv|parodia|parody|8 bit|8bit|chiptune|nightcore|slowed|sped up|en vivo|live|concierto|concert|medley|megamix|mashup|trailer|teaser|gameplay|walkthrough|review|unboxing|lofi|lo fi|orchestral|orquesta|symphonic|sinfonico|epic version|metal version|ai|ia|acapella|a cappella|smooth mcgroove)\s/;
 const LATINO = /\s(latino|latina|latam|espanol|spanish|doblaje|mexico|mexicano)\s/;
+const MALO_SFX = /\s(earrape|ear rape|bass boosted|meme|memes|compilation|compilacion|all sounds|every sound|todos los sonidos|soundboard|sound pack)\s/;
 const ESPANA = /\s(castellano|espana|spain|castilian)\s/;
 const NO_ORIGINAL = /\s(latino|latina|espanol|spanish|english|ingles|fandub|doblaje)\s/;
 const NO_REMAKE = /\s(remake|remaster|remastered|reorchestrated|hd remaster|definitive edition|reimagined)\s/;
@@ -108,7 +120,7 @@ function loadAll() {
   const sb = { console, setTimeout, clearTimeout };
   sb.window = sb;
   for (const f of ['config.js', 'catalog.js', 'catalog-series.js', 'catalog-caricaturas.js', 'catalog-anime.js', 'catalog-disney.js',
-    'catalog-musicales.js', 'catalog-canciones.js', 'catalog-sagas.js', 'themes.js']) {
+    'catalog-musicales.js', 'catalog-canciones.js', 'catalog-sagas.js', 'catalog-sonidos.js', 'themes.js']) {
     vm.runInNewContext(fs.readFileSync(path.join(JS, f), 'utf8'), sb, { filename: f });
   }
   return sb.AM;
@@ -133,7 +145,7 @@ async function captionLangs(id) {
   }
 }
 
-async function buscarYoutube(c, tema, cfg) {
+async function buscarYoutube(c, tema, cfg, saltar) {
   const elegidos = [];
   const vistos = new Set();
   const claves = (c.must_any || []).map(norm).filter((k) => k.length >= 3);
@@ -141,16 +153,19 @@ async function buscarYoutube(c, tema, cfg) {
     if (elegidos.length >= 2) break;
     const ids = await lib.searchYoutube(consulta, 6);
     for (const id of ids) {
-      if (elegidos.length >= 2 || vistos.has(id)) continue;
+      if (elegidos.length >= 2 || vistos.has(id) || saltar.has(id)) continue; // saltar: videos de otra pista o reportados
       vistos.add(id);
       const info = await lib.verifyYoutubeId(id, consulta);
       if (!info.ok) continue;
       const texto = `${info.title} ${info.channel}`;
       const t = ' ' + norm(texto) + ' ';
-      if (!claves.some((k) => t.includes(' ' + k + ' '))) continue;
+      // En Sonidos basta con que el título traiga todas las palabras de una frase ("Super Mario Bros - Power Up" vale por "mario power up").
+      const tiene = (k) => (tema === 'sonidos' ? k.split(' ').every((w) => t.includes(' ' + w + ' ')) : t.includes(' ' + k + ' '));
+      if (!claves.some(tiene)) continue;
       const propio = `${c.title} ${c.game} ${c.franchise} ${(c.aka || []).join(' ')}`;
       if (malo(texto, MALO_YT, propio)) continue;
-      if (info.lengthSeconds !== null && (info.lengthSeconds < 20 || info.lengthSeconds > cfg.maxLen)) continue;
+      if (info.lengthSeconds !== null && (info.lengthSeconds < (cfg.minLen || 20) || info.lengthSeconds > cfg.maxLen)) continue;
+      if (tema === 'sonidos' && malo(texto, MALO_SFX, propio)) continue;
       if (c.latino) {
         if (!LATINO.test(t) || malo(texto, ESPANA, propio)) continue;
         const langs = await captionLangs(id);
@@ -187,10 +202,10 @@ async function buscarApple(c, cfg) {
   return null;
 }
 
-async function resolver(c, tema, cache) {
+async function resolver(c, tema, cache, saltar) {
   if (cache[c.key]) return cache[c.key];
   const cfg = TEMAS[tema];
-  const yts = await buscarYoutube(c, tema, cfg);
+  const yts = await buscarYoutube(c, tema, cfg, saltar);
   const ap = await buscarApple(c, cfg);
   let res;
   if (c.latino && !yts.length) res = { ok: false, motivo: 'no se encontró la entrada en español latino en YouTube' };
@@ -214,7 +229,7 @@ function fuentes(res, cfg) {
 
 function bloque(c, tema, id, srcs) {
   const head = TEMAS[tema].porSaga
-    ? `      id: ${q(id)}, saga: ${q(c.saga)}, franchise: ${q(c.franchise)}, game: ${q(c.game)},`
+    ? `      id: ${q(id)}, ${TEMAS[tema].sinSaga ? '' : `saga: ${q(c.saga)}, `}franchise: ${q(c.franchise)}, game: ${q(c.game)},`
     : `      id: ${q(id)}, cat: ${q(c.cat)}, franchise: ${q(c.franchise)}, game: ${q(c.game)},`;
   // composer, year y platform solo si se conocen (el juego no muestra campos vacíos)
   const datos = [`title: ${q(c.title)},`];
@@ -254,7 +269,7 @@ function insertar(tema, porSeccion) {
   // Cuentas
   const AM = loadAll();
   if (cfg.porSaga) {
-    code = code.replace(cfg.header[0], cfg.header[1](AM.SAGA_TRACKS.length));
+    code = code.replace(cfg.header[0], cfg.header[1](AM[cfg.arr].length));
   } else {
     const tracks = AM.CATALOG.filter((t) => t.theme === tema);
     if (cfg.header) code = code.replace(cfg.header[0], cfg.header[1](tracks.length));
@@ -266,11 +281,30 @@ function insertar(tema, porSeccion) {
   fs.writeFileSync(file, code);
 }
 
+/* Cambia las fuentes de una pista que ya existe (un candidato con "reemplaza": true). */
+function reemplazar(tema, id, srcs) {
+  const file = path.join(JS, TEMAS[tema].file);
+  const code = fs.readFileSync(file, 'utf8').replace(/\r\n/g, '\n');
+  const i = code.indexOf(`id: '${id}'`);
+  const j = i < 0 ? -1 : code.indexOf('\n      sources: [', i);
+  const k = j < 0 ? -1 : code.indexOf('],\n', j);
+  const next = i < 0 ? -1 : code.indexOf('\n    {', i);
+  if (k < 0 || (next >= 0 && next < j)) throw new Error(`No encontré las fuentes de ${id} en ${TEMAS[tema].file}`);
+  fs.writeFileSync(file, code.slice(0, j) + `\n      sources: [${srcs.join(', ')}` + code.slice(k));
+}
+
+/* Videos que ya usa alguna pista: no se repiten. */
+function videosUsados(AM) {
+  const s = new Set();
+  AM.CATALOG.concat(AM.SAGA_TRACKS, AM.SOUND_TRACKS).forEach((t) => (t.sources || []).forEach((x) => { if (x.type === 'youtube') s.add(x.id); }));
+  return s;
+}
+
 async function main() {
   const pedido = (process.argv[2] || '').toLowerCase();
-  const temas = pedido === 'todos' ? Object.keys(TEMAS) : [pedido];
+  const temas = pedido === 'todos' ? Object.keys(TEMAS) : pedido.split(',');
   if (!temas.every((t) => TEMAS[t])) {
-    console.error('Uso: node scripts/build-resto-v22.js <caricaturas|anime|juegos|sagas|todos>');
+    console.error('Uso: node scripts/build-resto-v22.js <caricaturas|anime|juegos|sagas|sonidos|todos> (o varios: sonidos,juegos,anime)');
     process.exit(1);
   }
   const candidatos = JSON.parse(fs.readFileSync(CANDIDATOS, 'utf8'));
@@ -280,29 +314,65 @@ async function main() {
 
   for (const tema of temas) {
     const AM = loadAll();
-    const ids = new Set(AM.CATALOG.map((t) => t.id).concat(AM.SAGA_TRACKS.map((t) => t.id)));
-    const enTema = tema === 'sagas' ? AM.SAGA_TRACKS.concat(AM.CATALOG.filter((t) => t.theme === 'juegos')) : AM.CATALOG.filter((t) => t.theme === tema);
+    const cfg = TEMAS[tema];
+    const ids = new Set(AM.CATALOG.concat(AM.SAGA_TRACKS, AM.SOUND_TRACKS).map((t) => t.id));
+    const usados = videosUsados(AM);
+    const reemplazos = [];
+    const enTema = tema === 'sagas' ? AM.SAGA_TRACKS.concat(AM.CATALOG.filter((t) => t.theme === 'juegos'))
+      : tema === 'sonidos' ? AM.SOUND_TRACKS : AM.CATALOG.filter((t) => t.theme === tema);
     const yaCanciones = new Set(enTema.map((t) => norm(t.game) + '|' + norm(t.title)));
     const cuenta = {};
-    if (tema === 'sagas') cuenta.total = AM.SAGA_TRACKS.length;
+    if (cfg.porSaga) cuenta.total = AM[cfg.arr].length;
     else AM.CATALOG.filter((t) => t.theme === tema).forEach((t) => { cuenta[t.cat] = (cuenta[t.cat] || 0) + 1; });
     const porSeccion = {};
     const lista = candidatos.filter((c) => c.tema === tema);
     console.log(`\n▶ ${tema}: ${lista.length} candidatos`);
+    /* Fuentes que se pueden usar: sin videos de otra pista (lo guardado en la caché pudo elegirse antes). */
+    const sinUsados = (res, saltar) => {
+      if (!res.ok) return res;
+      const yt = res.yt.filter((y) => !saltar.has(y.id));
+      if (yt.length === res.yt.length) return res;
+      if (!yt.length && !res.apple) return { ok: false, motivo: 'sus videos ya los usa otra pista' };
+      return Object.assign({}, res, { yt });
+    };
     for (const c of lista) {
-      const metaKey = tema === 'sagas' ? 'total' : c.cat;
+      if (c.reemplaza) {
+        if (resultado.aceptadas.some((a) => a.key === c.key && a.reemplaza)) continue; // ya se aplicó (no deshacerlo)
+        const pista = AM.CATALOG.concat(AM[cfg.arr] || []).find((t) => t.id === c.id);
+        if (!pista || !fs.readFileSync(path.join(JS, cfg.file), 'utf8').includes(`id: '${c.id}'`)) { console.log(`  ✗ ${c.id}: no está en ${cfg.file}, no hay qué reemplazar`); continue; }
+        // Puede quedarse con sus videos buenos, pero nunca con los reportados (evitar) ni con los de otra pista.
+        const propios = new Set(pista.sources.filter((x) => x.type === 'youtube').map((x) => x.id));
+        const saltar = new Set([...usados].filter((id) => !propios.has(id)).concat(c.evitar || []));
+        let res = sinUsados(await resolver(c, tema, cache, saltar), saltar);
+        if (res.ok && c.latino && !res.yt.length) res = { ok: false, motivo: 'no se encontró la entrada en español latino en YouTube' };
+        if (!res.ok) {
+          console.log(`  ✗ ${c.game} — ${c.title} (reemplazo): ${res.motivo}. Se queda como estaba.`);
+          if (!resultado.descartadas.some((d) => d.key === c.key)) resultado.descartadas.push({ key: c.key, tema, game: c.game, title: c.title, motivo: res.motivo, reemplaza: true });
+          continue;
+        }
+        const srcs = fuentes(res, cfg);
+        reemplazos.push([c.id, srcs]);
+        res.yt.forEach((y) => usados.add(y.id));
+        resultado.aceptadas = resultado.aceptadas.filter((a) => a.key !== c.key);
+        resultado.aceptadas.push({ key: c.key, id: c.id, tema, game: c.game, title: c.title, reemplaza: true, youtube: res.yt, apple: res.apple });
+        console.log(`  ↺ ${c.game} — ${c.title}: fuentes nuevas → ${srcs.join(', ')}`);
+        continue;
+      }
+      const metaKey = cfg.porSaga ? 'total' : c.cat;
       const meta = META[tema][metaKey];
       if (meta === undefined) { console.log(`  ✗ ${c.key}: categoría desconocida ${metaKey}`); continue; }
       if (ids.has(c.id) || yaCanciones.has(norm(c.game) + '|' + norm(c.title))) continue; // ya está
       if ((cuenta[metaKey] || 0) >= meta) continue; // la categoría ya llegó a su meta
-      const res = await resolver(c, tema, cache);
+      let res = sinUsados(await resolver(c, tema, cache, usados), usados);
+      if (res.ok && c.latino && !res.yt.length) res = { ok: false, motivo: 'no se encontró la entrada en español latino en YouTube' };
       if (!res.ok) {
         console.log(`  ✗ ${c.game} — ${c.title}: ${res.motivo}`);
         if (!resultado.descartadas.some((d) => d.key === c.key)) resultado.descartadas.push({ key: c.key, tema, cat: c.cat || c.saga, game: c.game, title: c.title, motivo: res.motivo });
         continue;
       }
-      const srcs = fuentes(res, TEMAS[tema]);
-      const seccion = tema === 'sagas' ? c.saga : c.cat;
+      const srcs = fuentes(res, cfg);
+      res.yt.forEach((y) => usados.add(y.id));
+      const seccion = cfg.porSaga ? c.saga : c.cat;
       (porSeccion[seccion] = porSeccion[seccion] || []).push(bloque(c, tema, c.id, srcs));
       ids.add(c.id);
       yaCanciones.add(norm(c.game) + '|' + norm(c.title));
@@ -312,6 +382,7 @@ async function main() {
       console.log(`  ✔ ${c.game} — ${c.title} → ${srcs.join(', ')}`);
     }
     insertar(tema, porSeccion);
+    reemplazos.forEach(([id, srcs]) => reemplazar(tema, id, srcs));
     const faltan = Object.entries(META[tema]).map(([k, m]) => [k, m - (cuenta[k] || 0)]).filter(([, f]) => f > 0);
     console.log(`  ${tema}: ${Object.values(porSeccion).flat().length} pistas nuevas.` + (faltan.length ? ` Faltan para la meta: ${faltan.map(([k, f]) => `${k} ${f}`).join(', ')}` : ' Todas las metas cumplidas.'));
     resultado.generado = new Date().toISOString();

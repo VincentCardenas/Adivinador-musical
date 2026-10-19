@@ -22,7 +22,7 @@ const ROOT = path.join(__dirname, '..');
 const BASE = process.env.BASE || '2d85042';
 const DEFAULT_FILES = [
   'js/catalog.js', 'js/catalog-series.js', 'js/catalog-caricaturas.js', 'js/catalog-anime.js',
-  'js/catalog-disney.js', 'js/catalog-musicales.js', 'js/catalog-sagas.js',
+  'js/catalog-disney.js', 'js/catalog-musicales.js', 'js/catalog-sagas.js', 'js/catalog-sonidos.js',
 ];
 
 const files = process.argv.slice(2).length ? process.argv.slice(2) : DEFAULT_FILES;

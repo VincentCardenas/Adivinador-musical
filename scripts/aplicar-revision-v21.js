@@ -21,7 +21,7 @@ const DECISIONES = JSON.parse(fs.readFileSync(path.join(__dirname, ARCH_DEC), 'u
 
 const ARCHIVOS = {
   juegos: 'catalog.js', series: 'catalog-series.js', caricaturas: 'catalog-caricaturas.js', anime: 'catalog-anime.js',
-  disney: 'catalog-disney.js', musicales: 'catalog-musicales.js', sagas: 'catalog-sagas.js',
+  disney: 'catalog-disney.js', musicales: 'catalog-musicales.js', sagas: 'catalog-sagas.js', sonidos: 'catalog-sonidos.js',
 };
 const SECCIONES = {
   series: [['tv-clasicas', 'Clásicas (antes de 1990)'], ['tv-90s', 'Años 90'], ['tv-00s', '2000s'], ['tv-10s', '2010s'], ['tv-20s', '2020 en adelante']],
@@ -34,6 +34,7 @@ const ENCABEZADO = {
   anime: [/Catálogo: Anime \(\d+ pistas\)/, (ts) => `Catálogo: Anime (${ts.length} pistas)`],
   disney: [/Catálogo: Películas de Disney y Pixar \(\d+ pistas\)/, (ts) => `Catálogo: Películas de Disney y Pixar (${ts.length} pistas)`],
   sagas: [/Archivo generado \(\d+ canciones\)/, (ts) => `Archivo generado (${ts.length} canciones)`],
+  sonidos: [/Archivo generado \(\d+ sonidos\)/, (ts) => `Archivo generado (${ts.length} sonidos)`],
   musicales: [/Catálogo: Musicales \(\d+ pistas: \d+ en su grabación original y \d+ en español\)/,
     (ts) => `Catálogo: Musicales (${ts.length} pistas: ${ts.filter((t) => t.lang !== 'es').length} en su grabación original y ${ts.filter((t) => t.lang === 'es').length} en español)`],
 };
@@ -45,7 +46,7 @@ function loadAll() {
   const sb = { console, setTimeout, clearTimeout };
   sb.window = sb;
   for (const f of ['config.js', 'catalog.js', 'catalog-series.js', 'catalog-caricaturas.js', 'catalog-anime.js', 'catalog-disney.js',
-    'catalog-musicales.js', 'catalog-canciones.js', 'catalog-sagas.js', 'themes.js']) {
+    'catalog-musicales.js', 'catalog-canciones.js', 'catalog-sagas.js', 'catalog-sonidos.js', 'themes.js']) {
     vm.runInNewContext(fs.readFileSync(path.join(JS, f), 'utf8'), sb, { filename: f });
   }
   return sb.AM;
@@ -135,7 +136,7 @@ function editarCampo(text, campo, valor) {
 function recontar(tema, code) {
   fs.writeFileSync(path.join(JS, ARCHIVOS[tema]), code);
   const AM = loadAll();
-  const ts = tema === 'sagas' ? AM.SAGA_TRACKS : AM.CATALOG.filter((t) => t.theme === tema);
+  const ts = tema === 'sagas' ? AM.SAGA_TRACKS : tema === 'sonidos' ? AM.SOUND_TRACKS : AM.CATALOG.filter((t) => t.theme === tema);
   if (ENCABEZADO[tema]) code = code.replace(ENCABEZADO[tema][0], ENCABEZADO[tema][1](ts));
   const secs = SECCIONES[tema] || [];
   for (const [cat, label] of secs) code = code.replace(new RegExp(`(/\\* ─+ ${esc(label)} )\\(\\d+\\)`), `$1(${ts.filter((t) => t.cat === cat).length})`);
@@ -150,7 +151,8 @@ function recontar(tema, code) {
 
 function main() {
   const AM0 = loadAll();
-  const temaDe = new Map(AM0.CATALOG.map((t) => [t.id, t.theme]).concat(AM0.SAGA_TRACKS.map((t) => [t.id, 'sagas'])));
+  // Los sonidos tienen theme 'juegos' (para el juego) pero viven en su propio archivo: el mapa los pone al final y gana 'sonidos'.
+  const temaDe = new Map(AM0.CATALOG.map((t) => [t.id, t.theme]).concat(AM0.SAGA_TRACKS.map((t) => [t.id, 'sagas']), AM0.SOUND_TRACKS.map((t) => [t.id, 'sonidos'])));
   const codigo = {};
   const pendientes = JSON.parse(fs.readFileSync(path.join(__dirname, 'pendientes-v2.1.json'), 'utf8'));
   const oido = [];
@@ -182,7 +184,7 @@ function main() {
           text = editarFuentes(text, (xs) => xs.map((x) => x.k === 'yt:' + v.yt ? { t: v.segundos ? `yt('${v.yt}', ${v.segundos})` : `yt('${v.yt}')`, k: x.k } : x));
         } else text = editarCampo(text, d.campo, d.valor);
       } else if (d.op === 'revisar_a_oido') {
-        oido.push(`| \`${d.id}\` | ${String(d.nota || d.motivo).replace(/\|/g, '/')} |  |`);
+        oido.push(`| \`${d.id}\` | ${String(d.nota || d.motivo).replace(/\|/g, '/').replace(/yt:([\w-]{11})/g, '[$1](https://www.youtube.com/watch?v=$1)')} |  |`);
         continue;
       } else if (d.op === 'mover_categoria') {
         text = editarCampo(text, 'cat', d.categoria);
