@@ -9,7 +9,7 @@
  *                     con scripts/build-resto-v22.js (nunca IDs escritos a mano).
  *
  * El modo aparece cuando hay al menos AM.MIN_POOL sonidos.
- * Archivo generado (45 sonidos).
+ * Archivo generado (44 sonidos).
  */
 (function (AM) {
   'use strict';
@@ -122,7 +122,7 @@
       id: 'sfx-minecraft-aldeano-hmm', franchise: 'Minecraft', game: 'Minecraft',
       title: 'Aldeano (Hmm)', year: 2011, platform: 'PC',
       aka: ['Mine craft'],
-      sources: [yt('fiwRZ_j61Dc'), yt('8CUy3n0Yu1A')],
+      sources: [yt('KzIw_9myY6k'), yt('8CUy3n0Yu1A')],
     },
     {
       id: 'sfx-the-elder-scrolls-v-skyrim-grito-fus-ro-dah', franchise: 'The Elder Scrolls', game: 'The Elder Scrolls V: Skyrim',
@@ -192,12 +192,6 @@
       id: 'sfx-fortnite-abrir-un-cofre-dorado', franchise: 'Fortnite', game: 'Fortnite',
       title: 'Abrir un cofre dorado', year: 2017, platform: 'PC',
       sources: [yt('-whYIavLM1s'), yt('2b7fBOl1diI')],
-    },
-    {
-      id: 'sfx-free-fire-grito-de-victoria-booyah', franchise: 'Free Fire', game: 'Free Fire',
-      title: 'Grito de victoria Booyah', year: 2017, platform: 'Android / iOS',
-      aka: ['Garena Free Fire'],
-      sources: [yt('YDHf_YV-nEM'), yt('C_4OggPyq-A')],
     },
     {
       id: 'sfx-grand-theft-auto-v-wasted', franchise: 'Grand Theft Auto', game: 'Grand Theft Auto V',

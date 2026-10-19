@@ -4,7 +4,7 @@ Adivinador musical: suena un fragmento de música **oficial** y tienes que recon
 
 | Tema | ¿Qué adivinas? | Categorías |
 | --- | --- | --- |
-| 🎮 **Videojuegos** | La saga y el juego (Halo, Zelda, Pokémon, Elden Ring…): 342 pistas de 131 sagas y 232 juegos, más 45 efectos de sonido en el modo **Sonidos** | Nintendo, Xbox, PlayStation, Indie, Retro, RPG, Acción, Online |
+| 🎮 **Videojuegos** | La saga y el juego (Halo, Zelda, Pokémon, Elden Ring…): 342 pistas de 131 sagas y 232 juegos, más 44 efectos de sonido en el modo **Sonidos** | Nintendo, Xbox, PlayStation, Indie, Retro, RPG, Acción, Online |
 | 📺 **Series** | La serie por su entrada o tema principal (Friends, Lost, Stranger Things, El Chavo…) | Por época: clásicas, 90s, 2000s, 2010s y 2020 en adelante |
 | 🧸 **Caricaturas** | La caricatura por su entrada, **todas en español latino**: 358 caricaturas inolvidables, desde Los Picapiedra, Don Gato, Scooby-Doo y Thundercats hasta Fenomenoide, Bob Esponja, Los Padrinos Mágicos, Ben 10, Hora de Aventura y Gravity Falls | Por época: clásicas (antes de 1980), 80s, 90s, 2000s, 2010 a 2014, 2015 a 2019 y 2020 en adelante |
 | 🎌 **Anime** | El anime por su opening: 303 openings icónicos, desde Astro Boy, Mazinger Z, Caballeros del Zodiaco y Dragon Ball hasta Sailor Moon, Evangelion, Naruto, Bleach, Attack on Titan, Demon Slayer, Jujutsu Kaisen, Chainsaw Man, Frieren y Dandadan | Por época: clásicos (antes de 1990), 90s, 2000s, 2010s y 2020 en adelante |
@@ -247,7 +247,9 @@ archivos nuevos en vez de usar los guardados en caché).
   - En el modo Sonidos, la parte 3 trae **«Cómo jugar»**: ✍️ escribir la saga (como en la 2.2) o ⏱️ **4 opciones con reloj** (15 s que bajan a 7, como en Supervivencia) **sin ronda bonus**: tus 3 vidas no se recuperan. Cada forma guarda su propio récord.
   - #24 Zelda, «Secreto descubierto»: sonaba un cover. Ahora suena primero el de Ocarina of Time y de respaldo el de Breath of the Wild.
   - #25 Resident Evil 4, «Voz del Mercader»: el video duraba 21 s y la frase llegaba cuando ya se había acabado el tiempo. Ahora es el «Welcome» del Buhonero, corto.
-  - Los dos videos nuevos los propuso el usuario en su reporte y los probó a mano. `scripts/check-evidencia.js` acepta esa prueba (`probadoPorUsuario`) además de la comprobación de red.
+  - #26 Minecraft, «Aldeano (Hmm)»: el video tardaba en empezar; se cambió por uno que suena de inmediato.
+  - #27: se quitó el «Booyah» de Free Fire, que no era un sonido legendario. Quedan **44 sonidos de 24 sagas**.
+  - Los tres videos nuevos los propuso el usuario en su reporte y los probó a mano. `scripts/check-evidencia.js` acepta esa prueba (`probadoPorUsuario`) además de la comprobación de red.
 - **2.2**: **nuevo modo «🔊 Sonidos»** (solo para conocedores) y dos reportes arreglados.
   - **Modo Sonidos**, en Videojuegos: suena un efecto de sonido de un videojuego y escribes la saga.
     - Empiezas con **1 segundo** y tienes 4 intentos (1, 2, 3 y 5 s) y **3 vidas**.

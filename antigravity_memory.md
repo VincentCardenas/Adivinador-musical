@@ -105,7 +105,7 @@
 
 * **Otros catálogos (v2.1):**
   * Videojuegos (`js/catalog.js`): 342 pistas, de 131 sagas y 232 juegos.
-  * Sonidos (`js/catalog-sonidos.js`, `AM.SOUND_TRACKS`): 45 efectos de sonido de videojuegos (modo «Sonidos», v2.2). Cada uno suena desde el segundo 0 y se responde con la **saga** (`franchise`, el mismo nombre que en catalog.js; si la saga no está ahí, igual aparece en el buscador). El modo se oculta con menos de `AM.MIN_POOL` sonidos. Desde la 2.2.1 se juega de dos formas (`AM.SOUND_STYLES` en `js/game.js`, se guarda en `soundStyle`): escribir la saga, o 4 opciones con reloj sin ronda bonus (récord aparte: `juegos:sonidos-opciones`). Se agregan con `node scripts/build-resto-v22.js sonidos` (candidatos en `scripts/candidatos-v22.json`, tema `sonidos`; videos de 1 a 30 s, nunca de otra pista).
+  * Sonidos (`js/catalog-sonidos.js`, `AM.SOUND_TRACKS`): 44 efectos de sonido de videojuegos (modo «Sonidos», v2.2). Cada uno suena desde el segundo 0 y se responde con la **saga** (`franchise`, el mismo nombre que en catalog.js; si la saga no está ahí, igual aparece en el buscador). El modo se oculta con menos de `AM.MIN_POOL` sonidos. Desde la 2.2.1 se juega de dos formas (`AM.SOUND_STYLES` en `js/game.js`, se guarda en `soundStyle`): escribir la saga, o 4 opciones con reloj sin ronda bonus (récord aparte: `juegos:sonidos-opciones`). Se agregan con `node scripts/build-resto-v22.js sonidos` (candidatos en `scripts/candidatos-v22.json`, tema `sonidos`; videos de 1 a 30 s, nunca de otra pista).
   * Sagas (`js/catalog-sagas.js`, `AM.SAGA_TRACKS`): 202 pistas (no repitas en SAGA_TRACKS canciones que ya estén en catalog.js: el modo Sagas ya las toma de ahí).
   * Series (`js/catalog-series.js`): 192.
   * Disney (`js/catalog-disney.js`): 89.

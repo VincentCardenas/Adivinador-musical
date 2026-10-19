@@ -215,5 +215,19 @@
     "fuente": "yt:PVNTXVO4GzY",
     "motivo": "Reporte #25: el video del Remake dura 21 s y la frase llega cuando ya se acabó el tiempo. Se cambió por el «Welcome» del Buhonero que propuso el usuario.",
     "quitada": "2.2.1 (#25)"
+  },
+  {
+    "id": "sfx-minecraft-aldeano-hmm",
+    "tema": "sonidos",
+    "fuente": "yt:fiwRZ_j61Dc",
+    "motivo": "Reporte #26: tardaba mucho en empezar. Ahora suena primero el video que propuso el usuario.",
+    "quitada": "2.2.1 (#26)"
+  },
+  {
+    "id": "sfx-free-fire-grito-de-victoria-booyah",
+    "tema": "sonidos",
+    "motivo": "Reporte #27: el usuario pidió quitarlo, no es un sonido legendario.",
+    "bloque": "{\n      id: 'sfx-free-fire-grito-de-victoria-booyah', franchise: 'Free Fire', game: 'Free Fire',\n      title: 'Grito de victoria Booyah', year: 2017, platform: 'Android / iOS',\n      aka: ['Garena Free Fire'],\n      sources: [yt('YDHf_YV-nEM'), yt('C_4OggPyq-A')],\n    },",
+    "quitada": "2.2.1 (#27)"
   }
 ]
