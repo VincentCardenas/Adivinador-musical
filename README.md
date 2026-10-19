@@ -245,7 +245,7 @@ archivos nuevos en vez de usar los guardados en caché).
 
 - **2.2.2**: **cuando un video no arranca, el juego ya no se queda pidiendo toques.**
   - Antes, si un video de YouTube no empezaba a sonar en 9 s, el juego decía «Tu navegador pausó el audio» y pedía tocar el botón verde. Si el video seguía sin cargar, se repetía igual.
-  - Ahora, si el audio no arranca aunque acabas de tocar, se toma como fuente fallida: prueba el video de respaldo y, si no hay, pasa a otra pista. Sin un toque reciente sigue pidiendo uno (en iPhone, YouTube lo necesita) y el mensaje dice «No se pudo iniciar el audio».
+  - Ahora el botón verde se pide una vez por video (en iPhone, YouTube lo necesita) y el mensaje dice «No se pudo iniciar el audio». Si ni con ese toque arranca, se toma como fuente fallida: prueba el video de respaldo y, si no hay, pasa a otra pista.
   - Los errores rojos de `youtube.com/api/stats`, `log_event` o `doubleclick` en la consola son del reproductor de YouTube (estadísticas y anuncios) cuando un bloqueador o la red los corta. No vienen del juego y no se pueden quitar desde la página.
 - **2.2.1**: **Sonidos con 4 opciones**, cuatro reportes de sonidos y la revisión a oído de todos.
   - En el modo Sonidos, la parte 3 trae **«Cómo jugar»**: ✍️ escribir la saga (como en la 2.2) o ⏱️ **4 opciones con reloj** (15 s que bajan a 7, como en Supervivencia) **sin ronda bonus**: tus 3 vidas no se recuperan. Cada forma guarda su propio récord.

@@ -1043,8 +1043,8 @@
     sfx('bonus');
   }
 
-  /** Reproduce el fragmento de la ronda actual. */
-  function playClip() {
+  /** Reproduce el fragmento de la ronda actual. `tapped`: viene del botón verde (un toque para desbloquear el audio). */
+  function playClip(tapped) {
     const g = game;
     const cur = g && g.cur;
     if (!cur) return;
@@ -1062,10 +1062,11 @@
       } else {
         unfreezeTimer(cur); // volvió a sonar (otra fuente o "Escuchar otra vez") después de trabarse
       }
-      if (!cur.answered) setStatus(expert ? `Escuchando ${limit} s…` : question(g));
+      setStatus(cur.answered ? '' : expert ? `Escuchando ${limit} s…` : question(g));
     }).catch((e) => {
       if (game !== g || g.cur !== cur || !e || e.code === 'cancelled') return;
-      if (e.code === 'blocked') {
+      // Si ni con el toque del botón verde arrancó, no era el navegador: la fuente falló.
+      if (e.code === 'blocked' && !tapped) {
         $('#btn-tap').hidden = false;
         setStatus('No se pudo iniciar el audio. Toca el botón verde para escuchar.');
         return;
@@ -1507,7 +1508,7 @@
   $('#btn-report').addEventListener('click', () => { if (reportCtx) openReport(reportCtx); });
 
   $('#btn-replay').addEventListener('click', () => playClip());
-  $('#btn-tap').addEventListener('click', () => playClip());
+  $('#btn-tap').addEventListener('click', () => playClip(true));
 
   /* ── eventos del motor de audio ── */
 
@@ -1876,7 +1877,7 @@
       if (btn && !btn.disabled) btn.click();
     } else if (e.key === ' ' && !onButton) {
       e.preventDefault();
-      if (!$('#btn-replay').disabled || !$('#btn-tap').hidden) playClip();
+      if (!$('#btn-replay').disabled || !$('#btn-tap').hidden) playClip(!$('#btn-tap').hidden);
     }
   });
 
