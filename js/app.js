@@ -1067,7 +1067,7 @@
       if (game !== g || g.cur !== cur || !e || e.code === 'cancelled') return;
       if (e.code === 'blocked') {
         $('#btn-tap').hidden = false;
-        setStatus('Tu navegador pausó el audio. Toca el botón verde para escuchar.');
+        setStatus('No se pudo iniciar el audio. Toca el botón verde para escuchar.');
         return;
       }
       switchCandidate();

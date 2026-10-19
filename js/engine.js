@@ -27,6 +27,7 @@
   let pollTimer = null;
   let startAt = 0;
   let seekPending = false;
+  let gesture = false; // play() se llamó durante un toque del usuario
   let unlocked = false;
   // Detección de "se quedó cargando": el tiempo del medio no avanza aunque debería estar sonando.
   const STALL_MS = 700;
@@ -309,7 +310,8 @@
         if (pending) { const p = pending; pending = null; p.resolve(); }
         emit('start', { t: t });
       } else if (performance.now() - startAt > startTimeout()) {
-        failPending('blocked');
+        // Tras un toque el navegador no bloquea el autoplay: si no sonó, la fuente falló.
+        failPending(gesture ? 'error' : 'blocked');
       }
       return;
     }
@@ -347,6 +349,7 @@
     playState = 'starting';
     startAt = performance.now();
     const token = ++playToken;
+    gesture = !!(navigator.userActivation && navigator.userActivation.isActive);
     const promise = new Promise((resolve, reject) => { pending = { resolve: resolve, reject: reject }; });
 
     if (cand.kind === 'audio') {
